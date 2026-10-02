@@ -13,6 +13,11 @@ from courses.course_service import (
     initialize_user_progress,
 )
 
+from courses.exam_service import (
+    initialize_user_levels,
+    seed_level_exams,
+)
+
 from courses.level00_extra import (
     seed_level00_extra,
 )
@@ -41,23 +46,26 @@ from ui.login_window import (
 def prepare_application():
     """
     ARCHIPRO UZ ishga tushishidan oldin
-    barcha lokal ma'lumotlar tayyorlanadi.
+    barcha lokal strukturalarni tayyorlaydi.
     """
 
-    # 1. Database jadvallari
+    # Database
     initialize_database()
 
-    # 2. Level va modullar
+    # 16 Level + modullar
     seed_course_structure()
 
-    # 3. Level 0 qo'shimcha darslari
+    # Level 0 qo'shimcha darslari
     seed_level00_extra()
 
-    # 4. Barcha testlar
+    # Mini-testlar
     seed_quizzes()
 
-    # 5. Development foydalanuvchi
-    # Sotuv versiyasida bu olib tashlanadi.
+    # Level yakuniy imtihonlari
+    seed_level_exams()
+
+    # Development account
+    # Sotuv versiyasida olib tashlanadi.
     create_user(
         username="admin",
         password="12345",
@@ -105,9 +113,13 @@ def main():
 
         login_window.error_label.clear()
 
-        # Yangi darslar paydo bo'lsa,
-        # foydalanuvchi progressiga ham qo'shiladi.
+        # Dars progressi
         initialize_user_progress(
+            user["id"]
+        )
+
+        # Level progressi
+        initialize_user_levels(
             user["id"]
         )
 
