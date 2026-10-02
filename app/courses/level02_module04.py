@@ -1,112 +1,118 @@
 from database.database import get_connection
 
 
+# ============================================================
+# LEVEL 2
+# MODULE 04 - MEHMONXONA LOYIHALASH
+# ============================================================
+
 LEVEL02_MODULE04_LESSONS = [
     (
         "L02_M04",
         "L02_M04_001",
-        "Xona maydoni va proporsiyasi",
+        "Mehmonxona vazifasi",
         "theory",
-        "Bir xil maydondagi xonalar nega turlicha qulay ishlashini tushunish.",
+        "Mehmonxonaning uy ichidagi roli va asosiy funksiyalarini tushunish.",
         1,
-        30,
-        15,
-    ),
-    (
-        "L02_M04",
-        "L02_M04_002",
-        "Tor va uzun xonalar",
-        "theory",
-        "Xona geometriyasining mebel va harakatga ta'sirini tahlil qilish.",
-        2,
-        35,
-        20,
-    ),
-    (
-        "L02_M04",
-        "L02_M04_003",
-        "Foydali devorlar va o'lik burchaklar",
-        "theory",
-        "Mebel joylashtirish mumkin bo'lgan devorlar va samarasiz zonalarni aniqlash.",
-        3,
-        35,
-        20,
-    ),
-    (
-        "L02_M04",
-        "L02_M04_004",
-        "Deraza va eshik joylashuvining xona sifatiga ta'siri",
-        "practice",
-        "Ochilishlar xona ichidagi mebel va foydalanish imkoniyatini qanday o'zgartirishini tushunish.",
-        4,
         40,
         20,
     ),
     (
         "L02_M04",
-        "L02_M04_005",
-        "Xona sifati xatolarini topish",
-        "practice",
-        "Real planlarda maydon, proporsiya va foydali geometriya xatolarini aniqlash.",
-        5,
+        "L02_M04_002",
+        "Mehmonxona ergonomikasi",
+        "theory",
+        "Mebel, odam harakati va foydalanish zonalarini ergonomik tashkil qilish.",
+        2,
         45,
+        20,
+    ),
+    (
+        "L02_M04",
+        "L02_M04_003",
+        "Mebel joylashuvi",
+        "practice",
+        "Divan, kreslo, stol va media zonani mantiqiy joylashtirish.",
+        3,
+        50,
+        20,
+    ),
+    (
+        "L02_M04",
+        "L02_M04_004",
+        "Circulation va mehmon oqimi",
+        "practice",
+        "Mehmonxona ichidagi kirish, o'tish va o'tirish yo'llarini to'g'ri tashkil qilish.",
+        4,
+        50,
+        20,
+    ),
+    (
+        "L02_M04",
+        "L02_M04_005",
+        "Mehmonxona auditi",
+        "practice",
+        "Mehmonxona rejasini ergonomika, mebel va circulation bo'yicha tekshirish.",
+        5,
+        55,
         25,
     ),
 ]
 
 
+# ============================================================
+# CONTENT
+# ============================================================
+
 LEVEL02_MODULE04_CONTENT = {
     "L02_M04_001": [
         {
-            "title": "Kvadrat metrning o'zi yetmaydi",
+            "title": "Mehmonxona nima uchun kerak?",
             "type": "highlight",
             "text": """
-            Xona maydoni muhim.
+            Mehmonxona —
+            uy ichidagi eng faol
+            umumiy makonlardan biri.
 
             <br><br>
 
-            Lekin faqat m² raqamiga qarab
-            xona sifatini baholab bo'lmaydi.
+            Bu yerda:
 
             <br><br>
 
-            <b>Shakl va proporsiya</b> ham juda muhim.
+            • oila yig'iladi;<br>
+            • mehmon kutish mumkin;<br>
+            • suhbat qilinadi;<br>
+            • dam olinadi;<br>
+            • ba'zan TV yoki media zona ishlatiladi.
             """,
         },
         {
-            "title": "Misol",
-            "type": "example",
-            "text": """
-            16 m² ikki xona:
-
-            <br><br>
-
-            4 × 4 m
-
-            <br><br>
-
-            va
-
-            <br><br>
-
-            2 × 8 m.
-
-            <br><br>
-
-            Maydon bir xil.
-
-            <br><br>
-
-            Lekin mebel joylashtirish va foydalanish
-            butunlay boshqacha bo'lishi mumkin.
-            """,
-        },
-        {
-            "title": "Yaxshi proporsiya nima?",
+            "title": "Faqat katta xona yetarli emas",
             "type": "normal",
             "text": """
-            Yaxshi proporsiya — xonaning vazifasiga mos
-            ishlaydigan geometriya.
+            Mehmonxona katta bo'lishi
+            uning avtomatik ravishda
+            qulay ekanini anglatmaydi.
+
+            <br><br>
+
+            Asosiy savol:
+
+            <br><br>
+
+            <b>
+            odam bu xonadan
+            qanday foydalanadi?
+            </b>
+            """,
+        },
+        {
+            "title": "Funksiya birinchi o'rinda",
+            "type": "highlight",
+            "text": """
+            Mebelni joylashtirishdan oldin
+            xonaning asosiy funksiyasini aniqlang.
 
             <br><br>
 
@@ -114,389 +120,558 @@ LEVEL02_MODULE04_CONTENT = {
 
             <br><br>
 
-            • yotoqxona uchun krovat va shkaf sig'adi;<br>
-            • mehmonxonada o'tirish zonasi ishlaydi;<br>
-            • oshxonada ish zonasi uzilmaydi.
+            • oilaviy dam olish;<br>
+            • mehmon qabul qilish;<br>
+            • TV ko'rish;<br>
+            • suhbat zonasi;<br>
+            • dining bilan bog'lanish.
             """,
         },
         {
-            "title": "Boshlovchi xatosi",
-            "type": "warning",
-            "text": """
-            “Xona 18 m² ekan, demak yaxshi.”
-
-            <br><br>
-
-            Bu xulosa yetarli emas.
-
-            <br><br>
-
-            18 m² xona noto'g'ri shakl yoki
-            noto'g'ri eshik-deraza joylashuvi sabab
-            12 m² qulay xonadan yomonroq ishlashi mumkin.
-            """,
-        },
-        {
-            "title": "Mini-amaliyot",
+            "title": "Tasavvur qiling",
             "type": "example",
             "text": """
-            12 m² va 16 m² ikkita xona toping.
+            30 m² mehmonxona bor.
 
             <br><br>
 
-            Qaysi birida mebelni qulayroq joylashtirish mumkinligini
-            faqat maydonga emas, shaklga qarab tahlil qiling.
+            Lekin divan kirish eshigini to'sgan,
+            TVga qarash noqulay,
+            o'tish yo'li esa
+            xona o'rtasidan kesib o'tadi.
+
+            <br><br>
+
+            Maydon katta,
+            lekin reja yomon.
+            """,
+        },
+        {
+            "title": "Arxitektor savollari",
+            "type": "normal",
+            "text": """
+            Mehmonxonani loyihalashda so'rang:
+
+            <br><br>
+
+            • kirish qayerdan?<br>
+            • odam qayerga o'tiradi?<br>
+            • asosiy fokus nuqtasi qayerda?<br>
+            • hovli yoki terassa bilan aloqa bormi?<br>
+            • dining bilan aloqa kerakmi?<br>
+            • o'tish yo'li mebelni kesib o'tmayaptimi?
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            Qog'ozda oddiy mehmonxona chizing.
+
+            <br><br>
+
+            Unda belgilang:
+
+            <br><br>
+
+            • kirish;<br>
+            • asosiy o'tirish zonasi;<br>
+            • TV/media zona;<br>
+            • deraza;<br>
+            • asosiy circulation yo'li.
             """,
         },
     ],
 
     "L02_M04_002": [
         {
-            "title": "Tor va uzun xona",
+            "title": "Ergonomika — odam uchun loyiha",
             "type": "highlight",
             "text": """
-            Xona juda tor va uzun bo'lsa,
-            katta maydon bo'lsa ham
-            foydalanish qiyinlashishi mumkin.
+            Mehmonxona ergonomikasi —
+            mebelni shunchaki sig'dirish emas.
+
+            <br><br>
+
+            Odamning:
+
+            <br><br>
+
+            • o'tirishi;<br>
+            • turishi;<br>
+            • yurishi;<br>
+            • suhbat qilishi;<br>
+            • eshik va derazadan foydalanishi
+
+            <br><br>
+
+            hisobga olinadi.
             """,
         },
         {
-            "title": "Nima uchun?",
+            "title": "Mebel atrofidagi bo'sh zona",
             "type": "normal",
             "text": """
-            Tor xonada:
+            Divan,
+            stol
+            yoki kreslo
+            faqat o'z konturi bilan
+            joy egallamaydi.
 
             <br><br>
 
-            • mebel ikki tomonda to'qnashishi mumkin;<br>
-            • yurish yo'li torayadi;<br>
-            • markaziy zona foydasiz qoladi;<br>
-            • katta mebel joylashtirish qiyinlashadi.
+            Ularning atrofida
+            foydalanish va yurish uchun
+            bo'sh zona ham kerak.
             """,
         },
         {
-            "title": "Misol",
+            "title": "Suhbat zonasi",
             "type": "example",
             "text": """
-            2.2 × 7 metr xona tasavvur qiling.
+            Ikki divan
+            bir-biridan juda uzoq
+            joylashtirilsa,
 
             <br><br>
 
-            Maydoni taxminan 15.4 m².
+            odamlar suhbat qilishi
+            noqulaylashishi mumkin.
 
             <br><br>
 
-            Lekin ikki tomonlama mebel qo'ysangiz,
-            o'rtadagi yurish yo'li juda tor bo'lishi mumkin.
+            Juda yaqin joylashtirilsa esa
+            circulation yomonlashadi.
             """,
         },
         {
-            "title": "Har bir tor xona yomonmi?",
+            "title": "TV/media zona",
+            "type": "normal",
+            "text": """
+            Agar xonada TV bo'lsa,
+            faqat TV devorini emas,
+            unga qaragan seatingni ham
+            birgalikda rejalashtiring.
+
+            <br><br>
+
+            Xona faqat bitta element
+            atrofida qurilib qolmasin.
+            """,
+        },
+        {
+            "title": "Deraza oldini to'smang",
             "type": "warning",
             "text": """
-            Yo'q.
+            Katta divan yoki shkaf
+            deraza oldini to'liq to'sib qo'ysa,
 
             <br><br>
 
-            Masalan, garderob, galereya yoki
-            maxsus funksional makon uchun
-            uzun shakl foydali bo'lishi mumkin.
-
-            <br><br>
-
-            Muhim narsa — <b>funksiyaga moslik</b>.
+            yorug'lik,
+            ko'rinish
+            va derazadan foydalanish
+            yomonlashishi mumkin.
             """,
         },
         {
-            "title": "Mini-amaliyot",
+            "title": "Eshik swingini tekshiring",
+            "type": "normal",
+            "text": """
+            Eshik ochilganda:
+
+            <br><br>
+
+            • divanga urilmasin;<br>
+            • kresloni to'smasin;<br>
+            • odam o'tadigan yo'lni yopmasin.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
             "type": "example",
             "text": """
-            Tor va uzun xonani tanlang.
+            Bitta mehmonxona sxemasini oling.
 
             <br><br>
 
-            3 ta savol:
+            Unda 3 ta joyni belgilang:
 
             <br><br>
 
-            1. Mebel qayerga tushadi?<br>
-            2. Asosiy yurish yo'li qayerdan o'tadi?<br>
-            3. Xonaning qaysi qismi foydasiz qolmoqda?
+            1. o'tirish zonasi;<br>
+            2. yurish zonasi;<br>
+            3. erkin foydalanish zonasi.
             """,
         },
     ],
 
     "L02_M04_003": [
         {
-            "title": "Foydali devor nima?",
+            "title": "Mebel plan tuzilmani ko'rsatadi",
             "type": "highlight",
             "text": """
-            Foydali devor — mebel, jihoz yoki
-            funksional element joylashtirish mumkin bo'lgan
-            amalda ishlatiladigan devor qismi.
-            """,
-        },
-        {
-            "title": "Eshik devorni bo'ladi",
-            "type": "example",
-            "text": """
-            4 metrli devorda eshik o'rtada joylashgan.
+            Mehmonxona planini
+            mebelsiz baholash yetarli emas.
 
             <br><br>
 
-            Natijada bitta 4 metrlik foydali devor o'rniga
-            ikkita kichik bo'lak paydo bo'ladi.
-
-            <br><br>
-
-            Katta shkaf yoki TV zona uchun
-            bu noqulay bo'lishi mumkin.
+            Mebel joylashtirilganda
+            xonaning real qulayligi
+            ko'rina boshlaydi.
             """,
         },
         {
-            "title": "O'lik burchak",
+            "title": "Asosiy elementlar",
             "type": "normal",
             "text": """
-            O'lik burchak — xona ichida
-            amalda foydalana olmaydigan
-            yoki juda samarasiz ishlaydigan zona.
+            Mehmonxonada
+            loyiha vazifasiga qarab:
 
             <br><br>
 
-            U:
+            • divan;<br>
+            • kreslo;<br>
+            • coffee table;<br>
+            • TV/media elementi;<br>
+            • konsol;<br>
+            • yordamchi stol
 
             <br><br>
 
-            • noto'g'ri eshik;<br>
-            • diagonal devor;<br>
-            • g'alati chiqinti;<br>
-            • ikki ochilish orasidagi kichik bo'lak
-
-            <br><br>
-
-            sabab paydo bo'lishi mumkin.
+            ishlatilishi mumkin.
             """,
         },
         {
-            "title": "Xato",
-            "type": "warning",
+            "title": "Fokus nuqtasi",
+            "type": "highlight",
             "text": """
-            Xonada 5 ta devor bor.
+            Mehmonxonada
+            asosiy vizual yoki
+            funksional fokus bo'lishi mumkin.
 
             <br><br>
 
-            Lekin deraza, eshik va chiqintilar sabab
-            ulardan faqat bittasi real mebel uchun ishlaydi.
+            Masalan:
 
             <br><br>
 
-            Maydon katta bo'lsa ham xona sifati past bo'lishi mumkin.
+            • TV devori;<br>
+            • hovliga katta deraza;<br>
+            • dekorativ devor;<br>
+            • kamin;<br>
+            • suhbat markazi.
             """,
         },
         {
-            "title": "Mini-amaliyot",
+            "title": "Mebelni devorga yopishtirish shart emas",
+            "type": "normal",
+            "text": """
+            Barcha mebelni
+            xona perimetri bo'ylab
+            devorga yopishtirib chiqish
+
+            <br><br>
+
+            har doim eng yaxshi
+            kompozitsiya bermaydi.
+
+            <br><br>
+
+            Xona markazi va
+            odam harakatini ham o'ylang.
+            """,
+        },
+        {
+            "title": "Dining bilan aloqa",
             "type": "example",
             "text": """
-            Bir yotoqxona planini oling.
+            Agar living va dining
+            bir-biriga yaqin bo'lsa,
 
             <br><br>
 
-            Har bir devorni tekshiring:
+            mebel joylashuvi
+            ular orasidagi yurish yo'lini
+            to'smasligi kerak.
+            """,
+        },
+        {
+            "title": "Tipik xato",
+            "type": "warning",
+            "text": """
+            Katta L-shaped divan
+            plan chiroyli ko'rinishi uchun qo'yildi.
 
             <br><br>
 
-            • krovat qo'yish mumkinmi?<br>
-            • shkaf qo'yish mumkinmi?<br>
-            • TV yoki stol qo'yish mumkinmi?
+            Lekin u diningga
+            asosiy o'tish yo'lini yopdi.
 
             <br><br>
 
-            Nechta haqiqiy foydali devor qoldi?
+            Mebel xonaga sig'di,
+            lekin circulation buzildi.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            Bir xil mehmonxona uchun
+            2 xil mebel variantini chizing.
+
+            <br><br>
+
+            Variant A:
+            TVga yo'naltirilgan.
+
+            <br><br>
+
+            Variant B:
+            suhbatga yo'naltirilgan.
+
+            <br><br>
+
+            Qaysi biri qaysi oilaga
+            mos kelishini tushuntiring.
             """,
         },
     ],
 
     "L02_M04_004": [
         {
-            "title": "Deraza — faqat yorug'lik emas",
+            "title": "Circulation xonani kesib o'tishi mumkin",
             "type": "highlight",
             "text": """
-            Deraza xona ichidagi
-            mebel joylashuvi va foydalanishiga ham ta'sir qiladi.
-            """,
-        },
-        {
-            "title": "Deraza o'rtada bo'lsa",
-            "type": "example",
-            "text": """
-            Devorning o'rtasida katta deraza bo'lsa,
-            shu devorga baland shkaf qo'yib bo'lmaydi.
+            Mehmonxona ko'pincha
+            boshqa xonalarga yoki
+            hovliga olib boradigan
+            harakat yo'llariga yaqin bo'ladi.
 
             <br><br>
 
-            Demak, deraza qarori
-            mebel qarori bilan bog'liq.
+            Shuning uchun circulation
+            alohida tekshiriladi.
             """,
         },
         {
-            "title": "Eshikning joyi",
-            "type": "example",
-            "text": """
-            Eshik devor markazida bo'lsa,
-            ikki tomonda kichik-kichik devor bo'laklari qoladi.
-
-            <br><br>
-
-            Eshik burchakka yaqinroq joylashsa,
-            katta uzluksiz devor saqlanishi mumkin.
-
-            <br><br>
-
-            Lekin bu ham harakat va ergonomika bilan tekshiriladi.
-            """,
-        },
-        {
-            "title": "Deraza va krovat",
+            "title": "Kirgan odam qayerga boradi?",
             "type": "normal",
             "text": """
-            Yotoqxonada deraza joylashuvi
-            krovat, shkaf va ish stolining
-            mantiqiy joylashuviga ta'sir qiladi.
+            Mehmonxonaga kirgan odam
+            darhol mebelga urilmasligi kerak.
 
             <br><br>
 
-            Shuning uchun fasad va plan birgalikda ishlaydi.
+            Kirishdan keyin
+            tabiiy harakat yo'li
+            tushunarli bo'lishi foydali.
             """,
         },
         {
-            "title": "Boshlovchi xatosi",
+            "title": "Seating zonani kesmang",
             "type": "warning",
             "text": """
-            Fasad chiroyli ko'rinsin deb
-            barcha derazalarni tashqaridan bir xil joylashtirish,
-            ichki mebelni qiyinlashtirishi mumkin.
+            Hovliga chiqish uchun
+            odamlar doim
+            divan va TV orasidan o'tsa,
 
             <br><br>
 
-            Har bir ochilishning ikki tomoni bor:
+            sitting zona tinchligi buziladi.
+            """,
+        },
+        {
+            "title": "Mehmon va oila oqimi",
+            "type": "normal",
+            "text": """
+            Mehmonxona faqat
+            bitta odam uchun emas.
 
             <br><br>
 
-            tashqi fasad va ichki xona.
+            Bir vaqtning o'zida
+            bir nechta odam harakatlanishini
+            tasavvur qiling.
+            """,
+        },
+        {
+            "title": "Hovli bilan aloqa",
+            "type": "example",
+            "text": """
+            Mehmonxonadan terassaga chiqish bor.
+
+            <br><br>
+
+            Divan shu eshik oldiga
+            juda yaqin qo'yilgan.
+
+            <br><br>
+
+            Natijada tashqi makonga
+            chiqish noqulaylashadi.
+            """,
+        },
+        {
+            "title": "Ko'rinmas yo'l",
+            "type": "highlight",
+            "text": """
+            Plan chizayotganda
+            pol ustida odamlar yuradigan
+            “ko'rinmas yo'llar”ni tasavvur qiling.
+
+            <br><br>
+
+            Yaxshi reja —
+            shu yo'llar bilan mebel
+            konflikt qilmaydigan reja.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            Mehmonxona planida
+            strelka bilan belgilang:
+
+            <br><br>
+
+            • kirish → sofa;<br>
+            • kirish → dining;<br>
+            • kirish → hovli.
+
+            <br><br>
+
+            Strelkalar mebelni
+            kesib o'tayotgan bo'lsa,
+            reja ustida qayta ishlang.
             """,
         },
     ],
 
     "L02_M04_005": [
         {
-            "title": "Xona sifatini tekshiramiz",
+            "title": "Mehmonxona auditi",
             "type": "highlight",
             "text": """
-            Endi xona maydoniga emas,
-            uning haqiqiy ishlash sifatiga qaraymiz.
+            Endi mehmonxonani
+            faqat chiroyli plan sifatida emas,
+
+            <br><br>
+
+            real ishlaydigan makon sifatida
+            tekshiramiz.
             """,
         },
         {
-            "title": "Xato 1 — katta, lekin foydasiz",
-            "type": "warning",
-            "text": """
-            Xona 22 m².
-
-            <br><br>
-
-            Lekin uchta eshik va ikkita deraza
-            barcha asosiy devorlarni bo'lib tashlagan.
-
-            <br><br>
-
-            Mebel joylashtirish qiyin.
-            """,
-        },
-        {
-            "title": "Xato 2 — tor uzun geometriya",
-            "type": "warning",
-            "text": """
-            Xona maydoni yetarli.
-
-            <br><br>
-
-            Lekin eni juda kichik.
-
-            <br><br>
-
-            Natijada mebel va harakat bir-biriga xalaqit beradi.
-            """,
-        },
-        {
-            "title": "Xato 3 — keraksiz burchak",
-            "type": "warning",
-            "text": """
-            Xonaga dekorativ diagonal devor qo'shilgan.
-
-            <br><br>
-
-            Natijada g'alati uchburchak zona paydo bo'lgan.
-
-            <br><br>
-
-            Unga normal mebel joylashtirib bo'lmaydi.
-            """,
-        },
-        {
-            "title": "Xato 4 — eshik noto'g'ri joyda",
-            "type": "warning",
-            "text": """
-            Eshik markazda.
-
-            <br><br>
-
-            Shu sababli katta shkaf uchun
-            uzluksiz devor qolmagan.
-
-            <br><br>
-
-            Eshik joyini ozgina o'zgartirish
-            xonani ancha samarali qilishi mumkin.
-            """,
-        },
-        {
-            "title": "Professional tekshiruv",
+            "title": "1. Funksiya",
             "type": "example",
             "text": """
-            Har bir xona uchun:
+            Savollar:
 
             <br><br>
 
-            <b>1.</b> Maydoni qancha?<br><br>
-            <b>2.</b> Proporsiyasi qanday?<br><br>
-            <b>3.</b> Nechta foydali devor bor?<br><br>
-            <b>4.</b> O'lik burchak bormi?<br><br>
-            <b>5.</b> Eshik va derazalar mebelga xalaqit beradimi?<br><br>
-            <b>6.</b> Kichikroq, lekin yaxshiroq yechim mumkinmi?
+            • xona kim uchun?<br>
+            • asosiy faoliyat nima?<br>
+            • mehmon qabul qilinadimi?<br>
+            • TV kerakmi?<br>
+            • dining bilan bog'lanadimi?
             """,
         },
         {
-            "title": "Mini-loyiha",
+            "title": "2. Mebel",
             "type": "example",
             "text": """
-            3 ta yotoqxona planini toping.
+            Tekshiring:
 
             <br><br>
 
-            Faqat m² bo'yicha emas,
-            quyidagicha solishtiring:
+            • divan mantiqiy joydami?<br>
+            • kreslolar konflikt qilmayaptimi?<br>
+            • stol foydalanishga qulaymi?<br>
+            • mebel xonani ortiqcha to'ldirmaganmi?
+            """,
+        },
+        {
+            "title": "3. Circulation",
+            "type": "example",
+            "text": """
+            Tekshiring:
 
             <br><br>
 
-            • proporsiya;<br>
-            • foydali devor;<br>
-            • krovat joylashuvi;<br>
-            • shkaf joylashuvi;<br>
-            • yurish yo'li.
+            • kirish ochiqmi?<br>
+            • asosiy yo'l tushunarlimi?<br>
+            • hovliga chiqish yopilmaganmi?<br>
+            • seating zona doim kesib o'tilmayaptimi?
+            """,
+        },
+        {
+            "title": "4. Eshik va deraza",
+            "type": "example",
+            "text": """
+            Tekshiring:
 
             <br><br>
 
-            Qaysi biri real hayotda eng yaxshi ishlashini asoslang.
+            • eshik mebelga urilmayaptimi?<br>
+            • deraza to'silmaganmi?<br>
+            • yorug'likdan foydalanish mantiqiymi?<br>
+            • tashqi ko'rinish bilan aloqa bormi?
+            """,
+        },
+        {
+            "title": "Xatoni toping",
+            "type": "warning",
+            "text": """
+            Mehmonxona 28 m².
+
+            <br><br>
+
+            Unda katta divan,
+            2 ta kreslo,
+            katta stol
+            va TV bor.
+
+            <br><br>
+
+            Barcha mebel sig'gan.
+
+            <br><br>
+
+            Lekin hovliga chiqadigan eshik
+            oldida faqat tor yo'l qolgan.
+
+            <br><br>
+
+            Savol:
+            loyiha yaxshi ishlayaptimi?
+
+            <br><br>
+
+            <b>
+            Yo'q.
+            Mebel sig'ishi ergonomika
+            va circulation yaxshi degani emas.
+            </b>
+            """,
+        },
+        {
+            "title": "Professional checklist",
+            "type": "example",
+            "text": """
+            Mehmonxonani tekshiring:
+
+            <br><br>
+
+            <b>1.</b> Xona funksiyasi aniqmi?<br><br>
+            <b>2.</b> Mebel real foydalanishga mosmi?<br><br>
+            <b>3.</b> O'tirish zonasi qulaymi?<br><br>
+            <b>4.</b> Circulation ochiqmi?<br><br>
+            <b>5.</b> Eshiklar konflikt qilmayaptimi?<br><br>
+            <b>6.</b> Deraza oldi ochiqmi?<br><br>
+            <b>7.</b> Dining/hovli aloqasi mantiqiymi?
             """,
         },
         {
@@ -507,34 +682,35 @@ LEVEL02_MODULE04_CONTENT = {
 
             <br><br>
 
-            ✓ xona maydoni;<br>
-            ✓ proporsiya;<br>
-            ✓ tor-uzun xona;<br>
-            ✓ foydali devor;<br>
-            ✓ o'lik burchak;<br>
-            ✓ eshik va deraza ta'siri
-
-            <br><br>
-
-            orqali makon sifatini tahlil qila olasiz.
+            ✓ mehmonxona funksiyasini tahlil qilasiz;<br>
+            ✓ ergonomikani hisobga olasiz;<br>
+            ✓ mebelni mantiqiy joylashtirasiz;<br>
+            ✓ circulationni tekshirasiz;<br>
+            ✓ eshik va deraza konfliktlarini ko'rasiz;<br>
+            ✓ mehmonxona planini audit qilasiz.
 
             <br><br>
 
             Keyingi modul:
-            <b>Public va private makonlar chuqur tahlili.</b>
+            <b>Oshxona loyihalash.</b>
             """,
         },
     ],
 }
 
 
+# ============================================================
+# QUIZ
+# Q046-Q060 KODLARI SAQLAB QOLINDI
+# ============================================================
+
 LEVEL02_MODULE04_QUIZ = {
     "L02_M04_001": [
         {
             "code": "L02_Q046",
-            "question": "Bir xil maydondagi ikki xona qulayligi bir xil bo'lishi shartmi?",
+            "question": "Mehmonxona katta bo'lsa avtomatik ravishda qulay bo'ladimi?",
             "explanation": (
-                "Xona shakli, proporsiyasi va ochilishlari foydalanish sifatini o'zgartiradi."
+                "Maydondan tashqari funksiya, mebel va circulation ham muhim."
             ),
             "options": [
                 ("A", "Ha", False),
@@ -543,9 +719,9 @@ LEVEL02_MODULE04_QUIZ = {
         },
         {
             "code": "L02_Q047",
-            "question": "4×4 m va 2×8 m xonalarning maydoni bir xil bo'lishi mumkinmi?",
+            "question": "Mehmonxona loyihalashda uning asosiy funksiyasini aniqlash kerakmi?",
             "explanation": (
-                "Ikkalasi ham 16 m², lekin proporsiyasi boshqacha."
+                "Mebel va rejalashtirish xonaning qanday ishlatilishiga bog'liq."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -554,13 +730,13 @@ LEVEL02_MODULE04_QUIZ = {
         },
         {
             "code": "L02_Q048",
-            "question": "Xona sifatini faqat m² bilan baholash yetarlimi?",
+            "question": "Mehmonxonada circulationni ham tahlil qilish kerakmi?",
             "explanation": (
-                "Proporsiya, mebel va foydalanish imkoniyati ham muhim."
+                "Odam harakati mebel va xonaning real foydalanishiga bevosita ta'sir qiladi."
             ),
             "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
             ],
         },
     ],
@@ -568,20 +744,9 @@ LEVEL02_MODULE04_QUIZ = {
     "L02_M04_002": [
         {
             "code": "L02_Q049",
-            "question": "Tor va uzun xona katta maydon bo'lsa ham noqulay bo'lishi mumkinmi?",
+            "question": "Mebel faqat o'z fizik konturi bilan joy egallaydimi?",
             "explanation": (
-                "Tor eni mebel va yurish zonalarini cheklashi mumkin."
-            ),
-            "options": [
-                ("A", "Ha", True),
-                ("B", "Yo'q", False),
-            ],
-        },
-        {
-            "code": "L02_Q050",
-            "question": "Har qanday uzun xona yomonmi?",
-            "explanation": (
-                "Ayrim funksiyalar uchun uzun shakl foydali bo'lishi mumkin."
+                "Mebel atrofida undan foydalanish va yurish uchun ham joy kerak."
             ),
             "options": [
                 ("A", "Ha", False),
@@ -589,35 +754,10 @@ LEVEL02_MODULE04_QUIZ = {
             ],
         },
         {
-            "code": "L02_Q051",
-            "question": "Xona geometriyasi nimaga ta'sir qiladi?",
+            "code": "L02_Q050",
+            "question": "Eshik ochilish zonasi mebel bilan tekshirilishi kerakmi?",
             "explanation": (
-                "Mebel joylashuvi va harakatga."
-            ),
-            "options": [
-                ("A", "Mebel va harakatga", True),
-                ("B", "Faqat fasad rangiga", False),
-            ],
-        },
-    ],
-
-    "L02_M04_003": [
-        {
-            "code": "L02_Q052",
-            "question": "Foydali devor nima?",
-            "explanation": (
-                "Mebel yoki funksional element joylashtirish mumkin bo'lgan amalda ishlatiladigan devor."
-            ),
-            "options": [
-                ("A", "Amalda ishlatiladigan devor qismi", True),
-                ("B", "Faqat tashqi devor", False),
-            ],
-        },
-        {
-            "code": "L02_Q053",
-            "question": "Eshik devorning foydali uzunligini kamaytirishi mumkinmi?",
-            "explanation": (
-                "Ochilish devorni kichik bo'laklarga ajratishi mumkin."
+                "Eshikning mebel yoki circulation bilan konflikti bo'lmasligi kerak."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -625,14 +765,50 @@ LEVEL02_MODULE04_QUIZ = {
             ],
         },
         {
-            "code": "L02_Q054",
-            "question": "O'lik burchak nima?",
+            "code": "L02_Q051",
+            "question": "Deraza oldini katta mebel bilan to'liq to'sish har doim yaxshi yechimmi?",
             "explanation": (
-                "Amalda juda samarasiz yoki foydalana olmaydigan zona."
+                "Bu yorug'lik, ko'rinish va derazadan foydalanishni yomonlashtirishi mumkin."
             ),
             "options": [
-                ("A", "Samarasiz zona", True),
-                ("B", "Faqat tashqi fasad burchagi", False),
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
+            ],
+        },
+    ],
+
+    "L02_M04_003": [
+        {
+            "code": "L02_Q052",
+            "question": "Mehmonxona planini mebel bilan tekshirish foydalimi?",
+            "explanation": (
+                "Mebel real ergonomika va circulationni ko'rsatishga yordam beradi."
+            ),
+            "options": [
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
+            ],
+        },
+        {
+            "code": "L02_Q053",
+            "question": "Barcha mebelni majburiy ravishda devorga yopishtirish kerakmi?",
+            "explanation": (
+                "Mebel joylashuvi xona funksiyasi, kompozitsiyasi va circulationga qarab belgilanadi."
+            ),
+            "options": [
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
+            ],
+        },
+        {
+            "code": "L02_Q054",
+            "question": "Living va dining orasidagi o'tish yo'li mebel bilan to'silmasligi kerakmi?",
+            "explanation": (
+                "Funksional zonalar orasidagi circulation ochiq bo'lishi muhim."
+            ),
+            "options": [
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
             ],
         },
     ],
@@ -640,9 +816,9 @@ LEVEL02_MODULE04_QUIZ = {
     "L02_M04_004": [
         {
             "code": "L02_Q055",
-            "question": "Deraza joylashuvi mebelga ta'sir qiladimi?",
+            "question": "Asosiy circulation seating zonani doim kesib o'tsa bu noqulaylik yaratishi mumkinmi?",
             "explanation": (
-                "Deraza ayrim devorlardan baland mebel uchun foydalanishni cheklashi mumkin."
+                "O'tish oqimi dam olish va suhbat zonasini bezovta qilishi mumkin."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -651,24 +827,24 @@ LEVEL02_MODULE04_QUIZ = {
         },
         {
             "code": "L02_Q056",
-            "question": "Eshikni devor markaziga qo'yish har doim eng yaxshi yechimmi?",
+            "question": "Mehmonxonaga kirganda tabiiy harakat yo'li tushunarli bo'lishi foydalimi?",
             "explanation": (
-                "Eshik joyi foydali devor va harakat bilan birga tahlil qilinadi."
-            ),
-            "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
-            ],
-        },
-        {
-            "code": "L02_Q057",
-            "question": "Fasad derazasi va ichki xona birgalikda hal qilinadimi?",
-            "explanation": (
-                "Deraza tashqi kompozitsiya va ichki foydalanishga bir vaqtning o'zida ta'sir qiladi."
+                "Kirish va circulation mantiqi xonadan foydalanishni yaxshilaydi."
             ),
             "options": [
                 ("A", "Ha", True),
                 ("B", "Yo'q", False),
+            ],
+        },
+        {
+            "code": "L02_Q057",
+            "question": "Hovliga chiqadigan eshik oldini mebel bilan to'sib qo'yish yaxshi rejalashtirishmi?",
+            "explanation": (
+                "Tashqi makonga chiqish yo'li ochiq va qulay bo'lishi kerak."
+            ),
+            "options": [
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
             ],
         },
     ],
@@ -676,20 +852,20 @@ LEVEL02_MODULE04_QUIZ = {
     "L02_M04_005": [
         {
             "code": "L02_Q058",
-            "question": "Katta xona ko'p ochilish sabab mebel uchun noqulay bo'lishi mumkinmi?",
+            "question": "Mebelning hammasi sig'ishi mehmonxona ergonomikasi yaxshi degani bo'ladimi?",
             "explanation": (
-                "Ko'p eshik va deraza foydali devorlarni kamaytirishi mumkin."
+                "Mebel sig'ishi bilan birga circulation va foydalanish zonalari ham tekshiriladi."
             ),
             "options": [
-                ("A", "Ha", True),
-                ("B", "Yo'q", False),
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
             ],
         },
         {
             "code": "L02_Q059",
-            "question": "Diagonal devor o'lik burchak yaratishi mumkinmi?",
+            "question": "Mehmonxona auditida eshik, deraza va mebel aloqasi tekshiriladimi?",
             "explanation": (
-                "Asossiz diagonal geometriya mebel uchun foydasiz zonalar yaratishi mumkin."
+                "Bu elementlar xonaning ergonomik va funksional ishlashiga ta'sir qiladi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -698,18 +874,30 @@ LEVEL02_MODULE04_QUIZ = {
         },
         {
             "code": "L02_Q060",
-            "question": "Professional xona tahlilida qaysi savol foydali?",
+            "question": "Mehmonxonani baholashdagi to'g'ri yondashuv qaysi?",
             "explanation": (
-                "Foydali devorlar va mebel imkoniyatini tekshirish xona sifatini baholashga yordam beradi."
+                "Funksiya, mebel va circulation birgalikda tahlil qilinadi."
             ),
             "options": [
-                ("A", "Nechta foydali devor bor?", True),
-                ("B", "Faqat fasad rangi qanday?", False),
+                (
+                    "A",
+                    "Funksiya → mebel → circulation → audit",
+                    True,
+                ),
+                (
+                    "B",
+                    "Faqat xona maydoniga qarash",
+                    False,
+                ),
             ],
         },
     ],
 }
 
+
+# ============================================================
+# DATABASE SEED
+# ============================================================
 
 def seed_level02_module04():
     connection = get_connection()
