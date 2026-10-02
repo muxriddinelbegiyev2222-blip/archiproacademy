@@ -2,26 +2,43 @@ import sys
 
 from PySide6.QtWidgets import QApplication
 
-from auth.auth_service import authenticate_user, create_user
-from courses.course_service import initialize_user_progress
-from courses.seed_courses import seed_course_structure
-from database.database import initialize_database
-from ui.dashboard_window import DashboardWindow
-from ui.login_window import LoginWindow
+from auth.auth_service import (
+    authenticate_user,
+    create_user,
+)
+
+from courses.course_service import (
+    initialize_user_progress,
+)
+
+from courses.quiz_service import (
+    seed_quizzes,
+)
+
+from courses.seed_courses import (
+    seed_course_structure,
+)
+
+from database.database import (
+    initialize_database,
+)
+
+from ui.dashboard_window import (
+    DashboardWindow,
+)
+
+from ui.login_window import (
+    LoginWindow,
+)
 
 
 def prepare_application():
-    """
-    ARCHIPRO UZ ishga tushishidan oldin
-    database va o'quv tizimini tayyorlaydi.
-    """
-
     initialize_database()
 
     seed_course_structure()
 
-    # Development account.
-    # Sotuv versiyasida olib tashlanadi.
+    seed_quizzes()
+
     create_user(
         username="admin",
         password="12345",
@@ -31,10 +48,17 @@ def prepare_application():
 
 
 def main():
-    app = QApplication(sys.argv)
+    app = QApplication(
+        sys.argv
+    )
 
-    app.setApplicationName("ARCHIPRO UZ")
-    app.setOrganizationName("ARCHIPRO UZ")
+    app.setApplicationName(
+        "ARCHIPRO UZ"
+    )
+
+    app.setOrganizationName(
+        "ARCHIPRO UZ"
+    )
 
     prepare_application()
 
@@ -59,8 +83,6 @@ def main():
             )
             return
 
-        login_window.error_label.clear()
-
         initialize_user_progress(
             user["id"]
         )
@@ -69,9 +91,12 @@ def main():
             user
         )
 
-        windows["dashboard"] = dashboard
+        windows[
+            "dashboard"
+        ] = dashboard
 
         dashboard.show()
+
         login_window.hide()
 
     login_window.login_requested.connect(
@@ -80,7 +105,9 @@ def main():
 
     login_window.show()
 
-    sys.exit(app.exec())
+    sys.exit(
+        app.exec()
+    )
 
 
 if __name__ == "__main__":
