@@ -40,6 +40,10 @@ from courses.level01_module05 import (
     seed_level01_module05,
 )
 
+from courses.level01_module06 import (
+    seed_level01_module06,
+)
+
 from courses.quiz_service import (
     seed_quizzes,
 )
@@ -75,6 +79,7 @@ def prepare_application():
     seed_level01_module03()
     seed_level01_module04()
     seed_level01_module05()
+    seed_level01_module06()
 
     # TESTLAR
     seed_quizzes()
