@@ -1,6 +1,8 @@
 import sys
 
-from PySide6.QtWidgets import QApplication
+from PySide6.QtWidgets import (
+    QApplication,
+)
 
 from auth.auth_service import (
     authenticate_user,
@@ -9,6 +11,10 @@ from auth.auth_service import (
 
 from courses.course_service import (
     initialize_user_progress,
+)
+
+from courses.level00_extra import (
+    seed_level00_extra,
 )
 
 from courses.quiz_service import (
@@ -33,12 +39,25 @@ from ui.login_window import (
 
 
 def prepare_application():
+    """
+    ARCHIPRO UZ ishga tushishidan oldin
+    barcha lokal ma'lumotlar tayyorlanadi.
+    """
+
+    # 1. Database jadvallari
     initialize_database()
 
+    # 2. Level va modullar
     seed_course_structure()
 
+    # 3. Level 0 qo'shimcha darslari
+    seed_level00_extra()
+
+    # 4. Barcha testlar
     seed_quizzes()
 
+    # 5. Development foydalanuvchi
+    # Sotuv versiyasida bu olib tashlanadi.
     create_user(
         username="admin",
         password="12345",
@@ -81,8 +100,13 @@ def main():
             login_window.error_label.setText(
                 "Login yoki parol noto'g'ri."
             )
+
             return
 
+        login_window.error_label.clear()
+
+        # Yangi darslar paydo bo'lsa,
+        # foydalanuvchi progressiga ham qo'shiladi.
         initialize_user_progress(
             user["id"]
         )
