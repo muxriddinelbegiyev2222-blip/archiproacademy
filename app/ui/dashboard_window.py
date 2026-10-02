@@ -1,4 +1,5 @@
 from PySide6.QtCore import Qt
+
 from PySide6.QtWidgets import (
     QFrame,
     QHBoxLayout,
@@ -39,6 +40,16 @@ class DashboardWindow(QMainWindow):
 
         self.lesson_window = None
         self.learning_window = None
+
+        self.is_master = (
+            str(
+                self.user.get(
+                    "license_type",
+                    "",
+                )
+            ).upper()
+            == "MASTER"
+        )
 
         self.setWindowTitle(
             "ARCHIPRO UZ"
@@ -103,6 +114,23 @@ class DashboardWindow(QMainWindow):
                 border-right: 1px solid #1E293B;
             }
 
+            QFrame#masterBanner {
+                background-color: #251D06;
+                border: 1px solid #D4A72C;
+                border-radius: 12px;
+            }
+
+            QLabel#masterTitle {
+                color: #FACC15;
+                font-size: 15px;
+                font-weight: 800;
+            }
+
+            QLabel#masterText {
+                color: #FDE68A;
+                font-size: 12px;
+            }
+
             QLabel#logoTitle {
                 font-size: 24px;
                 font-weight: 700;
@@ -151,6 +179,12 @@ class DashboardWindow(QMainWindow):
             QFrame#card {
                 background-color: #111827;
                 border: 1px solid #1E293B;
+                border-radius: 14px;
+            }
+
+            QFrame#masterCard {
+                background-color: #181609;
+                border: 1px solid #A16207;
                 border-radius: 14px;
             }
 
@@ -220,6 +254,20 @@ class DashboardWindow(QMainWindow):
 
             QPushButton#academyButton:hover {
                 background-color: #334155;
+            }
+
+            QPushButton#masterButton {
+                background-color: #A16207;
+                color: #FFFFFF;
+                border: none;
+                border-radius: 9px;
+                padding: 13px 20px;
+                font-size: 14px;
+                font-weight: 800;
+            }
+
+            QPushButton#masterButton:hover {
+                background-color: #CA8A04;
             }
             """
         )
@@ -399,8 +447,10 @@ class DashboardWindow(QMainWindow):
         )
 
         page_subtitle = QLabel(
-            "Arxitekturani 0 dan professional "
-            "darajagacha bosqichma-bosqich o'rganing."
+            (
+                "Arxitekturani 0 dan professional "
+                "darajagacha bosqichma-bosqich o'rganing."
+            )
         )
 
         page_subtitle.setObjectName(
@@ -416,10 +466,94 @@ class DashboardWindow(QMainWindow):
         )
 
         # ====================================================
-        # REAL LEVEL NAME
+        # MASTER BANNER
         # ====================================================
 
-        if self.current_level:
+        if self.is_master:
+
+            master_banner = QFrame()
+
+            master_banner.setObjectName(
+                "masterBanner"
+            )
+
+            master_layout = QHBoxLayout(
+                master_banner
+            )
+
+            master_layout.setContentsMargins(
+                18,
+                14,
+                18,
+                14,
+            )
+
+            master_text_area = QVBoxLayout()
+
+            master_title = QLabel(
+                "★ MASTER TEST MODE FAOL"
+            )
+
+            master_title.setObjectName(
+                "masterTitle"
+            )
+
+            master_text = QLabel(
+                (
+                    "Siz barcha Level va mavjud darslarni "
+                    "blokirovkasiz tekshirishingiz mumkin."
+                )
+            )
+
+            master_text.setObjectName(
+                "masterText"
+            )
+
+            master_text_area.addWidget(
+                master_title
+            )
+
+            master_text_area.addWidget(
+                master_text
+            )
+
+            master_layout.addLayout(
+                master_text_area
+            )
+
+            master_layout.addStretch()
+
+            master_button = QPushButton(
+                "BARCHA LEVELLARNI OCHISH  →"
+            )
+
+            master_button.setObjectName(
+                "masterButton"
+            )
+
+            master_button.clicked.connect(
+                self.open_learning_window
+            )
+
+            master_layout.addWidget(
+                master_button
+            )
+
+            content_layout.addWidget(
+                master_banner
+            )
+
+        # ====================================================
+        # CURRENT LEVEL
+        # ====================================================
+
+        if self.is_master:
+
+            current_level_text = (
+                "MASTER"
+            )
+
+        elif self.current_level:
 
             current_level_text = (
                 self.current_level[
@@ -431,6 +565,7 @@ class DashboardWindow(QMainWindow):
             )
 
         else:
+
             current_level_text = (
                 "LEVEL 0"
             )
@@ -456,7 +591,11 @@ class DashboardWindow(QMainWindow):
 
         stats_layout.addWidget(
             self.create_stat_card(
-                "Hozirgi daraja",
+                (
+                    "Rejim"
+                    if self.is_master
+                    else "Hozirgi daraja"
+                ),
                 current_level_text,
             )
         )
@@ -484,10 +623,6 @@ class DashboardWindow(QMainWindow):
             stats_layout
         )
 
-        # ====================================================
-        # XP BREAKDOWN
-        # ====================================================
-
         xp_info = QLabel(
             (
                 f"Darslardan: "
@@ -507,7 +642,89 @@ class DashboardWindow(QMainWindow):
         )
 
         # ====================================================
-        # CONTINUE CARD
+        # MASTER QUICK ACCESS
+        # ====================================================
+
+        if self.is_master:
+
+            master_card = QFrame()
+
+            master_card.setObjectName(
+                "masterCard"
+            )
+
+            master_card_layout = QVBoxLayout(
+                master_card
+            )
+
+            master_card_layout.setContentsMargins(
+                24,
+                22,
+                24,
+                22,
+            )
+
+            master_card_layout.setSpacing(
+                12
+            )
+
+            master_section_title = QLabel(
+                "MASTER nazorat markazi"
+            )
+
+            master_section_title.setObjectName(
+                "sectionTitle"
+            )
+
+            master_info = QLabel(
+                (
+                    "LEVEL 0 dan LEVEL 15 gacha bo'lgan "
+                    "barcha tuzilmani ko'rishingiz mumkin. "
+                    "Kontenti yaratilgan darslar darhol ochiladi. "
+                    "Hali kontenti yozilmagan Level va modullar "
+                    "ham skelet sifatida ko'rinadi."
+                )
+            )
+
+            master_info.setObjectName(
+                "infoText"
+            )
+
+            master_info.setWordWrap(
+                True
+            )
+
+            open_all_button = QPushButton(
+                "BARCHA LEVELLARNI KO'RISH  →"
+            )
+
+            open_all_button.setObjectName(
+                "masterButton"
+            )
+
+            open_all_button.clicked.connect(
+                self.open_learning_window
+            )
+
+            master_card_layout.addWidget(
+                master_section_title
+            )
+
+            master_card_layout.addWidget(
+                master_info
+            )
+
+            master_card_layout.addWidget(
+                open_all_button,
+                alignment=Qt.AlignmentFlag.AlignLeft,
+            )
+
+            content_layout.addWidget(
+                master_card
+            )
+
+        # ====================================================
+        # NORMAL CONTINUE CARD
         # ====================================================
 
         learning_card = QFrame()
@@ -532,7 +749,11 @@ class DashboardWindow(QMainWindow):
         )
 
         section_title = QLabel(
-            "O'qishni davom ettirish"
+            (
+                "Oddiy o'quvchi progressini tekshirish"
+                if self.is_master
+                else "O'qishni davom ettirish"
+            )
         )
 
         section_title.setObjectName(
@@ -670,10 +891,17 @@ class DashboardWindow(QMainWindow):
 
             no_lesson = QLabel(
                 (
-                    "Hozir ochiq dars yo'q.\n\n"
-                    "Agar Level ichidagi barcha darslarni "
-                    "tugatgan bo'lsangiz, Mening o'qishim "
-                    "bo'limiga kirib yakuniy imtihonni topshiring."
+                    "Oddiy progress bo'yicha hozir ochiq dars yo'q.\n\n"
+                    "MASTER rejimida esa yuqoridagi tugma orqali "
+                    "istalgan mavjud darsni ochishingiz mumkin."
+                    if self.is_master
+                    else
+                    (
+                        "Hozir ochiq dars yo'q.\n\n"
+                        "Agar Level ichidagi barcha darslarni "
+                        "tugatgan bo'lsangiz, Mening o'qishim "
+                        "bo'limiga kirib yakuniy imtihonni topshiring."
+                    )
                 )
             )
 
