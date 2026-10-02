@@ -72,6 +72,10 @@ from courses.level02_module06 import (
     seed_level02_module06,
 )
 
+from courses.level02_module07 import (
+    seed_level02_module07,
+)
+
 from courses.quiz_service import (
     seed_quizzes,
 )
@@ -116,6 +120,7 @@ def prepare_application():
     seed_level02_module04()
     seed_level02_module05()
     seed_level02_module06()
+    seed_level02_module07()
 
     # QUIZZES
     seed_quizzes()
@@ -187,9 +192,7 @@ def main():
             user
         )
 
-        windows[
-            "dashboard"
-        ] = dashboard
+        windows["dashboard"] = dashboard
 
         dashboard.show()
 
