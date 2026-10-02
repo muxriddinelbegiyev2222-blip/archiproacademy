@@ -186,6 +186,10 @@ from courses.level06_module02 import (
     LEVEL06_MODULE02_CONTENT,
     LEVEL06_MODULE02_QUIZ,
 )
+from courses.level06_module03 import (
+    LEVEL06_MODULE03_CONTENT,
+    LEVEL06_MODULE03_QUIZ,
+)
 
 from courses.quiz_data import QUIZ_DATA
 
@@ -252,6 +256,7 @@ def get_all_lesson_content():
     # LEVEL 6
     combined.update(LEVEL06_MODULE01_CONTENT)
     combined.update(LEVEL06_MODULE02_CONTENT)
+    combined.update(LEVEL06_MODULE03_CONTENT)
 
     return combined
 
@@ -325,5 +330,6 @@ def get_all_quiz_data():
     # LEVEL 6
     combined.update(LEVEL06_MODULE01_QUIZ)
     combined.update(LEVEL06_MODULE02_QUIZ)
+    combined.update(LEVEL06_MODULE03_QUIZ)
 
     return combined
