@@ -1,4 +1,8 @@
-from PySide6.QtCore import Qt, Signal
+from PySide6.QtCore import (
+    Qt,
+    Signal,
+)
+
 from PySide6.QtWidgets import (
     QFrame,
     QHBoxLayout,
@@ -10,16 +14,8 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from courses.lesson_content import (
-    get_lesson_content,
-)
-
-from courses.level00_extra import (
-    get_level00_extra_content,
-)
-
-from courses.level01_content import (
-    get_level01_content,
+from courses.content_registry import (
+    get_lesson_content_by_code,
 )
 
 from ui.quiz_window import (
@@ -62,7 +58,12 @@ class LessonWindow(QMainWindow):
         )
 
         self.setup_styles()
+
         self.build_ui()
+
+    # ========================================================
+    # STYLE
+    # ========================================================
 
     def setup_styles(self):
         self.setStyleSheet(
@@ -160,8 +161,16 @@ class LessonWindow(QMainWindow):
             QPushButton#quizButton:hover {
                 background-color: #3B82F6;
             }
+
+            QPushButton#quizButton:pressed {
+                background-color: #1D4ED8;
+            }
             """
         )
+
+    # ========================================================
+    # UI
+    # ========================================================
 
     def build_ui(self):
         central = QWidget()
@@ -185,6 +194,10 @@ class LessonWindow(QMainWindow):
             16
         )
 
+        # ====================================================
+        # TOP BAR
+        # ====================================================
+
         top_bar = QHBoxLayout()
 
         back_button = QPushButton(
@@ -193,6 +206,10 @@ class LessonWindow(QMainWindow):
 
         back_button.setObjectName(
             "backButton"
+        )
+
+        back_button.setCursor(
+            Qt.CursorShape.PointingHandCursor
         )
 
         back_button.clicked.connect(
@@ -231,6 +248,10 @@ class LessonWindow(QMainWindow):
         root_layout.addLayout(
             top_bar
         )
+
+        # ====================================================
+        # HEADER
+        # ====================================================
 
         level_label = QLabel(
             self.lesson.get(
@@ -278,6 +299,7 @@ class LessonWindow(QMainWindow):
             "practice": "AMALIYOT",
             "quiz": "TEST",
             "project": "LOYIHA",
+            "case": "CASE STUDY",
         }
 
         readable_type = type_names.get(
@@ -287,8 +309,10 @@ class LessonWindow(QMainWindow):
 
         meta_label = QLabel(
             f"{module_title}"
-            f"   •   {readable_type}"
-            f"   •   {minutes} daqiqa"
+            f"   •   "
+            f"{readable_type}"
+            f"   •   "
+            f"{minutes} daqiqa"
         )
 
         meta_label.setObjectName(
@@ -306,6 +330,10 @@ class LessonWindow(QMainWindow):
         root_layout.addWidget(
             meta_label
         )
+
+        # ====================================================
+        # CONTENT
+        # ====================================================
 
         scroll = QScrollArea()
 
@@ -340,7 +368,7 @@ class LessonWindow(QMainWindow):
         )
 
         lesson_content = (
-            self.find_lesson_content(
+            get_lesson_content_by_code(
                 lesson_code
             )
         )
@@ -348,6 +376,17 @@ class LessonWindow(QMainWindow):
         if lesson_content:
 
             for section in lesson_content:
+
+                section_type = section.get(
+                    "type",
+                    "normal",
+                )
+
+                object_name = (
+                    self.get_card_object_name(
+                        section_type
+                    )
+                )
 
                 card = self.create_card(
                     title=section.get(
@@ -358,14 +397,7 @@ class LessonWindow(QMainWindow):
                         "text",
                         "",
                     ),
-                    object_name=(
-                        self.get_card_object_name(
-                            section.get(
-                                "type",
-                                "normal",
-                            )
-                        )
-                    ),
+                    object_name=object_name,
                 )
 
                 scroll_layout.addWidget(
@@ -399,11 +431,17 @@ class LessonWindow(QMainWindow):
             1,
         )
 
+        # ====================================================
+        # BOTTOM
+        # ====================================================
+
         bottom_layout = QHBoxLayout()
 
         hint = QLabel(
-            "Keyingi dars ochilishi uchun "
-            "mini-testdan muvaffaqiyatli o'ting."
+            (
+                "Darsni tushunganingizdan so'ng "
+                "bilimingizni mini-test orqali tekshiring."
+            )
         )
 
         hint.setStyleSheet(
@@ -421,6 +459,10 @@ class LessonWindow(QMainWindow):
 
         self.quiz_button.setObjectName(
             "quizButton"
+        )
+
+        self.quiz_button.setCursor(
+            Qt.CursorShape.PointingHandCursor
         )
 
         self.quiz_button.clicked.connect(
@@ -441,32 +483,9 @@ class LessonWindow(QMainWindow):
             bottom_layout
         )
 
-    def find_lesson_content(
-        self,
-        lesson_code: str,
-    ):
-        content = get_lesson_content(
-            lesson_code
-        )
-
-        if content:
-            return content
-
-        content = get_level00_extra_content(
-            lesson_code
-        )
-
-        if content:
-            return content
-
-        content = get_level01_content(
-            lesson_code
-        )
-
-        if content:
-            return content
-
-        return []
+    # ========================================================
+    # CARD TYPE
+    # ========================================================
 
     def get_card_object_name(
         self,
@@ -484,6 +503,10 @@ class LessonWindow(QMainWindow):
             section_type,
             "contentCard",
         )
+
+    # ========================================================
+    # CREATE CARD
+    # ========================================================
 
     def create_card(
         self,
@@ -554,6 +577,10 @@ class LessonWindow(QMainWindow):
         )
 
         return card
+
+    # ========================================================
+    # QUIZ
+    # ========================================================
 
     def start_quiz(self):
         self.quiz_window = QuizWindow(
