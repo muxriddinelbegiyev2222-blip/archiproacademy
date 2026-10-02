@@ -68,14 +68,6 @@ def get_lessons_for_module(module_id: int):
 
 
 def initialize_user_progress(user_id: int):
-    """
-    Foydalanuvchi uchun barcha mavjud darslarning
-    progress yozuvlarini yaratadi.
-
-    Faqat eng birinchi dars ochiq bo'ladi.
-    Qolganlari locked holatda turadi.
-    """
-
     connection = get_connection()
 
     try:
@@ -250,11 +242,6 @@ def complete_lesson(
     user_id: int,
     lesson_id: int,
 ) -> dict:
-    """
-    Darsni tugatilgan deb belgilaydi
-    va keyingi darsni avtomatik ochadi.
-    """
-
     connection = get_connection()
 
     try:
@@ -297,12 +284,6 @@ def complete_lesson(
             UPDATE lesson_progress
             SET
                 status = 'completed',
-                score = 100,
-                best_score = CASE
-                    WHEN best_score < 100 THEN 100
-                    ELSE best_score
-                END,
-                attempts = attempts + 1,
                 completed_at = ?,
                 last_opened_at = ?
             WHERE user_id = ?
@@ -339,15 +320,15 @@ def complete_lesson(
         ordered_lessons = cursor.fetchall()
 
         next_lesson_id = None
-        current_found = False
+        found_current = False
 
         for row in ordered_lessons:
-            if current_found:
+            if found_current:
                 next_lesson_id = row["id"]
                 break
 
             if row["id"] == lesson_id:
-                current_found = True
+                found_current = True
 
         if next_lesson_id is not None:
             cursor.execute(
@@ -368,9 +349,145 @@ def complete_lesson(
 
         return {
             "success": True,
-            "message": "Dars muvaffaqiyatli tugatildi.",
             "next_lesson_id": next_lesson_id,
         }
+
+    finally:
+        connection.close()
+
+
+def get_learning_overview(user_id: int):
+    """
+    Level -> Module -> Lesson ko'rinishidagi
+    to'liq o'quv strukturasini qaytaradi.
+    """
+
+    connection = get_connection()
+
+    try:
+        cursor = connection.cursor()
+
+        cursor.execute(
+            """
+            SELECT *
+            FROM course_levels
+            ORDER BY sort_order ASC
+            """
+        )
+
+        levels = []
+
+        for level_row in cursor.fetchall():
+            level = dict(level_row)
+
+            cursor.execute(
+                """
+                SELECT *
+                FROM course_modules
+                WHERE level_id = ?
+                ORDER BY sort_order ASC
+                """,
+                (level["id"],),
+            )
+
+            modules = []
+
+            for module_row in cursor.fetchall():
+                module = dict(module_row)
+
+                cursor.execute(
+                    """
+                    SELECT
+                        lessons.id,
+                        lessons.code,
+                        lessons.title,
+                        lessons.lesson_type,
+                        lessons.summary,
+                        lessons.estimated_minutes,
+                        lessons.xp_reward,
+
+                        COALESCE(
+                            lesson_progress.status,
+                            'locked'
+                        ) AS status,
+
+                        COALESCE(
+                            lesson_progress.best_score,
+                            0
+                        ) AS best_score
+
+                    FROM lessons
+
+                    LEFT JOIN lesson_progress
+                        ON lesson_progress.lesson_id = lessons.id
+                        AND lesson_progress.user_id = ?
+
+                    WHERE lessons.module_id = ?
+
+                    ORDER BY lessons.sort_order ASC
+                    """,
+                    (
+                        user_id,
+                        module["id"],
+                    ),
+                )
+
+                lessons = [
+                    dict(row)
+                    for row in cursor.fetchall()
+                ]
+
+                module["lessons"] = lessons
+
+                total_lessons = len(lessons)
+
+                completed_lessons = sum(
+                    1
+                    for lesson in lessons
+                    if lesson["status"] == "completed"
+                )
+
+                if total_lessons > 0:
+                    module["progress_percent"] = round(
+                        (
+                            completed_lessons
+                            / total_lessons
+                        )
+                        * 100
+                    )
+                else:
+                    module["progress_percent"] = 0
+
+                module["completed_lessons"] = completed_lessons
+                module["total_lessons"] = total_lessons
+
+                modules.append(module)
+
+            level["modules"] = modules
+
+            level_total = sum(
+                module["total_lessons"]
+                for module in modules
+            )
+
+            level_completed = sum(
+                module["completed_lessons"]
+                for module in modules
+            )
+
+            if level_total > 0:
+                level["progress_percent"] = round(
+                    (level_completed / level_total) * 100
+                )
+            else:
+                level["progress_percent"] = 0
+
+            level["completed_lessons"] = level_completed
+            level["total_lessons"] = level_total
+
+            levels.append(level)
+
+        return levels
 
     finally:
         connection.close()
