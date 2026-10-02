@@ -1,9 +1,10 @@
 import sys
 
-from PySide6.QtWidgets import QApplication, QMessageBox
+from PySide6.QtWidgets import QApplication
 
 from auth.auth_service import authenticate_user, create_user
 from database.database import initialize_database
+from ui.dashboard_window import DashboardWindow
 from ui.login_window import LoginWindow
 
 
@@ -14,12 +15,8 @@ def prepare_application():
 
     initialize_database()
 
-    # Hozircha dastur ishlab chiqish bosqichida
-    # vaqtinchalik test foydalanuvchisi yaratiladi.
-    #
-    # Agar bazada allaqachon mavjud bo'lsa,
-    # create_user False qaytaradi va hech narsa buzilmaydi.
-
+    # Bu foydalanuvchi faqat ishlab chiqish davri uchun.
+    # Sotuv versiyasida bu olib tashlanadi.
     create_user(
         username="admin",
         password="12345",
@@ -38,8 +35,19 @@ def main():
 
     login_window = LoginWindow()
 
-    def process_login(login: str, password: str):
-        user = authenticate_user(login, password)
+    # Dashboard reference saqlanishi kerak.
+    windows = {
+        "dashboard": None,
+    }
+
+    def process_login(
+        login: str,
+        password: str,
+    ):
+        user = authenticate_user(
+            login,
+            password,
+        )
 
         if user is None:
             login_window.error_label.setText(
@@ -49,19 +57,16 @@ def main():
 
         login_window.error_label.clear()
 
-        full_name = user.get("full_name") or user.get("username")
-        license_type = user.get("license_type", "PRO")
+        dashboard = DashboardWindow(user)
 
-        QMessageBox.information(
-            login_window,
-            "ARCHIPRO UZ",
-            (
-                f"Xush kelibsiz, {full_name}!\n\n"
-                f"Litsenziya: {license_type}"
-            ),
-        )
+        windows["dashboard"] = dashboard
 
-    login_window.login_requested.connect(process_login)
+        dashboard.show()
+        login_window.hide()
+
+    login_window.login_requested.connect(
+        process_login
+    )
 
     login_window.show()
 
