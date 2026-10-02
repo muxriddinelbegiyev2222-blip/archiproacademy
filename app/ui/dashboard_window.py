@@ -18,6 +18,7 @@ from courses.course_service import (
     get_user_course_stats,
 )
 
+from ui.learning_window import LearningWindow
 from ui.lesson_window import LessonWindow
 
 
@@ -26,7 +27,9 @@ class DashboardWindow(QMainWindow):
         super().__init__()
 
         self.user = user
+
         self.lesson_window = None
+        self.learning_window = None
 
         self.setWindowTitle(
             "ARCHIPRO UZ"
@@ -50,10 +53,10 @@ class DashboardWindow(QMainWindow):
         )
 
     def build_ui(self):
-        central_widget = QWidget()
+        central = QWidget()
 
         self.setCentralWidget(
-            central_widget
+            central
         )
 
         self.setStyleSheet(
@@ -75,7 +78,7 @@ class DashboardWindow(QMainWindow):
             QLabel#logoTitle {
                 font-size: 24px;
                 font-weight: 700;
-                color: #FFFFFF;
+                color: white;
             }
 
             QLabel#logoSubtitle {
@@ -95,6 +98,10 @@ class DashboardWindow(QMainWindow):
                 padding: 12px 14px;
                 margin: 2px 0px;
                 border-radius: 8px;
+            }
+
+            QListWidget::item:hover {
+                background-color: #172033;
             }
 
             QListWidget::item:selected {
@@ -163,21 +170,22 @@ class DashboardWindow(QMainWindow):
             """
         )
 
-        root_layout = QHBoxLayout(
-            central_widget
+        root = QHBoxLayout(
+            central
         )
 
-        root_layout.setContentsMargins(
+        root.setContentsMargins(
             0,
             0,
             0,
             0,
         )
 
-        root_layout.setSpacing(
+        root.setSpacing(
             0
         )
 
+        # SIDEBAR
         sidebar = QFrame()
 
         sidebar.setObjectName(
@@ -199,28 +207,28 @@ class DashboardWindow(QMainWindow):
             20,
         )
 
-        logo_title = QLabel(
+        logo = QLabel(
             "ARCHIPRO UZ"
         )
 
-        logo_title.setObjectName(
+        logo.setObjectName(
             "logoTitle"
         )
 
-        logo_subtitle = QLabel(
+        subtitle = QLabel(
             "Architecture Academy"
         )
 
-        logo_subtitle.setObjectName(
+        subtitle.setObjectName(
             "logoSubtitle"
         )
 
         sidebar_layout.addWidget(
-            logo_title
+            logo
         )
 
         sidebar_layout.addWidget(
-            logo_subtitle
+            subtitle
         )
 
         sidebar_layout.addSpacing(
@@ -245,15 +253,19 @@ class DashboardWindow(QMainWindow):
             "Sozlamalar",
         ]
 
-        for text in menu_items:
+        for item in menu_items:
             self.menu.addItem(
                 QListWidgetItem(
-                    text
+                    item
                 )
             )
 
         self.menu.setCurrentRow(
             0
+        )
+
+        self.menu.itemClicked.connect(
+            self.handle_menu_click
         )
 
         sidebar_layout.addWidget(
@@ -293,6 +305,7 @@ class DashboardWindow(QMainWindow):
             user_label
         )
 
+        # CONTENT
         content = QWidget()
 
         content_layout = QVBoxLayout(
@@ -340,26 +353,10 @@ class DashboardWindow(QMainWindow):
             16
         )
 
-        progress_percent = self.stats[
-            "progress_percent"
-        ]
-
-        completed = self.stats[
-            "completed_lessons"
-        ]
-
-        total = self.stats[
-            "total_lessons"
-        ]
-
-        xp_value = self.stats[
-            "xp"
-        ]
-
         stats_layout.addWidget(
             self.create_stat_card(
                 "Umumiy progress",
-                f"{progress_percent}%",
+                f"{self.stats['progress_percent']}%",
             )
         )
 
@@ -373,14 +370,19 @@ class DashboardWindow(QMainWindow):
         stats_layout.addWidget(
             self.create_stat_card(
                 "Tugallangan dars",
-                f"{completed}/{total}",
+                (
+                    f"{self.stats['completed_lessons']}/"
+                    f"{self.stats['total_lessons']}"
+                ),
             )
         )
 
         stats_layout.addWidget(
             self.create_stat_card(
                 "XP",
-                str(xp_value),
+                str(
+                    self.stats["xp"]
+                ),
             )
         )
 
@@ -409,16 +411,16 @@ class DashboardWindow(QMainWindow):
             12
         )
 
-        title = QLabel(
+        section_title = QLabel(
             "O'qishni davom ettirish"
         )
 
-        title.setObjectName(
+        section_title.setObjectName(
             "sectionTitle"
         )
 
         learning_layout.addWidget(
-            title
+            section_title
         )
 
         if self.next_lesson:
@@ -432,13 +434,13 @@ class DashboardWindow(QMainWindow):
                 "infoText"
             )
 
-            lesson = QLabel(
+            lesson_title = QLabel(
                 self.next_lesson[
                     "title"
                 ]
             )
 
-            lesson.setStyleSheet(
+            lesson_title.setStyleSheet(
                 """
                 QLabel {
                     font-size: 18px;
@@ -471,7 +473,9 @@ class DashboardWindow(QMainWindow):
             )
 
             progress.setValue(
-                progress_percent
+                self.stats[
+                    "progress_percent"
+                ]
             )
 
             button = QPushButton(
@@ -491,7 +495,7 @@ class DashboardWindow(QMainWindow):
             )
 
             learning_layout.addWidget(
-                lesson
+                lesson_title
             )
 
             learning_layout.addWidget(
@@ -526,11 +530,11 @@ class DashboardWindow(QMainWindow):
 
         content_layout.addStretch()
 
-        root_layout.addWidget(
+        root.addWidget(
             sidebar
         )
 
-        root_layout.addWidget(
+        root.addWidget(
             content,
             1,
         )
@@ -583,6 +587,20 @@ class DashboardWindow(QMainWindow):
 
         return card
 
+    def handle_menu_click(
+        self,
+        item,
+    ):
+        if item.text() == "Mening o'qishim":
+            self.open_learning_window()
+
+    def open_learning_window(self):
+        self.learning_window = LearningWindow(
+            self.user
+        )
+
+        self.learning_window.show()
+
     def open_next_lesson(self):
         if not self.next_lesson:
             return
@@ -602,13 +620,11 @@ class DashboardWindow(QMainWindow):
         self,
         lesson_id: int,
     ):
-        result = complete_lesson(
+        complete_lesson(
             self.user["id"],
             lesson_id,
         )
 
-        if not result["success"]:
-            return
-
         self.reload_data()
+
         self.build_ui()
