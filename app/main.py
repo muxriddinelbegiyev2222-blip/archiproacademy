@@ -62,9 +62,8 @@ from courses.level03_exam import (
     seed_level03_exam,
 )
 
-from courses.level04_module01 import (
-    seed_level04_module01,
-)
+from courses.level04_module01 import seed_level04_module01
+from courses.level04_module02 import seed_level04_module02
 
 from courses.quiz_service import (
     seed_quizzes,
@@ -127,6 +126,7 @@ def prepare_application():
 
     # LEVEL 4
     seed_level04_module01()
+    seed_level04_module02()
 
     # QUIZZES
     seed_quizzes()
