@@ -18,6 +18,10 @@ from courses.level00_extra import (
     get_level00_extra_content,
 )
 
+from courses.level01_content import (
+    get_level01_content,
+)
+
 from ui.quiz_window import (
     QuizWindow,
 )
@@ -156,10 +160,6 @@ class LessonWindow(QMainWindow):
             QPushButton#quizButton:hover {
                 background-color: #3B82F6;
             }
-
-            QPushButton#quizButton:pressed {
-                background-color: #1D4ED8;
-            }
             """
         )
 
@@ -185,10 +185,6 @@ class LessonWindow(QMainWindow):
             16
         )
 
-        # ====================================================
-        # TOP BAR
-        # ====================================================
-
         top_bar = QHBoxLayout()
 
         back_button = QPushButton(
@@ -197,10 +193,6 @@ class LessonWindow(QMainWindow):
 
         back_button.setObjectName(
             "backButton"
-        )
-
-        back_button.setCursor(
-            Qt.CursorShape.PointingHandCursor
         )
 
         back_button.clicked.connect(
@@ -239,10 +231,6 @@ class LessonWindow(QMainWindow):
         root_layout.addLayout(
             top_bar
         )
-
-        # ====================================================
-        # HEADER
-        # ====================================================
 
         level_label = QLabel(
             self.lesson.get(
@@ -319,10 +307,6 @@ class LessonWindow(QMainWindow):
             meta_label
         )
 
-        # ====================================================
-        # SCROLL
-        # ====================================================
-
         scroll = QScrollArea()
 
         scroll.setWidgetResizable(
@@ -355,32 +339,15 @@ class LessonWindow(QMainWindow):
             "",
         )
 
-        # Avval asosiy dars kontenti qidiriladi.
-        lesson_content = get_lesson_content(
-            lesson_code
-        )
-
-        # Agar u yerda topilmasa,
-        # Level 0 qo'shimcha kontentida qidiriladi.
-        if not lesson_content:
-            lesson_content = (
-                get_level00_extra_content(
-                    lesson_code
-                )
+        lesson_content = (
+            self.find_lesson_content(
+                lesson_code
             )
+        )
 
         if lesson_content:
 
             for section in lesson_content:
-
-                object_name = (
-                    self.get_card_object_name(
-                        section.get(
-                            "type",
-                            "normal",
-                        )
-                    )
-                )
 
                 card = self.create_card(
                     title=section.get(
@@ -391,7 +358,14 @@ class LessonWindow(QMainWindow):
                         "text",
                         "",
                     ),
-                    object_name=object_name,
+                    object_name=(
+                        self.get_card_object_name(
+                            section.get(
+                                "type",
+                                "normal",
+                            )
+                        )
+                    ),
                 )
 
                 scroll_layout.addWidget(
@@ -399,6 +373,7 @@ class LessonWindow(QMainWindow):
                 )
 
         else:
+
             scroll_layout.addWidget(
                 self.create_card(
                     title="Dars haqida",
@@ -406,8 +381,7 @@ class LessonWindow(QMainWindow):
                         "summary",
                         (
                             "Ushbu darsning to'liq "
-                            "kontenti keyingi bosqichda "
-                            "qo'shiladi."
+                            "kontenti tayyorlanmoqda."
                         ),
                     ),
                     object_name="contentCard",
@@ -424,10 +398,6 @@ class LessonWindow(QMainWindow):
             scroll,
             1,
         )
-
-        # ====================================================
-        # BOTTOM
-        # ====================================================
 
         bottom_layout = QHBoxLayout()
 
@@ -453,10 +423,6 @@ class LessonWindow(QMainWindow):
             "quizButton"
         )
 
-        self.quiz_button.setCursor(
-            Qt.CursorShape.PointingHandCursor
-        )
-
         self.quiz_button.clicked.connect(
             self.start_quiz
         )
@@ -474,6 +440,33 @@ class LessonWindow(QMainWindow):
         root_layout.addLayout(
             bottom_layout
         )
+
+    def find_lesson_content(
+        self,
+        lesson_code: str,
+    ):
+        content = get_lesson_content(
+            lesson_code
+        )
+
+        if content:
+            return content
+
+        content = get_level00_extra_content(
+            lesson_code
+        )
+
+        if content:
+            return content
+
+        content = get_level01_content(
+            lesson_code
+        )
+
+        if content:
+            return content
+
+        return []
 
     def get_card_object_name(
         self,
