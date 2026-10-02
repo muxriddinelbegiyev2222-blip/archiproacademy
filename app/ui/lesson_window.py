@@ -10,8 +10,17 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from courses.lesson_content import get_lesson_content
-from ui.quiz_window import QuizWindow
+from courses.lesson_content import (
+    get_lesson_content,
+)
+
+from courses.level00_extra import (
+    get_level00_extra_content,
+)
+
+from ui.quiz_window import (
+    QuizWindow,
+)
 
 
 class LessonWindow(QMainWindow):
@@ -26,12 +35,16 @@ class LessonWindow(QMainWindow):
 
         self.lesson = lesson
         self.user = user
-        self.lesson_id = lesson["id"]
+
+        self.lesson_id = (
+            lesson["id"]
+        )
 
         self.quiz_window = None
 
         self.setWindowTitle(
-            f"ARCHIPRO UZ - {lesson.get('title', 'Dars')}"
+            f"ARCHIPRO UZ - "
+            f"{lesson.get('title', 'Dars')}"
         )
 
         self.resize(
@@ -126,7 +139,11 @@ class LessonWindow(QMainWindow):
                 font-weight: 600;
             }
 
-            QPushButton#completeButton {
+            QPushButton#backButton:hover {
+                background-color: #334155;
+            }
+
+            QPushButton#quizButton {
                 background-color: #2563EB;
                 color: #FFFFFF;
                 border: none;
@@ -136,8 +153,12 @@ class LessonWindow(QMainWindow):
                 font-weight: 700;
             }
 
-            QPushButton#completeButton:hover {
+            QPushButton#quizButton:hover {
                 background-color: #3B82F6;
+            }
+
+            QPushButton#quizButton:pressed {
+                background-color: #1D4ED8;
             }
             """
         )
@@ -164,6 +185,10 @@ class LessonWindow(QMainWindow):
             16
         )
 
+        # ====================================================
+        # TOP BAR
+        # ====================================================
+
         top_bar = QHBoxLayout()
 
         back_button = QPushButton(
@@ -172,6 +197,10 @@ class LessonWindow(QMainWindow):
 
         back_button.setObjectName(
             "backButton"
+        )
+
+        back_button.setCursor(
+            Qt.CursorShape.PointingHandCursor
         )
 
         back_button.clicked.connect(
@@ -194,7 +223,13 @@ class LessonWindow(QMainWindow):
         )
 
         xp_label.setStyleSheet(
-            "color: #FBBF24; font-size: 14px; font-weight: 700;"
+            """
+            QLabel {
+                color: #FBBF24;
+                font-size: 14px;
+                font-weight: 700;
+            }
+            """
         )
 
         top_bar.addWidget(
@@ -204,6 +239,10 @@ class LessonWindow(QMainWindow):
         root_layout.addLayout(
             top_bar
         )
+
+        # ====================================================
+        # HEADER
+        # ====================================================
 
         level_label = QLabel(
             self.lesson.get(
@@ -236,13 +275,32 @@ class LessonWindow(QMainWindow):
             "",
         )
 
+        lesson_type = self.lesson.get(
+            "lesson_type",
+            "theory",
+        )
+
         minutes = self.lesson.get(
             "estimated_minutes",
             10,
         )
 
+        type_names = {
+            "theory": "NAZARIYA",
+            "practice": "AMALIYOT",
+            "quiz": "TEST",
+            "project": "LOYIHA",
+        }
+
+        readable_type = type_names.get(
+            lesson_type,
+            lesson_type.upper(),
+        )
+
         meta_label = QLabel(
-            f"{module_title}   •   {minutes} daqiqa"
+            f"{module_title}"
+            f"   •   {readable_type}"
+            f"   •   {minutes} daqiqa"
         )
 
         meta_label.setObjectName(
@@ -260,6 +318,10 @@ class LessonWindow(QMainWindow):
         root_layout.addWidget(
             meta_label
         )
+
+        # ====================================================
+        # SCROLL
+        # ====================================================
 
         scroll = QScrollArea()
 
@@ -288,30 +350,48 @@ class LessonWindow(QMainWindow):
             16
         )
 
-        lesson_content = get_lesson_content(
-            self.lesson.get(
-                "code",
-                "",
-            )
+        lesson_code = self.lesson.get(
+            "code",
+            "",
         )
 
+        # Avval asosiy dars kontenti qidiriladi.
+        lesson_content = get_lesson_content(
+            lesson_code
+        )
+
+        # Agar u yerda topilmasa,
+        # Level 0 qo'shimcha kontentida qidiriladi.
+        if not lesson_content:
+            lesson_content = (
+                get_level00_extra_content(
+                    lesson_code
+                )
+            )
+
         if lesson_content:
+
             for section in lesson_content:
-                card = self.create_card(
-                    section.get(
-                        "title",
-                        "",
-                    ),
-                    section.get(
-                        "text",
-                        "",
-                    ),
+
+                object_name = (
                     self.get_card_object_name(
                         section.get(
                             "type",
                             "normal",
                         )
+                    )
+                )
+
+                card = self.create_card(
+                    title=section.get(
+                        "title",
+                        "",
                     ),
+                    text=section.get(
+                        "text",
+                        "",
+                    ),
+                    object_name=object_name,
                 )
 
                 scroll_layout.addWidget(
@@ -321,12 +401,16 @@ class LessonWindow(QMainWindow):
         else:
             scroll_layout.addWidget(
                 self.create_card(
-                    "Dars haqida",
-                    self.lesson.get(
+                    title="Dars haqida",
+                    text=self.lesson.get(
                         "summary",
-                        "Kontent tayyorlanmoqda.",
+                        (
+                            "Ushbu darsning to'liq "
+                            "kontenti keyingi bosqichda "
+                            "qo'shiladi."
+                        ),
                     ),
-                    "contentCard",
+                    object_name="contentCard",
                 )
             )
 
@@ -341,25 +425,39 @@ class LessonWindow(QMainWindow):
             1,
         )
 
+        # ====================================================
+        # BOTTOM
+        # ====================================================
+
         bottom_layout = QHBoxLayout()
 
         hint = QLabel(
-            "Darsdan keyin qisqa bilim nazorati mavjud."
+            "Keyingi dars ochilishi uchun "
+            "mini-testdan muvaffaqiyatli o'ting."
         )
 
         hint.setStyleSheet(
-            "color: #64748B; font-size: 12px;"
+            """
+            QLabel {
+                color: #64748B;
+                font-size: 12px;
+            }
+            """
         )
 
-        self.complete_button = QPushButton(
+        self.quiz_button = QPushButton(
             "MINI-TESTNI BOSHLASH  →"
         )
 
-        self.complete_button.setObjectName(
-            "completeButton"
+        self.quiz_button.setObjectName(
+            "quizButton"
         )
 
-        self.complete_button.clicked.connect(
+        self.quiz_button.setCursor(
+            Qt.CursorShape.PointingHandCursor
+        )
+
+        self.quiz_button.clicked.connect(
             self.start_quiz
         )
 
@@ -370,7 +468,7 @@ class LessonWindow(QMainWindow):
         bottom_layout.addStretch()
 
         bottom_layout.addWidget(
-            self.complete_button
+            self.quiz_button
         )
 
         root_layout.addLayout(
@@ -418,12 +516,20 @@ class LessonWindow(QMainWindow):
             21,
         )
 
+        layout.setSpacing(
+            10
+        )
+
         title_label = QLabel(
             title
         )
 
         title_label.setObjectName(
             "sectionTitle"
+        )
+
+        title_label.setWordWrap(
+            True
         )
 
         body_label = QLabel(
@@ -440,6 +546,10 @@ class LessonWindow(QMainWindow):
 
         body_label.setTextFormat(
             Qt.TextFormat.RichText
+        )
+
+        body_label.setTextInteractionFlags(
+            Qt.TextInteractionFlag.TextSelectableByMouse
         )
 
         layout.addWidget(
