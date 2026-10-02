@@ -3,58 +3,58 @@ from database.database import get_connection
 
 # ============================================================
 # LEVEL 2
-# MODULE 08 - MEHMONXONA VA FAMILY ROOM ERGONOMIKASI
+# MODULE 08 - SANUZEL ERGONOMIKASI
 # ============================================================
 
 LEVEL02_MODULE08_LESSONS = [
     (
         "L02_M08",
         "L02_M08_001",
-        "Mehmonxona ergonomikasi",
+        "Sanuzel funksiyasi va jihozlari",
         "theory",
-        "Divan, TV, suhbat va harakat zonalari asosida qulay mehmonxona yaratish.",
+        "Sanuzeldagi asosiy sanitar jihozlar va ularning vazifalarini tushunish.",
         1,
-        35,
+        45,
         20,
     ),
     (
         "L02_M08",
         "L02_M08_002",
-        "Divan va TV joylashuvi",
+        "Foydalanish zonalari",
         "theory",
-        "Ko'rish yo'nalishi va sirkulyatsiyani buzmasdan TV zonasini tashkil qilish.",
+        "WC, rakovina, dush va boshqa jihozlar atrofidagi foydalanish hududlarini tushunish.",
         2,
-        35,
+        45,
         20,
     ),
     (
         "L02_M08",
         "L02_M08_003",
-        "Suhbat zonasi",
-        "theory",
-        "Odamlar bir-birini ko'ra oladigan va tabiiy muloqot qiladigan o'tirish tizimini yaratish.",
+        "Wet va dry zoning",
+        "practice",
+        "Sanuzelda nam va quruq zonalarni mantiqiy tashkil qilish.",
         3,
-        40,
+        50,
         20,
     ),
     (
         "L02_M08",
         "L02_M08_004",
-        "Family room va katta zalni zonalash",
+        "Eshik, privacy va circulation",
         "practice",
-        "Bitta katta makonda oilaviy va mehmon funksiyalarini mantiqiy ajratish.",
+        "Sanuzel kirishi, eshik ochilishi va ichki harakatni qulay tashkil qilish.",
         4,
-        40,
+        50,
         20,
     ),
     (
         "L02_M08",
         "L02_M08_005",
-        "Mehmonxona xatolarini topish",
+        "Sanuzel auditi",
         "practice",
-        "Real planlarda TV, divan va asosiy harakat yo'llaridagi xatolarni aniqlash.",
+        "Sanuzel rejasini ergonomika, privacy, jihozlar va circulation bo'yicha tekshirish.",
         5,
-        45,
+        50,
         25,
     ),
 ]
@@ -67,473 +67,587 @@ LEVEL02_MODULE08_LESSONS = [
 LEVEL02_MODULE08_CONTENT = {
     "L02_M08_001": [
         {
-            "title": "Mehmonxona — faqat katta xona emas",
+            "title": "Sanuzel — kichik, lekin murakkab makon",
             "type": "highlight",
             "text": """
-            Mehmonxona ko'pincha uy ichidagi
-            eng muhim public makonlardan biridir.
+            Sanuzel ko'pincha
+            uy ichidagi kichik xonalardan biri.
 
             <br><br>
 
-            Bu yerda:
+            Lekin unda ko'p
+            funksiyalar juda yaqin
+            joylashadi.
 
             <br><br>
 
-            • suhbat;<br>
-            • dam olish;<br>
-            • TV ko'rish;<br>
-            • mehmon kutish;<br>
-            • oilaviy yig'ilish
-
-            <br><br>
-
-            bir makonda sodir bo'lishi mumkin.
+            Shu sabab sanuzel
+            aniq rejalashtirishni talab qiladi.
             """,
         },
         {
-            "title": "Mebelni devorga yopishtirish shart emas",
+            "title": "Asosiy jihozlar",
             "type": "normal",
             "text": """
-            Boshlovchilar ko'pincha barcha mebelni
-            xona devorlariga yopishtirib chiqadi.
+            Sanuzelda loyiha vazifasiga qarab:
 
             <br><br>
 
-            Lekin katta mehmonxonada
-            divan makonni zonalash vositasi ham bo'lishi mumkin.
+            • WC;<br>
+            • rakovina;<br>
+            • dush;<br>
+            • vanna;<br>
+            • bidet;<br>
+            • storage;<br>
+            • kir yuvish jihozi
+
+            <br><br>
+
+            mavjud bo'lishi mumkin.
             """,
         },
         {
-            "title": "Harakat yo'lini tekshiring",
+            "title": "Har bir jihozning o'z funksiyasi bor",
+            "type": "highlight",
+            "text": """
+            Jihozlarni faqat
+            devor bo'ylab ketma-ket
+            qo'yish yetarli emas.
+
+            <br><br>
+
+            Har bir jihozdan
+            odam real foydalanishini
+            tasavvur qilish kerak.
+            """,
+        },
+        {
+            "title": "Tasavvur qiling",
             "type": "example",
             "text": """
-            Tasavvur qiling:
+            WC,
+            rakovina
+            va dush
 
             <br><br>
 
-            hovliga chiqish uchun odam
-            har safar divan va TV orasidan o'tadi.
+            kichik xonaga sig'di.
 
             <br><br>
 
-            Bu dam olish zonasini
-            asosiy koridorga aylantiradi.
+            Lekin dushdan chiqqanda
+            WC oldida harakat qilish
+            juda qiyin.
+
+            <br><br>
+
+            Jihozlar sig'di,
+            ammo ergonomika yomon.
             """,
         },
         {
-            "title": "Mehmonxona markazi",
-            "type": "normal",
-            "text": """
-            Har bir mehmonxonada kompozitsion markaz
-            bir xil bo'lishi shart emas.
-
-            <br><br>
-
-            U:
-
-            <br><br>
-
-            • TV;<br>
-            • kamin;<br>
-            • tashqi manzara;<br>
-            • suhbat markazi;<br>
-            • hovliga qaragan katta ochilish
-
-            <br><br>
-
-            bo'lishi mumkin.
-            """,
-        },
-        {
-            "title": "Mini-amaliyot",
+            "title": "Mini-vazifa",
             "type": "example",
             "text": """
-            Bir mehmonxona planini toping.
+            Oddiy sanuzel sxemasini chizing.
 
             <br><br>
 
-            Unda:
+            Unda belgilang:
 
             <br><br>
 
-            1. Asosiy markaz qayerda?<br>
-            2. Divanlar qayerga qaragan?<br>
-            3. Odamlar qayerdan o'tadi?<br>
-            4. Yurish dam olish zonasini kesadimi?
+            • WC;<br>
+            • lavabo;<br>
+            • dush;<br>
+            • eshik.
+
+            <br><br>
+
+            Keyin odam harakatini
+            strelka bilan ko'rsating.
             """,
         },
     ],
 
     "L02_M08_002": [
         {
-            "title": "TV devori ham plan elementi",
+            "title": "Jihoz konturi yetarli emas",
             "type": "highlight",
             "text": """
-            TV qayerga qo'yilishi
-            butun mehmonxona mebel sxemasiga
-            ta'sir qilishi mumkin.
-            """,
-        },
-        {
-            "title": "TV va deraza",
-            "type": "warning",
-            "text": """
-            TV katta derazaga qarama-qarshi bo'lsa,
-            kunduzgi yorug'lik ekran ko'rinishiga
-            xalaqit berishi mumkin.
+            Sanitar jihoz
+            faqat o'z fizik o'lchamini
+            egallamaydi.
 
             <br><br>
 
-            Bu faqat interyer masalasi emas,
-            plan va ochilishlar bilan bog'liq.
+            Odam undan foydalanishi uchun
+            oldida yoki yonida
+            kerakli bo'sh zona bo'ladi.
             """,
         },
         {
-            "title": "TV va sirkulyatsiya",
-            "type": "example",
-            "text": """
-            Divan bilan TV orasidagi yo'ldan
-            odamlar doim o'tsa,
-
-            <br><br>
-
-            TV ko'rayotgan odamga
-            doim xalaqit beriladi.
-            """,
-        },
-        {
-            "title": "Masofa",
+            "title": "WC foydalanish zonasi",
             "type": "normal",
             "text": """
-            TV bilan o'tirish joyi o'rtasidagi masofa
-            ekran o'lchami va foydalanish turiga qarab
-            tanlanadi.
-
-            <br><br>
-
-            Muhim prinsip:
-
-            <br><br>
-
-            juda yaqin ham,
-            juda uzoq ham bo'lmasligi kerak.
+            WC joylashtirilganda
+            odamning o'tirishi,
+            turishi
+            va oldinga harakat qilishi
+            hisobga olinadi.
             """,
         },
         {
-            "title": "Boshlovchi xatosi",
+            "title": "Rakovina zonasi",
+            "type": "normal",
+            "text": """
+            Rakovina oldida
+            odam turadi.
+
+            <br><br>
+
+            Shu sabab rakovina
+            boshqa jihoz yoki eshik bilan
+            haddan tashqari yaqin bo'lmasligi kerak.
+            """,
+        },
+        {
+            "title": "Dush va vanna",
+            "type": "normal",
+            "text": """
+            Dush yoki vannaga:
+
+            <br><br>
+
+            • kirish;<br>
+            • chiqish;<br>
+            • foydalanish;<br>
+            • qurinish
+
+            <br><br>
+
+            uchun real harakat zonasi kerak.
+            """,
+        },
+        {
+            "title": "Jihozlar bir-biriga xalaqit bermasin",
             "type": "warning",
             "text": """
-            Avval xona chiziladi.
+            Rakovina oldida turgan odam
+            eshik ochilishiga to'sqinlik qilsa
 
             <br><br>
 
-            Keyin “TV qayerga sig'adi?”
-            deb qolgan bitta devor tanlanadi.
+            yoki dush eshigi
+            WCga urilsa,
 
             <br><br>
 
-            Professional loyihada TV va mebel
-            oldindan hisobga olinadi.
+            reja ergonomik emas.
+            """,
+        },
+        {
+            "title": "Qulay masofa tushunchasi",
+            "type": "highlight",
+            "text": """
+            Bu bosqichda maqsad
+            raqamlarni yodlash emas.
+
+            <br><br>
+
+            Maqsad —
+            har bir jihoz atrofida
+            odam harakati va foydalanish
+            uchun yetarli joy kerakligini
+            tushunish.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            WC,
+            rakovina
+            va dush atrofida
+
+            <br><br>
+
+            shartli foydalanish zonalarini
+            alohida kontur bilan chizing.
+
+            <br><br>
+
+            Ular bir-biriga
+            juda kuchli kirib ketayaptimi?
             """,
         },
     ],
 
     "L02_M08_003": [
         {
-            "title": "Suhbat zonasi",
+            "title": "Wet va dry zona",
             "type": "highlight",
             "text": """
-            Mehmonxona faqat televizor ko'rish uchun emas.
+            Sanuzelda
+            namlik darajasi
+            hamma joyda bir xil emas.
 
             <br><br>
 
-            Odamlar bir-biri bilan gaplashishi uchun
-            o'tirish joylari mantiqiy joylashishi kerak.
+            Shu sabab makonni
+            shartli ravishda:
+
+            <br><br>
+
+            <b>WET</b>
+
+            <br><br>
+
+            va
+
+            <br><br>
+
+            <b>DRY</b>
+
+            <br><br>
+
+            zonalarga ajratib
+            fikrlash mumkin.
             """,
         },
         {
-            "title": "Bir-birini ko'rish",
-            "type": "example",
-            "text": """
-            6 kishi bir xonada o'tirgan.
-
-            <br><br>
-
-            Lekin barcha divan va kreslolar
-            faqat TV tomon burilgan.
-
-            <br><br>
-
-            Odamlar suhbatlashish uchun
-            boshini keskin burishi kerak.
-
-            <br><br>
-
-            Bu TV uchun yaxshi,
-            lekin suhbat uchun zaif bo'lishi mumkin.
-            """,
-        },
-        {
-            "title": "U shaklidagi suhbat",
+            "title": "Wet zona",
             "type": "normal",
             "text": """
-            Divan va kreslolarni
-            bir-biriga qaragan yoki yarim yopiq
-            kompozitsiyada joylashtirish
+            Dush va vanna atrofida
+            suv bilan bevosita aloqa
+            ko'proq bo'ladi.
 
             <br><br>
 
-            tabiiy suhbat muhitini yaratishi mumkin.
+            Bu zona nam zona
+            sifatida ko'rib chiqiladi.
             """,
         },
         {
-            "title": "Jurnal stoli",
+            "title": "Dry zona",
             "type": "normal",
             "text": """
-            Jurnal stoli yoki markaziy element
-            suhbat zonasini birlashtirishi mumkin.
+            Kirish,
+            storage
+            yoki ayrim rakovina atrofi
 
             <br><br>
 
-            Lekin uning atrofida yurish
-            uchun ham joy qolishi kerak.
+            nisbatan quruq
+            foydalanish zonasi bo'lishi mumkin.
             """,
         },
         {
-            "title": "Mini-amaliyot",
+            "title": "Dushdan chiqish yo'li",
             "type": "example",
             "text": """
-            5–6 kishilik mehmonxona uchun
-            o'tirish sxemasini tasavvur qiling.
+            Dushdan chiqayotgan odam
+            to'g'ridan-to'g'ri
+            WC yoki shkafga urilmasligi kerak.
 
             <br><br>
 
-            Shunday joylashtiringki:
+            Dush oldida
+            real foydalanish va chiqish
+            zonasi bo'lishi kerak.
+            """,
+        },
+        {
+            "title": "Namlikni tarqatmang",
+            "type": "warning",
+            "text": """
+            Dush zonasi
+            sanuzel ichidagi
+            barcha harakat yo'lini
+            nam qiladigan holatda bo'lsa,
 
             <br><br>
 
-            • TV ko'rish mumkin bo'lsin;<br>
-            • odamlar bir-birini ko'rsin;<br>
-            • asosiy yurish yo'li zonani kesmasin.
+            foydalanish noqulaylashishi mumkin.
+            """,
+        },
+        {
+            "title": "Storage joylashuvi",
+            "type": "normal",
+            "text": """
+            Sochiq,
+            gigiyena buyumlari
+            va boshqa storage
+
+            <br><br>
+
+            suv bilan bevosita
+            to'qnashmaydigan
+            mantiqiy joyda bo'lishi foydali.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            Sanuzel planida:
+
+            <br><br>
+
+            qizil bilan WET zonani,
+            boshqa rang bilan DRY zonani
+            belgilang.
+
+            <br><br>
+
+            Ularning orasidagi
+            harakatni tahlil qiling.
             """,
         },
     ],
 
     "L02_M08_004": [
         {
-            "title": "Family room nima?",
+            "title": "Sanuzel kirishi",
             "type": "highlight",
             "text": """
-            Family room — oilaning kundalik
-            dam olishi va norasmiy foydalanishi uchun
-            mo'ljallangan makon.
+            Sanuzelga kirish
+            faqat eshik joylashtirish
+            masalasi emas.
 
             <br><br>
 
-            U formal mehmonxonadan farq qilishi mumkin.
+            Privacy,
+            foydalanish
+            va circulation ham
+            hisobga olinadi.
             """,
         },
         {
-            "title": "Ikki xil hayot tarzi",
-            "type": "example",
-            "text": """
-            Ba'zi oilalarda:
-
-            <br><br>
-
-            mehmonlar uchun alohida formal zal,
-
-            <br>
-            oila uchun esa alohida family room
-
-            <br><br>
-
-            bo'lishi mumkin.
-
-            <br><br>
-
-            Boshqa oilada ikkalasi bitta makonda birlashadi.
-            """,
-        },
-        {
-            "title": "Katta zalni zonalash",
+            "title": "Eshik ochilishi",
             "type": "normal",
             "text": """
-            Katta makonni faqat mebel bilan
-            bir nechta funksional zonaga ajratish mumkin.
+            Door swing:
 
             <br><br>
 
-            Masalan:
-
-            <br><br>
-
-            • TV zona;<br>
-            • suhbat zona;<br>
-            • o'qish burchagi;<br>
-            • hovliga chiqish yo'li.
+            • WCga urilmasin;<br>
+            • rakovinani yopmasin;<br>
+            • dushga kirishni to'smasin;<br>
+            • odam harakatini buzmasin.
             """,
         },
         {
-            "title": "Mebel bilan chegara",
+            "title": "Privacy",
+            "type": "highlight",
+            "text": """
+            Sanuzel eshigi
+            public makonga ochilganda
+            ichki qism to'g'ridan-to'g'ri
+            ko'rinib qolmasligi ma'qul.
+            """,
+        },
+        {
+            "title": "Tasavvur qiling",
             "type": "example",
             "text": """
-            Divanning orqa qismi
-            family room va dining orasidagi
-            yumshoq chegara vazifasini bajarishi mumkin.
+            Sanuzel eshigi
+            livingga ochiladi.
 
             <br><br>
 
-            Har doim devor qurish shart emas.
+            Eshik ochilishi bilan
+            WC to'g'ridan-to'g'ri ko'rinadi.
+
+            <br><br>
+
+            Bu privacy
+            nuqtai nazaridan
+            yaxshi yechim emas.
             """,
         },
         {
-            "title": "Xato",
-            "type": "warning",
+            "title": "Ichki circulation",
+            "type": "normal",
             "text": """
-            Juda katta zal yaratildi.
+            Sanuzel kichik bo'lsa ham,
+            odam:
 
             <br><br>
 
-            Lekin ichida aniq funksional zonalar yo'q.
+            kirish →
+            rakovina →
+            WC →
+            dush
 
             <br><br>
 
-            Natijada katta maydon
-            “bo'sh” va boshqarilmagan ko'rinishi mumkin.
+            kabi harakatlarni
+            ortiqcha to'qnashuvsiz
+            bajara olishi kerak.
+            """,
+        },
+        {
+            "title": "Ikki kishi foydalanishi",
+            "type": "normal",
+            "text": """
+            Kattaroq sanuzelda
+            bir vaqtning o'zida
+            ikki kishi foydalanishi mumkin.
+
+            <br><br>
+
+            Masalan biri rakovinada,
+            boshqasi dush zonasida.
+
+            <br><br>
+
+            Bunday holatni ham
+            tasavvur qilib ko'ring.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            Sanuzel planida
+            eshikning 2 xil ochilish
+            variantini chizing.
+
+            <br><br>
+
+            Qaysi variant
+            jihozlar bilan kamroq
+            konflikt qilayotganini
+            solishtiring.
             """,
         },
     ],
 
     "L02_M08_005": [
         {
-            "title": "Mehmonxona xatolarini ovlaymiz",
+            "title": "Sanuzel auditi",
             "type": "highlight",
             "text": """
-            Endi katta zal va family room'ni
-            real foydalanish bo'yicha tekshiramiz.
+            Endi sanuzelni
+            jihozlar sig'ishi bo'yicha emas,
+
+            <br><br>
+
+            real foydalanish
+            va ergonomika bo'yicha
+            tekshiramiz.
             """,
         },
         {
-            "title": "Xato 1 — TV va divan orasidan yuriladi",
-            "type": "warning",
-            "text": """
-            Hovliga yoki boshqa xonaga
-            o'tish uchun odamlar doim
-            TV va divan orasidan yuradi.
-
-            <br><br>
-
-            Dam olish zonasi sirkulyatsiya yo'liga aylangan.
-            """,
-        },
-        {
-            "title": "Xato 2 — barcha mebel devorda",
-            "type": "warning",
-            "text": """
-            50 m² katta zal.
-
-            <br><br>
-
-            Barcha divan va kreslolar
-            devor bo'ylab tarqalib ketgan.
-
-            <br><br>
-
-            Markaz bo'sh,
-            odamlar esa bir-biridan juda uzoq.
-            """,
-        },
-        {
-            "title": "Xato 3 — TV uchun noto'g'ri devor",
-            "type": "warning",
-            "text": """
-            TV eng yaxshi devorga qo'yilgan.
-
-            <br><br>
-
-            Lekin uning qarshisida
-            katta deraza mavjud.
-
-            <br><br>
-
-            Yorug'lik va refleksiya
-            foydalanishni qiyinlashtirishi mumkin.
-            """,
-        },
-        {
-            "title": "Xato 4 — suhbat zonasi ishlamaydi",
-            "type": "warning",
-            "text": """
-            O'tirish joylari juda uzoq
-            yoki bir-biriga orqa bilan joylashgan.
-
-            <br><br>
-
-            Mehmonxona katta,
-            lekin odamlar suhbatlashishi noqulay.
-            """,
-        },
-        {
-            "title": "Xato 5 — katta zalda zona yo'q",
-            "type": "warning",
-            "text": """
-            Bitta juda katta ochiq makon mavjud.
-
-            <br><br>
-
-            Lekin:
-
-            <br><br>
-
-            • qayerda dam olish;<br>
-            • qayerda TV ko'rish;<br>
-            • qayerdan yurish
-
-            <br><br>
-
-            aniq emas.
-            """,
-        },
-        {
-            "title": "Professional tahlil",
+            "title": "1. Jihozlar",
             "type": "example",
             "text": """
-            Mehmonxona planini ko'rsangiz:
+            Tekshiring:
 
             <br><br>
 
-            <b>1.</b> Asosiy markaz nima?<br><br>
-            <b>2.</b> TV qayerda?<br><br>
-            <b>3.</b> Odamlar bir-birini ko'ra oladimi?<br><br>
-            <b>4.</b> Asosiy yurish yo'li qayerdan o'tadi?<br><br>
-            <b>5.</b> Hovliga chiqish dam olish zonasini kesadimi?<br><br>
-            <b>6.</b> Katta xona zonalarga ajratilganmi?
+            • WC mantiqiy joydami?<br>
+            • rakovinadan foydalanish qulaymi?<br>
+            • dush/vannaga kirish mumkinmi?<br>
+            • storage kerakli joydami?
             """,
         },
         {
-            "title": "Mini-loyiha",
+            "title": "2. Foydalanish zonalari",
             "type": "example",
             "text": """
-            35–60 m² katta living space toping.
+            Tekshiring:
 
             <br><br>
 
-            Uni quyidagicha tahlil qiling:
+            • jihozlar oldida joy bormi?<br>
+            • odam erkin tura oladimi?<br>
+            • jihozlar bir-biriga urilmayaptimi?
+            """,
+        },
+        {
+            "title": "3. Wet / dry zoning",
+            "type": "example",
+            "text": """
+            Tekshiring:
 
             <br><br>
 
-            • TV zona;<br>
-            • suhbat zona;<br>
-            • family foydalanish;<br>
-            • mehmon foydalanish;<br>
-            • asosiy harakat;<br>
-            • hovli bilan aloqa.
+            • dush zonasi mantiqiymi?<br>
+            • kirish doim nam bo'lib qolmayaptimi?<br>
+            • storage wet zonaga kirib ketmaganmi?
+            """,
+        },
+        {
+            "title": "4. Privacy va eshik",
+            "type": "example",
+            "text": """
+            Tekshiring:
 
             <br><br>
 
-            Kamida 3 ta yaxshi va
-            2 ta zaif nuqtani yozing.
+            • eshik jihozlarga urilmayaptimi?<br>
+            • ichki qism public zonadan ochiq ko'rinmayaptimi?<br>
+            • kirish va chiqish qulaymi?
+            """,
+        },
+        {
+            "title": "Xatoni toping",
+            "type": "warning",
+            "text": """
+            Sanuzelda:
+
+            <br><br>
+
+            WC,
+            rakovina,
+            dush,
+            kir yuvish mashinasi
+
+            <br><br>
+
+            hammasi sig'di.
+
+            <br><br>
+
+            Lekin eshik ochilganda
+            rakovinaga uriladi.
+
+            <br><br>
+
+            Dushdan chiqqanda esa
+            odam to'g'ridan-to'g'ri
+            WCga yaqin tushadi.
+
+            <br><br>
+
+            Xulosa:
+
+            <br><br>
+
+            <b>
+            Jihozlar sig'ishi
+            yaxshi ergonomika degani emas.
+            </b>
+            """,
+        },
+        {
+            "title": "Professional checklist",
+            "type": "example",
+            "text": """
+            Sanuzelni tekshiring:
+
+            <br><br>
+
+            <b>1.</b> Jihozlar mantiqiy joylashganmi?<br><br>
+            <b>2.</b> Foydalanish zonalari yetarlimi?<br><br>
+            <b>3.</b> Door conflict yo'qmi?<br><br>
+            <b>4.</b> Wet va dry zonalar tushunarlimi?<br><br>
+            <b>5.</b> Circulation ochiqmi?<br><br>
+            <b>6.</b> Privacy saqlanganmi?<br><br>
+            <b>7.</b> Storage mantiqiy joydami?
             """,
         },
         {
@@ -544,21 +658,18 @@ LEVEL02_MODULE08_CONTENT = {
 
             <br><br>
 
-            ✓ mehmonxona ergonomikasi;<br>
-            ✓ TV zonasi;<br>
-            ✓ suhbat zonasi;<br>
-            ✓ family room;<br>
-            ✓ katta zalni zonalash;<br>
-            ✓ harakat va dam olish zonasi
-
-            <br><br>
-
-            bo'yicha professional tahlil qila olasiz.
+            ✓ asosiy sanitar jihozlarni tushunasiz;<br>
+            ✓ foydalanish zonalarini hisobga olasiz;<br>
+            ✓ wet va dry zoningni tushunasiz;<br>
+            ✓ eshik conflictlarini tekshirasiz;<br>
+            ✓ privacy haqida o'ylaysiz;<br>
+            ✓ circulationni tahlil qilasiz;<br>
+            ✓ sanuzel auditini bajarasiz.
 
             <br><br>
 
             Keyingi modul:
-            <b>Bolalar xonasi va oilaviy makon.</b>
+            <b>Koridor va kirish.</b>
             """,
         },
     ],
@@ -567,15 +678,16 @@ LEVEL02_MODULE08_CONTENT = {
 
 # ============================================================
 # QUIZ
+# Q106-Q120 KODLARI SAQLANADI
 # ============================================================
 
 LEVEL02_MODULE08_QUIZ = {
     "L02_M08_001": [
         {
             "code": "L02_Q106",
-            "question": "Mehmonxona faqat divan va TV uchunmi?",
+            "question": "Sanuzelda jihozlarning faqat xonaga sig'ishi yetarlimi?",
             "explanation": (
-                "Mehmonxona suhbat, dam olish, mehmon kutish va boshqa funksiyalarni ham bajarishi mumkin."
+                "Jihozlardan real foydalanish va circulation ham tekshirilishi kerak."
             ),
             "options": [
                 ("A", "Ha", False),
@@ -584,9 +696,9 @@ LEVEL02_MODULE08_QUIZ = {
         },
         {
             "code": "L02_Q107",
-            "question": "Asosiy yurish yo'li divan va TV orasidan o'tishi muammo bo'lishi mumkinmi?",
+            "question": "WC, rakovina va dush sanuzeldagi asosiy jihozlar bo'lishi mumkinmi?",
             "explanation": (
-                "Bu dam olish va TV zonasiga doimiy xalaqit berishi mumkin."
+                "Sanuzel tarkibi loyiha vazifasiga qarab shu kabi sanitar jihozlardan iborat bo'lishi mumkin."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -595,13 +707,13 @@ LEVEL02_MODULE08_QUIZ = {
         },
         {
             "code": "L02_Q108",
-            "question": "Mehmonxonaning asosiy markazi faqat TV bo'lishi shartmi?",
+            "question": "Sanuzel kichik bo'lsa ham ergonomika muhimmi?",
             "explanation": (
-                "Kamin, manzara yoki suhbat zonasi ham markaz bo'lishi mumkin."
+                "Kichik makonda jihozlar yaqin joylashgani sabab ergonomik rejalashtirish ayniqsa muhim."
             ),
             "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
             ],
         },
     ],
@@ -609,9 +721,9 @@ LEVEL02_MODULE08_QUIZ = {
     "L02_M08_002": [
         {
             "code": "L02_Q109",
-            "question": "TV joylashuvi deraza bilan birga tahlil qilinadimi?",
+            "question": "Sanitar jihoz atrofida foydalanish zonasi kerakmi?",
             "explanation": (
-                "Yorug'lik va refleksiya ekran ko'rinishiga ta'sir qilishi mumkin."
+                "Odam jihozdan foydalanishi uchun uning atrofida bo'sh joy kerak."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -620,24 +732,24 @@ LEVEL02_MODULE08_QUIZ = {
         },
         {
             "code": "L02_Q110",
-            "question": "TV zonasini loyiha oxirida qolgan devorga qo'yish har doim to'g'rimi?",
+            "question": "Rakovina oldida odam turadigan joy hisobga olinadimi?",
             "explanation": (
-                "TV va mebel joylashuvi plan boshidan hisobga olinishi kerak."
-            ),
-            "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
-            ],
-        },
-        {
-            "code": "L02_Q111",
-            "question": "TV va divan orasidagi masofa foydalanishga ta'sir qiladimi?",
-            "explanation": (
-                "Ko'rish qulayligi uchun masofa ham muhim."
+                "Rakovinadan real foydalanish uchun oldida foydalanish hududi kerak."
             ),
             "options": [
                 ("A", "Ha", True),
                 ("B", "Yo'q", False),
+            ],
+        },
+        {
+            "code": "L02_Q111",
+            "question": "Jihozlarning konturlari bir-biriga sig'sa foydalanish zonalarini tekshirmasa ham bo'ladimi?",
+            "explanation": (
+                "Jihoz konturi va real foydalanish maydoni bir xil tushuncha emas."
+            ),
+            "options": [
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
             ],
         },
     ],
@@ -645,9 +757,9 @@ LEVEL02_MODULE08_QUIZ = {
     "L02_M08_003": [
         {
             "code": "L02_Q112",
-            "question": "Suhbat zonasida odamlarning bir-birini ko'rishi muhimmi?",
+            "question": "Dush atrofi wet zona hisoblanishi mumkinmi?",
             "explanation": (
-                "Muloqot uchun o'tirish joylarining o'zaro yo'nalishi muhim."
+                "Dush atrofida suv bilan to'g'ridan-to'g'ri aloqa ko'proq bo'ladi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -656,24 +768,24 @@ LEVEL02_MODULE08_QUIZ = {
         },
         {
             "code": "L02_Q113",
-            "question": "Barcha o'tirish joylari faqat TVga qarashi suhbat uchun idealmi?",
+            "question": "Wet va dry zoning sanuzel funksiyasini tushunishga yordam beradimi?",
             "explanation": (
-                "Bu TV ko'rish uchun qulay bo'lishi mumkin, lekin suhbatni zaiflashtirishi mumkin."
-            ),
-            "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
-            ],
-        },
-        {
-            "code": "L02_Q114",
-            "question": "Markaziy jurnal stoli suhbat zonasini birlashtirishi mumkinmi?",
-            "explanation": (
-                "Markaziy element o'tirish kompozitsiyasini yig'ishi mumkin."
+                "Nam va quruq faoliyatlarni ajratib fikrlash rejalashtirishni yaxshilaydi."
             ),
             "options": [
                 ("A", "Ha", True),
                 ("B", "Yo'q", False),
+            ],
+        },
+        {
+            "code": "L02_Q114",
+            "question": "Storage doim dushning eng nam qismida joylashishi kerakmi?",
+            "explanation": (
+                "Storage suv bilan bevosita konflikt qilmaydigan mantiqiy joyda bo'lishi ma'qul."
+            ),
+            "options": [
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
             ],
         },
     ],
@@ -681,20 +793,20 @@ LEVEL02_MODULE08_QUIZ = {
     "L02_M08_004": [
         {
             "code": "L02_Q115",
-            "question": "Family room nimaga xizmat qiladi?",
+            "question": "Sanuzel eshigi sanitar jihoz bilan konflikt qilishi mumkinmi?",
             "explanation": (
-                "Oilaning kundalik norasmiy dam olishi va birga vaqt o'tkazishiga."
+                "Door swing rakovina, WC yoki boshqa element bilan to'qnashishi mumkin."
             ),
             "options": [
-                ("A", "Oilaviy kundalik foydalanishga", True),
-                ("B", "Faqat texnik jihozlarga", False),
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
             ],
         },
         {
             "code": "L02_Q116",
-            "question": "Katta zalni mebel orqali zonalash mumkinmi?",
+            "question": "Sanuzel kirishida privacy hisobga olinadimi?",
             "explanation": (
-                "Divan va boshqa mebellar yumshoq funksional chegaralar yaratishi mumkin."
+                "Eshik ochilganda ichki private zona public makondan qanday ko'rinishi ham tahlil qilinadi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -703,13 +815,13 @@ LEVEL02_MODULE08_QUIZ = {
         },
         {
             "code": "L02_Q117",
-            "question": "Juda katta zalda funksional zonalar bo'lmasa makon samarasiz bo'lishi mumkinmi?",
+            "question": "Kichik sanuzelda circulationni tekshirish shart emasmi?",
             "explanation": (
-                "Katta maydonning vazifalari aniq bo'lmasa u boshqarilmagan ko'rinishi mumkin."
+                "Kichik makonda ham odam jihozlar orasida qulay harakatlana olishi kerak."
             ),
             "options": [
-                ("A", "Ha", True),
-                ("B", "Yo'q", False),
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
             ],
         },
     ],
@@ -717,20 +829,9 @@ LEVEL02_MODULE08_QUIZ = {
     "L02_M08_005": [
         {
             "code": "L02_Q118",
-            "question": "Barcha mebelni devorga terish katta zalda har doim yaxshi yechimmi?",
+            "question": "Sanuzel auditida eshik, jihozlar va circulation birgalikda tekshiriladimi?",
             "explanation": (
-                "Bu suhbat masofasini kattalashtirib, markazni bo'sh qoldirishi mumkin."
-            ),
-            "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
-            ],
-        },
-        {
-            "code": "L02_Q119",
-            "question": "Hovliga chiqish yo'li TV zonasini kesishi muammo bo'lishi mumkinmi?",
-            "explanation": (
-                "Doimiy yurish dam olish zonasiga xalaqit berishi mumkin."
+                "Ularning o'zaro aloqasi sanuzel ergonomikasiga bevosita ta'sir qiladi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -738,14 +839,33 @@ LEVEL02_MODULE08_QUIZ = {
             ],
         },
         {
-            "code": "L02_Q120",
-            "question": "Mehmonxona tahlilida qaysi savol muhim?",
+            "code": "L02_Q119",
+            "question": "Barcha jihozlar sig'gan sanuzel avtomatik ravishda qulay bo'ladimi?",
             "explanation": (
-                "Asosiy markaz, yurish va o'tirish aloqalarini tekshirish kerak."
+                "Foydalanish zonalari, privacy, eshik va circulation ham tekshiriladi."
             ),
             "options": [
-                ("A", "Asosiy yurish yo'li qayerdan o'tadi?", True),
-                ("B", "Faqat fasad materiali nima?", False),
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
+            ],
+        },
+        {
+            "code": "L02_Q120",
+            "question": "Sanuzel loyihalashdagi to'g'ri yondashuv qaysi?",
+            "explanation": (
+                "Jihozlar, foydalanish zonalari, wet/dry zoning, privacy va circulation birgalikda ko'riladi."
+            ),
+            "options": [
+                (
+                    "A",
+                    "Jihozlar → foydalanish zonasi → wet/dry → circulation → audit",
+                    True,
+                ),
+                (
+                    "B",
+                    "Faqat barcha jihozlarni xonaga sig'dirish",
+                    False,
+                ),
             ],
         },
     ],
