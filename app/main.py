@@ -60,6 +60,10 @@ from courses.level02_module03 import (
     seed_level02_module03,
 )
 
+from courses.level02_module04 import (
+    seed_level02_module04,
+)
+
 from courses.quiz_service import (
     seed_quizzes,
 )
@@ -101,6 +105,7 @@ def prepare_application():
     seed_level02_module01()
     seed_level02_module02()
     seed_level02_module03()
+    seed_level02_module04()
 
     # QUIZZES
     seed_quizzes()
@@ -119,9 +124,7 @@ def prepare_application():
 
 
 def main():
-    app = QApplication(
-        sys.argv
-    )
+    app = QApplication(sys.argv)
 
     app.setApplicationName(
         "ARCHIPRO UZ"
@@ -172,9 +175,7 @@ def main():
             user
         )
 
-        windows[
-            "dashboard"
-        ] = dashboard
+        windows["dashboard"] = dashboard
 
         dashboard.show()
 
