@@ -28,6 +28,10 @@ from courses.level01_module02 import (
     seed_level01_module02,
 )
 
+from courses.level01_module03 import (
+    seed_level01_module03,
+)
+
 from courses.quiz_service import (
     seed_quizzes,
 )
@@ -50,29 +54,20 @@ from ui.login_window import (
 
 
 def prepare_application():
-    # Database
     initialize_database()
 
-    # 16 ta Level va barcha modullar
     seed_course_structure()
 
-    # LEVEL 0
     seed_level00_extra()
 
-    # LEVEL 1 - Modul 1
     seed_level01_lessons()
-
-    # LEVEL 1 - Modul 2
     seed_level01_module02()
+    seed_level01_module03()
 
-    # Barcha mini-testlar
     seed_quizzes()
 
-    # Final imtihonlar
     seed_level_exams()
 
-    # Development account
-    # Sotuv versiyasida olib tashlanadi.
     create_user(
         username="admin",
         password="12345",
@@ -119,8 +114,6 @@ def main():
 
         login_window.error_label.clear()
 
-        # Yangi darslar database'ga qo'shilganidan
-        # keyin progress yozuvlari yaratiladi.
         initialize_user_progress(
             user["id"]
         )
@@ -133,9 +126,9 @@ def main():
             user
         )
 
-        windows[
-            "dashboard"
-        ] = dashboard
+        windows["dashboard"] = (
+            dashboard
+        )
 
         dashboard.show()
 
