@@ -60,6 +60,7 @@ from courses.level05_module02 import seed_level05_module02
 from courses.level05_module03 import seed_level05_module03
 from courses.level05_module04 import seed_level05_module04
 from courses.level05_module05 import seed_level05_module05
+from courses.level05_module06 import seed_level05_module06
 
 from courses.quiz_service import seed_quizzes
 from courses.seed_courses import seed_course_structure
@@ -124,6 +125,7 @@ def prepare_application():
     seed_level05_module03()
     seed_level05_module04()
     seed_level05_module05()
+    seed_level05_module06()
 
     # QUIZZES
     seed_quizzes()
