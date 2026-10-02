@@ -3,400 +3,159 @@ from database.database import get_connection
 
 # ============================================================
 # LEVEL 2
-# MODULE 06 - OSHXONA VA OVQATLANISH ERGONOMIKASI
+# MODULE 06 - YOTOQXONA LOYIHALASH
 # ============================================================
 
 LEVEL02_MODULE06_LESSONS = [
     (
         "L02_M06",
         "L02_M06_001",
-        "Oshxona ish jarayoni",
+        "Yotoqxona vazifasi",
         "theory",
-        "Oshxonani kundalik ish ketma-ketligi asosida rejalashtirish.",
+        "Yotoqxonaning asosiy funksiyasi, privacy va kundalik foydalanish mantig'ini tushunish.",
         1,
-        35,
+        40,
         20,
     ),
     (
         "L02_M06",
         "L02_M06_002",
-        "Muzlatkich, moyka va plita aloqasi",
+        "Krovat va harakat zonasi",
         "theory",
-        "Asosiy oshxona nuqtalari o'rtasidagi funksional aloqani tushunish.",
+        "Krovatni xona ichida mantiqiy joylashtirish va circulationni tashkil qilish.",
         2,
-        35,
+        45,
         20,
     ),
     (
         "L02_M06",
         "L02_M06_003",
-        "Oshxona turlari va island",
-        "theory",
-        "Bir qatorli, L, U va island oshxonalarning ishlash prinsiplarini farqlash.",
+        "Wardrobe va saqlash",
+        "practice",
+        "Shkaf, garderob va boshqa saqlash elementlarini ergonomik joylashtirish.",
         3,
-        40,
+        50,
         20,
     ),
     (
         "L02_M06",
         "L02_M06_004",
-        "Ovqatlanish zonasi ergonomikasi",
-        "practice",
-        "Stol, stul va yurish zonalarini real foydalanish uchun to'g'ri tashkil qilish.",
+        "Master bedroom va oddiy bedroom",
+        "theory",
+        "Master bedroom va oddiy yotoqxona o'rtasidagi funksional farqlarni tushunish.",
         4,
-        40,
+        50,
         20,
     ),
     (
         "L02_M06",
         "L02_M06_005",
-        "Oshxona planidagi xatolarni topish",
+        "Yotoqxona auditi",
         "practice",
-        "Real oshxona va ovqatlanish planlaridagi funksional xatolarni aniqlash.",
+        "Yotoqxona rejasini privacy, mebel, eshik, deraza va circulation bo'yicha tekshirish.",
         5,
-        45,
+        55,
         25,
     ),
 ]
 
 
 # ============================================================
-# LESSON CONTENT
+# CONTENT
 # ============================================================
 
 LEVEL02_MODULE06_CONTENT = {
-    # ========================================================
-    # 1-DARS
-    # ========================================================
-
     "L02_M06_001": [
         {
-            "title": "Oshxona — faqat mebel emas",
+            "title": "Yotoqxona — private makon",
             "type": "highlight",
             "text": """
-            Oshxona — uy ichidagi eng faol
-            ishlatiladigan funksional zonalardan biri.
+            Yotoqxona uy ichidagi
+            eng muhim private zonalardan biri.
 
             <br><br>
 
-            Bu yerda odam bir nechta ishni
-            ketma-ket bajaradi.
+            Bu xonaning asosiy vazifasi:
 
             <br><br>
 
-            Shuning uchun oshxonani faqat
-            shkaflarni devorga terish orqali
-            loyihalab bo'lmaydi.
+            • uyqu;<br>
+            • dam olish;<br>
+            • kiyim saqlash;<br>
+            • shaxsiy foydalanish;<br>
+            • tinchlik va privacy.
             """,
         },
         {
-            "title": "Oddiy ish jarayoni",
-            "type": "example",
-            "text": """
-            Tasavvur qiling:
-
-            <br><br>
-
-            siz bozordan mahsulot olib keldingiz.
-
-            <br><br>
-
-            Jarayon taxminan:
-
-            <br><br>
-
-            <b>
-            olib kelish → saqlash → yuvish →
-            tayyorlash → pishirish → servis
-            </b>
-
-            <br><br>
-
-            ketma-ketligida ishlaydi.
-            """,
-        },
-        {
-            "title": "Saqlash",
+            "title": "Faqat krovat sig'ishi yetarli emas",
             "type": "normal",
             "text": """
-            Mahsulotlar:
+            Xonaga krovat sig'ishi
+            uning yaxshi rejalashtirilganini
+            anglatmaydi.
 
             <br><br>
 
-            • muzlatkich;<br>
-            • pantry;<br>
-            • yuqori shkaf;<br>
-            • pastki shkaf
-
-            <br><br>
-
-            kabi joylarda saqlanadi.
-
-            <br><br>
-
-            Saqlash zonasiga mahsulotni
-            uyga olib kirish yo'li ham muhim.
+            Krovat atrofida
+            yurish,
+            shkafdan foydalanish,
+            eshikni ochish
+            va derazaga yaqinlashish
+            ham mumkin bo'lishi kerak.
             """,
         },
         {
-            "title": "Tayyorlash zonasi",
-            "type": "normal",
-            "text": """
-            Mahsulot yuvilgandan keyin
-            uni kesish, tayyorlash va
-            pishirishga tayyorlash uchun
-            ish yuzasi kerak.
-
-            <br><br>
-
-            Faqat moyka va plita bo'lishi yetmaydi.
-            """,
-        },
-        {
-            "title": "Boshlovchi xatosi",
-            "type": "warning",
-            "text": """
-            Oshxonada barcha texnika mavjud.
-
-            <br><br>
-
-            Lekin ular orasida normal
-            ish yuzasi yo'q.
-
-            <br><br>
-
-            Natijada katta oshxona ham
-            noqulay ishlashi mumkin.
-            """,
-        },
-        {
-            "title": "Mini-amaliyot",
-            "type": "example",
-            "text": """
-            O'z oshxonangizda bir taom
-            tayyorlash jarayonini kuzating.
-
-            <br><br>
-
-            Qayerdan boshlaysiz?
-
-            <br>
-            Necha marta u yoqdan bu yoqqa yurasiz?
-
-            <br><br>
-
-            Eng ko'p ishlatiladigan 5 nuqtani yozing.
-            """,
-        },
-    ],
-
-    # ========================================================
-    # 2-DARS
-    # ========================================================
-
-    "L02_M06_002": [
-        {
-            "title": "Uch asosiy nuqta",
+            "title": "Privacy",
             "type": "highlight",
             "text": """
-            Oshxonada ko'p ishlatiladigan
-            uchta muhim element:
+            Yotoqxona private makon bo'lgani uchun
+            uning uy ichidagi joylashuvi ham muhim.
 
             <br><br>
 
-            <b>muzlatkich — moyka — plita</b>.
-
-            <br><br>
-
-            Ularning o'zaro joylashuvi
-            kundalik ishga katta ta'sir qiladi.
+            Mehmonlar harakati
+            bedroom zonasini
+            doim kesib o'tmasligi foydali.
             """,
         },
         {
-            "title": "Work triangle tushunchasi",
-            "type": "normal",
-            "text": """
-            Klassik rejalashda
-            muzlatkich, moyka va plita orasidagi
-            aloqaga ko'pincha
-            <b>ish uchburchagi</b> sifatida qaraladi.
-
-            <br><br>
-
-            Bu qat'iy universal formula emas,
-            balki harakatni tahlil qilish usuli.
-            """,
-        },
-        {
-            "title": "Nega moyka markaziy bo'lishi mumkin?",
+            "title": "Tasavvur qiling",
             "type": "example",
             "text": """
-            Ko'p jarayonlarda:
+            Bedroom eshigi
+            to'g'ridan-to'g'ri
+            katta mehmonxona markaziga ochiladi.
 
             <br><br>
 
-            muzlatkichdan mahsulot olinadi,
-
-            <br>
-            keyin yuviladi,
-
-            <br>
-            keyin tayyorlanadi,
-
-            <br>
-            keyin pishiriladi.
+            Uyda mehmonlar bor.
 
             <br><br>
 
-            Shu sababli moyka va
-            tayyorlash yuzasi muhim markazga aylanishi mumkin.
+            Bedroomga kirayotgan odam
+            to'g'ridan-to'g'ri
+            public zonadan o'tadi.
+
+            <br><br>
+
+            Bu privacy nuqtai nazaridan
+            noqulay bo'lishi mumkin.
             """,
         },
         {
-            "title": "Juda uzoq masofa",
-            "type": "warning",
-            "text": """
-            Muzlatkich oshxonaning bir chetida.
-
-            <br><br>
-
-            Moyka qarama-qarshi uzoq burchakda.
-
-            <br><br>
-
-            Plita yana boshqa tomonda.
-
-            <br><br>
-
-            Har bir ovqat tayyorlashda
-            keraksiz yurish ko'payadi.
-            """,
-        },
-        {
-            "title": "Juda yaqin ham muammo",
-            "type": "warning",
-            "text": """
-            Hammasini bir-biriga
-            haddan tashqari zich joylashtirish ham
-            yaxshi emas.
-
-            <br><br>
-
-            Texnika eshiklari,
-            odamlarning turish zonasi va
-            ish yuzalari bir-biriga xalaqit berishi mumkin.
-            """,
-        },
-        {
-            "title": "Professional fikr",
-            "type": "highlight",
-            "text": """
-            <b>
-            Maqsad mukammal geometrik uchburchak emas.
-
-            Maqsad — ish jarayonini qulay qilish.
-            </b>
-            """,
-        },
-    ],
-
-    # ========================================================
-    # 3-DARS
-    # ========================================================
-
-    "L02_M06_003": [
-        {
-            "title": "Oshxona shakli",
-            "type": "highlight",
-            "text": """
-            Oshxona mebellari turli
-            konfiguratsiyada tashkil qilinishi mumkin.
-
-            <br><br>
-
-            Eng ko'p uchraydiganlari:
-
-            <br><br>
-
-            • bir qatorli;<br>
-            • parallel;<br>
-            • L shakl;<br>
-            • U shakl;<br>
-            • island bilan.
-            """,
-        },
-        {
-            "title": "Bir qatorli oshxona",
+            "title": "Asosiy elementlar",
             "type": "normal",
             "text": """
-            Barcha asosiy elementlar
-            bitta devor bo'ylab joylashadi.
+            Oddiy bedroomda
+            loyiha vazifasiga qarab:
 
             <br><br>
 
-            Kichik makonda qulay bo'lishi mumkin.
-
-            <br><br>
-
-            Lekin juda uzun bo'lsa,
-            ish masofasi ortib ketishi mumkin.
-            """,
-        },
-        {
-            "title": "L shaklli oshxona",
-            "type": "normal",
-            "text": """
-            Ikki tutash devor ishlatiladi.
-
-            <br><br>
-
-            Bu ko'p hollarda:
-
-            <br><br>
-
-            • ish zonasini ixcham qilish;<br>
-            • markazda bo'sh joy qoldirish;<br>
-            • dining bilan yaxshi aloqa qilish
-
-            <br><br>
-
-            imkonini beradi.
-            """,
-        },
-        {
-            "title": "U shaklli oshxona",
-            "type": "normal",
-            "text": """
-            Uch tomon ish yuzasi sifatida ishlatiladi.
-
-            <br><br>
-
-            Saqlash va ish yuzasi ko'p bo'lishi mumkin.
-
-            <br><br>
-
-            Lekin ichki harakat zonasi
-            yetarlicha qulay bo'lishi kerak.
-            """,
-        },
-        {
-            "title": "Island nima?",
-            "type": "example",
-            "text": """
-            Island — oshxona markazida joylashgan
-            alohida ish yoki servis bloki.
-
-            <br><br>
-
-            Unda:
-
-            <br><br>
-
-            • ish yuzasi;<br>
-            • saqlash;<br>
-            • moyka;<br>
-            • plita;<br>
-            • o'tirish zonasi
+            • krovat;<br>
+            • bedside table;<br>
+            • wardrobe;<br>
+            • dresser;<br>
+            • ish yoki make-up stoli
 
             <br><br>
 
@@ -404,294 +163,538 @@ LEVEL02_MODULE06_CONTENT = {
             """,
         },
         {
-            "title": "Island uchun joy yetarlimi?",
-            "type": "warning",
-            "text": """
-            Island chiroyli ko'ringani uchun
-            har qanday oshxonaga qo'yilmaydi.
-
-            <br><br>
-
-            Uning atrofida:
-
-            <br><br>
-
-            • yurish;<br>
-            • shkaf ochish;<br>
-            • texnika ochish;<br>
-            • ikki odam ishlashi
-
-            <br><br>
-
-            uchun real makon qolishi kerak.
-            """,
-        },
-        {
-            "title": "Mini-amaliyot",
+            "title": "Mini-vazifa",
             "type": "example",
             "text": """
-            Bir qatorli, L va islandli
-            uchta oshxona toping.
+            Yotoqxona sxemasini chizing.
 
             <br><br>
 
-            Har biri uchun:
+            Unda belgilang:
 
             <br><br>
 
-            • kuchli tomoni;<br>
-            • zaif tomoni;<br>
-            • qaysi xona uchun mosligini
-
-            <br><br>
-
-            yozing.
+            • kirish;<br>
+            • krovat;<br>
+            • wardrobe;<br>
+            • deraza;<br>
+            • asosiy yurish yo'li.
             """,
         },
     ],
 
-    # ========================================================
-    # 4-DARS
-    # ========================================================
+    "L02_M06_002": [
+        {
+            "title": "Krovat — asosiy element",
+            "type": "highlight",
+            "text": """
+            Bedroom rejasida
+            krovat odatda
+            asosiy mebel elementlaridan biri.
+
+            <br><br>
+
+            Shu sabab xona rejasini
+            ko'pincha krovat pozitsiyasidan
+            boshlab tahlil qilish mumkin.
+            """,
+        },
+        {
+            "title": "Krovat atrofida foydalanish",
+            "type": "normal",
+            "text": """
+            Krovat faqat
+            o'z o'lchamini egallamaydi.
+
+            <br><br>
+
+            Odam:
+
+            <br><br>
+
+            • yonidan yuradi;<br>
+            • yotadi va turadi;<br>
+            • choyshab almashtiradi;<br>
+            • bedside tabledan foydalanadi.
+            """,
+        },
+        {
+            "title": "Eshik bilan konflikt",
+            "type": "warning",
+            "text": """
+            Bedroom eshigi ochilganda
+            krovatga urilsa
+
+            <br><br>
+
+            yoki asosiy yurish yo'lini
+            yopib qo'ysa,
+
+            <br><br>
+
+            reja qayta ko'rib chiqilishi kerak.
+            """,
+        },
+        {
+            "title": "Deraza bilan aloqa",
+            "type": "normal",
+            "text": """
+            Krovat joylashuvida
+            deraza ham hisobga olinadi.
+
+            <br><br>
+
+            Derazani butunlay
+            foydalanib bo'lmaydigan holatga
+            keltirib qo'ymaslik kerak.
+            """,
+        },
+        {
+            "title": "To'g'ridan-to'g'ri yo'l",
+            "type": "example",
+            "text": """
+            Eshikdan kirganda
+            odam wardrobega yoki
+            krovat tomon
+
+            <br><br>
+
+            keraksiz aylanmasdan
+            bora olsa,
+            circulation ancha tushunarli bo'ladi.
+            """,
+        },
+        {
+            "title": "Krovatni shunchaki markazga qo'ymang",
+            "type": "warning",
+            "text": """
+            Krovat plan markazida
+            chiroyli ko'rinishi mumkin.
+
+            <br><br>
+
+            Lekin bu:
+
+            <br><br>
+
+            • wardrobe ochilishini;<br>
+            • circulationni;<br>
+            • eshikni;<br>
+            • derazani
+
+            <br><br>
+
+            yomonlashtirsa,
+            kompozitsiya yaxshi emas.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            Bir xil bedroom uchun
+            2 xil krovat pozitsiyasini chizing.
+
+            <br><br>
+
+            Har bir variantda:
+
+            <br><br>
+
+            • kirish;<br>
+            • wardrobe;<br>
+            • deraza;<br>
+            • circulation
+
+            <br><br>
+
+            qanday o'zgarishini solishtiring.
+            """,
+        },
+    ],
+
+    "L02_M06_003": [
+        {
+            "title": "Wardrobe — faqat shkaf konturi emas",
+            "type": "highlight",
+            "text": """
+            Wardrobe joylashtirganda
+            uning yopiq holatini emas,
+            foydalanish holatini ham
+            tasavvur qilish kerak.
+            """,
+        },
+        {
+            "title": "Shkaf oldidagi foydalanish zonasi",
+            "type": "normal",
+            "text": """
+            Odam:
+
+            <br><br>
+
+            • shkafni ochadi;<br>
+            • kiyim tanlaydi;<br>
+            • oldida turadi;<br>
+            • buyumlarni oladi va qo'yadi.
+
+            <br><br>
+
+            Demak shkaf oldida
+            foydalanish uchun bo'sh hudud kerak.
+            """,
+        },
+        {
+            "title": "Door bilan konflikt",
+            "type": "example",
+            "text": """
+            Bedroom eshigi
+            ochilganda
+
+            <br><br>
+
+            wardrobe eshigi bilan
+            to'qnashsa,
+
+            <br><br>
+
+            ikkala elementdan
+            bir vaqtda foydalanish qiyinlashadi.
+            """,
+        },
+        {
+            "title": "Garderob zonasi",
+            "type": "normal",
+            "text": """
+            Kattaroq bedroomda
+            alohida garderob zonasi
+            bo'lishi mumkin.
+
+            <br><br>
+
+            Bunday holatda ham
+            bedroom → wardrobe
+            harakat yo'li qulay bo'lishi kerak.
+            """,
+        },
+        {
+            "title": "Saqlashni ko'paytirish har doim yechim emas",
+            "type": "warning",
+            "text": """
+            Barcha bo'sh devorlarga
+            shkaf qo'yish
+
+            <br><br>
+
+            xona funksiyasini
+            yaxshilamaydi.
+
+            <br><br>
+
+            Ba'zan aksincha,
+            xonani torlashtirib,
+            circulationni buzadi.
+            """,
+        },
+        {
+            "title": "Bedside zona",
+            "type": "normal",
+            "text": """
+            Bedside elementlar
+            krovat bilan birgalikda
+            rejalashtiriladi.
+
+            <br><br>
+
+            Ular eshik,
+            deraza
+            yoki asosiy o'tish bilan
+            konflikt qilmasligi kerak.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            Bedroomga:
+
+            <br><br>
+
+            • krovat;<br>
+            • 2 ta bedside table;<br>
+            • wardrobe
+
+            <br><br>
+
+            joylashtiring.
+
+            <br><br>
+
+            So'ng shkafdan foydalanish
+            va krovat atrofida yurish
+            mumkinligini tekshiring.
+            """,
+        },
+    ],
 
     "L02_M06_004": [
         {
-            "title": "Stol sig'di — masala tugamadi",
+            "title": "Oddiy bedroom",
             "type": "highlight",
             "text": """
-            Ovqat stoli plan ichiga sig'ishi
-            uning ergonomik ishlashini anglatmaydi.
+            Oddiy bedroom
+            asosiy uyqu va saqlash
+            funksiyalarini bajarishi mumkin.
 
             <br><br>
 
-            Stul va odam uchun ham joy kerak.
+            Unda:
+
+            <br><br>
+
+            • krovat;<br>
+            • wardrobe;<br>
+            • bedside zona
+
+            <br><br>
+
+            asosiy elementlar bo'lishi mumkin.
             """,
         },
         {
-            "title": "Stul ortidagi zona",
+            "title": "Master bedroom",
+            "type": "highlight",
+            "text": """
+            Master bedroom
+            ko'proq funksiyani
+            birlashtirishi mumkin.
+
+            <br><br>
+
+            Masalan:
+
+            <br><br>
+
+            • katta sleeping zona;<br>
+            • garderob;<br>
+            • dressing zona;<br>
+            • alohida sanuzel bilan aloqa.
+            """,
+        },
+        {
+            "title": "Master faqat katta xona emas",
+            "type": "warning",
+            "text": """
+            Master bedroomni
+            oddiy bedroomdan faqat
+            kattaroq maydon bilan ajratish
+            yetarli emas.
+
+            <br><br>
+
+            Funksiyalar o'rtasidagi
+            aloqa ham muhim.
+            """,
+        },
+        {
+            "title": "Bedroom → garderob → sanuzel",
             "type": "example",
             "text": """
-            Odam stulni orqaga suradi.
+            Master zonada
+            bedroom,
+            garderob
+            va sanuzel mavjud.
 
             <br><br>
 
-            O'tiradi.
+            Ularning o'zaro
+            kundalik foydalanish tartibini
+            tasavvur qiling.
 
             <br><br>
 
-            Uning orqasidan boshqa odam
-            o'tishi ham mumkin.
-
-            <br><br>
-
-            Demak stol konturidan tashqarida
-            qo'shimcha makon talab qilinadi.
+            Keraksiz uzun yo'l
+            yoki ko'p eshiklar
+            noqulaylik yaratishi mumkin.
             """,
         },
         {
-            "title": "Dining va oshxona aloqasi",
+            "title": "Privacy darajasi",
             "type": "normal",
             "text": """
-            Ovqatlanish zonasi oshxonaga
-            mantiqiy yaqin bo'lishi foydali.
+            Master bedroom
+            uy ichida
+            yanada private joyda
+            bo'lishi mumkin.
 
             <br><br>
 
-            Tayyor taomni uzoq masofaga
-            tashish kundalik noqulaylik yaratadi.
+            U public zona bilan
+            qanday bog'langanini
+            alohida tekshiring.
             """,
         },
         {
-            "title": "Yurish yo'li stol orasidan o'tmasin",
-            "type": "warning",
+            "title": "Oddiy bedroom ham to'liq xona",
+            "type": "normal",
             "text": """
-            Asosiy uy sirkulyatsiyasi
-            ovqat stolining stullari orasidan o'tsa,
-            odamlar bir-biriga xalaqit beradi.
+            Ikkinchi bedroom
+            kichikroq bo'lishi mumkin,
 
             <br><br>
 
-            Dining zona harakat yo'liga aylanib qolmasligi kerak.
+            lekin:
+
+            <br><br>
+
+            • krovatdan foydalanish;<br>
+            • wardrobe;<br>
+            • circulation;<br>
+            • tabiiy yorug'likka kirish
+
+            <br><br>
+
+            baribir mantiqiy bo'lishi kerak.
             """,
         },
         {
-            "title": "Katta stol — har doim yaxshi emas",
-            "type": "warning",
-            "text": """
-            8 kishilik stol xona ichiga zo'rg'a sig'di.
-
-            <br><br>
-
-            Lekin stullarni surishning iloji yo'q.
-
-            <br><br>
-
-            Bu holatda kichikroq stol
-            real hayotda yaxshiroq ishlashi mumkin.
-            """,
-        },
-        {
-            "title": "Mini-amaliyot",
+            "title": "Mini-vazifa",
             "type": "example",
             "text": """
-            Bir oshxona + dining planini toping.
+            Ikki xona chizing:
 
             <br><br>
 
+            A — oddiy bedroom<br>
+            B — master bedroom
+
+            <br><br>
+
+            Har birida
+            qaysi funksiyalar kerakligini
+            alohida yozing.
+            """,
+        },
+    ],
+
+    "L02_M06_005": [
+        {
+            "title": "Yotoqxona auditi",
+            "type": "highlight",
+            "text": """
+            Endi bedroomni
+            faqat mebel sig'ishi bo'yicha emas,
+
+            <br><br>
+
+            real foydalanish,
+            privacy
+            va circulation bo'yicha
+            tekshiramiz.
+            """,
+        },
+        {
+            "title": "1. Privacy",
+            "type": "example",
+            "text": """
             Tekshiring:
 
             <br><br>
 
-            1. Stol atrofida odam o'tira oladimi?<br>
-            2. Stul orqasidan yurish mumkinmi?<br>
-            3. Oshxonadan stolga yo'l qisqami?<br>
-            4. Dining asosiy koridorga aylanmaganmi?
-            """,
-        },
-    ],
-
-    # ========================================================
-    # 5-DARS
-    # ========================================================
-
-    "L02_M06_005": [
-        {
-            "title": "Oshxona xatolarini ovlaymiz",
-            "type": "highlight",
-            "text": """
-            Endi oshxonaning tashqi ko'rinishini emas,
-            uning real ishlashini tahlil qilamiz.
+            • bedroom public zonadan himoyalanganmi?<br>
+            • kirish mantiqiymi?<br>
+            • boshqa odamlar bedroom orqali o'tmayaptimi?
             """,
         },
         {
-            "title": "Xato 1 — muzlatkich eshigi to'sadi",
-            "type": "warning",
-            "text": """
-            Muzlatkich eshigi ochilganda
-            asosiy yurish yo'lini butunlay yopadi.
-
-            <br><br>
-
-            Texnika o'lchami emas,
-            uning ochilishi ham hisobga olinishi kerak.
-            """,
-        },
-        {
-            "title": "Xato 2 — moyka va plita orasida ish yuzasi yo'q",
-            "type": "warning",
-            "text": """
-            Moyka plitaga juda yaqin.
-
-            <br><br>
-
-            Mahsulotni yuvib,
-            xavfsiz tayyorlash uchun
-            normal ish yuzasi qolmagan.
-            """,
-        },
-        {
-            "title": "Xato 3 — island yo'lni toraytirgan",
-            "type": "warning",
-            "text": """
-            Oshxona katta ko'rinsin deb
-            markazga island qo'yilgan.
-
-            <br><br>
-
-            Lekin island bilan asosiy shkaflar orasida
-            odamlar bemalol harakat qila olmaydi.
-            """,
-        },
-        {
-            "title": "Xato 4 — stol asosiy yo'l ustida",
-            "type": "warning",
-            "text": """
-            Hovliga chiqish uchun
-            odam har safar dining stolini aylanadi.
-
-            <br><br>
-
-            Stullar chiqarilganda yo'l butunlay torayadi.
-            """,
-        },
-        {
-            "title": "Xato 5 — pantry juda uzoqda",
-            "type": "warning",
-            "text": """
-            Pantry mavjud.
-
-            <br><br>
-
-            Lekin u oshxonadan boshqa tomonda.
-
-            <br><br>
-
-            Har bir mahsulot uchun uzoq yurish kerak.
-
-            <br><br>
-
-            Xona mavjudligi emas,
-            uning aloqasi muhim.
-            """,
-        },
-        {
-            "title": "Xato 6 — oshxona hovlidan uzilgan",
-            "type": "warning",
-            "text": """
-            Oilada hovlida tez-tez ovqatlanish odati bor.
-
-            <br><br>
-
-            Lekin oshxonadan hovliga chiqish uchun
-            butun uyni aylanib o'tish kerak.
-
-            <br><br>
-
-            Loyiha oilaning hayot tarziga moslashmagan.
-            """,
-        },
-        {
-            "title": "Professional tahlil algoritmi",
+            "title": "2. Krovat",
             "type": "example",
             "text": """
-            Oshxona planini ko'rsangiz:
+            Tekshiring:
 
             <br><br>
 
-            <b>1.</b> Mahsulot qayerdan kiradi?<br><br>
-            <b>2.</b> Qayerda saqlanadi?<br><br>
-            <b>3.</b> Qayerda yuviladi?<br><br>
-            <b>4.</b> Qayerda tayyorlanadi?<br><br>
-            <b>5.</b> Qayerda pishiriladi?<br><br>
-            <b>6.</b> Diningga qanday yetkaziladi?<br><br>
-            <b>7.</b> Eshik va texnika ochilishlari to'qnashadimi?
+            • krovatga kirish qulaymi?<br>
+            • atrofida yurish mumkinmi?<br>
+            • eshik bilan konflikt yo'qmi?<br>
+            • derazadan foydalanish mumkinmi?
             """,
         },
         {
-            "title": "Mini-loyiha",
+            "title": "3. Wardrobe",
             "type": "example",
             "text": """
-            4 kishilik oila uchun
-            oshxona + dining planini tahlil qiling.
+            Tekshiring:
 
             <br><br>
 
-            Quyidagilarni belgilang:
+            • wardrobe ochiladimi?<br>
+            • oldida odam turishi mumkinmi?<br>
+            • eshik bilan konflikt yo'qmi?<br>
+            • foydalanish yo'li qulaymi?
+            """,
+        },
+        {
+            "title": "4. Circulation",
+            "type": "example",
+            "text": """
+            Tekshiring:
 
             <br><br>
 
-            • muzlatkich;<br>
-            • moyka;<br>
-            • plita;<br>
-            • tayyorlash yuzasi;<br>
-            • pantry;<br>
-            • dining;<br>
-            • hovliga chiqish.
+            • kirishdan krovatgacha yo'l ochiqmi?<br>
+            • wardrobega borish qulaymi?<br>
+            • keraksiz aylanma yo'l yo'qmi?
+            """,
+        },
+        {
+            "title": "Xatoni toping",
+            "type": "warning",
+            "text": """
+            Bedroomda:
 
             <br><br>
 
-            Kamida 3 ta yaxshi qaror va
-            2 ta yaxshilash mumkin bo'lgan nuqtani yozing.
+            • katta krovat;<br>
+            • katta wardrobe;<br>
+            • 2 ta bedside table
+
+            <br><br>
+
+            hammasi sig'di.
+
+            <br><br>
+
+            Lekin wardrobe eshigi
+            krovatga tegib qoladi.
+
+            <br><br>
+
+            Xulosa:
+
+            <br><br>
+
+            <b>
+            Mebel sig'ishi
+            xona ergonomik ekanini
+            anglatmaydi.
+            </b>
+            """,
+        },
+        {
+            "title": "Professional checklist",
+            "type": "example",
+            "text": """
+            Bedroomni tekshiring:
+
+            <br><br>
+
+            <b>1.</b> Privacy yetarlimi?<br><br>
+            <b>2.</b> Krovat pozitsiyasi mantiqiymi?<br><br>
+            <b>3.</b> Krovat atrofida circulation bormi?<br><br>
+            <b>4.</b> Wardrobedan foydalanish qulaymi?<br><br>
+            <b>5.</b> Door bilan konflikt yo'qmi?<br><br>
+            <b>6.</b> Windowdan foydalanish mumkinmi?<br><br>
+            <b>7.</b> Master bo'lsa qo'shimcha funksiyalar mantiqiymi?
             """,
         },
         {
@@ -702,22 +705,18 @@ LEVEL02_MODULE06_CONTENT = {
 
             <br><br>
 
-            ✓ oshxona workflow;<br>
-            ✓ muzlatkich-moyka-plita aloqasi;<br>
-            ✓ work triangle;<br>
-            ✓ L va U shaklli oshxona;<br>
-            ✓ island;<br>
-            ✓ dining ergonomikasi;<br>
-            ✓ pantry va hovli aloqasi
-
-            <br><br>
-
-            bo'yicha plan tahlil qila olasiz.
+            ✓ bedroomning private rolini tushunasiz;<br>
+            ✓ krovatni mantiqiy joylashtirasiz;<br>
+            ✓ wardrobe zonasini tashkil qilasiz;<br>
+            ✓ circulationni tekshirasiz;<br>
+            ✓ master va oddiy bedroomni farqlaysiz;<br>
+            ✓ eshik va deraza konfliktlarini topasiz;<br>
+            ✓ bedroom auditini bajarasiz.
 
             <br><br>
 
             Keyingi modul:
-            <b>Yotoqxona, garderob va sanuzel ergonomikasi.</b>
+            <b>Bolalar xonasi.</b>
             """,
         },
     ],
@@ -725,27 +724,17 @@ LEVEL02_MODULE06_CONTENT = {
 
 
 # ============================================================
-# QUIZ DATA
+# QUIZ
+# Q076-Q090 KODLARI SAQLANADI
 # ============================================================
 
 LEVEL02_MODULE06_QUIZ = {
     "L02_M06_001": [
         {
             "code": "L02_Q076",
-            "question": "Oshxonani rejalashda faqat mebelni joylashtirish yetarlimi?",
+            "question": "Yotoqxona uy ichidagi private zonalardan biri hisoblanadimi?",
             "explanation": (
-                "Oshxonada saqlash, yuvish, tayyorlash, pishirish va servis jarayonlari ham tahlil qilinadi."
-            ),
-            "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
-            ],
-        },
-        {
-            "code": "L02_Q077",
-            "question": "Mahsulotni tayyorlash uchun ish yuzasi kerakmi?",
-            "explanation": (
-                "Yuvish va pishirish orasida mahsulotni tayyorlash uchun ish yuzasi zarur bo'lishi mumkin."
+                "Bedroom uyqu, dam olish va shaxsiy foydalanish uchun private makon hisoblanadi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -753,10 +742,21 @@ LEVEL02_MODULE06_QUIZ = {
             ],
         },
         {
-            "code": "L02_Q078",
-            "question": "Mahsulotni uyga olib kirish yo'li oshxona rejasiga ta'sir qilishi mumkinmi?",
+            "code": "L02_Q077",
+            "question": "Bedroomga krovat sig'ishi uning avtomatik ravishda qulay ekanini anglatadimi?",
             "explanation": (
-                "Saqlash va pantry bilan qulay aloqa kundalik foydalanishni yaxshilaydi."
+                "Circulation, wardrobe, eshik va deraza aloqasi ham tekshiriladi."
+            ),
+            "options": [
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
+            ],
+        },
+        {
+            "code": "L02_Q078",
+            "question": "Bedroom joylashuvida privacy muhimmi?",
+            "explanation": (
+                "Private xona public va mehmon oqimidan mantiqan ajratilishi foydali."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -768,36 +768,35 @@ LEVEL02_MODULE06_QUIZ = {
     "L02_M06_002": [
         {
             "code": "L02_Q079",
-            "question": "Oshxonadagi uch muhim ish nuqtasi qaysilar?",
+            "question": "Krovat atrofida foydalanish va yurish zonasi kerakmi?",
             "explanation": (
-                "Muzlatkich, moyka va plita oshxona ish jarayonining muhim nuqtalaridir."
+                "Odam krovat yonidan yurishi va undan qulay foydalanishi kerak."
             ),
             "options": [
-                ("A", "Muzlatkich, moyka, plita", True),
-                ("B", "TV, divan, krovat", False),
-                ("C", "Shkaf, eshik, deraza", False),
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
             ],
         },
         {
             "code": "L02_Q080",
-            "question": "Work triangle qat'iy universal formula hisoblanadimi?",
+            "question": "Bedroom eshigi krovat bilan konflikt qilishi mumkinmi?",
             "explanation": (
-                "U harakatni tahlil qilish prinsipi; real reja va foydalanuvchi ehtiyojiga moslashtiriladi."
+                "Eshik swing zonasi krovat va boshqa mebel bilan tekshiriladi."
             ),
             "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
             ],
         },
         {
             "code": "L02_Q081",
-            "question": "Muzlatkich, moyka va plita haddan tashqari uzoq bo'lsa nima ko'payadi?",
+            "question": "Krovatni faqat plan markaziga qo'yish har doim eng yaxshi yechimmi?",
             "explanation": (
-                "Kundalik ovqat tayyorlashdagi keraksiz yurish ko'payishi mumkin."
+                "Krovat joylashuvi eshik, deraza, wardrobe va circulation bilan birga hal qilinadi."
             ),
             "options": [
-                ("A", "Keraksiz yurish", True),
-                ("B", "Faqat fasad sifati", False),
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
             ],
         },
     ],
@@ -805,35 +804,35 @@ LEVEL02_MODULE06_QUIZ = {
     "L02_M06_003": [
         {
             "code": "L02_Q082",
-            "question": "Island har qanday kichik oshxonaga qo'yilishi kerakmi?",
+            "question": "Wardrobe oldida foydalanish zonasi kerakmi?",
             "explanation": (
-                "Island faqat atrofida yetarli harakat va foydalanish zonasi bo'lsa maqsadga muvofiq."
-            ),
-            "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
-            ],
-        },
-        {
-            "code": "L02_Q083",
-            "question": "L shaklli oshxona nechta tutash devordan foydalanadi?",
-            "explanation": (
-                "L shaklli oshxona odatda ikki tutash devor bo'ylab tashkil qilinadi."
-            ),
-            "options": [
-                ("A", "Ikki", True),
-                ("B", "Faqat bitta", False),
-            ],
-        },
-        {
-            "code": "L02_Q084",
-            "question": "U shaklli oshxonada ko'p ish yuzasi bo'lishi mumkinmi?",
-            "explanation": (
-                "U shakli uch tomonlama ish va saqlash yuzasi yaratishi mumkin."
+                "Shkafni ochish va kiyimlardan foydalanish uchun bo'sh joy kerak."
             ),
             "options": [
                 ("A", "Ha", True),
                 ("B", "Yo'q", False),
+            ],
+        },
+        {
+            "code": "L02_Q083",
+            "question": "Bedroom eshigi va wardrobe eshigi bir-biri bilan konflikt qilishi mumkinmi?",
+            "explanation": (
+                "Ikki opening zonasi bir joyda kesishsa foydalanish noqulaylashadi."
+            ),
+            "options": [
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
+            ],
+        },
+        {
+            "code": "L02_Q084",
+            "question": "Barcha bo'sh devorlarga maksimal shkaf qo'yish har doim yaxshi rejalashtirishmi?",
+            "explanation": (
+                "Ortiqcha storage circulation va xona qulayligini yomonlashtirishi mumkin."
+            ),
+            "options": [
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
             ],
         },
     ],
@@ -841,20 +840,9 @@ LEVEL02_MODULE06_QUIZ = {
     "L02_M06_004": [
         {
             "code": "L02_Q085",
-            "question": "Ovqat stolining plan ichiga sig'ishi uning ergonomik ishlashi uchun yetarlimi?",
+            "question": "Master bedroom oddiy bedroomdan ko'proq funksiyalarni o'z ichiga olishi mumkinmi?",
             "explanation": (
-                "Stullarni surish, o'tirish va yurish zonasi ham hisobga olinadi."
-            ),
-            "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
-            ],
-        },
-        {
-            "code": "L02_Q086",
-            "question": "Dining va oshxonaning mantiqiy yaqinligi foydalimi?",
-            "explanation": (
-                "Taomni servis qilish va kundalik harakatni qisqartirishi mumkin."
+                "Master bedroom garderob yoki alohida sanuzel kabi qo'shimcha funksiyalarga ega bo'lishi mumkin."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -862,10 +850,21 @@ LEVEL02_MODULE06_QUIZ = {
             ],
         },
         {
-            "code": "L02_Q087",
-            "question": "Asosiy yurish yo'lining stol stullari orasidan o'tishi muammo bo'lishi mumkinmi?",
+            "code": "L02_Q086",
+            "question": "Master bedroom faqat maydoni katta bo'lgani uchun master hisoblanadimi?",
             "explanation": (
-                "Stullar chiqarilganda asosiy sirkulyatsiya to'silishi mumkin."
+                "Uning funksional tarkibi va zonalar o'rtasidagi aloqa ham muhim."
+            ),
+            "options": [
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
+            ],
+        },
+        {
+            "code": "L02_Q087",
+            "question": "Oddiy bedroomda ham ergonomika va circulation talab qilinadimi?",
+            "explanation": (
+                "Har qanday bedroom real foydalanish uchun qulay bo'lishi kerak."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -877,9 +876,9 @@ LEVEL02_MODULE06_QUIZ = {
     "L02_M06_005": [
         {
             "code": "L02_Q088",
-            "question": "Muzlatkich eshigi asosiy yurish yo'lini yopishi ergonomik muammomi?",
+            "question": "Bedroom auditida krovat, wardrobe va circulation birgalikda tekshiriladimi?",
             "explanation": (
-                "Texnika ochilishi sirkulyatsiyani to'smasligi kerak."
+                "Bu elementlarning o'zaro aloqasi xona ergonomikasini belgilaydi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -888,9 +887,9 @@ LEVEL02_MODULE06_QUIZ = {
         },
         {
             "code": "L02_Q089",
-            "question": "Island qo'yilganda uning atrofidagi harakat zonasi tekshiriladimi?",
+            "question": "Wardrobe eshigi krovatga tegib qolsa bu ergonomik muammo hisoblanadimi?",
             "explanation": (
-                "Island va boshqa oshxona elementlari orasida foydalanish uchun real makon qolishi kerak."
+                "Mebel sig'gan bo'lsa ham undan foydalanish mumkin bo'lmasa reja yaxshi ishlamaydi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -899,13 +898,21 @@ LEVEL02_MODULE06_QUIZ = {
         },
         {
             "code": "L02_Q090",
-            "question": "Oshxona tahlilida qaysi savol professionalroq?",
+            "question": "Yotoqxona loyihalashdagi to'g'ri yondashuv qaysi?",
             "explanation": (
-                "Mahsulotning saqlashdan pishirish va servisgacha bo'lgan yo'lini tahlil qilish funksional sifatni ko'rsatadi."
+                "Privacy, krovat, storage va circulation birgalikda tahlil qilinadi."
             ),
             "options": [
-                ("A", "Mahsulot qanday yo'l bosadi?", True),
-                ("B", "Faqat fasad qaysi rangda?", False),
+                (
+                    "A",
+                    "Privacy → krovat → storage → circulation → audit",
+                    True,
+                ),
+                (
+                    "B",
+                    "Faqat eng katta krovatni joylashtirish",
+                    False,
+                ),
             ],
         },
     ],
