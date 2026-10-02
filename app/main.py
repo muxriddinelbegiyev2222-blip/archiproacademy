@@ -79,6 +79,8 @@ from courses.level06_module09 import seed_level06_module09
 from courses.level06_module10 import seed_level06_module10
 from courses.level06_exam import seed_level06_exam
 
+from courses.level07_module01 import seed_level07_module01
+
 from courses.quiz_service import seed_quizzes
 from courses.seed_courses import seed_course_structure
 
@@ -182,6 +184,12 @@ def prepare_application():
     seed_level06_module10()
 
     # ========================================================
+    # LEVEL 7
+    # ========================================================
+
+    seed_level07_module01()
+
+    # ========================================================
     # QUIZZES
     # ========================================================
 
@@ -192,7 +200,6 @@ def prepare_application():
     # ========================================================
 
     seed_level_exams()
-
     seed_level02_exam()
     seed_level03_exam()
     seed_level04_exam()
@@ -203,10 +210,7 @@ def prepare_application():
     # DEVELOPMENT MASTER ACCOUNT
     # ========================================================
     #
-    # MUHIM:
-    # Sotuv versiyasida bu akkaunt olib tashlanadi.
-    #
-    # Hozircha dastur ishlab chiqish va test qilish uchun.
+    # Sotuv versiyasida olib tashlanadi.
     # ========================================================
 
     create_user(
@@ -256,33 +260,17 @@ def main():
 
         login_window.error_label.clear()
 
-        # ----------------------------------------------
-        # User level progress
-        # ----------------------------------------------
-
         initialize_user_levels(
             user["id"]
         )
-
-        # ----------------------------------------------
-        # Lesson progress
-        # ----------------------------------------------
 
         initialize_user_progress(
             user["id"]
         )
 
-        # ----------------------------------------------
-        # Level access synchronization
-        # ----------------------------------------------
-
         synchronize_user_access(
             user["id"]
         )
-
-        # ----------------------------------------------
-        # Dashboard
-        # ----------------------------------------------
 
         dashboard = DashboardWindow(
             user
