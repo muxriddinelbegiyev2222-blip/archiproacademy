@@ -12,6 +12,11 @@ from courses.level01_content import (
     LEVEL01_QUIZ,
 )
 
+from courses.level01_module02 import (
+    LEVEL01_MODULE02_CONTENT,
+    LEVEL01_MODULE02_QUIZ,
+)
+
 from courses.quiz_data import (
     QUIZ_DATA,
 )
@@ -22,14 +27,6 @@ from courses.quiz_data import (
 # ============================================================
 
 def get_all_lesson_content():
-    """
-    Barcha Level va modullardagi dars kontentlarini
-    bitta katta lug'atga birlashtiradi.
-
-    Keyinchalik yangi Level yoki modul qo'shilsa,
-    faqat shu registry'ga ulash kifoya bo'ladi.
-    """
-
     combined = {}
 
     combined.update(
@@ -44,16 +41,16 @@ def get_all_lesson_content():
         LEVEL01_CONTENT
     )
 
+    combined.update(
+        LEVEL01_MODULE02_CONTENT
+    )
+
     return combined
 
 
 def get_lesson_content_by_code(
     lesson_code: str,
 ):
-    """
-    Dars kodi bo'yicha uning to'liq kontentini qaytaradi.
-    """
-
     all_content = (
         get_all_lesson_content()
     )
@@ -69,11 +66,6 @@ def get_lesson_content_by_code(
 # ============================================================
 
 def get_all_quiz_data():
-    """
-    Barcha mini-test savollarini
-    bitta tizimga birlashtiradi.
-    """
-
     combined = {}
 
     combined.update(
@@ -86,6 +78,10 @@ def get_all_quiz_data():
 
     combined.update(
         LEVEL01_QUIZ
+    )
+
+    combined.update(
+        LEVEL01_MODULE02_QUIZ
     )
 
     return combined
