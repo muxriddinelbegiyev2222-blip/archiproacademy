@@ -20,14 +20,8 @@ from courses.exam_service import (
     seed_level_exams,
 )
 
-from courses.level00_extra import (
-    seed_level00_extra,
-)
-
-from courses.level01_content import (
-    seed_level01_lessons,
-)
-
+from courses.level00_extra import seed_level00_extra
+from courses.level01_content import seed_level01_lessons
 from courses.level01_module02 import seed_level01_module02
 from courses.level01_module03 import seed_level01_module03
 from courses.level01_module04 import seed_level01_module04
@@ -44,10 +38,7 @@ from courses.level02_module07 import seed_level02_module07
 from courses.level02_module08 import seed_level02_module08
 from courses.level02_module09 import seed_level02_module09
 from courses.level02_module10 import seed_level02_module10
-
-from courses.level02_exam import (
-    seed_level02_exam,
-)
+from courses.level02_exam import seed_level02_exam
 
 from courses.level03_module01 import seed_level03_module01
 from courses.level03_module02 import seed_level03_module02
@@ -57,38 +48,21 @@ from courses.level03_module05 import seed_level03_module05
 from courses.level03_module06 import seed_level03_module06
 from courses.level03_module07 import seed_level03_module07
 from courses.level03_module08 import seed_level03_module08
-
-from courses.level03_exam import (
-    seed_level03_exam,
-)
+from courses.level03_exam import seed_level03_exam
 
 from courses.level04_module01 import seed_level04_module01
 from courses.level04_module02 import seed_level04_module02
+from courses.level04_module03 import seed_level04_module03
 
-from courses.quiz_service import (
-    seed_quizzes,
-)
-
-from courses.seed_courses import (
-    seed_course_structure,
-)
-
-from database.database import (
-    initialize_database,
-)
-
-from ui.dashboard_window import (
-    DashboardWindow,
-)
-
-from ui.login_window import (
-    LoginWindow,
-)
+from courses.quiz_service import seed_quizzes
+from courses.seed_courses import seed_course_structure
+from database.database import initialize_database
+from ui.dashboard_window import DashboardWindow
+from ui.login_window import LoginWindow
 
 
 def prepare_application():
     initialize_database()
-
     seed_course_structure()
 
     # LEVEL 0
@@ -127,6 +101,7 @@ def prepare_application():
     # LEVEL 4
     seed_level04_module01()
     seed_level04_module02()
+    seed_level04_module03()
 
     # QUIZZES
     seed_quizzes()
@@ -147,9 +122,7 @@ def prepare_application():
 
 
 def main():
-    app = QApplication(
-        sys.argv
-    )
+    app = QApplication(sys.argv)
 
     app.setApplicationName(
         "ARCHIPRO UZ"
