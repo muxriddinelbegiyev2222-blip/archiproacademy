@@ -1,39 +1,24 @@
 import random
 
-from database.database import get_connection
-
-from courses.quiz_data import (
-    QUIZ_DATA,
+from database.database import (
+    get_connection,
 )
 
-from courses.level00_extra import (
-    LEVEL00_EXTRA_QUIZ,
-)
-
-from courses.level01_content import (
-    LEVEL01_QUIZ,
+from courses.content_registry import (
+    get_all_quiz_data,
 )
 
 
-def get_all_quiz_data():
-    combined = {}
-
-    combined.update(
-        QUIZ_DATA
-    )
-
-    combined.update(
-        LEVEL00_EXTRA_QUIZ
-    )
-
-    combined.update(
-        LEVEL01_QUIZ
-    )
-
-    return combined
-
+# ============================================================
+# QUIZ SEED
+# ============================================================
 
 def seed_quizzes():
+    """
+    Registry ichidagi barcha testlarni
+    SQLite database'ga joylashtiradi.
+    """
+
     all_quizzes = (
         get_all_quiz_data()
     )
@@ -43,9 +28,11 @@ def seed_quizzes():
     try:
         cursor = connection.cursor()
 
-        for lesson_code, questions in (
-            all_quizzes.items()
-        ):
+        for (
+            lesson_code,
+            questions,
+        ) in all_quizzes.items():
+
             cursor.execute(
                 """
                 SELECT id
@@ -63,17 +50,23 @@ def seed_quizzes():
             if lesson is None:
                 continue
 
-            lesson_id = lesson[
-                "id"
-            ]
+            lesson_id = (
+                lesson["id"]
+            )
 
-            for question_index, question in enumerate(
+            for (
+                question_index,
+                question,
+            ) in enumerate(
                 questions,
                 start=1,
             ):
+
+                # Savol mavjud bo'lsa ham,
+                # matni keyinchalik yangilanishi mumkin.
                 cursor.execute(
                     """
-                    INSERT OR IGNORE INTO quiz_questions (
+                    INSERT INTO quiz_questions (
                         lesson_id,
                         code,
                         question_text,
@@ -81,6 +74,13 @@ def seed_quizzes():
                         sort_order
                     )
                     VALUES (?, ?, ?, ?, ?)
+
+                    ON CONFLICT(code)
+                    DO UPDATE SET
+                        lesson_id = excluded.lesson_id,
+                        question_text = excluded.question_text,
+                        explanation = excluded.explanation,
+                        sort_order = excluded.sort_order
                     """,
                     (
                         lesson_id,
@@ -99,9 +99,7 @@ def seed_quizzes():
                     LIMIT 1
                     """,
                     (
-                        question[
-                            "code"
-                        ],
+                        question["code"],
                     ),
                 )
 
@@ -113,9 +111,19 @@ def seed_quizzes():
                     continue
 
                 question_id = (
-                    question_row[
-                        "id"
-                    ]
+                    question_row["id"]
+                )
+
+                # Variantlar eski bo'lsa,
+                # tozalab qayta yaratamiz.
+                cursor.execute(
+                    """
+                    DELETE FROM quiz_options
+                    WHERE question_id = ?
+                    """,
+                    (
+                        question_id,
+                    ),
                 )
 
                 for (
@@ -126,7 +134,7 @@ def seed_quizzes():
 
                     cursor.execute(
                         """
-                        INSERT OR IGNORE INTO quiz_options (
+                        INSERT INTO quiz_options (
                             question_id,
                             option_key,
                             option_text,
@@ -148,6 +156,10 @@ def seed_quizzes():
         connection.close()
 
 
+# ============================================================
+# GET QUIZ
+# ============================================================
+
 def get_quiz_for_lesson(
     lesson_id: int,
     shuffle_questions: bool = True,
@@ -162,8 +174,11 @@ def get_quiz_for_lesson(
             """
             SELECT *
             FROM quiz_questions
+
             WHERE lesson_id = ?
-            ORDER BY sort_order ASC
+
+            ORDER BY
+                sort_order ASC
             """,
             (
                 lesson_id,
@@ -189,14 +204,16 @@ def get_quiz_for_lesson(
                     option_key,
                     option_text,
                     is_correct
+
                 FROM quiz_options
+
                 WHERE question_id = ?
-                ORDER BY option_key ASC
+
+                ORDER BY
+                    option_key ASC
                 """,
                 (
-                    question[
-                        "id"
-                    ],
+                    question["id"],
                 ),
             )
 
@@ -228,6 +245,10 @@ def get_quiz_for_lesson(
     finally:
         connection.close()
 
+
+# ============================================================
+# SAVE ATTEMPT
+# ============================================================
 
 def save_quiz_attempt(
     user_id: int,
@@ -291,6 +312,10 @@ def save_quiz_attempt(
         connection.close()
 
 
+# ============================================================
+# QUIZ HISTORY
+# ============================================================
+
 def get_quiz_history(
     user_id: int,
     lesson_id: int,
@@ -313,7 +338,8 @@ def get_quiz_history(
             WHERE user_id = ?
               AND lesson_id = ?
 
-            ORDER BY id DESC
+            ORDER BY
+                id DESC
             """,
             (
                 user_id,
@@ -329,6 +355,10 @@ def get_quiz_history(
     finally:
         connection.close()
 
+
+# ============================================================
+# BEST SCORE
+# ============================================================
 
 def get_best_quiz_score(
     user_id: int,
@@ -364,9 +394,7 @@ def get_best_quiz_score(
             return 0
 
         return int(
-            row[
-                "best_score"
-            ]
+            row["best_score"]
         )
 
     finally:
