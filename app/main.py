@@ -7,14 +7,8 @@ from auth.auth_service import (
     create_user,
 )
 
-from courses.access_sync import (
-    synchronize_user_access,
-)
-
-from courses.course_service import (
-    initialize_user_progress,
-)
-
+from courses.access_sync import synchronize_user_access
+from courses.course_service import initialize_user_progress
 from courses.exam_service import (
     initialize_user_levels,
     seed_level_exams,
@@ -63,6 +57,7 @@ from courses.level04_exam import seed_level04_exam
 
 from courses.level05_module01 import seed_level05_module01
 from courses.level05_module02 import seed_level05_module02
+from courses.level05_module03 import seed_level05_module03
 
 from courses.quiz_service import seed_quizzes
 from courses.seed_courses import seed_course_structure
@@ -124,6 +119,7 @@ def prepare_application():
     # LEVEL 5
     seed_level05_module01()
     seed_level05_module02()
+    seed_level05_module03()
 
     # QUIZZES
     seed_quizzes()
@@ -145,17 +141,10 @@ def prepare_application():
 
 
 def main():
-    app = QApplication(
-        sys.argv
-    )
+    app = QApplication(sys.argv)
 
-    app.setApplicationName(
-        "ARCHIPRO UZ"
-    )
-
-    app.setOrganizationName(
-        "ARCHIPRO UZ"
-    )
+    app.setApplicationName("ARCHIPRO UZ")
+    app.setOrganizationName("ARCHIPRO UZ")
 
     prepare_application()
 
