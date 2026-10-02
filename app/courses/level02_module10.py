@@ -3,59 +3,59 @@ from database.database import get_connection
 
 # ============================================================
 # LEVEL 2
-# MODULE 10 - YAKUNIY FAZOVIY TAHLIL
+# MODULE 10 - YORDAMCHI XONALAR
 # ============================================================
 
 LEVEL02_MODULE10_LESSONS = [
     (
         "L02_M10",
         "L02_M10_001",
-        "Uy planini professional tahlil qilish",
+        "Yordamchi xonalar vazifasi",
         "theory",
-        "Butun uy planini yagona algoritm asosida bosqichma-bosqich tahlil qilish.",
+        "Garderob, laundry, ombor va texnik xonalarning uy rejasidagi rolini tushunish.",
         1,
-        40,
-        25,
+        35,
+        20,
     ),
     (
         "L02_M10",
         "L02_M10_002",
-        "Zonalar va aloqalarni tekshirish",
-        "practice",
-        "Public, private va service zonalar hamda xona qo'shnichiligini kompleks tahlil qilish.",
+        "Garderob va storage",
+        "theory",
+        "Kiyim, kundalik buyumlar va mavsumiy predmetlar uchun saqlash tizimini tashkil qilish.",
         2,
-        40,
-        25,
+        35,
+        20,
     ),
     (
         "L02_M10",
         "L02_M10_003",
-        "Ergonomika va sirkulyatsiya auditi",
+        "Laundry xonasi",
         "practice",
-        "Mebel, eshik, yurish yo'llari va foydalanish zonalaridagi muammolarni aniqlash.",
+        "Kir yuvish, quritish, saralash va saqlash jarayonlarini mantiqiy rejalashtirish.",
         3,
-        45,
-        25,
+        35,
+        20,
     ),
     (
         "L02_M10",
         "L02_M10_004",
-        "Xonalar bo'yicha professional audit",
+        "Ombor va texnik xona",
         "practice",
-        "Oshxona, living, yotoqxona, sanuzel va bolalar xonasini alohida tekshirish.",
+        "Ombor hamda texnik funksiyalarni yashash zonalariga xalaqit bermaydigan qilib joylashtirish.",
         4,
-        45,
-        30,
+        35,
+        20,
     ),
     (
         "L02_M10",
         "L02_M10_005",
-        "LEVEL 2 yakuniy case",
-        "case",
-        "Bitta turar joy planini to'liq tahlil qilish, xatolarni aniqlash va yechim taklif qilish.",
+        "Yordamchi xonalar auditi",
+        "practice",
+        "Yordamchi xonalarni joylashuv, circulation, storage va kundalik foydalanish bo'yicha tekshirish.",
         5,
-        60,
         40,
+        25,
     ),
 ]
 
@@ -67,588 +67,624 @@ LEVEL02_MODULE10_LESSONS = [
 LEVEL02_MODULE10_CONTENT = {
     "L02_M10_001": [
         {
-            "title": "Endi butun uyga qaraymiz",
+            "title": "Yordamchi xona nima?",
             "type": "highlight",
             "text": """
-            Shu paytgacha biz alohida mavzularni o'rgandik.
+            Yordamchi xonalar
+            uyda asosiy yashash funksiyasini
+            bajarmaydi.
 
             <br><br>
 
-            Endi professional tahlilda
-            ularning barchasini birlashtiramiz.
+            Lekin ular
+            kundalik hayotni tartibli
+            va qulay qilishda
+            juda katta rol o'ynaydi.
+            """,
+        },
+        {
+            "title": "Asosiy turlari",
+            "type": "normal",
+            "text": """
+            Yordamchi makonlarga
+            loyiha vazifasiga qarab:
+
+            <br><br>
+
+            • garderob;<br>
+            • laundry;<br>
+            • pantry yoki ombor;<br>
+            • texnik xona;<br>
+            • cleaning storage;<br>
+            • mavsumiy buyumlar storage'i
+
+            <br><br>
+
+            kirishi mumkin.
+            """,
+        },
+        {
+            "title": "Nega muhim?",
+            "type": "highlight",
+            "text": """
+            Agar yordamchi funksiyalar
+            oldindan rejalashtirilmasa,
+
+            <br><br>
+
+            kundalik buyumlar
+            yashash xonalariga
+            tarqalib ketishi mumkin.
+            """,
+        },
+        {
+            "title": "Tasavvur qiling",
+            "type": "example",
+            "text": """
+            Uy katta.
+
+            <br><br>
+
+            Living,
+            bedrooms
+            va oshxona yaxshi.
+
+            <br><br>
+
+            Lekin changyutgich,
+            dazmol,
+            mavsumiy kiyim,
+            maishiy buyumlar
+
+            <br><br>
+
+            uchun maxsus joy yo'q.
+
+            <br><br>
+
+            Natijada asosiy xonalar
+            storage vazifasini ham
+            bajarishga majbur bo'ladi.
+            """,
+        },
+        {
+            "title": "Arxitektor savoli",
+            "type": "normal",
+            "text": """
+            Har bir uyda so'rang:
 
             <br><br>
 
             <b>
-            Yaxshi plan — yaxshi ishlaydigan tizim.
+            Kundalik va kam ishlatiladigan
+            buyumlar qayerda saqlanadi?
             </b>
             """,
         },
         {
-            "title": "1-bosqich — uy kim uchun?",
-            "type": "normal",
+            "title": "Mini-vazifa",
+            "type": "example",
             "text": """
-            Plan tahlilini xonalardan emas,
-            foydalanuvchidan boshlang.
-
-            <br><br>
-
-            Savollar:
-
-            <br><br>
-
-            • oilada nechta odam bor?<br>
-            • bolalar bormi?<br>
-            • mehmon ko'p keladimi?<br>
-            • hovlida ko'p vaqt o'tkaziladimi?<br>
-            • uyda ishlash kerakmi?<br>
-            • bir yoki ikki avlod yashaydimi?
-            """,
-        },
-        {
-            "title": "2-bosqich — zonalar",
-            "type": "normal",
-            "text": """
-            Keyin butun planni uch katta qatlamda ko'ring:
-
-            <br><br>
-
-            <b>PUBLIC</b><br>
-            <b>PRIVATE</b><br>
-            <b>SERVICE</b>
-
-            <br><br>
-
-            Ular mantiqiy joylashganmi?
-            """,
-        },
-        {
-            "title": "3-bosqich — harakat",
-            "type": "normal",
-            "text": """
-            Keyin odamlarni plan ichida yurgizing.
+            Uy uchun yordamchi
+            funksiyalar ro'yxatini tuzing.
 
             <br><br>
 
             Masalan:
 
-            <br><br>
-
-            kirish → living<br>
-            kirish → oshxona<br>
-            yotoqxona → sanuzel<br>
-            oshxona → dining<br>
-            living → hovli
-            """,
-        },
-        {
-            "title": "4-bosqich — xonalar",
-            "type": "normal",
-            "text": """
-            Endi har bir asosiy xonani
-            alohida tekshiring.
-
-            <br><br>
-
-            Faqat m² emas.
-
-            <br><br>
-
-            Uning:
-
-            <br><br>
-
-            • proporsiyasi;<br>
-            • mebeli;<br>
-            • foydali devorlari;<br>
-            • eshiklari;<br>
-            • derazalari;<br>
-            • foydalanish zonalari
-
-            <br><br>
-
-            tekshiriladi.
-            """,
-        },
-        {
-            "title": "Professional odat",
-            "type": "highlight",
-            "text": """
-            <b>
-            Plan ko'rganda darhol
-            “chiroyli” yoki “xunuk” demang.
-
-            Avval nima ishlayotgani va
-            nima ishlamayotganini aniqlang.
-            </b>
+            • kiyim;<br>
+            • laundry;<br>
+            • cleaning;<br>
+            • oziq-ovqat zaxirasi;<br>
+            • texnik jihozlar;<br>
+            • mavsumiy buyumlar.
             """,
         },
     ],
 
     "L02_M10_002": [
         {
-            "title": "Zonalash auditi",
+            "title": "Garderob va oddiy shkaf farqi",
             "type": "highlight",
             "text": """
-            Birinchi katta savol:
+            Garderob
+            oddiy bitta shkafdan
+            kengroq storage tizimi
+            bo'lishi mumkin.
 
             <br><br>
 
-            <b>
-            Uy ichidagi funksiyalar
-            to'g'ri guruhlanganmi?
-            </b>
+            Unda kiyim,
+            poyabzal
+            va boshqa shaxsiy buyumlar
+            tartibli saqlanadi.
             """,
         },
         {
-            "title": "Public zona",
+            "title": "Joylashuv",
             "type": "normal",
             "text": """
-            Tekshiring:
-
-            <br><br>
-
-            • kirish tushunarlimi?<br>
-            • mehmonxona oson topiladimi?<br>
-            • mehmon sanuzeli qulaymi?<br>
-            • dining oshxonaga yaqinmi?<br>
-            • hovli bilan aloqa yaxshimi?
-            """,
-        },
-        {
-            "title": "Private zona",
-            "type": "normal",
-            "text": """
-            Tekshiring:
-
-            <br><br>
-
-            • yotoqxonalar bir tizimmi?<br>
-            • mehmonlar private zonani kesadimi?<br>
-            • sanuzelga tungi yo'l qulaymi?<br>
-            • bolalar va ota-onalar aloqasi mantiqiymi?
-            """,
-        },
-        {
-            "title": "Service zona",
-            "type": "normal",
-            "text": """
-            Tekshiring:
-
-            <br><br>
-
-            • oshxona va pantry aloqasi;<br>
-            • mahsulot olib kirish;<br>
-            • laundry yoki xo'jalik zonasi;<br>
-            • texnik xonalar;<br>
-            • service chiqishlari.
-            """,
-        },
-        {
-            "title": "Qo'shnichilik xatosi",
-            "type": "warning",
-            "text": """
-            Har bir xona alohida yaxshi bo'lishi mumkin.
-
-            <br><br>
-
-            Lekin noto'g'ri qo'shnichilik
-            butun planni zaiflashtiradi.
+            Garderobning joyi
+            foydalanadigan odamga
+            mantiqan yaqin bo'lishi kerak.
 
             <br><br>
 
             Masalan:
 
-            <br><br>
-
-            shovqinli living ↔ bolalar yotoqxonasi.
+            bedroom bilan bog'langan
+            garderob kundalik foydalanishda
+            qulay bo'lishi mumkin.
             """,
         },
         {
-            "title": "Mini-amaliyot",
+            "title": "Kirish garderobi",
+            "type": "normal",
+            "text": """
+            Entrance yaqinida
+            alohida storage bo'lsa,
+
+            <br><br>
+
+            tashqi kiyim,
+            poyabzal
+            va mehmon buyumlarini
+            tartibli joylashtirish mumkin.
+            """,
+        },
+        {
+            "title": "Faqat sig'im emas",
+            "type": "warning",
+            "text": """
+            Garderobga juda ko'p
+            shkaf sig'dirish
+
+            <br><br>
+
+            uning yaxshi ishlashini
+            anglatmaydi.
+
+            <br><br>
+
+            Odam kirishi,
+            buyumni olishi
+            va qayta chiqishi ham
+            qulay bo'lishi kerak.
+            """,
+        },
+        {
+            "title": "Mavsumiy storage",
             "type": "example",
             "text": """
-            Istalgan uy planini olib,
-            faqat zonalash bo'yicha
-            5 ta kuchli va 5 ta zaif nuqtani yozing.
+            Har kuni ishlatilmaydigan:
+
+            <br><br>
+
+            • qishki kiyim;<br>
+            • chamadon;<br>
+            • qo'shimcha ko'rpa;<br>
+            • katta qutilar
+
+            <br><br>
+
+            uchun alohida storage
+            rejalashtirilishi mumkin.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            Storage'ni 3 guruhga ajrating:
+
+            <br><br>
+
+            1. kundalik;<br>
+            2. mavsumiy;<br>
+            3. kam ishlatiladigan.
+
+            <br><br>
+
+            Har bir guruhni
+            uyda qayerga joylashtirish
+            ma'qul ekanini o'ylang.
             """,
         },
     ],
 
     "L02_M10_003": [
         {
-            "title": "Ergonomika auditi",
+            "title": "Laundry — jarayon xonasi",
             "type": "highlight",
             "text": """
-            Endi plan ichidagi odamga qaytamiz.
+            Laundry faqat
+            kir yuvish mashinasi
+            qo'yiladigan joy emas.
 
             <br><br>
 
-            Har bir xona real foydalanishda ishlaydimi?
+            Bu yerda butun
+            maishiy jarayon mavjud.
             """,
         },
         {
-            "title": "Eshiklar",
+            "title": "Laundry jarayoni",
             "type": "normal",
             "text": """
-            Tekshiring:
+            Jarayonni tasavvur qiling:
 
             <br><br>
 
-            • eshik boshqa eshikka uriladimi;<br>
-            • mebelga uriladimi;<br>
-            • odamni tor burchakka yo'naltiradimi;<br>
-            • foydali devorni keraksiz bo'lib tashlaganmi.
+            kir kiyim →
+            saralash →
+            yuvish →
+            quritish →
+            dazmollash yoki yig'ish →
+            saqlash.
             """,
         },
         {
-            "title": "Mebel",
+            "title": "Jihoz atrofida foydalanish",
             "type": "normal",
             "text": """
-            Har bir mebel uchun:
+            Kir yuvish mashinasi
+            yoki boshqa jihoz
+            faqat o'z konturini
+            egallamaydi.
 
             <br><br>
 
-            • o'zi sig'dimi;<br>
-            • undan foydalanish mumkinmi;<br>
-            • oldida joy bormi;<br>
-            • boshqa mebel bilan konflikt bormi
-
-            <br><br>
-
-            tekshiriladi.
+            Uning eshigi ochiladi,
+            odam oldida turadi
+            va kirlarni joylashtiradi.
             """,
         },
         {
-            "title": "Sirkulyatsiya",
-            "type": "normal",
+            "title": "Storage",
+            "type": "highlight",
             "text": """
-            Asosiy yo'llarni xayolan chizing.
+            Laundryda:
 
             <br><br>
 
-            Qaysi yo'llar:
+            • kir yuvish vositalari;<br>
+            • kir savati;<br>
+            • dazmol;<br>
+            • cleaning buyumlari
 
             <br><br>
 
-            • kesishadi;<br>
-            • juda uzun;<br>
-            • keraksiz aylanadi;<br>
-            • mebel orasidan o'tadi;<br>
-            • private va public zonani aralashtiradi?
+            uchun storage kerak bo'lishi mumkin.
             """,
         },
         {
-            "title": "O'lik maydon",
-            "type": "warning",
-            "text": """
-            Plan maydoni katta bo'lishi mumkin.
-
-            <br><br>
-
-            Lekin diagonal devorlar,
-            keraksiz koridorlar va
-            foydalanilmaydigan burchaklar
-            real foydali maydonni kamaytiradi.
-            """,
-        },
-        {
-            "title": "Mini-amaliyot",
+            "title": "Laundry joylashuvi",
             "type": "example",
             "text": """
-            Bitta plan uchun:
+            Laundry bedroomlardan
+            juda uzoqda bo'lsa,
 
             <br><br>
 
-            3 ta eshik konflikti,<br>
-            3 ta sirkulyatsiya nuqtasi,<br>
-            3 ta mebel ergonomikasi nuqtasini
+            kir kiyimlarni
+            uy bo'ylab uzoq tashish
+            talab qilinishi mumkin.
 
             <br><br>
 
-            tekshiring.
+            Juda public joyda bo'lsa esa
+            kundalik maishiy jarayon
+            ko'zga tashlanishi mumkin.
+            """,
+        },
+        {
+            "title": "Circulationni bloklamang",
+            "type": "warning",
+            "text": """
+            Laundry eshigi
+            yoki ochilgan jihoz
+
+            <br><br>
+
+            asosiy hallwayni
+            butunlay bloklab qo'ymasligi kerak.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            Laundry sxemasini chizing.
+
+            <br><br>
+
+            Belgilang:
+
+            • washing;<br>
+            • drying;<br>
+            • basket;<br>
+            • storage;<br>
+            • ishchi sirt.
+
+            <br><br>
+
+            Jarayon ketma-ketligini
+            strelka bilan ko'rsating.
             """,
         },
     ],
 
     "L02_M10_004": [
         {
-            "title": "Xonalarni navbat bilan audit qilamiz",
+            "title": "Ombor",
             "type": "highlight",
             "text": """
-            Professional tahlilda
-            har bir asosiy xona uchun
-            alohida checklist ishlatish foydali.
+            Ombor
+            kamroq ishlatiladigan
+            yoki katta hajmdagi buyumlarni
+            saqlash uchun xizmat qilishi mumkin.
             """,
         },
         {
-            "title": "Oshxona",
-            "type": "example",
+            "title": "Omborni keraksiz bo'shliq qilmang",
+            "type": "warning",
             "text": """
-            Tekshiring:
+            Ombor borligi yetarli emas.
 
             <br><br>
 
-            • muzlatkich;<br>
-            • moyka;<br>
-            • tayyorlash yuzasi;<br>
-            • plita;<br>
+            Ichida buyumlarga
+            kirish mumkin bo'lmasa
+
+            <br><br>
+
+            yoki barcha predmetlar
+            bir-birining oldini to'ssa,
+
+            <br><br>
+
+            storage samarali emas.
+            """,
+        },
+        {
+            "title": "Pantry",
+            "type": "normal",
+            "text": """
+            Oshxona yaqinidagi
+            oziq-ovqat ombori yoki pantry
+
+            <br><br>
+
+            oshxona bilan
+            mantiqiy aloqada bo'lishi mumkin.
+
+            <br><br>
+
+            Uning joylashuvi
+            kundalik foydalanishga mos
+            bo'lishi kerak.
+            """,
+        },
+        {
+            "title": "Texnik xona",
+            "type": "highlight",
+            "text": """
+            Texnik xonada
+            uyga xizmat qiluvchi
+            muhandislik jihozlari
+            joylashtirilishi mumkin.
+
+            <br><br>
+
+            Bu xonaga xizmat ko'rsatish
+            va nazorat uchun kirish
+            imkonini oldindan o'ylash kerak.
+            """,
+        },
+        {
+            "title": "Texnik xonani tasodifiy qoldirmang",
+            "type": "warning",
+            "text": """
+            Rejaning oxirida qolgan
+            kichik bo'sh joyni
+
+            <br><br>
+
+            avtomatik ravishda
+            texnik xona qilish
+
+            <br><br>
+
+            yaxshi usul emas.
+
+            <br><br>
+
+            Texnik funksiyaning
+            real ehtiyojlari
+            alohida aniqlanadi.
+            """,
+        },
+        {
+            "title": "Service circulation",
+            "type": "normal",
+            "text": """
+            Texnik yoki ombor
+            funksiyalaridan foydalanish
+
+            <br><br>
+
+            living yoki bedroomning
+            asosiy dam olish zonasini
+            keraksiz kesib o'tmasligi ma'qul.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            Uy planida
+            3 ta yordamchi xona joylashtiring:
+
+            <br><br>
+
             • pantry;<br>
-            • dining;<br>
-            • hovli bilan aloqa.
-            """,
-        },
-        {
-            "title": "Living",
-            "type": "example",
-            "text": """
-            Tekshiring:
+            • general storage;<br>
+            • technical room.
 
             <br><br>
 
-            • TV joyi;<br>
-            • suhbat zonasi;<br>
-            • divanlar;<br>
-            • asosiy yurish;<br>
-            • hovliga chiqish;<br>
-            • katta makon zonalanganmi.
-            """,
-        },
-        {
-            "title": "Master bedroom",
-            "type": "example",
-            "text": """
-            Tekshiring:
-
-            <br><br>
-
-            • krovat;<br>
-            • yurish;<br>
-            • garderob;<br>
-            • private sanuzel;<br>
-            • tungi circulation;<br>
-            • maxfiylik.
-            """,
-        },
-        {
-            "title": "Bolalar xonasi",
-            "type": "example",
-            "text": """
-            Tekshiring:
-
-            <br><br>
-
-            • uyqu;<br>
-            • o'qish;<br>
-            • o'yin;<br>
-            • saqlash;<br>
-            • kelajakda transformatsiya;<br>
-            • ota-onaga va sanuzelga aloqa.
-            """,
-        },
-        {
-            "title": "Sanuzel",
-            "type": "example",
-            "text": """
-            Tekshiring:
-
-            <br><br>
-
-            • eshik;<br>
-            • rakovina;<br>
-            • unitaz;<br>
-            • dush/vanna;<br>
-            • foydalanish zonalari;<br>
-            • elementlar konflikti.
-            """,
-        },
-        {
-            "title": "Muhim qoida",
-            "type": "highlight",
-            "text": """
-            <b>
-            Xatoni ko'rish yetmaydi.
-
-            Professional mutaxassis
-            xatoning sababini va yechimini ham tushuntiradi.
-            </b>
+            Har birini
+            unga eng bog'liq
+            funksiyaga yaqinlashtiring.
             """,
         },
     ],
 
     "L02_M10_005": [
         {
-            "title": "LEVEL 2 YAKUNIY CASE",
+            "title": "Yordamchi xonalar auditi",
             "type": "highlight",
             "text": """
-            Endi sizga bitta turar joy planini
-            to'liq tahlil qilish vazifasi beriladi.
+            Endi yordamchi xonalarni
+            alohida kichik xonalar sifatida emas,
 
             <br><br>
 
-            Bu LEVEL 2 davomida o'rgangan
-            bilimlaringizni birlashtiradi.
+            butun uy funksional
+            tizimining bir qismi sifatida
+            tekshiramiz.
             """,
         },
         {
-            "title": "1. Foydalanuvchini aniqlang",
+            "title": "1. Garderob",
             "type": "example",
             "text": """
-            Tasavvur qiling:
+            Tekshiring:
 
             <br><br>
 
-            • ota-ona;<br>
-            • ikki bola;<br>
-            • mehmonlar tez-tez keladi;<br>
-            • oila hovlida ovqatlanishni yaxshi ko'radi.
-
-            <br><br>
-
-            Plan shu oilaga mos ishlashi kerak.
+            • foydalanadigan odamga yaqinmi?<br>
+            • shkaflardan foydalanish mumkinmi?<br>
+            • circulation ochiqmi?<br>
+            • kundalik va mavsumiy storage ajratilganmi?
             """,
         },
         {
-            "title": "2. Zonalashni tekshiring",
+            "title": "2. Laundry",
             "type": "example",
             "text": """
-            Public, private va service zonalarni ajrating.
+            Tekshiring:
 
             <br><br>
 
-            Kamida 3 ta savolga javob bering:
-
-            <br><br>
-
-            • mehmon qayergacha kiradi?<br>
-            • bolalar private zonasi qayerda?<br>
-            • oshxona va hovli aloqasi qanday?
+            • kirlarni olib kelish qulaymi?<br>
+            • yuvish jarayoni mantiqiymi?<br>
+            • storage bormi?<br>
+            • jihoz eshiklari ochiladimi?
             """,
         },
         {
-            "title": "3. Sirkulyatsiyani tekshiring",
+            "title": "3. Ombor",
             "type": "example",
             "text": """
-            Quyidagi yo'llarni tahlil qiling:
+            Tekshiring:
 
             <br><br>
 
-            kirish → living<br>
-            kirish → oshxona<br>
-            oshxona → dining<br>
-            living → hovli<br>
-            yotoqxona → sanuzel
+            • buyumlarga kirish mumkinmi?<br>
+            • kerakli joyga yaqinmi?<br>
+            • ichki storage tartiblimi?<br>
+            • keraksiz o'lik zona ko'p emasmi?
             """,
         },
         {
-            "title": "4. Har bir xona",
+            "title": "4. Texnik xona",
             "type": "example",
             "text": """
-            Kamida:
+            Tekshiring:
 
             <br><br>
 
-            • oshxona;<br>
-            • living;<br>
-            • master bedroom;<br>
-            • bolalar xonasi;<br>
-            • sanuzel
-
-            <br><br>
-
-            bo'yicha alohida xulosa yozing.
+            • texnik funksiyaga mosmi?<br>
+            • xizmat ko'rsatish uchun kirish bormi?<br>
+            • yashash circulationiga xalaqit bermaydimi?
             """,
         },
         {
-            "title": "5. Xatolar",
+            "title": "Xatoni toping",
             "type": "warning",
             "text": """
-            Kamida 10 ta konkret nuqta toping.
+            250 m² uyda
+            katta living,
+            katta bedrooms
+            va katta dining mavjud.
 
             <br><br>
 
-            “Plan yomon” deb yozmang.
+            Lekin:
+
+            • coat storage yo'q;<br>
+            • laundry yo'q;<br>
+            • cleaning buyumlari uchun joy yo'q;<br>
+            • texnik jihozlar koridorda turibdi.
 
             <br><br>
 
-            Masalan:
-
-            <br><br>
-
-            “Mehmon sanuzelga borish uchun
-            private yotoq koridoriga kiradi.”
-
-            <br><br>
-
-            Bu professional tahlil.
+            Uy katta,
+            lekin kundalik hayot
+            yaxshi tashkil qilinmagan.
             """,
         },
         {
-            "title": "6. Yechim taklif qiling",
+            "title": "Professional checklist",
             "type": "example",
             "text": """
-            Har bir asosiy muammo uchun
-            kamida bitta yechim bering.
+            Yordamchi xonalarni tekshiring:
 
             <br><br>
 
-            Masalan:
-
-            <br><br>
-
-            MUAMMO:
-            dining orqali hovliga asosiy yo'l o'tgan.
-
-            <br><br>
-
-            YECHIM:
-            tashqi chiqishni sirkulyatsiya chetiga
-            yaqinlashtirish yoki dining mebel sxemasini
-            qayta tashkil qilish.
-            """,
-        },
-        {
-            "title": "Professional format",
-            "type": "highlight",
-            "text": """
-            Har bir tahlilni:
-
-            <br><br>
-
-            <b>MUAMMO → SABAB → OQIBAT → YECHIM</b>
-
-            <br><br>
-
-            formatida yozishga odatlaning.
+            <b>1.</b> Kundalik storage yetarlimi?<br><br>
+            <b>2.</b> Mavsumiy storage bormi?<br><br>
+            <b>3.</b> Garderob mantiqiy joylashganmi?<br><br>
+            <b>4.</b> Laundry workflow ishlaydimi?<br><br>
+            <b>5.</b> Omborga kirish qulaymi?<br><br>
+            <b>6.</b> Texnik xona xizmat ko'rsatishga mosmi?<br><br>
+            <b>7.</b> Service circulation asosiy yashash zonasini buzmayaptimi?
             """,
         },
         {
             "title": "LEVEL 2 yakuni",
             "type": "highlight",
             "text": """
+            Siz endi turar joyni
+            faqat xonalar ro'yxati sifatida emas,
+
+            <br><br>
+
+            odam yashaydigan
+            to'liq funksional tizim
+            sifatida tahlil qila olasiz.
+
+            <br><br>
+
             LEVEL 2 davomida siz:
 
             <br><br>
 
-            ✓ ergonomika;<br>
-            ✓ funksional zonalash;<br>
-            ✓ sirkulyatsiya;<br>
-            ✓ xona proporsiyasi;<br>
-            ✓ public/private makon;<br>
-            ✓ oshxona;<br>
-            ✓ yotoqxona va sanuzel;<br>
-            ✓ living;<br>
-            ✓ bolalar xonasi;<br>
-            ✓ kompleks plan auditi
+            ✓ inson ergonomikasini;<br>
+            ✓ funksional zonalashni;<br>
+            ✓ circulationni;<br>
+            ✓ mehmonxonani;<br>
+            ✓ oshxonani;<br>
+            ✓ yotoqxonani;<br>
+            ✓ bolalar xonasini;<br>
+            ✓ sanuzelni;<br>
+            ✓ entrance va hallwayni;<br>
+            ✓ yordamchi xonalarni
 
             <br><br>
 
-            bo'yicha fikrlashni o'rgandingiz.
-
-            <br><br>
-
-            Endi keyingi qadam:
-            <b>LEVEL 2 FINAL EXAM.</b>
+            o'rgandingiz.
             """,
         },
     ],
@@ -657,26 +693,16 @@ LEVEL02_MODULE10_CONTENT = {
 
 # ============================================================
 # QUIZ
+# Q136-Q150 KODLARI SAQLANADI
 # ============================================================
 
 LEVEL02_MODULE10_QUIZ = {
     "L02_M10_001": [
         {
             "code": "L02_Q136",
-            "question": "Professional plan tahlilini faqat xona maydonidan boshlash kerakmi?",
+            "question": "Yordamchi xonalar uy kundalik foydalanishiga ta'sir qiladimi?",
             "explanation": (
-                "Avval foydalanuvchi va uning ehtiyojlarini tushunish muhim."
-            ),
-            "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
-            ],
-        },
-        {
-            "code": "L02_Q137",
-            "question": "Butun uy tahlilida public, private va service zonalar tekshiriladimi?",
-            "explanation": (
-                "Bu kompleks funksional tahlilning asosiy qismlaridan biridir."
+                "Storage, laundry va texnik funksiyalar kundalik hayotni tartibli tashkil qilishga yordam beradi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -684,14 +710,25 @@ LEVEL02_MODULE10_QUIZ = {
             ],
         },
         {
-            "code": "L02_Q138",
-            "question": "Plan haqida faqat 'chiroyli' yoki 'xunuk' deyish professional tahlilmi?",
+            "code": "L02_Q137",
+            "question": "Yordamchi xonalar faqat keraksiz qolgan maydonga joylashtirilishi kerakmi?",
             "explanation": (
-                "Professional tahlil konkret funksional sabab va oqibatga asoslanadi."
+                "Ularning joylashuvi real funksional ehtiyoj va boshqa xonalar bilan aloqaga qarab belgilanadi."
             ),
             "options": [
                 ("A", "Ha", False),
                 ("B", "Yo'q", True),
+            ],
+        },
+        {
+            "code": "L02_Q138",
+            "question": "Uyda cleaning va mavsumiy buyumlar uchun storage kerak bo'lishi mumkinmi?",
+            "explanation": (
+                "Kundalik yashashda turli turdagi buyumlar uchun saqlash joyi kerak bo'lishi mumkin."
+            ),
+            "options": [
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
             ],
         },
     ],
@@ -699,9 +736,9 @@ LEVEL02_MODULE10_QUIZ = {
     "L02_M10_002": [
         {
             "code": "L02_Q139",
-            "question": "Noto'g'ri xona qo'shnichiligi butun plan sifatiga ta'sir qilishi mumkinmi?",
+            "question": "Garderob foydalanadigan bedroomga yaqin joylashishi qulay bo'lishi mumkinmi?",
             "explanation": (
-                "Xonalar alohida yaxshi bo'lsa ham ularning noto'g'ri aloqasi muammo yaratishi mumkin."
+                "Funksional yaqinlik kundalik foydalanishni soddalashtirishi mumkin."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -710,20 +747,20 @@ LEVEL02_MODULE10_QUIZ = {
         },
         {
             "code": "L02_Q140",
-            "question": "Mehmonning private zona ichidan o'tishi zonalash muammosi bo'lishi mumkinmi?",
+            "question": "Garderobga ko'p shkaf sig'ishi uning avtomatik ravishda qulay ekanini anglatadimi?",
             "explanation": (
-                "Bu oilaning maxfiyligini zaiflashtirishi mumkin."
+                "Shkaflardan foydalanish va ichki circulation ham tekshirilishi kerak."
             ),
             "options": [
-                ("A", "Ha", True),
-                ("B", "Yo'q", False),
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
             ],
         },
         {
             "code": "L02_Q141",
-            "question": "Oshxona va pantry aloqasi service auditga kiradimi?",
+            "question": "Kundalik va mavsumiy storage'ni alohida o'ylash foydalimi?",
             "explanation": (
-                "Bu service zonaning kundalik ishlashiga ta'sir qiladi."
+                "Turli foydalanish chastotasidagi buyumlarni tartibli joylashtirish mumkin."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -735,20 +772,20 @@ LEVEL02_MODULE10_QUIZ = {
     "L02_M10_003": [
         {
             "code": "L02_Q142",
-            "question": "Eshik va mebel konflikti ergonomika auditiga kiradimi?",
+            "question": "Laundry faqat kir yuvish mashinasi uchun joymi?",
             "explanation": (
-                "Eshik va mebel foydalanish zonalari birgalikda tekshiriladi."
+                "Laundry saralash, yuvish, quritish, yig'ish va storage jarayonlarini ham o'z ichiga olishi mumkin."
             ),
             "options": [
-                ("A", "Ha", True),
-                ("B", "Yo'q", False),
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
             ],
         },
         {
             "code": "L02_Q143",
-            "question": "Keraksiz uzun koridor foydali maydonni kamaytirishi mumkinmi?",
+            "question": "Laundry rejasida jihoz eshigi ochilish zonasini tekshirish kerakmi?",
             "explanation": (
-                "Ortiqcha circulation maydon samaradorligini pasaytirishi mumkin."
+                "Jihozdan foydalanish uchun uning oldida real ish maydoni kerak."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -757,9 +794,9 @@ LEVEL02_MODULE10_QUIZ = {
         },
         {
             "code": "L02_Q144",
-            "question": "Asosiy harakat yo'lining mebel orasidan o'tishi tekshiriladimi?",
+            "question": "Laundry uchun storage foydali bo'lishi mumkinmi?",
             "explanation": (
-                "Sirkulyatsiya mebel va foydalanish zonalariga xalaqit bermasligi kerak."
+                "Kir vositalari, savatlar va boshqa maishiy buyumlarni saqlash uchun joy kerak bo'lishi mumkin."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -771,9 +808,9 @@ LEVEL02_MODULE10_QUIZ = {
     "L02_M10_004": [
         {
             "code": "L02_Q145",
-            "question": "Oshxona auditida muzlatkich, moyka va plita aloqasi tekshiriladimi?",
+            "question": "Omborda saqlanayotgan buyumlarga real kirish imkonini tekshirish kerakmi?",
             "explanation": (
-                "Bu oshxona ish jarayonining muhim qismidir."
+                "Buyumlarni faqat joylashtirish emas, ulardan foydalanish ham mumkin bo'lishi kerak."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -782,9 +819,9 @@ LEVEL02_MODULE10_QUIZ = {
         },
         {
             "code": "L02_Q146",
-            "question": "Bolalar xonasida kelajakdagi transformatsiya ham tahlil qilinadimi?",
+            "question": "Pantryni oshxona bilan funksional bog'lash foydali bo'lishi mumkinmi?",
             "explanation": (
-                "Bola ulg'aygani sari xona ehtiyojlari o'zgaradi."
+                "Oziq-ovqat saqlash zonasining oshxonaga mantiqan yaqinligi kundalik foydalanishga yordam beradi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -793,13 +830,13 @@ LEVEL02_MODULE10_QUIZ = {
         },
         {
             "code": "L02_Q147",
-            "question": "Living auditida asosiy yurish yo'li muhimmi?",
+            "question": "Texnik xona faqat planda qolib ketgan tasodifiy bo'sh joyga joylashtirilishi kerakmi?",
             "explanation": (
-                "Harakat TV va suhbat zonasini buzmasligi kerak."
+                "Texnik makonning real jihozlari, kirish va xizmat ko'rsatish ehtiyojlari alohida tahlil qilinadi."
             ),
             "options": [
-                ("A", "Ha", True),
-                ("B", "Yo'q", False),
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
             ],
         },
     ],
@@ -807,20 +844,20 @@ LEVEL02_MODULE10_QUIZ = {
     "L02_M10_005": [
         {
             "code": "L02_Q148",
-            "question": "Professional xato tahlilida faqat muammoni aytish yetarlimi?",
+            "question": "Yordamchi xonalar auditida joylashuv va circulation tekshiriladimi?",
             "explanation": (
-                "Sabab, oqibat va yechimni ham tushuntirish professional tahlilni kuchaytiradi."
+                "Yordamchi funksiyalar boshqa xonalarga qulay bog'lanishi va asosiy harakatga xalaqit bermasligi kerak."
             ),
             "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
             ],
         },
         {
             "code": "L02_Q149",
-            "question": "MUAMMO → SABAB → OQIBAT → YECHIM formati foydalimi?",
+            "question": "Katta uyda yordamchi xonalar bo'lmasa kundalik foydalanish noqulaylashishi mumkinmi?",
             "explanation": (
-                "Bu tahlilni aniq va mantiqiy shaklda ifodalashga yordam beradi."
+                "Storage, laundry va texnik funksiyalarning yo'qligi asosiy yashash xonalarini ortiqcha yuklashi mumkin."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -829,13 +866,21 @@ LEVEL02_MODULE10_QUIZ = {
         },
         {
             "code": "L02_Q150",
-            "question": "LEVEL 2 yakuniy case nimani tekshiradi?",
+            "question": "Yordamchi xonalarni rejalashtirishdagi to'g'ri yondashuv qaysi?",
             "explanation": (
-                "Ergonomika, zonalash, sirkulyatsiya va xonalar sifatini bitta kompleks tahlilda birlashtiradi."
+                "Ehtiyoj aniqlanadi, tegishli joy tanlanadi, storage va circulation tekshiriladi."
             ),
             "options": [
-                ("A", "Butun uy planini kompleks tahlil qilishni", True),
-                ("B", "Faqat fasad rangini", False),
+                (
+                    "A",
+                    "Ehtiyoj → joylashuv → storage/workflow → circulation → audit",
+                    True,
+                ),
+                (
+                    "B",
+                    "Qolgan bo'sh joyga tasodifiy xonalar qo'shish",
+                    False,
+                ),
             ],
         },
     ],
