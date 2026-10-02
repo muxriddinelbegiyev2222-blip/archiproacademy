@@ -53,6 +53,7 @@ from courses.level03_module01 import seed_level03_module01
 from courses.level03_module02 import seed_level03_module02
 from courses.level03_module03 import seed_level03_module03
 from courses.level03_module04 import seed_level03_module04
+from courses.level03_module05 import seed_level03_module05
 
 from courses.quiz_service import (
     seed_quizzes,
@@ -108,6 +109,7 @@ def prepare_application():
     seed_level03_module02()
     seed_level03_module03()
     seed_level03_module04()
+    seed_level03_module05()
 
     # QUIZZES
     seed_quizzes()
@@ -127,9 +129,7 @@ def prepare_application():
 
 
 def main():
-    app = QApplication(
-        sys.argv
-    )
+    app = QApplication(sys.argv)
 
     app.setApplicationName(
         "ARCHIPRO UZ"
