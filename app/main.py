@@ -53,6 +53,10 @@ from courses.level03_module01 import (
     seed_level03_module01,
 )
 
+from courses.level03_module02 import (
+    seed_level03_module02,
+)
+
 from courses.quiz_service import (
     seed_quizzes,
 )
@@ -116,6 +120,7 @@ def prepare_application():
     # ========================================================
 
     seed_level03_module01()
+    seed_level03_module02()
 
     # ========================================================
     # QUIZZES
