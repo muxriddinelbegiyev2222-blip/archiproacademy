@@ -1,8 +1,6 @@
 import sys
 
-from PySide6.QtWidgets import (
-    QApplication,
-)
+from PySide6.QtWidgets import QApplication
 
 from auth.auth_service import (
     authenticate_user,
@@ -20,6 +18,10 @@ from courses.exam_service import (
 
 from courses.level00_extra import (
     seed_level00_extra,
+)
+
+from courses.level01_content import (
+    seed_level01_lessons,
 )
 
 from courses.quiz_service import (
@@ -44,21 +46,19 @@ from ui.login_window import (
 
 
 def prepare_application():
-    """
-    ARCHIPRO UZ ishga tushishidan oldin
-    barcha lokal strukturalarni tayyorlaydi.
-    """
-
-    # Database
+    # Database jadvallari
     initialize_database()
 
-    # 16 Level + modullar
+    # 16 Level va modullar
     seed_course_structure()
 
-    # Level 0 qo'shimcha darslari
+    # Level 0 darslari
     seed_level00_extra()
 
-    # Mini-testlar
+    # Level 1 darslari
+    seed_level01_lessons()
+
+    # Barcha mini-testlar
     seed_quizzes()
 
     # Level yakuniy imtihonlari
@@ -113,12 +113,10 @@ def main():
 
         login_window.error_label.clear()
 
-        # Dars progressi
         initialize_user_progress(
             user["id"]
         )
 
-        # Level progressi
         initialize_user_levels(
             user["id"]
         )
