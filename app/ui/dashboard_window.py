@@ -13,9 +13,11 @@ from PySide6.QtWidgets import (
 )
 
 from courses.course_service import (
+    complete_lesson,
     get_next_available_lesson,
     get_user_course_stats,
 )
+
 from ui.lesson_window import LessonWindow
 
 
@@ -49,6 +51,7 @@ class DashboardWindow(QMainWindow):
 
     def build_ui(self):
         central_widget = QWidget()
+
         self.setCentralWidget(
             central_widget
         )
@@ -173,21 +176,34 @@ class DashboardWindow(QMainWindow):
         root_layout = QHBoxLayout(
             central_widget
         )
+
         root_layout.setContentsMargins(
-            0, 0, 0, 0
+            0,
+            0,
+            0,
+            0,
         )
+
         root_layout.setSpacing(0)
 
+        # =========================
         # SIDEBAR
+        # =========================
+
         sidebar = QFrame()
+
         sidebar.setObjectName(
             "sidebar"
         )
-        sidebar.setFixedWidth(260)
+
+        sidebar.setFixedWidth(
+            260
+        )
 
         sidebar_layout = QVBoxLayout(
             sidebar
         )
+
         sidebar_layout.setContentsMargins(
             20,
             24,
@@ -198,6 +214,7 @@ class DashboardWindow(QMainWindow):
         logo_title = QLabel(
             "ARCHIPRO UZ"
         )
+
         logo_title.setObjectName(
             "logoTitle"
         )
@@ -205,6 +222,7 @@ class DashboardWindow(QMainWindow):
         logo_subtitle = QLabel(
             "Architecture Academy"
         )
+
         logo_subtitle.setObjectName(
             "logoSubtitle"
         )
@@ -212,10 +230,14 @@ class DashboardWindow(QMainWindow):
         sidebar_layout.addWidget(
             logo_title
         )
+
         sidebar_layout.addWidget(
             logo_subtitle
         )
-        sidebar_layout.addSpacing(25)
+
+        sidebar_layout.addSpacing(
+            25
+        )
 
         self.menu = QListWidget()
 
@@ -245,6 +267,7 @@ class DashboardWindow(QMainWindow):
         sidebar_layout.addWidget(
             self.menu
         )
+
         sidebar_layout.addStretch()
 
         user_name = (
@@ -258,8 +281,7 @@ class DashboardWindow(QMainWindow):
         )
 
         user_label = QLabel(
-            f"{user_name}\n"
-            f"{license_type}"
+            f"{user_name}\n{license_type}"
         )
 
         user_label.setStyleSheet(
@@ -279,23 +301,31 @@ class DashboardWindow(QMainWindow):
             user_label
         )
 
-        # CONTENT
+        # =========================
+        # MAIN CONTENT
+        # =========================
+
         content = QWidget()
 
         content_layout = QVBoxLayout(
             content
         )
+
         content_layout.setContentsMargins(
             34,
             28,
             34,
             28,
         )
-        content_layout.setSpacing(22)
+
+        content_layout.setSpacing(
+            22
+        )
 
         page_title = QLabel(
             "Bosh sahifa"
         )
+
         page_title.setObjectName(
             "pageTitle"
         )
@@ -303,6 +333,7 @@ class DashboardWindow(QMainWindow):
         page_subtitle = QLabel(
             "Professional arxitektura yo'lingizni davom ettiring."
         )
+
         page_subtitle.setObjectName(
             "pageSubtitle"
         )
@@ -310,30 +341,35 @@ class DashboardWindow(QMainWindow):
         content_layout.addWidget(
             page_title
         )
+
         content_layout.addWidget(
             page_subtitle
         )
 
-        # REAL STATS
+        # =========================
+        # STATISTICS
+        # =========================
+
         stats_layout = QHBoxLayout()
-        stats_layout.setSpacing(16)
+
+        stats_layout.setSpacing(
+            16
+        )
 
         progress_percent = (
-            self.stats[
-                "progress_percent"
-            ]
+            self.stats["progress_percent"]
         )
 
         completed = (
-            self.stats[
-                "completed_lessons"
-            ]
+            self.stats["completed_lessons"]
         )
 
         total = (
-            self.stats[
-                "total_lessons"
-            ]
+            self.stats["total_lessons"]
+        )
+
+        xp_value = (
+            self.stats["xp"]
         )
 
         stats_layout.addWidget(
@@ -357,8 +393,6 @@ class DashboardWindow(QMainWindow):
             )
         )
 
-        xp_value = completed * 10
-
         stats_layout.addWidget(
             self.create_stat_card(
                 "XP",
@@ -370,8 +404,12 @@ class DashboardWindow(QMainWindow):
             stats_layout
         )
 
+        # =========================
         # CONTINUE LEARNING
+        # =========================
+
         learning_card = QFrame()
+
         learning_card.setObjectName(
             "card"
         )
@@ -379,17 +417,22 @@ class DashboardWindow(QMainWindow):
         learning_layout = QVBoxLayout(
             learning_card
         )
+
         learning_layout.setContentsMargins(
             24,
             22,
             24,
             22,
         )
-        learning_layout.setSpacing(12)
+
+        learning_layout.setSpacing(
+            12
+        )
 
         learning_title = QLabel(
             "O'qishni davom ettirish"
         )
+
         learning_title.setObjectName(
             "sectionTitle"
         )
@@ -399,12 +442,12 @@ class DashboardWindow(QMainWindow):
         )
 
         if self.next_lesson:
-
             course_name = QLabel(
                 self.next_lesson[
                     "level_title"
                 ]
             )
+
             course_name.setObjectName(
                 "infoText"
             )
@@ -431,16 +474,20 @@ class DashboardWindow(QMainWindow):
                     "",
                 )
             )
+
             lesson_summary.setObjectName(
                 "infoText"
             )
+
             lesson_summary.setWordWrap(
                 True
             )
 
             progress = QProgressBar()
+
             progress.setMinimum(0)
             progress.setMaximum(100)
+
             progress.setValue(
                 progress_percent
             )
@@ -448,9 +495,11 @@ class DashboardWindow(QMainWindow):
             continue_button = QPushButton(
                 "DAVOM ETTIRISH"
             )
+
             continue_button.setObjectName(
                 "continueButton"
             )
+
             continue_button.setFixedWidth(
                 180
             )
@@ -462,39 +511,51 @@ class DashboardWindow(QMainWindow):
             learning_layout.addWidget(
                 course_name
             )
+
             learning_layout.addWidget(
                 lesson_name
             )
+
             learning_layout.addWidget(
                 lesson_summary
             )
+
             learning_layout.addWidget(
                 progress
             )
-            learning_layout.addSpacing(4)
+
+            learning_layout.addSpacing(
+                4
+            )
+
             learning_layout.addWidget(
                 continue_button,
                 alignment=Qt.AlignmentFlag.AlignLeft,
             )
 
         else:
-            finished = QLabel(
-                "Hozircha ochiq dars mavjud emas."
+            finished_label = QLabel(
+                "Barcha mavjud darslar tugatilgan."
             )
-            finished.setObjectName(
+
+            finished_label.setObjectName(
                 "infoText"
             )
 
             learning_layout.addWidget(
-                finished
+                finished_label
             )
 
         content_layout.addWidget(
             learning_card
         )
 
-        # SKILL PREVIEW
+        # =========================
+        # SKILLS
+        # =========================
+
         skills_card = QFrame()
+
         skills_card.setObjectName(
             "card"
         )
@@ -502,17 +563,22 @@ class DashboardWindow(QMainWindow):
         skills_layout = QVBoxLayout(
             skills_card
         )
+
         skills_layout.setContentsMargins(
             24,
             22,
             24,
             22,
         )
-        skills_layout.setSpacing(12)
+
+        skills_layout.setSpacing(
+            12
+        )
 
         skills_title = QLabel(
             "Professional ko'nikmalar"
         )
+
         skills_title.setObjectName(
             "sectionTitle"
         )
@@ -547,6 +613,7 @@ class DashboardWindow(QMainWindow):
         root_layout.addWidget(
             sidebar
         )
+
         root_layout.addWidget(
             content,
             1,
@@ -559,6 +626,7 @@ class DashboardWindow(QMainWindow):
     ) -> QFrame:
 
         card = QFrame()
+
         card.setObjectName(
             "card"
         )
@@ -566,6 +634,7 @@ class DashboardWindow(QMainWindow):
         layout = QVBoxLayout(
             card
         )
+
         layout.setContentsMargins(
             20,
             18,
@@ -576,6 +645,7 @@ class DashboardWindow(QMainWindow):
         title_label = QLabel(
             title
         )
+
         title_label.setObjectName(
             "cardTitle"
         )
@@ -583,6 +653,7 @@ class DashboardWindow(QMainWindow):
         value_label = QLabel(
             value
         )
+
         value_label.setObjectName(
             "cardValue"
         )
@@ -590,6 +661,7 @@ class DashboardWindow(QMainWindow):
         layout.addWidget(
             title_label
         )
+
         layout.addWidget(
             value_label
         )
@@ -607,16 +679,24 @@ class DashboardWindow(QMainWindow):
         layout = QVBoxLayout(
             container
         )
+
         layout.setContentsMargins(
-            0, 0, 0, 0
+            0,
+            0,
+            0,
+            0,
         )
-        layout.setSpacing(5)
+
+        layout.setSpacing(
+            5
+        )
 
         top_layout = QHBoxLayout()
 
         title_label = QLabel(
             title
         )
+
         title_label.setObjectName(
             "infoText"
         )
@@ -624,6 +704,7 @@ class DashboardWindow(QMainWindow):
         value_label = QLabel(
             f"{value}%"
         )
+
         value_label.setObjectName(
             "infoText"
         )
@@ -631,19 +712,31 @@ class DashboardWindow(QMainWindow):
         top_layout.addWidget(
             title_label
         )
+
         top_layout.addStretch()
+
         top_layout.addWidget(
             value_label
         )
 
         progress = QProgressBar()
-        progress.setMinimum(0)
-        progress.setMaximum(100)
-        progress.setValue(value)
+
+        progress.setMinimum(
+            0
+        )
+
+        progress.setMaximum(
+            100
+        )
+
+        progress.setValue(
+            value
+        )
 
         layout.addLayout(
             top_layout
         )
+
         layout.addWidget(
             progress
         )
@@ -658,4 +751,46 @@ class DashboardWindow(QMainWindow):
             self.next_lesson
         )
 
+        self.lesson_window.lesson_completed.connect(
+            self.handle_lesson_completed
+        )
+
         self.lesson_window.show()
+
+    def handle_lesson_completed(
+        self,
+        lesson_id: int,
+    ):
+        result = complete_lesson(
+            self.user["id"],
+            lesson_id,
+        )
+
+        if not result["success"]:
+            return
+
+        self.stats = get_user_course_stats(
+            self.user["id"]
+        )
+
+        self.next_lesson = (
+            get_next_available_lesson(
+                self.user["id"]
+            )
+        )
+
+        self.refresh_dashboard()
+
+    def refresh_dashboard(self):
+        old_widget = self.centralWidget()
+
+        new_widget = QWidget()
+
+        self.setCentralWidget(
+            new_widget
+        )
+
+        if old_widget is not None:
+            old_widget.deleteLater()
+
+        self.build_ui()
