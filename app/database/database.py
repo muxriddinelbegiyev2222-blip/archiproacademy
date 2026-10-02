@@ -7,10 +7,6 @@ APP_NAME = "ARCHIPRO_UZ"
 
 
 def get_app_data_dir() -> Path:
-    """
-    ARCHIPRO UZ lokal ma'lumotlari saqlanadigan papka.
-    """
-
     local_app_data = os.getenv("LOCALAPPDATA")
 
     if local_app_data:
@@ -34,26 +30,18 @@ def get_database_path() -> Path:
 def get_connection() -> sqlite3.Connection:
     connection = sqlite3.connect(get_database_path())
     connection.row_factory = sqlite3.Row
-
     connection.execute("PRAGMA foreign_keys = ON")
 
     return connection
 
 
 def initialize_database():
-    """
-    ARCHIPRO UZ uchun barcha asosiy jadvallarni yaratadi.
-    """
-
     connection = get_connection()
 
     try:
         cursor = connection.cursor()
 
-        # =========================
         # USERS
-        # =========================
-
         cursor.execute(
             """
             CREATE TABLE IF NOT EXISTS users (
@@ -70,10 +58,7 @@ def initialize_database():
             """
         )
 
-        # =========================
         # SETTINGS
-        # =========================
-
         cursor.execute(
             """
             CREATE TABLE IF NOT EXISTS app_settings (
@@ -84,10 +69,7 @@ def initialize_database():
             """
         )
 
-        # =========================
         # LEVELS
-        # =========================
-
         cursor.execute(
             """
             CREATE TABLE IF NOT EXISTS course_levels (
@@ -103,10 +85,7 @@ def initialize_database():
             """
         )
 
-        # =========================
         # MODULES
-        # =========================
-
         cursor.execute(
             """
             CREATE TABLE IF NOT EXISTS course_modules (
@@ -126,10 +105,7 @@ def initialize_database():
             """
         )
 
-        # =========================
         # LESSONS
-        # =========================
-
         cursor.execute(
             """
             CREATE TABLE IF NOT EXISTS lessons (
@@ -137,18 +113,13 @@ def initialize_database():
                 module_id INTEGER NOT NULL,
                 code TEXT NOT NULL UNIQUE,
                 title TEXT NOT NULL,
-
                 lesson_type TEXT NOT NULL DEFAULT 'theory',
-
                 summary TEXT,
                 content_text TEXT,
-
                 sort_order INTEGER NOT NULL,
-
                 estimated_minutes INTEGER NOT NULL DEFAULT 10,
                 xp_reward INTEGER NOT NULL DEFAULT 10,
-                passing_score INTEGER NOT NULL DEFAULT 85,
-
+                passing_score INTEGER NOT NULL DEFAULT 80,
                 is_required INTEGER NOT NULL DEFAULT 1,
 
                 FOREIGN KEY (module_id)
@@ -158,29 +129,81 @@ def initialize_database():
             """
         )
 
-        # =========================
-        # USER LESSON PROGRESS
-        # =========================
-
+        # LESSON PROGRESS
         cursor.execute(
             """
             CREATE TABLE IF NOT EXISTS lesson_progress (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
-
                 user_id INTEGER NOT NULL,
                 lesson_id INTEGER NOT NULL,
-
                 status TEXT NOT NULL DEFAULT 'locked',
-
                 score INTEGER NOT NULL DEFAULT 0,
                 best_score INTEGER NOT NULL DEFAULT 0,
                 attempts INTEGER NOT NULL DEFAULT 0,
-
                 started_at TEXT,
                 last_opened_at TEXT,
                 completed_at TEXT,
 
                 UNIQUE(user_id, lesson_id),
+
+                FOREIGN KEY (user_id)
+                    REFERENCES users(id)
+                    ON DELETE CASCADE,
+
+                FOREIGN KEY (lesson_id)
+                    REFERENCES lessons(id)
+                    ON DELETE CASCADE
+            )
+            """
+        )
+
+        # QUIZ QUESTIONS
+        cursor.execute(
+            """
+            CREATE TABLE IF NOT EXISTS quiz_questions (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                lesson_id INTEGER NOT NULL,
+                code TEXT NOT NULL UNIQUE,
+                question_text TEXT NOT NULL,
+                explanation TEXT,
+                sort_order INTEGER NOT NULL,
+
+                FOREIGN KEY (lesson_id)
+                    REFERENCES lessons(id)
+                    ON DELETE CASCADE
+            )
+            """
+        )
+
+        # QUIZ OPTIONS
+        cursor.execute(
+            """
+            CREATE TABLE IF NOT EXISTS quiz_options (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                question_id INTEGER NOT NULL,
+                option_key TEXT NOT NULL,
+                option_text TEXT NOT NULL,
+                is_correct INTEGER NOT NULL DEFAULT 0,
+
+                UNIQUE(question_id, option_key),
+
+                FOREIGN KEY (question_id)
+                    REFERENCES quiz_questions(id)
+                    ON DELETE CASCADE
+            )
+            """
+        )
+
+        # QUIZ ATTEMPTS
+        cursor.execute(
+            """
+            CREATE TABLE IF NOT EXISTS quiz_attempts (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id INTEGER NOT NULL,
+                lesson_id INTEGER NOT NULL,
+                score INTEGER NOT NULL,
+                passed INTEGER NOT NULL DEFAULT 0,
+                created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
                 FOREIGN KEY (user_id)
                     REFERENCES users(id)
