@@ -1,4 +1,5 @@
 from PySide6.QtCore import Qt
+
 from PySide6.QtWidgets import (
     QFrame,
     QHBoxLayout,
@@ -63,6 +64,10 @@ class LearningWindow(QMainWindow):
 
         self.build_ui()
 
+    # ========================================================
+    # STYLE
+    # ========================================================
+
     def setup_styles(self):
         self.setStyleSheet(
             """
@@ -94,6 +99,18 @@ class LearningWindow(QMainWindow):
             QFrame#levelCard {
                 background-color: #0F172A;
                 border: 1px solid #1E293B;
+                border-radius: 16px;
+            }
+
+            QFrame#levelLocked {
+                background-color: #0D1422;
+                border: 1px solid #1E293B;
+                border-radius: 16px;
+            }
+
+            QFrame#levelCompleted {
+                background-color: #0E1D18;
+                border: 1px solid #166534;
                 border-radius: 16px;
             }
 
@@ -167,6 +184,24 @@ class LearningWindow(QMainWindow):
                 color: #64748B;
             }
 
+            QLabel#availableStatus {
+                color: #60A5FA;
+                font-size: 12px;
+                font-weight: 700;
+            }
+
+            QLabel#completedStatus {
+                color: #86EFAC;
+                font-size: 12px;
+                font-weight: 700;
+            }
+
+            QLabel#lockedStatus {
+                color: #64748B;
+                font-size: 12px;
+                font-weight: 700;
+            }
+
             QLabel#examTitle {
                 font-size: 18px;
                 font-weight: 700;
@@ -226,8 +261,16 @@ class LearningWindow(QMainWindow):
                 border-radius: 8px;
                 padding: 9px 15px;
             }
+
+            QPushButton#backButton:hover {
+                background-color: #334155;
+            }
             """
         )
+
+    # ========================================================
+    # DATA
+    # ========================================================
 
     def reload_data(self):
         self.levels = (
@@ -235,6 +278,10 @@ class LearningWindow(QMainWindow):
                 self.user["id"]
             )
         )
+
+    # ========================================================
+    # BUILD UI
+    # ========================================================
 
     def build_ui(self):
         central = QWidget()
@@ -295,8 +342,10 @@ class LearningWindow(QMainWindow):
         )
 
         subtitle = QLabel(
-            "0 dan professional turar joy "
-            "loyihalashgacha bo'lgan o'quv yo'lingiz"
+            (
+                "0 dan professional turar joy "
+                "loyihalashgacha bo'lgan o'quv yo'lingiz"
+            )
         )
 
         subtitle.setObjectName(
@@ -365,15 +414,35 @@ class LearningWindow(QMainWindow):
             1,
         )
 
+    # ========================================================
+    # LEVEL CARD
+    # ========================================================
+
     def create_level_card(
         self,
         level: dict,
     ):
         card = QFrame()
 
-        card.setObjectName(
-            "levelCard"
+        level_status = level.get(
+            "level_status",
+            "locked",
         )
+
+        if level_status == "completed":
+            card.setObjectName(
+                "levelCompleted"
+            )
+
+        elif level_status == "locked":
+            card.setObjectName(
+                "levelLocked"
+            )
+
+        else:
+            card.setObjectName(
+                "levelCard"
+            )
 
         layout = QVBoxLayout(
             card
@@ -391,7 +460,7 @@ class LearningWindow(QMainWindow):
         )
 
         # ====================================================
-        # LEVEL HEADER
+        # HEADER
         # ====================================================
 
         header = QHBoxLayout()
@@ -432,6 +501,40 @@ class LearningWindow(QMainWindow):
 
         header.addStretch()
 
+        if level_status == "completed":
+
+            status_label = QLabel(
+                "✓ TUGALLANGAN"
+            )
+
+            status_label.setObjectName(
+                "completedStatus"
+            )
+
+        elif level_status == "available":
+
+            status_label = QLabel(
+                "▶ OCHIQ"
+            )
+
+            status_label.setObjectName(
+                "availableStatus"
+            )
+
+        else:
+
+            status_label = QLabel(
+                "🔒 YOPIQ"
+            )
+
+            status_label.setObjectName(
+                "lockedStatus"
+            )
+
+        header.addWidget(
+            status_label
+        )
+
         progress_text = QLabel(
             f"{level['completed_lessons']}/"
             f"{level['total_lessons']} dars"
@@ -470,27 +573,14 @@ class LearningWindow(QMainWindow):
         # MODULES
         # ====================================================
 
-        if not level["modules"]:
-
-            empty_label = QLabel(
-                "Bu Level kontenti "
-                "keyingi bosqichlarda qo'shiladi."
-            )
-
-            empty_label.setObjectName(
-                "meta"
-            )
-
-            layout.addWidget(
-                empty_label
-            )
-
         for module in level[
             "modules"
         ]:
+
             module_card = (
                 self.create_module_card(
-                    module
+                    module=module,
+                    level_status=level_status,
                 )
             )
 
@@ -499,14 +589,22 @@ class LearningWindow(QMainWindow):
             )
 
         # ====================================================
-        # LEVEL 0 FINAL EXAM
+        # FINAL EXAM
+        #
+        # Endi LEVEL_00 bilan cheklanmaydi.
+        # Database'da Final Exam mavjud bo'lsa ko'rsatiladi.
         # ====================================================
 
-        if level["code"] == "LEVEL_00":
+        exam = get_level_exam(
+            level["code"]
+        )
+
+        if exam is not None:
 
             exam_card = (
                 self.create_level_exam_card(
-                    level
+                    level=level,
+                    exam=exam,
                 )
             )
 
@@ -516,9 +614,14 @@ class LearningWindow(QMainWindow):
 
         return card
 
+    # ========================================================
+    # MODULE CARD
+    # ========================================================
+
     def create_module_card(
         self,
         module: dict,
+        level_status: str,
     ):
         card = QFrame()
 
@@ -570,9 +673,22 @@ class LearningWindow(QMainWindow):
         if not module[
             "lessons"
         ]:
+
+            if level_status == "locked":
+
+                no_lessons_text = (
+                    "🔒 Ushbu Level hali yopiq."
+                )
+
+            else:
+
+                no_lessons_text = (
+                    "Bu modul darslari "
+                    "keyingi bosqichda qo'shiladi."
+                )
+
             no_lessons = QLabel(
-                "Darslar keyingi bosqichda "
-                "qo'shiladi."
+                no_lessons_text
             )
 
             no_lessons.setObjectName(
@@ -598,6 +714,10 @@ class LearningWindow(QMainWindow):
             )
 
         return card
+
+    # ========================================================
+    # LESSON ROW
+    # ========================================================
 
     def create_lesson_row(
         self,
@@ -728,38 +848,16 @@ class LearningWindow(QMainWindow):
 
         return row
 
+    # ========================================================
+    # EXAM CARD
+    # ========================================================
+
     def create_level_exam_card(
         self,
         level: dict,
+        exam: dict,
     ):
-        exam = get_level_exam(
-            level["code"]
-        )
-
         card = QFrame()
-
-        if exam is None:
-            card.setObjectName(
-                "examLocked"
-            )
-
-            layout = QVBoxLayout(
-                card
-            )
-
-            label = QLabel(
-                "Yakuniy imtihon topilmadi."
-            )
-
-            label.setObjectName(
-                "meta"
-            )
-
-            layout.addWidget(
-                label
-            )
-
-            return card
 
         exam_stats = (
             get_level_exam_stats(
@@ -775,22 +873,33 @@ class LearningWindow(QMainWindow):
             )
         )
 
+        level_status = level.get(
+            "level_status",
+            "locked",
+        )
+
         exam_completed = (
             exam_stats["status"]
             == "completed"
         )
 
         if exam_completed:
+
             card.setObjectName(
                 "examCompleted"
             )
 
-        elif lessons_completed:
+        elif (
+            lessons_completed
+            and level_status != "locked"
+        ):
+
             card.setObjectName(
                 "examAvailable"
             )
 
         else:
+
             card.setObjectName(
                 "examLocked"
             )
@@ -808,10 +917,18 @@ class LearningWindow(QMainWindow):
 
         text_area = QVBoxLayout()
 
+        level_number = (
+            level["code"].replace(
+                "LEVEL_",
+                "",
+            )
+        )
+
         if exam_completed:
 
             title = QLabel(
-                "🏆 LEVEL 0 YAKUNIY IMTIHON — TUGALLANGAN"
+                f"🏆 LEVEL {level_number} "
+                "YAKUNIY IMTIHON — TUGALLANGAN"
             )
 
             title.setObjectName(
@@ -821,7 +938,8 @@ class LearningWindow(QMainWindow):
         else:
 
             title = QLabel(
-                "🏆 LEVEL 0 YAKUNIY IMTIHON"
+                f"🏆 LEVEL {level_number} "
+                "YAKUNIY IMTIHON"
             )
 
             title.setObjectName(
@@ -833,7 +951,7 @@ class LearningWindow(QMainWindow):
             f"   •   "
             f"{exam['passing_score']}% talab"
             f"   •   "
-            f"{exam['xp_reward']} XP"
+            f"+{exam['xp_reward']} XP"
         )
 
         details.setObjectName(
@@ -866,11 +984,31 @@ class LearningWindow(QMainWindow):
                 result
             )
 
-        elif not lessons_completed:
+        elif level_status == "locked":
 
             locked = QLabel(
-                "🔒 Imtihon ochilishi uchun "
-                "LEVEL 0 dagi barcha darslarni tugating."
+                "🔒 Avval oldingi Level'ni "
+                "muvaffaqiyatli yakunlang."
+            )
+
+            locked.setObjectName(
+                "meta"
+            )
+
+            text_area.addWidget(
+                locked
+            )
+
+        elif not lessons_completed:
+
+            remaining = (
+                level["total_lessons"]
+                - level["completed_lessons"]
+            )
+
+            locked = QLabel(
+                f"🔒 Imtihon ochilishi uchun "
+                f"yana {remaining} ta darsni tugating."
             )
 
             locked.setObjectName(
@@ -884,8 +1022,10 @@ class LearningWindow(QMainWindow):
         else:
 
             ready = QLabel(
-                "Barcha darslar tugallandi. "
-                "Yakuniy bilim nazoratiga tayyorsiz."
+                (
+                    "✓ Barcha majburiy darslar tugallandi. "
+                    "Final Exam ochildi."
+                )
             )
 
             ready.setObjectName(
@@ -905,6 +1045,7 @@ class LearningWindow(QMainWindow):
         if (
             lessons_completed
             and not exam_completed
+            and level_status != "locked"
         ):
 
             button = QPushButton(
@@ -927,6 +1068,10 @@ class LearningWindow(QMainWindow):
             )
 
         return card
+
+    # ========================================================
+    # OPEN LESSON
+    # ========================================================
 
     def open_lesson(
         self,
@@ -969,9 +1114,11 @@ class LearningWindow(QMainWindow):
             "module_title"
         ] = module_title
 
-        self.lesson_window = LessonWindow(
-            lesson=lesson_data,
-            user=self.user,
+        self.lesson_window = (
+            LessonWindow(
+                lesson=lesson_data,
+                user=self.user,
+            )
         )
 
         self.lesson_window.lesson_completed.connect(
@@ -979,6 +1126,10 @@ class LearningWindow(QMainWindow):
         )
 
         self.lesson_window.show()
+
+    # ========================================================
+    # LESSON COMPLETE
+    # ========================================================
 
     def lesson_finished(
         self,
@@ -993,13 +1144,19 @@ class LearningWindow(QMainWindow):
 
         self.build_ui()
 
+    # ========================================================
+    # OPEN EXAM
+    # ========================================================
+
     def open_exam(
         self,
         exam: dict,
     ):
-        self.exam_window = ExamWindow(
-            user=self.user,
-            exam=exam,
+        self.exam_window = (
+            ExamWindow(
+                user=self.user,
+                exam=exam,
+            )
         )
 
         self.exam_window.exam_passed.connect(
@@ -1008,7 +1165,13 @@ class LearningWindow(QMainWindow):
 
         self.exam_window.show()
 
-    def exam_finished(self):
+    # ========================================================
+    # EXAM COMPLETE
+    # ========================================================
+
+    def exam_finished(
+        self,
+    ):
         self.reload_data()
 
         self.build_ui()
