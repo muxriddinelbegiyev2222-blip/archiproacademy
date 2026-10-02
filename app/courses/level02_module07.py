@@ -3,16 +3,16 @@ from database.database import get_connection
 
 # ============================================================
 # LEVEL 2
-# MODULE 07 - YOTOQXONA, GARDEROB VA SANUZEL ERGONOMIKASI
+# MODULE 07 - BOLALAR XONASI
 # ============================================================
 
 LEVEL02_MODULE07_LESSONS = [
     (
         "L02_M07",
         "L02_M07_001",
-        "Yotoqxona ergonomikasi",
+        "Bolalar xonasi funksiyalari",
         "theory",
-        "Krovat, yurish zonasi va mebel aloqalari asosida qulay yotoqxona yaratish.",
+        "Bolalar xonasidagi uyqu, o'qish, o'yin va saqlash zonalarini tushunish.",
         1,
         35,
         20,
@@ -20,9 +20,9 @@ LEVEL02_MODULE07_LESSONS = [
     (
         "L02_M07",
         "L02_M07_002",
-        "Garderob va kiyim saqlash",
+        "Yoshga mos rejalashtirish",
         "theory",
-        "Shkaf va garderobni real foydalanish zonasi bilan loyihalash.",
+        "Bolaning yoshi o'zgarganda xona funksiyalari qanday o'zgarishini tushunish.",
         2,
         35,
         20,
@@ -30,31 +30,31 @@ LEVEL02_MODULE07_LESSONS = [
     (
         "L02_M07",
         "L02_M07_003",
-        "Master bedroom tizimi",
-        "theory",
-        "Yotoqxona, garderob va private sanuzel o'rtasidagi aloqani tushunish.",
+        "Xavfsizlik va ergonomika",
+        "practice",
+        "Mebel, deraza, eshik va harakat zonalarini xavfsiz tashkil qilish.",
         3,
-        40,
+        35,
         20,
     ),
     (
         "L02_M07",
         "L02_M07_004",
-        "Sanuzel ergonomikasi",
+        "Study, play va storage zonalari",
         "practice",
-        "Unitaz, rakovina, dush yoki vanna atrofidagi foydalanish zonalarini tahlil qilish.",
+        "O'qish, o'yin va saqlash zonalarini bir-biriga xalaqit bermaydigan qilib joylashtirish.",
         4,
-        40,
+        35,
         20,
     ),
     (
         "L02_M07",
         "L02_M07_005",
-        "Yotoqxona va sanuzel xatolarini topish",
+        "Bolalar xonasi auditi",
         "practice",
-        "Real turar joy planlaridagi private zona ergonomik xatolarini aniqlash.",
+        "Bolalar xonasini yosh, xavfsizlik, ergonomika va kelajakdagi o'zgarishlar bo'yicha tekshirish.",
         5,
-        45,
+        40,
         25,
     ),
 ]
@@ -67,534 +67,583 @@ LEVEL02_MODULE07_LESSONS = [
 LEVEL02_MODULE07_CONTENT = {
     "L02_M07_001": [
         {
-            "title": "Yotoqxona faqat krovat emas",
+            "title": "Bolalar xonasi bitta funksiyali emas",
             "type": "highlight",
             "text": """
-            Yotoqxonada krovat sig'ishi yetarli emas.
+            Bolalar xonasi
+            faqat uxlash uchun
+            ishlatilmaydi.
 
             <br><br>
 
-            Odam:
+            Bu makonda:
 
             <br><br>
 
-            • xonaga kiradi;<br>
-            • krovatga yaqinlashadi;<br>
-            • kiyim almashtiradi;<br>
-            • shkaf ochadi;<br>
-            • tumba ishlatadi;<br>
-            • derazaga yaqinlashadi.
+            • uyqu;<br>
+            • o'qish;<br>
+            • o'yin;<br>
+            • kiyim saqlash;<br>
+            • shaxsiy buyumlar;<br>
+            • dam olish
 
             <br><br>
 
-            Bularning barchasi joy talab qiladi.
+            birgalikda mavjud bo'lishi mumkin.
             """,
         },
         {
-            "title": "Krovat markaziy element",
-            "type": "example",
-            "text": """
-            Ko'p yotoqxonalarda krovat
-            asosiy funksional element hisoblanadi.
-
-            <br><br>
-
-            Uni joylashtirganda faqat
-            o'lchamiga emas,
-
-            <br><br>
-
-            atrofidagi yurish zonalariga ham qaraladi.
-            """,
-        },
-        {
-            "title": "Ikki tomondan foydalanish",
+            "title": "4 ta asosiy zona",
             "type": "normal",
             "text": """
-            Ikki kishilik krovat bo'lsa,
-            imkon qadar ikki tomondan foydalanish
-            qulay bo'lishi mumkin.
+            Boshlang'ich rejalashtirishda
+            xonani 4 asosiy zona sifatida
+            tasavvur qilish mumkin:
 
             <br><br>
 
-            Bu ayniqsa ota-ona yotoqxonasida muhim.
+            <b>1. Sleep</b><br>
+            <b>2. Study</b><br>
+            <b>3. Play</b><br>
+            <b>4. Storage</b>
             """,
         },
         {
-            "title": "Krovat va eshik",
-            "type": "warning",
+            "title": "Zonalar bir-biriga xalaqit bermasin",
+            "type": "highlight",
             "text": """
-            Eshik ochilganda
-            to'g'ridan-to'g'ri krovatga urilsa
-            yoki yurish yo'lini to'ssa,
+            Har bir zona
+            alohida xona bo'lishi shart emas.
 
             <br><br>
 
-            ergonomik muammo paydo bo'ladi.
+            Lekin ularning
+            foydalanish mantig'i
+            bir-birini buzmasligi kerak.
             """,
         },
         {
-            "title": "Krovat va deraza",
-            "type": "normal",
-            "text": """
-            Deraza joylashuvi ham:
-
-            <br><br>
-
-            • krovat bosh qismi;<br>
-            • pardalar;<br>
-            • radiator;<br>
-            • tabiiy yorug'lik;<br>
-            • maxfiylik
-
-            <br><br>
-
-            bilan birga tekshiriladi.
-            """,
-        },
-        {
-            "title": "Mini-amaliyot",
+            "title": "Tasavvur qiling",
             "type": "example",
             "text": """
-            Bir master bedroom planini toping.
+            Study table
+            xonaning eng qorong'i burchagida.
 
             <br><br>
 
-            Tekshiring:
+            O'yin zonasi esa
+            eshik oldidagi
+            asosiy circulation yo'lida.
 
             <br><br>
 
-            1. Krovatga ikki tomondan borish mumkinmi?<br>
-            2. Shkaf ochiladimi?<br>
-            3. Eshik krovatga xalaqit beradimi?<br>
-            4. Deraza bilan mebel to'qnashadimi?
+            Mebel sig'gan,
+            lekin funksional zoning yaxshi emas.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            Oddiy bolalar xonasi chizing.
+
+            <br><br>
+
+            Rang yoki belgilar bilan ajrating:
+
+            <br><br>
+
+            SLEEP<br>
+            STUDY<br>
+            PLAY<br>
+            STORAGE
             """,
         },
     ],
 
     "L02_M07_002": [
         {
-            "title": "Shkafning o'zi yetmaydi",
+            "title": "Bola ulg'ayadi",
             "type": "highlight",
             "text": """
-            Shkaf xonaga sig'di degani
-            undan qulay foydalanish mumkin degani emas.
+            Bolalar xonasining
+            eng muhim xususiyatlaridan biri —
 
             <br><br>
 
-            Uning oldida odam turishi
-            va eshigini ochishi uchun joy kerak.
+            foydalanuvchi tez o'zgaradi.
+
+            <br><br>
+
+            4 yoshli bola uchun
+            yaxshi xona
+
+            <br><br>
+
+            14 yoshli bola uchun
+            o'sha holatda qulay bo'lmasligi mumkin.
             """,
         },
         {
-            "title": "Oddiy shkaf",
-            "type": "example",
-            "text": """
-            Devor bo'ylab shkaf qo'yildi.
-
-            <br><br>
-
-            Lekin krovat bilan shkaf orasida
-            juda tor masofa qoldi.
-
-            <br><br>
-
-            Shkaf eshigi ochilganda
-            yo'l butunlay yopiladi.
-
-            <br><br>
-
-            Bu noto'g'ri ergonomika.
-            """,
-        },
-        {
-            "title": "Walk-in garderob",
+            "title": "Maktabgacha yosh",
             "type": "normal",
             "text": """
-            Walk-in garderobda:
+            Kichik yoshda
+            o'yin zonasi
+            muhimroq bo'lishi mumkin.
 
             <br><br>
 
-            • kiyim saqlash yuzasi;<br>
-            • yurish yo'li;<br>
-            • shkaf ochilishi;<br>
-            • kiyim almashtirish
-
-            <br><br>
-
-            birgalikda ko'rib chiqiladi.
+            Ochiq pol maydoni
+            va xavfsiz circulation
+            alohida ahamiyat kasb etadi.
             """,
         },
         {
-            "title": "Ko'p shkaf = yaxshi emas",
+            "title": "Maktab yoshi",
+            "type": "normal",
+            "text": """
+            Maktab yoshida:
+
+            <br><br>
+
+            • study desk;<br>
+            • kitoblar;<br>
+            • storage;<br>
+            • tinch o'qish zonasi
+
+            <br><br>
+
+            ko'proq ahamiyatga ega bo'ladi.
+            """,
+        },
+        {
+            "title": "O'smirlik davri",
+            "type": "normal",
+            "text": """
+            O'smir uchun
+            xonada privacy,
+            study
+            va shaxsiy storage
+            yanada muhimlashishi mumkin.
+            """,
+        },
+        {
+            "title": "Moslashuvchanlik",
+            "type": "highlight",
+            "text": """
+            Yaxshi reja
+            har yosh o'zgarishida
+            butun xonani buzib
+            qayta qurishni talab qilmasligi ma'qul.
+
+            <br><br>
+
+            Mebel va zonalarni
+            keyinchalik o'zgartirish imkonini
+            oldindan tasavvur qiling.
+            """,
+        },
+        {
+            "title": "Tipik xato",
             "type": "warning",
             "text": """
-            Juda ko'p shkaf qo'yib,
-            odam yuradigan joyni qisqartirish
-            yaxshi loyiha emas.
+            Xona faqat
+            kichik bola uchun
+            juda tematik va qattiq
+            geometriyada rejalashtirilgan.
 
             <br><br>
 
-            Saqlash sig'imi va qulaylik
-            balansda bo'lishi kerak.
+            Bir necha yildan keyin
+            study zona uchun
+            joy topilmayapti.
+
+            <br><br>
+
+            Demak kelajakdagi
+            o'zgarish hisobga olinmagan.
             """,
         },
         {
-            "title": "Garderobning joylashuvi",
+            "title": "Mini-vazifa",
             "type": "example",
             "text": """
-            Master bedroom ichida garderob
-            sanuzel va yotoq qismi orasida
-            tampon sifatida ishlashi mumkin.
+            Bir xil xona uchun
+            3 holatni tasavvur qiling:
 
             <br><br>
 
-            Lekin bu yagona to'g'ri yechim emas.
+            • 5 yosh;<br>
+            • 10 yosh;<br>
+            • 15 yosh.
 
             <br><br>
 
-            Asosiy narsa — kundalik foydalanish mantiqi.
+            Qaysi mebel va zonalar
+            o'zgarishini yozing.
             """,
         },
     ],
 
     "L02_M07_003": [
         {
-            "title": "Master suite",
+            "title": "Xavfsizlik birinchi o'rinda",
             "type": "highlight",
             "text": """
-            Master bedroom tizimi
-            faqat katta yotoqxona emas.
-
-            <br><br>
-
-            U ko'pincha:
-
-            <br><br>
-
-            <b>
-            yotoqxona + garderob + private sanuzel
-            </b>
-
-            <br><br>
-
-            aloqasidan tashkil topadi.
+            Bolalar xonasida
+            estetika va mebeldan oldin
+            xavfsizlik ham tekshiriladi.
             """,
         },
         {
-            "title": "Aloqa variantlari",
+            "title": "Circulationni ochiq saqlang",
             "type": "normal",
             "text": """
-            Masalan:
+            Xona ichida
+            eshikdan krovat,
+            study
+            va storage zonalariga
 
             <br><br>
 
-            yotoqxona → garderob → sanuzel
-
-            <br><br>
-
-            yoki
-
-            <br><br>
-
-            yotoqxona → alohida garderob<br>
-            yotoqxona → alohida sanuzel
-
-            <br><br>
-
-            kabi sxemalar bo'lishi mumkin.
+            tushunarli va ochiq
+            harakat yo'li bo'lishi kerak.
             """,
         },
         {
-            "title": "Qaysi biri yaxshi?",
-            "type": "example",
-            "text": """
-            Universal bitta javob yo'q.
-
-            <br><br>
-
-            Oilaning:
-
-            <br><br>
-
-            • odati;<br>
-            • uyg'onish vaqti;<br>
-            • kiyinish tartibi;<br>
-            • maxfiylik talabi
-
-            <br><br>
-
-            yechimga ta'sir qiladi.
-            """,
-        },
-        {
-            "title": "Tungi foydalanish",
-            "type": "normal",
-            "text": """
-            Kechasi sanuzelga borish uchun
-            butun uy bo'ylab yurish kerak bo'lmasligi
-            qulaylikni oshiradi.
-
-            <br><br>
-
-            Private circulation ayniqsa
-            master zonada muhim.
-            """,
-        },
-        {
-            "title": "Xato",
+            "title": "O'tkir konfliktlar",
             "type": "warning",
             "text": """
-            Private sanuzel mavjud.
+            Mebel joylashuvida
+            bolalar faol harakat qilishini
+            hisobga oling.
 
             <br><br>
 
-            Lekin unga kirish uchun
-            krovat atrofini aylanib,
-            tor garderob yo'lidan o'tish kerak.
-
-            <br><br>
-
-            Xonalar mavjud,
-            lekin aloqa yomon.
+            Tor o'tish,
+            noqulay chiqib turgan element
+            yoki bir-biriga juda yaqin mebel
+            xavfni oshirishi mumkin.
             """,
         },
         {
-            "title": "Mini-amaliyot",
+            "title": "Deraza bilan aloqa",
+            "type": "normal",
+            "text": """
+            Deraza oldidagi
+            mebel joylashuvi
+            alohida o'ylanadi.
+
+            <br><br>
+
+            Study zonasi
+            tabiiy yorug'likdan
+            foydalanishi mumkin,
+
+            <br><br>
+
+            lekin derazadan
+            xavfsiz foydalanish
+            ham hisobga olinishi kerak.
+            """,
+        },
+        {
+            "title": "Door opening",
             "type": "example",
             "text": """
-            3 xil master suite planini toping.
+            Xona eshigi ochilganda
+            study deskga urilsa,
 
             <br><br>
 
-            Har birida:
+            bola stulda o'tirganida
+            konflikt paydo bo'lishi mumkin.
 
             <br><br>
 
-            • yotoq;<br>
-            • garderob;<br>
-            • sanuzel
+            Eshik swingini
+            mebel bilan birga tekshiring.
+            """,
+        },
+        {
+            "title": "Bunk bed va yuqori elementlar",
+            "type": "warning",
+            "text": """
+            Ikki qavatli krovat
+            yoki boshqa baland mebel
+            ishlatilsa,
 
             <br><br>
 
-            o'rtasidagi yo'lni solishtiring.
+            ularni oddiy mebeldek
+            faqat planda ko'rish yetarli emas.
+
+            <br><br>
+
+            Foydalanish xavfsizligi
+            va real sharoit alohida
+            baholanishi kerak.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            Bolalar xonasi planida
+            3 ta ehtimoliy xavfni toping.
+
+            <br><br>
+
+            Masalan:
+
+            • door conflict;<br>
+            • tor circulation;<br>
+            • noto'g'ri mebel joylashuvi.
             """,
         },
     ],
 
     "L02_M07_004": [
         {
-            "title": "Sanuzel — kichik, lekin murakkab makon",
+            "title": "Study zone",
             "type": "highlight",
             "text": """
-            Sanuzel ko'pincha kichik maydonda
-            ko'p funksiyani bajaradi.
+            Study zona
+            faqat stol qo'yilgan burchak emas.
 
             <br><br>
 
-            Shu sababli har bir elementning
-            foydalanish zonasi muhim.
+            Unda:
+
+            <br><br>
+
+            • o'tirish;<br>
+            • yozish;<br>
+            • kitob saqlash;<br>
+            • kompyuter ishlatish
+
+            <br><br>
+
+            kabi vazifalar bo'lishi mumkin.
             """,
         },
         {
-            "title": "Asosiy elementlar",
+            "title": "Study va play aloqasi",
             "type": "normal",
             "text": """
-            Sanuzelda:
+            Study va play
+            bir xonada bo'lishi mumkin,
 
             <br><br>
 
-            • unitaz;<br>
-            • rakovina;<br>
-            • dush;<br>
-            • vanna;<br>
-            • saqlash;<br>
-            • kir yuvish jihozi
-
-            <br><br>
-
-            kabi elementlar bo'lishi mumkin.
+            lekin o'qish paytida
+            o'yin zonasi
+            ishni doimiy buzmasligi kerak.
             """,
         },
         {
-            "title": "Eshik ochilishi",
+            "title": "Play zone",
+            "type": "normal",
+            "text": """
+            Kichik yoshdagi bola uchun
+            polning ochiq qismi
+            haqiqiy foydalanish maydoni.
+
+            <br><br>
+
+            Xonani mebel bilan
+            to'liq to'ldirib yubormang.
+            """,
+        },
+        {
+            "title": "Storage",
+            "type": "highlight",
+            "text": """
+            Bolalar xonasida
+            storage juda muhim.
+
+            <br><br>
+
+            Alohida joy kerak bo'lishi mumkin:
+
+            <br><br>
+
+            • kiyimlar;<br>
+            • kitoblar;<br>
+            • o'yinchoqlar;<br>
+            • maktab buyumlari;<br>
+            • shaxsiy predmetlar.
+            """,
+        },
+        {
+            "title": "Foydalanuvchiga mos storage",
+            "type": "normal",
+            "text": """
+            Tez-tez ishlatiladigan
+            buyumlar
+
+            <br><br>
+
+            foydalanuvchi uchun
+            mantiqiy va qulay joyda
+            bo'lishi kerak.
+            """,
+        },
+        {
+            "title": "Storage bilan xonani bo'g'mang",
             "type": "warning",
             "text": """
-            Eshik ichkariga ochilib,
-            unitaz yoki rakovinaga urilsa,
-            real foydalanishda muammo bo'ladi.
+            Juda ko'p shkaf
+            xona maydonini
+            olib qo'yishi mumkin.
 
             <br><br>
 
-            Eshik radiusi doimo tekshiriladi.
+            Storage va ochiq maydon
+            o'rtasida balans kerak.
             """,
         },
         {
-            "title": "Dush oldidagi zona",
+            "title": "Mini-vazifa",
             "type": "example",
             "text": """
-            Dush kabinasi planda sig'di.
+            Bitta plan chizing.
 
             <br><br>
 
-            Lekin eshigini ochish
-            va undan chiqish uchun joy qolmadi.
+            Belgilang:
 
             <br><br>
 
-            Demak element konturi yetarli emas.
-            """,
-        },
-        {
-            "title": "Rakovina va harakat",
-            "type": "normal",
-            "text": """
-            Rakovina oldida odam turadi.
+            • study desk;<br>
+            • book storage;<br>
+            • toy storage;<br>
+            • play zone;<br>
+            • sleeping zone.
 
             <br><br>
 
-            Agar shu joy asosiy eshik
-            yoki boshqa element bilan kesishsa,
-            ikki odam bir vaqtda foydalana olmaydi.
-            """,
-        },
-        {
-            "title": "Mini-amaliyot",
-            "type": "example",
-            "text": """
-            Kichik sanuzel planini toping.
-
-            <br><br>
-
-            Har bir elementning oldida
-            real foydalanish zonasini tasavvur qiling.
-
-            <br><br>
-
-            Qayerda to'qnashuv bor?
+            Har bir zonaga
+            alohida kirish mumkinmi?
             """,
         },
     ],
 
     "L02_M07_005": [
         {
-            "title": "Private zona xatolarini ovlaymiz",
+            "title": "Bolalar xonasi auditi",
             "type": "highlight",
             "text": """
-            Endi yotoqxona, garderob va sanuzelni
-            bitta tizim sifatida tekshiramiz.
+            Endi bolalar xonasini
+            faqat chiroyli interyer sifatida emas,
+
+            <br><br>
+
+            o'zgarib boradigan
+            real yashash makoni sifatida
+            tekshiramiz.
             """,
         },
         {
-            "title": "Xato 1 — krovat shkafni to'sadi",
-            "type": "warning",
-            "text": """
-            Krovat xonaga yaxshi sig'gan.
-
-            <br><br>
-
-            Lekin shkaf eshiklari
-            to'liq ochilmaydi.
-
-            <br><br>
-
-            Bu mebel zonalari to'qnashuvi.
-            """,
-        },
-        {
-            "title": "Xato 2 — eshik krovatga uriladi",
-            "type": "warning",
-            "text": """
-            Yotoqxona eshigi ochilganda
-            krovat burchagiga tegadi.
-
-            <br><br>
-
-            Eshik va mebel birgalikda
-            tekshirilmagan.
-            """,
-        },
-        {
-            "title": "Xato 3 — garderob juda tor",
-            "type": "warning",
-            "text": """
-            Ikki tomonda shkaf bor.
-
-            <br><br>
-
-            Lekin o'rtadagi yo'l juda tor.
-
-            <br><br>
-
-            Natijada bir odamning o'zi ham
-            qulay foydalana olmaydi.
-            """,
-        },
-        {
-            "title": "Xato 4 — sanuzel eshigi konflikt yaratadi",
-            "type": "warning",
-            "text": """
-            Sanuzel eshigi ichkariga ochilib,
-            unitazga uriladi.
-
-            <br><br>
-
-            Planda barcha elementlar bor,
-            lekin real foydalanish ishlamaydi.
-            """,
-        },
-        {
-            "title": "Xato 5 — private circulation uzun",
-            "type": "warning",
-            "text": """
-            Krovatdan sanuzelga borish uchun
-            garderobni aylanib,
-            uzun yo'lakdan yurish kerak.
-
-            <br><br>
-
-            Private zonaning aloqasi
-            qayta ko'rib chiqiladi.
-            """,
-        },
-        {
-            "title": "Professional tahlil",
+            "title": "1. Yosh",
             "type": "example",
             "text": """
-            Master zonani tekshirganda:
+            Tekshiring:
 
             <br><br>
 
-            <b>1.</b> Krovatga qanday boriladi?<br><br>
-            <b>2.</b> Krovat atrofida yurish mumkinmi?<br><br>
-            <b>3.</b> Shkaflar to'liq ochiladimi?<br><br>
-            <b>4.</b> Garderob yo'li qulaymi?<br><br>
-            <b>5.</b> Sanuzel eshigi to'qnashadimi?<br><br>
-            <b>6.</b> Tungi yo'l qisqa va tushunarlimi?
+            • bola necha yoshda?<br>
+            • hozir qanday faoliyatlar kerak?<br>
+            • 3-5 yildan keyin nimalar o'zgaradi?
             """,
         },
         {
-            "title": "Mini-loyiha",
+            "title": "2. Funksiyalar",
             "type": "example",
             "text": """
-            20–30 m² umumiy master zona toping.
+            Tekshiring:
 
             <br><br>
 
-            Yotoqxona + garderob + sanuzelni tahlil qiling.
+            • sleep zona bormi?<br>
+            • study zona bormi?<br>
+            • play yoki erkin zona bormi?<br>
+            • storage yetarlimi?
+            """,
+        },
+        {
+            "title": "3. Xavfsizlik",
+            "type": "example",
+            "text": """
+            Tekshiring:
 
             <br><br>
 
-            Kamida:
+            • circulation ochiqmi?<br>
+            • eshik mebelga urilmayaptimi?<br>
+            • deraza zonasi mantiqiymi?<br>
+            • noqulay chiqib turgan elementlar yo'qmi?
+            """,
+        },
+        {
+            "title": "4. Moslashuvchanlik",
+            "type": "example",
+            "text": """
+            Tekshiring:
 
             <br><br>
 
-            • 3 ta yaxshi qaror;<br>
-            • 2 ta ergonomik xato yoki yaxshilash nuqtasi
+            • mebelni keyin o'zgartirish mumkinmi?<br>
+            • katta study desk uchun joy bo'ladimi?<br>
+            • storage tizimi kengayishi mumkinmi?
+            """,
+        },
+        {
+            "title": "Xatoni toping",
+            "type": "warning",
+            "text": """
+            Bolalar xonasi juda chiroyli.
 
             <br><br>
 
-            yozing.
+            Krovat,
+            shkaf,
+            katta o'yinchoq javoni
+            va dekorlar ko'p.
+
+            <br><br>
+
+            Lekin:
+
+            <br><br>
+
+            • study desk uchun joy yo'q;<br>
+            • polning ochiq qismi juda kichik;<br>
+            • eshik shkafga uriladi.
+
+            <br><br>
+
+            Demak xona vizual jihatdan
+            yaxshi ko'rinsa ham,
+            funksional emas.
+            """,
+        },
+        {
+            "title": "Professional checklist",
+            "type": "example",
+            "text": """
+            Bolalar xonasini tekshiring:
+
+            <br><br>
+
+            <b>1.</b> Yoshga mosmi?<br><br>
+            <b>2.</b> Sleep zona qulaymi?<br><br>
+            <b>3.</b> Study zona mantiqiymi?<br><br>
+            <b>4.</b> Play uchun ochiq joy bormi?<br><br>
+            <b>5.</b> Storage yetarlimi?<br><br>
+            <b>6.</b> Circulation xavfsizmi?<br><br>
+            <b>7.</b> Kelajakda o'zgartirish mumkinmi?
             """,
         },
         {
@@ -605,21 +654,18 @@ LEVEL02_MODULE07_CONTENT = {
 
             <br><br>
 
-            ✓ yotoqxona ergonomikasi;<br>
-            ✓ krovat atrofidagi yurish;<br>
-            ✓ garderob foydalanish zonasi;<br>
-            ✓ master suite aloqasi;<br>
-            ✓ sanuzel ergonomikasi;<br>
-            ✓ private circulation
-
-            <br><br>
-
-            bo'yicha plan tahlil qila olasiz.
+            ✓ bolalar xonasini zonalaysiz;<br>
+            ✓ yoshga mos reja tuzasiz;<br>
+            ✓ xavfsizlikni tekshirasiz;<br>
+            ✓ study va play zonalarini ajratasiz;<br>
+            ✓ storage tizimini rejalashtirasiz;<br>
+            ✓ kelajakdagi o'zgarishni hisobga olasiz;<br>
+            ✓ bolalar xonasini audit qilasiz.
 
             <br><br>
 
             Keyingi modul:
-            <b>Mehmonxona va family room ergonomikasi.</b>
+            <b>Sanuzel ergonomikasi.</b>
             """,
         },
     ],
@@ -628,15 +674,16 @@ LEVEL02_MODULE07_CONTENT = {
 
 # ============================================================
 # QUIZ
+# Q091-Q105 KODLARI SAQLANADI
 # ============================================================
 
 LEVEL02_MODULE07_QUIZ = {
     "L02_M07_001": [
         {
             "code": "L02_Q091",
-            "question": "Yotoqxonada krovatning faqat sig'ishi yetarlimi?",
+            "question": "Bolalar xonasi faqat uxlash uchun mo'ljallangan makonmi?",
             "explanation": (
-                "Krovat atrofida yurish va boshqa mebellardan foydalanish uchun ham joy kerak."
+                "Bolalar xonasida uyqu, o'qish, o'yin va saqlash kabi bir nechta funksiyalar mavjud bo'lishi mumkin."
             ),
             "options": [
                 ("A", "Ha", False),
@@ -645,9 +692,9 @@ LEVEL02_MODULE07_QUIZ = {
         },
         {
             "code": "L02_Q092",
-            "question": "Ikki kishilik krovatga ikki tomondan kirish qulay bo'lishi mumkinmi?",
+            "question": "Sleep, Study, Play va Storage bolalar xonasining asosiy zonalari bo'lishi mumkinmi?",
             "explanation": (
-                "Bu ikki foydalanuvchi uchun qulay harakat yaratishi mumkin."
+                "Bu zonalar xona funksiyalarini tushunishga yordam beradi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -656,9 +703,9 @@ LEVEL02_MODULE07_QUIZ = {
         },
         {
             "code": "L02_Q093",
-            "question": "Yotoqxona eshigi krovatga urilishi ergonomik muammomi?",
+            "question": "Bolalar xonasida circulationni tekshirish kerakmi?",
             "explanation": (
-                "Eshik va mebelning foydalanish zonalari to'qnashmoqda."
+                "Odam harakati va mebel o'rtasidagi konfliktlar xona qulayligiga ta'sir qiladi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -670,9 +717,9 @@ LEVEL02_MODULE07_QUIZ = {
     "L02_M07_002": [
         {
             "code": "L02_Q094",
-            "question": "Shkaf oldida foydalanish zonasi kerakmi?",
+            "question": "Bolalar xonasi bolaning yoshi o'zgarganda o'zgarishi mumkinmi?",
             "explanation": (
-                "Shkaf eshigini ochish va kiyim olish uchun oldida makon kerak."
+                "Bola ulg'aygani sari o'yin, o'qish, privacy va storage ehtiyojlari o'zgaradi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -681,9 +728,9 @@ LEVEL02_MODULE07_QUIZ = {
         },
         {
             "code": "L02_Q095",
-            "question": "Ko'p shkaf har doim yaxshi garderob deganimi?",
+            "question": "5 yoshli va 15 yoshli bola uchun xona funksiyalari mutlaqo bir xil bo'lishi shartmi?",
             "explanation": (
-                "Saqlash sig'imi bilan yurish va foydalanish qulayligi balansda bo'lishi kerak."
+                "Yoshga qarab study, play, privacy va storage ehtiyojlari farq qiladi."
             ),
             "options": [
                 ("A", "Ha", False),
@@ -692,9 +739,9 @@ LEVEL02_MODULE07_QUIZ = {
         },
         {
             "code": "L02_Q096",
-            "question": "Walk-in garderobda yurish yo'li ham hisobga olinadimi?",
+            "question": "Xonani keyinchalik moslashtirish imkonini o'ylash foydalimi?",
             "explanation": (
-                "Garderob faqat shkaflardan emas, foydalanish va harakat zonasidan ham iborat."
+                "Moslashuvchan reja bolaning ulg'ayishiga mos o'zgarishni osonlashtiradi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -706,35 +753,35 @@ LEVEL02_MODULE07_QUIZ = {
     "L02_M07_003": [
         {
             "code": "L02_Q097",
-            "question": "Master suite tarkibiga nimalar kirishi mumkin?",
+            "question": "Bolalar xonasida xavfsizlik rejalashtirishning muhim qismimi?",
             "explanation": (
-                "Yotoqxona, garderob va private sanuzel master tizimining qismlari bo'lishi mumkin."
-            ),
-            "options": [
-                ("A", "Yotoqxona, garderob, sanuzel", True),
-                ("B", "Faqat mehmonxona", False),
-            ],
-        },
-        {
-            "code": "L02_Q098",
-            "question": "Master suite uchun faqat bitta universal sxema bormi?",
-            "explanation": (
-                "Yechim oilaning hayot tarzi va ehtiyojiga qarab o'zgaradi."
-            ),
-            "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
-            ],
-        },
-        {
-            "code": "L02_Q099",
-            "question": "Tungi private circulation muhimmi?",
-            "explanation": (
-                "Yotoqxona va sanuzel o'rtasidagi qisqa va qulay aloqa tungi foydalanishda muhim."
+                "Mebel, circulation, eshik va deraza aloqalari xavfsizlikka ta'sir qiladi."
             ),
             "options": [
                 ("A", "Ha", True),
                 ("B", "Yo'q", False),
+            ],
+        },
+        {
+            "code": "L02_Q098",
+            "question": "Eshik study desk bilan konflikt qilishi mumkinmi?",
+            "explanation": (
+                "Door swing noto'g'ri joylashtirilgan mebel bilan to'qnashishi mumkin."
+            ),
+            "options": [
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
+            ],
+        },
+        {
+            "code": "L02_Q099",
+            "question": "Bolalar xonasini mebel bilan maksimal to'ldirish har doim yaxshi yechimmi?",
+            "explanation": (
+                "Ortiqcha mebel circulation va o'yin uchun ochiq maydonni kamaytirishi mumkin."
+            ),
+            "options": [
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
             ],
         },
     ],
@@ -742,20 +789,9 @@ LEVEL02_MODULE07_QUIZ = {
     "L02_M07_004": [
         {
             "code": "L02_Q100",
-            "question": "Sanuzel eshigi unitazga urilsa bu xatomi?",
+            "question": "Study zona faqat stol konturidan iboratmi?",
             "explanation": (
-                "Eshik radiusi va jihozlarning foydalanish zonasi to'qnashmoqda."
-            ),
-            "options": [
-                ("A", "Ha", True),
-                ("B", "Yo'q", False),
-            ],
-        },
-        {
-            "code": "L02_Q101",
-            "question": "Dushning faqat planga sig'ishi yetarlimi?",
-            "explanation": (
-                "Dushga kirish, chiqish va eshik ochilishi uchun ham joy kerak."
+                "Unda o'tirish, yozish, kitob saqlash va boshqa foydalanish maydonlari ham hisobga olinadi."
             ),
             "options": [
                 ("A", "Ha", False),
@@ -763,10 +799,21 @@ LEVEL02_MODULE07_QUIZ = {
             ],
         },
         {
-            "code": "L02_Q102",
-            "question": "Rakovina oldida odam turadigan zona hisobga olinadimi?",
+            "code": "L02_Q101",
+            "question": "Kichik yoshdagi bola uchun ochiq play zona foydali bo'lishi mumkinmi?",
             "explanation": (
-                "Sanuzeldagi har bir elementning foydalanish zonasi mavjud."
+                "Ochiq pol maydoni o'yin va faol harakat uchun ishlatilishi mumkin."
+            ),
+            "options": [
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
+            ],
+        },
+        {
+            "code": "L02_Q102",
+            "question": "Storage tizimi kiyim, kitob va o'yinchoqlarni tartibli saqlashga yordam beradimi?",
+            "explanation": (
+                "Turli buyumlar uchun mantiqiy storage xona foydalanishini yaxshilaydi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -778,20 +825,9 @@ LEVEL02_MODULE07_QUIZ = {
     "L02_M07_005": [
         {
             "code": "L02_Q103",
-            "question": "Krovat shkaf eshiklarini to'ssa bu qanday muammo?",
+            "question": "Bolalar xonasi auditida bolaning yoshi hisobga olinadimi?",
             "explanation": (
-                "Mebel foydalanish zonalari bir-biriga to'qnashgan."
-            ),
-            "options": [
-                ("A", "Ergonomik muammo", True),
-                ("B", "Har doim yaxshi yechim", False),
-            ],
-        },
-        {
-            "code": "L02_Q104",
-            "question": "Garderobdagi juda tor yurish yo'li foydalanishni qiyinlashtirishi mumkinmi?",
-            "explanation": (
-                "Shkaflardan foydalanish va odam harakati uchun yetarli joy kerak."
+                "Yosh xonaning funksiyalari va kelajakdagi o'zgarishlariga ta'sir qiladi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -799,14 +835,33 @@ LEVEL02_MODULE07_QUIZ = {
             ],
         },
         {
-            "code": "L02_Q105",
-            "question": "Master zona tahlilida qaysi savol foydali?",
+            "code": "L02_Q104",
+            "question": "Chiroyli xona avtomatik ravishda funksional va xavfsiz bo'ladimi?",
             "explanation": (
-                "Yotoq, garderob va sanuzel orasidagi real harakatni tekshirish kerak."
+                "Estetikadan tashqari zoning, circulation, xavfsizlik va ergonomika ham tekshiriladi."
             ),
             "options": [
-                ("A", "Tungi harakat yo'li qulaymi?", True),
-                ("B", "Faqat fasad qaysi rangda?", False),
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
+            ],
+        },
+        {
+            "code": "L02_Q105",
+            "question": "Bolalar xonasini loyihalashdagi to'g'ri yondashuv qaysi?",
+            "explanation": (
+                "Yosh, funksiyalar, xavfsizlik va moslashuvchanlik birgalikda tahlil qilinadi."
+            ),
+            "options": [
+                (
+                    "A",
+                    "Yosh → zoning → xavfsizlik → ergonomika → audit",
+                    True,
+                ),
+                (
+                    "B",
+                    "Faqat dekor va rang tanlash",
+                    False,
+                ),
             ],
         },
     ],
