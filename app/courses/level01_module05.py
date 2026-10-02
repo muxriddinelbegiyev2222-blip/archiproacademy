@@ -2,610 +2,695 @@ from database.database import get_connection
 
 
 # ============================================================
-# LEVEL 1
-# MODULE 05 - FORMA VA HAJM
+# LEVEL 2
+# MODULE 05 - OSHXONA LOYIHALASH
 # ============================================================
 
-LEVEL01_MODULE05_LESSONS = [
+LEVEL02_MODULE05_LESSONS = [
     (
-        "L01_M05",
-        "L01_M05_001",
-        "Forma va hajm nima?",
+        "L02_M05",
+        "L02_M05_001",
+        "Oshxona funksiyasi va zonalari",
         "theory",
-        "Binoni ikki o'lchamli fasad emas, uch o'lchamli hajm sifatida tushunish.",
+        "Oshxonadagi asosiy funksional zonalar va ularning o'zaro aloqasini tushunish.",
         1,
-        30,
-        15,
+        50,
+        20,
     ),
     (
-        "L01_M05",
-        "L01_M05_002",
-        "Asosiy va yordamchi hajmlar",
+        "L02_M05",
+        "L02_M05_002",
+        "Ishchi uchburchak",
         "theory",
-        "Bino kompozitsiyasidagi asosiy va ikkilamchi hajmlarni ajratish.",
+        "Muzlatkich, rakovina va pishirish zonasi o'rtasidagi ishchi aloqani tushunish.",
         2,
-        30,
-        15,
+        55,
+        20,
     ),
     (
-        "L01_M05",
-        "L01_M05_003",
-        "Hajmni oldinga va orqaga siljitish",
-        "theory",
-        "Fasad chuqurligi va 3D kompozitsiya yaratishni tushunish.",
+        "L02_M05",
+        "L02_M05_003",
+        "Countertop va saqlash",
+        "practice",
+        "Ishchi sirt, shkaflar va mahsulot saqlash tizimini mantiqiy tashkil qilish.",
         3,
-        35,
+        60,
         20,
     ),
     (
-        "L01_M05",
-        "L01_M05_004",
-        "Oddiy shakldan kuchli arxitektura",
+        "L02_M05",
+        "L02_M05_004",
+        "Circulation va dining aloqasi",
         "practice",
-        "Sodda geometrik hajmlar yordamida sifatli turar joy yaratish.",
+        "Oshxona ichidagi harakat va dining bilan funksional bog'lanishni tashkil qilish.",
         4,
-        40,
+        60,
         20,
     ),
     (
-        "L01_M05",
-        "L01_M05_005",
-        "Hajm kompozitsiyasidagi xatolar",
+        "L02_M05",
+        "L02_M05_005",
+        "Oshxona auditi",
         "practice",
-        "Turar joylarda keraksiz, tartibsiz va asossiz hajmlarni aniqlash.",
+        "Oshxona rejasini ergonomika, ish jarayoni va circulation bo'yicha tekshirish.",
         5,
-        40,
-        20,
+        75,
+        25,
     ),
 ]
 
 
 # ============================================================
-# LESSON CONTENT
+# CONTENT
 # ============================================================
 
-LEVEL01_MODULE05_CONTENT = {
-    "L01_M05_001": [
+LEVEL02_MODULE05_CONTENT = {
+    "L02_M05_001": [
         {
-            "title": "Uy faqat fasad emas",
+            "title": "Oshxona — faqat mebel qatori emas",
             "type": "highlight",
             "text": """
-            Uyga faqat old tomondan qarasangiz,
-            uning faqat bitta qismini ko'rasiz.
+            Oshxona —
+            uy ichidagi eng ko'p
+            funksional harakat sodir bo'ladigan
+            makonlardan biri.
 
             <br><br>
 
-            Aslida bino:
-            <b>eni + uzunligi + balandligi</b>
-            bo'lgan uch o'lchamli obyekt.
+            Bu yerda:
+
+            <br><br>
+
+            • mahsulot olinadi;<br>
+            • yuviladi;<br>
+            • tayyorlanadi;<br>
+            • pishiriladi;<br>
+            • saqlanadi;<br>
+            • ba'zan ovqatlaniladi.
             """,
         },
         {
-            "title": "Forma nima?",
+            "title": "Asosiy zonalar",
             "type": "normal",
             "text": """
-            Forma — obyektning umumiy shakli.
+            Oshxonani bir nechta
+            funksional zonaga ajratib
+            fikrlash foydali:
 
             <br><br>
 
-            Masalan:
-
-            <br><br>
-
-            • kubga yaqin;<br>
-            • uzun to'rtburchak;<br>
-            • L shakl;<br>
-            • U shakl;<br>
-            • murakkab birlashgan shakl.
-
-            <br><br>
-
-            Arxitekturada shakl tasodifan emas,
-            funksiyaga va konsepsiyaga bog'liq bo'lishi kerak.
+            • mahsulot saqlash;<br>
+            • yuvish;<br>
+            • tayyorlash;<br>
+            • pishirish;<br>
+            • idish saqlash;<br>
+            • chiqindi bilan ishlash.
             """,
         },
         {
-            "title": "Hajm nima?",
-            "type": "normal",
-            "text": """
-            Hajm — binoning 3D ko'rinishdagi
-            fazoviy massasini anglatadi.
-
-            <br><br>
-
-            Masalan, bir qavatli uyda:
-
-            <br><br>
-
-            asosiy yashash qismi,
-            kirish qismi,
-            ayvon,
-            tom,
-            terrasa
-
-            <br><br>
-
-            alohida hajmlar sifatida ko'rinishi mumkin.
-            """,
-        },
-        {
-            "title": "Oddiy misol",
-            "type": "example",
-            "text": """
-            Qog'ozdan uchta quti yasaganingizni tasavvur qiling.
-
-            <br><br>
-
-            Birinchisi katta.
-
-            <br>
-            Ikkinchisi kichikroq.
-
-            <br>
-            Uchinchisi uzunroq.
-
-            <br><br>
-
-            Ularni turli joylashtirib,
-            butunlay turli bino kompozitsiyalarini yaratish mumkin.
-
-            <br><br>
-
-            Arxitektura hajm bilan ishlashi ham shunga o'xshaydi.
-            """,
-        },
-        {
-            "title": "Boshlovchi xatosi",
-            "type": "warning",
-            "text": """
-            Faqat old fasadni chiroyli qilish,
-            yon va orqa tomonlarni unutish noto'g'ri.
-
-            <br><br>
-
-            Professional bino
-            <b>360 darajada ishlashi</b> kerak.
-            """,
-        },
-        {
-            "title": "Mini-amaliyot",
-            "type": "example",
-            "text": """
-            Bir uy rasmini toping.
-
-            <br><br>
-
-            Uni xayolan faqat oddiy geometrik shakllarga ajrating.
-
-            <br><br>
-
-            Masalan:
-
-            <br>
-            katta quti + kichik quti + soyabon.
-
-            <br><br>
-
-            Nechta asosiy hajm ko'ryapsiz?
-            """,
-        },
-    ],
-
-    "L01_M05_002": [
-        {
-            "title": "Hamma hajm bir xil kuchli bo'lmasligi kerak",
+            "title": "Jarayon ketma-ketligi",
             "type": "highlight",
-            "text": """
-            Yaxshi kompozitsiyada odatda
-            <b>asosiy hajm</b> va
-            <b>yordamchi hajmlar</b> mavjud.
-            """,
-        },
-        {
-            "title": "Asosiy hajm",
-            "type": "normal",
-            "text": """
-            Asosiy hajm — binoning umumiy ko'rinishida
-            eng kuchli seziladigan katta massa.
-
-            <br><br>
-
-            Masalan, bir qavatli uyda
-            asosiy yashash bloki asosiy hajm bo'lishi mumkin.
-            """,
-        },
-        {
-            "title": "Yordamchi hajm",
-            "type": "normal",
-            "text": """
-            Yordamchi hajm asosiy hajmni to'ldiradi.
-
-            <br><br>
-
-            Masalan:
-
-            <br><br>
-
-            • kirish soyaboni;<br>
-            • terrasa;<br>
-            • kichik yon blok;<br>
-            • ayvon;<br>
-            • garaj yoki carport qismi.
-            """,
-        },
-        {
-            "title": "Misol",
-            "type": "example",
             "text": """
             Tasavvur qiling:
 
             <br><br>
 
-            katta oq to'rtburchak hajm —
-            uyning asosiy qismi.
+            mahsulotni oldingiz →
+            yuvdingiz →
+            tayyorladingiz →
+            pishirdingiz →
+            ovqatni uzatdingiz.
 
             <br><br>
 
-            Oldida kichik yog'och hajm —
-            kirish.
-
-            <br><br>
-
-            Yon tomonda past soyabon —
-            avtomobil uchun.
-
-            <br><br>
-
-            Ularning vazifasi va vizual kuchi bir xil emas.
+            Yaxshi oshxona
+            shu jarayonni ortiqcha
+            yurishsiz tashkil qiladi.
             """,
         },
         {
-            "title": "Xato",
-            "type": "warning",
-            "text": """
-            Agar barcha hajmlar:
-
-            <br><br>
-
-            • bir xil katta;<br>
-            • bir xil rangli;<br>
-            • bir xil baland;<br>
-            • bir xil kuchli
-
-            <br><br>
-
-            bo'lsa, ierarxiya yo'qolishi mumkin.
-            """,
-        },
-        {
-            "title": "Mini-amaliyot",
+            "title": "Tasavvur qiling",
             "type": "example",
             "text": """
-            Bir uy tanlang.
+            Muzlatkich
+            oshxonaning bir chetida.
 
             <br><br>
 
-            1. Asosiy hajmni toping.<br>
-            2. Ikki yordamchi hajmni toping.<br>
-            3. Qaysi biri ko'zga birinchi tashlanishini yozing.
+            Rakovina qarama-qarshi tomonda.
+
+            <br><br>
+
+            Pishirish zonasi esa
+            ularning orasidagi
+            asosiy circulation yo'lini kesib o'tadi.
+
+            <br><br>
+
+            Barcha jihozlar bor,
+            lekin workflow yomon.
+            """,
+        },
+        {
+            "title": "Arxitektor savollari",
+            "type": "normal",
+            "text": """
+            Oshxona rejasida so'rang:
+
+            <br><br>
+
+            • muzlatkich qayerda?<br>
+            • rakovina qayerda?<br>
+            • pishirish zonasi qayerda?<br>
+            • tayyorlash uchun ishchi sirt bormi?<br>
+            • diningga chiqish qulaymi?<br>
+            • odamlar bir-biriga xalaqit bermaydimi?
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            Oddiy oshxona sxemasini chizing.
+
+            <br><br>
+
+            Unda belgilang:
+
+            <br><br>
+
+            F — Fridge<br>
+            S — Sink<br>
+            C — Cooking
+
+            <br><br>
+
+            Keyin ular orasidagi
+            odam harakatini strelka bilan ko'rsating.
             """,
         },
     ],
 
-    "L01_M05_003": [
+    "L02_M05_002": [
         {
-            "title": "Fasad tekis bo'lishi shart emas",
+            "title": "Ishchi uchburchak nima?",
             "type": "highlight",
             "text": """
-            Barcha devorlarni bitta tekis chiziqqa qo'yish
-            har doim ham yaxshi yechim emas.
+            Oshxona rejalashtirishda
+            klassik tushunchalardan biri —
+            ishchi uchburchak.
 
             <br><br>
 
-            Hajmlarni oldinga yoki orqaga siljitish
-            binoga chuqurlik beradi.
-            """,
-        },
-        {
-            "title": "Oldinga chiqarilgan hajm",
-            "type": "example",
-            "text": """
-            Kirish qismini asosiy devordan
-            1 metr oldinga chiqaring.
+            U uchta asosiy nuqtani
+            bog'laydi:
 
             <br><br>
 
-            Endi kirish:
-
-            <br><br>
-
-            • kuchliroq ko'rinadi;<br>
-            • soyaga ega bo'ladi;<br>
-            • kompozitsion markazga aylanishi mumkin.
-            """,
-        },
-        {
-            "title": "Ichkariga olingan hajm",
-            "type": "example",
-            "text": """
-            Terrasani asosiy hajmdan ichkariga kiriting.
-
-            <br><br>
-
-            Natijada:
-
-            <br><br>
-
-            • tabiiy soyali zona;<br>
-            • chuqurlik;<br>
-            • fasadga 3D effekt
-
-            <br><br>
-
-            hosil bo'lishi mumkin.
-            """,
-        },
-        {
-            "title": "Yorug'lik va soya",
-            "type": "normal",
-            "text": """
-            Hajm oldinga yoki orqaga siljiganda
-            faqat plan o'zgarmaydi.
-
-            <br><br>
-
-            Quyosh tushganda turli soyalar paydo bo'ladi.
-
-            <br><br>
-
-            Shuning uchun hajm kompozitsiyasi
-            fasadni kun davomida turlicha ko'rsatadi.
-            """,
-        },
-        {
-            "title": "Boshlovchi xatosi",
-            "type": "warning",
-            "text": """
-            Fasadni “zamonaviyroq” qilish uchun
-            har bir devorni har xil chuqurlikka surish
-            noto'g'ri.
-
-            <br><br>
-
-            Har bir siljishning sababi bo'lishi kerak.
-            """,
-        },
-        {
-            "title": "Professional savol",
-            "type": "highlight",
-            "text": """
             <b>
-            “Bu hajm nima uchun oldinga chiqdi
-            yoki nima uchun ichkariga kirdi?”
+            MUZLATKICH → RAKOVINA → PISHIRISH
             </b>
-
-            <br><br>
-
-            Agar javob bo'lmasa,
-            qarorni qayta tekshirish kerak.
-            """,
-        },
-    ],
-
-    "L01_M05_004": [
-        {
-            "title": "Murakkab = professional emas",
-            "type": "highlight",
-            "text": """
-            Juda ko'p shakl ishlatish
-            binoni avtomatik professional qilmaydi.
-
-            <br><br>
-
-            Ba'zan juda oddiy hajm
-            kuchli arxitektura beradi.
             """,
         },
         {
-            "title": "Oddiy kub",
-            "type": "example",
-            "text": """
-            Oddiy to'rtburchak uy tasavvur qiling.
-
-            <br><br>
-
-            Fasad juda sodda.
-
-            <br><br>
-
-            Lekin:
-
-            <br><br>
-
-            • kirish chuqurlashtirilgan;<br>
-            • katta deraza aniq joylashtirilgan;<br>
-            • materiallar tartibli;<br>
-            • tom proporsiyasi yaxshi;<br>
-            • soyalar nazorat qilingan.
-
-            <br><br>
-
-            Natija juda kuchli bo'lishi mumkin.
-            """,
-        },
-        {
-            "title": "Kamroq element — ko'proq nazorat",
+            "title": "Nega uchta nuqta?",
             "type": "normal",
             "text": """
-            Elementlar kamaygan sari
-            har bir elementning sifati muhimlashadi.
+            Kundalik ovqat tayyorlashda
+            odam ko'p marta
+            shu uch zona orasida yuradi.
 
             <br><br>
 
-            Sodda arxitektura:
-            xato qilish oson emas degani emas.
-
-            <br><br>
-
-            Aksincha, xatolar ko'proq ko'rinadi.
+            Shuning uchun ularning
+            o'zaro joylashuvi
+            ish qulayligiga ta'sir qiladi.
             """,
         },
         {
-            "title": "Keraksiz shakllar",
+            "title": "Uchburchak — qat'iy dekorativ shakl emas",
             "type": "warning",
             "text": """
-            Fasadga:
+            Ishchi uchburchak
+            planda albatta chiroyli
+            geometrik uchburchak chiqishi kerak
+            degani emas.
 
             <br><br>
 
-            • sababsiz uchburchak;<br>
-            • tasodifiy quti;<br>
-            • ortiqcha portal;<br>
-            • keraksiz dekorativ ustun
-
-            <br><br>
-
-            qo'shish kompozitsiyani kuchaytirmasligi mumkin.
+            Asosiy maqsad —
+            ish jarayonini qulay tashkil qilish.
             """,
         },
         {
-            "title": "Mini-amaliyot",
+            "title": "Circulation bilan konflikt",
             "type": "example",
             "text": """
-            Juda sodda zamonaviy uy toping.
+            Muzlatkichdan rakovinaga
+            boradigan yo'l
 
             <br><br>
 
-            Nega u zerikarli emasligini yozing.
+            diningga o'tadigan
+            asosiy yo'l bilan kesishadi.
 
             <br><br>
 
-            Kamida 3 sabab:
+            Ovqat tayyorlayotgan odam
+            doim boshqa odamlar bilan
+            to'qnashadi.
 
             <br><br>
 
-            • proporsiya;<br>
-            • material;<br>
-            • chuqurlik;<br>
-            • deraza joylashuvi;<br>
-            • soya
+            Bu yaxshi workflow emas.
+            """,
+        },
+        {
+            "title": "Island bo'lsa",
+            "type": "normal",
+            "text": """
+            Kitchen island mavjud bo'lsa,
+            u ham ish jarayoniga
+            qo'shiladi.
 
             <br><br>
 
-            kabi tushunchalardan foydalaning.
+            Lekin island
+            asosiy yurish yo'llarini
+            toraytirib yubormasligi kerak.
+            """,
+        },
+        {
+            "title": "Bir tomonlama oshxona",
+            "type": "normal",
+            "text": """
+            Har bir oshxonada
+            an'anaviy uchburchak shakl
+            hosil bo'lavermaydi.
+
+            <br><br>
+
+            Masalan,
+            bir tomonlama kitchen line'da
+            asosiy zonalar ketma-ket
+            joylashishi mumkin.
+
+            <br><br>
+
+            Muhim narsa —
+            workflow.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            3 xil variant chizing:
+
+            <br><br>
+
+            1. L-shaped kitchen;<br>
+            2. U-shaped kitchen;<br>
+            3. Linear kitchen.
+
+            <br><br>
+
+            Har birida Fridge,
+            Sink va Cooking joyini belgilang.
             """,
         },
     ],
 
-    "L01_M05_005": [
+    "L02_M05_003": [
         {
-            "title": "Hajm xatolarini aniqlaymiz",
+            "title": "Countertop — ishchi zona",
             "type": "highlight",
             "text": """
-            Endi uyga 3D obyekt sifatida qarab,
-            ortiqcha va tartibsiz hajmlarni topishni mashq qilamiz.
+            Oshxonada jihozlarning
+            o'zi yetarli emas.
+
+            <br><br>
+
+            Mahsulotni:
+
+            <br><br>
+
+            • qo'yish;<br>
+            • tozalash;<br>
+            • kesish;<br>
+            • tayyorlash
+
+            <br><br>
+
+            uchun ishchi sirt kerak.
             """,
         },
         {
-            "title": "Xato 1 — haddan tashqari ko'p hajm",
-            "type": "warning",
-            "text": """
-            Bitta kichik uyda:
-
-            <br><br>
-
-            8–10 ta alohida quti,
-            turli balandlik,
-            turli chuqurlik,
-            turli material.
-
-            <br><br>
-
-            Agar umumiy tizim bo'lmasa,
-            bino parchalangan ko'rinishi mumkin.
-            """,
-        },
-        {
-            "title": "Xato 2 — yordamchi hajm asosiydan kuchli",
-            "type": "warning",
-            "text": """
-            Kirish uchun yaratilgan kichik portal
-            butun uy hajmidan ham kuchli ko'rinmoqda.
-
-            <br><br>
-
-            Natijada ierarxiya buzilishi mumkin.
-            """,
-        },
-        {
-            "title": "Xato 3 — sababsiz siljishlar",
-            "type": "warning",
-            "text": """
-            Bir devor 30 sm oldinga.
-
-            <br>
-            Boshqasi 40 sm orqaga.
-
-            <br>
-            Yana biri 25 sm oldinga.
-
-            <br><br>
-
-            Agar bularning funksional yoki kompozitsion sababi bo'lmasa,
-            fasad “tasodifan yig'ilgan” ko'rinishi mumkin.
-            """,
-        },
-        {
-            "title": "Xato 4 — plan bilan hajm uzilib ketgan",
-            "type": "warning",
-            "text": """
-            Tashqaridan chiroyli hajm yaratildi.
-
-            <br><br>
-
-            Lekin uning ichida
-            foydalanib bo'lmaydigan g'alati burchak yoki
-            foydasiz maydon paydo bo'ldi.
-
-            <br><br>
-
-            Bu yaxshi yechim emas.
-            """,
-        },
-        {
-            "title": "Professional tekshiruv",
+            "title": "Sink va cooking orasidagi ishchi sirt",
             "type": "example",
             "text": """
-            Har bir hajm uchun so'rang:
+            Rakovinadan keyin
+            mahsulot tayyorlanadi.
 
             <br><br>
 
-            <b>1.</b> Bu asosiy yoki yordamchi hajmmi?<br><br>
-            <b>2.</b> Nega aynan shu o'lchamda?<br><br>
-            <b>3.</b> Nega oldinga yoki orqaga siljigan?<br><br>
-            <b>4.</b> Ichki funksiyaga mosmi?<br><br>
-            <b>5.</b> Olib tashlasak loyiha yaxshilanadimi?
+            Keyin pishirish zonasiga o'tadi.
+
+            <br><br>
+
+            Shu sabab
+            bu jarayon orasidagi
+            countertop juda muhim.
             """,
         },
         {
-            "title": "Mini-loyiha",
+            "title": "Saqlashni foydalanishga yaqinlashtiring",
+            "type": "normal",
+            "text": """
+            Idishlar,
+            mahsulotlar
+            va oshxona anjomlari
+
+            <br><br>
+
+            ishlatiladigan zonaga
+            mantiqan yaqin bo'lsa,
+            ortiqcha yurish kamayadi.
+            """,
+        },
+        {
+            "title": "Pastki va yuqori saqlash",
+            "type": "normal",
+            "text": """
+            Oshxona storage tizimi
+            faqat bitta katta shkafdan iborat emas.
+
+            <br><br>
+
+            Turli predmetlar
+            foydalanish tezligiga qarab
+            turli joylarda saqlanishi mumkin.
+            """,
+        },
+        {
+            "title": "Corner muammosi",
+            "type": "warning",
+            "text": """
+            L yoki U shaklli oshxonada
+            burchak zonalari
+            noto'g'ri rejalashtirilsa,
+
+            <br><br>
+
+            shkaf eshiklari
+            yoki tortmalar
+            bir-biri bilan konflikt qilishi mumkin.
+            """,
+        },
+        {
+            "title": "Jihoz eshigini ham tasavvur qiling",
+            "type": "highlight",
+            "text": """
+            Muzlatkich,
+            idish yuvish mashinasi
+            yoki boshqa jihoz
+
+            <br><br>
+
+            faqat yopiq kontur holatida
+            tekshirilmaydi.
+
+            <br><br>
+
+            Uning eshigi ochilganda
+            qancha joy egallashini ham
+            tasavvur qiling.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
             "type": "example",
             "text": """
-            Bir murakkab uy tanlang.
+            Oshxona sxemasida belgilang:
 
             <br><br>
 
-            Uni xayolan oddiy qutilarga ajrating.
+            • food storage;<br>
+            • dishes;<br>
+            • preparation area;<br>
+            • cleaning area;<br>
+            • cooking area.
 
             <br><br>
 
-            Keyin kamida bitta hajmni
-            olib tashlash mumkinmi, o'ylang.
+            Ularning joylashuvi
+            workflowga mos keladimi?
+            """,
+        },
+    ],
+
+    "L02_M05_004": [
+        {
+            "title": "Oshxona ichidagi circulation",
+            "type": "highlight",
+            "text": """
+            Oshxonada bir vaqtning o'zida
+            ovqat tayyorlash
+            va boshqa odamlarning yurishi
+            sodir bo'lishi mumkin.
 
             <br><br>
 
-            Agar mumkin bo'lsa,
-            nima uchunligini yozing.
+            Shu sabab circulation
+            alohida tahlil qilinadi.
+            """,
+        },
+        {
+            "title": "Transit yo'lni ish zonasidan ajrating",
+            "type": "normal",
+            "text": """
+            Agar hovliga,
+            diningga
+            yoki boshqa xonaga o'tadigan
+            asosiy yo'l
+
+            <br><br>
+
+            doim cooking zonadan o'tsa,
+            foydalanish noqulaylashishi mumkin.
+            """,
+        },
+        {
+            "title": "Dining bilan aloqa",
+            "type": "highlight",
+            "text": """
+            Oshxona va dining
+            ko'pincha bir-biriga
+            kuchli funksional bog'langan.
+
+            <br><br>
+
+            Tayyor ovqatni
+            diningga olib borish
+            qulay bo'lishi kerak.
+            """,
+        },
+        {
+            "title": "Dining juda uzoqda",
+            "type": "example",
+            "text": """
+            Oshxona bir tomonda,
+            dining esa boshqa tomonda.
+
+            <br><br>
+
+            Ularning orasida
+            koridor,
+            living
+            va asosiy circulation bor.
+
+            <br><br>
+
+            Har bir ovqatda
+            uzoq yo'l bosiladi.
+
+            <br><br>
+
+            Funksional aloqa zaif.
+            """,
+        },
+        {
+            "title": "Bir nechta odam",
+            "type": "normal",
+            "text": """
+            Faqat bitta odamni emas,
+            oiladagi bir nechta odamni
+            tasavvur qiling.
+
+            <br><br>
+
+            Biri muzlatkichni ochyapti,
+            biri rakovinada,
+            boshqasi diningga o'tmoqda.
+
+            <br><br>
+
+            Ular bir-biriga xalaqit bermasligi kerak.
+            """,
+        },
+        {
+            "title": "Door opening",
+            "type": "warning",
+            "text": """
+            Oshxona eshigi ochilganda
+            muzlatkich,
+            shkaf
+            yoki ishchi zonaga
+            to'qnashmasligi kerak.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            Oshxona planida 3 ta yo'l chizing:
+
+            <br><br>
+
+            1. Kirish → fridge<br>
+            2. Kitchen → dining<br>
+            3. Kitchen → hovli yoki boshqa xona
+
+            <br><br>
+
+            Ular asosiy ish zonasini
+            keraksiz kesib o'tayaptimi?
+            """,
+        },
+    ],
+
+    "L02_M05_005": [
+        {
+            "title": "Oshxona auditi",
+            "type": "highlight",
+            "text": """
+            Endi oshxonani
+            faqat shkaflar chizig'i sifatida emas,
+
+            <br><br>
+
+            real kundalik ish tizimi
+            sifatida tekshiramiz.
+            """,
+        },
+        {
+            "title": "1. Funksional zonalar",
+            "type": "example",
+            "text": """
+            Tekshiring:
+
+            <br><br>
+
+            • fridge mavjudmi?<br>
+            • sink mantiqiy joydami?<br>
+            • cooking zona qulaymi?<br>
+            • preparation area bormi?<br>
+            • storage yetarlimi?
+            """,
+        },
+        {
+            "title": "2. Workflow",
+            "type": "example",
+            "text": """
+            Mahsulotning yo'lini kuzating:
+
+            <br><br>
+
+            saqlash →
+            yuvish →
+            tayyorlash →
+            pishirish →
+            dining.
+
+            <br><br>
+
+            Keraksiz ortiqcha yurish bormi?
+            """,
+        },
+        {
+            "title": "3. Circulation",
+            "type": "example",
+            "text": """
+            Tekshiring:
+
+            <br><br>
+
+            • boshqa odamlar ish zonasini kesadimi?<br>
+            • jihoz eshiklari yo'lni to'sadimi?<br>
+            • island o'tishni toraytirganmi?<br>
+            • diningga chiqish qulaymi?
+            """,
+        },
+        {
+            "title": "4. Storage",
+            "type": "example",
+            "text": """
+            Tekshiring:
+
+            <br><br>
+
+            • kundalik idishlar qulay joydami?<br>
+            • oziq-ovqat saqlash mantiqiymi?<br>
+            • og'ir predmetlar uchun joy bormi?<br>
+            • burchaklar foydalanishga yaroqlimi?
+            """,
+        },
+        {
+            "title": "Xatoni toping",
+            "type": "warning",
+            "text": """
+            Oshxona juda katta.
+
+            <br><br>
+
+            Muzlatkich,
+            sink
+            va cooking zona
+            hammasi mavjud.
+
+            <br><br>
+
+            Lekin ular
+            uch xil uzoq burchakda.
+
+            <br><br>
+
+            Ovqat tayyorlashda
+            odam xona bo'ylab
+            qayta-qayta yuradi.
+
+            <br><br>
+
+            Muammo:
+            maydon yetarli,
+            lekin workflow samarasiz.
+            """,
+        },
+        {
+            "title": "Professional checklist",
+            "type": "example",
+            "text": """
+            Oshxonani tekshiring:
+
+            <br><br>
+
+            <b>1.</b> Funksional zonalar aniqmi?<br><br>
+            <b>2.</b> Fridge–Sink–Cooking aloqasi mantiqiymi?<br><br>
+            <b>3.</b> Preparation surface bormi?<br><br>
+            <b>4.</b> Storage foydalanishga yaqinmi?<br><br>
+            <b>5.</b> Jihoz eshiklari konflikt qilmayaptimi?<br><br>
+            <b>6.</b> Circulation ish zonasini buzmayaptimi?<br><br>
+            <b>7.</b> Dining bilan aloqa qulaymi?
             """,
         },
         {
@@ -616,25 +701,18 @@ LEVEL01_MODULE05_CONTENT = {
 
             <br><br>
 
-            ✓ forma;<br>
-            ✓ hajm;<br>
-            ✓ asosiy hajm;<br>
-            ✓ yordamchi hajm;<br>
-            ✓ hajm siljishi;<br>
-            ✓ chuqurlik;<br>
-            ✓ 3D kompozitsiya
+            ✓ oshxona funksional zonalarini ajratasiz;<br>
+            ✓ ishchi uchburchakni tushunasiz;<br>
+            ✓ countertopni rejalashtirasiz;<br>
+            ✓ storage mantiqini tuzasiz;<br>
+            ✓ circulationni tekshirasiz;<br>
+            ✓ dining bilan aloqani tahlil qilasiz;<br>
+            ✓ oshxona rejasini audit qilasiz.
 
             <br><br>
 
-            tushunchalarini bilasiz.
-
-            <br><br>
-
-            LEVEL 1 da endi oxirgi katta modul qoldi:
-
-            <br><br>
-
-            <b>Arxitektura uslublari.</b>
+            Keyingi modul:
+            <b>Yotoqxona loyihalash.</b>
             """,
         },
     ],
@@ -642,16 +720,17 @@ LEVEL01_MODULE05_CONTENT = {
 
 
 # ============================================================
-# QUIZ DATA
+# QUIZ
+# Q061-Q075 KODLARI SAQLANADI
 # ============================================================
 
-LEVEL01_MODULE05_QUIZ = {
-    "L01_M05_001": [
+LEVEL02_MODULE05_QUIZ = {
+    "L02_M05_001": [
         {
-            "code": "L01_Q061",
-            "question": "Bino faqat fasaddan iboratmi?",
+            "code": "L02_Q061",
+            "question": "Oshxona faqat shkaflar joylashtiriladigan makonmi?",
             "explanation": (
-                "Bino eni, uzunligi va balandligi bo'lgan uch o'lchamli obyekt."
+                "Oshxona mahsulot saqlash, yuvish, tayyorlash va pishirish kabi ko'plab funksiyalarni bajaradi."
             ),
             "options": [
                 ("A", "Ha", False),
@@ -659,83 +738,10 @@ LEVEL01_MODULE05_QUIZ = {
             ],
         },
         {
-            "code": "L01_Q062",
-            "question": "Arxitekturada hajm nimani anglatadi?",
+            "code": "L02_Q062",
+            "question": "Oshxona loyihalashda ish jarayonini hisobga olish kerakmi?",
             "explanation": (
-                "Hajm binoning uch o'lchamli fazoviy massasini anglatadi."
-            ),
-            "options": [
-                ("A", "3D fazoviy massa", True),
-                ("B", "Faqat rang", False),
-                ("C", "Faqat plan chizig'i", False),
-            ],
-        },
-        {
-            "code": "L01_Q063",
-            "question": "Professional bino faqat old fasaddan yaxshi ko'rinishi kifoyami?",
-            "explanation": (
-                "Binoning barcha tomonlari va umumiy 3D kompozitsiyasi muhim."
-            ),
-            "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
-            ],
-        },
-    ],
-
-    "L01_M05_002": [
-        {
-            "code": "L01_Q064",
-            "question": "Asosiy hajm nima?",
-            "explanation": (
-                "Asosiy hajm kompozitsiyada eng kuchli seziladigan katta massa."
-            ),
-            "options": [
-                ("A", "Kompozitsiyaning asosiy massasi", True),
-                ("B", "Har qanday kichik detal", False),
-            ],
-        },
-        {
-            "code": "L01_Q065",
-            "question": "Yordamchi hajmning vazifasi nima?",
-            "explanation": (
-                "Yordamchi hajm asosiy hajmni to'ldiradi va muayyan funksiyani bajaradi."
-            ),
-            "options": [
-                ("A", "Asosiy hajmni to'ldirish", True),
-                ("B", "Har doim asosiydan kuchli bo'lish", False),
-            ],
-        },
-        {
-            "code": "L01_Q066",
-            "question": "Barcha hajmlar bir xil vizual kuchga ega bo'lishi shartmi?",
-            "explanation": (
-                "Kompozitsiyada ierarxiya bo'lishi foydali."
-            ),
-            "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
-            ],
-        },
-    ],
-
-    "L01_M05_003": [
-        {
-            "code": "L01_Q067",
-            "question": "Hajmni oldinga chiqarish fasadga nima berishi mumkin?",
-            "explanation": (
-                "U chuqurlik, soya va kompozitsion urg'u yaratishi mumkin."
-            ),
-            "options": [
-                ("A", "Chuqurlik va urg'u", True),
-                ("B", "Hech qanday ta'sir qilmaydi", False),
-            ],
-        },
-        {
-            "code": "L01_Q068",
-            "question": "Terrasani ichkariga olish tabiiy soyali zona yaratishi mumkinmi?",
-            "explanation": (
-                "Ichkariga olingan hajm quyoshdan himoyalangan chuqur zona yaratishi mumkin."
+                "Mahsulotning saqlashdan pishirishgacha bo'lgan yo'li ergonomikaga ta'sir qiladi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -743,46 +749,10 @@ LEVEL01_MODULE05_QUIZ = {
             ],
         },
         {
-            "code": "L01_Q069",
-            "question": "Har bir devorni turli chuqurlikka surish professional yechimmi?",
+            "code": "L02_Q063",
+            "question": "Preparation area oshxonada foydali funksional zona hisoblanadimi?",
             "explanation": (
-                "Har bir siljishning funksional yoki kompozitsion sababi bo'lishi kerak."
-            ),
-            "options": [
-                ("A", "Har doim", False),
-                ("B", "Faqat asosli bo'lsa", True),
-            ],
-        },
-    ],
-
-    "L01_M05_004": [
-        {
-            "code": "L01_Q070",
-            "question": "Murakkab shakl har doim professional arxitektura deganimi?",
-            "explanation": (
-                "Sodda shakl ham yaxshi proporsiya va kompozitsiya bilan kuchli natija berishi mumkin."
-            ),
-            "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
-            ],
-        },
-        {
-            "code": "L01_Q071",
-            "question": "Sodda arxitekturada xatolar kamroq ko'rinadimi?",
-            "explanation": (
-                "Sodda kompozitsiyada har bir detal kuchli ko'rinadi, shuning uchun xatolar ham sezilarli."
-            ),
-            "options": [
-                ("A", "Har doim kamroq", False),
-                ("B", "Yo'q, xatolar aniq ko'rinishi mumkin", True),
-            ],
-        },
-        {
-            "code": "L01_Q072",
-            "question": "Keraksiz dekorativ hajmlar kompozitsiyani buzishi mumkinmi?",
-            "explanation": (
-                "Asossiz elementlar umumiy shaklni parchalashi mumkin."
+                "Mahsulotni kesish va tayyorlash uchun ishchi sirt zarur bo'lishi mumkin."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -791,38 +761,162 @@ LEVEL01_MODULE05_QUIZ = {
         },
     ],
 
-    "L01_M05_005": [
+    "L02_M05_002": [
         {
-            "code": "L01_Q073",
-            "question": "Juda ko'p alohida hajm nimaga olib kelishi mumkin?",
+            "code": "L02_Q064",
+            "question": "Klassik ishchi uchburchakning asosiy nuqtalari qaysilar?",
             "explanation": (
-                "Tizim bo'lmasa bino parchalangan va tartibsiz ko'rinishi mumkin."
+                "Asosiy nuqtalar muzlatkich, rakovina va pishirish zonasidir."
             ),
             "options": [
-                ("A", "Parchalangan kompozitsiyaga", True),
-                ("B", "Har doim yaxshi natijaga", False),
+                (
+                    "A",
+                    "Muzlatkich + Rakovina + Pishirish",
+                    True,
+                ),
+                (
+                    "B",
+                    "Divan + TV + Stol",
+                    False,
+                ),
             ],
         },
         {
-            "code": "L01_Q074",
-            "question": "Yordamchi hajm asosiy hajmdan kuchliroq bo'lsa nima buzilishi mumkin?",
+            "code": "L02_Q065",
+            "question": "Ishchi uchburchakning asosiy maqsadi ish jarayonini qulay qilishmi?",
             "explanation": (
-                "Kompozitsion ierarxiya buzilishi mumkin."
+                "Uch asosiy zona orasidagi aloqani mantiqiy tashkil qilish nazarda tutiladi."
             ),
             "options": [
-                ("A", "Ierarxiya", True),
-                ("B", "Faqat material narxi", False),
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
             ],
         },
         {
-            "code": "L01_Q075",
-            "question": "Professional tekshiruvda qaysi savol foydali?",
+            "code": "L02_Q066",
+            "question": "Har qanday oshxonada uchta zona geometrik jihatdan ideal uchburchak hosil qilishi shartmi?",
             "explanation": (
-                "Har bir hajmning nima sababdan mavjudligini tushunish muhim."
+                "Oshxona turi va geometriyasi farq qiladi; asosiy narsa qulay workflow."
             ),
             "options": [
-                ("A", "Bu hajm nima uchun kerak?", True),
-                ("B", "Faqat necha rang bor?", False),
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
+            ],
+        },
+    ],
+
+    "L02_M05_003": [
+        {
+            "code": "L02_Q067",
+            "question": "Oshxonada countertop ishchi sirt sifatida muhimmi?",
+            "explanation": (
+                "Mahsulotni qo'yish, kesish va tayyorlash uchun ishchi sirt kerak."
+            ),
+            "options": [
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
+            ],
+        },
+        {
+            "code": "L02_Q068",
+            "question": "Storage joylashuvi ish jarayoniga ta'sir qiladimi?",
+            "explanation": (
+                "Ko'p ishlatiladigan narsalarning qulay joyda bo'lishi ortiqcha harakatni kamaytirishi mumkin."
+            ),
+            "options": [
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
+            ],
+        },
+        {
+            "code": "L02_Q069",
+            "question": "Jihozning faqat yopiq holatini tekshirish yetarlimi?",
+            "explanation": (
+                "Jihoz eshigi ochilganda circulation va boshqa elementlar bilan konflikt yuzaga kelishi mumkin."
+            ),
+            "options": [
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
+            ],
+        },
+    ],
+
+    "L02_M05_004": [
+        {
+            "code": "L02_Q070",
+            "question": "Diningga o'tadigan asosiy yo'l cooking zonani keraksiz kesib o'tmasligi foydalimi?",
+            "explanation": (
+                "Transit circulation va ish zonasi o'rtasidagi konflikt foydalanishni yomonlashtirishi mumkin."
+            ),
+            "options": [
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
+            ],
+        },
+        {
+            "code": "L02_Q071",
+            "question": "Oshxona va dining o'rtasidagi funksional aloqa muhimmi?",
+            "explanation": (
+                "Tayyor ovqat va idishlarni ikki zona orasida qulay tashish kundalik foydalanishga ta'sir qiladi."
+            ),
+            "options": [
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
+            ],
+        },
+        {
+            "code": "L02_Q072",
+            "question": "Oshxona circulationini faqat bitta odam uchun tekshirish yetarlimi?",
+            "explanation": (
+                "Uyda bir vaqtning o'zida bir nechta odam oshxonadan foydalanishi mumkin."
+            ),
+            "options": [
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
+            ],
+        },
+    ],
+
+    "L02_M05_005": [
+        {
+            "code": "L02_Q073",
+            "question": "Katta oshxona avtomatik ravishda ergonomik oshxona bo'ladimi?",
+            "explanation": (
+                "Maydondan tashqari zonalar aloqasi, workflow, storage va circulation ham muhim."
+            ),
+            "options": [
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
+            ],
+        },
+        {
+            "code": "L02_Q074",
+            "question": "Oshxona auditida Fridge–Sink–Cooking aloqasi tekshiriladimi?",
+            "explanation": (
+                "Bu asosiy ish jarayonining muhim qismi."
+            ),
+            "options": [
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
+            ],
+        },
+        {
+            "code": "L02_Q075",
+            "question": "Oshxona rejasini baholashdagi to'g'ri yondashuv qaysi?",
+            "explanation": (
+                "Funksional zonalar, workflow, storage va circulation birgalikda tekshiriladi."
+            ),
+            "options": [
+                (
+                    "A",
+                    "Zonalar → workflow → storage → circulation → audit",
+                    True,
+                ),
+                (
+                    "B",
+                    "Faqat shkaflar sonini ko'paytirish",
+                    False,
+                ),
             ],
         },
     ],
@@ -833,7 +927,7 @@ LEVEL01_MODULE05_QUIZ = {
 # DATABASE SEED
 # ============================================================
 
-def seed_level01_module05():
+def seed_level02_module05():
     connection = get_connection()
 
     try:
@@ -848,7 +942,7 @@ def seed_level01_module05():
             sort_order,
             estimated_minutes,
             xp_reward,
-        ) in LEVEL01_MODULE05_LESSONS:
+        ) in LEVEL02_MODULE05_LESSONS:
 
             cursor.execute(
                 """
@@ -857,9 +951,7 @@ def seed_level01_module05():
                 WHERE code = ?
                 LIMIT 1
                 """,
-                (
-                    module_code,
-                ),
+                (module_code,),
             )
 
             module = cursor.fetchone()
