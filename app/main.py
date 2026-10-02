@@ -68,6 +68,10 @@ from courses.level02_module05 import (
     seed_level02_module05,
 )
 
+from courses.level02_module06 import (
+    seed_level02_module06,
+)
+
 from courses.quiz_service import (
     seed_quizzes,
 )
@@ -111,6 +115,7 @@ def prepare_application():
     seed_level02_module03()
     seed_level02_module04()
     seed_level02_module05()
+    seed_level02_module06()
 
     # QUIZZES
     seed_quizzes()
@@ -119,6 +124,7 @@ def prepare_application():
     seed_level_exams()
 
     # DEVELOPMENT MASTER ACCOUNT
+    # Sotuv versiyasida olib tashlanadi.
     create_user(
         username="admin",
         password="12345",
@@ -128,7 +134,9 @@ def prepare_application():
 
 
 def main():
-    app = QApplication(sys.argv)
+    app = QApplication(
+        sys.argv
+    )
 
     app.setApplicationName(
         "ARCHIPRO UZ"
@@ -179,7 +187,9 @@ def main():
             user
         )
 
-        windows["dashboard"] = dashboard
+        windows[
+            "dashboard"
+        ] = dashboard
 
         dashboard.show()
 
