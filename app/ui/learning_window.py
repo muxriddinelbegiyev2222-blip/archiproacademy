@@ -44,6 +44,20 @@ class LearningWindow(QMainWindow):
         self.lesson_window = None
         self.exam_window = None
 
+        # ====================================================
+        # MASTER MODE
+        # ====================================================
+
+        self.is_master = (
+            str(
+                self.user.get(
+                    "license_type",
+                    "",
+                )
+            ).upper()
+            == "MASTER"
+        )
+
         self.setWindowTitle(
             "ARCHIPRO UZ - Mening o'qishim"
         )
@@ -96,6 +110,23 @@ class LearningWindow(QMainWindow):
                 color: #94A3B8;
             }
 
+            QFrame#masterBanner {
+                background-color: #251D06;
+                border: 1px solid #D4A72C;
+                border-radius: 12px;
+            }
+
+            QLabel#masterTitle {
+                color: #FACC15;
+                font-size: 15px;
+                font-weight: 800;
+            }
+
+            QLabel#masterText {
+                color: #FDE68A;
+                font-size: 12px;
+            }
+
             QFrame#levelCard {
                 background-color: #0F172A;
                 border: 1px solid #1E293B;
@@ -111,6 +142,12 @@ class LearningWindow(QMainWindow):
             QFrame#levelCompleted {
                 background-color: #0E1D18;
                 border: 1px solid #166534;
+                border-radius: 16px;
+            }
+
+            QFrame#levelMaster {
+                background-color: #14170E;
+                border: 1px solid #A16207;
                 border-radius: 16px;
             }
 
@@ -138,6 +175,12 @@ class LearningWindow(QMainWindow):
                 border-radius: 10px;
             }
 
+            QFrame#lessonMaster {
+                background-color: #1B180C;
+                border: 1px solid #A16207;
+                border-radius: 10px;
+            }
+
             QFrame#examAvailable {
                 background-color: #2A2109;
                 border: 1px solid #CA8A04;
@@ -153,6 +196,12 @@ class LearningWindow(QMainWindow):
             QFrame#examCompleted {
                 background-color: #10251C;
                 border: 1px solid #16A34A;
+                border-radius: 14px;
+            }
+
+            QFrame#examMaster {
+                background-color: #251D06;
+                border: 1px solid #D4A72C;
                 border-radius: 14px;
             }
 
@@ -202,6 +251,12 @@ class LearningWindow(QMainWindow):
                 font-weight: 700;
             }
 
+            QLabel#masterStatus {
+                color: #FACC15;
+                font-size: 12px;
+                font-weight: 800;
+            }
+
             QLabel#examTitle {
                 font-size: 18px;
                 font-weight: 700;
@@ -240,6 +295,32 @@ class LearningWindow(QMainWindow):
                 background-color: #3B82F6;
             }
 
+            QPushButton#reviewLesson {
+                background-color: #15803D;
+                color: white;
+                border: none;
+                border-radius: 8px;
+                padding: 9px 15px;
+                font-weight: 600;
+            }
+
+            QPushButton#reviewLesson:hover {
+                background-color: #16A34A;
+            }
+
+            QPushButton#masterOpenLesson {
+                background-color: #A16207;
+                color: white;
+                border: none;
+                border-radius: 8px;
+                padding: 9px 15px;
+                font-weight: 700;
+            }
+
+            QPushButton#masterOpenLesson:hover {
+                background-color: #CA8A04;
+            }
+
             QPushButton#examButton {
                 background-color: #CA8A04;
                 color: #FFFFFF;
@@ -252,6 +333,20 @@ class LearningWindow(QMainWindow):
 
             QPushButton#examButton:hover {
                 background-color: #EAB308;
+            }
+
+            QPushButton#masterExamButton {
+                background-color: #A16207;
+                color: #FFFFFF;
+                border: none;
+                border-radius: 9px;
+                padding: 11px 18px;
+                font-size: 13px;
+                font-weight: 800;
+            }
+
+            QPushButton#masterExamButton:hover {
+                background-color: #CA8A04;
             }
 
             QPushButton#backButton {
@@ -341,6 +436,10 @@ class LearningWindow(QMainWindow):
             "pageTitle"
         )
 
+        root.addWidget(
+            title
+        )
+
         subtitle = QLabel(
             (
                 "0 dan professional turar joy "
@@ -353,12 +452,68 @@ class LearningWindow(QMainWindow):
         )
 
         root.addWidget(
-            title
-        )
-
-        root.addWidget(
             subtitle
         )
+
+        # ====================================================
+        # MASTER BANNER
+        # ====================================================
+
+        if self.is_master:
+
+            master_banner = QFrame()
+
+            master_banner.setObjectName(
+                "masterBanner"
+            )
+
+            master_layout = QVBoxLayout(
+                master_banner
+            )
+
+            master_layout.setContentsMargins(
+                18,
+                13,
+                18,
+                13,
+            )
+
+            master_title = QLabel(
+                "★ MASTER TEST MODE"
+            )
+
+            master_title.setObjectName(
+                "masterTitle"
+            )
+
+            master_text = QLabel(
+                (
+                    "Siz dastur egasi/test rejimidasiz. "
+                    "Barcha Level va mavjud darslarni "
+                    "ketma-ketlik cheklovisiz ochishingiz mumkin. "
+                    "Oddiy foydalanuvchilarda bu imkoniyat bo'lmaydi."
+                )
+            )
+
+            master_text.setWordWrap(
+                True
+            )
+
+            master_text.setObjectName(
+                "masterText"
+            )
+
+            master_layout.addWidget(
+                master_title
+            )
+
+            master_layout.addWidget(
+                master_text
+            )
+
+            root.addWidget(
+                master_banner
+            )
 
         # ====================================================
         # SCROLL
@@ -429,7 +584,13 @@ class LearningWindow(QMainWindow):
             "locked",
         )
 
-        if level_status == "completed":
+        # MASTER barcha Level'larni ochiq ko'radi.
+        if self.is_master:
+            card.setObjectName(
+                "levelMaster"
+            )
+
+        elif level_status == "completed":
             card.setObjectName(
                 "levelCompleted"
             )
@@ -460,15 +621,22 @@ class LearningWindow(QMainWindow):
         )
 
         # ====================================================
-        # HEADER
+        # LEVEL HEADER
         # ====================================================
 
         header = QHBoxLayout()
 
         title_area = QVBoxLayout()
 
+        readable_code = (
+            level["code"].replace(
+                "LEVEL_",
+                "LEVEL ",
+            )
+        )
+
         title = QLabel(
-            f"{level['code']}  •  "
+            f"{readable_code}  •  "
             f"{level['title']}"
         )
 
@@ -501,7 +669,18 @@ class LearningWindow(QMainWindow):
 
         header.addStretch()
 
-        if level_status == "completed":
+        # MASTER statusi alohida.
+        if self.is_master:
+
+            status_label = QLabel(
+                "★ MASTER ACCESS"
+            )
+
+            status_label.setObjectName(
+                "masterStatus"
+            )
+
+        elif level_status == "completed":
 
             status_label = QLabel(
                 "✓ TUGALLANGAN"
@@ -590,9 +769,6 @@ class LearningWindow(QMainWindow):
 
         # ====================================================
         # FINAL EXAM
-        #
-        # Endi LEVEL_00 bilan cheklanmaydi.
-        # Database'da Final Exam mavjud bo'lsa ko'rsatiladi.
         # ====================================================
 
         exam = get_level_exam(
@@ -670,11 +846,19 @@ class LearningWindow(QMainWindow):
             info
         )
 
+        # Modulda hali dars yaratilmagan.
         if not module[
             "lessons"
         ]:
 
-            if level_status == "locked":
+            if self.is_master:
+
+                no_lessons_text = (
+                    "MASTER: Ushbu modul skeleti mavjud, "
+                    "lekin dars kontenti hali qo'shilmagan."
+                )
+
+            elif level_status == "locked":
 
                 no_lessons_text = (
                     "🔒 Ushbu Level hali yopiq."
@@ -693,6 +877,10 @@ class LearningWindow(QMainWindow):
 
             no_lessons.setObjectName(
                 "meta"
+            )
+
+            no_lessons.setWordWrap(
+                True
             )
 
             layout.addWidget(
@@ -723,13 +911,30 @@ class LearningWindow(QMainWindow):
         self,
         lesson: dict,
     ):
-        status = lesson[
+        real_status = lesson[
             "status"
         ]
 
         row = QFrame()
 
-        if status == "completed":
+        # MASTER rejimida locked holat vizual
+        # cheklov sifatida ko'rsatilmaydi.
+        if self.is_master:
+
+            row.setObjectName(
+                "lessonMaster"
+            )
+
+            if real_status == "completed":
+                status_text = "✓"
+
+            elif real_status == "available":
+                status_text = "▶"
+
+            else:
+                status_text = "★"
+
+        elif real_status == "completed":
 
             row.setObjectName(
                 "lessonCompleted"
@@ -737,7 +942,7 @@ class LearningWindow(QMainWindow):
 
             status_text = "✓"
 
-        elif status == "available":
+        elif real_status == "available":
 
             row.setObjectName(
                 "lessonAvailable"
@@ -786,6 +991,8 @@ class LearningWindow(QMainWindow):
             f"{lesson['estimated_minutes']} daqiqa"
             f"   •   "
             f"{lesson['xp_reward']} XP"
+            f"   •   "
+            f"Test: {lesson.get('passing_score', 80)}%"
         )
 
         meta.setObjectName(
@@ -810,7 +1017,51 @@ class LearningWindow(QMainWindow):
 
         layout.addStretch()
 
-        if status == "available":
+        # ====================================================
+        # MASTER
+        # ====================================================
+
+        if self.is_master:
+
+            if real_status == "completed":
+
+                score = QLabel(
+                    f"Test: "
+                    f"{lesson['best_score']}%"
+                )
+
+                score.setObjectName(
+                    "meta"
+                )
+
+                layout.addWidget(
+                    score
+                )
+
+            button = QPushButton(
+                "MASTER OCHISH"
+            )
+
+            button.setObjectName(
+                "masterOpenLesson"
+            )
+
+            button.clicked.connect(
+                lambda checked=False, data=lesson:
+                self.open_lesson(
+                    data
+                )
+            )
+
+            layout.addWidget(
+                button
+            )
+
+        # ====================================================
+        # NORMAL USER - AVAILABLE
+        # ====================================================
+
+        elif real_status == "available":
 
             button = QPushButton(
                 "OCHISH"
@@ -831,7 +1082,14 @@ class LearningWindow(QMainWindow):
                 button
             )
 
-        elif status == "completed":
+        # ====================================================
+        # NORMAL USER - COMPLETED
+        #
+        # Tugallangan darsni qayta ko'rish mumkin.
+        # Progress qayta buzilmaydi.
+        # ====================================================
+
+        elif real_status == "completed":
 
             score = QLabel(
                 f"Eng yaxshi test: "
@@ -844,6 +1102,25 @@ class LearningWindow(QMainWindow):
 
             layout.addWidget(
                 score
+            )
+
+            review_button = QPushButton(
+                "QAYTA KO'RISH"
+            )
+
+            review_button.setObjectName(
+                "reviewLesson"
+            )
+
+            review_button.clicked.connect(
+                lambda checked=False, data=lesson:
+                self.open_lesson(
+                    data
+                )
+            )
+
+            layout.addWidget(
+                review_button
             )
 
         return row
@@ -883,7 +1160,15 @@ class LearningWindow(QMainWindow):
             == "completed"
         )
 
-        if exam_completed:
+        # MASTER har qanday mavjud imtihonni
+        # to'g'ridan-to'g'ri ochishi mumkin.
+        if self.is_master:
+
+            card.setObjectName(
+                "examMaster"
+            )
+
+        elif exam_completed:
 
             card.setObjectName(
                 "examCompleted"
@@ -917,17 +1202,28 @@ class LearningWindow(QMainWindow):
 
         text_area = QVBoxLayout()
 
-        level_number = (
+        readable_level = (
             level["code"].replace(
                 "LEVEL_",
-                "",
+                "LEVEL ",
             )
         )
 
-        if exam_completed:
+        if self.is_master:
 
             title = QLabel(
-                f"🏆 LEVEL {level_number} "
+                f"★ {readable_level} "
+                "YAKUNIY IMTIHON — MASTER ACCESS"
+            )
+
+            title.setObjectName(
+                "examTitle"
+            )
+
+        elif exam_completed:
+
+            title = QLabel(
+                f"🏆 {readable_level} "
                 "YAKUNIY IMTIHON — TUGALLANGAN"
             )
 
@@ -938,7 +1234,7 @@ class LearningWindow(QMainWindow):
         else:
 
             title = QLabel(
-                f"🏆 LEVEL {level_number} "
+                f"🏆 {readable_level} "
                 "YAKUNIY IMTIHON"
             )
 
@@ -966,7 +1262,52 @@ class LearningWindow(QMainWindow):
             details
         )
 
-        if exam_completed:
+        # ====================================================
+        # MASTER INFO
+        # ====================================================
+
+        if self.is_master:
+
+            master_info = QLabel(
+                (
+                    "MASTER TEST MODE: darslarni tugatmagan "
+                    "bo'lsangiz ham ushbu imtihonni tekshirishingiz mumkin."
+                )
+            )
+
+            master_info.setObjectName(
+                "masterStatus"
+            )
+
+            master_info.setWordWrap(
+                True
+            )
+
+            text_area.addWidget(
+                master_info
+            )
+
+            if exam_stats[
+                "exam_attempts"
+            ] > 0:
+
+                result = QLabel(
+                    f"Eng yaxshi natija: "
+                    f"{exam_stats['best_exam_score']}%"
+                    f"   •   "
+                    f"Urinishlar: "
+                    f"{exam_stats['exam_attempts']}"
+                )
+
+                result.setObjectName(
+                    "meta"
+                )
+
+                text_area.addWidget(
+                    result
+                )
+
+        elif exam_completed:
 
             result = QLabel(
                 f"Eng yaxshi natija: "
@@ -1001,9 +1342,12 @@ class LearningWindow(QMainWindow):
 
         elif not lessons_completed:
 
-            remaining = (
-                level["total_lessons"]
-                - level["completed_lessons"]
+            remaining = max(
+                0,
+                (
+                    level["total_lessons"]
+                    - level["completed_lessons"]
+                ),
             )
 
             locked = QLabel(
@@ -1042,7 +1386,36 @@ class LearningWindow(QMainWindow):
 
         layout.addStretch()
 
-        if (
+        # ====================================================
+        # MASTER EXAM BUTTON
+        # ====================================================
+
+        if self.is_master:
+
+            button = QPushButton(
+                "MASTER IMTIHONNI OCHISH"
+            )
+
+            button.setObjectName(
+                "masterExamButton"
+            )
+
+            button.clicked.connect(
+                lambda checked=False, exam_data=exam:
+                self.open_exam(
+                    exam_data
+                )
+            )
+
+            layout.addWidget(
+                button
+            )
+
+        # ====================================================
+        # NORMAL USER EXAM BUTTON
+        # ====================================================
+
+        elif (
             lessons_completed
             and not exam_completed
             and level_status != "locked"
@@ -1094,6 +1467,7 @@ class LearningWindow(QMainWindow):
                         module_lesson["id"]
                         == lesson["id"]
                     ):
+
                         level_title = (
                             level["title"]
                         )
@@ -1101,6 +1475,8 @@ class LearningWindow(QMainWindow):
                         module_title = (
                             module["title"]
                         )
+
+                        break
 
         lesson_data = dict(
             lesson
@@ -1113,6 +1489,10 @@ class LearningWindow(QMainWindow):
         lesson_data[
             "module_title"
         ] = module_title
+
+        lesson_data[
+            "master_mode"
+        ] = self.is_master
 
         self.lesson_window = (
             LessonWindow(
@@ -1135,6 +1515,8 @@ class LearningWindow(QMainWindow):
         self,
         lesson_id: int,
     ):
+        # MASTER test paytida ham natija saqlanishi mumkin.
+        # Bu faqat admin test akkauntining progressiga ta'sir qiladi.
         complete_lesson(
             self.user["id"],
             lesson_id,
@@ -1152,10 +1534,18 @@ class LearningWindow(QMainWindow):
         self,
         exam: dict,
     ):
+        exam_data = dict(
+            exam
+        )
+
+        exam_data[
+            "master_mode"
+        ] = self.is_master
+
         self.exam_window = (
             ExamWindow(
                 user=self.user,
-                exam=exam,
+                exam=exam_data,
             )
         )
 
