@@ -32,6 +32,10 @@ from courses.level01_module03 import (
     seed_level01_module03,
 )
 
+from courses.level01_module04 import (
+    seed_level01_module04,
+)
+
 from courses.quiz_service import (
     seed_quizzes,
 )
@@ -58,16 +62,23 @@ def prepare_application():
 
     seed_course_structure()
 
+    # LEVEL 0
     seed_level00_extra()
 
+    # LEVEL 1
     seed_level01_lessons()
     seed_level01_module02()
     seed_level01_module03()
+    seed_level01_module04()
 
+    # TESTLAR
     seed_quizzes()
 
+    # FINAL EXAMS
     seed_level_exams()
 
+    # Development account
+    # Sotuv versiyasida olib tashlanadi.
     create_user(
         username="admin",
         password="12345",
@@ -126,9 +137,9 @@ def main():
             user
         )
 
-        windows["dashboard"] = (
-            dashboard
-        )
+        windows[
+            "dashboard"
+        ] = dashboard
 
         dashboard.show()
 
