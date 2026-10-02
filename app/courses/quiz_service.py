@@ -1,15 +1,21 @@
 import random
 
 from database.database import get_connection
-from courses.quiz_data import QUIZ_DATA
-from courses.level00_extra import LEVEL00_EXTRA_QUIZ
+
+from courses.quiz_data import (
+    QUIZ_DATA,
+)
+
+from courses.level00_extra import (
+    LEVEL00_EXTRA_QUIZ,
+)
+
+from courses.level01_content import (
+    LEVEL01_QUIZ,
+)
 
 
 def get_all_quiz_data():
-    """
-    Barcha test savollarini bitta lug'atga birlashtiradi.
-    """
-
     combined = {}
 
     combined.update(
@@ -20,27 +26,26 @@ def get_all_quiz_data():
         LEVEL00_EXTRA_QUIZ
     )
 
+    combined.update(
+        LEVEL01_QUIZ
+    )
+
     return combined
 
 
 def seed_quizzes():
-    """
-    Barcha mavjud dars testlarini
-    SQLite database'ga joylashtiradi.
-    """
-
-    all_quizzes = get_all_quiz_data()
+    all_quizzes = (
+        get_all_quiz_data()
+    )
 
     connection = get_connection()
 
     try:
         cursor = connection.cursor()
 
-        for (
-            lesson_code,
-            questions,
-        ) in all_quizzes.items():
-
+        for lesson_code, questions in (
+            all_quizzes.items()
+        ):
             cursor.execute(
                 """
                 SELECT id
@@ -58,16 +63,14 @@ def seed_quizzes():
             if lesson is None:
                 continue
 
-            lesson_id = lesson["id"]
+            lesson_id = lesson[
+                "id"
+            ]
 
-            for (
-                question_index,
-                question,
-            ) in enumerate(
+            for question_index, question in enumerate(
                 questions,
                 start=1,
             ):
-
                 cursor.execute(
                     """
                     INSERT OR IGNORE INTO quiz_questions (
@@ -96,7 +99,9 @@ def seed_quizzes():
                     LIMIT 1
                     """,
                     (
-                        question["code"],
+                        question[
+                            "code"
+                        ],
                     ),
                 )
 
@@ -108,7 +113,9 @@ def seed_quizzes():
                     continue
 
                 question_id = (
-                    question_row["id"]
+                    question_row[
+                        "id"
+                    ]
                 )
 
                 for (
@@ -146,10 +153,6 @@ def get_quiz_for_lesson(
     shuffle_questions: bool = True,
     shuffle_options: bool = True,
 ):
-    """
-    Berilgan dars uchun test savollarini qaytaradi.
-    """
-
     connection = get_connection()
 
     try:
@@ -191,7 +194,9 @@ def get_quiz_for_lesson(
                 ORDER BY option_key ASC
                 """,
                 (
-                    question["id"],
+                    question[
+                        "id"
+                    ],
                 ),
             )
 
@@ -205,9 +210,9 @@ def get_quiz_for_lesson(
                     options
                 )
 
-            question["options"] = (
-                options
-            )
+            question[
+                "options"
+            ] = options
 
             quiz.append(
                 question
@@ -230,11 +235,6 @@ def save_quiz_attempt(
     score: int,
     passed: bool,
 ):
-    """
-    Test urinishini saqlaydi va
-    eng yaxshi natijani yangilaydi.
-    """
-
     connection = get_connection()
 
     try:
@@ -261,14 +261,18 @@ def save_quiz_attempt(
         cursor.execute(
             """
             UPDATE lesson_progress
+
             SET
                 attempts = attempts + 1,
                 score = ?,
-                best_score = CASE
-                    WHEN best_score < ?
-                    THEN ?
-                    ELSE best_score
-                END
+
+                best_score =
+                    CASE
+                        WHEN best_score < ?
+                        THEN ?
+                        ELSE best_score
+                    END
+
             WHERE user_id = ?
               AND lesson_id = ?
             """,
@@ -303,9 +307,12 @@ def get_quiz_history(
                 score,
                 passed,
                 created_at
+
             FROM quiz_attempts
+
             WHERE user_id = ?
               AND lesson_id = ?
+
             ORDER BY id DESC
             """,
             (
@@ -339,7 +346,9 @@ def get_best_quiz_score(
                     MAX(score),
                     0
                 ) AS best_score
+
             FROM quiz_attempts
+
             WHERE user_id = ?
               AND lesson_id = ?
             """,
@@ -355,7 +364,9 @@ def get_best_quiz_score(
             return 0
 
         return int(
-            row["best_score"]
+            row[
+                "best_score"
+            ]
         )
 
     finally:
