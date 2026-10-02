@@ -1,4 +1,8 @@
-from PySide6.QtCore import Qt, Signal
+from PySide6.QtCore import (
+    Qt,
+    Signal,
+)
+
 from PySide6.QtWidgets import (
     QButtonGroup,
     QFrame,
@@ -20,9 +24,6 @@ from courses.quiz_service import (
 )
 
 
-PASSING_SCORE = 80
-
-
 class QuizWindow(QMainWindow):
     quiz_passed = Signal()
 
@@ -36,16 +37,34 @@ class QuizWindow(QMainWindow):
         self.user = user
         self.lesson = lesson
 
+        self.lesson_id = (
+            lesson["id"]
+        )
+
+        # ====================================================
+        # DYNAMIC PASSING SCORE
+        # ====================================================
+
+        self.passing_score = int(
+            lesson.get(
+                "passing_score",
+                80,
+            )
+        )
+
         self.questions = []
+
         self.answer_groups = []
 
         self.setWindowTitle(
-            f"ARCHIPRO UZ - Test - "
-            f"{lesson['title']}"
+            (
+                "ARCHIPRO UZ - MINI TEST - "
+                f"{lesson.get('title', 'Dars')}"
+            )
         )
 
         self.resize(
-            1000,
+            1050,
             800,
         )
 
@@ -57,6 +76,12 @@ class QuizWindow(QMainWindow):
         self.setup_styles()
 
         self.load_quiz()
+
+        self.build_ui()
+
+    # ========================================================
+    # STYLE
+    # ========================================================
 
     def setup_styles(self):
         self.setStyleSheet(
@@ -75,31 +100,21 @@ class QuizWindow(QMainWindow):
                 border: none;
             }
 
-            QLabel#title {
-                font-size: 29px;
+            QLabel#pageTitle {
+                font-size: 28px;
                 font-weight: 700;
                 color: #FFFFFF;
             }
 
             QLabel#subtitle {
-                font-size: 14px;
+                font-size: 13px;
                 color: #94A3B8;
             }
 
-            QLabel#infoBadge {
-                background-color: #172554;
-                border: 1px solid #1D4ED8;
-                border-radius: 8px;
-                padding: 7px 11px;
-                color: #BFDBFE;
-                font-size: 12px;
-                font-weight: 600;
-            }
-
-            QLabel#bestScore {
-                color: #FBBF24;
+            QLabel#scoreInfo {
                 font-size: 13px;
-                font-weight: 700;
+                color: #FBBF24;
+                font-weight: 600;
             }
 
             QFrame#questionCard {
@@ -108,43 +123,57 @@ class QuizWindow(QMainWindow):
                 border-radius: 14px;
             }
 
-            QFrame#wrongCard {
-                background-color: #291914;
+            QFrame#questionCorrect {
+                background-color: #10251C;
+                border: 1px solid #15803D;
+                border-radius: 14px;
+            }
+
+            QFrame#questionWrong {
+                background-color: #2A1914;
                 border: 1px solid #C2410C;
                 border-radius: 14px;
             }
 
-            QLabel#question {
+            QLabel#questionText {
+                color: #FFFFFF;
                 font-size: 16px;
                 font-weight: 600;
-                color: #FFFFFF;
             }
 
             QLabel#explanation {
-                background-color: #1E293B;
-                border-radius: 8px;
-                padding: 10px;
-                color: #CBD5E1;
+                color: #FDBA74;
                 font-size: 13px;
             }
 
             QRadioButton {
-                font-size: 14px;
                 color: #CBD5E1;
-                padding: 8px;
-                spacing: 8px;
+                font-size: 14px;
+                spacing: 10px;
+                padding: 7px;
             }
 
             QRadioButton:hover {
-                color: #FFFFFF;
+                background-color: #172033;
+                border-radius: 6px;
+            }
+
+            QRadioButton#correctAnswer {
+                color: #86EFAC;
+                font-weight: 700;
+            }
+
+            QRadioButton#wrongAnswer {
+                color: #FDBA74;
+                font-weight: 700;
             }
 
             QPushButton#submitButton {
                 background-color: #2563EB;
-                color: white;
+                color: #FFFFFF;
                 border: none;
                 border-radius: 10px;
-                padding: 13px 24px;
+                padding: 13px 22px;
                 font-size: 14px;
                 font-weight: 700;
             }
@@ -154,51 +183,63 @@ class QuizWindow(QMainWindow):
             }
 
             QPushButton#retryButton {
-                background-color: #1E293B;
-                color: #FFFFFF;
-                border: 1px solid #334155;
+                background-color: #C2410C;
+                color: white;
+                border: none;
                 border-radius: 10px;
-                padding: 13px 24px;
+                padding: 13px 22px;
                 font-size: 14px;
-                font-weight: 600;
+                font-weight: 700;
             }
 
             QPushButton#retryButton:hover {
+                background-color: #EA580C;
+            }
+
+            QPushButton#continueButton {
+                background-color: #15803D;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                padding: 13px 22px;
+                font-size: 14px;
+                font-weight: 700;
+            }
+
+            QPushButton#continueButton:hover {
+                background-color: #16A34A;
+            }
+
+            QPushButton#backButton {
+                background-color: #1E293B;
+                color: #FFFFFF;
+                border: none;
+                border-radius: 8px;
+                padding: 9px 15px;
+            }
+
+            QPushButton#backButton:hover {
                 background-color: #334155;
-            }
-
-            QLabel#resultSuccess {
-                background-color: #10251C;
-                border: 1px solid #15803D;
-                border-radius: 12px;
-                padding: 16px;
-                color: #BBF7D0;
-                font-size: 15px;
-                font-weight: 600;
-            }
-
-            QLabel#resultFail {
-                background-color: #291914;
-                border: 1px solid #C2410C;
-                border-radius: 12px;
-                padding: 16px;
-                color: #FED7AA;
-                font-size: 15px;
-                font-weight: 600;
             }
             """
         )
 
+    # ========================================================
+    # LOAD QUIZ
+    # ========================================================
+
     def load_quiz(self):
-        self.questions = get_quiz_for_lesson(
-            lesson_id=self.lesson["id"],
-            shuffle_questions=True,
-            shuffle_options=True,
+        self.questions = (
+            get_quiz_for_lesson(
+                lesson_id=self.lesson_id,
+                shuffle_questions=True,
+                shuffle_options=True,
+            )
         )
 
-        self.answer_groups = []
-
-        self.build_ui()
+    # ========================================================
+    # BUILD UI
+    # ========================================================
 
     def build_ui(self):
         central = QWidget()
@@ -213,99 +254,134 @@ class QuizWindow(QMainWindow):
 
         root.setContentsMargins(
             30,
-            25,
+            24,
             30,
-            25,
+            24,
         )
 
         root.setSpacing(
             15
         )
 
-        # =========================
-        # HEADER
-        # =========================
+        # ====================================================
+        # TOP
+        # ====================================================
 
-        title = QLabel(
-            "Mini-test"
-        )
+        top = QHBoxLayout()
 
-        title.setObjectName(
-            "title"
-        )
-
-        subtitle = QLabel(
-            self.lesson.get(
-                "title",
-                "Dars testi",
+        back_button = QPushButton(
+            "← DARSга QAYTISH".replace(
+                "га",
+                "GA",
             )
         )
 
-        subtitle.setObjectName(
-            "subtitle"
+        back_button.setObjectName(
+            "backButton"
+        )
+
+        back_button.clicked.connect(
+            self.close
+        )
+
+        top.addWidget(
+            back_button
+        )
+
+        top.addStretch()
+
+        root.addLayout(
+            top
+        )
+
+        # ====================================================
+        # HEADER
+        # ====================================================
+
+        title = QLabel(
+            "MINI-TEST"
+        )
+
+        title.setObjectName(
+            "pageTitle"
         )
 
         root.addWidget(
             title
         )
 
+        lesson_title = QLabel(
+            self.lesson.get(
+                "title",
+                "",
+            )
+        )
+
+        lesson_title.setObjectName(
+            "subtitle"
+        )
+
         root.addWidget(
-            subtitle
+            lesson_title
         )
 
-        info_layout = QHBoxLayout()
-
-        passing_badge = QLabel(
-            f"O'tish bali: {PASSING_SCORE}%"
+        best_score = (
+            get_best_quiz_score(
+                self.user["id"],
+                self.lesson_id,
+            )
         )
 
-        passing_badge.setObjectName(
-            "infoBadge"
+        question_count = len(
+            self.questions
         )
 
-        question_count = QLabel(
-            f"Savollar: {len(self.questions)} ta"
+        info = QLabel(
+            (
+                f"Savollar: {question_count}"
+                f"   •   "
+                f"O'tish talabi: {self.passing_score}%"
+                f"   •   "
+                f"Eng yaxshi natija: {best_score}%"
+            )
         )
 
-        question_count.setObjectName(
-            "infoBadge"
+        info.setObjectName(
+            "scoreInfo"
         )
 
-        best_score_value = get_best_quiz_score(
-            self.user["id"],
-            self.lesson["id"],
+        root.addWidget(
+            info
         )
 
-        best_score = QLabel(
-            f"Eng yaxshi natija: "
-            f"{best_score_value}%"
-        )
+        # ====================================================
+        # NO QUESTIONS
+        # ====================================================
 
-        best_score.setObjectName(
-            "bestScore"
-        )
+        if not self.questions:
 
-        info_layout.addWidget(
-            passing_badge
-        )
+            no_questions = QLabel(
+                (
+                    "Ushbu dars uchun test savollari "
+                    "hali mavjud emas."
+                )
+            )
 
-        info_layout.addWidget(
-            question_count
-        )
+            no_questions.setObjectName(
+                "subtitle"
+            )
 
-        info_layout.addStretch()
+            root.addWidget(
+                no_questions
+            )
 
-        info_layout.addWidget(
-            best_score
-        )
+            root.addStretch()
 
-        root.addLayout(
-            info_layout
-        )
+            return
 
-        # =========================
-        # QUESTIONS
-        # =========================
+        # ====================================================
+        # SCROLL
+        # ====================================================
 
         scroll = QScrollArea()
 
@@ -317,40 +393,164 @@ class QuizWindow(QMainWindow):
             QScrollArea.Shape.NoFrame
         )
 
-        content = QWidget()
+        scroll_content = QWidget()
 
-        self.content_layout = QVBoxLayout(
-            content
+        self.questions_layout = (
+            QVBoxLayout(
+                scroll_content
+            )
         )
 
-        self.content_layout.setContentsMargins(
+        self.questions_layout.setContentsMargins(
             0,
-            5,
+            10,
             12,
-            20,
+            25,
         )
 
-        self.content_layout.setSpacing(
-            16
+        self.questions_layout.setSpacing(
+            15
         )
+
+        self.answer_groups = []
+
+        letters = [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+        ]
 
         for index, question in enumerate(
             self.questions,
             start=1,
         ):
-            card = self.create_question_card(
-                index,
-                question,
+            question_card = QFrame()
+
+            question_card.setObjectName(
+                "questionCard"
             )
 
-            self.content_layout.addWidget(
-                card
+            card_layout = QVBoxLayout(
+                question_card
             )
 
-        self.content_layout.addStretch()
+            card_layout.setContentsMargins(
+                20,
+                18,
+                20,
+                18,
+            )
+
+            card_layout.setSpacing(
+                10
+            )
+
+            question_label = QLabel(
+                (
+                    f"{index}. "
+                    f"{question['question_text']}"
+                )
+            )
+
+            question_label.setObjectName(
+                "questionText"
+            )
+
+            question_label.setWordWrap(
+                True
+            )
+
+            card_layout.addWidget(
+                question_label
+            )
+
+            group = QButtonGroup(
+                question_card
+            )
+
+            group.setExclusive(
+                True
+            )
+
+            option_buttons = []
+
+            for option_index, option in enumerate(
+                question["options"]
+            ):
+
+                letter = (
+                    letters[option_index]
+                    if option_index < len(letters)
+                    else str(
+                        option_index + 1
+                    )
+                )
+
+                button = QRadioButton(
+                    (
+                        f"{letter}. "
+                        f"{option['option_text']}"
+                    )
+                )
+
+                button.setProperty(
+                    "is_correct",
+                    bool(
+                        option["is_correct"]
+                    ),
+                )
+
+                group.addButton(
+                    button
+                )
+
+                option_buttons.append(
+                    button
+                )
+
+                card_layout.addWidget(
+                    button
+                )
+
+            explanation = QLabel(
+                ""
+            )
+
+            explanation.setObjectName(
+                "explanation"
+            )
+
+            explanation.setWordWrap(
+                True
+            )
+
+            explanation.hide()
+
+            card_layout.addWidget(
+                explanation
+            )
+
+            self.answer_groups.append(
+                {
+                    "question": question,
+                    "group": group,
+                    "buttons": option_buttons,
+                    "card": question_card,
+                    "explanation": explanation,
+                }
+            )
+
+            self.questions_layout.addWidget(
+                question_card
+            )
+
+        self.questions_layout.addStretch()
 
         scroll.setWidget(
-            content
+            scroll_content
         )
 
         root.addWidget(
@@ -358,14 +558,20 @@ class QuizWindow(QMainWindow):
             1,
         )
 
-        # =========================
+        # ====================================================
         # RESULT
-        # =========================
+        # ====================================================
 
-        self.result_label = QLabel()
+        self.result_label = QLabel(
+            ""
+        )
 
         self.result_label.setWordWrap(
             True
+        )
+
+        self.result_label.setAlignment(
+            Qt.AlignmentFlag.AlignCenter
         )
 
         self.result_label.hide()
@@ -374,9 +580,9 @@ class QuizWindow(QMainWindow):
             self.result_label
         )
 
-        # =========================
+        # ====================================================
         # BUTTONS
-        # =========================
+        # ====================================================
 
         buttons = QHBoxLayout()
 
@@ -390,27 +596,37 @@ class QuizWindow(QMainWindow):
             "retryButton"
         )
 
-        self.retry_button.hide()
-
         self.retry_button.clicked.connect(
             self.retry_quiz
         )
 
+        self.retry_button.hide()
+
         self.submit_button = QPushButton(
-            "TESTNI TEKSHIRISH"
+            "JAVOBLARNI TEKSHIRISH"
         )
 
         self.submit_button.setObjectName(
             "submitButton"
         )
 
-        self.submit_button.setCursor(
-            Qt.CursorShape.PointingHandCursor
-        )
-
         self.submit_button.clicked.connect(
             self.check_answers
         )
+
+        self.continue_button = QPushButton(
+            "DAVOM ETISH  →"
+        )
+
+        self.continue_button.setObjectName(
+            "continueButton"
+        )
+
+        self.continue_button.clicked.connect(
+            self.continue_after_pass
+        )
+
+        self.continue_button.hide()
 
         buttons.addWidget(
             self.retry_button
@@ -420,334 +636,261 @@ class QuizWindow(QMainWindow):
             self.submit_button
         )
 
+        buttons.addWidget(
+            self.continue_button
+        )
+
         root.addLayout(
             buttons
         )
 
-    def create_question_card(
-        self,
-        index: int,
-        question: dict,
-    ):
-        card = QFrame()
-
-        card.setObjectName(
-            "questionCard"
-        )
-
-        layout = QVBoxLayout(
-            card
-        )
-
-        layout.setContentsMargins(
-            20,
-            18,
-            20,
-            18,
-        )
-
-        layout.setSpacing(
-            7
-        )
-
-        question_label = QLabel(
-            f"{index}. "
-            f"{question['question_text']}"
-        )
-
-        question_label.setObjectName(
-            "question"
-        )
-
-        question_label.setWordWrap(
-            True
-        )
-
-        layout.addWidget(
-            question_label
-        )
-
-        group = QButtonGroup(
-            self
-        )
-
-        group.setExclusive(
-            True
-        )
-
-        buttons = []
-
-        display_letters = [
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-        ]
-
-        for option_index, option in enumerate(
-            question["options"]
-        ):
-            if option_index < len(
-                display_letters
-            ):
-                display_key = display_letters[
-                    option_index
-                ]
-            else:
-                display_key = str(
-                    option_index + 1
-                )
-
-            button = QRadioButton(
-                f"{display_key}. "
-                f"{option['option_text']}"
-            )
-
-            button.setProperty(
-                "is_correct",
-                bool(
-                    option[
-                        "is_correct"
-                    ]
-                ),
-            )
-
-            group.addButton(
-                button
-            )
-
-            layout.addWidget(
-                button
-            )
-
-            buttons.append(
-                button
-            )
-
-        explanation = QLabel()
-
-        explanation.setObjectName(
-            "explanation"
-        )
-
-        explanation.setWordWrap(
-            True
-        )
-
-        explanation.hide()
-
-        layout.addWidget(
-            explanation
-        )
-
-        self.answer_groups.append(
-            {
-                "question": question,
-                "group": group,
-                "buttons": buttons,
-                "card": card,
-                "explanation": explanation,
-            }
-        )
-
-        return card
+    # ========================================================
+    # CHECK ANSWERS
+    # ========================================================
 
     def check_answers(self):
-        # Avval barcha savollarga javob
-        # berilganini tekshiramiz.
-
+        # Avval barcha savolga javob berilganini
+        # tekshiramiz.
         for item in self.answer_groups:
-            group = item["group"]
 
-            if group.checkedButton() is None:
+            selected = (
+                item["group"].checkedButton()
+            )
+
+            if selected is None:
+
                 QMessageBox.warning(
                     self,
-                    "Javob yetishmayapti",
+                    "Javob yetishmaydi",
                     (
-                        "Barcha savollarga javob bering.\n\n"
-                        "Keyin testni tekshiring."
+                        "Barcha savollarga javob bering."
                     ),
                 )
 
                 return
 
-        correct_count = 0
-        wrong_count = 0
+        correct_answers = 0
+
+        total_questions = len(
+            self.answer_groups
+        )
+
+        # ====================================================
+        # RESULT PER QUESTION
+        # ====================================================
 
         for item in self.answer_groups:
-            question = item[
-                "question"
-            ]
-
-            group = item[
-                "group"
-            ]
-
-            buttons = item[
-                "buttons"
-            ]
-
-            card = item[
-                "card"
-            ]
-
-            explanation_label = item[
-                "explanation"
-            ]
 
             selected = (
-                group.checkedButton()
+                item["group"].checkedButton()
             )
 
-            selected_is_correct = bool(
+            selected_correct = bool(
                 selected.property(
                     "is_correct"
                 )
             )
 
-            # Javoblarni o'zgartirib
-            # bo'lmaydigan qilamiz.
-            for button in buttons:
+            if selected_correct:
+                correct_answers += 1
+
+                item["card"].setObjectName(
+                    "questionCorrect"
+                )
+
+            else:
+                item["card"].setObjectName(
+                    "questionWrong"
+                )
+
+            # Variantlarni bloklaymiz va
+            # to'g'ri/noto'g'ri ranglaymiz.
+            for button in item[
+                "buttons"
+            ]:
+
                 button.setEnabled(
                     False
                 )
 
-                if bool(
+                is_correct = bool(
                     button.property(
                         "is_correct"
                     )
-                ):
-                    button.setStyleSheet(
-                        """
-                        QRadioButton {
-                            color: #86EFAC;
-                            font-weight: 600;
-                        }
-                        """
+                )
+
+                if is_correct:
+                    button.setObjectName(
+                        "correctAnswer"
                     )
 
-            if selected_is_correct:
-                correct_count += 1
+                elif button is selected:
+                    button.setObjectName(
+                        "wrongAnswer"
+                    )
 
-            else:
-                wrong_count += 1
-
-                card.setObjectName(
-                    "wrongCard"
+                button.style().unpolish(
+                    button
                 )
 
-                card.style().unpolish(
-                    card
+                button.style().polish(
+                    button
                 )
 
-                card.style().polish(
-                    card
-                )
+            # Noto'g'ri bo'lsa explanation.
+            if not selected_correct:
 
                 explanation_text = (
-                    question.get(
+                    item["question"].get(
                         "explanation",
                         "",
                     )
                 )
 
                 if explanation_text:
-                    explanation_label.setText(
-                        "Tushuntirish: "
-                        + explanation_text
+
+                    item[
+                        "explanation"
+                    ].setText(
+                        (
+                            "Izoh: "
+                            f"{explanation_text}"
+                        )
                     )
 
-                    explanation_label.show()
+                    item[
+                        "explanation"
+                    ].show()
 
-        total = len(
-            self.questions
-        )
+            item["card"].style().unpolish(
+                item["card"]
+            )
 
-        if total == 0:
-            score = 100
+            item["card"].style().polish(
+                item["card"]
+            )
+
+        # ====================================================
+        # SCORE
+        # ====================================================
+
+        if total_questions == 0:
+            score = 0
+
         else:
             score = round(
                 (
-                    correct_count
-                    / total
+                    correct_answers
+                    / total_questions
                 )
                 * 100
             )
 
         passed = (
-            score >= PASSING_SCORE
+            score
+            >= self.passing_score
         )
+
+        # ====================================================
+        # SAVE
+        # ====================================================
 
         save_quiz_attempt(
             user_id=self.user["id"],
-            lesson_id=self.lesson["id"],
+            lesson_id=self.lesson_id,
             score=score,
             passed=passed,
         )
 
-        self.submit_button.hide()
+        # ====================================================
+        # SHOW RESULT
+        # ====================================================
+
+        wrong_answers = (
+            total_questions
+            - correct_answers
+        )
+
+        self.result_label.show()
 
         if passed:
-            self.result_label.setObjectName(
-                "resultSuccess"
+
+            self.result_label.setStyleSheet(
+                """
+                QLabel {
+                    background-color: #10251C;
+                    border: 1px solid #15803D;
+                    border-radius: 12px;
+                    padding: 16px;
+                    color: #86EFAC;
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+                """
             )
 
             self.result_label.setText(
                 (
-                    f"TEST MUVAFFAQIYATLI ✓\n\n"
+                    "✓ MINI-TEST MUVAFFAQIYATLI\n\n"
                     f"Natija: {score}%\n"
-                    f"To'g'ri javob: {correct_count}/{total}\n"
-                    f"Noto'g'ri javob: {wrong_count}/{total}\n\n"
-                    "Keyingi dars ochildi."
+                    f"To'g'ri: {correct_answers}/{total_questions}\n"
+                    f"Noto'g'ri: {wrong_answers}/{total_questions}\n\n"
+                    "Dars muvaffaqiyatli o'zlashtirildi."
                 )
             )
 
-            self.result_label.show()
+            self.submit_button.hide()
 
-            continue_button = QPushButton(
-                "DAVOM ETISH  →"
-            )
+            self.retry_button.hide()
 
-            continue_button.setObjectName(
-                "submitButton"
-            )
-
-            continue_button.clicked.connect(
-                self.finish_successfully
-            )
-
-            self.centralWidget().layout().addWidget(
-                continue_button,
-                alignment=Qt.AlignmentFlag.AlignRight,
-            )
+            self.continue_button.show()
 
         else:
-            self.result_label.setObjectName(
-                "resultFail"
+
+            self.result_label.setStyleSheet(
+                """
+                QLabel {
+                    background-color: #2A1914;
+                    border: 1px solid #C2410C;
+                    border-radius: 12px;
+                    padding: 16px;
+                    color: #FDBA74;
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+                """
             )
 
             self.result_label.setText(
                 (
+                    "Mini-testdan o'tilmadi.\n\n"
                     f"Natija: {score}%\n"
-                    f"To'g'ri javob: {correct_count}/{total}\n"
-                    f"Noto'g'ri javob: {wrong_count}/{total}\n\n"
-                    f"Keyingi dars uchun kamida "
-                    f"{PASSING_SCORE}% kerak.\n"
-                    "Xato savollardagi tushuntirishlarni "
-                    "o'qib, yana urinib ko'ring."
+                    f"Talab: {self.passing_score}%\n"
+                    f"To'g'ri: {correct_answers}/{total_questions}\n"
+                    f"Noto'g'ri: {wrong_answers}/{total_questions}\n\n"
+                    "Xato javoblarning izohlarini ko'rib, "
+                    "qayta urinib ko'ring."
                 )
             )
 
-            self.result_label.show()
+            self.submit_button.hide()
 
             self.retry_button.show()
+
+    # ========================================================
+    # RETRY
+    # ========================================================
 
     def retry_quiz(self):
         self.load_quiz()
 
-    def finish_successfully(self):
+        self.build_ui()
+
+    # ========================================================
+    # CONTINUE
+    # ========================================================
+
+    def continue_after_pass(self):
         self.quiz_passed.emit()
 
         self.close()
