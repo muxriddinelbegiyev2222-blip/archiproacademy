@@ -3,16 +3,16 @@ from database.database import get_connection
 
 # ============================================================
 # LEVEL 2
-# MODULE 09 - BOLALAR XONASI VA OILAVIY MAKON
+# MODULE 09 - KORIDOR VA KIRISH
 # ============================================================
 
 LEVEL02_MODULE09_LESSONS = [
     (
         "L02_M09",
         "L02_M09_001",
-        "Bolalar xonasi qanday ishlaydi?",
+        "Kirish zonasi va tambur",
         "theory",
-        "Bolalar xonasini uyqu, o'qish, o'yin va saqlash funksiyalari asosida loyihalash.",
+        "Uyga kirish, tambur va birinchi o'tish zonasining vazifalarini tushunish.",
         1,
         35,
         20,
@@ -20,9 +20,9 @@ LEVEL02_MODULE09_LESSONS = [
     (
         "L02_M09",
         "L02_M09_002",
-        "Yoshga qarab xona o'zgarishi",
+        "Hallway va circulation",
         "theory",
-        "Bola ulg'aygani sari xonaning funksional talablari qanday o'zgarishini tushunish.",
+        "Koridor va hallway orqali xonalar orasidagi harakatni mantiqiy tashkil qilish.",
         2,
         35,
         20,
@@ -30,31 +30,31 @@ LEVEL02_MODULE09_LESSONS = [
     (
         "L02_M09",
         "L02_M09_003",
-        "Ikki bola bir xonada",
-        "theory",
-        "Ikki foydalanuvchi uchun uyqu, o'qish, saqlash va shaxsiy hududlarni tashkil qilish.",
+        "Kiyim va poyabzal saqlash",
+        "practice",
+        "Kirish zonasida coat, shoe va kundalik buyumlar uchun storage tashkil qilish.",
         3,
-        40,
+        35,
         20,
     ),
     (
         "L02_M09",
         "L02_M09_004",
-        "Xavfsizlik va oilaviy aloqa",
+        "Door conflict va o'tish yo'llari",
         "practice",
-        "Bolalar xonasining ota-ona, sanuzel va umumiy makonlar bilan aloqasini tahlil qilish.",
+        "Koridor va kirishdagi eshiklar hamda harakat zonalari o'rtasidagi konfliktlarni aniqlash.",
         4,
-        40,
+        35,
         20,
     ),
     (
         "L02_M09",
         "L02_M09_005",
-        "Bolalar xonasi xatolarini topish",
+        "Kirish va koridor auditi",
         "practice",
-        "Real planlarda bolalar xonasi ergonomikasi, zonalash va kelajakdagi moslashuv xatolarini aniqlash.",
+        "Kirish, tambur, hallway, storage va circulationni kompleks tekshirish.",
         5,
-        45,
+        40,
         25,
     ),
 ]
@@ -67,92 +67,119 @@ LEVEL02_MODULE09_LESSONS = [
 LEVEL02_MODULE09_CONTENT = {
     "L02_M09_001": [
         {
-            "title": "Bolalar xonasi — bir nechta xona vazifasi",
+            "title": "Kirish — uy bilan birinchi aloqa",
             "type": "highlight",
             "text": """
-            Bolalar xonasi ko'pincha bir vaqtning o'zida:
+            Uyga kirish zonasi —
+            tashqi makondan ichki makonga
+            o'tadigan birinchi nuqta.
 
             <br><br>
 
-            • yotoqxona;<br>
-            • o'qish joyi;<br>
-            • o'yin maydoni;<br>
-            • kiyim saqlash joyi;<br>
-            • shaxsiy hudud
+            Bu yerda odam:
 
             <br><br>
 
-            vazifasini bajaradi.
+            • uyga kiradi;<br>
+            • tashqi kiyimni yechadi;<br>
+            • poyabzalni almashtiradi;<br>
+            • sumka yoki buyumlarni qo'yadi;<br>
+            • keyin uy ichiga o'tadi.
             """,
         },
         {
-            "title": "To'rtta asosiy zona",
+            "title": "Tambur nima uchun kerak?",
             "type": "normal",
             "text": """
-            Bolalar xonasini tahlil qilganda
-            kamida to'rtta zonani tekshiramiz:
+            Tambur —
+            tashqi eshik bilan
+            asosiy ichki makon orasidagi
+            o'tish zonasi.
 
             <br><br>
 
-            <b>1. Uyqu</b><br>
-            <b>2. O'qish</b><br>
-            <b>3. O'yin yoki bo'sh faoliyat</b><br>
-            <b>4. Saqlash</b>
+            U:
+
+            <br><br>
+
+            • kirishni tartibga solishi;<br>
+            • tashqi va ichki makonni ajratishi;<br>
+            • shamol va sovuq oqimini kamaytirishga yordam berishi;<br>
+            • kiyim va poyabzal zonasiga joy berishi
+
+            <br><br>
+
+            mumkin.
+            """,
+        },
+        {
+            "title": "Kirish faqat eshik emas",
+            "type": "highlight",
+            "text": """
+            Arxitektorda
+            kirish nuqtasi
+
+            <br><br>
+
+            shunchaki eshik joyi emas.
+
+            <br><br>
+
+            Bu kichik funksional zona.
             """,
         },
         {
             "title": "Tasavvur qiling",
             "type": "example",
             "text": """
-            Xona 14 m².
+            Tashqi eshikdan kirganingizda
+            darhol living markaziga tushasiz.
 
             <br><br>
 
-            Krovat, shkaf va stol sig'di.
+            Poyabzal uchun joy yo'q.
 
             <br><br>
 
-            Lekin stolga o'tirish uchun
-            stulni orqaga surib bo'lmaydi.
+            Palto uchun shkaf yo'q.
 
             <br><br>
 
-            Demak mebel sig'di,
-            ammo xona to'liq ishlamayapti.
+            Mehmon kirganda
+            butun living birdan ko'rinadi.
+
+            <br><br>
+
+            Kirish ishlayapti,
+            lekin entrance zone tashkil qilinmagan.
             """,
         },
         {
-            "title": "O'yin uchun bo'sh makon",
+            "title": "Kirishdan keyingi savol",
             "type": "normal",
             "text": """
-            Ayniqsa kichik yoshdagi bolalarda
-            xonaning markaziy bo'sh maydoni
-            juda foydali bo'lishi mumkin.
+            Uyga kirgan odam
+            keyin qayerga boradi?
 
             <br><br>
 
-            Har bir devorni mebel bilan to'ldirish
-            shart emas.
-            """,
-        },
-        {
-            "title": "Boshlovchi xatosi",
-            "type": "warning",
-            "text": """
-            Xonaga maksimal miqdorda mebel joylashtirish
-            bolalar xonasini yaxshi qilmaydi.
+            • livinggami?<br>
+            • hallwaygami?<br>
+            • mehmon zonasigami?<br>
+            • staircasegami?
 
             <br><br>
 
-            Bola harakati uchun bo'sh makon ham
-            funksiyaning bir qismidir.
+            Bu harakat
+            birinchi qarashdayoq
+            tushunarli bo'lishi foydali.
             """,
         },
         {
-            "title": "Mini-amaliyot",
+            "title": "Mini-vazifa",
             "type": "example",
             "text": """
-            Bir bolalar xonasi planini oling.
+            Uy entrance planini chizing.
 
             <br><br>
 
@@ -160,409 +187,484 @@ LEVEL02_MODULE09_CONTENT = {
 
             <br><br>
 
-            • uyqu;<br>
-            • o'qish;<br>
-            • o'yin;<br>
-            • saqlash.
-
-            <br><br>
-
-            To'rttalasi bir-biriga xalaqit bermayaptimi?
+            • tashqi eshik;<br>
+            • tambur;<br>
+            • shoe zone;<br>
+            • coat storage;<br>
+            • hallwayga o'tish.
             """,
         },
     ],
 
     "L02_M09_002": [
         {
-            "title": "Bola ulg'ayadi — xona ham o'zgaradi",
+            "title": "Koridorning vazifasi",
             "type": "highlight",
             "text": """
-            4 yoshli bola uchun qulay xona
-            14 yoshli bola uchun aynan shu holatda
-            qulay bo'lishi shart emas.
+            Koridor va hallway
+            uy ichidagi xonalarni
+            bog'laydigan circulation makoni.
 
             <br><br>
 
-            Professional loyiha
-            kelajakdagi o'zgarishni ham o'ylaydi.
+            Uning asosiy vazifasi —
+            odamni kerakli joyga
+            qulay olib borish.
             """,
         },
         {
-            "title": "Kichik yosh",
+            "title": "Koridorning o'zi maqsad emas",
             "type": "normal",
             "text": """
-            Kichik yoshdagi bola uchun:
+            Koridor foydali funksiyani
+            bog'lash uchun kerak.
 
             <br><br>
 
-            • ota-onaga yaqinlik;<br>
-            • xavfsiz harakat;<br>
-            • o'yin maydoni;<br>
-            • oddiy saqlash
-
-            <br><br>
-
-            muhim bo'lishi mumkin.
+            Juda ko'p maydonni
+            faqat yurish uchun sarflash
+            reja samaradorligini pasaytirishi mumkin.
             """,
         },
         {
-            "title": "Maktab yoshi",
-            "type": "normal",
-            "text": """
-            Keyinchalik:
-
-            <br><br>
-
-            • normal ish stoli;<br>
-            • kitoblar uchun saqlash;<br>
-            • kompyuter;<br>
-            • yaxshiroq yoritish;<br>
-            • ko'proq shaxsiy hudud
-
-            <br><br>
-
-            kerak bo'lishi mumkin.
-            """,
-        },
-        {
-            "title": "O'smirlik davri",
-            "type": "example",
-            "text": """
-            O'smir uchun xonaning
-            private xarakteri kuchayadi.
-
-            <br><br>
-
-            Do'st bilan o'tirish,
-            katta ish stoli,
-            kiyim saqlash va
-            texnika uchun joy talab qilinishi mumkin.
-            """,
-        },
-        {
-            "title": "Transformatsiya",
+            "title": "Qisqa va tushunarli yo'l",
             "type": "highlight",
             "text": """
-            <b>
-            Yaxshi bolalar xonasi
-            qimmat rekonstruksiyasiz
-            yoshga mos o'zgarishi mumkin.
-            </b>
+            Yaxshi circulationda
+            odam:
+
+            <br><br>
+
+            • qayerga borishini tushunadi;<br>
+            • keraksiz burilish qilmaydi;<br>
+            • boshqa xonalarni kesib o'tmaydi.
             """,
         },
         {
-            "title": "Mini-amaliyot",
+            "title": "Private va public yo'llar",
+            "type": "normal",
+            "text": """
+            Hallway orqali:
+
+            <br><br>
+
+            public zona,
+            private zona
+            va service zonalar
+
+            <br><br>
+
+            bir-biriga bog'lanishi mumkin.
+
+            <br><br>
+
+            Lekin mehmon
+            bedroom orqali sanuzelga
+            o'tmasligi kerak.
+            """,
+        },
+        {
+            "title": "Tasavvur qiling",
             "type": "example",
             "text": """
-            Bitta xona uchun
-            ikki variant o'ylang:
+            Bedroomga kirish uchun
+            avval livingdan,
+            keyin diningdan,
+            keyin kichik koridordan
+            o'tish kerak.
 
             <br><br>
 
-            • 6 yoshli bola;<br>
-            • 16 yoshli bola.
+            Bu ortiqcha circulation
+            va privacy muammosi
+            yaratishi mumkin.
+            """,
+        },
+        {
+            "title": "Koridor geometriyasi",
+            "type": "normal",
+            "text": """
+            Juda ko'p sinish,
+            keraksiz burilish
+            va murakkab shakl
 
             <br><br>
 
-            Qaysi mebellar o'zgaradi?
-            Qaysi elementlar o'z joyida qoladi?
+            harakatni tushunarsiz
+            qilishi mumkin.
+
+            <br><br>
+
+            Har bir burilishning
+            sababi bo'lishi kerak.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            Uy planida
+            entrance'dan:
+
+            <br><br>
+
+            • livingga;<br>
+            • bedroomga;<br>
+            • sanuzelga
+
+            <br><br>
+
+            yurish yo'llarini
+            strelka bilan chizing.
+
+            <br><br>
+
+            Keraksiz kesishmalar bormi?
             """,
         },
     ],
 
     "L02_M09_003": [
         {
-            "title": "Ikki bola — ikki foydalanuvchi",
+            "title": "Entrance storage",
             "type": "highlight",
             "text": """
-            Bitta xonada ikki bola yashasa,
-            masala faqat ikkita krovat sig'dirish emas.
+            Kirish zonasida
+            kundalik buyumlar uchun
+            storage juda foydali.
+
+            <br><br>
+
+            Masalan:
+
+            <br><br>
+
+            • palto;<br>
+            • kurtka;<br>
+            • poyabzal;<br>
+            • sumka;<br>
+            • soyabon;<br>
+            • kalitlar.
             """,
         },
         {
-            "title": "Har birining o'z joyi",
+            "title": "Poyabzal zonasi",
             "type": "normal",
             "text": """
-            Imkon qadar har bir bola uchun:
+            Uyga kirgan odam
+            qayerda poyabzal yechadi?
 
             <br><br>
 
-            • uyqu joyi;<br>
-            • saqlash joyi;<br>
-            • o'qish joyi;<br>
-            • shaxsiy buyum zonasi
-
-            <br><br>
-
-            aniqlanishi foydali.
+            Shu oddiy savol
+            entrance rejasini
+            ancha o'zgartirishi mumkin.
             """,
         },
         {
-            "title": "Ikki ish stoli",
-            "type": "example",
-            "text": """
-            Ikki bola bir vaqtda dars qilsa,
-            bitta kichik stol yetmasligi mumkin.
-
-            <br><br>
-
-            Ish zonasi real kundalik hayotga
-            mos bo'lishi kerak.
-            """,
-        },
-        {
-            "title": "Krovatlarni qanday qo'yamiz?",
+            "title": "Coat storage",
             "type": "normal",
             "text": """
-            Variantlar ko'p:
+            Coat storage
+            kirishga juda uzoq bo'lsa,
 
             <br><br>
 
-            • parallel;<br>
-            • qarama-qarshi;<br>
-            • burchak shaklida;<br>
-            • ikki qavatli krovat.
-
-            <br><br>
-
-            Tanlov xona shakli va
-            bolalarning yoshiga bog'liq.
+            odam tashqi kiyim bilan
+            uy ichiga ancha yurishga
+            majbur bo'lishi mumkin.
             """,
         },
         {
-            "title": "Shaxsiylik",
+            "title": "Storage circulationni to'smasin",
             "type": "warning",
             "text": """
-            Bolalar ulg'aygani sari
-            har birining shaxsiy hududga
-            bo'lgan ehtiyoji ortishi mumkin.
+            Katta shkaf
+            entrance uchun foydali.
 
             <br><br>
 
-            Buni rejalashda oldindan hisobga olish foydali.
+            Lekin uning eshigi ochilganda
+            asosiy yo'lni yopsa,
+
+            <br><br>
+
+            storage yaxshi joylashmagan.
             """,
         },
         {
-            "title": "Mini-amaliyot",
+            "title": "O'tirish joyi",
             "type": "example",
             "text": """
-            Ikki bola uchun xona chizing.
+            Poyabzal almashtirish uchun
+            kichik o'tirish joyi
+            ayrim entrance'larda
+            qulaylik yaratishi mumkin.
 
             <br><br>
 
-            Quyidagilarni tekshiring:
+            Lekin u circulationni
+            to'smasligi kerak.
+            """,
+        },
+        {
+            "title": "Mehmon va oila storage'i",
+            "type": "normal",
+            "text": """
+            Oilaning kundalik
+            buyumlari ko'p bo'lishi mumkin.
 
             <br><br>
 
-            • ikki uyqu joyi;<br>
-            • ikki o'qish joyi;<br>
-            • yetarli saqlash;<br>
-            • umumiy yurish maydoni.
+            Shu bilan birga
+            mehmonning kiyimi uchun
+            ham mantiqiy joy kerak bo'lishi mumkin.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            Entrancega joylashtiring:
+
+            <br><br>
+
+            • shoe storage;<br>
+            • coat storage;<br>
+            • kichik bench;<br>
+            • key shelf.
+
+            <br><br>
+
+            Keyin eshiklarni ochib,
+            circulationni tekshiring.
             """,
         },
     ],
 
     "L02_M09_004": [
         {
-            "title": "Bolalar xonasi uyning qayerida?",
+            "title": "Koridorda ko'p eshik bo'lishi mumkin",
             "type": "highlight",
             "text": """
-            Xonaning ichki ergonomikasi yaxshi bo'lishi yetmaydi.
+            Hallway va koridor
+            ko'pincha bir nechta
+            xonaning eshiklarini
+            birlashtiradi.
 
             <br><br>
 
-            U butun uy bilan ham
-            to'g'ri bog'lanishi kerak.
+            Shu sabab door conflict
+            muhim masala.
             """,
         },
         {
-            "title": "Ota-onaga yaqinlik",
-            "type": "normal",
-            "text": """
-            Kichik bolalar xonalarini
-            ota-onalar zonasidan haddan tashqari
-            uzoqlashtirmaslik foydali bo'lishi mumkin.
-
-            <br><br>
-
-            Ayniqsa tungi foydalanishda.
-            """,
-        },
-        {
-            "title": "Sanuzelga yo'l",
-            "type": "example",
-            "text": """
-            Bola kechasi uyg'ondi.
-
-            <br><br>
-
-            Sanuzelga borish uchun
-            qorong'i holda mehmonxona va oshxonani
-            kesib o'tishi kerak.
-
-            <br><br>
-
-            Bu tungi circulation'ni qayta ko'rish uchun signal.
-            """,
-        },
-        {
-            "title": "Zinapoya",
+            "title": "Door swinglar to'qnashuvi",
             "type": "warning",
             "text": """
-            Ikki qavatli uyda kichik bolalar xonasi
-            zinapoya bilan qanday bog'langanini
-            alohida tahlil qilish kerak.
+            Ikki xona eshigi
+            bir vaqtda ochilganda
+            bir-biriga urilsa,
 
             <br><br>
 
-            Xavfsizlik faqat xonaning ichida emas.
+            circulation va foydalanish
+            noqulaylashadi.
             """,
         },
         {
-            "title": "Shovqin",
-            "type": "normal",
-            "text": """
-            Bolalar yotoqxonasi:
-
-            <br><br>
-
-            • TV devori;<br>
-            • katta mehmonxona;<br>
-            • texnik xona
-
-            <br><br>
-
-            kabi shovqinli zonalar bilan
-            qanday tutashgani tekshiriladi.
-            """,
-        },
-        {
-            "title": "Mini-amaliyot",
+            "title": "Kirish eshigi va storage",
             "type": "example",
             "text": """
-            Bir uy planida bolalar xonasidan:
+            Tashqi eshik ichkariga ochiladi.
 
             <br><br>
 
-            • ota-onalar xonasiga;<br>
-            • sanuzelga;<br>
-            • umumiy family room'ga
+            Uning yonida wardrobe bor.
 
             <br><br>
 
-            bo'lgan yo'llarni tekshiring.
+            Wardrobe eshigi bilan
+            tashqi eshik bir-birini bloklaydi.
+
+            <br><br>
+
+            Ikkala element alohida
+            to'g'ri ko'rinadi,
+            lekin birga ishlamaydi.
+            """,
+        },
+        {
+            "title": "Harakat yo'lini kesmang",
+            "type": "normal",
+            "text": """
+            Eshik ochilganda
+            hallway bo'ylab
+            asosiy yurish yo'li
+            butunlay yopilmasligi kerak.
+            """,
+        },
+        {
+            "title": "Ko'r zonalar",
+            "type": "normal",
+            "text": """
+            Koridorda keskin burilish
+            va bir-biriga yaqin eshiklar
+            odamlar to'qnashuvini
+            oshirishi mumkin.
+
+            <br><br>
+
+            Harakatni real holatda
+            tasavvur qiling.
+            """,
+        },
+        {
+            "title": "Bir vaqtning o'zida foydalanish",
+            "type": "highlight",
+            "text": """
+            Rejani tekshirayotganda
+            bitta odamni emas,
+
+            <br><br>
+
+            bir vaqtning o'zida
+            bir nechta odamni tasavvur qiling.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            Koridorda 3 ta eshik chizing.
+
+            <br><br>
+
+            Ularning ochilish yoylarini
+            ko'rsating.
+
+            <br><br>
+
+            Qaysi eshiklar
+            bir-biri bilan konflikt
+            qilayotganini aniqlang.
             """,
         },
     ],
 
     "L02_M09_005": [
         {
-            "title": "Bolalar xonasi xatolarini ovlaymiz",
+            "title": "Kirish va koridor auditi",
             "type": "highlight",
             "text": """
-            Endi xonani faqat bugungi kun uchun emas,
-            bola ulg'ayishi bilan birga tahlil qilamiz.
-            """,
-        },
-        {
-            "title": "Xato 1 — ish stoli uchun joy yo'q",
-            "type": "warning",
-            "text": """
-            Kichik bola uchun xona chiroyli.
+            Endi entrance va hallwayni
+            faqat o'tish joyi sifatida emas,
 
             <br><br>
 
-            Lekin keyinchalik normal ish stolini
-            qo'yish uchun foydali devor qolmagan.
+            butun uy circulation
+            tizimining bir qismi sifatida
+            tekshiramiz.
             """,
         },
         {
-            "title": "Xato 2 — barcha maydon mebel bilan to'lgan",
-            "type": "warning",
-            "text": """
-            Krovat, shkaf, javon va stol
-            xonaning deyarli barcha qismini egallagan.
-
-            <br><br>
-
-            Erkin harakat va o'yin maydoni qolmagan.
-            """,
-        },
-        {
-            "title": "Xato 3 — ikkita krovat, bitta normal yo'l",
-            "type": "warning",
-            "text": """
-            Ikki bola xonasida
-            krovatlar sig'gan.
-
-            <br><br>
-
-            Lekin biri krovatiga borish uchun
-            ikkinchisining zonasidan o'tadi.
-            """,
-        },
-        {
-            "title": "Xato 4 — tungi sanuzel uzoqda",
-            "type": "warning",
-            "text": """
-            Bolalar xonasidan sanuzelga
-            juda uzun va murakkab yo'l mavjud.
-
-            <br><br>
-
-            Ayniqsa kichik yoshda bu
-            qulaylikni pasaytirishi mumkin.
-            """,
-        },
-        {
-            "title": "Xato 5 — kelajak hisobga olinmagan",
-            "type": "warning",
-            "text": """
-            Xona faqat hozirgi kichik mebelga mos.
-
-            <br><br>
-
-            Bola ulg'ayganda
-            krovat, shkaf va stolni kattalashtirish
-            deyarli imkonsiz.
-            """,
-        },
-        {
-            "title": "Professional tahlil",
+            "title": "1. Entrance",
             "type": "example",
             "text": """
-            Bolalar xonasini tekshirganda:
+            Tekshiring:
 
             <br><br>
 
-            <b>1.</b> Uyqu zonasi qayerda?<br><br>
-            <b>2.</b> O'qish zonasi qayerda?<br><br>
-            <b>3.</b> O'yin uchun makon bormi?<br><br>
-            <b>4.</b> Saqlash yetarlimi?<br><br>
-            <b>5.</b> Bola ulg'aysa xona moslashadimi?<br><br>
-            <b>6.</b> Sanuzel va ota-onaga yo'l qulaymi?
+            • kirish aniqmi?<br>
+            • tambur kerakli vazifani bajaryaptimi?<br>
+            • uyga kirganda yo'nalish tushunarlimi?
             """,
         },
         {
-            "title": "Mini-loyiha",
+            "title": "2. Storage",
             "type": "example",
             "text": """
-            Bir xonani uch bosqich uchun tahlil qiling:
+            Tekshiring:
 
             <br><br>
 
-            • 5 yosh;<br>
-            • 10 yosh;<br>
-            • 16 yosh.
+            • poyabzal uchun joy bormi?<br>
+            • coat storage bormi?<br>
+            • storage eshik bilan konflikt qilmayaptimi?<br>
+            • kundalik buyumlar uchun joy bormi?
+            """,
+        },
+        {
+            "title": "3. Hallway",
+            "type": "example",
+            "text": """
+            Tekshiring:
 
             <br><br>
 
-            Har bosqichda:
+            • yo'llar qisqa va tushunarlimi?<br>
+            • keraksiz burilishlar bormi?<br>
+            • private xonalar himoyalanganmi?<br>
+            • koridor ortiqcha maydon olmayaptimi?
+            """,
+        },
+        {
+            "title": "4. Door conflict",
+            "type": "example",
+            "text": """
+            Tekshiring:
 
             <br><br>
 
-            krovat, stol, saqlash va
-            bo'sh maydon qanday o'zgarishini yozing.
+            • eshiklar bir-biriga urilmayaptimi?<br>
+            • eshik asosiy yo'lni yopmayaptimi?<br>
+            • wardrobe va door conflict yo'qmi?
+            """,
+        },
+        {
+            "title": "Xatoni toping",
+            "type": "warning",
+            "text": """
+            Uyning entrance qismi
+            juda chiroyli.
+
+            <br><br>
+
+            Ammo:
+
+            <br><br>
+
+            • tashqi eshik shkafga uriladi;<br>
+            • poyabzal uchun joy yo'q;<br>
+            • bedroomga borish uchun living kesib o'tiladi;<br>
+            • koridorda 3 ta eshik bir joyda to'qnashadi.
+
+            <br><br>
+
+            Muammo:
+
+            <br><br>
+
+            entrance va hallway
+            grafik ko'rinish sifatida ishlangan,
+            circulation tizimi sifatida emas.
+            """,
+        },
+        {
+            "title": "Professional checklist",
+            "type": "example",
+            "text": """
+            Tekshiring:
+
+            <br><br>
+
+            <b>1.</b> Kirish yo'nalishi aniqmi?<br><br>
+            <b>2.</b> Tambur funksionalmi?<br><br>
+            <b>3.</b> Shoe va coat storage bormi?<br><br>
+            <b>4.</b> Hallway qisqa va tushunarlimi?<br><br>
+            <b>5.</b> Public/private circulation mantiqiymi?<br><br>
+            <b>6.</b> Door conflict yo'qmi?<br><br>
+            <b>7.</b> Koridor ortiqcha maydon olmayaptimi?
             """,
         },
         {
@@ -573,21 +675,18 @@ LEVEL02_MODULE09_CONTENT = {
 
             <br><br>
 
-            ✓ bolalar xonasi zonalari;<br>
-            ✓ yoshga mos transformatsiya;<br>
-            ✓ ikki bola xonasi;<br>
-            ✓ shaxsiy hudud;<br>
-            ✓ xavfsiz circulation;<br>
-            ✓ oilaviy aloqalar
-
-            <br><br>
-
-            bo'yicha plan tahlil qila olasiz.
+            ✓ entrance zonasini tushunasiz;<br>
+            ✓ tamburni rejalashtirasiz;<br>
+            ✓ hallway circulationni tahlil qilasiz;<br>
+            ✓ coat va shoe storage tashkil qilasiz;<br>
+            ✓ door conflictlarni topasiz;<br>
+            ✓ public/private harakatni ajratasiz;<br>
+            ✓ kirish va koridor auditini bajarasiz.
 
             <br><br>
 
             Keyingi modul:
-            <b>LEVEL 2 yakuniy fazoviy tahlil.</b>
+            <b>Yordamchi xonalar.</b>
             """,
         },
     ],
@@ -596,15 +695,16 @@ LEVEL02_MODULE09_CONTENT = {
 
 # ============================================================
 # QUIZ
+# Q121-Q135 KODLARI SAQLANADI
 # ============================================================
 
 LEVEL02_MODULE09_QUIZ = {
     "L02_M09_001": [
         {
             "code": "L02_Q121",
-            "question": "Bolalar xonasi faqat uyqu uchun xizmat qiladimi?",
+            "question": "Kirish zonasi faqat tashqi eshikdan iboratmi?",
             "explanation": (
-                "U ko'pincha uyqu, o'qish, o'yin va saqlash funksiyalarini birlashtiradi."
+                "Kirish zonasida tambur, storage va uy ichiga o'tish kabi funksiyalar ham bo'lishi mumkin."
             ),
             "options": [
                 ("A", "Ha", False),
@@ -613,9 +713,9 @@ LEVEL02_MODULE09_QUIZ = {
         },
         {
             "code": "L02_Q122",
-            "question": "Kichik bolalar xonasida bo'sh o'yin maydoni foydali bo'lishi mumkinmi?",
+            "question": "Tambur tashqi va ichki makon orasidagi o'tish zonasi bo'lishi mumkinmi?",
             "explanation": (
-                "Erkin harakat va o'yin ham xona funksiyasining bir qismidir."
+                "Tambur entrance jarayonini tartibga soladigan oraliq makon bo'lishi mumkin."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -624,13 +724,13 @@ LEVEL02_MODULE09_QUIZ = {
         },
         {
             "code": "L02_Q123",
-            "question": "Mebelning sig'ishi xonaning to'liq ishlashini kafolatlaydimi?",
+            "question": "Uyga kirgandan keyingi harakat yo'nalishini rejalashtirish kerakmi?",
             "explanation": (
-                "Mebel atrofidagi foydalanish va harakat zonasi ham muhim."
+                "Entrance'dan keyin odamning qayerga borishi circulation tizimining bir qismidir."
             ),
             "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
             ],
         },
     ],
@@ -638,9 +738,9 @@ LEVEL02_MODULE09_QUIZ = {
     "L02_M09_002": [
         {
             "code": "L02_Q124",
-            "question": "Bolalar xonasining ehtiyojlari yosh bilan o'zgaradimi?",
+            "question": "Koridorning asosiy vazifasi xonalar orasidagi harakatni tashkil qilishmi?",
             "explanation": (
-                "Bola ulg'aygani sari o'qish, saqlash va shaxsiy hudud talablari o'zgaradi."
+                "Hallway va koridorlar uy ichidagi asosiy circulation elementlaridir."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -649,24 +749,24 @@ LEVEL02_MODULE09_QUIZ = {
         },
         {
             "code": "L02_Q125",
-            "question": "16 yoshli bola uchun 5 yoshdagi xona sxemasi o'zgarmasdan qolishi shartmi?",
+            "question": "Juda uzun va keraksiz koridor reja samaradorligini pasaytirishi mumkinmi?",
             "explanation": (
-                "Xona yoshga moslashishi kerak."
+                "Faqat yurishga sarflanadigan ortiqcha maydon reja samaradorligini kamaytirishi mumkin."
             ),
             "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
             ],
         },
         {
             "code": "L02_Q126",
-            "question": "Transformatsiyaga mos xona nima beradi?",
+            "question": "Bedroomga borish uchun public xonalarni kesib o'tish har doim yaxshi yechimmi?",
             "explanation": (
-                "Xonani bola ulg'ayganda katta rekonstruksiyasiz moslashtirish imkonini beradi."
+                "Private circulation imkon qadar mantiqiy va himoyalangan bo'lishi kerak."
             ),
             "options": [
-                ("A", "Kelajakda moslashuv", True),
-                ("B", "Faqat fasad bezagi", False),
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
             ],
         },
     ],
@@ -674,20 +774,20 @@ LEVEL02_MODULE09_QUIZ = {
     "L02_M09_003": [
         {
             "code": "L02_Q127",
-            "question": "Ikki bola xonasida faqat ikkita krovat sig'ishi yetarlimi?",
+            "question": "Kirish zonasida poyabzal va tashqi kiyim uchun storage foydalimi?",
             "explanation": (
-                "O'qish, saqlash, yurish va shaxsiy hududlar ham hisobga olinadi."
+                "Entrance storage kundalik foydalanishni tartibli va qulay qilishi mumkin."
             ),
             "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
             ],
         },
         {
             "code": "L02_Q128",
-            "question": "Ikki bola uchun alohida o'qish joylari foydali bo'lishi mumkinmi?",
+            "question": "Storage eshigi asosiy circulationni to'sishi mumkinmi?",
             "explanation": (
-                "Bolalar bir vaqtda o'qishi va mustaqil foydalanishi uchun foydali."
+                "Wardrobe yoki boshqa storage opening zonasi harakat yo'li bilan tekshiriladi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -696,13 +796,13 @@ LEVEL02_MODULE09_QUIZ = {
         },
         {
             "code": "L02_Q129",
-            "question": "Bolalar ulg'aygani sari shaxsiy hudud ehtiyoji ortishi mumkinmi?",
+            "question": "Coat storage kirishdan juda uzoqda bo'lishi har doim qulaymi?",
             "explanation": (
-                "Yosh ortishi bilan mustaqillik va maxfiylik talabi kuchayishi mumkin."
+                "Tashqi kiyimlar uchun storage entrancega mantiqan yaqin bo'lishi foydali."
             ),
             "options": [
-                ("A", "Ha", True),
-                ("B", "Yo'q", False),
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
             ],
         },
     ],
@@ -710,9 +810,9 @@ LEVEL02_MODULE09_QUIZ = {
     "L02_M09_004": [
         {
             "code": "L02_Q130",
-            "question": "Bolalar xonasining ota-onalar zonasiga aloqasi muhimmi?",
+            "question": "Koridordagi eshiklar bir-biriga urilishi mumkinmi?",
             "explanation": (
-                "Ayniqsa kichik yoshda nazorat va tungi foydalanishda bu muhim bo'lishi mumkin."
+                "Door swinglar noto'g'ri rejalashtirilsa bir-biri bilan konflikt qiladi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -721,9 +821,9 @@ LEVEL02_MODULE09_QUIZ = {
         },
         {
             "code": "L02_Q131",
-            "question": "Bolalar xonasidan sanuzelga tungi yo'lni tekshirish kerakmi?",
+            "question": "Eshik ochilganda asosiy yurish yo'lini butunlay yopmasligi kerakmi?",
             "explanation": (
-                "Qisqa va tushunarli tungi circulation qulaylik va xavfsizlikka yordam beradi."
+                "Door opening circulation bilan birga tekshirilishi kerak."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -732,13 +832,13 @@ LEVEL02_MODULE09_QUIZ = {
         },
         {
             "code": "L02_Q132",
-            "question": "Shovqinli xona bilan bolalar yotoqxonasining qo'shnichiligini tahlil qilish kerakmi?",
+            "question": "Rejani faqat bitta odam harakatiga qarab tekshirish yetarlimi?",
             "explanation": (
-                "Akustik qulaylik uyqu va dam olish sifatiga ta'sir qiladi."
+                "Uyda bir vaqtning o'zida bir nechta odam harakatlanishi mumkin."
             ),
             "options": [
-                ("A", "Ha", True),
-                ("B", "Yo'q", False),
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
             ],
         },
     ],
@@ -746,9 +846,9 @@ LEVEL02_MODULE09_QUIZ = {
     "L02_M09_005": [
         {
             "code": "L02_Q133",
-            "question": "Kelajakda kattaroq ish stoliga joy qolmasligi rejalash muammosi bo'lishi mumkinmi?",
+            "question": "Entrance auditida storage va circulation birgalikda tekshiriladimi?",
             "explanation": (
-                "Bolalar xonasida yoshga moslashuv ham rejalashning bir qismidir."
+                "Kirish zonasidagi barcha funksiyalar bir-biriga xalaqit bermasligi kerak."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -757,9 +857,9 @@ LEVEL02_MODULE09_QUIZ = {
         },
         {
             "code": "L02_Q134",
-            "question": "Xonaning barcha qismini mebel bilan to'ldirish har doim yaxshi yechimmi?",
+            "question": "Chiroyli entrance avtomatik ravishda funksional entrance hisoblanadimi?",
             "explanation": (
-                "Erkin harakat va foydalanish uchun bo'sh makon ham kerak."
+                "Estetikadan tashqari tambur, storage, door va circulation ham tekshiriladi."
             ),
             "options": [
                 ("A", "Ha", False),
@@ -768,13 +868,21 @@ LEVEL02_MODULE09_QUIZ = {
         },
         {
             "code": "L02_Q135",
-            "question": "Bolalar xonasi tahlilida qaysi savol foydali?",
+            "question": "Kirish va koridorni loyihalashdagi to'g'ri yondashuv qaysi?",
             "explanation": (
-                "Xonaning bola ulg'ayganda moslashishi professional tahlilning muhim qismidir."
+                "Entrance, storage, hallway va door conflictlar yagona circulation tizimi sifatida ko'riladi."
             ),
             "options": [
-                ("A", "Bola ulg'aysa xona moslashadimi?", True),
-                ("B", "Faqat fasad rangi qanday?", False),
+                (
+                    "A",
+                    "Entrance → storage → hallway → door conflict → audit",
+                    True,
+                ),
+                (
+                    "B",
+                    "Faqat koridorni uzunroq qilish",
+                    False,
+                ),
             ],
         },
     ],
