@@ -52,6 +52,10 @@ from courses.level02_module01 import (
     seed_level02_module01,
 )
 
+from courses.level02_module02 import (
+    seed_level02_module02,
+)
+
 from courses.quiz_service import (
     seed_quizzes,
 )
@@ -97,15 +101,10 @@ def prepare_application():
     # ========================================================
 
     seed_level01_lessons()
-
     seed_level01_module02()
-
     seed_level01_module03()
-
     seed_level01_module04()
-
     seed_level01_module05()
-
     seed_level01_module06()
 
     # ========================================================
@@ -113,6 +112,7 @@ def prepare_application():
     # ========================================================
 
     seed_level02_module01()
+    seed_level02_module02()
 
     # ========================================================
     # QUIZZES
@@ -129,7 +129,7 @@ def prepare_application():
     # ========================================================
     # DEVELOPMENT MASTER ACCOUNT
     #
-    # Sotuv versiyasida bu olib tashlanadi.
+    # Sotuv versiyasida olib tashlanadi.
     # ========================================================
 
     create_user(
@@ -171,47 +171,27 @@ def main():
         )
 
         if user is None:
-
             login_window.error_label.setText(
                 "Login yoki parol noto'g'ri."
             )
-
             return
 
         login_window.error_label.clear()
 
-        # ----------------------------------------------------
-        # 1. Barcha Level progress yozuvlari
-        # ----------------------------------------------------
-
+        # 1. Level progress
         initialize_user_levels(
             user["id"]
         )
 
-        # ----------------------------------------------------
-        # 2. Barcha dars progress yozuvlari
-        # ----------------------------------------------------
-
+        # 2. Lesson progress
         initialize_user_progress(
             user["id"]
         )
 
-        # ----------------------------------------------------
-        # 3. Yangi qo'shilgan kontentni access bilan sync
-        #
-        # Masalan:
-        # Level oldin ochilgan,
-        # darslar keyinroq qo'shilgan bo'lsa ham
-        # birinchi dars ochiladi.
-        # ----------------------------------------------------
-
+        # 3. Access synchronization
         synchronize_user_access(
             user["id"]
         )
-
-        # ----------------------------------------------------
-        # DASHBOARD
-        # ----------------------------------------------------
 
         dashboard = DashboardWindow(
             user
