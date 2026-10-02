@@ -2,22 +2,55 @@ import random
 
 from database.database import get_connection
 from courses.quiz_data import QUIZ_DATA
+from courses.level00_extra import LEVEL00_EXTRA_QUIZ
+
+
+def get_all_quiz_data():
+    """
+    Barcha test savollarini bitta lug'atga birlashtiradi.
+    """
+
+    combined = {}
+
+    combined.update(
+        QUIZ_DATA
+    )
+
+    combined.update(
+        LEVEL00_EXTRA_QUIZ
+    )
+
+    return combined
 
 
 def seed_quizzes():
+    """
+    Barcha mavjud dars testlarini
+    SQLite database'ga joylashtiradi.
+    """
+
+    all_quizzes = get_all_quiz_data()
+
     connection = get_connection()
 
     try:
         cursor = connection.cursor()
 
-        for lesson_code, questions in QUIZ_DATA.items():
+        for (
+            lesson_code,
+            questions,
+        ) in all_quizzes.items():
+
             cursor.execute(
                 """
                 SELECT id
                 FROM lessons
                 WHERE code = ?
+                LIMIT 1
                 """,
-                (lesson_code,),
+                (
+                    lesson_code,
+                ),
             )
 
             lesson = cursor.fetchone()
@@ -27,10 +60,14 @@ def seed_quizzes():
 
             lesson_id = lesson["id"]
 
-            for question_index, question in enumerate(
+            for (
+                question_index,
+                question,
+            ) in enumerate(
                 questions,
                 start=1,
             ):
+
                 cursor.execute(
                     """
                     INSERT OR IGNORE INTO quiz_questions (
@@ -56,16 +93,23 @@ def seed_quizzes():
                     SELECT id
                     FROM quiz_questions
                     WHERE code = ?
+                    LIMIT 1
                     """,
-                    (question["code"],),
+                    (
+                        question["code"],
+                    ),
                 )
 
-                question_row = cursor.fetchone()
+                question_row = (
+                    cursor.fetchone()
+                )
 
                 if question_row is None:
                     continue
 
-                question_id = question_row["id"]
+                question_id = (
+                    question_row["id"]
+                )
 
                 for (
                     option_key,
@@ -102,6 +146,10 @@ def get_quiz_for_lesson(
     shuffle_questions: bool = True,
     shuffle_options: bool = True,
 ):
+    """
+    Berilgan dars uchun test savollarini qaytaradi.
+    """
+
     connection = get_connection()
 
     try:
@@ -114,14 +162,19 @@ def get_quiz_for_lesson(
             WHERE lesson_id = ?
             ORDER BY sort_order ASC
             """,
-            (lesson_id,),
+            (
+                lesson_id,
+            ),
         )
 
-        question_rows = cursor.fetchall()
+        question_rows = (
+            cursor.fetchall()
+        )
 
         quiz = []
 
         for question_row in question_rows:
+
             question = dict(
                 question_row
             )
@@ -177,6 +230,11 @@ def save_quiz_attempt(
     score: int,
     passed: bool,
 ):
+    """
+    Test urinishini saqlaydi va
+    eng yaxshi natijani yangilaydi.
+    """
+
     connection = get_connection()
 
     try:
@@ -277,8 +335,10 @@ def get_best_quiz_score(
         cursor.execute(
             """
             SELECT
-                COALESCE(MAX(score), 0)
-                AS best_score
+                COALESCE(
+                    MAX(score),
+                    0
+                ) AS best_score
             FROM quiz_attempts
             WHERE user_id = ?
               AND lesson_id = ?
