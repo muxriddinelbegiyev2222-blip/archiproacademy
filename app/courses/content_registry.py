@@ -32,6 +32,11 @@ from courses.level01_module05 import (
     LEVEL01_MODULE05_QUIZ,
 )
 
+from courses.level01_module06 import (
+    LEVEL01_MODULE06_CONTENT,
+    LEVEL01_MODULE06_QUIZ,
+)
+
 from courses.quiz_data import (
     QUIZ_DATA,
 )
@@ -40,33 +45,15 @@ from courses.quiz_data import (
 def get_all_lesson_content():
     combined = {}
 
-    combined.update(
-        LESSON_CONTENT
-    )
+    combined.update(LESSON_CONTENT)
+    combined.update(LEVEL00_EXTRA_CONTENT)
 
-    combined.update(
-        LEVEL00_EXTRA_CONTENT
-    )
-
-    combined.update(
-        LEVEL01_CONTENT
-    )
-
-    combined.update(
-        LEVEL01_MODULE02_CONTENT
-    )
-
-    combined.update(
-        LEVEL01_MODULE03_CONTENT
-    )
-
-    combined.update(
-        LEVEL01_MODULE04_CONTENT
-    )
-
-    combined.update(
-        LEVEL01_MODULE05_CONTENT
-    )
+    combined.update(LEVEL01_CONTENT)
+    combined.update(LEVEL01_MODULE02_CONTENT)
+    combined.update(LEVEL01_MODULE03_CONTENT)
+    combined.update(LEVEL01_MODULE04_CONTENT)
+    combined.update(LEVEL01_MODULE05_CONTENT)
+    combined.update(LEVEL01_MODULE06_CONTENT)
 
     return combined
 
@@ -74,43 +61,23 @@ def get_all_lesson_content():
 def get_lesson_content_by_code(
     lesson_code: str,
 ):
-    return (
-        get_all_lesson_content().get(
-            lesson_code,
-            [],
-        )
+    return get_all_lesson_content().get(
+        lesson_code,
+        [],
     )
 
 
 def get_all_quiz_data():
     combined = {}
 
-    combined.update(
-        QUIZ_DATA
-    )
+    combined.update(QUIZ_DATA)
+    combined.update(LEVEL00_EXTRA_QUIZ)
 
-    combined.update(
-        LEVEL00_EXTRA_QUIZ
-    )
-
-    combined.update(
-        LEVEL01_QUIZ
-    )
-
-    combined.update(
-        LEVEL01_MODULE02_QUIZ
-    )
-
-    combined.update(
-        LEVEL01_MODULE03_QUIZ
-    )
-
-    combined.update(
-        LEVEL01_MODULE04_QUIZ
-    )
-
-    combined.update(
-        LEVEL01_MODULE05_QUIZ
-    )
+    combined.update(LEVEL01_QUIZ)
+    combined.update(LEVEL01_MODULE02_QUIZ)
+    combined.update(LEVEL01_MODULE03_QUIZ)
+    combined.update(LEVEL01_MODULE04_QUIZ)
+    combined.update(LEVEL01_MODULE05_QUIZ)
+    combined.update(LEVEL01_MODULE06_QUIZ)
 
     return combined
