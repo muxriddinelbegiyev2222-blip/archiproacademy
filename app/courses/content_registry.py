@@ -178,14 +178,27 @@ from courses.level05_module10 import (
     LEVEL05_MODULE10_QUIZ,
 )
 
+from courses.level06_module01 import (
+    LEVEL06_MODULE01_CONTENT,
+    LEVEL06_MODULE01_QUIZ,
+)
+
 from courses.quiz_data import QUIZ_DATA
 
 
 def get_all_lesson_content():
     combined = {}
 
+    # ========================================================
+    # LEVEL 0
+    # ========================================================
+
     combined.update(LESSON_CONTENT)
     combined.update(LEVEL00_EXTRA_CONTENT)
+
+    # ========================================================
+    # LEVEL 1
+    # ========================================================
 
     combined.update(LEVEL01_CONTENT)
     combined.update(LEVEL01_MODULE02_CONTENT)
@@ -193,6 +206,10 @@ def get_all_lesson_content():
     combined.update(LEVEL01_MODULE04_CONTENT)
     combined.update(LEVEL01_MODULE05_CONTENT)
     combined.update(LEVEL01_MODULE06_CONTENT)
+
+    # ========================================================
+    # LEVEL 2
+    # ========================================================
 
     combined.update(LEVEL02_MODULE01_CONTENT)
     combined.update(LEVEL02_MODULE02_CONTENT)
@@ -205,6 +222,10 @@ def get_all_lesson_content():
     combined.update(LEVEL02_MODULE09_CONTENT)
     combined.update(LEVEL02_MODULE10_CONTENT)
 
+    # ========================================================
+    # LEVEL 3
+    # ========================================================
+
     combined.update(LEVEL03_MODULE01_CONTENT)
     combined.update(LEVEL03_MODULE02_CONTENT)
     combined.update(LEVEL03_MODULE03_CONTENT)
@@ -214,6 +235,10 @@ def get_all_lesson_content():
     combined.update(LEVEL03_MODULE07_CONTENT)
     combined.update(LEVEL03_MODULE08_CONTENT)
 
+    # ========================================================
+    # LEVEL 4
+    # ========================================================
+
     combined.update(LEVEL04_MODULE01_CONTENT)
     combined.update(LEVEL04_MODULE02_CONTENT)
     combined.update(LEVEL04_MODULE03_CONTENT)
@@ -222,6 +247,10 @@ def get_all_lesson_content():
     combined.update(LEVEL04_MODULE06_CONTENT)
     combined.update(LEVEL04_MODULE07_CONTENT)
     combined.update(LEVEL04_MODULE08_CONTENT)
+
+    # ========================================================
+    # LEVEL 5
+    # ========================================================
 
     combined.update(LEVEL05_MODULE01_CONTENT)
     combined.update(LEVEL05_MODULE02_CONTENT)
@@ -233,6 +262,12 @@ def get_all_lesson_content():
     combined.update(LEVEL05_MODULE08_CONTENT)
     combined.update(LEVEL05_MODULE09_CONTENT)
     combined.update(LEVEL05_MODULE10_CONTENT)
+
+    # ========================================================
+    # LEVEL 6
+    # ========================================================
+
+    combined.update(LEVEL06_MODULE01_CONTENT)
 
     return combined
 
@@ -247,8 +282,16 @@ def get_lesson_content_by_code(lesson_code: str):
 def get_all_quiz_data():
     combined = {}
 
+    # ========================================================
+    # LEVEL 0
+    # ========================================================
+
     combined.update(QUIZ_DATA)
     combined.update(LEVEL00_EXTRA_QUIZ)
+
+    # ========================================================
+    # LEVEL 1
+    # ========================================================
 
     combined.update(LEVEL01_QUIZ)
     combined.update(LEVEL01_MODULE02_QUIZ)
@@ -256,6 +299,10 @@ def get_all_quiz_data():
     combined.update(LEVEL01_MODULE04_QUIZ)
     combined.update(LEVEL01_MODULE05_QUIZ)
     combined.update(LEVEL01_MODULE06_QUIZ)
+
+    # ========================================================
+    # LEVEL 2
+    # ========================================================
 
     combined.update(LEVEL02_MODULE01_QUIZ)
     combined.update(LEVEL02_MODULE02_QUIZ)
@@ -268,6 +315,10 @@ def get_all_quiz_data():
     combined.update(LEVEL02_MODULE09_QUIZ)
     combined.update(LEVEL02_MODULE10_QUIZ)
 
+    # ========================================================
+    # LEVEL 3
+    # ========================================================
+
     combined.update(LEVEL03_MODULE01_QUIZ)
     combined.update(LEVEL03_MODULE02_QUIZ)
     combined.update(LEVEL03_MODULE03_QUIZ)
@@ -277,6 +328,10 @@ def get_all_quiz_data():
     combined.update(LEVEL03_MODULE07_QUIZ)
     combined.update(LEVEL03_MODULE08_QUIZ)
 
+    # ========================================================
+    # LEVEL 4
+    # ========================================================
+
     combined.update(LEVEL04_MODULE01_QUIZ)
     combined.update(LEVEL04_MODULE02_QUIZ)
     combined.update(LEVEL04_MODULE03_QUIZ)
@@ -285,6 +340,10 @@ def get_all_quiz_data():
     combined.update(LEVEL04_MODULE06_QUIZ)
     combined.update(LEVEL04_MODULE07_QUIZ)
     combined.update(LEVEL04_MODULE08_QUIZ)
+
+    # ========================================================
+    # LEVEL 5
+    # ========================================================
 
     combined.update(LEVEL05_MODULE01_QUIZ)
     combined.update(LEVEL05_MODULE02_QUIZ)
@@ -296,5 +355,11 @@ def get_all_quiz_data():
     combined.update(LEVEL05_MODULE08_QUIZ)
     combined.update(LEVEL05_MODULE09_QUIZ)
     combined.update(LEVEL05_MODULE10_QUIZ)
+
+    # ========================================================
+    # LEVEL 6
+    # ========================================================
+
+    combined.update(LEVEL06_MODULE01_QUIZ)
 
     return combined
