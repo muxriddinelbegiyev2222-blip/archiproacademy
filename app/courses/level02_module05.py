@@ -3,563 +3,694 @@ from database.database import get_connection
 
 # ============================================================
 # LEVEL 2
-# MODULE 05 - PUBLIC VA PRIVATE MAKONLAR
+# MODULE 05 - OSHXONA LOYIHALASH
 # ============================================================
 
 LEVEL02_MODULE05_LESSONS = [
     (
         "L02_M05",
         "L02_M05_001",
-        "Public va private makonlarning chuqur tahlili",
+        "Oshxona funksiyasi va zonalari",
         "theory",
-        "Uy ichidagi umumiy va shaxsiy hududlarni professional darajada ajratish.",
+        "Oshxonadagi asosiy funksional zonalar va ularning o'zaro aloqasini tushunish.",
         1,
-        35,
+        50,
         20,
     ),
     (
         "L02_M05",
         "L02_M05_002",
-        "Mehmonlar oqimi va maxfiylik",
+        "Ishchi uchburchak",
         "theory",
-        "Mehmon harakatini oilaning private hayotidan ajratib tashkil qilish.",
+        "Muzlatkich, rakovina va pishirish zonasi o'rtasidagi ishchi aloqani tushunish.",
         2,
-        35,
+        55,
         20,
     ),
     (
         "L02_M05",
         "L02_M05_003",
-        "Ota-ona va bolalar zonasi",
-        "theory",
-        "Oilaviy private zonani yosh, qulaylik va tungi foydalanish asosida tashkil qilish.",
+        "Countertop va saqlash",
+        "practice",
+        "Ishchi sirt, shkaflar va mahsulot saqlash tizimini mantiqiy tashkil qilish.",
         3,
-        40,
+        60,
         20,
     ),
     (
         "L02_M05",
         "L02_M05_004",
-        "Kunduzgi va tungi zonalar",
+        "Circulation va dining aloqasi",
         "practice",
-        "Uy funksiyalarini vaqt bo'yicha tahlil qilish va to'g'ri guruhlash.",
+        "Oshxona ichidagi harakat va dining bilan funksional bog'lanishni tashkil qilish.",
         4,
-        40,
+        60,
         20,
     ),
     (
         "L02_M05",
         "L02_M05_005",
-        "Public-private xatolarini topish",
+        "Oshxona auditi",
         "practice",
-        "Bir qavatli uy planlarida maxfiylik va mehmon oqimi xatolarini aniqlash.",
+        "Oshxona rejasini ergonomika, ish jarayoni va circulation bo'yicha tekshirish.",
         5,
-        45,
+        75,
         25,
     ),
 ]
 
 
 # ============================================================
-# LESSON CONTENT
+# CONTENT
 # ============================================================
 
 LEVEL02_MODULE05_CONTENT = {
     "L02_M05_001": [
         {
-            "title": "Public va private faqat nom emas",
+            "title": "Oshxona — faqat mebel qatori emas",
             "type": "highlight",
             "text": """
-            Public va private zonalarni ajratish
-            faqat xonalarni ikki guruhga bo'lish emas.
+            Oshxona —
+            uy ichidagi eng ko'p
+            funksional harakat sodir bo'ladigan
+            makonlardan biri.
 
             <br><br>
 
-            Muhim savol:
+            Bu yerda:
 
             <br><br>
 
-            <b>
-            Kim qayergacha erkin kira oladi?
-            </b>
+            • mahsulot olinadi;<br>
+            • yuviladi;<br>
+            • tayyorlanadi;<br>
+            • pishiriladi;<br>
+            • saqlanadi;<br>
+            • ba'zan ovqatlaniladi.
             """,
         },
         {
-            "title": "Public makon",
+            "title": "Asosiy zonalar",
             "type": "normal",
             "text": """
-            Public makonlar ko'pincha:
+            Oshxonani bir nechta
+            funksional zonaga ajratib
+            fikrlash foydali:
 
             <br><br>
 
-            • kirish;<br>
-            • mehmonxona;<br>
-            • ovqatlanish zonasi;<br>
-            • mehmonlar sanuzeli;<br>
-            • umumiy zal
-
-            <br><br>
-
-            kabi xonalardan iborat bo'ladi.
+            • mahsulot saqlash;<br>
+            • yuvish;<br>
+            • tayyorlash;<br>
+            • pishirish;<br>
+            • idish saqlash;<br>
+            • chiqindi bilan ishlash.
             """,
         },
         {
-            "title": "Private makon",
+            "title": "Jarayon ketma-ketligi",
+            "type": "highlight",
+            "text": """
+            Tasavvur qiling:
+
+            <br><br>
+
+            mahsulotni oldingiz →
+            yuvdingiz →
+            tayyorladingiz →
+            pishirdingiz →
+            ovqatni uzatdingiz.
+
+            <br><br>
+
+            Yaxshi oshxona
+            shu jarayonni ortiqcha
+            yurishsiz tashkil qiladi.
+            """,
+        },
+        {
+            "title": "Tasavvur qiling",
+            "type": "example",
+            "text": """
+            Muzlatkich
+            oshxonaning bir chetida.
+
+            <br><br>
+
+            Rakovina qarama-qarshi tomonda.
+
+            <br><br>
+
+            Pishirish zonasi esa
+            ularning orasidagi
+            asosiy circulation yo'lini kesib o'tadi.
+
+            <br><br>
+
+            Barcha jihozlar bor,
+            lekin workflow yomon.
+            """,
+        },
+        {
+            "title": "Arxitektor savollari",
             "type": "normal",
             "text": """
-            Private zona ko'pincha:
+            Oshxona rejasida so'rang:
 
             <br><br>
 
-            • ota-ona yotoqxonasi;<br>
-            • bolalar xonalari;<br>
-            • oilaviy sanuzel;<br>
-            • garderob;<br>
-            • private family lounge
-
-            <br><br>
-
-            kabi makonlardan tashkil topadi.
+            • muzlatkich qayerda?<br>
+            • rakovina qayerda?<br>
+            • pishirish zonasi qayerda?<br>
+            • tayyorlash uchun ishchi sirt bormi?<br>
+            • diningga chiqish qulaymi?<br>
+            • odamlar bir-biriga xalaqit bermaydimi?
             """,
         },
         {
-            "title": "Chegara qayerda?",
+            "title": "Mini-vazifa",
             "type": "example",
             "text": """
-            Uyda ko'rinmas chegara bo'lishi mumkin.
+            Oddiy oshxona sxemasini chizing.
 
             <br><br>
 
-            Masalan:
+            Unda belgilang:
 
             <br><br>
 
-            kirish → mehmonxona → ovqatlanish
+            F — Fridge<br>
+            S — Sink<br>
+            C — Cooking
 
             <br><br>
 
-            mehmon uchun ochiq.
-
-            <br><br>
-
-            Lekin undan keyingi koridor
-            yotoq zonaga olib kirsa,
-            bu private hudud hisoblanishi mumkin.
-            """,
-        },
-        {
-            "title": "Boshlovchi xatosi",
-            "type": "warning",
-            "text": """
-            Yotoqxonalarni faqat bo'sh joy qolganiga qarab
-            joylashtirish noto'g'ri.
-
-            <br><br>
-
-            Private zonaning yaxlitligi muhim.
-            """,
-        },
-        {
-            "title": "Mini-amaliyot",
-            "type": "example",
-            "text": """
-            Bir uy planida
-            public va private zonalar orasidagi
-            aniq chegarani topishga harakat qiling.
-
-            <br><br>
-
-            Bu chegara qayerda?
+            Keyin ular orasidagi
+            odam harakatini strelka bilan ko'rsating.
             """,
         },
     ],
 
     "L02_M05_002": [
         {
-            "title": "Mehmon qanday yuradi?",
+            "title": "Ishchi uchburchak nima?",
             "type": "highlight",
             "text": """
-            Mehmonlar oqimi —
-            public-private zonalashning
-            eng muhim tekshiruvlaridan biri.
+            Oshxona rejalashtirishda
+            klassik tushunchalardan biri —
+            ishchi uchburchak.
+
+            <br><br>
+
+            U uchta asosiy nuqtani
+            bog'laydi:
+
+            <br><br>
+
+            <b>
+            MUZLATKICH → RAKOVINA → PISHIRISH
+            </b>
             """,
         },
         {
-            "title": "Ideal savol",
-            "type": "example",
-            "text": """
-            Tasavvur qiling:
-
-            <br><br>
-
-            uyga birinchi marta kelgan odam
-            eshikdan kirdi.
-
-            <br><br>
-
-            U mehmonxonani osongina topa oladimi?
-
-            <br><br>
-
-            Yoki private xonalar ichiga adashib kiradimi?
-            """,
-        },
-        {
-            "title": "Mehmon sanuzeli",
+            "title": "Nega uchta nuqta?",
             "type": "normal",
             "text": """
-            Mehmon sanuzeli odatda
-            public zonadan qulay yetib boriladigan
-            joyda bo'lishi foydali.
+            Kundalik ovqat tayyorlashda
+            odam ko'p marta
+            shu uch zona orasida yuradi.
 
             <br><br>
 
-            Mehmon oilaning yotoq koridoriga
-            kirishga majbur bo'lmasligi kerak.
+            Shuning uchun ularning
+            o'zaro joylashuvi
+            ish qulayligiga ta'sir qiladi.
             """,
         },
         {
-            "title": "To'g'ridan-to'g'ri ko'rinish",
+            "title": "Uchburchak — qat'iy dekorativ shakl emas",
             "type": "warning",
             "text": """
-            Kirish eshigidan turib
-            ota-onalar yotoqxonasi ichini
-            to'g'ridan-to'g'ri ko'rish mumkin bo'lsa,
-            maxfiylik zaiflashadi.
+            Ishchi uchburchak
+            planda albatta chiroyli
+            geometrik uchburchak chiqishi kerak
+            degani emas.
+
+            <br><br>
+
+            Asosiy maqsad —
+            ish jarayonini qulay tashkil qilish.
             """,
         },
         {
-            "title": "Mehmon yo'li",
+            "title": "Circulation bilan konflikt",
             "type": "example",
             "text": """
-            Yaxshi mehmon yo'li ko'pincha:
+            Muzlatkichdan rakovinaga
+            boradigan yo'l
 
             <br><br>
 
-            kirish → garderob → mehmonxona → mehmon sanuzeli
+            diningga o'tadigan
+            asosiy yo'l bilan kesishadi.
 
             <br><br>
 
-            kabi qisqa va tushunarli tizim bo'lishi mumkin.
+            Ovqat tayyorlayotgan odam
+            doim boshqa odamlar bilan
+            to'qnashadi.
+
+            <br><br>
+
+            Bu yaxshi workflow emas.
             """,
         },
         {
-            "title": "Mini-amaliyot",
+            "title": "Island bo'lsa",
+            "type": "normal",
+            "text": """
+            Kitchen island mavjud bo'lsa,
+            u ham ish jarayoniga
+            qo'shiladi.
+
+            <br><br>
+
+            Lekin island
+            asosiy yurish yo'llarini
+            toraytirib yubormasligi kerak.
+            """,
+        },
+        {
+            "title": "Bir tomonlama oshxona",
+            "type": "normal",
+            "text": """
+            Har bir oshxonada
+            an'anaviy uchburchak shakl
+            hosil bo'lavermaydi.
+
+            <br><br>
+
+            Masalan,
+            bir tomonlama kitchen line'da
+            asosiy zonalar ketma-ket
+            joylashishi mumkin.
+
+            <br><br>
+
+            Muhim narsa —
+            workflow.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
             "type": "example",
             "text": """
-            Bir plan toping.
+            3 xil variant chizing:
 
             <br><br>
 
-            Mehmonning 3 ta yo'lini chizing:
+            1. L-shaped kitchen;<br>
+            2. U-shaped kitchen;<br>
+            3. Linear kitchen.
 
             <br><br>
 
-            1. Kirish → mehmonxona<br>
-            2. Mehmonxona → sanuzel<br>
-            3. Mehmonxona → hovli
-
-            <br><br>
-
-            Private zonaga kirish talab qilinadimi?
+            Har birida Fridge,
+            Sink va Cooking joyini belgilang.
             """,
         },
     ],
 
     "L02_M05_003": [
         {
-            "title": "Private zonaning ichida ham zonalash bor",
+            "title": "Countertop — ishchi zona",
             "type": "highlight",
             "text": """
-            Private zona bitta blok bo'lsa ham,
-            uning ichida ota-ona va bolalar ehtiyojlari
-            turlicha bo'lishi mumkin.
+            Oshxonada jihozlarning
+            o'zi yetarli emas.
+
+            <br><br>
+
+            Mahsulotni:
+
+            <br><br>
+
+            • qo'yish;<br>
+            • tozalash;<br>
+            • kesish;<br>
+            • tayyorlash
+
+            <br><br>
+
+            uchun ishchi sirt kerak.
             """,
         },
         {
-            "title": "Ota-ona zonasi",
-            "type": "normal",
-            "text": """
-            Master zona tarkibida:
-
-            <br><br>
-
-            • yotoqxona;<br>
-            • garderob;<br>
-            • private sanuzel;<br>
-            • ba'zan ish yoki dam olish burchagi
-
-            <br><br>
-
-            bo'lishi mumkin.
-            """,
-        },
-        {
-            "title": "Bolalar zonasi",
-            "type": "normal",
-            "text": """
-            Bolalar xonalari:
-
-            <br><br>
-
-            • ota-onaga yetarlicha yaqin;<br>
-            • xavfsiz;<br>
-            • sanuzelga qulay;<br>
-            • shovqinli public zonadan himoyalangan
-
-            <br><br>
-
-            bo'lishi foydali.
-            """,
-        },
-        {
-            "title": "Yosh muhim",
+            "title": "Sink va cooking orasidagi ishchi sirt",
             "type": "example",
             "text": """
-            3 yoshli bola bilan
-            16 yoshli bolaning private ehtiyoji bir xil emas.
+            Rakovinadan keyin
+            mahsulot tayyorlanadi.
 
             <br><br>
 
-            Kichik bolaga ota-onaga yaqinlik muhim.
+            Keyin pishirish zonasiga o'tadi.
 
             <br><br>
 
-            Katta bolaga esa ko'proq mustaqillik kerak bo'lishi mumkin.
+            Shu sabab
+            bu jarayon orasidagi
+            countertop juda muhim.
             """,
         },
         {
-            "title": "Xato",
+            "title": "Saqlashni foydalanishga yaqinlashtiring",
+            "type": "normal",
+            "text": """
+            Idishlar,
+            mahsulotlar
+            va oshxona anjomlari
+
+            <br><br>
+
+            ishlatiladigan zonaga
+            mantiqan yaqin bo'lsa,
+            ortiqcha yurish kamayadi.
+            """,
+        },
+        {
+            "title": "Pastki va yuqori saqlash",
+            "type": "normal",
+            "text": """
+            Oshxona storage tizimi
+            faqat bitta katta shkafdan iborat emas.
+
+            <br><br>
+
+            Turli predmetlar
+            foydalanish tezligiga qarab
+            turli joylarda saqlanishi mumkin.
+            """,
+        },
+        {
+            "title": "Corner muammosi",
             "type": "warning",
             "text": """
-            Bolalar xonasi oshxona yoki mehmonxonaning
-            eng shovqinli devoriga bevosita yopishgan bo'lsa,
-            dam olish sifati pasayishi mumkin.
+            L yoki U shaklli oshxonada
+            burchak zonalari
+            noto'g'ri rejalashtirilsa,
+
+            <br><br>
+
+            shkaf eshiklari
+            yoki tortmalar
+            bir-biri bilan konflikt qilishi mumkin.
             """,
         },
         {
-            "title": "Mini-amaliyot",
+            "title": "Jihoz eshigini ham tasavvur qiling",
+            "type": "highlight",
+            "text": """
+            Muzlatkich,
+            idish yuvish mashinasi
+            yoki boshqa jihoz
+
+            <br><br>
+
+            faqat yopiq kontur holatida
+            tekshirilmaydi.
+
+            <br><br>
+
+            Uning eshigi ochilganda
+            qancha joy egallashini ham
+            tasavvur qiling.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
             "type": "example",
             "text": """
-            4 kishilik oila uchun:
+            Oshxona sxemasida belgilang:
 
             <br><br>
 
-            ota-ona + 2 bola
+            • food storage;<br>
+            • dishes;<br>
+            • preparation area;<br>
+            • cleaning area;<br>
+            • cooking area.
 
             <br><br>
 
-            private zonani xayolan tuzing.
-
-            <br><br>
-
-            Qaysi xonalar bir-biriga yaqin bo'ladi?
+            Ularning joylashuvi
+            workflowga mos keladimi?
             """,
         },
     ],
 
     "L02_M05_004": [
         {
-            "title": "Uy vaqt bo'yicha ham ishlaydi",
+            "title": "Oshxona ichidagi circulation",
             "type": "highlight",
             "text": """
-            Uy faqat makon emas.
+            Oshxonada bir vaqtning o'zida
+            ovqat tayyorlash
+            va boshqa odamlarning yurishi
+            sodir bo'lishi mumkin.
 
             <br><br>
 
-            U ertalab, kunduz va kechasi
-            turlicha ishlaydi.
+            Shu sabab circulation
+            alohida tahlil qilinadi.
             """,
         },
         {
-            "title": "Kunduzgi zona",
+            "title": "Transit yo'lni ish zonasidan ajrating",
             "type": "normal",
             "text": """
-            Kunduz faol ishlatiladigan makonlar:
+            Agar hovliga,
+            diningga
+            yoki boshqa xonaga o'tadigan
+            asosiy yo'l
 
             <br><br>
 
-            • oshxona;<br>
-            • ovqatlanish;<br>
-            • mehmonxona;<br>
-            • hovli bilan aloqa;<br>
-            • ish yoki o'qish zonasi
-
-            <br><br>
-
-            bo'lishi mumkin.
+            doim cooking zonadan o'tsa,
+            foydalanish noqulaylashishi mumkin.
             """,
         },
         {
-            "title": "Tungi zona",
-            "type": "normal",
-            "text": """
-            Tungi foydalanishga ko'proq bog'liq:
-
-            <br><br>
-
-            • yotoqxonalar;<br>
-            • oilaviy sanuzel;<br>
-            • garderob;<br>
-            • tungi private circulation.
-            """,
-        },
-        {
-            "title": "Shovqin masalasi",
-            "type": "example",
-            "text": """
-            Kechasi bolalar uxlayapti.
-
-            <br><br>
-
-            Mehmonxonada esa mehmonlar bor.
-
-            <br><br>
-
-            Agar ikki zona orasida hech qanday
-            masofa yoki tampon bo'lmasa,
-            shovqin muammo bo'lishi mumkin.
-            """,
-        },
-        {
-            "title": "Buffer zona",
+            "title": "Dining bilan aloqa",
             "type": "highlight",
             "text": """
-            Ba'zan ikki zona orasida
-            garderob, koridor, sanuzel yoki boshqa
-            yordamchi xona <b>tampon</b> vazifasini bajaradi.
+            Oshxona va dining
+            ko'pincha bir-biriga
+            kuchli funksional bog'langan.
+
+            <br><br>
+
+            Tayyor ovqatni
+            diningga olib borish
+            qulay bo'lishi kerak.
             """,
         },
         {
-            "title": "Mini-amaliyot",
+            "title": "Dining juda uzoqda",
             "type": "example",
             "text": """
-            Bir plan tanlang.
+            Oshxona bir tomonda,
+            dining esa boshqa tomonda.
 
             <br><br>
 
-            Kunduzgi va tungi zonalarni
-            ikki rangga ajrating.
+            Ularning orasida
+            koridor,
+            living
+            va asosiy circulation bor.
 
             <br><br>
 
-            Ular qayerda to'qnashmoqda?
+            Har bir ovqatda
+            uzoq yo'l bosiladi.
+
+            <br><br>
+
+            Funksional aloqa zaif.
+            """,
+        },
+        {
+            "title": "Bir nechta odam",
+            "type": "normal",
+            "text": """
+            Faqat bitta odamni emas,
+            oiladagi bir nechta odamni
+            tasavvur qiling.
+
+            <br><br>
+
+            Biri muzlatkichni ochyapti,
+            biri rakovinada,
+            boshqasi diningga o'tmoqda.
+
+            <br><br>
+
+            Ular bir-biriga xalaqit bermasligi kerak.
+            """,
+        },
+        {
+            "title": "Door opening",
+            "type": "warning",
+            "text": """
+            Oshxona eshigi ochilganda
+            muzlatkich,
+            shkaf
+            yoki ishchi zonaga
+            to'qnashmasligi kerak.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            Oshxona planida 3 ta yo'l chizing:
+
+            <br><br>
+
+            1. Kirish → fridge<br>
+            2. Kitchen → dining<br>
+            3. Kitchen → hovli yoki boshqa xona
+
+            <br><br>
+
+            Ular asosiy ish zonasini
+            keraksiz kesib o'tayaptimi?
             """,
         },
     ],
 
     "L02_M05_005": [
         {
-            "title": "Public-private xatolarini ovlaymiz",
+            "title": "Oshxona auditi",
             "type": "highlight",
             "text": """
-            Endi uy planida
-            maxfiylik va odamlar oqimini
-            birgalikda tekshiramiz.
-            """,
-        },
-        {
-            "title": "Xato 1 — yotoq eshigi mehmonxonaga ochiladi",
-            "type": "warning",
-            "text": """
-            Ota-onalar yotoqxonasining eshigi
-            to'g'ridan-to'g'ri mehmonxonaga ochiladi.
+            Endi oshxonani
+            faqat shkaflar chizig'i sifatida emas,
 
             <br><br>
 
-            Private va public chegarasi zaif.
+            real kundalik ish tizimi
+            sifatida tekshiramiz.
             """,
         },
         {
-            "title": "Xato 2 — mehmon sanuzeli private zonada",
-            "type": "warning",
-            "text": """
-            Mehmon sanuzelga borish uchun
-            barcha yotoqxona eshiklari oldidan o'tadi.
-
-            <br><br>
-
-            Maxfiylik kamayadi.
-            """,
-        },
-        {
-            "title": "Xato 3 — bolalar xonasi shovqin markazida",
-            "type": "warning",
-            "text": """
-            Bolalar xonasi televizor devori,
-            oshxona yoki asosiy mehmon zonasi bilan
-            bevosita tutashgan.
-
-            <br><br>
-
-            Akustik qulaylik tekshiriladi.
-            """,
-        },
-        {
-            "title": "Xato 4 — kirishdan private zona ko'rinadi",
-            "type": "warning",
-            "text": """
-            Uy eshigi ochilishi bilan
-            private koridor yoki yotoqxona
-            to'g'ridan-to'g'ri ko'rinadi.
-
-            <br><br>
-
-            Vizual maxfiylik zaif.
-            """,
-        },
-        {
-            "title": "Xato 5 — tungi yo'l public zonadan o'tadi",
-            "type": "warning",
-            "text": """
-            Yotoqxonadan sanuzelga kechasi borish uchun
-            mehmonxona yoki ovqatlanish zonasini
-            kesib o'tish kerak.
-
-            <br><br>
-
-            Tungi circulation noto'g'ri bo'lishi mumkin.
-            """,
-        },
-        {
-            "title": "Professional tekshiruv",
+            "title": "1. Funksional zonalar",
             "type": "example",
             "text": """
-            Plan oldingizda bo'lsa:
+            Tekshiring:
 
             <br><br>
 
-            <b>1.</b> Mehmon qayergacha kiradi?<br><br>
-            <b>2.</b> Private zona qayerdan boshlanadi?<br><br>
-            <b>3.</b> Mehmon sanuzeli qayerda?<br><br>
-            <b>4.</b> Yotoq zonasi shovqindan himoyalanganmi?<br><br>
-            <b>5.</b> Tungi yo'llar qulaymi?<br><br>
-            <b>6.</b> Kirishdan private makon ko'rinadimi?
+            • fridge mavjudmi?<br>
+            • sink mantiqiy joydami?<br>
+            • cooking zona qulaymi?<br>
+            • preparation area bormi?<br>
+            • storage yetarlimi?
             """,
         },
         {
-            "title": "Mini-loyiha",
+            "title": "2. Workflow",
             "type": "example",
             "text": """
-            4 kishilik oila uchun
-            180–250 m² bir qavatli uy planini toping.
+            Mahsulotning yo'lini kuzating:
 
             <br><br>
 
-            Tahlil qiling:
+            saqlash →
+            yuvish →
+            tayyorlash →
+            pishirish →
+            dining.
 
             <br><br>
 
-            • public zona;<br>
-            • ota-ona private zonasi;<br>
-            • bolalar private zonasi;<br>
-            • mehmonlar oqimi;<br>
-            • tungi yo'llar.
+            Keraksiz ortiqcha yurish bormi?
+            """,
+        },
+        {
+            "title": "3. Circulation",
+            "type": "example",
+            "text": """
+            Tekshiring:
 
             <br><br>
 
-            Kamida 3 ta kuchli va
-            2 ta zaif nuqtani yozing.
+            • boshqa odamlar ish zonasini kesadimi?<br>
+            • jihoz eshiklari yo'lni to'sadimi?<br>
+            • island o'tishni toraytirganmi?<br>
+            • diningga chiqish qulaymi?
+            """,
+        },
+        {
+            "title": "4. Storage",
+            "type": "example",
+            "text": """
+            Tekshiring:
+
+            <br><br>
+
+            • kundalik idishlar qulay joydami?<br>
+            • oziq-ovqat saqlash mantiqiymi?<br>
+            • og'ir predmetlar uchun joy bormi?<br>
+            • burchaklar foydalanishga yaroqlimi?
+            """,
+        },
+        {
+            "title": "Xatoni toping",
+            "type": "warning",
+            "text": """
+            Oshxona juda katta.
+
+            <br><br>
+
+            Muzlatkich,
+            sink
+            va cooking zona
+            hammasi mavjud.
+
+            <br><br>
+
+            Lekin ular
+            uch xil uzoq burchakda.
+
+            <br><br>
+
+            Ovqat tayyorlashda
+            odam xona bo'ylab
+            qayta-qayta yuradi.
+
+            <br><br>
+
+            Muammo:
+            maydon yetarli,
+            lekin workflow samarasiz.
+            """,
+        },
+        {
+            "title": "Professional checklist",
+            "type": "example",
+            "text": """
+            Oshxonani tekshiring:
+
+            <br><br>
+
+            <b>1.</b> Funksional zonalar aniqmi?<br><br>
+            <b>2.</b> Fridge–Sink–Cooking aloqasi mantiqiymi?<br><br>
+            <b>3.</b> Preparation surface bormi?<br><br>
+            <b>4.</b> Storage foydalanishga yaqinmi?<br><br>
+            <b>5.</b> Jihoz eshiklari konflikt qilmayaptimi?<br><br>
+            <b>6.</b> Circulation ish zonasini buzmayaptimi?<br><br>
+            <b>7.</b> Dining bilan aloqa qulaymi?
             """,
         },
         {
@@ -570,21 +701,18 @@ LEVEL02_MODULE05_CONTENT = {
 
             <br><br>
 
-            ✓ public-private chegarasi;<br>
-            ✓ mehmonlar oqimi;<br>
-            ✓ vizual maxfiylik;<br>
-            ✓ ota-ona zonasi;<br>
-            ✓ bolalar zonasi;<br>
-            ✓ kunduzgi va tungi zonalar
-
-            <br><br>
-
-            bo'yicha plan tahlil qila olasiz.
+            ✓ oshxona funksional zonalarini ajratasiz;<br>
+            ✓ ishchi uchburchakni tushunasiz;<br>
+            ✓ countertopni rejalashtirasiz;<br>
+            ✓ storage mantiqini tuzasiz;<br>
+            ✓ circulationni tekshirasiz;<br>
+            ✓ dining bilan aloqani tahlil qilasiz;<br>
+            ✓ oshxona rejasini audit qilasiz.
 
             <br><br>
 
             Keyingi modul:
-            <b>Oshxona va ovqatlanish ergonomikasi.</b>
+            <b>Yotoqxona loyihalash.</b>
             """,
         },
     ],
@@ -592,28 +720,28 @@ LEVEL02_MODULE05_CONTENT = {
 
 
 # ============================================================
-# QUIZ DATA
+# QUIZ
+# Q061-Q075 KODLARI SAQLANADI
 # ============================================================
 
 LEVEL02_MODULE05_QUIZ = {
     "L02_M05_001": [
         {
             "code": "L02_Q061",
-            "question": "Public-private zonalashdagi asosiy savollardan biri qaysi?",
+            "question": "Oshxona faqat shkaflar joylashtiriladigan makonmi?",
             "explanation": (
-                "Kim qayergacha erkin kira olishini aniqlash maxfiylikni tashkil qiladi."
+                "Oshxona mahsulot saqlash, yuvish, tayyorlash va pishirish kabi ko'plab funksiyalarni bajaradi."
             ),
             "options": [
-                ("A", "Kim qayergacha kira oladi?", True),
-                ("B", "Faqat fasad rangi qanday?", False),
-                ("C", "Faqat tom narxi qancha?", False),
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
             ],
         },
         {
             "code": "L02_Q062",
-            "question": "Yotoqxona odatda private zonaga kiradimi?",
+            "question": "Oshxona loyihalashda ish jarayonini hisobga olish kerakmi?",
             "explanation": (
-                "Yotoqxona oilaning shaxsiy makonlaridan biridir."
+                "Mahsulotning saqlashdan pishirishgacha bo'lgan yo'li ergonomikaga ta'sir qiladi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -622,9 +750,9 @@ LEVEL02_MODULE05_QUIZ = {
         },
         {
             "code": "L02_Q063",
-            "question": "Private zonaning yaxlitligi muhimmi?",
+            "question": "Preparation area oshxonada foydali funksional zona hisoblanadimi?",
             "explanation": (
-                "Private xonalarni mantiqiy guruhlash maxfiylik va qulaylikni oshiradi."
+                "Mahsulotni kesish va tayyorlash uchun ishchi sirt zarur bo'lishi mumkin."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -636,35 +764,43 @@ LEVEL02_MODULE05_QUIZ = {
     "L02_M05_002": [
         {
             "code": "L02_Q064",
-            "question": "Mehmonlar oqimi nimani tekshiradi?",
+            "question": "Klassik ishchi uchburchakning asosiy nuqtalari qaysilar?",
             "explanation": (
-                "Mehmonning uy ichida qayerlardan o'tishini va private zonaga aralashishini."
+                "Asosiy nuqtalar muzlatkich, rakovina va pishirish zonasidir."
             ),
             "options": [
-                ("A", "Mehmon harakatini", True),
-                ("B", "Faqat material rangini", False),
+                (
+                    "A",
+                    "Muzlatkich + Rakovina + Pishirish",
+                    True,
+                ),
+                (
+                    "B",
+                    "Divan + TV + Stol",
+                    False,
+                ),
             ],
         },
         {
             "code": "L02_Q065",
-            "question": "Mehmon sanuzeli private yotoq koridorining oxirida bo'lishi har doim yaxshi yechimmi?",
+            "question": "Ishchi uchburchakning asosiy maqsadi ish jarayonini qulay qilishmi?",
             "explanation": (
-                "Bu mehmonni private zona ichiga olib kirishi mumkin."
-            ),
-            "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
-            ],
-        },
-        {
-            "code": "L02_Q066",
-            "question": "Kirishdan yotoqxona ichi to'g'ridan-to'g'ri ko'rinishi maxfiylik muammosi bo'lishi mumkinmi?",
-            "explanation": (
-                "Vizual maxfiylik private zonaning muhim qismidir."
+                "Uch asosiy zona orasidagi aloqani mantiqiy tashkil qilish nazarda tutiladi."
             ),
             "options": [
                 ("A", "Ha", True),
                 ("B", "Yo'q", False),
+            ],
+        },
+        {
+            "code": "L02_Q066",
+            "question": "Har qanday oshxonada uchta zona geometrik jihatdan ideal uchburchak hosil qilishi shartmi?",
+            "explanation": (
+                "Oshxona turi va geometriyasi farq qiladi; asosiy narsa qulay workflow."
+            ),
+            "options": [
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
             ],
         },
     ],
@@ -672,9 +808,9 @@ LEVEL02_MODULE05_QUIZ = {
     "L02_M05_003": [
         {
             "code": "L02_Q067",
-            "question": "Kichik bola xonasining ota-onaga yaqin bo'lishi foydali bo'lishi mumkinmi?",
+            "question": "Oshxonada countertop ishchi sirt sifatida muhimmi?",
             "explanation": (
-                "Yosh bolalarda nazorat va tungi foydalanish nuqtai nazaridan yaqinlik foydali bo'lishi mumkin."
+                "Mahsulotni qo'yish, kesish va tayyorlash uchun ishchi sirt kerak."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -683,24 +819,24 @@ LEVEL02_MODULE05_QUIZ = {
         },
         {
             "code": "L02_Q068",
-            "question": "Ota-ona va bolalar private ehtiyojlari har doim bir xilmi?",
+            "question": "Storage joylashuvi ish jarayoniga ta'sir qiladimi?",
             "explanation": (
-                "Yosh, hayot tarzi va mustaqillik darajasiga qarab ehtiyojlar farq qiladi."
-            ),
-            "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
-            ],
-        },
-        {
-            "code": "L02_Q069",
-            "question": "Bolalar xonasini kuchli shovqin manbai yonida joylashtirishni tekshirish kerakmi?",
-            "explanation": (
-                "Dam olish va uyqu sifati uchun akustik aloqa muhim."
+                "Ko'p ishlatiladigan narsalarning qulay joyda bo'lishi ortiqcha harakatni kamaytirishi mumkin."
             ),
             "options": [
                 ("A", "Ha", True),
                 ("B", "Yo'q", False),
+            ],
+        },
+        {
+            "code": "L02_Q069",
+            "question": "Jihozning faqat yopiq holatini tekshirish yetarlimi?",
+            "explanation": (
+                "Jihoz eshigi ochilganda circulation va boshqa elementlar bilan konflikt yuzaga kelishi mumkin."
+            ),
+            "options": [
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
             ],
         },
     ],
@@ -708,9 +844,9 @@ LEVEL02_MODULE05_QUIZ = {
     "L02_M05_004": [
         {
             "code": "L02_Q070",
-            "question": "Uy funksiyalarini kunduzgi va tungi foydalanish bo'yicha tahlil qilish mumkinmi?",
+            "question": "Diningga o'tadigan asosiy yo'l cooking zonani keraksiz kesib o'tmasligi foydalimi?",
             "explanation": (
-                "Uy vaqt davomida turlicha ishlaydi, shuning uchun bunday tahlil foydali."
+                "Transit circulation va ish zonasi o'rtasidagi konflikt foydalanishni yomonlashtirishi mumkin."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -719,9 +855,9 @@ LEVEL02_MODULE05_QUIZ = {
         },
         {
             "code": "L02_Q071",
-            "question": "Yotoqxonalar tungi zonaga yaqinmi?",
+            "question": "Oshxona va dining o'rtasidagi funksional aloqa muhimmi?",
             "explanation": (
-                "Yotoqxonalar tungi dam olish funksiyasining asosiy qismidir."
+                "Tayyor ovqat va idishlarni ikki zona orasida qulay tashish kundalik foydalanishga ta'sir qiladi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -730,13 +866,13 @@ LEVEL02_MODULE05_QUIZ = {
         },
         {
             "code": "L02_Q072",
-            "question": "Koridor yoki garderob ikki shovqinli zona orasida tampon bo'lishi mumkinmi?",
+            "question": "Oshxona circulationini faqat bitta odam uchun tekshirish yetarlimi?",
             "explanation": (
-                "Yordamchi makonlar ba'zan akustik va funksional tampon vazifasini bajarishi mumkin."
+                "Uyda bir vaqtning o'zida bir nechta odam oshxonadan foydalanishi mumkin."
             ),
             "options": [
-                ("A", "Ha", True),
-                ("B", "Yo'q", False),
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
             ],
         },
     ],
@@ -744,20 +880,20 @@ LEVEL02_MODULE05_QUIZ = {
     "L02_M05_005": [
         {
             "code": "L02_Q073",
-            "question": "Yotoqxona eshigining to'g'ridan-to'g'ri mehmonxonaga ochilishi maxfiylikni zaiflashtirishi mumkinmi?",
+            "question": "Katta oshxona avtomatik ravishda ergonomik oshxona bo'ladimi?",
             "explanation": (
-                "Public va private zonalar orasidagi chegara zaiflashadi."
+                "Maydondan tashqari zonalar aloqasi, workflow, storage va circulation ham muhim."
             ),
             "options": [
-                ("A", "Ha", True),
-                ("B", "Yo'q", False),
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
             ],
         },
         {
             "code": "L02_Q074",
-            "question": "Tungi harakat yo'li public zona ichidan o'tsa muammo bo'lishi mumkinmi?",
+            "question": "Oshxona auditida Fridge–Sink–Cooking aloqasi tekshiriladimi?",
             "explanation": (
-                "Bu private foydalanish va qulaylikni kamaytirishi mumkin."
+                "Bu asosiy ish jarayonining muhim qismi."
             ),
             "options": [
                 ("A", "Ha", True),
@@ -766,13 +902,21 @@ LEVEL02_MODULE05_QUIZ = {
         },
         {
             "code": "L02_Q075",
-            "question": "Professional tahlilda qaysi savol foydali?",
+            "question": "Oshxona rejasini baholashdagi to'g'ri yondashuv qaysi?",
             "explanation": (
-                "Mehmonning qayergacha kirishini aniqlash public-private chegarani tahlil qiladi."
+                "Funksional zonalar, workflow, storage va circulation birgalikda tekshiriladi."
             ),
             "options": [
-                ("A", "Mehmon qayergacha kiradi?", True),
-                ("B", "Faqat fasad materiali qaysi?", False),
+                (
+                    "A",
+                    "Zonalar → workflow → storage → circulation → audit",
+                    True,
+                ),
+                (
+                    "B",
+                    "Faqat shkaflar sonini ko'paytirish",
+                    False,
+                ),
             ],
         },
     ],
