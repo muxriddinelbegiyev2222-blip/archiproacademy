@@ -1,4 +1,5 @@
 from PySide6.QtCore import Qt, Signal
+
 from PySide6.QtWidgets import (
     QButtonGroup,
     QFrame,
@@ -19,6 +20,14 @@ from courses.exam_service import (
     save_level_exam_attempt,
 )
 
+from database.database import (
+    get_connection,
+)
+
+
+# ============================================================
+# EXAM WINDOW
+# ============================================================
 
 class ExamWindow(QMainWindow):
     exam_passed = Signal()
@@ -36,6 +45,11 @@ class ExamWindow(QMainWindow):
         self.questions = []
         self.answer_groups = []
 
+        self.result_label = None
+        self.retry_button = None
+        self.submit_button = None
+        self.progress_bar = None
+
         self.setWindowTitle(
             f"ARCHIPRO UZ - {exam['title']}"
         )
@@ -51,8 +65,11 @@ class ExamWindow(QMainWindow):
         )
 
         self.setup_styles()
-
         self.load_exam()
+
+    # ========================================================
+    # STYLES
+    # ========================================================
 
     def setup_styles(self):
         self.setStyleSheet(
@@ -104,6 +121,16 @@ class ExamWindow(QMainWindow):
                 border-radius: 8px;
                 padding: 7px 11px;
                 color: #FDE68A;
+                font-size: 12px;
+                font-weight: 700;
+            }
+
+            QLabel#masterBadge {
+                background-color: #2E1065;
+                border: 1px solid #7C3AED;
+                border-radius: 8px;
+                padding: 7px 11px;
+                color: #DDD6FE;
                 font-size: 12px;
                 font-weight: 700;
             }
@@ -207,14 +234,240 @@ class ExamWindow(QMainWindow):
             """
         )
 
+    # ========================================================
+    # HELPERS
+    # ========================================================
+
+    def is_master_mode(self) -> bool:
+        license_type = str(
+            self.user.get(
+                "license_type",
+                "",
+            )
+        ).upper()
+
+        return license_type == "MASTER"
+
+    def format_level_code(
+        self,
+        code: str,
+    ) -> str:
+        """
+        LEVEL_03 -> LEVEL 3
+        LEVEL_10 -> LEVEL 10
+        """
+
+        if not code:
+            return ""
+
+        if code.startswith(
+            "LEVEL_"
+        ):
+            number_part = code.replace(
+                "LEVEL_",
+                "",
+                1,
+            )
+
+            try:
+                number = int(
+                    number_part
+                )
+
+                return (
+                    f"LEVEL {number}"
+                )
+
+            except ValueError:
+                pass
+
+        return code.replace(
+            "_",
+            " ",
+        )
+
+    def get_level_transition_info(self):
+        """
+        Joriy Final Exam qaysi LEVELga tegishli ekanini
+        database'dan aniqlaydi.
+
+        Keyin navbatdagi LEVELni topadi.
+
+        Bu funksiya LEVEL 0, 1, 2...
+        va keyingi barcha LEVELlar uchun universal.
+        """
+
+        connection = get_connection()
+
+        try:
+            cursor = connection.cursor()
+
+            # ------------------------------------------------
+            # CURRENT LEVEL
+            # ------------------------------------------------
+
+            cursor.execute(
+                """
+                SELECT
+                    course_levels.id,
+                    course_levels.code,
+                    course_levels.title,
+                    course_levels.sort_order
+
+                FROM level_exams
+
+                INNER JOIN course_levels
+                    ON course_levels.id =
+                       level_exams.level_id
+
+                WHERE level_exams.id = ?
+
+                LIMIT 1
+                """,
+                (
+                    self.exam["id"],
+                ),
+            )
+
+            current_level = (
+                cursor.fetchone()
+            )
+
+            if current_level is None:
+                return {
+                    "current": None,
+                    "next": None,
+                }
+
+            # ------------------------------------------------
+            # NEXT LEVEL
+            # ------------------------------------------------
+
+            cursor.execute(
+                """
+                SELECT
+                    id,
+                    code,
+                    title,
+                    sort_order
+
+                FROM course_levels
+
+                WHERE sort_order > ?
+
+                ORDER BY sort_order ASC
+
+                LIMIT 1
+                """,
+                (
+                    current_level[
+                        "sort_order"
+                    ],
+                ),
+            )
+
+            next_level = (
+                cursor.fetchone()
+            )
+
+            return {
+                "current": (
+                    dict(current_level)
+                    if current_level
+                    else None
+                ),
+                "next": (
+                    dict(next_level)
+                    if next_level
+                    else None
+                ),
+            }
+
+        finally:
+            connection.close()
+
+    def get_success_transition_text(
+        self,
+    ) -> str:
+        """
+        Natijada avtomatik:
+
+        LEVEL 1 ochildi.
+        LEVEL 2 ochildi.
+        LEVEL 3 ochildi.
+        ...
+
+        deb ko'rsatadi.
+        """
+
+        try:
+            transition = (
+                self.get_level_transition_info()
+            )
+
+            next_level = transition.get(
+                "next"
+            )
+
+            if next_level:
+                next_label = (
+                    self.format_level_code(
+                        next_level.get(
+                            "code",
+                            "",
+                        )
+                    )
+                )
+
+                next_title = (
+                    next_level.get(
+                        "title",
+                        "",
+                    )
+                )
+
+                if next_title:
+                    return (
+                        f"{next_label} ochildi.\n"
+                        f"{next_title}"
+                    )
+
+                return (
+                    f"{next_label} ochildi."
+                )
+
+            return (
+                "TABRIKLAYMIZ!\n"
+                "Siz akademiyaning oxirgi LEVELini "
+                "ham muvaffaqiyatli yakunladingiz."
+            )
+
+        except Exception:
+            # Database'dan transition matni olinmasa ham
+            # imtihon natijasini buzmaymiz.
+            return (
+                "Keyingi bosqich uchun "
+                "progress yangilandi."
+            )
+
+    # ========================================================
+    # LOAD EXAM
+    # ========================================================
+
     def load_exam(self):
-        self.questions = get_exam_questions(
-            self.exam["id"]
+        self.questions = (
+            get_exam_questions(
+                self.exam["id"]
+            )
         )
 
         self.answer_groups = []
 
         self.build_ui()
+
+    # ========================================================
+    # UI
+    # ========================================================
 
     def build_ui(self):
         central = QWidget()
@@ -290,7 +543,7 @@ class ExamWindow(QMainWindow):
         )
 
         # ====================================================
-        # INFO
+        # INFO BADGES
         # ====================================================
 
         info_layout = QHBoxLayout()
@@ -304,7 +557,8 @@ class ExamWindow(QMainWindow):
         )
 
         passing_badge = QLabel(
-            f"O'tish bali: {self.exam['passing_score']}%"
+            f"O'tish bali: "
+            f"{self.exam['passing_score']}%"
         )
 
         passing_badge.setObjectName(
@@ -331,25 +585,44 @@ class ExamWindow(QMainWindow):
             xp_badge
         )
 
+        if self.is_master_mode():
+            master_badge = QLabel(
+                "★ MASTER TEST MODE"
+            )
+
+            master_badge.setObjectName(
+                "masterBadge"
+            )
+
+            info_layout.addWidget(
+                master_badge
+            )
+
         info_layout.addStretch()
 
         root.addLayout(
             info_layout
         )
 
-        progress = QProgressBar()
+        # ====================================================
+        # PROGRESS
+        # ====================================================
 
-        progress.setRange(
+        self.progress_bar = (
+            QProgressBar()
+        )
+
+        self.progress_bar.setRange(
             0,
             100,
         )
 
-        progress.setValue(
+        self.progress_bar.setValue(
             0
         )
 
         root.addWidget(
-            progress
+            self.progress_bar
         )
 
         # ====================================================
@@ -383,13 +656,33 @@ class ExamWindow(QMainWindow):
             16
         )
 
+        if not self.questions:
+            no_questions = QLabel(
+                "Bu Final Exam uchun "
+                "savollar topilmadi."
+            )
+
+            no_questions.setObjectName(
+                "examSubtitle"
+            )
+
+            no_questions.setWordWrap(
+                True
+            )
+
+            content_layout.addWidget(
+                no_questions
+            )
+
         for index, question in enumerate(
             self.questions,
             start=1,
         ):
-            card = self.create_question_card(
-                index=index,
-                question=question,
+            card = (
+                self.create_question_card(
+                    index=index,
+                    question=question,
+                )
             )
 
             content_layout.addWidget(
@@ -461,6 +754,11 @@ class ExamWindow(QMainWindow):
             self.check_exam
         )
 
+        if not self.questions:
+            self.submit_button.setEnabled(
+                False
+            )
+
         button_layout.addWidget(
             self.retry_button
         )
@@ -472,6 +770,10 @@ class ExamWindow(QMainWindow):
         root.addLayout(
             button_layout
         )
+
+    # ========================================================
+    # QUESTION CARD
+    # ========================================================
 
     def create_question_card(
         self,
@@ -541,9 +843,12 @@ class ExamWindow(QMainWindow):
             if option_index < len(
                 display_letters
             ):
-                letter = display_letters[
-                    option_index
-                ]
+                letter = (
+                    display_letters[
+                        option_index
+                    ]
+                )
+
             else:
                 letter = str(
                     option_index + 1
@@ -561,6 +866,10 @@ class ExamWindow(QMainWindow):
                         "is_correct"
                     ]
                 ),
+            )
+
+            button.toggled.connect(
+                self.update_progress
             )
 
             group.addButton(
@@ -597,11 +906,50 @@ class ExamWindow(QMainWindow):
                 "group": group,
                 "buttons": buttons,
                 "card": card,
-                "explanation": explanation_label,
+                "explanation": (
+                    explanation_label
+                ),
             }
         )
 
         return card
+
+    # ========================================================
+    # PROGRESS
+    # ========================================================
+
+    def update_progress(self):
+        if not self.answer_groups:
+            self.progress_bar.setValue(
+                0
+            )
+
+            return
+
+        answered = 0
+
+        for item in self.answer_groups:
+            if (
+                item["group"].checkedButton()
+                is not None
+            ):
+                answered += 1
+
+        progress = round(
+            (
+                answered
+                / len(self.answer_groups)
+            )
+            * 100
+        )
+
+        self.progress_bar.setValue(
+            progress
+        )
+
+    # ========================================================
+    # CHECK EXAM
+    # ========================================================
 
     def check_exam(self):
         if not self.questions:
@@ -613,19 +961,25 @@ class ExamWindow(QMainWindow):
 
             return
 
-        # Barcha savollarga javob berilganmi?
-        for item in self.answer_groups:
+        # ====================================================
+        # ALL QUESTIONS ANSWERED?
+        # ====================================================
 
+        for item in self.answer_groups:
             if (
-                item["group"].checkedButton()
+                item[
+                    "group"
+                ].checkedButton()
                 is None
             ):
                 QMessageBox.warning(
                     self,
                     "Javob yetishmayapti",
                     (
-                        "Barcha savollarga javob bering.\n\n"
-                        "Javobsiz savol qoldirmang."
+                        "Barcha savollarga "
+                        "javob bering.\n\n"
+                        "Javobsiz savol "
+                        "qoldirmang."
                     ),
                 )
 
@@ -634,9 +988,15 @@ class ExamWindow(QMainWindow):
         correct_count = 0
         wrong_count = 0
 
+        # ====================================================
+        # CHECK ANSWERS
+        # ====================================================
+
         for item in self.answer_groups:
             selected = (
-                item["group"].checkedButton()
+                item[
+                    "group"
+                ].checkedButton()
             )
 
             selected_correct = bool(
@@ -645,9 +1005,11 @@ class ExamWindow(QMainWindow):
                 )
             )
 
-            # Natijadan keyin javoblarni
-            # o'zgartirib bo'lmaydi.
-            for button in item["buttons"]:
+            # Natijadan keyin
+            # javob o'zgarmaydi.
+            for button in item[
+                "buttons"
+            ]:
                 button.setEnabled(
                     False
                 )
@@ -672,7 +1034,18 @@ class ExamWindow(QMainWindow):
             else:
                 wrong_count += 1
 
-                card = item["card"]
+                selected.setStyleSheet(
+                    """
+                    QRadioButton {
+                        color: #FCA5A5;
+                        font-weight: 700;
+                    }
+                    """
+                )
+
+                card = item[
+                    "card"
+                ]
 
                 card.setObjectName(
                     "wrongCard"
@@ -687,7 +1060,9 @@ class ExamWindow(QMainWindow):
                 )
 
                 explanation = (
-                    item["question"].get(
+                    item[
+                        "question"
+                    ].get(
                         "explanation",
                         "",
                     )
@@ -717,12 +1092,20 @@ class ExamWindow(QMainWindow):
             * 100
         )
 
-        passed = (
-            score
-            >= self.exam[
+        passing_score = int(
+            self.exam[
                 "passing_score"
             ]
         )
+
+        passed = (
+            score
+            >= passing_score
+        )
+
+        # ====================================================
+        # SAVE RESULT
+        # ====================================================
 
         save_level_exam_attempt(
             user_id=self.user["id"],
@@ -731,6 +1114,10 @@ class ExamWindow(QMainWindow):
             correct_answers=correct_count,
             total_questions=total,
             passed=passed,
+        )
+
+        self.progress_bar.setValue(
+            100
         )
 
         self.submit_button.hide()
@@ -751,6 +1138,10 @@ class ExamWindow(QMainWindow):
                 total=total,
             )
 
+    # ========================================================
+    # SUCCESS
+    # ========================================================
+
     def show_success(
         self,
         score: int,
@@ -762,14 +1153,39 @@ class ExamWindow(QMainWindow):
             "successResult"
         )
 
+        transition_text = (
+            self.get_success_transition_text()
+        )
+
+        master_note = ""
+
+        if self.is_master_mode():
+            master_note = (
+                "\n\n"
+                "★ MASTER TEST MODE\n"
+                "Bu natija developer/test "
+                "akkauntida bajarildi."
+            )
+
         self.result_label.setText(
             (
-                "🏆 LEVEL MUVAFFAQIYATLI YAKUNLANDI\n\n"
+                "🏆 LEVEL MUVAFFAQIYATLI "
+                "YAKUNLANDI\n\n"
+
                 f"Natija: {score}%\n"
-                f"To'g'ri: {correct_count}/{total}\n"
-                f"Noto'g'ri: {wrong_count}/{total}\n\n"
-                f"Talab: {self.exam['passing_score']}%\n\n"
-                "LEVEL 1 ochildi."
+
+                f"To'g'ri: "
+                f"{correct_count}/{total}\n"
+
+                f"Noto'g'ri: "
+                f"{wrong_count}/{total}\n\n"
+
+                f"Talab: "
+                f"{self.exam['passing_score']}%\n\n"
+
+                f"{transition_text}"
+
+                f"{master_note}"
             )
         )
 
@@ -791,14 +1207,24 @@ class ExamWindow(QMainWindow):
             "submitButton"
         )
 
+        continue_button.setCursor(
+            Qt.CursorShape.PointingHandCursor
+        )
+
         continue_button.clicked.connect(
             self.finish_success
         )
 
         self.centralWidget().layout().addWidget(
             continue_button,
-            alignment=Qt.AlignmentFlag.AlignRight,
+            alignment=(
+                Qt.AlignmentFlag.AlignRight
+            ),
         )
+
+    # ========================================================
+    # FAILURE
+    # ========================================================
 
     def show_failure(
         self,
@@ -811,16 +1237,40 @@ class ExamWindow(QMainWindow):
             "failResult"
         )
 
+        missing_score = max(
+            0,
+            int(
+                self.exam[
+                    "passing_score"
+                ]
+            )
+            - score,
+        )
+
         self.result_label.setText(
             (
-                "IMTIHON HALI TOPSHIRILMADI\n\n"
+                "IMTIHON HALI "
+                "TOPSHIRILMADI\n\n"
+
                 f"Natija: {score}%\n"
-                f"To'g'ri: {correct_count}/{total}\n"
-                f"Noto'g'ri: {wrong_count}/{total}\n\n"
-                f"Kamida {self.exam['passing_score']}% kerak.\n\n"
-                "Xato savollardagi tushuntirishlarni "
-                "ko'rib chiqing va yangi variant bilan "
-                "qayta urinib ko'ring."
+
+                f"To'g'ri: "
+                f"{correct_count}/{total}\n"
+
+                f"Noto'g'ri: "
+                f"{wrong_count}/{total}\n\n"
+
+                f"Kamida "
+                f"{self.exam['passing_score']}% "
+                f"kerak.\n"
+
+                f"Yetishmayapti: "
+                f"{missing_score} foiz punkt.\n\n"
+
+                "Xato savollardagi "
+                "tushuntirishlarni ko'rib "
+                "chiqing va yangi variant "
+                "bilan qayta urinib ko'ring."
             )
         )
 
@@ -836,8 +1286,16 @@ class ExamWindow(QMainWindow):
 
         self.retry_button.show()
 
+    # ========================================================
+    # RETRY
+    # ========================================================
+
     def retry_exam(self):
         self.load_exam()
+
+    # ========================================================
+    # FINISH
+    # ========================================================
 
     def finish_success(self):
         self.exam_passed.emit()
