@@ -68,6 +68,14 @@ def get_lessons_for_module(module_id: int):
 
 
 def initialize_user_progress(user_id: int):
+    """
+    Foydalanuvchi uchun barcha mavjud darslarning
+    progress yozuvlarini yaratadi.
+
+    Faqat eng birinchi dars ochiq bo'ladi.
+    Qolganlari locked holatda turadi.
+    """
+
     connection = get_connection()
 
     try:
@@ -75,12 +83,16 @@ def initialize_user_progress(user_id: int):
 
         cursor.execute(
             """
-            SELECT lessons.id
+            SELECT
+                lessons.id
             FROM lessons
+
             INNER JOIN course_modules
                 ON course_modules.id = lessons.module_id
+
             INNER JOIN course_levels
                 ON course_levels.id = course_modules.level_id
+
             ORDER BY
                 course_levels.sort_order ASC,
                 course_modules.sort_order ASC,
@@ -146,10 +158,13 @@ def get_user_course_stats(user_id: int):
 
         cursor.execute(
             """
-            SELECT COALESCE(SUM(lessons.xp_reward), 0) AS xp
+            SELECT
+                COALESCE(SUM(lessons.xp_reward), 0) AS xp
             FROM lesson_progress
+
             INNER JOIN lessons
                 ON lessons.id = lesson_progress.lesson_id
+
             WHERE lesson_progress.user_id = ?
               AND lesson_progress.status = 'completed'
             """,
@@ -158,9 +173,9 @@ def get_user_course_stats(user_id: int):
 
         xp = cursor.fetchone()["xp"]
 
-        progress_percent = 0
-
-        if total > 0:
+        if total == 0:
+            progress_percent = 0
+        else:
             progress_percent = round(
                 (completed / total) * 100
             )
@@ -235,6 +250,11 @@ def complete_lesson(
     user_id: int,
     lesson_id: int,
 ) -> dict:
+    """
+    Darsni tugatilgan deb belgilaydi
+    va keyingi darsni avtomatik ochadi.
+    """
+
     connection = get_connection()
 
     try:
@@ -263,7 +283,7 @@ def complete_lesson(
         if progress is None:
             return {
                 "success": False,
-                "message": "Progress topilmadi.",
+                "message": "Dars progressi topilmadi.",
             }
 
         if progress["status"] == "completed":
@@ -300,6 +320,7 @@ def complete_lesson(
             """
             SELECT
                 lessons.id
+
             FROM lessons
 
             INNER JOIN course_modules
@@ -307,78 +328,26 @@ def complete_lesson(
 
             INNER JOIN course_levels
                 ON course_levels.id = course_modules.level_id
-
-            WHERE lessons.id != ?
 
             ORDER BY
                 course_levels.sort_order ASC,
                 course_modules.sort_order ASC,
                 lessons.sort_order ASC
             """
-            ,
-            (lesson_id,),
-        )
-
-        all_other_lessons = cursor.fetchall()
-
-        current_order_query = """
-            SELECT
-                course_levels.sort_order AS level_order,
-                course_modules.sort_order AS module_order,
-                lessons.sort_order AS lesson_order
-            FROM lessons
-
-            INNER JOIN course_modules
-                ON course_modules.id = lessons.module_id
-
-            INNER JOIN course_levels
-                ON course_levels.id = course_modules.level_id
-
-            WHERE lessons.id = ?
-        """
-
-        cursor.execute(
-            current_order_query,
-            (lesson_id,),
-        )
-
-        current_order = cursor.fetchone()
-
-        cursor.execute(
-            """
-            SELECT
-                lessons.id,
-                course_levels.sort_order AS level_order,
-                course_modules.sort_order AS module_order,
-                lessons.sort_order AS lesson_order
-            FROM lessons
-
-            INNER JOIN course_modules
-                ON course_modules.id = lessons.module_id
-
-            INNER JOIN course_levels
-                ON course_levels.id = course_modules.level_id
-
-            ORDER BY
-                level_order ASC,
-                module_order ASC,
-                lesson_order ASC
-            """
         )
 
         ordered_lessons = cursor.fetchall()
 
         next_lesson_id = None
-
-        found_current = False
+        current_found = False
 
         for row in ordered_lessons:
-            if found_current:
+            if current_found:
                 next_lesson_id = row["id"]
                 break
 
             if row["id"] == lesson_id:
-                found_current = True
+                current_found = True
 
         if next_lesson_id is not None:
             cursor.execute(
