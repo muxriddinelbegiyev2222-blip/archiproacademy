@@ -5,15 +5,44 @@ from database.database import get_connection
 
 
 # ============================================================
+# FINAL EXAM CONFIGURATION
+# ============================================================
+
+LEVEL_EXAM_CONFIGS = [
+    {
+        "level_code": "LEVEL_00",
+        "title": "LEVEL 0 YAKUNIY IMTIHON",
+        "description": (
+            "Arxitektura bo'yicha boshlang'ich bilimlarni "
+            "tekshiruvchi yakuniy imtihon."
+        ),
+        "question_count": 20,
+        "passing_score": 85,
+        "xp_reward": 200,
+    },
+    {
+        "level_code": "LEVEL_01",
+        "title": "LEVEL 1 YAKUNIY IMTIHON",
+        "description": (
+            "Kompozitsiya, proporsiya, ritm, simmetriya, "
+            "asimmetriya, forma, hajm va arxitektura "
+            "uslublari bo'yicha yakuniy bilim nazorati."
+        ),
+        "question_count": 30,
+        "passing_score": 85,
+        "xp_reward": 300,
+    },
+]
+
+
+# ============================================================
 # EXAM SEED
 # ============================================================
 
 def seed_level_exams():
     """
-    Level 0 uchun yakuniy imtihon yaratadi.
-
-    Keyinchalik Level 1, Level 2 va boshqa
-    Level imtihonlari ham shu tizimga qo'shiladi.
+    LEVEL_EXAM_CONFIGS ichidagi barcha
+    Final Exam'larni database'ga yaratadi yoki yangilaydi.
     """
 
     connection = get_connection()
@@ -21,46 +50,58 @@ def seed_level_exams():
     try:
         cursor = connection.cursor()
 
-        cursor.execute(
-            """
-            SELECT id
-            FROM course_levels
-            WHERE code = 'LEVEL_00'
-            LIMIT 1
-            """
-        )
+        for config in LEVEL_EXAM_CONFIGS:
 
-        level = cursor.fetchone()
-
-        if level is None:
-            return
-
-        cursor.execute(
-            """
-            INSERT OR IGNORE INTO level_exams (
-                level_id,
-                title,
-                description,
-                question_count,
-                passing_score,
-                xp_reward,
-                is_active
-            )
-            VALUES (?, ?, ?, ?, ?, ?, ?)
-            """,
-            (
-                level["id"],
-                "LEVEL 0 YAKUNIY IMTIHON",
+            cursor.execute(
+                """
+                SELECT id
+                FROM course_levels
+                WHERE code = ?
+                LIMIT 1
+                """,
                 (
-                    "Arxitektura bo'yicha boshlang'ich "
-                    "bilimlarni tekshiruvchi yakuniy imtihon."
+                    config["level_code"],
                 ),
-                20,
-                85,
-                200,
-                1,
-            ),
-        )
+            )
+
+            level = cursor.fetchone()
+
+            if level is None:
+                continue
+
+            level_id = level["id"]
+
+            cursor.execute(
+                """
+                INSERT INTO level_exams (
+                    level_id,
+                    title,
+                    description,
+                    question_count,
+                    passing_score,
+                    xp_reward,
+                    is_active
+                )
+                VALUES (?, ?, ?, ?, ?, ?, 1)
+
+                ON CONFLICT(level_id)
+                DO UPDATE SET
+                    title = excluded.title,
+                    description = excluded.description,
+                    question_count = excluded.question_count,
+                    passing_score = excluded.passing_score,
+                    xp_reward = excluded.xp_reward,
+                    is_active = excluded.is_active
+                """,
+                (
+                    level_id,
+                    config["title"],
+                    config["description"],
+                    config["question_count"],
+                    config["passing_score"],
+                    config["xp_reward"],
+                ),
+            )
 
         connection.commit()
 
@@ -78,8 +119,10 @@ def initialize_user_levels(
     """
     Foydalanuvchi uchun barcha Level progresslarini yaratadi.
 
-    LEVEL 0 boshidan available.
+    LEVEL 0 boshida available.
     Qolgan Level'lar locked.
+
+    Mavjud progress yozuvlari o'zgartirilmaydi.
     """
 
     connection = get_connection()
@@ -179,7 +222,7 @@ def get_level_exam(
 
 
 # ============================================================
-# CHECK ALL LESSONS
+# CHECK LEVEL LESSONS
 # ============================================================
 
 def are_all_level_lessons_completed(
@@ -188,7 +231,7 @@ def are_all_level_lessons_completed(
 ) -> bool:
     """
     Level ichidagi barcha majburiy darslar
-    tugallanganligini tekshiradi.
+    tugallanganmi yoki yo'qmi tekshiradi.
     """
 
     connection = get_connection()
@@ -198,7 +241,8 @@ def are_all_level_lessons_completed(
 
         cursor.execute(
             """
-            SELECT COUNT(*) AS total
+            SELECT
+                COUNT(*) AS total
 
             FROM lessons
 
@@ -223,7 +267,8 @@ def are_all_level_lessons_completed(
 
         cursor.execute(
             """
-            SELECT COUNT(*) AS completed
+            SELECT
+                COUNT(*) AS completed
 
             FROM lesson_progress
 
@@ -251,8 +296,7 @@ def are_all_level_lessons_completed(
         ]
 
         return (
-            completed
-            == total
+            completed == total
         )
 
     finally:
@@ -260,7 +304,7 @@ def are_all_level_lessons_completed(
 
 
 # ============================================================
-# EXAM QUESTIONS
+# GET EXAM QUESTIONS
 # ============================================================
 
 def get_exam_questions(
@@ -268,7 +312,11 @@ def get_exam_questions(
 ):
     """
     Shu Level ichidagi barcha mini-test savollaridan
-    final imtihon uchun tasodifiy savollar tanlaydi.
+    Final Exam uchun tasodifiy savollar tanlaydi.
+
+    Har urinishda:
+    - savollar aralashadi;
+    - javob variantlari ham aralashadi.
     """
 
     connection = get_connection()
@@ -281,8 +329,11 @@ def get_exam_questions(
             SELECT
                 question_count,
                 level_id
+
             FROM level_exams
+
             WHERE id = ?
+
             LIMIT 1
             """,
             (
@@ -353,7 +404,9 @@ def get_exam_questions(
                     id,
                     option_text,
                     is_correct
+
                 FROM quiz_options
+
                 WHERE question_id = ?
                 """,
                 (
@@ -385,7 +438,7 @@ def get_exam_questions(
 
 
 # ============================================================
-# OPEN FIRST LESSON OF LEVEL
+# UNLOCK FIRST LESSON OF NEXT LEVEL
 # ============================================================
 
 def unlock_first_lesson_of_level(
@@ -394,11 +447,8 @@ def unlock_first_lesson_of_level(
     level_id: int,
 ):
     """
-    Berilgan Level ichidagi eng birinchi darsni
-    foydalanuvchi uchun available qiladi.
-
-    Level'ning o'zi ochilgan bo'lsa ham,
-    birinchi dars locked qolib ketmasligi uchun kerak.
+    Level ochilganda uning eng birinchi darsini
+    ham available qiladi.
     """
 
     cursor.execute(
@@ -429,15 +479,30 @@ def unlock_first_lesson_of_level(
         cursor.fetchone()
     )
 
+    # LEVEL ichida hali dars yaratilmagan bo'lsa,
+    # hech narsa qilmaymiz.
     if first_lesson is None:
         return
 
-    lesson_id = first_lesson[
-        "id"
-    ]
+    lesson_id = (
+        first_lesson["id"]
+    )
 
-    # Agar progress yozuvi mavjud bo'lsa,
-    # locked -> available.
+    cursor.execute(
+        """
+        INSERT OR IGNORE INTO lesson_progress (
+            user_id,
+            lesson_id,
+            status
+        )
+        VALUES (?, ?, 'available')
+        """,
+        (
+            user_id,
+            lesson_id,
+        ),
+    )
+
     cursor.execute(
         """
         UPDATE lesson_progress
@@ -454,26 +519,9 @@ def unlock_first_lesson_of_level(
         ),
     )
 
-    # Agar qandaydir sabab bilan progress yozuvi
-    # hali yaratilmagan bo'lsa, yaratamiz.
-    cursor.execute(
-        """
-        INSERT OR IGNORE INTO lesson_progress (
-            user_id,
-            lesson_id,
-            status
-        )
-        VALUES (?, ?, 'available')
-        """,
-        (
-            user_id,
-            lesson_id,
-        ),
-    )
-
 
 # ============================================================
-# SAVE FINAL EXAM
+# SAVE FINAL EXAM ATTEMPT
 # ============================================================
 
 def save_level_exam_attempt(
@@ -487,11 +535,10 @@ def save_level_exam_attempt(
     """
     Final Exam natijasini saqlaydi.
 
-    Agar foydalanuvchi o'tsa:
-
-    1. Hozirgi Level completed bo'ladi.
-    2. Keyingi Level available bo'ladi.
-    3. Keyingi Level'ning birinchi darsi available bo'ladi.
+    O'tganda:
+    1. Hozirgi Level completed.
+    2. Keyingi Level available.
+    3. Keyingi Level'ning birinchi darsi available.
     """
 
     connection = get_connection()
@@ -500,7 +547,7 @@ def save_level_exam_attempt(
         cursor = connection.cursor()
 
         # ----------------------------------------------------
-        # ATTEMPT
+        # ATTEMPT HISTORY
         # ----------------------------------------------------
 
         cursor.execute(
@@ -526,15 +573,18 @@ def save_level_exam_attempt(
         )
 
         # ----------------------------------------------------
-        # EXAM LEVEL
+        # GET CURRENT LEVEL
         # ----------------------------------------------------
 
         cursor.execute(
             """
             SELECT
                 level_id
+
             FROM level_exams
+
             WHERE id = ?
+
             LIMIT 1
             """,
             (
@@ -548,12 +598,12 @@ def save_level_exam_attempt(
             connection.commit()
             return
 
-        level_id = exam[
-            "level_id"
-        ]
+        level_id = (
+            exam["level_id"]
+        )
 
         # ----------------------------------------------------
-        # BEST SCORE + ATTEMPTS
+        # UPDATE ATTEMPTS + BEST SCORE
         # ----------------------------------------------------
 
         cursor.execute(
@@ -592,7 +642,7 @@ def save_level_exam_attempt(
                 timespec="seconds"
             )
 
-            # Hozirgi Level completed.
+            # Current Level completed.
             cursor.execute(
                 """
                 UPDATE user_level_progress
@@ -611,14 +661,17 @@ def save_level_exam_attempt(
                 ),
             )
 
-            # Hozirgi Level tartibini olamiz.
+            # Current Level sort order.
             cursor.execute(
                 """
                 SELECT
                     id,
                     sort_order
+
                 FROM course_levels
+
                 WHERE id = ?
+
                 LIMIT 1
                 """,
                 (
@@ -632,13 +685,15 @@ def save_level_exam_attempt(
 
             if current_level is not None:
 
-                # Keyingi Level.
+                # Next Level.
                 cursor.execute(
                     """
                     SELECT
                         id,
                         code,
+                        title,
                         sort_order
+
                     FROM course_levels
 
                     WHERE sort_order > ?
@@ -665,7 +720,7 @@ def save_level_exam_attempt(
                         next_level["id"]
                     )
 
-                    # Keyingi Level available.
+                    # Next Level status.
                     cursor.execute(
                         """
                         UPDATE user_level_progress
@@ -682,8 +737,25 @@ def save_level_exam_attempt(
                         ),
                     )
 
-                    # Eng muhim yangi qism:
-                    # keyingi Level birinchi darsi ham ochiladi.
+                    # Agar progress yozuvi qandaydir
+                    # sabab bilan bo'lmasa, yaratamiz.
+                    cursor.execute(
+                        """
+                        INSERT OR IGNORE INTO user_level_progress (
+                            user_id,
+                            level_id,
+                            status
+                        )
+                        VALUES (?, ?, 'available')
+                        """,
+                        (
+                            user_id,
+                            next_level_id,
+                        ),
+                    )
+
+                    # Next Level'da dars mavjud bo'lsa,
+                    # birinchi darsni ochamiz.
                     unlock_first_lesson_of_level(
                         cursor=cursor,
                         user_id=user_id,
