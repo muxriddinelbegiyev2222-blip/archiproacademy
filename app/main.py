@@ -3,6 +3,8 @@ import sys
 from PySide6.QtWidgets import QApplication
 
 from auth.auth_service import authenticate_user, create_user
+from courses.course_service import initialize_user_progress
+from courses.seed_courses import seed_course_structure
 from database.database import initialize_database
 from ui.dashboard_window import DashboardWindow
 from ui.login_window import LoginWindow
@@ -10,13 +12,16 @@ from ui.login_window import LoginWindow
 
 def prepare_application():
     """
-    Dastur ishga tushishidan oldin lokal database tayyorlanadi.
+    ARCHIPRO UZ ishga tushishidan oldin
+    database va o'quv tizimini tayyorlaydi.
     """
 
     initialize_database()
 
-    # Bu foydalanuvchi faqat ishlab chiqish davri uchun.
-    # Sotuv versiyasida bu olib tashlanadi.
+    seed_course_structure()
+
+    # Development account.
+    # Sotuv versiyasida olib tashlanadi.
     create_user(
         username="admin",
         password="12345",
@@ -35,7 +40,6 @@ def main():
 
     login_window = LoginWindow()
 
-    # Dashboard reference saqlanishi kerak.
     windows = {
         "dashboard": None,
     }
@@ -57,7 +61,13 @@ def main():
 
         login_window.error_label.clear()
 
-        dashboard = DashboardWindow(user)
+        initialize_user_progress(
+            user["id"]
+        )
+
+        dashboard = DashboardWindow(
+            user
+        )
 
         windows["dashboard"] = dashboard
 
