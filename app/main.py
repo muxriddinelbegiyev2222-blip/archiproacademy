@@ -65,6 +65,7 @@ from courses.level05_module07 import seed_level05_module07
 from courses.level05_module08 import seed_level05_module08
 from courses.level05_module09 import seed_level05_module09
 from courses.level05_module10 import seed_level05_module10
+from courses.level05_exam import seed_level05_exam
 
 from courses.quiz_service import seed_quizzes
 from courses.seed_courses import seed_course_structure
@@ -80,10 +81,16 @@ def prepare_application():
 
     seed_course_structure()
 
+    # ========================================================
     # LEVEL 0
+    # ========================================================
+
     seed_level00_extra()
 
+    # ========================================================
     # LEVEL 1
+    # ========================================================
+
     seed_level01_lessons()
     seed_level01_module02()
     seed_level01_module03()
@@ -91,7 +98,10 @@ def prepare_application():
     seed_level01_module05()
     seed_level01_module06()
 
+    # ========================================================
     # LEVEL 2
+    # ========================================================
+
     seed_level02_module01()
     seed_level02_module02()
     seed_level02_module03()
@@ -103,7 +113,10 @@ def prepare_application():
     seed_level02_module09()
     seed_level02_module10()
 
+    # ========================================================
     # LEVEL 3
+    # ========================================================
+
     seed_level03_module01()
     seed_level03_module02()
     seed_level03_module03()
@@ -113,7 +126,10 @@ def prepare_application():
     seed_level03_module07()
     seed_level03_module08()
 
+    # ========================================================
     # LEVEL 4
+    # ========================================================
+
     seed_level04_module01()
     seed_level04_module02()
     seed_level04_module03()
@@ -123,7 +139,10 @@ def prepare_application():
     seed_level04_module07()
     seed_level04_module08()
 
+    # ========================================================
     # LEVEL 5
+    # ========================================================
+
     seed_level05_module01()
     seed_level05_module02()
     seed_level05_module03()
@@ -135,17 +154,27 @@ def prepare_application():
     seed_level05_module09()
     seed_level05_module10()
 
+    # ========================================================
     # QUIZZES
+    # ========================================================
+
     seed_quizzes()
 
+    # ========================================================
     # FINAL EXAMS
+    # ========================================================
+
     seed_level_exams()
     seed_level02_exam()
     seed_level03_exam()
     seed_level04_exam()
+    seed_level05_exam()
 
+    # ========================================================
     # DEVELOPMENT MASTER ACCOUNT
-    # Sotuv versiyasida olib tashlanadi.
+    # SOTUV VERSIYASIDA OLIB TASHLANADI
+    # ========================================================
+
     create_user(
         username="admin",
         password="12345",
