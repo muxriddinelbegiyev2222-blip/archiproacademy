@@ -11,16 +11,24 @@ from PySide6.QtWidgets import (
 )
 
 from courses.lesson_content import get_lesson_content
+from ui.quiz_window import QuizWindow
 
 
 class LessonWindow(QMainWindow):
     lesson_completed = Signal(int)
 
-    def __init__(self, lesson: dict):
+    def __init__(
+        self,
+        lesson: dict,
+        user: dict,
+    ):
         super().__init__()
 
         self.lesson = lesson
+        self.user = user
         self.lesson_id = lesson["id"]
+
+        self.quiz_window = None
 
         self.setWindowTitle(
             f"ARCHIPRO UZ - {lesson.get('title', 'Dars')}"
@@ -54,10 +62,6 @@ class LessonWindow(QMainWindow):
             QScrollArea {
                 background-color: transparent;
                 border: none;
-            }
-
-            QScrollArea > QWidget > QWidget {
-                background-color: #0B1220;
             }
 
             QLabel#lessonLevel {
@@ -122,10 +126,6 @@ class LessonWindow(QMainWindow):
                 font-weight: 600;
             }
 
-            QPushButton#backButton:hover {
-                background-color: #334155;
-            }
-
             QPushButton#completeButton {
                 background-color: #2563EB;
                 color: #FFFFFF;
@@ -138,15 +138,6 @@ class LessonWindow(QMainWindow):
 
             QPushButton#completeButton:hover {
                 background-color: #3B82F6;
-            }
-
-            QPushButton#completeButton:pressed {
-                background-color: #1D4ED8;
-            }
-
-            QFrame#bottomBar {
-                background-color: #0F172A;
-                border-top: 1px solid #1E293B;
             }
             """
         )
@@ -173,10 +164,6 @@ class LessonWindow(QMainWindow):
             16
         )
 
-        # =========================
-        # TOP BAR
-        # =========================
-
         top_bar = QHBoxLayout()
 
         back_button = QPushButton(
@@ -185,10 +172,6 @@ class LessonWindow(QMainWindow):
 
         back_button.setObjectName(
             "backButton"
-        )
-
-        back_button.setCursor(
-            Qt.CursorShape.PointingHandCursor
         )
 
         back_button.clicked.connect(
@@ -211,13 +194,7 @@ class LessonWindow(QMainWindow):
         )
 
         xp_label.setStyleSheet(
-            """
-            QLabel {
-                color: #FBBF24;
-                font-size: 14px;
-                font-weight: 700;
-            }
-            """
+            "color: #FBBF24; font-size: 14px; font-weight: 700;"
         )
 
         top_bar.addWidget(
@@ -227,10 +204,6 @@ class LessonWindow(QMainWindow):
         root_layout.addLayout(
             top_bar
         )
-
-        # =========================
-        # HEADER
-        # =========================
 
         level_label = QLabel(
             self.lesson.get(
@@ -263,32 +236,13 @@ class LessonWindow(QMainWindow):
             "",
         )
 
-        lesson_type = self.lesson.get(
-            "lesson_type",
-            "theory",
-        )
-
         minutes = self.lesson.get(
             "estimated_minutes",
             10,
         )
 
-        type_names = {
-            "theory": "NAZARIYA",
-            "practice": "AMALIYOT",
-            "quiz": "TEST",
-            "project": "LOYIHA",
-        }
-
-        readable_type = type_names.get(
-            lesson_type,
-            lesson_type.upper(),
-        )
-
         meta_label = QLabel(
-            f"{module_title}   •   "
-            f"{readable_type}   •   "
-            f"{minutes} daqiqa"
+            f"{module_title}   •   {minutes} daqiqa"
         )
 
         meta_label.setObjectName(
@@ -306,10 +260,6 @@ class LessonWindow(QMainWindow):
         root_layout.addWidget(
             meta_label
         )
-
-        # =========================
-        # CONTENT
-        # =========================
 
         scroll = QScrollArea()
 
@@ -338,36 +288,30 @@ class LessonWindow(QMainWindow):
             16
         )
 
-        lesson_code = self.lesson.get(
-            "code",
-            "",
-        )
-
         lesson_content = get_lesson_content(
-            lesson_code
+            self.lesson.get(
+                "code",
+                "",
+            )
         )
 
         if lesson_content:
             for section in lesson_content:
-                section_type = section.get(
-                    "type",
-                    "normal",
-                )
-
-                object_name = self.get_card_object_name(
-                    section_type
-                )
-
                 card = self.create_card(
-                    title=section.get(
+                    section.get(
                         "title",
                         "",
                     ),
-                    text=section.get(
+                    section.get(
                         "text",
                         "",
                     ),
-                    object_name=object_name,
+                    self.get_card_object_name(
+                        section.get(
+                            "type",
+                            "normal",
+                        )
+                    ),
                 )
 
                 scroll_layout.addWidget(
@@ -380,7 +324,7 @@ class LessonWindow(QMainWindow):
                     "Dars haqida",
                     self.lesson.get(
                         "summary",
-                        "Dars kontenti tayyorlanmoqda.",
+                        "Kontent tayyorlanmoqda.",
                     ),
                     "contentCard",
                 )
@@ -397,43 +341,30 @@ class LessonWindow(QMainWindow):
             1,
         )
 
-        # =========================
-        # BOTTOM
-        # =========================
-
         bottom_layout = QHBoxLayout()
 
-        hint_label = QLabel(
-            "Darsni tushunganingizdan keyin davom eting."
+        hint = QLabel(
+            "Darsdan keyin qisqa bilim nazorati mavjud."
         )
 
-        hint_label.setStyleSheet(
-            """
-            QLabel {
-                color: #64748B;
-                font-size: 12px;
-            }
-            """
+        hint.setStyleSheet(
+            "color: #64748B; font-size: 12px;"
         )
 
         self.complete_button = QPushButton(
-            "DARSNI TUGATISH  →"
+            "MINI-TESTNI BOSHLASH  →"
         )
 
         self.complete_button.setObjectName(
             "completeButton"
         )
 
-        self.complete_button.setCursor(
-            Qt.CursorShape.PointingHandCursor
-        )
-
         self.complete_button.clicked.connect(
-            self.finish_lesson
+            self.start_quiz
         )
 
         bottom_layout.addWidget(
-            hint_label
+            hint
         )
 
         bottom_layout.addStretch()
@@ -487,20 +418,12 @@ class LessonWindow(QMainWindow):
             21,
         )
 
-        layout.setSpacing(
-            10
-        )
-
         title_label = QLabel(
             title
         )
 
         title_label.setObjectName(
             "sectionTitle"
-        )
-
-        title_label.setWordWrap(
-            True
         )
 
         body_label = QLabel(
@@ -519,10 +442,6 @@ class LessonWindow(QMainWindow):
             Qt.TextFormat.RichText
         )
 
-        body_label.setTextInteractionFlags(
-            Qt.TextInteractionFlag.TextSelectableByMouse
-        )
-
         layout.addWidget(
             title_label
         )
@@ -533,15 +452,19 @@ class LessonWindow(QMainWindow):
 
         return card
 
-    def finish_lesson(self):
-        self.complete_button.setEnabled(
-            False
+    def start_quiz(self):
+        self.quiz_window = QuizWindow(
+            user=self.user,
+            lesson=self.lesson,
         )
 
-        self.complete_button.setText(
-            "TUGATILDI ✓"
+        self.quiz_window.quiz_passed.connect(
+            self.quiz_success
         )
 
+        self.quiz_window.show()
+
+    def quiz_success(self):
         self.lesson_completed.emit(
             self.lesson_id
         )
