@@ -10,6 +10,8 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
+from courses.lesson_content import get_lesson_content
+
 
 class LessonWindow(QMainWindow):
     lesson_completed = Signal(int)
@@ -24,8 +26,20 @@ class LessonWindow(QMainWindow):
             f"ARCHIPRO UZ - {lesson.get('title', 'Dars')}"
         )
 
-        self.resize(1200, 800)
+        self.resize(
+            1220,
+            820,
+        )
 
+        self.setMinimumSize(
+            900,
+            650,
+        )
+
+        self.setup_styles()
+        self.build_ui()
+
+    def setup_styles(self):
         self.setStyleSheet(
             """
             QMainWindow {
@@ -35,6 +49,15 @@ class LessonWindow(QMainWindow):
             QWidget {
                 font-family: Segoe UI;
                 color: #F8FAFC;
+            }
+
+            QScrollArea {
+                background-color: transparent;
+                border: none;
+            }
+
+            QScrollArea > QWidget > QWidget {
+                background-color: #0B1220;
             }
 
             QLabel#lessonLevel {
@@ -60,9 +83,27 @@ class LessonWindow(QMainWindow):
                 border-radius: 16px;
             }
 
+            QFrame#highlightCard {
+                background-color: #12203A;
+                border: 1px solid #2563EB;
+                border-radius: 16px;
+            }
+
+            QFrame#exampleCard {
+                background-color: #10251C;
+                border: 1px solid #15803D;
+                border-radius: 16px;
+            }
+
+            QFrame#warningCard {
+                background-color: #2A1914;
+                border: 1px solid #C2410C;
+                border-radius: 16px;
+            }
+
             QLabel#sectionTitle {
                 color: #FFFFFF;
-                font-size: 20px;
+                font-size: 19px;
                 font-weight: 700;
             }
 
@@ -71,31 +112,14 @@ class LessonWindow(QMainWindow):
                 font-size: 15px;
             }
 
-            QFrame#highlightCard {
-                background-color: #13213A;
-                border: 1px solid #1D4ED8;
-                border-radius: 12px;
-            }
-
-            QFrame#exampleCard {
-                background-color: #12221B;
-                border: 1px solid #166534;
-                border-radius: 12px;
-            }
-
-            QFrame#warningCard {
-                background-color: #281B16;
-                border: 1px solid #9A3412;
-                border-radius: 12px;
-            }
-
             QPushButton#backButton {
                 background-color: #1E293B;
                 color: #E2E8F0;
                 border: none;
                 border-radius: 9px;
                 padding: 10px 18px;
-                font-size: 14px;
+                font-size: 13px;
+                font-weight: 600;
             }
 
             QPushButton#backButton:hover {
@@ -104,31 +128,50 @@ class LessonWindow(QMainWindow):
 
             QPushButton#completeButton {
                 background-color: #2563EB;
-                color: white;
+                color: #FFFFFF;
                 border: none;
-                border-radius: 9px;
-                padding: 12px 20px;
+                border-radius: 10px;
+                padding: 13px 22px;
                 font-size: 14px;
-                font-weight: 600;
+                font-weight: 700;
             }
 
             QPushButton#completeButton:hover {
                 background-color: #3B82F6;
             }
+
+            QPushButton#completeButton:pressed {
+                background-color: #1D4ED8;
+            }
+
+            QFrame#bottomBar {
+                background-color: #0F172A;
+                border-top: 1px solid #1E293B;
+            }
             """
         )
 
+    def build_ui(self):
         central = QWidget()
-        self.setCentralWidget(central)
 
-        root_layout = QVBoxLayout(central)
-        root_layout.setContentsMargins(
-            35,
-            25,
-            35,
-            25,
+        self.setCentralWidget(
+            central
         )
-        root_layout.setSpacing(18)
+
+        root_layout = QVBoxLayout(
+            central
+        )
+
+        root_layout.setContentsMargins(
+            32,
+            22,
+            32,
+            22,
+        )
+
+        root_layout.setSpacing(
+            16
+        )
 
         # =========================
         # TOP BAR
@@ -139,9 +182,15 @@ class LessonWindow(QMainWindow):
         back_button = QPushButton(
             "← ORQAGA"
         )
+
         back_button.setObjectName(
             "backButton"
         )
+
+        back_button.setCursor(
+            Qt.CursorShape.PointingHandCursor
+        )
+
         back_button.clicked.connect(
             self.close
         )
@@ -149,7 +198,31 @@ class LessonWindow(QMainWindow):
         top_bar.addWidget(
             back_button
         )
+
         top_bar.addStretch()
+
+        xp_reward = self.lesson.get(
+            "xp_reward",
+            10,
+        )
+
+        xp_label = QLabel(
+            f"+{xp_reward} XP"
+        )
+
+        xp_label.setStyleSheet(
+            """
+            QLabel {
+                color: #FBBF24;
+                font-size: 14px;
+                font-weight: 700;
+            }
+            """
+        )
+
+        top_bar.addWidget(
+            xp_label
+        )
 
         root_layout.addLayout(
             top_bar
@@ -160,46 +233,64 @@ class LessonWindow(QMainWindow):
         # =========================
 
         level_label = QLabel(
-            lesson.get(
+            self.lesson.get(
                 "level_title",
                 "ARCHIPRO UZ",
             )
         )
+
         level_label.setObjectName(
             "lessonLevel"
         )
 
         title_label = QLabel(
-            lesson.get(
+            self.lesson.get(
                 "title",
                 "Dars",
             )
         )
+
         title_label.setObjectName(
             "lessonTitle"
         )
-        title_label.setWordWrap(True)
 
-        module_title = lesson.get(
+        title_label.setWordWrap(
+            True
+        )
+
+        module_title = self.lesson.get(
             "module_title",
             "",
         )
 
-        lesson_type = lesson.get(
+        lesson_type = self.lesson.get(
             "lesson_type",
             "theory",
         )
 
-        minutes = lesson.get(
+        minutes = self.lesson.get(
             "estimated_minutes",
             10,
         )
 
+        type_names = {
+            "theory": "NAZARIYA",
+            "practice": "AMALIYOT",
+            "quiz": "TEST",
+            "project": "LOYIHA",
+        }
+
+        readable_type = type_names.get(
+            lesson_type,
+            lesson_type.upper(),
+        )
+
         meta_label = QLabel(
             f"{module_title}   •   "
-            f"{lesson_type.upper()}   •   "
+            f"{readable_type}   •   "
             f"{minutes} daqiqa"
         )
+
         meta_label.setObjectName(
             "lessonMeta"
         )
@@ -207,19 +298,25 @@ class LessonWindow(QMainWindow):
         root_layout.addWidget(
             level_label
         )
+
         root_layout.addWidget(
             title_label
         )
+
         root_layout.addWidget(
             meta_label
         )
 
         # =========================
-        # SCROLL AREA
+        # CONTENT
         # =========================
 
         scroll = QScrollArea()
-        scroll.setWidgetResizable(True)
+
+        scroll.setWidgetResizable(
+            True
+        )
+
         scroll.setFrameShape(
             QScrollArea.Shape.NoFrame
         )
@@ -229,25 +326,64 @@ class LessonWindow(QMainWindow):
         scroll_layout = QVBoxLayout(
             scroll_content
         )
+
         scroll_layout.setContentsMargins(
             0,
             10,
-            15,
+            14,
             25,
         )
-        scroll_layout.setSpacing(18)
 
-        # =========================
-        # LESSON CONTENT
-        # =========================
+        scroll_layout.setSpacing(
+            16
+        )
 
-        if lesson.get("code") == "L00_M01_001":
-            self.build_first_lesson(
-                scroll_layout
-            )
+        lesson_code = self.lesson.get(
+            "code",
+            "",
+        )
+
+        lesson_content = get_lesson_content(
+            lesson_code
+        )
+
+        if lesson_content:
+            for section in lesson_content:
+                section_type = section.get(
+                    "type",
+                    "normal",
+                )
+
+                object_name = self.get_card_object_name(
+                    section_type
+                )
+
+                card = self.create_card(
+                    title=section.get(
+                        "title",
+                        "",
+                    ),
+                    text=section.get(
+                        "text",
+                        "",
+                    ),
+                    object_name=object_name,
+                )
+
+                scroll_layout.addWidget(
+                    card
+                )
+
         else:
-            self.build_default_lesson(
-                scroll_layout
+            scroll_layout.addWidget(
+                self.create_card(
+                    "Dars haqida",
+                    self.lesson.get(
+                        "summary",
+                        "Dars kontenti tayyorlanmoqda.",
+                    ),
+                    "contentCard",
+                )
             )
 
         scroll_layout.addStretch()
@@ -262,38 +398,80 @@ class LessonWindow(QMainWindow):
         )
 
         # =========================
-        # COMPLETE BUTTON
+        # BOTTOM
         # =========================
 
-        complete_button = QPushButton(
-            "DARSNI TUGATISH"
+        bottom_layout = QHBoxLayout()
+
+        hint_label = QLabel(
+            "Darsni tushunganingizdan keyin davom eting."
         )
 
-        complete_button.setObjectName(
+        hint_label.setStyleSheet(
+            """
+            QLabel {
+                color: #64748B;
+                font-size: 12px;
+            }
+            """
+        )
+
+        self.complete_button = QPushButton(
+            "DARSNI TUGATISH  →"
+        )
+
+        self.complete_button.setObjectName(
             "completeButton"
         )
 
-        complete_button.setFixedWidth(
-            190
+        self.complete_button.setCursor(
+            Qt.CursorShape.PointingHandCursor
         )
 
-        complete_button.clicked.connect(
+        self.complete_button.clicked.connect(
             self.finish_lesson
         )
 
-        root_layout.addWidget(
-            complete_button,
-            alignment=Qt.AlignmentFlag.AlignRight,
+        bottom_layout.addWidget(
+            hint_label
+        )
+
+        bottom_layout.addStretch()
+
+        bottom_layout.addWidget(
+            self.complete_button
+        )
+
+        root_layout.addLayout(
+            bottom_layout
+        )
+
+    def get_card_object_name(
+        self,
+        section_type: str,
+    ) -> str:
+
+        card_types = {
+            "normal": "contentCard",
+            "highlight": "highlightCard",
+            "example": "exampleCard",
+            "warning": "warningCard",
+        }
+
+        return card_types.get(
+            section_type,
+            "contentCard",
         )
 
     def create_card(
         self,
         title: str,
         text: str,
-        object_name: str = "contentCard",
+        object_name: str,
     ) -> QFrame:
 
         card = QFrame()
+
         card.setObjectName(
             object_name
         )
@@ -304,12 +482,14 @@ class LessonWindow(QMainWindow):
 
         layout.setContentsMargins(
             24,
-            22,
+            21,
             24,
-            22,
+            21,
         )
 
-        layout.setSpacing(10)
+        layout.setSpacing(
+            10
+        )
 
         title_label = QLabel(
             title
@@ -317,6 +497,10 @@ class LessonWindow(QMainWindow):
 
         title_label.setObjectName(
             "sectionTitle"
+        )
+
+        title_label.setWordWrap(
+            True
         )
 
         body_label = QLabel(
@@ -335,6 +519,10 @@ class LessonWindow(QMainWindow):
             Qt.TextFormat.RichText
         )
 
+        body_label.setTextInteractionFlags(
+            Qt.TextInteractionFlag.TextSelectableByMouse
+        )
+
         layout.addWidget(
             title_label
         )
@@ -345,231 +533,15 @@ class LessonWindow(QMainWindow):
 
         return card
 
-    def build_first_lesson(
-        self,
-        layout: QVBoxLayout,
-    ):
-        layout.addWidget(
-            self.create_card(
-                "Bugun nimani o'rganamiz?",
-                """
-                Bu darsdan keyin siz <b>arxitektura nima</b>,
-                arxitektor faqat chiroyli uy chizadigan odam
-                emasligini va yaxshi uy loyihasi nimadan
-                boshlanishini tushunasiz.
-                """,
-                "highlightCard",
-            )
-        )
-
-        layout.addWidget(
-            self.create_card(
-                "Arxitektura nima?",
-                """
-                Juda sodda qilib aytganda, arxitektura —
-                <b>odam yashashi, ishlashi yoki dam olishi uchun
-                qulay, xavfsiz va chiroyli makon yaratish</b>.
-
-                <br><br>
-
-                Masalan, siz 200 m² uy qurdingiz.
-                Uy tashqaridan juda chiroyli bo'lishi mumkin.
-
-                <br><br>
-
-                Lekin oshxonadan ovqatni mehmonxonaga olib
-                borish uchun uzun koridordan o'tish kerak bo'lsa,
-                yotoqxona eshigi to'g'ridan-to'g'ri mehmonxonaga
-                ochilsa yoki sanuzel juda noqulay joylashsa —
-                bu yaxshi arxitektura emas.
-
-                <br><br>
-
-                Demak, arxitekturada faqat
-                <b>“qanday ko'rinadi?”</b> degan savol emas,
-                <b>“undan foydalanish qanchalik qulay?”</b>
-                degan savol ham juda muhim.
-                """,
-            )
-        )
-
-        layout.addWidget(
-            self.create_card(
-                "Tasavvur qiling",
-                """
-                Sizga mijoz keldi va dedi:
-
-                <br><br>
-
-                <b>
-                “Menda 20 × 30 metr yer bor.
-                Oilamiz 4 kishi.
-                3 ta yotoqxona, katta mehmonxona,
-                oshxona va 2 ta sanuzel kerak.”
-                </b>
-
-                <br><br>
-
-                Boshlovchi odam darhol devor
-                chizishni boshlashi mumkin.
-
-                <br><br>
-
-                Arxitektor esa avval savol beradi:
-
-                <br><br>
-
-                • Ko'cha qaysi tomonda?<br>
-                • Quyosh qayerdan tushadi?<br>
-                • Mashina qayerdan kiradi?<br>
-                • Mehmonlar qaysi zonaga kiradi?<br>
-                • Oila a'zolarining private zonasi qayerda bo'ladi?<br>
-                • Hovlining qaysi qismi ko'proq ishlatiladi?
-
-                <br><br>
-
-                Mana shu —
-                <b>arxitektor kabi fikrlashning boshlanishi</b>.
-                """,
-                "exampleCard",
-            )
-        )
-
-        layout.addWidget(
-            self.create_card(
-                "Muhim qoida",
-                """
-                <b>
-                Yaxshi loyiha chizishdan oldin
-                yaxshi savollar berish kerak.
-                </b>
-
-                <br><br>
-
-                Archicad sizga devor chizishga yordam beradi.
-
-                <br><br>
-
-                Lekin devorni
-                <b>qayerga va nima uchun</b>
-                qo'yishni arxitektor hal qiladi.
-                """,
-                "highlightCard",
-            )
-        )
-
-        layout.addWidget(
-            self.create_card(
-                "Boshlovchilar qiladigan xato",
-                """
-                Eng ko'p uchraydigan xatolardan biri —
-                <b>fasadni o'ylab, planni unutish</b>.
-
-                <br><br>
-
-                Uy tashqaridan juda chiroyli ko'rinishi mumkin.
-
-                <br><br>
-
-                Lekin ichida yashash noqulay bo'lsa,
-                loyiha muvaffaqiyatli hisoblanmaydi.
-
-                <br><br>
-
-                Biz kurs davomida avval
-                <b>to'g'ri fikrlashni</b>,
-                keyin esa uni Archicad orqali
-                professional chizmaga aylantirishni o'rganamiz.
-                """,
-                "warningCard",
-            )
-        )
-
-        layout.addWidget(
-            self.create_card(
-                "2 daqiqalik mini-amaliyot",
-                """
-                O'zingiz yashayotgan uyni eslang.
-
-                <br><br>
-
-                Quyidagi savollarga javob berishga harakat qiling:
-
-                <br><br>
-
-                1. Uyga kirganda birinchi qaysi xona ko'rinadi?<br><br>
-
-                2. Oshxonadan mehmonxonaga yurish qulaymi?<br><br>
-
-                3. Yotoqxona private joydami?<br><br>
-
-                4. Uyda keraksiz uzun koridor bormi?<br><br>
-
-                5. Siz o'zgartirmoqchi bo'lgan bitta joy qaysi?
-
-                <br><br>
-
-                Siz hozirning o'zida uyga oddiy foydalanuvchi
-                sifatida emas,
-                <b>arxitektor ko'zi bilan</b>
-                qarashni boshladingiz.
-                """,
-                "exampleCard",
-            )
-        )
-
-        layout.addWidget(
-            self.create_card(
-                "Dars xulosasi",
-                """
-                Bugun 3 ta asosiy fikrni eslab qoling:
-
-                <br><br>
-
-                <b>1.</b>
-                Arxitektura faqat chiroyli bino emas.
-
-                <br><br>
-
-                <b>2.</b>
-                Qulaylik va funksiya juda muhim.
-
-                <br><br>
-
-                <b>3.</b>
-                Professional loyiha savol va tahlildan boshlanadi.
-
-                <br><br>
-
-                Keyingi darsda:
-
-                <b>
-                “Arxitektor kim va uning vazifasi nima?”
-                </b>
-
-                mavzusini o'rganamiz.
-                """,
-                "highlightCard",
-            )
-        )
-
-    def build_default_lesson(
-        self,
-        layout: QVBoxLayout,
-    ):
-        summary = self.lesson.get(
-            "summary",
-            "Ushbu dars kontenti tayyorlanmoqda.",
-        )
-
-        layout.addWidget(
-            self.create_card(
-                "Dars haqida",
-                summary,
-            )
-        )
-
     def finish_lesson(self):
+        self.complete_button.setEnabled(
+            False
+        )
+
+        self.complete_button.setText(
+            "TUGATILDI ✓"
+        )
+
         self.lesson_completed.emit(
             self.lesson_id
         )
