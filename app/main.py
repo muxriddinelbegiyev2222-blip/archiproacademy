@@ -7,6 +7,10 @@ from auth.auth_service import (
     create_user,
 )
 
+from courses.access_sync import (
+    synchronize_user_access,
+)
+
 from courses.course_service import (
     initialize_user_progress,
 )
@@ -44,6 +48,10 @@ from courses.level01_module06 import (
     seed_level01_module06,
 )
 
+from courses.level02_module01 import (
+    seed_level02_module01,
+)
+
 from courses.quiz_service import (
     seed_quizzes,
 )
@@ -66,29 +74,64 @@ from ui.login_window import (
 
 
 def prepare_application():
+    # ========================================================
+    # DATABASE
+    # ========================================================
+
     initialize_database()
+
+    # ========================================================
+    # COURSE STRUCTURE
+    # ========================================================
 
     seed_course_structure()
 
+    # ========================================================
     # LEVEL 0
+    # ========================================================
+
     seed_level00_extra()
 
+    # ========================================================
     # LEVEL 1
+    # ========================================================
+
     seed_level01_lessons()
+
     seed_level01_module02()
+
     seed_level01_module03()
+
     seed_level01_module04()
+
     seed_level01_module05()
+
     seed_level01_module06()
 
-    # TESTLAR
+    # ========================================================
+    # LEVEL 2
+    # ========================================================
+
+    seed_level02_module01()
+
+    # ========================================================
+    # QUIZZES
+    # ========================================================
+
     seed_quizzes()
 
+    # ========================================================
     # FINAL EXAMS
+    # ========================================================
+
     seed_level_exams()
 
-    # Development account
-    # Sotuv versiyasida olib tashlanadi.
+    # ========================================================
+    # DEVELOPMENT MASTER ACCOUNT
+    #
+    # Sotuv versiyasida bu olib tashlanadi.
+    # ========================================================
+
     create_user(
         username="admin",
         password="12345",
@@ -128,20 +171,47 @@ def main():
         )
 
         if user is None:
+
             login_window.error_label.setText(
                 "Login yoki parol noto'g'ri."
             )
+
             return
 
         login_window.error_label.clear()
+
+        # ----------------------------------------------------
+        # 1. Barcha Level progress yozuvlari
+        # ----------------------------------------------------
+
+        initialize_user_levels(
+            user["id"]
+        )
+
+        # ----------------------------------------------------
+        # 2. Barcha dars progress yozuvlari
+        # ----------------------------------------------------
 
         initialize_user_progress(
             user["id"]
         )
 
-        initialize_user_levels(
+        # ----------------------------------------------------
+        # 3. Yangi qo'shilgan kontentni access bilan sync
+        #
+        # Masalan:
+        # Level oldin ochilgan,
+        # darslar keyinroq qo'shilgan bo'lsa ham
+        # birinchi dars ochiladi.
+        # ----------------------------------------------------
+
+        synchronize_user_access(
             user["id"]
         )
+
+        # ----------------------------------------------------
+        # DASHBOARD
+        # ----------------------------------------------------
 
         dashboard = DashboardWindow(
             user
