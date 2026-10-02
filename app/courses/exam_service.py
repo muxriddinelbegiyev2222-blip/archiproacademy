@@ -1,19 +1,19 @@
 import random
 from datetime import datetime
 
-from database.database import (
-    get_connection,
-)
+from database.database import get_connection
 
+
+# ============================================================
+# EXAM SEED
+# ============================================================
 
 def seed_level_exams():
     """
-    Har bir Level uchun yakuniy imtihon
-    yozuvlarini yaratadi.
+    Level 0 uchun yakuniy imtihon yaratadi.
 
-    Hozir LEVEL 0 faol ishlatiladi.
-    Keyinchalik qolgan Level'lar ham
-    shu tizimdan foydalanadi.
+    Keyinchalik Level 1, Level 2 va boshqa
+    Level imtihonlari ham shu tizimga qo'shiladi.
     """
 
     connection = get_connection()
@@ -68,14 +68,18 @@ def seed_level_exams():
         connection.close()
 
 
+# ============================================================
+# USER LEVEL PROGRESS
+# ============================================================
+
 def initialize_user_levels(
     user_id: int,
 ):
     """
-    Foydalanuvchi uchun barcha Level progressini yaratadi.
+    Foydalanuvchi uchun barcha Level progresslarini yaratadi.
 
-    LEVEL 0 ochiq.
-    Qolganlari locked.
+    LEVEL 0 boshidan available.
+    Qolgan Level'lar locked.
     """
 
     connection = get_connection()
@@ -98,10 +102,11 @@ def initialize_user_levels(
         for index, level in enumerate(
             levels
         ):
-            if index == 0:
-                status = "available"
-            else:
-                status = "locked"
+            status = (
+                "available"
+                if index == 0
+                else "locked"
+            )
 
             cursor.execute(
                 """
@@ -125,6 +130,10 @@ def initialize_user_levels(
         connection.close()
 
 
+# ============================================================
+# GET LEVEL EXAM
+# ============================================================
+
 def get_level_exam(
     level_code: str,
 ):
@@ -143,7 +152,8 @@ def get_level_exam(
             FROM level_exams
 
             INNER JOIN course_levels
-                ON course_levels.id = level_exams.level_id
+                ON course_levels.id =
+                   level_exams.level_id
 
             WHERE course_levels.code = ?
               AND level_exams.is_active = 1
@@ -168,13 +178,17 @@ def get_level_exam(
         connection.close()
 
 
+# ============================================================
+# CHECK ALL LESSONS
+# ============================================================
+
 def are_all_level_lessons_completed(
     user_id: int,
     level_id: int,
 ) -> bool:
     """
     Level ichidagi barcha majburiy darslar
-    tugatilganmi yoki yo'qmi tekshiradi.
+    tugallanganligini tekshiradi.
     """
 
     connection = get_connection()
@@ -189,7 +203,8 @@ def are_all_level_lessons_completed(
             FROM lessons
 
             INNER JOIN course_modules
-                ON course_modules.id = lessons.module_id
+                ON course_modules.id =
+                   lessons.module_id
 
             WHERE course_modules.level_id = ?
               AND lessons.is_required = 1
@@ -213,10 +228,12 @@ def are_all_level_lessons_completed(
             FROM lesson_progress
 
             INNER JOIN lessons
-                ON lessons.id = lesson_progress.lesson_id
+                ON lessons.id =
+                   lesson_progress.lesson_id
 
             INNER JOIN course_modules
-                ON course_modules.id = lessons.module_id
+                ON course_modules.id =
+                   lessons.module_id
 
             WHERE lesson_progress.user_id = ?
               AND course_modules.level_id = ?
@@ -233,18 +250,25 @@ def are_all_level_lessons_completed(
             "completed"
         ]
 
-        return completed == total
+        return (
+            completed
+            == total
+        )
 
     finally:
         connection.close()
 
 
+# ============================================================
+# EXAM QUESTIONS
+# ============================================================
+
 def get_exam_questions(
     exam_id: int,
 ):
     """
-    Level ichidagi barcha mini-test savollaridan
-    yakuniy imtihon savollarini tasodifiy tanlaydi.
+    Shu Level ichidagi barcha mini-test savollaridan
+    final imtihon uchun tasodifiy savollar tanlaydi.
     """
 
     connection = get_connection()
@@ -255,8 +279,8 @@ def get_exam_questions(
         cursor.execute(
             """
             SELECT
-                level_exams.question_count,
-                level_exams.level_id
+                question_count,
+                level_id
             FROM level_exams
             WHERE id = ?
             LIMIT 1
@@ -290,10 +314,12 @@ def get_exam_questions(
             FROM quiz_questions
 
             INNER JOIN lessons
-                ON lessons.id = quiz_questions.lesson_id
+                ON lessons.id =
+                   quiz_questions.lesson_id
 
             INNER JOIN course_modules
-                ON course_modules.id = lessons.module_id
+                ON course_modules.id =
+                   lessons.module_id
 
             WHERE course_modules.level_id = ?
             """,
@@ -358,6 +384,98 @@ def get_exam_questions(
         connection.close()
 
 
+# ============================================================
+# OPEN FIRST LESSON OF LEVEL
+# ============================================================
+
+def unlock_first_lesson_of_level(
+    cursor,
+    user_id: int,
+    level_id: int,
+):
+    """
+    Berilgan Level ichidagi eng birinchi darsni
+    foydalanuvchi uchun available qiladi.
+
+    Level'ning o'zi ochilgan bo'lsa ham,
+    birinchi dars locked qolib ketmasligi uchun kerak.
+    """
+
+    cursor.execute(
+        """
+        SELECT
+            lessons.id
+
+        FROM lessons
+
+        INNER JOIN course_modules
+            ON course_modules.id =
+               lessons.module_id
+
+        WHERE course_modules.level_id = ?
+
+        ORDER BY
+            course_modules.sort_order ASC,
+            lessons.sort_order ASC
+
+        LIMIT 1
+        """,
+        (
+            level_id,
+        ),
+    )
+
+    first_lesson = (
+        cursor.fetchone()
+    )
+
+    if first_lesson is None:
+        return
+
+    lesson_id = first_lesson[
+        "id"
+    ]
+
+    # Agar progress yozuvi mavjud bo'lsa,
+    # locked -> available.
+    cursor.execute(
+        """
+        UPDATE lesson_progress
+
+        SET status = 'available'
+
+        WHERE user_id = ?
+          AND lesson_id = ?
+          AND status = 'locked'
+        """,
+        (
+            user_id,
+            lesson_id,
+        ),
+    )
+
+    # Agar qandaydir sabab bilan progress yozuvi
+    # hali yaratilmagan bo'lsa, yaratamiz.
+    cursor.execute(
+        """
+        INSERT OR IGNORE INTO lesson_progress (
+            user_id,
+            lesson_id,
+            status
+        )
+        VALUES (?, ?, 'available')
+        """,
+        (
+            user_id,
+            lesson_id,
+        ),
+    )
+
+
+# ============================================================
+# SAVE FINAL EXAM
+# ============================================================
+
 def save_level_exam_attempt(
     user_id: int,
     exam_id: int,
@@ -366,10 +484,24 @@ def save_level_exam_attempt(
     total_questions: int,
     passed: bool,
 ):
+    """
+    Final Exam natijasini saqlaydi.
+
+    Agar foydalanuvchi o'tsa:
+
+    1. Hozirgi Level completed bo'ladi.
+    2. Keyingi Level available bo'ladi.
+    3. Keyingi Level'ning birinchi darsi available bo'ladi.
+    """
+
     connection = get_connection()
 
     try:
         cursor = connection.cursor()
+
+        # ----------------------------------------------------
+        # ATTEMPT
+        # ----------------------------------------------------
 
         cursor.execute(
             """
@@ -393,9 +525,14 @@ def save_level_exam_attempt(
             ),
         )
 
+        # ----------------------------------------------------
+        # EXAM LEVEL
+        # ----------------------------------------------------
+
         cursor.execute(
             """
-            SELECT level_id
+            SELECT
+                level_id
             FROM level_exams
             WHERE id = ?
             LIMIT 1
@@ -415,12 +552,17 @@ def save_level_exam_attempt(
             "level_id"
         ]
 
+        # ----------------------------------------------------
+        # BEST SCORE + ATTEMPTS
+        # ----------------------------------------------------
+
         cursor.execute(
             """
             UPDATE user_level_progress
 
             SET
-                exam_attempts = exam_attempts + 1,
+                exam_attempts =
+                    exam_attempts + 1,
 
                 best_exam_score =
                     CASE
@@ -440,17 +582,25 @@ def save_level_exam_attempt(
             ),
         )
 
+        # ----------------------------------------------------
+        # PASSED
+        # ----------------------------------------------------
+
         if passed:
+
             now = datetime.now().isoformat(
                 timespec="seconds"
             )
 
+            # Hozirgi Level completed.
             cursor.execute(
                 """
                 UPDATE user_level_progress
+
                 SET
                     status = 'completed',
                     completed_at = ?
+
                 WHERE user_id = ?
                   AND level_id = ?
                 """,
@@ -461,6 +611,7 @@ def save_level_exam_attempt(
                 ),
             )
 
+            # Hozirgi Level tartibini olamiz.
             cursor.execute(
                 """
                 SELECT
@@ -481,12 +632,20 @@ def save_level_exam_attempt(
 
             if current_level is not None:
 
+                # Keyingi Level.
                 cursor.execute(
                     """
-                    SELECT id
+                    SELECT
+                        id,
+                        code,
+                        sort_order
                     FROM course_levels
+
                     WHERE sort_order > ?
-                    ORDER BY sort_order ASC
+
+                    ORDER BY
+                        sort_order ASC
+
                     LIMIT 1
                     """,
                     (
@@ -501,18 +660,34 @@ def save_level_exam_attempt(
                 )
 
                 if next_level is not None:
+
+                    next_level_id = (
+                        next_level["id"]
+                    )
+
+                    # Keyingi Level available.
                     cursor.execute(
                         """
                         UPDATE user_level_progress
+
                         SET status = 'available'
+
                         WHERE user_id = ?
                           AND level_id = ?
                           AND status = 'locked'
                         """,
                         (
                             user_id,
-                            next_level["id"],
+                            next_level_id,
                         ),
+                    )
+
+                    # Eng muhim yangi qism:
+                    # keyingi Level birinchi darsi ham ochiladi.
+                    unlock_first_lesson_of_level(
+                        cursor=cursor,
+                        user_id=user_id,
+                        level_id=next_level_id,
                     )
 
         connection.commit()
@@ -521,15 +696,14 @@ def save_level_exam_attempt(
         connection.close()
 
 
+# ============================================================
+# EXAM STATS
+# ============================================================
+
 def get_level_exam_stats(
     user_id: int,
     level_code: str,
 ):
-    """
-    Level imtihoni bo'yicha foydalanuvchining
-    eng yaxshi natijasini qaytaradi.
-    """
-
     connection = get_connection()
 
     try:
