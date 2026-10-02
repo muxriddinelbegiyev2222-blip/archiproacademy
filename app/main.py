@@ -64,6 +64,10 @@ from courses.level02_module04 import (
     seed_level02_module04,
 )
 
+from courses.level02_module05 import (
+    seed_level02_module05,
+)
+
 from courses.quiz_service import (
     seed_quizzes,
 )
@@ -106,6 +110,7 @@ def prepare_application():
     seed_level02_module02()
     seed_level02_module03()
     seed_level02_module04()
+    seed_level02_module05()
 
     # QUIZZES
     seed_quizzes()
@@ -114,7 +119,6 @@ def prepare_application():
     seed_level_exams()
 
     # DEVELOPMENT MASTER ACCOUNT
-    # Sotuv versiyasida olib tashlanadi.
     create_user(
         username="admin",
         password="12345",
