@@ -49,6 +49,10 @@ from courses.level02_exam import (
     seed_level02_exam,
 )
 
+from courses.level03_module01 import (
+    seed_level03_module01,
+)
+
 from courses.quiz_service import (
     seed_quizzes,
 )
@@ -71,15 +75,7 @@ from ui.login_window import (
 
 
 def prepare_application():
-    # ========================================================
-    # DATABASE
-    # ========================================================
-
     initialize_database()
-
-    # ========================================================
-    # COURSE STRUCTURE
-    # ========================================================
 
     seed_course_structure()
 
@@ -116,7 +112,13 @@ def prepare_application():
     seed_level02_module10()
 
     # ========================================================
-    # QUIZ BANK
+    # LEVEL 3
+    # ========================================================
+
+    seed_level03_module01()
+
+    # ========================================================
+    # QUIZZES
     # ========================================================
 
     seed_quizzes()
@@ -125,15 +127,11 @@ def prepare_application():
     # FINAL EXAMS
     # ========================================================
 
-    # LEVEL 0 va LEVEL 1
     seed_level_exams()
-
-    # LEVEL 2
     seed_level02_exam()
 
     # ========================================================
     # DEVELOPMENT MASTER ACCOUNT
-    #
     # Sotuv versiyasida olib tashlanadi.
     # ========================================================
 
@@ -183,18 +181,14 @@ def main():
 
         login_window.error_label.clear()
 
-        # Level progress
         initialize_user_levels(
             user["id"]
         )
 
-        # Lesson progress
         initialize_user_progress(
             user["id"]
         )
 
-        # Keyinroq qo'shilgan kontent bilan
-        # access holatini sinxronlashtiramiz.
         synchronize_user_access(
             user["id"]
         )
