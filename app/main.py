@@ -52,6 +52,7 @@ from courses.level02_exam import (
 from courses.level03_module01 import seed_level03_module01
 from courses.level03_module02 import seed_level03_module02
 from courses.level03_module03 import seed_level03_module03
+from courses.level03_module04 import seed_level03_module04
 
 from courses.quiz_service import (
     seed_quizzes,
@@ -79,16 +80,10 @@ def prepare_application():
 
     seed_course_structure()
 
-    # ========================================================
     # LEVEL 0
-    # ========================================================
-
     seed_level00_extra()
 
-    # ========================================================
     # LEVEL 1
-    # ========================================================
-
     seed_level01_lessons()
     seed_level01_module02()
     seed_level01_module03()
@@ -96,10 +91,7 @@ def prepare_application():
     seed_level01_module05()
     seed_level01_module06()
 
-    # ========================================================
     # LEVEL 2
-    # ========================================================
-
     seed_level02_module01()
     seed_level02_module02()
     seed_level02_module03()
@@ -111,32 +103,21 @@ def prepare_application():
     seed_level02_module09()
     seed_level02_module10()
 
-    # ========================================================
     # LEVEL 3
-    # ========================================================
-
     seed_level03_module01()
     seed_level03_module02()
     seed_level03_module03()
+    seed_level03_module04()
 
-    # ========================================================
     # QUIZZES
-    # ========================================================
-
     seed_quizzes()
 
-    # ========================================================
     # FINAL EXAMS
-    # ========================================================
-
     seed_level_exams()
     seed_level02_exam()
 
-    # ========================================================
     # DEVELOPMENT MASTER ACCOUNT
     # Sotuv versiyasida olib tashlanadi.
-    # ========================================================
-
     create_user(
         username="admin",
         password="12345",
