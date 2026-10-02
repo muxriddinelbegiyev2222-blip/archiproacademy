@@ -75,6 +75,11 @@ from courses.level02_module08 import (
     LEVEL02_MODULE08_QUIZ,
 )
 
+from courses.level02_module09 import (
+    LEVEL02_MODULE09_CONTENT,
+    LEVEL02_MODULE09_QUIZ,
+)
+
 from courses.quiz_data import QUIZ_DATA
 
 
@@ -99,6 +104,7 @@ def get_all_lesson_content():
     combined.update(LEVEL02_MODULE06_CONTENT)
     combined.update(LEVEL02_MODULE07_CONTENT)
     combined.update(LEVEL02_MODULE08_CONTENT)
+    combined.update(LEVEL02_MODULE09_CONTENT)
 
     return combined
 
@@ -133,5 +139,6 @@ def get_all_quiz_data():
     combined.update(LEVEL02_MODULE06_QUIZ)
     combined.update(LEVEL02_MODULE07_QUIZ)
     combined.update(LEVEL02_MODULE08_QUIZ)
+    combined.update(LEVEL02_MODULE09_QUIZ)
 
     return combined
