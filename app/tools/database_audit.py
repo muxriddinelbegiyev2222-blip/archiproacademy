@@ -45,7 +45,7 @@ EXPECTED_LEVEL_CODES = [
 
 
 EXPECTED_MODULE_COUNTS = {
-    "LEVEL_00": 1,
+    "LEVEL_00": 5,
     "LEVEL_01": 6,
     "LEVEL_02": 10,
     "LEVEL_03": 8,
