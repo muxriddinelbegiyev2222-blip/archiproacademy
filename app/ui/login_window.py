@@ -1,5 +1,8 @@
-from PySide6.QtCore import Qt, Signal
-from PySide6.QtGui import QFont
+from PySide6.QtCore import (
+    Qt,
+    Signal,
+)
+
 from PySide6.QtWidgets import (
     QFrame,
     QHBoxLayout,
@@ -12,222 +15,1000 @@ from PySide6.QtWidgets import (
 
 
 class LoginWindow(QWidget):
-    login_requested = Signal(str, str)
+
+    login_requested = Signal(
+        str,
+        str,
+    )
 
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("ARCHIPRO UZ - Login")
-        self.resize(1100, 700)
+        self.setWindowTitle(
+            "ARCHIPRO UZ — Kirish"
+        )
 
+        self.setMinimumSize(
+            1100,
+            700,
+        )
+
+        self.resize(
+            1280,
+            780,
+        )
+
+        self.setObjectName(
+            "loginRoot"
+        )
+
+        self.setup_styles()
+        self.build_ui()
+
+    # ========================================================
+    # STYLE
+    # ========================================================
+
+    def setup_styles(self):
         self.setStyleSheet(
             """
-            QWidget {
-                background-color: #0B1220;
-                color: #F8FAFC;
-                font-family: Segoe UI;
+            QWidget#loginRoot {
+                background-color: #07101D;
+                font-family: "Segoe UI";
+                color: #EAF1F8;
+            }
+
+
+            /* ================================================
+               LEFT PANEL
+               ================================================ */
+
+            QFrame#brandPanel {
+                background-color: #0A1526;
+
+                border: 1px solid #1E334D;
+                border-radius: 22px;
+            }
+
+            QLabel#brandEyebrow {
+                color: #679CFF;
+
+                font-size: 12px;
+                font-weight: 800;
             }
 
             QLabel#brandTitle {
-                font-size: 34px;
-                font-weight: 700;
-                color: #FFFFFF;
+                color: #F6F9FC;
+
+                font-size: 40px;
+                font-weight: 900;
             }
 
             QLabel#brandSubtitle {
+                color: #A2B2C6;
+
+                font-size: 16px;
+            }
+
+            QLabel#brandDescription {
+                color: #CAD5E2;
+
                 font-size: 15px;
-                color: #94A3B8;
+            }
+
+
+            /* ================================================
+               FEATURE CARDS
+               ================================================ */
+
+            QFrame#featureCard {
+                background-color: #0D1A2C;
+
+                border: 1px solid #263E5C;
+                border-radius: 13px;
+            }
+
+            QLabel#featureIndex {
+                background-color: #17345F;
+
+                border: 1px solid #3F75CB;
+                border-radius: 7px;
+
+                color: #9CC1FF;
+
+                min-width: 28px;
+                max-width: 28px;
+
+                min-height: 28px;
+                max-height: 28px;
+
+                font-size: 11px;
+                font-weight: 800;
+            }
+
+            QLabel#featureTitle {
+                color: #E9F0F8;
+
+                font-size: 14px;
+                font-weight: 700;
+            }
+
+            QLabel#featureText {
+                color: #8699B1;
+
+                font-size: 12px;
+            }
+
+
+            /* ================================================
+               RIGHT LOGIN CARD
+               ================================================ */
+
+            QFrame#loginCard {
+                background-color: #0C1728;
+
+                border: 1px solid #29415F;
+                border-radius: 22px;
+            }
+
+            QLabel#loginEyebrow {
+                color: #679CFF;
+
+                font-size: 11px;
+                font-weight: 800;
             }
 
             QLabel#formTitle {
-                font-size: 28px;
-                font-weight: 700;
-                color: #F8FAFC;
+                color: #F6F9FC;
+
+                font-size: 30px;
+                font-weight: 850;
             }
 
             QLabel#formSubtitle {
+                color: #91A3B9;
+
                 font-size: 14px;
-                color: #94A3B8;
             }
 
             QLabel#fieldLabel {
+                color: #C8D4E2;
+
                 font-size: 13px;
-                color: #CBD5E1;
+                font-weight: 650;
             }
 
+
+            /* ================================================
+               INPUT
+               ================================================ */
+
             QLineEdit {
-                min-height: 46px;
-                background-color: #111827;
-                border: 1px solid #263245;
-                border-radius: 10px;
+                background-color: #091525;
+
+                border: 1px solid #304761;
+                border-radius: 11px;
+
+                min-height: 48px;
+
                 padding-left: 14px;
                 padding-right: 14px;
+
+                color: #EEF4FA;
+
                 font-size: 14px;
-                color: #F8FAFC;
+
+                selection-background-color: #356FE0;
+            }
+
+            QLineEdit:hover {
+                border-color: #405E80;
             }
 
             QLineEdit:focus {
-                border: 1px solid #3B82F6;
+                background-color: #0B192B;
+
+                border: 1px solid #5188E9;
             }
 
+
+            /* ================================================
+               LOGIN BUTTON
+               ================================================ */
+
             QPushButton#loginButton {
+                background-color: #356FE0;
+
+                border: 1px solid #5992FA;
+                border-radius: 11px;
+
                 min-height: 48px;
-                background-color: #2563EB;
-                border: none;
-                border-radius: 10px;
-                font-size: 15px;
-                font-weight: 600;
-                color: white;
+
+                color: #FFFFFF;
+
+                font-size: 14px;
+                font-weight: 800;
             }
 
             QPushButton#loginButton:hover {
-                background-color: #3B82F6;
+                background-color: #477FE5;
+
+                border-color: #79A8FF;
             }
 
             QPushButton#loginButton:pressed {
-                background-color: #1D4ED8;
+                background-color: #2E62C7;
             }
 
-            QFrame#loginCard {
-                background-color: #0F172A;
-                border: 1px solid #1E293B;
-                border-radius: 18px;
-            }
+
+            /* ================================================
+               ERROR
+               ================================================ */
 
             QLabel#errorLabel {
-                color: #F87171;
-                font-size: 13px;
+                background-color: transparent;
+
+                color: #F28B8B;
+
+                font-size: 12px;
+                font-weight: 600;
             }
 
-            QLabel#footerLabel {
-                color: #64748B;
+
+            /* ================================================
+               SECURITY INFO
+               ================================================ */
+
+            QFrame#securityCard {
+                background-color: #0B1D25;
+
+                border: 1px solid #24504F;
+                border-radius: 11px;
+            }
+
+            QLabel#securityTitle {
+                color: #77D1B0;
+
+                font-size: 11px;
+                font-weight: 800;
+            }
+
+            QLabel#securityText {
+                color: #8FAEA6;
+
+                font-size: 11px;
+            }
+
+
+            /* ================================================
+               DEVELOPER
+               ================================================ */
+
+            QFrame#developerCard {
+                background-color: #0A1525;
+
+                border: 1px solid #253B57;
+                border-radius: 12px;
+            }
+
+            QLabel#developerTitle {
+                color: #6C9FFF;
+
+                font-size: 10px;
+                font-weight: 800;
+            }
+
+            QLabel#developerName {
+                color: #DCE6F1;
+
                 font-size: 12px;
+                font-weight: 700;
+            }
+
+            QLabel#developerPhone {
+                color: #8FA2BA;
+
+                font-size: 11px;
+            }
+
+            QLabel#versionText {
+                color: #60748E;
+
+                font-size: 10px;
             }
             """
         )
 
-        main_layout = QHBoxLayout(self)
-        main_layout.setContentsMargins(60, 50, 60, 50)
-        main_layout.setSpacing(70)
+    # ========================================================
+    # BUILD UI
+    # ========================================================
 
-        # LEFT SIDE
-        left_layout = QVBoxLayout()
-        left_layout.setSpacing(18)
-        left_layout.setAlignment(Qt.AlignmentFlag.AlignVCenter)
-
-        brand_title = QLabel("ARCHIPRO UZ")
-        brand_title.setObjectName("brandTitle")
-
-        brand_subtitle = QLabel(
-            "O'zbekiston sharoitida 1-2 qavatli uylarni\n"
-            "0 dan professional darajagacha loyihalash akademiyasi."
+    def build_ui(self):
+        main = QHBoxLayout(
+            self
         )
-        brand_subtitle.setObjectName("brandSubtitle")
-        brand_subtitle.setWordWrap(True)
 
-        feature_1 = QLabel("✓ Arxitektura 0 dan")
-        feature_2 = QLabel("✓ Archicad professional daraja")
-        feature_3 = QLabel("✓ SHNQ va normativlar")
-        feature_4 = QLabel("✓ Amaliy loyihalar")
-        feature_5 = QLabel("✓ Testlar va imtihonlar")
+        main.setContentsMargins(
+            34,
+            34,
+            34,
+            34,
+        )
 
-        feature_font = QFont("Segoe UI", 13)
+        main.setSpacing(
+            24
+        )
 
-        for feature in [
-            feature_1,
-            feature_2,
-            feature_3,
-            feature_4,
-            feature_5,
-        ]:
-            feature.setFont(feature_font)
-            feature.setStyleSheet("color: #CBD5E1;")
+        # ====================================================
+        # LEFT — BRAND / PRODUCT
+        # ====================================================
 
-        left_layout.addWidget(brand_title)
-        left_layout.addWidget(brand_subtitle)
-        left_layout.addSpacing(20)
-        left_layout.addWidget(feature_1)
-        left_layout.addWidget(feature_2)
-        left_layout.addWidget(feature_3)
-        left_layout.addWidget(feature_4)
-        left_layout.addWidget(feature_5)
+        left = QFrame()
+
+        left.setObjectName(
+            "brandPanel"
+        )
+
+        left_layout = QVBoxLayout(
+            left
+        )
+
+        left_layout.setContentsMargins(
+            38,
+            36,
+            38,
+            32,
+        )
+
+        left_layout.setSpacing(
+            13
+        )
+
+        eyebrow = QLabel(
+            "PROFESSIONAL ARCHITECTURE EDUCATION"
+        )
+
+        eyebrow.setObjectName(
+            "brandEyebrow"
+        )
+
+        brand = QLabel(
+            "ARCHIPRO UZ"
+        )
+
+        brand.setObjectName(
+            "brandTitle"
+        )
+
+        subtitle = QLabel(
+            "Arxitektura • Archicad • Qurilish • BIM"
+        )
+
+        subtitle.setObjectName(
+            "brandSubtitle"
+        )
+
+        description = QLabel(
+            "O'zbekiston sharoitida 1–2 qavatli "
+            "turar joylarni loyihalashni nazariya, "
+            "amaliyot, test va real loyiha bosqichlari "
+            "orqali o'rganish tizimi."
+        )
+
+        description.setObjectName(
+            "brandDescription"
+        )
+
+        description.setWordWrap(
+            True
+        )
+
+        left_layout.addWidget(
+            eyebrow
+        )
+
+        left_layout.addWidget(
+            brand
+        )
+
+        left_layout.addWidget(
+            subtitle
+        )
+
+        left_layout.addWidget(
+            description
+        )
+
+        left_layout.addSpacing(
+            15
+        )
+
+        # ====================================================
+        # FEATURES
+        # ====================================================
+
+        features = [
+            (
+                "01",
+                "Arxitektura asoslari",
+                "0 dan boshlab fazoviy fikrlash va rejalashtirish.",
+            ),
+            (
+                "02",
+                "Archicad workflow",
+                "Boshlang'ich vositalardan professional BIM ish jarayonigacha.",
+            ),
+            (
+                "03",
+                "Qurilish va normativlar",
+                "Konstruksiya, SHNQ va real loyiha mantig'i.",
+            ),
+            (
+                "04",
+                "Amaliy nazorat",
+                "Mini-test, Level imtihonlari va progress tizimi.",
+            ),
+        ]
+
+        for (
+            index,
+            title,
+            text,
+        ) in features:
+            left_layout.addWidget(
+                self.create_feature_card(
+                    index,
+                    title,
+                    text,
+                )
+            )
+
         left_layout.addStretch()
 
-        footer = QLabel("ARCHIPRO UZ © 2026")
-        footer.setObjectName("footerLabel")
-        left_layout.addWidget(footer)
+        # ====================================================
+        # DEVELOPER INFO
+        # ====================================================
 
-        # RIGHT SIDE
+        developer = QFrame()
+
+        developer.setObjectName(
+            "developerCard"
+        )
+
+        developer_layout = QVBoxLayout(
+            developer
+        )
+
+        developer_layout.setContentsMargins(
+            14,
+            11,
+            14,
+            11,
+        )
+
+        developer_layout.setSpacing(
+            3
+        )
+
+        developer_title = QLabel(
+            "DASTUR HAQIDA"
+        )
+
+        developer_title.setObjectName(
+            "developerTitle"
+        )
+
+        developer_name = QLabel(
+            "Dasturchi: Muxriddin Faxriddinovich"
+        )
+
+        developer_name.setObjectName(
+            "developerName"
+        )
+
+        developer_name.setWordWrap(
+            True
+        )
+
+        phone_1 = QLabel(
+            "+998 94 788 88 99"
+        )
+
+        phone_1.setObjectName(
+            "developerPhone"
+        )
+
+        phone_2 = QLabel(
+            "+998 33 911 22 22"
+        )
+
+        phone_2.setObjectName(
+            "developerPhone"
+        )
+
+        version = QLabel(
+            "ARCHIPRO UZ  •  Offline Desktop Academy"
+        )
+
+        version.setObjectName(
+            "versionText"
+        )
+
+        developer_layout.addWidget(
+            developer_title
+        )
+
+        developer_layout.addWidget(
+            developer_name
+        )
+
+        developer_layout.addWidget(
+            phone_1
+        )
+
+        developer_layout.addWidget(
+            phone_2
+        )
+
+        developer_layout.addWidget(
+            version
+        )
+
+        left_layout.addWidget(
+            developer
+        )
+
+        # ====================================================
+        # RIGHT — LOGIN
+        # ====================================================
+
+        right_wrapper = QVBoxLayout()
+
+        right_wrapper.setContentsMargins(
+            0,
+            30,
+            0,
+            30,
+        )
+
+        right_wrapper.addStretch()
+
         card = QFrame()
-        card.setObjectName("loginCard")
-        card.setFixedWidth(430)
 
-        card_layout = QVBoxLayout(card)
-        card_layout.setContentsMargins(42, 42, 42, 42)
-        card_layout.setSpacing(14)
+        card.setObjectName(
+            "loginCard"
+        )
 
-        form_title = QLabel("Kirish")
-        form_title.setObjectName("formTitle")
+        card.setMinimumWidth(
+            410
+        )
+
+        card.setMaximumWidth(
+            460
+        )
+
+        card_layout = QVBoxLayout(
+            card
+        )
+
+        card_layout.setContentsMargins(
+            34,
+            32,
+            34,
+            32,
+        )
+
+        card_layout.setSpacing(
+            11
+        )
+
+        login_eyebrow = QLabel(
+            "FOYDALANUVCHI KABINETI"
+        )
+
+        login_eyebrow.setObjectName(
+            "loginEyebrow"
+        )
+
+        form_title = QLabel(
+            "Tizimga kirish"
+        )
+
+        form_title.setObjectName(
+            "formTitle"
+        )
 
         form_subtitle = QLabel(
-            "Dasturga kirish uchun login va parolingizni kiriting."
+            "ARCHIPRO UZ o'quv platformasini "
+            "davom ettirish uchun ma'lumotlaringizni kiriting."
         )
-        form_subtitle.setObjectName("formSubtitle")
-        form_subtitle.setWordWrap(True)
 
-        login_label = QLabel("Login")
-        login_label.setObjectName("fieldLabel")
+        form_subtitle.setObjectName(
+            "formSubtitle"
+        )
+
+        form_subtitle.setWordWrap(
+            True
+        )
+
+        card_layout.addWidget(
+            login_eyebrow
+        )
+
+        card_layout.addWidget(
+            form_title
+        )
+
+        card_layout.addWidget(
+            form_subtitle
+        )
+
+        card_layout.addSpacing(
+            13
+        )
+
+        # ====================================================
+        # LOGIN
+        # ====================================================
+
+        login_label = QLabel(
+            "Login"
+        )
+
+        login_label.setObjectName(
+            "fieldLabel"
+        )
 
         self.login_input = QLineEdit()
-        self.login_input.setPlaceholderText("Login kiriting")
 
-        password_label = QLabel("Parol")
-        password_label.setObjectName("fieldLabel")
+        self.login_input.setPlaceholderText(
+            "Loginingizni kiriting"
+        )
+
+        self.login_input.setClearButtonEnabled(
+            True
+        )
+
+        card_layout.addWidget(
+            login_label
+        )
+
+        card_layout.addWidget(
+            self.login_input
+        )
+
+        card_layout.addSpacing(
+            5
+        )
+
+        # ====================================================
+        # PASSWORD
+        # ====================================================
+
+        password_label = QLabel(
+            "Parol"
+        )
+
+        password_label.setObjectName(
+            "fieldLabel"
+        )
 
         self.password_input = QLineEdit()
-        self.password_input.setPlaceholderText("Parol kiriting")
-        self.password_input.setEchoMode(QLineEdit.EchoMode.Password)
 
-        self.error_label = QLabel("")
-        self.error_label.setObjectName("errorLabel")
-        self.error_label.setWordWrap(True)
+        self.password_input.setPlaceholderText(
+            "Parolingizni kiriting"
+        )
 
-        self.login_button = QPushButton("KIRISH")
-        self.login_button.setObjectName("loginButton")
-        self.login_button.setCursor(Qt.CursorShape.PointingHandCursor)
-        self.login_button.clicked.connect(self.handle_login)
+        self.password_input.setEchoMode(
+            QLineEdit.EchoMode.Password
+        )
 
-        self.password_input.returnPressed.connect(self.handle_login)
+        card_layout.addWidget(
+            password_label
+        )
 
-        card_layout.addWidget(form_title)
-        card_layout.addWidget(form_subtitle)
-        card_layout.addSpacing(18)
-        card_layout.addWidget(login_label)
-        card_layout.addWidget(self.login_input)
-        card_layout.addWidget(password_label)
-        card_layout.addWidget(self.password_input)
-        card_layout.addWidget(self.error_label)
-        card_layout.addSpacing(8)
-        card_layout.addWidget(self.login_button)
-        card_layout.addStretch()
+        card_layout.addWidget(
+            self.password_input
+        )
 
-        main_layout.addLayout(left_layout, 1)
-        main_layout.addWidget(card)
+        # ====================================================
+        # ERROR
+        # ====================================================
+
+        self.error_label = QLabel(
+            ""
+        )
+
+        self.error_label.setObjectName(
+            "errorLabel"
+        )
+
+        self.error_label.setWordWrap(
+            True
+        )
+
+        self.error_label.setMinimumHeight(
+            20
+        )
+
+        card_layout.addWidget(
+            self.error_label
+        )
+
+        # ====================================================
+        # BUTTON
+        # ====================================================
+
+        self.login_button = QPushButton(
+            "KIRISH  →"
+        )
+
+        self.login_button.setObjectName(
+            "loginButton"
+        )
+
+        self.login_button.setCursor(
+            Qt.CursorShape.PointingHandCursor
+        )
+
+        self.login_button.clicked.connect(
+            self.handle_login
+        )
+
+        self.password_input.returnPressed.connect(
+            self.handle_login
+        )
+
+        self.login_input.returnPressed.connect(
+            self.focus_password
+        )
+
+        card_layout.addWidget(
+            self.login_button
+        )
+
+        card_layout.addSpacing(
+            12
+        )
+
+        # ====================================================
+        # SECURITY
+        # ====================================================
+
+        security = QFrame()
+
+        security.setObjectName(
+            "securityCard"
+        )
+
+        security_layout = QVBoxLayout(
+            security
+        )
+
+        security_layout.setContentsMargins(
+            13,
+            10,
+            13,
+            10,
+        )
+
+        security_layout.setSpacing(
+            3
+        )
+
+        security_title = QLabel(
+            "OFFLINE ISH REJIMI"
+        )
+
+        security_title.setObjectName(
+            "securityTitle"
+        )
+
+        security_text = QLabel(
+            "Darslar, progress va o'quv ma'lumotlari "
+            "kompyuterning lokal bazasida ishlaydi."
+        )
+
+        security_text.setObjectName(
+            "securityText"
+        )
+
+        security_text.setWordWrap(
+            True
+        )
+
+        security_layout.addWidget(
+            security_title
+        )
+
+        security_layout.addWidget(
+            security_text
+        )
+
+        card_layout.addWidget(
+            security
+        )
+
+        right_wrapper.addWidget(
+            card,
+            0,
+            Qt.AlignmentFlag.AlignHCenter,
+        )
+
+        right_wrapper.addStretch()
+
+        # ====================================================
+        # ADD PANELS
+        # ====================================================
+
+        main.addWidget(
+            left,
+            3,
+        )
+
+        main.addLayout(
+            right_wrapper,
+            2,
+        )
+
+        self.login_input.setFocus()
+
+    # ========================================================
+    # FEATURE CARD
+    # ========================================================
+
+    def create_feature_card(
+        self,
+        index: str,
+        title: str,
+        text: str,
+    ):
+        card = QFrame()
+
+        card.setObjectName(
+            "featureCard"
+        )
+
+        layout = QHBoxLayout(
+            card
+        )
+
+        layout.setContentsMargins(
+            13,
+            11,
+            13,
+            11,
+        )
+
+        layout.setSpacing(
+            11
+        )
+
+        number = QLabel(
+            index
+        )
+
+        number.setObjectName(
+            "featureIndex"
+        )
+
+        number.setAlignment(
+            Qt.AlignmentFlag.AlignCenter
+        )
+
+        text_layout = QVBoxLayout()
+
+        text_layout.setSpacing(
+            2
+        )
+
+        title_label = QLabel(
+            title
+        )
+
+        title_label.setObjectName(
+            "featureTitle"
+        )
+
+        body = QLabel(
+            text
+        )
+
+        body.setObjectName(
+            "featureText"
+        )
+
+        body.setWordWrap(
+            True
+        )
+
+        text_layout.addWidget(
+            title_label
+        )
+
+        text_layout.addWidget(
+            body
+        )
+
+        layout.addWidget(
+            number,
+            0,
+            Qt.AlignmentFlag.AlignTop,
+        )
+
+        layout.addLayout(
+            text_layout,
+            1,
+        )
+
+        return card
+
+    # ========================================================
+    # INPUT FLOW
+    # ========================================================
+
+    def focus_password(self):
+        self.password_input.setFocus()
+
+    # ========================================================
+    # LOGIN
+    # ========================================================
 
     def handle_login(self):
-        login = self.login_input.text().strip()
-        password = self.password_input.text().strip()
+        login = (
+            self.login_input
+            .text()
+            .strip()
+        )
+
+        password = (
+            self.password_input
+            .text()
+            .strip()
+        )
 
         self.error_label.clear()
 
         if not login:
-            self.error_label.setText("Login kiritilmagan.")
+            self.error_label.setText(
+                "Login kiritilmagan."
+            )
+
             self.login_input.setFocus()
+
             return
 
         if not password:
-            self.error_label.setText("Parol kiritilmagan.")
+            self.error_label.setText(
+                "Parol kiritilmagan."
+            )
+
             self.password_input.setFocus()
+
             return
 
-        self.login_requested.emit(login, password)
+        # Login paytida button ikki marta bosilib
+        # ketmasligi uchun qisqa blok.
+        self.login_button.setEnabled(
+            False
+        )
+
+        self.login_button.setText(
+            "TEKSHIRILMOQDA..."
+        )
+
+        self.login_requested.emit(
+            login,
+            password,
+        )
+
+        # Agar authentication muvaffaqiyatsiz bo'lsa,
+        # main.py error_label'ga xabar yozadi.
+        # Window yopilmagan bo'lsa tugmani qayta yoqamiz.
+        self.login_button.setEnabled(
+            True
+        )
+
+        self.login_button.setText(
+            "KIRISH  →"
+        )
