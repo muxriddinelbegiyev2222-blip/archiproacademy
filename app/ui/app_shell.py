@@ -30,8 +30,10 @@ from ui.curriculum_map import (
     validate_curriculum_map,
 )
 
-from ui.exam_window import (
-    ExamWindow,
+from ui.embedded_pages import (
+    ExamPage,
+    LessonPage,
+    QuizPage,
 )
 
 from ui.exams_page import (
@@ -74,7 +76,7 @@ class AppShell(
 
         self.page_cache = {}
 
-        self.exam_window = None
+        self.current_page_key = None
 
         mapping_check = (
             validate_curriculum_map()
@@ -100,7 +102,6 @@ class AppShell(
         )
 
         self._setup_style()
-
         self._build_shell()
 
         self.open_home()
@@ -109,6 +110,10 @@ class AppShell(
             0,
             self.showMaximized,
         )
+
+    # ========================================================
+    # STYLE
+    # ========================================================
 
     def _setup_style(self):
         self.setStyleSheet(
@@ -258,6 +263,10 @@ class AppShell(
             }
             """
         )
+
+    # ========================================================
+    # SHELL
+    # ========================================================
 
     def _build_shell(self):
         root_widget = QWidget()
@@ -419,6 +428,10 @@ class AppShell(
             1,
         )
 
+    # ========================================================
+    # ROUTER
+    # ========================================================
+
     def _handle_menu(
         self,
         item,
@@ -448,10 +461,8 @@ class AppShell(
                 "Kutubxona",
                 (
                     "Kutubxona uchun qo'shimcha "
-                    "resurslar keyingi kontent "
-                    "bosqichida ulanadi. "
-                    "Mavjud 680 darsning o'zi "
-                    "o'quv bo'limlarida saqlangan."
+                    "resurslar keyingi bosqichda ulanadi. "
+                    "Mavjud o'quv kontenti saqlangan."
                 ),
             )
 
@@ -472,6 +483,10 @@ class AppShell(
                 ),
             )
 
+    # ========================================================
+    # PAGE MANAGER
+    # ========================================================
+
     def _show_page(
         self,
         key: str,
@@ -485,6 +500,8 @@ class AppShell(
             self.stack.setCurrentWidget(
                 existing
             )
+
+            self.current_page_key = key
 
             return existing
 
@@ -508,7 +525,45 @@ class AppShell(
             page
         )
 
+        self.current_page_key = key
+
         return page
+
+    def _show_cached(
+        self,
+        key: str,
+    ):
+        page = self.page_cache.get(
+            key
+        )
+
+        if page is None:
+            self.open_home()
+            return
+
+        self.stack.setCurrentWidget(
+            page
+        )
+
+        self.current_page_key = key
+
+    def _drop_cached_page(
+        self,
+        key: str,
+    ):
+        page = self.page_cache.pop(
+            key,
+            None,
+        )
+
+        if page is None:
+            return
+
+        self.stack.removeWidget(
+            page
+        )
+
+        page.deleteLater()
 
     def _set_menu_row(
         self,
@@ -524,25 +579,11 @@ class AppShell(
         except ValueError:
             pass
 
-    def _drop_cached_page(
-        self,
-        key: str,
-    ):
-        page = self.page_cache.pop(
-            key,
-            None,
-        )
+    # ========================================================
+    # REFRESH
+    # ========================================================
 
-        if page is not None:
-            self.stack.removeWidget(
-                page
-            )
-
-            page.deleteLater()
-
-    def _refresh_learning_pages(
-        self,
-    ):
+    def _refresh_learning_pages(self):
         for key, page in list(
             self.page_cache.items()
         ):
@@ -553,17 +594,20 @@ class AppShell(
                 page.refresh_page()
 
             elif (
-                hasattr(
-                    page,
-                    "refresh_page",
-                )
-                and key
-                in {
+                key in {
                     "tests",
                     "exams",
                 }
+                and hasattr(
+                    page,
+                    "refresh_page",
+                )
             ):
                 page.refresh_page()
+
+    # ========================================================
+    # HOME
+    # ========================================================
 
     def open_home(self):
         self._set_menu_row(
@@ -582,10 +626,8 @@ class AppShell(
             self.user["id"]
         )
 
-        next_lesson = (
-            get_next_available_lesson(
-                self.user["id"]
-            )
+        next_lesson = get_next_available_lesson(
+            self.user["id"]
         )
 
         page = QWidget()
@@ -721,9 +763,7 @@ class AppShell(
         )
 
         if self.is_master:
-            current_level_text = (
-                "MASTER"
-            )
+            current_level_text = "MASTER"
 
         elif current_level:
             current_level_text = (
@@ -938,6 +978,52 @@ class AppShell(
             page,
         )
 
+    # ========================================================
+    # LEARNING PAGE CREATOR
+    # ========================================================
+
+    def _create_learning_page(
+        self,
+        *,
+        key,
+        level_codes=None,
+        title=None,
+        subtitle=None,
+        back_callback=None,
+    ):
+        page = LearningPage(
+            user=self.user,
+            focus_level_codes=(
+                level_codes
+            ),
+            custom_title=(
+                title
+            ),
+            custom_subtitle=(
+                subtitle
+            ),
+            back_callback=(
+                back_callback
+            ),
+            open_lesson_callback=(
+                self._open_lesson_page
+            ),
+            open_exam_callback=(
+                self._open_exam_from_learning
+            ),
+        )
+
+        self._show_page(
+            key,
+            page,
+        )
+
+        return page
+
+    # ========================================================
+    # ALL LEARNING
+    # ========================================================
+
     def open_learning(self):
         self._set_menu_row(
             "Mening o'qishim"
@@ -950,31 +1036,26 @@ class AppShell(
         )
 
         if page is None:
-            page = LearningPage(
-                user=self.user,
-                custom_title=(
-                    "Mening o'qishim"
-                ),
-                custom_subtitle=(
+            self._create_learning_page(
+                key=key,
+                title="Mening o'qishim",
+                subtitle=(
                     "LEVEL 00 dan LEVEL 15 gacha "
                     "bo'lgan to'liq o'quv yo'lingiz."
                 ),
-                back_callback=(
-                    self.open_home
-                ),
-            )
-
-            self._show_page(
-                key,
-                page,
+                back_callback=self.open_home,
             )
 
         else:
             page.refresh_page()
 
-            self.stack.setCurrentWidget(
-                page
+            self._show_cached(
+                key
             )
+
+    # ========================================================
+    # CURRICULUM SECTIONS
+    # ========================================================
 
     def open_section(
         self,
@@ -1001,19 +1082,19 @@ class AppShell(
         )
 
         if page is None:
-            page = LearningPage(
-                user=self.user,
-                focus_level_codes=(
+            self._create_learning_page(
+                key=key,
+                level_codes=(
                     section[
                         "levels"
                     ]
                 ),
-                custom_title=(
+                title=(
                     section[
                         "title"
                     ]
                 ),
-                custom_subtitle=(
+                subtitle=(
                     section[
                         "subtitle"
                     ]
@@ -1021,6 +1102,182 @@ class AppShell(
                 back_callback=(
                     self.open_home
                 ),
+            )
+
+        else:
+            page.refresh_page()
+
+            self._show_cached(
+                key
+            )
+
+    # ========================================================
+    # EMBEDDED LESSON
+    # ========================================================
+
+    def _open_lesson_page(
+        self,
+        lesson_data: dict,
+        source_learning_page,
+    ):
+        source_key = (
+            self.current_page_key
+        )
+
+        lesson_id = (
+            lesson_data[
+                "id"
+            ]
+        )
+
+        key = (
+            f"lesson::{lesson_id}"
+        )
+
+        # Dars sahifasini har safar yangi quramiz.
+        self._drop_cached_page(
+            key
+        )
+
+        page = LessonPage(
+            lesson=lesson_data,
+            user=self.user,
+            back_callback=(
+                lambda k=source_key:
+                self._show_cached(
+                    k
+                )
+            ),
+            open_quiz_callback=(
+                self._open_quiz_page
+            ),
+        )
+
+        page.lesson_completed.connect(
+            lambda completed_id,
+            source=source_learning_page,
+            return_key=source_key:
+            self._lesson_completed(
+                completed_id,
+                source,
+                return_key,
+            )
+        )
+
+        self._show_page(
+            key,
+            page,
+        )
+
+    # ========================================================
+    # EMBEDDED QUIZ
+    # ========================================================
+
+    def _open_quiz_page(
+        self,
+        lesson_page,
+    ):
+        lesson_key = (
+            self.current_page_key
+        )
+
+        lesson = dict(
+            lesson_page.lesson
+        )
+
+        key = (
+            f"quiz::{lesson['id']}"
+        )
+
+        # Har urinishda yangi savol tartibi.
+        self._drop_cached_page(
+            key
+        )
+
+        quiz_page = QuizPage(
+            user=self.user,
+            lesson=lesson,
+            back_callback=(
+                lambda k=lesson_key:
+                self._show_cached(
+                    k
+                )
+            ),
+        )
+
+        quiz_page.quiz_passed.connect(
+            lesson_page.quiz_success
+        )
+
+        self._show_page(
+            key,
+            quiz_page,
+        )
+
+    # ========================================================
+    # LESSON COMPLETE
+    # ========================================================
+
+    def _lesson_completed(
+        self,
+        lesson_id: int,
+        source_learning_page,
+        return_key: str,
+    ):
+        """
+        Original LearningWindow.lesson_finished()
+        aynan progress service'ni ishlatadi.
+
+        Uni qayta yozmaymiz — original metodni
+        o'zidan foydalanamiz.
+        """
+
+        source_learning_page.lesson_finished(
+            lesson_id
+        )
+
+        self._refresh_learning_pages()
+
+        tests = self.page_cache.get(
+            "tests"
+        )
+
+        if tests is not None:
+            tests.refresh_page()
+
+        exams = self.page_cache.get(
+            "exams"
+        )
+
+        if exams is not None:
+            exams.refresh_page()
+
+        self._show_cached(
+            return_key
+        )
+
+    # ========================================================
+    # TESTS
+    # ========================================================
+
+    def open_tests(self):
+        self._set_menu_row(
+            "Testlar"
+        )
+
+        key = "tests"
+
+        page = self.page_cache.get(
+            key
+        )
+
+        if page is None:
+            page = TestsPage(
+                self.user
+            )
+
+            page.open_level_requested.connect(
+                self._open_level_from_tests
             )
 
             self._show_page(
@@ -1031,11 +1288,11 @@ class AppShell(
         else:
             page.refresh_page()
 
-            self.stack.setCurrentWidget(
-                page
+            self._show_cached(
+                key
             )
 
-    def open_level_from_tests(
+    def _open_level_from_tests(
         self,
         level_codes,
         title,
@@ -1055,15 +1312,15 @@ class AppShell(
         )
 
         if page is None:
-            page = LearningPage(
-                user=self.user,
-                focus_level_codes=(
+            self._create_learning_page(
+                key=key,
+                level_codes=(
                     level_codes
                 ),
-                custom_title=(
+                title=(
                     title
                 ),
-                custom_subtitle=(
+                subtitle=(
                     subtitle
                 ),
                 back_callback=(
@@ -1071,49 +1328,16 @@ class AppShell(
                 ),
             )
 
-            self._show_page(
-                key,
-                page,
-            )
-
         else:
             page.refresh_page()
 
-            self.stack.setCurrentWidget(
-                page
+            self._show_cached(
+                key
             )
 
-    def open_tests(self):
-        self._set_menu_row(
-            "Testlar"
-        )
-
-        key = "tests"
-
-        page = self.page_cache.get(
-            key
-        )
-
-        if page is None:
-            page = TestsPage(
-                self.user
-            )
-
-            page.open_level_requested.connect(
-                self.open_level_from_tests
-            )
-
-            self._show_page(
-                key,
-                page,
-            )
-
-        else:
-            page.refresh_page()
-
-            self.stack.setCurrentWidget(
-                page
-            )
+    # ========================================================
+    # EXAMS
+    # ========================================================
 
     def open_exams(self):
         self._set_menu_row(
@@ -1132,7 +1356,7 @@ class AppShell(
             )
 
             page.open_exam_requested.connect(
-                self._open_exam_window
+                self._open_exam_from_exams
             )
 
             self._show_page(
@@ -1143,13 +1367,38 @@ class AppShell(
         else:
             page.refresh_page()
 
-            self.stack.setCurrentWidget(
-                page
+            self._show_cached(
+                key
             )
 
-    def _open_exam_window(
+    def _open_exam_from_exams(
         self,
         exam: dict,
+    ):
+        self._open_exam_page(
+            exam=exam,
+            source_key="exams",
+        )
+
+    def _open_exam_from_learning(
+        self,
+        exam: dict,
+        source_learning_page,
+    ):
+        source_key = (
+            self.current_page_key
+        )
+
+        self._open_exam_page(
+            exam=exam,
+            source_key=source_key,
+        )
+
+    def _open_exam_page(
+        self,
+        *,
+        exam: dict,
+        source_key: str,
     ):
         exam_data = dict(
             exam
@@ -1159,21 +1408,70 @@ class AppShell(
             "master_mode"
         ] = self.is_master
 
-        self.exam_window = ExamWindow(
+        exam_id = (
+            exam_data[
+                "id"
+            ]
+        )
+
+        key = (
+            f"exam::{exam_id}"
+        )
+
+        self._drop_cached_page(
+            key
+        )
+
+        page = ExamPage(
             user=self.user,
             exam=exam_data,
+            back_callback=(
+                lambda k=source_key:
+                self._show_cached(
+                    k
+                )
+            ),
         )
 
-        self.exam_window.exam_passed.connect(
-            self._exam_finished
+        page.exam_passed.connect(
+            lambda return_key=source_key:
+            self._exam_completed(
+                return_key
+            )
         )
 
-        self.exam_window.show()
+        self._show_page(
+            key,
+            page,
+        )
 
-    def _exam_finished(self):
+    def _exam_completed(
+        self,
+        return_key: str,
+    ):
         self._refresh_learning_pages()
 
-        self.open_home()
+        tests = self.page_cache.get(
+            "tests"
+        )
+
+        if tests is not None:
+            tests.refresh_page()
+
+        exams = self.page_cache.get(
+            "exams"
+        )
+
+        if exams is not None:
+            exams.refresh_page()
+
+        self._show_cached(
+            return_key
+        )
+
+    # ========================================================
+    # STATISTICS
+    # ========================================================
 
     def open_statistics(self):
         self._set_menu_row(
@@ -1209,6 +1507,10 @@ class AppShell(
             replace=True,
         )
 
+    # ========================================================
+    # LICENSE
+    # ========================================================
+
     def open_license(self):
         self._set_menu_row(
             "Litsenziya"
@@ -1231,9 +1533,13 @@ class AppShell(
             )
 
         else:
-            self.stack.setCurrentWidget(
-                page
+            self._show_cached(
+                key
             )
+
+    # ========================================================
+    # INFO PAGE
+    # ========================================================
 
     def open_info_page(
         self,
@@ -1253,8 +1559,8 @@ class AppShell(
             )
 
             if old is not None:
-                self.stack.setCurrentWidget(
-                    old
+                self._show_cached(
+                    key
                 )
 
                 return
