@@ -293,6 +293,39 @@ from courses.level08_module09 import (
     LEVEL08_MODULE09_QUIZ,
 )
 
+from courses.level09_module01 import (
+    LEVEL09_MODULE01_CONTENT,
+    LEVEL09_MODULE01_QUIZ,
+)
+from courses.level09_module02 import (
+    LEVEL09_MODULE02_CONTENT,
+    LEVEL09_MODULE02_QUIZ,
+)
+from courses.level09_module03 import (
+    LEVEL09_MODULE03_CONTENT,
+    LEVEL09_MODULE03_QUIZ,
+)
+from courses.level09_module04 import (
+    LEVEL09_MODULE04_CONTENT,
+    LEVEL09_MODULE04_QUIZ,
+)
+from courses.level09_module05 import (
+    LEVEL09_MODULE05_CONTENT,
+    LEVEL09_MODULE05_QUIZ,
+)
+from courses.level09_module06 import (
+    LEVEL09_MODULE06_CONTENT,
+    LEVEL09_MODULE06_QUIZ,
+)
+from courses.level09_module07 import (
+    LEVEL09_MODULE07_CONTENT,
+    LEVEL09_MODULE07_QUIZ,
+)
+from courses.level09_module08 import (
+    LEVEL09_MODULE08_CONTENT,
+    LEVEL09_MODULE08_QUIZ,
+)
+
 from courses.quiz_data import QUIZ_DATA
 
 
@@ -392,6 +425,16 @@ def get_all_lesson_content():
     combined.update(LEVEL08_MODULE07_CONTENT)
     combined.update(LEVEL08_MODULE08_CONTENT)
     combined.update(LEVEL08_MODULE09_CONTENT)
+
+    # LEVEL 9
+    combined.update(LEVEL09_MODULE01_CONTENT)
+    combined.update(LEVEL09_MODULE02_CONTENT)
+    combined.update(LEVEL09_MODULE03_CONTENT)
+    combined.update(LEVEL09_MODULE04_CONTENT)
+    combined.update(LEVEL09_MODULE05_CONTENT)
+    combined.update(LEVEL09_MODULE06_CONTENT)
+    combined.update(LEVEL09_MODULE07_CONTENT)
+    combined.update(LEVEL09_MODULE08_CONTENT)
 
     return combined
 
@@ -501,5 +544,15 @@ def get_all_quiz_data():
     combined.update(LEVEL08_MODULE07_QUIZ)
     combined.update(LEVEL08_MODULE08_QUIZ)
     combined.update(LEVEL08_MODULE09_QUIZ)
+
+    # LEVEL 9
+    combined.update(LEVEL09_MODULE01_QUIZ)
+    combined.update(LEVEL09_MODULE02_QUIZ)
+    combined.update(LEVEL09_MODULE03_QUIZ)
+    combined.update(LEVEL09_MODULE04_QUIZ)
+    combined.update(LEVEL09_MODULE05_QUIZ)
+    combined.update(LEVEL09_MODULE06_QUIZ)
+    combined.update(LEVEL09_MODULE07_QUIZ)
+    combined.update(LEVEL09_MODULE08_QUIZ)
 
     return combined
