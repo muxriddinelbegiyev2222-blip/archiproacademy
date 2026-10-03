@@ -1,13 +1,13 @@
 @echo off
 setlocal EnableExtensions EnableDelayedExpansion
 
-title ARCHIPRO UZ - CLIENT RELEASE BUILD
+title ARCHIPRO UZ - RELEASE BUILD
 
 cd /d "%~dp0"
 
 echo.
 echo ============================================================
-echo          ARCHIPRO UZ - CLIENT RELEASE BUILD
+echo              ARCHIPRO UZ - RELEASE BUILD
 echo ============================================================
 echo.
 
@@ -28,7 +28,41 @@ python --version
 echo.
 
 REM ============================================================
-REM REQUIRED PACKAGES
+REM VERSION
+REM ============================================================
+
+set "APP_VERSION="
+
+for /f "delims=" %%V in ('python -c "import sys; sys.path.insert(0, r'app'); import version; print(version.APP_VERSION)"') do (
+    set "APP_VERSION=%%V"
+)
+
+if not defined APP_VERSION (
+    echo [ERROR] app\version.py dan versiya olinmadi.
+    pause
+    exit /b 1
+)
+
+echo [OK] ARCHIPRO UZ v%APP_VERSION%
+echo.
+
+REM ============================================================
+REM ICON
+REM ============================================================
+
+if not exist "archipro.ico" (
+    echo [ERROR] archipro.ico topilmadi.
+    echo.
+    echo Fayl repository root papkasida bo'lishi kerak.
+    pause
+    exit /b 1
+)
+
+echo [OK] archipro.ico topildi.
+echo.
+
+REM ============================================================
+REM PACKAGES
 REM ============================================================
 
 python -c "import PySide6" >nul 2>&1
@@ -70,7 +104,7 @@ if errorlevel 1 (
     )
 )
 
-echo [OK] Kerakli paketlar tayyor.
+echo [OK] Build paketlari tayyor.
 echo.
 
 REM ============================================================
@@ -83,11 +117,17 @@ if not exist "app\main.py" (
     exit /b 1
 )
 
-echo [OK] app\main.py topildi.
+if not exist "ARCHIPRO_UZ.iss" (
+    echo [ERROR] ARCHIPRO_UZ.iss topilmadi.
+    pause
+    exit /b 1
+)
+
+echo [OK] Project fayllari tayyor.
 echo.
 
 REM ============================================================
-REM CLEAN
+REM CLEAN OLD CLIENT BUILD
 REM ============================================================
 
 if exist "build_client" (
@@ -108,16 +148,17 @@ if exist "ARCHIPRO_UZ_CLIENT.spec" (
 
 mkdir "release"
 mkdir "release\ARCHIPRO_UZ_CLIENT"
+mkdir "release\installer"
 
-echo [OK] Eski CLIENT build tozalandi.
+echo [OK] Eski release tozalandi.
 echo.
 
 REM ============================================================
-REM BUILD CLIENT
+REM BUILD CLIENT EXE
 REM ============================================================
 
 echo ============================================================
-echo              ARCHIPRO UZ.exe YARATILMOQDA
+echo          ARCHIPRO UZ.exe YARATILMOQDA
 echo ============================================================
 echo.
 
@@ -127,6 +168,7 @@ python -m PyInstaller ^
     --onefile ^
     --windowed ^
     --name "ARCHIPRO UZ" ^
+    --icon "archipro.ico" ^
     --paths "app" ^
     --workpath "build_client" ^
     --distpath "dist_client" ^
@@ -153,12 +195,15 @@ copy /Y ^
     "release\ARCHIPRO_UZ_CLIENT\ARCHIPRO UZ.exe" ^
     >nul
 
+echo [OK] ARCHIPRO UZ.exe tayyor.
+echo.
+
 REM ============================================================
 REM SECURITY CHECK
 REM ============================================================
 
 if exist "release\ARCHIPRO_UZ_CLIENT\ARCHIPRO ADMIN.exe" (
-    echo [ERROR] ADMIN fayli CLIENT paketiga tushib qolgan.
+    echo [ERROR] ADMIN.exe CLIENT paketiga tushib qolgan.
     pause
     exit /b 1
 )
@@ -169,21 +214,107 @@ if exist "release\ARCHIPRO_UZ_CLIENT\archipro_private.key" (
     exit /b 1
 )
 
+echo [OK] CLIENT security check PASS.
+echo.
+
+REM ============================================================
+REM FIND INNO SETUP
+REM ============================================================
+
+set "ISCC="
+
+where ISCC.exe >nul 2>&1
+
+if not errorlevel 1 (
+    for /f "delims=" %%I in ('where ISCC.exe') do (
+        if not defined ISCC set "ISCC=%%I"
+    )
+)
+
+if not defined ISCC (
+    if exist "%ProgramFiles(x86)%\Inno Setup 6\ISCC.exe" (
+        set "ISCC=%ProgramFiles(x86)%\Inno Setup 6\ISCC.exe"
+    )
+)
+
+if not defined ISCC (
+    if exist "%ProgramFiles%\Inno Setup 6\ISCC.exe" (
+        set "ISCC=%ProgramFiles%\Inno Setup 6\ISCC.exe"
+    )
+)
+
+REM ============================================================
+REM INSTALLER
+REM ============================================================
+
+if not defined ISCC (
+    echo ============================================================
+    echo CLIENT EXE TAYYOR
+    echo ============================================================
+    echo.
+    echo [PASS] release\ARCHIPRO_UZ_CLIENT\ARCHIPRO UZ.exe
+    echo.
+    echo [INFO] Inno Setup topilmadi.
+    echo Installer yaratish uchun Inno Setup o'rnatilishi kerak.
+    echo.
+    echo Inno Setup o'rnatilgach BUILD_RELEASE.bat ni
+    echo yana ishga tushiring.
+    echo.
+    pause
+    exit /b 0
+)
+
+echo ============================================================
+echo        ARCHIPRO UZ INSTALLER YARATILMOQDA
+echo ============================================================
+echo.
+
+echo Inno Setup:
+echo %ISCC%
+echo.
+
+"%ISCC%" ^
+    /DMyAppVersion=%APP_VERSION% ^
+    "ARCHIPRO_UZ.iss"
+
+if errorlevel 1 (
+    echo.
+    echo [ERROR] INSTALLER BUILD FAILED
+    pause
+    exit /b 1
+)
+
+REM ============================================================
+REM FINAL CHECK
+REM ============================================================
+
+set "INSTALLER_FILE=release\installer\ARCHIPRO UZ Setup v%APP_VERSION%.exe"
+
+if not exist "%INSTALLER_FILE%" (
+    echo.
+    echo [ERROR] Installer fayli topilmadi:
+    echo %INSTALLER_FILE%
+    pause
+    exit /b 1
+)
+
 echo.
 echo ============================================================
-echo                    RELEASE TAYYOR
+echo               RELEASE MUVAFFAQIYATLI
 echo ============================================================
 echo.
-echo [PASS] CLIENT EXE:
+echo ARCHIPRO UZ VERSION:
+echo v%APP_VERSION%
+echo.
+echo CLIENT EXE:
 echo release\ARCHIPRO_UZ_CLIENT\ARCHIPRO UZ.exe
+echo.
+echo MIJOZGA BERILADIGAN INSTALLER:
+echo %INSTALLER_FILE%
 echo.
 echo CLIENT paketida:
 echo   - ARCHIPRO ADMIN.exe YO'Q
 echo   - private key YO'Q
-echo.
-echo Mijozga faqat:
-echo release\ARCHIPRO_UZ_CLIENT
-echo papkasidagi fayl beriladi.
 echo.
 echo ============================================================
 
