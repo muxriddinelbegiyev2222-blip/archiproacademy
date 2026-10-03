@@ -83,6 +83,7 @@ from courses.level07_module01 import seed_level07_module01
 from courses.level07_module02 import seed_level07_module02
 from courses.level07_module03 import seed_level07_module03
 from courses.level07_module04 import seed_level07_module04
+from courses.level07_module05 import seed_level07_module05
 
 from courses.quiz_service import seed_quizzes
 from courses.seed_courses import seed_course_structure
@@ -194,6 +195,7 @@ def prepare_application():
     seed_level07_module02()
     seed_level07_module03()
     seed_level07_module04()
+    seed_level07_module05()
 
     # ========================================================
     # QUIZZES
@@ -258,7 +260,6 @@ def main():
             login_window.error_label.setText(
                 "Login yoki parol noto'g'ri."
             )
-
             return
 
         login_window.error_label.clear()
@@ -279,12 +280,9 @@ def main():
             user
         )
 
-        windows[
-            "dashboard"
-        ] = dashboard
+        windows["dashboard"] = dashboard
 
         dashboard.show()
-
         login_window.hide()
 
     login_window.login_requested.connect(
