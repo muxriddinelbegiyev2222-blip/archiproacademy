@@ -330,6 +330,39 @@ from courses.level08_exam import (
 
 
 # ============================================================
+# LEVEL 9
+# ============================================================
+
+from courses.level09_module01 import (
+    seed_level09_module01,
+)
+from courses.level09_module02 import (
+    seed_level09_module02,
+)
+from courses.level09_module03 import (
+    seed_level09_module03,
+)
+from courses.level09_module04 import (
+    seed_level09_module04,
+)
+from courses.level09_module05 import (
+    seed_level09_module05,
+)
+from courses.level09_module06 import (
+    seed_level09_module06,
+)
+from courses.level09_module07 import (
+    seed_level09_module07,
+)
+from courses.level09_module08 import (
+    seed_level09_module08,
+)
+from courses.level09_exam import (
+    seed_level09_exam,
+)
+
+
+# ============================================================
 # APPLICATION PREPARATION
 # ============================================================
 
@@ -459,6 +492,19 @@ def prepare_application():
     seed_level08_module09()
 
     # ========================================================
+    # LEVEL 9
+    # ========================================================
+
+    seed_level09_module01()
+    seed_level09_module02()
+    seed_level09_module03()
+    seed_level09_module04()
+    seed_level09_module05()
+    seed_level09_module06()
+    seed_level09_module07()
+    seed_level09_module08()
+
+    # ========================================================
     # QUIZZES
     # ========================================================
 
@@ -477,13 +523,14 @@ def prepare_application():
     seed_level06_exam()
     seed_level07_exam()
     seed_level08_exam()
+    seed_level09_exam()
 
     # ========================================================
     # DEVELOPMENT MASTER ACCOUNT
     # ========================================================
 
-    # Hozircha test va ishlab chiqish uchun.
-    # Sotuv versiyasida bu MASTER account olib tashlanadi.
+    # Faqat ishlab chiqish va test uchun.
+    # Sotuv versiyasida bu account olib tashlanadi.
 
     create_user(
         username="admin",
@@ -531,7 +578,6 @@ def main():
             login_window.error_label.setText(
                 "Login yoki parol noto'g'ri."
             )
-
             return
 
         login_window.error_label.clear()
@@ -552,12 +598,9 @@ def main():
             user
         )
 
-        windows[
-            "dashboard"
-        ] = dashboard
+        windows["dashboard"] = dashboard
 
         dashboard.show()
-
         login_window.hide()
 
     login_window.login_requested.connect(
