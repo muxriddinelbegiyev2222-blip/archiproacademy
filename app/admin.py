@@ -3,6 +3,7 @@ import sys
 from PySide6.QtWidgets import (
     QApplication,
     QComboBox,
+    QFileDialog,
     QFormLayout,
     QFrame,
     QHBoxLayout,
@@ -15,8 +16,12 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from auth.auth_service import create_user
-from database.database import initialize_database
+from licensing.license_generator import (
+    generate_license,
+    get_private_key_path,
+    private_key_exists,
+    save_license,
+)
 
 
 class AdminWindow(QMainWindow):
@@ -28,13 +33,13 @@ class AdminWindow(QMainWindow):
         )
 
         self.resize(
-            620,
-            560,
+            720,
+            720,
         )
 
         self.setMinimumSize(
-            560,
-            520,
+            650,
+            650,
         )
 
         self.setup_ui()
@@ -79,6 +84,24 @@ class AdminWindow(QMainWindow):
                 border: 1px solid #9A3412;
                 border-radius: 9px;
                 padding: 12px;
+                color: #FED7AA;
+                font-size: 12px;
+            }
+
+            QLabel#keyOk {
+                background-color: #10251C;
+                border: 1px solid #15803D;
+                border-radius: 9px;
+                padding: 11px;
+                color: #BBF7D0;
+                font-size: 12px;
+            }
+
+            QLabel#keyError {
+                background-color: #291914;
+                border: 1px solid #C2410C;
+                border-radius: 9px;
+                padding: 11px;
                 color: #FED7AA;
                 font-size: 12px;
             }
@@ -140,7 +163,7 @@ class AdminWindow(QMainWindow):
         )
 
         root.setSpacing(
-            18
+            16
         )
 
         title = QLabel(
@@ -152,7 +175,7 @@ class AdminWindow(QMainWindow):
         )
 
         subtitle = QLabel(
-            "ARCHIPRO UZ foydalanuvchilarini yaratish vositasi"
+            "Offline litsenziya yaratish markazi"
         )
 
         subtitle.setObjectName(
@@ -168,9 +191,10 @@ class AdminWindow(QMainWindow):
         )
 
         warning = QLabel(
-            "DIQQAT: Bu dastur faqat ARCHIPRO UZ egasi yoki "
-            "vakolatli administrator uchun. "
-            "Mijozlarga ARCHIPRO ADMIN.exe berilmaydi."
+            "DIQQAT: ARCHIPRO ADMIN.exe va private key "
+            "faqat dastur egasida qoladi. "
+            "Mijozga faqat ARCHIPRO UZ.exe va "
+            ".archiprolic litsenziya fayli beriladi."
         )
 
         warning.setObjectName(
@@ -183,6 +207,41 @@ class AdminWindow(QMainWindow):
 
         root.addWidget(
             warning
+        )
+
+        self.key_status = QLabel()
+
+        self.key_status.setWordWrap(
+            True
+        )
+
+        if private_key_exists():
+
+            self.key_status.setObjectName(
+                "keyOk"
+            )
+
+            self.key_status.setText(
+                "✓ PRIVATE KEY TOPILDI\n"
+                + str(
+                    get_private_key_path()
+                )
+            )
+
+        else:
+
+            self.key_status.setObjectName(
+                "keyError"
+            )
+
+            self.key_status.setText(
+                "PRIVATE KEY TOPILMADI.\n"
+                "Avval GENERATE_LICENSE_KEYS.bat "
+                "faylini ishga tushiring."
+            )
+
+        root.addWidget(
+            self.key_status
         )
 
         card = QFrame()
@@ -210,6 +269,14 @@ class AdminWindow(QMainWindow):
 
         form.setSpacing(
             14
+        )
+
+        self.device_input = (
+            QLineEdit()
+        )
+
+        self.device_input.setPlaceholderText(
+            "ARCHIPRO-XXXX-XXXX-XXXX-XXXX-XXXX-XXXX"
         )
 
         self.full_name_input = (
@@ -264,6 +331,40 @@ class AdminWindow(QMainWindow):
             "MASTER"
         )
 
+        self.duration_combo = (
+            QComboBox()
+        )
+
+        self.duration_combo.addItem(
+            "Muddatsiz",
+            "PERMANENT",
+        )
+
+        self.duration_combo.addItem(
+            "30 kun",
+            "30",
+        )
+
+        self.duration_combo.addItem(
+            "90 kun",
+            "90",
+        )
+
+        self.duration_combo.addItem(
+            "180 kun",
+            "180",
+        )
+
+        self.duration_combo.addItem(
+            "365 kun",
+            "365",
+        )
+
+        form.addRow(
+            "Device ID:",
+            self.device_input,
+        )
+
         form.addRow(
             "F.I.Sh.:",
             self.full_name_input,
@@ -289,6 +390,11 @@ class AdminWindow(QMainWindow):
             self.license_combo,
         )
 
+        form.addRow(
+            "Amal qilish muddati:",
+            self.duration_combo,
+        )
+
         card_layout.addLayout(
             form
         )
@@ -308,7 +414,7 @@ class AdminWindow(QMainWindow):
         )
 
         create_button = QPushButton(
-            "FOYDALANUVCHI YARATISH"
+            "LICENSE YARATISH"
         )
 
         create_button.setObjectName(
@@ -316,7 +422,7 @@ class AdminWindow(QMainWindow):
         )
 
         create_button.clicked.connect(
-            self.create_new_user
+            self.create_license
         )
 
         buttons.addWidget(
@@ -340,6 +446,8 @@ class AdminWindow(QMainWindow):
         root.addStretch()
 
     def clear_form(self):
+        self.device_input.clear()
+
         self.full_name_input.clear()
 
         self.username_input.clear()
@@ -352,9 +460,33 @@ class AdminWindow(QMainWindow):
             "PRO"
         )
 
-        self.username_input.setFocus()
+        self.duration_combo.setCurrentIndex(
+            0
+        )
 
-    def create_new_user(self):
+        self.device_input.setFocus()
+
+    def create_license(self):
+        if not private_key_exists():
+
+            QMessageBox.critical(
+                self,
+                "Private key",
+                (
+                    "Private key topilmadi.\n\n"
+                    "Avval GENERATE_LICENSE_KEYS.bat "
+                    "faylini ishga tushiring."
+                ),
+            )
+
+            return
+
+        device_id = (
+            self.device_input
+            .text()
+            .strip()
+        )
+
         full_name = (
             self.full_name_input
             .text()
@@ -380,95 +512,158 @@ class AdminWindow(QMainWindow):
         license_type = (
             self.license_combo
             .currentText()
-            .strip()
         )
 
-        if not full_name:
+        duration_code = (
+            self.duration_combo
+            .currentData()
+        )
+
+        if not device_id:
+
             QMessageBox.warning(
                 self,
-                "Ma'lumot yetishmayapti",
+                "Device ID",
+                "Mijoz Device ID'sini kiriting.",
+            )
+
+            return
+
+        if not full_name:
+
+            QMessageBox.warning(
+                self,
+                "F.I.Sh.",
                 "F.I.Sh. kiriting.",
             )
+
             return
 
         if not username:
-            QMessageBox.warning(
-                self,
-                "Ma'lumot yetishmayapti",
-                "Login kiriting.",
-            )
-            return
 
-        if len(username) < 3:
             QMessageBox.warning(
                 self,
                 "Login",
-                "Login kamida 3 ta belgidan iborat bo'lsin.",
+                "Login kiriting.",
             )
+
             return
 
         if len(password) < 8:
+
             QMessageBox.warning(
                 self,
                 "Parol",
                 "Parol kamida 8 ta belgidan iborat bo'lsin.",
             )
+
             return
 
         if password != password_confirm:
+
             QMessageBox.warning(
                 self,
                 "Parol",
                 "Kiritilgan parollar bir xil emas.",
             )
+
             return
 
         try:
-            result = create_user(
-                username=username,
-                password=password,
-                full_name=full_name,
-                license_type=license_type,
+
+            license_data = (
+                generate_license(
+                    device_id=device_id,
+                    username=username,
+                    password=password,
+                    full_name=full_name,
+                    license_type=license_type,
+                    duration_code=duration_code,
+                )
             )
 
         except Exception as exc:
+
             QMessageBox.critical(
                 self,
-                "Xato",
-                (
-                    "Foydalanuvchi yaratilmadi.\n\n"
-                    f"{exc}"
+                "License yaratilmadi",
+                str(
+                    exc
                 ),
             )
+
             return
 
-        if result:
-            QMessageBox.information(
+        suggested_name = (
+            f"{username}_ARCHIPRO"
+            ".archiprolic"
+        )
+
+        file_path, _ = (
+            QFileDialog.getSaveFileName(
                 self,
-                "Tayyor",
+                "ARCHIPRO litsenziyasini saqlash",
+                suggested_name,
                 (
-                    "Foydalanuvchi muvaffaqiyatli yaratildi.\n\n"
-                    f"Login: {username}\n"
-                    f"Litsenziya: {license_type}"
+                    "ARCHIPRO License "
+                    "(*.archiprolic)"
+                ),
+            )
+        )
+
+        if not file_path:
+            return
+
+        try:
+
+            saved_path = (
+                save_license(
+                    license_data,
+                    file_path,
+                )
+            )
+
+        except Exception as exc:
+
+            QMessageBox.critical(
+                self,
+                "Saqlash xatosi",
+                str(
+                    exc
                 ),
             )
 
-            self.clear_form()
+            return
 
-        else:
-            QMessageBox.warning(
-                self,
-                "Yaratilmadi",
-                (
-                    "Foydalanuvchi yaratilmadi.\n\n"
-                    "Bu login avval yaratilgan bo'lishi mumkin."
-                ),
+        payload = (
+            license_data[
+                "payload"
+            ]
+        )
+
+        expires_at = (
+            payload.get(
+                "expires_at"
             )
+            or "Muddatsiz"
+        )
+
+        QMessageBox.information(
+            self,
+            "ARCHIPRO LICENSE",
+            (
+                "Litsenziya muvaffaqiyatli yaratildi.\n\n"
+                f"Login: {username}\n"
+                f"Turi: {license_type}\n"
+                f"Muddati: {expires_at}\n\n"
+                f"Fayl:\n{saved_path}"
+            ),
+        )
+
+        self.clear_form()
 
 
 def main():
-    initialize_database()
-
     app = QApplication(
         sys.argv
     )
