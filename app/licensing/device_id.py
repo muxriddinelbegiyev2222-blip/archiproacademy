@@ -1,111 +1,141 @@
 import hashlib
-import os
 import platform
 import uuid
 
+try:
+    import winreg
+except ImportError:
+    winreg = None
 
-# ============================================================
-# WINDOWS MACHINE GUID
-# ============================================================
 
-def _get_windows_machine_guid() -> str:
-    if os.name != "nt":
+DEVICE_PREFIX = "ARCHIPRO"
+PRODUCT_SALT = "ARCHIPRO_UZ_DEVICE_V2"
+
+
+def _read_windows_machine_guid() -> str:
+    """
+    Windows MachineGuid ni registry'dan oladi.
+
+    Bu qiymat:
+    - kompyuter nomiga bog'liq emas
+    - Wi-Fi / Ethernet adapteriga bog'liq emas
+    - MAC address o'zgarsa o'zgarmaydi
+
+    Windows qayta o'rnatilib MachineGuid yangilansa,
+    Device ID ham yangilanadi.
+    """
+
+    if winreg is None:
         return ""
 
-    try:
-        import winreg
+    registry_path = r"SOFTWARE\Microsoft\Cryptography"
 
-        key = winreg.OpenKey(
-            winreg.HKEY_LOCAL_MACHINE,
-            r"SOFTWARE\Microsoft\Cryptography",
-        )
+    access_modes = [
+        winreg.KEY_READ | getattr(
+            winreg,
+            "KEY_WOW64_64KEY",
+            0,
+        ),
+        winreg.KEY_READ | getattr(
+            winreg,
+            "KEY_WOW64_32KEY",
+            0,
+        ),
+        winreg.KEY_READ,
+    ]
 
-        value, _ = winreg.QueryValueEx(
-            key,
-            "MachineGuid",
-        )
+    for access in access_modes:
+        try:
+            with winreg.OpenKey(
+                winreg.HKEY_LOCAL_MACHINE,
+                registry_path,
+                0,
+                access,
+            ) as key:
+                value, _ = winreg.QueryValueEx(
+                    key,
+                    "MachineGuid",
+                )
 
-        winreg.CloseKey(
-            key
-        )
+                machine_guid = str(
+                    value
+                ).strip()
 
-        return str(
-            value
-        ).strip()
+                if machine_guid:
+                    return machine_guid
 
-    except Exception:
-        return ""
+        except (
+            FileNotFoundError,
+            OSError,
+            PermissionError,
+        ):
+            continue
+
+    return ""
 
 
-# ============================================================
-# RAW DEVICE FINGERPRINT
-# ============================================================
+def _fallback_device_source() -> str:
+    """
+    MachineGuid olinmasa fallback identifikator.
 
-def _get_raw_fingerprint() -> str:
-    parts = []
+    Asosiy Windows mijozlarda odatda bu ishlatilmaydi.
+    """
 
-    machine_guid = (
-        _get_windows_machine_guid()
-    )
+    parts = [
+        PRODUCT_SALT,
+        platform.system(),
+        platform.machine(),
+        platform.processor(),
+        str(uuid.getnode()),
+    ]
 
-    if machine_guid:
-        parts.append(
-            machine_guid
-        )
-
-    parts.append(
-        platform.system()
-    )
-
-    parts.append(
-        platform.machine()
-    )
-
-    parts.append(
-        platform.node()
-    )
-
-    parts.append(
-        str(
-            uuid.getnode()
-        )
-    )
-
-    computer_name = os.getenv(
-        "COMPUTERNAME",
-        "",
-    )
-
-    if computer_name:
-        parts.append(
-            computer_name
-        )
-
-    return "|".join(
+    cleaned = [
         str(part).strip().lower()
         for part in parts
         if str(part).strip()
+    ]
+
+    return "|".join(
+        cleaned
     )
 
 
-# ============================================================
-# DEVICE ID
-# ============================================================
+def _get_device_source() -> str:
+    machine_guid = (
+        _read_windows_machine_guid()
+    )
+
+    if machine_guid:
+        return (
+            f"{PRODUCT_SALT}"
+            f"|WINDOWS"
+            f"|{machine_guid.strip().lower()}"
+        )
+
+    return _fallback_device_source()
+
 
 def get_device_id() -> str:
-    raw = (
-        _get_raw_fingerprint()
-    )
+    """
+    ARCHIPRO UZ uchun barqaror Device ID yaratadi.
+
+    Ko'rinishi:
+    ARCHIPRO-XXXX-XXXX-XXXX-XXXX-XXXX-XXXX
+    """
+
+    source = _get_device_source()
 
     digest = hashlib.sha256(
-        raw.encode(
+        source.encode(
             "utf-8"
         )
     ).hexdigest().upper()
 
-    chunks = [
-        digest[index:index + 4]
-        for index in range(
+    short_hash = digest[:24]
+
+    groups = [
+        short_hash[i:i + 4]
+        for i in range(
             0,
             24,
             4,
@@ -113,8 +143,9 @@ def get_device_id() -> str:
     ]
 
     return (
-        "ARCHIPRO-"
-        + "-".join(chunks)
+        DEVICE_PREFIX
+        + "-"
+        + "-".join(groups)
     )
 
 
