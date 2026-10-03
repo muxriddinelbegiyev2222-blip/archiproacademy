@@ -42,6 +42,7 @@ class AppShell(QMainWindow):
         self.build_ui()
         self.open_home()
 
+        # Monitor o'lchamiga avtomatik moslashadi.
         QTimer.singleShot(
             0,
             self.showMaximized,
@@ -178,7 +179,7 @@ class AppShell(QMainWindow):
         )
 
     # ========================================================
-    # UI
+    # BUILD UI
     # ========================================================
 
     def build_ui(self):
@@ -230,6 +231,10 @@ class AppShell(QMainWindow):
             24,
             16,
             16,
+        )
+
+        sidebar_layout.setSpacing(
+            8
         )
 
         logo = QLabel(
@@ -327,7 +332,7 @@ class AppShell(QMainWindow):
         )
 
         # ====================================================
-        # STACK
+        # CONTENT
         # ====================================================
 
         self.stack = QStackedWidget()
@@ -349,36 +354,36 @@ class AppShell(QMainWindow):
         self,
         item,
     ):
-        menu_text = item.text()
+        text = item.text()
 
-        if menu_text == "Bosh sahifa":
+        if text == "Bosh sahifa":
             self.open_home()
             return
 
-        if menu_text == "Mening o'qishim":
+        if text == "Mening o'qishim":
             self.open_learning()
             return
 
-        if menu_text == "Portfolio":
+        if text == "Portfolio":
             self.open_portfolio()
             return
 
-        if menu_text == "Litsenziya":
+        if text == "Litsenziya":
             self.open_license()
             return
 
         self.open_section(
-            menu_text
+            text
         )
 
     # ========================================================
-    # PAGE MANAGER
+    # PAGE
     # ========================================================
 
     def show_page(
         self,
-        key: str,
-        widget: QWidget,
+        key,
+        widget,
     ):
         existing = self.page_cache.get(
             key
@@ -388,7 +393,8 @@ class AppShell(QMainWindow):
             self.stack.setCurrentWidget(
                 existing
             )
-            return
+
+            return existing
 
         widget.setParent(
             self.stack
@@ -409,6 +415,8 @@ class AppShell(QMainWindow):
         self.stack.setCurrentWidget(
             widget
         )
+
+        return widget
 
     # ========================================================
     # HOME
@@ -457,12 +465,16 @@ class AppShell(QMainWindow):
         )
 
         subtitle = QLabel(
-            "Arxitekturani bosqichma-bosqich o'rganing "
-            "va amaliy ko'nikmalaringizni rivojlantiring."
+            "Arxitekturani 0 dan boshlab professional "
+            "turar joy loyihalashgacha o'rganing."
         )
 
         subtitle.setObjectName(
             "homeSub"
+        )
+
+        subtitle.setWordWrap(
+            True
         )
 
         layout.addWidget(
@@ -490,6 +502,10 @@ class AppShell(QMainWindow):
             22,
         )
 
+        card_layout.setSpacing(
+            10
+        )
+
         card_title = QLabel(
             "ARCHIPRO UZ"
         )
@@ -499,8 +515,9 @@ class AppShell(QMainWindow):
         )
 
         card_text = QLabel(
-            "Barcha o'quv kontenti, testlar va imtihonlar "
-            "saqlangan holda yagona oynada ishlaydi."
+            "Chap paneldagi barcha bo'limlarni ko'rishingiz mumkin. "
+            "O'quv Level va darslari esa o'z ketma-ketligiga ko'ra "
+            "bosqichma-bosqich ochiladi."
         )
 
         card_text.setObjectName(
@@ -540,15 +557,20 @@ class AppShell(QMainWindow):
         title=None,
         subtitle=None,
     ):
-        level_codes = level_codes or []
-
-        key = (
-            "learning_all"
-            if not level_codes
-            else
-            "learning_"
-            + "_".join(level_codes)
+        level_codes = (
+            level_codes
+            or []
         )
+
+        if level_codes:
+            key = (
+                "learning_"
+                + "_".join(
+                    level_codes
+                )
+            )
+        else:
+            key = "learning_all"
 
         if key in self.page_cache:
             page = self.page_cache[
@@ -580,6 +602,110 @@ class AppShell(QMainWindow):
             custom_subtitle=subtitle,
         )
 
+        # MUHIM:
+        # Bu yerda hech qanday level_status,
+        # lesson.status yoki MASTER qoidasi
+        # o'zgartirilmaydi.
+        #
+        # PRO foydalanuvchi faqat LearningWindow
+        # ruxsat bergan darsni ochadi.
+
+        self.show_page(
+            key,
+            page,
+        )
+
+    # ========================================================
+    # SECTION
+    # ========================================================
+
+    def open_section(
+        self,
+        section_name,
+    ):
+        key = (
+            "section_"
+            + section_name
+        )
+
+        if key in self.page_cache:
+            self.stack.setCurrentWidget(
+                self.page_cache[
+                    key
+                ]
+            )
+            return
+
+        page = MenuSectionWindow(
+            self.user,
+            section_name,
+        )
+
+        # ====================================================
+        # OCHISH TUGMASINI ASOSIY OYNAGA ULASH
+        # ====================================================
+
+        def open_item_inside_app(
+            item,
+        ):
+            if item.get(
+                "action"
+            ) == "license":
+
+                self.open_license()
+                return
+
+            level_codes = item.get(
+                "levels",
+                [],
+            )
+
+            item_title = item.get(
+                "title",
+                section_name,
+            )
+
+            item_subtitle = item.get(
+                "subtitle",
+                "",
+            )
+
+            self.open_learning(
+                level_codes,
+                item_title,
+                item_subtitle,
+            )
+
+        def open_whole_section_inside_app():
+            data = getattr(
+                page,
+                "section_data",
+                {},
+            )
+
+            self.open_learning(
+                data.get(
+                    "section_levels",
+                    [],
+                ),
+                data.get(
+                    "title",
+                    section_name,
+                ),
+                data.get(
+                    "subtitle",
+                    "",
+                ),
+            )
+
+        page.open_item = (
+            open_item_inside_app
+        )
+
+        page.open_whole_section = (
+            open_whole_section_inside_app
+        )
+
         self.show_page(
             key,
             page,
@@ -606,37 +732,6 @@ class AppShell(QMainWindow):
 
         page.open_levels_requested.connect(
             self.open_learning
-        )
-
-        self.show_page(
-            key,
-            page,
-        )
-
-    # ========================================================
-    # SECTIONS
-    # ========================================================
-
-    def open_section(
-        self,
-        section_name: str,
-    ):
-        key = (
-            "section_"
-            + section_name
-        )
-
-        if key in self.page_cache:
-            self.stack.setCurrentWidget(
-                self.page_cache[
-                    key
-                ]
-            )
-            return
-
-        page = MenuSectionWindow(
-            self.user,
-            section_name,
         )
 
         self.show_page(
