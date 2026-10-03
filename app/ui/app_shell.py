@@ -1,4 +1,4 @@
-from PySide6.QtCore import Qt
+from PySide6.QtCore import Qt, QTimer
 from PySide6.QtWidgets import (
     QFrame,
     QHBoxLayout,
@@ -24,27 +24,30 @@ class AppShell(QMainWindow):
         super().__init__()
 
         self.user = user
+        self.page_cache = {}
 
         self.setWindowTitle(
             "ARCHIPRO UZ"
         )
 
-        self.resize(
-            1500,
-            900,
-        )
-
+        # Kichraytirilganda minimal o'lcham.
         self.setMinimumSize(
-            1100,
-            700,
+            1000,
+            650,
         )
-
-        self.page_cache = {}
 
         self.setup_styles()
         self.build_ui()
-
         self.open_home()
+
+        # ====================================================
+        # DASTUR HAR DOIM MAXIMIZED HOLATDA OCHILADI
+        # ====================================================
+
+        QTimer.singleShot(
+            0,
+            self.showMaximized,
+        )
 
     # ========================================================
     # STYLE
@@ -62,6 +65,10 @@ class AppShell(QMainWindow):
                 color: #F8FAFC;
             }
 
+            QWidget#appRoot {
+                background-color: #0B1220;
+            }
+
             QFrame#sidebar {
                 background-color: #0F172A;
                 border-right: 1px solid #1E293B;
@@ -71,11 +78,13 @@ class AppShell(QMainWindow):
                 color: #FFFFFF;
                 font-size: 24px;
                 font-weight: 800;
+                background-color: transparent;
             }
 
             QLabel#logoSub {
                 color: #64748B;
                 font-size: 11px;
+                background-color: transparent;
             }
 
             QListWidget {
@@ -84,6 +93,10 @@ class AppShell(QMainWindow):
                 outline: none;
                 color: #CBD5E1;
                 font-size: 14px;
+            }
+
+            QListWidget::viewport {
+                background-color: transparent;
             }
 
             QListWidget::item {
@@ -115,6 +128,10 @@ class AppShell(QMainWindow):
                 border: none;
             }
 
+            QStackedWidget > QWidget {
+                background-color: #0B1220;
+            }
+
             QWidget#homePage {
                 background-color: #0B1220;
             }
@@ -123,11 +140,13 @@ class AppShell(QMainWindow):
                 color: #FFFFFF;
                 font-size: 32px;
                 font-weight: 800;
+                background-color: transparent;
             }
 
             QLabel#homeSub {
                 color: #94A3B8;
                 font-size: 14px;
+                background-color: transparent;
             }
 
             QFrame#homeCard {
@@ -140,11 +159,48 @@ class AppShell(QMainWindow):
                 color: #FFFFFF;
                 font-size: 20px;
                 font-weight: 700;
+                background-color: transparent;
             }
 
             QLabel#cardText {
                 color: #94A3B8;
                 font-size: 13px;
+                background-color: transparent;
+            }
+
+            QScrollArea {
+                background-color: #0B1220;
+                border: none;
+            }
+
+            QScrollArea QWidget {
+                background-color: #0B1220;
+            }
+
+            QScrollBar:vertical {
+                background-color: #0F172A;
+                width: 11px;
+                margin: 0px;
+            }
+
+            QScrollBar::handle:vertical {
+                background-color: #334155;
+                min-height: 35px;
+                border-radius: 5px;
+            }
+
+            QScrollBar::handle:vertical:hover {
+                background-color: #475569;
+            }
+
+            QScrollBar::add-line:vertical,
+            QScrollBar::sub-line:vertical {
+                height: 0px;
+            }
+
+            QScrollBar::add-page:vertical,
+            QScrollBar::sub-page:vertical {
+                background: none;
             }
             """
         )
@@ -155,6 +211,18 @@ class AppShell(QMainWindow):
 
     def build_ui(self):
         central = QWidget()
+
+        central.setObjectName(
+            "appRoot"
+        )
+
+        central.setStyleSheet(
+            """
+            QWidget#appRoot {
+                background-color: #0B1220;
+            }
+            """
+        )
 
         self.setCentralWidget(
             central
@@ -186,7 +254,7 @@ class AppShell(QMainWindow):
         )
 
         sidebar.setFixedWidth(
-            260
+            255
         )
 
         sidebar_layout = QVBoxLayout(
@@ -194,10 +262,10 @@ class AppShell(QMainWindow):
         )
 
         sidebar_layout.setContentsMargins(
-            20,
+            16,
             24,
-            20,
-            20,
+            16,
+            16,
         )
 
         sidebar_layout.setSpacing(
@@ -251,10 +319,10 @@ class AppShell(QMainWindow):
             "Sozlamalar",
         ]
 
-        for text in self.menu_items:
+        for menu_text in self.menu_items:
             self.menu.addItem(
                 QListWidgetItem(
-                    text
+                    menu_text
                 )
             )
 
@@ -299,10 +367,19 @@ class AppShell(QMainWindow):
         )
 
         # ====================================================
-        # STACK
+        # CONTENT STACK
         # ====================================================
 
         self.stack = QStackedWidget()
+
+        self.stack.setStyleSheet(
+            """
+            QStackedWidget {
+                background-color: #0B1220;
+                border: none;
+            }
+            """
+        )
 
         root.addWidget(
             sidebar
@@ -321,21 +398,23 @@ class AppShell(QMainWindow):
         self,
         item,
     ):
-        text = item.text()
+        menu_text = item.text()
 
-        if text == "Bosh sahifa":
+        if menu_text == "Bosh sahifa":
             self.open_home()
+            return
 
-        elif text == "Mening o'qishim":
+        if menu_text == "Mening o'qishim":
             self.open_learning()
+            return
 
-        elif text == "Litsenziya":
+        if menu_text == "Litsenziya":
             self.open_license()
+            return
 
-        else:
-            self.open_section(
-                text
-            )
+        self.open_section(
+            menu_text
+        )
 
     # ========================================================
     # PAGE MANAGER
@@ -346,22 +425,58 @@ class AppShell(QMainWindow):
         key: str,
         widget: QWidget,
     ):
-        old_widget = self.page_cache.get(
+        existing = self.page_cache.get(
             key
         )
 
-        if old_widget is not None:
+        if existing is not None:
             self.stack.setCurrentWidget(
-                old_widget
+                existing
             )
             return
 
+        # QMainWindow yoki oddiy QWidget bo'lishidan
+        # qat'i nazar asosiy STACK ichida ishlaydi.
         widget.setParent(
             self.stack
         )
 
         widget.setWindowFlags(
             Qt.WindowType.Widget
+        )
+
+        widget.setAutoFillBackground(
+            True
+        )
+
+        widget.setStyleSheet(
+            widget.styleSheet()
+            + """
+            QMainWindow {
+                background-color: #0B1220;
+            }
+
+            QWidget {
+                background-color: #0B1220;
+            }
+
+            QScrollArea {
+                background-color: #0B1220;
+                border: none;
+            }
+
+            QScrollArea > QWidget {
+                background-color: #0B1220;
+            }
+
+            QScrollArea > QWidget > QWidget {
+                background-color: #0B1220;
+            }
+
+            QAbstractScrollArea::viewport {
+                background-color: #0B1220;
+            }
+            """
         )
 
         self.stack.addWidget(
@@ -381,12 +496,15 @@ class AppShell(QMainWindow):
     # ========================================================
 
     def open_home(self):
+        self.menu.setCurrentRow(
+            0
+        )
+
         if "home" in self.page_cache:
             self.stack.setCurrentWidget(
-                self.page_cache["home"]
-            )
-            self.menu.setCurrentRow(
-                0
+                self.page_cache[
+                    "home"
+                ]
             )
             return
 
@@ -394,6 +512,14 @@ class AppShell(QMainWindow):
 
         page.setObjectName(
             "homePage"
+        )
+
+        page.setStyleSheet(
+            """
+            QWidget#homePage {
+                background-color: #0B1220;
+            }
+            """
         )
 
         layout = QVBoxLayout(
@@ -420,7 +546,8 @@ class AppShell(QMainWindow):
         )
 
         subtitle = QLabel(
-            "Arxitekturani bosqichma-bosqich o'rganing."
+            "Arxitekturani bosqichma-bosqich o'rganing "
+            "va amaliy ko'nikmalaringizni rivojlantiring."
         )
 
         subtitle.setObjectName(
@@ -465,10 +592,8 @@ class AppShell(QMainWindow):
         )
 
         card_text = QLabel(
-            (
-                "Endi barcha asosiy bo'limlar shu bitta oynaning "
-                "ichida ishlaydi. Chap menyu doim joyida qoladi."
-            )
+            "Barcha bo'limlar bitta asosiy oynaning ichida ishlaydi. "
+            "Chap navigatsiya panelidan kerakli bo'limni tanlang."
         )
 
         card_text.setObjectName(
@@ -496,10 +621,6 @@ class AppShell(QMainWindow):
         self.show_page(
             "home",
             page,
-        )
-
-        self.menu.setCurrentRow(
-            0
         )
 
     # ========================================================
