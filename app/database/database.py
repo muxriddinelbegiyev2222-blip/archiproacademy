@@ -10,13 +10,9 @@ from pathlib import Path
 def get_app_data_directory() -> Path:
     """
     Windows'da:
-
     %LOCALAPPDATA%/ARCHIPRO_UZ/data/
 
-    papkasini ishlatadi.
-
-    Agar LOCALAPPDATA mavjud bo'lmasa,
-    user home papkasidan foydalanadi.
+    LOCALAPPDATA topilmasa user home papkasidan foydalanadi.
     """
 
     local_app_data = os.getenv(
@@ -74,18 +70,45 @@ def get_connection():
 # MIGRATION HELPERS
 # ============================================================
 
+def table_exists(
+    cursor,
+    table_name: str,
+) -> bool:
+
+    cursor.execute(
+        """
+        SELECT 1
+        FROM sqlite_master
+        WHERE type = 'table'
+          AND name = ?
+        LIMIT 1
+        """,
+        (table_name,),
+    )
+
+    return (
+        cursor.fetchone()
+        is not None
+    )
+
+
 def column_exists(
     cursor,
     table_name: str,
     column_name: str,
 ) -> bool:
+
+    if not table_exists(
+        cursor,
+        table_name,
+    ):
+        return False
+
     cursor.execute(
         f"PRAGMA table_info({table_name})"
     )
 
-    columns = cursor.fetchall()
-
-    for column in columns:
+    for column in cursor.fetchall():
 
         if (
             column["name"]
@@ -104,12 +127,7 @@ def ensure_column(
 ):
     """
     Eski database'da yangi ustun bo'lmasa,
-    uni avtomatik qo'shadi.
-
-    CREATE TABLE IF NOT EXISTS eski jadvalga
-    yangi column qo'shmaydi.
-
-    Shu sabab migration kerak.
+    ALTER TABLE orqali avtomatik qo'shadi.
     """
 
     if not column_exists(
@@ -117,6 +135,7 @@ def ensure_column(
         table_name,
         column_name,
     ):
+
         cursor.execute(
             f"""
             ALTER TABLE {table_name}
@@ -131,6 +150,7 @@ def ensure_column(
 # ============================================================
 
 def initialize_database():
+
     connection = get_connection()
 
     try:
@@ -227,6 +247,9 @@ def initialize_database():
 
                 sort_order INTEGER NOT NULL DEFAULT 0,
 
+                estimated_minutes
+                    INTEGER NOT NULL DEFAULT 0,
+
                 minimum_mastery_score
                     INTEGER NOT NULL DEFAULT 85,
 
@@ -260,15 +283,20 @@ def initialize_database():
 
                 sort_order INTEGER NOT NULL DEFAULT 0,
 
-                estimated_minutes INTEGER NOT NULL DEFAULT 10,
+                estimated_minutes
+                    INTEGER NOT NULL DEFAULT 10,
 
-                xp_reward INTEGER NOT NULL DEFAULT 10,
+                xp_reward
+                    INTEGER NOT NULL DEFAULT 10,
 
-                passing_score INTEGER NOT NULL DEFAULT 80,
+                passing_score
+                    INTEGER NOT NULL DEFAULT 80,
 
-                is_required INTEGER NOT NULL DEFAULT 1,
+                is_required
+                    INTEGER NOT NULL DEFAULT 1,
 
-                is_active INTEGER NOT NULL DEFAULT 1,
+                is_active
+                    INTEGER NOT NULL DEFAULT 1,
 
                 FOREIGN KEY(module_id)
                     REFERENCES course_modules(id)
@@ -361,7 +389,8 @@ def initialize_database():
 
                 option_text TEXT NOT NULL,
 
-                is_correct INTEGER NOT NULL DEFAULT 0,
+                is_correct
+                    INTEGER NOT NULL DEFAULT 0,
 
                 FOREIGN KEY(question_id)
                     REFERENCES quiz_questions(id)
@@ -416,13 +445,17 @@ def initialize_database():
 
                 description TEXT DEFAULT '',
 
-                question_count INTEGER NOT NULL DEFAULT 20,
+                question_count
+                    INTEGER NOT NULL DEFAULT 20,
 
-                passing_score INTEGER NOT NULL DEFAULT 85,
+                passing_score
+                    INTEGER NOT NULL DEFAULT 85,
 
-                xp_reward INTEGER NOT NULL DEFAULT 200,
+                xp_reward
+                    INTEGER NOT NULL DEFAULT 200,
 
-                is_active INTEGER NOT NULL DEFAULT 1,
+                is_active
+                    INTEGER NOT NULL DEFAULT 1,
 
                 FOREIGN KEY(level_id)
                     REFERENCES course_levels(id)
@@ -481,9 +514,11 @@ def initialize_database():
 
                 status TEXT NOT NULL DEFAULT 'locked',
 
-                best_exam_score INTEGER NOT NULL DEFAULT 0,
+                best_exam_score
+                    INTEGER NOT NULL DEFAULT 0,
 
-                exam_attempts INTEGER NOT NULL DEFAULT 0,
+                exam_attempts
+                    INTEGER NOT NULL DEFAULT 0,
 
                 completed_at TEXT,
 
@@ -505,9 +540,6 @@ def initialize_database():
 
         # ====================================================
         # SAFE MIGRATIONS
-        #
-        # Bu qism eski archipro.db faylini ham
-        # yangi kodga moslashtiradi.
         # ====================================================
 
         ensure_column(
@@ -519,9 +551,52 @@ def initialize_database():
 
         ensure_column(
             cursor,
+            "course_levels",
+            "is_active",
+            "INTEGER NOT NULL DEFAULT 1",
+        )
+
+        # ----------------------------------------------------
+        # COURSE MODULES
+        # ----------------------------------------------------
+
+        ensure_column(
+            cursor,
+            "course_modules",
+            "estimated_minutes",
+            "INTEGER NOT NULL DEFAULT 0",
+        )
+
+        ensure_column(
+            cursor,
             "course_modules",
             "minimum_mastery_score",
             "INTEGER NOT NULL DEFAULT 85",
+        )
+
+        ensure_column(
+            cursor,
+            "course_modules",
+            "is_active",
+            "INTEGER NOT NULL DEFAULT 1",
+        )
+
+        # ----------------------------------------------------
+        # LESSONS
+        # ----------------------------------------------------
+
+        ensure_column(
+            cursor,
+            "lessons",
+            "estimated_minutes",
+            "INTEGER NOT NULL DEFAULT 10",
+        )
+
+        ensure_column(
+            cursor,
+            "lessons",
+            "xp_reward",
+            "INTEGER NOT NULL DEFAULT 10",
         )
 
         ensure_column(
@@ -545,6 +620,24 @@ def initialize_database():
             "INTEGER NOT NULL DEFAULT 1",
         )
 
+        # ----------------------------------------------------
+        # LESSON PROGRESS
+        # ----------------------------------------------------
+
+        ensure_column(
+            cursor,
+            "lesson_progress",
+            "status",
+            "TEXT NOT NULL DEFAULT 'locked'",
+        )
+
+        ensure_column(
+            cursor,
+            "lesson_progress",
+            "score",
+            "INTEGER NOT NULL DEFAULT 0",
+        )
+
         ensure_column(
             cursor,
             "lesson_progress",
@@ -562,7 +655,92 @@ def initialize_database():
         ensure_column(
             cursor,
             "lesson_progress",
+            "started_at",
+            "TEXT",
+        )
+
+        ensure_column(
+            cursor,
+            "lesson_progress",
+            "completed_at",
+            "TEXT",
+        )
+
+        ensure_column(
+            cursor,
+            "lesson_progress",
             "last_opened_at",
+            "TEXT",
+        )
+
+        # ----------------------------------------------------
+        # LEVEL EXAMS
+        # ----------------------------------------------------
+
+        ensure_column(
+            cursor,
+            "level_exams",
+            "description",
+            "TEXT DEFAULT ''",
+        )
+
+        ensure_column(
+            cursor,
+            "level_exams",
+            "question_count",
+            "INTEGER NOT NULL DEFAULT 20",
+        )
+
+        ensure_column(
+            cursor,
+            "level_exams",
+            "passing_score",
+            "INTEGER NOT NULL DEFAULT 85",
+        )
+
+        ensure_column(
+            cursor,
+            "level_exams",
+            "xp_reward",
+            "INTEGER NOT NULL DEFAULT 200",
+        )
+
+        ensure_column(
+            cursor,
+            "level_exams",
+            "is_active",
+            "INTEGER NOT NULL DEFAULT 1",
+        )
+
+        # ----------------------------------------------------
+        # USER LEVEL PROGRESS
+        # ----------------------------------------------------
+
+        ensure_column(
+            cursor,
+            "user_level_progress",
+            "status",
+            "TEXT NOT NULL DEFAULT 'locked'",
+        )
+
+        ensure_column(
+            cursor,
+            "user_level_progress",
+            "best_exam_score",
+            "INTEGER NOT NULL DEFAULT 0",
+        )
+
+        ensure_column(
+            cursor,
+            "user_level_progress",
+            "exam_attempts",
+            "INTEGER NOT NULL DEFAULT 0",
+        )
+
+        ensure_column(
+            cursor,
+            "user_level_progress",
+            "completed_at",
             "TEXT",
         )
 
@@ -574,7 +752,6 @@ def initialize_database():
             """
             CREATE INDEX IF NOT EXISTS
             idx_modules_level
-
             ON course_modules(level_id)
             """
         )
@@ -583,7 +760,6 @@ def initialize_database():
             """
             CREATE INDEX IF NOT EXISTS
             idx_lessons_module
-
             ON lessons(module_id)
             """
         )
@@ -592,7 +768,6 @@ def initialize_database():
             """
             CREATE INDEX IF NOT EXISTS
             idx_lesson_progress_user
-
             ON lesson_progress(user_id)
             """
         )
@@ -601,7 +776,6 @@ def initialize_database():
             """
             CREATE INDEX IF NOT EXISTS
             idx_quiz_questions_lesson
-
             ON quiz_questions(lesson_id)
             """
         )
@@ -610,7 +784,6 @@ def initialize_database():
             """
             CREATE INDEX IF NOT EXISTS
             idx_quiz_attempts_user_lesson
-
             ON quiz_attempts(
                 user_id,
                 lesson_id
@@ -622,7 +795,6 @@ def initialize_database():
             """
             CREATE INDEX IF NOT EXISTS
             idx_level_progress_user
-
             ON user_level_progress(user_id)
             """
         )
@@ -631,7 +803,6 @@ def initialize_database():
             """
             CREATE INDEX IF NOT EXISTS
             idx_exam_attempts_user_exam
-
             ON level_exam_attempts(
                 user_id,
                 exam_id
@@ -640,6 +811,10 @@ def initialize_database():
         )
 
         connection.commit()
+
+    except Exception:
+        connection.rollback()
+        raise
 
     finally:
         connection.close()
