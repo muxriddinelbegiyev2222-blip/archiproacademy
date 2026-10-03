@@ -15,6 +15,11 @@ from courses.seed_courses import seed_course_structure
 
 from database.database import initialize_database
 
+from licensing.license_service import (
+    validate_installed_license,
+)
+
+from ui.activation_window import ActivationWindow
 from ui.dashboard_window import DashboardWindow
 from ui.login_window import LoginWindow
 
@@ -183,10 +188,6 @@ from courses.level15_module08 import seed_level15_module08
 from courses.level15_exam import seed_level15_exam
 
 
-# ============================================================
-# MODULE SEEDERS
-# ============================================================
-
 MODULE_SEEDERS = (
     seed_level00_extra,
 
@@ -339,10 +340,6 @@ MODULE_SEEDERS = (
 )
 
 
-# ============================================================
-# CUSTOM EXAM SEEDERS
-# ============================================================
-
 CUSTOM_EXAM_SEEDERS = (
     seed_level02_exam,
     seed_level03_exam,
@@ -361,10 +358,6 @@ CUSTOM_EXAM_SEEDERS = (
 )
 
 
-# ============================================================
-# PREPARE APPLICATION
-# ============================================================
-
 def prepare_application():
     initialize_database()
 
@@ -373,23 +366,18 @@ def prepare_application():
     for seeder in MODULE_SEEDERS:
         seeder()
 
-    # Darslar yaratilgandan keyin quiz bank yaratiladi.
     seed_quizzes()
 
-    # Bazaviy Level examlari.
     seed_level_exams()
 
-    # Maxsus sozlangan final examlar.
     for seeder in CUSTOM_EXAM_SEEDERS:
         seeder()
 
 
-# ============================================================
-# MAIN
-# ============================================================
-
 def main():
-    app = QApplication(sys.argv)
+    app = QApplication(
+        sys.argv
+    )
 
     app.setApplicationName(
         "ARCHIPRO UZ"
@@ -401,58 +389,164 @@ def main():
 
     prepare_application()
 
-    login_window = LoginWindow()
-
     windows = {
+        "activation": None,
+        "login": None,
         "dashboard": None,
     }
 
-    def process_login(
-        login: str,
-        password: str,
-    ):
-        user = authenticate_user(
-            login,
-            password,
+    license_state = {
+        "result": None,
+    }
+
+    def refresh_license():
+        result = (
+            validate_installed_license()
         )
 
-        if user is None:
-            login_window.error_label.setText(
-                "Login yoki parol noto'g'ri."
-            )
+        license_state[
+            "result"
+        ] = result
+
+        return result
+
+    def show_login():
+        result = refresh_license()
+
+        if not result.get(
+            "valid"
+        ):
+            show_activation()
             return
 
-        login_window.error_label.clear()
-
-        initialize_user_levels(
-            user["id"]
-        )
-
-        initialize_user_progress(
-            user["id"]
-        )
-
-        synchronize_user_access(
-            user["id"]
-        )
-
-        dashboard = DashboardWindow(
-            user
-        )
+        login_window = LoginWindow()
 
         windows[
-            "dashboard"
-        ] = dashboard
+            "login"
+        ] = login_window
 
-        dashboard.show()
+        def process_login(
+            login: str,
+            password: str,
+        ):
+            current_license = (
+                refresh_license()
+            )
 
-        login_window.hide()
+            if not current_license.get(
+                "valid"
+            ):
+                login_window.error_label.setText(
+                    current_license.get(
+                        "message",
+                        "Litsenziya haqiqiy emas.",
+                    )
+                )
 
-    login_window.login_requested.connect(
-        process_login
-    )
+                return
 
-    login_window.show()
+            payload = current_license.get(
+                "payload",
+                {},
+            )
+
+            licensed_username = str(
+                payload.get(
+                    "username",
+                    "",
+                )
+            ).strip().lower()
+
+            if (
+                login.strip().lower()
+                != licensed_username
+            ):
+                login_window.error_label.setText(
+                    "Bu login ushbu litsenziyaga tegishli emas."
+                )
+
+                return
+
+            user = authenticate_user(
+                login,
+                password,
+            )
+
+            if user is None:
+                login_window.error_label.setText(
+                    "Login yoki parol noto'g'ri."
+                )
+
+                return
+
+            login_window.error_label.clear()
+
+            initialize_user_levels(
+                user["id"]
+            )
+
+            initialize_user_progress(
+                user["id"]
+            )
+
+            synchronize_user_access(
+                user["id"]
+            )
+
+            dashboard = DashboardWindow(
+                user
+            )
+
+            windows[
+                "dashboard"
+            ] = dashboard
+
+            dashboard.show()
+
+            login_window.hide()
+
+        login_window.login_requested.connect(
+            process_login
+        )
+
+        login_window.show()
+
+        activation = windows.get(
+            "activation"
+        )
+
+        if activation is not None:
+            activation.hide()
+
+    def show_activation():
+        activation = ActivationWindow()
+
+        windows[
+            "activation"
+        ] = activation
+
+        activation.activation_successful.connect(
+            show_login
+        )
+
+        activation.show()
+
+        login_window = windows.get(
+            "login"
+        )
+
+        if login_window is not None:
+            login_window.hide()
+
+    first_license = refresh_license()
+
+    if first_license.get(
+        "valid"
+    ):
+        show_login()
+
+    else:
+        show_activation()
 
     sys.exit(
         app.exec()
