@@ -30,317 +30,107 @@ from courses.level01_module06 import (
     LEVEL01_MODULE06_QUIZ,
 )
 
-from courses.level02_module01 import (
-    LEVEL02_MODULE01_CONTENT,
-    LEVEL02_MODULE01_QUIZ,
-)
-from courses.level02_module02 import (
-    LEVEL02_MODULE02_CONTENT,
-    LEVEL02_MODULE02_QUIZ,
-)
-from courses.level02_module03 import (
-    LEVEL02_MODULE03_CONTENT,
-    LEVEL02_MODULE03_QUIZ,
-)
-from courses.level02_module04 import (
-    LEVEL02_MODULE04_CONTENT,
-    LEVEL02_MODULE04_QUIZ,
-)
-from courses.level02_module05 import (
-    LEVEL02_MODULE05_CONTENT,
-    LEVEL02_MODULE05_QUIZ,
-)
-from courses.level02_module06 import (
-    LEVEL02_MODULE06_CONTENT,
-    LEVEL02_MODULE06_QUIZ,
-)
-from courses.level02_module07 import (
-    LEVEL02_MODULE07_CONTENT,
-    LEVEL02_MODULE07_QUIZ,
-)
-from courses.level02_module08 import (
-    LEVEL02_MODULE08_CONTENT,
-    LEVEL02_MODULE08_QUIZ,
-)
-from courses.level02_module09 import (
-    LEVEL02_MODULE09_CONTENT,
-    LEVEL02_MODULE09_QUIZ,
-)
-from courses.level02_module10 import (
-    LEVEL02_MODULE10_CONTENT,
-    LEVEL02_MODULE10_QUIZ,
-)
+from courses.level02_module01 import LEVEL02_MODULE01_CONTENT, LEVEL02_MODULE01_QUIZ
+from courses.level02_module02 import LEVEL02_MODULE02_CONTENT, LEVEL02_MODULE02_QUIZ
+from courses.level02_module03 import LEVEL02_MODULE03_CONTENT, LEVEL02_MODULE03_QUIZ
+from courses.level02_module04 import LEVEL02_MODULE04_CONTENT, LEVEL02_MODULE04_QUIZ
+from courses.level02_module05 import LEVEL02_MODULE05_CONTENT, LEVEL02_MODULE05_QUIZ
+from courses.level02_module06 import LEVEL02_MODULE06_CONTENT, LEVEL02_MODULE06_QUIZ
+from courses.level02_module07 import LEVEL02_MODULE07_CONTENT, LEVEL02_MODULE07_QUIZ
+from courses.level02_module08 import LEVEL02_MODULE08_CONTENT, LEVEL02_MODULE08_QUIZ
+from courses.level02_module09 import LEVEL02_MODULE09_CONTENT, LEVEL02_MODULE09_QUIZ
+from courses.level02_module10 import LEVEL02_MODULE10_CONTENT, LEVEL02_MODULE10_QUIZ
 
-from courses.level03_module01 import (
-    LEVEL03_MODULE01_CONTENT,
-    LEVEL03_MODULE01_QUIZ,
-)
-from courses.level03_module02 import (
-    LEVEL03_MODULE02_CONTENT,
-    LEVEL03_MODULE02_QUIZ,
-)
-from courses.level03_module03 import (
-    LEVEL03_MODULE03_CONTENT,
-    LEVEL03_MODULE03_QUIZ,
-)
-from courses.level03_module04 import (
-    LEVEL03_MODULE04_CONTENT,
-    LEVEL03_MODULE04_QUIZ,
-)
-from courses.level03_module05 import (
-    LEVEL03_MODULE05_CONTENT,
-    LEVEL03_MODULE05_QUIZ,
-)
-from courses.level03_module06 import (
-    LEVEL03_MODULE06_CONTENT,
-    LEVEL03_MODULE06_QUIZ,
-)
-from courses.level03_module07 import (
-    LEVEL03_MODULE07_CONTENT,
-    LEVEL03_MODULE07_QUIZ,
-)
-from courses.level03_module08 import (
-    LEVEL03_MODULE08_CONTENT,
-    LEVEL03_MODULE08_QUIZ,
-)
+from courses.level03_module01 import LEVEL03_MODULE01_CONTENT, LEVEL03_MODULE01_QUIZ
+from courses.level03_module02 import LEVEL03_MODULE02_CONTENT, LEVEL03_MODULE02_QUIZ
+from courses.level03_module03 import LEVEL03_MODULE03_CONTENT, LEVEL03_MODULE03_QUIZ
+from courses.level03_module04 import LEVEL03_MODULE04_CONTENT, LEVEL03_MODULE04_QUIZ
+from courses.level03_module05 import LEVEL03_MODULE05_CONTENT, LEVEL03_MODULE05_QUIZ
+from courses.level03_module06 import LEVEL03_MODULE06_CONTENT, LEVEL03_MODULE06_QUIZ
+from courses.level03_module07 import LEVEL03_MODULE07_CONTENT, LEVEL03_MODULE07_QUIZ
+from courses.level03_module08 import LEVEL03_MODULE08_CONTENT, LEVEL03_MODULE08_QUIZ
 
-from courses.level04_module01 import (
-    LEVEL04_MODULE01_CONTENT,
-    LEVEL04_MODULE01_QUIZ,
-)
-from courses.level04_module02 import (
-    LEVEL04_MODULE02_CONTENT,
-    LEVEL04_MODULE02_QUIZ,
-)
-from courses.level04_module03 import (
-    LEVEL04_MODULE03_CONTENT,
-    LEVEL04_MODULE03_QUIZ,
-)
-from courses.level04_module04 import (
-    LEVEL04_MODULE04_CONTENT,
-    LEVEL04_MODULE04_QUIZ,
-)
-from courses.level04_module05 import (
-    LEVEL04_MODULE05_CONTENT,
-    LEVEL04_MODULE05_QUIZ,
-)
-from courses.level04_module06 import (
-    LEVEL04_MODULE06_CONTENT,
-    LEVEL04_MODULE06_QUIZ,
-)
-from courses.level04_module07 import (
-    LEVEL04_MODULE07_CONTENT,
-    LEVEL04_MODULE07_QUIZ,
-)
-from courses.level04_module08 import (
-    LEVEL04_MODULE08_CONTENT,
-    LEVEL04_MODULE08_QUIZ,
-)
+from courses.level04_module01 import LEVEL04_MODULE01_CONTENT, LEVEL04_MODULE01_QUIZ
+from courses.level04_module02 import LEVEL04_MODULE02_CONTENT, LEVEL04_MODULE02_QUIZ
+from courses.level04_module03 import LEVEL04_MODULE03_CONTENT, LEVEL04_MODULE03_QUIZ
+from courses.level04_module04 import LEVEL04_MODULE04_CONTENT, LEVEL04_MODULE04_QUIZ
+from courses.level04_module05 import LEVEL04_MODULE05_CONTENT, LEVEL04_MODULE05_QUIZ
+from courses.level04_module06 import LEVEL04_MODULE06_CONTENT, LEVEL04_MODULE06_QUIZ
+from courses.level04_module07 import LEVEL04_MODULE07_CONTENT, LEVEL04_MODULE07_QUIZ
+from courses.level04_module08 import LEVEL04_MODULE08_CONTENT, LEVEL04_MODULE08_QUIZ
 
-from courses.level05_module01 import (
-    LEVEL05_MODULE01_CONTENT,
-    LEVEL05_MODULE01_QUIZ,
-)
-from courses.level05_module02 import (
-    LEVEL05_MODULE02_CONTENT,
-    LEVEL05_MODULE02_QUIZ,
-)
-from courses.level05_module03 import (
-    LEVEL05_MODULE03_CONTENT,
-    LEVEL05_MODULE03_QUIZ,
-)
-from courses.level05_module04 import (
-    LEVEL05_MODULE04_CONTENT,
-    LEVEL05_MODULE04_QUIZ,
-)
-from courses.level05_module05 import (
-    LEVEL05_MODULE05_CONTENT,
-    LEVEL05_MODULE05_QUIZ,
-)
-from courses.level05_module06 import (
-    LEVEL05_MODULE06_CONTENT,
-    LEVEL05_MODULE06_QUIZ,
-)
-from courses.level05_module07 import (
-    LEVEL05_MODULE07_CONTENT,
-    LEVEL05_MODULE07_QUIZ,
-)
-from courses.level05_module08 import (
-    LEVEL05_MODULE08_CONTENT,
-    LEVEL05_MODULE08_QUIZ,
-)
-from courses.level05_module09 import (
-    LEVEL05_MODULE09_CONTENT,
-    LEVEL05_MODULE09_QUIZ,
-)
-from courses.level05_module10 import (
-    LEVEL05_MODULE10_CONTENT,
-    LEVEL05_MODULE10_QUIZ,
-)
+from courses.level05_module01 import LEVEL05_MODULE01_CONTENT, LEVEL05_MODULE01_QUIZ
+from courses.level05_module02 import LEVEL05_MODULE02_CONTENT, LEVEL05_MODULE02_QUIZ
+from courses.level05_module03 import LEVEL05_MODULE03_CONTENT, LEVEL05_MODULE03_QUIZ
+from courses.level05_module04 import LEVEL05_MODULE04_CONTENT, LEVEL05_MODULE04_QUIZ
+from courses.level05_module05 import LEVEL05_MODULE05_CONTENT, LEVEL05_MODULE05_QUIZ
+from courses.level05_module06 import LEVEL05_MODULE06_CONTENT, LEVEL05_MODULE06_QUIZ
+from courses.level05_module07 import LEVEL05_MODULE07_CONTENT, LEVEL05_MODULE07_QUIZ
+from courses.level05_module08 import LEVEL05_MODULE08_CONTENT, LEVEL05_MODULE08_QUIZ
+from courses.level05_module09 import LEVEL05_MODULE09_CONTENT, LEVEL05_MODULE09_QUIZ
+from courses.level05_module10 import LEVEL05_MODULE10_CONTENT, LEVEL05_MODULE10_QUIZ
 
-from courses.level06_module01 import (
-    LEVEL06_MODULE01_CONTENT,
-    LEVEL06_MODULE01_QUIZ,
-)
-from courses.level06_module02 import (
-    LEVEL06_MODULE02_CONTENT,
-    LEVEL06_MODULE02_QUIZ,
-)
-from courses.level06_module03 import (
-    LEVEL06_MODULE03_CONTENT,
-    LEVEL06_MODULE03_QUIZ,
-)
-from courses.level06_module04 import (
-    LEVEL06_MODULE04_CONTENT,
-    LEVEL06_MODULE04_QUIZ,
-)
-from courses.level06_module05 import (
-    LEVEL06_MODULE05_CONTENT,
-    LEVEL06_MODULE05_QUIZ,
-)
-from courses.level06_module06 import (
-    LEVEL06_MODULE06_CONTENT,
-    LEVEL06_MODULE06_QUIZ,
-)
-from courses.level06_module07 import (
-    LEVEL06_MODULE07_CONTENT,
-    LEVEL06_MODULE07_QUIZ,
-)
-from courses.level06_module08 import (
-    LEVEL06_MODULE08_CONTENT,
-    LEVEL06_MODULE08_QUIZ,
-)
-from courses.level06_module09 import (
-    LEVEL06_MODULE09_CONTENT,
-    LEVEL06_MODULE09_QUIZ,
-)
-from courses.level06_module10 import (
-    LEVEL06_MODULE10_CONTENT,
-    LEVEL06_MODULE10_QUIZ,
-)
+from courses.level06_module01 import LEVEL06_MODULE01_CONTENT, LEVEL06_MODULE01_QUIZ
+from courses.level06_module02 import LEVEL06_MODULE02_CONTENT, LEVEL06_MODULE02_QUIZ
+from courses.level06_module03 import LEVEL06_MODULE03_CONTENT, LEVEL06_MODULE03_QUIZ
+from courses.level06_module04 import LEVEL06_MODULE04_CONTENT, LEVEL06_MODULE04_QUIZ
+from courses.level06_module05 import LEVEL06_MODULE05_CONTENT, LEVEL06_MODULE05_QUIZ
+from courses.level06_module06 import LEVEL06_MODULE06_CONTENT, LEVEL06_MODULE06_QUIZ
+from courses.level06_module07 import LEVEL06_MODULE07_CONTENT, LEVEL06_MODULE07_QUIZ
+from courses.level06_module08 import LEVEL06_MODULE08_CONTENT, LEVEL06_MODULE08_QUIZ
+from courses.level06_module09 import LEVEL06_MODULE09_CONTENT, LEVEL06_MODULE09_QUIZ
+from courses.level06_module10 import LEVEL06_MODULE10_CONTENT, LEVEL06_MODULE10_QUIZ
 
-from courses.level07_module01 import (
-    LEVEL07_MODULE01_CONTENT,
-    LEVEL07_MODULE01_QUIZ,
-)
-from courses.level07_module02 import (
-    LEVEL07_MODULE02_CONTENT,
-    LEVEL07_MODULE02_QUIZ,
-)
-from courses.level07_module03 import (
-    LEVEL07_MODULE03_CONTENT,
-    LEVEL07_MODULE03_QUIZ,
-)
-from courses.level07_module04 import (
-    LEVEL07_MODULE04_CONTENT,
-    LEVEL07_MODULE04_QUIZ,
-)
-from courses.level07_module05 import (
-    LEVEL07_MODULE05_CONTENT,
-    LEVEL07_MODULE05_QUIZ,
-)
-from courses.level07_module06 import (
-    LEVEL07_MODULE06_CONTENT,
-    LEVEL07_MODULE06_QUIZ,
-)
-from courses.level07_module07 import (
-    LEVEL07_MODULE07_CONTENT,
-    LEVEL07_MODULE07_QUIZ,
-)
-from courses.level07_module08 import (
-    LEVEL07_MODULE08_CONTENT,
-    LEVEL07_MODULE08_QUIZ,
-)
-from courses.level07_module09 import (
-    LEVEL07_MODULE09_CONTENT,
-    LEVEL07_MODULE09_QUIZ,
-)
+from courses.level07_module01 import LEVEL07_MODULE01_CONTENT, LEVEL07_MODULE01_QUIZ
+from courses.level07_module02 import LEVEL07_MODULE02_CONTENT, LEVEL07_MODULE02_QUIZ
+from courses.level07_module03 import LEVEL07_MODULE03_CONTENT, LEVEL07_MODULE03_QUIZ
+from courses.level07_module04 import LEVEL07_MODULE04_CONTENT, LEVEL07_MODULE04_QUIZ
+from courses.level07_module05 import LEVEL07_MODULE05_CONTENT, LEVEL07_MODULE05_QUIZ
+from courses.level07_module06 import LEVEL07_MODULE06_CONTENT, LEVEL07_MODULE06_QUIZ
+from courses.level07_module07 import LEVEL07_MODULE07_CONTENT, LEVEL07_MODULE07_QUIZ
+from courses.level07_module08 import LEVEL07_MODULE08_CONTENT, LEVEL07_MODULE08_QUIZ
+from courses.level07_module09 import LEVEL07_MODULE09_CONTENT, LEVEL07_MODULE09_QUIZ
 
-from courses.level08_module01 import (
-    LEVEL08_MODULE01_CONTENT,
-    LEVEL08_MODULE01_QUIZ,
-)
-from courses.level08_module02 import (
-    LEVEL08_MODULE02_CONTENT,
-    LEVEL08_MODULE02_QUIZ,
-)
-from courses.level08_module03 import (
-    LEVEL08_MODULE03_CONTENT,
-    LEVEL08_MODULE03_QUIZ,
-)
-from courses.level08_module04 import (
-    LEVEL08_MODULE04_CONTENT,
-    LEVEL08_MODULE04_QUIZ,
-)
-from courses.level08_module05 import (
-    LEVEL08_MODULE05_CONTENT,
-    LEVEL08_MODULE05_QUIZ,
-)
-from courses.level08_module06 import (
-    LEVEL08_MODULE06_CONTENT,
-    LEVEL08_MODULE06_QUIZ,
-)
-from courses.level08_module07 import (
-    LEVEL08_MODULE07_CONTENT,
-    LEVEL08_MODULE07_QUIZ,
-)
-from courses.level08_module08 import (
-    LEVEL08_MODULE08_CONTENT,
-    LEVEL08_MODULE08_QUIZ,
-)
-from courses.level08_module09 import (
-    LEVEL08_MODULE09_CONTENT,
-    LEVEL08_MODULE09_QUIZ,
-)
+from courses.level08_module01 import LEVEL08_MODULE01_CONTENT, LEVEL08_MODULE01_QUIZ
+from courses.level08_module02 import LEVEL08_MODULE02_CONTENT, LEVEL08_MODULE02_QUIZ
+from courses.level08_module03 import LEVEL08_MODULE03_CONTENT, LEVEL08_MODULE03_QUIZ
+from courses.level08_module04 import LEVEL08_MODULE04_CONTENT, LEVEL08_MODULE04_QUIZ
+from courses.level08_module05 import LEVEL08_MODULE05_CONTENT, LEVEL08_MODULE05_QUIZ
+from courses.level08_module06 import LEVEL08_MODULE06_CONTENT, LEVEL08_MODULE06_QUIZ
+from courses.level08_module07 import LEVEL08_MODULE07_CONTENT, LEVEL08_MODULE07_QUIZ
+from courses.level08_module08 import LEVEL08_MODULE08_CONTENT, LEVEL08_MODULE08_QUIZ
+from courses.level08_module09 import LEVEL08_MODULE09_CONTENT, LEVEL08_MODULE09_QUIZ
 
-from courses.level09_module01 import (
-    LEVEL09_MODULE01_CONTENT,
-    LEVEL09_MODULE01_QUIZ,
-)
-from courses.level09_module02 import (
-    LEVEL09_MODULE02_CONTENT,
-    LEVEL09_MODULE02_QUIZ,
-)
-from courses.level09_module03 import (
-    LEVEL09_MODULE03_CONTENT,
-    LEVEL09_MODULE03_QUIZ,
-)
-from courses.level09_module04 import (
-    LEVEL09_MODULE04_CONTENT,
-    LEVEL09_MODULE04_QUIZ,
-)
-from courses.level09_module05 import (
-    LEVEL09_MODULE05_CONTENT,
-    LEVEL09_MODULE05_QUIZ,
-)
-from courses.level09_module06 import (
-    LEVEL09_MODULE06_CONTENT,
-    LEVEL09_MODULE06_QUIZ,
-)
-from courses.level09_module07 import (
-    LEVEL09_MODULE07_CONTENT,
-    LEVEL09_MODULE07_QUIZ,
-)
-from courses.level09_module08 import (
-    LEVEL09_MODULE08_CONTENT,
-    LEVEL09_MODULE08_QUIZ,
-)
+from courses.level09_module01 import LEVEL09_MODULE01_CONTENT, LEVEL09_MODULE01_QUIZ
+from courses.level09_module02 import LEVEL09_MODULE02_CONTENT, LEVEL09_MODULE02_QUIZ
+from courses.level09_module03 import LEVEL09_MODULE03_CONTENT, LEVEL09_MODULE03_QUIZ
+from courses.level09_module04 import LEVEL09_MODULE04_CONTENT, LEVEL09_MODULE04_QUIZ
+from courses.level09_module05 import LEVEL09_MODULE05_CONTENT, LEVEL09_MODULE05_QUIZ
+from courses.level09_module06 import LEVEL09_MODULE06_CONTENT, LEVEL09_MODULE06_QUIZ
+from courses.level09_module07 import LEVEL09_MODULE07_CONTENT, LEVEL09_MODULE07_QUIZ
+from courses.level09_module08 import LEVEL09_MODULE08_CONTENT, LEVEL09_MODULE08_QUIZ
+
+from courses.level10_module01 import LEVEL10_MODULE01_CONTENT, LEVEL10_MODULE01_QUIZ
+from courses.level10_module02 import LEVEL10_MODULE02_CONTENT, LEVEL10_MODULE02_QUIZ
+from courses.level10_module03 import LEVEL10_MODULE03_CONTENT, LEVEL10_MODULE03_QUIZ
+from courses.level10_module04 import LEVEL10_MODULE04_CONTENT, LEVEL10_MODULE04_QUIZ
+from courses.level10_module05 import LEVEL10_MODULE05_CONTENT, LEVEL10_MODULE05_QUIZ
+from courses.level10_module06 import LEVEL10_MODULE06_CONTENT, LEVEL10_MODULE06_QUIZ
+from courses.level10_module07 import LEVEL10_MODULE07_CONTENT, LEVEL10_MODULE07_QUIZ
+from courses.level10_module08 import LEVEL10_MODULE08_CONTENT, LEVEL10_MODULE08_QUIZ
+from courses.level10_module09 import LEVEL10_MODULE09_CONTENT, LEVEL10_MODULE09_QUIZ
+from courses.level10_module10 import LEVEL10_MODULE10_CONTENT, LEVEL10_MODULE10_QUIZ
+from courses.level10_module11 import LEVEL10_MODULE11_CONTENT, LEVEL10_MODULE11_QUIZ
 
 from courses.quiz_data import QUIZ_DATA
 
 
-# ============================================================
-# LESSON CONTENT
-# ============================================================
-
 def get_all_lesson_content():
     combined = {}
 
-    # LEVEL 0
     combined.update(LESSON_CONTENT)
     combined.update(LEVEL00_EXTRA_CONTENT)
 
-    # LEVEL 1
     combined.update(LEVEL01_CONTENT)
     combined.update(LEVEL01_MODULE02_CONTENT)
     combined.update(LEVEL01_MODULE03_CONTENT)
@@ -348,118 +138,117 @@ def get_all_lesson_content():
     combined.update(LEVEL01_MODULE05_CONTENT)
     combined.update(LEVEL01_MODULE06_CONTENT)
 
-    # LEVEL 2
-    combined.update(LEVEL02_MODULE01_CONTENT)
-    combined.update(LEVEL02_MODULE02_CONTENT)
-    combined.update(LEVEL02_MODULE03_CONTENT)
-    combined.update(LEVEL02_MODULE04_CONTENT)
-    combined.update(LEVEL02_MODULE05_CONTENT)
-    combined.update(LEVEL02_MODULE06_CONTENT)
-    combined.update(LEVEL02_MODULE07_CONTENT)
-    combined.update(LEVEL02_MODULE08_CONTENT)
-    combined.update(LEVEL02_MODULE09_CONTENT)
-    combined.update(LEVEL02_MODULE10_CONTENT)
+    for content in (
+        LEVEL02_MODULE01_CONTENT,
+        LEVEL02_MODULE02_CONTENT,
+        LEVEL02_MODULE03_CONTENT,
+        LEVEL02_MODULE04_CONTENT,
+        LEVEL02_MODULE05_CONTENT,
+        LEVEL02_MODULE06_CONTENT,
+        LEVEL02_MODULE07_CONTENT,
+        LEVEL02_MODULE08_CONTENT,
+        LEVEL02_MODULE09_CONTENT,
+        LEVEL02_MODULE10_CONTENT,
 
-    # LEVEL 3
-    combined.update(LEVEL03_MODULE01_CONTENT)
-    combined.update(LEVEL03_MODULE02_CONTENT)
-    combined.update(LEVEL03_MODULE03_CONTENT)
-    combined.update(LEVEL03_MODULE04_CONTENT)
-    combined.update(LEVEL03_MODULE05_CONTENT)
-    combined.update(LEVEL03_MODULE06_CONTENT)
-    combined.update(LEVEL03_MODULE07_CONTENT)
-    combined.update(LEVEL03_MODULE08_CONTENT)
+        LEVEL03_MODULE01_CONTENT,
+        LEVEL03_MODULE02_CONTENT,
+        LEVEL03_MODULE03_CONTENT,
+        LEVEL03_MODULE04_CONTENT,
+        LEVEL03_MODULE05_CONTENT,
+        LEVEL03_MODULE06_CONTENT,
+        LEVEL03_MODULE07_CONTENT,
+        LEVEL03_MODULE08_CONTENT,
 
-    # LEVEL 4
-    combined.update(LEVEL04_MODULE01_CONTENT)
-    combined.update(LEVEL04_MODULE02_CONTENT)
-    combined.update(LEVEL04_MODULE03_CONTENT)
-    combined.update(LEVEL04_MODULE04_CONTENT)
-    combined.update(LEVEL04_MODULE05_CONTENT)
-    combined.update(LEVEL04_MODULE06_CONTENT)
-    combined.update(LEVEL04_MODULE07_CONTENT)
-    combined.update(LEVEL04_MODULE08_CONTENT)
+        LEVEL04_MODULE01_CONTENT,
+        LEVEL04_MODULE02_CONTENT,
+        LEVEL04_MODULE03_CONTENT,
+        LEVEL04_MODULE04_CONTENT,
+        LEVEL04_MODULE05_CONTENT,
+        LEVEL04_MODULE06_CONTENT,
+        LEVEL04_MODULE07_CONTENT,
+        LEVEL04_MODULE08_CONTENT,
 
-    # LEVEL 5
-    combined.update(LEVEL05_MODULE01_CONTENT)
-    combined.update(LEVEL05_MODULE02_CONTENT)
-    combined.update(LEVEL05_MODULE03_CONTENT)
-    combined.update(LEVEL05_MODULE04_CONTENT)
-    combined.update(LEVEL05_MODULE05_CONTENT)
-    combined.update(LEVEL05_MODULE06_CONTENT)
-    combined.update(LEVEL05_MODULE07_CONTENT)
-    combined.update(LEVEL05_MODULE08_CONTENT)
-    combined.update(LEVEL05_MODULE09_CONTENT)
-    combined.update(LEVEL05_MODULE10_CONTENT)
+        LEVEL05_MODULE01_CONTENT,
+        LEVEL05_MODULE02_CONTENT,
+        LEVEL05_MODULE03_CONTENT,
+        LEVEL05_MODULE04_CONTENT,
+        LEVEL05_MODULE05_CONTENT,
+        LEVEL05_MODULE06_CONTENT,
+        LEVEL05_MODULE07_CONTENT,
+        LEVEL05_MODULE08_CONTENT,
+        LEVEL05_MODULE09_CONTENT,
+        LEVEL05_MODULE10_CONTENT,
 
-    # LEVEL 6
-    combined.update(LEVEL06_MODULE01_CONTENT)
-    combined.update(LEVEL06_MODULE02_CONTENT)
-    combined.update(LEVEL06_MODULE03_CONTENT)
-    combined.update(LEVEL06_MODULE04_CONTENT)
-    combined.update(LEVEL06_MODULE05_CONTENT)
-    combined.update(LEVEL06_MODULE06_CONTENT)
-    combined.update(LEVEL06_MODULE07_CONTENT)
-    combined.update(LEVEL06_MODULE08_CONTENT)
-    combined.update(LEVEL06_MODULE09_CONTENT)
-    combined.update(LEVEL06_MODULE10_CONTENT)
+        LEVEL06_MODULE01_CONTENT,
+        LEVEL06_MODULE02_CONTENT,
+        LEVEL06_MODULE03_CONTENT,
+        LEVEL06_MODULE04_CONTENT,
+        LEVEL06_MODULE05_CONTENT,
+        LEVEL06_MODULE06_CONTENT,
+        LEVEL06_MODULE07_CONTENT,
+        LEVEL06_MODULE08_CONTENT,
+        LEVEL06_MODULE09_CONTENT,
+        LEVEL06_MODULE10_CONTENT,
 
-    # LEVEL 7
-    combined.update(LEVEL07_MODULE01_CONTENT)
-    combined.update(LEVEL07_MODULE02_CONTENT)
-    combined.update(LEVEL07_MODULE03_CONTENT)
-    combined.update(LEVEL07_MODULE04_CONTENT)
-    combined.update(LEVEL07_MODULE05_CONTENT)
-    combined.update(LEVEL07_MODULE06_CONTENT)
-    combined.update(LEVEL07_MODULE07_CONTENT)
-    combined.update(LEVEL07_MODULE08_CONTENT)
-    combined.update(LEVEL07_MODULE09_CONTENT)
+        LEVEL07_MODULE01_CONTENT,
+        LEVEL07_MODULE02_CONTENT,
+        LEVEL07_MODULE03_CONTENT,
+        LEVEL07_MODULE04_CONTENT,
+        LEVEL07_MODULE05_CONTENT,
+        LEVEL07_MODULE06_CONTENT,
+        LEVEL07_MODULE07_CONTENT,
+        LEVEL07_MODULE08_CONTENT,
+        LEVEL07_MODULE09_CONTENT,
 
-    # LEVEL 8
-    combined.update(LEVEL08_MODULE01_CONTENT)
-    combined.update(LEVEL08_MODULE02_CONTENT)
-    combined.update(LEVEL08_MODULE03_CONTENT)
-    combined.update(LEVEL08_MODULE04_CONTENT)
-    combined.update(LEVEL08_MODULE05_CONTENT)
-    combined.update(LEVEL08_MODULE06_CONTENT)
-    combined.update(LEVEL08_MODULE07_CONTENT)
-    combined.update(LEVEL08_MODULE08_CONTENT)
-    combined.update(LEVEL08_MODULE09_CONTENT)
+        LEVEL08_MODULE01_CONTENT,
+        LEVEL08_MODULE02_CONTENT,
+        LEVEL08_MODULE03_CONTENT,
+        LEVEL08_MODULE04_CONTENT,
+        LEVEL08_MODULE05_CONTENT,
+        LEVEL08_MODULE06_CONTENT,
+        LEVEL08_MODULE07_CONTENT,
+        LEVEL08_MODULE08_CONTENT,
+        LEVEL08_MODULE09_CONTENT,
 
-    # LEVEL 9
-    combined.update(LEVEL09_MODULE01_CONTENT)
-    combined.update(LEVEL09_MODULE02_CONTENT)
-    combined.update(LEVEL09_MODULE03_CONTENT)
-    combined.update(LEVEL09_MODULE04_CONTENT)
-    combined.update(LEVEL09_MODULE05_CONTENT)
-    combined.update(LEVEL09_MODULE06_CONTENT)
-    combined.update(LEVEL09_MODULE07_CONTENT)
-    combined.update(LEVEL09_MODULE08_CONTENT)
+        LEVEL09_MODULE01_CONTENT,
+        LEVEL09_MODULE02_CONTENT,
+        LEVEL09_MODULE03_CONTENT,
+        LEVEL09_MODULE04_CONTENT,
+        LEVEL09_MODULE05_CONTENT,
+        LEVEL09_MODULE06_CONTENT,
+        LEVEL09_MODULE07_CONTENT,
+        LEVEL09_MODULE08_CONTENT,
+
+        LEVEL10_MODULE01_CONTENT,
+        LEVEL10_MODULE02_CONTENT,
+        LEVEL10_MODULE03_CONTENT,
+        LEVEL10_MODULE04_CONTENT,
+        LEVEL10_MODULE05_CONTENT,
+        LEVEL10_MODULE06_CONTENT,
+        LEVEL10_MODULE07_CONTENT,
+        LEVEL10_MODULE08_CONTENT,
+        LEVEL10_MODULE09_CONTENT,
+        LEVEL10_MODULE10_CONTENT,
+        LEVEL10_MODULE11_CONTENT,
+    ):
+        combined.update(content)
 
     return combined
 
 
-def get_lesson_content_by_code(
-    lesson_code: str,
-):
+def get_lesson_content_by_code(lesson_code: str):
     return get_all_lesson_content().get(
         lesson_code,
         [],
     )
 
 
-# ============================================================
-# QUIZ DATA
-# ============================================================
-
 def get_all_quiz_data():
     combined = {}
 
-    # LEVEL 0
     combined.update(QUIZ_DATA)
     combined.update(LEVEL00_EXTRA_QUIZ)
 
-    # LEVEL 1
     combined.update(LEVEL01_QUIZ)
     combined.update(LEVEL01_MODULE02_QUIZ)
     combined.update(LEVEL01_MODULE03_QUIZ)
@@ -467,92 +256,99 @@ def get_all_quiz_data():
     combined.update(LEVEL01_MODULE05_QUIZ)
     combined.update(LEVEL01_MODULE06_QUIZ)
 
-    # LEVEL 2
-    combined.update(LEVEL02_MODULE01_QUIZ)
-    combined.update(LEVEL02_MODULE02_QUIZ)
-    combined.update(LEVEL02_MODULE03_QUIZ)
-    combined.update(LEVEL02_MODULE04_QUIZ)
-    combined.update(LEVEL02_MODULE05_QUIZ)
-    combined.update(LEVEL02_MODULE06_QUIZ)
-    combined.update(LEVEL02_MODULE07_QUIZ)
-    combined.update(LEVEL02_MODULE08_QUIZ)
-    combined.update(LEVEL02_MODULE09_QUIZ)
-    combined.update(LEVEL02_MODULE10_QUIZ)
+    for quiz in (
+        LEVEL02_MODULE01_QUIZ,
+        LEVEL02_MODULE02_QUIZ,
+        LEVEL02_MODULE03_QUIZ,
+        LEVEL02_MODULE04_QUIZ,
+        LEVEL02_MODULE05_QUIZ,
+        LEVEL02_MODULE06_QUIZ,
+        LEVEL02_MODULE07_QUIZ,
+        LEVEL02_MODULE08_QUIZ,
+        LEVEL02_MODULE09_QUIZ,
+        LEVEL02_MODULE10_QUIZ,
 
-    # LEVEL 3
-    combined.update(LEVEL03_MODULE01_QUIZ)
-    combined.update(LEVEL03_MODULE02_QUIZ)
-    combined.update(LEVEL03_MODULE03_QUIZ)
-    combined.update(LEVEL03_MODULE04_QUIZ)
-    combined.update(LEVEL03_MODULE05_QUIZ)
-    combined.update(LEVEL03_MODULE06_QUIZ)
-    combined.update(LEVEL03_MODULE07_QUIZ)
-    combined.update(LEVEL03_MODULE08_QUIZ)
+        LEVEL03_MODULE01_QUIZ,
+        LEVEL03_MODULE02_QUIZ,
+        LEVEL03_MODULE03_QUIZ,
+        LEVEL03_MODULE04_QUIZ,
+        LEVEL03_MODULE05_QUIZ,
+        LEVEL03_MODULE06_QUIZ,
+        LEVEL03_MODULE07_QUIZ,
+        LEVEL03_MODULE08_QUIZ,
 
-    # LEVEL 4
-    combined.update(LEVEL04_MODULE01_QUIZ)
-    combined.update(LEVEL04_MODULE02_QUIZ)
-    combined.update(LEVEL04_MODULE03_QUIZ)
-    combined.update(LEVEL04_MODULE04_QUIZ)
-    combined.update(LEVEL04_MODULE05_QUIZ)
-    combined.update(LEVEL04_MODULE06_QUIZ)
-    combined.update(LEVEL04_MODULE07_QUIZ)
-    combined.update(LEVEL04_MODULE08_QUIZ)
+        LEVEL04_MODULE01_QUIZ,
+        LEVEL04_MODULE02_QUIZ,
+        LEVEL04_MODULE03_QUIZ,
+        LEVEL04_MODULE04_QUIZ,
+        LEVEL04_MODULE05_QUIZ,
+        LEVEL04_MODULE06_QUIZ,
+        LEVEL04_MODULE07_QUIZ,
+        LEVEL04_MODULE08_QUIZ,
 
-    # LEVEL 5
-    combined.update(LEVEL05_MODULE01_QUIZ)
-    combined.update(LEVEL05_MODULE02_QUIZ)
-    combined.update(LEVEL05_MODULE03_QUIZ)
-    combined.update(LEVEL05_MODULE04_QUIZ)
-    combined.update(LEVEL05_MODULE05_QUIZ)
-    combined.update(LEVEL05_MODULE06_QUIZ)
-    combined.update(LEVEL05_MODULE07_QUIZ)
-    combined.update(LEVEL05_MODULE08_QUIZ)
-    combined.update(LEVEL05_MODULE09_QUIZ)
-    combined.update(LEVEL05_MODULE10_QUIZ)
+        LEVEL05_MODULE01_QUIZ,
+        LEVEL05_MODULE02_QUIZ,
+        LEVEL05_MODULE03_QUIZ,
+        LEVEL05_MODULE04_QUIZ,
+        LEVEL05_MODULE05_QUIZ,
+        LEVEL05_MODULE06_QUIZ,
+        LEVEL05_MODULE07_QUIZ,
+        LEVEL05_MODULE08_QUIZ,
+        LEVEL05_MODULE09_QUIZ,
+        LEVEL05_MODULE10_QUIZ,
 
-    # LEVEL 6
-    combined.update(LEVEL06_MODULE01_QUIZ)
-    combined.update(LEVEL06_MODULE02_QUIZ)
-    combined.update(LEVEL06_MODULE03_QUIZ)
-    combined.update(LEVEL06_MODULE04_QUIZ)
-    combined.update(LEVEL06_MODULE05_QUIZ)
-    combined.update(LEVEL06_MODULE06_QUIZ)
-    combined.update(LEVEL06_MODULE07_QUIZ)
-    combined.update(LEVEL06_MODULE08_QUIZ)
-    combined.update(LEVEL06_MODULE09_QUIZ)
-    combined.update(LEVEL06_MODULE10_QUIZ)
+        LEVEL06_MODULE01_QUIZ,
+        LEVEL06_MODULE02_QUIZ,
+        LEVEL06_MODULE03_QUIZ,
+        LEVEL06_MODULE04_QUIZ,
+        LEVEL06_MODULE05_QUIZ,
+        LEVEL06_MODULE06_QUIZ,
+        LEVEL06_MODULE07_QUIZ,
+        LEVEL06_MODULE08_QUIZ,
+        LEVEL06_MODULE09_QUIZ,
+        LEVEL06_MODULE10_QUIZ,
 
-    # LEVEL 7
-    combined.update(LEVEL07_MODULE01_QUIZ)
-    combined.update(LEVEL07_MODULE02_QUIZ)
-    combined.update(LEVEL07_MODULE03_QUIZ)
-    combined.update(LEVEL07_MODULE04_QUIZ)
-    combined.update(LEVEL07_MODULE05_QUIZ)
-    combined.update(LEVEL07_MODULE06_QUIZ)
-    combined.update(LEVEL07_MODULE07_QUIZ)
-    combined.update(LEVEL07_MODULE08_QUIZ)
-    combined.update(LEVEL07_MODULE09_QUIZ)
+        LEVEL07_MODULE01_QUIZ,
+        LEVEL07_MODULE02_QUIZ,
+        LEVEL07_MODULE03_QUIZ,
+        LEVEL07_MODULE04_QUIZ,
+        LEVEL07_MODULE05_QUIZ,
+        LEVEL07_MODULE06_QUIZ,
+        LEVEL07_MODULE07_QUIZ,
+        LEVEL07_MODULE08_QUIZ,
+        LEVEL07_MODULE09_QUIZ,
 
-    # LEVEL 8
-    combined.update(LEVEL08_MODULE01_QUIZ)
-    combined.update(LEVEL08_MODULE02_QUIZ)
-    combined.update(LEVEL08_MODULE03_QUIZ)
-    combined.update(LEVEL08_MODULE04_QUIZ)
-    combined.update(LEVEL08_MODULE05_QUIZ)
-    combined.update(LEVEL08_MODULE06_QUIZ)
-    combined.update(LEVEL08_MODULE07_QUIZ)
-    combined.update(LEVEL08_MODULE08_QUIZ)
-    combined.update(LEVEL08_MODULE09_QUIZ)
+        LEVEL08_MODULE01_QUIZ,
+        LEVEL08_MODULE02_QUIZ,
+        LEVEL08_MODULE03_QUIZ,
+        LEVEL08_MODULE04_QUIZ,
+        LEVEL08_MODULE05_QUIZ,
+        LEVEL08_MODULE06_QUIZ,
+        LEVEL08_MODULE07_QUIZ,
+        LEVEL08_MODULE08_QUIZ,
+        LEVEL08_MODULE09_QUIZ,
 
-    # LEVEL 9
-    combined.update(LEVEL09_MODULE01_QUIZ)
-    combined.update(LEVEL09_MODULE02_QUIZ)
-    combined.update(LEVEL09_MODULE03_QUIZ)
-    combined.update(LEVEL09_MODULE04_QUIZ)
-    combined.update(LEVEL09_MODULE05_QUIZ)
-    combined.update(LEVEL09_MODULE06_QUIZ)
-    combined.update(LEVEL09_MODULE07_QUIZ)
-    combined.update(LEVEL09_MODULE08_QUIZ)
+        LEVEL09_MODULE01_QUIZ,
+        LEVEL09_MODULE02_QUIZ,
+        LEVEL09_MODULE03_QUIZ,
+        LEVEL09_MODULE04_QUIZ,
+        LEVEL09_MODULE05_QUIZ,
+        LEVEL09_MODULE06_QUIZ,
+        LEVEL09_MODULE07_QUIZ,
+        LEVEL09_MODULE08_QUIZ,
+
+        LEVEL10_MODULE01_QUIZ,
+        LEVEL10_MODULE02_QUIZ,
+        LEVEL10_MODULE03_QUIZ,
+        LEVEL10_MODULE04_QUIZ,
+        LEVEL10_MODULE05_QUIZ,
+        LEVEL10_MODULE06_QUIZ,
+        LEVEL10_MODULE07_QUIZ,
+        LEVEL10_MODULE08_QUIZ,
+        LEVEL10_MODULE09_QUIZ,
+        LEVEL10_MODULE10_QUIZ,
+        LEVEL10_MODULE11_QUIZ,
+    ):
+        combined.update(quiz)
 
     return combined
