@@ -1,11 +1,11 @@
 @echo off
 setlocal
 
-title ARCHIPRO UZ - FULL AUDIT
+title ARCHIPRO UZ - FULL SYSTEM AUDIT
 
 echo.
 echo ============================================================
-echo                  ARCHIPRO UZ - FULL AUDIT
+echo              ARCHIPRO UZ - FULL SYSTEM AUDIT
 echo ============================================================
 echo.
 
@@ -51,8 +51,15 @@ if not exist "app\tools\database_audit.py" (
     exit /b 1
 )
 
+if not exist "app\tools\runtime_smoke_test.py" (
+    echo [ERROR] app\tools\runtime_smoke_test.py topilmadi.
+    echo.
+    pause
+    exit /b 1
+)
+
 echo ============================================================
-echo 1 / 2 - PROJECT AUDIT
+echo 1 / 3 - PROJECT AUDIT
 echo ============================================================
 echo.
 
@@ -63,7 +70,7 @@ set PROJECT_RESULT=%errorlevel%
 echo.
 echo.
 echo ============================================================
-echo 2 / 2 - DATABASE AUDIT
+echo 2 / 3 - DATABASE AUDIT
 echo ============================================================
 echo.
 
@@ -74,12 +81,24 @@ set DATABASE_RESULT=%errorlevel%
 echo.
 echo.
 echo ============================================================
-echo                    FINAL AUDIT RESULT
+echo 3 / 3 - RUNTIME SMOKE TEST
+echo ============================================================
+echo.
+
+%PYTHON_CMD% "app\tools\runtime_smoke_test.py"
+
+set RUNTIME_RESULT=%errorlevel%
+
+echo.
+echo.
+echo ============================================================
+echo                   FINAL AUDIT RESULT
 echo ============================================================
 echo.
 
 echo Project audit exit code : %PROJECT_RESULT%
 echo Database audit exit code: %DATABASE_RESULT%
+echo Runtime test exit code  : %RUNTIME_RESULT%
 echo.
 
 if "%PROJECT_RESULT%"=="0" (
@@ -94,11 +113,17 @@ if "%DATABASE_RESULT%"=="0" (
     echo [FAIL] DATABASE AUDIT
 )
 
+if "%RUNTIME_RESULT%"=="0" (
+    echo [PASS] RUNTIME SMOKE TEST
+) else (
+    echo [FAIL] RUNTIME SMOKE TEST
+)
+
 echo.
 
-if "%PROJECT_RESULT%"=="0" if "%DATABASE_RESULT%"=="0" (
+if "%PROJECT_RESULT%"=="0" if "%DATABASE_RESULT%"=="0" if "%RUNTIME_RESULT%"=="0" (
     echo ============================================================
-    echo ARCHIPRO UZ AUDIT MUVAFFAQIYATLI YAKUNLANDI
+    echo ARCHIPRO UZ FULL AUDIT MUVAFFAQIYATLI YAKUNLANDI
     echo KRITIK XATO TOPILMADI
     echo ============================================================
     echo.
@@ -107,7 +132,7 @@ if "%PROJECT_RESULT%"=="0" if "%DATABASE_RESULT%"=="0" (
 )
 
 echo ============================================================
-echo ARCHIPRO UZ AUDIT XATOLAR BILAN YAKUNLANDI
+echo ARCHIPRO UZ FULL AUDIT XATOLAR BILAN YAKUNLANDI
 echo YUQORIDAGI ERROR VA WARNING QATORLARINI TEKSHIRING
 echo ============================================================
 echo.
