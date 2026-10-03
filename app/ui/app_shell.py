@@ -1,24 +1,47 @@
-from PySide6.QtCore import Qt, QTimer
+from PySide6.QtCore import (
+    Qt,
+    QTimer,
+)
 
 from PySide6.QtWidgets import (
     QFrame,
+    QGridLayout,
     QHBoxLayout,
     QLabel,
     QListWidget,
     QListWidgetItem,
     QMainWindow,
+    QProgressBar,
+    QPushButton,
     QStackedWidget,
     QVBoxLayout,
     QWidget,
 )
 
-from ui.learning_window import LearningWindow
-from ui.menu_section_window import MenuSectionWindow
-from ui.license_window import LicenseWindow
-from ui.portfolio_page import PortfolioPage
+from courses.course_service import (
+    get_current_level,
+    get_next_available_lesson,
+    get_user_course_stats,
+)
+
+from ui.curriculum_map import (
+    CURRICULUM_SECTIONS,
+    get_section,
+    validate_curriculum_map,
+)
+
+from ui.learning_page import (
+    LearningPage,
+)
+
+from ui.license_window import (
+    LicenseWindow,
+)
 
 
-class AppShell(QMainWindow):
+class AppShell(
+    QMainWindow
+):
     def __init__(
         self,
         user: dict,
@@ -26,20 +49,54 @@ class AppShell(QMainWindow):
         super().__init__()
 
         self.user = user
+
+        self.is_master = (
+            str(
+                user.get(
+                    "license_type",
+                    "",
+                )
+            ).upper()
+            == "MASTER"
+        )
+
         self.page_cache = {}
+
+        # ====================================================
+        # CURRICULUM SAFETY
+        # ====================================================
+
+        mapping_check = (
+            validate_curriculum_map()
+        )
+
+        if not mapping_check[
+            "ok"
+        ]:
+            raise RuntimeError(
+                "Curriculum UI mapping xato: "
+                f"missing={mapping_check['missing']}, "
+                f"duplicates={mapping_check['duplicates']}, "
+                f"unknown={mapping_check['unknown']}"
+            )
 
         self.setWindowTitle(
             "ARCHIPRO UZ"
         )
 
         self.setMinimumSize(
-            1000,
-            650,
+            1100,
+            700,
         )
 
-        self.setup_styles()
-        self.build_ui()
+        self._setup_style()
+        self._build_shell()
+
         self.open_home()
+
+        # ====================================================
+        # MONITORGA AVTOMATIK MOSLASHISH
+        # ====================================================
 
         QTimer.singleShot(
             0,
@@ -47,23 +104,21 @@ class AppShell(QMainWindow):
         )
 
     # ========================================================
-    # STYLE
+    # GLOBAL STYLE
     # ========================================================
 
-    def setup_styles(self):
+    def _setup_style(self):
         self.setStyleSheet(
             """
-            QMainWindow {
+            QMainWindow,
+            QWidget#appRoot,
+            QStackedWidget {
                 background-color: #0B1220;
             }
 
             QWidget {
-                font-family: Segoe UI;
                 color: #F8FAFC;
-            }
-
-            QWidget#appRoot {
-                background-color: #0B1220;
+                font-family: 'Segoe UI';
             }
 
             QFrame#sidebar {
@@ -73,27 +128,22 @@ class AppShell(QMainWindow):
 
             QLabel#logo {
                 color: #FFFFFF;
-                font-size: 24px;
+                font-size: 25px;
                 font-weight: 800;
-                background-color: transparent;
             }
 
             QLabel#logoSub {
-                color: #64748B;
-                font-size: 11px;
-                background-color: transparent;
+                color: #94A3B8;
+                font-size: 13px;
             }
 
             QListWidget {
-                background-color: transparent;
+                background: transparent;
                 border: none;
                 outline: none;
                 color: #CBD5E1;
-                font-size: 14px;
-            }
-
-            QListWidget::viewport {
-                background-color: transparent;
+                font-size: 15px;
+                font-weight: 500;
             }
 
             QListWidget::item {
@@ -107,7 +157,7 @@ class AppShell(QMainWindow):
             }
 
             QListWidget::item:selected {
-                background-color: #1D4ED8;
+                background-color: #2563EB;
                 color: #FFFFFF;
             }
 
@@ -116,79 +166,113 @@ class AppShell(QMainWindow):
                 border: 1px solid #1E293B;
                 border-radius: 10px;
                 padding: 12px;
-                color: #CBD5E1;
-                font-size: 12px;
+                color: #E2E8F0;
+                font-size: 13px;
             }
 
-            QStackedWidget {
-                background-color: #0B1220;
-                border: none;
-            }
-
-            QStackedWidget > QWidget {
-                background-color: #0B1220;
-            }
-
-            QWidget#homePage {
-                background-color: #0B1220;
-            }
-
-            QLabel#homeTitle {
+            QLabel#pageTitle {
                 color: #FFFFFF;
-                font-size: 32px;
+                font-size: 34px;
                 font-weight: 800;
             }
 
-            QLabel#homeSub {
+            QLabel#pageSubtitle {
                 color: #94A3B8;
+                font-size: 16px;
+            }
+
+            QFrame#masterBanner {
+                background-color: #251D06;
+                border: 1px solid #A16207;
+                border-radius: 14px;
+            }
+
+            QLabel#masterTitle {
+                color: #FACC15;
+                font-size: 18px;
+                font-weight: 800;
+            }
+
+            QLabel#masterText {
+                color: #FDE68A;
                 font-size: 14px;
             }
 
-            QFrame#homeCard {
+            QFrame#statCard,
+            QFrame#continueCard {
                 background-color: #111827;
                 border: 1px solid #1E293B;
                 border-radius: 14px;
             }
 
-            QLabel#cardTitle {
+            QLabel#cardLabel {
+                color: #94A3B8;
+                font-size: 14px;
+            }
+
+            QLabel#cardValue {
                 color: #FFFFFF;
-                font-size: 20px;
+                font-size: 26px;
+                font-weight: 800;
+            }
+
+            QLabel#sectionTitle {
+                color: #FFFFFF;
+                font-size: 21px;
                 font-weight: 700;
             }
 
-            QLabel#cardText {
-                color: #94A3B8;
-                font-size: 13px;
+            QLabel#bodyText {
+                color: #CBD5E1;
+                font-size: 15px;
             }
 
-            QScrollArea {
-                background-color: #0B1220;
+            QProgressBar {
                 border: none;
+                background-color: #1E293B;
+                border-radius: 7px;
+                height: 14px;
+                color: transparent;
             }
 
-            QAbstractScrollArea::viewport {
-                background-color: #0B1220;
+            QProgressBar::chunk {
+                background-color: #2563EB;
+                border-radius: 7px;
+            }
+
+            QPushButton#primaryButton {
+                background-color: #2563EB;
+                color: #FFFFFF;
+                border: none;
+                border-radius: 9px;
+                padding: 12px 18px;
+                font-size: 15px;
+                font-weight: 700;
+            }
+
+            QPushButton#primaryButton:hover {
+                background-color: #3B82F6;
             }
             """
         )
 
     # ========================================================
-    # UI
+    # SHELL
     # ========================================================
 
-    def build_ui(self):
-        central = QWidget()
+    def _build_shell(self):
+        root_widget = QWidget()
 
-        central.setObjectName(
+        root_widget.setObjectName(
             "appRoot"
         )
 
         self.setCentralWidget(
-            central
+            root_widget
         )
 
         root = QHBoxLayout(
-            central
+            root_widget
         )
 
         root.setContentsMargins(
@@ -213,7 +297,7 @@ class AppShell(QMainWindow):
         )
 
         sidebar.setFixedWidth(
-            255
+            285
         )
 
         sidebar_layout = QVBoxLayout(
@@ -221,9 +305,9 @@ class AppShell(QMainWindow):
         )
 
         sidebar_layout.setContentsMargins(
-            16,
+            18,
             24,
-            16,
+            18,
             16,
         )
 
@@ -239,6 +323,10 @@ class AppShell(QMainWindow):
             "logo"
         )
 
+        sidebar_layout.addWidget(
+            logo
+        )
+
         logo_sub = QLabel(
             "Architecture Academy"
         )
@@ -248,15 +336,11 @@ class AppShell(QMainWindow):
         )
 
         sidebar_layout.addWidget(
-            logo
-        )
-
-        sidebar_layout.addWidget(
             logo_sub
         )
 
         sidebar_layout.addSpacing(
-            20
+            18
         )
 
         self.menu = QListWidget()
@@ -264,35 +348,43 @@ class AppShell(QMainWindow):
         self.menu_items = [
             "Bosh sahifa",
             "Mening o'qishim",
+
             "Arxitektura",
             "Archicad",
+            "Qurilish konstruksiyalari",
             "SHNQ va normativlar",
             "Amaliyot",
-            "Loyihalar",
+            "BIM va real loyiha",
+            "Portfolio / PRO Final",
+
             "Testlar",
             "Imtihonlar",
             "Kutubxona",
-            "Portfolio",
             "Statistika",
             "Litsenziya",
             "Sozlamalar",
         ]
 
-        for menu_text in self.menu_items:
+        for text in self.menu_items:
+
             self.menu.addItem(
                 QListWidgetItem(
-                    menu_text
+                    text
                 )
             )
 
         self.menu.itemClicked.connect(
-            self.handle_menu
+            self._handle_menu
         )
 
         sidebar_layout.addWidget(
             self.menu,
             1,
         )
+
+        # ====================================================
+        # USER
+        # ====================================================
 
         user_name = (
             self.user.get(
@@ -304,13 +396,16 @@ class AppShell(QMainWindow):
             or "Foydalanuvchi"
         )
 
-        license_type = self.user.get(
-            "license_type",
-            "PRO",
-        )
+        license_type = str(
+            self.user.get(
+                "license_type",
+                "PRO",
+            )
+        ).upper()
 
         user_info = QLabel(
-            f"{user_name}\n{license_type}"
+            f"{user_name}\n"
+            f"{license_type}"
         )
 
         user_info.setObjectName(
@@ -341,90 +436,184 @@ class AppShell(QMainWindow):
         )
 
     # ========================================================
-    # MENU
+    # MENU ROUTER
     # ========================================================
 
-    def handle_menu(
+    def _handle_menu(
         self,
         item,
     ):
         text = item.text()
 
         if text == "Bosh sahifa":
+
             self.open_home()
-            return
 
-        if text == "Mening o'qishim":
+        elif text == "Mening o'qishim":
+
             self.open_learning()
-            return
 
-        if text == "Portfolio":
-            self.open_portfolio()
-            return
+        elif text in CURRICULUM_SECTIONS:
 
-        if text == "Litsenziya":
+            self.open_section(
+                text
+            )
+
+        elif text == "Testlar":
+
+            self.open_learning(
+                title="Testlar",
+                subtitle=(
+                    "Dars testlariga o'quv "
+                    "ketma-ketligi bo'yicha kiring."
+                ),
+                cache_key="tests_overview",
+            )
+
+        elif text == "Imtihonlar":
+
+            self.open_learning(
+                title="Imtihonlar",
+                subtitle=(
+                    "Level yakuniy imtihonlari "
+                    "darslar tugagach ochiladi."
+                ),
+                cache_key="exams_overview",
+            )
+
+        elif text == "Statistika":
+
+            self.open_statistics()
+
+        elif text == "Litsenziya":
+
             self.open_license()
-            return
 
-        self.open_section(
-            text
-        )
+        elif text == "Kutubxona":
+
+            self.open_info_page(
+                key="library",
+                title="Kutubxona",
+                text=(
+                    "Kutubxona uchun alohida resurslar "
+                    "keyingi bosqichda ulanadi. "
+                    "Mavjud 680 dars kontenti "
+                    "o'quv bo'limlarida saqlangan."
+                ),
+            )
+
+        elif text == "Sozlamalar":
+
+            self.open_info_page(
+                key="settings",
+                title="Sozlamalar",
+                text=(
+                    "Profil va dastur sozlamalari "
+                    "keyingi UI bosqichida "
+                    "shu sahifaga ulanadi."
+                ),
+            )
 
     # ========================================================
     # PAGE MANAGER
     # ========================================================
 
-    def show_page(
+    def _show_page(
         self,
-        key,
-        widget,
+        key: str,
+        page: QWidget,
     ):
-        if key in self.page_cache:
-            self.stack.setCurrentWidget(
-                self.page_cache[
-                    key
-                ]
-            )
-            return
+        existing = self.page_cache.get(
+            key
+        )
 
-        widget.setParent(
+        if existing is not None:
+
+            self.stack.setCurrentWidget(
+                existing
+            )
+
+            return existing
+
+        page.setParent(
             self.stack
         )
 
-        widget.setWindowFlags(
+        page.setWindowFlags(
             Qt.WindowType.Widget
         )
 
         self.stack.addWidget(
-            widget
+            page
         )
 
         self.page_cache[
             key
-        ] = widget
+        ] = page
 
         self.stack.setCurrentWidget(
-            widget
+            page
         )
+
+        return page
+
+    # ========================================================
+    # MENU ACTIVE ITEM
+    # ========================================================
+
+    def _set_menu_row(
+        self,
+        label: str,
+    ):
+        try:
+
+            self.menu.setCurrentRow(
+                self.menu_items.index(
+                    label
+                )
+            )
+
+        except ValueError:
+            pass
 
     # ========================================================
     # HOME
     # ========================================================
 
     def open_home(self):
-        if "home" in self.page_cache:
-            self.stack.setCurrentWidget(
-                self.page_cache[
-                    "home"
-                ]
+        self._set_menu_row(
+            "Bosh sahifa"
+        )
+
+        # Home progress doim yangi bo'lishi kerak.
+        old = self.page_cache.pop(
+            "home",
+            None,
+        )
+
+        if old is not None:
+
+            self.stack.removeWidget(
+                old
             )
-            return
+
+            old.deleteLater()
+
+        stats = get_user_course_stats(
+            self.user["id"]
+        )
+
+        current_level = get_current_level(
+            self.user["id"]
+        )
+
+        next_lesson = (
+            get_next_available_lesson(
+                self.user["id"]
+            )
+        )
 
         page = QWidget()
-
-        page.setObjectName(
-            "homePage"
-        )
 
         layout = QVBoxLayout(
             page
@@ -438,24 +627,33 @@ class AppShell(QMainWindow):
         )
 
         layout.setSpacing(
-            20
+            18
         )
+
+        # ====================================================
+        # TITLE
+        # ====================================================
 
         title = QLabel(
             "Bosh sahifa"
         )
 
         title.setObjectName(
-            "homeTitle"
+            "pageTitle"
+        )
+
+        layout.addWidget(
+            title
         )
 
         subtitle = QLabel(
-            "Arxitekturani 0 dan boshlab professional "
-            "turar joy loyihalashgacha o'rganing."
+            "Arxitekturani 0 dan professional "
+            "turar joy loyihalashgacha "
+            "bosqichma-bosqich o'rganing."
         )
 
         subtitle.setObjectName(
-            "homeSub"
+            "pageSubtitle"
         )
 
         subtitle.setWordWrap(
@@ -463,201 +661,473 @@ class AppShell(QMainWindow):
         )
 
         layout.addWidget(
-            title
-        )
-
-        layout.addWidget(
             subtitle
         )
 
-        card = QFrame()
+        # ====================================================
+        # MASTER BANNER
+        # ====================================================
 
-        card.setObjectName(
-            "homeCard"
+        if self.is_master:
+
+            banner = QFrame()
+
+            banner.setObjectName(
+                "masterBanner"
+            )
+
+            banner_layout = QHBoxLayout(
+                banner
+            )
+
+            banner_layout.setContentsMargins(
+                18,
+                14,
+                18,
+                14,
+            )
+
+            text_area = QVBoxLayout()
+
+            banner_title = QLabel(
+                "★ MASTER TEST MODE FAOL"
+            )
+
+            banner_title.setObjectName(
+                "masterTitle"
+            )
+
+            banner_text = QLabel(
+                "Bu rejim faqat dastur egasi uchun. "
+                "Barcha Level va darslarni "
+                "blokirovkasiz tekshirish mumkin."
+            )
+
+            banner_text.setObjectName(
+                "masterText"
+            )
+
+            banner_text.setWordWrap(
+                True
+            )
+
+            text_area.addWidget(
+                banner_title
+            )
+
+            text_area.addWidget(
+                banner_text
+            )
+
+            banner_layout.addLayout(
+                text_area,
+                1,
+            )
+
+            button = QPushButton(
+                "BARCHA LEVELLARNI KO'RISH"
+            )
+
+            button.setObjectName(
+                "primaryButton"
+            )
+
+            button.clicked.connect(
+                self.open_learning
+            )
+
+            banner_layout.addWidget(
+                button
+            )
+
+            layout.addWidget(
+                banner
+            )
+
+        # ====================================================
+        # STATS
+        # ====================================================
+
+        cards = QGridLayout()
+
+        cards.setHorizontalSpacing(
+            14
         )
 
-        card_layout = QVBoxLayout(
-            card
+        cards.setVerticalSpacing(
+            14
         )
 
-        card_layout.setContentsMargins(
-            24,
-            22,
-            24,
-            22,
+        if self.is_master:
+
+            current_level_text = (
+                "MASTER"
+            )
+
+        elif current_level:
+
+            current_level_text = (
+                current_level[
+                    "code"
+                ].replace(
+                    "LEVEL_",
+                    "LEVEL ",
+                )
+            )
+
+        else:
+
+            current_level_text = "—"
+
+        card_data = [
+            (
+                "Joriy bosqich",
+                current_level_text,
+            ),
+            (
+                "Tugallangan darslar",
+                (
+                    f"{stats['completed_lessons']} / "
+                    f"{stats['total_lessons']}"
+                ),
+            ),
+            (
+                "Umumiy progress",
+                f"{stats['progress_percent']}%",
+            ),
+            (
+                "XP",
+                str(
+                    stats["xp"]
+                ),
+            ),
+        ]
+
+        for index, (
+            label,
+            value,
+        ) in enumerate(
+            card_data
+        ):
+
+            card = QFrame()
+
+            card.setObjectName(
+                "statCard"
+            )
+
+            card_layout = QVBoxLayout(
+                card
+            )
+
+            card_layout.setContentsMargins(
+                18,
+                16,
+                18,
+                16,
+            )
+
+            label_widget = QLabel(
+                label
+            )
+
+            label_widget.setObjectName(
+                "cardLabel"
+            )
+
+            value_widget = QLabel(
+                value
+            )
+
+            value_widget.setObjectName(
+                "cardValue"
+            )
+
+            card_layout.addWidget(
+                label_widget
+            )
+
+            card_layout.addWidget(
+                value_widget
+            )
+
+            cards.addWidget(
+                card,
+                index // 2,
+                index % 2,
+            )
+
+        layout.addLayout(
+            cards
         )
 
-        card_title = QLabel(
-            "ARCHIPRO UZ"
+        # ====================================================
+        # PROGRESS
+        # ====================================================
+
+        progress = QProgressBar()
+
+        progress.setRange(
+            0,
+            100,
         )
 
-        card_title.setObjectName(
-            "cardTitle"
-        )
-
-        card_text = QLabel(
-            "Chap paneldagi barcha bo'limlarni ko'rishingiz mumkin. "
-            "O'quv Level va darslari esa ketma-ketlik bo'yicha ochiladi."
-        )
-
-        card_text.setObjectName(
-            "cardText"
-        )
-
-        card_text.setWordWrap(
-            True
-        )
-
-        card_layout.addWidget(
-            card_title
-        )
-
-        card_layout.addWidget(
-            card_text
+        progress.setValue(
+            stats[
+                "progress_percent"
+            ]
         )
 
         layout.addWidget(
-            card
+            progress
+        )
+
+        # ====================================================
+        # NEXT LESSON
+        # ====================================================
+
+        continue_card = QFrame()
+
+        continue_card.setObjectName(
+            "continueCard"
+        )
+
+        continue_layout = QHBoxLayout(
+            continue_card
+        )
+
+        continue_layout.setContentsMargins(
+            20,
+            18,
+            20,
+            18,
+        )
+
+        text_area = QVBoxLayout()
+
+        continue_title = QLabel(
+            "Keyingi dars"
+        )
+
+        continue_title.setObjectName(
+            "sectionTitle"
+        )
+
+        if next_lesson:
+
+            continue_text_value = (
+                f"{next_lesson['level_code'].replace('LEVEL_', 'LEVEL ')}"
+                f"  •  "
+                f"{next_lesson['module_title']}"
+                f"  •  "
+                f"{next_lesson['title']}"
+            )
+
+        elif self.is_master:
+
+            continue_text_value = (
+                "MASTER rejimida barcha mavjud darslarni "
+                "Mening o'qishim bo'limidan "
+                "tekshirishingiz mumkin."
+            )
+
+        else:
+
+            continue_text_value = (
+                "Hozir ochiq keyingi dars topilmadi. "
+                "Progress yoki Level imtihonini tekshiring."
+            )
+
+        continue_text = QLabel(
+            continue_text_value
+        )
+
+        continue_text.setObjectName(
+            "bodyText"
+        )
+
+        continue_text.setWordWrap(
+            True
+        )
+
+        text_area.addWidget(
+            continue_title
+        )
+
+        text_area.addWidget(
+            continue_text
+        )
+
+        continue_layout.addLayout(
+            text_area,
+            1,
+        )
+
+        continue_button = QPushButton(
+            "O'QISHNI DAVOM ETTIRISH"
+        )
+
+        continue_button.setObjectName(
+            "primaryButton"
+        )
+
+        continue_button.clicked.connect(
+            self.open_learning
+        )
+
+        continue_layout.addWidget(
+            continue_button
+        )
+
+        layout.addWidget(
+            continue_card
         )
 
         layout.addStretch()
 
-        self.show_page(
+        self._show_page(
             "home",
             page,
         )
 
     # ========================================================
-    # MENING O'QISHIM
+    # ALL LEARNING
     # ========================================================
 
     def open_learning(
         self,
-        level_codes=None,
+        *,
         title=None,
         subtitle=None,
+        cache_key="learning_all",
     ):
-        # Hozirgi LearningWindow faqat user parametrini qabul qiladi.
-        # Shuning uchun kontent/qulf logikasiga tegmaymiz.
+        if cache_key == "learning_all":
 
-        key = "learning"
+            self._set_menu_row(
+                "Mening o'qishim"
+            )
 
-        if key in self.page_cache:
-            page = self.page_cache[
-                key
-            ]
+        page = self.page_cache.get(
+            cache_key
+        )
 
-            if hasattr(
+        if page is None:
+
+            page = LearningPage(
+                user=self.user,
+                custom_title=title,
+                custom_subtitle=subtitle,
+                back_callback=self.open_home,
+            )
+
+            self._show_page(
+                cache_key,
                 page,
-                "reload_data",
-            ):
-                page.reload_data()
+            )
 
-            if hasattr(
-                page,
-                "build_ui",
-            ):
-                page.build_ui()
+        else:
+
+            page.refresh_page()
 
             self.stack.setCurrentWidget(
                 page
             )
 
-            return
-
-        page = LearningWindow(
-            self.user
-        )
-
-        self.show_page(
-            key,
-            page,
-        )
-
     # ========================================================
-    # SECTIONS
+    # CURRICULUM SECTION
     # ========================================================
 
     def open_section(
         self,
-        section_name,
+        section_name: str,
     ):
+        section = get_section(
+            section_name
+        )
+
+        if section is None:
+            return
+
+        self._set_menu_row(
+            section_name
+        )
+
         key = (
-            "section_"
+            "section::"
             + section_name
         )
 
-        if key in self.page_cache:
-            self.stack.setCurrentWidget(
-                self.page_cache[
-                    key
-                ]
+        page = self.page_cache.get(
+            key
+        )
+
+        if page is None:
+
+            page = LearningPage(
+                user=self.user,
+                focus_level_codes=(
+                    section[
+                        "levels"
+                    ]
+                ),
+                custom_title=(
+                    section[
+                        "title"
+                    ]
+                ),
+                custom_subtitle=(
+                    section[
+                        "subtitle"
+                    ]
+                ),
+                back_callback=self.open_home,
             )
-            return
 
-        page = MenuSectionWindow(
-            self.user,
-            section_name,
-        )
+            self._show_page(
+                key,
+                page,
+            )
 
-        # Section ichidagi OCHISH tugmasi hozircha
-        # mavjud LearningWindow'ga olib boradi.
-        # Qulf logikasi LearningWindow ichida qoladi.
+        else:
 
-        def open_item_inside_app(
-            item,
-        ):
-            if item.get(
-                "action"
-            ) == "license":
-                self.open_license()
-                return
+            page.refresh_page()
 
-            self.open_learning()
-
-        def open_whole_section_inside_app():
-            self.open_learning()
-
-        page.open_item = (
-            open_item_inside_app
-        )
-
-        page.open_whole_section = (
-            open_whole_section_inside_app
-        )
-
-        self.show_page(
-            key,
-            page,
-        )
+            self.stack.setCurrentWidget(
+                page
+            )
 
     # ========================================================
-    # PORTFOLIO
+    # STATISTICS
     # ========================================================
 
-    def open_portfolio(self):
-        key = "portfolio"
-
-        if key in self.page_cache:
-            self.stack.setCurrentWidget(
-                self.page_cache[
-                    key
-                ]
-            )
-            return
-
-        page = PortfolioPage(
-            self.user
+    def open_statistics(self):
+        self._set_menu_row(
+            "Statistika"
         )
 
-        page.open_levels_requested.connect(
-            lambda levels, title, subtitle:
-            self.open_learning()
+        stats = get_user_course_stats(
+            self.user["id"]
         )
 
-        self.show_page(
-            key,
-            page,
+        text = (
+            f"Tugallangan darslar: "
+            f"{stats['completed_lessons']} / "
+            f"{stats['total_lessons']}\n\n"
+            f"Umumiy progress: "
+            f"{stats['progress_percent']}%\n\n"
+            f"Dars XP: "
+            f"{stats['lesson_xp']}\n\n"
+            f"Imtihon XP: "
+            f"{stats['exam_xp']}\n\n"
+            f"Jami XP: "
+            f"{stats['xp']}"
+        )
+
+        self.open_info_page(
+            key="statistics",
+            title="Statistika",
+            text=text,
+            replace=True,
         )
 
     # ========================================================
@@ -665,21 +1135,120 @@ class AppShell(QMainWindow):
     # ========================================================
 
     def open_license(self):
-        key = "license"
-
-        if key in self.page_cache:
-            self.stack.setCurrentWidget(
-                self.page_cache[
-                    key
-                ]
-            )
-            return
-
-        page = LicenseWindow(
-            self.user
+        self._set_menu_row(
+            "Litsenziya"
         )
 
-        self.show_page(
+        key = "license"
+
+        page = self.page_cache.get(
+            key
+        )
+
+        if page is None:
+
+            page = LicenseWindow(
+                self.user
+            )
+
+            self._show_page(
+                key,
+                page,
+            )
+
+        else:
+
+            self.stack.setCurrentWidget(
+                page
+            )
+
+    # ========================================================
+    # INFO PAGE
+    # ========================================================
+
+    def open_info_page(
+        self,
+        key: str,
+        title: str,
+        text: str,
+        replace=False,
+    ):
+        old = self.page_cache.get(
+            key
+        )
+
+        if (
+            old is not None
+            and replace
+        ):
+
+            self.stack.removeWidget(
+                old
+            )
+
+            old.deleteLater()
+
+            self.page_cache.pop(
+                key,
+                None,
+            )
+
+        elif old is not None:
+
+            self.stack.setCurrentWidget(
+                old
+            )
+
+            return
+
+        page = QWidget()
+
+        layout = QVBoxLayout(
+            page
+        )
+
+        layout.setContentsMargins(
+            34,
+            30,
+            34,
+            30,
+        )
+
+        layout.setSpacing(
+            16
+        )
+
+        heading = QLabel(
+            title
+        )
+
+        heading.setObjectName(
+            "pageTitle"
+        )
+
+        body = QLabel(
+            text
+        )
+
+        body.setObjectName(
+            "bodyText"
+        )
+
+        body.setWordWrap(
+            True
+        )
+
+        layout.addWidget(
+            heading
+        )
+
+        layout.addWidget(
+            body
+        )
+
+        layout.addStretch()
+
+        self._show_page(
             key,
             page,
         )
