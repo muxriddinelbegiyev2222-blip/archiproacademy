@@ -1,31 +1,96 @@
-from PySide6.QtCore import Qt
-
-from PySide6.QtWidgets import (
-    QHBoxLayout,
-    QPushButton,
+from PySide6.QtCore import (
+    Qt,
+    QTimer,
 )
 
-from ui.lesson_window import LessonWindow
-from ui.quiz_window import QuizWindow
-from ui.exam_window import ExamWindow
+from PySide6.QtWidgets import (
+    QAbstractScrollArea,
+    QHBoxLayout,
+    QPushButton,
+    QScrollArea,
+)
+
+from ui.exam_window import (
+    ExamWindow,
+)
+
+from ui.lesson_window import (
+    LessonWindow,
+)
+
+from ui.quiz_window import (
+    QuizWindow,
+)
+
+from ui.theme import (
+    fix_scroll_surfaces,
+)
 
 
 # ============================================================
-# LESSON PAGE
+# COMMON EMBEDDED STYLE
 # ============================================================
 
+EMBEDDED_QSS = """
+QMainWindow {
+    background-color: #08111F;
+}
 
-class LessonPage(LessonWindow):
-    """
-    Eski LessonWindow logikasi saqlanadi.
+QWidget {
+    font-family: "Segoe UI";
+    color: #EAF1FA;
+}
 
-    Farqi:
-    - alohida Windows bo'lib ochilmaydi;
-    - ORQAGA AppShell ichida ishlaydi;
-    - mini-test AppShell ichida ochiladi;
-    - quiz tugagach lesson_completed signali saqlanadi.
-    """
+QScrollArea,
+QAbstractScrollArea {
+    background-color: #08111F;
+    border: none;
+}
 
+QAbstractScrollArea::viewport {
+    background-color: #08111F;
+}
+
+QScrollArea > QWidget,
+QScrollArea > QWidget > QWidget {
+    background-color: #08111F;
+}
+
+QScrollBar:vertical {
+    background-color: #0B1627;
+    width: 12px;
+    margin: 3px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #314561;
+    min-height: 45px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #465F82;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: none;
+}
+"""
+
+
+# ============================================================
+# LESSON
+# ============================================================
+
+class LessonPage(
+    LessonWindow
+):
     def __init__(
         self,
         lesson: dict,
@@ -33,71 +98,128 @@ class LessonPage(LessonWindow):
         back_callback=None,
         open_quiz_callback=None,
     ):
-        self.back_callback = back_callback
-        self.open_quiz_callback = open_quiz_callback
+        self.back_callback = (
+            back_callback
+        )
+
+        self.open_quiz_callback = (
+            open_quiz_callback
+        )
 
         super().__init__(
             lesson=lesson,
             user=user,
         )
 
-    # ========================================================
-    # STYLE
-    # ========================================================
+        QTimer.singleShot(
+            0,
+            self._polish_page,
+        )
 
     def setup_styles(self):
         super().setup_styles()
 
         self.setStyleSheet(
             self.styleSheet()
+            + EMBEDDED_QSS
             + """
-            QLabel#lessonLevel {
-                font-size: 15px;
-                font-weight: 650;
+            QLabel {
+                color: #DCE5F1;
             }
 
             QLabel#lessonTitle {
+                color: #F4F7FB;
                 font-size: 34px;
                 font-weight: 800;
             }
 
-            QLabel#lessonMeta {
+            QLabel#lessonLevel {
+                color: #69A0FF;
                 font-size: 15px;
-                color: #A8B3C7;
+                font-weight: 650;
+            }
+
+            QLabel#lessonMeta {
+                color: #9AAAC0;
+                font-size: 15px;
             }
 
             QLabel#sectionTitle {
-                font-size: 21px;
-                font-weight: 750;
+                color: #EDF3FA;
+                font-size: 20px;
+                font-weight: 700;
             }
 
             QLabel#bodyText {
-                font-size: 17px;
-                color: #D2DAE5;
+                color: #CFD9E7;
+                font-size: 16px;
             }
 
-            QPushButton#backButton {
-                font-size: 14px;
-                min-height: 34px;
+            QFrame {
+                background-color: #101C2F;
+                border: 1px solid #243953;
+                border-radius: 13px;
             }
 
             QPushButton#quizButton {
+                background-color: #356FE0;
+                border: 1px solid #4F8CFF;
+                color: #FFFFFF;
+                padding: 11px 22px;
                 font-size: 15px;
-                min-height: 40px;
-                padding-left: 22px;
-                padding-right: 22px;
+                font-weight: 750;
+                border-radius: 10px;
+            }
+
+            QPushButton#quizButton:hover {
+                background-color: #467FE8;
+            }
+
+            QPushButton#backButton {
+                background-color: #15243A;
+                border: 1px solid #2A3D59;
+                color: #DCE5F1;
+                padding: 8px 16px;
+                font-size: 14px;
+                border-radius: 9px;
             }
             """
         )
-
-    # ========================================================
-    # BUILD
-    # ========================================================
 
     def build_ui(self):
         super().build_ui()
 
         self._connect_embedded_back()
+
+        QTimer.singleShot(
+            0,
+            self._polish_page,
+        )
+
+    def _polish_page(self):
+        fix_scroll_surfaces(
+            self
+        )
+
+        for scroll in self.findChildren(
+            QScrollArea
+        ):
+            scroll.viewport().setStyleSheet(
+                """
+                background-color: #08111F;
+                border: none;
+                """
+            )
+
+            content = scroll.widget()
+
+            if content is not None:
+                content.setStyleSheet(
+                    content.styleSheet()
+                    + """
+                    background-color: #08111F;
+                    """
+                )
 
     def _connect_embedded_back(self):
         back_button = self.findChild(
@@ -122,10 +244,6 @@ class LessonPage(LessonWindow):
                 self.back_callback
             )
 
-    # ========================================================
-    # QUIZ
-    # ========================================================
-
     def start_quiz(self):
         if self.open_quiz_callback is not None:
             self.open_quiz_callback(
@@ -134,42 +252,21 @@ class LessonPage(LessonWindow):
 
             return
 
-        # Fallback:
-        # callback bo'lmasa eski tizim ishlayveradi.
         super().start_quiz()
 
-    # ========================================================
-    # QUIZ PASSED
-    # ========================================================
-
     def quiz_success(self):
-        """
-        Eski LessonWindow.quiz_success() signal yuborib,
-        oynani close qilardi.
-
-        Embedded rejimda close qilmaymiz.
-        AppShell qaysi sahifaga qaytishni o'zi boshqaradi.
-        """
-
         self.lesson_completed.emit(
             self.lesson_id
         )
 
 
 # ============================================================
-# QUIZ PAGE
+# QUIZ
 # ============================================================
 
-
-class QuizPage(QuizWindow):
-    """
-    Eski QuizWindow logikasi to'liq saqlanadi.
-
-    Farqi:
-    - darsga qaytish AppShell orqali;
-    - test o'tilganda embedded navigation ishlaydi.
-    """
-
+class QuizPage(
+    QuizWindow
+):
     def __init__(
         self,
         user: dict,
@@ -185,67 +282,75 @@ class QuizPage(QuizWindow):
             lesson=lesson,
         )
 
-    # ========================================================
-    # STYLE
-    # ========================================================
+        QTimer.singleShot(
+            0,
+            self._polish_page,
+        )
 
     def setup_styles(self):
         super().setup_styles()
 
         self.setStyleSheet(
             self.styleSheet()
+            + EMBEDDED_QSS
             + """
             QLabel#pageTitle {
+                color: #F4F7FB;
                 font-size: 32px;
                 font-weight: 800;
             }
 
             QLabel#subtitle {
+                color: #9AAAC0;
                 font-size: 16px;
-                color: #A8B3C7;
-            }
-
-            QLabel#scoreInfo {
-                font-size: 15px;
             }
 
             QLabel#questionText {
+                color: #EEF4FB;
                 font-size: 18px;
                 font-weight: 650;
             }
 
             QLabel#explanation {
+                background-color: #15243A;
+                border: 1px solid #2B405E;
+                border-radius: 9px;
+                color: #C9D5E4;
                 font-size: 15px;
+                padding: 12px;
             }
 
             QRadioButton {
+                background-color: #101C2F;
+                border: 1px solid #263A55;
+                border-radius: 9px;
+                color: #D5DFEC;
                 font-size: 16px;
-                spacing: 11px;
-                padding: 9px;
+                padding: 11px;
+                spacing: 10px;
             }
 
-            QPushButton#submitButton,
-            QPushButton#retryButton,
-            QPushButton#continueButton {
-                font-size: 15px;
-                min-height: 40px;
-            }
-
-            QPushButton#backButton {
-                font-size: 14px;
-                min-height: 34px;
+            QRadioButton:hover {
+                background-color: #142640;
+                border-color: #3A5A84;
             }
             """
         )
-
-    # ========================================================
-    # BUILD
-    # ========================================================
 
     def build_ui(self):
         super().build_ui()
 
         self._connect_embedded_back()
+
+        QTimer.singleShot(
+            0,
+            self._polish_page,
+        )
+
+    def _polish_page(self):
+        fix_scroll_surfaces(
+            self
+        )
 
     def _connect_embedded_back(self):
         back_button = self.findChild(
@@ -270,39 +375,17 @@ class QuizPage(QuizWindow):
                 self.back_callback
             )
 
-    # ========================================================
-    # SUCCESS
-    # ========================================================
-
     def continue_after_pass(self):
-        """
-        Eski QuizWindow bu yerda self.close() qilardi.
-        Embedded rejimda faqat signal yuboramiz.
-        """
-
         self.quiz_passed.emit()
 
 
 # ============================================================
-# EXAM PAGE
+# EXAM
 # ============================================================
 
-
-class ExamPage(ExamWindow):
-    """
-    Eski ExamWindow:
-    - savollar
-    - scoring
-    - passing score
-    - exam attempt
-    - XP
-    - success/failure
-
-    logikasini saqlaydi.
-
-    Faqat AppShell ichiga joylashtiriladi.
-    """
-
+class ExamPage(
+    ExamWindow
+):
     def __init__(
         self,
         user: dict,
@@ -318,85 +401,84 @@ class ExamPage(ExamWindow):
             exam=exam,
         )
 
-    # ========================================================
-    # STYLE
-    # ========================================================
+        QTimer.singleShot(
+            0,
+            self._polish_page,
+        )
 
     def setup_styles(self):
         super().setup_styles()
 
         self.setStyleSheet(
             self.styleSheet()
+            + EMBEDDED_QSS
             + """
             QLabel#examLabel {
-                font-size: 15px;
+                color: #E8B84D;
+                font-size: 14px;
+                font-weight: 750;
             }
 
             QLabel#examTitle {
+                color: #F4F7FB;
                 font-size: 32px;
                 font-weight: 800;
             }
 
             QLabel#examSubtitle {
+                color: #9AAAC0;
                 font-size: 16px;
-                color: #A8B3C7;
-            }
-
-            QLabel#badge,
-            QLabel#xpBadge {
-                font-size: 14px;
             }
 
             QLabel#questionText {
+                color: #EDF3FA;
                 font-size: 18px;
                 font-weight: 650;
             }
 
             QLabel#explanation {
+                background-color: #15243A;
+                border: 1px solid #2B405E;
+                border-radius: 9px;
+                color: #C8D3E1;
                 font-size: 15px;
+                padding: 12px;
+            }
+
+            QFrame#questionCard {
+                background-color: #101C2F;
+                border: 1px solid #253A56;
+                border-radius: 13px;
+            }
+
+            QFrame#wrongCard {
+                background-color: #281B20;
+                border: 1px solid #7B3948;
+                border-radius: 13px;
             }
 
             QRadioButton {
+                color: #D5DFEC;
                 font-size: 16px;
-                padding: 9px;
-            }
-
-            QPushButton#submitButton,
-            QPushButton#retryButton {
-                font-size: 15px;
-                min-height: 40px;
-            }
-
-            QLabel#successResult,
-            QLabel#failResult {
-                font-size: 16px;
-            }
-
-            QPushButton#embeddedBackButton {
-                background-color: #1E293B;
-                color: #FFFFFF;
-                border: none;
-                border-radius: 8px;
-                padding: 9px 16px;
-                font-size: 14px;
-                font-weight: 650;
-                min-height: 34px;
-            }
-
-            QPushButton#embeddedBackButton:hover {
-                background-color: #334155;
+                padding: 10px;
             }
             """
         )
-
-    # ========================================================
-    # BUILD
-    # ========================================================
 
     def build_ui(self):
         super().build_ui()
 
         self._add_embedded_back()
+
+        QTimer.singleShot(
+            0,
+            self._polish_page,
+        )
+
+    def _polish_page(self):
+        fix_scroll_surfaces(
+            self
+        )
 
     def _add_embedded_back(self):
         if self.back_callback is None:
@@ -441,14 +523,5 @@ class ExamPage(ExamWindow):
             top,
         )
 
-    # ========================================================
-    # SUCCESS FINISH
-    # ========================================================
-
     def finish_success(self):
-        """
-        Eski ExamWindow self.close() qilardi.
-        Embedded rejimda AppShell boshqaradi.
-        """
-
         self.exam_passed.emit()
