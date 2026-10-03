@@ -2,10 +2,7 @@ import sys
 
 from PySide6.QtWidgets import QApplication
 
-from auth.auth_service import (
-    authenticate_user,
-    create_user,
-)
+from auth.auth_service import authenticate_user, create_user
 
 from courses.access_sync import synchronize_user_access
 from courses.course_service import initialize_user_progress
@@ -140,6 +137,18 @@ from courses.level11_module08 import seed_level11_module08
 from courses.level11_module09 import seed_level11_module09
 from courses.level11_exam import seed_level11_exam
 
+from courses.level12_module01 import seed_level12_module01
+from courses.level12_module02 import seed_level12_module02
+from courses.level12_module03 import seed_level12_module03
+from courses.level12_module04 import seed_level12_module04
+from courses.level12_module05 import seed_level12_module05
+from courses.level12_module06 import seed_level12_module06
+from courses.level12_module07 import seed_level12_module07
+from courses.level12_module08 import seed_level12_module08
+from courses.level12_module09 import seed_level12_module09
+from courses.level12_module10 import seed_level12_module10
+from courses.level12_exam import seed_level12_exam
+
 
 MODULE_SEEDERS = (
     seed_level00_extra,
@@ -252,6 +261,17 @@ MODULE_SEEDERS = (
     seed_level11_module07,
     seed_level11_module08,
     seed_level11_module09,
+
+    seed_level12_module01,
+    seed_level12_module02,
+    seed_level12_module03,
+    seed_level12_module04,
+    seed_level12_module05,
+    seed_level12_module06,
+    seed_level12_module07,
+    seed_level12_module08,
+    seed_level12_module09,
+    seed_level12_module10,
 )
 
 
@@ -266,12 +286,12 @@ CUSTOM_EXAM_SEEDERS = (
     seed_level09_exam,
     seed_level10_exam,
     seed_level11_exam,
+    seed_level12_exam,
 )
 
 
 def prepare_application():
     initialize_database()
-
     seed_course_structure()
 
     for seeder in MODULE_SEEDERS:
@@ -284,8 +304,6 @@ def prepare_application():
     for seeder in CUSTOM_EXAM_SEEDERS:
         seeder()
 
-    # Faqat ishlab chiqish va test uchun.
-    # Sotuv versiyasidan oldin olib tashlanadi.
     create_user(
         username="admin",
         password="12345",
@@ -308,10 +326,7 @@ def main():
         "dashboard": None,
     }
 
-    def process_login(
-        login: str,
-        password: str,
-    ):
+    def process_login(login: str, password: str):
         user = authenticate_user(
             login,
             password,
@@ -325,21 +340,11 @@ def main():
 
         login_window.error_label.clear()
 
-        initialize_user_levels(
-            user["id"]
-        )
+        initialize_user_levels(user["id"])
+        initialize_user_progress(user["id"])
+        synchronize_user_access(user["id"])
 
-        initialize_user_progress(
-            user["id"]
-        )
-
-        synchronize_user_access(
-            user["id"]
-        )
-
-        dashboard = DashboardWindow(
-            user
-        )
+        dashboard = DashboardWindow(user)
 
         windows["dashboard"] = dashboard
 
@@ -352,9 +357,7 @@ def main():
 
     login_window.show()
 
-    sys.exit(
-        app.exec()
-    )
+    sys.exit(app.exec())
 
 
 if __name__ == "__main__":
