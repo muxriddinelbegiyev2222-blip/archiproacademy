@@ -1,15 +1,14 @@
-from ui.app_shell import AppShell
+from ui.app_shell import (
+    AppShell,
+)
 
 
-class DashboardWindow(AppShell):
+class DashboardWindow(
+    AppShell
+):
     """
-    ARCHIPRO UZ asosiy oynasi.
-
-    Eski DashboardWindow nomi saqlab qolindi,
-    chunki login/main.py shu klassni chaqiradi.
-
-    Asosiy navigatsiya endi AppShell orqali
-    bitta oynaning ichida ishlaydi.
+    main.py va login tizimi uchun
+    compatibility entry point.
     """
 
     def __init__(
