@@ -19,7 +19,36 @@ if str(APP_DIR) not in sys.path:
     sys.path.insert(0, str(APP_DIR))
 
 
-from database.database import get_connection
+# ============================================================
+# IMPORTS
+# ============================================================
+
+from database.database import (
+    get_connection,
+    initialize_database,
+)
+
+from courses.seed_courses import (
+    seed_course_structure,
+)
+
+from courses.quiz_service import (
+    seed_quizzes,
+)
+
+from courses.exam_service import (
+    seed_level_exams,
+)
+
+from courses.content_registry import (
+    get_all_lesson_content,
+    get_all_quiz_data,
+)
+
+from main import (
+    MODULE_SEEDERS,
+    CUSTOM_EXAM_SEEDERS,
+)
 
 
 # ============================================================
@@ -35,7 +64,7 @@ BOLD = "\033[1m"
 
 
 # ============================================================
-# EXPECTED ARCHIPRO STRUCTURE
+# EXPECTED STRUCTURE
 # ============================================================
 
 EXPECTED_LEVEL_CODES = [
@@ -64,6 +93,11 @@ EXPECTED_MODULE_COUNTS = {
 }
 
 
+EXPECTED_TOTAL_MODULES = sum(
+    EXPECTED_MODULE_COUNTS.values()
+)
+
+
 EXPECTED_CUSTOM_EXAM_LEVELS = {
     f"LEVEL_{number:02d}"
     for number in range(2, 16)
@@ -78,6 +112,8 @@ ERRORS: list[str] = []
 WARNINGS: list[str] = []
 PASSES: list[str] = []
 
+SEED_ERRORS: list[str] = []
+
 
 # ============================================================
 # HELPERS
@@ -85,27 +121,80 @@ PASSES: list[str] = []
 
 def add_pass(message: str) -> None:
     PASSES.append(message)
-    print(f"{GREEN}[PASS]{RESET} {message}")
+    print(
+        f"{GREEN}[PASS]{RESET} {message}"
+    )
 
 
 def add_warning(message: str) -> None:
     WARNINGS.append(message)
-    print(f"{YELLOW}[WARN]{RESET} {message}")
+    print(
+        f"{YELLOW}[WARN]{RESET} {message}"
+    )
 
 
 def add_error(message: str) -> None:
     ERRORS.append(message)
-    print(f"{RED}[ERROR]{RESET} {message}")
+    print(
+        f"{RED}[ERROR]{RESET} {message}"
+    )
 
 
 def section(title: str) -> None:
     print()
-    print(f"{BOLD}{CYAN}{'=' * 74}{RESET}")
-    print(f"{BOLD}{CYAN}{title}{RESET}")
-    print(f"{BOLD}{CYAN}{'=' * 74}{RESET}")
+    print(
+        f"{BOLD}{CYAN}"
+        f"{'=' * 76}"
+        f"{RESET}"
+    )
+    print(
+        f"{BOLD}{CYAN}"
+        f"{title}"
+        f"{RESET}"
+    )
+    print(
+        f"{BOLD}{CYAN}"
+        f"{'=' * 76}"
+        f"{RESET}"
+    )
 
 
-def table_exists(cursor, table_name: str) -> bool:
+def row_value(
+    row: Any,
+    key: str,
+    index: int | None = None,
+):
+    if row is None:
+        return None
+
+    try:
+        return row[key]
+
+    except (
+        TypeError,
+        KeyError,
+        IndexError,
+    ):
+        pass
+
+    if index is not None:
+        try:
+            return row[index]
+
+        except (
+            TypeError,
+            IndexError,
+        ):
+            pass
+
+    return None
+
+
+def table_exists(
+    cursor,
+    table_name: str,
+) -> bool:
+
     cursor.execute(
         """
         SELECT name
@@ -117,10 +206,17 @@ def table_exists(cursor, table_name: str) -> bool:
         (table_name,),
     )
 
-    return cursor.fetchone() is not None
+    return (
+        cursor.fetchone()
+        is not None
+    )
 
 
-def get_table_columns(cursor, table_name: str) -> list[str]:
+def get_table_columns(
+    cursor,
+    table_name: str,
+) -> list[str]:
+
     cursor.execute(
         f"PRAGMA table_info({table_name})"
     )
@@ -130,33 +226,241 @@ def get_table_columns(cursor, table_name: str) -> list[str]:
     columns: list[str] = []
 
     for row in rows:
-        try:
-            columns.append(row["name"])
-        except (TypeError, KeyError):
-            columns.append(row[1])
+        name = row_value(
+            row,
+            "name",
+            1,
+        )
+
+        if name:
+            columns.append(name)
 
     return columns
 
 
-def row_value(row: Any, key: str, index: int | None = None):
-    try:
-        return row[key]
-    except (TypeError, KeyError, IndexError):
-        if index is not None:
-            try:
-                return row[index]
-            except (TypeError, IndexError):
-                return None
+def get_unique_indexes(
+    cursor,
+    table_name: str,
+) -> list[tuple[str, list[str]]]:
 
-    return None
+    cursor.execute(
+        f"PRAGMA index_list({table_name})"
+    )
+
+    rows = cursor.fetchall()
+
+    result = []
+
+    for row in rows:
+        index_name = row_value(
+            row,
+            "name",
+            1,
+        )
+
+        is_unique = row_value(
+            row,
+            "unique",
+            2,
+        )
+
+        if not index_name:
+            continue
+
+        if not is_unique:
+            continue
+
+        cursor.execute(
+            f"PRAGMA index_info({index_name})"
+        )
+
+        info_rows = cursor.fetchall()
+
+        columns = []
+
+        for info_row in info_rows:
+            column_name = row_value(
+                info_row,
+                "name",
+                2,
+            )
+
+            if column_name:
+                columns.append(
+                    column_name
+                )
+
+        result.append(
+            (
+                index_name,
+                columns,
+            )
+        )
+
+    return result
+
+
+def run_seeder(
+    seeder,
+    label: str,
+) -> bool:
+
+    try:
+        seeder()
+
+        add_pass(
+            f"Seeder ishladi: {label}"
+        )
+
+        return True
+
+    except Exception as exc:
+        message = (
+            f"Seeder FAILED: {label} | "
+            f"{exc.__class__.__name__}: {exc}"
+        )
+
+        SEED_ERRORS.append(message)
+        add_error(message)
+
+        return False
 
 
 # ============================================================
-# 1. DATABASE CONNECTION
+# 0. PREPARE DATABASE
+# ============================================================
+
+def prepare_database() -> None:
+    section(
+        "0. DATABASE PREPARATION / SEED TEST"
+    )
+
+    print(
+        "Local test database "
+        "initialize va seed qilinmoqda..."
+    )
+
+    print()
+
+    # --------------------------------------------------------
+    # DATABASE SCHEMA
+    # --------------------------------------------------------
+
+    try:
+        initialize_database()
+
+        add_pass(
+            "initialize_database() ishladi."
+        )
+
+    except Exception as exc:
+        add_error(
+            "initialize_database() FAILED: "
+            f"{exc.__class__.__name__}: {exc}"
+        )
+
+        return
+
+    # --------------------------------------------------------
+    # LEVEL + MODULE STRUCTURE
+    # --------------------------------------------------------
+
+    if not run_seeder(
+        seed_course_structure,
+        "seed_course_structure",
+    ):
+        add_error(
+            "Asosiy course structure "
+            "seed bo'lmadi."
+        )
+
+    # --------------------------------------------------------
+    # ALL MODULE LESSON SEEDERS
+    # --------------------------------------------------------
+
+    print()
+    print(
+        f"Module seederlar: "
+        f"{len(MODULE_SEEDERS)} ta"
+    )
+
+    for seeder in MODULE_SEEDERS:
+        name = getattr(
+            seeder,
+            "__name__",
+            str(seeder),
+        )
+
+        run_seeder(
+            seeder,
+            name,
+        )
+
+    # --------------------------------------------------------
+    # QUIZZES
+    # --------------------------------------------------------
+
+    run_seeder(
+        seed_quizzes,
+        "seed_quizzes",
+    )
+
+    # --------------------------------------------------------
+    # BASE EXAMS
+    # --------------------------------------------------------
+
+    run_seeder(
+        seed_level_exams,
+        "seed_level_exams",
+    )
+
+    # --------------------------------------------------------
+    # CUSTOM EXAMS
+    # --------------------------------------------------------
+
+    print()
+    print(
+        f"Custom exam seederlar: "
+        f"{len(CUSTOM_EXAM_SEEDERS)} ta"
+    )
+
+    for seeder in CUSTOM_EXAM_SEEDERS:
+        name = getattr(
+            seeder,
+            "__name__",
+            str(seeder),
+        )
+
+        run_seeder(
+            seeder,
+            name,
+        )
+
+    # --------------------------------------------------------
+    # RESULT
+    # --------------------------------------------------------
+
+    if SEED_ERRORS:
+        add_error(
+            f"Seed bosqichida "
+            f"{len(SEED_ERRORS)} ta xato bor."
+        )
+
+    else:
+        add_pass(
+            "Database preparation "
+            "to'liq yakunlandi."
+        )
+
+
+# ============================================================
+# 1. CONNECTION
 # ============================================================
 
 def audit_connection() -> None:
-    section("1. DATABASE CONNECTION")
+    section(
+        "1. DATABASE CONNECTION"
+    )
 
     connection = get_connection()
 
@@ -164,7 +468,10 @@ def audit_connection() -> None:
         cursor = connection.cursor()
 
         cursor.execute(
-            "SELECT sqlite_version() AS version"
+            """
+            SELECT sqlite_version()
+            AS version
+            """
         )
 
         row = cursor.fetchone()
@@ -176,9 +483,31 @@ def audit_connection() -> None:
         )
 
         add_pass(
-            f"SQLite connection ishladi. "
+            "SQLite connection ishladi. "
             f"Version: {version}"
         )
+
+        cursor.execute(
+            "PRAGMA foreign_keys"
+        )
+
+        fk_row = cursor.fetchone()
+
+        fk_enabled = row_value(
+            fk_row,
+            "foreign_keys",
+            0,
+        )
+
+        if fk_enabled == 1:
+            add_pass(
+                "SQLite foreign_keys ON."
+            )
+        else:
+            add_warning(
+                "SQLite foreign_keys "
+                "bu connectionda OFF."
+            )
 
     finally:
         connection.close()
@@ -189,7 +518,9 @@ def audit_connection() -> None:
 # ============================================================
 
 def audit_required_tables() -> None:
-    section("2. REQUIRED TABLES")
+    section(
+        "2. REQUIRED TABLES"
+    )
 
     required_tables = [
         "users",
@@ -212,6 +543,7 @@ def audit_required_tables() -> None:
         cursor = connection.cursor()
 
         for table_name in required_tables:
+
             if table_exists(
                 cursor,
                 table_name,
@@ -219,9 +551,11 @@ def audit_required_tables() -> None:
                 add_pass(
                     f"{table_name} mavjud."
                 )
+
             else:
                 add_error(
-                    f"{table_name} jadvali topilmadi."
+                    f"{table_name} "
+                    "jadvali topilmadi."
                 )
 
     finally:
@@ -233,7 +567,9 @@ def audit_required_tables() -> None:
 # ============================================================
 
 def audit_levels() -> None:
-    section("3. COURSE LEVEL AUDIT")
+    section(
+        "3. COURSE LEVEL AUDIT"
+    )
 
     connection = get_connection()
 
@@ -249,34 +585,27 @@ def audit_levels() -> None:
             )
             return
 
-        columns = get_table_columns(
-            cursor,
-            "course_levels",
-        )
-
-        if "code" not in columns:
-            add_error(
-                "course_levels ichida code ustuni yo'q."
-            )
-            return
-
         cursor.execute(
             """
             SELECT *
             FROM course_levels
-            ORDER BY id
+            ORDER BY sort_order, id
             """
         )
 
         rows = cursor.fetchall()
 
         codes = [
-            row_value(row, "code")
+            row_value(
+                row,
+                "code",
+            )
             for row in rows
         ]
 
         print(
-            f"Bazada level soni: {len(rows)}"
+            f"Bazada LEVEL soni: "
+            f"{len(rows)}"
         )
 
         if len(rows) == 16:
@@ -286,24 +615,7 @@ def audit_levels() -> None:
         else:
             add_error(
                 f"LEVEL soni {len(rows)} ta. "
-                f"Kutilgani 16 ta."
-            )
-
-        duplicate_codes = [
-            code
-            for code, count
-            in Counter(codes).items()
-            if code and count > 1
-        ]
-
-        if duplicate_codes:
-            for code in duplicate_codes:
-                add_error(
-                    f"Duplicate LEVEL code: {code}"
-                )
-        else:
-            add_pass(
-                "Duplicate LEVEL code topilmadi."
+                "Kutilgani 16 ta."
             )
 
         missing = sorted(
@@ -318,18 +630,43 @@ def audit_levels() -> None:
 
         if missing:
             add_error(
-                f"Yetishmayotgan LEVELlar: {missing}"
+                "Yetishmayotgan LEVELlar: "
+                f"{missing}"
             )
 
         if extra:
             add_warning(
-                f"Kutilmagan LEVELlar: {extra}"
+                "Kutilmagan LEVELlar: "
+                f"{extra}"
             )
 
-        if not missing and not extra:
+        if (
+            not missing
+            and not extra
+        ):
             add_pass(
-                "LEVEL_00 dan LEVEL_15 gacha "
-                "barcha level mavjud."
+                "LEVEL_00 dan LEVEL_15 "
+                "gacha barchasi mavjud."
+            )
+
+        duplicates = [
+            code
+            for code, count
+            in Counter(codes).items()
+            if code
+            and count > 1
+        ]
+
+        if duplicates:
+            for code in duplicates:
+                add_error(
+                    "Duplicate LEVEL code: "
+                    f"{code}"
+                )
+        else:
+            add_pass(
+                "Duplicate LEVEL code "
+                "topilmadi."
             )
 
     finally:
@@ -341,7 +678,9 @@ def audit_levels() -> None:
 # ============================================================
 
 def audit_modules() -> None:
-    section("4. COURSE MODULE AUDIT")
+    section(
+        "4. COURSE MODULE AUDIT"
+    )
 
     connection = get_connection()
 
@@ -371,68 +710,58 @@ def audit_modules() -> None:
         )
 
         print(
-            f"Bazada module soni: {total}"
+            f"Bazada module soni: "
+            f"{total}"
         )
 
-        expected_total = sum(
-            EXPECTED_MODULE_COUNTS.values()
-        )
-
-        if total == expected_total:
+        if total == EXPECTED_TOTAL_MODULES:
             add_pass(
-                f"Module soni {expected_total} ta."
+                "Module soni "
+                f"{EXPECTED_TOTAL_MODULES} ta."
             )
         else:
             add_error(
                 f"Module soni {total} ta. "
-                f"Kutilgani {expected_total} ta."
+                "Kutilgani "
+                f"{EXPECTED_TOTAL_MODULES} ta."
             )
 
-        columns = get_table_columns(
-            cursor,
-            "course_modules",
+        cursor.execute(
+            """
+            SELECT
+                code,
+                COUNT(*) AS qty
+            FROM course_modules
+            GROUP BY code
+            HAVING COUNT(*) > 1
+            """
         )
 
-        if "code" in columns:
-            cursor.execute(
-                """
-                SELECT code, COUNT(*) AS qty
-                FROM course_modules
-                GROUP BY code
-                HAVING COUNT(*) > 1
-                """
-            )
+        duplicates = cursor.fetchall()
 
-            duplicates = cursor.fetchall()
-
-            if duplicates:
-                for row in duplicates:
-                    add_error(
-                        "Duplicate module code: "
-                        f"{row_value(row, 'code', 0)} "
-                        f"({row_value(row, 'qty', 1)} marta)"
-                    )
-            else:
-                add_pass(
-                    "Duplicate module code topilmadi."
+        if duplicates:
+            for row in duplicates:
+                add_error(
+                    "Duplicate module code: "
+                    f"{row_value(row, 'code', 0)}"
                 )
-
-        if "level_id" not in columns:
-            add_error(
-                "course_modules ichida level_id yo'q."
+        else:
+            add_pass(
+                "Duplicate module code "
+                "topilmadi."
             )
-            return
 
         cursor.execute(
             """
             SELECT
                 l.code AS level_code,
-                COUNT(m.id) AS module_count
+                COUNT(m.id)
+                AS module_count
             FROM course_levels l
             LEFT JOIN course_modules m
                 ON m.level_id = l.id
             GROUP BY l.id, l.code
-            ORDER BY l.id
+            ORDER BY l.sort_order, l.id
             """
         )
 
@@ -451,22 +780,26 @@ def audit_modules() -> None:
                 1,
             )
 
-            expected = EXPECTED_MODULE_COUNTS.get(
-                level_code
+            expected = (
+                EXPECTED_MODULE_COUNTS.get(
+                    level_code
+                )
             )
 
             if expected is None:
                 add_warning(
                     f"{level_code}: "
-                    f"expected module soni belgilanmagan."
+                    "expected count yo'q."
                 )
                 continue
 
             if module_count == expected:
                 add_pass(
                     f"{level_code}: "
-                    f"{module_count}/{expected} modul."
+                    f"{module_count}/"
+                    f"{expected} modul."
                 )
+
             else:
                 add_error(
                     f"{level_code}: "
@@ -477,7 +810,6 @@ def audit_modules() -> None:
         cursor.execute(
             """
             SELECT
-                m.id,
                 m.code
             FROM course_modules m
             LEFT JOIN course_levels l
@@ -486,13 +818,13 @@ def audit_modules() -> None:
             """
         )
 
-        orphan_modules = cursor.fetchall()
+        orphans = cursor.fetchall()
 
-        if orphan_modules:
-            for row in orphan_modules:
+        if orphans:
+            for row in orphans:
                 add_error(
-                    "Levelsiz module: "
-                    f"{row_value(row, 'code', 1)}"
+                    "LEVELsiz module: "
+                    f"{row_value(row, 'code', 0)}"
                 )
         else:
             add_pass(
@@ -508,7 +840,9 @@ def audit_modules() -> None:
 # ============================================================
 
 def audit_lessons() -> None:
-    section("5. LESSON AUDIT")
+    section(
+        "5. LESSON AUDIT"
+    )
 
     connection = get_connection()
 
@@ -531,23 +865,159 @@ def audit_lessons() -> None:
             """
         )
 
-        total = row_value(
+        database_total = row_value(
             cursor.fetchone(),
             "total",
             0,
         )
 
-        print(
-            f"Bazada lesson soni: {total}"
+        registry_content = (
+            get_all_lesson_content()
         )
 
-        if total > 0:
+        expected_codes = set(
+            registry_content.keys()
+        )
+
+        expected_total = len(
+            expected_codes
+        )
+
+        print(
+            "Registry lesson content: "
+            f"{expected_total}"
+        )
+
+        print(
+            "Database lessons: "
+            f"{database_total}"
+        )
+
+        if database_total > 0:
             add_pass(
-                "Lessons bazaga seed qilingan."
+                "Lessons bazaga tushgan."
             )
         else:
             add_error(
                 "Lessons jadvali bo'sh."
+            )
+
+        cursor.execute(
+            """
+            SELECT code
+            FROM lessons
+            """
+        )
+
+        rows = cursor.fetchall()
+
+        database_codes = {
+            row_value(
+                row,
+                "code",
+                0,
+            )
+            for row in rows
+            if row_value(
+                row,
+                "code",
+                0,
+            )
+        }
+
+        missing = sorted(
+            expected_codes
+            - database_codes
+        )
+
+        extra = sorted(
+            database_codes
+            - expected_codes
+        )
+
+        if missing:
+            add_error(
+                f"Database'da "
+                f"{len(missing)} ta "
+                "registry lesson yo'q."
+            )
+
+            for code in missing[:30]:
+                print(
+                    f"   MISSING: {code}"
+                )
+
+            if len(missing) > 30:
+                print(
+                    "   ... qolganlari: "
+                    f"{len(missing) - 30}"
+                )
+
+        else:
+            add_pass(
+                "Registry'dagi barcha "
+                "lessonlar database'da mavjud."
+            )
+
+        if extra:
+            add_warning(
+                f"Database'da registry'da "
+                f"yo'q {len(extra)} ta "
+                "lesson mavjud."
+            )
+
+            for code in extra[:20]:
+                print(
+                    f"   EXTRA: {code}"
+                )
+
+        cursor.execute(
+            """
+            SELECT
+                code,
+                COUNT(*) AS qty
+            FROM lessons
+            GROUP BY code
+            HAVING COUNT(*) > 1
+            """
+        )
+
+        duplicates = cursor.fetchall()
+
+        if duplicates:
+            for row in duplicates:
+                add_error(
+                    "Duplicate lesson code: "
+                    f"{row_value(row, 'code', 0)}"
+                )
+        else:
+            add_pass(
+                "Duplicate lesson code "
+                "topilmadi."
+            )
+
+        cursor.execute(
+            """
+            SELECT
+                l.code
+            FROM lessons l
+            LEFT JOIN course_modules m
+                ON m.id = l.module_id
+            WHERE m.id IS NULL
+            """
+        )
+
+        orphans = cursor.fetchall()
+
+        if orphans:
+            for row in orphans:
+                add_error(
+                    "Modulesiz lesson: "
+                    f"{row_value(row, 'code', 0)}"
+                )
+        else:
+            add_pass(
+                "Orphan lesson topilmadi."
             )
 
         columns = get_table_columns(
@@ -555,60 +1025,13 @@ def audit_lessons() -> None:
             "lessons",
         )
 
-        if "code" in columns:
-            cursor.execute(
-                """
-                SELECT code, COUNT(*) AS qty
-                FROM lessons
-                GROUP BY code
-                HAVING COUNT(*) > 1
-                """
-            )
+        if "passing_score" in columns:
 
-            duplicates = cursor.fetchall()
-
-            if duplicates:
-                for row in duplicates:
-                    add_error(
-                        "Duplicate lesson code: "
-                        f"{row_value(row, 'code', 0)} "
-                        f"({row_value(row, 'qty', 1)} marta)"
-                    )
-            else:
-                add_pass(
-                    "Duplicate lesson code topilmadi."
-                )
-
-        if "module_id" in columns:
             cursor.execute(
                 """
                 SELECT
-                    l.id,
-                    l.code
-                FROM lessons l
-                LEFT JOIN course_modules m
-                    ON m.id = l.module_id
-                WHERE m.id IS NULL
-                """
-            )
-
-            orphan_lessons = cursor.fetchall()
-
-            if orphan_lessons:
-                for row in orphan_lessons:
-                    add_error(
-                        "Modulesiz lesson: "
-                        f"{row_value(row, 'code', 1)}"
-                    )
-            else:
-                add_pass(
-                    "Orphan lesson topilmadi."
-                )
-
-        if "passing_score" in columns:
-            cursor.execute(
-                """
-                SELECT code, passing_score
+                    code,
+                    passing_score
                 FROM lessons
                 WHERE passing_score IS NULL
                    OR passing_score <= 0
@@ -621,36 +1044,40 @@ def audit_lessons() -> None:
             if bad_scores:
                 for row in bad_scores:
                     add_error(
-                        f"{row_value(row, 'code', 0)}: "
-                        f"passing_score "
-                        f"{row_value(row, 'passing_score', 1)}"
+                        f"{row_value(row, 'code', 0)} "
+                        "passing_score noto'g'ri."
                     )
             else:
                 add_pass(
-                    "Lesson passing_score qiymatlari normal."
+                    "Lesson passing_score "
+                    "qiymatlari normal."
                 )
 
         if "estimated_minutes" in columns:
+
             cursor.execute(
                 """
-                SELECT code, estimated_minutes
+                SELECT
+                    code,
+                    estimated_minutes
                 FROM lessons
                 WHERE estimated_minutes IS NULL
                    OR estimated_minutes <= 0
                 """
             )
 
-            bad_minutes = cursor.fetchall()
+            bad_times = cursor.fetchall()
 
-            if bad_minutes:
-                for row in bad_minutes:
+            if bad_times:
+                for row in bad_times:
                     add_warning(
-                        f"{row_value(row, 'code', 0)}: "
+                        f"{row_value(row, 'code', 0)} "
                         "estimated_minutes noto'g'ri."
                     )
             else:
                 add_pass(
-                    "Lesson duration qiymatlari normal."
+                    "Lesson duration "
+                    "qiymatlari normal."
                 )
 
     finally:
@@ -658,29 +1085,72 @@ def audit_lessons() -> None:
 
 
 # ============================================================
-# 6. QUIZ DATABASE AUDIT
+# 6. QUIZ AUDIT
 # ============================================================
 
 def audit_quizzes() -> None:
-    section("6. QUIZ DATABASE AUDIT")
+    section(
+        "6. QUIZ DATABASE AUDIT"
+    )
 
     connection = get_connection()
 
     try:
         cursor = connection.cursor()
 
-        for table_name in (
+        if not table_exists(
+            cursor,
             "quiz_questions",
+        ):
+            add_error(
+                "quiz_questions mavjud emas."
+            )
+            return
+
+        if not table_exists(
+            cursor,
             "quiz_options",
         ):
-            if not table_exists(
-                cursor,
-                table_name,
+            add_error(
+                "quiz_options mavjud emas."
+            )
+            return
+
+        registry_quiz = (
+            get_all_quiz_data()
+        )
+
+        expected_question_codes = set()
+        expected_question_total = 0
+
+        for questions in registry_quiz.values():
+
+            if not isinstance(
+                questions,
+                (list, tuple),
             ):
-                add_error(
-                    f"{table_name} mavjud emas."
+                continue
+
+            expected_question_total += len(
+                questions
+            )
+
+            for question in questions:
+
+                if not isinstance(
+                    question,
+                    dict,
+                ):
+                    continue
+
+                code = question.get(
+                    "code"
                 )
-                return
+
+                if code:
+                    expected_question_codes.add(
+                        code
+                    )
 
         cursor.execute(
             """
@@ -689,7 +1159,7 @@ def audit_quizzes() -> None:
             """
         )
 
-        question_total = row_value(
+        db_question_total = row_value(
             cursor.fetchone(),
             "total",
             0,
@@ -702,27 +1172,127 @@ def audit_quizzes() -> None:
             """
         )
 
-        option_total = row_value(
+        db_option_total = row_value(
             cursor.fetchone(),
             "total",
             0,
         )
 
         print(
-            f"Quiz questions: {question_total}"
+            "Registry quiz questions: "
+            f"{expected_question_total}"
         )
 
         print(
-            f"Quiz options: {option_total}"
+            "Database quiz questions: "
+            f"{db_question_total}"
         )
 
-        if question_total > 0:
+        print(
+            "Database quiz options: "
+            f"{db_option_total}"
+        )
+
+        if db_question_total > 0:
             add_pass(
-                "Quiz savollari bazaga seed qilingan."
+                "Quiz savollari "
+                "bazaga tushgan."
             )
         else:
             add_error(
-                "quiz_questions jadvali bo'sh."
+                "quiz_questions bo'sh."
+            )
+
+        cursor.execute(
+            """
+            SELECT code
+            FROM quiz_questions
+            """
+        )
+
+        rows = cursor.fetchall()
+
+        db_codes = {
+            row_value(
+                row,
+                "code",
+                0,
+            )
+            for row in rows
+            if row_value(
+                row,
+                "code",
+                0,
+            )
+        }
+
+        missing = sorted(
+            expected_question_codes
+            - db_codes
+        )
+
+        extra = sorted(
+            db_codes
+            - expected_question_codes
+        )
+
+        if missing:
+            add_error(
+                f"Database'da "
+                f"{len(missing)} ta "
+                "quiz savoli yetishmaydi."
+            )
+
+            for code in missing[:30]:
+                print(
+                    f"   MISSING: {code}"
+                )
+
+            if len(missing) > 30:
+                print(
+                    "   ... qolganlari: "
+                    f"{len(missing) - 30}"
+                )
+
+        else:
+            add_pass(
+                "Registry'dagi barcha "
+                "quiz savollari "
+                "database'da mavjud."
+            )
+
+        if extra:
+            add_warning(
+                f"Database'da registry'da "
+                f"yo'q {len(extra)} ta "
+                "quiz savoli mavjud."
+            )
+
+        cursor.execute(
+            """
+            SELECT
+                code,
+                COUNT(*) AS qty
+            FROM quiz_questions
+            GROUP BY code
+            HAVING COUNT(*) > 1
+            """
+        )
+
+        duplicate_questions = (
+            cursor.fetchall()
+        )
+
+        if duplicate_questions:
+            for row in duplicate_questions:
+                add_error(
+                    "Duplicate quiz code: "
+                    f"{row_value(row, 'code', 0)}"
+                )
+        else:
+            add_pass(
+                "Duplicate quiz code "
+                "topilmadi."
             )
 
         question_columns = get_table_columns(
@@ -735,36 +1305,11 @@ def audit_quizzes() -> None:
             "quiz_options",
         )
 
-        if "code" in question_columns:
-            cursor.execute(
-                """
-                SELECT code, COUNT(*) AS qty
-                FROM quiz_questions
-                GROUP BY code
-                HAVING COUNT(*) > 1
-                """
-            )
-
-            duplicates = cursor.fetchall()
-
-            if duplicates:
-                for row in duplicates:
-                    add_error(
-                        "Duplicate quiz question code: "
-                        f"{row_value(row, 'code', 0)} "
-                        f"({row_value(row, 'qty', 1)} marta)"
-                    )
-            else:
-                add_pass(
-                    "Duplicate quiz question code topilmadi."
-                )
-
         if "lesson_id" in question_columns:
+
             cursor.execute(
                 """
-                SELECT
-                    q.id,
-                    q.code
+                SELECT q.code
                 FROM quiz_questions q
                 LEFT JOIN lessons l
                     ON l.id = q.lesson_id
@@ -772,24 +1317,24 @@ def audit_quizzes() -> None:
                 """
             )
 
-            orphan_questions = cursor.fetchall()
+            orphans = cursor.fetchall()
 
-            if orphan_questions:
-                for row in orphan_questions:
+            if orphans:
+                for row in orphans:
                     add_error(
-                        "Lessonsiz quiz question: "
-                        f"{row_value(row, 'code', 1)}"
+                        "Lessonsiz quiz: "
+                        f"{row_value(row, 'code', 0)}"
                     )
             else:
                 add_pass(
-                    "Orphan quiz question topilmadi."
+                    "Orphan quiz question "
+                    "topilmadi."
                 )
 
             cursor.execute(
                 """
                 SELECT
-                    l.code AS lesson_code,
-                    COUNT(q.id) AS question_count
+                    l.code AS lesson_code
                 FROM lessons l
                 LEFT JOIN quiz_questions q
                     ON q.lesson_id = l.id
@@ -799,20 +1344,30 @@ def audit_quizzes() -> None:
                 """
             )
 
-            no_quiz_lessons = cursor.fetchall()
+            lessons_without_quiz = (
+                cursor.fetchall()
+            )
 
-            if no_quiz_lessons:
-                for row in no_quiz_lessons:
-                    add_error(
-                        "Quiz savoli yo'q lesson: "
+            if lessons_without_quiz:
+                add_error(
+                    f"{len(lessons_without_quiz)} "
+                    "ta lesson'da quiz savoli yo'q."
+                )
+
+                for row in lessons_without_quiz[:30]:
+                    print(
+                        "   NO QUIZ: "
                         f"{row_value(row, 'lesson_code', 0)}"
                     )
+
             else:
                 add_pass(
-                    "Barcha bazadagi lessonlarda quiz savoli mavjud."
+                    "Barcha lessonlarda "
+                    "quiz savoli mavjud."
                 )
 
         if "question_id" in option_columns:
+
             cursor.execute(
                 """
                 SELECT
@@ -824,24 +1379,27 @@ def audit_quizzes() -> None:
                 """
             )
 
-            orphan_options = cursor.fetchall()
+            orphan_options = (
+                cursor.fetchall()
+            )
 
             if orphan_options:
                 add_error(
                     f"{len(orphan_options)} ta "
-                    "orphan quiz option topildi."
+                    "orphan quiz option."
                 )
             else:
                 add_pass(
-                    "Orphan quiz option topilmadi."
+                    "Orphan quiz option "
+                    "topilmadi."
                 )
 
             cursor.execute(
                 """
                 SELECT
-                    q.id,
                     q.code,
-                    COUNT(o.id) AS option_count
+                    COUNT(o.id)
+                    AS option_count
                 FROM quiz_questions q
                 LEFT JOIN quiz_options o
                     ON o.question_id = q.id
@@ -850,19 +1408,21 @@ def audit_quizzes() -> None:
                 """
             )
 
-            bad_option_counts = cursor.fetchall()
+            bad_option_counts = (
+                cursor.fetchall()
+            )
 
             if bad_option_counts:
                 for row in bad_option_counts:
                     add_error(
-                        f"{row_value(row, 'code', 1)}: "
-                        f"faqat "
-                        f"{row_value(row, 'option_count', 2)} "
+                        f"{row_value(row, 'code', 0)}: "
+                        f"{row_value(row, 'option_count', 1)} "
                         "ta option."
                     )
             else:
                 add_pass(
-                    "Har quiz savolida kamida 2 ta option mavjud."
+                    "Har savolda kamida "
+                    "2 ta option mavjud."
                 )
 
         correct_column = None
@@ -877,8 +1437,10 @@ def audit_quizzes() -> None:
 
         if (
             correct_column
-            and "question_id" in option_columns
+            and "question_id"
+            in option_columns
         ):
+
             cursor.execute(
                 f"""
                 SELECT
@@ -898,19 +1460,23 @@ def audit_quizzes() -> None:
                 """
             )
 
-            invalid_correct = cursor.fetchall()
+            bad_correct = (
+                cursor.fetchall()
+            )
 
-            if invalid_correct:
-                for row in invalid_correct:
+            if bad_correct:
+                for row in bad_correct:
                     add_error(
                         f"{row_value(row, 'code', 0)}: "
                         f"{row_value(row, 'correct_count', 1)} "
-                        "ta to'g'ri option."
+                        "ta correct option."
                     )
+
             else:
                 add_pass(
-                    "Har quiz savolida aynan "
-                    "1 ta to'g'ri javob mavjud."
+                    "Har quiz savolida "
+                    "aynan 1 ta correct "
+                    "javob mavjud."
                 )
 
 
@@ -923,7 +1489,9 @@ def audit_quizzes() -> None:
 # ============================================================
 
 def audit_exams() -> None:
-    section("7. LEVEL EXAM AUDIT")
+    section(
+        "7. LEVEL EXAM AUDIT"
+    )
 
     connection = get_connection()
 
@@ -953,7 +1521,8 @@ def audit_exams() -> None:
         )
 
         print(
-            f"Bazada level exam soni: {total}"
+            f"Bazada level exam soni: "
+            f"{total}"
         )
 
         if total > 0:
@@ -962,61 +1531,38 @@ def audit_exams() -> None:
             )
         else:
             add_error(
-                "level_exams jadvali bo'sh."
+                "level_exams bo'sh."
             )
 
-        columns = get_table_columns(
-            cursor,
-            "level_exams",
+        cursor.execute(
+            """
+            SELECT
+                level_id,
+                COUNT(*) AS qty
+            FROM level_exams
+            GROUP BY level_id
+            HAVING COUNT(*) > 1
+            """
         )
 
-        if "level_id" in columns:
-            cursor.execute(
-                """
-                SELECT
-                    level_id,
-                    COUNT(*) AS qty
-                FROM level_exams
-                GROUP BY level_id
-                HAVING COUNT(*) > 1
-                """
-            )
+        duplicate_exams = (
+            cursor.fetchall()
+        )
 
-            duplicates = cursor.fetchall()
-
-            if duplicates:
-                for row in duplicates:
-                    add_error(
-                        "Bitta LEVEL uchun bir nechta exam: "
-                        f"level_id={row_value(row, 'level_id', 0)}"
-                    )
-            else:
-                add_pass(
-                    "Har LEVEL uchun maximum 1 ta exam mavjud."
-                )
-
-            cursor.execute(
-                """
-                SELECT
-                    e.id,
-                    l.code AS level_code
-                FROM level_exams e
-                LEFT JOIN course_levels l
-                    ON l.id = e.level_id
-                WHERE l.id IS NULL
-                """
-            )
-
-            orphan_exams = cursor.fetchall()
-
-            if orphan_exams:
+        if duplicate_exams:
+            for row in duplicate_exams:
                 add_error(
-                    f"{len(orphan_exams)} ta orphan level exam topildi."
+                    "Bitta LEVEL uchun "
+                    "bir nechta exam: "
+                    f"level_id="
+                    f"{row_value(row, 'level_id', 0)}"
                 )
-            else:
-                add_pass(
-                    "Orphan level exam topilmadi."
-                )
+
+        else:
+            add_pass(
+                "Bir LEVEL uchun "
+                "duplicate exam topilmadi."
+            )
 
         cursor.execute(
             """
@@ -1028,15 +1574,15 @@ def audit_exams() -> None:
             FROM level_exams e
             JOIN course_levels l
                 ON l.id = e.level_id
-            ORDER BY l.id
+            ORDER BY l.sort_order, l.id
             """
         )
 
-        exams = cursor.fetchall()
+        rows = cursor.fetchall()
 
         exam_level_codes = set()
 
-        for row in exams:
+        for row in rows:
             level_code = row_value(
                 row,
                 "level_code",
@@ -1066,21 +1612,31 @@ def audit_exams() -> None:
             )
 
             if (
-                not isinstance(question_count, int)
+                not isinstance(
+                    question_count,
+                    int,
+                )
                 or question_count <= 0
             ):
                 add_error(
                     f"{level_code}: "
-                    f"question_count noto'g'ri."
+                    "question_count noto'g'ri."
                 )
 
             if (
-                not isinstance(passing_score, int)
-                or not 0 < passing_score <= 100
+                not isinstance(
+                    passing_score,
+                    int,
+                )
+                or not (
+                    0
+                    < passing_score
+                    <= 100
+                )
             ):
                 add_error(
                     f"{level_code}: "
-                    f"passing_score noto'g'ri."
+                    "passing_score noto'g'ri."
                 )
 
             if (
@@ -1089,7 +1645,7 @@ def audit_exams() -> None:
             ):
                 add_error(
                     f"{level_code}: "
-                    f"xp_reward noto'g'ri."
+                    "xp_reward noto'g'ri."
                 )
 
         missing_custom = sorted(
@@ -1099,13 +1655,40 @@ def audit_exams() -> None:
 
         if missing_custom:
             add_error(
-                "Custom exam topilmagan LEVELlar: "
+                "Final exam topilmagan "
+                "LEVELlar: "
                 f"{missing_custom}"
             )
         else:
             add_pass(
-                "LEVEL_02 dan LEVEL_15 gacha "
-                "custom final examlar mavjud."
+                "LEVEL_02 dan LEVEL_15 "
+                "gacha final examlar mavjud."
+            )
+
+        cursor.execute(
+            """
+            SELECT
+                e.id
+            FROM level_exams e
+            LEFT JOIN course_levels l
+                ON l.id = e.level_id
+            WHERE l.id IS NULL
+            """
+        )
+
+        orphan_exams = (
+            cursor.fetchall()
+        )
+
+        if orphan_exams:
+            add_error(
+                f"{len(orphan_exams)} ta "
+                "orphan exam topildi."
+            )
+        else:
+            add_pass(
+                "Orphan level exam "
+                "topilmadi."
             )
 
     finally:
@@ -1113,46 +1696,51 @@ def audit_exams() -> None:
 
 
 # ============================================================
-# 8. EXAM QUESTION BANK CAPACITY
+# 8. EXAM CAPACITY
 # ============================================================
 
 def audit_exam_question_capacity() -> None:
-    section("8. EXAM QUESTION BANK CAPACITY")
+    section(
+        "8. EXAM QUESTION BANK CAPACITY"
+    )
 
     connection = get_connection()
 
     try:
         cursor = connection.cursor()
 
-        required_tables = (
+        required = [
             "course_levels",
             "course_modules",
             "lessons",
             "quiz_questions",
             "level_exams",
-        )
+        ]
 
-        for table_name in required_tables:
+        for table_name in required:
+
             if not table_exists(
                 cursor,
                 table_name,
             ):
                 add_error(
                     f"{table_name} yo'q. "
-                    "Exam capacity tekshirib bo'lmaydi."
+                    "Exam capacity "
+                    "tekshirib bo'lmaydi."
                 )
                 return
 
-        question_columns = get_table_columns(
-            cursor,
-            "quiz_questions",
+        question_columns = (
+            get_table_columns(
+                cursor,
+                "quiz_questions",
+            )
         )
 
         if "lesson_id" not in question_columns:
-            add_warning(
-                "quiz_questions.lesson_id yo'q. "
-                "Exam savol bankini LEVEL bo'yicha "
-                "hisoblab bo'lmadi."
+            add_error(
+                "quiz_questions.lesson_id "
+                "topilmadi."
             )
             return
 
@@ -1160,8 +1748,10 @@ def audit_exam_question_capacity() -> None:
             """
             SELECT
                 l.code AS level_code,
-                e.question_count AS requested_questions,
-                COUNT(DISTINCT q.id) AS available_questions
+                e.question_count
+                    AS required_count,
+                COUNT(DISTINCT q.id)
+                    AS available_count
             FROM level_exams e
             JOIN course_levels l
                 ON l.id = e.level_id
@@ -1175,43 +1765,48 @@ def audit_exam_question_capacity() -> None:
                 l.id,
                 l.code,
                 e.question_count
-            ORDER BY l.id
+            ORDER BY
+                l.sort_order,
+                l.id
             """
         )
 
         rows = cursor.fetchall()
 
         for row in rows:
+
             level_code = row_value(
                 row,
                 "level_code",
                 0,
             )
 
-            requested = row_value(
+            required_count = row_value(
                 row,
-                "requested_questions",
+                "required_count",
                 1,
             )
 
-            available = row_value(
+            available_count = row_value(
                 row,
-                "available_questions",
+                "available_count",
                 2,
             )
 
-            if available < requested:
+            if available_count < required_count:
+
                 add_error(
-                    f"{level_code}: final exam "
-                    f"{requested} savol so'raydi, "
-                    f"lekin bankda faqat "
-                    f"{available} ta savol bor."
+                    f"{level_code}: "
+                    f"exam {required_count} "
+                    "savol talab qiladi, "
+                    f"bankda {available_count}."
                 )
+
             else:
                 add_pass(
                     f"{level_code}: "
-                    f"{available} available / "
-                    f"{requested} required."
+                    f"{available_count} bank / "
+                    f"{required_count} exam."
                 )
 
     finally:
@@ -1223,7 +1818,9 @@ def audit_exam_question_capacity() -> None:
 # ============================================================
 
 def audit_foreign_keys() -> None:
-    section("9. SQLITE FOREIGN KEY CHECK")
+    section(
+        "9. SQLITE FOREIGN KEY CHECK"
+    )
 
     connection = get_connection()
 
@@ -1238,13 +1835,14 @@ def audit_foreign_keys() -> None:
 
         if not rows:
             add_pass(
-                "SQLite foreign_key_check: "
+                "foreign_key_check: "
                 "muammo topilmadi."
             )
+
         else:
             for row in rows:
                 add_error(
-                    "Foreign key muammo: "
+                    "Foreign key xato: "
                     f"{tuple(row)}"
                 )
 
@@ -1257,7 +1855,9 @@ def audit_foreign_keys() -> None:
 # ============================================================
 
 def audit_unique_indexes() -> None:
-    section("10. UNIQUE INDEX / ON CONFLICT AUDIT")
+    section(
+        "10. UNIQUE INDEX / ON CONFLICT AUDIT"
+    )
 
     connection = get_connection()
 
@@ -1265,93 +1865,195 @@ def audit_unique_indexes() -> None:
         cursor = connection.cursor()
 
         checks = {
-            "lessons": "code",
-            "quiz_questions": "code",
-            "level_exams": "level_id",
-            "lesson_progress": None,
-            "user_level_progress": None,
+            "course_levels": [
+                "code",
+            ],
+            "course_modules": [
+                "code",
+            ],
+            "lessons": [
+                "code",
+            ],
+            "quiz_questions": [
+                "code",
+            ],
+            "level_exams": [
+                "level_id",
+            ],
         }
 
-        for table_name, target_column in checks.items():
+        for (
+            table_name,
+            required_columns,
+        ) in checks.items():
+
             if not table_exists(
                 cursor,
                 table_name,
             ):
+                add_error(
+                    f"{table_name} yo'q."
+                )
                 continue
 
-            cursor.execute(
-                f"PRAGMA index_list({table_name})"
+            unique_indexes = (
+                get_unique_indexes(
+                    cursor,
+                    table_name,
+                )
             )
 
-            indexes = cursor.fetchall()
+            for required_column in (
+                required_columns
+            ):
 
-            unique_indexes = []
+                matched = False
 
-            for index_row in indexes:
-                try:
-                    index_name = index_row["name"]
-                    is_unique = index_row["unique"]
-                except (TypeError, KeyError):
-                    index_name = index_row[1]
-                    is_unique = index_row[2]
+                for (
+                    index_name,
+                    columns,
+                ) in unique_indexes:
 
-                if not is_unique:
-                    continue
+                    if (
+                        required_column
+                        in columns
+                    ):
+                        matched = True
+                        break
 
-                cursor.execute(
-                    f"PRAGMA index_info({index_name})"
-                )
-
-                index_columns = []
-
-                for info_row in cursor.fetchall():
-                    try:
-                        column_name = info_row["name"]
-                    except (TypeError, KeyError):
-                        column_name = info_row[2]
-
-                    index_columns.append(
-                        column_name
-                    )
-
-                unique_indexes.append(
-                    (
-                        index_name,
-                        index_columns,
-                    )
-                )
-
-            if not unique_indexes:
-                add_warning(
-                    f"{table_name}: "
-                    "UNIQUE index topilmadi."
-                )
-                continue
-
-            if target_column:
-                matching = [
-                    item
-                    for item in unique_indexes
-                    if target_column in item[1]
-                ]
-
-                if matching:
+                if matched:
                     add_pass(
-                        f"{table_name}.{target_column}: "
-                        "UNIQUE constraint/index mavjud."
+                        f"{table_name}."
+                        f"{required_column}: "
+                        "UNIQUE mavjud."
                     )
+
                 else:
                     add_error(
-                        f"{table_name}.{target_column}: "
-                        "UNIQUE constraint topilmadi. "
-                        "ON CONFLICT ishlamasligi mumkin."
+                        f"{table_name}."
+                        f"{required_column}: "
+                        "UNIQUE topilmadi. "
+                        "ON CONFLICT ishlamasligi "
+                        "mumkin."
                     )
-            else:
-                add_pass(
-                    f"{table_name}: "
-                    f"{len(unique_indexes)} ta "
-                    "UNIQUE index mavjud."
+
+        # ----------------------------------------------------
+        # lesson_progress
+        # ----------------------------------------------------
+
+        if table_exists(
+            cursor,
+            "lesson_progress",
+        ):
+
+            indexes = get_unique_indexes(
+                cursor,
+                "lesson_progress",
+            )
+
+            pair_found = any(
+                {
+                    "user_id",
+                    "lesson_id",
+                }.issubset(
+                    set(columns)
                 )
+                for _, columns
+                in indexes
+            )
+
+            if pair_found:
+                add_pass(
+                    "lesson_progress "
+                    "(user_id, lesson_id) "
+                    "UNIQUE mavjud."
+                )
+            else:
+                add_warning(
+                    "lesson_progress "
+                    "(user_id, lesson_id) "
+                    "UNIQUE index topilmadi."
+                )
+
+        # ----------------------------------------------------
+        # user_level_progress
+        # ----------------------------------------------------
+
+        if table_exists(
+            cursor,
+            "user_level_progress",
+        ):
+
+            indexes = get_unique_indexes(
+                cursor,
+                "user_level_progress",
+            )
+
+            pair_found = any(
+                {
+                    "user_id",
+                    "level_id",
+                }.issubset(
+                    set(columns)
+                )
+                for _, columns
+                in indexes
+            )
+
+            if pair_found:
+                add_pass(
+                    "user_level_progress "
+                    "(user_id, level_id) "
+                    "UNIQUE mavjud."
+                )
+
+            else:
+                add_warning(
+                    "user_level_progress "
+                    "(user_id, level_id) "
+                    "UNIQUE index topilmadi."
+                )
+
+    finally:
+        connection.close()
+
+
+# ============================================================
+# 11. BASIC DATABASE HEALTH
+# ============================================================
+
+def audit_database_health() -> None:
+    section(
+        "11. SQLITE DATABASE HEALTH"
+    )
+
+    connection = get_connection()
+
+    try:
+        cursor = connection.cursor()
+
+        cursor.execute(
+            "PRAGMA integrity_check"
+        )
+
+        row = cursor.fetchone()
+
+        result = row_value(
+            row,
+            "integrity_check",
+            0,
+        )
+
+        if result == "ok":
+            add_pass(
+                "SQLite integrity_check = ok."
+            )
+
+        else:
+            add_error(
+                "SQLite integrity_check: "
+                f"{result}"
+            )
 
     finally:
         connection.close()
@@ -1362,29 +2064,53 @@ def audit_unique_indexes() -> None:
 # ============================================================
 
 def print_summary() -> None:
-    section("ARCHIPRO UZ DATABASE AUDIT SUMMARY")
-
-    print(
-        f"{GREEN}PASS: {len(PASSES)}{RESET}"
+    section(
+        "ARCHIPRO UZ DATABASE AUDIT SUMMARY"
     )
 
     print(
-        f"{YELLOW}WARNING: {len(WARNINGS)}{RESET}"
+        f"Expected LEVEL: 16"
     )
 
     print(
-        f"{RED}ERROR: {len(ERRORS)}{RESET}"
+        "Expected MODULE: "
+        f"{EXPECTED_TOTAL_MODULES}"
+    )
+
+    print()
+
+    print(
+        f"{GREEN}"
+        f"PASS: {len(PASSES)}"
+        f"{RESET}"
+    )
+
+    print(
+        f"{YELLOW}"
+        f"WARNING: {len(WARNINGS)}"
+        f"{RESET}"
+    )
+
+    print(
+        f"{RED}"
+        f"ERROR: {len(ERRORS)}"
+        f"{RESET}"
     )
 
     if ERRORS:
+
         print()
+
         print(
             f"{RED}{BOLD}"
             "TOPILGAN XATOLAR:"
             f"{RESET}"
         )
 
-        for number, error in enumerate(
+        for (
+            number,
+            error,
+        ) in enumerate(
             ERRORS,
             start=1,
         ):
@@ -1393,14 +2119,19 @@ def print_summary() -> None:
             )
 
     if WARNINGS:
+
         print()
+
         print(
             f"{YELLOW}{BOLD}"
             "OGOHLANTIRISHLAR:"
             f"{RESET}"
         )
 
-        for number, warning in enumerate(
+        for (
+            number,
+            warning,
+        ) in enumerate(
             WARNINGS,
             start=1,
         ):
@@ -1411,6 +2142,7 @@ def print_summary() -> None:
     print()
 
     if ERRORS:
+
         print(
             f"{RED}{BOLD}"
             "DATABASE AUDIT RESULT: FAILED"
@@ -1418,11 +2150,12 @@ def print_summary() -> None:
         )
 
         print(
-            "ERRORlarni tuzatmasdan final "
-            "release bosqichiga o'tmaymiz."
+            "Yuqoridagi ERRORlarni "
+            "tuzatish kerak."
         )
 
     else:
+
         print(
             f"{GREEN}{BOLD}"
             "DATABASE AUDIT RESULT: PASSED"
@@ -1430,57 +2163,92 @@ def print_summary() -> None:
         )
 
         print(
-            "Database strukturasi bo'yicha "
-            "kritik xato topilmadi."
+            "Database seed va struktura "
+            "bo'yicha kritik xato "
+            "topilmadi."
         )
 
 
 # ============================================================
-# RUN
+# MAIN
 # ============================================================
 
 def main() -> int:
+
     print()
+
     print(
         f"{BOLD}{CYAN}"
         "ARCHIPRO UZ — DATABASE AUDIT"
         f"{RESET}"
     )
 
+    print(
+        f"APP_DIR: {APP_DIR}"
+    )
+
+    prepare_database()
+
     audit_connection()
+
     audit_required_tables()
+
     audit_levels()
+
     audit_modules()
+
     audit_lessons()
+
     audit_quizzes()
+
     audit_exams()
+
     audit_exam_question_capacity()
+
     audit_foreign_keys()
+
     audit_unique_indexes()
+
+    audit_database_health()
 
     print_summary()
 
-    return 1 if ERRORS else 0
+    return (
+        1
+        if ERRORS
+        else 0
+    )
 
 
 if __name__ == "__main__":
+
     try:
+
         exit_code = main()
-        raise SystemExit(exit_code)
+
+        raise SystemExit(
+            exit_code
+        )
 
     except KeyboardInterrupt:
+
         print()
+
         print(
-            "Audit foydalanuvchi tomonidan "
-            "to'xtatildi."
+            "Audit foydalanuvchi "
+            "tomonidan to'xtatildi."
         )
+
         raise SystemExit(130)
 
     except Exception:
+
         print()
+
         print(
             f"{RED}{BOLD}"
-            "KUTILMAGAN DATABASE AUDIT XATOSI"
+            "KUTILMAGAN DATABASE "
+            "AUDIT XATOSI"
             f"{RESET}"
         )
 
