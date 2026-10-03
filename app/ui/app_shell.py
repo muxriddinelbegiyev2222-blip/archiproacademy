@@ -24,6 +24,10 @@ from courses.course_service import (
     get_user_course_stats,
 )
 
+from ui.course_overview_page import (
+    CourseOverviewPage,
+)
+
 from ui.curriculum_map import (
     CURRICULUM_SECTIONS,
     get_section,
@@ -53,9 +57,7 @@ from ui.tests_page import (
 )
 
 
-class AppShell(
-    QMainWindow
-):
+class AppShell(QMainWindow):
     def __init__(
         self,
         user: dict,
@@ -82,9 +84,7 @@ class AppShell(
             validate_curriculum_map()
         )
 
-        if not mapping_check[
-            "ok"
-        ]:
+        if not mapping_check["ok"]:
             raise RuntimeError(
                 "Curriculum UI mapping xato: "
                 f"missing={mapping_check['missing']}, "
@@ -97,12 +97,11 @@ class AppShell(
         )
 
         self.setMinimumSize(
-            1100,
-            700,
+            1150,
+            720,
         )
 
-        self._setup_style()
-        self._build_shell()
+        self.build_shell()
 
         self.open_home()
 
@@ -112,163 +111,10 @@ class AppShell(
         )
 
     # ========================================================
-    # STYLE
-    # ========================================================
-
-    def _setup_style(self):
-        self.setStyleSheet(
-            """
-            QMainWindow,
-            QWidget#appRoot,
-            QStackedWidget {
-                background-color: #0B1220;
-            }
-
-            QWidget {
-                color: #F8FAFC;
-                font-family: 'Segoe UI';
-            }
-
-            QFrame#sidebar {
-                background-color: #0F172A;
-                border-right: 1px solid #1E293B;
-            }
-
-            QLabel#logo {
-                color: #FFFFFF;
-                font-size: 25px;
-                font-weight: 800;
-            }
-
-            QLabel#logoSub {
-                color: #94A3B8;
-                font-size: 13px;
-            }
-
-            QListWidget {
-                background: transparent;
-                border: none;
-                outline: none;
-                color: #D6DEE9;
-                font-size: 15px;
-                font-weight: 500;
-            }
-
-            QListWidget::item {
-                padding: 12px 14px;
-                margin: 2px 0px;
-                border-radius: 8px;
-            }
-
-            QListWidget::item:hover {
-                background-color: #172033;
-            }
-
-            QListWidget::item:selected {
-                background-color: #2563EB;
-                color: #FFFFFF;
-            }
-
-            QLabel#userInfo {
-                background-color: #111827;
-                border: 1px solid #1E293B;
-                border-radius: 10px;
-                padding: 12px;
-                color: #E2E8F0;
-                font-size: 13px;
-            }
-
-            QLabel#pageTitle {
-                color: #FFFFFF;
-                font-size: 34px;
-                font-weight: 800;
-            }
-
-            QLabel#pageSubtitle {
-                color: #A8B3C7;
-                font-size: 16px;
-            }
-
-            QFrame#masterBanner {
-                background-color: #251D06;
-                border: 1px solid #A16207;
-                border-radius: 14px;
-            }
-
-            QLabel#masterTitle {
-                color: #FACC15;
-                font-size: 18px;
-                font-weight: 800;
-            }
-
-            QLabel#masterText {
-                color: #FDE68A;
-                font-size: 14px;
-            }
-
-            QFrame#statCard,
-            QFrame#continueCard {
-                background-color: #111827;
-                border: 1px solid #1E293B;
-                border-radius: 14px;
-            }
-
-            QLabel#cardLabel {
-                color: #A8B3C7;
-                font-size: 14px;
-            }
-
-            QLabel#cardValue {
-                color: #FFFFFF;
-                font-size: 26px;
-                font-weight: 800;
-            }
-
-            QLabel#sectionTitle {
-                color: #FFFFFF;
-                font-size: 21px;
-                font-weight: 700;
-            }
-
-            QLabel#bodyText {
-                color: #CBD5E1;
-                font-size: 15px;
-            }
-
-            QProgressBar {
-                border: none;
-                background-color: #1E293B;
-                border-radius: 7px;
-                height: 14px;
-                color: transparent;
-            }
-
-            QProgressBar::chunk {
-                background-color: #2563EB;
-                border-radius: 7px;
-            }
-
-            QPushButton#primaryButton {
-                background-color: #2563EB;
-                color: #FFFFFF;
-                border: none;
-                border-radius: 9px;
-                padding: 12px 18px;
-                font-size: 15px;
-                font-weight: 700;
-            }
-
-            QPushButton#primaryButton:hover {
-                background-color: #3B82F6;
-            }
-            """
-        )
-
-    # ========================================================
     # SHELL
     # ========================================================
 
-    def _build_shell(self):
+    def build_shell(self):
         root_widget = QWidget()
 
         root_widget.setObjectName(
@@ -294,6 +140,10 @@ class AppShell(
             0
         )
 
+        # ====================================================
+        # SIDEBAR
+        # ====================================================
+
         sidebar = QFrame()
 
         sidebar.setObjectName(
@@ -301,7 +151,7 @@ class AppShell(
         )
 
         sidebar.setFixedWidth(
-            285
+            270
         )
 
         sidebar_layout = QVBoxLayout(
@@ -309,14 +159,14 @@ class AppShell(
         )
 
         sidebar_layout.setContentsMargins(
-            18,
-            24,
-            18,
             16,
+            22,
+            16,
+            14,
         )
 
         sidebar_layout.setSpacing(
-            8
+            7
         )
 
         logo = QLabel(
@@ -325,10 +175,6 @@ class AppShell(
 
         logo.setObjectName(
             "logo"
-        )
-
-        sidebar_layout.addWidget(
-            logo
         )
 
         logo_sub = QLabel(
@@ -340,11 +186,15 @@ class AppShell(
         )
 
         sidebar_layout.addWidget(
+            logo
+        )
+
+        sidebar_layout.addWidget(
             logo_sub
         )
 
         sidebar_layout.addSpacing(
-            18
+            14
         )
 
         self.menu = QListWidget()
@@ -352,6 +202,7 @@ class AppShell(
         self.menu_items = [
             "Bosh sahifa",
             "Mening o'qishim",
+
             "Arxitektura",
             "Archicad",
             "Qurilish konstruksiyalari",
@@ -359,6 +210,7 @@ class AppShell(
             "Amaliyot",
             "BIM va real loyiha",
             "Portfolio / PRO Final",
+
             "Testlar",
             "Imtihonlar",
             "Kutubxona",
@@ -375,7 +227,7 @@ class AppShell(
             )
 
         self.menu.itemClicked.connect(
-            self._handle_menu
+            self.handle_menu
         )
 
         sidebar_layout.addWidget(
@@ -417,6 +269,9 @@ class AppShell(
             user_info
         )
 
+        # DeveloperBadge DashboardWindow tomonidan
+        # shu layout oxiriga qo'shiladi.
+
         self.stack = QStackedWidget()
 
         root.addWidget(
@@ -429,10 +284,10 @@ class AppShell(
         )
 
     # ========================================================
-    # ROUTER
+    # MENU
     # ========================================================
 
-    def _handle_menu(
+    def handle_menu(
         self,
         item,
     ):
@@ -440,46 +295,54 @@ class AppShell(
 
         if text == "Bosh sahifa":
             self.open_home()
+            return
 
-        elif text == "Mening o'qishim":
-            self.open_learning()
+        if text == "Mening o'qishim":
+            self.open_learning_overview()
+            return
 
-        elif text in CURRICULUM_SECTIONS:
-            self.open_section(
+        if text in CURRICULUM_SECTIONS:
+            self.open_section_overview(
                 text
             )
+            return
 
-        elif text == "Testlar":
+        if text == "Testlar":
             self.open_tests()
+            return
 
-        elif text == "Imtihonlar":
+        if text == "Imtihonlar":
             self.open_exams()
+            return
 
-        elif text == "Kutubxona":
+        if text == "Statistika":
+            self.open_statistics()
+            return
+
+        if text == "Litsenziya":
+            self.open_license()
+            return
+
+        if text == "Kutubxona":
             self.open_info_page(
                 "library",
                 "Kutubxona",
                 (
-                    "Kutubxona uchun qo'shimcha "
-                    "resurslar keyingi bosqichda ulanadi. "
-                    "Mavjud o'quv kontenti saqlangan."
+                    "ARCHIPRO kutubxonasi keyingi funksional "
+                    "bosqichda loyiha shablonlari, chek-listlar, "
+                    "SHNQ materiallari va amaliy fayllar bilan "
+                    "to'ldiriladi."
                 ),
             )
+            return
 
-        elif text == "Statistika":
-            self.open_statistics()
-
-        elif text == "Litsenziya":
-            self.open_license()
-
-        elif text == "Sozlamalar":
+        if text == "Sozlamalar":
             self.open_info_page(
                 "settings",
                 "Sozlamalar",
                 (
-                    "Profil va dastur sozlamalari "
-                    "keyingi UI bosqichida "
-                    "shu sahifaga ulanadi."
+                    "Interfeys, profil va dastur parametrlarini "
+                    "boshqarish markazi."
                 ),
             )
 
@@ -487,23 +350,23 @@ class AppShell(
     # PAGE MANAGER
     # ========================================================
 
-    def _show_page(
+    def show_page(
         self,
         key: str,
         page: QWidget,
     ):
-        existing = self.page_cache.get(
+        old = self.page_cache.get(
             key
         )
 
-        if existing is not None:
+        if old is not None:
             self.stack.setCurrentWidget(
-                existing
+                old
             )
 
             self.current_page_key = key
 
-            return existing
+            return old
 
         page.setParent(
             self.stack
@@ -517,9 +380,7 @@ class AppShell(
             page
         )
 
-        self.page_cache[
-            key
-        ] = page
+        self.page_cache[key] = page
 
         self.stack.setCurrentWidget(
             page
@@ -529,7 +390,7 @@ class AppShell(
 
         return page
 
-    def _show_cached(
+    def show_cached(
         self,
         key: str,
     ):
@@ -547,7 +408,7 @@ class AppShell(
 
         self.current_page_key = key
 
-    def _drop_cached_page(
+    def drop_page(
         self,
         key: str,
     ):
@@ -565,14 +426,14 @@ class AppShell(
 
         page.deleteLater()
 
-    def _set_menu_row(
+    def set_menu(
         self,
-        label: str,
+        title: str,
     ):
         try:
             self.menu.setCurrentRow(
                 self.menu_items.index(
-                    label
+                    title
                 )
             )
 
@@ -580,41 +441,16 @@ class AppShell(
             pass
 
     # ========================================================
-    # REFRESH
-    # ========================================================
-
-    def _refresh_learning_pages(self):
-        for key, page in list(
-            self.page_cache.items()
-        ):
-            if isinstance(
-                page,
-                LearningPage,
-            ):
-                page.refresh_page()
-
-            elif (
-                key in {
-                    "tests",
-                    "exams",
-                }
-                and hasattr(
-                    page,
-                    "refresh_page",
-                )
-            ):
-                page.refresh_page()
-
-    # ========================================================
     # HOME
     # ========================================================
 
     def open_home(self):
-        self._set_menu_row(
+        self.set_menu(
             "Bosh sahifa"
         )
 
-        self._drop_cached_page(
+        # Faqat home ma'lumotlari dinamik.
+        self.drop_page(
             "home"
         )
 
@@ -637,14 +473,35 @@ class AppShell(
         )
 
         layout.setContentsMargins(
-            34,
             30,
-            34,
+            26,
             30,
+            26,
         )
 
         layout.setSpacing(
-            18
+            16
+        )
+
+        # ====================================================
+        # HEADER
+        # ====================================================
+
+        header = QFrame()
+
+        header.setObjectName(
+            "overviewHeader"
+        )
+
+        header_layout = QVBoxLayout(
+            header
+        )
+
+        header_layout.setContentsMargins(
+            24,
+            20,
+            24,
+            20,
         )
 
         title = QLabel(
@@ -652,124 +509,46 @@ class AppShell(
         )
 
         title.setObjectName(
-            "pageTitle"
-        )
-
-        layout.addWidget(
-            title
+            "overviewTitle"
         )
 
         subtitle = QLabel(
-            "Arxitekturani 0 dan professional "
-            "turar joy loyihalashgacha "
-            "bosqichma-bosqich o'rganing."
+            "Arxitektura va turar joy loyihalash bo'yicha "
+            "shaxsiy o'quv markazingiz."
         )
 
         subtitle.setObjectName(
-            "pageSubtitle"
+            "overviewSubtitle"
         )
 
-        subtitle.setWordWrap(
-            True
+        header_layout.addWidget(
+            title
         )
 
-        layout.addWidget(
+        header_layout.addWidget(
             subtitle
         )
 
-        if self.is_master:
-            banner = QFrame()
-
-            banner.setObjectName(
-                "masterBanner"
-            )
-
-            banner_layout = QHBoxLayout(
-                banner
-            )
-
-            banner_layout.setContentsMargins(
-                18,
-                14,
-                18,
-                14,
-            )
-
-            text_area = QVBoxLayout()
-
-            banner_title = QLabel(
-                "★ MASTER TEST MODE FAOL"
-            )
-
-            banner_title.setObjectName(
-                "masterTitle"
-            )
-
-            banner_text = QLabel(
-                "Bu rejim faqat dastur egasi uchun. "
-                "Barcha Level va darslarni "
-                "blokirovkasiz tekshirish mumkin."
-            )
-
-            banner_text.setObjectName(
-                "masterText"
-            )
-
-            banner_text.setWordWrap(
-                True
-            )
-
-            text_area.addWidget(
-                banner_title
-            )
-
-            text_area.addWidget(
-                banner_text
-            )
-
-            banner_layout.addLayout(
-                text_area,
-                1,
-            )
-
-            button = QPushButton(
-                "BARCHA LEVELLARNI KO'RISH"
-            )
-
-            button.setObjectName(
-                "primaryButton"
-            )
-
-            button.clicked.connect(
-                self.open_learning
-            )
-
-            banner_layout.addWidget(
-                button
-            )
-
-            layout.addWidget(
-                banner
-            )
-
-        cards = QGridLayout()
-
-        cards.setHorizontalSpacing(
-            14
+        layout.addWidget(
+            header
         )
 
-        cards.setVerticalSpacing(
-            14
+        # ====================================================
+        # STATS
+        # ====================================================
+
+        stats_grid = QGridLayout()
+
+        stats_grid.setSpacing(
+            13
         )
 
         if self.is_master:
-            current_level_text = "MASTER"
+            current_text = "MASTER"
 
         elif current_level:
-            current_level_text = (
-                current_level[
-                    "code"
-                ]
+            current_text = (
+                current_level["code"]
                 .replace(
                     "LEVEL_",
                     "LEVEL ",
@@ -777,26 +556,26 @@ class AppShell(
             )
 
         else:
-            current_level_text = "—"
+            current_text = "—"
 
-        card_data = [
+        values = [
             (
-                "Joriy bosqich",
-                current_level_text,
+                "JORIY BOSQICH",
+                current_text,
             ),
             (
-                "Tugallangan darslar",
+                "TUGALLANGAN DARSLAR",
                 (
                     f"{stats['completed_lessons']} / "
                     f"{stats['total_lessons']}"
                 ),
             ),
             (
-                "Umumiy progress",
+                "UMUMIY PROGRESS",
                 f"{stats['progress_percent']}%",
             ),
             (
-                "Jami XP",
+                "JAMI XP",
                 str(
                     stats["xp"]
                 ),
@@ -804,15 +583,15 @@ class AppShell(
         ]
 
         for index, (
-            label,
-            value,
+            label_text,
+            value_text,
         ) in enumerate(
-            card_data
+            values
         ):
             card = QFrame()
 
             card.setObjectName(
-                "statCard"
+                "levelOverviewCard"
             )
 
             card_layout = QVBoxLayout(
@@ -820,67 +599,54 @@ class AppShell(
             )
 
             card_layout.setContentsMargins(
-                18,
-                16,
-                18,
-                16,
+                20,
+                17,
+                20,
+                17,
             )
 
-            label_widget = QLabel(
+            label = QLabel(
+                label_text
+            )
+
+            label.setObjectName(
+                "levelCode"
+            )
+
+            value = QLabel(
+                value_text
+            )
+
+            value.setObjectName(
+                "levelName"
+            )
+
+            card_layout.addWidget(
                 label
             )
 
-            label_widget.setObjectName(
-                "cardLabel"
-            )
-
-            value_widget = QLabel(
+            card_layout.addWidget(
                 value
             )
 
-            value_widget.setObjectName(
-                "cardValue"
-            )
-
-            card_layout.addWidget(
-                label_widget
-            )
-
-            card_layout.addWidget(
-                value_widget
-            )
-
-            cards.addWidget(
+            stats_grid.addWidget(
                 card,
                 index // 2,
                 index % 2,
             )
 
         layout.addLayout(
-            cards
+            stats_grid
         )
 
-        progress = QProgressBar()
-
-        progress.setRange(
-            0,
-            100,
-        )
-
-        progress.setValue(
-            stats[
-                "progress_percent"
-            ]
-        )
-
-        layout.addWidget(
-            progress
-        )
+        # ====================================================
+        # CONTINUE
+        # ====================================================
 
         continue_card = QFrame()
 
         continue_card.setObjectName(
-            "continueCard"
+            "levelOverviewCard"
         )
 
         continue_layout = QHBoxLayout(
@@ -888,24 +654,26 @@ class AppShell(
         )
 
         continue_layout.setContentsMargins(
-            20,
+            22,
             18,
-            20,
+            22,
             18,
         )
 
-        text_area = QVBoxLayout()
-
-        continue_title = QLabel(
-            "Keyingi dars"
+        continue_text_layout = (
+            QVBoxLayout()
         )
 
-        continue_title.setObjectName(
-            "sectionTitle"
+        small = QLabel(
+            "KEYINGI QADAM"
+        )
+
+        small.setObjectName(
+            "levelCode"
         )
 
         if next_lesson:
-            continue_text_value = (
+            message = (
                 f"{next_lesson['level_code'].replace('LEVEL_', 'LEVEL ')}"
                 f"  •  "
                 f"{next_lesson['module_title']}"
@@ -914,57 +682,56 @@ class AppShell(
             )
 
         elif self.is_master:
-            continue_text_value = (
-                "MASTER rejimida barcha mavjud "
-                "darslarni Mening o'qishim "
-                "bo'limidan tekshirish mumkin."
+            message = (
+                "MASTER rejimida barcha "
+                "Level va darslar tekshirish uchun mavjud."
             )
 
         else:
-            continue_text_value = (
-                "Hozir ochiq keyingi dars topilmadi. "
-                "Level imtihoni yoki progressni tekshiring."
+            message = (
+                "Keyingi ochiq dars topilmadi. "
+                "Level yakuniy holatini tekshiring."
             )
 
-        continue_text = QLabel(
-            continue_text_value
+        next_label = QLabel(
+            message
         )
 
-        continue_text.setObjectName(
-            "bodyText"
+        next_label.setObjectName(
+            "levelName"
         )
 
-        continue_text.setWordWrap(
+        next_label.setWordWrap(
             True
         )
 
-        text_area.addWidget(
-            continue_title
+        continue_text_layout.addWidget(
+            small
         )
 
-        text_area.addWidget(
-            continue_text
+        continue_text_layout.addWidget(
+            next_label
         )
 
         continue_layout.addLayout(
-            text_area,
+            continue_text_layout,
             1,
         )
 
-        continue_button = QPushButton(
-            "O'QISHNI DAVOM ETTIRISH"
+        button = QPushButton(
+            "O'QISHNI DAVOM ETTIRISH  →"
         )
 
-        continue_button.setObjectName(
-            "primaryButton"
+        button.setObjectName(
+            "openLevelButton"
         )
 
-        continue_button.clicked.connect(
-            self.open_learning
+        button.clicked.connect(
+            self.open_learning_overview
         )
 
         continue_layout.addWidget(
-            continue_button
+            button
         )
 
         layout.addWidget(
@@ -973,91 +740,63 @@ class AppShell(
 
         layout.addStretch()
 
-        self._show_page(
+        self.show_page(
             "home",
             page,
         )
 
     # ========================================================
-    # LEARNING PAGE CREATOR
+    # COURSE OVERVIEW
     # ========================================================
 
-    def _create_learning_page(
+    def open_learning_overview(
         self,
-        *,
-        key,
-        level_codes=None,
-        title=None,
-        subtitle=None,
-        back_callback=None,
     ):
-        page = LearningPage(
-            user=self.user,
-            focus_level_codes=(
-                level_codes
-            ),
-            custom_title=(
-                title
-            ),
-            custom_subtitle=(
-                subtitle
-            ),
-            back_callback=(
-                back_callback
-            ),
-            open_lesson_callback=(
-                self._open_lesson_page
-            ),
-            open_exam_callback=(
-                self._open_exam_from_learning
-            ),
-        )
-
-        self._show_page(
-            key,
-            page,
-        )
-
-        return page
-
-    # ========================================================
-    # ALL LEARNING
-    # ========================================================
-
-    def open_learning(self):
-        self._set_menu_row(
+        self.set_menu(
             "Mening o'qishim"
         )
 
-        key = "learning_all"
+        key = "overview::all"
 
         page = self.page_cache.get(
             key
         )
 
         if page is None:
-            self._create_learning_page(
-                key=key,
+            page = CourseOverviewPage(
+                user=self.user,
                 title="Mening o'qishim",
                 subtitle=(
                     "LEVEL 00 dan LEVEL 15 gacha "
-                    "bo'lgan to'liq o'quv yo'lingiz."
+                    "bo'lgan to'liq professional o'quv yo'li."
                 ),
-                back_callback=self.open_home,
+            )
+
+            page.open_level_requested.connect(
+                lambda code, title, subtitle:
+                self.open_single_level(
+                    code,
+                    title,
+                    subtitle,
+                    key,
+                )
+            )
+
+            self.show_page(
+                key,
+                page,
             )
 
         else:
-            page.refresh_page()
-
-            self._show_cached(
+            self.show_cached(
                 key
             )
 
     # ========================================================
-    # CURRICULUM SECTIONS
+    # SECTION OVERVIEW
     # ========================================================
 
-    def open_section(
+    def open_section_overview(
         self,
         section_name: str,
     ):
@@ -1068,12 +807,12 @@ class AppShell(
         if section is None:
             return
 
-        self._set_menu_row(
+        self.set_menu(
             section_name
         )
 
         key = (
-            "section::"
+            "overview::"
             + section_name
         )
 
@@ -1082,40 +821,112 @@ class AppShell(
         )
 
         if page is None:
-            self._create_learning_page(
-                key=key,
-                level_codes=(
-                    section[
-                        "levels"
-                    ]
-                ),
-                title=(
-                    section[
-                        "title"
-                    ]
-                ),
-                subtitle=(
-                    section[
-                        "subtitle"
-                    ]
-                ),
-                back_callback=(
-                    self.open_home
-                ),
+            page = CourseOverviewPage(
+                user=self.user,
+                title=section[
+                    "title"
+                ],
+                subtitle=section[
+                    "subtitle"
+                ],
+                level_codes=section[
+                    "levels"
+                ],
+            )
+
+            page.open_level_requested.connect(
+                lambda code,
+                title,
+                subtitle,
+                source_key=key:
+                self.open_single_level(
+                    code,
+                    title,
+                    subtitle,
+                    source_key,
+                )
+            )
+
+            self.show_page(
+                key,
+                page,
             )
 
         else:
-            page.refresh_page()
-
-            self._show_cached(
+            self.show_cached(
                 key
             )
 
     # ========================================================
-    # EMBEDDED LESSON
+    # SINGLE LEVEL
     # ========================================================
 
-    def _open_lesson_page(
+    def open_single_level(
+        self,
+        code: str,
+        title: str,
+        subtitle: str,
+        source_key: str,
+    ):
+        key = (
+            "level::"
+            + code
+        )
+
+        page = self.page_cache.get(
+            key
+        )
+
+        if page is None:
+            readable_code = (
+                code.replace(
+                    "LEVEL_",
+                    "LEVEL ",
+                )
+            )
+
+            page = LearningPage(
+                user=self.user,
+                focus_level_codes=[
+                    code
+                ],
+                custom_title=(
+                    f"{readable_code}  •  {title}"
+                ),
+                custom_subtitle=(
+                    subtitle
+                ),
+                back_callback=(
+                    lambda k=source_key:
+                    self.show_cached(
+                        k
+                    )
+                ),
+                open_lesson_callback=(
+                    self.open_lesson_page
+                ),
+                open_exam_callback=(
+                    self.open_exam_from_learning
+                ),
+            )
+
+            self.show_page(
+                key,
+                page,
+            )
+
+        else:
+            # Navigatsiyada qayta BUILD YO'Q.
+            # Shu performance uchun juda muhim.
+            self.show_cached(
+                key
+            )
+
+    # ========================================================
+    # LESSON
+    # ========================================================
+
+    def open_lesson_page(
         self,
         lesson_data: dict,
         source_learning_page,
@@ -1124,18 +935,16 @@ class AppShell(
             self.current_page_key
         )
 
-        lesson_id = (
-            lesson_data[
-                "id"
-            ]
-        )
-
         key = (
-            f"lesson::{lesson_id}"
+            "lesson::"
+            + str(
+                lesson_data["id"]
+            )
         )
 
-        # Dars sahifasini har safar yangi quramiz.
-        self._drop_cached_page(
+        # Dars har ochilganda yangilansin,
+        # lekin faqat BITTA dars.
+        self.drop_page(
             key
         )
 
@@ -1144,36 +953,36 @@ class AppShell(
             user=self.user,
             back_callback=(
                 lambda k=source_key:
-                self._show_cached(
+                self.show_cached(
                     k
                 )
             ),
             open_quiz_callback=(
-                self._open_quiz_page
+                self.open_quiz_page
             ),
         )
 
         page.lesson_completed.connect(
-            lambda completed_id,
+            lambda lesson_id,
             source=source_learning_page,
             return_key=source_key:
-            self._lesson_completed(
-                completed_id,
+            self.lesson_completed(
+                lesson_id,
                 source,
                 return_key,
             )
         )
 
-        self._show_page(
+        self.show_page(
             key,
             page,
         )
 
     # ========================================================
-    # EMBEDDED QUIZ
+    # QUIZ
     # ========================================================
 
-    def _open_quiz_page(
+    def open_quiz_page(
         self,
         lesson_page,
     ):
@@ -1186,73 +995,79 @@ class AppShell(
         )
 
         key = (
-            f"quiz::{lesson['id']}"
+            "quiz::"
+            + str(
+                lesson["id"]
+            )
         )
 
-        # Har urinishda yangi savol tartibi.
-        self._drop_cached_page(
+        self.drop_page(
             key
         )
 
-        quiz_page = QuizPage(
+        page = QuizPage(
             user=self.user,
             lesson=lesson,
             back_callback=(
                 lambda k=lesson_key:
-                self._show_cached(
+                self.show_cached(
                     k
                 )
             ),
         )
 
-        quiz_page.quiz_passed.connect(
+        page.quiz_passed.connect(
             lesson_page.quiz_success
         )
 
-        self._show_page(
+        self.show_page(
             key,
-            quiz_page,
+            page,
         )
 
     # ========================================================
-    # LESSON COMPLETE
+    # LESSON COMPLETED
     # ========================================================
 
-    def _lesson_completed(
+    def lesson_completed(
         self,
-        lesson_id: int,
-        source_learning_page,
-        return_key: str,
+        lesson_id,
+        source_page,
+        return_key,
     ):
-        """
-        Original LearningWindow.lesson_finished()
-        aynan progress service'ni ishlatadi.
-
-        Uni qayta yozmaymiz — original metodni
-        o'zidan foydalanamiz.
-        """
-
-        source_learning_page.lesson_finished(
+        # Original service/progress logikasi.
+        source_page.lesson_finished(
             lesson_id
         )
 
-        self._refresh_learning_pages()
+        # Faqat o'zgargan Level sahifasini refresh qilamiz.
+        source_page.refresh_page()
 
-        tests = self.page_cache.get(
+        # Overview'larni keyingi kirishda qayta qurish uchun
+        # cache'dan chiqaramiz.
+        overview_keys = [
+            key
+            for key in self.page_cache
+            if key.startswith(
+                "overview::"
+            )
+        ]
+
+        for key in overview_keys:
+            self.drop_page(
+                key
+            )
+
+        # Test / exam status ham o'zgarishi mumkin.
+        self.drop_page(
             "tests"
         )
 
-        if tests is not None:
-            tests.refresh_page()
-
-        exams = self.page_cache.get(
+        self.drop_page(
             "exams"
         )
 
-        if exams is not None:
-            exams.refresh_page()
-
-        self._show_cached(
+        self.show_cached(
             return_key
         )
 
@@ -1261,7 +1076,7 @@ class AppShell(
     # ========================================================
 
     def open_tests(self):
-        self._set_menu_row(
+        self.set_menu(
             "Testlar"
         )
 
@@ -1277,61 +1092,24 @@ class AppShell(
             )
 
             page.open_level_requested.connect(
-                self._open_level_from_tests
+                lambda level_codes,
+                title,
+                subtitle:
+                self.open_single_level(
+                    level_codes[0],
+                    title,
+                    subtitle,
+                    "tests",
+                )
             )
 
-            self._show_page(
+            self.show_page(
                 key,
                 page,
             )
 
         else:
-            page.refresh_page()
-
-            self._show_cached(
-                key
-            )
-
-    def _open_level_from_tests(
-        self,
-        level_codes,
-        title,
-        subtitle,
-    ):
-        code_key = "_".join(
-            level_codes
-        )
-
-        key = (
-            "tests_level::"
-            + code_key
-        )
-
-        page = self.page_cache.get(
-            key
-        )
-
-        if page is None:
-            self._create_learning_page(
-                key=key,
-                level_codes=(
-                    level_codes
-                ),
-                title=(
-                    title
-                ),
-                subtitle=(
-                    subtitle
-                ),
-                back_callback=(
-                    self.open_tests
-                ),
-            )
-
-        else:
-            page.refresh_page()
-
-            self._show_cached(
+            self.show_cached(
                 key
             )
 
@@ -1340,7 +1118,7 @@ class AppShell(
     # ========================================================
 
     def open_exams(self):
-        self._set_menu_row(
+        self.set_menu(
             "Imtihonlar"
         )
 
@@ -1356,47 +1134,35 @@ class AppShell(
             )
 
             page.open_exam_requested.connect(
-                self._open_exam_from_exams
+                lambda exam:
+                self.open_exam_page(
+                    exam,
+                    "exams",
+                )
             )
 
-            self._show_page(
+            self.show_page(
                 key,
                 page,
             )
 
         else:
-            page.refresh_page()
-
-            self._show_cached(
+            self.show_cached(
                 key
             )
 
-    def _open_exam_from_exams(
+    def open_exam_from_learning(
         self,
-        exam: dict,
+        exam,
+        source_page,
     ):
-        self._open_exam_page(
-            exam=exam,
-            source_key="exams",
+        self.open_exam_page(
+            exam,
+            self.current_page_key,
         )
 
-    def _open_exam_from_learning(
+    def open_exam_page(
         self,
-        exam: dict,
-        source_learning_page,
-    ):
-        source_key = (
-            self.current_page_key
-        )
-
-        self._open_exam_page(
-            exam=exam,
-            source_key=source_key,
-        )
-
-    def _open_exam_page(
-        self,
-        *,
         exam: dict,
         source_key: str,
     ):
@@ -1408,17 +1174,14 @@ class AppShell(
             "master_mode"
         ] = self.is_master
 
-        exam_id = (
-            exam_data[
-                "id"
-            ]
-        )
-
         key = (
-            f"exam::{exam_id}"
+            "exam::"
+            + str(
+                exam_data["id"]
+            )
         )
 
-        self._drop_cached_page(
+        self.drop_page(
             key
         )
 
@@ -1427,54 +1190,62 @@ class AppShell(
             exam=exam_data,
             back_callback=(
                 lambda k=source_key:
-                self._show_cached(
+                self.show_cached(
                     k
                 )
             ),
         )
 
         page.exam_passed.connect(
-            lambda return_key=source_key:
-            self._exam_completed(
-                return_key
+            lambda k=source_key:
+            self.exam_completed(
+                k
             )
         )
 
-        self._show_page(
+        self.show_page(
             key,
             page,
         )
 
-    def _exam_completed(
+    def exam_completed(
         self,
-        return_key: str,
+        return_key,
     ):
-        self._refresh_learning_pages()
+        # Exam progress o'zgardi.
+        # Dinamik sahifalarning cache'ini tozalaymiz.
 
-        tests = self.page_cache.get(
-            "tests"
+        keys = list(
+            self.page_cache.keys()
         )
 
-        if tests is not None:
-            tests.refresh_page()
+        for key in keys:
+            if (
+                key.startswith(
+                    "overview::"
+                )
+                or key.startswith(
+                    "level::"
+                )
+                or key
+                in {
+                    "tests",
+                    "exams",
+                    "home",
+                }
+            ):
+                self.drop_page(
+                    key
+                )
 
-        exams = self.page_cache.get(
-            "exams"
-        )
-
-        if exams is not None:
-            exams.refresh_page()
-
-        self._show_cached(
-            return_key
-        )
+        self.open_home()
 
     # ========================================================
     # STATISTICS
     # ========================================================
 
     def open_statistics(self):
-        self._set_menu_row(
+        self.set_menu(
             "Statistika"
         )
 
@@ -1512,7 +1283,7 @@ class AppShell(
     # ========================================================
 
     def open_license(self):
-        self._set_menu_row(
+        self.set_menu(
             "Litsenziya"
         )
 
@@ -1527,13 +1298,13 @@ class AppShell(
                 self.user
             )
 
-            self._show_page(
+            self.show_page(
                 key,
                 page,
             )
 
         else:
-            self._show_cached(
+            self.show_cached(
                 key
             )
 
@@ -1543,27 +1314,22 @@ class AppShell(
 
     def open_info_page(
         self,
-        key: str,
-        title: str,
-        text: str,
+        key,
+        title,
+        text,
         replace=False,
     ):
         if replace:
-            self._drop_cached_page(
+            self.drop_page(
                 key
             )
 
-        else:
-            old = self.page_cache.get(
+        elif key in self.page_cache:
+            self.show_cached(
                 key
             )
 
-            if old is not None:
-                self._show_cached(
-                    key
-                )
-
-                return
+            return
 
         page = QWidget()
 
@@ -1572,14 +1338,27 @@ class AppShell(
         )
 
         layout.setContentsMargins(
-            34,
             30,
-            34,
+            26,
             30,
+            26,
         )
 
-        layout.setSpacing(
-            16
+        header = QFrame()
+
+        header.setObjectName(
+            "overviewHeader"
+        )
+
+        header_layout = QVBoxLayout(
+            header
+        )
+
+        header_layout.setContentsMargins(
+            24,
+            20,
+            24,
+            20,
         )
 
         heading = QLabel(
@@ -1587,7 +1366,7 @@ class AppShell(
         )
 
         heading.setObjectName(
-            "pageTitle"
+            "overviewTitle"
         )
 
         body = QLabel(
@@ -1595,24 +1374,28 @@ class AppShell(
         )
 
         body.setObjectName(
-            "bodyText"
+            "overviewSubtitle"
         )
 
         body.setWordWrap(
             True
         )
 
-        layout.addWidget(
+        header_layout.addWidget(
             heading
         )
 
-        layout.addWidget(
+        header_layout.addWidget(
             body
+        )
+
+        layout.addWidget(
+            header
         )
 
         layout.addStretch()
 
-        self._show_page(
+        self.show_page(
             key,
             page,
         )
