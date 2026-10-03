@@ -1,62 +1,29 @@
-from PySide6.QtCore import (
-    QEvent,
-    QObject,
-    QTimer,
-)
-
 from PySide6.QtWidgets import (
     QAbstractScrollArea,
-    QApplication,
     QScrollArea,
     QWidget,
 )
 
 
 # ============================================================
-# ARCHIPRO UZ — PREMIUM DARK UI
+# ARCHIPRO UZ — UI V3
+# PERFORMANCE-SAFE THEME
 # ============================================================
 
-BACKGROUND = "#08111F"
-SURFACE = "#0C1728"
-SURFACE_2 = "#111E31"
-SURFACE_3 = "#15243A"
-
-BORDER = "#22324A"
-BORDER_ACTIVE = "#386FD8"
-
-TEXT = "#EAF1FA"
-TEXT_SOFT = "#C8D3E1"
-MUTED = "#91A2BA"
-
-ACCENT = "#4F8CFF"
-ACCENT_HOVER = "#6BA0FF"
-
-SUCCESS = "#42C98B"
-WARNING = "#E8B84D"
-DANGER = "#E47070"
-
-
-PREMIUM_QSS = """
+APP_QSS = """
 /* ==========================================================
-   BASE
+   ROOT
    ========================================================== */
 
-QMainWindow {
+QMainWindow,
+QWidget#appRoot,
+QStackedWidget {
     background-color: #08111F;
 }
 
 QWidget {
     font-family: "Segoe UI";
-    color: #EAF1FA;
-}
-
-QWidget#appRoot {
-    background-color: #08111F;
-}
-
-QStackedWidget {
-    background-color: #08111F;
-    border: none;
+    color: #E5EDF7;
 }
 
 
@@ -66,25 +33,27 @@ QStackedWidget {
 
 QFrame#sidebar {
     background-color: #0A1424;
-    border-right: 1px solid #22324A;
+    border-right: 1px solid #25364E;
 }
 
 QLabel#logo {
-    color: #F4F7FB;
+    color: #F4F8FC;
     font-size: 25px;
     font-weight: 800;
 }
 
 QLabel#logoSub {
-    color: #788BA6;
+    color: #7E90A8;
     font-size: 13px;
 }
 
 QListWidget {
-    background: transparent;
+    background-color: transparent;
     border: none;
     outline: none;
-    color: #C8D3E1;
+
+    color: #C7D2E0;
+
     font-size: 15px;
     font-weight: 500;
 }
@@ -92,6 +61,7 @@ QListWidget {
 QListWidget::item {
     padding: 12px 14px;
     margin: 2px 0px;
+
     border-radius: 9px;
 }
 
@@ -101,138 +71,286 @@ QListWidget::item:hover {
 }
 
 QListWidget::item:selected {
-    background-color: #295FC8;
+    background-color: #2F68D8;
     color: #FFFFFF;
 }
 
 
 /* ==========================================================
-   COMMON TITLES
+   OVERVIEW HEADER
    ========================================================== */
 
-QLabel#pageTitle {
-    color: #F4F7FB;
-    font-size: 34px;
+QFrame#overviewHeader {
+    background-color: #0E1B2E;
+
+    border: 1px solid #29415F;
+    border-radius: 16px;
+}
+
+QLabel#overviewTitle {
+    color: #F5F8FC;
+
+    font-size: 30px;
     font-weight: 800;
 }
 
-QLabel#pageSubtitle {
-    color: #9BAAC0;
-    font-size: 16px;
-}
+QLabel#overviewSubtitle {
+    color: #9DACBF;
 
-QLabel#levelTitle {
-    color: #F4F7FB;
-    font-size: 23px;
-    font-weight: 800;
-}
-
-QLabel#levelSubtitle {
-    color: #9BAAC0;
     font-size: 15px;
-}
-
-QLabel#moduleTitle {
-    color: #EDF3FA;
-    font-size: 19px;
-    font-weight: 700;
-}
-
-QLabel#lessonTitle {
-    color: #E7EEF8;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-QLabel#meta {
-    color: #8396AF;
-    font-size: 13px;
 }
 
 
 /* ==========================================================
-   LEARNING CARDS
+   LEVEL OVERVIEW CARDS
    ========================================================== */
+
+QFrame#levelOverviewCard {
+    background-color: #0E1A2C;
+
+    border: 1px solid #263C58;
+    border-radius: 15px;
+}
+
+QFrame#levelOverviewCard:hover {
+    background-color: #112039;
+
+    border: 1px solid #395C89;
+}
+
+QLabel#levelCode {
+    color: #6598FF;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+QLabel#levelName {
+    color: #F1F5FA;
+
+    font-size: 20px;
+    font-weight: 750;
+}
+
+QLabel#levelDesc {
+    color: #95A6BC;
+
+    font-size: 14px;
+}
+
+QLabel#progressText {
+    color: #AAB8C9;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* ==========================================================
+   STATUS PILLS
+   ========================================================== */
+
+QLabel#statusBadgeLocked,
+QLabel#statusBadgeAvailable,
+QLabel#statusBadgeCompleted,
+QLabel#statusBadgeMaster {
+    border-radius: 8px;
+
+    padding: 6px 10px;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+QLabel#statusBadgeLocked {
+    background-color: #151D2A;
+
+    border: 1px solid #37465B;
+
+    color: #9AA8BA;
+}
+
+QLabel#statusBadgeAvailable {
+    background-color: #102443;
+
+    border: 1px solid #356FD8;
+
+    color: #8AB4FF;
+}
+
+QLabel#statusBadgeCompleted {
+    background-color: #10271F;
+
+    border: 1px solid #2E7257;
+
+    color: #7BDAAD;
+}
+
+QLabel#statusBadgeMaster {
+    background-color: #2B230D;
+
+    border: 1px solid #947428;
+
+    color: #F1CA64;
+}
+
+
+/* ==========================================================
+   LEVEL BUTTON
+   ========================================================== */
+
+QPushButton#openLevelButton {
+    background-color: #182942;
+
+    border: 1px solid #385679;
+    border-radius: 9px;
+
+    color: #DCE7F5;
+
+    min-height: 36px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+QPushButton#openLevelButton:hover {
+    background-color: #22416C;
+
+    border: 1px solid #4F84CF;
+
+    color: #FFFFFF;
+}
+
+
+/* ==========================================================
+   LEARNING PAGE
+   ========================================================== */
+
+QLabel#pageTitle {
+    color: #F5F8FC;
+
+    font-size: 31px;
+    font-weight: 800;
+}
+
+QLabel#pageSubtitle {
+    color: #9DACBF;
+
+    font-size: 15px;
+}
 
 QFrame#levelCard,
 QFrame#levelLocked,
 QFrame#levelCompleted,
 QFrame#levelMaster {
-    background-color: #0C1728;
-    border: 1px solid #263852;
-    border-radius: 16px;
+    background-color: #0D192A;
+
+    border: 1px solid #29405D;
+
+    border-radius: 15px;
 }
 
 QFrame#levelCompleted {
-    border: 1px solid #27624D;
+    border-color: #2C6D54;
 }
 
 QFrame#levelMaster {
-    border: 1px solid #866927;
+    border-color: #886D2C;
 }
 
+QLabel#levelTitle {
+    color: #F3F7FB;
+
+    font-size: 22px;
+    font-weight: 800;
+}
+
+QLabel#levelSubtitle {
+    color: #98A8BC;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================================
+   MODULE CARDS
+   ========================================================== */
+
 QFrame#moduleCard {
-    background-color: #101C2F;
-    border: 1px solid #223650;
+    background-color: #101D30;
+
+    border: 1px solid #253A56;
+
     border-radius: 13px;
 }
+
+QLabel#moduleTitle {
+    color: #EDF3F9;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* ==========================================================
+   LESSON ROWS
+   ========================================================== */
 
 QFrame#lessonLocked,
 QFrame#lessonAvailable,
 QFrame#lessonCompleted,
 QFrame#lessonMaster {
-    background-color: #0E1A2C;
-    border: 1px solid #20334D;
+    background-color: #0D192A;
+
+    border: 1px solid #23364F;
+
     border-radius: 10px;
 }
 
+QFrame#lessonLocked {
+    background-color: #0C1727;
+
+    border-color: #1F3046;
+}
+
 QFrame#lessonAvailable {
-    background-color: #102343;
-    border: 1px solid #386FD8;
+    background-color: #102441;
+
+    border-color: #3974D9;
 }
 
 QFrame#lessonCompleted {
     background-color: #10251F;
-    border: 1px solid #27624D;
+
+    border-color: #2E7056;
 }
 
 QFrame#lessonMaster {
-    border: 1px solid #806A2E;
+    background-color: #211D11;
+
+    border-color: #7D662E;
 }
 
+QLabel#lessonTitle {
+    color: #E4EBF4;
 
-/* ==========================================================
-   EXAMS
-   ========================================================== */
-
-QFrame#examLocked,
-QFrame#examAvailable,
-QFrame#examCompleted,
-QFrame#examMaster {
-    background-color: #101C2F;
-    border: 1px solid #253A56;
-    border-radius: 13px;
-}
-
-QFrame#examAvailable {
-    border: 1px solid #9B762B;
-}
-
-QFrame#examCompleted {
-    border: 1px solid #27624D;
-}
-
-
-/* ==========================================================
-   BUTTONS
-   ========================================================== */
-
-QPushButton {
-    min-height: 36px;
-    border-radius: 9px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 650;
 }
+
+QLabel#meta {
+    color: #8193AA;
+
+    font-size: 12px;
+}
+
+
+/* ==========================================================
+   ACTION BUTTONS
+   ========================================================== */
 
 QPushButton#openLesson,
 QPushButton#reviewLesson,
@@ -241,9 +359,19 @@ QPushButton#primaryButton,
 QPushButton#quizButton,
 QPushButton#submitButton {
     background-color: #356FE0;
-    border: 1px solid #4F8CFF;
+
+    border: 1px solid #528DFA;
+    border-radius: 9px;
+
     color: #FFFFFF;
-    padding: 9px 18px;
+
+    min-height: 36px;
+
+    padding-left: 17px;
+    padding-right: 17px;
+
+    font-size: 13px;
+    font-weight: 750;
 }
 
 QPushButton#openLesson:hover,
@@ -252,31 +380,71 @@ QPushButton#examButton:hover,
 QPushButton#primaryButton:hover,
 QPushButton#quizButton:hover,
 QPushButton#submitButton:hover {
-    background-color: #467FE8;
-}
-
-QPushButton#backButton,
-QPushButton#embeddedBackButton {
-    background-color: #15243A;
-    border: 1px solid #2A3D59;
-    color: #DCE5F1;
-    padding: 8px 16px;
-}
-
-QPushButton#backButton:hover,
-QPushButton#embeddedBackButton:hover {
-    background-color: #1B2E49;
-    border-color: #3C5576;
+    background-color: #477FE5;
 }
 
 
 /* ==========================================================
-   SCROLL AREA — WHITE BACKGROUND FIX
+   SECONDARY BUTTON
+   ========================================================== */
+
+QPushButton#backButton,
+QPushButton#embeddedBackButton {
+    background-color: #15243A;
+
+    border: 1px solid #2C405D;
+    border-radius: 9px;
+
+    color: #D8E1EC;
+
+    min-height: 34px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-size: 13px;
+    font-weight: 650;
+}
+
+QPushButton#backButton:hover,
+QPushButton#embeddedBackButton:hover {
+    background-color: #1C304C;
+
+    border-color: #496786;
+}
+
+
+/* ==========================================================
+   PROGRESS
+   ========================================================== */
+
+QProgressBar {
+    background-color: #17263A;
+
+    border: none;
+    border-radius: 5px;
+
+    min-height: 9px;
+    max-height: 9px;
+
+    color: transparent;
+}
+
+QProgressBar::chunk {
+    background-color: #4F86EB;
+
+    border-radius: 5px;
+}
+
+
+/* ==========================================================
+   SCROLL AREAS
    ========================================================== */
 
 QScrollArea,
 QAbstractScrollArea {
     background-color: #08111F;
+
     border: none;
 }
 
@@ -284,34 +452,35 @@ QAbstractScrollArea::viewport {
     background-color: #08111F;
 }
 
-QScrollArea > QWidget {
-    background-color: #08111F;
-}
-
-QScrollArea > QWidget > QWidget {
+QWidget#overviewContent {
     background-color: #08111F;
 }
 
 
 /* ==========================================================
-   SCROLLBAR
+   SCROLL BAR
    ========================================================== */
 
 QScrollBar:vertical {
     background-color: #0B1627;
-    width: 12px;
+
+    width: 11px;
+
     margin: 3px;
+
     border: none;
 }
 
 QScrollBar::handle:vertical {
-    background-color: #314561;
+    background-color: #344B68;
+
     min-height: 45px;
+
     border-radius: 5px;
 }
 
 QScrollBar::handle:vertical:hover {
-    background-color: #465F82;
+    background-color: #486584;
 }
 
 QScrollBar::add-line:vertical,
@@ -326,16 +495,20 @@ QScrollBar::sub-page:vertical {
 
 
 /* ==========================================================
-   USER CARD
+   USER / DEVELOPER
    ========================================================== */
 
 QLabel#userInfo {
-    background-color: #101C2F;
-    border: 1px solid #223650;
+    background-color: #101C2E;
+
+    border: 1px solid #263A54;
     border-radius: 10px;
-    padding: 11px;
-    color: #C8D3E1;
-    font-size: 13px;
+
+    padding: 10px;
+
+    color: #C8D4E3;
+
+    font-size: 12px;
 }
 """
 
@@ -344,22 +517,16 @@ def fix_scroll_surfaces(
     root: QWidget,
 ):
     """
-    Qt ichidagi viewport/content widgetlar oq bo'lib
-    qolmasligi uchun majburiy dark surface.
+    Faqat sahifa yaratilganda chaqiriladi.
+    EventFilter yo'q.
     """
 
     if root is None:
         return
 
-    scroll_areas = root.findChildren(
+    for scroll in root.findChildren(
         QScrollArea
-    )
-
-    for scroll in scroll_areas:
-        scroll.setAutoFillBackground(
-            True
-        )
-
+    ):
         scroll.setStyleSheet(
             scroll.styleSheet()
             + """
@@ -371,14 +538,6 @@ def fix_scroll_surfaces(
             QAbstractScrollArea::viewport {
                 background-color: #08111F;
             }
-
-            QScrollArea > QWidget {
-                background-color: #08111F;
-            }
-
-            QScrollArea > QWidget > QWidget {
-                background-color: #08111F;
-            }
             """
         )
 
@@ -386,10 +545,7 @@ def fix_scroll_surfaces(
 
         if viewport is not None:
             viewport.setStyleSheet(
-                """
-                background-color: #08111F;
-                border: none;
-                """
+                "background-color: #08111F;"
             )
 
         content = scroll.widget()
@@ -402,87 +558,21 @@ def fix_scroll_surfaces(
                 """
             )
 
-    abstract_areas = root.findChildren(
-        QAbstractScrollArea
-    )
 
-    for area in abstract_areas:
-        viewport = area.viewport()
-
-        if viewport is not None:
-            viewport.setStyleSheet(
-                viewport.styleSheet()
-                + """
-                background-color: #08111F;
-                """
-            )
-
-
-def apply_premium_theme(
+def install_premium_theme(
     root: QWidget,
 ):
+    """
+    Theme faqat BIR MARTA shell'ga qo'llanadi.
+    """
+
     if root is None:
         return
 
     root.setStyleSheet(
-        root.styleSheet()
-        + PREMIUM_QSS
+        APP_QSS
     )
 
     fix_scroll_surfaces(
         root
     )
-
-
-class PremiumThemeEventFilter(
-    QObject
-):
-    def eventFilter(
-        self,
-        watched,
-        event,
-    ):
-        if event.type() in (
-            QEvent.Type.Show,
-            QEvent.Type.ShowToParent,
-        ):
-            if isinstance(
-                watched,
-                QWidget,
-            ):
-                QTimer.singleShot(
-                    0,
-                    lambda widget=watched:
-                    fix_scroll_surfaces(
-                        widget
-                    ),
-                )
-
-        return False
-
-
-_theme_filter = None
-
-
-def install_premium_theme(
-    root: QWidget,
-):
-    global _theme_filter
-
-    apply_premium_theme(
-        root
-    )
-
-    app = QApplication.instance()
-
-    if app is None:
-        return
-
-    if _theme_filter is None:
-        _theme_filter = (
-            PremiumThemeEventFilter()
-        )
-
-        app.installEventFilter(
-            _theme_filter
-        )
