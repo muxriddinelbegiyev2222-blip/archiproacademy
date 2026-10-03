@@ -1,4 +1,5 @@
 from PySide6.QtCore import Qt, QTimer
+
 from PySide6.QtWidgets import (
     QFrame,
     QHBoxLayout,
@@ -14,6 +15,7 @@ from PySide6.QtWidgets import (
 from ui.learning_window import LearningWindow
 from ui.menu_section_window import MenuSectionWindow
 from ui.license_window import LicenseWindow
+from ui.portfolio_page import PortfolioPage
 
 
 class AppShell(QMainWindow):
@@ -24,13 +26,13 @@ class AppShell(QMainWindow):
         super().__init__()
 
         self.user = user
+
         self.page_cache = {}
 
         self.setWindowTitle(
             "ARCHIPRO UZ"
         )
 
-        # Kichraytirilganda minimal o'lcham.
         self.setMinimumSize(
             1000,
             650,
@@ -39,10 +41,6 @@ class AppShell(QMainWindow):
         self.setup_styles()
         self.build_ui()
         self.open_home()
-
-        # ====================================================
-        # DASTUR HAR DOIM MAXIMIZED HOLATDA OCHILADI
-        # ====================================================
 
         QTimer.singleShot(
             0,
@@ -173,40 +171,14 @@ class AppShell(QMainWindow):
                 border: none;
             }
 
-            QScrollArea QWidget {
+            QAbstractScrollArea::viewport {
                 background-color: #0B1220;
-            }
-
-            QScrollBar:vertical {
-                background-color: #0F172A;
-                width: 11px;
-                margin: 0px;
-            }
-
-            QScrollBar::handle:vertical {
-                background-color: #334155;
-                min-height: 35px;
-                border-radius: 5px;
-            }
-
-            QScrollBar::handle:vertical:hover {
-                background-color: #475569;
-            }
-
-            QScrollBar::add-line:vertical,
-            QScrollBar::sub-line:vertical {
-                height: 0px;
-            }
-
-            QScrollBar::add-page:vertical,
-            QScrollBar::sub-page:vertical {
-                background: none;
             }
             """
         )
 
     # ========================================================
-    # BUILD UI
+    # UI
     # ========================================================
 
     def build_ui(self):
@@ -214,14 +186,6 @@ class AppShell(QMainWindow):
 
         central.setObjectName(
             "appRoot"
-        )
-
-        central.setStyleSheet(
-            """
-            QWidget#appRoot {
-                background-color: #0B1220;
-            }
-            """
         )
 
         self.setCentralWidget(
@@ -266,10 +230,6 @@ class AppShell(QMainWindow):
             24,
             16,
             16,
-        )
-
-        sidebar_layout.setSpacing(
-            8
         )
 
         logo = QLabel(
@@ -367,19 +327,10 @@ class AppShell(QMainWindow):
         )
 
         # ====================================================
-        # CONTENT STACK
+        # STACK
         # ====================================================
 
         self.stack = QStackedWidget()
-
-        self.stack.setStyleSheet(
-            """
-            QStackedWidget {
-                background-color: #0B1220;
-                border: none;
-            }
-            """
-        )
 
         root.addWidget(
             sidebar
@@ -406,6 +357,10 @@ class AppShell(QMainWindow):
 
         if menu_text == "Mening o'qishim":
             self.open_learning()
+            return
+
+        if menu_text == "Portfolio":
+            self.open_portfolio()
             return
 
         if menu_text == "Litsenziya":
@@ -435,48 +390,12 @@ class AppShell(QMainWindow):
             )
             return
 
-        # QMainWindow yoki oddiy QWidget bo'lishidan
-        # qat'i nazar asosiy STACK ichida ishlaydi.
         widget.setParent(
             self.stack
         )
 
         widget.setWindowFlags(
             Qt.WindowType.Widget
-        )
-
-        widget.setAutoFillBackground(
-            True
-        )
-
-        widget.setStyleSheet(
-            widget.styleSheet()
-            + """
-            QMainWindow {
-                background-color: #0B1220;
-            }
-
-            QWidget {
-                background-color: #0B1220;
-            }
-
-            QScrollArea {
-                background-color: #0B1220;
-                border: none;
-            }
-
-            QScrollArea > QWidget {
-                background-color: #0B1220;
-            }
-
-            QScrollArea > QWidget > QWidget {
-                background-color: #0B1220;
-            }
-
-            QAbstractScrollArea::viewport {
-                background-color: #0B1220;
-            }
-            """
         )
 
         self.stack.addWidget(
@@ -512,14 +431,6 @@ class AppShell(QMainWindow):
 
         page.setObjectName(
             "homePage"
-        )
-
-        page.setStyleSheet(
-            """
-            QWidget#homePage {
-                background-color: #0B1220;
-            }
-            """
         )
 
         layout = QVBoxLayout(
@@ -579,10 +490,6 @@ class AppShell(QMainWindow):
             22,
         )
 
-        card_layout.setSpacing(
-            10
-        )
-
         card_title = QLabel(
             "ARCHIPRO UZ"
         )
@@ -592,8 +499,8 @@ class AppShell(QMainWindow):
         )
 
         card_text = QLabel(
-            "Barcha bo'limlar bitta asosiy oynaning ichida ishlaydi. "
-            "Chap navigatsiya panelidan kerakli bo'limni tanlang."
+            "Barcha o'quv kontenti, testlar va imtihonlar "
+            "saqlangan holda yagona oynada ishlaydi."
         )
 
         card_text.setObjectName(
@@ -627,8 +534,21 @@ class AppShell(QMainWindow):
     # LEARNING
     # ========================================================
 
-    def open_learning(self):
-        key = "learning"
+    def open_learning(
+        self,
+        level_codes=None,
+        title=None,
+        subtitle=None,
+    ):
+        level_codes = level_codes or []
+
+        key = (
+            "learning_all"
+            if not level_codes
+            else
+            "learning_"
+            + "_".join(level_codes)
+        )
 
         if key in self.page_cache:
             page = self.page_cache[
@@ -654,7 +574,38 @@ class AppShell(QMainWindow):
             return
 
         page = LearningWindow(
+            user=self.user,
+            focus_level_codes=level_codes,
+            custom_title=title,
+            custom_subtitle=subtitle,
+        )
+
+        self.show_page(
+            key,
+            page,
+        )
+
+    # ========================================================
+    # PORTFOLIO
+    # ========================================================
+
+    def open_portfolio(self):
+        key = "portfolio"
+
+        if key in self.page_cache:
+            self.stack.setCurrentWidget(
+                self.page_cache[
+                    key
+                ]
+            )
+            return
+
+        page = PortfolioPage(
             self.user
+        )
+
+        page.open_levels_requested.connect(
+            self.open_learning
         )
 
         self.show_page(
