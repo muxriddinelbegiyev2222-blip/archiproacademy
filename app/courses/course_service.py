@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 from datetime import datetime
-from typing import Any
 
-from database.database import get_connection
+from database.database import (
+    get_connection,
+)
 
 
 # ============================================================
@@ -14,16 +15,17 @@ def _row_to_dict(row) -> dict:
     if row is None:
         return {}
 
-    try:
-        return dict(row)
-    except Exception:
-        return {}
+    return dict(row)
 
 
-def _table_exists(cursor, table_name: str) -> bool:
+def _table_exists(
+    cursor,
+    table_name: str,
+) -> bool:
+
     cursor.execute(
         """
-        SELECT name
+        SELECT 1
         FROM sqlite_master
         WHERE type = 'table'
           AND name = ?
@@ -32,109 +34,359 @@ def _table_exists(cursor, table_name: str) -> bool:
         (table_name,),
     )
 
-    return cursor.fetchone() is not None
-
-
-def _table_columns(cursor, table_name: str) -> set[str]:
-    cursor.execute(
-        f"PRAGMA table_info({table_name})"
+    return (
+        cursor.fetchone()
+        is not None
     )
 
-    rows = cursor.fetchall()
 
-    result = set()
-
-    for row in rows:
-        try:
-            name = row["name"]
-        except Exception:
-            name = row[1]
-
-        result.add(name)
-
-    return result
-
-
-def _find_lesson(
+def _ensure_progress_rows(
     cursor,
-    lesson_id: int | None = None,
-    lesson_code: str | None = None,
+    user_id: int,
 ):
-    if lesson_id is not None:
+    """
+    Foydalanuvchiga barcha Level va darslar
+    uchun progress yozuvlarini yaratadi.
+
+    Mavjud progress o'zgartirilmaydi.
+    """
+
+    if not _table_exists(
+        cursor,
+        "user_level_progress",
+    ):
+        return
+
+    if not _table_exists(
+        cursor,
+        "lesson_progress",
+    ):
+        return
+
+    # --------------------------------------------------------
+    # LEVEL PROGRESS
+    # --------------------------------------------------------
+
+    cursor.execute(
+        """
+        INSERT OR IGNORE INTO user_level_progress (
+            user_id,
+            level_id,
+            status,
+            best_exam_score,
+            exam_attempts
+        )
+        SELECT
+            ?,
+            id,
+            'locked',
+            0,
+            0
+        FROM course_levels
+        WHERE is_active = 1
+        """,
+        (user_id,),
+    )
+
+    # --------------------------------------------------------
+    # LESSON PROGRESS
+    # --------------------------------------------------------
+
+    cursor.execute(
+        """
+        INSERT OR IGNORE INTO lesson_progress (
+            user_id,
+            lesson_id,
+            status,
+            score,
+            best_score,
+            attempts
+        )
+        SELECT
+            ?,
+            id,
+            'locked',
+            0,
+            0,
+            0
+        FROM lessons
+        WHERE is_active = 1
+        """,
+        (user_id,),
+    )
+
+
+def _sync_user_access(
+    cursor,
+    user_id: int,
+):
+    """
+    Progress asosida Level va darslarning
+    locked / available / completed holatini
+    yangilaydi.
+    """
+
+    _ensure_progress_rows(
+        cursor,
+        user_id,
+    )
+
+    cursor.execute(
+        """
+        SELECT
+            l.id,
+            l.code,
+            l.sort_order,
+
+            COALESCE(
+                ulp.status,
+                'locked'
+            ) AS saved_status
+
+        FROM course_levels l
+
+        LEFT JOIN user_level_progress ulp
+            ON ulp.level_id = l.id
+           AND ulp.user_id = ?
+
+        WHERE l.is_active = 1
+
+        ORDER BY
+            l.sort_order,
+            l.id
+        """,
+        (user_id,),
+    )
+
+    levels = cursor.fetchall()
+
+    first_open_level_id = None
+
+    for level in levels:
+
+        level_id = level["id"]
+
+        # ----------------------------------------------------
+        # EXAM PASSED?
+        # ----------------------------------------------------
+
         cursor.execute(
             """
-            SELECT *
-            FROM lessons
-            WHERE id = ?
+            SELECT 1
+
+            FROM level_exam_attempts lea
+
+            JOIN level_exams le
+                ON le.id = lea.exam_id
+
+            WHERE lea.user_id = ?
+              AND le.level_id = ?
+              AND lea.passed = 1
+
             LIMIT 1
             """,
-            (lesson_id,),
+            (
+                user_id,
+                level_id,
+            ),
         )
 
-        return cursor.fetchone()
+        exam_passed = (
+            cursor.fetchone()
+            is not None
+        )
 
-    if lesson_code:
+        saved_status = (
+            level["saved_status"]
+        )
+
+        # ----------------------------------------------------
+        # LEVEL STATUS
+        # ----------------------------------------------------
+
+        if (
+            exam_passed
+            or saved_status == "completed"
+        ):
+            desired_status = (
+                "completed"
+            )
+
+        elif first_open_level_id is None:
+
+            desired_status = (
+                "available"
+            )
+
+            first_open_level_id = (
+                level_id
+            )
+
+        else:
+
+            desired_status = (
+                "locked"
+            )
+
         cursor.execute(
             """
-            SELECT *
-            FROM lessons
-            WHERE code = ?
-            LIMIT 1
+            UPDATE user_level_progress
+
+            SET status = ?
+
+            WHERE user_id = ?
+              AND level_id = ?
             """,
-            (lesson_code,),
+            (
+                desired_status,
+                user_id,
+                level_id,
+            ),
         )
 
-        return cursor.fetchone()
+        # ----------------------------------------------------
+        # LEVEL LESSONS
+        # ----------------------------------------------------
 
-    return None
+        cursor.execute(
+            """
+            SELECT
+                ls.id,
+
+                COALESCE(
+                    lp.status,
+                    'locked'
+                ) AS progress_status
+
+            FROM lessons ls
+
+            JOIN course_modules m
+                ON m.id = ls.module_id
+
+            LEFT JOIN lesson_progress lp
+                ON lp.lesson_id = ls.id
+               AND lp.user_id = ?
+
+            WHERE m.level_id = ?
+              AND ls.is_active = 1
+
+            ORDER BY
+                m.sort_order,
+                m.id,
+                ls.sort_order,
+                ls.id
+            """,
+            (
+                user_id,
+                level_id,
+            ),
+        )
+
+        lessons = cursor.fetchall()
+
+        # ----------------------------------------------------
+        # LOCKED LEVEL
+        # ----------------------------------------------------
+
+        if desired_status == "locked":
+
+            for lesson in lessons:
+
+                if (
+                    lesson["progress_status"]
+                    != "completed"
+                ):
+
+                    cursor.execute(
+                        """
+                        UPDATE lesson_progress
+
+                        SET status = 'locked'
+
+                        WHERE user_id = ?
+                          AND lesson_id = ?
+                        """,
+                        (
+                            user_id,
+                            lesson["id"],
+                        ),
+                    )
+
+            continue
+
+        # ----------------------------------------------------
+        # COMPLETED LEVEL
+        # ----------------------------------------------------
+
+        if desired_status == "completed":
+            continue
+
+        # ----------------------------------------------------
+        # AVAILABLE LEVEL
+        #
+        # Birinchi tugallanmagan dars ochiladi.
+        # ----------------------------------------------------
+
+        open_lesson_found = False
+
+        for lesson in lessons:
+
+            lesson_id = (
+                lesson["id"]
+            )
+
+            status = (
+                lesson[
+                    "progress_status"
+                ]
+            )
+
+            if status == "completed":
+                continue
+
+            if not open_lesson_found:
+
+                new_status = (
+                    "available"
+                )
+
+                open_lesson_found = True
+
+            else:
+
+                new_status = (
+                    "locked"
+                )
+
+            cursor.execute(
+                """
+                UPDATE lesson_progress
+
+                SET status = ?
+
+                WHERE user_id = ?
+                  AND lesson_id = ?
+                """,
+                (
+                    new_status,
+                    user_id,
+                    lesson_id,
+                ),
+            )
 
 
 # ============================================================
-# CONTENT REGISTRY COMPATIBILITY
-# ============================================================
-
-def get_all_lesson_content():
-    """
-    Eski kodlarda course_service orqali chaqirilgan bo'lsa,
-    yangi content_registry bilan moslikni saqlaydi.
-    """
-    from courses.content_registry import (
-        get_all_lesson_content as registry_get_all_lesson_content,
-    )
-
-    return registry_get_all_lesson_content()
-
-
-def get_lesson_content_by_code(lesson_code: str):
-    from courses.content_registry import (
-        get_lesson_content_by_code as registry_get_lesson_content_by_code,
-    )
-
-    return registry_get_lesson_content_by_code(
-        lesson_code
-    )
-
-
-def get_all_quiz_data():
-    from courses.content_registry import (
-        get_all_quiz_data as registry_get_all_quiz_data,
-    )
-
-    return registry_get_all_quiz_data()
-
-
-# ============================================================
-# USER PROGRESS INITIALIZATION
+# INITIALIZE USER PROGRESS
 # ============================================================
 
 def initialize_user_progress(
     user_id: int | None = None,
 ) -> dict:
     """
-    lesson_progress jadvalida foydalanuvchi uchun
-    kerakli boshlang'ich yozuvlarni yaratadi.
+    user_id berilsa bitta foydalanuvchi.
 
-    user_id berilmasa barcha foydalanuvchilar uchun ishlaydi.
+    user_id berilmasa barcha aktiv
+    foydalanuvchilar uchun progress yaratiladi.
     """
 
     connection = get_connection()
@@ -142,247 +394,79 @@ def initialize_user_progress(
     try:
         cursor = connection.cursor()
 
-        if not _table_exists(
-            cursor,
-            "users",
-        ):
-            return {
-                "success": False,
-                "message": "users jadvali mavjud emas.",
-                "created": 0,
-            }
-
-        if not _table_exists(
-            cursor,
-            "lessons",
-        ):
-            return {
-                "success": False,
-                "message": "lessons jadvali mavjud emas.",
-                "created": 0,
-            }
-
-        if not _table_exists(
-            cursor,
-            "lesson_progress",
-        ):
-            return {
-                "success": False,
-                "message": "lesson_progress jadvali mavjud emas.",
-                "created": 0,
-            }
-
-        progress_columns = _table_columns(
-            cursor,
-            "lesson_progress",
-        )
-
         if user_id is None:
+
             cursor.execute(
                 """
                 SELECT id
+
                 FROM users
-                WHERE COALESCE(is_active, 1) = 1
+
+                WHERE is_active = 1
+
                 ORDER BY id
                 """
             )
 
-            user_rows = cursor.fetchall()
-
-            user_ids = []
-
-            for row in user_rows:
-                try:
-                    user_ids.append(row["id"])
-                except Exception:
-                    user_ids.append(row[0])
+            user_ids = [
+                row["id"]
+                for row
+                in cursor.fetchall()
+            ]
 
         else:
+
             cursor.execute(
                 """
                 SELECT id
+
                 FROM users
+
                 WHERE id = ?
+
                 LIMIT 1
                 """,
                 (user_id,),
             )
 
-            row = cursor.fetchone()
+            user = cursor.fetchone()
 
-            if row is None:
+            if user is None:
+
                 return {
                     "success": False,
-                    "message": "Foydalanuvchi topilmadi.",
-                    "created": 0,
+                    "message": (
+                        "Foydalanuvchi topilmadi."
+                    ),
                 }
 
-            user_ids = [user_id]
-
-        cursor.execute(
-            """
-            SELECT id
-            FROM lessons
-            ORDER BY id
-            """
-        )
-
-        lesson_rows = cursor.fetchall()
-
-        lesson_ids = []
-
-        for row in lesson_rows:
-            try:
-                lesson_ids.append(row["id"])
-            except Exception:
-                lesson_ids.append(row[0])
-
-        created = 0
+            user_ids = [
+                user_id
+            ]
 
         for current_user_id in user_ids:
-            for lesson_id in lesson_ids:
 
-                cursor.execute(
-                    """
-                    SELECT id
-                    FROM lesson_progress
-                    WHERE user_id = ?
-                      AND lesson_id = ?
-                    LIMIT 1
-                    """,
-                    (
-                        current_user_id,
-                        lesson_id,
-                    ),
-                )
-
-                if cursor.fetchone() is not None:
-                    continue
-
-                insert_columns = [
-                    "user_id",
-                    "lesson_id",
-                ]
-
-                values: list[Any] = [
-                    current_user_id,
-                    lesson_id,
-                ]
-
-                defaults = {
-                    "status": "locked",
-                    "is_completed": 0,
-                    "completed": 0,
-                    "score": 0,
-                    "best_score": 0,
-                    "progress_percent": 0,
-                    "attempts": 0,
-                    "xp_earned": 0,
-                    "is_unlocked": 0,
-                    "unlocked": 0,
-                }
-
-                for column, value in defaults.items():
-                    if column in progress_columns:
-                        insert_columns.append(
-                            column
-                        )
-                        values.append(
-                            value
-                        )
-
-                placeholders = ", ".join(
-                    "?"
-                    for _ in insert_columns
-                )
-
-                columns_sql = ", ".join(
-                    insert_columns
-                )
-
-                cursor.execute(
-                    f"""
-                    INSERT INTO lesson_progress (
-                        {columns_sql}
-                    )
-                    VALUES (
-                        {placeholders}
-                    )
-                    """,
-                    values,
-                )
-
-                created += 1
-
-        # Birinchi lesson foydalanuvchi uchun ochiq bo'lishi kerak.
-        if lesson_ids:
-
-            first_lesson_id = lesson_ids[0]
-
-            for current_user_id in user_ids:
-
-                updates = []
-                values = []
-
-                if "status" in progress_columns:
-                    updates.append(
-                        "status = ?"
-                    )
-                    values.append(
-                        "available"
-                    )
-
-                if "is_unlocked" in progress_columns:
-                    updates.append(
-                        "is_unlocked = ?"
-                    )
-                    values.append(
-                        1
-                    )
-
-                if "unlocked" in progress_columns:
-                    updates.append(
-                        "unlocked = ?"
-                    )
-                    values.append(
-                        1
-                    )
-
-                if updates:
-                    values.extend(
-                        [
-                            current_user_id,
-                            first_lesson_id,
-                        ]
-                    )
-
-                    cursor.execute(
-                        f"""
-                        UPDATE lesson_progress
-                        SET {", ".join(updates)}
-                        WHERE user_id = ?
-                          AND lesson_id = ?
-                        """,
-                        values,
-                    )
+            _sync_user_access(
+                cursor,
+                current_user_id,
+            )
 
         connection.commit()
 
         return {
             "success": True,
-            "message": "User progress initialize qilindi.",
-            "created": created,
-            "users": len(user_ids),
-            "lessons": len(lesson_ids),
+            "users_processed": (
+                len(user_ids)
+            ),
         }
 
     except Exception as exc:
+
         connection.rollback()
 
         return {
             "success": False,
             "message": str(exc),
-            "created": 0,
         }
 
     finally:
@@ -395,16 +479,14 @@ def initialize_user_progress(
 
 def complete_lesson(
     user_id: int,
-    lesson_id: int | None = None,
+    lesson_id: int,
     score: int = 100,
-    lesson_code: str | None = None,
-    **kwargs,
 ) -> dict:
     """
-    Lessonni tugallangan deb belgilaydi.
+    Darsni tugallangan deb belgilaydi.
 
-    lesson_id yoki lesson_code bilan ishlaydi.
-    Qo'shimcha keyword argumentlar UI compatibility uchun qabul qilinadi.
+    DashboardWindow va LearningWindow
+    shu funksiyani ishlatadi.
     """
 
     connection = get_connection()
@@ -412,48 +494,47 @@ def complete_lesson(
     try:
         cursor = connection.cursor()
 
-        if not _table_exists(
+        _ensure_progress_rows(
             cursor,
-            "lesson_progress",
-        ):
-            return {
-                "success": False,
-                "message": "lesson_progress jadvali mavjud emas.",
-            }
-
-        lesson = _find_lesson(
-            cursor,
-            lesson_id=lesson_id,
-            lesson_code=lesson_code,
+            user_id,
         )
+
+        cursor.execute(
+            """
+            SELECT
+                id,
+                xp_reward,
+                passing_score
+
+            FROM lessons
+
+            WHERE id = ?
+              AND is_active = 1
+
+            LIMIT 1
+            """,
+            (lesson_id,),
+        )
+
+        lesson = cursor.fetchone()
 
         if lesson is None:
+
             return {
                 "success": False,
-                "message": "Lesson topilmadi.",
+                "message": (
+                    "Dars topilmadi."
+                ),
             }
-
-        try:
-            real_lesson_id = lesson["id"]
-        except Exception:
-            real_lesson_id = lesson[0]
-
-        lesson_data = _row_to_dict(
-            lesson
-        )
-
-        passing_score = lesson_data.get(
-            "passing_score",
-            80,
-        )
 
         try:
             score = int(score)
+
         except (
             TypeError,
             ValueError,
         ):
-            score = 0
+            score = 100
 
         score = max(
             0,
@@ -463,237 +544,130 @@ def complete_lesson(
             ),
         )
 
-        passed = (
-            score
-            >= passing_score
-        )
-
-        progress_columns = _table_columns(
-            cursor,
-            "lesson_progress",
+        now = (
+            datetime.now().isoformat(
+                timespec="seconds"
+            )
         )
 
         cursor.execute(
             """
-            SELECT *
+            SELECT
+                best_score,
+                attempts,
+                started_at
+
             FROM lesson_progress
+
             WHERE user_id = ?
               AND lesson_id = ?
+
             LIMIT 1
             """,
             (
                 user_id,
-                real_lesson_id,
+                lesson_id,
             ),
         )
 
-        existing = cursor.fetchone()
+        progress = cursor.fetchone()
 
-        now = datetime.now().isoformat(
-            timespec="seconds"
-        )
-
-        values_by_column: dict[str, Any] = {}
-
-        if "status" in progress_columns:
-            values_by_column["status"] = (
-                "completed"
-                if passed
-                else "available"
-            )
-
-        if "is_completed" in progress_columns:
-            values_by_column["is_completed"] = (
-                1
-                if passed
-                else 0
-            )
-
-        if "completed" in progress_columns:
-            values_by_column["completed"] = (
-                1
-                if passed
-                else 0
-            )
-
-        if "score" in progress_columns:
-            values_by_column["score"] = score
-
-        if "best_score" in progress_columns:
-            previous_best = 0
-
-            if existing is not None:
-                try:
-                    previous_best = (
-                        existing["best_score"]
-                        or 0
-                    )
-                except Exception:
-                    previous_best = 0
-
-            values_by_column["best_score"] = max(
-                previous_best,
-                score,
-            )
-
-        if "progress_percent" in progress_columns:
-            values_by_column["progress_percent"] = (
-                100
-                if passed
-                else score
-            )
-
-        if "completed_at" in progress_columns:
-            values_by_column["completed_at"] = (
-                now
-                if passed
-                else None
-            )
-
-        if "updated_at" in progress_columns:
-            values_by_column["updated_at"] = now
-
-        if "last_attempt_at" in progress_columns:
-            values_by_column["last_attempt_at"] = now
-
-        if "attempts" in progress_columns:
-            previous_attempts = 0
-
-            if existing is not None:
-                try:
-                    previous_attempts = (
-                        existing["attempts"]
-                        or 0
-                    )
-                except Exception:
-                    previous_attempts = 0
-
-            values_by_column["attempts"] = (
-                previous_attempts + 1
-            )
-
-        xp_reward = lesson_data.get(
-            "xp_reward",
-            0,
+        previous_best = (
+            progress["best_score"]
+            if progress
+            else 0
         ) or 0
 
-        if "xp_earned" in progress_columns:
-            current_xp = 0
+        previous_attempts = (
+            progress["attempts"]
+            if progress
+            else 0
+        ) or 0
 
-            if existing is not None:
-                try:
-                    current_xp = (
-                        existing["xp_earned"]
-                        or 0
-                    )
-                except Exception:
-                    current_xp = 0
+        started_at = (
+            progress["started_at"]
+            if progress
+            else None
+        )
 
-            if passed:
-                values_by_column["xp_earned"] = max(
-                    current_xp,
-                    xp_reward,
-                )
-            else:
-                values_by_column["xp_earned"] = (
-                    current_xp
-                )
-
-        if existing is None:
-
-            insert_columns = [
-                "user_id",
-                "lesson_id",
-            ]
-
-            insert_values: list[Any] = [
+        cursor.execute(
+            """
+            INSERT INTO lesson_progress (
                 user_id,
-                real_lesson_id,
-            ]
+                lesson_id,
+                status,
+                score,
+                best_score,
+                attempts,
+                started_at,
+                completed_at,
+                last_opened_at
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
 
-            for (
-                column,
-                value,
-            ) in values_by_column.items():
-                insert_columns.append(
-                    column
-                )
-                insert_values.append(
-                    value
-                )
-
-            placeholders = ", ".join(
-                "?"
-                for _ in insert_columns
+            ON CONFLICT(
+                user_id,
+                lesson_id
             )
 
-            columns_sql = ", ".join(
-                insert_columns
-            )
+            DO UPDATE SET
+                status = excluded.status,
 
-            cursor.execute(
-                f"""
-                INSERT INTO lesson_progress (
-                    {columns_sql}
-                )
-                VALUES (
-                    {placeholders}
-                )
-                """,
-                insert_values,
-            )
+                score = excluded.score,
 
-        else:
+                best_score = excluded.best_score,
 
-            if values_by_column:
+                attempts = excluded.attempts,
 
-                updates = [
-                    f"{column} = ?"
-                    for column
-                    in values_by_column
-                ]
+                started_at = COALESCE(
+                    lesson_progress.started_at,
+                    excluded.started_at
+                ),
 
-                values = list(
-                    values_by_column.values()
-                )
+                completed_at =
+                    excluded.completed_at,
 
-                values.extend(
-                    [
-                        user_id,
-                        real_lesson_id,
-                    ]
-                )
+                last_opened_at =
+                    excluded.last_opened_at
+            """,
+            (
+                user_id,
+                lesson_id,
+                "completed",
+                score,
+                max(
+                    previous_best,
+                    score,
+                ),
+                previous_attempts + 1,
+                started_at or now,
+                now,
+                now,
+            ),
+        )
 
-                cursor.execute(
-                    f"""
-                    UPDATE lesson_progress
-                    SET {", ".join(updates)}
-                    WHERE user_id = ?
-                      AND lesson_id = ?
-                    """,
-                    values,
-                )
+        _sync_user_access(
+            cursor,
+            user_id,
+        )
 
         connection.commit()
 
         return {
             "success": True,
-            "passed": passed,
-            "lesson_id": real_lesson_id,
-            "lesson_code": lesson_data.get(
-                "code",
-                lesson_code,
-            ),
+            "lesson_id": lesson_id,
             "score": score,
-            "passing_score": passing_score,
+            "best_score": max(
+                previous_best,
+                score,
+            ),
             "xp_reward": (
-                xp_reward
-                if passed
-                else 0
+                lesson["xp_reward"]
             ),
         }
 
     except Exception as exc:
+
         connection.rollback()
 
         return {
@@ -706,13 +680,11 @@ def complete_lesson(
 
 
 # ============================================================
-# LESSON PROGRESS READ
+# CURRENT LEVEL
 # ============================================================
 
-def get_lesson_progress(
+def get_current_level(
     user_id: int,
-    lesson_id: int | None = None,
-    lesson_code: str | None = None,
 ) -> dict | None:
 
     connection = get_connection()
@@ -720,32 +692,86 @@ def get_lesson_progress(
     try:
         cursor = connection.cursor()
 
-        lesson = _find_lesson(
+        _sync_user_access(
             cursor,
-            lesson_id=lesson_id,
-            lesson_code=lesson_code,
+            user_id,
         )
 
-        if lesson is None:
-            return None
+        connection.commit()
 
-        try:
-            real_lesson_id = lesson["id"]
-        except Exception:
-            real_lesson_id = lesson[0]
+        # ----------------------------------------------------
+        # AVAILABLE LEVEL
+        # ----------------------------------------------------
 
         cursor.execute(
             """
-            SELECT *
-            FROM lesson_progress
-            WHERE user_id = ?
-              AND lesson_id = ?
+            SELECT
+                l.*,
+
+                ulp.status
+                    AS level_status,
+
+                ulp.best_exam_score,
+
+                ulp.exam_attempts
+
+            FROM course_levels l
+
+            JOIN user_level_progress ulp
+                ON ulp.level_id = l.id
+
+            WHERE ulp.user_id = ?
+              AND ulp.status = 'available'
+              AND l.is_active = 1
+
+            ORDER BY
+                l.sort_order,
+                l.id
+
             LIMIT 1
             """,
-            (
-                user_id,
-                real_lesson_id,
-            ),
+            (user_id,),
+        )
+
+        row = cursor.fetchone()
+
+        if row is not None:
+
+            return _row_to_dict(
+                row
+            )
+
+        # ----------------------------------------------------
+        # ALL COMPLETED BO'LSA OXIRGI LEVEL
+        # ----------------------------------------------------
+
+        cursor.execute(
+            """
+            SELECT
+                l.*,
+
+                ulp.status
+                    AS level_status,
+
+                ulp.best_exam_score,
+
+                ulp.exam_attempts
+
+            FROM course_levels l
+
+            JOIN user_level_progress ulp
+                ON ulp.level_id = l.id
+
+            WHERE ulp.user_id = ?
+              AND l.is_active = 1
+
+            ORDER BY
+                l.sort_order DESC,
+                l.id DESC
+
+            LIMIT 1
+            """,
+            (user_id,),
         )
 
         row = cursor.fetchone()
@@ -762,10 +788,98 @@ def get_lesson_progress(
 
 
 # ============================================================
-# USER COURSE PROGRESS
+# NEXT AVAILABLE LESSON
 # ============================================================
 
-def get_user_progress_summary(
+def get_next_available_lesson(
+    user_id: int,
+) -> dict | None:
+
+    connection = get_connection()
+
+    try:
+        cursor = connection.cursor()
+
+        _sync_user_access(
+            cursor,
+            user_id,
+        )
+
+        connection.commit()
+
+        cursor.execute(
+            """
+            SELECT
+                ls.*,
+
+                lp.status,
+                lp.score,
+                lp.best_score,
+                lp.attempts,
+
+                m.title
+                    AS module_title,
+
+                m.code
+                    AS module_code,
+
+                l.title
+                    AS level_title,
+
+                l.code
+                    AS level_code
+
+            FROM lesson_progress lp
+
+            JOIN lessons ls
+                ON ls.id = lp.lesson_id
+
+            JOIN course_modules m
+                ON m.id = ls.module_id
+
+            JOIN course_levels l
+                ON l.id = m.level_id
+
+            JOIN user_level_progress ulp
+                ON ulp.level_id = l.id
+               AND ulp.user_id = lp.user_id
+
+            WHERE lp.user_id = ?
+              AND lp.status = 'available'
+              AND ulp.status = 'available'
+              AND ls.is_active = 1
+              AND m.is_active = 1
+              AND l.is_active = 1
+
+            ORDER BY
+                l.sort_order,
+                m.sort_order,
+                ls.sort_order,
+                ls.id
+
+            LIMIT 1
+            """,
+            (user_id,),
+        )
+
+        row = cursor.fetchone()
+
+        if row is None:
+            return None
+
+        return _row_to_dict(
+            row
+        )
+
+    finally:
+        connection.close()
+
+
+# ============================================================
+# USER COURSE STATS
+# ============================================================
+
+def get_user_course_stats(
     user_id: int,
 ) -> dict:
 
@@ -774,101 +888,481 @@ def get_user_progress_summary(
     try:
         cursor = connection.cursor()
 
+        _sync_user_access(
+            cursor,
+            user_id,
+        )
+
+        connection.commit()
+
+        # ----------------------------------------------------
+        # TOTAL LESSONS
+        # ----------------------------------------------------
+
         cursor.execute(
             """
             SELECT COUNT(*) AS total
+
             FROM lessons
+
+            WHERE is_active = 1
             """
         )
 
-        total_lessons = cursor.fetchone()
-
-        try:
-            total = total_lessons["total"]
-        except Exception:
-            total = total_lessons[0]
-
-        progress_columns = _table_columns(
-            cursor,
-            "lesson_progress",
+        total_lessons = (
+            cursor.fetchone()[
+                "total"
+            ]
         )
 
-        completed = 0
+        # ----------------------------------------------------
+        # COMPLETED LESSONS
+        # ----------------------------------------------------
 
-        if "is_completed" in progress_columns:
+        cursor.execute(
+            """
+            SELECT COUNT(*) AS completed
 
-            cursor.execute(
-                """
-                SELECT COUNT(*) AS total
-                FROM lesson_progress
-                WHERE user_id = ?
-                  AND is_completed = 1
-                """,
-                (user_id,),
+            FROM lesson_progress lp
+
+            JOIN lessons ls
+                ON ls.id = lp.lesson_id
+
+            WHERE lp.user_id = ?
+              AND lp.status = 'completed'
+              AND ls.is_active = 1
+            """,
+            (user_id,),
+        )
+
+        completed_lessons = (
+            cursor.fetchone()[
+                "completed"
+            ]
+        )
+
+        # ----------------------------------------------------
+        # LESSON XP
+        # ----------------------------------------------------
+
+        cursor.execute(
+            """
+            SELECT
+                COALESCE(
+                    SUM(ls.xp_reward),
+                    0
+                ) AS lesson_xp
+
+            FROM lesson_progress lp
+
+            JOIN lessons ls
+                ON ls.id = lp.lesson_id
+
+            WHERE lp.user_id = ?
+              AND lp.status = 'completed'
+              AND ls.is_active = 1
+            """,
+            (user_id,),
+        )
+
+        lesson_xp = (
+            cursor.fetchone()[
+                "lesson_xp"
+            ]
+        )
+
+        # ----------------------------------------------------
+        # EXAM XP
+        #
+        # Bir exam bir necha marta topshirilsa ham
+        # XP bir marta hisoblanadi.
+        # ----------------------------------------------------
+
+        cursor.execute(
+            """
+            SELECT
+                COALESCE(
+                    SUM(le.xp_reward),
+                    0
+                ) AS exam_xp
+
+            FROM level_exams le
+
+            WHERE EXISTS (
+                SELECT 1
+
+                FROM level_exam_attempts lea
+
+                WHERE lea.exam_id = le.id
+                  AND lea.user_id = ?
+                  AND lea.passed = 1
             )
+            """,
+            (user_id,),
+        )
 
-            row = cursor.fetchone()
+        exam_xp = (
+            cursor.fetchone()[
+                "exam_xp"
+            ]
+        )
 
-            try:
-                completed = row["total"]
-            except Exception:
-                completed = row[0]
+        # ----------------------------------------------------
+        # PROGRESS
+        # ----------------------------------------------------
 
-        elif "completed" in progress_columns:
+        if total_lessons:
 
-            cursor.execute(
-                """
-                SELECT COUNT(*) AS total
-                FROM lesson_progress
-                WHERE user_id = ?
-                  AND completed = 1
-                """,
-                (user_id,),
-            )
-
-            row = cursor.fetchone()
-
-            try:
-                completed = row["total"]
-            except Exception:
-                completed = row[0]
-
-        elif "status" in progress_columns:
-
-            cursor.execute(
-                """
-                SELECT COUNT(*) AS total
-                FROM lesson_progress
-                WHERE user_id = ?
-                  AND status = 'completed'
-                """,
-                (user_id,),
-            )
-
-            row = cursor.fetchone()
-
-            try:
-                completed = row["total"]
-            except Exception:
-                completed = row[0]
-
-        percent = 0
-
-        if total:
-            percent = round(
+            progress_percent = round(
                 (
-                    completed
-                    / total
+                    completed_lessons
+                    / total_lessons
                 )
                 * 100
             )
 
+        else:
+
+            progress_percent = 0
+
         return {
-            "success": True,
-            "total_lessons": total,
-            "completed_lessons": completed,
-            "progress_percent": percent,
+            "total_lessons": (
+                total_lessons
+            ),
+            "completed_lessons": (
+                completed_lessons
+            ),
+            "progress_percent": (
+                progress_percent
+            ),
+            "lesson_xp": int(
+                lesson_xp or 0
+            ),
+            "exam_xp": int(
+                exam_xp or 0
+            ),
+            "xp": int(
+                (lesson_xp or 0)
+                + (exam_xp or 0)
+            ),
         }
+
+    finally:
+        connection.close()
+
+
+# ============================================================
+# LEARNING OVERVIEW
+# ============================================================
+
+def get_learning_overview(
+    user_id: int,
+) -> list[dict]:
+    """
+    LearningWindow kutayotgan strukturani qaytaradi:
+
+    LEVEL
+      -> modules
+          -> lessons
+    """
+
+    connection = get_connection()
+
+    try:
+        cursor = connection.cursor()
+
+        _sync_user_access(
+            cursor,
+            user_id,
+        )
+
+        connection.commit()
+
+        cursor.execute(
+            """
+            SELECT
+                l.*,
+
+                COALESCE(
+                    ulp.status,
+                    'locked'
+                ) AS level_status,
+
+                COALESCE(
+                    ulp.best_exam_score,
+                    0
+                ) AS best_exam_score,
+
+                COALESCE(
+                    ulp.exam_attempts,
+                    0
+                ) AS exam_attempts
+
+            FROM course_levels l
+
+            LEFT JOIN user_level_progress ulp
+                ON ulp.level_id = l.id
+               AND ulp.user_id = ?
+
+            WHERE l.is_active = 1
+
+            ORDER BY
+                l.sort_order,
+                l.id
+            """,
+            (user_id,),
+        )
+
+        level_rows = (
+            cursor.fetchall()
+        )
+
+        levels = []
+
+        for level_row in level_rows:
+
+            level = _row_to_dict(
+                level_row
+            )
+
+            # ------------------------------------------------
+            # MODULES
+            # ------------------------------------------------
+
+            cursor.execute(
+                """
+                SELECT *
+
+                FROM course_modules
+
+                WHERE level_id = ?
+                  AND is_active = 1
+
+                ORDER BY
+                    sort_order,
+                    id
+                """,
+                (
+                    level["id"],
+                ),
+            )
+
+            module_rows = (
+                cursor.fetchall()
+            )
+
+            modules = []
+
+            level_total_lessons = 0
+
+            level_completed_lessons = 0
+
+            for module_row in module_rows:
+
+                module = _row_to_dict(
+                    module_row
+                )
+
+                # --------------------------------------------
+                # LESSONS
+                # --------------------------------------------
+
+                cursor.execute(
+                    """
+                    SELECT
+                        ls.*,
+
+                        COALESCE(
+                            lp.status,
+                            'locked'
+                        ) AS status,
+
+                        COALESCE(
+                            lp.score,
+                            0
+                        ) AS score,
+
+                        COALESCE(
+                            lp.best_score,
+                            0
+                        ) AS best_score,
+
+                        COALESCE(
+                            lp.attempts,
+                            0
+                        ) AS attempts,
+
+                        lp.started_at,
+
+                        lp.completed_at,
+
+                        lp.last_opened_at
+
+                    FROM lessons ls
+
+                    LEFT JOIN lesson_progress lp
+                        ON lp.lesson_id = ls.id
+                       AND lp.user_id = ?
+
+                    WHERE ls.module_id = ?
+                      AND ls.is_active = 1
+
+                    ORDER BY
+                        ls.sort_order,
+                        ls.id
+                    """,
+                    (
+                        user_id,
+                        module["id"],
+                    ),
+                )
+
+                lessons = [
+                    _row_to_dict(
+                        row
+                    )
+                    for row
+                    in cursor.fetchall()
+                ]
+
+                total_lessons = (
+                    len(lessons)
+                )
+
+                completed_lessons = sum(
+                    1
+                    for lesson in lessons
+                    if (
+                        lesson["status"]
+                        == "completed"
+                    )
+                )
+
+                module[
+                    "total_lessons"
+                ] = total_lessons
+
+                module[
+                    "completed_lessons"
+                ] = completed_lessons
+
+                if total_lessons:
+
+                    module[
+                        "progress_percent"
+                    ] = round(
+                        (
+                            completed_lessons
+                            / total_lessons
+                        )
+                        * 100
+                    )
+
+                else:
+
+                    module[
+                        "progress_percent"
+                    ] = 0
+
+                module[
+                    "lessons"
+                ] = lessons
+
+                modules.append(
+                    module
+                )
+
+                level_total_lessons += (
+                    total_lessons
+                )
+
+                level_completed_lessons += (
+                    completed_lessons
+                )
+
+            # ------------------------------------------------
+            # LEVEL TOTALS
+            # ------------------------------------------------
+
+            level[
+                "total_lessons"
+            ] = level_total_lessons
+
+            level[
+                "completed_lessons"
+            ] = level_completed_lessons
+
+            if level_total_lessons:
+
+                level[
+                    "progress_percent"
+                ] = round(
+                    (
+                        level_completed_lessons
+                        / level_total_lessons
+                    )
+                    * 100
+                )
+
+            else:
+
+                level[
+                    "progress_percent"
+                ] = 0
+
+            level[
+                "modules"
+            ] = modules
+
+            levels.append(
+                level
+            )
+
+        return levels
+
+    finally:
+        connection.close()
+
+
+# ============================================================
+# LESSON PROGRESS READ
+# ============================================================
+
+def get_lesson_progress(
+    user_id: int,
+    lesson_id: int,
+) -> dict | None:
+
+    connection = get_connection()
+
+    try:
+        cursor = connection.cursor()
+
+        cursor.execute(
+            """
+            SELECT *
+
+            FROM lesson_progress
+
+            WHERE user_id = ?
+              AND lesson_id = ?
+
+            LIMIT 1
+            """,
+            (
+                user_id,
+                lesson_id,
+            ),
+        )
+
+        row = cursor.fetchone()
+
+        if row is None:
+            return None
+
+        return _row_to_dict(
+            row
+        )
 
     finally:
         connection.close()
@@ -888,14 +1382,23 @@ def get_course_levels() -> list[dict]:
         cursor.execute(
             """
             SELECT *
+
             FROM course_levels
-            ORDER BY sort_order, id
+
+            WHERE is_active = 1
+
+            ORDER BY
+                sort_order,
+                id
             """
         )
 
         return [
-            _row_to_dict(row)
-            for row in cursor.fetchall()
+            _row_to_dict(
+                row
+            )
+            for row
+            in cursor.fetchall()
         ]
 
     finally:
@@ -903,8 +1406,7 @@ def get_course_levels() -> list[dict]:
 
 
 def get_level_modules(
-    level_id: int | None = None,
-    level_code: str | None = None,
+    level_id: int,
 ) -> list[dict]:
 
     connection = get_connection()
@@ -912,44 +1414,28 @@ def get_level_modules(
     try:
         cursor = connection.cursor()
 
-        if level_id is None and level_code:
-
-            cursor.execute(
-                """
-                SELECT id
-                FROM course_levels
-                WHERE code = ?
-                LIMIT 1
-                """,
-                (level_code,),
-            )
-
-            row = cursor.fetchone()
-
-            if row is None:
-                return []
-
-            try:
-                level_id = row["id"]
-            except Exception:
-                level_id = row[0]
-
-        if level_id is None:
-            return []
-
         cursor.execute(
             """
             SELECT *
+
             FROM course_modules
+
             WHERE level_id = ?
-            ORDER BY sort_order, id
+              AND is_active = 1
+
+            ORDER BY
+                sort_order,
+                id
             """,
             (level_id,),
         )
 
         return [
-            _row_to_dict(row)
-            for row in cursor.fetchall()
+            _row_to_dict(
+                row
+            )
+            for row
+            in cursor.fetchall()
         ]
 
     finally:
@@ -957,8 +1443,7 @@ def get_level_modules(
 
 
 def get_module_lessons(
-    module_id: int | None = None,
-    module_code: str | None = None,
+    module_id: int,
 ) -> list[dict]:
 
     connection = get_connection()
@@ -966,45 +1451,73 @@ def get_module_lessons(
     try:
         cursor = connection.cursor()
 
-        if module_id is None and module_code:
-
-            cursor.execute(
-                """
-                SELECT id
-                FROM course_modules
-                WHERE code = ?
-                LIMIT 1
-                """,
-                (module_code,),
-            )
-
-            row = cursor.fetchone()
-
-            if row is None:
-                return []
-
-            try:
-                module_id = row["id"]
-            except Exception:
-                module_id = row[0]
-
-        if module_id is None:
-            return []
-
         cursor.execute(
             """
             SELECT *
+
             FROM lessons
+
             WHERE module_id = ?
-            ORDER BY sort_order, id
+              AND is_active = 1
+
+            ORDER BY
+                sort_order,
+                id
             """,
             (module_id,),
         )
 
         return [
-            _row_to_dict(row)
-            for row in cursor.fetchall()
+            _row_to_dict(
+                row
+            )
+            for row
+            in cursor.fetchall()
         ]
 
     finally:
         connection.close()
+
+
+# ============================================================
+# CONTENT REGISTRY COMPATIBILITY
+# ============================================================
+
+def get_all_lesson_content():
+
+    from courses.content_registry import (
+        get_all_lesson_content
+        as registry_get_all_lesson_content,
+    )
+
+    return (
+        registry_get_all_lesson_content()
+    )
+
+
+def get_lesson_content_by_code(
+    lesson_code: str,
+):
+
+    from courses.content_registry import (
+        get_lesson_content_by_code
+        as registry_get_lesson_content_by_code,
+    )
+
+    return (
+        registry_get_lesson_content_by_code(
+            lesson_code
+        )
+    )
+
+
+def get_all_quiz_data():
+
+    from courses.content_registry import (
+        get_all_quiz_data
+        as registry_get_all_quiz_data,
+    )
+
+    return (
+        registry_get_all_quiz_data()
+    )
