@@ -1,482 +1,738 @@
-from courses.lesson_content import LESSON_CONTENT
-from courses.quiz_data import QUIZ_DATA
-
-from courses.level00_extra import LEVEL00_EXTRA_CONTENT, LEVEL00_EXTRA_QUIZ
-
-from courses.level01_content import LEVEL01_CONTENT, LEVEL01_QUIZ
-from courses.level01_module02 import LEVEL01_MODULE02_CONTENT, LEVEL01_MODULE02_QUIZ
-from courses.level01_module03 import LEVEL01_MODULE03_CONTENT, LEVEL01_MODULE03_QUIZ
-from courses.level01_module04 import LEVEL01_MODULE04_CONTENT, LEVEL01_MODULE04_QUIZ
-from courses.level01_module05 import LEVEL01_MODULE05_CONTENT, LEVEL01_MODULE05_QUIZ
-from courses.level01_module06 import LEVEL01_MODULE06_CONTENT, LEVEL01_MODULE06_QUIZ
-
-from courses.level02_module01 import LEVEL02_MODULE01_CONTENT, LEVEL02_MODULE01_QUIZ
-from courses.level02_module02 import LEVEL02_MODULE02_CONTENT, LEVEL02_MODULE02_QUIZ
-from courses.level02_module03 import LEVEL02_MODULE03_CONTENT, LEVEL02_MODULE03_QUIZ
-from courses.level02_module04 import LEVEL02_MODULE04_CONTENT, LEVEL02_MODULE04_QUIZ
-from courses.level02_module05 import LEVEL02_MODULE05_CONTENT, LEVEL02_MODULE05_QUIZ
-from courses.level02_module06 import LEVEL02_MODULE06_CONTENT, LEVEL02_MODULE06_QUIZ
-from courses.level02_module07 import LEVEL02_MODULE07_CONTENT, LEVEL02_MODULE07_QUIZ
-from courses.level02_module08 import LEVEL02_MODULE08_CONTENT, LEVEL02_MODULE08_QUIZ
-from courses.level02_module09 import LEVEL02_MODULE09_CONTENT, LEVEL02_MODULE09_QUIZ
-from courses.level02_module10 import LEVEL02_MODULE10_CONTENT, LEVEL02_MODULE10_QUIZ
-
-from courses.level03_module01 import LEVEL03_MODULE01_CONTENT, LEVEL03_MODULE01_QUIZ
-from courses.level03_module02 import LEVEL03_MODULE02_CONTENT, LEVEL03_MODULE02_QUIZ
-from courses.level03_module03 import LEVEL03_MODULE03_CONTENT, LEVEL03_MODULE03_QUIZ
-from courses.level03_module04 import LEVEL03_MODULE04_CONTENT, LEVEL03_MODULE04_QUIZ
-from courses.level03_module05 import LEVEL03_MODULE05_CONTENT, LEVEL03_MODULE05_QUIZ
-from courses.level03_module06 import LEVEL03_MODULE06_CONTENT, LEVEL03_MODULE06_QUIZ
-from courses.level03_module07 import LEVEL03_MODULE07_CONTENT, LEVEL03_MODULE07_QUIZ
-from courses.level03_module08 import LEVEL03_MODULE08_CONTENT, LEVEL03_MODULE08_QUIZ
-
-from courses.level04_module01 import LEVEL04_MODULE01_CONTENT, LEVEL04_MODULE01_QUIZ
-from courses.level04_module02 import LEVEL04_MODULE02_CONTENT, LEVEL04_MODULE02_QUIZ
-from courses.level04_module03 import LEVEL04_MODULE03_CONTENT, LEVEL04_MODULE03_QUIZ
-from courses.level04_module04 import LEVEL04_MODULE04_CONTENT, LEVEL04_MODULE04_QUIZ
-from courses.level04_module05 import LEVEL04_MODULE05_CONTENT, LEVEL04_MODULE05_QUIZ
-from courses.level04_module06 import LEVEL04_MODULE06_CONTENT, LEVEL04_MODULE06_QUIZ
-from courses.level04_module07 import LEVEL04_MODULE07_CONTENT, LEVEL04_MODULE07_QUIZ
-from courses.level04_module08 import LEVEL04_MODULE08_CONTENT, LEVEL04_MODULE08_QUIZ
-
-from courses.level05_module01 import LEVEL05_MODULE01_CONTENT, LEVEL05_MODULE01_QUIZ
-from courses.level05_module02 import LEVEL05_MODULE02_CONTENT, LEVEL05_MODULE02_QUIZ
-from courses.level05_module03 import LEVEL05_MODULE03_CONTENT, LEVEL05_MODULE03_QUIZ
-from courses.level05_module04 import LEVEL05_MODULE04_CONTENT, LEVEL05_MODULE04_QUIZ
-from courses.level05_module05 import LEVEL05_MODULE05_CONTENT, LEVEL05_MODULE05_QUIZ
-from courses.level05_module06 import LEVEL05_MODULE06_CONTENT, LEVEL05_MODULE06_QUIZ
-from courses.level05_module07 import LEVEL05_MODULE07_CONTENT, LEVEL05_MODULE07_QUIZ
-from courses.level05_module08 import LEVEL05_MODULE08_CONTENT, LEVEL05_MODULE08_QUIZ
-from courses.level05_module09 import LEVEL05_MODULE09_CONTENT, LEVEL05_MODULE09_QUIZ
-from courses.level05_module10 import LEVEL05_MODULE10_CONTENT, LEVEL05_MODULE10_QUIZ
-
-from courses.level06_module01 import LEVEL06_MODULE01_CONTENT, LEVEL06_MODULE01_QUIZ
-from courses.level06_module02 import LEVEL06_MODULE02_CONTENT, LEVEL06_MODULE02_QUIZ
-from courses.level06_module03 import LEVEL06_MODULE03_CONTENT, LEVEL06_MODULE03_QUIZ
-from courses.level06_module04 import LEVEL06_MODULE04_CONTENT, LEVEL06_MODULE04_QUIZ
-from courses.level06_module05 import LEVEL06_MODULE05_CONTENT, LEVEL06_MODULE05_QUIZ
-from courses.level06_module06 import LEVEL06_MODULE06_CONTENT, LEVEL06_MODULE06_QUIZ
-from courses.level06_module07 import LEVEL06_MODULE07_CONTENT, LEVEL06_MODULE07_QUIZ
-from courses.level06_module08 import LEVEL06_MODULE08_CONTENT, LEVEL06_MODULE08_QUIZ
-from courses.level06_module09 import LEVEL06_MODULE09_CONTENT, LEVEL06_MODULE09_QUIZ
-from courses.level06_module10 import LEVEL06_MODULE10_CONTENT, LEVEL06_MODULE10_QUIZ
-
-from courses.level07_module01 import LEVEL07_MODULE01_CONTENT, LEVEL07_MODULE01_QUIZ
-from courses.level07_module02 import LEVEL07_MODULE02_CONTENT, LEVEL07_MODULE02_QUIZ
-from courses.level07_module03 import LEVEL07_MODULE03_CONTENT, LEVEL07_MODULE03_QUIZ
-from courses.level07_module04 import LEVEL07_MODULE04_CONTENT, LEVEL07_MODULE04_QUIZ
-from courses.level07_module05 import LEVEL07_MODULE05_CONTENT, LEVEL07_MODULE05_QUIZ
-from courses.level07_module06 import LEVEL07_MODULE06_CONTENT, LEVEL07_MODULE06_QUIZ
-from courses.level07_module07 import LEVEL07_MODULE07_CONTENT, LEVEL07_MODULE07_QUIZ
-from courses.level07_module08 import LEVEL07_MODULE08_CONTENT, LEVEL07_MODULE08_QUIZ
-from courses.level07_module09 import LEVEL07_MODULE09_CONTENT, LEVEL07_MODULE09_QUIZ
-
-from courses.level08_module01 import LEVEL08_MODULE01_CONTENT, LEVEL08_MODULE01_QUIZ
-from courses.level08_module02 import LEVEL08_MODULE02_CONTENT, LEVEL08_MODULE02_QUIZ
-from courses.level08_module03 import LEVEL08_MODULE03_CONTENT, LEVEL08_MODULE03_QUIZ
-from courses.level08_module04 import LEVEL08_MODULE04_CONTENT, LEVEL08_MODULE04_QUIZ
-from courses.level08_module05 import LEVEL08_MODULE05_CONTENT, LEVEL08_MODULE05_QUIZ
-from courses.level08_module06 import LEVEL08_MODULE06_CONTENT, LEVEL08_MODULE06_QUIZ
-from courses.level08_module07 import LEVEL08_MODULE07_CONTENT, LEVEL08_MODULE07_QUIZ
-from courses.level08_module08 import LEVEL08_MODULE08_CONTENT, LEVEL08_MODULE08_QUIZ
-from courses.level08_module09 import LEVEL08_MODULE09_CONTENT, LEVEL08_MODULE09_QUIZ
-
-from courses.level09_module01 import LEVEL09_MODULE01_CONTENT, LEVEL09_MODULE01_QUIZ
-from courses.level09_module02 import LEVEL09_MODULE02_CONTENT, LEVEL09_MODULE02_QUIZ
-from courses.level09_module03 import LEVEL09_MODULE03_CONTENT, LEVEL09_MODULE03_QUIZ
-from courses.level09_module04 import LEVEL09_MODULE04_CONTENT, LEVEL09_MODULE04_QUIZ
-from courses.level09_module05 import LEVEL09_MODULE05_CONTENT, LEVEL09_MODULE05_QUIZ
-from courses.level09_module06 import LEVEL09_MODULE06_CONTENT, LEVEL09_MODULE06_QUIZ
-from courses.level09_module07 import LEVEL09_MODULE07_CONTENT, LEVEL09_MODULE07_QUIZ
-from courses.level09_module08 import LEVEL09_MODULE08_CONTENT, LEVEL09_MODULE08_QUIZ
-
-from courses.level10_module01 import LEVEL10_MODULE01_CONTENT, LEVEL10_MODULE01_QUIZ
-from courses.level10_module02 import LEVEL10_MODULE02_CONTENT, LEVEL10_MODULE02_QUIZ
-from courses.level10_module03 import LEVEL10_MODULE03_CONTENT, LEVEL10_MODULE03_QUIZ
-from courses.level10_module04 import LEVEL10_MODULE04_CONTENT, LEVEL10_MODULE04_QUIZ
-from courses.level10_module05 import LEVEL10_MODULE05_CONTENT, LEVEL10_MODULE05_QUIZ
-from courses.level10_module06 import LEVEL10_MODULE06_CONTENT, LEVEL10_MODULE06_QUIZ
-from courses.level10_module07 import LEVEL10_MODULE07_CONTENT, LEVEL10_MODULE07_QUIZ
-from courses.level10_module08 import LEVEL10_MODULE08_CONTENT, LEVEL10_MODULE08_QUIZ
-from courses.level10_module09 import LEVEL10_MODULE09_CONTENT, LEVEL10_MODULE09_QUIZ
-from courses.level10_module10 import LEVEL10_MODULE10_CONTENT, LEVEL10_MODULE10_QUIZ
-from courses.level10_module11 import LEVEL10_MODULE11_CONTENT, LEVEL10_MODULE11_QUIZ
-
-from courses.level11_module01 import LEVEL11_MODULE01_CONTENT, LEVEL11_MODULE01_QUIZ
-from courses.level11_module02 import LEVEL11_MODULE02_CONTENT, LEVEL11_MODULE02_QUIZ
-from courses.level11_module03 import LEVEL11_MODULE03_CONTENT, LEVEL11_MODULE03_QUIZ
-from courses.level11_module04 import LEVEL11_MODULE04_CONTENT, LEVEL11_MODULE04_QUIZ
-from courses.level11_module05 import LEVEL11_MODULE05_CONTENT, LEVEL11_MODULE05_QUIZ
-from courses.level11_module06 import LEVEL11_MODULE06_CONTENT, LEVEL11_MODULE06_QUIZ
-from courses.level11_module07 import LEVEL11_MODULE07_CONTENT, LEVEL11_MODULE07_QUIZ
-from courses.level11_module08 import LEVEL11_MODULE08_CONTENT, LEVEL11_MODULE08_QUIZ
-from courses.level11_module09 import LEVEL11_MODULE09_CONTENT, LEVEL11_MODULE09_QUIZ
-
-from courses.level12_module01 import LEVEL12_MODULE01_CONTENT, LEVEL12_MODULE01_QUIZ
-from courses.level12_module02 import LEVEL12_MODULE02_CONTENT, LEVEL12_MODULE02_QUIZ
-from courses.level12_module03 import LEVEL12_MODULE03_CONTENT, LEVEL12_MODULE03_QUIZ
-from courses.level12_module04 import LEVEL12_MODULE04_CONTENT, LEVEL12_MODULE04_QUIZ
-from courses.level12_module05 import LEVEL12_MODULE05_CONTENT, LEVEL12_MODULE05_QUIZ
-from courses.level12_module06 import LEVEL12_MODULE06_CONTENT, LEVEL12_MODULE06_QUIZ
-from courses.level12_module07 import LEVEL12_MODULE07_CONTENT, LEVEL12_MODULE07_QUIZ
-from courses.level12_module08 import LEVEL12_MODULE08_CONTENT, LEVEL12_MODULE08_QUIZ
-from courses.level12_module09 import LEVEL12_MODULE09_CONTENT, LEVEL12_MODULE09_QUIZ
-from courses.level12_module10 import LEVEL12_MODULE10_CONTENT, LEVEL12_MODULE10_QUIZ
-
-from courses.level13_module01 import LEVEL13_MODULE01_CONTENT, LEVEL13_MODULE01_QUIZ
-from courses.level13_module02 import LEVEL13_MODULE02_CONTENT, LEVEL13_MODULE02_QUIZ
-from courses.level13_module03 import LEVEL13_MODULE03_CONTENT, LEVEL13_MODULE03_QUIZ
-from courses.level13_module04 import LEVEL13_MODULE04_CONTENT, LEVEL13_MODULE04_QUIZ
-from courses.level13_module05 import LEVEL13_MODULE05_CONTENT, LEVEL13_MODULE05_QUIZ
-from courses.level13_module06 import LEVEL13_MODULE06_CONTENT, LEVEL13_MODULE06_QUIZ
-from courses.level13_module07 import LEVEL13_MODULE07_CONTENT, LEVEL13_MODULE07_QUIZ
-from courses.level13_module08 import LEVEL13_MODULE08_CONTENT, LEVEL13_MODULE08_QUIZ
-
-from courses.level14_module01 import LEVEL14_MODULE01_CONTENT, LEVEL14_MODULE01_QUIZ
-from courses.level14_module02 import LEVEL14_MODULE02_CONTENT, LEVEL14_MODULE02_QUIZ
-from courses.level14_module03 import LEVEL14_MODULE03_CONTENT, LEVEL14_MODULE03_QUIZ
-from courses.level14_module04 import LEVEL14_MODULE04_CONTENT, LEVEL14_MODULE04_QUIZ
-from courses.level14_module05 import LEVEL14_MODULE05_CONTENT, LEVEL14_MODULE05_QUIZ
-from courses.level14_module06 import LEVEL14_MODULE06_CONTENT, LEVEL14_MODULE06_QUIZ
-from courses.level14_module07 import LEVEL14_MODULE07_CONTENT, LEVEL14_MODULE07_QUIZ
-from courses.level14_module08 import LEVEL14_MODULE08_CONTENT, LEVEL14_MODULE08_QUIZ
-
-from courses.level15_module01 import LEVEL15_MODULE01_CONTENT, LEVEL15_MODULE01_QUIZ
-from courses.level15_module02 import LEVEL15_MODULE02_CONTENT, LEVEL15_MODULE02_QUIZ
-from courses.level15_module03 import LEVEL15_MODULE03_CONTENT, LEVEL15_MODULE03_QUIZ
-from courses.level15_module04 import LEVEL15_MODULE04_CONTENT, LEVEL15_MODULE04_QUIZ
-from courses.level15_module05 import LEVEL15_MODULE05_CONTENT, LEVEL15_MODULE05_QUIZ
-from courses.level15_module06 import LEVEL15_MODULE06_CONTENT, LEVEL15_MODULE06_QUIZ
-from courses.level15_module07 import LEVEL15_MODULE07_CONTENT, LEVEL15_MODULE07_QUIZ
-from courses.level15_module08 import LEVEL15_MODULE08_CONTENT, LEVEL15_MODULE08_QUIZ
+import importlib
+import re
 
 
-LESSON_CONTENT_SOURCES = (
-    LESSON_CONTENT,
-    LEVEL00_EXTRA_CONTENT,
+# ============================================================
+# ARCHIPRO UZ
+# LAZY CONTENT REGISTRY V2
+#
+# Maqsad:
+#
+# Oldingi tizim:
+#   content_registry import bo'lishi bilan
+#   barcha Level content modullari yuklanardi.
+#
+# Yangi tizim:
+#   faqat kerakli dars tegishli modul yuklanadi.
+#
+# Masalan:
+#
+#   L05_M03_002
+#
+#   faqat:
+#
+#   courses.level05_module03
+#
+#   yuklanadi.
+#
+# FULL AUDIT uchun get_all_* funksiyalari saqlanadi.
+# ============================================================
 
-    LEVEL01_CONTENT,
-    LEVEL01_MODULE02_CONTENT,
-    LEVEL01_MODULE03_CONTENT,
-    LEVEL01_MODULE04_CONTENT,
-    LEVEL01_MODULE05_CONTENT,
-    LEVEL01_MODULE06_CONTENT,
 
-    LEVEL02_MODULE01_CONTENT,
-    LEVEL02_MODULE02_CONTENT,
-    LEVEL02_MODULE03_CONTENT,
-    LEVEL02_MODULE04_CONTENT,
-    LEVEL02_MODULE05_CONTENT,
-    LEVEL02_MODULE06_CONTENT,
-    LEVEL02_MODULE07_CONTENT,
-    LEVEL02_MODULE08_CONTENT,
-    LEVEL02_MODULE09_CONTENT,
-    LEVEL02_MODULE10_CONTENT,
-
-    LEVEL03_MODULE01_CONTENT,
-    LEVEL03_MODULE02_CONTENT,
-    LEVEL03_MODULE03_CONTENT,
-    LEVEL03_MODULE04_CONTENT,
-    LEVEL03_MODULE05_CONTENT,
-    LEVEL03_MODULE06_CONTENT,
-    LEVEL03_MODULE07_CONTENT,
-    LEVEL03_MODULE08_CONTENT,
-
-    LEVEL04_MODULE01_CONTENT,
-    LEVEL04_MODULE02_CONTENT,
-    LEVEL04_MODULE03_CONTENT,
-    LEVEL04_MODULE04_CONTENT,
-    LEVEL04_MODULE05_CONTENT,
-    LEVEL04_MODULE06_CONTENT,
-    LEVEL04_MODULE07_CONTENT,
-    LEVEL04_MODULE08_CONTENT,
-
-    LEVEL05_MODULE01_CONTENT,
-    LEVEL05_MODULE02_CONTENT,
-    LEVEL05_MODULE03_CONTENT,
-    LEVEL05_MODULE04_CONTENT,
-    LEVEL05_MODULE05_CONTENT,
-    LEVEL05_MODULE06_CONTENT,
-    LEVEL05_MODULE07_CONTENT,
-    LEVEL05_MODULE08_CONTENT,
-    LEVEL05_MODULE09_CONTENT,
-    LEVEL05_MODULE10_CONTENT,
-
-    LEVEL06_MODULE01_CONTENT,
-    LEVEL06_MODULE02_CONTENT,
-    LEVEL06_MODULE03_CONTENT,
-    LEVEL06_MODULE04_CONTENT,
-    LEVEL06_MODULE05_CONTENT,
-    LEVEL06_MODULE06_CONTENT,
-    LEVEL06_MODULE07_CONTENT,
-    LEVEL06_MODULE08_CONTENT,
-    LEVEL06_MODULE09_CONTENT,
-    LEVEL06_MODULE10_CONTENT,
-
-    LEVEL07_MODULE01_CONTENT,
-    LEVEL07_MODULE02_CONTENT,
-    LEVEL07_MODULE03_CONTENT,
-    LEVEL07_MODULE04_CONTENT,
-    LEVEL07_MODULE05_CONTENT,
-    LEVEL07_MODULE06_CONTENT,
-    LEVEL07_MODULE07_CONTENT,
-    LEVEL07_MODULE08_CONTENT,
-    LEVEL07_MODULE09_CONTENT,
-
-    LEVEL08_MODULE01_CONTENT,
-    LEVEL08_MODULE02_CONTENT,
-    LEVEL08_MODULE03_CONTENT,
-    LEVEL08_MODULE04_CONTENT,
-    LEVEL08_MODULE05_CONTENT,
-    LEVEL08_MODULE06_CONTENT,
-    LEVEL08_MODULE07_CONTENT,
-    LEVEL08_MODULE08_CONTENT,
-    LEVEL08_MODULE09_CONTENT,
-
-    LEVEL09_MODULE01_CONTENT,
-    LEVEL09_MODULE02_CONTENT,
-    LEVEL09_MODULE03_CONTENT,
-    LEVEL09_MODULE04_CONTENT,
-    LEVEL09_MODULE05_CONTENT,
-    LEVEL09_MODULE06_CONTENT,
-    LEVEL09_MODULE07_CONTENT,
-    LEVEL09_MODULE08_CONTENT,
-
-    LEVEL10_MODULE01_CONTENT,
-    LEVEL10_MODULE02_CONTENT,
-    LEVEL10_MODULE03_CONTENT,
-    LEVEL10_MODULE04_CONTENT,
-    LEVEL10_MODULE05_CONTENT,
-    LEVEL10_MODULE06_CONTENT,
-    LEVEL10_MODULE07_CONTENT,
-    LEVEL10_MODULE08_CONTENT,
-    LEVEL10_MODULE09_CONTENT,
-    LEVEL10_MODULE10_CONTENT,
-    LEVEL10_MODULE11_CONTENT,
-
-    LEVEL11_MODULE01_CONTENT,
-    LEVEL11_MODULE02_CONTENT,
-    LEVEL11_MODULE03_CONTENT,
-    LEVEL11_MODULE04_CONTENT,
-    LEVEL11_MODULE05_CONTENT,
-    LEVEL11_MODULE06_CONTENT,
-    LEVEL11_MODULE07_CONTENT,
-    LEVEL11_MODULE08_CONTENT,
-    LEVEL11_MODULE09_CONTENT,
-
-    LEVEL12_MODULE01_CONTENT,
-    LEVEL12_MODULE02_CONTENT,
-    LEVEL12_MODULE03_CONTENT,
-    LEVEL12_MODULE04_CONTENT,
-    LEVEL12_MODULE05_CONTENT,
-    LEVEL12_MODULE06_CONTENT,
-    LEVEL12_MODULE07_CONTENT,
-    LEVEL12_MODULE08_CONTENT,
-    LEVEL12_MODULE09_CONTENT,
-    LEVEL12_MODULE10_CONTENT,
-
-    LEVEL13_MODULE01_CONTENT,
-    LEVEL13_MODULE02_CONTENT,
-    LEVEL13_MODULE03_CONTENT,
-    LEVEL13_MODULE04_CONTENT,
-    LEVEL13_MODULE05_CONTENT,
-    LEVEL13_MODULE06_CONTENT,
-    LEVEL13_MODULE07_CONTENT,
-    LEVEL13_MODULE08_CONTENT,
-
-    LEVEL14_MODULE01_CONTENT,
-    LEVEL14_MODULE02_CONTENT,
-    LEVEL14_MODULE03_CONTENT,
-    LEVEL14_MODULE04_CONTENT,
-    LEVEL14_MODULE05_CONTENT,
-    LEVEL14_MODULE06_CONTENT,
-    LEVEL14_MODULE07_CONTENT,
-    LEVEL14_MODULE08_CONTENT,
-
-    LEVEL15_MODULE01_CONTENT,
-    LEVEL15_MODULE02_CONTENT,
-    LEVEL15_MODULE03_CONTENT,
-    LEVEL15_MODULE04_CONTENT,
-    LEVEL15_MODULE05_CONTENT,
-    LEVEL15_MODULE06_CONTENT,
-    LEVEL15_MODULE07_CONTENT,
-    LEVEL15_MODULE08_CONTENT,
+LESSON_CODE_PATTERN = re.compile(
+    r"^L(?P<level>\d{2})_M(?P<module>\d{2})_\d+$"
 )
 
 
-QUIZ_DATA_SOURCES = (
-    QUIZ_DATA,
-    LEVEL00_EXTRA_QUIZ,
-
-    LEVEL01_QUIZ,
-    LEVEL01_MODULE02_QUIZ,
-    LEVEL01_MODULE03_QUIZ,
-    LEVEL01_MODULE04_QUIZ,
-    LEVEL01_MODULE05_QUIZ,
-    LEVEL01_MODULE06_QUIZ,
-
-    LEVEL02_MODULE01_QUIZ,
-    LEVEL02_MODULE02_QUIZ,
-    LEVEL02_MODULE03_QUIZ,
-    LEVEL02_MODULE04_QUIZ,
-    LEVEL02_MODULE05_QUIZ,
-    LEVEL02_MODULE06_QUIZ,
-    LEVEL02_MODULE07_QUIZ,
-    LEVEL02_MODULE08_QUIZ,
-    LEVEL02_MODULE09_QUIZ,
-    LEVEL02_MODULE10_QUIZ,
-
-    LEVEL03_MODULE01_QUIZ,
-    LEVEL03_MODULE02_QUIZ,
-    LEVEL03_MODULE03_QUIZ,
-    LEVEL03_MODULE04_QUIZ,
-    LEVEL03_MODULE05_QUIZ,
-    LEVEL03_MODULE06_QUIZ,
-    LEVEL03_MODULE07_QUIZ,
-    LEVEL03_MODULE08_QUIZ,
-
-    LEVEL04_MODULE01_QUIZ,
-    LEVEL04_MODULE02_QUIZ,
-    LEVEL04_MODULE03_QUIZ,
-    LEVEL04_MODULE04_QUIZ,
-    LEVEL04_MODULE05_QUIZ,
-    LEVEL04_MODULE06_QUIZ,
-    LEVEL04_MODULE07_QUIZ,
-    LEVEL04_MODULE08_QUIZ,
-
-    LEVEL05_MODULE01_QUIZ,
-    LEVEL05_MODULE02_QUIZ,
-    LEVEL05_MODULE03_QUIZ,
-    LEVEL05_MODULE04_QUIZ,
-    LEVEL05_MODULE05_QUIZ,
-    LEVEL05_MODULE06_QUIZ,
-    LEVEL05_MODULE07_QUIZ,
-    LEVEL05_MODULE08_QUIZ,
-    LEVEL05_MODULE09_QUIZ,
-    LEVEL05_MODULE10_QUIZ,
-
-    LEVEL06_MODULE01_QUIZ,
-    LEVEL06_MODULE02_QUIZ,
-    LEVEL06_MODULE03_QUIZ,
-    LEVEL06_MODULE04_QUIZ,
-    LEVEL06_MODULE05_QUIZ,
-    LEVEL06_MODULE06_QUIZ,
-    LEVEL06_MODULE07_QUIZ,
-    LEVEL06_MODULE08_QUIZ,
-    LEVEL06_MODULE09_QUIZ,
-    LEVEL06_MODULE10_QUIZ,
-
-    LEVEL07_MODULE01_QUIZ,
-    LEVEL07_MODULE02_QUIZ,
-    LEVEL07_MODULE03_QUIZ,
-    LEVEL07_MODULE04_QUIZ,
-    LEVEL07_MODULE05_QUIZ,
-    LEVEL07_MODULE06_QUIZ,
-    LEVEL07_MODULE07_QUIZ,
-    LEVEL07_MODULE08_QUIZ,
-    LEVEL07_MODULE09_QUIZ,
-
-    LEVEL08_MODULE01_QUIZ,
-    LEVEL08_MODULE02_QUIZ,
-    LEVEL08_MODULE03_QUIZ,
-    LEVEL08_MODULE04_QUIZ,
-    LEVEL08_MODULE05_QUIZ,
-    LEVEL08_MODULE06_QUIZ,
-    LEVEL08_MODULE07_QUIZ,
-    LEVEL08_MODULE08_QUIZ,
-    LEVEL08_MODULE09_QUIZ,
-
-    LEVEL09_MODULE01_QUIZ,
-    LEVEL09_MODULE02_QUIZ,
-    LEVEL09_MODULE03_QUIZ,
-    LEVEL09_MODULE04_QUIZ,
-    LEVEL09_MODULE05_QUIZ,
-    LEVEL09_MODULE06_QUIZ,
-    LEVEL09_MODULE07_QUIZ,
-    LEVEL09_MODULE08_QUIZ,
-
-    LEVEL10_MODULE01_QUIZ,
-    LEVEL10_MODULE02_QUIZ,
-    LEVEL10_MODULE03_QUIZ,
-    LEVEL10_MODULE04_QUIZ,
-    LEVEL10_MODULE05_QUIZ,
-    LEVEL10_MODULE06_QUIZ,
-    LEVEL10_MODULE07_QUIZ,
-    LEVEL10_MODULE08_QUIZ,
-    LEVEL10_MODULE09_QUIZ,
-    LEVEL10_MODULE10_QUIZ,
-    LEVEL10_MODULE11_QUIZ,
-
-    LEVEL11_MODULE01_QUIZ,
-    LEVEL11_MODULE02_QUIZ,
-    LEVEL11_MODULE03_QUIZ,
-    LEVEL11_MODULE04_QUIZ,
-    LEVEL11_MODULE05_QUIZ,
-    LEVEL11_MODULE06_QUIZ,
-    LEVEL11_MODULE07_QUIZ,
-    LEVEL11_MODULE08_QUIZ,
-    LEVEL11_MODULE09_QUIZ,
-
-    LEVEL12_MODULE01_QUIZ,
-    LEVEL12_MODULE02_QUIZ,
-    LEVEL12_MODULE03_QUIZ,
-    LEVEL12_MODULE04_QUIZ,
-    LEVEL12_MODULE05_QUIZ,
-    LEVEL12_MODULE06_QUIZ,
-    LEVEL12_MODULE07_QUIZ,
-    LEVEL12_MODULE08_QUIZ,
-    LEVEL12_MODULE09_QUIZ,
-    LEVEL12_MODULE10_QUIZ,
-
-    LEVEL13_MODULE01_QUIZ,
-    LEVEL13_MODULE02_QUIZ,
-    LEVEL13_MODULE03_QUIZ,
-    LEVEL13_MODULE04_QUIZ,
-    LEVEL13_MODULE05_QUIZ,
-    LEVEL13_MODULE06_QUIZ,
-    LEVEL13_MODULE07_QUIZ,
-    LEVEL13_MODULE08_QUIZ,
-
-    LEVEL14_MODULE01_QUIZ,
-    LEVEL14_MODULE02_QUIZ,
-    LEVEL14_MODULE03_QUIZ,
-    LEVEL14_MODULE04_QUIZ,
-    LEVEL14_MODULE05_QUIZ,
-    LEVEL14_MODULE06_QUIZ,
-    LEVEL14_MODULE07_QUIZ,
-    LEVEL14_MODULE08_QUIZ,
-
-    LEVEL15_MODULE01_QUIZ,
-    LEVEL15_MODULE02_QUIZ,
-    LEVEL15_MODULE03_QUIZ,
-    LEVEL15_MODULE04_QUIZ,
-    LEVEL15_MODULE05_QUIZ,
-    LEVEL15_MODULE06_QUIZ,
-    LEVEL15_MODULE07_QUIZ,
-    LEVEL15_MODULE08_QUIZ,
-)
+# ============================================================
+# CURRICULUM MODULE COUNTS
+#
+# 16 LEVEL
+# 137 MODULE
+# ============================================================
 
 
-def get_all_lesson_content():
-    combined = {}
+LEVEL_MODULE_COUNTS = {
+    0: 5,
+    1: 6,
+    2: 10,
+    3: 8,
+    4: 8,
+    5: 10,
+    6: 10,
+    7: 9,
+    8: 9,
+    9: 8,
+    10: 11,
+    11: 9,
+    12: 10,
+    13: 8,
+    14: 8,
+    15: 8,
+}
 
-    for source in LESSON_CONTENT_SOURCES:
-        combined.update(source)
 
-    return combined
+# ============================================================
+# SMALL MODULE CACHE
+#
+# Bir modul birinchi marta ochilgandan keyin
+# qayta import qilinmaydi.
+#
+# Masalan:
+# LEVEL 05 / MODULE 03 ichidagi 5 ta dars uchun
+# modul faqat bir marta yuklanadi.
+# ============================================================
 
 
-def get_lesson_content_by_code(lesson_code: str):
-    return get_all_lesson_content().get(
+_module_cache = {}
+
+_content_cache = {}
+
+_quiz_cache = {}
+
+
+# ============================================================
+# LESSON CODE PARSER
+# ============================================================
+
+
+def parse_lesson_code(
+    lesson_code: str,
+):
+    if not lesson_code:
+        return None
+
+    match = LESSON_CODE_PATTERN.match(
+        str(
+            lesson_code
+        ).strip()
+    )
+
+    if match is None:
+        return None
+
+    return (
+        int(
+            match.group(
+                "level"
+            )
+        ),
+        int(
+            match.group(
+                "module"
+            )
+        ),
+    )
+
+
+# ============================================================
+# MODULE DESCRIPTOR
+# ============================================================
+
+
+def get_module_descriptor(
+    level_number: int,
+    module_number: int,
+):
+    """
+    Berilgan Level / Module uchun:
+    - Python module
+    - content constant
+    - quiz constant
+
+    nomlarini qaytaradi.
+    """
+
+    # ========================================================
+    # LEVEL 00 / MODULE 01
+    # ========================================================
+
+    if (
+        level_number == 0
+        and module_number == 1
+    ):
+        return {
+            "content_module": (
+                "courses.lesson_content"
+            ),
+            "content_name": (
+                "LESSON_CONTENT"
+            ),
+            "quiz_module": (
+                "courses.quiz_data"
+            ),
+            "quiz_name": (
+                "QUIZ_DATA"
+            ),
+        }
+
+    # ========================================================
+    # LEVEL 00 / MODULE 02-05
+    #
+    # Hammasi level00_extra.py ichida.
+    # ========================================================
+
+    if (
+        level_number == 0
+        and 2 <= module_number <= 5
+    ):
+        return {
+            "content_module": (
+                "courses.level00_extra"
+            ),
+            "content_name": (
+                "LEVEL00_EXTRA_CONTENT"
+            ),
+            "quiz_module": (
+                "courses.level00_extra"
+            ),
+            "quiz_name": (
+                "LEVEL00_EXTRA_QUIZ"
+            ),
+        }
+
+    # ========================================================
+    # LEVEL 01 / MODULE 01
+    # ========================================================
+
+    if (
+        level_number == 1
+        and module_number == 1
+    ):
+        return {
+            "content_module": (
+                "courses.level01_content"
+            ),
+            "content_name": (
+                "LEVEL01_CONTENT"
+            ),
+            "quiz_module": (
+                "courses.level01_content"
+            ),
+            "quiz_name": (
+                "LEVEL01_QUIZ"
+            ),
+        }
+
+    # ========================================================
+    # LEVEL 01 / MODULE 02-06
+    # ========================================================
+
+    if (
+        level_number == 1
+        and 2 <= module_number <= 6
+    ):
+        level_text = "01"
+
+        module_text = (
+            f"{module_number:02d}"
+        )
+
+        module_path = (
+            "courses."
+            f"level{level_text}_"
+            f"module{module_text}"
+        )
+
+        return {
+            "content_module": (
+                module_path
+            ),
+            "content_name": (
+                f"LEVEL{level_text}_"
+                f"MODULE{module_text}_CONTENT"
+            ),
+            "quiz_module": (
+                module_path
+            ),
+            "quiz_name": (
+                f"LEVEL{level_text}_"
+                f"MODULE{module_text}_QUIZ"
+            ),
+        }
+
+    # ========================================================
+    # LEVEL 02 - LEVEL 15
+    # ========================================================
+
+    if 2 <= level_number <= 15:
+
+        max_modules = (
+            LEVEL_MODULE_COUNTS.get(
+                level_number,
+                0,
+            )
+        )
+
+        if not (
+            1
+            <= module_number
+            <= max_modules
+        ):
+            return None
+
+        level_text = (
+            f"{level_number:02d}"
+        )
+
+        module_text = (
+            f"{module_number:02d}"
+        )
+
+        module_path = (
+            "courses."
+            f"level{level_text}_"
+            f"module{module_text}"
+        )
+
+        return {
+            "content_module": (
+                module_path
+            ),
+            "content_name": (
+                f"LEVEL{level_text}_"
+                f"MODULE{module_text}_CONTENT"
+            ),
+            "quiz_module": (
+                module_path
+            ),
+            "quiz_name": (
+                f"LEVEL{level_text}_"
+                f"MODULE{module_text}_QUIZ"
+            ),
+        }
+
+    return None
+
+
+# ============================================================
+# SAFE IMPORT
+# ============================================================
+
+
+def load_module(
+    module_name: str,
+):
+    cached = _module_cache.get(
+        module_name
+    )
+
+    if cached is not None:
+        return cached
+
+    module = importlib.import_module(
+        module_name
+    )
+
+    _module_cache[
+        module_name
+    ] = module
+
+    return module
+
+
+# ============================================================
+# DICTIONARY LOADER
+# ============================================================
+
+
+def load_dictionary(
+    module_name: str,
+    constant_name: str,
+):
+    module = load_module(
+        module_name
+    )
+
+    value = getattr(
+        module,
+        constant_name,
+        None,
+    )
+
+    if value is None:
+        raise AttributeError(
+            f"{module_name} ichida "
+            f"{constant_name} topilmadi."
+        )
+
+    if not isinstance(
+        value,
+        dict,
+    ):
+        raise TypeError(
+            f"{module_name}."
+            f"{constant_name} dict emas."
+        )
+
+    return value
+
+
+# ============================================================
+# LAZY LESSON CONTENT
+# ============================================================
+
+
+def get_lesson_content_by_code(
+    lesson_code: str,
+):
+    """
+    Faqat bitta darsga kerakli modulni yuklaydi.
+
+    680 ta content dictionary'ni birdan yaratmaydi.
+    """
+
+    lesson_code = str(
+        lesson_code
+    ).strip()
+
+    cached = _content_cache.get(
+        lesson_code
+    )
+
+    if cached is not None:
+        return cached
+
+    parsed = parse_lesson_code(
+        lesson_code
+    )
+
+    if parsed is None:
+        return []
+
+    (
+        level_number,
+        module_number,
+    ) = parsed
+
+    descriptor = (
+        get_module_descriptor(
+            level_number,
+            module_number,
+        )
+    )
+
+    if descriptor is None:
+        return []
+
+    content_dictionary = (
+        load_dictionary(
+            descriptor[
+                "content_module"
+            ],
+            descriptor[
+                "content_name"
+            ],
+        )
+    )
+
+    content = (
+        content_dictionary.get(
+            lesson_code,
+            [],
+        )
+    )
+
+    _content_cache[
+        lesson_code
+    ] = content
+
+    return content
+
+
+# ============================================================
+# LAZY QUIZ DATA
+# ============================================================
+
+
+def get_quiz_data_by_code(
+    lesson_code: str,
+):
+    """
+    Bitta lesson uchun quiz ma'lumotini yuklaydi.
+    """
+
+    lesson_code = str(
+        lesson_code
+    ).strip()
+
+    cached = _quiz_cache.get(
+        lesson_code
+    )
+
+    if cached is not None:
+        return cached
+
+    parsed = parse_lesson_code(
+        lesson_code
+    )
+
+    if parsed is None:
+        return []
+
+    (
+        level_number,
+        module_number,
+    ) = parsed
+
+    descriptor = (
+        get_module_descriptor(
+            level_number,
+            module_number,
+        )
+    )
+
+    if descriptor is None:
+        return []
+
+    quiz_dictionary = (
+        load_dictionary(
+            descriptor[
+                "quiz_module"
+            ],
+            descriptor[
+                "quiz_name"
+            ],
+        )
+    )
+
+    quiz = quiz_dictionary.get(
         lesson_code,
         [],
     )
 
+    _quiz_cache[
+        lesson_code
+    ] = quiz
 
-def get_all_quiz_data():
+    return quiz
+
+
+# ============================================================
+# ALL DESCRIPTORS
+#
+# AUDIT va seeding uchun.
+# Oddiy dars ochilishida ishlatilmaydi.
+# ============================================================
+
+
+def iter_all_descriptors():
+    # LEVEL 00
+    for module_number in range(
+        1,
+        LEVEL_MODULE_COUNTS[0] + 1,
+    ):
+        descriptor = (
+            get_module_descriptor(
+                0,
+                module_number,
+            )
+        )
+
+        if descriptor is not None:
+            yield descriptor
+
+    # LEVEL 01
+    for module_number in range(
+        1,
+        LEVEL_MODULE_COUNTS[1] + 1,
+    ):
+        descriptor = (
+            get_module_descriptor(
+                1,
+                module_number,
+            )
+        )
+
+        if descriptor is not None:
+            yield descriptor
+
+    # LEVEL 02 - LEVEL 15
+    for level_number in range(
+        2,
+        16,
+    ):
+        for module_number in range(
+            1,
+            (
+                LEVEL_MODULE_COUNTS[
+                    level_number
+                ]
+                + 1
+            ),
+        ):
+            descriptor = (
+                get_module_descriptor(
+                    level_number,
+                    module_number,
+                )
+            )
+
+            if descriptor is not None:
+                yield descriptor
+
+
+# ============================================================
+# UNIQUE SOURCES
+# ============================================================
+
+
+def get_unique_content_sources():
+    result = []
+
+    seen = set()
+
+    for descriptor in (
+        iter_all_descriptors()
+    ):
+        source = (
+            descriptor[
+                "content_module"
+            ],
+            descriptor[
+                "content_name"
+            ],
+        )
+
+        if source in seen:
+            continue
+
+        seen.add(
+            source
+        )
+
+        result.append(
+            source
+        )
+
+    return result
+
+
+def get_unique_quiz_sources():
+    result = []
+
+    seen = set()
+
+    for descriptor in (
+        iter_all_descriptors()
+    ):
+        source = (
+            descriptor[
+                "quiz_module"
+            ],
+            descriptor[
+                "quiz_name"
+            ],
+        )
+
+        if source in seen:
+            continue
+
+        seen.add(
+            source
+        )
+
+        result.append(
+            source
+        )
+
+    return result
+
+
+# ============================================================
+# FULL LESSON CONTENT
+#
+# CONTENT_GUARD / AUDIT uchun.
+# ============================================================
+
+
+def get_all_lesson_content():
+    """
+    Barcha 680 lesson contentni birlashtiradi.
+
+    Bu funksiya audit va maintenance uchun.
+
+    Oddiy lesson sahifasi bundan foydalanmasligi kerak.
+    """
+
     combined = {}
 
-    for source in QUIZ_DATA_SOURCES:
-        combined.update(source)
+    for (
+        module_name,
+        constant_name,
+    ) in get_unique_content_sources():
+
+        dictionary = (
+            load_dictionary(
+                module_name,
+                constant_name,
+            )
+        )
+
+        combined.update(
+            dictionary
+        )
 
     return combined
+
+
+# ============================================================
+# FULL QUIZ DATA
+#
+# CONTENT_GUARD / AUDIT / SEEDING uchun.
+# ============================================================
+
+
+def get_all_quiz_data():
+    """
+    Barcha quiz lesson group va savollarni birlashtiradi.
+
+    Oddiy lesson render paytida chaqirilmaydi.
+    """
+
+    combined = {}
+
+    for (
+        module_name,
+        constant_name,
+    ) in get_unique_quiz_sources():
+
+        dictionary = (
+            load_dictionary(
+                module_name,
+                constant_name,
+            )
+        )
+
+        combined.update(
+            dictionary
+        )
+
+    return combined
+
+
+# ============================================================
+# CACHE MANAGEMENT
+# ============================================================
+
+
+def clear_registry_cache():
+    """
+    Faqat Python runtime cache.
+
+    Database va foydalanuvchi progressiga tegmaydi.
+    """
+
+    _content_cache.clear()
+
+    _quiz_cache.clear()
+
+    _module_cache.clear()
+
+
+def get_registry_cache_info():
+    """
+    Debug / performance monitoring uchun.
+    """
+
+    return {
+        "loaded_modules": len(
+            _module_cache
+        ),
+        "cached_lessons": len(
+            _content_cache
+        ),
+        "cached_quizzes": len(
+            _quiz_cache
+        ),
+    }
