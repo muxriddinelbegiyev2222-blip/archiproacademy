@@ -1,18 +1,13 @@
 from database.database import get_connection
 
 
-# ============================================================
-# LEVEL 6 FINAL EXAM
-# ============================================================
-
-LEVEL06_EXAM_CONFIG = {
+LEVEL06_EXAM = {
     "level_code": "LEVEL_06",
-    "code": "L06_FINAL",
-    "title": "LEVEL 6 — Archicad Intermediate yakuniy imtihoni",
+    "title": "LEVEL 6 — Archicad Intermediate Final",
     "description": (
         "Stories, Layers, Building Materials, Composite Structures, "
-        "Complex Profiles, Roof Tool, Stair Tool, Railing, Mesh va "
-        "Zones bo'yicha yakuniy bilim tekshiruvi."
+        "Complex Profiles, Roof, Stair, Railing, Mesh va Zones "
+        "bo'yicha yakuniy imtihon."
     ),
     "question_count": 50,
     "passing_score": 85,
@@ -20,19 +15,11 @@ LEVEL06_EXAM_CONFIG = {
 }
 
 
-# ============================================================
-# DATABASE SEED
-# ============================================================
-
 def seed_level06_exam():
     connection = get_connection()
 
     try:
         cursor = connection.cursor()
-
-        # ----------------------------------------------------
-        # LEVEL 6 ID
-        # ----------------------------------------------------
 
         cursor.execute(
             """
@@ -41,11 +28,7 @@ def seed_level06_exam():
             WHERE code = ?
             LIMIT 1
             """,
-            (
-                LEVEL06_EXAM_CONFIG[
-                    "level_code"
-                ],
-            ),
+            (LEVEL06_EXAM["level_code"],),
         )
 
         level = cursor.fetchone()
@@ -53,57 +36,33 @@ def seed_level06_exam():
         if level is None:
             return
 
-        level_id = level["id"]
-
-        # ----------------------------------------------------
-        # FINAL EXAM
-        # ----------------------------------------------------
-
         cursor.execute(
             """
             INSERT INTO level_exams (
                 level_id,
-                code,
                 title,
                 description,
                 question_count,
                 passing_score,
-                xp_reward,
-                is_active
+                xp_reward
             )
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            VALUES (?, ?, ?, ?, ?, ?)
 
             ON CONFLICT(level_id)
             DO UPDATE SET
-                code = excluded.code,
                 title = excluded.title,
                 description = excluded.description,
                 question_count = excluded.question_count,
                 passing_score = excluded.passing_score,
-                xp_reward = excluded.xp_reward,
-                is_active = excluded.is_active
+                xp_reward = excluded.xp_reward
             """,
             (
-                level_id,
-                LEVEL06_EXAM_CONFIG[
-                    "code"
-                ],
-                LEVEL06_EXAM_CONFIG[
-                    "title"
-                ],
-                LEVEL06_EXAM_CONFIG[
-                    "description"
-                ],
-                LEVEL06_EXAM_CONFIG[
-                    "question_count"
-                ],
-                LEVEL06_EXAM_CONFIG[
-                    "passing_score"
-                ],
-                LEVEL06_EXAM_CONFIG[
-                    "xp_reward"
-                ],
-                1,
+                level["id"],
+                LEVEL06_EXAM["title"],
+                LEVEL06_EXAM["description"],
+                LEVEL06_EXAM["question_count"],
+                LEVEL06_EXAM["passing_score"],
+                LEVEL06_EXAM["xp_reward"],
             ),
         )
 
