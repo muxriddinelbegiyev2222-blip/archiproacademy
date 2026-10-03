@@ -2,11 +2,14 @@ import sys
 
 from PySide6.QtWidgets import QApplication
 
-from auth.auth_service import authenticate_user, create_user
+from auth.auth_service import authenticate_user
 
 from courses.access_sync import synchronize_user_access
 from courses.course_service import initialize_user_progress
-from courses.exam_service import initialize_user_levels, seed_level_exams
+from courses.exam_service import (
+    initialize_user_levels,
+    seed_level_exams,
+)
 from courses.quiz_service import seed_quizzes
 from courses.seed_courses import seed_course_structure
 
@@ -180,6 +183,10 @@ from courses.level15_module08 import seed_level15_module08
 from courses.level15_exam import seed_level15_exam
 
 
+# ============================================================
+# MODULE SEEDERS
+# ============================================================
+
 MODULE_SEEDERS = (
     seed_level00_extra,
 
@@ -332,6 +339,10 @@ MODULE_SEEDERS = (
 )
 
 
+# ============================================================
+# CUSTOM EXAM SEEDERS
+# ============================================================
+
 CUSTOM_EXAM_SEEDERS = (
     seed_level02_exam,
     seed_level03_exam,
@@ -350,6 +361,10 @@ CUSTOM_EXAM_SEEDERS = (
 )
 
 
+# ============================================================
+# PREPARE APPLICATION
+# ============================================================
+
 def prepare_application():
     initialize_database()
 
@@ -361,28 +376,28 @@ def prepare_application():
     # Darslar yaratilgandan keyin quiz bank yaratiladi.
     seed_quizzes()
 
-    # Bazaviy level examlari.
+    # Bazaviy Level examlari.
     seed_level_exams()
 
     # Maxsus sozlangan final examlar.
     for seeder in CUSTOM_EXAM_SEEDERS:
         seeder()
 
-    # FAQAT DEVELOPMENT / TEST UCHUN.
-    # Sotuv versiyasidan oldin bu MASTER account olib tashlanadi.
-    create_user(
-        username="admin",
-        password="12345",
-        full_name="Administrator",
-        license_type="MASTER",
-    )
 
+# ============================================================
+# MAIN
+# ============================================================
 
 def main():
     app = QApplication(sys.argv)
 
-    app.setApplicationName("ARCHIPRO UZ")
-    app.setOrganizationName("ARCHIPRO UZ")
+    app.setApplicationName(
+        "ARCHIPRO UZ"
+    )
+
+    app.setOrganizationName(
+        "ARCHIPRO UZ"
+    )
 
     prepare_application()
 
@@ -425,9 +440,12 @@ def main():
             user
         )
 
-        windows["dashboard"] = dashboard
+        windows[
+            "dashboard"
+        ] = dashboard
 
         dashboard.show()
+
         login_window.hide()
 
     login_window.login_requested.connect(
