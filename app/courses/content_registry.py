@@ -256,8 +256,49 @@ from courses.level07_module09 import (
     LEVEL07_MODULE09_QUIZ,
 )
 
+from courses.level08_module01 import (
+    LEVEL08_MODULE01_CONTENT,
+    LEVEL08_MODULE01_QUIZ,
+)
+from courses.level08_module02 import (
+    LEVEL08_MODULE02_CONTENT,
+    LEVEL08_MODULE02_QUIZ,
+)
+from courses.level08_module03 import (
+    LEVEL08_MODULE03_CONTENT,
+    LEVEL08_MODULE03_QUIZ,
+)
+from courses.level08_module04 import (
+    LEVEL08_MODULE04_CONTENT,
+    LEVEL08_MODULE04_QUIZ,
+)
+from courses.level08_module05 import (
+    LEVEL08_MODULE05_CONTENT,
+    LEVEL08_MODULE05_QUIZ,
+)
+from courses.level08_module06 import (
+    LEVEL08_MODULE06_CONTENT,
+    LEVEL08_MODULE06_QUIZ,
+)
+from courses.level08_module07 import (
+    LEVEL08_MODULE07_CONTENT,
+    LEVEL08_MODULE07_QUIZ,
+)
+from courses.level08_module08 import (
+    LEVEL08_MODULE08_CONTENT,
+    LEVEL08_MODULE08_QUIZ,
+)
+from courses.level08_module09 import (
+    LEVEL08_MODULE09_CONTENT,
+    LEVEL08_MODULE09_QUIZ,
+)
+
 from courses.quiz_data import QUIZ_DATA
 
+
+# ============================================================
+# LESSON CONTENT
+# ============================================================
 
 def get_all_lesson_content():
     combined = {}
@@ -341,15 +382,32 @@ def get_all_lesson_content():
     combined.update(LEVEL07_MODULE08_CONTENT)
     combined.update(LEVEL07_MODULE09_CONTENT)
 
+    # LEVEL 8
+    combined.update(LEVEL08_MODULE01_CONTENT)
+    combined.update(LEVEL08_MODULE02_CONTENT)
+    combined.update(LEVEL08_MODULE03_CONTENT)
+    combined.update(LEVEL08_MODULE04_CONTENT)
+    combined.update(LEVEL08_MODULE05_CONTENT)
+    combined.update(LEVEL08_MODULE06_CONTENT)
+    combined.update(LEVEL08_MODULE07_CONTENT)
+    combined.update(LEVEL08_MODULE08_CONTENT)
+    combined.update(LEVEL08_MODULE09_CONTENT)
+
     return combined
 
 
-def get_lesson_content_by_code(lesson_code: str):
+def get_lesson_content_by_code(
+    lesson_code: str,
+):
     return get_all_lesson_content().get(
         lesson_code,
         [],
     )
 
+
+# ============================================================
+# QUIZ DATA
+# ============================================================
 
 def get_all_quiz_data():
     combined = {}
@@ -432,5 +490,16 @@ def get_all_quiz_data():
     combined.update(LEVEL07_MODULE07_QUIZ)
     combined.update(LEVEL07_MODULE08_QUIZ)
     combined.update(LEVEL07_MODULE09_QUIZ)
+
+    # LEVEL 8
+    combined.update(LEVEL08_MODULE01_QUIZ)
+    combined.update(LEVEL08_MODULE02_QUIZ)
+    combined.update(LEVEL08_MODULE03_QUIZ)
+    combined.update(LEVEL08_MODULE04_QUIZ)
+    combined.update(LEVEL08_MODULE05_QUIZ)
+    combined.update(LEVEL08_MODULE06_QUIZ)
+    combined.update(LEVEL08_MODULE07_QUIZ)
+    combined.update(LEVEL08_MODULE08_QUIZ)
+    combined.update(LEVEL08_MODULE09_QUIZ)
 
     return combined
