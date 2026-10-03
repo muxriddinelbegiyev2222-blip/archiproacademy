@@ -165,7 +165,7 @@ class PortfolioPage(QWidget):
         )
 
         subtitle = QLabel(
-            "O'quv jarayonidagi bilim va loyihalarni "
+            "O'quv jarayonida tayyorlangan loyihalarni "
             "professional portfolio darajasiga olib chiqish."
         )
 
@@ -185,10 +185,6 @@ class PortfolioPage(QWidget):
             subtitle
         )
 
-        # ====================================================
-        # HERO
-        # ====================================================
-
         hero = QFrame()
 
         hero.setObjectName(
@@ -206,10 +202,6 @@ class PortfolioPage(QWidget):
             20,
         )
 
-        hero_layout.setSpacing(
-            9
-        )
-
         hero_title = QLabel(
             "Professional portfolio yo'li"
         )
@@ -219,11 +211,11 @@ class PortfolioPage(QWidget):
         )
 
         hero_text = QLabel(
-            "Portfolio faqat chiroyli rasmlar to'plami emas. "
-            "Unda rejalashtirish, fasad, kesim, BIM hujjatlar, "
-            "mijoz bilan ishlash, murakkab loyiha va yakuniy "
-            "loyihani professional tarzda taqdim etish ko'nikmalari "
-            "bir tizimda namoyon bo'ladi."
+            "Portfolio faqat 3D rasmlar to'plami emas. "
+            "Unda texnik topshiriq, genplan, qavat rejasi, "
+            "fasadlar, kesimlar, konstruktiv fikrlash, "
+            "BIM hujjatlar, mijoz bilan ishlash va yakuniy "
+            "loyihani professional himoya qilish jarayoni aks etadi."
         )
 
         hero_text.setObjectName(
@@ -245,10 +237,6 @@ class PortfolioPage(QWidget):
         root.addWidget(
             hero
         )
-
-        # ====================================================
-        # SCROLL
-        # ====================================================
 
         scroll = QScrollArea()
 
@@ -278,6 +266,37 @@ class PortfolioPage(QWidget):
         )
 
         sections = [
+            (
+                "LEVEL 03",
+                "Uchastka va genplan",
+                (
+                    "Yer uchastkasini tahlil qilish, "
+                    "uy joylashuvi va genplan yechimlari."
+                ),
+                ["LEVEL_03"],
+            ),
+            (
+                "LEVEL 04",
+                "O'zbekiston turar joyi",
+                (
+                    "Mahalliy iqlim, hovli, turmush tarzi "
+                    "va turar joy rejalashtirish yechimlari."
+                ),
+                ["LEVEL_04"],
+            ),
+            (
+                "LEVEL 05–07",
+                "Archicad loyiha ko'nikmalari",
+                (
+                    "Model yaratish, fasad, kesim, tom, "
+                    "zinapoya, BIM va professional Archicad workflow."
+                ),
+                [
+                    "LEVEL_05",
+                    "LEVEL_06",
+                    "LEVEL_07",
+                ],
+            ),
             (
                 "LEVEL 10",
                 "1 qavatli uy loyihasi",
@@ -310,7 +329,7 @@ class PortfolioPage(QWidget):
                 "Mijoz va real loyiha",
                 (
                     "Real buyurtma, texnik topshiriq, muzokara, "
-                    "qarorlarni tushuntirish va loyiha himoyasi."
+                    "loyiha taqdimoti va himoyasi."
                 ),
                 ["LEVEL_13"],
             ),
@@ -318,8 +337,8 @@ class PortfolioPage(QWidget):
                 "LEVEL 14",
                 "Advanced Residential Designer",
                 (
-                    "Murakkab uchastka, katta villa, premium fasad "
-                    "va advanced case study'lar."
+                    "Murakkab uchastka, katta villa, premium "
+                    "fasad va murakkab real loyiha vaziyatlari."
                 ),
                 ["LEVEL_14"],
             ),
@@ -332,20 +351,14 @@ class PortfolioPage(QWidget):
             levels,
         ) in sections:
 
-            card = self.create_card(
-                badge_text=badge_text,
-                title_text=title_text,
-                description=description,
-                levels=levels,
-            )
-
             content_layout.addWidget(
-                card
+                self.create_card(
+                    badge_text,
+                    title_text,
+                    description,
+                    levels,
+                )
             )
-
-        # ====================================================
-        # LEVEL 15 / FINAL
-        # ====================================================
 
         final_card = QFrame()
 
@@ -364,10 +377,6 @@ class PortfolioPage(QWidget):
             20,
         )
 
-        final_layout.setSpacing(
-            18
-        )
-
         final_text_area = QVBoxLayout()
 
         final_badge = QLabel(
@@ -379,7 +388,7 @@ class PortfolioPage(QWidget):
         )
 
         final_title = QLabel(
-            "Yakuniy loyiha + himoya + portfolio"
+            "Final loyiha • Himoya • Portfolio • PRO Final"
         )
 
         final_title.setObjectName(
@@ -387,9 +396,9 @@ class PortfolioPage(QWidget):
         )
 
         final_text = QLabel(
-            "LEVEL 15 ichida yakuniy texnik topshiriq, "
-            "mustaqil 1 yoki 2 qavatli loyiha, loyihani himoya "
-            "qilish, professional portfolio va PRO Final mavjud."
+            "Yakuniy texnik topshiriq, mustaqil loyiha, "
+            "loyihani professional asoslash, portfolio tayyorlash "
+            "va yakuniy baholash."
         )
 
         final_text.setObjectName(
@@ -418,7 +427,7 @@ class PortfolioPage(QWidget):
         )
 
         final_button = QPushButton(
-            "LEVEL 15 NI OCHISH  →"
+            "LEVEL 15 NI KO'RISH  →"
         )
 
         final_button.setObjectName(
@@ -431,8 +440,8 @@ class PortfolioPage(QWidget):
                 ["LEVEL_15"],
                 "Professional yakuniy bosqich",
                 (
-                    "Final loyiha, loyiha himoyasi, "
-                    "portfolio va PRO Final."
+                    "Final loyiha, himoya, portfolio "
+                    "va PRO Final."
                 ),
             )
         )
@@ -458,10 +467,10 @@ class PortfolioPage(QWidget):
 
     def create_card(
         self,
-        badge_text: str,
-        title_text: str,
-        description: str,
-        levels: list,
+        badge_text,
+        title_text,
+        description,
+        levels,
     ):
         card = QFrame()
 
@@ -502,15 +511,15 @@ class PortfolioPage(QWidget):
             "cardTitle"
         )
 
-        description_label = QLabel(
+        text = QLabel(
             description
         )
 
-        description_label.setObjectName(
+        text.setObjectName(
             "cardText"
         )
 
-        description_label.setWordWrap(
+        text.setWordWrap(
             True
         )
 
@@ -523,7 +532,7 @@ class PortfolioPage(QWidget):
         )
 
         text_area.addWidget(
-            description_label
+            text
         )
 
         layout.addLayout(
@@ -532,7 +541,7 @@ class PortfolioPage(QWidget):
         )
 
         button = QPushButton(
-            "OCHISH  →"
+            "KO'RISH  →"
         )
 
         button.setObjectName(
