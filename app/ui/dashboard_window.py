@@ -23,6 +23,7 @@ from courses.course_service import (
 from ui.learning_window import LearningWindow
 from ui.lesson_window import LessonWindow
 from ui.license_window import LicenseWindow
+from ui.menu_section_window import MenuSectionWindow
 
 
 class DashboardWindow(QMainWindow):
@@ -37,6 +38,7 @@ class DashboardWindow(QMainWindow):
         self.lesson_window = None
         self.learning_window = None
         self.license_window = None
+        self.section_window = None
 
         self.is_master = (
             str(
@@ -78,14 +80,12 @@ class DashboardWindow(QMainWindow):
             self.user["id"]
         )
 
-        self.next_lesson = (
-            get_next_available_lesson(
-                self.user["id"]
-            )
+        self.next_lesson = get_next_available_lesson(
+            self.user["id"]
         )
 
     # ========================================================
-    # MAIN UI
+    # UI
     # ========================================================
 
     def build_ui(self):
@@ -112,22 +112,22 @@ class DashboardWindow(QMainWindow):
             }
 
             QLabel#logoTitle {
-                color: #FFFFFF;
                 font-size: 24px;
                 font-weight: 800;
+                color: #FFFFFF;
             }
 
             QLabel#logoSubtitle {
-                color: #64748B;
                 font-size: 11px;
+                color: #64748B;
             }
 
             QListWidget {
                 background-color: transparent;
                 border: none;
                 outline: none;
-                color: #CBD5E1;
                 font-size: 14px;
+                color: #CBD5E1;
             }
 
             QListWidget::item {
@@ -146,20 +146,37 @@ class DashboardWindow(QMainWindow):
             }
 
             QLabel#pageTitle {
-                color: #FFFFFF;
                 font-size: 30px;
                 font-weight: 800;
+                color: #FFFFFF;
             }
 
             QLabel#pageSubtitle {
-                color: #94A3B8;
                 font-size: 14px;
+                color: #94A3B8;
             }
 
             QFrame#card {
                 background-color: #111827;
                 border: 1px solid #1E293B;
                 border-radius: 14px;
+            }
+
+            QFrame#masterBanner {
+                background-color: #251D06;
+                border: 1px solid #A16207;
+                border-radius: 12px;
+            }
+
+            QLabel#masterTitle {
+                color: #FACC15;
+                font-size: 15px;
+                font-weight: 800;
+            }
+
+            QLabel#masterText {
+                color: #FDE68A;
+                font-size: 12px;
             }
 
             QLabel#cardTitle {
@@ -170,7 +187,7 @@ class DashboardWindow(QMainWindow):
             QLabel#cardValue {
                 color: #FFFFFF;
                 font-size: 24px;
-                font-weight: 700;
+                font-weight: 800;
             }
 
             QLabel#sectionTitle {
@@ -216,37 +233,6 @@ class DashboardWindow(QMainWindow):
                 background-color: #3B82F6;
             }
 
-            QPushButton#secondaryButton {
-                background-color: #1E293B;
-                border: 1px solid #334155;
-                border-radius: 9px;
-                padding: 12px 18px;
-                color: #FFFFFF;
-                font-size: 14px;
-                font-weight: 600;
-            }
-
-            QPushButton#secondaryButton:hover {
-                background-color: #334155;
-            }
-
-            QFrame#masterBanner {
-                background-color: #251D06;
-                border: 1px solid #A16207;
-                border-radius: 12px;
-            }
-
-            QLabel#masterTitle {
-                color: #FACC15;
-                font-size: 15px;
-                font-weight: 800;
-            }
-
-            QLabel#masterText {
-                color: #FDE68A;
-                font-size: 12px;
-            }
-
             QPushButton#masterButton {
                 background-color: #A16207;
                 border: none;
@@ -283,6 +269,7 @@ class DashboardWindow(QMainWindow):
         # ====================================================
 
         sidebar = QFrame()
+
         sidebar.setObjectName(
             "sidebar"
         )
@@ -300,10 +287,6 @@ class DashboardWindow(QMainWindow):
             24,
             20,
             20,
-        )
-
-        sidebar_layout.setSpacing(
-            10
         )
 
         logo = QLabel(
@@ -384,11 +367,9 @@ class DashboardWindow(QMainWindow):
             or "Foydalanuvchi"
         )
 
-        license_type = (
-            self.user.get(
-                "license_type",
-                "PRO",
-            )
+        license_type = self.user.get(
+            "license_type",
+            "PRO",
         )
 
         user_label = QLabel(
@@ -417,7 +398,7 @@ class DashboardWindow(QMainWindow):
         )
 
         # ====================================================
-        # CONTENT
+        # MAIN
         # ====================================================
 
         content = QWidget()
@@ -446,16 +427,12 @@ class DashboardWindow(QMainWindow):
         )
 
         page_subtitle = QLabel(
-            "Arxitekturani bosqichma-bosqich "
-            "o'rganish va amaliy ko'nikmalarni rivojlantirish."
+            "Arxitekturani bosqichma-bosqich o'rganish "
+            "va amaliy ko'nikmalarni rivojlantirish."
         )
 
         page_subtitle.setObjectName(
             "pageSubtitle"
-        )
-
-        page_subtitle.setWordWrap(
-            True
         )
 
         content_layout.addWidget(
@@ -467,10 +444,11 @@ class DashboardWindow(QMainWindow):
         )
 
         # ====================================================
-        # MASTER BANNER
+        # MASTER
         # ====================================================
 
         if self.is_master:
+
             master_banner = QFrame()
 
             master_banner.setObjectName(
@@ -505,10 +483,6 @@ class DashboardWindow(QMainWindow):
 
             master_text.setObjectName(
                 "masterText"
-            )
-
-            master_text.setWordWrap(
-                True
             )
 
             master_text_area.addWidget(
@@ -546,13 +520,13 @@ class DashboardWindow(QMainWindow):
             )
 
         # ====================================================
-        # CURRENT LEVEL
+        # STATS
         # ====================================================
 
+        current_level_text = "LEVEL 00"
+
         if self.is_master:
-            current_level_text = (
-                "MASTER"
-            )
+            current_level_text = "MASTER"
 
         elif self.current_level:
             current_level_text = str(
@@ -565,20 +539,7 @@ class DashboardWindow(QMainWindow):
                 "LEVEL ",
             )
 
-        else:
-            current_level_text = (
-                "LEVEL 0"
-            )
-
-        # ====================================================
-        # STATS
-        # ====================================================
-
         stats_layout = QHBoxLayout()
-
-        stats_layout.setSpacing(
-            16
-        )
 
         progress_percent = int(
             self.stats.get(
@@ -617,11 +578,7 @@ class DashboardWindow(QMainWindow):
 
         stats_layout.addWidget(
             self.create_stat_card(
-                (
-                    "Rejim"
-                    if self.is_master
-                    else "Hozirgi daraja"
-                ),
+                "Hozirgi daraja",
                 current_level_text,
             )
         )
@@ -629,10 +586,7 @@ class DashboardWindow(QMainWindow):
         stats_layout.addWidget(
             self.create_stat_card(
                 "Tugallangan dars",
-                (
-                    f"{completed_lessons}/"
-                    f"{total_lessons}"
-                ),
+                f"{completed_lessons}/{total_lessons}",
             )
         )
 
@@ -649,24 +603,10 @@ class DashboardWindow(QMainWindow):
             stats_layout
         )
 
-        lesson_xp = int(
-            self.stats.get(
-                "lesson_xp",
-                0,
-            )
-        )
-
-        exam_xp = int(
-            self.stats.get(
-                "exam_xp",
-                0,
-            )
-        )
-
         xp_info = QLabel(
-            f"Darslardan: {lesson_xp} XP"
+            f"Darslardan: {self.stats.get('lesson_xp', 0)} XP"
             f"   •   "
-            f"Imtihonlardan: {exam_xp} XP"
+            f"Imtihonlardan: {self.stats.get('exam_xp', 0)} XP"
         )
 
         xp_info.setObjectName(
@@ -678,7 +618,7 @@ class DashboardWindow(QMainWindow):
         )
 
         # ====================================================
-        # CONTINUE LEARNING CARD
+        # NEXT LESSON
         # ====================================================
 
         learning_card = QFrame()
@@ -703,11 +643,7 @@ class DashboardWindow(QMainWindow):
         )
 
         section_title = QLabel(
-            (
-                "Oddiy o'quvchi progressini tekshirish"
-                if self.is_master
-                else "O'qishni davom ettirish"
-            )
+            "O'qishni davom ettirish"
         )
 
         section_title.setObjectName(
@@ -719,6 +655,7 @@ class DashboardWindow(QMainWindow):
         )
 
         if self.next_lesson:
+
             level_label = QLabel(
                 str(
                     self.next_lesson.get(
@@ -754,10 +691,6 @@ class DashboardWindow(QMainWindow):
                 )
             )
 
-            lesson_title.setWordWrap(
-                True
-            )
-
             lesson_title.setStyleSheet(
                 """
                 QLabel {
@@ -785,30 +718,6 @@ class DashboardWindow(QMainWindow):
                 True
             )
 
-            estimated_minutes = (
-                self.next_lesson.get(
-                    "estimated_minutes",
-                    0,
-                )
-            )
-
-            xp_reward = (
-                self.next_lesson.get(
-                    "xp_reward",
-                    0,
-                )
-            )
-
-            lesson_meta = QLabel(
-                f"{estimated_minutes} daqiqa"
-                f"   •   "
-                f"+{xp_reward} XP"
-            )
-
-            lesson_meta.setObjectName(
-                "xpInfo"
-            )
-
             progress = QProgressBar()
 
             progress.setRange(
@@ -826,10 +735,6 @@ class DashboardWindow(QMainWindow):
 
             continue_button.setObjectName(
                 "primaryButton"
-            )
-
-            continue_button.setCursor(
-                Qt.CursorShape.PointingHandCursor
             )
 
             continue_button.clicked.connect(
@@ -853,10 +758,6 @@ class DashboardWindow(QMainWindow):
             )
 
             learning_layout.addWidget(
-                lesson_meta
-            )
-
-            learning_layout.addWidget(
                 progress
             )
 
@@ -866,18 +767,10 @@ class DashboardWindow(QMainWindow):
             )
 
         else:
+
             no_lesson = QLabel(
-                (
-                    "Oddiy progress bo'yicha hozir ochiq dars yo'q."
-                    if self.is_master
-                    else
-                    (
-                        "Hozir ochiq dars yo'q.\n\n"
-                        "Agar joriy Level ichidagi barcha darslarni "
-                        "tugatgan bo'lsangiz, Mening o'qishim "
-                        "bo'limidan yakuniy imtihonni tekshiring."
-                    )
-                )
+                "Ochiq dars topilmadi. "
+                "Mening o'qishim bo'limini tekshiring."
             )
 
             no_lesson.setObjectName(
@@ -888,25 +781,8 @@ class DashboardWindow(QMainWindow):
                 True
             )
 
-            academy_button = QPushButton(
-                "MENING O'QISHIM"
-            )
-
-            academy_button.setObjectName(
-                "secondaryButton"
-            )
-
-            academy_button.clicked.connect(
-                self.open_learning_window
-            )
-
             learning_layout.addWidget(
                 no_lesson
-            )
-
-            learning_layout.addWidget(
-                academy_button,
-                alignment=Qt.AlignmentFlag.AlignLeft,
             )
 
         content_layout.addWidget(
@@ -990,17 +866,54 @@ class DashboardWindow(QMainWindow):
     ):
         menu_text = item.text()
 
-        if (
-            menu_text
-            == "Mening o'qishim"
-        ):
-            self.open_learning_window()
+        if menu_text == "Bosh sahifa":
+            self.reload_data()
+            self.build_ui()
+            return
 
-        elif (
-            menu_text
-            == "Litsenziya"
-        ):
+        if menu_text == "Mening o'qishim":
+            self.open_learning_window()
+            return
+
+        if menu_text == "Litsenziya":
             self.open_license_window()
+            return
+
+        if menu_text in (
+            "Arxitektura",
+            "Archicad",
+            "SHNQ va normativlar",
+            "Amaliyot",
+            "Loyihalar",
+            "Testlar",
+            "Imtihonlar",
+            "Kutubxona",
+            "Portfolio",
+            "Statistika",
+            "Sozlamalar",
+        ):
+            self.open_section_window(
+                menu_text
+            )
+
+    # ========================================================
+    # SECTION
+    # ========================================================
+
+    def open_section_window(
+        self,
+        section_name: str,
+    ):
+        self.section_window = MenuSectionWindow(
+            self.user,
+            section_name,
+        )
+
+        self.section_window.show()
+
+        self.section_window.raise_()
+
+        self.section_window.activateWindow()
 
     # ========================================================
     # LICENSE
@@ -1009,10 +922,8 @@ class DashboardWindow(QMainWindow):
     def open_license_window(
         self,
     ):
-        self.license_window = (
-            LicenseWindow(
-                self.user
-            )
+        self.license_window = LicenseWindow(
+            self.user
         )
 
         self.license_window.show()
@@ -1028,10 +939,8 @@ class DashboardWindow(QMainWindow):
     def open_learning_window(
         self,
     ):
-        self.learning_window = (
-            LearningWindow(
-                self.user
-            )
+        self.learning_window = LearningWindow(
+            self.user
         )
 
         self.learning_window.destroyed.connect(
@@ -1039,6 +948,10 @@ class DashboardWindow(QMainWindow):
         )
 
         self.learning_window.show()
+
+        self.learning_window.raise_()
+
+        self.learning_window.activateWindow()
 
     def refresh_after_learning(
         self,
@@ -1056,11 +969,9 @@ class DashboardWindow(QMainWindow):
         if not self.next_lesson:
             return
 
-        self.lesson_window = (
-            LessonWindow(
-                lesson=self.next_lesson,
-                user=self.user,
-            )
+        self.lesson_window = LessonWindow(
+            lesson=self.next_lesson,
+            user=self.user,
         )
 
         self.lesson_window.lesson_completed.connect(
