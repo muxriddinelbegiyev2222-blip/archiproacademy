@@ -1,4 +1,5 @@
 from PySide6.QtCore import Qt
+
 from PySide6.QtWidgets import (
     QFrame,
     QHBoxLayout,
@@ -10,7 +11,6 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from courses.course_service import get_user_course_stats
 from ui.learning_window import LearningWindow
 from ui.license_window import LicenseWindow
 
@@ -19,103 +19,275 @@ SECTION_DATA = {
     "Arxitektura": {
         "title": "Arxitektura",
         "subtitle": "Arxitekturani noldan professional fikrlashgacha o'rganish.",
+        "section_levels": [
+            "LEVEL_00",
+            "LEVEL_01",
+            "LEVEL_02",
+            "LEVEL_03",
+            "LEVEL_04",
+        ],
         "items": [
-            ("LEVEL 00", "Absolute Zero — arxitekturaga mutlaqo noldan kirish"),
-            ("LEVEL 01", "Arxitektura asoslari"),
-            ("LEVEL 02", "Fazoviy fikrlash va ergonomika"),
-            ("LEVEL 03", "Uchastka va genplan"),
-            ("LEVEL 04", "O'zbekiston sharoitidagi turar joy"),
+            {
+                "title": "LEVEL 00",
+                "subtitle": "Absolute Zero — arxitekturaga mutlaqo noldan kirish",
+                "levels": ["LEVEL_00"],
+            },
+            {
+                "title": "LEVEL 01",
+                "subtitle": "Arxitektura asoslari",
+                "levels": ["LEVEL_01"],
+            },
+            {
+                "title": "LEVEL 02",
+                "subtitle": "Fazoviy fikrlash va ergonomika",
+                "levels": ["LEVEL_02"],
+            },
+            {
+                "title": "LEVEL 03",
+                "subtitle": "Uchastka va genplan",
+                "levels": ["LEVEL_03"],
+            },
+            {
+                "title": "LEVEL 04",
+                "subtitle": "O'zbekiston sharoitidagi turar joy",
+                "levels": ["LEVEL_04"],
+            },
         ],
     },
 
     "Archicad": {
         "title": "Archicad",
         "subtitle": "Archicad'ni boshlang'ichdan professional darajagacha o'rganish.",
+        "section_levels": [
+            "LEVEL_05",
+            "LEVEL_06",
+            "LEVEL_07",
+        ],
         "items": [
-            ("LEVEL 05", "Archicad boshlang'ich"),
-            ("LEVEL 06", "Archicad o'rta daraja"),
-            ("LEVEL 07", "Archicad yuqori daraja"),
+            {
+                "title": "LEVEL 05",
+                "subtitle": "Archicad boshlang'ich",
+                "levels": ["LEVEL_05"],
+            },
+            {
+                "title": "LEVEL 06",
+                "subtitle": "Archicad o'rta daraja",
+                "levels": ["LEVEL_06"],
+            },
+            {
+                "title": "LEVEL 07",
+                "subtitle": "Archicad yuqori daraja",
+                "levels": ["LEVEL_07"],
+            },
         ],
     },
 
     "SHNQ va normativlar": {
         "title": "SHNQ va normativlar",
         "subtitle": "Loyihalashda normativ savodxonlik va tekshiruv.",
+        "section_levels": [
+            "LEVEL_09",
+        ],
         "items": [
-            ("LEVEL 09", "SHNQ va normativlar"),
-            ("Amaliy tekshiruv", "Normativlarni loyihada to'g'ri qo'llash"),
+            {
+                "title": "LEVEL 09",
+                "subtitle": "SHNQ va normativlar",
+                "levels": ["LEVEL_09"],
+            },
+            {
+                "title": "Amaliy tekshiruv",
+                "subtitle": "Normativlarni loyihada to'g'ri qo'llash",
+                "levels": ["LEVEL_09"],
+            },
         ],
     },
 
     "Amaliyot": {
         "title": "Amaliyot",
-        "subtitle": "Nazariyani real loyiha vazifalarida mustahkamlash.",
+        "subtitle": "Nazariy bilimlarni amaliy vazifalarda mustahkamlash.",
+        "section_levels": [
+            "LEVEL_08",
+            "LEVEL_10",
+            "LEVEL_11",
+            "LEVEL_12",
+            "LEVEL_13",
+            "LEVEL_14",
+            "LEVEL_15",
+        ],
         "items": [
-            ("1 qavatli uy", "Texnik topshiriqdan tayyor loyihagacha"),
-            ("2 qavatli uy", "Professional turar joy loyihasi"),
-            ("Konstruksiya", "Arxitektor uchun konstruktiv fikrlash"),
-            ("BIM", "Model va hujjatlar bilan ishlash"),
+            {
+                "title": "Konstruksiya",
+                "subtitle": "Qurilish konstruksiyalari va amaliy yechimlar",
+                "levels": ["LEVEL_08"],
+            },
+            {
+                "title": "1 qavatli uy",
+                "subtitle": "Bir qavatli turar joyni professional loyihalash",
+                "levels": ["LEVEL_10"],
+            },
+            {
+                "title": "2 qavatli uy",
+                "subtitle": "Ikki qavatli turar joyni professional loyihalash",
+                "levels": ["LEVEL_11"],
+            },
+            {
+                "title": "Professional amaliyot",
+                "subtitle": "Yuqori bosqichdagi loyiha va amaliy mashqlar",
+                "levels": [
+                    "LEVEL_12",
+                    "LEVEL_13",
+                    "LEVEL_14",
+                    "LEVEL_15",
+                ],
+            },
         ],
     },
 
     "Loyihalar": {
         "title": "Loyihalar",
-        "subtitle": "O'quv jarayonidagi amaliy va yakuniy loyihalar.",
+        "subtitle": "Turar joy loyihalarini bosqichma-bosqich ishlab chiqish.",
+        "section_levels": [
+            "LEVEL_10",
+            "LEVEL_11",
+            "LEVEL_12",
+            "LEVEL_13",
+            "LEVEL_14",
+            "LEVEL_15",
+        ],
         "items": [
-            ("1 qavatli loyiha", "Rejalashtirish, fasad va hujjatlar"),
-            ("2 qavatli loyiha", "Murakkabroq turar joy loyihasi"),
-            ("Yakuniy loyiha", "Portfolio darajasidagi loyiha"),
+            {
+                "title": "1 qavatli uy loyihasi",
+                "subtitle": "Texnik topshiriqdan loyiha albomigacha",
+                "levels": ["LEVEL_10"],
+            },
+            {
+                "title": "2 qavatli uy loyihasi",
+                "subtitle": "Murakkab turar joy loyihasi",
+                "levels": ["LEVEL_11"],
+            },
+            {
+                "title": "Yakuniy loyiha",
+                "subtitle": "Professional yakuniy loyiha va portfolio",
+                "levels": [
+                    "LEVEL_12",
+                    "LEVEL_13",
+                    "LEVEL_14",
+                    "LEVEL_15",
+                ],
+            },
         ],
     },
 
     "Testlar": {
         "title": "Testlar",
-        "subtitle": "Har bir darsdan keyingi bilim nazorati.",
+        "subtitle": "Darslar bo'yicha bilimni tekshirish.",
+        "section_levels": [],
         "items": [
-            ("Dars testlari", "Har bir dars bo'yicha mini-test"),
-            ("Natijalar", "Eng yaxshi natija va progress saqlanadi"),
-            ("Takrorlash", "Tugallangan darslarni qayta ko'rish mumkin"),
+            {
+                "title": "Barcha dars testlari",
+                "subtitle": "Kerakli Levelni tanlang va dars testlarini bajaring",
+                "levels": [],
+            },
         ],
     },
 
     "Imtihonlar": {
         "title": "Imtihonlar",
-        "subtitle": "Har bir Level yakunidagi nazorat imtihonlari.",
+        "subtitle": "Level yakuniy imtihonlariga kirish.",
+        "section_levels": [],
         "items": [
-            ("Level imtihoni", "Level yakunida bilimni tekshirish"),
-            ("O'tish bali", "Talab qilingan natijaga erishish"),
-            ("XP", "Imtihon natijasiga qarab XP olish"),
+            {
+                "title": "Barcha yakuniy imtihonlar",
+                "subtitle": "Level yakuniy imtihonlari o'quv dasturi ichida joylashgan",
+                "levels": [],
+            },
         ],
     },
 
     "Kutubxona": {
         "title": "Kutubxona",
-        "subtitle": "ARCHIPRO UZ ichidagi o'quv materiallariga tezkor kirish.",
+        "subtitle": "ARCHIPRO UZ o'quv materiallari.",
+        "section_levels": [],
         "items": [
-            ("Arxitektura", "Arxitektura asoslari va rejalashtirish"),
-            ("Archicad", "Instrument va BIM workflow"),
-            ("SHNQ", "Normativ savodxonlik"),
-            ("Amaliy loyiha", "Uy loyihalash bo'yicha materiallar"),
+            {
+                "title": "Arxitektura materiallari",
+                "subtitle": "Arxitektura va turar joy loyihalash bo'yicha bilimlar",
+                "levels": [
+                    "LEVEL_00",
+                    "LEVEL_01",
+                    "LEVEL_02",
+                    "LEVEL_03",
+                    "LEVEL_04",
+                ],
+            },
+            {
+                "title": "Archicad materiallari",
+                "subtitle": "Archicad va BIM bo'yicha darslar",
+                "levels": [
+                    "LEVEL_05",
+                    "LEVEL_06",
+                    "LEVEL_07",
+                ],
+            },
+            {
+                "title": "Normativ materiallar",
+                "subtitle": "SHNQ va normativ savodxonlik",
+                "levels": ["LEVEL_09"],
+            },
         ],
     },
 
     "Portfolio": {
         "title": "Portfolio",
-        "subtitle": "O'quv jarayonida bajarilgan ishlarni portfolio darajasiga olib chiqish.",
+        "subtitle": "Professional portfolio uchun loyiha bilimlari.",
+        "section_levels": [
+            "LEVEL_10",
+            "LEVEL_11",
+            "LEVEL_12",
+            "LEVEL_13",
+            "LEVEL_14",
+            "LEVEL_15",
+        ],
         "items": [
-            ("Reja", "Uy rejalashtirish ishlari"),
-            ("Fasad", "Fasad yechimlari"),
-            ("Kesim", "Arxitektura kesimlari"),
-            ("Final loyiha", "Yakuniy loyiha natijasi"),
+            {
+                "title": "Portfolio tayyorlash",
+                "subtitle": "Professional loyiha va taqdimot bosqichlari",
+                "levels": [
+                    "LEVEL_10",
+                    "LEVEL_11",
+                    "LEVEL_12",
+                    "LEVEL_13",
+                    "LEVEL_14",
+                    "LEVEL_15",
+                ],
+            },
+        ],
+    },
+
+    "Statistika": {
+        "title": "Statistika",
+        "subtitle": "O'quv progressi va natijalaringiz.",
+        "section_levels": [],
+        "items": [
+            {
+                "title": "O'quv progressi",
+                "subtitle": "Darslar, testlar, imtihonlar va XP natijalari",
+                "levels": [],
+            },
         ],
     },
 
     "Sozlamalar": {
         "title": "Sozlamalar",
-        "subtitle": "ARCHIPRO UZ foydalanuvchi va litsenziya ma'lumotlari.",
+        "subtitle": "Profil va ARCHIPRO UZ sozlamalari.",
+        "section_levels": [],
         "items": [
-            ("Profil", "Foydalanuvchi hisob ma'lumotlari"),
-            ("Litsenziya", "Faol litsenziyani tekshirish"),
+            {
+                "title": "Litsenziya ma'lumotlari",
+                "subtitle": "Faol litsenziya va Device ID ma'lumotlari",
+                "action": "license",
+                "levels": [],
+            },
         ],
     },
 }
@@ -135,26 +307,28 @@ class MenuSectionWindow(QMainWindow):
         self.learning_window = None
         self.license_window = None
 
+        self.section_data = SECTION_DATA.get(
+            section_name,
+            {
+                "title": section_name,
+                "subtitle": "ARCHIPRO UZ bo'limi.",
+                "section_levels": [],
+                "items": [],
+            },
+        )
+
         self.setWindowTitle(
-            f"ARCHIPRO UZ - {section_name}"
+            f"ARCHIPRO UZ - {self.section_data['title']}"
         )
 
-        self.resize(
-            1050,
-            760,
-        )
-
-        self.setMinimumSize(
-            850,
-            600,
-        )
-
+        self.setup_styles()
         self.build_ui()
 
-    def build_ui(self):
-        central = QWidget()
-        self.setCentralWidget(central)
+    # ========================================================
+    # STYLE
+    # ========================================================
 
+    def setup_styles(self):
         self.setStyleSheet(
             """
             QMainWindow {
@@ -166,116 +340,161 @@ class MenuSectionWindow(QMainWindow):
                 font-family: Segoe UI;
             }
 
-            QScrollArea {
-                border: none;
-                background: transparent;
+            QWidget#pageRoot {
+                background-color: #0B1220;
             }
 
-            QLabel#title {
+            QWidget#scrollContent {
+                background-color: #0B1220;
+            }
+
+            QScrollArea {
+                background-color: #0B1220;
+                border: none;
+            }
+
+            QScrollArea > QWidget {
+                background-color: #0B1220;
+            }
+
+            QScrollArea > QWidget > QWidget {
+                background-color: #0B1220;
+            }
+
+            QAbstractScrollArea::viewport {
+                background-color: #0B1220;
+            }
+
+            QLabel#pageTitle {
                 font-size: 30px;
                 font-weight: 800;
                 color: #FFFFFF;
+                background-color: transparent;
             }
 
-            QLabel#subtitle {
+            QLabel#pageSubtitle {
                 font-size: 14px;
                 color: #94A3B8;
+                background-color: transparent;
             }
 
-            QFrame#card {
+            QFrame#sectionCard {
                 background-color: #111827;
                 border: 1px solid #1E293B;
-                border-radius: 12px;
+                border-radius: 14px;
             }
 
             QLabel#cardTitle {
                 font-size: 17px;
                 font-weight: 700;
                 color: #FFFFFF;
+                background-color: transparent;
             }
 
-            QLabel#cardText {
+            QLabel#cardSubtitle {
                 font-size: 13px;
                 color: #94A3B8;
+                background-color: transparent;
             }
 
-            QLabel#statValue {
-                font-size: 26px;
-                font-weight: 800;
-                color: #FFFFFF;
-            }
-
-            QLabel#statTitle {
-                font-size: 12px;
-                color: #94A3B8;
-            }
-
-            QPushButton#primary {
+            QPushButton#openButton {
                 background-color: #2563EB;
+                color: #FFFFFF;
                 border: none;
                 border-radius: 9px;
-                padding: 13px 20px;
-                color: #FFFFFF;
-                font-size: 14px;
+                padding: 11px 17px;
+                font-size: 13px;
                 font-weight: 700;
             }
 
-            QPushButton#primary:hover {
+            QPushButton#openButton:hover {
                 background-color: #3B82F6;
             }
 
-            QPushButton#secondary {
-                background-color: #1E293B;
-                border: 1px solid #334155;
-                border-radius: 9px;
-                padding: 13px 20px;
-                color: #FFFFFF;
-                font-size: 14px;
-                font-weight: 600;
+            QFrame#topInfo {
+                background-color: #111827;
+                border: 1px solid #1E293B;
+                border-radius: 14px;
             }
 
-            QPushButton#secondary:hover {
+            QScrollBar:vertical {
+                background-color: #0F172A;
+                width: 11px;
+            }
+
+            QScrollBar::handle:vertical {
                 background-color: #334155;
+                min-height: 30px;
+                border-radius: 5px;
+            }
+
+            QScrollBar::handle:vertical:hover {
+                background-color: #475569;
+            }
+
+            QScrollBar::add-line:vertical,
+            QScrollBar::sub-line:vertical {
+                height: 0px;
             }
             """
         )
 
-        root = QVBoxLayout(central)
+    # ========================================================
+    # UI
+    # ========================================================
+
+    def build_ui(self):
+        central = QWidget()
+
+        central.setObjectName(
+            "pageRoot"
+        )
+
+        central.setStyleSheet(
+            """
+            QWidget#pageRoot {
+                background-color: #0B1220;
+            }
+            """
+        )
+
+        self.setCentralWidget(
+            central
+        )
+
+        root = QVBoxLayout(
+            central
+        )
 
         root.setContentsMargins(
-            32,
-            28,
-            32,
-            28,
+            34,
+            30,
+            34,
+            24,
         )
 
         root.setSpacing(
             18
         )
 
-        data = SECTION_DATA.get(
-            self.section_name,
-            {
-                "title": self.section_name,
-                "subtitle": "ARCHIPRO UZ bo'limi.",
-                "items": [],
-            },
-        )
-
         title = QLabel(
-            data["title"]
+            self.section_data[
+                "title"
+            ]
         )
 
         title.setObjectName(
-            "title"
+            "pageTitle"
         )
 
         subtitle = QLabel(
-            data["subtitle"]
+            self.section_data[
+                "subtitle"
+            ]
         )
 
         subtitle.setObjectName(
-            "subtitle"
+            "pageSubtitle"
         )
 
         subtitle.setWordWrap(
@@ -290,292 +509,233 @@ class MenuSectionWindow(QMainWindow):
             subtitle
         )
 
-        # ====================================================
-        # STATISTIKA
-        # ====================================================
+        scroll = QScrollArea()
 
-        if self.section_name == "Statistika":
-            self.build_statistics(
-                root
-            )
-
-        else:
-            scroll = QScrollArea()
-
-            scroll.setWidgetResizable(
-                True
-            )
-
-            scroll_content = QWidget()
-
-            scroll_layout = QVBoxLayout(
-                scroll_content
-            )
-
-            scroll_layout.setContentsMargins(
-                0,
-                5,
-                8,
-                5,
-            )
-
-            scroll_layout.setSpacing(
-                12
-            )
-
-            for item_title, item_text in data["items"]:
-
-                card = QFrame()
-
-                card.setObjectName(
-                    "card"
-                )
-
-                card_layout = QVBoxLayout(
-                    card
-                )
-
-                card_layout.setContentsMargins(
-                    20,
-                    17,
-                    20,
-                    17,
-                )
-
-                card_title = QLabel(
-                    item_title
-                )
-
-                card_title.setObjectName(
-                    "cardTitle"
-                )
-
-                card_text = QLabel(
-                    item_text
-                )
-
-                card_text.setObjectName(
-                    "cardText"
-                )
-
-                card_text.setWordWrap(
-                    True
-                )
-
-                card_layout.addWidget(
-                    card_title
-                )
-
-                card_layout.addWidget(
-                    card_text
-                )
-
-                scroll_layout.addWidget(
-                    card
-                )
-
-            scroll_layout.addStretch()
-
-            scroll.setWidget(
-                scroll_content
-            )
-
-            root.addWidget(
-                scroll,
-                1,
-            )
-
-        # ====================================================
-        # BUTTONS
-        # ====================================================
-
-        buttons = QHBoxLayout()
-
-        learning_button = QPushButton(
-            "O'QUV DASTURINI OCHISH"
+        scroll.setWidgetResizable(
+            True
         )
 
-        learning_button.setObjectName(
-            "primary"
+        scroll.setFrameShape(
+            QScrollArea.Shape.NoFrame
         )
 
-        learning_button.clicked.connect(
-            self.open_learning
+        scroll.setStyleSheet(
+            """
+            QScrollArea {
+                background-color: #0B1220;
+                border: none;
+            }
+
+            QScrollArea QWidget {
+                background-color: #0B1220;
+            }
+
+            QAbstractScrollArea::viewport {
+                background-color: #0B1220;
+            }
+            """
         )
 
-        buttons.addWidget(
-            learning_button
+        scroll.viewport().setStyleSheet(
+            """
+            background-color: #0B1220;
+            """
         )
 
-        if self.section_name == "Sozlamalar":
+        scroll_content = QWidget()
 
-            license_button = QPushButton(
-                "LITSENZIYA MA'LUMOTLARI"
-            )
-
-            license_button.setObjectName(
-                "secondary"
-            )
-
-            license_button.clicked.connect(
-                self.open_license
-            )
-
-            buttons.addWidget(
-                license_button
-            )
-
-        buttons.addStretch()
-
-        root.addLayout(
-            buttons
+        scroll_content.setObjectName(
+            "scrollContent"
         )
 
-    def build_statistics(
-        self,
-        root,
-    ):
-        stats = get_user_course_stats(
-            self.user["id"]
+        scroll_content.setStyleSheet(
+            """
+            QWidget#scrollContent {
+                background-color: #0B1220;
+            }
+            """
         )
 
-        row = QHBoxLayout()
+        scroll_layout = QVBoxLayout(
+            scroll_content
+        )
 
-        values = [
-            (
-                "Umumiy progress",
-                f"{stats.get('progress_percent', 0)}%",
-            ),
-            (
-                "Tugallangan dars",
-                (
-                    f"{stats.get('completed_lessons', 0)}/"
-                    f"{stats.get('total_lessons', 0)}"
-                ),
-            ),
-            (
-                "Jami XP",
-                str(
-                    stats.get(
-                        "xp",
-                        0,
-                    )
-                ),
-            ),
-        ]
+        scroll_layout.setContentsMargins(
+            0,
+            5,
+            8,
+            20,
+        )
 
-        for title_text, value_text in values:
+        scroll_layout.setSpacing(
+            12
+        )
 
-            card = QFrame()
-
-            card.setObjectName(
-                "card"
+        for item in self.section_data[
+            "items"
+        ]:
+            card = self.create_item_card(
+                item
             )
 
-            layout = QVBoxLayout(
+            scroll_layout.addWidget(
                 card
             )
 
-            layout.setContentsMargins(
-                20,
-                20,
-                20,
-                20,
-            )
+        scroll_layout.addStretch()
 
-            stat_title = QLabel(
-                title_text
-            )
-
-            stat_title.setObjectName(
-                "statTitle"
-            )
-
-            stat_value = QLabel(
-                value_text
-            )
-
-            stat_value.setObjectName(
-                "statValue"
-            )
-
-            layout.addWidget(
-                stat_title
-            )
-
-            layout.addWidget(
-                stat_value
-            )
-
-            row.addWidget(
-                card
-            )
-
-        root.addLayout(
-            row
-        )
-
-        info = QFrame()
-
-        info.setObjectName(
-            "card"
-        )
-
-        info_layout = QVBoxLayout(
-            info
-        )
-
-        lesson_xp = stats.get(
-            "lesson_xp",
-            0,
-        )
-
-        exam_xp = stats.get(
-            "exam_xp",
-            0,
-        )
-
-        details = QLabel(
-            f"Darslardan: {lesson_xp} XP\n"
-            f"Imtihonlardan: {exam_xp} XP"
-        )
-
-        details.setObjectName(
-            "cardText"
-        )
-
-        info_layout.addWidget(
-            details
+        scroll.setWidget(
+            scroll_content
         )
 
         root.addWidget(
-            info
+            scroll,
+            1,
         )
 
-        root.addStretch()
+    # ========================================================
+    # CARD
+    # ========================================================
 
-    def open_learning(
+    def create_item_card(
         self,
+        item: dict,
     ):
+        card = QFrame()
+
+        card.setObjectName(
+            "sectionCard"
+        )
+
+        layout = QHBoxLayout(
+            card
+        )
+
+        layout.setContentsMargins(
+            20,
+            18,
+            20,
+            18,
+        )
+
+        layout.setSpacing(
+            16
+        )
+
+        text_area = QVBoxLayout()
+
+        title = QLabel(
+            item["title"]
+        )
+
+        title.setObjectName(
+            "cardTitle"
+        )
+
+        subtitle = QLabel(
+            item["subtitle"]
+        )
+
+        subtitle.setObjectName(
+            "cardSubtitle"
+        )
+
+        subtitle.setWordWrap(
+            True
+        )
+
+        text_area.addWidget(
+            title
+        )
+
+        text_area.addWidget(
+            subtitle
+        )
+
+        layout.addLayout(
+            text_area
+        )
+
+        layout.addStretch()
+
+        button = QPushButton(
+            "OCHISH  →"
+        )
+
+        button.setObjectName(
+            "openButton"
+        )
+
+        button.setCursor(
+            Qt.CursorShape.PointingHandCursor
+        )
+
+        button.clicked.connect(
+            lambda checked=False, data=item:
+            self.open_item(
+                data
+            )
+        )
+
+        layout.addWidget(
+            button
+        )
+
+        return card
+
+    # ========================================================
+    # OPEN ITEM
+    # ========================================================
+
+    def open_item(
+        self,
+        item: dict,
+    ):
+        if item.get(
+            "action"
+        ) == "license":
+
+            self.license_window = LicenseWindow(
+                self.user
+            )
+
+            self.license_window.show()
+
+            return
+
+        level_codes = item.get(
+            "levels",
+            []
+        )
+
         self.learning_window = LearningWindow(
-            self.user
+            user=self.user,
+            focus_level_codes=level_codes,
+            custom_title=item["title"],
+            custom_subtitle=item["subtitle"],
         )
 
         self.learning_window.show()
 
-        self.learning_window.raise_()
+    # ========================================================
+    # WHOLE SECTION
+    # ========================================================
 
-        self.learning_window.activateWindow()
-
-    def open_license(
+    def open_whole_section(
         self,
     ):
-        self.license_window = LicenseWindow(
-            self.user
+        self.learning_window = LearningWindow(
+            user=self.user,
+            focus_level_codes=self.section_data.get(
+                "section_levels",
+                [],
+            ),
+            custom_title=self.section_data[
+                "title"
+            ],
+            custom_subtitle=self.section_data[
+                "subtitle"
+            ],
         )
 
-        self.license_window.show()
-
-        self.license_window.raise_()
-
-        self.license_window.activateWindow()
+        self.learning_window.show()
