@@ -2,59 +2,59 @@ from database.database import get_connection
 
 
 # ============================================================
-# LEVEL 2
-# MODULE 06 - YOTOQXONA LOYIHALASH
+# LEVEL 1
+# MODULE 06 - ARXITEKTURA USLUBLARI
 # ============================================================
 
-LEVEL02_MODULE06_LESSONS = [
+LEVEL01_MODULE06_LESSONS = [
     (
-        "L02_M06",
-        "L02_M06_001",
-        "Yotoqxona vazifasi",
+        "L01_M06",
+        "L01_M06_001",
+        "Arxitektura uslubi nima?",
         "theory",
-        "Yotoqxonaning asosiy funksiyasi, privacy va kundalik foydalanish mantig'ini tushunish.",
+        "Arxitektura uslubi, davr, shakl va vizual til tushunchalarini o'rganish.",
         1,
         40,
         20,
     ),
     (
-        "L02_M06",
-        "L02_M06_002",
-        "Krovat va harakat zonasi",
+        "L01_M06",
+        "L01_M06_002",
+        "Tarixiy uslublarni o'qish",
         "theory",
-        "Krovatni xona ichida mantiqiy joylashtirish va circulationni tashkil qilish.",
+        "Tarixiy arxitekturadagi asosiy kompozitsion belgilarni ajratishni o'rganish.",
         2,
         45,
         20,
     ),
     (
-        "L02_M06",
-        "L02_M06_003",
-        "Wardrobe va saqlash",
-        "practice",
-        "Shkaf, garderob va boshqa saqlash elementlarini ergonomik joylashtirish.",
+        "L01_M06",
+        "L01_M06_003",
+        "Zamonaviy arxitektura",
+        "theory",
+        "Modern, minimalistik va zamonaviy turar joy arxitekturasining asosiy tamoyillarini tushunish.",
         3,
-        50,
+        45,
         20,
     ),
     (
-        "L02_M06",
-        "L02_M06_004",
-        "Master bedroom va oddiy bedroom",
-        "theory",
-        "Master bedroom va oddiy yotoqxona o'rtasidagi funksional farqlarni tushunish.",
+        "L01_M06",
+        "L01_M06_004",
+        "Uslublarni aralashtirish",
+        "practice",
+        "Turli arxitektura tillarini uyg'unlashtirish va stilistik konfliktlarni aniqlash.",
         4,
         50,
         20,
     ),
     (
-        "L02_M06",
-        "L02_M06_005",
-        "Yotoqxona auditi",
+        "L01_M06",
+        "L01_M06_005",
+        "Arxitektura uslubi auditi",
         "practice",
-        "Yotoqxona rejasini privacy, mebel, eshik, deraza va circulation bo'yicha tekshirish.",
+        "Uy fasadi va hajmini stilistik yaxlitlik bo'yicha professional tahlil qilish.",
         5,
-        55,
+        60,
         25,
     ),
 ]
@@ -64,409 +64,152 @@ LEVEL02_MODULE06_LESSONS = [
 # CONTENT
 # ============================================================
 
-LEVEL02_MODULE06_CONTENT = {
-    "L02_M06_001": [
+LEVEL01_MODULE06_CONTENT = {
+    "L01_M06_001": [
         {
-            "title": "Yotoqxona — private makon",
+            "title": "Arxitektura uslubi nima?",
             "type": "highlight",
             "text": """
-            Yotoqxona uy ichidagi
-            eng muhim private zonalardan biri.
+            Arxitektura uslubi —
+            binoning tashqi ko'rinishi,
+            proporsiyasi,
+            materiali,
+            detali va kompozitsiyasida
+            takrorlanadigan umumiy vizual til.
 
             <br><br>
 
-            Bu xonaning asosiy vazifasi:
-
-            <br><br>
-
-            • uyqu;<br>
-            • dam olish;<br>
-            • kiyim saqlash;<br>
-            • shaxsiy foydalanish;<br>
-            • tinchlik va privacy.
+            Uslub faqat bezak emas.
+            U binoning qanday fikr bilan
+            yaratilganini ham ko'rsatadi.
             """,
         },
         {
-            "title": "Faqat krovat sig'ishi yetarli emas",
+            "title": "Uslubni qanday taniymiz?",
             "type": "normal",
             "text": """
-            Xonaga krovat sig'ishi
-            uning yaxshi rejalashtirilganini
-            anglatmaydi.
+            Binoni ko'rganda quyidagilarga qarang:
 
             <br><br>
 
-            Krovat atrofida
-            yurish,
-            shkafdan foydalanish,
-            eshikni ochish
-            va derazaga yaqinlashish
-            ham mumkin bo'lishi kerak.
+            • umumiy hajm;<br>
+            • tom shakli;<br>
+            • deraza va eshik ritmi;<br>
+            • materiallar;<br>
+            • ranglar;<br>
+            • dekor miqdori;<br>
+            • proporsiya;<br>
+            • detal xarakteri.
             """,
         },
         {
-            "title": "Privacy",
-            "type": "highlight",
+            "title": "Uslub va moda bir xil emas",
+            "type": "warning",
             "text": """
-            Yotoqxona private makon bo'lgani uchun
-            uning uy ichidagi joylashuvi ham muhim.
+            Trenddagi bitta material yoki
+            bezakni ishlatish
+            binoni avtomatik ravishda
+            ma'lum uslubga kiritmaydi.
 
             <br><br>
 
-            Mehmonlar harakati
-            bedroom zonasini
-            doim kesib o'tmasligi foydali.
+            Uslub butun bino bo'ylab
+            izchil ishlashi kerak.
             """,
         },
         {
             "title": "Tasavvur qiling",
             "type": "example",
             "text": """
-            Bedroom eshigi
-            to'g'ridan-to'g'ri
-            katta mehmonxona markaziga ochiladi.
+            Bir uyda:
 
             <br><br>
 
-            Uyda mehmonlar bor.
+            • klassik ustunlar;<br>
+            • juda minimalistik derazalar;<br>
+            • loft g'isht;<br>
+            • sharqona ornament;<br>
+            • futuristik tom
 
             <br><br>
 
-            Bedroomga kirayotgan odam
-            to'g'ridan-to'g'ri
-            public zonadan o'tadi.
+            bir vaqtning o'zida
+            ishlatilgan.
 
             <br><br>
 
-            Bu privacy nuqtai nazaridan
-            noqulay bo'lishi mumkin.
-            """,
-        },
-        {
-            "title": "Asosiy elementlar",
-            "type": "normal",
-            "text": """
-            Oddiy bedroomda
-            loyiha vazifasiga qarab:
-
-            <br><br>
-
-            • krovat;<br>
-            • bedside table;<br>
-            • wardrobe;<br>
-            • dresser;<br>
-            • ish yoki make-up stoli
-
-            <br><br>
-
-            bo'lishi mumkin.
+            Har bir element alohida
+            chiroyli bo'lishi mumkin,
+            lekin umumiy arxitektura
+            tartibsiz ko'rinishi mumkin.
             """,
         },
         {
             "title": "Mini-vazifa",
             "type": "example",
             "text": """
-            Yotoqxona sxemasini chizing.
+            O'zingiz yoqtirgan
+            3 ta uy rasmini tanlang.
 
             <br><br>
 
-            Unda belgilang:
+            Har biri uchun yozing:
 
             <br><br>
 
-            • kirish;<br>
-            • krovat;<br>
-            • wardrobe;<br>
-            • deraza;<br>
-            • asosiy yurish yo'li.
+            • hajm qanday?<br>
+            • tom qanday?<br>
+            • materiallar qanday?<br>
+            • deraza ritmi qanday?<br>
+            • dekor ko'pmi yoki kammi?
             """,
         },
     ],
 
-    "L02_M06_002": [
+    "L01_M06_002": [
         {
-            "title": "Krovat — asosiy element",
+            "title": "Tarixiy arxitekturani ko'chirish emas",
             "type": "highlight",
             "text": """
-            Bedroom rejasida
-            krovat odatda
-            asosiy mebel elementlaridan biri.
+            Tarixiy uslublarni o'rganishning maqsadi
+            eski binoni aynan nusxalash emas.
 
             <br><br>
 
-            Shu sabab xona rejasini
-            ko'pincha krovat pozitsiyasidan
-            boshlab tahlil qilish mumkin.
+            Maqsad —
+            proporsiya,
+            ritm,
+            simmetriya,
+            masshtab
+            va detal mantiqini tushunish.
             """,
         },
         {
-            "title": "Krovat atrofida foydalanish",
+            "title": "Klassik kompozitsiya",
             "type": "normal",
             "text": """
-            Krovat faqat
-            o'z o'lchamini egallamaydi.
+            Ko'plab klassik binolarda:
 
             <br><br>
 
-            Odam:
+            • aniq markaz;<br>
+            • simmetriya;<br>
+            • kuchli vertikal yoki gorizontal o'qlar;<br>
+            • takroriy ritm;<br>
+            • qatlamli fasad
 
             <br><br>
 
-            • yonidan yuradi;<br>
-            • yotadi va turadi;<br>
-            • choyshab almashtiradi;<br>
-            • bedside tabledan foydalanadi.
+            kuzatiladi.
             """,
         },
         {
-            "title": "Eshik bilan konflikt",
-            "type": "warning",
-            "text": """
-            Bedroom eshigi ochilganda
-            krovatga urilsa
-
-            <br><br>
-
-            yoki asosiy yurish yo'lini
-            yopib qo'ysa,
-
-            <br><br>
-
-            reja qayta ko'rib chiqilishi kerak.
-            """,
-        },
-        {
-            "title": "Deraza bilan aloqa",
+            "title": "Mahalliy arxitektura",
             "type": "normal",
             "text": """
-            Krovat joylashuvida
-            deraza ham hisobga olinadi.
-
-            <br><br>
-
-            Derazani butunlay
-            foydalanib bo'lmaydigan holatga
-            keltirib qo'ymaslik kerak.
-            """,
-        },
-        {
-            "title": "To'g'ridan-to'g'ri yo'l",
-            "type": "example",
-            "text": """
-            Eshikdan kirganda
-            odam wardrobega yoki
-            krovat tomon
-
-            <br><br>
-
-            keraksiz aylanmasdan
-            bora olsa,
-            circulation ancha tushunarli bo'ladi.
-            """,
-        },
-        {
-            "title": "Krovatni shunchaki markazga qo'ymang",
-            "type": "warning",
-            "text": """
-            Krovat plan markazida
-            chiroyli ko'rinishi mumkin.
-
-            <br><br>
-
-            Lekin bu:
-
-            <br><br>
-
-            • wardrobe ochilishini;<br>
-            • circulationni;<br>
-            • eshikni;<br>
-            • derazani
-
-            <br><br>
-
-            yomonlashtirsa,
-            kompozitsiya yaxshi emas.
-            """,
-        },
-        {
-            "title": "Mini-vazifa",
-            "type": "example",
-            "text": """
-            Bir xil bedroom uchun
-            2 xil krovat pozitsiyasini chizing.
-
-            <br><br>
-
-            Har bir variantda:
-
-            <br><br>
-
-            • kirish;<br>
-            • wardrobe;<br>
-            • deraza;<br>
-            • circulation
-
-            <br><br>
-
-            qanday o'zgarishini solishtiring.
-            """,
-        },
-    ],
-
-    "L02_M06_003": [
-        {
-            "title": "Wardrobe — faqat shkaf konturi emas",
-            "type": "highlight",
-            "text": """
-            Wardrobe joylashtirganda
-            uning yopiq holatini emas,
-            foydalanish holatini ham
-            tasavvur qilish kerak.
-            """,
-        },
-        {
-            "title": "Shkaf oldidagi foydalanish zonasi",
-            "type": "normal",
-            "text": """
-            Odam:
-
-            <br><br>
-
-            • shkafni ochadi;<br>
-            • kiyim tanlaydi;<br>
-            • oldida turadi;<br>
-            • buyumlarni oladi va qo'yadi.
-
-            <br><br>
-
-            Demak shkaf oldida
-            foydalanish uchun bo'sh hudud kerak.
-            """,
-        },
-        {
-            "title": "Door bilan konflikt",
-            "type": "example",
-            "text": """
-            Bedroom eshigi
-            ochilganda
-
-            <br><br>
-
-            wardrobe eshigi bilan
-            to'qnashsa,
-
-            <br><br>
-
-            ikkala elementdan
-            bir vaqtda foydalanish qiyinlashadi.
-            """,
-        },
-        {
-            "title": "Garderob zonasi",
-            "type": "normal",
-            "text": """
-            Kattaroq bedroomda
-            alohida garderob zonasi
-            bo'lishi mumkin.
-
-            <br><br>
-
-            Bunday holatda ham
-            bedroom → wardrobe
-            harakat yo'li qulay bo'lishi kerak.
-            """,
-        },
-        {
-            "title": "Saqlashni ko'paytirish har doim yechim emas",
-            "type": "warning",
-            "text": """
-            Barcha bo'sh devorlarga
-            shkaf qo'yish
-
-            <br><br>
-
-            xona funksiyasini
-            yaxshilamaydi.
-
-            <br><br>
-
-            Ba'zan aksincha,
-            xonani torlashtirib,
-            circulationni buzadi.
-            """,
-        },
-        {
-            "title": "Bedside zona",
-            "type": "normal",
-            "text": """
-            Bedside elementlar
-            krovat bilan birgalikda
-            rejalashtiriladi.
-
-            <br><br>
-
-            Ular eshik,
-            deraza
-            yoki asosiy o'tish bilan
-            konflikt qilmasligi kerak.
-            """,
-        },
-        {
-            "title": "Mini-vazifa",
-            "type": "example",
-            "text": """
-            Bedroomga:
-
-            <br><br>
-
-            • krovat;<br>
-            • 2 ta bedside table;<br>
-            • wardrobe
-
-            <br><br>
-
-            joylashtiring.
-
-            <br><br>
-
-            So'ng shkafdan foydalanish
-            va krovat atrofida yurish
-            mumkinligini tekshiring.
-            """,
-        },
-    ],
-
-    "L02_M06_004": [
-        {
-            "title": "Oddiy bedroom",
-            "type": "highlight",
-            "text": """
-            Oddiy bedroom
-            asosiy uyqu va saqlash
-            funksiyalarini bajarishi mumkin.
-
-            <br><br>
-
-            Unda:
-
-            <br><br>
-
-            • krovat;<br>
-            • wardrobe;<br>
-            • bedside zona
-
-            <br><br>
-
-            asosiy elementlar bo'lishi mumkin.
-            """,
-        },
-        {
-            "title": "Master bedroom",
-            "type": "highlight",
-            "text": """
-            Master bedroom
-            ko'proq funksiyani
-            birlashtirishi mumkin.
+            Mahalliy tarixiy arxitekturada
+            faqat ornament emas,
+            makon tashkiloti ham muhim.
 
             <br><br>
 
@@ -474,249 +217,362 @@ LEVEL02_MODULE06_CONTENT = {
 
             <br><br>
 
-            • katta sleeping zona;<br>
-            • garderob;<br>
-            • dressing zona;<br>
-            • alohida sanuzel bilan aloqa.
+            • hovli;<br>
+            • ayvon;<br>
+            • soyali o'tish;<br>
+            • ichki va tashqi makon aloqasi.
             """,
         },
         {
-            "title": "Master faqat katta xona emas",
+            "title": "Xato",
             "type": "warning",
             "text": """
-            Master bedroomni
-            oddiy bedroomdan faqat
-            kattaroq maydon bilan ajratish
-            yetarli emas.
+            Faqat tarixiy ornament qo'shib,
+            qolgan bino kompozitsiyasini
+            umuman boshqa tilda qilish
 
             <br><br>
 
-            Funksiyalar o'rtasidagi
-            aloqa ham muhim.
-            """,
-        },
-        {
-            "title": "Bedroom → garderob → sanuzel",
-            "type": "example",
-            "text": """
-            Master zonada
-            bedroom,
-            garderob
-            va sanuzel mavjud.
-
-            <br><br>
-
-            Ularning o'zaro
-            kundalik foydalanish tartibini
-            tasavvur qiling.
-
-            <br><br>
-
-            Keraksiz uzun yo'l
-            yoki ko'p eshiklar
-            noqulaylik yaratishi mumkin.
-            """,
-        },
-        {
-            "title": "Privacy darajasi",
-            "type": "normal",
-            "text": """
-            Master bedroom
-            uy ichida
-            yanada private joyda
-            bo'lishi mumkin.
-
-            <br><br>
-
-            U public zona bilan
-            qanday bog'langanini
-            alohida tekshiring.
-            """,
-        },
-        {
-            "title": "Oddiy bedroom ham to'liq xona",
-            "type": "normal",
-            "text": """
-            Ikkinchi bedroom
-            kichikroq bo'lishi mumkin,
-
-            <br><br>
-
-            lekin:
-
-            <br><br>
-
-            • krovatdan foydalanish;<br>
-            • wardrobe;<br>
-            • circulation;<br>
-            • tabiiy yorug'likka kirish
-
-            <br><br>
-
-            baribir mantiqiy bo'lishi kerak.
+            ko'pincha yuzaki stilizatsiyaga olib keladi.
             """,
         },
         {
             "title": "Mini-vazifa",
             "type": "example",
             "text": """
-            Ikki xona chizing:
+            Bitta tarixiy bino tanlang.
 
             <br><br>
 
-            A — oddiy bedroom<br>
-            B — master bedroom
+            Unda:
 
             <br><br>
 
-            Har birida
-            qaysi funksiyalar kerakligini
-            alohida yozing.
+            • markaz;<br>
+            • ritm;<br>
+            • simmetriya;<br>
+            • proporsiya;<br>
+            • asosiy detal
+
+            <br><br>
+
+            qayerda ekanini belgilang.
             """,
         },
     ],
 
-    "L02_M06_005": [
+    "L01_M06_003": [
         {
-            "title": "Yotoqxona auditi",
+            "title": "Zamonaviy arxitektura",
             "type": "highlight",
             "text": """
-            Endi bedroomni
-            faqat mebel sig'ishi bo'yicha emas,
-
-            <br><br>
-
-            real foydalanish,
-            privacy
-            va circulation bo'yicha
-            tekshiramiz.
+            Zamonaviy arxitekturada
+            ko'pincha shakl,
+            funksiya,
+            material
+            va texnologiya o'rtasidagi
+            bog'lanish muhim.
             """,
         },
         {
-            "title": "1. Privacy",
-            "type": "example",
+            "title": "Minimalizm",
+            "type": "normal",
             "text": """
-            Tekshiring:
+            Minimalizm —
+            shunchaki oq rang
+            yoki bezaksiz fasad emas.
 
             <br><br>
 
-            • bedroom public zonadan himoyalanganmi?<br>
-            • kirish mantiqiymi?<br>
-            • boshqa odamlar bedroom orqali o'tmayaptimi?
+            Unda keraksiz element kamayadi,
+            lekin proporsiya,
+            detal
+            va material sifati
+            yanada muhimlashadi.
             """,
         },
         {
-            "title": "2. Krovat",
-            "type": "example",
+            "title": "Modern residential",
+            "type": "normal",
             "text": """
-            Tekshiring:
+            Zamonaviy turar joylarda:
 
             <br><br>
 
-            • krovatga kirish qulaymi?<br>
-            • atrofida yurish mumkinmi?<br>
-            • eshik bilan konflikt yo'qmi?<br>
-            • derazadan foydalanish mumkinmi?
+            • sodda hajmlar;<br>
+            • katta openinglar;<br>
+            • indoor-outdoor aloqa;<br>
+            • material kontrasti;<br>
+            • aniq kompozitsiya
+
+            <br><br>
+
+            ko'p uchrashi mumkin.
             """,
         },
         {
-            "title": "3. Wardrobe",
-            "type": "example",
+            "title": "Loft elementlari",
+            "type": "normal",
             "text": """
-            Tekshiring:
+            Loft vizual tilida
+            g'isht,
+            beton,
+            metall,
+            ochiq konstruktiv xarakter
+            kabi elementlar ishlatilishi mumkin.
 
             <br><br>
 
-            • wardrobe ochiladimi?<br>
-            • oldida odam turishi mumkinmi?<br>
-            • eshik bilan konflikt yo'qmi?<br>
-            • foydalanish yo'li qulaymi?
+            Lekin bitta g'isht devor
+            butun binoni loft qilib qo'ymaydi.
             """,
         },
         {
-            "title": "4. Circulation",
-            "type": "example",
-            "text": """
-            Tekshiring:
-
-            <br><br>
-
-            • kirishdan krovatgacha yo'l ochiqmi?<br>
-            • wardrobega borish qulaymi?<br>
-            • keraksiz aylanma yo'l yo'qmi?
-            """,
-        },
-        {
-            "title": "Xatoni toping",
+            "title": "Xato",
             "type": "warning",
             "text": """
-            Bedroomda:
+            Zamonaviy arxitekturani
+            faqat katta oynalar
+            va tekis tom bilan
+            tenglashtirmang.
 
             <br><br>
 
-            • katta krovat;<br>
-            • katta wardrobe;<br>
-            • 2 ta bedside table
+            Asosiy mezon —
+            umumiy dizayn mantiqi.
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            Bir zamonaviy uy fasadini tanlang.
 
             <br><br>
 
-            hammasi sig'di.
+            Undagi:
+
+            • asosiy hajm;<br>
+            • dominant element;<br>
+            • materiallar;<br>
+            • opening ritmi;<br>
+            • bo'sh va to'liq yuzalar
 
             <br><br>
 
-            Lekin wardrobe eshigi
-            krovatga tegib qoladi.
+            nisbatini tahlil qiling.
+            """,
+        },
+    ],
+
+    "L01_M06_004": [
+        {
+            "title": "Uslublarni aralashtirish mumkinmi?",
+            "type": "highlight",
+            "text": """
+            Ha, mumkin.
 
             <br><br>
 
-            Xulosa:
+            Lekin turli uslublar
+            tasodifiy yig'ilmasligi kerak.
 
             <br><br>
 
-            <b>
-            Mebel sig'ishi
-            xona ergonomik ekanini
-            anglatmaydi.
-            </b>
+            Ularni birlashtiruvchi
+            umumiy kompozitsion qoida bo'lishi kerak.
+            """,
+        },
+        {
+            "title": "Asosiy va ikkilamchi til",
+            "type": "normal",
+            "text": """
+            Kuchli yechimda
+            odatda bitta asosiy dizayn tili bo'ladi.
+
+            <br><br>
+
+            Ikkinchi uslub
+            detal,
+            material
+            yoki aksent sifatida ishlashi mumkin.
+            """,
+        },
+        {
+            "title": "Masalan",
+            "type": "example",
+            "text": """
+            Zamonaviy uy:
+
+            <br><br>
+
+            • sodda massing;<br>
+            • zamonaviy openinglar;<br>
+            • neytral materiallar
+
+            <br><br>
+
+            bilan qurilgan.
+
+            <br><br>
+
+            Mahalliy xarakter esa
+            ayvon,
+            yog'och detal
+            yoki ornament aksenti
+            orqali berilishi mumkin.
+            """,
+        },
+        {
+            "title": "Stilistik konflikt",
+            "type": "warning",
+            "text": """
+            Har bir fasad qismida
+            boshqa dizayn tili ishlatilsa,
+            bino yaxlitligini yo'qotishi mumkin.
+
+            <br><br>
+
+            Savol:
+
+            <br><br>
+
+            “Bu element umumiy konsepsiyani
+            kuchaytirayaptimi yoki buzayaptimi?”
+            """,
+        },
+        {
+            "title": "Mini-vazifa",
+            "type": "example",
+            "text": """
+            Zamonaviy + mahalliy elementli
+            bitta uy konsepsiyasi tuzing.
+
+            <br><br>
+
+            Asosiy uslubni belgilang.
+
+            <br><br>
+
+            Keyin faqat 2–3 ta
+            ikkilamchi element bilan
+            mahalliy xarakter qo'shing.
+            """,
+        },
+    ],
+
+    "L01_M06_005": [
+        {
+            "title": "Uslub auditi",
+            "type": "highlight",
+            "text": """
+            Endi fasadni
+            “yoqdi / yoqmadi”
+            darajasida emas,
+
+            <br><br>
+
+            aniq mezonlar bilan
+            tahlil qilamiz.
+            """,
+        },
+        {
+            "title": "1. Massing",
+            "type": "example",
+            "text": """
+            Tekshiring:
+
+            <br><br>
+
+            • asosiy hajm tushunarlimi?<br>
+            • kompozitsiya tartiblimi?<br>
+            • ortiqcha shakllar bormi?
+            """,
+        },
+        {
+            "title": "2. Proporsiya",
+            "type": "example",
+            "text": """
+            Tekshiring:
+
+            <br><br>
+
+            • fasad qismlari bir-biriga mosmi?<br>
+            • openinglar juda katta yoki kichik ko'rinmayaptimi?<br>
+            • bino odam masshtabiga mos seziladimi?
+            """,
+        },
+        {
+            "title": "3. Ritm",
+            "type": "example",
+            "text": """
+            Tekshiring:
+
+            <br><br>
+
+            • derazalar tartibli ritm beradimi?<br>
+            • takrorlanish mantiqiymi?<br>
+            • tasodifiy openinglar bormi?
+            """,
+        },
+        {
+            "title": "4. Material",
+            "type": "example",
+            "text": """
+            Tekshiring:
+
+            <br><br>
+
+            • materiallar soni boshqarilganmi?<br>
+            • ular bir-birini qo'llab-quvvatlayaptimi?<br>
+            • bitta material ortiqcha dominant bo'lib qolmaganmi?
+            """,
+        },
+        {
+            "title": "5. Detal",
+            "type": "example",
+            "text": """
+            Tekshiring:
+
+            <br><br>
+
+            • dekor umumiy uslubga mosmi?<br>
+            • detal haddan tashqari ko'p emasmi?<br>
+            • barcha elementlar bir xil vizual tilda gapiryaptimi?
             """,
         },
         {
             "title": "Professional checklist",
             "type": "example",
             "text": """
-            Bedroomni tekshiring:
-
-            <br><br>
-
-            <b>1.</b> Privacy yetarlimi?<br><br>
-            <b>2.</b> Krovat pozitsiyasi mantiqiymi?<br><br>
-            <b>3.</b> Krovat atrofida circulation bormi?<br><br>
-            <b>4.</b> Wardrobedan foydalanish qulaymi?<br><br>
-            <b>5.</b> Door bilan konflikt yo'qmi?<br><br>
-            <b>6.</b> Windowdan foydalanish mumkinmi?<br><br>
-            <b>7.</b> Master bo'lsa qo'shimcha funksiyalar mantiqiymi?
+            <b>1.</b> Asosiy uslub tushunarlimi?<br><br>
+            <b>2.</b> Massing yaxlitmi?<br><br>
+            <b>3.</b> Proporsiya ishlaydimi?<br><br>
+            <b>4.</b> Ritm tartiblimi?<br><br>
+            <b>5.</b> Materiallar uyg'unmi?<br><br>
+            <b>6.</b> Detallar bir xil tildami?<br><br>
+            <b>7.</b> Keraksiz stilistik konflikt yo'qmi?
             """,
         },
         {
-            "title": "Modul yakuni",
+            "title": "LEVEL 1 yakuni",
             "type": "highlight",
             "text": """
             Siz endi:
 
             <br><br>
 
-            ✓ bedroomning private rolini tushunasiz;<br>
-            ✓ krovatni mantiqiy joylashtirasiz;<br>
-            ✓ wardrobe zonasini tashkil qilasiz;<br>
-            ✓ circulationni tekshirasiz;<br>
-            ✓ master va oddiy bedroomni farqlaysiz;<br>
-            ✓ eshik va deraza konfliktlarini topasiz;<br>
-            ✓ bedroom auditini bajarasiz.
+            ✓ kompozitsiyani tushunasiz;<br>
+            ✓ proporsiyani tahlil qilasiz;<br>
+            ✓ ritmni ko'rasiz;<br>
+            ✓ simmetriya va asimmetriyani farqlaysiz;<br>
+            ✓ forma va hajmni 3D fikrlaysiz;<br>
+            ✓ asosiy arxitektura uslublarini tahlil qilasiz.
 
             <br><br>
 
-            Keyingi modul:
-            <b>Bolalar xonasi.</b>
+            Keyingi bosqich:
+            <b>LEVEL 2 — Spatial Thinking.</b>
             """,
         },
     ],
@@ -725,75 +581,33 @@ LEVEL02_MODULE06_CONTENT = {
 
 # ============================================================
 # QUIZ
-# Q076-Q090 KODLARI SAQLANADI
+# Q076-Q090
 # ============================================================
 
-LEVEL02_MODULE06_QUIZ = {
-    "L02_M06_001": [
+LEVEL01_MODULE06_QUIZ = {
+    "L01_M06_001": [
         {
-            "code": "L02_Q076",
-            "question": "Yotoqxona uy ichidagi private zonalardan biri hisoblanadimi?",
-            "explanation": (
-                "Bedroom uyqu, dam olish va shaxsiy foydalanish uchun private makon hisoblanadi."
-            ),
-            "options": [
-                ("A", "Ha", True),
-                ("B", "Yo'q", False),
-            ],
-        },
-        {
-            "code": "L02_Q077",
-            "question": "Bedroomga krovat sig'ishi uning avtomatik ravishda qulay ekanini anglatadimi?",
-            "explanation": (
-                "Circulation, wardrobe, eshik va deraza aloqasi ham tekshiriladi."
-            ),
+            "code": "L01_Q076",
+            "question": "Arxitektura uslubi faqat bezakdan iboratmi?",
+            "explanation": "Uslub hajm, proporsiya, material, opening va detallarni ham qamrab oladi.",
             "options": [
                 ("A", "Ha", False),
                 ("B", "Yo'q", True),
             ],
         },
         {
-            "code": "L02_Q078",
-            "question": "Bedroom joylashuvida privacy muhimmi?",
-            "explanation": (
-                "Private xona public va mehmon oqimidan mantiqan ajratilishi foydali."
-            ),
-            "options": [
-                ("A", "Ha", True),
-                ("B", "Yo'q", False),
-            ],
-        },
-    ],
-
-    "L02_M06_002": [
-        {
-            "code": "L02_Q079",
-            "question": "Krovat atrofida foydalanish va yurish zonasi kerakmi?",
-            "explanation": (
-                "Odam krovat yonidan yurishi va undan qulay foydalanishi kerak."
-            ),
+            "code": "L01_Q077",
+            "question": "Binoning tomi, derazalari va materiallari uslubni aniqlashga yordam beradimi?",
+            "explanation": "Bu elementlar binoning umumiy vizual tilini shakllantiradi.",
             "options": [
                 ("A", "Ha", True),
                 ("B", "Yo'q", False),
             ],
         },
         {
-            "code": "L02_Q080",
-            "question": "Bedroom eshigi krovat bilan konflikt qilishi mumkinmi?",
-            "explanation": (
-                "Eshik swing zonasi krovat va boshqa mebel bilan tekshiriladi."
-            ),
-            "options": [
-                ("A", "Ha", True),
-                ("B", "Yo'q", False),
-            ],
-        },
-        {
-            "code": "L02_Q081",
-            "question": "Krovatni faqat plan markaziga qo'yish har doim eng yaxshi yechimmi?",
-            "explanation": (
-                "Krovat joylashuvi eshik, deraza, wardrobe va circulation bilan birga hal qilinadi."
-            ),
+            "code": "L01_Q078",
+            "question": "Bitta trend material ishlatilsa bino avtomatik ravishda ma'lum uslubga kiradimi?",
+            "explanation": "Uslub butun kompozitsiya bo'ylab izchil ishlashi kerak.",
             "options": [
                 ("A", "Ha", False),
                 ("B", "Yo'q", True),
@@ -801,71 +615,29 @@ LEVEL02_MODULE06_QUIZ = {
         },
     ],
 
-    "L02_M06_003": [
+    "L01_M06_002": [
         {
-            "code": "L02_Q082",
-            "question": "Wardrobe oldida foydalanish zonasi kerakmi?",
-            "explanation": (
-                "Shkafni ochish va kiyimlardan foydalanish uchun bo'sh joy kerak."
-            ),
+            "code": "L01_Q079",
+            "question": "Tarixiy arxitekturani o'rganishda proporsiya va ritm muhimmi?",
+            "explanation": "Tarixiy arxitekturaning kompozitsion mantiqini tushunish muhim.",
             "options": [
                 ("A", "Ha", True),
                 ("B", "Yo'q", False),
             ],
         },
         {
-            "code": "L02_Q083",
-            "question": "Bedroom eshigi va wardrobe eshigi bir-biri bilan konflikt qilishi mumkinmi?",
-            "explanation": (
-                "Ikki opening zonasi bir joyda kesishsa foydalanish noqulaylashadi."
-            ),
-            "options": [
-                ("A", "Ha", True),
-                ("B", "Yo'q", False),
-            ],
-        },
-        {
-            "code": "L02_Q084",
-            "question": "Barcha bo'sh devorlarga maksimal shkaf qo'yish har doim yaxshi rejalashtirishmi?",
-            "explanation": (
-                "Ortiqcha storage circulation va xona qulayligini yomonlashtirishi mumkin."
-            ),
-            "options": [
-                ("A", "Ha", False),
-                ("B", "Yo'q", True),
-            ],
-        },
-    ],
-
-    "L02_M06_004": [
-        {
-            "code": "L02_Q085",
-            "question": "Master bedroom oddiy bedroomdan ko'proq funksiyalarni o'z ichiga olishi mumkinmi?",
-            "explanation": (
-                "Master bedroom garderob yoki alohida sanuzel kabi qo'shimcha funksiyalarga ega bo'lishi mumkin."
-            ),
-            "options": [
-                ("A", "Ha", True),
-                ("B", "Yo'q", False),
-            ],
-        },
-        {
-            "code": "L02_Q086",
-            "question": "Master bedroom faqat maydoni katta bo'lgani uchun master hisoblanadimi?",
-            "explanation": (
-                "Uning funksional tarkibi va zonalar o'rtasidagi aloqa ham muhim."
-            ),
+            "code": "L01_Q080",
+            "question": "Mahalliy arxitektura faqat ornamentdan iboratmi?",
+            "explanation": "Hovli, ayvon va makon tashkiloti ham muhim.",
             "options": [
                 ("A", "Ha", False),
                 ("B", "Yo'q", True),
             ],
         },
         {
-            "code": "L02_Q087",
-            "question": "Oddiy bedroomda ham ergonomika va circulation talab qilinadimi?",
-            "explanation": (
-                "Har qanday bedroom real foydalanish uchun qulay bo'lishi kerak."
-            ),
+            "code": "L01_Q081",
+            "question": "Tarixiy elementni zamonaviy loyihaga qo'shganda umumiy kompozitsiya tekshirilishi kerakmi?",
+            "explanation": "Element umumiy dizayn tiliga mos bo'lishi kerak.",
             "options": [
                 ("A", "Ha", True),
                 ("B", "Yo'q", False),
@@ -873,44 +645,98 @@ LEVEL02_MODULE06_QUIZ = {
         },
     ],
 
-    "L02_M06_005": [
+    "L01_M06_003": [
         {
-            "code": "L02_Q088",
-            "question": "Bedroom auditida krovat, wardrobe va circulation birgalikda tekshiriladimi?",
-            "explanation": (
-                "Bu elementlarning o'zaro aloqasi xona ergonomikasini belgilaydi."
-            ),
+            "code": "L01_Q082",
+            "question": "Minimalizm faqat oq rang va bezaksiz fasad deganimi?",
+            "explanation": "Minimalizmda proporsiya, detal va material sifati juda muhim.",
+            "options": [
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
+            ],
+        },
+        {
+            "code": "L01_Q083",
+            "question": "Zamonaviy turar joyda indoor-outdoor aloqa muhim dizayn elementi bo'lishi mumkinmi?",
+            "explanation": "Ichki va tashqi makon aloqasi zamonaviy uylarning muhim jihatlaridan biri bo'lishi mumkin.",
             "options": [
                 ("A", "Ha", True),
                 ("B", "Yo'q", False),
             ],
         },
         {
-            "code": "L02_Q089",
-            "question": "Wardrobe eshigi krovatga tegib qolsa bu ergonomik muammo hisoblanadimi?",
-            "explanation": (
-                "Mebel sig'gan bo'lsa ham undan foydalanish mumkin bo'lmasa reja yaxshi ishlamaydi."
-            ),
+            "code": "L01_Q084",
+            "question": "Bitta g'isht devor ishlatilsa bino avtomatik loft uslubiga aylanadimi?",
+            "explanation": "Uslub bitta material emas, umumiy dizayn tizimidir.",
+            "options": [
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
+            ],
+        },
+    ],
+
+    "L01_M06_004": [
+        {
+            "code": "L01_Q085",
+            "question": "Turli arxitektura uslublarini uyg'unlashtirish mumkinmi?",
+            "explanation": "Mumkin, lekin asosiy konsepsiya va umumiy kompozitsion qoida saqlanishi kerak.",
             "options": [
                 ("A", "Ha", True),
                 ("B", "Yo'q", False),
             ],
         },
         {
-            "code": "L02_Q090",
-            "question": "Yotoqxona loyihalashdagi to'g'ri yondashuv qaysi?",
-            "explanation": (
-                "Privacy, krovat, storage va circulation birgalikda tahlil qilinadi."
-            ),
+            "code": "L01_Q086",
+            "question": "Har bir fasad qismiga alohida uslub berish har doim yaxlit kompozitsiya yaratadimi?",
+            "explanation": "Tasodifiy aralashma stilistik konflikt keltirib chiqarishi mumkin.",
+            "options": [
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
+            ],
+        },
+        {
+            "code": "L01_Q087",
+            "question": "Asosiy dizayn tili va ikkilamchi aksentlarni ajratish foydalimi?",
+            "explanation": "Bu stilistik yaxlitlikni saqlashga yordam beradi.",
+            "options": [
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
+            ],
+        },
+    ],
+
+    "L01_M06_005": [
+        {
+            "code": "L01_Q088",
+            "question": "Arxitektura uslubi auditida massing, proporsiya va ritm tekshiriladimi?",
+            "explanation": "Ular fasadning asosiy kompozitsion mezonlari.",
+            "options": [
+                ("A", "Ha", True),
+                ("B", "Yo'q", False),
+            ],
+        },
+        {
+            "code": "L01_Q089",
+            "question": "Ko'p material ishlatish avtomatik ravishda fasadni professional qiladimi?",
+            "explanation": "Materiallar boshqarilgan va umumiy konsepsiyaga mos bo'lishi kerak.",
+            "options": [
+                ("A", "Ha", False),
+                ("B", "Yo'q", True),
+            ],
+        },
+        {
+            "code": "L01_Q090",
+            "question": "Professional stilistik auditning to'g'ri ketma-ketligi qaysi?",
+            "explanation": "Umumiy uslub massing, proporsiya, ritm, material va detallar bilan birga tekshiriladi.",
             "options": [
                 (
                     "A",
-                    "Privacy → krovat → storage → circulation → audit",
+                    "Uslub → massing → proporsiya → ritm → material → detal → audit",
                     True,
                 ),
                 (
                     "B",
-                    "Faqat eng katta krovatni joylashtirish",
+                    "Faqat dekorni ko'paytirish",
                     False,
                 ),
             ],
@@ -923,7 +749,7 @@ LEVEL02_MODULE06_QUIZ = {
 # DATABASE SEED
 # ============================================================
 
-def seed_level02_module06():
+def seed_level01_module06():
     connection = get_connection()
 
     try:
@@ -938,7 +764,7 @@ def seed_level02_module06():
             sort_order,
             estimated_minutes,
             xp_reward,
-        ) in LEVEL02_MODULE06_LESSONS:
+        ) in LEVEL01_MODULE06_LESSONS:
 
             cursor.execute(
                 """
