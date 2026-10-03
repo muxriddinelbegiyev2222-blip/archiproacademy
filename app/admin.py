@@ -2,7 +2,6 @@ import sys
 
 from PySide6.QtWidgets import (
     QApplication,
-    QComboBox,
     QFileDialog,
     QFormLayout,
     QFrame,
@@ -34,12 +33,12 @@ class AdminWindow(QMainWindow):
 
         self.resize(
             720,
-            720,
+            680,
         )
 
         self.setMinimumSize(
             650,
-            650,
+            620,
         )
 
         self.setup_ui()
@@ -107,16 +106,16 @@ class AdminWindow(QMainWindow):
             }
 
             QLabel#proInfo {
-                background-color: #0F1F3D;
-                border: 1px solid #1D4ED8;
-                border-radius: 9px;
+                background-color: #0F172A;
+                border: 1px solid #334155;
+                border-radius: 8px;
                 padding: 11px;
-                color: #BFDBFE;
-                font-size: 12px;
+                color: #93C5FD;
+                font-size: 13px;
+                font-weight: 600;
             }
 
-            QLineEdit,
-            QComboBox {
+            QLineEdit {
                 background-color: #0F172A;
                 border: 1px solid #334155;
                 border-radius: 8px;
@@ -125,8 +124,7 @@ class AdminWindow(QMainWindow):
                 font-size: 14px;
             }
 
-            QLineEdit:focus,
-            QComboBox:focus {
+            QLineEdit:focus {
                 border: 1px solid #3B82F6;
             }
 
@@ -184,7 +182,7 @@ class AdminWindow(QMainWindow):
         )
 
         subtitle = QLabel(
-            "ARCHIPRO UZ mijoz litsenziyasini yaratish"
+            "Offline PRO litsenziya yaratish markazi"
         )
 
         subtitle.setObjectName(
@@ -200,9 +198,10 @@ class AdminWindow(QMainWindow):
         )
 
         warning = QLabel(
-            "DIQQAT: Ushbu dastur va private key faqat "
-            "ARCHIPRO UZ egasida saqlanadi. "
-            "Mijozga ARCHIPRO ADMIN.exe berilmaydi."
+            "DIQQAT: ARCHIPRO ADMIN.exe va private key "
+            "faqat dastur egasida qoladi. "
+            "Mijozga faqat ARCHIPRO UZ.exe va "
+            ".archiprolic litsenziya fayli beriladi."
         )
 
         warning.setObjectName(
@@ -252,23 +251,6 @@ class AdminWindow(QMainWindow):
             self.key_status
         )
 
-        pro_info = QLabel(
-            "Mijoz litsenziyasi: PRO\n"
-            "MASTER test rejimi mijozlarga chiqarilmaydi."
-        )
-
-        pro_info.setObjectName(
-            "proInfo"
-        )
-
-        pro_info.setWordWrap(
-            True
-        )
-
-        root.addWidget(
-            pro_info
-        )
-
         card = QFrame()
 
         card.setObjectName(
@@ -296,25 +278,33 @@ class AdminWindow(QMainWindow):
             14
         )
 
-        self.device_input = QLineEdit()
+        self.device_input = (
+            QLineEdit()
+        )
 
         self.device_input.setPlaceholderText(
             "ARCHIPRO-XXXX-XXXX-XXXX-XXXX-XXXX-XXXX"
         )
 
-        self.full_name_input = QLineEdit()
+        self.full_name_input = (
+            QLineEdit()
+        )
 
         self.full_name_input.setPlaceholderText(
             "Masalan: Ali Valiyev"
         )
 
-        self.username_input = QLineEdit()
+        self.username_input = (
+            QLineEdit()
+        )
 
         self.username_input.setPlaceholderText(
             "Masalan: ali2026"
         )
 
-        self.password_input = QLineEdit()
+        self.password_input = (
+            QLineEdit()
+        )
 
         self.password_input.setEchoMode(
             QLineEdit.EchoMode.Password
@@ -324,7 +314,9 @@ class AdminWindow(QMainWindow):
             "Kamida 8 belgili parol"
         )
 
-        self.password_confirm_input = QLineEdit()
+        self.password_confirm_input = (
+            QLineEdit()
+        )
 
         self.password_confirm_input.setEchoMode(
             QLineEdit.EchoMode.Password
@@ -334,31 +326,12 @@ class AdminWindow(QMainWindow):
             "Parolni qayta kiriting"
         )
 
-        self.duration_combo = QComboBox()
-
-        self.duration_combo.addItem(
-            "Muddatsiz",
-            "PERMANENT",
+        pro_info = QLabel(
+            "PRO"
         )
 
-        self.duration_combo.addItem(
-            "30 kun",
-            "30",
-        )
-
-        self.duration_combo.addItem(
-            "90 kun",
-            "90",
-        )
-
-        self.duration_combo.addItem(
-            "180 kun",
-            "180",
-        )
-
-        self.duration_combo.addItem(
-            "365 kun",
-            "365",
+        pro_info.setObjectName(
+            "proInfo"
         )
 
         form.addRow(
@@ -386,32 +359,9 @@ class AdminWindow(QMainWindow):
             self.password_confirm_input,
         )
 
-        license_label = QLabel(
-            "PRO"
-        )
-
-        license_label.setStyleSheet(
-            """
-            QLabel {
-                background-color: #0F172A;
-                border: 1px solid #334155;
-                border-radius: 8px;
-                padding: 11px;
-                color: #60A5FA;
-                font-size: 14px;
-                font-weight: 700;
-            }
-            """
-        )
-
         form.addRow(
             "Litsenziya:",
-            license_label,
-        )
-
-        form.addRow(
-            "Amal qilish muddati:",
-            self.duration_combo,
+            pro_info,
         )
 
         card_layout.addLayout(
@@ -433,7 +383,7 @@ class AdminWindow(QMainWindow):
         )
 
         create_button = QPushButton(
-            "LICENSE YARATISH"
+            "PRO LICENSE YARATISH"
         )
 
         create_button.setObjectName(
@@ -466,14 +416,14 @@ class AdminWindow(QMainWindow):
 
     def clear_form(self):
         self.device_input.clear()
-        self.full_name_input.clear()
-        self.username_input.clear()
-        self.password_input.clear()
-        self.password_confirm_input.clear()
 
-        self.duration_combo.setCurrentIndex(
-            0
-        )
+        self.full_name_input.clear()
+
+        self.username_input.clear()
+
+        self.password_input.clear()
+
+        self.password_confirm_input.clear()
 
         self.device_input.setFocus()
 
@@ -520,11 +470,6 @@ class AdminWindow(QMainWindow):
             .text()
         )
 
-        duration_code = (
-            self.duration_combo
-            .currentData()
-        )
-
         if not device_id:
 
             QMessageBox.warning(
@@ -555,16 +500,6 @@ class AdminWindow(QMainWindow):
 
             return
 
-        if len(username) < 3:
-
-            QMessageBox.warning(
-                self,
-                "Login",
-                "Login kamida 3 ta belgidan iborat bo'lsin.",
-            )
-
-            return
-
         if len(password) < 8:
 
             QMessageBox.warning(
@@ -587,16 +522,15 @@ class AdminWindow(QMainWindow):
 
         try:
 
-            license_data = generate_license(
-                device_id=device_id,
-                username=username,
-                password=password,
-                full_name=full_name,
-
-                # MIJOZ UCHUN FAQAT PRO
-                license_type="PRO",
-
-                duration_code=duration_code,
+            license_data = (
+                generate_license(
+                    device_id=device_id,
+                    username=username,
+                    password=password,
+                    full_name=full_name,
+                    license_type="PRO",
+                    duration_code="PERMANENT",
+                )
             )
 
         except Exception as exc:
@@ -612,14 +546,20 @@ class AdminWindow(QMainWindow):
             return
 
         suggested_name = (
-            f"{username}_ARCHIPRO.archiprolic"
+            f"{username}_ARCHIPRO"
+            ".archiprolic"
         )
 
-        file_path, _ = QFileDialog.getSaveFileName(
-            self,
-            "ARCHIPRO litsenziyasini saqlash",
-            suggested_name,
-            "ARCHIPRO License (*.archiprolic)",
+        file_path, _ = (
+            QFileDialog.getSaveFileName(
+                self,
+                "ARCHIPRO litsenziyasini saqlash",
+                suggested_name,
+                (
+                    "ARCHIPRO License "
+                    "(*.archiprolic)"
+                ),
+            )
         )
 
         if not file_path:
@@ -627,9 +567,11 @@ class AdminWindow(QMainWindow):
 
         try:
 
-            saved_path = save_license(
-                license_data,
-                file_path,
+            saved_path = (
+                save_license(
+                    license_data,
+                    file_path,
+                )
             )
 
         except Exception as exc:
@@ -644,26 +586,14 @@ class AdminWindow(QMainWindow):
 
             return
 
-        payload = license_data[
-            "payload"
-        ]
-
-        expires_at = (
-            payload.get(
-                "expires_at"
-            )
-            or "Muddatsiz"
-        )
-
         QMessageBox.information(
             self,
             "ARCHIPRO LICENSE",
             (
-                "Litsenziya muvaffaqiyatli yaratildi.\n\n"
-                f"Foydalanuvchi: {full_name}\n"
+                "PRO litsenziya muvaffaqiyatli yaratildi.\n\n"
                 f"Login: {username}\n"
                 "Litsenziya: PRO\n"
-                f"Muddati: {expires_at}\n\n"
+                "Muddati: Muddatsiz\n\n"
                 f"Fayl:\n{saved_path}"
             ),
         )
