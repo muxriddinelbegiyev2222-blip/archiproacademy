@@ -159,6 +159,16 @@ from courses.level13_module07 import seed_level13_module07
 from courses.level13_module08 import seed_level13_module08
 from courses.level13_exam import seed_level13_exam
 
+from courses.level14_module01 import seed_level14_module01
+from courses.level14_module02 import seed_level14_module02
+from courses.level14_module03 import seed_level14_module03
+from courses.level14_module04 import seed_level14_module04
+from courses.level14_module05 import seed_level14_module05
+from courses.level14_module06 import seed_level14_module06
+from courses.level14_module07 import seed_level14_module07
+from courses.level14_module08 import seed_level14_module08
+from courses.level14_exam import seed_level14_exam
+
 
 MODULE_SEEDERS = (
     seed_level00_extra,
@@ -291,6 +301,15 @@ MODULE_SEEDERS = (
     seed_level13_module06,
     seed_level13_module07,
     seed_level13_module08,
+
+    seed_level14_module01,
+    seed_level14_module02,
+    seed_level14_module03,
+    seed_level14_module04,
+    seed_level14_module05,
+    seed_level14_module06,
+    seed_level14_module07,
+    seed_level14_module08,
 )
 
 
@@ -307,6 +326,7 @@ CUSTOM_EXAM_SEEDERS = (
     seed_level11_exam,
     seed_level12_exam,
     seed_level13_exam,
+    seed_level14_exam,
 )
 
 
@@ -318,7 +338,6 @@ def prepare_application():
         seeder()
 
     seed_quizzes()
-
     seed_level_exams()
 
     for seeder in CUSTOM_EXAM_SEEDERS:
