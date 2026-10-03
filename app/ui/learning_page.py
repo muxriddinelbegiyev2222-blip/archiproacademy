@@ -12,16 +12,8 @@ class LearningPage(
     LearningWindow
 ):
     """
-    Mavjud LearningWindow'ning barcha real
-    PRO / MASTER / LOCK / EXAM logikasini saqlaydi.
-
-    Faqat:
-    - kerakli LEVEL'larni filtrlash;
-    - bitta oynadagi ORQAGA tugmasi;
-    - sarlavha;
-    - shrift o'lchamlari
-
-    bilan shug'ullanadi.
+    Mavjud LearningWindow'ning barcha
+    progress va qulf logikasini saqlaydi.
     """
 
     def __init__(
@@ -53,10 +45,6 @@ class LearningPage(
             user=user
         )
 
-    # ========================================================
-    # READABILITY
-    # ========================================================
-
     def setup_styles(self):
         super().setup_styles()
 
@@ -70,6 +58,7 @@ class LearningPage(
 
             QLabel#pageSubtitle {
                 font-size: 17px;
+                color: #A8B3C7;
             }
 
             QLabel#masterTitle {
@@ -87,6 +76,7 @@ class LearningPage(
 
             QLabel#levelSubtitle {
                 font-size: 16px;
+                color: #A8B3C7;
             }
 
             QLabel#moduleTitle {
@@ -96,11 +86,24 @@ class LearningPage(
 
             QLabel#lessonTitle {
                 font-size: 16px;
-                font-weight: 600;
+                font-weight: 650;
             }
 
             QLabel#meta {
-                font-size: 13px;
+                font-size: 14px;
+                color: #8FA0B8;
+            }
+
+            QLabel#availableStatus,
+            QLabel#completedStatus,
+            QLabel#lockedStatus,
+            QLabel#masterStatus {
+                font-size: 14px;
+            }
+
+            QLabel#examTitle,
+            QLabel#examCompletedTitle {
+                font-size: 20px;
             }
 
             QPushButton {
@@ -115,31 +118,21 @@ class LearningPage(
             """
         )
 
-    # ========================================================
-    # DATA
-    # ========================================================
-
     def reload_data(self):
         super().reload_data()
 
-        if not self.focus_level_codes:
-            return
+        if self.focus_level_codes:
+            allowed = set(
+                self.focus_level_codes
+            )
 
-        allowed = set(
-            self.focus_level_codes
-        )
-
-        self.levels = [
-            level
-            for level in self.levels
-            if level.get(
-                "code"
-            ) in allowed
-        ]
-
-    # ========================================================
-    # BUILD
-    # ========================================================
+            self.levels = [
+                level
+                for level in self.levels
+                if level.get(
+                    "code"
+                ) in allowed
+            ]
 
     def build_ui(self):
         super().build_ui()
@@ -147,60 +140,59 @@ class LearningPage(
         self._apply_shell_overrides()
 
     def _apply_shell_overrides(self):
-        if self.custom_title:
+        title = self.findChild(
+            QLabel,
+            "pageTitle",
+        )
 
-            title = self.findChild(
-                QLabel,
-                "pageTitle",
+        if (
+            title is not None
+            and self.custom_title
+        ):
+            title.setText(
+                self.custom_title
             )
 
-            if title is not None:
-                title.setText(
-                    self.custom_title
-                )
+        subtitle = self.findChild(
+            QLabel,
+            "pageSubtitle",
+        )
 
-        if self.custom_subtitle:
-
-            subtitle = self.findChild(
-                QLabel,
-                "pageSubtitle",
+        if (
+            subtitle is not None
+            and self.custom_subtitle
+        ):
+            subtitle.setText(
+                self.custom_subtitle
             )
 
-            if subtitle is not None:
-                subtitle.setText(
-                    self.custom_subtitle
-                )
-
-                subtitle.setWordWrap(
-                    True
-                )
-
-        if self.back_callback is not None:
-
-            back_button = self.findChild(
-                QPushButton,
-                "backButton",
+            subtitle.setWordWrap(
+                True
             )
 
-            if back_button is not None:
+        back_button = self.findChild(
+            QPushButton,
+            "backButton",
+        )
 
-                try:
-                    back_button.clicked.disconnect()
+        if (
+            back_button is not None
+            and self.back_callback is not None
+        ):
+            try:
+                back_button.clicked.disconnect()
 
-                except (
-                    RuntimeError,
-                    TypeError,
-                ):
-                    pass
+            except (
+                RuntimeError,
+                TypeError,
+            ):
+                pass
 
-                back_button.clicked.connect(
-                    self.back_callback
-                )
-
-    # ========================================================
-    # REFRESH
-    # ========================================================
+            back_button.clicked.connect(
+                self.back_callback
+            )
 
     def refresh_page(self):
         self.reload_data()
+
         self.build_ui()
