@@ -84,6 +84,7 @@ from courses.level07_module02 import seed_level07_module02
 from courses.level07_module03 import seed_level07_module03
 from courses.level07_module04 import seed_level07_module04
 from courses.level07_module05 import seed_level07_module05
+from courses.level07_module06 import seed_level07_module06
 
 from courses.quiz_service import seed_quizzes
 from courses.seed_courses import seed_course_structure
@@ -96,19 +97,12 @@ from ui.login_window import LoginWindow
 
 def prepare_application():
     initialize_database()
-
     seed_course_structure()
 
-    # ========================================================
     # LEVEL 0
-    # ========================================================
-
     seed_level00_extra()
 
-    # ========================================================
     # LEVEL 1
-    # ========================================================
-
     seed_level01_lessons()
     seed_level01_module02()
     seed_level01_module03()
@@ -116,10 +110,7 @@ def prepare_application():
     seed_level01_module05()
     seed_level01_module06()
 
-    # ========================================================
     # LEVEL 2
-    # ========================================================
-
     seed_level02_module01()
     seed_level02_module02()
     seed_level02_module03()
@@ -131,10 +122,7 @@ def prepare_application():
     seed_level02_module09()
     seed_level02_module10()
 
-    # ========================================================
     # LEVEL 3
-    # ========================================================
-
     seed_level03_module01()
     seed_level03_module02()
     seed_level03_module03()
@@ -144,10 +132,7 @@ def prepare_application():
     seed_level03_module07()
     seed_level03_module08()
 
-    # ========================================================
     # LEVEL 4
-    # ========================================================
-
     seed_level04_module01()
     seed_level04_module02()
     seed_level04_module03()
@@ -157,10 +142,7 @@ def prepare_application():
     seed_level04_module07()
     seed_level04_module08()
 
-    # ========================================================
     # LEVEL 5
-    # ========================================================
-
     seed_level05_module01()
     seed_level05_module02()
     seed_level05_module03()
@@ -172,10 +154,7 @@ def prepare_application():
     seed_level05_module09()
     seed_level05_module10()
 
-    # ========================================================
     # LEVEL 6
-    # ========================================================
-
     seed_level06_module01()
     seed_level06_module02()
     seed_level06_module03()
@@ -187,26 +166,18 @@ def prepare_application():
     seed_level06_module09()
     seed_level06_module10()
 
-    # ========================================================
     # LEVEL 7
-    # ========================================================
-
     seed_level07_module01()
     seed_level07_module02()
     seed_level07_module03()
     seed_level07_module04()
     seed_level07_module05()
+    seed_level07_module06()
 
-    # ========================================================
     # QUIZZES
-    # ========================================================
-
     seed_quizzes()
 
-    # ========================================================
     # FINAL EXAMS
-    # ========================================================
-
     seed_level_exams()
     seed_level02_exam()
     seed_level03_exam()
@@ -214,10 +185,8 @@ def prepare_application():
     seed_level05_exam()
     seed_level06_exam()
 
-    # ========================================================
     # DEVELOPMENT MASTER ACCOUNT
-    # ========================================================
-
+    # Sotuv versiyasida olib tashlanadi.
     create_user(
         username="admin",
         password="12345",
@@ -227,17 +196,10 @@ def prepare_application():
 
 
 def main():
-    app = QApplication(
-        sys.argv
-    )
+    app = QApplication(sys.argv)
 
-    app.setApplicationName(
-        "ARCHIPRO UZ"
-    )
-
-    app.setOrganizationName(
-        "ARCHIPRO UZ"
-    )
+    app.setApplicationName("ARCHIPRO UZ")
+    app.setOrganizationName("ARCHIPRO UZ")
 
     prepare_application()
 
@@ -247,10 +209,7 @@ def main():
         "dashboard": None,
     }
 
-    def process_login(
-        login: str,
-        password: str,
-    ):
+    def process_login(login: str, password: str):
         user = authenticate_user(
             login,
             password,
