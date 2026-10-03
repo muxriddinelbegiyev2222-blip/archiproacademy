@@ -30,12 +30,24 @@ from ui.curriculum_map import (
     validate_curriculum_map,
 )
 
+from ui.exam_window import (
+    ExamWindow,
+)
+
+from ui.exams_page import (
+    ExamsPage,
+)
+
 from ui.learning_page import (
     LearningPage,
 )
 
 from ui.license_window import (
     LicenseWindow,
+)
+
+from ui.tests_page import (
+    TestsPage,
 )
 
 
@@ -62,9 +74,7 @@ class AppShell(
 
         self.page_cache = {}
 
-        # ====================================================
-        # CURRICULUM SAFETY
-        # ====================================================
+        self.exam_window = None
 
         mapping_check = (
             validate_curriculum_map()
@@ -90,22 +100,15 @@ class AppShell(
         )
 
         self._setup_style()
+
         self._build_shell()
 
         self.open_home()
-
-        # ====================================================
-        # MONITORGA AVTOMATIK MOSLASHISH
-        # ====================================================
 
         QTimer.singleShot(
             0,
             self.showMaximized,
         )
-
-    # ========================================================
-    # GLOBAL STYLE
-    # ========================================================
 
     def _setup_style(self):
         self.setStyleSheet(
@@ -141,7 +144,7 @@ class AppShell(
                 background: transparent;
                 border: none;
                 outline: none;
-                color: #CBD5E1;
+                color: #D6DEE9;
                 font-size: 15px;
                 font-weight: 500;
             }
@@ -177,7 +180,7 @@ class AppShell(
             }
 
             QLabel#pageSubtitle {
-                color: #94A3B8;
+                color: #A8B3C7;
                 font-size: 16px;
             }
 
@@ -206,7 +209,7 @@ class AppShell(
             }
 
             QLabel#cardLabel {
-                color: #94A3B8;
+                color: #A8B3C7;
                 font-size: 14px;
             }
 
@@ -256,10 +259,6 @@ class AppShell(
             """
         )
 
-    # ========================================================
-    # SHELL
-    # ========================================================
-
     def _build_shell(self):
         root_widget = QWidget()
 
@@ -285,10 +284,6 @@ class AppShell(
         root.setSpacing(
             0
         )
-
-        # ====================================================
-        # SIDEBAR
-        # ====================================================
 
         sidebar = QFrame()
 
@@ -348,7 +343,6 @@ class AppShell(
         self.menu_items = [
             "Bosh sahifa",
             "Mening o'qishim",
-
             "Arxitektura",
             "Archicad",
             "Qurilish konstruksiyalari",
@@ -356,7 +350,6 @@ class AppShell(
             "Amaliyot",
             "BIM va real loyiha",
             "Portfolio / PRO Final",
-
             "Testlar",
             "Imtihonlar",
             "Kutubxona",
@@ -366,7 +359,6 @@ class AppShell(
         ]
 
         for text in self.menu_items:
-
             self.menu.addItem(
                 QListWidgetItem(
                     text
@@ -381,10 +373,6 @@ class AppShell(
             self.menu,
             1,
         )
-
-        # ====================================================
-        # USER
-        # ====================================================
 
         user_name = (
             self.user.get(
@@ -420,10 +408,6 @@ class AppShell(
             user_info
         )
 
-        # ====================================================
-        # STACK
-        # ====================================================
-
         self.stack = QStackedWidget()
 
         root.addWidget(
@@ -435,10 +419,6 @@ class AppShell(
             1,
         )
 
-    # ========================================================
-    # MENU ROUTER
-    # ========================================================
-
     def _handle_menu(
         self,
         item,
@@ -446,77 +426,51 @@ class AppShell(
         text = item.text()
 
         if text == "Bosh sahifa":
-
             self.open_home()
 
         elif text == "Mening o'qishim":
-
             self.open_learning()
 
         elif text in CURRICULUM_SECTIONS:
-
             self.open_section(
                 text
             )
 
         elif text == "Testlar":
-
-            self.open_learning(
-                title="Testlar",
-                subtitle=(
-                    "Dars testlariga o'quv "
-                    "ketma-ketligi bo'yicha kiring."
-                ),
-                cache_key="tests_overview",
-            )
+            self.open_tests()
 
         elif text == "Imtihonlar":
-
-            self.open_learning(
-                title="Imtihonlar",
-                subtitle=(
-                    "Level yakuniy imtihonlari "
-                    "darslar tugagach ochiladi."
-                ),
-                cache_key="exams_overview",
-            )
-
-        elif text == "Statistika":
-
-            self.open_statistics()
-
-        elif text == "Litsenziya":
-
-            self.open_license()
+            self.open_exams()
 
         elif text == "Kutubxona":
-
             self.open_info_page(
-                key="library",
-                title="Kutubxona",
-                text=(
-                    "Kutubxona uchun alohida resurslar "
-                    "keyingi bosqichda ulanadi. "
-                    "Mavjud 680 dars kontenti "
+                "library",
+                "Kutubxona",
+                (
+                    "Kutubxona uchun qo'shimcha "
+                    "resurslar keyingi kontent "
+                    "bosqichida ulanadi. "
+                    "Mavjud 680 darsning o'zi "
                     "o'quv bo'limlarida saqlangan."
                 ),
             )
 
-        elif text == "Sozlamalar":
+        elif text == "Statistika":
+            self.open_statistics()
 
+        elif text == "Litsenziya":
+            self.open_license()
+
+        elif text == "Sozlamalar":
             self.open_info_page(
-                key="settings",
-                title="Sozlamalar",
-                text=(
+                "settings",
+                "Sozlamalar",
+                (
                     "Profil va dastur sozlamalari "
                     "keyingi UI bosqichida "
                     "shu sahifaga ulanadi."
                 ),
             )
-
-    # ========================================================
-    # PAGE MANAGER
-    # ========================================================
 
     def _show_page(
         self,
@@ -528,7 +482,6 @@ class AppShell(
         )
 
         if existing is not None:
-
             self.stack.setCurrentWidget(
                 existing
             )
@@ -557,16 +510,11 @@ class AppShell(
 
         return page
 
-    # ========================================================
-    # MENU ACTIVE ITEM
-    # ========================================================
-
     def _set_menu_row(
         self,
         label: str,
     ):
         try:
-
             self.menu.setCurrentRow(
                 self.menu_items.index(
                     label
@@ -576,28 +524,55 @@ class AppShell(
         except ValueError:
             pass
 
-    # ========================================================
-    # HOME
-    # ========================================================
+    def _drop_cached_page(
+        self,
+        key: str,
+    ):
+        page = self.page_cache.pop(
+            key,
+            None,
+        )
+
+        if page is not None:
+            self.stack.removeWidget(
+                page
+            )
+
+            page.deleteLater()
+
+    def _refresh_learning_pages(
+        self,
+    ):
+        for key, page in list(
+            self.page_cache.items()
+        ):
+            if isinstance(
+                page,
+                LearningPage,
+            ):
+                page.refresh_page()
+
+            elif (
+                hasattr(
+                    page,
+                    "refresh_page",
+                )
+                and key
+                in {
+                    "tests",
+                    "exams",
+                }
+            ):
+                page.refresh_page()
 
     def open_home(self):
         self._set_menu_row(
             "Bosh sahifa"
         )
 
-        # Home progress doim yangi bo'lishi kerak.
-        old = self.page_cache.pop(
-            "home",
-            None,
+        self._drop_cached_page(
+            "home"
         )
-
-        if old is not None:
-
-            self.stack.removeWidget(
-                old
-            )
-
-            old.deleteLater()
 
         stats = get_user_course_stats(
             self.user["id"]
@@ -630,10 +605,6 @@ class AppShell(
             18
         )
 
-        # ====================================================
-        # TITLE
-        # ====================================================
-
         title = QLabel(
             "Bosh sahifa"
         )
@@ -664,12 +635,7 @@ class AppShell(
             subtitle
         )
 
-        # ====================================================
-        # MASTER BANNER
-        # ====================================================
-
         if self.is_master:
-
             banner = QFrame()
 
             banner.setObjectName(
@@ -744,10 +710,6 @@ class AppShell(
                 banner
             )
 
-        # ====================================================
-        # STATS
-        # ====================================================
-
         cards = QGridLayout()
 
         cards.setHorizontalSpacing(
@@ -759,24 +721,22 @@ class AppShell(
         )
 
         if self.is_master:
-
             current_level_text = (
                 "MASTER"
             )
 
         elif current_level:
-
             current_level_text = (
                 current_level[
                     "code"
-                ].replace(
+                ]
+                .replace(
                     "LEVEL_",
                     "LEVEL ",
                 )
             )
 
         else:
-
             current_level_text = "—"
 
         card_data = [
@@ -796,7 +756,7 @@ class AppShell(
                 f"{stats['progress_percent']}%",
             ),
             (
-                "XP",
+                "Jami XP",
                 str(
                     stats["xp"]
                 ),
@@ -809,7 +769,6 @@ class AppShell(
         ) in enumerate(
             card_data
         ):
-
             card = QFrame()
 
             card.setObjectName(
@@ -861,10 +820,6 @@ class AppShell(
             cards
         )
 
-        # ====================================================
-        # PROGRESS
-        # ====================================================
-
         progress = QProgressBar()
 
         progress.setRange(
@@ -881,10 +836,6 @@ class AppShell(
         layout.addWidget(
             progress
         )
-
-        # ====================================================
-        # NEXT LESSON
-        # ====================================================
 
         continue_card = QFrame()
 
@@ -914,7 +865,6 @@ class AppShell(
         )
 
         if next_lesson:
-
             continue_text_value = (
                 f"{next_lesson['level_code'].replace('LEVEL_', 'LEVEL ')}"
                 f"  •  "
@@ -924,18 +874,16 @@ class AppShell(
             )
 
         elif self.is_master:
-
             continue_text_value = (
-                "MASTER rejimida barcha mavjud darslarni "
-                "Mening o'qishim bo'limidan "
-                "tekshirishingiz mumkin."
+                "MASTER rejimida barcha mavjud "
+                "darslarni Mening o'qishim "
+                "bo'limidan tekshirish mumkin."
             )
 
         else:
-
             continue_text_value = (
                 "Hozir ochiq keyingi dars topilmadi. "
-                "Progress yoki Level imtihonini tekshiring."
+                "Level imtihoni yoki progressni tekshiring."
             )
 
         continue_text = QLabel(
@@ -990,52 +938,43 @@ class AppShell(
             page,
         )
 
-    # ========================================================
-    # ALL LEARNING
-    # ========================================================
+    def open_learning(self):
+        self._set_menu_row(
+            "Mening o'qishim"
+        )
 
-    def open_learning(
-        self,
-        *,
-        title=None,
-        subtitle=None,
-        cache_key="learning_all",
-    ):
-        if cache_key == "learning_all":
-
-            self._set_menu_row(
-                "Mening o'qishim"
-            )
+        key = "learning_all"
 
         page = self.page_cache.get(
-            cache_key
+            key
         )
 
         if page is None:
-
             page = LearningPage(
                 user=self.user,
-                custom_title=title,
-                custom_subtitle=subtitle,
-                back_callback=self.open_home,
+                custom_title=(
+                    "Mening o'qishim"
+                ),
+                custom_subtitle=(
+                    "LEVEL 00 dan LEVEL 15 gacha "
+                    "bo'lgan to'liq o'quv yo'lingiz."
+                ),
+                back_callback=(
+                    self.open_home
+                ),
             )
 
             self._show_page(
-                cache_key,
+                key,
                 page,
             )
 
         else:
-
             page.refresh_page()
 
             self.stack.setCurrentWidget(
                 page
             )
-
-    # ========================================================
-    # CURRICULUM SECTION
-    # ========================================================
 
     def open_section(
         self,
@@ -1062,7 +1001,6 @@ class AppShell(
         )
 
         if page is None:
-
             page = LearningPage(
                 user=self.user,
                 focus_level_codes=(
@@ -1080,7 +1018,9 @@ class AppShell(
                         "subtitle"
                     ]
                 ),
-                back_callback=self.open_home,
+                back_callback=(
+                    self.open_home
+                ),
             )
 
             self._show_page(
@@ -1089,16 +1029,151 @@ class AppShell(
             )
 
         else:
-
             page.refresh_page()
 
             self.stack.setCurrentWidget(
                 page
             )
 
-    # ========================================================
-    # STATISTICS
-    # ========================================================
+    def open_level_from_tests(
+        self,
+        level_codes,
+        title,
+        subtitle,
+    ):
+        code_key = "_".join(
+            level_codes
+        )
+
+        key = (
+            "tests_level::"
+            + code_key
+        )
+
+        page = self.page_cache.get(
+            key
+        )
+
+        if page is None:
+            page = LearningPage(
+                user=self.user,
+                focus_level_codes=(
+                    level_codes
+                ),
+                custom_title=(
+                    title
+                ),
+                custom_subtitle=(
+                    subtitle
+                ),
+                back_callback=(
+                    self.open_tests
+                ),
+            )
+
+            self._show_page(
+                key,
+                page,
+            )
+
+        else:
+            page.refresh_page()
+
+            self.stack.setCurrentWidget(
+                page
+            )
+
+    def open_tests(self):
+        self._set_menu_row(
+            "Testlar"
+        )
+
+        key = "tests"
+
+        page = self.page_cache.get(
+            key
+        )
+
+        if page is None:
+            page = TestsPage(
+                self.user
+            )
+
+            page.open_level_requested.connect(
+                self.open_level_from_tests
+            )
+
+            self._show_page(
+                key,
+                page,
+            )
+
+        else:
+            page.refresh_page()
+
+            self.stack.setCurrentWidget(
+                page
+            )
+
+    def open_exams(self):
+        self._set_menu_row(
+            "Imtihonlar"
+        )
+
+        key = "exams"
+
+        page = self.page_cache.get(
+            key
+        )
+
+        if page is None:
+            page = ExamsPage(
+                self.user
+            )
+
+            page.open_exam_requested.connect(
+                self._open_exam_window
+            )
+
+            self._show_page(
+                key,
+                page,
+            )
+
+        else:
+            page.refresh_page()
+
+            self.stack.setCurrentWidget(
+                page
+            )
+
+    def _open_exam_window(
+        self,
+        exam: dict,
+    ):
+        exam_data = dict(
+            exam
+        )
+
+        exam_data[
+            "master_mode"
+        ] = self.is_master
+
+        self.exam_window = ExamWindow(
+            user=self.user,
+            exam=exam_data,
+        )
+
+        self.exam_window.exam_passed.connect(
+            self._exam_finished
+        )
+
+        self.exam_window.show()
+
+    def _exam_finished(self):
+        self._refresh_learning_pages()
+
+        self.open_home()
 
     def open_statistics(self):
         self._set_menu_row(
@@ -1113,26 +1188,26 @@ class AppShell(
             f"Tugallangan darslar: "
             f"{stats['completed_lessons']} / "
             f"{stats['total_lessons']}\n\n"
+
             f"Umumiy progress: "
             f"{stats['progress_percent']}%\n\n"
+
             f"Dars XP: "
             f"{stats['lesson_xp']}\n\n"
+
             f"Imtihon XP: "
             f"{stats['exam_xp']}\n\n"
+
             f"Jami XP: "
             f"{stats['xp']}"
         )
 
         self.open_info_page(
-            key="statistics",
-            title="Statistika",
-            text=text,
+            "statistics",
+            "Statistika",
+            text,
             replace=True,
         )
-
-    # ========================================================
-    # LICENSE
-    # ========================================================
 
     def open_license(self):
         self._set_menu_row(
@@ -1146,7 +1221,6 @@ class AppShell(
         )
 
         if page is None:
-
             page = LicenseWindow(
                 self.user
             )
@@ -1157,14 +1231,9 @@ class AppShell(
             )
 
         else:
-
             self.stack.setCurrentWidget(
                 page
             )
-
-    # ========================================================
-    # INFO PAGE
-    # ========================================================
 
     def open_info_page(
         self,
@@ -1173,33 +1242,22 @@ class AppShell(
         text: str,
         replace=False,
     ):
-        old = self.page_cache.get(
-            key
-        )
-
-        if (
-            old is not None
-            and replace
-        ):
-
-            self.stack.removeWidget(
-                old
+        if replace:
+            self._drop_cached_page(
+                key
             )
 
-            old.deleteLater()
-
-            self.page_cache.pop(
-                key,
-                None,
+        else:
+            old = self.page_cache.get(
+                key
             )
 
-        elif old is not None:
+            if old is not None:
+                self.stack.setCurrentWidget(
+                    old
+                )
 
-            self.stack.setCurrentWidget(
-                old
-            )
-
-            return
+                return
 
         page = QWidget()
 
