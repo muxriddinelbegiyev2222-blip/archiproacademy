@@ -1,12 +1,14 @@
 from database.database import get_connection
 
 
-# ============================================================
-# LEVEL 5 FINAL EXAM
-# ============================================================
-
-LEVEL05_EXAM_CONFIG = {
+LEVEL05_EXAM = {
     "level_code": "LEVEL_05",
+    "title": "LEVEL 5 — Archicad Beginner Final",
+    "description": (
+        "Archicad interfeysi, Navigator, Wall, Slab, Door, Window, "
+        "Column, Beam, Object, 2D instrumentlar, Dimension "
+        "va birinchi Archicad loyihasi bo'yicha yakuniy imtihon."
+    ),
     "question_count": 50,
     "passing_score": 85,
     "xp_reward": 600,
@@ -19,10 +21,6 @@ def seed_level05_exam():
     try:
         cursor = connection.cursor()
 
-        # ====================================================
-        # LEVEL 5 ID
-        # ====================================================
-
         cursor.execute(
             """
             SELECT id
@@ -30,11 +28,7 @@ def seed_level05_exam():
             WHERE code = ?
             LIMIT 1
             """,
-            (
-                LEVEL05_EXAM_CONFIG[
-                    "level_code"
-                ],
-            ),
+            (LEVEL05_EXAM["level_code"],),
         )
 
         level = cursor.fetchone()
@@ -42,41 +36,33 @@ def seed_level05_exam():
         if level is None:
             return
 
-        level_id = level["id"]
-
-        # ====================================================
-        # FINAL EXAM
-        # ====================================================
-
         cursor.execute(
             """
             INSERT INTO level_exams (
                 level_id,
+                title,
+                description,
                 question_count,
                 passing_score,
-                xp_reward,
-                is_active
+                xp_reward
             )
-            VALUES (?, ?, ?, ?, 1)
+            VALUES (?, ?, ?, ?, ?, ?)
 
             ON CONFLICT(level_id)
             DO UPDATE SET
+                title = excluded.title,
+                description = excluded.description,
                 question_count = excluded.question_count,
                 passing_score = excluded.passing_score,
-                xp_reward = excluded.xp_reward,
-                is_active = 1
+                xp_reward = excluded.xp_reward
             """,
             (
-                level_id,
-                LEVEL05_EXAM_CONFIG[
-                    "question_count"
-                ],
-                LEVEL05_EXAM_CONFIG[
-                    "passing_score"
-                ],
-                LEVEL05_EXAM_CONFIG[
-                    "xp_reward"
-                ],
+                level["id"],
+                LEVEL05_EXAM["title"],
+                LEVEL05_EXAM["description"],
+                LEVEL05_EXAM["question_count"],
+                LEVEL05_EXAM["passing_score"],
+                LEVEL05_EXAM["xp_reward"],
             ),
         )
 
