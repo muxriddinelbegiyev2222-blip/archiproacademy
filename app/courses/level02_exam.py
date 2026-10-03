@@ -1,12 +1,13 @@
 from database.database import get_connection
 
 
-# ============================================================
-# LEVEL 2 FINAL EXAM
-# ============================================================
-
-LEVEL02_EXAM_CONFIG = {
+LEVEL02_EXAM = {
     "level_code": "LEVEL_02",
+    "title": "LEVEL 2 — Spatial Thinking Final",
+    "description": (
+        "Fazoviy fikrlash, ergonomika, funksional zonalash, "
+        "circulation va turar joy xonalari bo'yicha yakuniy imtihon."
+    ),
     "question_count": 40,
     "passing_score": 85,
     "xp_reward": 400,
@@ -19,7 +20,6 @@ def seed_level02_exam():
     try:
         cursor = connection.cursor()
 
-        # LEVEL 2 ID ni topamiz
         cursor.execute(
             """
             SELECT id
@@ -27,9 +27,7 @@ def seed_level02_exam():
             WHERE code = ?
             LIMIT 1
             """,
-            (
-                LEVEL02_EXAM_CONFIG["level_code"],
-            ),
+            (LEVEL02_EXAM["level_code"],),
         )
 
         level = cursor.fetchone()
@@ -37,32 +35,33 @@ def seed_level02_exam():
         if level is None:
             return
 
-        level_id = level["id"]
-
-        # LEVEL 2 uchun Final Exam yaratamiz yoki yangilaymiz
         cursor.execute(
             """
             INSERT INTO level_exams (
                 level_id,
+                title,
+                description,
                 question_count,
                 passing_score,
-                xp_reward,
-                is_active
+                xp_reward
             )
-            VALUES (?, ?, ?, ?, 1)
+            VALUES (?, ?, ?, ?, ?, ?)
 
             ON CONFLICT(level_id)
             DO UPDATE SET
+                title = excluded.title,
+                description = excluded.description,
                 question_count = excluded.question_count,
                 passing_score = excluded.passing_score,
-                xp_reward = excluded.xp_reward,
-                is_active = 1
+                xp_reward = excluded.xp_reward
             """,
             (
-                level_id,
-                LEVEL02_EXAM_CONFIG["question_count"],
-                LEVEL02_EXAM_CONFIG["passing_score"],
-                LEVEL02_EXAM_CONFIG["xp_reward"],
+                level["id"],
+                LEVEL02_EXAM["title"],
+                LEVEL02_EXAM["description"],
+                LEVEL02_EXAM["question_count"],
+                LEVEL02_EXAM["passing_score"],
+                LEVEL02_EXAM["xp_reward"],
             ),
         )
 
