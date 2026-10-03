@@ -149,6 +149,16 @@ from courses.level12_module09 import seed_level12_module09
 from courses.level12_module10 import seed_level12_module10
 from courses.level12_exam import seed_level12_exam
 
+from courses.level13_module01 import seed_level13_module01
+from courses.level13_module02 import seed_level13_module02
+from courses.level13_module03 import seed_level13_module03
+from courses.level13_module04 import seed_level13_module04
+from courses.level13_module05 import seed_level13_module05
+from courses.level13_module06 import seed_level13_module06
+from courses.level13_module07 import seed_level13_module07
+from courses.level13_module08 import seed_level13_module08
+from courses.level13_exam import seed_level13_exam
+
 
 MODULE_SEEDERS = (
     seed_level00_extra,
@@ -272,6 +282,15 @@ MODULE_SEEDERS = (
     seed_level12_module08,
     seed_level12_module09,
     seed_level12_module10,
+
+    seed_level13_module01,
+    seed_level13_module02,
+    seed_level13_module03,
+    seed_level13_module04,
+    seed_level13_module05,
+    seed_level13_module06,
+    seed_level13_module07,
+    seed_level13_module08,
 )
 
 
@@ -287,6 +306,7 @@ CUSTOM_EXAM_SEEDERS = (
     seed_level10_exam,
     seed_level11_exam,
     seed_level12_exam,
+    seed_level13_exam,
 )
 
 
@@ -304,6 +324,8 @@ def prepare_application():
     for seeder in CUSTOM_EXAM_SEEDERS:
         seeder()
 
+    # Faqat development/test uchun.
+    # Sotuv versiyasidan oldin olib tashlanadi.
     create_user(
         username="admin",
         password="12345",
