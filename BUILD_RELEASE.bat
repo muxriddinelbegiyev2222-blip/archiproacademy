@@ -268,8 +268,28 @@ if exist "release\ARCHIPRO_UZ_CLIENT\ARCHIPRO ADMIN.exe" (
     exit /b 1
 )
 
+if exist "release\ARCHIPRO_UZ_CLIENT\ARCHIPRO OWNER.exe" (
+    echo [ERROR] OWNER.exe CLIENT paketiga tushib qolgan.
+    pause
+    exit /b 1
+)
+
 if exist "release\ARCHIPRO_UZ_CLIENT\archipro_private.key" (
     echo [ERROR] PRIVATE KEY CLIENT paketiga tushib qolgan.
+    pause
+    exit /b 1
+)
+
+dir /b "release\ARCHIPRO_UZ_CLIENT\*.archiprolic" >nul 2>&1
+if not errorlevel 1 (
+    echo [ERROR] LICENSE fayli CLIENT paketiga tushib qolgan.
+    pause
+    exit /b 1
+)
+
+dir /b "release\ARCHIPRO_UZ_CLIENT\*.archiprobackup" >nul 2>&1
+if not errorlevel 1 (
+    echo [ERROR] BACKUP fayli CLIENT paketiga tushib qolgan.
     pause
     exit /b 1
 )
