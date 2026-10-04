@@ -17,6 +17,7 @@ from courses.course_service import (
 
 from courses.user_features import (
     get_bookmarked_lesson_ids,
+    get_user_notes_map,
 )
 
 
@@ -52,7 +53,9 @@ class LibraryPage(QWidget):
 
         self.lesson_index = []
         self.bookmarked_ids = set()
+        self.notes_map = {}
         self.only_bookmarks = False
+        self.only_notes = False
 
         self.result_layout = None
         self.result_info = None
@@ -63,6 +66,12 @@ class LibraryPage(QWidget):
     def reload_index(self):
         self.bookmarked_ids = (
             get_bookmarked_lesson_ids(
+                self.user["id"]
+            )
+        )
+
+        self.notes_map = (
+            get_user_notes_map(
                 self.user["id"]
             )
         )
@@ -116,6 +125,15 @@ class LibraryPage(QWidget):
                                     )
                                 )
                                 in self.bookmarked_ids
+                            ),
+                            "note_text": self.notes_map.get(
+                                int(
+                                    lesson.get(
+                                        "id",
+                                        0,
+                                    )
+                                ),
+                                "",
                             ),
                         }
                     )
@@ -259,12 +277,28 @@ class LibraryPage(QWidget):
             self.toggle_bookmarks
         )
 
+        self.notes_button = QPushButton(
+            "✎ FAQAT ESLATMALAR"
+        )
+        self.notes_button.setObjectName(
+            "openLevelButton"
+        )
+        self.notes_button.setCheckable(
+            True
+        )
+        self.notes_button.toggled.connect(
+            self.toggle_notes
+        )
+
         controls.addWidget(
             self.search_input,
             1,
         )
         controls.addWidget(
             self.bookmark_button
+        )
+        controls.addWidget(
+            self.notes_button
         )
 
         search_layout.addWidget(
@@ -339,6 +373,18 @@ class LibraryPage(QWidget):
             self.search_input.text()
         )
 
+    def toggle_notes(
+        self,
+        enabled: bool,
+    ):
+        self.only_notes = bool(
+            enabled
+        )
+
+        self.update_results(
+            self.search_input.text()
+        )
+
     def clear_results(self):
         while self.result_layout.count():
             item = self.result_layout.takeAt(
@@ -373,6 +419,17 @@ class LibraryPage(QWidget):
                 and not item.get(
                     "bookmarked"
                 )
+            ):
+                continue
+
+            if (
+                self.only_notes
+                and not str(
+                    item.get(
+                        "note_text",
+                        "",
+                    )
+                ).strip()
             ):
                 continue
 
@@ -417,6 +474,12 @@ class LibraryPage(QWidget):
                     str(
                         item.get(
                             "level_code",
+                            "",
+                        )
+                    ),
+                    str(
+                        item.get(
+                            "note_text",
                             "",
                         )
                     ),
@@ -558,6 +621,43 @@ class LibraryPage(QWidget):
         text_area.addWidget(
             meta
         )
+
+        note_text = str(
+            item.get(
+                "note_text",
+                "",
+            )
+            or ""
+        ).strip()
+
+        if note_text:
+            preview = note_text.replace(
+                "\n",
+                " ",
+            )
+
+            if len(
+                preview
+            ) > 120:
+                preview = (
+                    preview[:117]
+                    + "..."
+                )
+
+            note_label = QLabel(
+                "✎ "
+                + preview
+            )
+            note_label.setObjectName(
+                "progressText"
+            )
+            note_label.setWordWrap(
+                True
+            )
+
+            text_area.addWidget(
+                note_label
+            )
 
         layout.addLayout(
             text_area,
