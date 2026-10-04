@@ -11,7 +11,6 @@ from PySide6.QtWidgets import (
     QListWidget,
     QListWidgetItem,
     QMainWindow,
-    QProgressBar,
     QPushButton,
     QStackedWidget,
     QVBoxLayout,
@@ -32,12 +31,6 @@ from ui.curriculum_map import (
     CURRICULUM_SECTIONS,
     get_section,
     validate_curriculum_map,
-)
-
-from ui.embedded_pages import (
-    ExamPage,
-    LessonPage,
-    QuizPage,
 )
 
 from ui.exams_page import (
@@ -69,7 +62,22 @@ from ui.tests_page import (
 )
 
 
+# ============================================================
+# ARCHIPRO UZ
+# APP SHELL V4
+#
+# PERFORMANCE:
+# - lazy lesson/quiz/exam import
+# - max 3 cached Level page
+# - transient page cleanup
+# - no double Level refresh
+# ============================================================
+
+
 class AppShell(QMainWindow):
+
+    MAX_CACHED_LEVEL_PAGES = 3
+
     def __init__(
         self,
         user: dict,
@@ -88,12 +96,19 @@ class AppShell(QMainWindow):
             == "MASTER"
         )
 
+        # ====================================================
+        # PAGE CACHE
+        # ====================================================
+
         self.page_cache = {}
 
         self.current_page_key = None
 
+        # Faqat Level page uchun LRU.
+        self.level_page_lru = []
+
         # ====================================================
-        # CURRICULUM MAP CHECK
+        # CURRICULUM CHECK
         # ====================================================
 
         mapping_check = (
@@ -103,9 +118,12 @@ class AppShell(QMainWindow):
         if not mapping_check["ok"]:
             raise RuntimeError(
                 "Curriculum UI mapping xato: "
-                f"missing={mapping_check['missing']}, "
-                f"duplicates={mapping_check['duplicates']}, "
-                f"unknown={mapping_check['unknown']}"
+                f"missing="
+                f"{mapping_check['missing']}, "
+                f"duplicates="
+                f"{mapping_check['duplicates']}, "
+                f"unknown="
+                f"{mapping_check['unknown']}"
             )
 
         # ====================================================
@@ -125,7 +143,6 @@ class AppShell(QMainWindow):
 
         self.open_home()
 
-        # Monitor o'lchamiga mos maksimal holatda ochiladi.
         QTimer.singleShot(
             0,
             self.showMaximized,
@@ -302,11 +319,11 @@ class AppShell(QMainWindow):
             user_info
         )
 
-        # DeveloperBadge DashboardWindow tomonidan
-        # sidebar oxiriga qo'shiladi.
+        # DashboardWindow DeveloperBadge'ni
+        # aynan shu sidebar layout oxiriga qo'shadi.
 
         # ====================================================
-        # MAIN STACK
+        # CONTENT STACK
         # ====================================================
 
         self.stack = QStackedWidget()
@@ -321,7 +338,7 @@ class AppShell(QMainWindow):
         )
 
     # ========================================================
-    # MENU ROUTER
+    # MENU
     # ========================================================
 
     def handle_menu(
@@ -329,6 +346,10 @@ class AppShell(QMainWindow):
         item,
     ):
         text = item.text()
+
+        # Menu bosilganda eski transient dars/test/exam
+        # sahifalarini saqlab yurish shart emas.
+        self.cleanup_transient_pages()
 
         if text == "Bosh sahifa":
             self.open_home()
@@ -369,7 +390,7 @@ class AppShell(QMainWindow):
             return
 
     # ========================================================
-    # PAGE MANAGER
+    # PAGE CACHE
     # ========================================================
 
     def show_page(
@@ -387,6 +408,10 @@ class AppShell(QMainWindow):
             )
 
             self.current_page_key = key
+
+            self.touch_level_page(
+                key
+            )
 
             return existing
 
@@ -412,6 +437,10 @@ class AppShell(QMainWindow):
 
         self.current_page_key = key
 
+        self.touch_level_page(
+            key
+        )
+
         return page
 
     def show_cached(
@@ -424,13 +453,19 @@ class AppShell(QMainWindow):
 
         if page is None:
             self.open_home()
-            return
+            return False
 
         self.stack.setCurrentWidget(
             page
         )
 
         self.current_page_key = key
+
+        self.touch_level_page(
+            key
+        )
+
+        return True
 
     def drop_page(
         self,
@@ -444,11 +479,165 @@ class AppShell(QMainWindow):
         if page is None:
             return
 
+        if key in self.level_page_lru:
+            try:
+                self.level_page_lru.remove(
+                    key
+                )
+
+            except ValueError:
+                pass
+
         self.stack.removeWidget(
             page
         )
 
+        page.setParent(
+            None
+        )
+
         page.deleteLater()
+
+    # ========================================================
+    # LEVEL LRU CACHE
+    # ========================================================
+
+    def touch_level_page(
+        self,
+        key: str,
+    ):
+        if not key.startswith(
+            "level::"
+        ):
+            return
+
+        if key in self.level_page_lru:
+            self.level_page_lru.remove(
+                key
+            )
+
+        self.level_page_lru.append(
+            key
+        )
+
+    def trim_level_cache(
+        self,
+        protected_keys=None,
+    ):
+        """
+        Faqat eng oxirgi 3 ta Level page RAM'da qoladi.
+
+        Hozir ochiq Level va kerakli return page
+        o'chirilmaydi.
+        """
+
+        protected = set(
+            protected_keys or []
+        )
+
+        if self.current_page_key:
+            protected.add(
+                self.current_page_key
+            )
+
+        while (
+            len(
+                self.level_page_lru
+            )
+            > self.MAX_CACHED_LEVEL_PAGES
+        ):
+            candidate = None
+
+            for key in list(
+                self.level_page_lru
+            ):
+                if key in protected:
+                    continue
+
+                candidate = key
+                break
+
+            if candidate is None:
+                break
+
+            self.drop_page(
+                candidate
+            )
+
+    # ========================================================
+    # TRANSIENT CLEANUP
+    # ========================================================
+
+    def cleanup_transient_pages(
+        self,
+        except_keys=None,
+    ):
+        """
+        Lesson / quiz / exam vaqtinchalik sahifalar.
+
+        Menu almashtirilganda ular RAM'da
+        qolib ketmaydi.
+        """
+
+        protected = set(
+            except_keys or []
+        )
+
+        keys = list(
+            self.page_cache.keys()
+        )
+
+        for key in keys:
+            if key in protected:
+                continue
+
+            if (
+                key.startswith(
+                    "lesson::"
+                )
+                or key.startswith(
+                    "quiz::"
+                )
+                or key.startswith(
+                    "exam::"
+                )
+            ):
+                self.drop_page(
+                    key
+                )
+
+    # ========================================================
+    # BACK FROM TRANSIENT
+    # ========================================================
+
+    def return_from_transient(
+        self,
+        return_key: str,
+        transient_key: str,
+    ):
+        """
+        Avval oldingi sahifaga o'tadi,
+        keyin vaqtinchalik sahifani delete qiladi.
+        """
+
+        success = self.show_cached(
+            return_key
+        )
+
+        if not success:
+            return
+
+        QTimer.singleShot(
+            0,
+            lambda:
+            self.drop_page(
+                transient_key
+            ),
+        )
+
+    # ========================================================
+    # MENU SELECTION
+    # ========================================================
 
     def set_menu(
         self,
@@ -473,7 +662,7 @@ class AppShell(QMainWindow):
             "Bosh sahifa"
         )
 
-        # Home dinamik ma'lumotlar sabab qayta quriladi.
+        # Home progress dinamik.
         self.drop_page(
             "home"
         )
@@ -541,8 +730,8 @@ class AppShell(QMainWindow):
         )
 
         subtitle = QLabel(
-            "Arxitektura va turar joy loyihalash bo'yicha "
-            "shaxsiy o'quv markazingiz."
+            "Arxitektura va turar joy loyihalash "
+            "bo'yicha shaxsiy o'quv markazingiz."
         )
 
         subtitle.setObjectName(
@@ -566,18 +755,18 @@ class AppShell(QMainWindow):
         )
 
         # ====================================================
-        # MASTER BANNER
+        # MASTER
         # ====================================================
 
         if self.is_master:
-            master_card = QFrame()
+            master = QFrame()
 
-            master_card.setObjectName(
+            master.setObjectName(
                 "levelOverviewCard"
             )
 
             master_layout = QHBoxLayout(
-                master_card
+                master
             )
 
             master_layout.setContentsMargins(
@@ -587,9 +776,7 @@ class AppShell(QMainWindow):
                 16,
             )
 
-            master_text_layout = (
-                QVBoxLayout()
-            )
+            text_layout = QVBoxLayout()
 
             master_title = QLabel(
                 "★ MASTER TEST MODE FAOL"
@@ -600,8 +787,8 @@ class AppShell(QMainWindow):
             )
 
             master_text = QLabel(
-                "Bu rejim faqat dastur egasi uchun. "
-                "Barcha Level va darslarni test qilish mumkin."
+                "Barcha Level va darslarni "
+                "tekshirish imkoniyati faol."
             )
 
             master_text.setObjectName(
@@ -612,37 +799,37 @@ class AppShell(QMainWindow):
                 True
             )
 
-            master_text_layout.addWidget(
+            text_layout.addWidget(
                 master_title
             )
 
-            master_text_layout.addWidget(
+            text_layout.addWidget(
                 master_text
             )
 
             master_layout.addLayout(
-                master_text_layout,
+                text_layout,
                 1,
             )
 
-            master_button = QPushButton(
-                "BARCHA LEVELLARNI KO'RISH  →"
+            button = QPushButton(
+                "BARCHA LEVELLAR  →"
             )
 
-            master_button.setObjectName(
+            button.setObjectName(
                 "openLevelButton"
             )
 
-            master_button.clicked.connect(
+            button.clicked.connect(
                 self.open_learning_overview
             )
 
             master_layout.addWidget(
-                master_button
+                button
             )
 
             layout.addWidget(
-                master_card
+                master
             )
 
         # ====================================================
@@ -662,8 +849,7 @@ class AppShell(QMainWindow):
             current_text = (
                 current_level[
                     "code"
-                ]
-                .replace(
+                ].replace(
                     "LEVEL_",
                     "LEVEL ",
                 )
@@ -758,33 +944,31 @@ class AppShell(QMainWindow):
         )
 
         # ====================================================
-        # CONTINUE CARD
+        # NEXT STEP
         # ====================================================
 
-        continue_card = QFrame()
+        next_card = QFrame()
 
-        continue_card.setObjectName(
+        next_card.setObjectName(
             "levelOverviewCard"
         )
 
-        continue_layout = QHBoxLayout(
-            continue_card
+        next_layout = QHBoxLayout(
+            next_card
         )
 
-        continue_layout.setContentsMargins(
+        next_layout.setContentsMargins(
             22,
             18,
             22,
             18,
         )
 
-        continue_layout.setSpacing(
+        next_layout.setSpacing(
             20
         )
 
-        continue_text_layout = (
-            QVBoxLayout()
-        )
+        text_layout = QVBoxLayout()
 
         small = QLabel(
             "KEYINGI QADAM"
@@ -805,38 +989,37 @@ class AppShell(QMainWindow):
 
         elif self.is_master:
             message = (
-                "MASTER rejimida barcha Level va "
+                "MASTER rejimida barcha "
                 "darslar tekshirish uchun mavjud."
             )
 
         else:
             message = (
-                "Keyingi ochiq dars topilmadi. "
-                "Level yakuniy holatini tekshiring."
+                "Keyingi ochiq dars topilmadi."
             )
 
-        next_label = QLabel(
+        message_label = QLabel(
             message
         )
 
-        next_label.setObjectName(
+        message_label.setObjectName(
             "levelName"
         )
 
-        next_label.setWordWrap(
+        message_label.setWordWrap(
             True
         )
 
-        continue_text_layout.addWidget(
+        text_layout.addWidget(
             small
         )
 
-        continue_text_layout.addWidget(
-            next_label
+        text_layout.addWidget(
+            message_label
         )
 
-        continue_layout.addLayout(
-            continue_text_layout,
+        next_layout.addLayout(
+            text_layout,
             1,
         )
 
@@ -852,12 +1035,12 @@ class AppShell(QMainWindow):
             self.open_learning_overview
         )
 
-        continue_layout.addWidget(
+        next_layout.addWidget(
             button
         )
 
         layout.addWidget(
-            continue_card
+            next_card
         )
 
         layout.addStretch()
@@ -868,7 +1051,7 @@ class AppShell(QMainWindow):
         )
 
     # ========================================================
-    # ALL COURSE OVERVIEW
+    # COURSE OVERVIEW
     # ========================================================
 
     def open_learning_overview(
@@ -889,8 +1072,8 @@ class AppShell(QMainWindow):
                 user=self.user,
                 title="Mening o'qishim",
                 subtitle=(
-                    "LEVEL 00 dan LEVEL 15 gacha bo'lgan "
-                    "to'liq professional o'quv yo'li."
+                    "LEVEL 00 dan LEVEL 15 gacha "
+                    "bo'lgan to'liq o'quv yo'li."
                 ),
             )
 
@@ -1040,15 +1223,19 @@ class AppShell(QMainWindow):
             )
 
         else:
-            # Muhim:
-            # qayta build qilinmaydi.
-            # Performance uchun cache'dan ochiladi.
             self.show_cached(
                 key
             )
 
+        # Eng eski Level page'larni tozalash.
+        self.trim_level_cache(
+            protected_keys={
+                key,
+            }
+        )
+
     # ========================================================
-    # LESSON PAGE
+    # LESSON
     # ========================================================
 
     def open_lesson_page(
@@ -1060,27 +1247,35 @@ class AppShell(QMainWindow):
             self.current_page_key
         )
 
-        key = (
-            "lesson::"
-            + str(
-                lesson_data[
-                    "id"
-                ]
-            )
+        lesson_id = str(
+            lesson_data[
+                "id"
+            ]
         )
 
-        # Faqat bitta dars yangidan quriladi.
-        self.drop_page(
-            key
+        key = (
+            "lesson::"
+            + lesson_id
+        )
+
+        # Oldingi transient sahifalar qolmasin.
+        self.cleanup_transient_pages()
+
+        # Lazy import:
+        # lesson renderer faqat hozir yuklanadi.
+        from ui.embedded_pages import (
+            LessonPage,
         )
 
         page = LessonPage(
             lesson=lesson_data,
             user=self.user,
             back_callback=(
-                lambda k=source_key:
-                self.show_cached(
-                    k
+                lambda k=source_key,
+                transient_key=key:
+                self.return_from_transient(
+                    k,
+                    transient_key,
                 )
             ),
             open_quiz_callback=(
@@ -1089,13 +1284,15 @@ class AppShell(QMainWindow):
         )
 
         page.lesson_completed.connect(
-            lambda lesson_id,
+            lambda completed_lesson_id,
             source=source_learning_page,
-            return_key=source_key:
+            return_key=source_key,
+            lesson_key=key:
             self.lesson_completed(
-                lesson_id,
+                completed_lesson_id,
                 source,
                 return_key,
+                lesson_key,
             )
         )
 
@@ -1105,7 +1302,7 @@ class AppShell(QMainWindow):
         )
 
     # ========================================================
-    # QUIZ PAGE
+    # QUIZ
     # ========================================================
 
     def open_quiz_page(
@@ -1123,24 +1320,28 @@ class AppShell(QMainWindow):
         key = (
             "quiz::"
             + str(
-                lesson[
-                    "id"
-                ]
+                lesson["id"]
             )
         )
 
-        # Har urinishda yangi quiz page.
         self.drop_page(
             key
+        )
+
+        # Lazy import.
+        from ui.embedded_pages import (
+            QuizPage,
         )
 
         page = QuizPage(
             user=self.user,
             lesson=lesson,
             back_callback=(
-                lambda k=lesson_key:
-                self.show_cached(
-                    k
+                lambda return_key=lesson_key,
+                transient_key=key:
+                self.return_from_transient(
+                    return_key,
+                    transient_key,
                 )
             ),
         )
@@ -1163,17 +1364,23 @@ class AppShell(QMainWindow):
         lesson_id,
         source_page,
         return_key,
+        lesson_key,
     ):
-        # Original LearningWindow progress logikasi.
+        """
+        Muhim performance fix:
+
+        lesson_finished() o'zi progressni yozib,
+        LearningWindow'ni yangilaydi.
+
+        Shuning uchun undan keyin yana
+        source_page.refresh_page() chaqirmaymiz.
+        """
+
         source_page.lesson_finished(
             lesson_id
         )
 
-        # Faqat hozirgi Level yangilanadi.
-        source_page.refresh_page()
-
-        # Overviewlarda progress yangilanishi uchun
-        # cache'dan olib tashlaymiz.
+        # Overview progress keyingi kirishda yangilanadi.
         overview_keys = [
             key
             for key in list(
@@ -1189,7 +1396,6 @@ class AppShell(QMainWindow):
                 key
             )
 
-        # Test va exam statusi ham o'zgarishi mumkin.
         self.drop_page(
             "tests"
         )
@@ -1202,8 +1408,20 @@ class AppShell(QMainWindow):
             "statistics"
         )
 
+        self.drop_page(
+            "home"
+        )
+
+        # Avval Levelga qaytamiz.
         self.show_cached(
             return_key
+        )
+
+        # Keyin quiz/lesson oynalarini RAM'dan chiqaramiz.
+        QTimer.singleShot(
+            0,
+            lambda:
+            self.cleanup_transient_pages()
         )
 
     # ========================================================
@@ -1320,32 +1538,33 @@ class AppShell(QMainWindow):
         key = (
             "exam::"
             + str(
-                exam_data[
-                    "id"
-                ]
+                exam_data["id"]
             )
         )
 
-        self.drop_page(
-            key
+        self.cleanup_transient_pages()
+
+        # Lazy import.
+        from ui.embedded_pages import (
+            ExamPage,
         )
 
         page = ExamPage(
             user=self.user,
             exam=exam_data,
             back_callback=(
-                lambda k=source_key:
-                self.show_cached(
-                    k
+                lambda return_key=source_key,
+                transient_key=key:
+                self.return_from_transient(
+                    return_key,
+                    transient_key,
                 )
             ),
         )
 
         page.exam_passed.connect(
-            lambda k=source_key:
-            self.exam_completed(
-                k
-            )
+            lambda:
+            self.exam_completed()
         )
 
         self.show_page(
@@ -1357,10 +1576,7 @@ class AppShell(QMainWindow):
     # EXAM COMPLETED
     # ========================================================
 
-    def exam_completed(
-        self,
-        return_key,
-    ):
+    def exam_completed(self):
         keys = list(
             self.page_cache.keys()
         )
@@ -1373,6 +1589,9 @@ class AppShell(QMainWindow):
                 or key.startswith(
                     "level::"
                 )
+                or key.startswith(
+                    "exam::"
+                )
                 or key
                 in {
                     "tests",
@@ -1384,6 +1603,8 @@ class AppShell(QMainWindow):
                 self.drop_page(
                     key
                 )
+
+        self.level_page_lru.clear()
 
         self.open_home()
 
@@ -1440,7 +1661,7 @@ class AppShell(QMainWindow):
 
         key = "statistics"
 
-        # Statistika har ochilganda yangilanadi.
+        # Har safar real progress.
         self.drop_page(
             key
         )
@@ -1535,21 +1756,21 @@ class AppShell(QMainWindow):
             )
 
     # ========================================================
-    # CACHE MANAGEMENT
+    # CLEAR UI CACHE
     # ========================================================
 
     def clear_ui_cache(self):
         """
-        Faqat UI sahifalari xotiradan chiqariladi.
+        Faqat RAM/UI cache tozalanadi.
 
-        MUHIM:
-        Quyidagilar O'CHMAYDI:
-        - dars progressi
-        - test natijalari
-        - imtihon natijalari
+        Database'dagi:
+        - progress
+        - score
         - XP
+        - exam
         - license
-        - database
+
+        o'zgarmaydi.
         """
 
         keep_keys = {
@@ -1568,98 +1789,16 @@ class AppShell(QMainWindow):
                 key
             )
 
-    # ========================================================
-    # SIMPLE INFO PAGE
-    # ========================================================
+        self.level_page_lru.clear()
 
-    def open_info_page(
-        self,
-        key,
-        title,
-        text,
-        replace=False,
-    ):
-        if replace:
-            self.drop_page(
-                key
+        # Lazy content registry cache ham tozalanadi.
+        try:
+            from courses.content_registry import (
+                clear_registry_cache,
             )
 
-        elif key in self.page_cache:
-            self.show_cached(
-                key
-            )
+            clear_registry_cache()
 
-            return
-
-        page = QWidget()
-
-        layout = QVBoxLayout(
-            page
-        )
-
-        layout.setContentsMargins(
-            30,
-            26,
-            30,
-            26,
-        )
-
-        layout.setSpacing(
-            16
-        )
-
-        header = QFrame()
-
-        header.setObjectName(
-            "overviewHeader"
-        )
-
-        header_layout = QVBoxLayout(
-            header
-        )
-
-        header_layout.setContentsMargins(
-            24,
-            20,
-            24,
-            20,
-        )
-
-        heading = QLabel(
-            title
-        )
-
-        heading.setObjectName(
-            "overviewTitle"
-        )
-
-        body = QLabel(
-            text
-        )
-
-        body.setObjectName(
-            "overviewSubtitle"
-        )
-
-        body.setWordWrap(
-            True
-        )
-
-        header_layout.addWidget(
-            heading
-        )
-
-        header_layout.addWidget(
-            body
-        )
-
-        layout.addWidget(
-            header
-        )
-
-        layout.addStretch()
-
-        self.show_page(
-            key,
-            page,
-        )
+        except Exception:
+            # UI cache cleanup registry sabab yiqilmasin.
+            pass
