@@ -65,8 +65,15 @@ if not exist "app\tools\customer_features_smoke_test.py" (
     exit /b 1
 )
 
+if not exist "app\tools\ui_navigation_smoke_test.py" (
+    echo [ERROR] app\tools\ui_navigation_smoke_test.py topilmadi.
+    echo.
+    pause
+    exit /b 1
+)
+
 echo ============================================================
-echo 1 / 4 - PROJECT AUDIT
+echo 1 / 5 - PROJECT AUDIT
 echo ============================================================
 echo.
 
@@ -77,7 +84,7 @@ set PROJECT_RESULT=%errorlevel%
 echo.
 echo.
 echo ============================================================
-echo 2 / 4 - DATABASE AUDIT
+echo 2 / 5 - DATABASE AUDIT
 echo ============================================================
 echo.
 
@@ -88,7 +95,7 @@ set DATABASE_RESULT=%errorlevel%
 echo.
 echo.
 echo ============================================================
-echo 3 / 4 - RUNTIME SMOKE TEST
+echo 3 / 5 - RUNTIME SMOKE TEST
 echo ============================================================
 echo.
 
@@ -99,13 +106,24 @@ set RUNTIME_RESULT=%errorlevel%
 echo.
 echo.
 echo ============================================================
-echo 4 / 4 - CUSTOMER FEATURES SMOKE TEST
+echo 4 / 5 - CUSTOMER FEATURES SMOKE TEST
 echo ============================================================
 echo.
 
 %PYTHON_CMD% "app\tools\customer_features_smoke_test.py"
 
 set CUSTOMER_RESULT=%errorlevel%
+
+echo.
+echo.
+echo ============================================================
+echo 5 / 5 - UI NAVIGATION SMOKE TEST
+echo ============================================================
+echo.
+
+%PYTHON_CMD% "app\tools\ui_navigation_smoke_test.py"
+
+set UI_NAV_RESULT=%errorlevel%
 
 echo.
 echo.
@@ -118,6 +136,7 @@ echo Project audit exit code : %PROJECT_RESULT%
 echo Database audit exit code: %DATABASE_RESULT%
 echo Runtime test exit code  : %RUNTIME_RESULT%
 echo Customer features code  : %CUSTOMER_RESULT%
+echo UI navigation code      : %UI_NAV_RESULT%
 echo.
 
 if "%PROJECT_RESULT%"=="0" (
@@ -144,9 +163,15 @@ if "%CUSTOMER_RESULT%"=="0" (
     echo [FAIL] CUSTOMER FEATURES SMOKE TEST
 )
 
+if "%UI_NAV_RESULT%"=="0" (
+    echo [PASS] UI NAVIGATION SMOKE TEST
+) else (
+    echo [FAIL] UI NAVIGATION SMOKE TEST
+)
+
 echo.
 
-if "%PROJECT_RESULT%"=="0" if "%DATABASE_RESULT%"=="0" if "%RUNTIME_RESULT%"=="0" if "%CUSTOMER_RESULT%"=="0" (
+if "%PROJECT_RESULT%"=="0" if "%DATABASE_RESULT%"=="0" if "%RUNTIME_RESULT%"=="0" if "%CUSTOMER_RESULT%"=="0" if "%UI_NAV_RESULT%"=="0" (
     echo ============================================================
     echo ARCHIPRO UZ FULL AUDIT MUVAFFAQIYATLI YAKUNLANDI
     echo KRITIK XATO TOPILMADI
