@@ -8,6 +8,7 @@ from PySide6.QtWidgets import (
     QFrame,
     QHBoxLayout,
     QLabel,
+    QPlainTextEdit,
     QProgressBar,
     QPushButton,
     QScrollArea,
@@ -18,6 +19,13 @@ from PySide6.QtWidgets import (
 
 from courses.content_registry import (
     get_lesson_content_by_code,
+)
+
+from courses.user_features import (
+    get_lesson_note,
+    is_lesson_bookmarked,
+    save_lesson_note,
+    set_lesson_bookmark,
 )
 
 from ui.exam_window import (
@@ -41,6 +49,7 @@ class LessonPage(QWidget):
         user: dict,
         back_callback=None,
         open_quiz_callback=None,
+        open_next_lesson_callback=None,
     ):
         super().__init__()
 
@@ -60,6 +69,15 @@ class LessonPage(QWidget):
 
         self.open_quiz_callback = (
             open_quiz_callback
+        )
+
+        self.open_next_lesson_callback = (
+            open_next_lesson_callback
+        )
+
+        self.bookmarked = is_lesson_bookmarked(
+            self.user["id"],
+            self.lesson_id,
         )
 
         self.content_cards = []
@@ -354,6 +372,55 @@ class LessonPage(QWidget):
                 font-size: 14px;
             }
 
+            /* PERSONAL TOOLS */
+
+            QFrame#personalTools {
+                background-color: #0C1829;
+                border: 1px solid #2A405D;
+                border-radius: 14px;
+            }
+
+            QLabel#personalTitle {
+                color: #7FAAFF;
+                font-size: 13px;
+                font-weight: 800;
+            }
+
+            QPlainTextEdit#lessonNote {
+                background-color: #091525;
+                border: 1px solid #304761;
+                border-radius: 10px;
+                color: #E7EEF7;
+                padding: 10px;
+                font-size: 13px;
+            }
+
+            QPushButton#bookmarkButton,
+            QPushButton#saveNoteButton,
+            QPushButton#nextLessonButton {
+                background-color: #15243A;
+                border: 1px solid #365273;
+                border-radius: 9px;
+                color: #E4EDF7;
+                padding: 8px 14px;
+                min-height: 34px;
+                font-size: 12px;
+                font-weight: 700;
+            }
+
+            QPushButton#bookmarkButton:hover,
+            QPushButton#saveNoteButton:hover,
+            QPushButton#nextLessonButton:hover {
+                background-color: #203754;
+                border-color: #5A84B6;
+            }
+
+            QPushButton#nextLessonButton:disabled {
+                background-color: #101A29;
+                border-color: #27384D;
+                color: #66778C;
+            }
+
             /* FOOTER */
 
             QFrame#lessonFooter {
@@ -495,6 +562,22 @@ class LessonPage(QWidget):
 
         top_layout.addWidget(
             back_button
+        )
+
+        self.bookmark_button = QPushButton(
+            "★ BOOKMARKDA"
+            if self.bookmarked
+            else "☆ BOOKMARK"
+        )
+        self.bookmark_button.setObjectName(
+            "bookmarkButton"
+        )
+        self.bookmark_button.clicked.connect(
+            self.toggle_bookmark
+        )
+
+        top_layout.addWidget(
+            self.bookmark_button
         )
 
         top_layout.addStretch()
@@ -933,6 +1016,78 @@ class LessonPage(QWidget):
             )
 
         # ====================================================
+        # PERSONAL NOTE
+        # ====================================================
+
+        personal_tools = QFrame()
+        personal_tools.setObjectName(
+            "personalTools"
+        )
+
+        personal_layout = QVBoxLayout(
+            personal_tools
+        )
+        personal_layout.setContentsMargins(
+            18,
+            15,
+            18,
+            15,
+        )
+        personal_layout.setSpacing(
+            8
+        )
+
+        personal_title = QLabel(
+            "MENING ESLATMAM"
+        )
+        personal_title.setObjectName(
+            "personalTitle"
+        )
+
+        self.note_input = QPlainTextEdit()
+        self.note_input.setObjectName(
+            "lessonNote"
+        )
+        self.note_input.setPlaceholderText(
+            "Ushbu dars bo'yicha o'zingiz uchun qisqa eslatma yozing..."
+        )
+        self.note_input.setMaximumHeight(
+            110
+        )
+        self.note_input.setPlainText(
+            get_lesson_note(
+                self.user["id"],
+                self.lesson_id,
+            )
+        )
+
+        save_note_button = QPushButton(
+            "ESLATMANI SAQLASH"
+        )
+        save_note_button.setObjectName(
+            "saveNoteButton"
+        )
+        save_note_button.clicked.connect(
+            self.save_note
+        )
+
+        personal_layout.addWidget(
+            personal_title
+        )
+        personal_layout.addWidget(
+            self.note_input
+        )
+        personal_layout.addWidget(
+            save_note_button,
+            0,
+            Qt.AlignmentFlag.AlignRight,
+        )
+
+        content_layout.addWidget(
+            personal_tools
+        )
+
+        # ====================================================
         # SUMMARY CARD
         # ====================================================
 
@@ -1050,6 +1205,32 @@ class LessonPage(QWidget):
 
         footer_layout.addWidget(
             quiz_button
+        )
+
+        self.next_lesson_button = QPushButton(
+            "KEYINGI DARS  →"
+        )
+        self.next_lesson_button.setObjectName(
+            "nextLessonButton"
+        )
+
+        lesson_status = str(
+            self.lesson.get(
+                "status",
+                "",
+            )
+        ).lower()
+
+        self.next_lesson_button.setEnabled(
+            lesson_status == "completed"
+        )
+
+        self.next_lesson_button.clicked.connect(
+            self.open_next_lesson
+        )
+
+        footer_layout.addWidget(
+            self.next_lesson_button
         )
 
         root.addWidget(
@@ -1612,7 +1793,72 @@ class LessonPage(QWidget):
                 self
             )
 
+    def toggle_bookmark(self):
+        self.bookmarked = not self.bookmarked
+
+        set_lesson_bookmark(
+            self.user["id"],
+            self.lesson_id,
+            self.bookmarked,
+        )
+
+        self.bookmark_button.setText(
+            "★ BOOKMARKDA"
+            if self.bookmarked
+            else "☆ BOOKMARK"
+        )
+
+    def save_note(self):
+        save_lesson_note(
+            self.user["id"],
+            self.lesson_id,
+            self.note_input.toPlainText(),
+        )
+
+        original_text = (
+            "ESLATMANI SAQLASH"
+        )
+
+        sender = self.sender()
+
+        if isinstance(
+            sender,
+            QPushButton,
+        ):
+            sender.setText(
+                "✓ SAQLANDI"
+            )
+
+            QTimer.singleShot(
+                1200,
+                lambda:
+                sender.setText(
+                    original_text
+                ),
+            )
+
+    def open_next_lesson(self):
+        if self.open_next_lesson_callback is not None:
+            self.open_next_lesson_callback(
+                self
+            )
+
+    def mark_completed(self):
+        self.lesson[
+            "status"
+        ] = "completed"
+
+        if hasattr(
+            self,
+            "next_lesson_button",
+        ):
+            self.next_lesson_button.setEnabled(
+                True
+            )
+
     def quiz_success(self):
+        self.mark_completed()
+
         self.lesson_completed.emit(
             self.lesson_id
         )
