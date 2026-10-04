@@ -171,6 +171,15 @@ if errorlevel 1 (
     exit /b 1
 )
 
+python "app\tools\customer_features_smoke_test.py"
+
+if errorlevel 1 (
+    echo.
+    echo [ERROR] CUSTOMER FEATURES SMOKE TEST FAILED
+    pause
+    exit /b 1
+)
+
 echo.
 echo [PASS] Release preflight muvaffaqiyatli.
 echo.
