@@ -291,7 +291,7 @@ class TestsPage(QWidget):
                 )
                 .replace(
                     "LEVEL_",
-                    "LEVEL ",
+                    "BOSQICH ",
                 )
             )
 
@@ -348,7 +348,7 @@ class TestsPage(QWidget):
                 and total > 0
             ):
                 status_label = QLabel(
-                    "✓ Ushbu Level dars "
+                    "✓ Ushbu Bosqich dars "
                     "testlari tugallangan"
                 )
 
@@ -386,7 +386,7 @@ class TestsPage(QWidget):
             )
 
             button = QPushButton(
-                "LEVEL DARSLARI VA TESTLARI  →"
+                "BOSQICH DARSLARI VA TESTLARI  →"
             )
 
             button.setObjectName(

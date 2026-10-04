@@ -118,7 +118,7 @@ class StatisticsPage(QWidget):
         )
 
         subtitle = QLabel(
-            "O'qish jarayoningiz, Level progressi, "
+            "O'qish jarayoningiz, Bosqich progressi, "
             "XP va tugallangan darslar holati."
         )
 
@@ -250,7 +250,7 @@ class StatisticsPage(QWidget):
         # ====================================================
 
         section_title = QLabel(
-            "Level bo'yicha progress"
+            "Bosqich bo'yicha progress"
         )
 
         section_title.setObjectName(
@@ -348,7 +348,7 @@ class StatisticsPage(QWidget):
             )
             .replace(
                 "LEVEL_",
-                "LEVEL ",
+                "BOSQICH ",
             )
         )
 

@@ -40,7 +40,7 @@ class LearningPage(
 
     Bu klass:
     - single-window navigation
-    - Level filter
+    - Bosqich filter
     - professional layout
     - scrollbar fix
     - duplicate header fix
@@ -71,7 +71,7 @@ class LearningPage(
         self.custom_subtitle = (
             custom_subtitle
             or (
-                "LEVEL 00 dan LEVEL 15 gacha "
+                "BOSQICH 00 dan BOSQICH 15 gacha "
                 "bo'lgan to'liq o'quv yo'lingiz."
             )
         )
@@ -123,7 +123,7 @@ class LearningPage(
             }
 
             /* ===============================================
-               LEVEL
+               BOSQICH
                =============================================== */
 
             QLabel#levelTitle {
@@ -411,10 +411,10 @@ class LearningPage(
 
     def _apply_single_level_layout(self):
         """
-        Bitta Level ochilganda tepada Level nomi allaqachon
+        Bitta Bosqich ochilganda tepada Bosqich nomi allaqachon
         pageTitle sifatida ko'rsatiladi.
 
-        Shuning uchun Level card ichida o'sha sarlavhani
+        Shuning uchun Bosqich card ichida o'sha sarlavhani
         ikkinchi marta takrorlamaymiz.
 
         Card ichida foydalanuvchiga tushunarliroq

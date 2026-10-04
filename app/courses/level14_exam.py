@@ -3,7 +3,7 @@ from database.database import get_connection
 
 LEVEL14_EXAM = {
     "level_code": "LEVEL_14",
-    "title": "LEVEL 14 — Advanced Case Projects Final",
+    "title": "BOSQICH 14 - Murakkab turar joy loyihalari: yakuniy imtihon",
     "description": (
         "Tor uchastka, noto'g'ri shakldagi uchastka, nishabli yer, "
         "katta villa, ko'p avlodli oila, premium fasad, Design Clinic "

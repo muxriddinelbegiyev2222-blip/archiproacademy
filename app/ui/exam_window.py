@@ -793,7 +793,7 @@ class ExamWindow(QMainWindow):
         )
 
         match = re.search(
-            r"LEVEL\s*0*(\d+)",
+            r"(?:LEVEL|BOSQICH)\s*0*(\d+)",
             title,
             flags=re.IGNORECASE,
         )
@@ -823,7 +823,7 @@ class ExamWindow(QMainWindow):
         if current_level >= 15:
             return (
                 "ARCHIPRO UZ o'quv dasturining "
-                "barcha LEVEL bosqichlari "
+                "barcha bosqichlari "
                 "muvaffaqiyatli yakunlandi."
             )
 
@@ -832,7 +832,7 @@ class ExamWindow(QMainWindow):
         )
 
         return (
-            f"LEVEL {next_level} ochildi."
+            f"BOSQICH {next_level} ochildi."
         )
 
     # ========================================================
@@ -856,7 +856,7 @@ class ExamWindow(QMainWindow):
 
         self.result_label.setText(
             (
-                "🏆 LEVEL MUVAFFAQIYATLI "
+                "🏆 BOSQICH MUVAFFAQIYATLI "
                 "YAKUNLANDI\n\n"
 
                 f"Natija: {score}%\n"

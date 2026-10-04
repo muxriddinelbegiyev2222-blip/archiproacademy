@@ -3,7 +3,7 @@ from database.database import get_connection
 
 LEVEL13_EXAM = {
     "level_code": "LEVEL_13",
-    "title": "LEVEL 13 — Mijoz bilan professional ishlash Final",
+    "title": "BOSQICH 13 - Mijoz va haqiqiy loyiha bilan ishlash: yakuniy imtihon",
     "description": (
         "Mijoz bilan birinchi suhbat, professional brief, budjet, "
         "variantlar tayyorlash, loyiha taqdimoti, mijoz tuzatishlari, "

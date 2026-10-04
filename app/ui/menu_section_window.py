@@ -28,27 +28,27 @@ SECTION_DATA = {
         ],
         "items": [
             {
-                "title": "LEVEL 00",
+                "title": "BOSQICH 00",
                 "subtitle": "Absolute Zero — arxitekturaga mutlaqo noldan kirish",
                 "levels": ["LEVEL_00"],
             },
             {
-                "title": "LEVEL 01",
+                "title": "BOSQICH 01",
                 "subtitle": "Arxitektura asoslari",
                 "levels": ["LEVEL_01"],
             },
             {
-                "title": "LEVEL 02",
+                "title": "BOSQICH 02",
                 "subtitle": "Fazoviy fikrlash va ergonomika",
                 "levels": ["LEVEL_02"],
             },
             {
-                "title": "LEVEL 03",
+                "title": "BOSQICH 03",
                 "subtitle": "Uchastka va genplan",
                 "levels": ["LEVEL_03"],
             },
             {
-                "title": "LEVEL 04",
+                "title": "BOSQICH 04",
                 "subtitle": "O'zbekiston sharoitidagi turar joy",
                 "levels": ["LEVEL_04"],
             },
@@ -65,17 +65,17 @@ SECTION_DATA = {
         ],
         "items": [
             {
-                "title": "LEVEL 05",
+                "title": "BOSQICH 05",
                 "subtitle": "Archicad boshlang'ich",
                 "levels": ["LEVEL_05"],
             },
             {
-                "title": "LEVEL 06",
+                "title": "BOSQICH 06",
                 "subtitle": "Archicad o'rta daraja",
                 "levels": ["LEVEL_06"],
             },
             {
-                "title": "LEVEL 07",
+                "title": "BOSQICH 07",
                 "subtitle": "Archicad yuqori daraja",
                 "levels": ["LEVEL_07"],
             },
@@ -90,7 +90,7 @@ SECTION_DATA = {
         ],
         "items": [
             {
-                "title": "LEVEL 09",
+                "title": "BOSQICH 09",
                 "subtitle": "SHNQ va normativlar",
                 "levels": ["LEVEL_09"],
             },
@@ -185,7 +185,7 @@ SECTION_DATA = {
         "items": [
             {
                 "title": "Barcha dars testlari",
-                "subtitle": "Kerakli Levelni tanlang va dars testlarini bajaring",
+                "subtitle": "Kerakli Bosqichni tanlang va dars testlarini bajaring",
                 "levels": [],
             },
         ],
@@ -193,12 +193,12 @@ SECTION_DATA = {
 
     "Imtihonlar": {
         "title": "Imtihonlar",
-        "subtitle": "Level yakuniy imtihonlariga kirish.",
+        "subtitle": "Bosqich yakuniy imtihonlariga kirish.",
         "section_levels": [],
         "items": [
             {
                 "title": "Barcha yakuniy imtihonlar",
-                "subtitle": "Level yakuniy imtihonlari o'quv dasturi ichida joylashgan",
+                "subtitle": "Bosqich yakuniy imtihonlari o'quv dasturi ichida joylashgan",
                 "levels": [],
             },
         ],

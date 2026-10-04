@@ -11,7 +11,7 @@ from database.database import get_connection
 LEVEL_EXAM_CONFIGS = [
     {
         "level_code": "LEVEL_00",
-        "title": "LEVEL 0 YAKUNIY IMTIHON",
+        "title": "BOSQICH 00 YAKUNIY IMTIHON",
         "description": (
             "Arxitektura bo'yicha boshlang'ich bilimlarni "
             "tekshiruvchi yakuniy imtihon."
@@ -22,7 +22,7 @@ LEVEL_EXAM_CONFIGS = [
     },
     {
         "level_code": "LEVEL_01",
-        "title": "LEVEL 1 YAKUNIY IMTIHON",
+        "title": "BOSQICH 01 YAKUNIY IMTIHON",
         "description": (
             "Kompozitsiya, proporsiya, ritm, simmetriya, "
             "asimmetriya, forma, hajm va arxitektura "

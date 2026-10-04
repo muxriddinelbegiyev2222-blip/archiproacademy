@@ -184,7 +184,7 @@ class LibraryPage(QWidget):
         )
 
         subtitle = QLabel(
-            "680 dars ichidan Level, modul, dars nomi, "
+            "680 dars ichidan Bosqich, modul, dars nomi, "
             "kod va qisqa mazmun bo'yicha tez qidiring. "
             "Ctrl+K bilan shu sahifani tez ochish mumkin."
         )
@@ -600,7 +600,7 @@ class LibraryPage(QWidget):
             )
             .replace(
                 "LEVEL_",
-                "LEVEL ",
+                "BOSQICH ",
             )
         )
 
@@ -704,7 +704,7 @@ class LibraryPage(QWidget):
 
         else:
             button = QPushButton(
-                "LEVELGA O'TISH  →"
+                "BOSQICHGA O'TISH  →"
             )
             button.setObjectName(
                 "openLevelButton"

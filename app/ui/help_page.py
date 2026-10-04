@@ -18,7 +18,7 @@ HELP_ITEMS = [
     ),
     (
         "MASTER rejimi nima?",
-        "MASTER — faqat dastur egasi uchun test rejimi. U barcha Level, dars va imtihonlarni blokirovkasiz tekshirish imkonini beradi.",
+        "MASTER — faqat dastur egasi uchun test rejimi. U barcha Bosqich, dars va imtihonlarni blokirovkasiz tekshirish imkonini beradi.",
     ),
     (
         "Progress qayerda saqlanadi?",

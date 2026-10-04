@@ -495,7 +495,7 @@ class LearningWindow(QMainWindow):
             master_text = QLabel(
                 (
                     "Siz dastur egasi/test rejimidasiz. "
-                    "Barcha Level va mavjud darslarni "
+                    "Barcha Bosqich va mavjud darslarni "
                     "ketma-ketlik cheklovisiz ochishingiz mumkin. "
                     "Oddiy foydalanuvchilarda bu imkoniyat bo'lmaydi."
                 )
@@ -637,7 +637,7 @@ class LearningWindow(QMainWindow):
         readable_code = (
             level["code"].replace(
                 "LEVEL_",
-                "LEVEL ",
+                "BOSQICH ",
             )
         )
 
@@ -867,7 +867,7 @@ class LearningWindow(QMainWindow):
             elif level_status == "locked":
 
                 no_lessons_text = (
-                    "🔒 Ushbu Level hali yopiq."
+                    "🔒 Ushbu Bosqich hali yopiq."
                 )
 
             else:
@@ -1217,7 +1217,7 @@ class LearningWindow(QMainWindow):
         readable_level = (
             level["code"].replace(
                 "LEVEL_",
-                "LEVEL ",
+                "BOSQICH ",
             )
         )
 
@@ -1340,7 +1340,7 @@ class LearningWindow(QMainWindow):
         elif level_status == "locked":
 
             locked = QLabel(
-                "🔒 Avval oldingi Level'ni "
+                "🔒 Avval oldingi Bosqich'ni "
                 "muvaffaqiyatli yakunlang."
             )
 

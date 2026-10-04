@@ -446,7 +446,7 @@ class LoginWindow(QWidget):
             (
                 "04",
                 "Amaliy nazorat",
-                "Mini-test, Level imtihonlari va progress tizimi.",
+                "Mini-test, Bosqich imtihonlari va progress tizimi.",
             ),
         ]
 

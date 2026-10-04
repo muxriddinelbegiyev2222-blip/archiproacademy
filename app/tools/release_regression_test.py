@@ -167,7 +167,11 @@ class ReleaseRegression(unittest.TestCase):
             legacy.update(load_dictionary(module, name))
         with patch('courses.quiz_service.get_all_quiz_data', return_value=legacy):
             seed_quizzes()
-        set_app_setting(CONTENT_SCHEMA_SETTING, 'ARCHIPRO_CONTENT_2026_10_04_V1')
+        connection = get_connection()
+        connection.execute("UPDATE course_levels SET title='Legacy English title', subtitle='Legacy subtitle'")
+        connection.commit()
+        connection.close()
+        set_app_setting(CONTENT_SCHEMA_SETTING, 'ARCHIPRO_CONTENT_2026_10_04_V2')
         tables = ('users', 'lesson_progress', 'lesson_notes', 'lesson_bookmarks',
                   'quiz_attempts', 'level_exam_attempts', 'user_level_progress')
         before = {table: query('SELECT * FROM '+table+' ORDER BY id') for table in tables}
@@ -179,6 +183,12 @@ class ReleaseRegression(unittest.TestCase):
         for table in identities:
             self.assertEqual(query('SELECT id, code FROM '+table+' ORDER BY id'), identities[table], table)
         self.assertEqual(get_lesson_note(user['id'], lesson_id), 'Upgrade must keep this note')
+        from courses.seed_courses import LEVELS
+        self.assertEqual([(row['code'], row['title'], row['subtitle']) for row in
+                          query('SELECT code, title, subtitle FROM course_levels ORDER BY sort_order')],
+                         [(code, title, subtitle) for code, title, subtitle, _, _ in LEVELS])
+        self.assertTrue(all(row['title'].startswith('BOSQICH ') for row in
+                            query('SELECT title FROM level_exams')))
         self.assertFalse(prepare_application())
         self.assertEqual(len(query('SELECT * FROM quiz_options')), 2041 * 4)
 

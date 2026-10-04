@@ -3,7 +3,7 @@ from database.database import get_connection
 
 LEVEL06_EXAM = {
     "level_code": "LEVEL_06",
-    "title": "LEVEL 6 — Archicad Intermediate Final",
+    "title": "BOSQICH 06 - Archicad: o'rta bosqich: yakuniy imtihon",
     "description": (
         "Stories, Layers, Building Materials, Composite Structures, "
         "Complex Profiles, Roof, Stair, Railing, Mesh va Zones "

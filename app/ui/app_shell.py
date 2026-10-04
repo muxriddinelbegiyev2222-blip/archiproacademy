@@ -248,7 +248,7 @@ class AppShell(QMainWindow):
         )
 
         logo_sub = QLabel(
-            "Architecture Academy"
+            "Arxitektura akademiyasi"
         )
 
         logo_sub.setObjectName(
@@ -628,9 +628,9 @@ class AppShell(QMainWindow):
         protected_keys=None,
     ):
         """
-        Faqat eng oxirgi 3 ta Level page RAM'da qoladi.
+        Faqat eng oxirgi 3 ta Bosqich page RAM'da qoladi.
 
-        Hozir ochiq Level va kerakli return page
+        Hozir ochiq Bosqich va kerakli return page
         o'chirilmaydi.
         """
 
@@ -909,7 +909,7 @@ class AppShell(QMainWindow):
             )
 
             master_text = QLabel(
-                "Barcha Level va darslarni "
+                "Barcha Bosqich va darslarni "
                 "tekshirish imkoniyati faol."
             )
 
@@ -935,7 +935,7 @@ class AppShell(QMainWindow):
             )
 
             button = QPushButton(
-                "BARCHA LEVELLAR  →"
+                "BARCHA BOSQICHLAR  →"
             )
 
             button.setObjectName(
@@ -973,7 +973,7 @@ class AppShell(QMainWindow):
                     "code"
                 ].replace(
                     "LEVEL_",
-                    "LEVEL ",
+                    "BOSQICH ",
                 )
             )
 
@@ -1102,7 +1102,7 @@ class AppShell(QMainWindow):
 
         if next_lesson:
             message = (
-                f"{next_lesson['level_code'].replace('LEVEL_', 'LEVEL ')}"
+                f"{next_lesson['level_code'].replace('LEVEL_', 'BOSQICH ')}"
                 f"  •  "
                 f"{next_lesson['module_title']}"
                 f"  •  "
@@ -1211,7 +1211,7 @@ class AppShell(QMainWindow):
                             "",
                         ).replace(
                             "LEVEL_",
-                            "LEVEL ",
+                            "BOSQICH ",
                         )
                         + "  •  "
                         + recent.get(
@@ -1289,7 +1289,7 @@ class AppShell(QMainWindow):
                 user=self.user,
                 title="Mening o'qishim",
                 subtitle=(
-                    "LEVEL 00 dan LEVEL 15 gacha "
+                    "BOSQICH 00 dan BOSQICH 15 gacha "
                     "bo'lgan to'liq o'quv yo'li."
                 ),
             )
@@ -1405,7 +1405,7 @@ class AppShell(QMainWindow):
             readable_code = (
                 code.replace(
                     "LEVEL_",
-                    "LEVEL ",
+                    "BOSQICH ",
                 )
             )
 

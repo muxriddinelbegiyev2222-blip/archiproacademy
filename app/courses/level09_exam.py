@@ -3,7 +3,7 @@ from database.database import get_connection
 
 LEVEL09_EXAM = {
     "level_code": "LEVEL_09",
-    "title": "LEVEL 9 — SHNQ va normativlar Final",
+    "title": "BOSQICH 09 - SHNQ va me'yoriy talablar: yakuniy imtihon",
     "description": (
         "Normativ savodxonlik, turar joy talablari, uchastka talablari, "
         "yoritish va insolyatsiya, yong'in xavfsizligi, evakuatsiya, "

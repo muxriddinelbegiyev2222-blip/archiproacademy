@@ -7,7 +7,7 @@ from database.database import get_connection
 
 LEVEL07_EXAM = {
     "level_code": "LEVEL_07",
-    "title": "LEVEL 7 — Archicad Advanced Final",
+    "title": "BOSQICH 07 - Archicad: ilg'or usullar: yakuniy imtihon",
     "description": (
         "Favorites, Graphic Overrides, Model View Options, "
         "Renovation, Schedules, Properties, Classification, "

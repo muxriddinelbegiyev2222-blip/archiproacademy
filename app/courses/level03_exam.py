@@ -3,7 +3,7 @@ from database.database import get_connection
 
 LEVEL03_EXAM = {
     "level_code": "LEVEL_03",
-    "title": "LEVEL 3 — Site Planning Final",
+    "title": "BOSQICH 03 - Uchastkani rejalashtirish: yakuniy imtihon",
     "description": (
         "Uchastkani o'qish, quyosh va orientatsiya, kirish, "
         "uy joylashtirish, hovli zonalari, avtomobil zonasi, "

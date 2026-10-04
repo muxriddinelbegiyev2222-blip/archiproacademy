@@ -3,7 +3,7 @@ from database.database import get_connection
 
 LEVEL11_EXAM = {
     "level_code": "LEVEL_11",
-    "title": "LEVEL 11 — 2 qavatli uy PRO Final",
+    "title": "BOSQICH 11 - Ikki qavatli uy loyihalash: yakuniy imtihon",
     "description": (
         "2 qavatli uy konsepsiyasi, qavatlar zonalashi, Zinapoya PRO, "
         "vertikal kommunikatsiyalar, void va ikkinchi yorug'lik, "

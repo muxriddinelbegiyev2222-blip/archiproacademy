@@ -8,7 +8,7 @@ from database.database import get_connection
 LEVELS = [
     (
         "LEVEL_00",
-        "Absolute Zero",
+        "Arxitekturaga noldan kirish",
         "Arxitekturaga mutlaqo noldan kirish",
         "Arxitektura haqida hech qanday bilimga ega bo'lmagan "
         "foydalanuvchi uchun boshlang'ich bosqich.",
@@ -16,7 +16,7 @@ LEVELS = [
     ),
     (
         "LEVEL_01",
-        "Architecture Fundamentals",
+        "Arxitektura asoslari",
         "Arxitektura asoslari",
         "Arxitekturaning fundamental qonuniyatlari, chizma va "
         "fazoviy fikrlash asoslari.",
@@ -24,98 +24,98 @@ LEVELS = [
     ),
     (
         "LEVEL_02",
-        "Spatial Thinking",
+        "Fazoviy fikrlash",
         "Fazoviy fikrlash va ergonomika",
         "Xonalar, odam harakati, proporsiya va qulay rejalashtirish.",
         2,
     ),
     (
         "LEVEL_03",
-        "Site Planning",
+        "Uchastkani rejalashtirish",
         "Uchastka va genplan",
         "Yer uchastkasini tahlil qilish va binoni to'g'ri joylashtirish.",
         3,
     ),
     (
         "LEVEL_04",
-        "Uzbekistan Residential Design",
+        "O'zbekiston sharoitida turar joy loyihalash",
         "O'zbekiston sharoitidagi turar joy",
         "Mahalliy iqlim, turmush tarzi va hovlili uylarni loyihalash.",
         4,
     ),
     (
         "LEVEL_05",
-        "Archicad Beginner",
+        "Archicad: boshlang'ich bosqich",
         "Archicad boshlang'ich",
         "Archicad interfeysi va asosiy instrumentlarni noldan o'rganish.",
         5,
     ),
     (
         "LEVEL_06",
-        "Archicad Intermediate",
+        "Archicad: o'rta bosqich",
         "Archicad o'rta daraja",
         "Professional model yaratish va loyiha strukturasini boshqarish.",
         6,
     ),
     (
         "LEVEL_07",
-        "Archicad Advanced",
+        "Archicad: ilg'or usullar",
         "Archicad yuqori daraja",
         "Murakkab modellashtirish, avtomatlashtirish va BIM workflow.",
         7,
     ),
     (
         "LEVEL_08",
-        "Construction Fundamentals",
+        "Qurilish konstruksiyalari asoslari",
         "Qurilish konstruksiyalari",
         "Arxitektor bilishi kerak bo'lgan konstruktiv bilimlar.",
         8,
     ),
     (
         "LEVEL_09",
-        "SHNQ & Regulations",
+        "SHNQ va me'yoriy talablar",
         "SHNQ va normativlar",
         "O'zbekiston sharoitida normativ savodxonlik va loyiha tekshiruvi.",
         9,
     ),
     (
         "LEVEL_10",
-        "One-Storey House Professional",
+        "Bir qavatli uy loyihalash",
         "1 qavatli uy PRO",
         "Bir qavatli uyni texnik topshiriqdan loyiha albomigacha yaratish.",
         10,
     ),
     (
         "LEVEL_11",
-        "Two-Storey House Professional",
+        "Ikki qavatli uy loyihalash",
         "2 qavatli uy PRO",
         "Ikki qavatli turar joyni professional darajada loyihalash.",
         11,
     ),
     (
         "LEVEL_12",
-        "BIM & Documentation",
+        "BIM va loyiha hujjatlari",
         "BIM va ishchi hujjatlar",
         "Professional BIM model va ishchi loyiha albomini tayyorlash.",
         12,
     ),
     (
         "LEVEL_13",
-        "Client & Real Project Workflow",
+        "Mijoz va haqiqiy loyiha bilan ishlash",
         "Mijoz va real loyiha",
         "Real buyurtma, texnik topshiriq, muzokara va loyiha himoyasi.",
         13,
     ),
     (
         "LEVEL_14",
-        "Advanced Residential Designer",
-        "Advanced Residential Designer",
+        "Murakkab turar joy loyihalari",
+        "Murakkab turar joy loyihalari",
         "Murakkab uchastkalar va yuqori darajadagi turar joy loyihalari.",
         14,
     ),
     (
         "LEVEL_15",
-        "PRO Final",
+        "Yakuniy loyiha va portfolio",
         "Professional yakuniy bosqich",
         "Mustaqil loyiha, imtihon, portfolio va PRO final.",
         15,
@@ -1323,6 +1323,12 @@ def seed_course_structure():
                     description,
                     sort_order,
                 ),
+            )
+
+            # Update existing installations without replacing level IDs or progress.
+            cursor.execute(
+                "UPDATE course_levels SET title = ?, subtitle = ? WHERE code = ?",
+                (title, subtitle, code),
             )
 
         # ----------------------------------------------------

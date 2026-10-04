@@ -197,8 +197,8 @@ class ExamsPage(QWidget):
         )
 
         subtitle = QLabel(
-            "Har bir Level yakuniy imtihoni "
-            "faqat shu Leveldagi barcha majburiy "
+            "Har bir Bosqich yakuniy imtihoni "
+            "faqat shu Bosqichdagi barcha majburiy "
             "darslar tugallangandan keyin ochiladi. "
             "MASTER rejimi faqat administrator "
             "testi uchun."
@@ -337,7 +337,7 @@ class ExamsPage(QWidget):
                 )
                 .replace(
                     "LEVEL_",
-                    "LEVEL ",
+                    "BOSQICH ",
                 )
             )
 
@@ -394,7 +394,7 @@ class ExamsPage(QWidget):
 
             elif level_locked:
                 state = QLabel(
-                    "🔒 Avval oldingi Levelni "
+                    "🔒 Avval oldingi Bosqichni "
                     "muvaffaqiyatli yakunlang"
                 )
 

@@ -7,7 +7,7 @@ from database.database import get_connection
 
 LEVEL08_EXAM = {
     "level_code": "LEVEL_08",
-    "title": "LEVEL 8 — Konstruktsiya asoslari Final",
+    "title": "BOSQICH 08 - Qurilish konstruksiyalari asoslari: yakuniy imtihon",
     "description": (
         "Fundament, devor konstruksiyasi, karkas, plitalar, "
         "tom konstruksiyasi, gidroizolyatsiya, issiqlik "

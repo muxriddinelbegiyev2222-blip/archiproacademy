@@ -3,7 +3,7 @@ from database.database import get_connection
 
 LEVEL10_EXAM = {
     "level_code": "LEVEL_10",
-    "title": "LEVEL 10 — 1 qavatli uy PRO Final",
+    "title": "BOSQICH 10 - Bir qavatli uy loyihalash: yakuniy imtihon",
     "description": (
         "Texnik topshiriq, Site Analysis, Bubble Diagram, "
         "eskiz plan, plan optimizatsiyasi, Archicad modeli, "

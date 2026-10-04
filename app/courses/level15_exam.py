@@ -3,7 +3,7 @@ from database.database import get_connection
 
 LEVEL15_EXAM = {
     "level_code": "LEVEL_15",
-    "title": "LEVEL 15 — ARCHIPRO UZ PRO Final",
+    "title": "BOSQICH 15 - Yakuniy loyiha va portfolio: yakuniy imtihon",
     "description": (
         "ARCHIPRO UZ dasturining yakuniy mastery imtihoni. "
         "Arxitektura nazariyasi, residential planning, site analysis, "

@@ -3,7 +3,7 @@ from database.database import get_connection
 
 LEVEL12_EXAM = {
     "level_code": "LEVEL_12",
-    "title": "LEVEL 12 — BIM va hujjatlashtirish Final",
+    "title": "BOSQICH 12 - BIM va loyiha hujjatlari: yakuniy imtihon",
     "description": (
         "BIM tushunchasi, Element Information, spetsifikatsiyalar, "
         "View Map PRO, Layout Book, shtamp va standartlar, Publisher, "

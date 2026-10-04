@@ -267,7 +267,7 @@ class PortfolioPage(QWidget):
 
         sections = [
             (
-                "LEVEL 03",
+                "BOSQICH 03",
                 "Uchastka va genplan",
                 (
                     "Yer uchastkasini tahlil qilish, "
@@ -276,7 +276,7 @@ class PortfolioPage(QWidget):
                 ["LEVEL_03"],
             ),
             (
-                "LEVEL 04",
+                "BOSQICH 04",
                 "O'zbekiston turar joyi",
                 (
                     "Mahalliy iqlim, hovli, turmush tarzi "
@@ -285,7 +285,7 @@ class PortfolioPage(QWidget):
                 ["LEVEL_04"],
             ),
             (
-                "LEVEL 05–07",
+                "BOSQICH 05–07",
                 "Archicad loyiha ko'nikmalari",
                 (
                     "Model yaratish, fasad, kesim, tom, "
@@ -298,7 +298,7 @@ class PortfolioPage(QWidget):
                 ],
             ),
             (
-                "LEVEL 10",
+                "BOSQICH 10",
                 "1 qavatli uy loyihasi",
                 (
                     "Texnik topshiriqdan boshlab bir qavatli "
@@ -307,7 +307,7 @@ class PortfolioPage(QWidget):
                 ["LEVEL_10"],
             ),
             (
-                "LEVEL 11",
+                "BOSQICH 11",
                 "2 qavatli uy loyihasi",
                 (
                     "Ikki qavatli turar joyni professional "
@@ -316,7 +316,7 @@ class PortfolioPage(QWidget):
                 ["LEVEL_11"],
             ),
             (
-                "LEVEL 12",
+                "BOSQICH 12",
                 "BIM va ishchi hujjatlar",
                 (
                     "Professional BIM model, chizmalar va "
@@ -325,7 +325,7 @@ class PortfolioPage(QWidget):
                 ["LEVEL_12"],
             ),
             (
-                "LEVEL 13",
+                "BOSQICH 13",
                 "Mijoz va real loyiha",
                 (
                     "Real buyurtma, texnik topshiriq, muzokara, "
@@ -334,7 +334,7 @@ class PortfolioPage(QWidget):
                 ["LEVEL_13"],
             ),
             (
-                "LEVEL 14",
+                "BOSQICH 14",
                 "Advanced Residential Designer",
                 (
                     "Murakkab uchastka, katta villa, premium "
@@ -380,7 +380,7 @@ class PortfolioPage(QWidget):
         final_text_area = QVBoxLayout()
 
         final_badge = QLabel(
-            "LEVEL 15 • PRO FINAL"
+            "BOSQICH 15 • PRO FINAL"
         )
 
         final_badge.setObjectName(
@@ -427,7 +427,7 @@ class PortfolioPage(QWidget):
         )
 
         final_button = QPushButton(
-            "LEVEL 15 NI KO'RISH  →"
+            "BOSQICH 15 NI KO'RISH  →"
         )
 
         final_button.setObjectName(

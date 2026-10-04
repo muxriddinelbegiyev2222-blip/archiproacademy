@@ -3,7 +3,7 @@ from database.database import get_connection
 
 LEVEL04_EXAM = {
     "level_code": "LEVEL_04",
-    "title": "LEVEL 4 — Uzbekistan Residential Design Final",
+    "title": "BOSQICH 04 - O'zbekiston sharoitida turar joy loyihalash: yakuniy imtihon",
     "description": (
         "O'zbekiston sharoitidagi turar joy, oilaviy turmush tarzi, "
         "mehmon kutish, ichki hovli, ayvon, yozgi oshxona, "

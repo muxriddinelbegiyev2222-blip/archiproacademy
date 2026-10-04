@@ -3,7 +3,7 @@ from database.database import get_connection
 
 LEVEL05_EXAM = {
     "level_code": "LEVEL_05",
-    "title": "LEVEL 5 — Archicad Beginner Final",
+    "title": "BOSQICH 05 - Archicad: boshlang'ich bosqich: yakuniy imtihon",
     "description": (
         "Archicad interfeysi, Navigator, Wall, Slab, Door, Window, "
         "Column, Beam, Object, 2D instrumentlar, Dimension "

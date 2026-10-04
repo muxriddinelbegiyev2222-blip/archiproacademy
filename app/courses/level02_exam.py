@@ -3,7 +3,7 @@ from database.database import get_connection
 
 LEVEL02_EXAM = {
     "level_code": "LEVEL_02",
-    "title": "LEVEL 2 — Spatial Thinking Final",
+    "title": "BOSQICH 02 - Fazoviy fikrlash: yakuniy imtihon",
     "description": (
         "Fazoviy fikrlash, ergonomika, funksional zonalash, "
         "circulation va turar joy xonalari bo'yicha yakuniy imtihon."

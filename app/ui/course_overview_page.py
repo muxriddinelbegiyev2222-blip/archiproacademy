@@ -21,7 +21,7 @@ class CourseOverviewPage(QWidget):
 
     MUHIM:
     Bu sahifa darslarning o'zini render qilmaydi.
-    Faqat Level kartalarini ko'rsatadi.
+    Faqat Bosqich kartalarini ko'rsatadi.
 
     Shu sabab:
     - tez ochiladi;
@@ -291,7 +291,7 @@ class CourseOverviewPage(QWidget):
             )
             .replace(
                 "LEVEL_",
-                "LEVEL ",
+                "BOSQICH ",
             )
         )
 
@@ -479,7 +479,7 @@ class CourseOverviewPage(QWidget):
         )
 
         button = QPushButton(
-            "LEVELNI KO'RISH  →"
+            "BOSQICHNI KO'RISH  →"
         )
 
         button.setObjectName(
