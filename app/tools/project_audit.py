@@ -1304,6 +1304,24 @@ def audit_customer_features() -> None:
             )
             continue
 
+        try:
+            compile(
+                source,
+                str(
+                    file_path
+                ),
+                "exec",
+            )
+
+            add_pass(
+                f"{file_path.name}: Python syntax PASS."
+            )
+
+        except SyntaxError as exc:
+            add_error(
+                f"{file_path.name}: syntax xato: {exc}"
+            )
+
         for text_value in required_texts:
             if text_value in source:
                 add_pass(
