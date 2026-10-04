@@ -1280,6 +1280,13 @@ def audit_customer_features() -> None:
             "Terminlar lug'ati",
             "Yordam",
             "continue_learning",
+            "lesson_open_requested.connect",
+            "open_lesson_page",
+        ],
+        APP_DIR / "ui" / "learning_page.py": [
+            "lesson_open_requested",
+            "exam_open_requested",
+            "lesson_open_requested.emit",
         ],
         APP_DIR / "database" / "database.py": [
             "lesson_bookmarks",
@@ -1296,6 +1303,12 @@ def audit_customer_features() -> None:
             "ARCHIPRO_UZ_DATABASE_PATH",
             "tempfile.mkdtemp",
             "archipro_audit.db",
+        ],
+        APP_DIR / "tools" / "ui_navigation_smoke_test.py": [
+            "UI NAVIGATION SMOKE TEST",
+            "openLesson",
+            "lesson::",
+            "backButton",
         ],
     }
 
