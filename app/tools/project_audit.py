@@ -1287,6 +1287,11 @@ def audit_customer_features() -> None:
             "idx_bookmarks_user",
             "idx_notes_user",
         ],
+        APP_DIR / "tools" / "customer_features_smoke_test.py": [
+            "CUSTOMER FEATURES SMOKE TEST",
+            "export_user_backup",
+            "import_user_backup",
+        ],
     }
 
     for file_path, required_texts in required_files.items():
