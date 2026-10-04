@@ -65,4 +65,21 @@ Windows Desktop
 
 ## Versiya
 
-ARCHIPRO UZ v1.0.0 — Release Candidate
+ARCHIPRO UZ v1.0.1 — Release Candidate
+
+
+## Release sifat nazorati
+
+Release build quyidagi tekshiruvlardan o'tmasdan yaratilmaydi:
+
+- Project Audit
+- Database Audit
+- Runtime Smoke Test
+- Customer Features Smoke Test
+- UI Navigation Smoke Test
+- Learning Flow Smoke Test
+
+UI Navigation Smoke Test real `OCHISH` tugmasini bosib,
+Level -> Lesson -> Orqaga navigatsiya zanjirini tekshiradi.
+Learning Flow Smoke Test esa mini-test, progress, keyingi dars
+qulfi, real score va attempt hisobini tekshiradi.
