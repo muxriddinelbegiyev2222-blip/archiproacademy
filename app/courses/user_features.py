@@ -294,6 +294,13 @@ def save_lesson_note(
         or ""
     ).strip()
 
+    if len(
+        note_text
+    ) > 12000:
+        note_text = note_text[
+            :12000
+        ]
+
     connection = get_connection()
 
     try:
@@ -654,11 +661,33 @@ def import_user_backup(
         source
     )
 
+    if not path.exists():
+        raise FileNotFoundError(
+            "Backup fayli topilmadi."
+        )
+
+    if path.stat().st_size > (
+        20
+        * 1024
+        * 1024
+    ):
+        raise ValueError(
+            "Backup fayli juda katta."
+        )
+
     data = json.loads(
         path.read_text(
             encoding="utf-8"
         )
     )
+
+    if not isinstance(
+        data,
+        dict,
+    ):
+        raise ValueError(
+            "Backup fayli formati noto'g'ri."
+        )
 
     if (
         data.get("product")
@@ -669,6 +698,36 @@ def import_user_backup(
         raise ValueError(
             "Backup fayli ARCHIPRO UZ formatiga mos emas."
         )
+
+    collection_limits = {
+        "lesson_progress": 2500,
+        "level_progress": 100,
+        "quiz_attempts": 25000,
+        "exam_attempts": 2500,
+        "bookmarks": 2500,
+        "notes": 2500,
+    }
+
+    for key, maximum in collection_limits.items():
+        value = data.get(
+            key,
+            [],
+        )
+
+        if not isinstance(
+            value,
+            list,
+        ):
+            raise ValueError(
+                f"Backup ichidagi {key} noto'g'ri."
+            )
+
+        if len(
+            value
+        ) > maximum:
+            raise ValueError(
+                f"Backup ichidagi {key} yozuvlari juda ko'p."
+            )
 
     connection = get_connection()
 
