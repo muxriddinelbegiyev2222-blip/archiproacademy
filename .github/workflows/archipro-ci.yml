@@ -84,9 +84,12 @@ jobs:
         shell: pwsh
         run: python app/tools/verify_built_exe.py "dist/ARCHIPRO UZ.exe"
 
+      # Optional download convenience: storage quota must not mask audit/build results.
       - name: Upload verified Windows client
+        continue-on-error: true
         uses: actions/upload-artifact@v4
         with:
           name: ARCHIPRO_UZ_Client_1.0.5
           path: dist/ARCHIPRO UZ.exe
           if-no-files-found: error
+          retention-days: 7
