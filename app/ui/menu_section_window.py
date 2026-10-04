@@ -332,74 +332,76 @@ class MenuSectionWindow(QMainWindow):
         self.setStyleSheet(
             """
             QMainWindow {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
 
             QWidget {
-                color: #F8FAFC;
+                color: #0E5558;
                 font-family: Segoe UI;
             }
 
             QWidget#pageRoot {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
 
             QWidget#scrollContent {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
 
             QScrollArea {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
                 border: none;
             }
 
             QScrollArea > QWidget {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
 
             QScrollArea > QWidget > QWidget {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
 
             QAbstractScrollArea::viewport {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
 
             QLabel#pageTitle {
                 font-size: 30px;
                 font-weight: 800;
-                color: #FFFFFF;
+                color: #203B36;
                 background-color: transparent;
-            }
+            
+                font-family: "Georgia";
+}
 
             QLabel#pageSubtitle {
                 font-size: 14px;
-                color: #94A3B8;
+                color: #586B64;
                 background-color: transparent;
             }
 
             QFrame#sectionCard {
-                background-color: #111827;
-                border: 1px solid #1E293B;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 14px;
             }
 
             QLabel#cardTitle {
                 font-size: 17px;
                 font-weight: 700;
-                color: #FFFFFF;
+                color: #203B36;
                 background-color: transparent;
             }
 
             QLabel#cardSubtitle {
                 font-size: 13px;
-                color: #94A3B8;
+                color: #586B64;
                 background-color: transparent;
             }
 
             QPushButton#openButton {
-                background-color: #2563EB;
-                color: #FFFFFF;
+                background-color: #0E5558;
+                color: #FFFDF7;
                 border: none;
                 border-radius: 9px;
                 padding: 11px 17px;
@@ -408,28 +410,28 @@ class MenuSectionWindow(QMainWindow):
             }
 
             QPushButton#openButton:hover {
-                background-color: #3B82F6;
+                background-color: #0E5558;
             }
 
             QFrame#topInfo {
-                background-color: #111827;
-                border: 1px solid #1E293B;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 14px;
             }
 
             QScrollBar:vertical {
-                background-color: #0F172A;
+                background-color: #FFFDF7;
                 width: 11px;
             }
 
             QScrollBar::handle:vertical {
-                background-color: #334155;
+                background-color: #BDB29E;
                 min-height: 30px;
                 border-radius: 5px;
             }
 
             QScrollBar::handle:vertical:hover {
-                background-color: #475569;
+                background-color: #A65D35;
             }
 
             QScrollBar::add-line:vertical,
@@ -453,7 +455,7 @@ class MenuSectionWindow(QMainWindow):
         central.setStyleSheet(
             """
             QWidget#pageRoot {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
             """
         )
@@ -522,23 +524,23 @@ class MenuSectionWindow(QMainWindow):
         scroll.setStyleSheet(
             """
             QScrollArea {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
                 border: none;
             }
 
             QScrollArea QWidget {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
 
             QAbstractScrollArea::viewport {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
             """
         )
 
         scroll.viewport().setStyleSheet(
             """
-            background-color: #0B1220;
+            background-color: #F5F1E7;
             """
         )
 
@@ -551,7 +553,7 @@ class MenuSectionWindow(QMainWindow):
         scroll_content.setStyleSheet(
             """
             QWidget#scrollContent {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
             """
         )

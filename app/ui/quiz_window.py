@@ -88,12 +88,12 @@ class QuizWindow(QMainWindow):
         self.setStyleSheet(
             """
             QMainWindow {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
 
             QWidget {
                 font-family: Segoe UI;
-                color: #F8FAFC;
+                color: #0E5558;
             }
 
             QScrollArea {
@@ -104,74 +104,76 @@ class QuizWindow(QMainWindow):
             QLabel#pageTitle {
                 font-size: 28px;
                 font-weight: 700;
-                color: #FFFFFF;
-            }
+                color: #203B36;
+            
+                font-family: "Georgia";
+}
 
             QLabel#subtitle {
                 font-size: 13px;
-                color: #94A3B8;
+                color: #586B64;
             }
 
             QLabel#scoreInfo {
                 font-size: 13px;
-                color: #FBBF24;
+                color: #A65D35;
                 font-weight: 600;
             }
 
             QFrame#questionCard {
-                background-color: #111827;
-                border: 1px solid #1E293B;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 14px;
             }
 
             QFrame#questionCorrect {
-                background-color: #10251C;
-                border: 1px solid #15803D;
+                background-color: #E7F0E8;
+                border: 1px solid #D5CBBB;
                 border-radius: 14px;
             }
 
             QFrame#questionWrong {
-                background-color: #2A1914;
-                border: 1px solid #C2410C;
+                background-color: #FBECE7;
+                border: 1px solid #B95045;
                 border-radius: 14px;
             }
 
             QLabel#questionText {
-                color: #FFFFFF;
+                color: #203B36;
                 font-size: 16px;
                 font-weight: 600;
             }
 
             QLabel#explanation {
-                color: #FDBA74;
+                color: #A65D35;
                 font-size: 13px;
             }
 
             QRadioButton {
-                color: #CBD5E1;
+                color: #203B36;
                 font-size: 14px;
                 spacing: 10px;
                 padding: 7px;
             }
 
             QRadioButton:hover {
-                background-color: #172033;
+                background-color: #FFFDF7;
                 border-radius: 6px;
             }
 
             QRadioButton#correctAnswer {
-                color: #86EFAC;
+                color: #27624A;
                 font-weight: 700;
             }
 
             QRadioButton#wrongAnswer {
-                color: #FDBA74;
+                color: #A65D35;
                 font-weight: 700;
             }
 
             QPushButton#submitButton {
-                background-color: #2563EB;
-                color: #FFFFFF;
+                background-color: #0E5558;
+                color: #FFFDF7;
                 border: none;
                 border-radius: 10px;
                 padding: 13px 22px;
@@ -180,11 +182,11 @@ class QuizWindow(QMainWindow):
             }
 
             QPushButton#submitButton:hover {
-                background-color: #3B82F6;
+                background-color: #0E5558;
             }
 
             QPushButton#retryButton {
-                background-color: #C2410C;
+                background-color: #A53832;
                 color: white;
                 border: none;
                 border-radius: 10px;
@@ -194,11 +196,11 @@ class QuizWindow(QMainWindow):
             }
 
             QPushButton#retryButton:hover {
-                background-color: #EA580C;
+                background-color: #A53832;
             }
 
             QPushButton#continueButton {
-                background-color: #15803D;
+                background-color: #E7F0E8;
                 color: white;
                 border: none;
                 border-radius: 10px;
@@ -208,19 +210,19 @@ class QuizWindow(QMainWindow):
             }
 
             QPushButton#continueButton:hover {
-                background-color: #16A34A;
+                background-color: #27624A;
             }
 
             QPushButton#backButton {
-                background-color: #1E293B;
-                color: #FFFFFF;
+                background-color: #FFFDF7;
+                color: #203B36;
                 border: none;
                 border-radius: 8px;
                 padding: 9px 15px;
             }
 
             QPushButton#backButton:hover {
-                background-color: #334155;
+                background-color: #FFFDF7;
             }
             """
         )
@@ -824,11 +826,11 @@ class QuizWindow(QMainWindow):
             self.result_label.setStyleSheet(
                 """
                 QLabel {
-                    background-color: #10251C;
-                    border: 1px solid #15803D;
+                    background-color: #E7F0E8;
+                    border: 1px solid #D5CBBB;
                     border-radius: 12px;
                     padding: 16px;
-                    color: #86EFAC;
+                    color: #27624A;
                     font-size: 15px;
                     font-weight: 700;
                 }
@@ -856,11 +858,11 @@ class QuizWindow(QMainWindow):
             self.result_label.setStyleSheet(
                 """
                 QLabel {
-                    background-color: #2A1914;
-                    border: 1px solid #C2410C;
+                    background-color: #FBECE7;
+                    border: 1px solid #B95045;
                     border-radius: 12px;
                     padding: 16px;
-                    color: #FDBA74;
+                    color: #A65D35;
                     font-size: 15px;
                     font-weight: 700;
                 }

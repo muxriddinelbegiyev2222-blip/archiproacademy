@@ -3,11 +3,53 @@ from PySide6.QtCore import (
 )
 
 from PySide6.QtWidgets import (
+    QApplication,
     QAbstractScrollArea,
     QFrame,
     QScrollArea,
     QWidget,
 )
+from PySide6.QtGui import QColor, QPalette
+
+
+CREAM = "#F5F1E7"
+PAPER = "#FFFDF7"
+INK = "#203B36"
+TEAL = "#0E5558"
+COPPER = "#A65D35"
+
+
+def install_application_theme(app):
+    """Keep native dialogs, menus and input controls in the same paper palette."""
+    palette = QPalette()
+    roles = {
+        QPalette.ColorRole.Window: CREAM,
+        QPalette.ColorRole.WindowText: INK,
+        QPalette.ColorRole.Base: PAPER,
+        QPalette.ColorRole.AlternateBase: CREAM,
+        QPalette.ColorRole.Text: INK,
+        QPalette.ColorRole.Button: PAPER,
+        QPalette.ColorRole.ButtonText: INK,
+        QPalette.ColorRole.Highlight: TEAL,
+        QPalette.ColorRole.HighlightedText: PAPER,
+        QPalette.ColorRole.ToolTipBase: PAPER,
+        QPalette.ColorRole.ToolTipText: INK,
+        QPalette.ColorRole.Link: TEAL,
+    }
+    for role, color in roles.items():
+        palette.setColor(role, QColor(color))
+    for role in (QPalette.ColorRole.Text, QPalette.ColorRole.WindowText,
+                 QPalette.ColorRole.ButtonText):
+        palette.setColor(QPalette.ColorGroup.Disabled, role, QColor("#737C72"))
+    app.setPalette(palette)
+    app.setStyleSheet("""
+        QToolTip { background-color: #FFFDF7; color: #203B36;
+                   border: 1px solid #D5CBBB; padding: 6px; }
+        QMenu { background-color: #FFFDF7; color: #203B36;
+                border: 1px solid #D5CBBB; }
+        QMenu::item:selected { background-color: #0E5558; color: #FFFDF7; }
+        QMessageBox, QFileDialog, QInputDialog { background-color: #F5F1E7; }
+    """)
 
 
 # ============================================================
@@ -23,12 +65,12 @@ APP_QSS = """
 QMainWindow,
 QWidget#appRoot,
 QStackedWidget {
-    background-color: #08111F;
+    background-color: #F5F1E7;
 }
 
 QWidget {
     font-family: "Segoe UI";
-    color: #E5EDF7;
+    color: #0E5558;
 }
 
 
@@ -37,18 +79,20 @@ QWidget {
    ========================================================== */
 
 QFrame#sidebar {
-    background-color: #0A1424;
-    border-right: 1px solid #25364E;
+    background-color: #F5F1E7;
+    border-right: 1px solid #D5CBBB;
 }
 
 QLabel#logo {
-    color: #F4F8FC;
+    color: #0E5558;
     font-size: 25px;
     font-weight: 800;
+
+                font-family: "Georgia";
 }
 
 QLabel#logoSub {
-    color: #7E90A8;
+    color: #586B64;
     font-size: 13px;
 }
 
@@ -57,7 +101,7 @@ QListWidget {
     border: none;
     outline: none;
 
-    color: #C7D2E0;
+    color: #203B36;
 
     font-size: 15px;
     font-weight: 500;
@@ -71,13 +115,13 @@ QListWidget::item {
 }
 
 QListWidget::item:hover {
-    background-color: #14233A;
-    color: #FFFFFF;
+    background-color: #FFFDF7;
+    color: #203B36;
 }
 
 QListWidget::item:selected {
-    background-color: #2F68D8;
-    color: #FFFFFF;
+    background-color: #0E5558;
+    color: #FFFDF7;
 }
 
 
@@ -86,21 +130,23 @@ QListWidget::item:selected {
    ========================================================== */
 
 QFrame#overviewHeader {
-    background-color: #0E1B2E;
-
-    border: 1px solid #29415F;
+    background-color: #FFFDF7;
+    border: 1px solid #D5CBBB;
+    border-bottom: 3px solid #A65D35;
     border-radius: 16px;
 }
 
 QLabel#overviewTitle {
-    color: #F5F8FC;
+    color: #0E5558;
 
     font-size: 30px;
     font-weight: 800;
+
+                font-family: "Georgia";
 }
 
 QLabel#overviewSubtitle {
-    color: #9DACBF;
+    color: #586B64;
 
     font-size: 15px;
 }
@@ -111,40 +157,42 @@ QLabel#overviewSubtitle {
    ========================================================== */
 
 QFrame#levelOverviewCard {
-    background-color: #0E1A2C;
+    background-color: #FFFDF7;
 
-    border: 1px solid #263C58;
+    border: 1px solid #D5CBBB;
     border-radius: 15px;
 }
 
 QFrame#levelOverviewCard:hover {
-    background-color: #112039;
+    background-color: #FFFDF7;
 
-    border: 1px solid #395C89;
+    border: 1px solid #4B7B78;
 }
 
 QLabel#levelCode {
-    color: #6598FF;
+    color: #0E5558;
 
     font-size: 13px;
     font-weight: 800;
 }
 
 QLabel#levelName {
-    color: #F1F5FA;
+    color: #0E5558;
 
     font-size: 20px;
     font-weight: 750;
+
+                font-family: "Georgia";
 }
 
 QLabel#levelDesc {
-    color: #95A6BC;
+    color: #586B64;
 
     font-size: 14px;
 }
 
 QLabel#progressText {
-    color: #AAB8C9;
+    color: #203B36;
 
     font-size: 13px;
     font-weight: 600;
@@ -168,35 +216,35 @@ QLabel#statusBadgeMaster {
 }
 
 QLabel#statusBadgeLocked {
-    background-color: #151D2A;
+    background-color: #FFFDF7;
 
-    border: 1px solid #37465B;
+    border: 1px solid #D5CBBB;
 
-    color: #9AA8BA;
+    color: #586B64;
 }
 
 QLabel#statusBadgeAvailable {
-    background-color: #102443;
+    background-color: #FFFDF7;
 
-    border: 1px solid #356FD8;
+    border: 1px solid #4B7B78;
 
-    color: #8AB4FF;
+    color: #0E5558;
 }
 
 QLabel#statusBadgeCompleted {
-    background-color: #10271F;
+    background-color: #E7F0E8;
 
-    border: 1px solid #2E7257;
+    border: 1px solid #D5CBBB;
 
-    color: #7BDAAD;
+    color: #27624A;
 }
 
 QLabel#statusBadgeMaster {
-    background-color: #2B230D;
+    background-color: #F4E9D7;
 
-    border: 1px solid #947428;
+    border: 1px solid #A65D35;
 
-    color: #F1CA64;
+    color: #A65D35;
 }
 
 
@@ -205,12 +253,12 @@ QLabel#statusBadgeMaster {
    ========================================================== */
 
 QPushButton#openLevelButton {
-    background-color: #182942;
+    background-color: #FFFDF7;
 
-    border: 1px solid #385679;
+    border: 1px solid #D5CBBB;
     border-radius: 9px;
 
-    color: #DCE7F5;
+    color: #0E5558;
 
     min-height: 36px;
 
@@ -222,11 +270,11 @@ QPushButton#openLevelButton {
 }
 
 QPushButton#openLevelButton:hover {
-    background-color: #22416C;
+    background-color: #FFFDF7;
 
-    border: 1px solid #4F84CF;
+    border: 1px solid #4B7B78;
 
-    color: #FFFFFF;
+    color: #203B36;
 }
 
 
@@ -235,14 +283,16 @@ QPushButton#openLevelButton:hover {
    ========================================================== */
 
 QLabel#pageTitle {
-    color: #F5F8FC;
+    color: #0E5558;
 
     font-size: 31px;
     font-weight: 800;
+
+                font-family: "Georgia";
 }
 
 QLabel#pageSubtitle {
-    color: #9DACBF;
+    color: #586B64;
 
     font-size: 15px;
 }
@@ -251,30 +301,32 @@ QFrame#levelCard,
 QFrame#levelLocked,
 QFrame#levelCompleted,
 QFrame#levelMaster {
-    background-color: #0D192A;
+    background-color: #FFFDF7;
 
-    border: 1px solid #29405D;
+    border: 1px solid #D5CBBB;
 
     border-radius: 15px;
 }
 
 QFrame#levelCompleted {
-    border-color: #2C6D54;
+    border-color: #D5CBBB;
 }
 
 QFrame#levelMaster {
-    border-color: #886D2C;
+    border-color: #A65D35;
 }
 
 QLabel#levelTitle {
-    color: #F3F7FB;
+    color: #0E5558;
 
     font-size: 22px;
     font-weight: 800;
+
+                font-family: "Georgia";
 }
 
 QLabel#levelSubtitle {
-    color: #98A8BC;
+    color: #586B64;
 
     font-size: 14px;
 }
@@ -285,15 +337,15 @@ QLabel#levelSubtitle {
    ========================================================== */
 
 QFrame#moduleCard {
-    background-color: #101D30;
+    background-color: #FFFDF7;
 
-    border: 1px solid #253A56;
+    border: 1px solid #D5CBBB;
 
     border-radius: 13px;
 }
 
 QLabel#moduleTitle {
-    color: #EDF3F9;
+    color: #0E5558;
 
     font-size: 18px;
     font-weight: 700;
@@ -308,46 +360,46 @@ QFrame#lessonLocked,
 QFrame#lessonAvailable,
 QFrame#lessonCompleted,
 QFrame#lessonMaster {
-    background-color: #0D192A;
+    background-color: #FFFDF7;
 
-    border: 1px solid #23364F;
+    border: 1px solid #D5CBBB;
 
     border-radius: 10px;
 }
 
 QFrame#lessonLocked {
-    background-color: #0C1727;
+    background-color: #FFFDF7;
 
-    border-color: #1F3046;
+    border-color: #D5CBBB;
 }
 
 QFrame#lessonAvailable {
-    background-color: #102441;
+    background-color: #FFFDF7;
 
-    border-color: #3974D9;
+    border-color: #4B7B78;
 }
 
 QFrame#lessonCompleted {
-    background-color: #10251F;
+    background-color: #E7F0E8;
 
-    border-color: #2E7056;
+    border-color: #D5CBBB;
 }
 
 QFrame#lessonMaster {
-    background-color: #211D11;
+    background-color: #F5F1E7;
 
-    border-color: #7D662E;
+    border-color: #D5CBBB;
 }
 
 QLabel#lessonTitle {
-    color: #E4EBF4;
+    color: #0E5558;
 
     font-size: 15px;
     font-weight: 650;
 }
 
 QLabel#meta {
-    color: #8193AA;
+    color: #586B64;
 
     font-size: 12px;
 }
@@ -363,12 +415,12 @@ QPushButton#examButton,
 QPushButton#primaryButton,
 QPushButton#quizButton,
 QPushButton#submitButton {
-    background-color: #356FE0;
+    background-color: #0E5558;
 
-    border: 1px solid #528DFA;
+    border: 1px solid #4B7B78;
     border-radius: 9px;
 
-    color: #FFFFFF;
+    color: #FFFDF7;
 
     min-height: 36px;
 
@@ -385,7 +437,7 @@ QPushButton#examButton:hover,
 QPushButton#primaryButton:hover,
 QPushButton#quizButton:hover,
 QPushButton#submitButton:hover {
-    background-color: #477FE5;
+    background-color: #0E5558;
 }
 
 
@@ -395,12 +447,12 @@ QPushButton#submitButton:hover {
 
 QPushButton#backButton,
 QPushButton#embeddedBackButton {
-    background-color: #15243A;
+    background-color: #FFFDF7;
 
-    border: 1px solid #2C405D;
+    border: 1px solid #D5CBBB;
     border-radius: 9px;
 
-    color: #D8E1EC;
+    color: #203B36;
 
     min-height: 34px;
 
@@ -413,9 +465,9 @@ QPushButton#embeddedBackButton {
 
 QPushButton#backButton:hover,
 QPushButton#embeddedBackButton:hover {
-    background-color: #1C304C;
+    background-color: #FFFDF7;
 
-    border-color: #496786;
+    border-color: #D5CBBB;
 }
 
 
@@ -424,7 +476,7 @@ QPushButton#embeddedBackButton:hover {
    ========================================================== */
 
 QProgressBar {
-    background-color: #17263A;
+    background-color: #FFFDF7;
 
     border: none;
     border-radius: 5px;
@@ -436,7 +488,7 @@ QProgressBar {
 }
 
 QProgressBar::chunk {
-    background-color: #4F86EB;
+    background-color: #0E5558;
 
     border-radius: 5px;
 }
@@ -448,17 +500,17 @@ QProgressBar::chunk {
 
 QScrollArea,
 QAbstractScrollArea {
-    background-color: #08111F;
+    background-color: #F5F1E7;
 
     border: none;
 }
 
 QAbstractScrollArea::viewport {
-    background-color: #08111F;
+    background-color: #F5F1E7;
 }
 
 QWidget#overviewContent {
-    background-color: #08111F;
+    background-color: #F5F1E7;
 }
 
 
@@ -467,7 +519,7 @@ QWidget#overviewContent {
    ========================================================== */
 
 QScrollBar:vertical {
-    background-color: #0B1627;
+    background-color: #F5F1E7;
 
     width: 11px;
 
@@ -477,7 +529,7 @@ QScrollBar:vertical {
 }
 
 QScrollBar::handle:vertical {
-    background-color: #344B68;
+    background-color: #BDB29E;
 
     min-height: 45px;
 
@@ -485,7 +537,7 @@ QScrollBar::handle:vertical {
 }
 
 QScrollBar::handle:vertical:hover {
-    background-color: #486584;
+    background-color: #A65D35;
 }
 
 QScrollBar::add-line:vertical,
@@ -504,14 +556,14 @@ QScrollBar::sub-page:vertical {
    ========================================================== */
 
 QLabel#userInfo {
-    background-color: #101C2E;
+    background-color: #FFFDF7;
 
-    border: 1px solid #263A54;
+    border: 1px solid #D5CBBB;
     border-radius: 10px;
 
     padding: 10px;
 
-    color: #C8D4E3;
+    color: #203B36;
 
     font-size: 12px;
 }
@@ -559,6 +611,11 @@ def install_premium_theme(
 
     if root is None:
         return
+
+    app = QApplication.instance()
+    if app is not None and not app.property("archiproPaperTheme"):
+        install_application_theme(app)
+        app.setProperty("archiproPaperTheme", True)
 
     root.setStyleSheet(
         APP_QSS

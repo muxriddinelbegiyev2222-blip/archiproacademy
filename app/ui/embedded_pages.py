@@ -136,23 +136,23 @@ class LessonPage(QWidget):
             """
             QWidget#lessonPage,
             QWidget#lessonContent {
-                background-color: #08111F;
+                background-color: #F5F1E7;
                 font-family: "Segoe UI";
             }
 
             /* TOP */
 
             QFrame#lessonTopBar {
-                background-color: #0B1728;
-                border: 1px solid #243953;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 14px;
             }
 
             QPushButton#backButton {
-                background-color: #15243A;
-                border: 1px solid #314765;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 9px;
-                color: #DCE6F2;
+                color: #0E5558;
                 padding: 8px 16px;
                 min-height: 34px;
                 font-size: 13px;
@@ -160,15 +160,15 @@ class LessonPage(QWidget):
             }
 
             QPushButton#backButton:hover {
-                background-color: #1C304C;
-                border-color: #496D98;
+                background-color: #FFFDF7;
+                border-color: #D5CBBB;
             }
 
             QLabel#xpBadge {
-                background-color: #24200F;
-                border: 1px solid #7A6427;
+                background-color: #F4E9D7;
+                border: 1px solid #D5CBBB;
                 border-radius: 8px;
-                color: #F3CB5B;
+                color: #A65D35;
                 padding: 7px 11px;
                 font-size: 12px;
                 font-weight: 800;
@@ -177,54 +177,56 @@ class LessonPage(QWidget):
             /* HERO */
 
             QFrame#lessonHero {
-                background-color: #0E1B2E;
-                border: 1px solid #2D4666;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 18px;
             }
 
             QLabel#lessonLevel {
-                color: #68A0FF;
+                color: #0E5558;
                 font-size: 13px;
                 font-weight: 800;
             }
 
             QLabel#lessonTitle {
-                color: #F5F8FC;
+                color: #0E5558;
                 font-size: 24px;
                 font-weight: 800;
-            }
+            
+                font-family: "Georgia";
+}
 
             QLabel#lessonMeta {
-                color: #9EADC1;
+                color: #586B64;
                 font-size: 14px;
             }
 
             QLabel#lessonPurpose {
-                color: #C9D5E4;
+                color: #203B36;
                 font-size: 14px;
             }
 
             /* PROGRESS */
 
             QFrame#progressCard {
-                background-color: #0C1829;
-                border: 1px solid #243953;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 13px;
             }
 
             QLabel#progressTitle {
-                color: #F1F6FC;
+                color: #0E5558;
                 font-size: 13px;
                 font-weight: 700;
             }
 
             QLabel#progressText {
-                color: #8FA1B8;
+                color: #586B64;
                 font-size: 12px;
             }
 
             QProgressBar {
-                background-color: #15243A;
+                background-color: #FFFDF7;
                 border: none;
                 border-radius: 5px;
                 height: 9px;
@@ -232,29 +234,29 @@ class LessonPage(QWidget):
             }
 
             QProgressBar::chunk {
-                background-color: #4F86EB;
+                background-color: #0E5558;
                 border-radius: 5px;
             }
 
             /* MAP */
 
             QFrame#lessonMap {
-                background-color: #0C1829;
-                border: 1px solid #243953;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 13px;
             }
 
             QLabel#mapTitle {
-                color: #8FA1B8;
+                color: #586B64;
                 font-size: 11px;
                 font-weight: 800;
             }
 
             QPushButton#mapButton {
-                background-color: #15243A;
-                border: 1px solid #2B405D;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 7px;
-                color: #AFC0D4;
+                color: #203B36;
                 min-width: 34px;
                 max-width: 34px;
                 min-height: 30px;
@@ -264,13 +266,13 @@ class LessonPage(QWidget):
             }
 
             QPushButton#mapButton:hover {
-                background-color: #1D304C;
-                border-color: #4F78A8;
+                background-color: #FFFDF7;
+                border-color: #D5CBBB;
             }
 
             QPushButton#mapButton[active="true"] {
-                background-color: #356FE0;
-                border-color: #6A9CFA;
+                background-color: #0E5558;
+                border-color: #4B7B78;
                 color: white;
             }
 
@@ -285,28 +287,28 @@ class LessonPage(QWidget):
             }
 
             QFrame#contentNormal {
-                background-color: #0E1A2C;
-                border: 1px solid #263B57;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
             }
 
             QFrame#contentHighlight {
-                background-color: #102441;
-                border: 1px solid #366BC7;
+                background-color: #FFFDF7;
+                border: 1px solid #4B7B78;
             }
 
             QFrame#contentExample {
-                background-color: #10251F;
-                border: 1px solid #347257;
+                background-color: #E7F0E8;
+                border: 1px solid #D5CBBB;
             }
 
             QFrame#contentWarning {
-                background-color: #2A1D19;
-                border: 1px solid #945A3B;
+                background-color: #FFFDF7;
+                border: 1px solid #B95045;
             }
 
             QFrame#contentPractice {
-                background-color: #211D31;
-                border: 1px solid #665696;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
             }
 
             QLabel#typeNormal,
@@ -321,103 +323,103 @@ class LessonPage(QWidget):
             }
 
             QLabel#typeNormal {
-                background-color: #17263A;
-                border: 1px solid #304761;
-                color: #AFC0D4;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
+                color: #203B36;
             }
 
             QLabel#typeHighlight {
-                background-color: #173460;
-                border: 1px solid #3975D9;
-                color: #9EC0FF;
+                background-color: #FFFDF7;
+                border: 1px solid #4B7B78;
+                color: #0E5558;
             }
 
             QLabel#typeExample {
-                background-color: #17392D;
-                border: 1px solid #367B5D;
-                color: #8EE0B5;
+                background-color: #E7F0E8;
+                border: 1px solid #D5CBBB;
+                color: #27624A;
             }
 
             QLabel#typeWarning {
-                background-color: #44291E;
-                border: 1px solid #A4603E;
-                color: #F0B083;
+                background-color: #FBECE7;
+                border: 1px solid #B95045;
+                color: #A65D35;
             }
 
             QLabel#typePractice {
-                background-color: #332A4C;
-                border: 1px solid #7762AA;
-                color: #C4B5FD;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
+                color: #0E5558;
             }
 
             QLabel#blockTitle {
-                color: #F0F5FA;
+                color: #0E5558;
                 font-size: 18px;
                 font-weight: 750;
             }
 
             QLabel#blockText {
-                color: #CBD6E4;
+                color: #203B36;
                 font-size: 15px;
             }
 
             /* SUMMARY */
 
             QFrame#summaryCard {
-                background-color: #0D2135;
-                border: 1px solid #315577;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 15px;
             }
 
             QLabel#summaryTitle {
-                color: #79A9FF;
+                color: #0E5558;
                 font-size: 17px;
                 font-weight: 800;
             }
 
             QLabel#summaryItem {
-                color: #D6E0EC;
+                color: #0E5558;
                 font-size: 14px;
             }
 
             /* PRACTICAL REVIEW */
 
             QFrame#reviewCard {
-                background-color: #161D2C;
-                border: 1px solid #3A4C66;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 15px;
             }
 
             QLabel#reviewTitle {
-                color: #F1F5FA;
+                color: #0E5558;
                 font-size: 17px;
                 font-weight: 800;
             }
 
             QLabel#reviewItem {
-                color: #B9C7D8;
+                color: #203B36;
                 font-size: 14px;
             }
 
             /* PERSONAL TOOLS */
 
             QFrame#personalTools {
-                background-color: #0C1829;
-                border: 1px solid #2A405D;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 14px;
             }
 
             QLabel#personalTitle {
-                color: #7FAAFF;
+                color: #0E5558;
                 font-size: 13px;
                 font-weight: 800;
             }
 
             QPlainTextEdit#lessonNote {
-                background-color: #091525;
-                border: 1px solid #304761;
+                background-color: #F5F1E7;
+                border: 1px solid #D5CBBB;
                 border-radius: 10px;
-                color: #E7EEF7;
+                color: #0E5558;
                 padding: 10px;
                 font-size: 13px;
             }
@@ -425,10 +427,10 @@ class LessonPage(QWidget):
             QPushButton#bookmarkButton,
             QPushButton#saveNoteButton,
             QPushButton#nextLessonButton {
-                background-color: #15243A;
-                border: 1px solid #365273;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 9px;
-                color: #E4EDF7;
+                color: #0E5558;
                 padding: 8px 14px;
                 min-height: 34px;
                 font-size: 12px;
@@ -438,40 +440,40 @@ class LessonPage(QWidget):
             QPushButton#bookmarkButton:hover,
             QPushButton#saveNoteButton:hover,
             QPushButton#nextLessonButton:hover {
-                background-color: #203754;
-                border-color: #5A84B6;
+                background-color: #FFFDF7;
+                border-color: #D5CBBB;
             }
 
             QPushButton#nextLessonButton:disabled {
-                background-color: #101A29;
-                border-color: #27384D;
-                color: #66778C;
+                background-color: #FFFDF7;
+                border-color: #D5CBBB;
+                color: #586B64;
             }
 
             /* FOOTER */
 
             QFrame#lessonFooter {
-                background-color: #0B1728;
-                border: 1px solid #243953;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 14px;
             }
 
             QLabel#footerTitle {
-                color: #EDF3F9;
+                color: #0E5558;
                 font-size: 15px;
                 font-weight: 750;
             }
 
             QLabel#footerText {
-                color: #8FA1B8;
+                color: #586B64;
                 font-size: 12px;
             }
 
             QPushButton#quizButton {
-                background-color: #356FE0;
-                border: 1px solid #5992FA;
+                background-color: #0E5558;
+                border: 1px solid #4B7B78;
                 border-radius: 10px;
-                color: #FFFFFF;
+                color: #FFFDF7;
                 padding: 7px 14px;
                 min-height: 28px;
                 font-size: 14px;
@@ -479,23 +481,23 @@ class LessonPage(QWidget):
             }
 
             QPushButton#quizButton:hover {
-                background-color: #477FE5;
-                border-color: #79A9FF;
+                background-color: #0E5558;
+                border-color: #4B7B78;
             }
 
             /* SCROLL */
 
             QScrollArea {
-                background-color: #08111F;
+                background-color: #F5F1E7;
                 border: none;
             }
 
             QAbstractScrollArea::viewport {
-                background-color: #08111F;
+                background-color: #F5F1E7;
             }
 
             QScrollBar:vertical {
-                background-color: #0A1525;
+                background-color: #F5F1E7;
                 width: 10px;
                 margin: 2px;
                 border: none;
@@ -503,13 +505,13 @@ class LessonPage(QWidget):
             }
 
             QScrollBar::handle:vertical {
-                background-color: #344B68;
+                background-color: #BDB29E;
                 min-height: 50px;
                 border-radius: 5px;
             }
 
             QScrollBar::handle:vertical:hover {
-                background-color: #4B688B;
+                background-color: #A65D35;
             }
 
             QScrollBar::add-line:vertical,
@@ -619,7 +621,7 @@ class LessonPage(QWidget):
         top_layout.addWidget(self.font_smaller_button)
         self.font_size_label = QLabel("17 px")
         self.font_size_label.setObjectName("readingFontSize")
-        self.font_size_label.setStyleSheet("color: #CBD6E4; font-size: 12px;")
+        self.font_size_label.setStyleSheet("color: #203B36; font-size: 12px;")
         top_layout.addWidget(self.font_size_label)
         self.font_larger_button = QPushButton("A+")
         self.font_larger_button.setObjectName("readingFontLarger")
@@ -631,12 +633,12 @@ class LessonPage(QWidget):
         self.reading_button.toggled.connect(self.set_reading_mode)
         top_layout.addWidget(self.reading_button)
         top_bar.setStyleSheet(
-            "QPushButton { background-color: #15243A; color: #DCE6F2;"
-            " border: 1px solid #314765; border-radius: 7px;"
+            "QPushButton { background-color: #FFFDF7; color: #0E5558;"
+            " border: 1px solid #D5CBBB; border-radius: 7px;"
             " padding: 5px 9px; min-height: 24px; font-size: 12px; }"
-            "QPushButton:hover { background-color: #203653; border-color: #5992FA; }"
-            "QPushButton:checked { background-color: #285CA3; border-color: #5992FA; color: #FFFFFF; }"
-            "QPushButton:disabled { background-color: #101C2C; color: #61738B; border-color: #243953; }"
+            "QPushButton:hover { background-color: #FFFDF7; border-color: #4B7B78; }"
+            "QPushButton:checked { background-color: #0E5558; border-color: #4B7B78; color: #FFFDF7; }"
+            "QPushButton:disabled { background-color: #FFFDF7; color: #586B64; border-color: #D5CBBB; }"
         )
         top_layout.addStretch()
 
@@ -1547,7 +1549,7 @@ class LessonPage(QWidget):
             font-family: 'Segoe UI';
             font-size: {self.reading_font_size}px;
             line-height: 1.55;
-            color: #CBD6E4;
+            color: #203B36;
         ">
             {raw_text}
         </div>
@@ -2010,56 +2012,58 @@ class QuizPage(QuizWindow):
             + """
             QMainWindow,
             QWidget {
-                background-color: #08111F;
+                background-color: #F5F1E7;
                 font-family: "Segoe UI";
             }
 
             QLabel#pageTitle {
-                color: #F5F8FC;
+                color: #0E5558;
                 font-size: 31px;
                 font-weight: 800;
-            }
+            
+                font-family: "Georgia";
+}
 
             QLabel#subtitle {
-                color: #9DADC1;
+                color: #586B64;
                 font-size: 15px;
             }
 
             QLabel#questionText {
-                color: #EEF4FA;
+                color: #0E5558;
                 font-size: 18px;
                 font-weight: 650;
             }
 
             QLabel#explanation {
-                background-color: #15243A;
-                border: 1px solid #304866;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 10px;
-                color: #CDD8E6;
+                color: #203B36;
                 padding: 12px;
                 font-size: 14px;
             }
 
             QRadioButton {
-                background-color: #0E1A2C;
-                border: 1px solid #263B57;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 10px;
-                color: #DCE5EF;
+                color: #0E5558;
                 padding: 11px;
                 spacing: 10px;
                 font-size: 15px;
             }
 
             QRadioButton:hover {
-                background-color: #12233C;
-                border-color: #44668F;
+                background-color: #FFFDF7;
+                border-color: #D5CBBB;
             }
 
             QPushButton#submitButton,
             QPushButton#retryButton,
             QPushButton#continueButton {
-                background-color: #356FE0;
-                border: 1px solid #5992FA;
+                background-color: #0E5558;
+                border: 1px solid #4B7B78;
                 border-radius: 10px;
                 color: white;
                 min-height: 40px;
@@ -2131,53 +2135,55 @@ class ExamPage(ExamWindow):
             + """
             QMainWindow,
             QWidget {
-                background-color: #08111F;
+                background-color: #F5F1E7;
                 font-family: "Segoe UI";
             }
 
             QLabel#examLabel {
-                color: #EBC65B;
+                color: #A65D35;
                 font-size: 13px;
                 font-weight: 800;
             }
 
             QLabel#examTitle {
-                color: #F5F8FC;
+                color: #0E5558;
                 font-size: 31px;
                 font-weight: 800;
-            }
+            
+                font-family: "Georgia";
+}
 
             QLabel#examSubtitle {
-                color: #9DADC1;
+                color: #586B64;
                 font-size: 15px;
             }
 
             QLabel#questionText {
-                color: #EEF4FA;
+                color: #0E5558;
                 font-size: 18px;
                 font-weight: 650;
             }
 
             QLabel#explanation {
-                background-color: #15243A;
-                border: 1px solid #304866;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 10px;
-                color: #CDD8E6;
+                color: #203B36;
                 padding: 12px;
                 font-size: 14px;
             }
 
             QRadioButton {
-                color: #DCE5EF;
+                color: #0E5558;
                 font-size: 15px;
                 padding: 9px;
             }
 
             QPushButton#embeddedBackButton {
-                background-color: #15243A;
-                border: 1px solid #314765;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 9px;
-                color: #DCE6F2;
+                color: #0E5558;
                 padding: 8px 16px;
                 min-height: 34px;
                 font-size: 13px;

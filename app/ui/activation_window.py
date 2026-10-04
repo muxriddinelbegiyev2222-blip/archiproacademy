@@ -52,77 +52,79 @@ class ActivationWindow(QWidget):
         self.setStyleSheet(
             """
             QWidget {
-                background-color: #0B1220;
-                color: #F8FAFC;
+                background-color: #F5F1E7;
+                color: #0E5558;
                 font-family: Segoe UI;
             }
 
             QFrame#card {
-                background-color: #0F172A;
-                border: 1px solid #1E293B;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 16px;
             }
 
             QLabel#title {
                 font-size: 28px;
                 font-weight: 800;
-                color: #FFFFFF;
-            }
+                color: #203B36;
+            
+                font-family: "Georgia";
+}
 
             QLabel#subtitle {
                 font-size: 14px;
-                color: #94A3B8;
+                color: #586B64;
             }
 
             QLabel#label {
                 font-size: 13px;
-                color: #CBD5E1;
+                color: #203B36;
             }
 
             QLabel#info {
                 font-size: 12px;
-                color: #94A3B8;
+                color: #586B64;
             }
 
             QLabel#error {
                 font-size: 13px;
-                color: #F87171;
+                color: #A53832;
             }
 
             QLineEdit {
-                background-color: #111827;
-                border: 1px solid #334155;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 9px;
                 padding: 11px;
-                color: #FFFFFF;
+                color: #203B36;
                 font-size: 13px;
             }
 
             QPushButton#copyButton {
-                background-color: #1E293B;
-                border: 1px solid #334155;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 8px;
                 padding: 10px 14px;
-                color: #FFFFFF;
+                color: #203B36;
                 font-weight: 600;
             }
 
             QPushButton#copyButton:hover {
-                background-color: #334155;
+                background-color: #FFFDF7;
             }
 
             QPushButton#activateButton {
-                background-color: #2563EB;
+                background-color: #0E5558;
                 border: none;
                 border-radius: 9px;
                 padding: 12px 18px;
-                color: #FFFFFF;
+                color: #FFFDF7;
                 font-size: 14px;
                 font-weight: 700;
             }
 
             QPushButton#activateButton:hover {
-                background-color: #3B82F6;
+                background-color: #0E5558;
             }
             """
         )

@@ -53,9 +53,9 @@ class LoginWindow(QWidget):
         self.setStyleSheet(
             """
             QWidget#loginRoot {
-                background-color: #07101D;
+                background-color: #F5F1E7;
                 font-family: "Segoe UI";
-                color: #EAF1F8;
+                color: #0E5558;
             }
 
 
@@ -64,34 +64,36 @@ class LoginWindow(QWidget):
                ================================================ */
 
             QFrame#brandPanel {
-                background-color: #0A1526;
+                background-color: #F5F1E7;
 
-                border: 1px solid #1E334D;
+                border: 1px solid #D5CBBB;
                 border-radius: 22px;
             }
 
             QLabel#brandEyebrow {
-                color: #679CFF;
+                color: #0E5558;
 
                 font-size: 12px;
                 font-weight: 800;
             }
 
             QLabel#brandTitle {
-                color: #F6F9FC;
+                color: #0E5558;
 
                 font-size: 40px;
                 font-weight: 900;
-            }
+            
+                font-family: "Georgia";
+}
 
             QLabel#brandSubtitle {
-                color: #A2B2C6;
+                color: #586B64;
 
                 font-size: 16px;
             }
 
             QLabel#brandDescription {
-                color: #CAD5E2;
+                color: #203B36;
 
                 font-size: 15px;
             }
@@ -102,19 +104,19 @@ class LoginWindow(QWidget):
                ================================================ */
 
             QFrame#featureCard {
-                background-color: #0D1A2C;
+                background-color: #FFFDF7;
 
-                border: 1px solid #263E5C;
+                border: 1px solid #D5CBBB;
                 border-radius: 13px;
             }
 
             QLabel#featureIndex {
-                background-color: #17345F;
+                background-color: #FFFDF7;
 
-                border: 1px solid #3F75CB;
+                border: 1px solid #4B7B78;
                 border-radius: 7px;
 
-                color: #9CC1FF;
+                color: #0E5558;
 
                 min-width: 28px;
                 max-width: 28px;
@@ -127,14 +129,14 @@ class LoginWindow(QWidget):
             }
 
             QLabel#featureTitle {
-                color: #E9F0F8;
+                color: #0E5558;
 
                 font-size: 14px;
                 font-weight: 700;
             }
 
             QLabel#featureText {
-                color: #8699B1;
+                color: #586B64;
 
                 font-size: 12px;
             }
@@ -145,34 +147,36 @@ class LoginWindow(QWidget):
                ================================================ */
 
             QFrame#loginCard {
-                background-color: #0C1728;
+                background-color: #FFFDF7;
 
-                border: 1px solid #29415F;
+                border: 1px solid #D5CBBB;
                 border-radius: 22px;
             }
 
             QLabel#loginEyebrow {
-                color: #679CFF;
+                color: #0E5558;
 
                 font-size: 11px;
                 font-weight: 800;
             }
 
             QLabel#formTitle {
-                color: #F6F9FC;
+                color: #0E5558;
 
                 font-size: 30px;
                 font-weight: 850;
-            }
+            
+                font-family: "Georgia";
+}
 
             QLabel#formSubtitle {
-                color: #91A3B9;
+                color: #586B64;
 
                 font-size: 14px;
             }
 
             QLabel#fieldLabel {
-                color: #C8D4E2;
+                color: #203B36;
 
                 font-size: 13px;
                 font-weight: 650;
@@ -184,9 +188,9 @@ class LoginWindow(QWidget):
                ================================================ */
 
             QLineEdit {
-                background-color: #091525;
+                background-color: #F5F1E7;
 
-                border: 1px solid #304761;
+                border: 1px solid #D5CBBB;
                 border-radius: 11px;
 
                 min-height: 48px;
@@ -194,21 +198,21 @@ class LoginWindow(QWidget):
                 padding-left: 14px;
                 padding-right: 14px;
 
-                color: #EEF4FA;
+                color: #0E5558;
 
                 font-size: 14px;
 
-                selection-background-color: #356FE0;
+                selection-background-color: #0E5558;
             }
 
             QLineEdit:hover {
-                border-color: #405E80;
+                border-color: #D5CBBB;
             }
 
             QLineEdit:focus {
-                background-color: #0B192B;
+                background-color: #FFFDF7;
 
-                border: 1px solid #5188E9;
+                border: 1px solid #4B7B78;
             }
 
 
@@ -217,27 +221,27 @@ class LoginWindow(QWidget):
                ================================================ */
 
             QPushButton#loginButton {
-                background-color: #356FE0;
+                background-color: #0E5558;
 
-                border: 1px solid #5992FA;
+                border: 1px solid #4B7B78;
                 border-radius: 11px;
 
                 min-height: 48px;
 
-                color: #FFFFFF;
+                color: #FFFDF7;
 
                 font-size: 14px;
                 font-weight: 800;
             }
 
             QPushButton#loginButton:hover {
-                background-color: #477FE5;
+                background-color: #0E5558;
 
-                border-color: #79A8FF;
+                border-color: #4B7B78;
             }
 
             QPushButton#loginButton:pressed {
-                background-color: #2E62C7;
+                background-color: #0E5558;
             }
 
 
@@ -248,7 +252,7 @@ class LoginWindow(QWidget):
             QLabel#errorLabel {
                 background-color: transparent;
 
-                color: #F28B8B;
+                color: #A53832;
 
                 font-size: 12px;
                 font-weight: 600;
@@ -260,21 +264,21 @@ class LoginWindow(QWidget):
                ================================================ */
 
             QFrame#securityCard {
-                background-color: #0B1D25;
+                background-color: #F5F1E7;
 
-                border: 1px solid #24504F;
+                border: 1px solid #D5CBBB;
                 border-radius: 11px;
             }
 
             QLabel#securityTitle {
-                color: #77D1B0;
+                color: #27624A;
 
                 font-size: 11px;
                 font-weight: 800;
             }
 
             QLabel#securityText {
-                color: #8FAEA6;
+                color: #586B64;
 
                 font-size: 11px;
             }
@@ -285,34 +289,34 @@ class LoginWindow(QWidget):
                ================================================ */
 
             QFrame#developerCard {
-                background-color: #0A1525;
+                background-color: #F5F1E7;
 
-                border: 1px solid #253B57;
+                border: 1px solid #D5CBBB;
                 border-radius: 12px;
             }
 
             QLabel#developerTitle {
-                color: #6C9FFF;
+                color: #0E5558;
 
                 font-size: 10px;
                 font-weight: 800;
             }
 
             QLabel#developerName {
-                color: #DCE6F1;
+                color: #0E5558;
 
                 font-size: 12px;
                 font-weight: 700;
             }
 
             QLabel#developerPhone {
-                color: #8FA2BA;
+                color: #586B64;
 
                 font-size: 11px;
             }
 
             QLabel#versionText {
-                color: #60748E;
+                color: #586B64;
 
                 font-size: 10px;
             }

@@ -36,106 +36,110 @@ class PortfolioPage(QWidget):
         self.setStyleSheet(
             """
             QWidget#portfolioPage {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
 
             QScrollArea {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
                 border: none;
             }
 
             QAbstractScrollArea::viewport {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
 
             QWidget#portfolioContent {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
 
             QLabel#pageTitle {
-                color: #FFFFFF;
+                color: #203B36;
                 font-size: 32px;
                 font-weight: 800;
-            }
+            
+                font-family: "Georgia";
+}
 
             QLabel#pageSubtitle {
-                color: #94A3B8;
+                color: #586B64;
                 font-size: 14px;
             }
 
             QFrame#heroCard {
-                background-color: #111827;
-                border: 1px solid #334155;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 16px;
             }
 
             QFrame#portfolioCard {
-                background-color: #111827;
-                border: 1px solid #1E293B;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 14px;
             }
 
             QFrame#finalCard {
-                background-color: #181609;
-                border: 1px solid #A16207;
+                background-color: #F4E9D7;
+                border: 1px solid #D5CBBB;
                 border-radius: 14px;
             }
 
             QLabel#heroTitle {
-                color: #FFFFFF;
+                color: #203B36;
                 font-size: 21px;
                 font-weight: 800;
-            }
+            
+                font-family: "Georgia";
+}
 
             QLabel#cardTitle {
-                color: #FFFFFF;
+                color: #203B36;
                 font-size: 17px;
                 font-weight: 700;
             }
 
             QLabel#cardText {
-                color: #94A3B8;
+                color: #586B64;
                 font-size: 13px;
             }
 
             QLabel#badge {
-                color: #93C5FD;
+                color: #0E5558;
                 font-size: 12px;
                 font-weight: 700;
             }
 
             QLabel#finalBadge {
-                color: #FACC15;
+                color: #A65D35;
                 font-size: 12px;
                 font-weight: 800;
             }
 
             QPushButton#openButton {
-                background-color: #2563EB;
+                background-color: #0E5558;
                 border: none;
                 border-radius: 9px;
                 padding: 11px 18px;
-                color: #FFFFFF;
+                color: #FFFDF7;
                 font-size: 13px;
                 font-weight: 700;
             }
 
             QPushButton#openButton:hover {
-                background-color: #3B82F6;
+                background-color: #0E5558;
             }
 
             QPushButton#finalButton {
-                background-color: #A16207;
+                background-color: #A65D35;
                 border: none;
                 border-radius: 9px;
                 padding: 11px 18px;
-                color: #FFFFFF;
+                color: #203B36;
                 font-size: 13px;
                 font-weight: 800;
             }
 
             QPushButton#finalButton:hover {
-                background-color: #CA8A04;
+                background-color: #A65D35;
             }
             """
         )

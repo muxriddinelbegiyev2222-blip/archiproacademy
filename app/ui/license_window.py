@@ -135,88 +135,90 @@ class LicenseWindow(QMainWindow):
             """
             QMainWindow,
             QWidget {
-                background-color: #0B1220;
-                color: #F8FAFC;
+                background-color: #F5F1E7;
+                color: #0E5558;
                 font-family: Segoe UI;
             }
 
             QLabel#title {
                 font-size: 28px;
                 font-weight: 800;
-                color: #FFFFFF;
-            }
+                color: #203B36;
+            
+                font-family: "Georgia";
+}
 
             QLabel#subtitle {
                 font-size: 13px;
-                color: #94A3B8;
+                color: #586B64;
             }
 
             QFrame#statusOk {
-                background-color: #10251C;
-                border: 1px solid #15803D;
+                background-color: #E7F0E8;
+                border: 1px solid #D5CBBB;
                 border-radius: 12px;
             }
 
             QFrame#statusError {
-                background-color: #2A1515;
-                border: 1px solid #B91C1C;
+                background-color: #FFFDF7;
+                border: 1px solid #B95045;
                 border-radius: 12px;
             }
 
             QLabel#statusTitle {
                 font-size: 16px;
                 font-weight: 800;
-                color: #FFFFFF;
+                color: #203B36;
             }
 
             QLabel#statusText {
                 font-size: 12px;
-                color: #CBD5E1;
+                color: #203B36;
             }
 
             QFrame#infoRow {
-                background-color: #111827;
-                border: 1px solid #1E293B;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 10px;
             }
 
             QLabel#rowTitle {
                 font-size: 11px;
-                color: #64748B;
+                color: #586B64;
             }
 
             QLabel#rowValue {
                 font-size: 14px;
                 font-weight: 600;
-                color: #F8FAFC;
+                color: #0E5558;
             }
 
             QPushButton#copyButton {
-                background-color: #1E293B;
-                border: 1px solid #334155;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 9px;
                 padding: 11px 16px;
-                color: #FFFFFF;
+                color: #203B36;
                 font-size: 13px;
                 font-weight: 600;
             }
 
             QPushButton#copyButton:hover {
-                background-color: #334155;
+                background-color: #FFFDF7;
             }
 
             QPushButton#refreshButton {
-                background-color: #2563EB;
+                background-color: #0E5558;
                 border: none;
                 border-radius: 9px;
                 padding: 11px 16px;
-                color: #FFFFFF;
+                color: #FFFDF7;
                 font-size: 13px;
                 font-weight: 700;
             }
 
             QPushButton#refreshButton:hover {
-                background-color: #3B82F6;
+                background-color: #0E5558;
             }
             """
         )

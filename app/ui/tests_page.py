@@ -81,72 +81,76 @@ class TestsPage(QWidget):
         self.setStyleSheet(
             """
             QWidget#testsPage {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
 
             QScrollArea,
             QAbstractScrollArea::viewport {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
                 border: none;
             }
 
             QWidget#testsContent {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
 
             QLabel#pageTitle {
-                color: #FFFFFF;
+                color: #203B36;
                 font-size: 32px;
                 font-weight: 800;
-            }
+            
+                font-family: "Georgia";
+}
 
             QLabel#pageSubtitle {
-                color: #A8B3C7;
+                color: #586B64;
                 font-size: 16px;
             }
 
             QFrame#testCard {
-                background-color: #111827;
-                border: 1px solid #253247;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 14px;
             }
 
             QLabel#levelTitle {
-                color: #FFFFFF;
+                color: #203B36;
                 font-size: 20px;
                 font-weight: 750;
-            }
+            
+                font-family: "Georgia";
+}
 
             QLabel#levelSubtitle {
-                color: #A8B3C7;
+                color: #586B64;
                 font-size: 15px;
             }
 
             QLabel#stats {
-                color: #CBD5E1;
+                color: #203B36;
                 font-size: 14px;
             }
 
             QLabel#statusOpen {
-                color: #93C5FD;
+                color: #0E5558;
                 font-size: 14px;
                 font-weight: 700;
             }
 
             QLabel#statusLocked {
-                color: #94A3B8;
+                color: #586B64;
                 font-size: 14px;
                 font-weight: 650;
             }
 
             QLabel#statusDone {
-                color: #86EFAC;
+                color: #27624A;
                 font-size: 14px;
                 font-weight: 700;
             }
 
             QPushButton#openButton {
-                background-color: #2563EB;
+                background-color: #0E5558;
                 color: white;
                 border: none;
                 border-radius: 9px;
@@ -156,7 +160,7 @@ class TestsPage(QWidget):
             }
 
             QPushButton#openButton:hover {
-                background-color: #3B82F6;
+                background-color: #0E5558;
             }
             """
         )

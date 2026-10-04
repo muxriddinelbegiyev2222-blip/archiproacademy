@@ -123,6 +123,36 @@ class ReleaseRegression(unittest.TestCase):
         self.assertFalse(page.next_lesson_button.isEnabled())
         self.assertEqual(len(page.content_cards), len(page.blocks))
 
+    def test_paper_theme_keeps_text_and_actions_readable(self):
+        from PySide6.QtGui import QPalette
+        from ui.login_window import LoginWindow
+        from ui.theme import CREAM, PAPER, INK, TEAL
+        def contrast(first, second):
+            def luminance(color):
+                channels = [color.redF(), color.greenF(), color.blueF()]
+                values = [v / 12.92 if v <= .04045 else ((v + .055) / 1.055) ** 2.4
+                          for v in channels]
+                return sum(v * weight for v, weight in zip(values, (.2126, .7152, .0722)))
+            a, b = sorted((luminance(first), luminance(second)))
+            return (b + .05) / (a + .05)
+        palette = self.app.palette()
+        self.assertEqual(palette.color(QPalette.ColorRole.Window).name().upper(), CREAM)
+        self.assertEqual(palette.color(QPalette.ColorRole.Text).name().upper(), INK)
+        self.assertEqual(palette.color(QPalette.ColorRole.Highlight).name().upper(), TEAL)
+        self.assertEqual(palette.color(QPalette.ColorRole.Base).name().upper(), PAPER)
+        page = self.open_first()
+        button = page.findChild(QPushButton, 'quizButton')
+        button.ensurePolished()
+        self.assertGreaterEqual(contrast(button.palette().color(QPalette.ColorRole.Button),
+                                        button.palette().color(QPalette.ColorRole.ButtonText)), 4.5)
+        self.assertTrue(button.isEnabled())
+        self.assertEqual(page.reading_font_size, 17)
+        login = LoginWindow()
+        self.assertIn(CREAM, login.styleSheet())
+        self.assertIn(TEAL, login.styleSheet())
+        login.deleteLater()
+        events()
+
     def test_missing_content_is_visible_and_cannot_start_quiz(self):
         from PySide6.QtWidgets import QLabel
         for failure in (None, ImportError("courses.lesson_content missing")):
@@ -268,6 +298,7 @@ class ReleaseRegression(unittest.TestCase):
         for index, title in enumerate(self.shell.menu_items):
             with self.subTest(menu=title):
                 self.shell.menu.setCurrentRow(index)
+                self.shell.menu.itemClicked.emit(self.shell.menu.item(index))
                 events()
                 self.assertIs(self.shell.stack.currentWidget(), self.shell.page_cache[self.shell.current_page_key])
         self.shell.open_home()

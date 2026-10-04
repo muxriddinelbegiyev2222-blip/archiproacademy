@@ -575,6 +575,10 @@ def main():
         "Fusion"
     )
 
+    from ui.theme import install_application_theme
+    install_application_theme(app)
+    app.setProperty("archiproPaperTheme", True)
+
     # ========================================================
     # DATABASE PREPARATION
     # ========================================================

@@ -92,12 +92,12 @@ class LearningWindow(QMainWindow):
         self.setStyleSheet(
             """
             QMainWindow {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
 
             QWidget {
                 font-family: Segoe UI;
-                color: #F8FAFC;
+                color: #0E5558;
             }
 
             QScrollArea {
@@ -109,105 +109,107 @@ class LearningWindow(QMainWindow):
                 font-size: 30px;
                 font-weight: 700;
                 color: white;
-            }
+            
+                font-family: "Georgia";
+}
 
             QLabel#pageSubtitle {
                 font-size: 14px;
-                color: #94A3B8;
+                color: #586B64;
             }
 
             QFrame#masterBanner {
-                background-color: #251D06;
-                border: 1px solid #D4A72C;
+                background-color: #F4E9D7;
+                border: 1px solid #A65D35;
                 border-radius: 12px;
             }
 
             QLabel#masterTitle {
-                color: #FACC15;
+                color: #A65D35;
                 font-size: 15px;
                 font-weight: 800;
             }
 
             QLabel#masterText {
-                color: #FDE68A;
+                color: #A65D35;
                 font-size: 12px;
             }
 
             QFrame#levelCard {
-                background-color: #0F172A;
-                border: 1px solid #1E293B;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 16px;
             }
 
             QFrame#levelLocked {
-                background-color: #0D1422;
-                border: 1px solid #1E293B;
+                background-color: #F5F1E7;
+                border: 1px solid #D5CBBB;
                 border-radius: 16px;
             }
 
             QFrame#levelCompleted {
-                background-color: #0E1D18;
-                border: 1px solid #166534;
+                background-color: #F5F1E7;
+                border: 1px solid #D5CBBB;
                 border-radius: 16px;
             }
 
             QFrame#levelMaster {
-                background-color: #14170E;
-                border: 1px solid #A16207;
+                background-color: #F5F1E7;
+                border: 1px solid #D5CBBB;
                 border-radius: 16px;
             }
 
             QFrame#moduleCard {
-                background-color: #111827;
-                border: 1px solid #1E293B;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 12px;
             }
 
             QFrame#lessonAvailable {
-                background-color: #12203A;
-                border: 1px solid #2563EB;
+                background-color: #FFFDF7;
+                border: 1px solid #4B7B78;
                 border-radius: 10px;
             }
 
             QFrame#lessonCompleted {
-                background-color: #10251C;
-                border: 1px solid #15803D;
+                background-color: #E7F0E8;
+                border: 1px solid #D5CBBB;
                 border-radius: 10px;
             }
 
             QFrame#lessonLocked {
-                background-color: #111827;
-                border: 1px solid #1E293B;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 10px;
             }
 
             QFrame#lessonMaster {
-                background-color: #1B180C;
-                border: 1px solid #A16207;
+                background-color: #F4E9D7;
+                border: 1px solid #D5CBBB;
                 border-radius: 10px;
             }
 
             QFrame#examAvailable {
-                background-color: #2A2109;
-                border: 1px solid #CA8A04;
+                background-color: #F4E9D7;
+                border: 1px solid #A65D35;
                 border-radius: 14px;
             }
 
             QFrame#examLocked {
-                background-color: #111827;
-                border: 1px solid #334155;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 14px;
             }
 
             QFrame#examCompleted {
-                background-color: #10251C;
-                border: 1px solid #16A34A;
+                background-color: #E7F0E8;
+                border: 1px solid #4B8069;
                 border-radius: 14px;
             }
 
             QFrame#examMaster {
-                background-color: #251D06;
-                border: 1px solid #D4A72C;
+                background-color: #F4E9D7;
+                border: 1px solid #A65D35;
                 border-radius: 14px;
             }
 
@@ -215,11 +217,13 @@ class LearningWindow(QMainWindow):
                 font-size: 22px;
                 font-weight: 700;
                 color: white;
-            }
+            
+                font-family: "Georgia";
+}
 
             QLabel#levelSubtitle {
                 font-size: 14px;
-                color: #94A3B8;
+                color: #586B64;
             }
 
             QLabel#moduleTitle {
@@ -231,34 +235,34 @@ class LearningWindow(QMainWindow):
             QLabel#lessonTitle {
                 font-size: 14px;
                 font-weight: 600;
-                color: #E2E8F0;
+                color: #203B36;
             }
 
             QLabel#meta {
                 font-size: 12px;
-                color: #64748B;
+                color: #586B64;
             }
 
             QLabel#availableStatus {
-                color: #60A5FA;
+                color: #0E5558;
                 font-size: 12px;
                 font-weight: 700;
             }
 
             QLabel#completedStatus {
-                color: #86EFAC;
+                color: #27624A;
                 font-size: 12px;
                 font-weight: 700;
             }
 
             QLabel#lockedStatus {
-                color: #64748B;
+                color: #586B64;
                 font-size: 12px;
                 font-weight: 700;
             }
 
             QLabel#masterStatus {
-                color: #FACC15;
+                color: #A65D35;
                 font-size: 12px;
                 font-weight: 800;
             }
@@ -266,30 +270,30 @@ class LearningWindow(QMainWindow):
             QLabel#examTitle {
                 font-size: 18px;
                 font-weight: 700;
-                color: #FDE68A;
+                color: #A65D35;
             }
 
             QLabel#examCompletedTitle {
                 font-size: 18px;
                 font-weight: 700;
-                color: #86EFAC;
+                color: #27624A;
             }
 
             QProgressBar {
                 border: none;
-                background-color: #1E293B;
+                background-color: #FFFDF7;
                 border-radius: 6px;
                 height: 11px;
                 color: transparent;
             }
 
             QProgressBar::chunk {
-                background-color: #2563EB;
+                background-color: #0E5558;
                 border-radius: 6px;
             }
 
             QPushButton#openLesson {
-                background-color: #2563EB;
+                background-color: #0E5558;
                 color: white;
                 border: none;
                 border-radius: 8px;
@@ -298,11 +302,11 @@ class LearningWindow(QMainWindow):
             }
 
             QPushButton#openLesson:hover {
-                background-color: #3B82F6;
+                background-color: #0E5558;
             }
 
             QPushButton#reviewLesson {
-                background-color: #15803D;
+                background-color: #E7F0E8;
                 color: white;
                 border: none;
                 border-radius: 8px;
@@ -311,11 +315,11 @@ class LearningWindow(QMainWindow):
             }
 
             QPushButton#reviewLesson:hover {
-                background-color: #16A34A;
+                background-color: #27624A;
             }
 
             QPushButton#masterOpenLesson {
-                background-color: #A16207;
+                background-color: #A65D35;
                 color: white;
                 border: none;
                 border-radius: 8px;
@@ -324,12 +328,12 @@ class LearningWindow(QMainWindow):
             }
 
             QPushButton#masterOpenLesson:hover {
-                background-color: #CA8A04;
+                background-color: #A65D35;
             }
 
             QPushButton#examButton {
-                background-color: #CA8A04;
-                color: #FFFFFF;
+                background-color: #A65D35;
+                color: #203B36;
                 border: none;
                 border-radius: 9px;
                 padding: 11px 18px;
@@ -338,12 +342,12 @@ class LearningWindow(QMainWindow):
             }
 
             QPushButton#examButton:hover {
-                background-color: #EAB308;
+                background-color: #A65D35;
             }
 
             QPushButton#masterExamButton {
-                background-color: #A16207;
-                color: #FFFFFF;
+                background-color: #A65D35;
+                color: #203B36;
                 border: none;
                 border-radius: 9px;
                 padding: 11px 18px;
@@ -352,11 +356,11 @@ class LearningWindow(QMainWindow):
             }
 
             QPushButton#masterExamButton:hover {
-                background-color: #CA8A04;
+                background-color: #A65D35;
             }
 
             QPushButton#backButton {
-                background-color: #1E293B;
+                background-color: #FFFDF7;
                 color: white;
                 border: none;
                 border-radius: 8px;
@@ -364,7 +368,7 @@ class LearningWindow(QMainWindow):
             }
 
             QPushButton#backButton:hover {
-                background-color: #334155;
+                background-color: #FFFDF7;
             }
             """
         )

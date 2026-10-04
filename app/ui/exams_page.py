@@ -97,79 +97,83 @@ class ExamsPage(QWidget):
         self.setStyleSheet(
             """
             QWidget#examsPage {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
 
             QScrollArea,
             QAbstractScrollArea::viewport {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
                 border: none;
             }
 
             QWidget#examsContent {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
 
             QLabel#pageTitle {
-                color: #FFFFFF;
+                color: #203B36;
                 font-size: 32px;
                 font-weight: 800;
-            }
+            
+                font-family: "Georgia";
+}
 
             QLabel#pageSubtitle {
-                color: #A8B3C7;
+                color: #586B64;
                 font-size: 16px;
             }
 
             QFrame#examCard {
-                background-color: #111827;
-                border: 1px solid #253247;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 14px;
             }
 
             QFrame#examReady {
-                background-color: #171B10;
-                border: 1px solid #A16207;
+                background-color: #F5F1E7;
+                border: 1px solid #D5CBBB;
                 border-radius: 14px;
             }
 
             QFrame#examDone {
-                background-color: #0E1D18;
-                border: 1px solid #166534;
+                background-color: #F5F1E7;
+                border: 1px solid #D5CBBB;
                 border-radius: 14px;
             }
 
             QLabel#examTitle {
-                color: #FFFFFF;
+                color: #203B36;
                 font-size: 20px;
                 font-weight: 750;
-            }
+            
+                font-family: "Georgia";
+}
 
             QLabel#meta {
-                color: #CBD5E1;
+                color: #203B36;
                 font-size: 14px;
             }
 
             QLabel#locked {
-                color: #94A3B8;
+                color: #586B64;
                 font-size: 14px;
                 font-weight: 650;
             }
 
             QLabel#ready {
-                color: #FDE68A;
+                color: #A65D35;
                 font-size: 14px;
                 font-weight: 700;
             }
 
             QLabel#done {
-                color: #86EFAC;
+                color: #27624A;
                 font-size: 14px;
                 font-weight: 700;
             }
 
             QPushButton#examButton {
-                background-color: #A16207;
+                background-color: #A65D35;
                 color: white;
                 border: none;
                 border-radius: 9px;
@@ -179,7 +183,7 @@ class ExamsPage(QWidget):
             }
 
             QPushButton#examButton:hover {
-                background-color: #CA8A04;
+                background-color: #A65D35;
             }
             """
         )

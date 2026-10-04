@@ -69,12 +69,12 @@ class LessonWindow(QMainWindow):
         self.setStyleSheet(
             """
             QMainWindow {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
 
             QWidget {
                 font-family: Segoe UI;
-                color: #F8FAFC;
+                color: #0E5558;
             }
 
             QScrollArea {
@@ -83,60 +83,62 @@ class LessonWindow(QMainWindow):
             }
 
             QLabel#lessonLevel {
-                color: #60A5FA;
+                color: #0E5558;
                 font-size: 13px;
                 font-weight: 600;
             }
 
             QLabel#lessonTitle {
-                color: #FFFFFF;
+                color: #203B36;
                 font-size: 32px;
                 font-weight: 700;
-            }
+            
+                font-family: "Georgia";
+}
 
             QLabel#lessonMeta {
-                color: #94A3B8;
+                color: #586B64;
                 font-size: 13px;
             }
 
             QFrame#contentCard {
-                background-color: #111827;
-                border: 1px solid #1E293B;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 16px;
             }
 
             QFrame#highlightCard {
-                background-color: #12203A;
-                border: 1px solid #2563EB;
+                background-color: #FFFDF7;
+                border: 1px solid #4B7B78;
                 border-radius: 16px;
             }
 
             QFrame#exampleCard {
-                background-color: #10251C;
-                border: 1px solid #15803D;
+                background-color: #E7F0E8;
+                border: 1px solid #D5CBBB;
                 border-radius: 16px;
             }
 
             QFrame#warningCard {
-                background-color: #2A1914;
-                border: 1px solid #C2410C;
+                background-color: #FBECE7;
+                border: 1px solid #B95045;
                 border-radius: 16px;
             }
 
             QLabel#sectionTitle {
-                color: #FFFFFF;
+                color: #203B36;
                 font-size: 19px;
                 font-weight: 700;
             }
 
             QLabel#bodyText {
-                color: #CBD5E1;
+                color: #203B36;
                 font-size: 15px;
             }
 
             QPushButton#backButton {
-                background-color: #1E293B;
-                color: #E2E8F0;
+                background-color: #FFFDF7;
+                color: #203B36;
                 border: none;
                 border-radius: 9px;
                 padding: 10px 18px;
@@ -145,12 +147,12 @@ class LessonWindow(QMainWindow):
             }
 
             QPushButton#backButton:hover {
-                background-color: #334155;
+                background-color: #FFFDF7;
             }
 
             QPushButton#quizButton {
-                background-color: #2563EB;
-                color: #FFFFFF;
+                background-color: #0E5558;
+                color: #FFFDF7;
                 border: none;
                 border-radius: 10px;
                 padding: 13px 22px;
@@ -159,11 +161,11 @@ class LessonWindow(QMainWindow):
             }
 
             QPushButton#quizButton:hover {
-                background-color: #3B82F6;
+                background-color: #0E5558;
             }
 
             QPushButton#quizButton:pressed {
-                background-color: #1D4ED8;
+                background-color: #0E5558;
             }
             """
         )
@@ -234,7 +236,7 @@ class LessonWindow(QMainWindow):
         xp_label.setStyleSheet(
             """
             QLabel {
-                color: #FBBF24;
+                color: #A65D35;
                 font-size: 14px;
                 font-weight: 700;
             }
@@ -447,7 +449,7 @@ class LessonWindow(QMainWindow):
         hint.setStyleSheet(
             """
             QLabel {
-                color: #64748B;
+                color: #586B64;
                 font-size: 12px;
             }
             """

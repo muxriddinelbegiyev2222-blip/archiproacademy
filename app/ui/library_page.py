@@ -246,16 +246,16 @@ class LibraryPage(QWidget):
         self.search_input.setStyleSheet(
             """
             QLineEdit {
-                background-color: #0A1627;
-                border: 1px solid #304763;
+                background-color: #F5F1E7;
+                border: 1px solid #D5CBBB;
                 border-radius: 10px;
                 padding: 11px 14px;
-                color: #E7EEF7;
+                color: #0E5558;
                 font-size: 14px;
             }
 
             QLineEdit:focus {
-                border: 1px solid #4F86EB;
+                border: 1px solid #4B7B78;
             }
             """
         )

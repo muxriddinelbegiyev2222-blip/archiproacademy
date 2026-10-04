@@ -31,30 +31,30 @@ class DeveloperBadge(
         self.setStyleSheet(
             """
             QFrame#developerCard {
-                background-color: #0D192B;
-                border: 1px solid #29415F;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 12px;
             }
 
             QLabel#devSmallTitle {
-                color: #6F9BFF;
+                color: #0E5558;
                 font-size: 11px;
                 font-weight: 800;
             }
 
             QLabel#devName {
-                color: #E7EEF8;
+                color: #0E5558;
                 font-size: 12px;
                 font-weight: 700;
             }
 
             QLabel#devContact {
-                color: #9FB0C6;
+                color: #586B64;
                 font-size: 11px;
             }
 
             QLabel#devBrand {
-                color: #657B97;
+                color: #586B64;
                 font-size: 10px;
             }
             """

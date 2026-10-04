@@ -65,12 +65,12 @@ class ExamWindow(QMainWindow):
         self.setStyleSheet(
             """
             QMainWindow {
-                background-color: #0B1220;
+                background-color: #F5F1E7;
             }
 
             QWidget {
                 font-family: Segoe UI;
-                color: #F8FAFC;
+                color: #0E5558;
             }
 
             QScrollArea {
@@ -79,94 +79,96 @@ class ExamWindow(QMainWindow):
             }
 
             QLabel#examLabel {
-                color: #FBBF24;
+                color: #A65D35;
                 font-size: 13px;
                 font-weight: 700;
             }
 
             QLabel#examTitle {
-                color: #FFFFFF;
+                color: #203B36;
                 font-size: 30px;
                 font-weight: 700;
-            }
+            
+                font-family: "Georgia";
+}
 
             QLabel#examSubtitle {
-                color: #94A3B8;
+                color: #586B64;
                 font-size: 14px;
             }
 
             QLabel#badge {
-                background-color: #172554;
-                border: 1px solid #1D4ED8;
+                background-color: #FFFDF7;
+                border: 1px solid #4B7B78;
                 border-radius: 8px;
                 padding: 7px 11px;
-                color: #BFDBFE;
+                color: #0E5558;
                 font-size: 12px;
                 font-weight: 600;
             }
 
             QLabel#xpBadge {
-                background-color: #2A2109;
-                border: 1px solid #A16207;
+                background-color: #F4E9D7;
+                border: 1px solid #D5CBBB;
                 border-radius: 8px;
                 padding: 7px 11px;
-                color: #FDE68A;
+                color: #A65D35;
                 font-size: 12px;
                 font-weight: 700;
             }
 
             QFrame#questionCard {
-                background-color: #111827;
-                border: 1px solid #1E293B;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 14px;
             }
 
             QFrame#wrongCard {
-                background-color: #291914;
-                border: 1px solid #C2410C;
+                background-color: #FFFDF7;
+                border: 1px solid #B95045;
                 border-radius: 14px;
             }
 
             QLabel#questionText {
-                color: #FFFFFF;
+                color: #203B36;
                 font-size: 16px;
                 font-weight: 600;
             }
 
             QLabel#explanation {
-                background-color: #1E293B;
+                background-color: #FFFDF7;
                 border-radius: 8px;
                 padding: 10px;
-                color: #CBD5E1;
+                color: #203B36;
                 font-size: 13px;
             }
 
             QRadioButton {
-                color: #CBD5E1;
+                color: #203B36;
                 font-size: 14px;
                 padding: 8px;
             }
 
             QRadioButton:hover {
-                color: #FFFFFF;
+                color: #203B36;
             }
 
             QProgressBar {
                 border: none;
-                background-color: #1E293B;
+                background-color: #FFFDF7;
                 border-radius: 6px;
                 height: 10px;
                 color: transparent;
             }
 
             QProgressBar::chunk {
-                background-color: #2563EB;
+                background-color: #0E5558;
                 border-radius: 6px;
             }
 
             QPushButton#submitButton {
-                background-color: #2563EB;
-                color: #FFFFFF;
+                background-color: #0E5558;
+                color: #FFFDF7;
                 border: none;
                 border-radius: 10px;
                 padding: 13px 24px;
@@ -175,13 +177,13 @@ class ExamWindow(QMainWindow):
             }
 
             QPushButton#submitButton:hover {
-                background-color: #3B82F6;
+                background-color: #0E5558;
             }
 
             QPushButton#retryButton {
-                background-color: #1E293B;
-                color: #FFFFFF;
-                border: 1px solid #334155;
+                background-color: #FFFDF7;
+                color: #203B36;
+                border: 1px solid #D5CBBB;
                 border-radius: 10px;
                 padding: 13px 24px;
                 font-size: 14px;
@@ -189,25 +191,25 @@ class ExamWindow(QMainWindow):
             }
 
             QPushButton#retryButton:hover {
-                background-color: #334155;
+                background-color: #FFFDF7;
             }
 
             QLabel#successResult {
-                background-color: #10251C;
-                border: 1px solid #15803D;
+                background-color: #E7F0E8;
+                border: 1px solid #D5CBBB;
                 border-radius: 12px;
                 padding: 18px;
-                color: #BBF7D0;
+                color: #27624A;
                 font-size: 15px;
                 font-weight: 600;
             }
 
             QLabel#failResult {
-                background-color: #291914;
-                border: 1px solid #C2410C;
+                background-color: #FFFDF7;
+                border: 1px solid #B95045;
                 border-radius: 12px;
                 padding: 18px;
-                color: #FED7AA;
+                color: #A65D35;
                 font-size: 15px;
                 font-weight: 600;
             }
@@ -687,7 +689,7 @@ class ExamWindow(QMainWindow):
                     button.setStyleSheet(
                         """
                         QRadioButton {
-                            color: #86EFAC;
+                            color: #27624A;
                             font-weight: 700;
                         }
                         """

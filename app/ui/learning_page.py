@@ -112,13 +112,15 @@ class LearningPage(
                =============================================== */
 
             QLabel#pageTitle {
-                color: #F5F8FC;
+                color: #0E5558;
                 font-size: 32px;
                 font-weight: 800;
-            }
+            
+                font-family: "Georgia";
+}
 
             QLabel#pageSubtitle {
-                color: #9DADC1;
+                color: #586B64;
                 font-size: 15px;
             }
 
@@ -127,13 +129,15 @@ class LearningPage(
                =============================================== */
 
             QLabel#levelTitle {
-                color: #F5F8FC;
+                color: #0E5558;
                 font-size: 21px;
                 font-weight: 800;
-            }
+            
+                font-family: "Georgia";
+}
 
             QLabel#levelSubtitle {
-                color: #97A8BD;
+                color: #586B64;
                 font-size: 14px;
             }
 
@@ -142,7 +146,7 @@ class LearningPage(
                =============================================== */
 
             QLabel#moduleTitle {
-                color: #F1F5FA;
+                color: #0E5558;
                 font-size: 18px;
                 font-weight: 700;
             }
@@ -152,13 +156,13 @@ class LearningPage(
                =============================================== */
 
             QLabel#lessonTitle {
-                color: #E9EFF7;
+                color: #0E5558;
                 font-size: 15px;
                 font-weight: 650;
             }
 
             QLabel#meta {
-                color: #8FA1B8;
+                color: #586B64;
                 font-size: 13px;
             }
 
@@ -190,11 +194,11 @@ class LearningPage(
             }
 
             QPushButton#backButton {
-                background-color: #15243A;
-                border: 1px solid #2C405D;
+                background-color: #FFFDF7;
+                border: 1px solid #D5CBBB;
                 border-radius: 9px;
 
-                color: #DCE5F0;
+                color: #0E5558;
 
                 min-height: 34px;
 
@@ -206,8 +210,8 @@ class LearningPage(
             }
 
             QPushButton#backButton:hover {
-                background-color: #1D304C;
-                border-color: #4A688D;
+                background-color: #FFFDF7;
+                border-color: #D5CBBB;
             }
 
             /* ===============================================
@@ -215,16 +219,16 @@ class LearningPage(
                =============================================== */
 
             QScrollArea {
-                background-color: #08111F;
+                background-color: #F5F1E7;
                 border: none;
             }
 
             QScrollArea > QWidget > QWidget {
-                background-color: #08111F;
+                background-color: #F5F1E7;
             }
 
             QAbstractScrollArea::viewport {
-                background-color: #08111F;
+                background-color: #F5F1E7;
                 border: none;
             }
 
@@ -233,7 +237,7 @@ class LearningPage(
                =============================================== */
 
             QScrollBar:vertical {
-                background-color: #0A1525;
+                background-color: #F5F1E7;
 
                 width: 10px;
 
@@ -244,7 +248,7 @@ class LearningPage(
             }
 
             QScrollBar::handle:vertical {
-                background-color: #344B68;
+                background-color: #BDB29E;
 
                 min-height: 48px;
 
@@ -253,7 +257,7 @@ class LearningPage(
             }
 
             QScrollBar::handle:vertical:hover {
-                background-color: #496887;
+                background-color: #A65D35;
             }
 
             QScrollBar::add-line:vertical,
