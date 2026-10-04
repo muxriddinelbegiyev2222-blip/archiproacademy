@@ -1244,12 +1244,14 @@ def audit_customer_features() -> None:
             "get_recent_lessons",
             "set_lesson_bookmark",
             "save_lesson_note",
+            "get_user_notes_map",
             "export_user_backup",
             "import_user_backup",
         ],
         APP_DIR / "ui" / "library_page.py": [
             "open_lesson_requested",
             "FAQAT BOOKMARKLAR",
+            "FAQAT ESLATMALAR",
             "focus_search",
         ],
         APP_DIR / "ui" / "glossary_page.py": [
