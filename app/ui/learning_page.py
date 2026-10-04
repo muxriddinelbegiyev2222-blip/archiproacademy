@@ -1,6 +1,7 @@
 from PySide6.QtCore import (
     Qt,
     QTimer,
+    Signal,
 )
 
 from PySide6.QtWidgets import (
@@ -18,6 +19,15 @@ from ui.learning_window import (
 class LearningPage(
     LearningWindow
 ):
+    lesson_open_requested = Signal(
+        dict,
+        object,
+    )
+
+    exam_open_requested = Signal(
+        dict,
+        object,
+    )
     """
     ARCHIPRO UZ — Embedded Learning Page
 
@@ -561,15 +571,26 @@ class LearningPage(
             "master_mode"
         ] = self.is_master
 
+        # Embedded shell uchun Qt signal ishlatiladi.
+        # Bu lesson row QPushButton -> LearningPage -> AppShell
+        # zanjirini aniq va tekshiriladigan qiladi.
         if self.open_lesson_callback is not None:
             self.open_lesson_callback(
                 lesson_data,
                 self,
             )
-
             return
 
-        # Shell callback bo'lmasa eski standalone usul.
+        try:
+            self.lesson_open_requested.emit(
+                lesson_data,
+                self,
+            )
+            return
+        except RuntimeError:
+            # Standalone holatda eski oynali usul saqlanadi.
+            pass
+
         super().open_lesson(
             lesson
         )
@@ -595,8 +616,16 @@ class LearningPage(
                 exam_data,
                 self,
             )
-
             return
+
+        try:
+            self.exam_open_requested.emit(
+                exam_data,
+                self,
+            )
+            return
+        except RuntimeError:
+            pass
 
         super().open_exam(
             exam
