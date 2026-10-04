@@ -1,12 +1,19 @@
 from PySide6.QtCore import Signal
 
 from PySide6.QtWidgets import (
+    QFileDialog,
     QFrame,
     QHBoxLayout,
     QLabel,
+    QMessageBox,
     QPushButton,
     QVBoxLayout,
     QWidget,
+)
+
+from courses.user_features import (
+    export_user_backup,
+    import_user_backup,
 )
 
 from database.database import (
@@ -17,6 +24,7 @@ from database.database import (
 class SettingsPage(QWidget):
     clear_cache_requested = Signal()
     reload_home_requested = Signal()
+    backup_imported = Signal()
 
     def __init__(
         self,
@@ -28,28 +36,93 @@ class SettingsPage(QWidget):
 
         self.build_ui()
 
+    def _action_card(
+        self,
+        title_text: str,
+        description: str,
+        button_text: str,
+        callback,
+    ):
+        card = QFrame()
+        card.setObjectName(
+            "levelOverviewCard"
+        )
+
+        layout = QHBoxLayout(
+            card
+        )
+        layout.setContentsMargins(
+            20,
+            17,
+            20,
+            17,
+        )
+        layout.setSpacing(
+            18
+        )
+
+        text_area = QVBoxLayout()
+
+        title = QLabel(
+            title_text
+        )
+        title.setObjectName(
+            "levelCode"
+        )
+
+        desc = QLabel(
+            description
+        )
+        desc.setObjectName(
+            "levelDesc"
+        )
+        desc.setWordWrap(
+            True
+        )
+
+        text_area.addWidget(
+            title
+        )
+        text_area.addWidget(
+            desc
+        )
+
+        layout.addLayout(
+            text_area,
+            1,
+        )
+
+        button = QPushButton(
+            button_text
+        )
+        button.setObjectName(
+            "openLevelButton"
+        )
+        button.clicked.connect(
+            callback
+        )
+
+        layout.addWidget(
+            button
+        )
+
+        return card
+
     def build_ui(self):
         root = QVBoxLayout(
             self
         )
-
         root.setContentsMargins(
             30,
             26,
             30,
             24,
         )
-
         root.setSpacing(
             16
         )
 
-        # ====================================================
-        # HEADER
-        # ====================================================
-
         header = QFrame()
-
         header.setObjectName(
             "overviewHeader"
         )
@@ -57,7 +130,6 @@ class SettingsPage(QWidget):
         header_layout = QVBoxLayout(
             header
         )
-
         header_layout.setContentsMargins(
             24,
             20,
@@ -68,24 +140,24 @@ class SettingsPage(QWidget):
         title = QLabel(
             "Sozlamalar"
         )
-
         title.setObjectName(
             "overviewTitle"
         )
 
         subtitle = QLabel(
-            "ARCHIPRO UZ interfeysi va lokal "
-            "ma'lumotlari boshqaruvi."
+            "ARCHIPRO UZ interfeysi, progress backup va "
+            "lokal ma'lumotlar boshqaruvi."
         )
-
         subtitle.setObjectName(
             "overviewSubtitle"
+        )
+        subtitle.setWordWrap(
+            True
         )
 
         header_layout.addWidget(
             title
         )
-
         header_layout.addWidget(
             subtitle
         )
@@ -94,12 +166,7 @@ class SettingsPage(QWidget):
             header
         )
 
-        # ====================================================
-        # PROFILE
-        # ====================================================
-
         profile_card = QFrame()
-
         profile_card.setObjectName(
             "levelOverviewCard"
         )
@@ -107,7 +174,6 @@ class SettingsPage(QWidget):
         profile_layout = QVBoxLayout(
             profile_card
         )
-
         profile_layout.setContentsMargins(
             20,
             17,
@@ -118,7 +184,6 @@ class SettingsPage(QWidget):
         profile_title = QLabel(
             "FOYDALANUVCHI"
         )
-
         profile_title.setObjectName(
             "levelCode"
         )
@@ -141,10 +206,8 @@ class SettingsPage(QWidget):
         ).upper()
 
         profile_text = QLabel(
-            f"{name}\n"
-            f"Litsenziya: {license_type}"
+            f"{name}\nLitsenziya: {license_type}"
         )
-
         profile_text.setObjectName(
             "levelName"
         )
@@ -152,7 +215,6 @@ class SettingsPage(QWidget):
         profile_layout.addWidget(
             profile_title
         )
-
         profile_layout.addWidget(
             profile_text
         )
@@ -161,164 +223,118 @@ class SettingsPage(QWidget):
             profile_card
         )
 
-        # ====================================================
-        # PERFORMANCE
-        # ====================================================
-
-        performance = QFrame()
-
-        performance.setObjectName(
+        backup_card = QFrame()
+        backup_card.setObjectName(
             "levelOverviewCard"
         )
 
-        performance_layout = QHBoxLayout(
-            performance
+        backup_layout = QVBoxLayout(
+            backup_card
         )
-
-        performance_layout.setContentsMargins(
+        backup_layout.setContentsMargins(
             20,
             17,
             20,
             17,
         )
-
-        text_area = QVBoxLayout()
-
-        title = QLabel(
-            "INTERFEYS KESHI"
+        backup_layout.setSpacing(
+            10
         )
 
-        title.setObjectName(
+        backup_title = QLabel(
+            "PROGRESS BACKUP"
+        )
+        backup_title.setObjectName(
             "levelCode"
         )
 
-        text = QLabel(
-            "Agar uzoq ishlagandan keyin interfeys "
-            "og'irlashsa, vaqtinchalik sahifa keshini "
-            "tozalash mumkin. Dars progressi va test "
-            "natijalari o'chmaydi."
+        backup_desc = QLabel(
+            "Dars progressi, test va imtihon natijalari, "
+            "bookmark hamda shaxsiy eslatmalarni "
+            ".archiprobackup faylga saqlang. "
+            "Backup litsenziya yoki parolni saqlamaydi."
         )
-
-        text.setObjectName(
+        backup_desc.setObjectName(
             "levelDesc"
         )
-
-        text.setWordWrap(
+        backup_desc.setWordWrap(
             True
         )
 
-        text_area.addWidget(
-            title
+        buttons = QHBoxLayout()
+        buttons.setSpacing(
+            10
         )
 
-        text_area.addWidget(
-            text
+        export_button = QPushButton(
+            "BACKUP YARATISH"
         )
-
-        performance_layout.addLayout(
-            text_area,
-            1,
-        )
-
-        clear_button = QPushButton(
-            "KESHNI TOZALASH"
-        )
-
-        clear_button.setObjectName(
+        export_button.setObjectName(
             "openLevelButton"
         )
-
-        clear_button.clicked.connect(
-            self.clear_cache_requested
+        export_button.clicked.connect(
+            self.export_backup
         )
 
-        performance_layout.addWidget(
-            clear_button
+        import_button = QPushButton(
+            "BACKUPNI TIKLASH"
+        )
+        import_button.setObjectName(
+            "openLevelButton"
+        )
+        import_button.clicked.connect(
+            self.import_backup
+        )
+
+        buttons.addWidget(
+            export_button
+        )
+        buttons.addWidget(
+            import_button
+        )
+        buttons.addStretch()
+
+        backup_layout.addWidget(
+            backup_title
+        )
+        backup_layout.addWidget(
+            backup_desc
+        )
+        backup_layout.addLayout(
+            buttons
         )
 
         root.addWidget(
-            performance
-        )
-
-        # ====================================================
-        # REFRESH HOME
-        # ====================================================
-
-        refresh = QFrame()
-
-        refresh.setObjectName(
-            "levelOverviewCard"
-        )
-
-        refresh_layout = QHBoxLayout(
-            refresh
-        )
-
-        refresh_layout.setContentsMargins(
-            20,
-            17,
-            20,
-            17,
-        )
-
-        refresh_text = QVBoxLayout()
-
-        title = QLabel(
-            "MA'LUMOTLARNI YANGILASH"
-        )
-
-        title.setObjectName(
-            "levelCode"
-        )
-
-        desc = QLabel(
-            "Bosh sahifadagi progress, XP va "
-            "keyingi dars ma'lumotlarini qayta hisoblash."
-        )
-
-        desc.setObjectName(
-            "levelDesc"
-        )
-
-        refresh_text.addWidget(
-            title
-        )
-
-        refresh_text.addWidget(
-            desc
-        )
-
-        refresh_layout.addLayout(
-            refresh_text,
-            1,
-        )
-
-        button = QPushButton(
-            "YANGILASH"
-        )
-
-        button.setObjectName(
-            "openLevelButton"
-        )
-
-        button.clicked.connect(
-            self.reload_home_requested
-        )
-
-        refresh_layout.addWidget(
-            button
+            backup_card
         )
 
         root.addWidget(
-            refresh
+            self._action_card(
+                "INTERFEYS KESHI",
+                (
+                    "Agar uzoq ishlagandan keyin interfeys "
+                    "og'irlashsa, vaqtinchalik sahifa keshini "
+                    "tozalash mumkin. Progress o'chmaydi."
+                ),
+                "KESHNI TOZALASH",
+                self.clear_cache_requested,
+            )
         )
 
-        # ====================================================
-        # DATABASE INFO
-        # ====================================================
+        root.addWidget(
+            self._action_card(
+                "MA'LUMOTLARNI YANGILASH",
+                (
+                    "Bosh sahifadagi progress, XP, yaqinda "
+                    "ko'rilganlar va keyingi dars ma'lumotlarini "
+                    "qayta hisoblash."
+                ),
+                "YANGILASH",
+                self.reload_home_requested,
+            )
+        )
 
         database = QFrame()
-
         database.setObjectName(
             "levelOverviewCard"
         )
@@ -326,7 +342,6 @@ class SettingsPage(QWidget):
         database_layout = QVBoxLayout(
             database
         )
-
         database_layout.setContentsMargins(
             20,
             17,
@@ -334,11 +349,10 @@ class SettingsPage(QWidget):
             17,
         )
 
-        title = QLabel(
+        database_title = QLabel(
             "LOKAL MA'LUMOTLAR BAZASI"
         )
-
-        title.setObjectName(
+        database_title.setObjectName(
             "levelCode"
         )
 
@@ -347,19 +361,16 @@ class SettingsPage(QWidget):
                 DATABASE_PATH
             )
         )
-
         path.setObjectName(
             "levelDesc"
         )
-
         path.setWordWrap(
             True
         )
 
         database_layout.addWidget(
-            title
+            database_title
         )
-
         database_layout.addWidget(
             path
         )
@@ -367,5 +378,97 @@ class SettingsPage(QWidget):
         root.addWidget(
             database
         )
-
         root.addStretch()
+
+    def export_backup(self):
+        suggested = (
+            f"{self.user.get('username', 'archipro')}"
+            "_progress.archiprobackup"
+        )
+
+        file_path, _ = QFileDialog.getSaveFileName(
+            self,
+            "ARCHIPRO progress backup",
+            suggested,
+            "ARCHIPRO Backup (*.archiprobackup)",
+        )
+
+        if not file_path:
+            return
+
+        try:
+            saved = export_user_backup(
+                self.user["id"],
+                file_path,
+            )
+
+        except Exception as exc:
+            QMessageBox.critical(
+                self,
+                "Backup xatosi",
+                str(
+                    exc
+                ),
+            )
+            return
+
+        QMessageBox.information(
+            self,
+            "Backup tayyor",
+            (
+                "Progress backup muvaffaqiyatli yaratildi.\n\n"
+                f"{saved}"
+            ),
+        )
+
+    def import_backup(self):
+        file_path, _ = QFileDialog.getOpenFileName(
+            self,
+            "ARCHIPRO progress backupni tanlang",
+            "",
+            "ARCHIPRO Backup (*.archiprobackup)",
+        )
+
+        if not file_path:
+            return
+
+        confirm = QMessageBox.question(
+            self,
+            "Backupni tiklash",
+            (
+                "Backup ma'lumotlari joriy profilga "
+                "qo'shiladi va progress bilan birlashtiriladi. "
+                "Davom etilsinmi?"
+            ),
+        )
+
+        if confirm != QMessageBox.StandardButton.Yes:
+            return
+
+        try:
+            result = import_user_backup(
+                self.user["id"],
+                file_path,
+            )
+
+        except Exception as exc:
+            QMessageBox.critical(
+                self,
+                "Backup tiklanmadi",
+                str(
+                    exc
+                ),
+            )
+            return
+
+        QMessageBox.information(
+            self,
+            "Backup tiklandi",
+            result.get(
+                "message",
+                "Backup tiklandi.",
+            ),
+        )
+
+        self.backup_imported.emit()
+        self.reload_home_requested.emit()
