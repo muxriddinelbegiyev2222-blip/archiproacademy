@@ -1361,10 +1361,17 @@ class AppShell(QMainWindow):
                         k
                     )
                 ),
-                open_lesson_callback=None,
-                open_exam_callback=None,
+                open_lesson_callback=(
+                    self.open_lesson_page
+                ),
+                open_exam_callback=(
+                    self.open_exam_from_learning
+                ),
             )
 
+            # Signal zanjiri ham saqlanadi: callback kelajakda
+            # olib tashlansa yoki standalone embedded rejim ishlatilsa,
+            # navigatsiya kontrakti yo'qolmaydi.
             page.lesson_open_requested.connect(
                 self.open_lesson_page
             )
