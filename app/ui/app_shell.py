@@ -1369,6 +1369,18 @@ class AppShell(QMainWindow):
             )
 
         else:
+            page.back_callback = (
+                lambda k=source_key:
+                self.show_cached(
+                    k
+                )
+            )
+
+            try:
+                page._apply_back_button()
+            except Exception:
+                pass
+
             self.show_cached(
                 key
             )
@@ -2007,6 +2019,7 @@ class AppShell(QMainWindow):
             )
 
         self.level_page_lru.clear()
+        self.transient_return_keys.clear()
 
         # Lazy content registry cache ham tozalanadi.
         try:
