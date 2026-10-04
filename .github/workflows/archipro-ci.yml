@@ -50,3 +50,5 @@ jobs:
       - name: Learning flow smoke test
         shell: pwsh
         run: python app/tools/learning_flow_smoke_test.py
+
+# CI trigger marker
