@@ -1,8 +1,13 @@
-from PySide6.QtCore import QTimer
+from PySide6.QtCore import (
+    Qt,
+    QTimer,
+)
 
 from PySide6.QtWidgets import (
+    QFrame,
     QLabel,
     QPushButton,
+    QScrollArea,
 )
 
 from ui.learning_window import (
@@ -14,20 +19,21 @@ class LearningPage(
     LearningWindow
 ):
     """
-    Mavjud LearningWindow ichidagi:
+    ARCHIPRO UZ — Embedded Learning Page
+
+    LearningWindow ichidagi asosiy qoidalar saqlanadi:
     - PRO lock
     - MASTER access
     - lesson progress
     - level progress
     - exam lock
 
-    qoidalari saqlanadi.
-
-    Ushbu klass faqat:
-    - LEVEL filter
-    - embedded navigation
-    - title/subtitle
-    - readability
+    Bu klass:
+    - single-window navigation
+    - Level filter
+    - professional layout
+    - scrollbar fix
+    - duplicate header fix
 
     bilan shug'ullanadi.
     """
@@ -91,69 +97,189 @@ class LearningPage(
         self.setStyleSheet(
             self.styleSheet()
             + """
+            /* ===============================================
+               PAGE HEADER
+               =============================================== */
+
             QLabel#pageTitle {
-                font-size: 34px;
+                color: #F5F8FC;
+                font-size: 32px;
                 font-weight: 800;
             }
 
             QLabel#pageSubtitle {
-                font-size: 17px;
-                color: #A8B3C7;
-            }
-
-            QLabel#masterTitle {
-                font-size: 18px;
-            }
-
-            QLabel#masterText {
+                color: #9DADC1;
                 font-size: 15px;
             }
 
+            /* ===============================================
+               LEVEL
+               =============================================== */
+
             QLabel#levelTitle {
-                font-size: 24px;
+                color: #F5F8FC;
+                font-size: 21px;
                 font-weight: 800;
             }
 
             QLabel#levelSubtitle {
-                font-size: 16px;
-                color: #A8B3C7;
+                color: #97A8BD;
+                font-size: 14px;
             }
 
+            /* ===============================================
+               MODULE
+               =============================================== */
+
             QLabel#moduleTitle {
-                font-size: 19px;
+                color: #F1F5FA;
+                font-size: 18px;
                 font-weight: 700;
             }
 
+            /* ===============================================
+               LESSON
+               =============================================== */
+
             QLabel#lessonTitle {
-                font-size: 16px;
+                color: #E9EFF7;
+                font-size: 15px;
                 font-weight: 650;
             }
 
             QLabel#meta {
-                font-size: 14px;
-                color: #91A2BA;
+                color: #8FA1B8;
+                font-size: 13px;
             }
 
             QLabel#availableStatus,
             QLabel#completedStatus,
             QLabel#lockedStatus,
             QLabel#masterStatus {
-                font-size: 14px;
+                font-size: 13px;
+                font-weight: 700;
             }
+
+            /* ===============================================
+               EXAM
+               =============================================== */
 
             QLabel#examTitle,
             QLabel#examCompletedTitle {
-                font-size: 20px;
+                font-size: 19px;
+                font-weight: 750;
             }
 
+            /* ===============================================
+               BUTTONS
+               =============================================== */
+
             QPushButton {
-                font-size: 14px;
+                font-size: 13px;
                 min-height: 34px;
             }
 
             QPushButton#backButton {
-                font-size: 14px;
+                background-color: #15243A;
+                border: 1px solid #2C405D;
+                border-radius: 9px;
+
+                color: #DCE5F0;
+
                 min-height: 34px;
+
+                padding-left: 16px;
+                padding-right: 16px;
+
+                font-size: 13px;
+                font-weight: 650;
+            }
+
+            QPushButton#backButton:hover {
+                background-color: #1D304C;
+                border-color: #4A688D;
+            }
+
+            /* ===============================================
+               SCROLL AREA
+               =============================================== */
+
+            QScrollArea {
+                background-color: #08111F;
+                border: none;
+            }
+
+            QScrollArea > QWidget > QWidget {
+                background-color: #08111F;
+            }
+
+            QAbstractScrollArea::viewport {
+                background-color: #08111F;
+                border: none;
+            }
+
+            /* ===============================================
+               VERTICAL SCROLLBAR
+               =============================================== */
+
+            QScrollBar:vertical {
+                background-color: #0A1525;
+
+                width: 10px;
+
+                margin: 2px 1px 2px 1px;
+
+                border: none;
+                border-radius: 5px;
+            }
+
+            QScrollBar::handle:vertical {
+                background-color: #344B68;
+
+                min-height: 48px;
+
+                border: none;
+                border-radius: 5px;
+            }
+
+            QScrollBar::handle:vertical:hover {
+                background-color: #496887;
+            }
+
+            QScrollBar::add-line:vertical,
+            QScrollBar::sub-line:vertical {
+                height: 0px;
+                border: none;
+                background: transparent;
+            }
+
+            QScrollBar::add-page:vertical,
+            QScrollBar::sub-page:vertical {
+                background: transparent;
+            }
+
+            /* ===============================================
+               HORIZONTAL SCROLLBAR
+               =============================================== */
+
+            QScrollBar:horizontal {
+                height: 0px;
+                max-height: 0px;
+                border: none;
+                background: transparent;
+            }
+
+            QScrollBar::handle:horizontal {
+                height: 0px;
+                max-height: 0px;
+                background: transparent;
+            }
+
+            QScrollBar::add-line:horizontal,
+            QScrollBar::sub-line:horizontal {
+                width: 0px;
+                background: transparent;
+                border: none;
             }
             """
         )
@@ -190,10 +316,28 @@ class LearningPage(
         self._apply_shell_overrides()
 
     # ========================================================
-    # TITLE / BACK
+    # SHELL OVERRIDES
     # ========================================================
 
     def _apply_shell_overrides(self):
+        self._apply_page_header()
+
+        self._apply_back_button()
+
+        self._apply_single_level_layout()
+
+        self._fix_scroll_areas()
+
+        self.setWindowTitle(
+            f"ARCHIPRO UZ - "
+            f"{self.custom_title}"
+        )
+
+    # ========================================================
+    # PAGE HEADER
+    # ========================================================
+
+    def _apply_page_header(self):
         title = self.findChild(
             QLabel,
             "pageTitle",
@@ -202,6 +346,10 @@ class LearningPage(
         if title is not None:
             title.setText(
                 self.custom_title
+            )
+
+            title.setWordWrap(
+                True
             )
 
         subtitle = self.findChild(
@@ -218,32 +366,133 @@ class LearningPage(
                 True
             )
 
+    # ========================================================
+    # BACK BUTTON
+    # ========================================================
+
+    def _apply_back_button(self):
         back_button = self.findChild(
             QPushButton,
             "backButton",
         )
 
         if (
-            back_button is not None
-            and self.back_callback is not None
+            back_button is None
+            or self.back_callback is None
         ):
-            try:
-                back_button.clicked.disconnect()
+            return
 
-            except (
-                RuntimeError,
-                TypeError,
-            ):
-                pass
+        try:
+            back_button.clicked.disconnect()
 
-            back_button.clicked.connect(
-                self.back_callback
+        except (
+            RuntimeError,
+            TypeError,
+        ):
+            pass
+
+        back_button.clicked.connect(
+            self.back_callback
+        )
+
+    # ========================================================
+    # SINGLE LEVEL PROFESSIONAL LAYOUT
+    # ========================================================
+
+    def _apply_single_level_layout(self):
+        """
+        Bitta Level ochilganda tepada Level nomi allaqachon
+        pageTitle sifatida ko'rsatiladi.
+
+        Shuning uchun Level card ichida o'sha sarlavhani
+        ikkinchi marta takrorlamaymiz.
+
+        Card ichida foydalanuvchiga tushunarliroq
+        "Darslar va modullar" nomini ko'rsatamiz.
+        """
+
+        if len(
+            self.focus_level_codes
+        ) != 1:
+            return
+
+        level_titles = self.findChildren(
+            QLabel,
+            "levelTitle",
+        )
+
+        if level_titles:
+            level_titles[0].setText(
+                "Darslar va modullar"
             )
 
-        self.setWindowTitle(
-            f"ARCHIPRO UZ - "
-            f"{self.custom_title}"
+        level_subtitles = self.findChildren(
+            QLabel,
+            "levelSubtitle",
         )
+
+        if level_subtitles:
+            level_subtitles[0].hide()
+
+    # ========================================================
+    # SCROLL FIX
+    # ========================================================
+
+    def _fix_scroll_areas(self):
+        """
+        Windows native oq scrollbar paydo bo'lishini
+        oldini oladi.
+
+        Horizontal scroll bu sahifaga kerak emas.
+        Faqat vertikal scroll ishlaydi.
+        """
+
+        scroll_areas = self.findChildren(
+            QScrollArea
+        )
+
+        for scroll in scroll_areas:
+            scroll.setWidgetResizable(
+                True
+            )
+
+            scroll.setFrameShape(
+                QFrame.Shape.NoFrame
+            )
+
+            scroll.setHorizontalScrollBarPolicy(
+                Qt.ScrollBarPolicy.ScrollBarAlwaysOff
+            )
+
+            scroll.setVerticalScrollBarPolicy(
+                Qt.ScrollBarPolicy.ScrollBarAsNeeded
+            )
+
+            scroll.setAlignment(
+                Qt.AlignmentFlag.AlignTop
+                | Qt.AlignmentFlag.AlignLeft
+            )
+
+            viewport = scroll.viewport()
+
+            if viewport is not None:
+                viewport.setStyleSheet(
+                    """
+                    background-color: #08111F;
+                    border: none;
+                    """
+                )
+
+            content = scroll.widget()
+
+            if content is not None:
+                content.setStyleSheet(
+                    content.styleSheet()
+                    + """
+                    background-color: #08111F;
+                    border: none;
+                    """
+                )
 
     # ========================================================
     # OPEN LESSON
@@ -254,16 +503,20 @@ class LearningPage(
         lesson: dict,
     ):
         """
-        Original LearningWindow lesson ma'lumotiga
-        level_title va module_title qo'shardi.
+        Lesson ma'lumotiga:
+        - level_title
+        - module_title
+        - master_mode
 
-        Shu logikani aynan saqlaymiz.
+        qo'shib embedded LessonPage'ga yuboradi.
         """
 
         level_title = ""
         module_title = ""
 
         for level in self.levels:
+
+            found = False
 
             for module in level.get(
                 "modules",
@@ -297,7 +550,14 @@ class LearningPage(
                             )
                         )
 
+                        found = True
                         break
+
+                if found:
+                    break
+
+            if found:
+                break
 
         lesson_data = dict(
             lesson
@@ -323,8 +583,7 @@ class LearningPage(
 
             return
 
-        # Fallback:
-        # shell callback bo'lmasa eski usul.
+        # Shell callback bo'lmasa eski standalone usul.
         super().open_lesson(
             lesson
         )
