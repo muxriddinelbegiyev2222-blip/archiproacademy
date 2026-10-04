@@ -1,3 +1,4 @@
+import os
 from PySide6.QtCore import (
     Qt,
     QTimer,
@@ -1606,8 +1607,14 @@ class AppShell(QMainWindow):
                 exc,
             )
 
-            # Klikning jim qolishi mumkin emas. Foydalanuvchiga
-            # tushunarli xabar beriladi va Level sahifasi buzilmaydi.
+            # Audit rejimida modal oynani ochmaymiz: haqiqiy exception
+            # testga qaytadi va traceback orqali aniq sabab ko'rinadi.
+            if os.getenv(
+                "ARCHIPRO_AUDIT_MODE"
+            ) == "1":
+                raise
+
+            # Production rejimida klik jim qolib ketmaydi.
             QMessageBox.critical(
                 self,
                 "Darsni ochib bo'lmadi",
