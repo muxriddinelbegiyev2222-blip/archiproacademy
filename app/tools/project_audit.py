@@ -1233,6 +1233,88 @@ def audit_main_file() -> None:
 
 
 # ============================================================
+# CUSTOMER CONVENIENCE AUDIT
+# ============================================================
+
+def audit_customer_features() -> None:
+    section("7. CUSTOMER CONVENIENCE AUDIT")
+
+    required_files = {
+        APP_DIR / "courses" / "user_features.py": [
+            "get_recent_lessons",
+            "set_lesson_bookmark",
+            "save_lesson_note",
+            "export_user_backup",
+            "import_user_backup",
+        ],
+        APP_DIR / "ui" / "library_page.py": [
+            "open_lesson_requested",
+            "FAQAT BOOKMARKLAR",
+            "focus_search",
+        ],
+        APP_DIR / "ui" / "glossary_page.py": [
+            "GLOSSARY",
+            "Terminlar lug'ati",
+        ],
+        APP_DIR / "ui" / "help_page.py": [
+            "HELP_ITEMS",
+            "Yordam markazi",
+        ],
+        APP_DIR / "ui" / "settings_page.py": [
+            "BACKUP YARATISH",
+            "BACKUPNI TIKLASH",
+            "backup_imported",
+        ],
+        APP_DIR / "ui" / "embedded_pages.py": [
+            "BOOKMARK",
+            "MENING ESLATMAM",
+            "KEYINGI DARS",
+            "open_next_lesson_callback",
+        ],
+        APP_DIR / "ui" / "app_shell.py": [
+            "Ctrl+K",
+            "Ctrl+Right",
+            "YAQINDA KO'RILGAN DARSLAR",
+            "Terminlar lug'ati",
+            "Yordam",
+            "continue_learning",
+        ],
+        APP_DIR / "database" / "database.py": [
+            "lesson_bookmarks",
+            "lesson_notes",
+            "idx_bookmarks_user",
+            "idx_notes_user",
+        ],
+    }
+
+    for file_path, required_texts in required_files.items():
+        if not file_path.exists():
+            add_error(
+                f"Customer feature fayli topilmadi: {file_path}"
+            )
+            continue
+
+        try:
+            source = file_path.read_text(
+                encoding="utf-8"
+            )
+        except Exception as exc:
+            add_error(
+                f"{file_path.name} o'qilmadi: {exc}"
+            )
+            continue
+
+        for text_value in required_texts:
+            if text_value in source:
+                add_pass(
+                    f"{file_path.name}: {text_value} mavjud."
+                )
+            else:
+                add_error(
+                    f"{file_path.name}: {text_value} topilmadi."
+                )
+
+# ============================================================
 # SUMMARY
 # ============================================================
 
@@ -1362,6 +1444,7 @@ def main() -> int:
     audit_duplicates()
     audit_content_registry()
     audit_main_file()
+    audit_customer_features()
     print_summary()
 
     return 1 if ERRORS else 0
