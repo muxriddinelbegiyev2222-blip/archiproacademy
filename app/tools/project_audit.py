@@ -1150,6 +1150,87 @@ def audit_main_file() -> None:
             "Sotuv versiyasidan oldin olib tashlanadi."
         )
 
+    # --------------------------------------------------------
+    # LICENSE / ACTIVATION GATE
+    # --------------------------------------------------------
+
+    activation_required_texts = [
+        "validate_installed_license",
+        "ActivationWindow",
+        "show_activation",
+        "show_login",
+        "activation_successful.connect",
+    ]
+
+    for text_value in activation_required_texts:
+        if text_value not in source:
+            add_error(
+                "main.py startup license gate ichida "
+                f"{text_value} topilmadi."
+            )
+        else:
+            add_pass(
+                "main.py startup license gate: "
+                f"{text_value} mavjud."
+            )
+
+    if "initial_license_result" in source:
+        add_pass(
+            "main.py: birinchi ekran license holatiga bog'langan."
+        )
+    else:
+        add_error(
+            "main.py: initial license gate topilmadi."
+        )
+
+    # --------------------------------------------------------
+    # APP SHELL MENU CONTRACT
+    # --------------------------------------------------------
+
+    app_shell_file = APP_DIR / "ui" / "app_shell.py"
+
+    if app_shell_file.exists():
+        try:
+            app_shell_source = app_shell_file.read_text(
+                encoding="utf-8"
+            )
+
+            if (
+                '"Testlar",\\n            "Testlar",'
+                in app_shell_source
+            ):
+                add_error(
+                    "app_shell.py menu ichida Testlar dublikat."
+                )
+            else:
+                add_pass(
+                    "app_shell.py menu: Testlar dublikat emas."
+                )
+
+            required_menu_items = [
+                "Qurilish konstruksiyalari",
+                "SHNQ va normativlar",
+                "BIM va real loyiha",
+                "Portfolio / PRO Final",
+                "Litsenziya",
+            ]
+
+            for menu_text in required_menu_items:
+                if menu_text in app_shell_source:
+                    add_pass(
+                        f"app_shell.py menu: {menu_text} mavjud."
+                    )
+                else:
+                    add_error(
+                        f"app_shell.py menu: {menu_text} topilmadi."
+                    )
+
+        except Exception as exc:
+            add_error(
+                "app_shell.py menu audit xatosi: "
+                f"{exc}"
+            )
+
 
 # ============================================================
 # SUMMARY
