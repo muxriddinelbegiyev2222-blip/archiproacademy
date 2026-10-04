@@ -581,14 +581,18 @@ class LearningPage(
             )
             return
 
+        # Signal embedded sahifalar uchun fallback kontrakt.
+        # Agar receiver bo'lmasa, standalone oynali usul ishlaydi.
         try:
-            self.lesson_open_requested.emit(
-                lesson_data,
-                self,
-            )
-            return
-        except RuntimeError:
-            # Standalone holatda eski oynali usul saqlanadi.
+            if self.receivers(
+                self.lesson_open_requested
+            ) > 0:
+                self.lesson_open_requested.emit(
+                    lesson_data,
+                    self,
+                )
+                return
+        except Exception:
             pass
 
         super().open_lesson(
@@ -619,12 +623,15 @@ class LearningPage(
             return
 
         try:
-            self.exam_open_requested.emit(
-                exam_data,
-                self,
-            )
-            return
-        except RuntimeError:
+            if self.receivers(
+                self.exam_open_requested
+            ) > 0:
+                self.exam_open_requested.emit(
+                    exam_data,
+                    self,
+                )
+                return
+        except Exception:
             pass
 
         super().open_exam(
