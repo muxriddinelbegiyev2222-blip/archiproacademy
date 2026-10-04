@@ -127,6 +127,55 @@ echo [OK] Project fayllari tayyor.
 echo.
 
 REM ============================================================
+REM RELEASE PREFLIGHT
+REM ============================================================
+
+echo ============================================================
+echo              RELEASE PREFLIGHT TEKSHIRUVI
+echo ============================================================
+echo.
+
+python "app\tools\content_guard.py"
+
+if errorlevel 1 (
+    echo.
+    echo [ERROR] CONTENT GUARD FAILED
+    pause
+    exit /b 1
+)
+
+python "app\tools\project_audit.py"
+
+if errorlevel 1 (
+    echo.
+    echo [ERROR] PROJECT AUDIT FAILED
+    pause
+    exit /b 1
+)
+
+python "app\tools\database_audit.py"
+
+if errorlevel 1 (
+    echo.
+    echo [ERROR] DATABASE AUDIT FAILED
+    pause
+    exit /b 1
+)
+
+python "app\tools\runtime_smoke_test.py"
+
+if errorlevel 1 (
+    echo.
+    echo [ERROR] RUNTIME SMOKE TEST FAILED
+    pause
+    exit /b 1
+)
+
+echo.
+echo [PASS] Release preflight muvaffaqiyatli.
+echo.
+
+REM ============================================================
 REM CLEAN OLD CLIENT BUILD
 REM ============================================================
 
