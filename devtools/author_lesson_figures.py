@@ -195,7 +195,7 @@ def slope(i,advanced=False):
  if i==3:out+=poly('375,457 640,385 640,457','#F1DFC6',C)+arrow(720,365,540,410)+text(715,355,'Yer ishlari',22,C)
  elif i==4:out+=arrow(325,485,185,520)+text(140,170,'Suv chiqarish nuqtasini kelishing',25,C)
  else:out+=badge([140,880,400,500,185][i],[495,350,465,420,515][i],i+1)
- return out
+ return out+text(150,745,'Nishab ko‘rinishi kattalashtirilgan; hisob uchun sath va masofani oling.',20,T)
 
 def section(kind,i):
  out=rect(230,230,45,340,'#E9E1D3')+rect(795,230,45,340,'#E9E1D3')+rect(230,365,610,25,G,T)+rect(230,555,610,25,G,T)
@@ -494,12 +494,16 @@ def build():
    # Original authored action/result belong together; worked stage is shown
    # separately so unrelated independent exercise conditions are never mixed.
    asset=f'{code.lower()}.svg'
+   body=draw(kind,i)
+   reading_note=('Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi.' if 'r="18"' in body else 'Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring.')+' Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring.'
+   if kind in ('slope','slope-advanced'):
+    reading_note+=' Vertikal o‘zgarish ko‘rgazmalilik uchun kattalashtirilgan: rasm burchagidan nishabni o‘lchamang. Nishab = sathlar farqi ÷ gorizontal masofa × 100%.'
    footer=lines(45,875,stage.split('→')[0].strip(),92,22,T)
-   svg=f'<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="1100" viewBox="0 0 1150 1100"><rect width="1150" height="960" fill="{P}"/><g font-family="DejaVu Sans, Segoe UI, sans-serif">'+text(45,50,code+'  /  O‘QUV NAMUNASI',19,C)+lines(45,92,u['title'],64,29,T)+lines(45,155,GUIDES[module]['case'],112,17,T)+'<g transform="translate(0,80)">'+draw(kind,i)+'</g>'+line(45,835,1105,835,T,2)+footer+text(45,1080,'Sxematik tasvir: qurilish detali, normativ minimum yoki haqiqiy Archicad skrinshoti emas.',18,T)+'</g></svg>'
+   svg=f'<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="1100" viewBox="0 0 1150 1100"><rect width="1150" height="960" fill="{P}"/><g font-family="DejaVu Sans, Segoe UI, sans-serif">'+text(45,50,code+'  /  O‘QUV NAMUNASI',19,C)+lines(45,92,u['title'],64,29,T)+lines(45,155,GUIDES[module]['case'],112,17,T)+'<g transform="translate(0,80)">'+body+'</g>'+line(45,835,1105,835,T,2)+footer+text(45,1080,'Sxematik tasvir: qurilish detali, normativ minimum yoki haqiqiy Archicad skrinshoti emas.',18,T)+'</g></svg>'
    (D/asset).write_text(svg,encoding='utf-8')
    block=next(j for j,b in enumerate(contents[code]) if b['title']=='Bajarish tartibi va namunaviy xulosa')
    records.append(dict(code=code,asset=asset,title=u['title']+' — ko‘rgazmali namuna',
-     explanation=[GUIDES[module]['case'],stage,'Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring.'],
+     explanation=[GUIDES[module]['case'],stage,reading_note],
      exercise=u['action'],solution=u['result'],block=block,recipe=kind,
      boundary='O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.',
      credit='ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma',

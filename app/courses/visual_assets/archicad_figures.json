@@ -3188,7 +3188,8 @@
     "explanation": [
       "Publishing: faylga saqlash usuli. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
       "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Publishing methodda Save/PDF va destinationni belgilang, Publishdan keyin faylni oching → haqiqiy output."
+      "Mavzudagi bajarish: Publishing Propertiesda Save files va Pathni belgilang, Publisherdagi Format panelida PDFni tanlang, Publishdan keyin faylni oching → haqiqiy output.",
+      "Save files — faylga saqlash usuli; PDF — chiqish formati. Create single file tanlansa, butun to‘plam bitta faylga yig‘iladi. Saqlangan PDFni ochib sahifalar tartibi, o‘lchami va revisionini tekshiring."
     ],
     "exercise": "Chiqarilgan PDFni ochib, varaq soni, matn va kesilgan chetlarni tekshiring.",
     "solution": "Muvaffaqiyatli export tugashi hujjat o‘qilishini avtomatik tasdiqlamaydi.",

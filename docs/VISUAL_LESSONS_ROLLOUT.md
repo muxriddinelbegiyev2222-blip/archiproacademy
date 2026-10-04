@@ -97,3 +97,17 @@ assets from the exact committed URLs; the customer application never runs it.
 Rebuild the Windows EXE with `BUILD_RELEASE.bat` and check it on a customer
 Windows device. Linux Qt/offscreen verification is not a Windows build or a
 substitute for checking the generated executable.
+
+## Follow-up teaching clarity review
+
+The slope figures in L03_M07, L06_M09 and L14_M03 now explicitly label their
+vertical exaggeration. Their displayed slope is calculated from the written
+level difference and horizontal distance, not by measuring the picture angle.
+Figures without a numbered marker no longer tell the student to find one.
+
+L12_M07_004 now distinguishes Publishing Properties > Save files and Path
+from Publisher > Format > PDF. The worked teaching stage, vector caption and
+credited screenshot explanation are updated together. The original exercise,
+expected result, quiz and progress rules are retained. Source:
+https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/070_Documentation-118.htm
+https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/070_Documentation-119.htm
