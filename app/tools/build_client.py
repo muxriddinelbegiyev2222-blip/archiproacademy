@@ -1,6 +1,7 @@
 """Build the client with an explicit inventory of local dynamic Python modules."""
 from pathlib import Path
 import sys
+import os
 
 APP = Path(__file__).resolve().parents[1]
 PROJECT = APP.parent
@@ -26,6 +27,10 @@ def main():
     args = ["--noconfirm", "--clean", "--onefile", "--windowed",
             "--name", "ARCHIPRO UZ", "--paths", str(APP),
             "--icon", str(PROJECT / "archipro.ico")]
+    figures = APP / "courses" / "visual_assets"
+    if not figures.is_dir():
+        raise RuntimeError("Offline teaching figures directory is missing")
+    args.extend(["--add-data", str(figures) + os.pathsep + "courses/visual_assets"])
     for module in modules:
         args.extend(["--hidden-import", module])
     args.extend(sys.argv[1:])

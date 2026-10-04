@@ -26,6 +26,8 @@ def write_validation_report(output_path):
             raise ValueError("The first lesson is missing its complete teaching content")
         from courses.curriculum_revision import validate_revision
         report.update(validate_revision(content, quizzes))
+        from courses.visual_catalog import validate_visual_catalog
+        report["visuals"] = validate_visual_catalog(content)
         report.update(success=True, lessons=len(content), quizzes=len(quizzes),
                       first_lesson_blocks=len(first))
     except Exception:

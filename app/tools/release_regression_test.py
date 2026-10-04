@@ -181,6 +181,69 @@ class ReleaseRegression(unittest.TestCase):
                                              'Worked table or text overflows reading area')
                 self.assertFalse(page.next_lesson_button.isEnabled())
 
+    def test_visual_catalog_assets_and_full_coverage_inventory(self):
+        from courses.content_registry import get_all_lesson_content
+        from courses.visual_catalog import CATALOG, validate_visual_catalog
+        from ui.lesson_visuals import load_figure
+        counts = validate_visual_catalog(get_all_lesson_content())
+        self.assertEqual(counts['total_lessons'], 680)
+        self.assertEqual(counts['illustrated_lessons'] + counts['pending_lessons'], 680)
+        self.assertGreaterEqual(counts['illustrated_lessons'], 27)
+        for asset in {s['asset'] for specs in CATALOG.values() for s in specs}:
+            with self.subTest(asset=asset):
+                self.assertFalse(load_figure(asset).isNull())
+
+    def test_visual_zoom_font_layout_and_quiz_gates(self):
+        from ui.lesson_visuals import LessonVisual
+        from PySide6.QtWidgets import QBoxLayout
+        self.shell.showNormal()
+        self.shell.resize(1366, 768)
+        lesson = next(row for row in self.lessons if row['code'] == 'L08_M05_001')
+        page = LessonPage(lesson, self.pro)
+        self.shell.show_page('visual::roof', page)
+        events()
+        visuals = page.findChildren(LessonVisual)
+        self.assertEqual(len(visuals), 2)
+        self.assertEqual(len(page.content_cards), len(page.blocks))
+        self.assertFalse(page.next_lesson_button.isEnabled())
+        figure = visuals[0]
+        figure.enlarge.click()
+        events()
+        self.assertTrue(figure.dialog.isVisible())
+        old = figure.dialog.zoom
+        figure.dialog.findChild(QPushButton, 'figureZoomIn').click()
+        self.assertGreater(figure.dialog.zoom, old)
+        figure.dialog.findChild(QPushButton, 'figureZoomOut').click()
+        self.assertAlmostEqual(figure.dialog.zoom, old)
+        figure.dialog.findChild(QPushButton, 'figureClose').click()
+        events()
+        self.assertFalse(figure.dialog.isVisible())
+        page.change_reading_font(7)
+        events()
+        self.assertIn('font-size: 24px;', figure.details.text())
+        self.shell.resize(850, 720)
+        events()
+        self.assertEqual(figure.layout.direction(), QBoxLayout.Direction.TopToBottom)
+        self.assertLessEqual(page.content_widget.width(), page.scroll.viewport().width())
+        self.assertFalse(page.next_lesson_button.isEnabled())
+        self.assertTrue(page.findChild(QPushButton, 'quizButton').isEnabled())
+
+    def test_missing_figure_preserves_text_and_quiz(self):
+        from ui.lesson_visuals import LessonVisual
+        from PySide6.QtGui import QPixmap
+        lesson = next(row for row in self.lessons if row['code'] == 'L08_M05_001')
+        with patch('ui.lesson_visuals.load_figure', return_value=QPixmap()):
+            page = LessonPage(lesson, self.pro)
+        self.shell.show_page('missing::figure', page)
+        events()
+        self.assertTrue(page.blocks)
+        self.assertEqual(len(page.content_cards), len(page.blocks))
+        self.assertTrue(page.findChild(QPushButton, 'quizButton').isEnabled())
+        self.assertFalse(page.next_lesson_button.isEnabled())
+        for figure in page.findChildren(LessonVisual):
+            self.assertFalse(figure.enlarge.isEnabled())
+            self.assertIn('Chizma ochilmadi', figure.image.text())
+
     def test_missing_content_is_visible_and_cannot_start_quiz(self):
         from PySide6.QtWidgets import QLabel
         for failure in (None, ImportError("courses.lesson_content missing")):

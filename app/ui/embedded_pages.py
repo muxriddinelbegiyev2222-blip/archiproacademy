@@ -1,6 +1,9 @@
 import logging
 import re
 
+from courses.visual_catalog import visuals_for_block
+from ui.lesson_visuals import LessonVisual
+
 from PySide6.QtCore import (
     Qt,
     Signal,
@@ -1564,6 +1567,15 @@ class LessonPage(QWidget):
         layout.addWidget(
             text
         )
+
+        # Media is additive: original blocks and quiz gates stay unchanged.
+        for spec in visuals_for_block(self.lesson.get("code", ""), index - 1):
+            try:
+                visual = LessonVisual(spec, self.reading_font_size, card)
+                layout.addWidget(visual)
+                self.reading_labels.append(visual.details)
+            except Exception:
+                logging.exception("Optional visual did not affect the lesson page")
 
         return card
 
