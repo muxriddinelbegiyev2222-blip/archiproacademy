@@ -325,8 +325,16 @@ def save_lesson_note(
 
                 ON CONFLICT(user_id, lesson_id)
                 DO UPDATE SET
-                    note_text = excluded.note_text,
-                    updated_at = excluded.updated_at
+                    note_text = CASE
+                        WHEN excluded.updated_at >= lesson_notes.updated_at
+                            THEN excluded.note_text
+                        ELSE lesson_notes.note_text
+                    END,
+                    updated_at = CASE
+                        WHEN excluded.updated_at >= lesson_notes.updated_at
+                            THEN excluded.updated_at
+                        ELSE lesson_notes.updated_at
+                    END
                 """,
                 (
                     user_id,
@@ -808,13 +816,18 @@ def import_user_backup(
                         excluded.started_at
                     ),
                     completed_at = COALESCE(
-                        excluded.completed_at,
-                        lesson_progress.completed_at
+                        lesson_progress.completed_at,
+                        excluded.completed_at
                     ),
-                    last_opened_at = COALESCE(
-                        excluded.last_opened_at,
-                        lesson_progress.last_opened_at
-                    )
+                    last_opened_at = CASE
+                        WHEN lesson_progress.last_opened_at IS NULL
+                            THEN excluded.last_opened_at
+                        WHEN excluded.last_opened_at IS NULL
+                            THEN lesson_progress.last_opened_at
+                        WHEN excluded.last_opened_at > lesson_progress.last_opened_at
+                            THEN excluded.last_opened_at
+                        ELSE lesson_progress.last_opened_at
+                    END
                 """,
                 (
                     user_id,
@@ -905,8 +918,8 @@ def import_user_backup(
                         excluded.exam_attempts
                     ),
                     completed_at = COALESCE(
-                        excluded.completed_at,
-                        user_level_progress.completed_at
+                        user_level_progress.completed_at,
+                        excluded.completed_at
                     )
                 """,
                 (
