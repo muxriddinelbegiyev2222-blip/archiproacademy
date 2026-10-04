@@ -1219,8 +1219,16 @@ def import_user_backup(
 
                 ON CONFLICT(user_id, lesson_id)
                 DO UPDATE SET
-                    note_text = excluded.note_text,
-                    updated_at = excluded.updated_at
+                    note_text = CASE
+                        WHEN excluded.updated_at >= lesson_notes.updated_at
+                            THEN excluded.note_text
+                        ELSE lesson_notes.note_text
+                    END,
+                    updated_at = CASE
+                        WHEN excluded.updated_at >= lesson_notes.updated_at
+                            THEN excluded.updated_at
+                        ELSE lesson_notes.updated_at
+                    END
                 """,
                 (
                     user_id,
