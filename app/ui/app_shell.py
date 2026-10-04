@@ -3,6 +3,11 @@ from PySide6.QtCore import (
     QTimer,
 )
 
+from PySide6.QtGui import (
+    QKeySequence,
+    QShortcut,
+)
+
 from PySide6.QtWidgets import (
     QFrame,
     QGridLayout,
@@ -21,6 +26,11 @@ from courses.course_service import (
     get_current_level,
     get_next_available_lesson,
     get_user_course_stats,
+)
+
+from courses.user_features import (
+    get_recent_lessons,
+    mark_lesson_opened,
 )
 
 from ui.course_overview_page import (
@@ -47,6 +57,14 @@ from ui.library_page import (
 
 from ui.license_window import (
     LicenseWindow,
+)
+
+from ui.glossary_page import (
+    GlossaryPage,
+)
+
+from ui.help_page import (
+    HelpPage,
 )
 
 from ui.settings_page import (
@@ -107,6 +125,12 @@ class AppShell(QMainWindow):
         # Faqat Level page uchun LRU.
         self.level_page_lru = []
 
+        # Transient sahifa -> qaytish sahifasi.
+        self.transient_return_keys = {}
+
+        # Global keyboard shortcutlar GC bo'lib ketmasligi uchun.
+        self.shortcuts = []
+
         # ====================================================
         # CURRICULUM CHECK
         # ====================================================
@@ -140,6 +164,8 @@ class AppShell(QMainWindow):
         )
 
         self.build_shell()
+
+        self.install_shortcuts()
 
         self.open_home()
 
@@ -260,8 +286,10 @@ class AppShell(QMainWindow):
             "Testlar",
             "Imtihonlar",
             "Kutubxona",
+            "Terminlar lug'ati",
             "Statistika",
             "Litsenziya",
+            "Yordam",
             "Sozlamalar",
         ]
 
@@ -377,12 +405,20 @@ class AppShell(QMainWindow):
             self.open_library()
             return
 
+        if text == "Terminlar lug'ati":
+            self.open_glossary()
+            return
+
         if text == "Statistika":
             self.open_statistics()
             return
 
         if text == "Litsenziya":
             self.open_license()
+            return
+
+        if text == "Yordam":
+            self.open_help()
             return
 
         if text == "Sozlamalar":
@@ -606,6 +642,11 @@ class AppShell(QMainWindow):
                     key
                 )
 
+                self.transient_return_keys.pop(
+                    key,
+                    None,
+                )
+
     # ========================================================
     # BACK FROM TRANSIENT
     # ========================================================
@@ -626,6 +667,11 @@ class AppShell(QMainWindow):
 
         if not success:
             return
+
+        self.transient_return_keys.pop(
+            transient_key,
+            None,
+        )
 
         QTimer.singleShot(
             0,
@@ -677,6 +723,11 @@ class AppShell(QMainWindow):
 
         next_lesson = get_next_available_lesson(
             self.user["id"]
+        )
+
+        recent_lessons = get_recent_lessons(
+            self.user["id"],
+            limit=5,
         )
 
         page = QWidget()
@@ -1032,7 +1083,7 @@ class AppShell(QMainWindow):
         )
 
         button.clicked.connect(
-            self.open_learning_overview
+            self.continue_learning
         )
 
         next_layout.addWidget(
@@ -1042,6 +1093,101 @@ class AppShell(QMainWindow):
         layout.addWidget(
             next_card
         )
+
+        if recent_lessons:
+            recent_title = QLabel(
+                "YAQINDA KO'RILGAN DARSLAR"
+            )
+            recent_title.setObjectName(
+                "levelCode"
+            )
+            layout.addWidget(
+                recent_title
+            )
+
+            for recent in recent_lessons:
+                recent_card = QFrame()
+                recent_card.setObjectName(
+                    "levelOverviewCard"
+                )
+
+                recent_layout = QHBoxLayout(
+                    recent_card
+                )
+                recent_layout.setContentsMargins(
+                    18,
+                    13,
+                    18,
+                    13,
+                )
+
+                recent_text = QVBoxLayout()
+
+                recent_name = QLabel(
+                    recent.get(
+                        "title",
+                        "Dars",
+                    )
+                )
+                recent_name.setObjectName(
+                    "levelName"
+                )
+
+                recent_meta = QLabel(
+                    (
+                        recent.get(
+                            "level_code",
+                            "",
+                        ).replace(
+                            "LEVEL_",
+                            "LEVEL ",
+                        )
+                        + "  •  "
+                        + recent.get(
+                            "module_title",
+                            "",
+                        )
+                    )
+                )
+                recent_meta.setObjectName(
+                    "levelDesc"
+                )
+
+                recent_text.addWidget(
+                    recent_name
+                )
+                recent_text.addWidget(
+                    recent_meta
+                )
+
+                recent_layout.addLayout(
+                    recent_text,
+                    1,
+                )
+
+                open_recent = QPushButton(
+                    "OCHISH  →"
+                )
+                open_recent.setObjectName(
+                    "openLevelButton"
+                )
+                open_recent.clicked.connect(
+                    lambda checked=False,
+                    data=dict(
+                        recent
+                    ):
+                    self.open_lesson_from_summary(
+                        data,
+                        "home",
+                    )
+                )
+
+                recent_layout.addWidget(
+                    open_recent
+                )
+                layout.addWidget(
+                    recent_card
+                )
 
         layout.addStretch()
 
@@ -1267,6 +1413,17 @@ class AppShell(QMainWindow):
             LessonPage,
         )
 
+        mark_lesson_opened(
+            self.user["id"],
+            int(
+                lesson_data["id"]
+            ),
+        )
+
+        self.transient_return_keys[
+            key
+        ] = source_key
+
         page = LessonPage(
             lesson=lesson_data,
             user=self.user,
@@ -1280,6 +1437,9 @@ class AppShell(QMainWindow):
             ),
             open_quiz_callback=(
                 self.open_quiz_page
+            ),
+            open_next_lesson_callback=(
+                self.open_next_lesson
             ),
         )
 
@@ -1327,6 +1487,10 @@ class AppShell(QMainWindow):
         self.drop_page(
             key
         )
+
+        self.transient_return_keys[
+            key
+        ] = lesson_key
 
         # Lazy import.
         from ui.embedded_pages import (
@@ -1412,17 +1576,46 @@ class AppShell(QMainWindow):
             "home"
         )
 
-        # Avval Levelga qaytamiz.
-        self.show_cached(
-            return_key
+        # Mini-testdan o'tgach dars sahifasida qolamiz.
+        # Foydalanuvchi "KEYINGI DARS" tugmasini ongli bosadi.
+        lesson_page = self.page_cache.get(
+            lesson_key
         )
 
-        # Keyin quiz/lesson oynalarini RAM'dan chiqaramiz.
-        QTimer.singleShot(
-            0,
-            lambda:
-            self.cleanup_transient_pages()
-        )
+        if lesson_page is not None:
+            try:
+                lesson_page.mark_completed()
+            except Exception:
+                pass
+
+            self.show_cached(
+                lesson_key
+            )
+
+            quiz_key = (
+                "quiz::"
+                + str(
+                    lesson_id
+                )
+            )
+
+            self.transient_return_keys.pop(
+                quiz_key,
+                None,
+            )
+
+            QTimer.singleShot(
+                0,
+                lambda k=quiz_key:
+                self.drop_page(
+                    k
+                ),
+            )
+
+        else:
+            self.show_cached(
+                return_key
+            )
 
     # ========================================================
     # TESTS
@@ -1549,6 +1742,10 @@ class AppShell(QMainWindow):
             ExamPage,
         )
 
+        self.transient_return_keys[
+            key
+        ] = source_key
+
         page = ExamPage(
             user=self.user,
             exam=exam_data,
@@ -1640,12 +1837,28 @@ class AppShell(QMainWindow):
                 )
             )
 
+            page.open_lesson_requested.connect(
+                lambda lesson:
+                self.open_lesson_from_summary(
+                    lesson,
+                    "library",
+                )
+            )
+
             self.show_page(
                 key,
                 page,
             )
 
         else:
+            try:
+                page.reload_index()
+                page.update_results(
+                    page.search_input.text()
+                )
+            except Exception:
+                pass
+
             self.show_cached(
                 key
             )
@@ -1745,6 +1958,10 @@ class AppShell(QMainWindow):
                 self.open_home
             )
 
+            page.backup_imported.connect(
+                self.refresh_after_backup_import
+            )
+
             self.show_page(
                 key,
                 page,
@@ -1802,3 +2019,311 @@ class AppShell(QMainWindow):
         except Exception:
             # UI cache cleanup registry sabab yiqilmasin.
             pass
+
+
+    # ========================================================
+    # CUSTOMER CONVENIENCE
+    # ========================================================
+
+    def install_shortcuts(self):
+        shortcut_specs = [
+            (
+                "Ctrl+K",
+                self.open_global_search,
+            ),
+            (
+                "Esc",
+                self.smart_back,
+            ),
+            (
+                "Ctrl+Right",
+                self.open_next_from_current,
+            ),
+        ]
+
+        for sequence, callback in shortcut_specs:
+            shortcut = QShortcut(
+                QKeySequence(
+                    sequence
+                ),
+                self,
+            )
+
+            shortcut.setContext(
+                Qt.ShortcutContext.ApplicationShortcut
+            )
+
+            shortcut.activated.connect(
+                callback
+            )
+
+            self.shortcuts.append(
+                shortcut
+            )
+
+    def open_global_search(self):
+        self.open_library()
+
+        page = self.page_cache.get(
+            "library"
+        )
+
+        if page is not None:
+            QTimer.singleShot(
+                0,
+                page.focus_search,
+            )
+
+    def smart_back(self):
+        current_key = self.current_page_key
+
+        if not current_key:
+            return
+
+        return_key = self.transient_return_keys.get(
+            current_key
+        )
+
+        if return_key:
+            self.return_from_transient(
+                return_key,
+                current_key,
+            )
+
+    def open_next_from_current(self):
+        current_key = self.current_page_key or ""
+
+        if not current_key.startswith(
+            "lesson::"
+        ):
+            return
+
+        page = self.page_cache.get(
+            current_key
+        )
+
+        if page is None:
+            return
+
+        try:
+            if page.next_lesson_button.isEnabled():
+                page.open_next_lesson()
+        except Exception:
+            pass
+
+    def continue_learning(self):
+        lesson = get_next_available_lesson(
+            self.user["id"]
+        )
+
+        if lesson is None:
+            self.open_learning_overview()
+            return
+
+        self.open_lesson_from_summary(
+            lesson,
+            "home",
+        )
+
+    def open_lesson_from_summary(
+        self,
+        lesson: dict,
+        source_key: str,
+    ):
+        level_code = str(
+            lesson.get(
+                "level_code",
+                "",
+            )
+        )
+
+        if not level_code:
+            self.open_learning_overview()
+            return
+
+        status = str(
+            lesson.get(
+                "status",
+                "available",
+            )
+        ).lower()
+
+        if (
+            not self.is_master
+            and status
+            not in {
+                "available",
+                "completed",
+            }
+        ):
+            self.open_single_level(
+                level_code,
+                lesson.get(
+                    "level_title",
+                    "",
+                ),
+                lesson.get(
+                    "level_subtitle",
+                    "",
+                ),
+                source_key,
+            )
+            return
+
+        self.open_single_level(
+            level_code,
+            lesson.get(
+                "level_title",
+                "",
+            ),
+            lesson.get(
+                "level_subtitle",
+                "",
+            ),
+            source_key,
+        )
+
+        level_key = (
+            "level::"
+            + level_code
+        )
+
+        source_page = self.page_cache.get(
+            level_key
+        )
+
+        if source_page is None:
+            return
+
+        lesson_data = dict(
+            lesson
+        )
+
+        lesson_data[
+            "level_title"
+        ] = lesson.get(
+            "level_title",
+            "",
+        )
+
+        lesson_data[
+            "module_title"
+        ] = lesson.get(
+            "module_title",
+            "",
+        )
+
+        lesson_data[
+            "master_mode"
+        ] = self.is_master
+
+        self.open_lesson_page(
+            lesson_data,
+            source_page,
+        )
+
+    def open_next_lesson(
+        self,
+        lesson_page,
+    ):
+        next_lesson = get_next_available_lesson(
+            self.user["id"]
+        )
+
+        if next_lesson is None:
+            return_key = self.transient_return_keys.get(
+                self.current_page_key,
+                "overview::all",
+            )
+
+            if not self.show_cached(
+                return_key
+            ):
+                self.open_learning_overview()
+
+            return
+
+        current_id = int(
+            lesson_page.lesson.get(
+                "id",
+                0,
+            )
+        )
+
+        if int(
+            next_lesson.get(
+                "id",
+                0,
+            )
+        ) == current_id:
+            return
+
+        source_key = self.transient_return_keys.get(
+            self.current_page_key,
+            "overview::all",
+        )
+
+        self.open_lesson_from_summary(
+            next_lesson,
+            source_key,
+        )
+
+    def open_glossary(self):
+        self.set_menu(
+            "Terminlar lug'ati"
+        )
+
+        key = "glossary"
+        page = self.page_cache.get(
+            key
+        )
+
+        if page is None:
+            page = GlossaryPage()
+
+            self.show_page(
+                key,
+                page,
+            )
+        else:
+            self.show_cached(
+                key
+            )
+
+    def open_help(self):
+        self.set_menu(
+            "Yordam"
+        )
+
+        key = "help"
+        page = self.page_cache.get(
+            key
+        )
+
+        if page is None:
+            page = HelpPage()
+
+            self.show_page(
+                key,
+                page,
+            )
+        else:
+            self.show_cached(
+                key
+            )
+
+    def refresh_after_backup_import(self):
+        keep = {
+            "settings",
+        }
+
+        for key in list(
+            self.page_cache.keys()
+        ):
+            if key not in keep:
+                self.drop_page(
+                    key
+                )
+
+        self.level_page_lru.clear()
+        self.transient_return_keys.clear()
