@@ -639,7 +639,7 @@ def complete_lesson(
                     previous_best,
                     score,
                 ),
-                previous_attempts + 1,
+                previous_attempts,
                 started_at or now,
                 now,
                 now,
