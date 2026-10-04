@@ -473,26 +473,12 @@ class LearningPage(
                 | Qt.AlignmentFlag.AlignLeft
             )
 
-            viewport = scroll.viewport()
-
-            if viewport is not None:
-                viewport.setStyleSheet(
-                    """
-                    background-color: #08111F;
-                    border: none;
-                    """
-                )
-
-            content = scroll.widget()
-
-            if content is not None:
-                content.setStyleSheet(
-                    content.styleSheet()
-                    + """
-                    background-color: #08111F;
-                    border: none;
-                    """
-                )
+            # MUHIM:
+            # viewport/content ga inline stylesheet bermaymiz.
+            # Qt'da ota widget stylesheet'i bolalarga meros bo'lib,
+            # module/lesson card border va backgroundlarini bosib ketishi
+            # mumkin. Scroll ranglari yuqoridagi aniq QSS selectorlar
+            # orqali boshqariladi.
 
     # ========================================================
     # OPEN LESSON
