@@ -48,14 +48,59 @@ echo [PASS] archipro.ico topildi.
 echo [PASS] Private key topildi.
 echo.
 
-python -m pip install --upgrade pyinstaller
+REM ============================================================
+REM PACKAGES
+REM ============================================================
+
+where python >nul 2>&1
 
 if errorlevel 1 (
-    echo.
-    echo [ERROR] PyInstaller tayyorlanmadi.
+    echo [ERROR] Python topilmadi.
     pause
     exit /b 1
 )
+
+python -c "import PySide6" >nul 2>&1
+
+if errorlevel 1 (
+    echo [INFO] PySide6 o'rnatilmoqda...
+    python -m pip install PySide6
+
+    if errorlevel 1 (
+        echo [ERROR] PySide6 o'rnatilmadi.
+        pause
+        exit /b 1
+    )
+)
+
+python -c "import cryptography" >nul 2>&1
+
+if errorlevel 1 (
+    echo [INFO] cryptography o'rnatilmoqda...
+    python -m pip install cryptography
+
+    if errorlevel 1 (
+        echo [ERROR] cryptography o'rnatilmadi.
+        pause
+        exit /b 1
+    )
+)
+
+python -c "import PyInstaller" >nul 2>&1
+
+if errorlevel 1 (
+    echo [INFO] PyInstaller o'rnatilmoqda...
+    python -m pip install pyinstaller
+
+    if errorlevel 1 (
+        echo [ERROR] PyInstaller o'rnatilmadi.
+        pause
+        exit /b 1
+    )
+)
+
+echo [PASS] Build paketlari tayyor.
+echo.
 
 if exist "%ROOT%\build_owner" (
     rmdir /s /q "%ROOT%\build_owner"
