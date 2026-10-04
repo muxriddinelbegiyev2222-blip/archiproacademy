@@ -1292,6 +1292,11 @@ def audit_customer_features() -> None:
             "export_user_backup",
             "import_user_backup",
         ],
+        APP_DIR / "tools" / "database_audit.py": [
+            "ARCHIPRO_UZ_DATABASE_PATH",
+            "tempfile.mkdtemp",
+            "archipro_audit.db",
+        ],
     }
 
     for file_path, required_texts in required_files.items():
