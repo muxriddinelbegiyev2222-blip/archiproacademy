@@ -727,7 +727,7 @@ class AppShell(QMainWindow):
 
         recent_lessons = get_recent_lessons(
             self.user["id"],
-            limit=5,
+            limit=3,
         )
 
         page = QWidget()
