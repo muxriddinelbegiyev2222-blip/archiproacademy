@@ -1061,6 +1061,22 @@ class LessonPage(QWidget):
             )
         )
 
+        self.note_autosave_timer = QTimer(
+            self
+        )
+        self.note_autosave_timer.setSingleShot(
+            True
+        )
+        self.note_autosave_timer.timeout.connect(
+            self.save_note_silent
+        )
+        self.note_input.textChanged.connect(
+            lambda:
+            self.note_autosave_timer.start(
+                700
+            )
+        )
+
         save_note_button = QPushButton(
             "ESLATMANI SAQLASH"
         )
@@ -1808,12 +1824,15 @@ class LessonPage(QWidget):
             else "☆ BOOKMARK"
         )
 
-    def save_note(self):
+    def save_note_silent(self):
         save_lesson_note(
             self.user["id"],
             self.lesson_id,
             self.note_input.toPlainText(),
         )
+
+    def save_note(self):
+        self.save_note_silent()
 
         original_text = (
             "ESLATMANI SAQLASH"
