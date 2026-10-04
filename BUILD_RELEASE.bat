@@ -174,6 +174,8 @@ python -m PyInstaller ^
     --distpath "dist_client" ^
     --specpath "." ^
     --collect-all PySide6 ^
+    --collect-submodules courses ^
+    --collect-submodules licensing ^
     "app\main.py"
 
 if errorlevel 1 (
