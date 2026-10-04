@@ -1,9 +1,11 @@
 """Explicitly reviewed lesson-to-figure mappings; no keyword-based guessing.
 
-The catalog is intentionally incremental. A lesson absent here has not yet had
-its visual supplement authored/reviewed. Original content is never modified.
+Every lesson has an explicit mapping. Original content is never modified.
+The packaged JSON holds topic diagrams and documented interface examples.
 """
 from pathlib import Path
+import json
+import logging
 
 ASSETS = Path(__file__).resolve().parent / 'visual_assets'
 EDUCATIONAL = ('O‘quv misoli: chizmadan qurilish o‘lchami, element kesimi yoki '
@@ -131,8 +133,8 @@ add('L08_M05_002', 'roof-load.svg', 'Uzilishsiz yuk yo‘li',
 add('L08_M05_003', 'roof-pitch.svg', 'Nishab, cho‘qqi va bo‘g‘ot',
     ['Cho‘qqi yuqorida; bo‘g‘ot tomning pastki chekkasida.',
      'Simmetrik 6 m oraliqda bitta nishabning gorizontal masofasi 3 m.'],
-    'Ko‘tarilish 1,2 m bo‘lsa qiyalikni toping.',
-    '1,2 ÷ 3 × 100 = 40%. Foiz va gradusni aralashtirmang; materialga ruxsat etilgan nishab alohida tekshiriladi.')
+    'Rasmdagi ko‘tarilish 1,5 m bo‘lsa qiyalikni toping.',
+    '1,5 ÷ 3 × 100 = 50%. Foiz va gradusni aralashtirmang; materialga ruxsat etilgan nishab alohida tekshiriladi.')
 add('L08_M05_004', 'roof-opening.svg', 'Tom oynasini tayanch bilan solishtirish',
     ['Ko‘k ochilish ikki konseptual tayanch oralig‘ida ko‘rsatilgan.',
      'Bu joylashuv hali tayyor yechim emas: rama, yuk, suv oqimi va gidroizolyatsiya tekshiriladi.'],
@@ -162,6 +164,25 @@ for code, asset, title, explanation, exercise, solution in [
         credit='Graphisoft Archicad 28 Help — rasmiy qo‘llanmadagi skrinshot; © Graphisoft', source_url=GRAPHISOFT)
 
 
+_LOAD_ERRORS = []
+for manifest in ('lesson_figures.json', 'archicad_figures.json'):
+    try:
+        records = json.loads((ASSETS / manifest).read_text(encoding='utf-8'))
+        staged = []
+        for record in records:
+            entry = dict(record)
+            entry.pop('recipe', None)
+            entry.pop('source_image_url', None)
+            staged.append(entry)
+        for entry in staged:
+            add(**entry)
+    except Exception as exc:
+        # Reading a lesson must remain possible if media was omitted/damaged.
+        # Release validation rejects the incomplete package below.
+        _LOAD_ERRORS.append(manifest + ': ' + str(exc))
+        logging.error('Lesson visual manifest unavailable: %s', _LOAD_ERRORS[-1])
+
+
 def asset_path(filename):
     """Catalog paths stay beneath the packaged figures directory."""
     path = ASSETS / filename
@@ -175,7 +196,9 @@ def visuals_for_block(code, block_index):
 
 
 def validate_visual_catalog(contents):
-    errors = []
+    errors = list(_LOAD_ERRORS)
+    if set(contents) != set(CATALOG):
+        errors.append('Visual coverage must match every lesson exactly')
     for code, specs in CATALOG.items():
         if code not in contents:
             errors.append('Unknown lesson: ' + code)

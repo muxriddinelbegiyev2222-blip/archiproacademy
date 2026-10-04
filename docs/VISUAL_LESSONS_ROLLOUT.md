@@ -1,78 +1,99 @@
-# Offline visual lessons — first implementation checkpoint
+# Offline illustrations for all 680 lessons
 
-This is an incremental curriculum change, not completion of all visual lessons.
-The complete 680-lesson / 137-module inventory is recorded in
-`VISUAL_LESSON_COVERAGE.csv`. 27 lessons currently have 28 visual supplements;
-653 lessons remain pending individual topic review and illustration authoring.
+The explicit catalog now covers all 680 lessons in 137 modules: 890 figure
+supplements, zero lessons without a mapped visual. This change adds a separate
+SVG for each of the previously unillustrated 653 lessons and 209 documentation
+screenshot supplements. The earlier 27 lessons and their media remain available.
+`VISUAL_LESSON_COVERAGE.csv` records every lesson, asset and supplement count.
 
-## Implemented
+## What pupils see
 
-- All 20 introductory LEVEL_00 lessons, using linked plan/facade/section/site
-  examples, scale and level arithmetic, conceptual structural roles and audits.
-- All five L08_M05 roof lessons, including an AI conceptual illustration and
-  deterministic load-path, slope, opening-coordination and document-audit figures.
-- L05_M03_001 and L05_M03_002: actual Graphisoft Archicad 28 INT documentation
-  screenshots for the reference-line controls and their floor-plan display.
-- Figures render offline below the original block text. At wide widths the
-  figure and explanation appear beside each other; narrower widths stack them.
-- Zoom dialog supports fit, plus/minus, scrolling and close. Figure explanations
-  follow the existing reading-size control. A missing image leaves lesson text
-  and quizzes usable and displays a local fallback message.
-- Build scripts collect the assets directory; packaged curriculum validation
-  checks the catalog and asset inventory.
+Original explanation blocks remain intact. A figure is placed with its relevant
+worked example; Archicad documentation fragments appear with the introductory
+explanation of the tool/panel. Each supplement includes an explanation, an
+exercise and its sample result. Wide layouts show picture and explanation side
+by side; narrower layouts stack them. Reading size controls also apply to figure
+explanations. The enlargement dialog supports fit, bounded zoom and scrolling.
 
-No original lesson block, lesson ID, quiz, answer key, progress schema, license
-or authentication logic was modified. Media never marks a lesson completed.
+The illustrations include room furniture/use zones, courtyard/site relationships,
+facade composition and dimensions, building sections and load paths, geometric
+calculations, element/data comparisons, drawing sheets, revision records and
+professional decision tables. Each generated SVG contains the lesson code,
+title, worked case and the current worked step. Explicit module/stage recipes
+select the diagram; there is no runtime title-keyword guessing.
 
-## Technical / content boundary
+The 653 new assets are vector teaching diagrams, not 653 AI photorealistic images
+or engineering details. Related lessons use a consistent diagram vocabulary;
+not every picture is an unrelated new building. Existing conceptual AI roof
+imagery remains labelled as conceptual. Exact calculations use vector graphics.
 
-AI illustrations are conceptual teaching images, not approved construction
-details. The illustrated geometric examples are teaching inputs, not mandatory
-Uzbek minimum dimensions, roof pitches, member sizes or engineering capacities.
-Structural design, seismic checks, evacuation and material-specific requirements
-need the applicable object classification, current regulation and engineering
-review. Do not relabel a conceptual figure as SHNQ-compliant certified design.
+Archicad lessons use 58 additional genuine documentation assets, supplementing
+the existing two reference-line images. Every screenshot records the exact
+Graphisoft source page and source image URL, attribution and documentation
+version. The independent list is `ARCHICAD_FIGURE_SOURCES.csv`. The captured
+fragment shows only the named panel/action; sample values and library names can
+be different from the pupil's exercise and from a different Archicad version.
 
-## Primary sources checked on 2026-10-05 (Asia/Tashkent)
+## Preservation and packaging
 
-- Ministry official SHNQ 2.01.02-04: https://mc.uz/uploads/mcuz_6099785631525.pdf
-  Clauses 5.17 and 5.18 distinguish exit-opening direction, exceptions and
-  freely opening the listed evacuation doors from inside without a key.
-- SHNQ 2.08.01-24: https://lex.uz/docs/7121730
-  January 2026 amendment: https://lex.uz/docs/8029374
-  April 2026 amendment: https://lex.uz/docs/8156560
-  Confirm the edition effective on the actual project date; a future edition
-  must not be silently substituted for the current one.
-- Graphisoft Archicad 28 INT Wall Reference Line:
-  https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-7.htm
-  The two bundled screenshots are credited to Graphisoft in the lesson;
-  copyright remains with Graphisoft. They depict documentation UI fragments,
-  not an AI imitation or a complete current user project. Their sample numeric
-  settings must not be copied as project defaults. Version/language can differ.
+No original lesson block, ID, quiz/question/answer, progress schema, licensing or
+authentication logic changed. Original and previously added worked content was
+compared for all 680 lessons; the 2,041 quiz questions remain. Media does not
+mark a lesson complete or unlock the next lesson. The existing roof-pitch
+supplement's exercise was corrected to use the 1.5 m / 3 m / 50% shown in its
+picture rather than a different input.
 
-## Continue the remaining work
+All pictures and both catalog JSON manifests are bundled by `build_client.py`.
+Lessons render offline. If an individual asset or manifest is missing, original
+lesson text and quiz behavior remain usable; release validation rejects an
+incomplete media package. Catalog validation requires exact 680-lesson coverage.
 
-Use `visual_catalog.CATALOG` as the only explicitly reviewed mapping. Do not
-invent mappings from title keywords or count a reused generic picture as a
-fully reviewed lesson. For each pending lesson:
+## Verification scope
 
-1. Read every original block and its existing worked example.
-2. Identify precisely what visual evidence teaches the current topic.
-3. Verify every normative assertion from an applicable, effective official source.
-4. Author the specific visual and its explanation, exercise, solution and boundary.
-5. Add explicit mappings to the correct block index; retain original text.
-6. Update coverage CSV and run catalog, real-widget and packaged-asset checks.
+Regression checks require 680 illustrated lessons, 653 distinct new diagram
+paths, valid assets, correct lesson/block mappings, worked-stage associations,
+source attribution, existing quiz/progress behavior and all 680 real Qt lesson
+pages. Package validation checks the manifests and files. Additional visual QA
+checked SVG text bounds and intersecting text labels; identified intersections
+were corrected. Representative Qt screenshots check wide/narrow layouts and
+large reading fonts.
 
-Architecture/room planning: Uzbek courtyard/family contexts with metric labels.
-Geometry: precise SVGs for dimensions and calculations. Concept illustration:
-AI visuals plus reviewed text. Software UI: actual version-labelled screenshots,
-not AI-generated menus. Professional workflow topics: concrete case diagrams,
-document examples and revisions rather than decorative house pictures.
+Coverage and passing software checks are not certification of all teaching
+content or approval of an actual building design. These diagrams are schematic
+and are not printed construction drawings. Structural capacities, seismic
+checks, evacuation dimensions, accessibility limits and site setbacks need the
+actual object's classification, an applicable effective regulation and the
+responsible professional's calculations/review. Teaching numbers are not
+mandatory Uzbek minimums. No new numerical SHNQ requirements are asserted.
 
-## Rollback
+## Official regulation references
 
-`stable-before-visual-lessons` preserves the previously passing version at
-`8f0f17cdf15aa8265a1110dc8cc505522c4342f4`.
+- Ministry register: https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari
+- Fire safety SHNQ 2.01.02-04: https://mc.uz/uploads/mcuz_6099785631525.pdf
+  Clauses 5.17/5.18 distinguish opening direction, exceptions and free opening
+  of the listed evacuation doors from inside without a key. There is no
+  blanket rule in these figures that every house door must open outward.
+- Housing SHNQ 2.08.01-24: https://lex.uz/docs/7121730
+  Amendments: https://lex.uz/docs/8029374 and https://lex.uz/docs/8156560
+  Select the edition effective on the actual project date; the site may also
+  display future editions.
+- Graphisoft Archicad 28 INT Help: https://help.graphisoft.com/AC/28/INT/
+  Copyright remains with Graphisoft; these are attributed teaching fragments,
+  not an AI imitation of the application.
 
-Windows EXE rebuild and customer device validation remain required; Linux
-Qt/offscreen checks do not constitute a Windows executable build.
+## Maintenance and rollback
+
+Run `python devtools/author_lesson_figures.py` from the repository root to
+regenerate the 653 SVGs and their catalog from the existing worked examples.
+Curate `MODULE_RECIPES` explicitly when a teaching stage changes, then inspect
+its output and rerun the release checks. Do not replace topic review with an
+asset count. `devtools/fetch_archicad_figures.py` restores missing documentation
+assets from the exact committed URLs; the customer application never runs it.
+
+`stable-before-visual-lessons` preserves the earlier passing version at
+`8f0f17cdf15aa8265a1110dc8cc505522c4342f4`; `visual-lessons-v1` preserves the
+27-lesson implementation at `4c9fb40539cd90da9f238fee86af7c8470aba736`.
+
+Rebuild the Windows EXE with `BUILD_RELEASE.bat` and check it on a customer
+Windows device. Linux Qt/offscreen verification is not a Windows build or a
+substitute for checking the generated executable.

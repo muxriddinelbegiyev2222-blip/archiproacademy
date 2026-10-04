@@ -188,10 +188,41 @@ class ReleaseRegression(unittest.TestCase):
         counts = validate_visual_catalog(get_all_lesson_content())
         self.assertEqual(counts['total_lessons'], 680)
         self.assertEqual(counts['illustrated_lessons'] + counts['pending_lessons'], 680)
-        self.assertGreaterEqual(counts['illustrated_lessons'], 27)
+        self.assertEqual(counts['illustrated_lessons'], 680)
+        self.assertEqual(counts['pending_lessons'], 0)
         for asset in {s['asset'] for specs in CATALOG.values() for s in specs}:
             with self.subTest(asset=asset):
                 self.assertFalse(load_figure(asset).isNull())
+
+    def test_extended_visuals_match_each_worked_lesson(self):
+        import json
+        from courses.visual_catalog import ASSETS, CATALOG
+        from courses.workbook_data import WORKBOOKS
+        from courses.teaching.guides import GUIDES
+        from courses.content_registry import get_all_lesson_content
+        records = json.loads((ASSETS / 'lesson_figures.json').read_text(encoding='utf-8'))
+        self.assertEqual(len(records), 653)
+        self.assertEqual(len({r['code'] for r in records}), 653)
+        self.assertEqual(len({r['asset'] for r in records}), 653)
+        contents = get_all_lesson_content()
+        for row in records:
+            with self.subTest(lesson=row['code']):
+                module = row['code'].rsplit('_', 1)[0]
+                index = int(row['code'].rsplit('_', 1)[1]) - 1
+                unit = WORKBOOKS[module]['units'][index]
+                self.assertEqual(unit['code'], row['code'])
+                self.assertIn(GUIDES[module]['stages'][index], row['explanation'])
+                self.assertEqual(row['exercise'], unit['action'])
+                self.assertEqual(row['solution'], unit['result'])
+                self.assertEqual(contents[row['code']][row['block']]['title'],
+                                 'Bajarish tartibi va namunaviy xulosa')
+                figure = (ASSETS / row['asset']).read_text(encoding='utf-8')
+                self.assertIn(row['code'], figure)
+        for row in json.loads((ASSETS / 'archicad_figures.json').read_text(encoding='utf-8')):
+            self.assertTrue(row['source_url'].startswith('https://help.graphisoft.com/AC/28/INT/'))
+            self.assertTrue(row['source_image_url'].startswith('https://help.graphisoft.com/AC/28/INT/'))
+            self.assertIn('Graphisoft', row['credit'])
+            self.assertIn(row['code'], CATALOG)
 
     def test_visual_zoom_font_layout_and_quiz_gates(self):
         from ui.lesson_visuals import LessonVisual
@@ -406,6 +437,10 @@ class ReleaseRegression(unittest.TestCase):
                 page = LessonPage(lesson, self.master)
                 self.assertTrue(page.blocks, 'Lesson content is empty')
                 self.assertTrue(page.content_cards)
+                from ui.lesson_visuals import LessonVisual
+                figures = page.findChildren(LessonVisual)
+                self.assertTrue(figures, 'Lesson has no attached teaching figure')
+                self.assertTrue(all(not f.original.isNull() for f in figures))
                 page.deleteLater()
                 events()
         for number in range(16):
