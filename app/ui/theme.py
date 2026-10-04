@@ -1,5 +1,10 @@
+from PySide6.QtCore import (
+    Qt,
+)
+
 from PySide6.QtWidgets import (
     QAbstractScrollArea,
+    QFrame,
     QScrollArea,
     QWidget,
 )
@@ -517,8 +522,13 @@ def fix_scroll_surfaces(
     root: QWidget,
 ):
     """
-    Faqat sahifa yaratilganda chaqiriladi.
-    EventFilter yo'q.
+    Scroll area'larni performance-safe sozlaydi.
+
+    MUHIM:
+    viewport yoki content widget'ga inline stylesheet
+    qo'llanmaydi. Aks holda Qt stylesheet inheritance
+    sabab module/lesson kartalarining border/background
+    dizayni yo'qolishi mumkin.
     """
 
     if root is None:
@@ -527,36 +537,17 @@ def fix_scroll_surfaces(
     for scroll in root.findChildren(
         QScrollArea
     ):
-        scroll.setStyleSheet(
-            scroll.styleSheet()
-            + """
-            QScrollArea {
-                background-color: #08111F;
-                border: none;
-            }
-
-            QAbstractScrollArea::viewport {
-                background-color: #08111F;
-            }
-            """
+        scroll.setFrameShape(
+            QFrame.Shape.NoFrame
         )
 
-        viewport = scroll.viewport()
+        scroll.setHorizontalScrollBarPolicy(
+            Qt.ScrollBarPolicy.ScrollBarAlwaysOff
+        )
 
-        if viewport is not None:
-            viewport.setStyleSheet(
-                "background-color: #08111F;"
-            )
-
-        content = scroll.widget()
-
-        if content is not None:
-            content.setStyleSheet(
-                content.styleSheet()
-                + """
-                background-color: #08111F;
-                """
-            )
+        scroll.setVerticalScrollBarPolicy(
+            Qt.ScrollBarPolicy.ScrollBarAsNeeded
+        )
 
 
 def install_premium_theme(
