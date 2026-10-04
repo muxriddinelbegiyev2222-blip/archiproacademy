@@ -7,8 +7,12 @@ from copy import deepcopy
 from html import escape
 import hashlib
 from courses.workbook_data import WORKBOOKS, MODULE_MISSTEPS
+from courses.teaching.guides import GUIDES, guide_for_lesson
+from courses.teaching.lesson_examples import EXAMPLES
+from courses.teaching.terms import TERMS
+import re
 
-REVISION = 'ARCHIPRO_WORKBOOK_2026_10_04_V1'
+REVISION = 'ARCHIPRO_TEACHING_SOLUTIONS_2026_10_04_V2'
 MODULES = {unit['code']: (guide, unit) for guide in WORKBOOKS.values() for unit in guide['units']}
 HELP = 'https://help.graphisoft.com/AC/28/INT/_AC28_Help/'
 SCHEDULE_HELP = HELP + '050_ViewsVB/050_ViewsVB-97.htm'
@@ -75,31 +79,63 @@ def source_block(code):
 
 
 def enhance_content(code, original):
-    if not original: return []
-    guide,unit=MODULES[code]
-    action=escape(unit['action']); result=escape(unit['result']); case=escape(guide['case'])
-    title=escape(unit['title'])
-    added=[
-        {'title':'O‘quv holati va dars vazifasi','type':'example',
-         'text':f'<p><b>{title}</b></p><p>{case}</p><p><b>Bu darsda:</b> {action}</p>'},
-        {'title':'Bajarish tartibi va namunaviy xulosa','type':'normal',
-         'text':f'<p><b>1. Tayyorlang.</b> Holatdagi berilgan ma’lumotlarni ajrating. Noma’lum shartlarni taxmin sifatida yozing.</p>'
-                f'<p><b>2. Bajaring.</b> {action} Ishingizda aynan qaysi element, aloqa yoki qiymat tekshirilganini belgilang.</p>'
-                f'<p><b>3. Solishtiring.</b> Namunaviy xulosa: <b>{result}</b></p>'
-                '<p>Xulosani shunchaki ko‘chirish o‘rniga, o‘z chizmangizdagi yoki jadvalingizdagi dalilni ko‘rsating. '
-                'Natija mos kelmasa, farqni va tuzatish sababini yozing.</p>'},
-        {'title':'Mustaqil mashq va o‘zini tekshirish','type':'highlight',
-         'text':f'<p>Yangi o‘quv nusxasida bitta shartni o‘zgartiring va shu topshiriqni qayta bajaring: <b>{action}</b></p>'
-                '<p><b>Topshirish:</b> boshlang‘ich holat; bajarilgan chizma yoki jadval; xulosa; tuzatish yoki ochiq savol.</p>'
-                '<p><b>Baholash — 0–4:</b> har band uchun 1 ball: (1) berilgan va noma’lum shartlar ajratilgan; '
-                '(2) topshiriq haqiqatan bajarilgan; (3) xulosa ish daliliga bog‘langan; '
-                '(4) o‘zgargan shart ta’siri va kamida bitta cheklov tushuntirilgan.</p>'
-                '<p>0–2 ball: mashqni qayta bajaring. 3–4 ball: izoh va dalilni saqlang. '
-                'Bu mustaqil o‘quv rubrikasi; dastur test bali amaliy ishni avtomatik tekshirmaydi.</p>'},
+    """Keep source lessons intact and append worked, module-specific teaching."""
+    if not original:
+        return []
+    workbook, unit = MODULES[code]
+    guide, index, units = guide_for_lesson(code)
+    stage = guide['stages'][index]
+    def paragraph(text):
+        return '<p>' + escape(text) + '</p>'
+    def items(values):
+        return '<ol>' + ''.join('<li>' + escape(value) + '</li>' for value in values) + '</ol>'
+    rows = ''.join('<tr><td>' + escape(topic['title']) + '</td><td>' +
+                   escape(method.rsplit('→', 1)[-1].strip()) + '</td></tr>'
+                   for topic, method in zip(units, guide['stages']))
+    table = ('<table border="1" cellspacing="0" cellpadding="7" width="100%">'
+             '<tr><th>Mavzu</th><th>Namuna oxirida tekshiriladigan natija</th></tr>' + rows + '</table>')
+    case = (paragraph(guide['case']) + '<p><b>Namunaning yechimi:</b></p>' +
+            paragraph(guide['answer']) + table +
+            '<p>Bu bir modul bo‘ylab davom etadigan o‘quv misoli. Jadvaldagi bosqichlar bir ishning '
+            'turli tomonlarini ko‘rsatadi. Hozirgi mavzu: <b>' + escape(unit['title']) + '</b>.</p>')
+    instructions = stage.strip()
+    steps = [value.strip() for value in re.split(r'(?<=[.!?])\s+', instructions) if value.strip()]
+    term_context = unit['title'] + ' ' + instructions
+    glossary = ''.join('<li><b>' + escape(term) + '</b> — ' + escape(meaning) + '</li>'
+                       for term, meaning in TERMS.items()
+                       if re.search(r'(?<!\w)' + re.escape(term) + r'(?!\w)', term_context, re.I))
+    term_help = '<p><b>Atamalarni sodda tushunamiz:</b></p><ul>' + glossary + '</ul>' if glossary else ''
+    method = (term_help + '<p><b>Ushbu mavzuni bajarish:</b></p>' + items(steps) +
+              '<p><b>Bu namunaning xulosasi:</b> ' + escape(guide['answer']) + '</p>' +
+              '<p><b>Modul misolining to‘liq ketma-ketligi:</b></p>' + items(guide['stages']) +
+              EXAMPLES.get(code, ''))
+    exercise = ('<p><b>Ko‘p uchraydigan xato va tuzatish:</b></p>' + paragraph(guide['error']) +
+                '<p>Xatoni yashirish uchun faqat yozuv yoki rasmni tuzatmang. Yuqoridagi bajarish '
+                'ketma-ketligida ma’lumot manbasiga qayting va natijani qayta tekshiring.</p>' +
+                '<p><b>Mustaqil mashqning boshlang‘ich sharti:</b></p>' + paragraph(workbook['case']) +
+                '<p><b>Vazifa:</b> ' + escape(unit['action']) + '</p>' +
+                '<p><b>Yechimni solishtirish:</b> ' + escape(unit['result']) + '</p>' +
+                '<p><b>Yuqoridagi ishlangan namunaga boshqa shart va yechim yo‘li:</b></p>' +
+                paragraph(guide['variation']) +
+                '<p>Mustaqil mashq bilan ishlangan namunaning boshlang‘ich shartlarini aralashtirmang. '
+                'Natijangizni aynan o‘zingiz bajargan shart bo‘yicha tekshiring.</p>' +
+                '<p><b>Saqlanadigan dalil:</b> boshlang‘ich shart, bajarilgan chizma/jadval yoki hisob, '
+                'tekshirilgan natija va xato bo‘lsa uning tuzatilgan holati. Namuna matnini ko‘chirish '
+                'ish bajarilganini isbotlamaydi. Test amaliy faylni avtomatik baholamaydi.</p>')
+    name, source = source_block(code)
+    source += ('<p><b>O‘quv misoli haqida:</b> sonlar mashq shartidir. Geometrik hisobning to‘g‘riligi '
+               'foydalanish, konstruktiv, muhandislik yoki normativ moslikni avtomatik tasdiqlamaydi. '
+               'Tegishli loyiha talabini va zarur mutaxassis tekshiruvini alohida aniqlang.</p>')
+    added = [
+        {'title': 'O‘quv holati va dars vazifasi', 'type': 'example', 'text': case},
+        {'title': 'Bajarish tartibi va namunaviy xulosa', 'type': 'normal', 'text': method},
+        {'title': 'Mustaqil mashq va o‘zini tekshirish', 'type': 'highlight', 'text': exercise},
+        {'title': name, 'type': 'normal', 'text': source},
     ]
-    name,text=source_block(code)
-    added.append({'title':name,'type':'normal','text':text})
-    return deepcopy(original)+added
+    for block in added:
+        block['teaching_revision'] = REVISION
+        block['teaching_lesson'] = code
+    return deepcopy(original) + added
 
 
 def options(code,index,correct,wrong):
@@ -134,10 +170,16 @@ def validate_revision(content, quizzes):
     """Structural release gate; this cannot certify architectural correctness."""
     if len(WORKBOOKS)!=137 or len(MODULES)!=680 or set(content)!=set(MODULES) or set(quizzes)!=set(content):
         raise ValueError('Workbook coverage must match all 137 modules / 680 lessons')
+    if len(GUIDES) != 137 or sum(len(g['stages']) for g in GUIDES.values()) != 680:
+        raise ValueError('Worked teaching coverage is incomplete')
     signatures=set(); question_ids=set()
     for code,blocks in content.items():
         if get_revision_block_count(blocks)!=4:
             raise ValueError('Missing practice/source blocks: '+code)
+        if any(b.get('teaching_revision') != REVISION or b.get('teaching_lesson') != code for b in blocks[-4:]):
+            raise ValueError('Wrong teaching revision or lesson identity: ' + code)
+        if 'Namunaning yechimi' not in blocks[-4]['text'] or 'Ushbu mavzuni bajarish' not in blocks[-3]['text']:
+            raise ValueError('Missing worked teaching: ' + code)
         signature=tuple(q['question'] for q in quizzes[code])
         if signature in signatures: raise ValueError('Repeated complete quiz: '+code)
         signatures.add(signature)
@@ -148,7 +190,7 @@ def validate_revision(content, quizzes):
             if len(opts)!=4 or len({o[1] for o in opts})!=4 or sum(bool(o[2]) for o in opts)!=1:
                 raise ValueError('Invalid four-choice question: '+q['code'])
     if len(question_ids)!=2041: raise ValueError('Question identity/count changed')
-    return {'revision':REVISION,'workbook_modules':137,'workbook_lessons':680,'questions':2041}
+    return {'revision':REVISION,'workbook_modules':137,'workbook_lessons':680,'questions':2041,'worked_modules':137,'worked_lesson_stages':680}
 
 
 def get_revision_block_count(blocks):

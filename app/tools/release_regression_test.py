@@ -153,6 +153,34 @@ class ReleaseRegression(unittest.TestCase):
         login.deleteLater()
         events()
 
+    def test_worked_lessons_keep_complete_instructions_and_readable_tables(self):
+        from PySide6.QtGui import QTextDocument
+        from PySide6.QtWidgets import QLabel
+        self.shell.showNormal()
+        self.shell.resize(1150, 720)
+        for code in ('L00_M02_001', 'L05_M03_001', 'L07_M05_002', 'L12_M07_002'):
+            with self.subTest(lesson=code):
+                lesson = next(row for row in self.lessons if row['code'] == code)
+                page = LessonPage(lesson, self.master)
+                self.shell.show_page('worked::' + code, page)
+                events()
+                self.assertEqual(len(page.content_cards), len(page.blocks))
+                if code == 'L00_M02_001':
+                    self.assertIn('oshxona→ovqatlanish aloqalarini chizing', page.blocks[-3]['text'])
+                    self.assertIn('16+16+8+12+11.2+11.2+5.6=80', page.blocks[-3]['text'])
+                for size in (14, 24):
+                    page.change_reading_font(size - page.reading_font_size)
+                    events()
+                    self.assertLessEqual(page.content_widget.width(), page.scroll.viewport().width())
+                    for card in page.content_cards[-4:]:
+                        label = card.findChild(QLabel, 'blockText')
+                        document = QTextDocument()
+                        document.setHtml(label.text())
+                        document.setTextWidth(label.width())
+                        self.assertLessEqual(document.idealWidth(), label.width() + 2,
+                                             'Worked table or text overflows reading area')
+                self.assertFalse(page.next_lesson_button.isEnabled())
+
     def test_missing_content_is_visible_and_cannot_start_quiz(self):
         from PySide6.QtWidgets import QLabel
         for failure in (None, ImportError("courses.lesson_content missing")):
