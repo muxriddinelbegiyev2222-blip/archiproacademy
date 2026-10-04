@@ -216,3 +216,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ARCHIPRO UZ local build artifacts
+build_client/
+dist_client/
+build_admin/
+dist_admin/
+build_owner/
+dist_owner/
+release/
+
+# ARCHIPRO UZ local runtime / secrets
+ARCHIPRO_UZ_ADMIN/
+*.archiprolic
+archipro_private.key
+
