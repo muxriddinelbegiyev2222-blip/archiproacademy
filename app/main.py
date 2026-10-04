@@ -600,14 +600,153 @@ def main():
         )
 
     # ========================================================
+    # LICENSE GATE
+    #
+    # MUHIM:
+    # Login oynasi faqat haqiqiy, shu kompyuterga bog'langan
+    # litsenziya mavjud bo'lgandagina ochiladi.
+    # ========================================================
+
+    from licensing.license_service import (
+        validate_installed_license,
+    )
+
+    from ui.activation_window import (
+        ActivationWindow,
+    )
+
+    windows = {
+        "activation": None,
+        "login": None,
+        "dashboard": None,
+    }
+
+    # ========================================================
+    # ACTIVATION
+    # ========================================================
+
+    def show_activation(
+        message: str = "",
+    ):
+        login_window = windows.get(
+            "login"
+        )
+
+        if login_window is not None:
+            login_window.hide()
+
+        activation_window = ActivationWindow()
+
+        windows[
+            "activation"
+        ] = activation_window
+
+        if message:
+            activation_window.error_label.setText(
+                message
+            )
+
+        activation_window.activation_successful.connect(
+            activation_completed
+        )
+
+        activation_window.show()
+        activation_window.raise_()
+        activation_window.activateWindow()
+
+    # ========================================================
     # LOGIN
     # ========================================================
 
-    login_window = LoginWindow()
+    def show_login():
+        # Login oldidan litsenziyani yana tekshiramiz.
+        # Aktivatsiya oynasining signaliga ko'r-ko'rona
+        # ishonmaymiz.
+        license_result = (
+            validate_installed_license()
+        )
 
-    windows = {
-        "dashboard": None,
-    }
+        if not license_result.get(
+            "valid"
+        ):
+            show_activation(
+                license_result.get(
+                    "message",
+                    "ARCHIPRO UZ faollashtirilmagan.",
+                )
+            )
+            return
+
+        login_window = windows.get(
+            "login"
+        )
+
+        if login_window is None:
+            login_window = LoginWindow()
+
+            login_window.login_requested.connect(
+                process_login
+            )
+
+            windows[
+                "login"
+            ] = login_window
+
+        payload = license_result.get(
+            "payload",
+            {},
+        )
+
+        licensed_username = str(
+            payload.get(
+                "username",
+                "",
+            )
+        ).strip().lower()
+
+        if (
+            licensed_username
+            and not login_window.login_input.text().strip()
+        ):
+            login_window.login_input.setText(
+                licensed_username
+            )
+
+            login_window.password_input.setFocus()
+
+        activation_window = windows.get(
+            "activation"
+        )
+
+        if activation_window is not None:
+            activation_window.hide()
+
+        login_window.error_label.clear()
+        login_window.show()
+        login_window.raise_()
+        login_window.activateWindow()
+
+    # ========================================================
+    # ACTIVATION COMPLETED
+    # ========================================================
+
+    def activation_completed():
+        result = (
+            validate_installed_license()
+        )
+
+        if not result.get(
+            "valid"
+        ):
+            show_activation(
+                result.get(
+                    "message",
+                    "Litsenziya tekshiruvdan o'tmadi.",
+                )
+            )
+            return
+
+        show_login()
 
     # ========================================================
     # LOGIN PROCESS
@@ -617,7 +756,60 @@ def main():
         login: str,
         password: str,
     ):
+        login_window = windows.get(
+            "login"
+        )
+
+        if login_window is None:
+            return
+
         try:
+            license_result = (
+                validate_installed_license()
+            )
+
+            if not license_result.get(
+                "valid"
+            ):
+                login_window.hide()
+
+                show_activation(
+                    license_result.get(
+                        "message",
+                        "Litsenziya haqiqiy emas.",
+                    )
+                )
+
+                return
+
+            payload = license_result.get(
+                "payload",
+                {},
+            )
+
+            licensed_username = str(
+                payload.get(
+                    "username",
+                    "",
+                )
+            ).strip().lower()
+
+            requested_username = str(
+                login
+            ).strip().lower()
+
+            if (
+                licensed_username
+                and requested_username
+                != licensed_username
+            ):
+                login_window.error_label.setText(
+                    "Ushbu litsenziya boshqa login uchun "
+                    "chiqarilgan."
+                )
+
+                return
+
             user = authenticate_user(
                 login,
                 password,
@@ -704,11 +896,26 @@ def main():
                 "tekshirish kerak."
             )
 
-    login_window.login_requested.connect(
-        process_login
+    # ========================================================
+    # FIRST SCREEN
+    # ========================================================
+
+    initial_license_result = (
+        validate_installed_license()
     )
 
-    login_window.show()
+    if initial_license_result.get(
+        "valid"
+    ):
+        show_login()
+
+    else:
+        show_activation(
+            initial_license_result.get(
+                "message",
+                "ARCHIPRO UZ faollashtirilmagan.",
+            )
+        )
 
     sys.exit(
         app.exec()
