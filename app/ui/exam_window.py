@@ -231,6 +231,7 @@ class ExamWindow(QMainWindow):
     # ========================================================
 
     def build_ui(self):
+        self._submitted = False
         central = QWidget()
 
         self.setCentralWidget(
@@ -628,6 +629,8 @@ class ExamWindow(QMainWindow):
     # ========================================================
 
     def check_exam(self):
+        if self._submitted:
+            return
         if not self.questions:
             QMessageBox.warning(
                 self,
@@ -755,6 +758,8 @@ class ExamWindow(QMainWindow):
             total_questions=total,
             passed=passed,
         )
+        self._submitted = True
+
 
         self.submit_button.hide()
 

@@ -569,10 +569,10 @@ class AppShell(QMainWindow):
         self,
         key: str,
     ):
-        page = self.page_cache.pop(
-            key,
-            None,
-        )
+        page = self.page_cache.get(key)
+        if page is not None and hasattr(page, "flush_pending_note"):
+            page.flush_pending_note()
+        page = self.page_cache.pop(key, None)
 
         self.transient_return_keys.pop(
             key,
@@ -728,12 +728,8 @@ class AppShell(QMainWindow):
         keyin vaqtinchalik sahifani delete qiladi.
         """
 
-        success = self.show_cached(
-            return_key
-        )
-
-        if not success:
-            return
+        page = self.page_cache.get(transient_key)
+        self.show_cached(return_key)
 
         self.transient_return_keys.pop(
             transient_key,
@@ -742,11 +738,19 @@ class AppShell(QMainWindow):
 
         QTimer.singleShot(
             0,
-            lambda:
-            self.drop_page(
-                transient_key
-            ),
+            lambda: self.drop_page_if_current(transient_key, page),
         )
+
+    def drop_page_if_current(self, key, expected_page):
+        # A queued cleanup belongs to the old widget, never its replacement.
+        if self.page_cache.get(key) is expected_page:
+            self.drop_page(key)
+
+    def closeEvent(self, event):
+        for page in list(self.page_cache.values()):
+            if hasattr(page, "flush_pending_note"):
+                page.flush_pending_note()
+        super().closeEvent(event)
 
     # ========================================================
     # MENU SELECTION
@@ -1769,10 +1773,8 @@ class AppShell(QMainWindow):
 
             QTimer.singleShot(
                 0,
-                lambda k=quiz_key:
-                self.drop_page(
-                    k
-                ),
+                lambda k=quiz_key, page=self.page_cache.get(quiz_key):
+                self.drop_page_if_current(k, page),
             )
 
         else:
@@ -2253,6 +2255,11 @@ class AppShell(QMainWindow):
                 return_key,
                 current_key,
             )
+        else:
+            page = self.page_cache.get(current_key)
+            callback = getattr(page, "back_callback", None)
+            if callable(callback):
+                callback()
 
     def open_next_from_current(self):
         current_key = self.current_page_key or ""
@@ -2491,3 +2498,4 @@ class AppShell(QMainWindow):
 
         self.level_page_lru.clear()
         self.transient_return_keys.clear()
+

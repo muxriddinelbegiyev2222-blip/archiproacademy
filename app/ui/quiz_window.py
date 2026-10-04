@@ -242,6 +242,7 @@ class QuizWindow(QMainWindow):
     # ========================================================
 
     def build_ui(self):
+        self._submitted = False
         central = QWidget()
 
         self.setCentralWidget(
@@ -649,6 +650,8 @@ class QuizWindow(QMainWindow):
     # ========================================================
 
     def check_answers(self):
+        if self._submitted or not self.answer_groups:
+            return
         # Avval barcha savolga javob berilganini
         # tekshiramiz.
         for item in self.answer_groups:
@@ -801,6 +804,8 @@ class QuizWindow(QMainWindow):
             score=score,
             passed=passed,
         )
+        self._submitted = True
+
 
         # ====================================================
         # SHOW RESULT

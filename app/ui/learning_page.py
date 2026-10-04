@@ -402,7 +402,7 @@ class LearningPage(
             pass
 
         back_button.clicked.connect(
-            self.back_callback
+            lambda checked=False: self.back_callback()
         )
 
     # ========================================================

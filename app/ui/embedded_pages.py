@@ -566,7 +566,7 @@ class LessonPage(QWidget):
 
         if self.back_callback is not None:
             back_button.clicked.connect(
-                self.back_callback
+                lambda checked=False: self.back_callback()
             )
 
         top_layout.addWidget(
@@ -1847,37 +1847,28 @@ class LessonPage(QWidget):
     def save_note_silent(self):
         try:
             save_lesson_note(
-                self.user["id"],
-                self.lesson_id,
+                self.user["id"], self.lesson_id,
                 self.note_input.toPlainText(),
             )
+            return True
         except Exception:
-            # Eslatma xatosi dars o'qishni to'xtatmaydi.
-            return
+            return False
+
+    def flush_pending_note(self):
+        if self.note_autosave_timer.isActive():
+            self.note_autosave_timer.stop()
+            return self.save_note_silent()
+        return True
 
     def save_note(self):
-        self.save_note_silent()
-
-        original_text = (
-            "ESLATMANI SAQLASH"
-        )
-
+        self.note_autosave_timer.stop()
+        saved = self.save_note_silent()
         sender = self.sender()
-
-        if isinstance(
-            sender,
-            QPushButton,
-        ):
-            sender.setText(
-                "✓ SAQLANDI"
-            )
-
+        if isinstance(sender, QPushButton):
+            sender.setText("✓ SAQLANDI" if saved else "SAQLANMADI — QAYTA URINING")
             QTimer.singleShot(
-                1200,
-                lambda:
-                sender.setText(
-                    original_text
-                ),
+                1200, sender,
+                lambda: sender.setText("ESLATMANI SAQLASH"),
             )
 
     def open_next_lesson(self):
@@ -2021,7 +2012,7 @@ class QuizPage(QuizWindow):
                 pass
 
             back_button.clicked.connect(
-                self.back_callback
+                lambda checked=False: self.back_callback()
             )
 
     def continue_after_pass(self):
@@ -2143,7 +2134,7 @@ class ExamPage(ExamWindow):
         )
 
         back_button.clicked.connect(
-            self.back_callback
+            lambda checked=False: self.back_callback()
         )
 
         top.addWidget(

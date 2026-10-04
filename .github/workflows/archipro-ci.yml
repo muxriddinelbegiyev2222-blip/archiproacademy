@@ -51,4 +51,12 @@ jobs:
         shell: pwsh
         run: python app/tools/learning_flow_smoke_test.py
 
-# CI trigger marker
+      - name: Full curriculum release regression
+        shell: pwsh
+        env:
+          QT_QPA_PLATFORM: offscreen
+          ARCHIPRO_AUDIT_MODE: "1"
+          PYTHONIOENCODING: utf-8
+        run: python app/tools/release_regression_test.py
+
+

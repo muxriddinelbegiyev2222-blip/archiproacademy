@@ -232,3 +232,6 @@ ARCHIPRO_UZ_ADMIN/
 *.archiprobackup
 archipro_private.key
 
+
+# Local audit outputs
+audit_logs/

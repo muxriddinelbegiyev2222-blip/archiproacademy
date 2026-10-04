@@ -1,0 +1,270 @@
+"""Isolated release checks using real Qt widgets and the complete curriculum."""
+from __future__ import annotations
+
+import copy
+import os
+from pathlib import Path
+import sys
+import tempfile
+import unittest
+from unittest.mock import patch
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+_TEST_DIR = tempfile.TemporaryDirectory(prefix='archipro_release_')
+os.environ['ARCHIPRO_UZ_DATABASE_PATH'] = str(Path(_TEST_DIR.name) / 'release.db')
+os.environ.setdefault('QT_QPA_PLATFORM', 'offscreen')
+os.environ['ARCHIPRO_AUDIT_MODE'] = '1'
+
+from PySide6.QtCore import QCoreApplication, QEvent
+from PySide6.QtWidgets import QApplication, QMessageBox, QPushButton
+from auth.auth_service import create_user, authenticate_user
+from courses.course_service import initialize_user_progress, get_lesson_progress, get_next_available_lesson
+from courses.exam_service import get_level_exam, get_exam_questions
+from courses.user_features import get_lesson_note, import_user_backup, export_user_backup
+from database.database import get_connection
+from main import prepare_application, get_database_content_counts
+from ui.dashboard_window import DashboardWindow
+from ui.embedded_pages import LessonPage
+
+
+def query(sql, args=()):
+    connection = get_connection()
+    try:
+        return [dict(row) for row in connection.execute(sql, args).fetchall()]
+    finally:
+        connection.close()
+
+
+def events():
+    QApplication.processEvents()
+    QCoreApplication.sendPostedEvents(None, QEvent.Type.DeferredDelete)
+    QApplication.processEvents()
+
+
+class ReleaseRegression(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.app = QApplication.instance() or QApplication([])
+        prepare_application()
+        create_user('release_pro', 'test-password', 'Release PRO', 'PRO')
+        create_user('release_master', 'test-password', 'Release MASTER', 'MASTER')
+        cls.pro = authenticate_user('release_pro', 'test-password')
+        cls.master = authenticate_user('release_master', 'test-password')
+        initialize_user_progress(cls.pro['id'])
+        initialize_user_progress(cls.master['id'])
+        cls.lessons = query('''SELECT ls.*, m.title AS module_title, l.title AS level_title,
+            l.subtitle AS level_subtitle, l.code AS level_code FROM lessons ls
+            JOIN course_modules m ON m.id=ls.module_id JOIN course_levels l ON l.id=m.level_id
+            ORDER BY l.sort_order, m.sort_order, ls.sort_order''')
+
+    def setUp(self):
+        self.qt_errors = []
+        self.old_hook = sys.excepthook
+        sys.excepthook = lambda typ, value, tb: self.qt_errors.append(str(value))
+        self.shell = DashboardWindow(self.pro)
+        self.shell.show()
+        events()
+
+    def tearDown(self):
+        self.shell.close()
+        self.shell.deleteLater()
+        events()
+        sys.excepthook = self.old_hook
+        self.assertEqual(self.qt_errors, [], 'Unhandled Qt signal exception')
+
+    def open_first(self):
+        self.shell.open_single_level('LEVEL_00', 'Absolute Zero', '', 'home')
+        events()
+        level = self.shell.page_cache['level::LEVEL_00']
+        level.findChild(QPushButton, 'openLesson').click()
+        events()
+        return self.shell.page_cache[self.shell.current_page_key]
+
+    def test_all_menu_pages_and_level_back(self):
+        for index, title in enumerate(self.shell.menu_items):
+            with self.subTest(menu=title):
+                self.shell.menu.setCurrentRow(index)
+                events()
+                self.assertIs(self.shell.stack.currentWidget(), self.shell.page_cache[self.shell.current_page_key])
+        self.shell.open_home()
+        self.shell.open_single_level('LEVEL_00', 'Absolute Zero', '', 'home')
+        events()
+        self.shell.page_cache['level::LEVEL_00'].findChild(QPushButton, 'backButton').click()
+        events()
+        self.assertEqual(self.shell.current_page_key, 'home')
+
+    def test_all_680_lesson_pages_and_16_exams(self):
+        self.assertEqual(len(self.lessons), 680)
+        for lesson in self.lessons:
+            with self.subTest(lesson=lesson['code']):
+                page = LessonPage(lesson, self.master)
+                self.assertTrue(page.blocks, 'Lesson content is empty')
+                self.assertTrue(page.content_cards)
+                page.deleteLater()
+                events()
+        for number in range(16):
+            with self.subTest(exam=number):
+                exam = get_level_exam(f'LEVEL_{number:02d}')
+                self.assertIsNotNone(exam)
+                self.assertTrue(get_exam_questions(exam['id']))
+                self.shell.open_exam_page(exam, 'home')
+                events()
+                page = self.shell.page_cache[self.shell.current_page_key]
+                page.findChild(QPushButton, 'embeddedBackButton').click()
+                events()
+                self.assertEqual(self.shell.current_page_key, 'home')
+
+    def test_quiz_back_and_escape(self):
+        lesson = self.open_first()
+        key = self.shell.current_page_key
+        lesson.findChild(QPushButton, 'quizButton').click()
+        events()
+        self.shell.page_cache[self.shell.current_page_key].findChild(QPushButton, 'backButton').click()
+        events()
+        self.assertEqual(self.shell.current_page_key, key)
+        self.shell.smart_back()
+        events()
+        self.assertEqual(self.shell.current_page_key, 'level::LEVEL_00')
+        self.shell.smart_back()
+        events()
+        self.assertEqual(self.shell.current_page_key, 'home')
+
+    def test_note_survives_immediate_back_and_window_close(self):
+        lesson = self.open_first()
+        lesson.note_input.setPlainText('Immediate back must preserve this note')
+        lesson.findChild(QPushButton, 'backButton').click()
+        events()
+        self.assertEqual(get_lesson_note(self.pro['id'], lesson.lesson_id), 'Immediate back must preserve this note')
+        lesson = self.open_first()
+        lesson.note_input.setPlainText('Closing window must preserve this note')
+        self.shell.close()
+        events()
+        self.assertEqual(get_lesson_note(self.pro['id'], lesson.lesson_id), 'Closing window must preserve this note')
+
+    def test_delayed_cleanup_does_not_delete_reopened_lesson(self):
+        lesson = self.open_first()
+        key = self.shell.current_page_key
+        self.shell.return_from_transient('level::LEVEL_00', key)
+        source = self.shell.page_cache['level::LEVEL_00']
+        self.shell.open_lesson_page(dict(lesson.lesson), source)
+        events()
+        self.assertIn(key, self.shell.page_cache)
+        self.assertIs(self.shell.stack.currentWidget(), self.shell.page_cache[key])
+
+    def test_quiz_double_submission_does_not_duplicate_attempt(self):
+        lesson = self.open_first()
+        self.shell.open_quiz_page(lesson)
+        events()
+        quiz = self.shell.page_cache[self.shell.current_page_key]
+        for item in quiz.answer_groups:
+            next(button for button in item['buttons'] if button.property('is_correct')).setChecked(True)
+        before = len(query('SELECT * FROM quiz_attempts WHERE user_id=? AND lesson_id=?', (self.pro['id'], lesson.lesson_id)))
+        quiz.check_answers()
+        quiz.check_answers()
+        after = len(query('SELECT * FROM quiz_attempts WHERE user_id=? AND lesson_id=?', (self.pro['id'], lesson.lesson_id)))
+        self.assertEqual(after - before, 1)
+
+    def test_startup_idempotence_and_backup_rollback(self):
+        before = get_database_content_counts()
+        self.assertFalse(prepare_application())
+        self.assertEqual(before, get_database_content_counts())
+        backup = export_user_backup(self.pro['id'], Path(_TEST_DIR.name) / 'rollback.archiprobackup')
+        import json
+        data = json.loads(backup.read_text())
+        broken = copy.deepcopy(data)
+        broken['lesson_progress'][-1]['score'] = 'bad-score'
+        backup.write_text(json.dumps(broken))
+        previous = query('SELECT * FROM lesson_progress WHERE user_id=? ORDER BY lesson_id', (self.pro['id'],))
+        with self.assertRaises((ValueError, TypeError)):
+            import_user_backup(self.pro['id'], backup)
+        self.assertEqual(previous, query('SELECT * FROM lesson_progress WHERE user_id=? ORDER BY lesson_id', (self.pro['id'],)))
+
+    def test_note_save_button_reports_failure(self):
+        lesson = self.open_first()
+        button = lesson.findChild(QPushButton, 'saveNoteButton')
+        lesson.note_input.setPlainText('Save button check')
+        with patch('ui.embedded_pages.save_lesson_note', side_effect=OSError('write failed')):
+            button.click()
+            self.assertIn('SAQLANMADI', button.text())
+        button.click()
+        self.assertEqual(get_lesson_note(self.pro['id'], lesson.lesson_id), 'Save button check')
+        self.assertIn('SAQLANDI', button.text())
+
+    def test_signed_license_expiry_and_tampering(self):
+        import base64
+        from datetime import datetime, timedelta, timezone
+        from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
+        from licensing import license_service as service
+        key = Ed25519PrivateKey.generate()
+        payload = {"username": "release_pro", "password_hash": "hash", "password_salt": "salt",
+                   "device_id": "TEST-DEVICE", "license_type": "PRO"}
+        def signed(expires):
+            body = dict(payload, expires_at=expires)
+            return {"product": service.PRODUCT_NAME, "version": service.LICENSE_VERSION,
+                    "payload": body, "signature": base64.b64encode(key.sign(service._canonical_payload(body))).decode()}
+        with patch.object(service, '_load_public_key', return_value=key.public_key()), patch.object(service, 'get_device_id', return_value='TEST-DEVICE'):
+            future = (datetime.now(timezone.utc) + timedelta(days=1)).isoformat()
+            self.assertTrue(service.verify_license_data(signed(future))['valid'])
+            past = (datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
+            self.assertFalse(service.verify_license_data(signed(past))['valid'])
+            self.assertTrue(service.verify_license_data(signed(None))['valid'])
+            self.assertFalse(service.verify_license_data(signed('invalid-date'))['valid'])
+            forged = signed(None)
+            forged['payload']['license_type'] = 'MASTER'
+            self.assertFalse(service.verify_license_data(forged)['valid'])
+            with patch.object(service, 'get_device_id', return_value='OTHER-DEVICE'):
+                self.assertFalse(service.verify_license_data(signed(None))['valid'])
+
+    def test_z_complete_curriculum_through_real_quiz_and_exam_widgets(self):
+        create_user('full_flow', 'test-password', 'Full flow', 'PRO')
+        user = authenticate_user('full_flow', 'test-password')
+        initialize_user_progress(user['id'])
+        self.shell.close()
+        self.shell.deleteLater()
+        events()
+        self.shell = DashboardWindow(user)
+        self.shell.show()
+        events()
+        for number in range(16):
+            level_code = f'LEVEL_{number:02d}'
+            for lesson in (row for row in self.lessons if row['level_code'] == level_code):
+                with self.subTest(lesson=lesson['code']):
+                    progress = get_lesson_progress(user['id'], lesson['id'])
+                    self.assertEqual(progress['status'], 'available')
+                    self.shell.open_lesson_from_summary(dict(lesson, status=progress['status']), 'home')
+                    events()
+                    page = self.shell.page_cache[self.shell.current_page_key]
+                    self.assertEqual(page.lesson_id, lesson['id'])
+                    page.findChild(QPushButton, 'quizButton').click()
+                    events()
+                    quiz = self.shell.page_cache[self.shell.current_page_key]
+                    self.assertTrue(quiz.answer_groups)
+                    for item in quiz.answer_groups:
+                        next(button for button in item['buttons'] if button.property('is_correct')).setChecked(True)
+                    quiz.submit_button.click()
+                    quiz.continue_button.click()
+                    events()
+                    progress = get_lesson_progress(user['id'], lesson['id'])
+                    self.assertEqual(progress['status'], 'completed')
+                    self.assertEqual(progress['attempts'], 1)
+                    self.assertEqual(progress['best_score'], 100)
+            exam = get_level_exam(level_code)
+            self.shell.open_exam_page(exam, 'home')
+            events()
+            page = self.shell.page_cache[self.shell.current_page_key]
+            for item in page.answer_groups:
+                next(button for button in item['buttons'] if button.property('is_correct')).setChecked(True)
+            page.check_exam()
+            page.check_exam()
+            self.assertEqual(len(query('SELECT * FROM level_exam_attempts WHERE user_id=? AND exam_id=?', (user['id'], exam['id']))), 1)
+            page.finish_success()
+            events()
+            print(f'[PASS] Full PRO learning flow {level_code}', flush=True)
+        self.assertEqual(len(query("SELECT * FROM user_level_progress WHERE user_id=? AND status='completed'", (user['id'],))), 16)
+        self.assertIsNone(get_next_available_lesson(user['id']))
+
+
+if __name__ == '__main__':
+    result = unittest.TextTestRunner(verbosity=2).run(unittest.defaultTestLoader.loadTestsFromTestCase(ReleaseRegression))
+    _TEST_DIR.cleanup()
+    raise SystemExit(0 if result.wasSuccessful() else 1)

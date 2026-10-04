@@ -199,6 +199,13 @@ if errorlevel 1 (
 )
 
 echo.
+python "app\tools\release_regression_test.py"
+if errorlevel 1 (
+    echo [ERROR] RELEASE REGRESSION TEST FAILED
+    pause
+    exit /b 1
+)
+
 echo [PASS] Release preflight muvaffaqiyatli.
 echo.
 

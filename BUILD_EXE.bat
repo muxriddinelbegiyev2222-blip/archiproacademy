@@ -118,6 +118,14 @@ echo [OK] admin.py topildi.
 
 echo.
 
+REM All release checks must pass before packaging.
+python "app\tools\full_audit.py"
+if errorlevel 1 (
+    echo [ERROR] FULL AUDIT FAILED - BUILD CANCELLED
+    pause
+    exit /b 1
+)
+
 REM ============================================================
 REM CLEAN OLD BUILD
 REM ============================================================
@@ -161,6 +169,7 @@ python -m PyInstaller ^
     --name "ARCHIPRO UZ" ^
     --paths "app" ^
     --collect-all PySide6 ^
+    --collect-submodules courses ^
     "app\main.py"
 
 if errorlevel 1 (

@@ -83,3 +83,22 @@ UI Navigation Smoke Test real `OCHISH` tugmasini bosib,
 Level -> Lesson -> Orqaga navigatsiya zanjirini tekshiradi.
 Learning Flow Smoke Test esa mini-test, progress, keyingi dars
 qulfi, real score va attempt hisobini tekshiradi.
+
+## v1.0.4 tuzatishlar
+
+- Dars, mini-test, imtihon va Level qaytish tugmalari Qt `checked` qiymatini sahifa manziliga aralashtirmaydi.
+- LEVEL 00 / MODULE 02–03 matni va testlari to'g'ri manbadan yuklanadi.
+- Darsdan tez chiqish va oynani yopishda pending eslatma saqlanadi.
+- Eski kechiktirilgan tozalash qayta ochilgan yangi darsni o'chirmaydi.
+- Test va imtihon bir tekshirish uchun bitta urinish yozadi.
+- Sana vaqt zonasi bilan yozilgan litsenziyalar tekshiriladi.
+- BUILD_EXE dinamik kurs modullarini yig'adi va to'liq auditdan o'tishni talab qiladi.
+
+`AUDIT_ARCHIPRO.bat` barcha 7 auditni bajaradi. Batafsil natijalar
+`audit_logs` papkasida saqlanadi. `python app/tools/full_audit.py` ham ishlaydi.
+Yangi Release Regression Test 680 ta dars sahifasi, 16 imtihon,
+barcha menyular, eslatmalar, tez navigatsiya, litsenziya imzosi,
+backup rollback va PRO kursining to'liq o'quv jarayonini tekshiradi.
+
+Windows EXE va installer shu manba koddan Windowsda yig'iladi.
+Linuxdagi Qt offscreen tekshiruv Windows installer/real ekran tekshiruvini almashtirmaydi.

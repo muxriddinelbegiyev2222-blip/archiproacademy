@@ -535,7 +535,9 @@ def main() -> int:
             "Lesson back callback ulanmagan.",
         )
 
-        lesson_page.back_callback()
+        back_button = lesson_page.findChild(QPushButton, "backButton")
+        assert_true(back_button is not None, "Lesson back tugmasi topilmadi.")
+        back_button.click()
         app.processEvents()
 
         assert_true(
@@ -619,3 +621,4 @@ if __name__ == "__main__":
     raise SystemExit(
         main()
     )
+

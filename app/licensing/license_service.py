@@ -342,7 +342,8 @@ def verify_license_data(
                 ),
             }
 
-        if datetime.now() > expiry:
+        now = datetime.now(expiry.tzinfo) if expiry.tzinfo else datetime.now()
+        if now > expiry:
             return {
                 "valid": False,
                 "message": (

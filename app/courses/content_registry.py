@@ -134,12 +134,12 @@ def get_module_descriptor(
     """
 
     # ========================================================
-    # LEVEL 00 / MODULE 01
+    # LEVEL 00 / MODULE 01-03
     # ========================================================
 
     if (
         level_number == 0
-        and module_number == 1
+        and 1 <= module_number <= 3
     ):
         return {
             "content_module": (
@@ -157,14 +157,14 @@ def get_module_descriptor(
         }
 
     # ========================================================
-    # LEVEL 00 / MODULE 02-05
+    # LEVEL 00 / MODULE 04-05
     #
     # Hammasi level00_extra.py ichida.
     # ========================================================
 
     if (
         level_number == 0
-        and 2 <= module_number <= 5
+        and 4 <= module_number <= 5
     ):
         return {
             "content_module": (
