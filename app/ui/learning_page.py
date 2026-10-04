@@ -20,12 +20,12 @@ class LearningPage(
     LearningWindow
 ):
     lesson_open_requested = Signal(
-        dict,
+        object,
         object,
     )
 
     exam_open_requested = Signal(
-        dict,
+        object,
         object,
     )
     """
