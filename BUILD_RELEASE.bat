@@ -394,7 +394,10 @@ echo %INSTALLER_FILE%
 echo.
 echo CLIENT paketida:
 echo   - ARCHIPRO ADMIN.exe YO'Q
+echo   - ARCHIPRO OWNER.exe YO'Q
 echo   - private key YO'Q
+echo   - .archiprolic YO'Q
+echo   - .archiprobackup YO'Q
 echo.
 echo ============================================================
 
