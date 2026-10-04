@@ -75,24 +75,33 @@ class LessonPage(QWidget):
             open_next_lesson_callback
         )
 
-        self.bookmarked = is_lesson_bookmarked(
-            self.user["id"],
-            self.lesson_id,
-        )
+        # Bookmark va content yordamchi imkoniyatlar.
+        # Ularning bittasi xato qilsa ham asosiy dars sahifasi
+        # ochilmay qolmasligi kerak.
+        try:
+            self.bookmarked = is_lesson_bookmarked(
+                self.user["id"],
+                self.lesson_id,
+            )
+        except Exception:
+            self.bookmarked = False
 
         self.content_cards = []
 
         self.map_buttons = []
 
-        self.blocks = (
-            get_lesson_content_by_code(
-                self.lesson.get(
-                    "code",
-                    "",
+        try:
+            self.blocks = (
+                get_lesson_content_by_code(
+                    self.lesson.get(
+                        "code",
+                        "",
+                    )
                 )
+                or []
             )
-            or []
-        )
+        except Exception:
+            self.blocks = []
 
         self.setObjectName(
             "lessonPage"
@@ -1054,11 +1063,16 @@ class LessonPage(QWidget):
         self.note_input.setMaximumHeight(
             110
         )
-        self.note_input.setPlainText(
-            get_lesson_note(
+        try:
+            saved_note = get_lesson_note(
                 self.user["id"],
                 self.lesson_id,
             )
+        except Exception:
+            saved_note = ""
+
+        self.note_input.setPlainText(
+            saved_note
         )
 
         self.note_autosave_timer = QTimer(
@@ -1810,13 +1824,19 @@ class LessonPage(QWidget):
             )
 
     def toggle_bookmark(self):
-        self.bookmarked = not self.bookmarked
-
-        set_lesson_bookmark(
-            self.user["id"],
-            self.lesson_id,
-            self.bookmarked,
+        requested_state = (
+            not self.bookmarked
         )
+
+        try:
+            set_lesson_bookmark(
+                self.user["id"],
+                self.lesson_id,
+                requested_state,
+            )
+            self.bookmarked = requested_state
+        except Exception:
+            return
 
         self.bookmark_button.setText(
             "★ BOOKMARKDA"
@@ -1825,11 +1845,15 @@ class LessonPage(QWidget):
         )
 
     def save_note_silent(self):
-        save_lesson_note(
-            self.user["id"],
-            self.lesson_id,
-            self.note_input.toPlainText(),
-        )
+        try:
+            save_lesson_note(
+                self.user["id"],
+                self.lesson_id,
+                self.note_input.toPlainText(),
+            )
+        except Exception:
+            # Eslatma xatosi dars o'qishni to'xtatmaydi.
+            return
 
     def save_note(self):
         self.save_note_silent()
