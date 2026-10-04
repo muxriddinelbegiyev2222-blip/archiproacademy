@@ -1038,7 +1038,7 @@ class LessonPage(QWidget):
         )
 
         personal_title = QLabel(
-            "MENING ESLATMAM"
+            "MENING ESLATMAM  •  AVTOMATIK SAQLANADI"
         )
         personal_title.setObjectName(
             "personalTitle"
