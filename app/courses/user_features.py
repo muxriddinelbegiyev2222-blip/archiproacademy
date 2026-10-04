@@ -357,6 +357,38 @@ def save_lesson_note(
         connection.close()
 
 
+def get_user_notes_map(
+    user_id: int,
+) -> dict[int, str]:
+    connection = get_connection()
+
+    try:
+        cursor = connection.cursor()
+
+        cursor.execute(
+            """
+            SELECT lesson_id, note_text
+            FROM lesson_notes
+            WHERE user_id = ?
+              AND TRIM(note_text) != ''
+            """,
+            (
+                user_id,
+            ),
+        )
+
+        return {
+            int(row["lesson_id"]): str(
+                row["note_text"]
+                or ""
+            )
+            for row in cursor.fetchall()
+        }
+
+    finally:
+        connection.close()
+
+
 # ============================================================
 # PROGRESS BACKUP
 # ============================================================
@@ -699,6 +731,19 @@ def import_user_backup(
             "Backup fayli ARCHIPRO UZ formatiga mos emas."
         )
 
+    backup_user = data.get(
+        "user",
+        {},
+    )
+
+    if not isinstance(
+        backup_user,
+        dict,
+    ):
+        raise ValueError(
+            "Backup foydalanuvchi ma'lumoti noto'g'ri."
+        )
+
     collection_limits = {
         "lesson_progress": 2500,
         "level_progress": 100,
@@ -754,10 +799,7 @@ def import_user_backup(
             )
 
         backup_username = str(
-            data.get(
-                "user",
-                {},
-            ).get(
+            backup_user.get(
                 "username",
                 "",
             )
@@ -1262,6 +1304,13 @@ def import_user_backup(
                 )
                 or ""
             ).strip()
+
+            if len(
+                note_text
+            ) > 12000:
+                note_text = note_text[
+                    :12000
+                ]
 
             if not note_text:
                 continue
