@@ -161,16 +161,7 @@ echo 1 / 2 - ARCHIPRO UZ.exe YARATILMOQDA
 echo ============================================================
 echo.
 
-python -m PyInstaller ^
-    --noconfirm ^
-    --clean ^
-    --onefile ^
-    --windowed ^
-    --name "ARCHIPRO UZ" ^
-    --paths "app" ^
-    --collect-all PySide6 ^
-    --collect-submodules courses ^
-    "app\main.py"
+python "app\tools\build_client.py"
 
 if errorlevel 1 (
     echo.

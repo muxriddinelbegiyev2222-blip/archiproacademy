@@ -61,11 +61,24 @@ jobs:
 
 
 
+  package:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install client build dependencies
+        shell: pwsh
+        run: python -m pip install -r requirements.txt pyinstaller
+
       - name: Build Windows client with embedded course modules
         shell: pwsh
         run: |
-          python -m pip install pyinstaller
-          python -m PyInstaller --noconfirm --clean --onefile --windowed --name "ARCHIPRO UZ" --icon archipro.ico --paths app --collect-all PySide6 --collect-submodules courses --collect-submodules licensing app/main.py
+          python app/tools/build_client.py
 
       - name: Verify curriculum in the actual Windows EXE
         shell: pwsh

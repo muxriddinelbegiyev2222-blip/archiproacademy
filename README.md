@@ -116,3 +116,7 @@ natijani ARCHIPRO_UZ_Client_1.0.5 artifact sifatida saqlaydi.
 
 GitHubdagi kodni yangilash oldin yig'ilgan EXEni almashtirmaydi. Yangilangan
 EXEni o'rnating yoki BUILD_RELEASE.bat orqali qayta yig'ing.
+
+EXE build barcha mahalliy courses, licensing va ui modullarini fayllardan
+aniq ro'yxat qilib yig'adi. Bu dinamik importlar build vaqtida o'tib ketishiga
+yo'l qo'ymaydi. Build kirish nuqtasi: app/tools/build_client.py.

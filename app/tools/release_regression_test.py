@@ -118,6 +118,14 @@ class ReleaseRegression(unittest.TestCase):
         self.assertFalse(report["success"])
         self.assertIn("courses.lesson_content missing", report["error"])
 
+    def test_build_inventory_includes_every_dynamic_curriculum_source(self):
+        from tools.build_client import dynamic_modules
+        from courses.content_registry import iter_all_descriptors
+        modules = set(dynamic_modules())
+        for descriptor in iter_all_descriptors():
+            self.assertIn(descriptor["content_module"], modules)
+            self.assertIn(descriptor["quiz_module"], modules)
+
     def test_all_menu_pages_and_level_back(self):
         for index, title in enumerate(self.shell.menu_items):
             with self.subTest(menu=title):

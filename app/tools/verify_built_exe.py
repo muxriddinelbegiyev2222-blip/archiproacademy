@@ -12,9 +12,11 @@ def main():
         report_path = Path(directory) / "curriculum.json"
         result = subprocess.run([str(executable), "--verify-curriculum", str(report_path)],
                                 timeout=180, check=False)
-        if result.returncode != 0 or not report_path.is_file():
-            raise RuntimeError("Built EXE could not load its curriculum")
+        if not report_path.is_file():
+            raise RuntimeError("Built EXE produced no curriculum report; exit code " + str(result.returncode))
         report = json.loads(report_path.read_text(encoding="utf-8"))
+        if result.returncode != 0:
+            raise RuntimeError("Built EXE curriculum error: " + str(report))
         if not (report.get("success") and report.get("frozen") and
                 report.get("lessons") == 680 and report.get("quizzes") == 680 and
                 report.get("first_lesson_blocks") == 7):
