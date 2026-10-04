@@ -1340,6 +1340,85 @@ def audit_customer_features() -> None:
                 )
 
 # ============================================================
+# REPOSITORY SECURITY AUDIT
+# ============================================================
+
+def audit_repository_security() -> None:
+    section("8. REPOSITORY SECURITY AUDIT")
+
+    root_dir = APP_DIR.parent
+
+    forbidden_patterns = [
+        "**/archipro_private.key",
+        "**/*.archiprolic",
+        "**/*.archiprobackup",
+    ]
+
+    found_sensitive = []
+
+    for pattern in forbidden_patterns:
+        for path in root_dir.glob(
+            pattern
+        ):
+            if path.is_file():
+                found_sensitive.append(
+                    path
+                )
+
+    if found_sensitive:
+        for path in found_sensitive:
+            add_error(
+                "Repository ichida maxfiy/lokal fayl topildi: "
+                f"{path}"
+            )
+    else:
+        add_pass(
+            "Repository ichida private key/license/backup topilmadi."
+        )
+
+    gitignore = (
+        root_dir
+        / ".gitignore"
+    )
+
+    if not gitignore.exists():
+        add_error(
+            ".gitignore topilmadi."
+        )
+        return
+
+    try:
+        ignore_source = gitignore.read_text(
+            encoding="utf-8"
+        )
+    except Exception as exc:
+        add_error(
+            f".gitignore o'qilmadi: {exc}"
+        )
+        return
+
+    required_ignores = [
+        "archipro_private.key",
+        "*.archiprolic",
+        "*.archiprobackup",
+        "dist_client/",
+        "dist_admin/",
+        "dist_owner/",
+        "release/",
+    ]
+
+    for item in required_ignores:
+        if item in ignore_source:
+            add_pass(
+                f".gitignore: {item} mavjud."
+            )
+        else:
+            add_error(
+                f".gitignore: {item} topilmadi."
+            )
+
+
+# ============================================================
 # SUMMARY
 # ============================================================
 
@@ -1470,6 +1549,7 @@ def main() -> int:
     audit_content_registry()
     audit_main_file()
     audit_customer_features()
+    audit_repository_security()
     print_summary()
 
     return 1 if ERRORS else 0
