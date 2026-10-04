@@ -681,6 +681,8 @@ def audit_tables() -> None:
         "course_modules",
         "lessons",
         "lesson_progress",
+        "lesson_bookmarks",
+        "lesson_notes",
         "quiz_questions",
         "quiz_options",
         "quiz_attempts",
@@ -1639,6 +1641,14 @@ def audit_unique_indexes() -> None:
 
         pair_checks = {
             "lesson_progress": {
+                "user_id",
+                "lesson_id",
+            },
+            "lesson_bookmarks": {
+                "user_id",
+                "lesson_id",
+            },
+            "lesson_notes": {
                 "user_id",
                 "lesson_id",
             },
