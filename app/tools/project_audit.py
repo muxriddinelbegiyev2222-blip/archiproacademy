@@ -1310,6 +1310,16 @@ def audit_customer_features() -> None:
             "lesson::",
             "backButton",
         ],
+        APP_DIR / "tools" / "learning_flow_smoke_test.py": [
+            "LEARNING FLOW SMOKE TEST",
+            "save_quiz_attempt",
+            "complete_lesson",
+            "Attempts are not double-counted",
+        ],
+        APP_DIR / "courses" / "quiz_service.py": [
+            "completed_at",
+            "THEN 'completed'",
+        ],
     }
 
     for file_path, required_texts in required_files.items():
