@@ -19,9 +19,10 @@ def main():
             raise RuntimeError("Built EXE curriculum error: " + str(report))
         if not (report.get("success") and report.get("frozen") and
                 report.get("lessons") == 680 and report.get("quizzes") == 680 and
-                report.get("first_lesson_blocks") == 7):
+                report.get("first_lesson_blocks") == 11 and
+                report.get("workbook_lessons") == 680 and report.get("questions") == 2041):
             raise RuntimeError("Built EXE curriculum verification failed: " + str(report))
-        print("[PASS] Built EXE: 680 lessons, 680 quizzes, first lesson 7 blocks; v" + report["version"])
+        print("[PASS] Built EXE: 680 lessons, 680 quizzes, 680 workbooks, 2041 four-choice questions, first lesson 11 blocks; v" + report["version"])
     return 0
 
 

@@ -103,9 +103,9 @@ class ReleaseRegression(unittest.TestCase):
 
     def test_first_lesson_contains_teaching_material(self):
         page = self.open_first()
-        self.assertEqual(len(page.blocks), 7)
+        self.assertEqual(len(page.blocks), 11)
         self.assertIn("qulay, xavfsiz", page.blocks[1]["text"])
-        self.assertEqual(len(page.content_cards), 7)
+        self.assertEqual(len(page.content_cards), 11)
 
     def test_packaged_validator_fails_when_a_course_module_is_missing(self):
         import json
@@ -125,6 +125,62 @@ class ReleaseRegression(unittest.TestCase):
         for descriptor in iter_all_descriptors():
             self.assertIn(descriptor["content_module"], modules)
             self.assertIn(descriptor["quiz_module"], modules)
+
+    def test_revision_preserves_original_material_and_covers_all_lessons(self):
+        from courses.content_registry import (get_unique_content_sources, get_unique_quiz_sources,
+            load_dictionary, get_all_lesson_content, get_all_quiz_data,
+            get_lesson_content_by_code, get_quiz_data_by_code)
+        from courses.curriculum_revision import validate_revision
+        original = {}
+        raw_quizzes = {}
+        for module, name in get_unique_content_sources():
+            original.update(copy.deepcopy(load_dictionary(module, name)))
+        for module, name in get_unique_quiz_sources():
+            raw_quizzes.update(copy.deepcopy(load_dictionary(module, name)))
+        content, quizzes = get_all_lesson_content(), get_all_quiz_data()
+        report = validate_revision(content, quizzes)
+        self.assertEqual(report['workbook_lessons'], 680)
+        for code, blocks in original.items():
+            self.assertEqual(content[code][:-4], blocks, code)
+            self.assertEqual(content[code], get_lesson_content_by_code(code), code)
+            self.assertEqual(quizzes[code], get_quiz_data_by_code(code), code)
+            self.assertEqual([q['code'] for q in quizzes[code]],
+                             [q['code'] for q in raw_quizzes[code]], code)
+        for module, name in get_unique_content_sources():
+            self.assertEqual(load_dictionary(module, name),
+                             {k: original[k] for k in load_dictionary(module, name)})
+
+    def test_curriculum_upgrade_keeps_progress_notes_and_attempt_history(self):
+        from main import set_app_setting, CONTENT_SCHEMA_SETTING
+        from courses.quiz_service import seed_quizzes, save_quiz_attempt
+        from courses.user_features import save_lesson_note, set_lesson_bookmark
+        from courses.content_registry import get_unique_quiz_sources, load_dictionary
+        create_user('upgrade_check', 'test-password', 'Upgrade check', 'PRO')
+        user = authenticate_user('upgrade_check', 'test-password')
+        initialize_user_progress(user['id'])
+        lesson_id = self.lessons[0]['id']
+        save_lesson_note(user['id'], lesson_id, 'Upgrade must keep this note')
+        set_lesson_bookmark(user['id'], lesson_id, True)
+        save_quiz_attempt(user['id'], lesson_id, 73, False)
+        legacy = {}
+        for module, name in get_unique_quiz_sources():
+            legacy.update(load_dictionary(module, name))
+        with patch('courses.quiz_service.get_all_quiz_data', return_value=legacy):
+            seed_quizzes()
+        set_app_setting(CONTENT_SCHEMA_SETTING, 'ARCHIPRO_CONTENT_2026_10_04_V1')
+        tables = ('users', 'lesson_progress', 'lesson_notes', 'lesson_bookmarks',
+                  'quiz_attempts', 'level_exam_attempts', 'user_level_progress')
+        before = {table: query('SELECT * FROM '+table+' ORDER BY id') for table in tables}
+        identities = {table: query('SELECT id, code FROM '+table+' ORDER BY id')
+                      for table in ('lessons', 'quiz_questions')}
+        self.assertTrue(prepare_application())
+        for table in tables:
+            self.assertEqual(query('SELECT * FROM '+table+' ORDER BY id'), before[table], table)
+        for table in identities:
+            self.assertEqual(query('SELECT id, code FROM '+table+' ORDER BY id'), identities[table], table)
+        self.assertEqual(get_lesson_note(user['id'], lesson_id), 'Upgrade must keep this note')
+        self.assertFalse(prepare_application())
+        self.assertEqual(len(query('SELECT * FROM quiz_options')), 2041 * 4)
 
     def test_all_menu_pages_and_level_back(self):
         for index, title in enumerate(self.shell.menu_items):

@@ -1463,8 +1463,9 @@ class LessonPage(QWidget):
         )
 
         text.setTextInteractionFlags(
-            Qt.TextInteractionFlag.TextSelectableByMouse
+            Qt.TextInteractionFlag.TextSelectableByMouse | Qt.TextInteractionFlag.LinksAccessibleByMouse
         )
+        text.setOpenExternalLinks(True)
 
         raw_text = (
             block.get(

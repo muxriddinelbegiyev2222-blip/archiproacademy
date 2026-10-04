@@ -22,8 +22,10 @@ def write_validation_report(output_path):
             if not quizzes[code]:
                 raise ValueError("Empty quiz: " + code)
         first = content["L00_M01_001"]
-        if len(first) != 7 or "qulay, xavfsiz" not in first[1]["text"]:
+        if len(first) != 11 or "qulay, xavfsiz" not in first[1]["text"]:
             raise ValueError("The first lesson is missing its complete teaching content")
+        from courses.curriculum_revision import validate_revision
+        report.update(validate_revision(content, quizzes))
         report.update(success=True, lessons=len(content), quizzes=len(quizzes),
                       first_lesson_blocks=len(first))
     except Exception:

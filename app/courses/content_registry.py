@@ -1,6 +1,8 @@
 import importlib
 import re
 
+from courses.curriculum_revision import enhance_content, enhance_quiz
+
 
 # ============================================================
 # ARCHIPRO UZ
@@ -423,6 +425,8 @@ def get_lesson_content_by_code(
         )
     )
 
+    content = enhance_content(lesson_code, content)
+
     _content_cache[
         lesson_code
     ] = content
@@ -490,6 +494,8 @@ def get_quiz_data_by_code(
         lesson_code,
         [],
     )
+
+    quiz = enhance_quiz(lesson_code, quiz)
 
     _quiz_cache[
         lesson_code
@@ -663,7 +669,7 @@ def get_all_lesson_content():
             dictionary
         )
 
-    return combined
+    return {code: enhance_content(code, blocks) for code, blocks in combined.items()}
 
 
 # ============================================================
@@ -698,7 +704,7 @@ def get_all_quiz_data():
             dictionary
         )
 
-    return combined
+    return {code: enhance_quiz(code, questions) for code, questions in combined.items()}
 
 
 # ============================================================
