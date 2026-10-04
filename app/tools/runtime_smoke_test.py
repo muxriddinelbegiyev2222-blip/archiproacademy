@@ -357,6 +357,7 @@ def audit_course_services() -> None:
             "get_recent_lessons",
             "set_lesson_bookmark",
             "save_lesson_note",
+            "get_user_notes_map",
             "export_user_backup",
             "import_user_backup",
         ],
