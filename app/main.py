@@ -923,4 +923,9 @@ def main():
 
 
 if __name__ == "__main__":
+    if len(sys.argv) >= 2 and sys.argv[1] == "--verify-curriculum":
+        from courses.packaged_validation import write_validation_report
+        if len(sys.argv) != 3:
+            raise SystemExit(2)
+        raise SystemExit(write_validation_report(sys.argv[2]))
     main()

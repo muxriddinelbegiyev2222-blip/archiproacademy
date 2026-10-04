@@ -102,3 +102,17 @@ backup rollback va PRO kursining to'liq o'quv jarayonini tekshiradi.
 
 Windows EXE va installer shu manba koddan Windowsda yig'iladi.
 Linuxdagi Qt offscreen tekshiruv Windows installer/real ekran tekshiruvini almashtirmaydi.
+
+## v1.0.5: dars kontenti va Windows EXE tekshiruvi
+
+Dars kontenti yuklanmasa, qisqa izoh to'liq dars o'rnida takrorlanmaydi.
+Sahifa aniq xabar beradi va kontentsiz mini-testni boshlashni bloklaydi.
+Birinchi dars 7 ta mazmunli blokdan iborat.
+
+BUILD_EXE va BUILD_RELEASE endi yig'ilgan EXE ichidagi barcha 680 dars va
+680 mini-testni tekshiradi. Kontent modullari yetishmasa build muvaffaqiyatli
+hisoblanmaydi. Windows CI ham EXE yig'adi, uni tekshiradi va muvaffaqiyatli
+natijani ARCHIPRO_UZ_Client_1.0.5 artifact sifatida saqlaydi.
+
+GitHubdagi kodni yangilash oldin yig'ilgan EXEni almashtirmaydi. Yangilangan
+EXEni o'rnating yoki BUILD_RELEASE.bat orqali qayta yig'ing.

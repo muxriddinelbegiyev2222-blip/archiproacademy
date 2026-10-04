@@ -80,6 +80,44 @@ class ReleaseRegression(unittest.TestCase):
         events()
         return self.shell.page_cache[self.shell.current_page_key]
 
+    def test_missing_content_is_visible_and_cannot_start_quiz(self):
+        from PySide6.QtWidgets import QLabel
+        for failure in (None, ImportError("courses.lesson_content missing")):
+            with self.subTest(failure=failure):
+                options = {"return_value": []} if failure is None else {"side_effect": failure}
+                with patch("ui.embedded_pages.get_lesson_content_by_code", **options):
+                    with self.assertLogs("ui.embedded_pages", level="ERROR"):
+                        page = LessonPage(dict(self.lessons[0], status="completed"), self.pro)
+                events()
+                self.assertIsNotNone(page.content_error)
+                self.assertEqual(page.blocks, [])
+                self.assertFalse(page.findChild(QPushButton, "quizButton").isEnabled())
+                self.assertFalse(page.findChild(QPushButton, "nextLessonButton").isEnabled())
+                self.assertTrue(any("Dars ma'lumotlari yuklanmadi" in label.text()
+                                    for label in page.findChildren(QLabel)))
+                page.open_quiz_callback = lambda _: self.fail("Missing-content quiz opened")
+                page.start_quiz()
+                self.assertEqual(page.progress_bar.value(), 0)
+                page.deleteLater()
+                events()
+
+    def test_first_lesson_contains_teaching_material(self):
+        page = self.open_first()
+        self.assertEqual(len(page.blocks), 7)
+        self.assertIn("qulay, xavfsiz", page.blocks[1]["text"])
+        self.assertEqual(len(page.content_cards), 7)
+
+    def test_packaged_validator_fails_when_a_course_module_is_missing(self):
+        import json
+        from courses.packaged_validation import write_validation_report
+        report_path = Path(_TEST_DIR.name) / "missing-module.json"
+        with patch("courses.content_registry.get_all_lesson_content",
+                   side_effect=ImportError("courses.lesson_content missing")):
+            self.assertEqual(write_validation_report(report_path), 1)
+        report = json.loads(report_path.read_text(encoding="utf-8"))
+        self.assertFalse(report["success"])
+        self.assertIn("courses.lesson_content missing", report["error"])
+
     def test_all_menu_pages_and_level_back(self):
         for index, title in enumerate(self.shell.menu_items):
             with self.subTest(menu=title):

@@ -1,3 +1,5 @@
+import logging
+
 from PySide6.QtCore import (
     Qt,
     Signal,
@@ -90,6 +92,7 @@ class LessonPage(QWidget):
 
         self.map_buttons = []
 
+        self.content_error = None
         try:
             self.blocks = (
                 get_lesson_content_by_code(
@@ -100,7 +103,16 @@ class LessonPage(QWidget):
                 )
                 or []
             )
-        except Exception:
+            if not self.blocks:
+                raise ValueError("Dars kontenti topilmadi: " + str(self.lesson.get("code", "")))
+            if any(not isinstance(block, dict) or not str(block.get("text", "")).strip()
+                   for block in self.blocks):
+                raise ValueError("Dars kontenti noto'g'ri formatda")
+        except Exception as exc:
+            self.content_error = exc
+            logging.getLogger(__name__).exception(
+                "Lesson content load failed: %s", self.lesson.get("code", "")
+            )
             self.blocks = []
 
         self.setObjectName(
@@ -992,20 +1004,12 @@ class LessonPage(QWidget):
 
         else:
             fallback = {
-                "title": (
-                    self.lesson.get(
-                        "title",
-                        "Dars",
-                    )
-                ),
-                "type": "normal",
+                "title": "Dars ma'lumotlari yuklanmadi",
+                "type": "error",
                 "text": (
-                    self.lesson.get(
-                        "summary",
-                        "",
-                    )
-                    or
-                    "Ushbu dars kontenti hozircha mavjud emas."
+                    "To'liq dars matnini ochib bo'lmadi. Dasturni qayta oching. "
+                    "Muammo davom etsa, yangilangan dastur nusxasini o'rnating "
+                    "yoki yordam xizmatiga murojaat qiling."
                 ),
             }
 
@@ -1229,6 +1233,7 @@ class LessonPage(QWidget):
             "quizButton"
         )
 
+        quiz_button.setEnabled(bool(self.blocks))
         quiz_button.clicked.connect(
             self.start_quiz
         )
@@ -1252,7 +1257,7 @@ class LessonPage(QWidget):
         ).lower()
 
         self.next_lesson_button.setEnabled(
-            lesson_status == "completed"
+            bool(self.blocks) and lesson_status == "completed"
         )
 
         self.next_lesson_button.clicked.connect(
@@ -1741,6 +1746,11 @@ class LessonPage(QWidget):
         self,
         value=None,
     ):
+        if not self.blocks:
+            self.progress_bar.setRange(0, 1)
+            self.progress_bar.setValue(0)
+            self.progress_text.setText("Dars yuklanmadi")
+            return
         if not self.content_cards:
             return
 
@@ -1818,6 +1828,8 @@ class LessonPage(QWidget):
     # ========================================================
 
     def start_quiz(self):
+        if not self.blocks:
+            return
         if self.open_quiz_callback is not None:
             self.open_quiz_callback(
                 self

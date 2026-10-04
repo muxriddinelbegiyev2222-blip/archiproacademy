@@ -183,6 +183,14 @@ if errorlevel 1 (
 )
 
 echo.
+REM Verify the built EXE itself, not only Python source files.
+python "app\tools\verify_built_exe.py" "dist\ARCHIPRO UZ.exe"
+if errorlevel 1 (
+    echo [ERROR] EXE CONTENT CHECK FAILED - RELEASE CANCELLED
+    pause
+    exit /b 1
+)
+
 echo [OK] ARCHIPRO UZ.exe yaratildi.
 
 echo.

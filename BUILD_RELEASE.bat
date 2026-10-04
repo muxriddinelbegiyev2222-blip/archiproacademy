@@ -275,6 +275,14 @@ if not exist "dist_client\ARCHIPRO UZ.exe" (
     exit /b 1
 )
 
+REM Verify the built EXE itself, not only Python source files.
+python "app\tools\verify_built_exe.py" "dist_client\ARCHIPRO UZ.exe"
+if errorlevel 1 (
+    echo [ERROR] EXE CONTENT CHECK FAILED - RELEASE CANCELLED
+    pause
+    exit /b 1
+)
+
 copy /Y ^
     "dist_client\ARCHIPRO UZ.exe" ^
     "release\ARCHIPRO_UZ_CLIENT\ARCHIPRO UZ.exe" ^

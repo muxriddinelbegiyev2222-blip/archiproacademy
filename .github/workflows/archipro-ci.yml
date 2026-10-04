@@ -60,3 +60,20 @@ jobs:
         run: python app/tools/release_regression_test.py
 
 
+
+      - name: Build Windows client with embedded course modules
+        shell: pwsh
+        run: |
+          python -m pip install pyinstaller
+          python -m PyInstaller --noconfirm --clean --onefile --windowed --name "ARCHIPRO UZ" --icon archipro.ico --paths app --collect-all PySide6 --collect-submodules courses --collect-submodules licensing app/main.py
+
+      - name: Verify curriculum in the actual Windows EXE
+        shell: pwsh
+        run: python app/tools/verify_built_exe.py "dist/ARCHIPRO UZ.exe"
+
+      - name: Upload verified Windows client
+        uses: actions/upload-artifact@v4
+        with:
+          name: ARCHIPRO_UZ_Client_1.0.5
+          path: dist/ARCHIPRO UZ.exe
+          if-no-files-found: error
