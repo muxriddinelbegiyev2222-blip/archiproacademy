@@ -15,12 +15,20 @@ from courses.course_service import (
     get_learning_overview,
 )
 
+from courses.user_features import (
+    get_bookmarked_lesson_ids,
+)
+
 
 class LibraryPage(QWidget):
     open_level_requested = Signal(
         str,
         str,
         str,
+    )
+
+    open_lesson_requested = Signal(
+        dict
     )
 
     MAX_VISIBLE_RESULTS = 50
@@ -32,21 +40,33 @@ class LibraryPage(QWidget):
         super().__init__()
 
         self.user = user
+        self.is_master = (
+            str(
+                user.get(
+                    "license_type",
+                    "",
+                )
+            ).upper()
+            == "MASTER"
+        )
 
         self.lesson_index = []
+        self.bookmarked_ids = set()
+        self.only_bookmarks = False
 
         self.result_layout = None
         self.result_info = None
 
-        self.build_index()
-
+        self.reload_index()
         self.build_ui()
 
-    # ========================================================
-    # INDEX
-    # ========================================================
+    def reload_index(self):
+        self.bookmarked_ids = (
+            get_bookmarked_lesson_ids(
+                self.user["id"]
+            )
+        )
 
-    def build_index(self):
         levels = get_learning_overview(
             self.user["id"]
         )
@@ -62,7 +82,11 @@ class LibraryPage(QWidget):
                     "lessons",
                     [],
                 ):
-                    result.append(
+                    item = dict(
+                        lesson
+                    )
+
+                    item.update(
                         {
                             "level_code": level.get(
                                 "code",
@@ -80,30 +104,27 @@ class LibraryPage(QWidget):
                                 "title",
                                 "",
                             ),
-                            "lesson_title": lesson.get(
-                                "title",
+                            "module_code": module.get(
+                                "code",
                                 "",
                             ),
-                            "lesson_type": lesson.get(
-                                "lesson_type",
-                                "",
-                            ),
-                            "minutes": lesson.get(
-                                "estimated_minutes",
-                                0,
-                            ),
-                            "status": lesson.get(
-                                "status",
-                                "locked",
+                            "bookmarked": (
+                                int(
+                                    lesson.get(
+                                        "id",
+                                        0,
+                                    )
+                                )
+                                in self.bookmarked_ids
                             ),
                         }
                     )
 
-        self.lesson_index = result
+                    result.append(
+                        item
+                    )
 
-    # ========================================================
-    # UI
-    # ========================================================
+        self.lesson_index = result
 
     def build_ui(self):
         root = QVBoxLayout(
@@ -121,12 +142,7 @@ class LibraryPage(QWidget):
             16
         )
 
-        # ====================================================
-        # HEADER
-        # ====================================================
-
         header = QFrame()
-
         header.setObjectName(
             "overviewHeader"
         )
@@ -143,26 +159,27 @@ class LibraryPage(QWidget):
         )
 
         title = QLabel(
-            "Kutubxona"
+            "Kutubxona va global qidiruv"
         )
-
         title.setObjectName(
             "overviewTitle"
         )
 
         subtitle = QLabel(
-            "ARCHIPRO UZ dagi barcha darslarni "
-            "tez qidirish markazi."
+            "680 dars ichidan Level, modul, dars nomi, "
+            "kod va qisqa mazmun bo'yicha tez qidiring. "
+            "Ctrl+K bilan shu sahifani tez ochish mumkin."
         )
-
         subtitle.setObjectName(
             "overviewSubtitle"
+        )
+        subtitle.setWordWrap(
+            True
         )
 
         header_layout.addWidget(
             title
         )
-
         header_layout.addWidget(
             subtitle
         )
@@ -171,12 +188,7 @@ class LibraryPage(QWidget):
             header
         )
 
-        # ====================================================
-        # SEARCH
-        # ====================================================
-
         search_card = QFrame()
-
         search_card.setObjectName(
             "levelOverviewCard"
         )
@@ -184,32 +196,35 @@ class LibraryPage(QWidget):
         search_layout = QVBoxLayout(
             search_card
         )
-
         search_layout.setContentsMargins(
             18,
             15,
             18,
             15,
         )
-
-        label = QLabel(
-            "Dars, modul yoki Level nomini qidiring"
+        search_layout.setSpacing(
+            10
         )
 
+        label = QLabel(
+            "Global qidiruv"
+        )
         label.setObjectName(
             "levelCode"
         )
 
-        self.search_input = QLineEdit()
+        controls = QHBoxLayout()
+        controls.setSpacing(
+            10
+        )
 
+        self.search_input = QLineEdit()
         self.search_input.setPlaceholderText(
             "Masalan: fasad, Archicad, fundament, genplan..."
         )
-
         self.search_input.setClearButtonEnabled(
             True
         )
-
         self.search_input.setStyleSheet(
             """
             QLineEdit {
@@ -231,24 +246,39 @@ class LibraryPage(QWidget):
             self.update_results
         )
 
-        search_layout.addWidget(
-            label
+        self.bookmark_button = QPushButton(
+            "★ FAQAT BOOKMARKLAR"
+        )
+        self.bookmark_button.setObjectName(
+            "openLevelButton"
+        )
+        self.bookmark_button.setCheckable(
+            True
+        )
+        self.bookmark_button.toggled.connect(
+            self.toggle_bookmarks
+        )
+
+        controls.addWidget(
+            self.search_input,
+            1,
+        )
+        controls.addWidget(
+            self.bookmark_button
         )
 
         search_layout.addWidget(
-            self.search_input
+            label
+        )
+        search_layout.addLayout(
+            controls
         )
 
         root.addWidget(
             search_card
         )
 
-        # ====================================================
-        # RESULT INFO
-        # ====================================================
-
         self.result_info = QLabel()
-
         self.result_info.setObjectName(
             "progressText"
         )
@@ -257,18 +287,12 @@ class LibraryPage(QWidget):
             self.result_info
         )
 
-        # ====================================================
-        # RESULTS
-        # ====================================================
-
         scroll = QScrollArea()
-
         scroll.setWidgetResizable(
             True
         )
 
         content = QWidget()
-
         content.setObjectName(
             "overviewContent"
         )
@@ -276,14 +300,12 @@ class LibraryPage(QWidget):
         self.result_layout = QVBoxLayout(
             content
         )
-
         self.result_layout.setContentsMargins(
             0,
             0,
             8,
             20,
         )
-
         self.result_layout.setSpacing(
             9
         )
@@ -301,9 +323,21 @@ class LibraryPage(QWidget):
             ""
         )
 
-    # ========================================================
-    # RESULT
-    # ========================================================
+    def focus_search(self):
+        self.search_input.setFocus()
+        self.search_input.selectAll()
+
+    def toggle_bookmarks(
+        self,
+        enabled: bool,
+    ):
+        self.only_bookmarks = bool(
+            enabled
+        )
+
+        self.update_results(
+            self.search_input.text()
+        )
 
     def clear_results(self):
         while self.result_layout.count():
@@ -321,37 +355,81 @@ class LibraryPage(QWidget):
         text: str,
     ):
         query = (
-            text.strip().lower()
+            str(
+                text
+                or ""
+            )
+            .strip()
+            .lower()
         )
 
         self.clear_results()
 
-        if query:
-            matches = [
-                item
-                for item in self.lesson_index
-                if (
-                    query
-                    in item[
-                        "lesson_title"
-                    ].lower()
-                    or query
-                    in item[
-                        "module_title"
-                    ].lower()
-                    or query
-                    in item[
-                        "level_title"
-                    ].lower()
-                    or query
-                    in item[
-                        "level_code"
-                    ].lower()
-                )
-            ]
+        matches = []
 
-        else:
-            matches = self.lesson_index
+        for item in self.lesson_index:
+            if (
+                self.only_bookmarks
+                and not item.get(
+                    "bookmarked"
+                )
+            ):
+                continue
+
+            haystack = " ".join(
+                [
+                    str(
+                        item.get(
+                            "title",
+                            "",
+                        )
+                    ),
+                    str(
+                        item.get(
+                            "summary",
+                            "",
+                        )
+                    ),
+                    str(
+                        item.get(
+                            "code",
+                            "",
+                        )
+                    ),
+                    str(
+                        item.get(
+                            "module_title",
+                            "",
+                        )
+                    ),
+                    str(
+                        item.get(
+                            "module_code",
+                            "",
+                        )
+                    ),
+                    str(
+                        item.get(
+                            "level_title",
+                            "",
+                        )
+                    ),
+                    str(
+                        item.get(
+                            "level_code",
+                            "",
+                        )
+                    ),
+                ]
+            ).lower()
+
+            if (
+                not query
+                or query in haystack
+            ):
+                matches.append(
+                    item
+                )
 
         visible = matches[
             :self.MAX_VISIBLE_RESULTS
@@ -379,7 +457,6 @@ class LibraryPage(QWidget):
             empty = QLabel(
                 "Mos dars topilmadi."
             )
-
             empty.setObjectName(
                 "overviewSubtitle"
             )
@@ -390,16 +467,11 @@ class LibraryPage(QWidget):
 
         self.result_layout.addStretch()
 
-    # ========================================================
-    # CARD
-    # ========================================================
-
     def create_result_card(
         self,
         item: dict,
     ):
         card = QFrame()
-
         card.setObjectName(
             "levelOverviewCard"
         )
@@ -407,56 +479,82 @@ class LibraryPage(QWidget):
         layout = QHBoxLayout(
             card
         )
-
         layout.setContentsMargins(
             18,
             14,
             18,
             14,
         )
-
         layout.setSpacing(
             16
         )
 
         text_area = QVBoxLayout()
 
-        lesson_title = QLabel(
-            item[
-                "lesson_title"
-            ]
+        title_text = str(
+            item.get(
+                "title",
+                "Dars",
+            )
         )
 
+        if item.get(
+            "bookmarked"
+        ):
+            title_text = (
+                "★ "
+                + title_text
+            )
+
+        lesson_title = QLabel(
+            title_text
+        )
         lesson_title.setObjectName(
             "levelName"
         )
+        lesson_title.setWordWrap(
+            True
+        )
 
         readable_level = (
-            item[
-                "level_code"
-            ]
+            str(
+                item.get(
+                    "level_code",
+                    "",
+                )
+            )
             .replace(
                 "LEVEL_",
                 "LEVEL ",
             )
         )
 
+        status = str(
+            item.get(
+                "status",
+                "locked",
+            )
+        )
+
         meta = QLabel(
             f"{readable_level}"
             f"  •  "
-            f"{item['module_title']}"
+            f"{item.get('module_title', '')}"
             f"  •  "
-            f"{item['minutes']} daqiqa"
+            f"{item.get('estimated_minutes', 0)} daqiqa"
+            f"  •  "
+            f"{status.upper()}"
         )
-
         meta.setObjectName(
             "levelDesc"
+        )
+        meta.setWordWrap(
+            True
         )
 
         text_area.addWidget(
             lesson_title
         )
-
         text_area.addWidget(
             meta
         )
@@ -466,29 +564,54 @@ class LibraryPage(QWidget):
             1,
         )
 
-        button = QPushButton(
-            "LEVELGA O'TISH  →"
+        can_open = (
+            self.is_master
+            or status
+            in {
+                "available",
+                "completed",
+            }
         )
 
-        button.setObjectName(
-            "openLevelButton"
-        )
-
-        button.clicked.connect(
-            lambda checked=False,
-            data=item:
-            self.open_level_requested.emit(
-                data[
-                    "level_code"
-                ],
-                data[
-                    "level_title"
-                ],
-                data[
-                    "level_subtitle"
-                ],
+        if can_open:
+            button = QPushButton(
+                "DARSNI OCHISH  →"
             )
-        )
+            button.setObjectName(
+                "openLevelButton"
+            )
+            button.clicked.connect(
+                lambda checked=False,
+                data=dict(
+                    item
+                ):
+                self.open_lesson_requested.emit(
+                    data
+                )
+            )
+
+        else:
+            button = QPushButton(
+                "LEVELGA O'TISH  →"
+            )
+            button.setObjectName(
+                "openLevelButton"
+            )
+            button.clicked.connect(
+                lambda checked=False,
+                data=item:
+                self.open_level_requested.emit(
+                    data[
+                        "level_code"
+                    ],
+                    data[
+                        "level_title"
+                    ],
+                    data[
+                        "level_subtitle"
+                    ],
+                )
+            )
 
         layout.addWidget(
             button
