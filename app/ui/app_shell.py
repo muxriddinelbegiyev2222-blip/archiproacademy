@@ -1468,12 +1468,17 @@ class AppShell(QMainWindow):
                 LessonPage,
             )
 
-            mark_lesson_opened(
-                self.user["id"],
-                int(
-                    lesson_id_value
-                ),
-            )
+            try:
+                mark_lesson_opened(
+                    self.user["id"],
+                    int(
+                        lesson_id_value
+                    ),
+                )
+            except Exception:
+                # Recent-history yozuvi yordamchi funksiya.
+                # U ishlamasa ham darsning o'zi ochilishi shart.
+                pass
 
             self.transient_return_keys[
                 key
