@@ -353,6 +353,13 @@ def audit_course_services() -> None:
         "courses.seed_courses": [
             "seed_course_structure",
         ],
+        "courses.user_features": [
+            "get_recent_lessons",
+            "set_lesson_bookmark",
+            "save_lesson_note",
+            "export_user_backup",
+            "import_user_backup",
+        ],
     }
 
     for module_name, functions in checks.items():
