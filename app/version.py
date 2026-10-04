@@ -1,4 +1,4 @@
 APP_NAME = "ARCHIPRO UZ"
-APP_VERSION = "1.0.0"
+APP_VERSION = "1.0.1"
 
 __version__ = APP_VERSION
