@@ -65,7 +65,7 @@ Windows Desktop
 
 ## Versiya
 
-ARCHIPRO UZ v1.0.4 — Release Candidate
+ARCHIPRO UZ v1.0.6 — Release Candidate
 
 
 ## Release sifat nazorati
@@ -78,6 +78,7 @@ Release build quyidagi tekshiruvlardan o'tmasdan yaratilmaydi:
 - Customer Features Smoke Test
 - UI Navigation Smoke Test
 - Learning Flow Smoke Test
+- Full Curriculum Release Regression Test
 
 UI Navigation Smoke Test real `OCHISH` tugmasini bosib,
 Level -> Lesson -> Orqaga navigatsiya zanjirini tekshiradi.
@@ -107,12 +108,12 @@ Linuxdagi Qt offscreen tekshiruv Windows installer/real ekran tekshiruvini almas
 
 Dars kontenti yuklanmasa, qisqa izoh to'liq dars o'rnida takrorlanmaydi.
 Sahifa aniq xabar beradi va kontentsiz mini-testni boshlashni bloklaydi.
-Birinchi dars 7 ta mazmunli blokdan iborat.
+v1.0.5da birinchi dars 7 ta mazmunli blokdan iborat edi; v1.0.6da ular saqlanib, 4 ta amaliy blok qo‘shildi.
 
 BUILD_EXE va BUILD_RELEASE endi yig'ilgan EXE ichidagi barcha 680 dars va
 680 mini-testni tekshiradi. Kontent modullari yetishmasa build muvaffaqiyatli
 hisoblanmaydi. Windows CI ham EXE yig'adi, uni tekshiradi va muvaffaqiyatli
-natijani ARCHIPRO_UZ_Client_1.0.5 artifact sifatida saqlaydi.
+natijani versiyaga mos artifact sifatida yuklashga urinadi. Artifact GitHub saqlash kvotasiga bog‘liq; kvota to‘lsa, kodni olib Windowsda BUILD_RELEASE.bat orqali yig‘ing.
 
 GitHubdagi kodni yangilash oldin yig'ilgan EXEni almashtirmaydi. Yangilangan
 EXEni o'rnating yoki BUILD_RELEASE.bat orqali qayta yig'ing.
@@ -120,3 +121,9 @@ EXEni o'rnating yoki BUILD_RELEASE.bat orqali qayta yig'ing.
 EXE build barcha mahalliy courses, licensing va ui modullarini fayllardan
 aniq ro'yxat qilib yig'adi. Bu dinamik importlar build vaqtida o'tib ketishiga
 yo'l qo'ymaydi. Build kirish nuqtasi: app/tools/build_client.py.
+
+## v1.0.6: barcha darslarga amaliy ish daftari
+
+680 darsdagi 3840 mavjud blok saqlandi; 2720 amaliy va manba bloki qo‘shildi. 137 modul uchun alohida o‘quv holati va 680 dars uchun alohida topshiriq bor. Takror va qisqa testlar yangilandi: jami 2041 savol to‘rt variantli. Uzun javoblar test va imtihon oynasida qatorlarga bo‘linadi.
+
+Yangilashda progress, eslatmalar, xatcho‘plar va urinishlar tarixi saqlanishi regression test bilan tekshiriladi. [Yangilash mazmuni va tekshiruv chegarasi](CURRICULUM_UPDATE_1_0_6.md). Bu amaliy material yangilanishi 100% xatosizlik yoki professional loyiha ekspertizasi sertifikati emas.
