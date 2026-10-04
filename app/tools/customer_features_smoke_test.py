@@ -354,6 +354,37 @@ def main() -> int:
 
             cursor.execute(
                 """
+                UPDATE lesson_progress
+                SET
+                    status = 'completed',
+                    score = 95,
+                    best_score = 95,
+                    attempts = 2
+                WHERE user_id = ?
+                  AND lesson_id = ?
+                """,
+                (
+                    user_id,
+                    lesson_id,
+                ),
+            )
+
+            cursor.execute(
+                """
+                UPDATE user_level_progress
+                SET
+                    status = 'completed',
+                    best_exam_score = 90,
+                    exam_attempts = 1
+                WHERE user_id = ?
+                """,
+                (
+                    user_id,
+                ),
+            )
+
+            cursor.execute(
+                """
                 DELETE FROM lesson_bookmarks
                 WHERE user_id = ?
                 """,
@@ -399,6 +430,80 @@ def main() -> int:
             "Backup eslatmani tiklamadi.",
         )
 
+        connection = get_connection()
+
+        try:
+            cursor = connection.cursor()
+
+            cursor.execute(
+                """
+                SELECT
+                    status,
+                    best_score
+                FROM lesson_progress
+                WHERE user_id = ?
+                  AND lesson_id = ?
+                LIMIT 1
+                """,
+                (
+                    user_id,
+                    lesson_id,
+                ),
+            )
+
+            restored_progress = (
+                cursor.fetchone()
+            )
+
+            cursor.execute(
+                """
+                SELECT
+                    status,
+                    best_exam_score
+                FROM user_level_progress
+                WHERE user_id = ?
+                LIMIT 1
+                """,
+                (
+                    user_id,
+                ),
+            )
+
+            restored_level = (
+                cursor.fetchone()
+            )
+
+        finally:
+            connection.close()
+
+        assert_true(
+            restored_progress[
+                "status"
+            ]
+            == "completed"
+            and int(
+                restored_progress[
+                    "best_score"
+                ]
+            )
+            == 95,
+            "Stale backup mavjud lesson progressini pasaytirdi.",
+        )
+
+        assert_true(
+            restored_level[
+                "status"
+            ]
+            == "completed"
+            and int(
+                restored_level[
+                    "best_exam_score"
+                ]
+            )
+            == 90,
+            "Stale backup mavjud Level progressini pasaytirdi.",
+        )
+
         print(
             "[PASS] Recent lessons"
         )
@@ -413,6 +518,9 @@ def main() -> int:
         )
         print(
             "[PASS] Backup restore"
+        )
+        print(
+            "[PASS] No progress downgrade"
         )
         print(
             "[PASS] Credential exclusion"
