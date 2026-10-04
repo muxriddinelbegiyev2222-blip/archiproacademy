@@ -1281,6 +1281,7 @@ def audit_customer_features() -> None:
             "Yordam",
             "continue_learning",
             "lesson_open_requested.connect",
+            "open_lesson_callback=(",
             "open_lesson_page",
         ],
         APP_DIR / "ui" / "learning_page.py": [
@@ -1306,6 +1307,7 @@ def audit_customer_features() -> None:
         ],
         APP_DIR / "tools" / "ui_navigation_smoke_test.py": [
             "UI NAVIGATION SMOKE TEST",
+            "DashboardWindow",
             "openLesson",
             "lesson::",
             "backButton",
