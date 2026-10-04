@@ -229,5 +229,6 @@ release/
 # ARCHIPRO UZ local runtime / secrets
 ARCHIPRO_UZ_ADMIN/
 *.archiprolic
+*.archiprobackup
 archipro_private.key
 
