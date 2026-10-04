@@ -369,6 +369,12 @@ class LibraryPage(QWidget):
             enabled
         )
 
+        self.bookmark_button.setText(
+            "✓ BOOKMARKLAR"
+            if self.only_bookmarks
+            else "★ FAQAT BOOKMARKLAR"
+        )
+
         self.update_results(
             self.search_input.text()
         )
@@ -379,6 +385,12 @@ class LibraryPage(QWidget):
     ):
         self.only_notes = bool(
             enabled
+        )
+
+        self.notes_button.setText(
+            "✓ ESLATMALAR"
+            if self.only_notes
+            else "✎ FAQAT ESLATMALAR"
         )
 
         self.update_results(
