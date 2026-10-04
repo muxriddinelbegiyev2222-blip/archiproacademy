@@ -512,6 +512,11 @@ class AppShell(QMainWindow):
             None,
         )
 
+        self.transient_return_keys.pop(
+            key,
+            None,
+        )
+
         if page is None:
             return
 
