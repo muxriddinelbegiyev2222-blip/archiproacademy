@@ -180,6 +180,15 @@ if errorlevel 1 (
     exit /b 1
 )
 
+python "app\tools\ui_navigation_smoke_test.py"
+
+if errorlevel 1 (
+    echo.
+    echo [ERROR] UI NAVIGATION SMOKE TEST FAILED
+    pause
+    exit /b 1
+)
+
 echo.
 echo [PASS] Release preflight muvaffaqiyatli.
 echo.
