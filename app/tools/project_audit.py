@@ -1289,6 +1289,13 @@ def audit_customer_features() -> None:
             "exam_open_requested",
             "lesson_open_requested.emit",
         ],
+        APP_DIR / "ui" / "learning_window.py": [
+            "_open_lesson_from_button",
+            "partial(",
+            "openLesson",
+            "reviewLesson",
+            "masterOpenLesson",
+        ],
         APP_DIR / "database" / "database.py": [
             "lesson_bookmarks",
             "lesson_notes",
