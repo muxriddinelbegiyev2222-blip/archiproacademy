@@ -65,7 +65,7 @@ Windows Desktop
 
 ## Versiya
 
-ARCHIPRO UZ v1.0.1 — Release Candidate
+ARCHIPRO UZ v1.0.2 — Release Candidate
 
 
 ## Release sifat nazorati
