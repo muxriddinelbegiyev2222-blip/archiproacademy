@@ -781,8 +781,20 @@ def import_user_backup(
 
                 ON CONFLICT(user_id, lesson_id)
                 DO UPDATE SET
-                    status = excluded.status,
-                    score = excluded.score,
+                    status = CASE
+                        WHEN lesson_progress.status = 'completed'
+                            THEN 'completed'
+                        WHEN excluded.status = 'completed'
+                            THEN 'completed'
+                        WHEN lesson_progress.status = 'available'
+                             OR excluded.status = 'available'
+                            THEN 'available'
+                        ELSE lesson_progress.status
+                    END,
+                    score = MAX(
+                        lesson_progress.score,
+                        excluded.score
+                    ),
                     best_score = MAX(
                         lesson_progress.best_score,
                         excluded.best_score
@@ -874,7 +886,16 @@ def import_user_backup(
 
                 ON CONFLICT(user_id, level_id)
                 DO UPDATE SET
-                    status = excluded.status,
+                    status = CASE
+                        WHEN user_level_progress.status = 'completed'
+                            THEN 'completed'
+                        WHEN excluded.status = 'completed'
+                            THEN 'completed'
+                        WHEN user_level_progress.status = 'available'
+                             OR excluded.status = 'available'
+                            THEN 'available'
+                        ELSE user_level_progress.status
+                    END,
                     best_exam_score = MAX(
                         user_level_progress.best_exam_score,
                         excluded.best_exam_score
