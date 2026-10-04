@@ -5,6 +5,7 @@ import os
 import shutil
 import sys
 import tempfile
+import traceback
 from pathlib import Path
 
 
@@ -54,6 +55,14 @@ atexit.register(
     _cleanup
 )
 
+
+from PySide6.QtCore import (
+    Qt,
+)
+
+from PySide6.QtTest import (
+    QTest,
+)
 
 from PySide6.QtWidgets import (
     QApplication,
@@ -279,6 +288,11 @@ def main() -> int:
             user
         )
 
+        # Real widget event zanjirini tekshirish uchun shellni
+        # offscreen platformda ham ko'rsatilgan holatga o'tkazamiz.
+        shell.show()
+        app.processEvents()
+
         shell.open_single_level(
             "LEVEL_00",
             "Absolute Zero",
@@ -320,7 +334,10 @@ def main() -> int:
             "OCHISH tugmasi disabled.",
         )
 
-        open_button.click()
+        QTest.mouseClick(
+            open_button,
+            Qt.MouseButton.LeftButton,
+        )
         app.processEvents()
 
         lesson_key = (
@@ -404,6 +421,8 @@ def main() -> int:
         return 0
 
     except Exception as exc:
+        traceback.print_exc()
+
         print(
             "[FAIL] "
             + str(
