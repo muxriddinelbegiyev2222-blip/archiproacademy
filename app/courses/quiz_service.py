@@ -1,4 +1,5 @@
 import random
+from datetime import datetime
 
 from database.database import (
     get_connection,
@@ -279,6 +280,14 @@ def save_quiz_attempt(
             ),
         )
 
+        completed_at = (
+            datetime.now().isoformat(
+                timespec="seconds"
+            )
+            if passed
+            else None
+        )
+
         cursor.execute(
             """
             UPDATE lesson_progress
@@ -292,7 +301,30 @@ def save_quiz_attempt(
                         WHEN best_score < ?
                         THEN ?
                         ELSE best_score
-                    END
+                    END,
+
+                status =
+                    CASE
+                        WHEN ? = 1
+                        THEN 'completed'
+                        ELSE status
+                    END,
+
+                completed_at =
+                    CASE
+                        WHEN ? = 1
+                        THEN COALESCE(
+                            completed_at,
+                            ?
+                        )
+                        ELSE completed_at
+                    END,
+
+                last_opened_at =
+                    COALESCE(
+                        last_opened_at,
+                        ?
+                    )
 
             WHERE user_id = ?
               AND lesson_id = ?
@@ -301,6 +333,10 @@ def save_quiz_attempt(
                 score,
                 score,
                 score,
+                1 if passed else 0,
+                1 if passed else 0,
+                completed_at,
+                completed_at,
                 user_id,
                 lesson_id,
             ),
