@@ -40,10 +40,25 @@ def get_app_data_directory() -> Path:
     return app_directory
 
 
-DATABASE_PATH = (
-    get_app_data_directory()
-    / "archipro.db"
+_DATABASE_OVERRIDE = os.getenv(
+    "ARCHIPRO_UZ_DATABASE_PATH"
 )
+
+if _DATABASE_OVERRIDE:
+    DATABASE_PATH = Path(
+        _DATABASE_OVERRIDE
+    )
+
+    DATABASE_PATH.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+else:
+    DATABASE_PATH = (
+        get_app_data_directory()
+        / "archipro.db"
+    )
 
 
 # ============================================================
