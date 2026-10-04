@@ -183,6 +183,33 @@ for manifest in ('lesson_figures.json', 'archicad_figures.json'):
         logging.error('Lesson visual manifest unavailable: %s', _LOAD_ERRORS[-1])
 
 
+# Reviewed material illustrations replace schematic supplements only for the
+# explicitly listed lessons. Genuine software documentation captures remain.
+try:
+    realistic_records = json.loads((ASSETS / 'realistic_figures.json').read_text(encoding='utf-8'))
+    reviewed = {}
+    for record in realistic_records:
+        entry = dict(record)
+        code = entry.pop('code')
+        if code not in CATALOG or code in reviewed:
+            raise ValueError('Unknown or duplicate realistic lesson: ' + code)
+        if not entry['asset'].startswith('realistic-') or not entry['asset'].endswith('.jpg'):
+            raise ValueError('Unexpected realistic image: ' + code)
+        if set(entry) != {'asset', 'title', 'explanation', 'exercise', 'solution',
+                          'block', 'boundary', 'credit', 'source_url'}:
+            raise ValueError('Incomplete realistic metadata: ' + code)
+        reviewed[code] = entry
+    # Validate the complete manifest before replacing any mapping.
+    for code, entry in reviewed.items():
+        documented = [spec for spec in CATALOG[code]
+                      if (spec.get('source_url') or '').startswith('https://help.graphisoft.com/')]
+        CATALOG[code] = documented
+        add(code, **entry)
+except Exception as exc:
+    _LOAD_ERRORS.append('realistic_figures.json: ' + str(exc))
+    logging.error('Realistic lesson manifest unavailable: %s', _LOAD_ERRORS[-1])
+
+
 def asset_path(filename):
     """Catalog paths stay beneath the packaged figures directory."""
     path = ASSETS / filename
@@ -214,4 +241,6 @@ def validate_visual_catalog(contents):
         raise ValueError('\n'.join(errors))
     return dict(total_lessons=len(contents), illustrated_lessons=len(CATALOG),
                 pending_lessons=len(contents) - len(CATALOG),
-                figures=sum(map(len, CATALOG.values())))
+                figures=sum(map(len, CATALOG.values())),
+                realistic_lessons=len(reviewed) if not _LOAD_ERRORS else 0,
+                realistic_pending=len(contents) - (len(reviewed) if not _LOAD_ERRORS else 0))

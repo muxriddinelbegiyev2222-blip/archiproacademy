@@ -234,7 +234,7 @@ class ReleaseRegression(unittest.TestCase):
         self.shell.show_page('visual::roof', page)
         events()
         visuals = page.findChildren(LessonVisual)
-        self.assertEqual(len(visuals), 2)
+        self.assertEqual(len(visuals), 1)
         self.assertEqual(len(page.content_cards), len(page.blocks))
         self.assertFalse(page.next_lesson_button.isEnabled())
         figure = visuals[0]

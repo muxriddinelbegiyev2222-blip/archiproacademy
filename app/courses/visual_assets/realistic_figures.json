@@ -1,0 +1,461 @@
+[
+  {
+    "code": "L08_M05_001",
+    "asset": "realistic-l08_m05_001.jpg",
+    "title": "Tomning konstruktiv vazifasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Tom himoya qiladi. Tashqaridagi sopol qoplama bilan uning ostidagi yog‘och elementlarni ajrating: qoplama va tayanch tizimi bir xil vazifani bajarmaydi.",
+      "2. Yuk pastga uzatiladi. Yuqoridagi ko‘k strelkalar vertikal ta’sirni, devor yonidagi to‘q sariq strelkalar esa tayanchlardan pastga davom etadigan yuk yo‘lini ko‘rsatadi.",
+      "3. Suv tashqaridan chiqariladi. O‘ng qiyalikdagi suv yo‘lini nov va tashqi quvurgacha kuzating. Bu suv yo‘li yuk uzatilishi bilan boshqa-boshqa jarayon.",
+      "Darsdagi bajarish: Tom vazifasini himoya, yuk va suv yo‘li sifatida ajrating → uch tekshiruv."
+    ],
+    "exercise": "Tomning yopish, suv chiqarish va yuk uzatish vazifalarini ajrating.",
+    "solution": "Tomning konstruktiv va muhit vazifalari birga tekshiriladi.",
+    "block": 1,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M05_002",
+    "asset": "realistic-l08_m05_002.jpg",
+    "title": "Tom yuk yo'li va tayanchlar — rasmga qarab tushuning",
+    "explanation": [
+      "1. Qoplamadan tayanchgacha. Yog‘och tom elementlarining devor tepasiga kelib tayanadigan joyini toping. Tayanchsiz katta oraliqni faqat tashqi ko‘rinish asosida tasdiqlamang.",
+      "2. Devor orqali pastga. To‘q sariq strelkalar ikki yon devor ichidan pastga davom etadi. Tomdan kelgan yuk pastki konstruksiyalar bilan bog‘lanadi.",
+      "3. Poydevordan gruntga. Devor tagidagi beton poydevor va uning ostidagi gruntni ajrating. Rasmdagi element kesimi hisoblangan o‘lcham emas.",
+      "Darsdagi bajarish: Tom→tayanch→devor/ustun yo‘lini kesimda belgilang → yuk qayerga boradi."
+    ],
+    "exercise": "Tom yukini tayanchlarga uzatish sxemasini belgilang.",
+    "solution": "Tayanchlar va yuk yo‘li tom shakliga mos koordinatsiya qilinadi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M05_003",
+    "asset": "realistic-l08_m05_003.jpg",
+    "title": "Nishab, ridge va eave mantig'i — rasmga qarab tushuning",
+    "explanation": [
+      "1. Cho‘qqi — yuqoridagi tizma. Katta tasvirda yuqori qator boshqacha rangda ajratilgan. Bu ikki qiyalik tutashadigan ridge qismi.",
+      "2. Bo‘g‘ot — pastki chekka. Tomning pastki cheti va novni kuzating: suv yuqori cho‘qqidan qiyalik bo‘ylab shu chekkaga keladi.",
+      "3. Nishabni yon ko‘rinishda tushuning. Pastdagi kichik tasvirda yuqori cho‘qqi va pastki chekka farqi ko‘rinadi. Qiyalik sonini ushbu renderdan o‘lchamang: ko‘tarilish va gorizontal masofa dars shartidan olinadi.",
+      "Darsdagi bajarish: Ridge va eave sathlarini, suv pastga oqish yo‘lini chizing → geometrik mantiq."
+    ],
+    "exercise": "Ridge, eave va nishablarni plan-kesimda ko‘rsating.",
+    "solution": "Tom shakli atamalari suv yo‘li va geometrik joylashuv bilan izohlanadi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M05_004",
+    "asset": "realistic-l08_m05_004.jpg",
+    "title": "Tom openings va arxitektura koordinatsiyasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ochilish joyini toping. Tom oynasi, uning yonidagi yog‘och elementlar va ko‘ndalang bog‘lanishlarni alohida ko‘ring. Oynaga joy ochish tayanch tizimini qayta tekshirishni talab qiladi.",
+      "2. Suv himoyasini ajrating. Oyna atrofidagi metall qoplama qismi bilan tashqi sopol qoplamani solishtiring. Ochilish atrofi suv yo‘lidan uzilib qolmasligi kerak.",
+      "3. Kelishuv savolini yozing. Qaysi element o‘zgaradi, yuk qayerga uzatiladi va oyna atrofi qanday himoyalanadi? Bu tasvir aniq bir mahsulotning o‘rnatish detali emas.",
+      "Darsdagi bajarish: Tom ochilishini tayanch va suv yo‘liga solishtiring → yangi konflikt."
+    ],
+    "exercise": "Yangi ochilishning konstruktiv qismlarga ta’sirini qayd qiling.",
+    "solution": "Tom ochilishi faqat fasad qarori emas, tayanch va izolyatsiya masalasidir.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M05_005",
+    "asset": "realistic-l08_m05_005.jpg",
+    "title": "Tom konstruksiyasi professional audit — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yuqoridan ko‘rinish. Tomning konturi, qiyaliklari va oyna joyini toping; ularning o‘zaro joylashuvini qayd qiling.",
+      "2. Tashqi ko‘rinish. Old ko‘rinishda cho‘qqi, bo‘g‘ot va oyna tomning qaysi tomonida turganini tekshiring. Hujjatlarda bu ma’lumot bir-biriga mos bo‘lishi kerak.",
+      "3. Ochiq tasvir. Pastdagi render yog‘och elementlar va oyna atrofini ko‘rsatadi. Renderlar masshtabli hujjat emas: haqiqiy plan, fasad va kesimdagi bir xil element IDlarini solishtiring.",
+      "Darsdagi bajarish: Plan, fasad, kesim va konstruktiv savollarni moslashtiring → bir tom haqidagi hujjatlar."
+    ],
+    "exercise": "Tayanch, ochilish va suv yo‘li bo‘yicha mutaxassis savollarini topshiring.",
+    "solution": "Tom auditi yangilangan arxitektura bilan konstruksiya mosligini tekshiradi.",
+    "block": 13,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L00_M01_001",
+    "asset": "realistic-l00_m01_001.jpg",
+    "title": "Arxitektura nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Kirish va mehmonxona. To‘q sariq yo‘l kirishdan umumiy xona tomon boradi. Mehmonni yotoqxona orqali olib o‘tish talab qilinmaydi.",
+      "2. Ovqat tayyorlash va ovqatlanish. Oshxona bilan ovqatlanish stoli bir-biriga yaqin. Vazifalarni faqat xona nomi bilan emas, kundalik harakat bilan bog‘lang.",
+      "3. Tinch zona. O‘ng tomonda ota-ona va bolalar uchun uxlash joylari umumiy xonadan ajratilgan. Hovli esa yorug‘lik va ochiq foydalanish joyi sifatida ko‘rinadi.",
+      "Darsdagi bajarish: Oila kunini uch voqeaga ajrating: mehmon kutish, ovqat tayyorlash, uyqu. Har voqeani xona bilan bog‘lang → mehmonxona, oshxona, yotoqxona."
+    ],
+    "exercise": "Uyda odam bajaradigan uch ishni yozing, so‘ng har biriga mos makon toping.",
+    "solution": "Arxitektura ko‘rinish, foydalanish va xavfsizlikni bir qarorda birlashtiradi; fasadning o‘zi yetarli emas.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L00_M01_002",
+    "asset": "realistic-l00_m01_002.jpg",
+    "title": "Arxitektor kim? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Avval odamlarni tushuning. Rasmda arxitektor ikki katta va ikki boladan iborat oilaning ehtiyojini uy maketi ustida muhokama qilmoqda.",
+      "2. Istakni savolga aylantiring. Kim foydalanadi? Necha kishi bir vaqtda ovqatlanadi? Bolalar qayerda tinch o‘qiydi? Javoblarni alohida yozing.",
+      "3. Savoldan topshiriqqa o‘ting. Maket qarorni ko‘rsatish vositasi; oilaning javobi esa xona vazifasi va foydalanish jadvaliga aylanadi.",
+      "Darsdagi bajarish: Istakni savolga aylantiring: kim foydalanadi, nechta odam, qaysi vaqtda? Javoblarni yozing → to‘rt kishilik oilaning foydalanish jadvali."
+    ],
+    "exercise": "Mijozning “katta xona” degan gapini kim, qachon va nima qiladi degan savollar bilan aniqlashtiring.",
+    "solution": "Arxitektor ehtiyojni o‘lchanadigan vazifaga aylantiradi: foydalanish ssenariysi chizmadan oldin keladi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L00_M01_003",
+    "asset": "realistic-l00_m01_003.jpg",
+    "title": "Loyiha nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Plan xonalarni bog‘laydi. Chapdagi yuqoridan ko‘rinish xonalar, mebel va harakat aloqasini tushuntiradi.",
+      "2. Fasad tashqi ko‘rinishni ko‘rsatadi. Orqadagi uy ko‘rinishida eshik, deraza va tom joylashuvini kuzating.",
+      "3. Kesim ichki tuzilishni ochadi. O‘ngdagi kesilgan tasvirda tom, devor va pastki qism ajraladi. Bu renderlar tushuntirish uchun: haqiqiy hujjatlarda o‘lcham, sath va ochilishlar o‘zaro tekshiriladi.",
+      "Darsdagi bajarish: Xonalar ro‘yxatini planga, derazalarni fasadga, balandliklarni kesimga bog‘lang → bir binoning kelishilgan hujjatlari."
+    ],
+    "exercise": "Uy uchun xonalar ro‘yxati, plan, fasad, kesim va tekshiruv vazifasini bir varaqda bog‘lang.",
+    "solution": "Loyiha alohida rasmlar emas; bir bino haqidagi o‘zaro mos qaror va hujjatlar to‘plamidir.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M01_001",
+    "asset": "realistic-l08_m01_001.jpg",
+    "title": "Fundament tushunchasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yuqoridan kelayotgan yuk. Tom elementlari va ularni ko‘tarib turgan ikki yon devorni toping. Strelkalar faqat yuk uzatilishining umumiy yo‘lini ko‘rsatadi.",
+      "2. Poydevor tayanch bilan bog‘langan. Devor ostidagi beton qismni pol plitasidan ajrating: polning ko‘rinishi poydevor vazifasini tushuntirmaydi.",
+      "3. Grunt ham tizimning bir qismi. Pastdagi strelkalar ta’sir gruntga o‘tishini ko‘rsatadi. Poydevor tanlashdan oldin grunt, suv va yuk ma’lumotlari kerak; renderdan tayyor kesim olinmaydi.",
+      "Darsdagi bajarish: Tomdan gruntgacha yuk yo‘lini kesimda belgilang → fundamentning vazifasi."
+    ],
+    "exercise": "Fundamentni ustki konstruksiya va grunt orasidagi aloqa sifatida belgilang.",
+    "solution": "Fundament qarori yuk yo‘li va grunt sharoitini birga ko‘radi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M01_002",
+    "asset": "realistic-l08_m01_002.jpg",
+    "title": "Fundamentning asosiy turlari — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yuqoridagi chap tasvir — lenta poydevor. Uzun devor ostida uzluksiz beton tayanch ketadi. Yuqoridagi o‘ng tasvirda esa ustunlar alohida tayanchlarga tayanmoqda.",
+      "2. Pastdagi chap tasvir — plita poydevor. Keng beton asos bir nechta ustun bilan bog‘langan. Pastdagi o‘ng tasvirda qoziqlar chuqurroq grunt qatlamiga davom etadi.",
+      "3. Turini tashqi ko‘rinishga qarab tanlamang. Qaysi tizim mosligini yuk, tayanch joyi, geologiya va hisob belgilaydi; rasm tanlov uchun tushunchalarni ajratadi.",
+      "Darsdagi bajarish: Lenta, alohida tayanch, plita va qoziqli tizimni tayanch/yer sharti bo‘yicha taqqoslang → tanlov uchun kerakli ma’lumot."
+    ],
+    "exercise": "Ikki fundament turini faqat qo‘llanish omillari bilan solishtiring.",
+    "solution": "Fundament turini tasviridan tanlash hisob va geologiya o‘rnini bosa olmaydi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M01_003",
+    "asset": "realistic-l08_m01_003.jpg",
+    "title": "Grunt va fundament munosabati — rasmga qarab tushuning",
+    "explanation": [
+      "1. Grunt qatlamlarini ajrating. Uy ostidagi kesilgan yerda qatlamlarning tarkibi bir xil emas. Yuqoridagi bino ko‘rinishi bu farqni o‘zi aytib bermaydi.",
+      "2. Suv ma’lumotini alohida oling. O‘ngdagi shaffof suv kuzatuvi tasviri bilan grunt namunasini aralashtirmang: grunt turi va suv holati ikki xil kirish ma’lumoti.",
+      "3. Noma’lumni qayd qiling. Geologiya hisoboti, suv holati va bino yuklari bo‘lmasa, poydevor turi oldindan tasdiqlanmaydi. Tasvir haqiqiy uchastkaning geologik xulosasi emas.",
+      "Darsdagi bajarish: Geologiya, suv, qavatlar va yuklarni mavjud/noma’lum jadvaliga yozing → hisobga kirish ma’lumotlari."
+    ],
+    "exercise": "Yetishmayotgan geologik ma’lumotlarni savollar ro‘yxatiga yozing.",
+    "solution": "Gruntning xususiyatlari mutaxassis tekshiruvi uchun zarur kirish ma’lumotidir.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M01_004",
+    "asset": "realistic-l08_m01_004.jpg",
+    "title": "Arxitektura loyihasida fundament koordinatsiyasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi mos joylashuv. Devorlar ostidagi beton tayanch yo‘lini kuzating; yuqoridagi tayanch bilan pastki poydevor o‘zaro bog‘langan.",
+      "2. O‘ngdagi konflikt. To‘q sariq joyda devor pastki tayanch chetidan chiqib qolgan. Bu yechim namunasi emas — koordinatsiya xatosini topish uchun ko‘rsatilgan.",
+      "3. Tekshirish usuli. Arxitektura va konstruksiya o‘qlarini, devor yoki ustun markazini, poydevor joyini bir xil koordinatalarda solishtiring. Muammoni hisobga kirishdan oldin qayd qiling.",
+      "Darsdagi bajarish: Arxitektura o‘qlari va tayanchlarini konstruktiv sxema bilan solishtiring → moslik savoli."
+    ],
+    "exercise": "O‘qlar, sathlar va arxitektura ochilishlarini konstruktorga yuboriladigan paketga kiriting.",
+    "solution": "Fundament koordinatsiyasi arxitektura tayanchlari va sathlarining aniqligini talab qiladi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M01_005",
+    "asset": "realistic-l08_m01_005.jpg",
+    "title": "Fundament professional audit — rasmga qarab tushuning",
+    "explanation": [
+      "1. Bir elementni ikki manbada toping. Qo‘llar maketdagi poydevor va yonidagi kesimga ishora qilmoqda. Tayanch joyi hujjatda ham aynan shu elementga tegishli bo‘lishi kerak.",
+      "2. Kirish ma’lumotlarini yig‘ing. Grunt namunalari tasviri geologik ma’lumot zarurligini eslatadi. Namunaning o‘zi hisob yoki hisobot o‘rnini bosmaydi.",
+      "3. Audit natijasini yozing. Qaysi manba bor, nima yetishmayapti, kim javob beradi va qaysi qaror ochiq qolganini qayd qiling; oldindan chizilgan poydevorni avtomatik tasdiqlamang.",
+      "Darsdagi bajarish: Manba, yetishmayotgan ma’lumot va mas’ulni yozing → oldindan tanlangan fundament tasdiqlanmagan."
+    ],
+    "exercise": "Hisoblangan va taxmin qilingan ma’lumotlarni alohida audit qiling.",
+    "solution": "Fundament auditi tasdiqlanmagan kesimni qurilishga tayyor yechim sifatida ko‘rsatmaydi.",
+    "block": 12,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M02_001",
+    "asset": "realistic-l08_m02_001.jpg",
+    "title": "Devorning konstruktiv vazifasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yon devorlarning rolini kuzating. Strelkalar qavatlar va yuqori yopmadan keladigan ta’sirni yon devorlar orqali pastga davom ettiradi.",
+      "2. Bo‘luvchi devorni ajrating. Ichkaridagi yupqaroq devor xonalarni bo‘lmoqda. Haqiqiy loyihada uning konstruktiv vazifasi hujjatdan aniqlanadi, qalinligiga qarab yakuniy xulosa chiqarilmaydi.",
+      "3. O‘zgartirishdan oldin tekshiring. Devor ko‘taruvchimi yoki faqat bo‘luvchimi? Qaysi element unga tayanadi? Shu savollar yechilmasdan uni ko‘chirish yoki olib tashlash tasdiqlanmaydi.",
+      "Darsdagi bajarish: Devorning ko‘taruvchi yoki bo‘luvchi rolini hujjatdan aniqlang → vazifa qaydi."
+    ],
+    "exercise": "Har devorning konstruktiv vazifasini belgilash uchun savol tuzing.",
+    "solution": "Devorning ko‘rinishi uning yuk ko‘taruvchi ekanini tasdiqlamaydi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M02_002",
+    "asset": "realistic-l08_m02_002.jpg",
+    "title": "Yuk ko'taruvchi va to'ldiruvchi devor — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapda devorli tizim. Vertikal yo‘l g‘ishtli tayanch orqali pastga ketmoqda. Qavat yopmasining cheti shu tayanch bilan bog‘langan.",
+      "2. O‘ngda karkas va to‘ldirish. Beton ustun va rigellar yuk yo‘lini tashkil qiladi; ularning orasidagi g‘isht qismi alohida rolga ega.",
+      "3. Material vazifani o‘zi belgilamaydi. Ikki tasvirda ham g‘isht bor. Devor ko‘taruvchi yoki to‘ldiruvchi ekanini konstruktiv sxema, tayanch va hisob ma’lumoti bilan aniqlang.",
+      "Darsdagi bajarish: Material, yuk va tayanch ma’lumotini solishtiring → tashqi ko‘rinishdan chiqarilmagan xulosa."
+    ],
+    "exercise": "Yuk ko‘taruvchi va to‘ldiruvchi devorlarni loyiha ma’lumotiga ko‘ra ajrating.",
+    "solution": "Tasnif konstruktor bilan kelishilgan tizimga mos bo‘lishi kerak.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M02_003",
+    "asset": "realistic-l08_m02_003.jpg",
+    "title": "Devorlar, ochilishlar va yuk yo'li — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yuqoridagi devorni toping. U pastdagi katta ochilish ustiga kelmoqda. Yuk yo‘li pastdagi tayanch tizimi bilan bog‘lanishi kerak.",
+      "2. Ajratilgan joy — tekshiriladigan konflikt. To‘q sariq qism yuqori devor bilan pastki ochilish munosabatini ko‘rsatadi; bu hisoblangan rigel yoki xavfsiz yechim tasdig‘i emas.",
+      "3. Savolni aniq qo‘ying. Ochilish ustida qaysi element bor, uning tayanchlari qayerda, yuqoridan nima yuk keladi? Kelishilgan konstruktiv yechim bo‘lmasa qaror ochiq qoladi.",
+      "Darsdagi bajarish: Yuqori devordan yuk yo‘lini chizing, ochilish ustida uzilish joyini belgilang → konstruktiv konflikt."
+    ],
+    "exercise": "Ochilish ustidagi yuk yo‘lini sxemada ko‘rsating.",
+    "solution": "Ochilish devor uzluksizligi va yuk uzatilishiga ta’sir qiladi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M02_004",
+    "asset": "realistic-l08_m02_004.jpg",
+    "title": "Qavatlararo devor koordinatsiyasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapda qavatlararo moslik. Yuqori va pastki devorning vertikal joylashuvini qavatlar oralig‘ida kuzating.",
+      "2. O‘ngda siljish tekshiriladi. Ajratilgan joy yuqoridagi devor bilan pastki tayanch bir xil o‘qda emasligini ko‘rsatadi. Siljishni renderdan o‘lchamang.",
+      "3. Plan va kesimda solishtiring. Ikkala qavat devor markazlari, sath va tayanchlarni bir xil koordinata tizimida tekshiring. Siljishning oqibati konstruktiv yechim bilan baholanadi.",
+      "Darsdagi bajarish: Ikki qavat devor o‘qlarini ustma-ust qo‘ying → siljish miqdori va manbasi."
+    ],
+    "exercise": "Qavatlar devorlarini ustma-ust solishtirib, siljigan tayanchni qayd qiling.",
+    "solution": "Qavatlararo koordinatsiya vertikal yuk yo‘li izchilligini tekshiradi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M02_005",
+    "asset": "realistic-l08_m02_005.jpg",
+    "title": "Devor konstruksiyasi professional audit — rasmga qarab tushuning",
+    "explanation": [
+      "1. Konfliktni bitta joy bilan bog‘lang. Maketdagi yuqori devor va pastki ochilish munosabati yonidagi kesimda ham tekshirilmoqda.",
+      "2. Hujjatlarni birga bering. Faqat chiroyli ko‘rinish emas, plan, kesim va tayanch ma’lumoti kerak. Har bir savolning element IDsi va manbasi bo‘lsin.",
+      "3. Javobni qayd qiling. Konstruktor javobi, kelishilgan yechim va hujjatlarga kiritilgan o‘zgarishni bir xil konflikt yozuviga bog‘lang. Tasvir bu javob allaqachon olinganini bildirmaydi.",
+      "Darsdagi bajarish: Konflikt ID, plan va kesimni konstruktorga yuboring → javob va kelishilgan yechim qaydi."
+    ],
+    "exercise": "Devor turi, ochilish va tayanch bo‘yicha savollar jadvalini topshiring.",
+    "solution": "Devor auditi geometrik konflikt va tasdiqlanishi kerak bo‘lgan konstruktiv masalani ajratadi.",
+    "block": 12,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M03_001",
+    "asset": "realistic-l08_m03_001.jpg",
+    "title": "Karkas konstruktiv tizimi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ustunlarni toping. To‘rtta burchakdagi tik elementlar pastdagi poydevorlarga davom etadi; ustunlar alohida turgan bezak emas.",
+      "2. Rigellarni toping. Yuqorida ustunlar orasini bog‘laydigan elementlar bor. Yopma shu tayanch tizimi bilan birga tushuniladi.",
+      "3. Bitta tizim sifatida tekshiring. Ustun, rigel, yopma va poydevorning bir-biriga tayanishini kuzating. Ranglar faqat ajratish uchun, kesimlar esa hisoblangan loyiha o‘lchami emas.",
+      "Darsdagi bajarish: Karkasni tayanch va ular orasidagi elementlar tizimi sifatida belgilang → sxema."
+    ],
+    "exercise": "Karkas va xona devorlari vazifasini ajrating.",
+    "solution": "Karkas tizimi asosiy yuk uzatilishini tashkil qiladi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M03_002",
+    "asset": "realistic-l08_m03_002.jpg",
+    "title": "Ustun, rigel va yuk yo'li — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yopmadan rigelga. Yuqoridagi keng qavat elementi bilan uning chetidagi rigelni ajrating. Strelkalar uzatilishning umumiy prinsipini ko‘rsatadi.",
+      "2. Rigeldan ustunga. Rigel uchidagi tayanch va tik ustun o‘zaro bog‘langan. Yuk yo‘li tayanchsiz tugab qolmasligi kerak.",
+      "3. Ustundan poydevorga. Pastdagi beton tayanch va gruntni kuzating. Haqiqiy yuk taqsimoti hamda element kesimi bu render bilan hisoblanmaydi.",
+      "Darsdagi bajarish: Yopma→rigel→ustun→fundament yo‘lini chizing → yuk zanjiri."
+    ],
+    "exercise": "Plita, balka, ustun va fundament orasidagi yuk yo‘lini chizing.",
+    "solution": "Tayanchlar uzluksiz tizim sifatida tekshiriladi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M03_003",
+    "asset": "realistic-l08_m03_003.jpg",
+    "title": "Grid, o'qlar va span mantig'i — rasmga qarab tushuning",
+    "explanation": [
+      "1. To‘rtta tayanchni ajrating. Yuqoridan ko‘rinishda ustunlar va ularni bog‘laydigan rigellar ko‘rinadi.",
+      "2. Markaz bilan chetni aralashtirmang. Ustunlarning yuqori kesimida yashil nuqta markazni ajratadi. O‘q tayanch markazi bilan bog‘lanadi; ustun kengligi esa boshqa o‘lcham.",
+      "3. Masofani hujjatda qo‘ying. Darsdagi 4×3 m o‘quv bay masofalari plan o‘qlari orasida tekshiriladi. Renderning perspektivasidan aniq masofa olinmaydi.",
+      "Darsdagi bajarish: O‘qlarni nomlab markaz masofalarini qo‘ying → 4×3 m o‘quv bay."
+    ],
+    "exercise": "O‘qlar va tayanch oralig‘ini o‘lchab, span nomini yozing.",
+    "solution": "Span tayanchlar orasidagi masofani ifodalaydi; u avtomatik ruxsat etilgan kesimni bermaydi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M03_004",
+    "asset": "realistic-l08_m03_004.jpg",
+    "title": "Arxitektura va karkas koordinatsiyasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapda funksional konflikt. Eshik ichidagi ustun kirish yo‘lini to‘smoqda. Ustun joyi faqat konstruktiv ko‘rinishda emas, foydalanish jarayonida ham tekshiriladi.",
+      "2. O‘ngda ochiq yo‘l. Ustun eshikdan chetroqda ko‘rsatilgan va yo‘l ochilgan. Bu faqat koordinatsiya varianti, ustunni hisob qilmasdan ko‘chirish ko‘rsatmasi emas.",
+      "3. Birgalikda kelishing. Eshik, harakat yo‘li va mebel bilan tayanch joyini solishtiring; funksional qaror konstruktiv sxema bilan mos bo‘lsin.",
+      "Darsdagi bajarish: Ustun o‘rnini eshik, yo‘l va mebel bilan solishtiring → funksional konflikt."
+    ],
+    "exercise": "Kirish va deraza konfliktini planda hamda kesimda ko‘rsating.",
+    "solution": "Karkas koordinatsiyasi foydalanish va balandlik talablarini birga tekshiradi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M03_005",
+    "asset": "realistic-l08_m03_005.jpg",
+    "title": "Karkas professional audit — rasmga qarab tushuning",
+    "explanation": [
+      "1. Modeldagi birikmani toping. To‘q sariq joy ustun va rigel uchrashadigan qismni ajratadi.",
+      "2. Plan va kesim bilan bog‘lang. Yonidagi varaqlarda o‘sha tayanch va birikma boshqa ko‘rinishda tekshirilmoqda. Haqiqiy hujjatda ular bitta element IDsi bilan yuritiladi.",
+      "3. Yopilgan savolni qayd qiling. Konflikt, javob va yangilangan hujjat bir-biriga bog‘lanmasa, ko‘rinishning chiroyli chiqishi audit tugaganini bildirmaydi.",
+      "Darsdagi bajarish: Plan, kesim va konflikt jadvalini bir ID tizimida bog‘lang → kelishilgan koordinatsiya."
+    ],
+    "exercise": "Konflikt joyi, ta’sir va konstruktor savolini audit jadvaliga kiriting.",
+    "solution": "Karkas auditida o‘zgarish hisoblangan tizimga ta’siri bilan kelishiladi.",
+    "block": 13,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L00_M02_001",
+    "asset": "realistic-l00_m02_001.jpg",
+    "title": "Plan nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Kirishdan umumiy yo‘lakka. Pastdagi asosiy eshikdan markazdagi yo‘lakka kirasiz. Chap olddagi mehmonxonaga yotoqxona orqali o‘tish talab qilinmaydi.",
+      "2. Xonalar vazifasini ajrating. Chap orqada yotoqxona, o‘ng orqada oshxona va ovqatlanish joyi, o‘ng oldda sanuzel bor. Barchasi umumiy yo‘l bilan bog‘langan.",
+      "3. Ochilish va foydalanishni tekshiring. Eshik bargi, mebel va yurish yo‘li bir-biriga xalal bermasin. Tasvir xonalar aloqasini tushuntiradi; aniq o‘lcham va maydon haqiqiy planda qo‘yiladi.",
+      "Darsdagi bajarish: Avval kirish→mehmonxona va oshxona→ovqatlanish aloqalarini chizing. Tinch xonani mehmon yo‘lidan ajrating. Mebel, eshik yoylari, deraza, o‘lcham va maydonni oxirida tekshiring → funksional plan."
+    ],
+    "exercise": "Planda kirish eshigidan oshxonagacha harakatni rangli chiziq bilan belgilang.",
+    "solution": "Plan xonalar, devorlar, ochilishlar va gorizontal aloqani ko‘rsatadi; tashqi bezakni emas.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L00_M02_002",
+    "asset": "realistic-l00_m02_002.jpg",
+    "title": "Fasad nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Old ko‘rinishdagi ochilishlar. Kirish markazda, mehmonxona derazasi chapda, sanuzel derazasi o‘ngda. Ularning joyi plandagi tashqi devor bilan bog‘lanadi.",
+      "2. Fasad vertikal ko‘rinish beradi. Poydevor usti, polga kirish, devor va ikki qiyalikli tomni pastdan yuqoriga ajrating.",
+      "3. Fasadni plan bilan tekshiring. Deraza planda ko‘chsa, shu tomondagi fasadda ham joylashuvi qayta ko‘riladi. Render o‘lchamli fasad hujjati o‘rnini bosmaydi.",
+      "Darsdagi bajarish: Plandagi deraza va kirishni tashqi ko‘rinishga proyeksiyalang. Pol va tom sathlarini belgilang. Ochilishlar joyi bilan solishtiring → shu planga mos fasad."
+    ],
+    "exercise": "Fasadda tom konturi, deraza va kirishni topib, plandagi joylari bilan solishtiring.",
+    "solution": "Fasad tashqi vertikal ko‘rinishdir; deraza o‘rni plan bilan bir binoga tegishli bo‘lishi kerak.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L00_M02_003",
+    "asset": "realistic-l00_m02_003.jpg",
+    "title": "Kesim nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Kesim ichki tuzilishni ochadi. Old devor ochilganda xona ichlari, pol usti va tom ostidagi balandlik ko‘rinadi.",
+      "2. Pol, yopma, shift va tomni ajrating. Yupqa ustki pardoz, pastdagi beton qism, oq shift chizig‘i va yog‘och tom tizimi boshqa-boshqa qismlar.",
+      "3. Sathni hujjatda tekshiring. Kesim qayerdan o‘tishi va qaysi balandlik kerakligi oldindan belgilanadi. Rasmdagi perspektivadan sath yoki element kesimi o‘lchanmaydi.",
+      "Darsdagi bajarish: Kesuvchi chiziqni zinapoya yoki balandlik o‘zgarishidan o‘tkazing. Pol, yopma, shift va tomni ajrating. Sathlar orasini o‘lchang → balandliklari tekshiriladigan kesim."
+    ],
+    "exercise": "Kesimda pol sathi, shift va tomni ajratib, balandliklarni yozing.",
+    "solution": "Kesim ichki vertikal tuzilishni ochadi; planda ko‘rinmaydigan sath va balandlik shu yerda tekshiriladi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L00_M02_004",
+    "asset": "realistic-l00_m02_004.jpg",
+    "title": "Genplan nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Bino uchastka ichida. Devor bilan chegaralangan yer, tashqaridagi ko‘cha va uy konturini alohida toping.",
+      "2. Kirishlar ajratilgan. Chapdagi darvoza avtomobil joyiga, o‘ngdagi kichik darvoza piyoda yo‘liga olib keladi. Piyoda yo‘li L shaklida uy kirishiga davom etadi.",
+      "3. Bino va atrofini bog‘lang. Hovli, yo‘llar, kirish va uy birga tekshiriladi. Haqiqiy genplanda shimol, chegara, o‘lcham va sathlar hujjat manbasi asosida belgilanadi.",
+      "Darsdagi bajarish: Uchastka chegarasi va ko‘chani avval chizing. Uy konturini, piyoda va avtomobil yo‘lini qo‘shing. Shimolni belgilang → bino atrofi bilan bog‘langan genplan."
+    ],
+    "exercise": "Genplanda uchastka chegarasi, ko‘cha, uy va piyoda kirishini ajrating.",
+    "solution": "Genplan binoni yer uchastkasi va atrofdagi sharoit bilan bog‘laydi; xona plani uni almashtirmaydi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  }
+]
