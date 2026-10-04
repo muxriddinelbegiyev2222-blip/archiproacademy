@@ -1307,10 +1307,12 @@ def audit_customer_features() -> None:
         ],
         APP_DIR / "tools" / "ui_navigation_smoke_test.py": [
             "UI NAVIGATION SMOKE TEST",
-            "DashboardWindow",
+            "ARCHIPRO_AUDIT_MODE",
+            "open_lesson_callback",
             "openLesson",
             "lesson::",
-            "backButton",
+            "back_callback",
+            "QStackedWidget",
         ],
         APP_DIR / "tools" / "learning_flow_smoke_test.py": [
             "LEARNING FLOW SMOKE TEST",
