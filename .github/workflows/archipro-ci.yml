@@ -1,0 +1,52 @@
+name: ARCHIPRO CI
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: windows-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install runtime dependencies
+        shell: pwsh
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Project audit
+        shell: pwsh
+        run: python app/tools/project_audit.py
+
+      - name: Database audit
+        shell: pwsh
+        run: python app/tools/database_audit.py
+
+      - name: Runtime smoke test
+        shell: pwsh
+        run: python app/tools/runtime_smoke_test.py
+
+      - name: Customer features smoke test
+        shell: pwsh
+        run: python app/tools/customer_features_smoke_test.py
+
+      - name: UI navigation smoke test
+        shell: pwsh
+        env:
+          QT_QPA_PLATFORM: offscreen
+        run: python app/tools/ui_navigation_smoke_test.py
+
+      - name: Learning flow smoke test
+        shell: pwsh
+        run: python app/tools/learning_flow_smoke_test.py
