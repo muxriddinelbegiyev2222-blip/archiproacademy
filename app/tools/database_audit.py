@@ -1,8 +1,12 @@
 from __future__ import annotations
 
+import atexit
 import importlib
+import os
 import re
+import shutil
 import sys
+import tempfile
 import traceback
 from pathlib import Path
 
@@ -18,6 +22,43 @@ COURSES_DIR = APP_DIR / "courses"
 
 if str(APP_DIR) not in sys.path:
     sys.path.insert(0, str(APP_DIR))
+
+
+# ============================================================
+# ISOLATED AUDIT DATABASE
+#
+# Audit hech qachon foydalanuvchining real progress DB sini
+# seed yoki o'zgartirmaydi.
+# ============================================================
+
+AUDIT_TEMP_DIR = Path(
+    tempfile.mkdtemp(
+        prefix="archipro_db_audit_"
+    )
+)
+
+AUDIT_DATABASE_PATH = (
+    AUDIT_TEMP_DIR
+    / "archipro_audit.db"
+)
+
+os.environ[
+    "ARCHIPRO_UZ_DATABASE_PATH"
+] = str(
+    AUDIT_DATABASE_PATH
+)
+
+
+def _cleanup_audit_database() -> None:
+    shutil.rmtree(
+        AUDIT_TEMP_DIR,
+        ignore_errors=True,
+    )
+
+
+atexit.register(
+    _cleanup_audit_database
+)
 
 
 # ============================================================
