@@ -426,6 +426,66 @@ class AppShell(QMainWindow):
             self.open_settings()
             return
 
+    def _write_navigation_error(
+        self,
+        context: str,
+        exc: Exception,
+    ):
+        """
+        Navigation xatosini foydalanuvchi progressiga tegmasdan
+        LocalAppData log fayliga yozadi. Logging xatosi hech qachon
+        dastur ishini to'xtatmaydi.
+        """
+        try:
+            from datetime import datetime
+            from database.database import (
+                DATABASE_PATH,
+            )
+
+            log_dir = (
+                DATABASE_PATH.parent
+                / "logs"
+            )
+
+            log_dir.mkdir(
+                parents=True,
+                exist_ok=True,
+            )
+
+            log_file = (
+                log_dir
+                / "navigation_error.log"
+            )
+
+            with log_file.open(
+                "a",
+                encoding="utf-8",
+            ) as stream:
+                stream.write(
+                    "\n"
+                    + "=" * 72
+                    + "\n"
+                )
+                stream.write(
+                    datetime.now().isoformat(
+                        timespec="seconds"
+                    )
+                    + " | "
+                    + str(
+                        context
+                    )
+                    + "\n"
+                )
+                stream.write(
+                    repr(
+                        exc
+                    )
+                    + "\n"
+                )
+
+        except Exception:
+            pass
+
     # ========================================================
     # PAGE CACHE
     # ========================================================
@@ -1541,6 +1601,11 @@ class AppShell(QMainWindow):
             )
 
         except Exception as exc:
+            self._write_navigation_error(
+                "open_lesson_page",
+                exc,
+            )
+
             # Klikning jim qolishi mumkin emas. Foydalanuvchiga
             # tushunarli xabar beriladi va Level sahifasi buzilmaydi.
             QMessageBox.critical(
