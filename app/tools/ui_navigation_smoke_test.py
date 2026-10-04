@@ -37,6 +37,10 @@ os.environ[
     DB_PATH
 )
 
+os.environ[
+    "ARCHIPRO_AUDIT_MODE"
+] = "1"
+
 # Audit headless ishlaydi. Rendering emas, real Qt signal/callback
 # va QStackedWidget navigation kontrakti tekshiriladi.
 os.environ.setdefault(
