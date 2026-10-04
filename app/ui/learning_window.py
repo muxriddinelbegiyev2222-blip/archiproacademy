@@ -17,6 +17,10 @@ from courses.course_service import (
     get_learning_overview,
 )
 
+from courses.quiz_service import (
+    get_best_quiz_score,
+)
+
 from courses.exam_service import (
     are_all_level_lessons_completed,
     get_level_exam,
@@ -1517,9 +1521,15 @@ class LearningWindow(QMainWindow):
     ):
         # MASTER test paytida ham natija saqlanishi mumkin.
         # Bu faqat admin test akkauntining progressiga ta'sir qiladi.
+        best_score = get_best_quiz_score(
+            self.user["id"],
+            lesson_id,
+        )
+
         complete_lesson(
             self.user["id"],
             lesson_id,
+            score=best_score,
         )
 
         self.reload_data()
