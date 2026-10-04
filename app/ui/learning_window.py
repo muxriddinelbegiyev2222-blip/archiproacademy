@@ -1,3 +1,5 @@
+from functools import partial
+
 from PySide6.QtCore import Qt
 
 from PySide6.QtWidgets import (
@@ -1051,9 +1053,11 @@ class LearningWindow(QMainWindow):
             )
 
             button.clicked.connect(
-                lambda checked=False, data=lesson:
-                self.open_lesson(
-                    data
+                partial(
+                    self._open_lesson_from_button,
+                    dict(
+                        lesson
+                    ),
                 )
             )
 
@@ -1076,9 +1080,11 @@ class LearningWindow(QMainWindow):
             )
 
             button.clicked.connect(
-                lambda checked=False, data=lesson:
-                self.open_lesson(
-                    data
+                partial(
+                    self._open_lesson_from_button,
+                    dict(
+                        lesson
+                    ),
                 )
             )
 
@@ -1117,9 +1123,11 @@ class LearningWindow(QMainWindow):
             )
 
             review_button.clicked.connect(
-                lambda checked=False, data=lesson:
-                self.open_lesson(
-                    data
+                partial(
+                    self._open_lesson_from_button,
+                    dict(
+                        lesson
+                    ),
                 )
             )
 
@@ -1445,6 +1453,26 @@ class LearningWindow(QMainWindow):
             )
 
         return card
+
+    # ========================================================
+    # LESSON BUTTON ROUTER
+    # ========================================================
+
+    def _open_lesson_from_button(
+        self,
+        lesson: dict,
+        checked=False,
+    ):
+        """
+        QPushButton.clicked(bool) signalini lesson payload'dan
+        aniq ajratadi. Loop ichidagi lambda binding yoki Qt bool
+        argumenti lesson ma'lumotini almashtirib yubora olmaydi.
+        """
+        self.open_lesson(
+            dict(
+                lesson
+            )
+        )
 
     # ========================================================
     # OPEN LESSON
