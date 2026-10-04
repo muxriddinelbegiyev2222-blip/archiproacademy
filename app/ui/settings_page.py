@@ -7,6 +7,7 @@ from PySide6.QtWidgets import (
     QLabel,
     QMessageBox,
     QPushButton,
+    QScrollArea,
     QVBoxLayout,
     QWidget,
 )
@@ -109,8 +110,28 @@ class SettingsPage(QWidget):
         return card
 
     def build_ui(self):
-        root = QVBoxLayout(
+        outer = QVBoxLayout(
             self
+        )
+        outer.setContentsMargins(
+            0,
+            0,
+            0,
+            0,
+        )
+
+        scroll = QScrollArea()
+        scroll.setWidgetResizable(
+            True
+        )
+
+        content = QWidget()
+        content.setObjectName(
+            "overviewContent"
+        )
+
+        root = QVBoxLayout(
+            content
         )
         root.setContentsMargins(
             30,
@@ -120,6 +141,14 @@ class SettingsPage(QWidget):
         )
         root.setSpacing(
             16
+        )
+
+        scroll.setWidget(
+            content
+        )
+
+        outer.addWidget(
+            scroll
         )
 
         header = QFrame()
