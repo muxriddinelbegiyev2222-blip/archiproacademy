@@ -16,6 +16,7 @@ from PySide6.QtWidgets import (
     QListWidget,
     QListWidgetItem,
     QMainWindow,
+    QMessageBox,
     QPushButton,
     QStackedWidget,
     QVBoxLayout,
@@ -1360,12 +1361,16 @@ class AppShell(QMainWindow):
                         k
                     )
                 ),
-                open_lesson_callback=(
-                    self.open_lesson_page
-                ),
-                open_exam_callback=(
-                    self.open_exam_from_learning
-                ),
+                open_lesson_callback=None,
+                open_exam_callback=None,
+            )
+
+            page.lesson_open_requested.connect(
+                self.open_lesson_page
+            )
+
+            page.exam_open_requested.connect(
+                self.open_exam_from_learning
             )
 
             self.show_page(
@@ -1406,14 +1411,44 @@ class AppShell(QMainWindow):
         lesson_data: dict,
         source_learning_page,
     ):
-        source_key = (
-            self.current_page_key
+        """
+        Dars ochishning yagona embedded yo'li.
+
+        Source key faqat current_page_key ga bog'lanmaydi:
+        haqiqiy LearningPage cache ichidan topiladi. Bu tez
+        navigatsiya yoki refresh paytida stale current key sabab
+        dars tugmasi javobsiz qolishini oldini oladi.
+        """
+
+        if not isinstance(
+            lesson_data,
+            dict,
+        ):
+            return
+
+        lesson_id_value = lesson_data.get(
+            "id"
         )
 
+        if lesson_id_value is None:
+            return
+
+        source_key = next(
+            (
+                cache_key
+                for cache_key, cached_page
+                in self.page_cache.items()
+                if cached_page
+                is source_learning_page
+            ),
+            self.current_page_key,
+        )
+
+        if not source_key:
+            source_key = "overview::all"
+
         lesson_id = str(
-            lesson_data[
-                "id"
-            ]
+            lesson_id_value
         )
 
         key = (
@@ -1421,62 +1456,89 @@ class AppShell(QMainWindow):
             + lesson_id
         )
 
-        # Oldingi transient sahifalar qolmasin.
-        self.cleanup_transient_pages()
-
-        # Lazy import:
-        # lesson renderer faqat hozir yuklanadi.
-        from ui.embedded_pages import (
-            LessonPage,
-        )
-
-        mark_lesson_opened(
-            self.user["id"],
-            int(
-                lesson_data["id"]
-            ),
-        )
-
-        self.transient_return_keys[
-            key
-        ] = source_key
-
-        page = LessonPage(
-            lesson=lesson_data,
-            user=self.user,
-            back_callback=(
-                lambda k=source_key,
-                transient_key=key:
-                self.return_from_transient(
-                    k,
-                    transient_key,
-                )
-            ),
-            open_quiz_callback=(
-                self.open_quiz_page
-            ),
-            open_next_lesson_callback=(
-                self.open_next_lesson
-            ),
-        )
-
-        page.lesson_completed.connect(
-            lambda completed_lesson_id,
-            source=source_learning_page,
-            return_key=source_key,
-            lesson_key=key:
-            self.lesson_completed(
-                completed_lesson_id,
-                source,
-                return_key,
-                lesson_key,
+        try:
+            # Faqat boshqa transient sahifalarni tozalaymiz.
+            self.cleanup_transient_pages(
+                except_keys={
+                    key,
+                }
             )
-        )
 
-        self.show_page(
-            key,
-            page,
-        )
+            from ui.embedded_pages import (
+                LessonPage,
+            )
+
+            mark_lesson_opened(
+                self.user["id"],
+                int(
+                    lesson_id_value
+                ),
+            )
+
+            self.transient_return_keys[
+                key
+            ] = source_key
+
+            # Shu lesson oldin cache'da qolgan bo'lsa stale widget emas,
+            # yangi ma'lumot bilan toza sahifa yaratiladi.
+            self.drop_page(
+                key
+            )
+
+            self.transient_return_keys[
+                key
+            ] = source_key
+
+            page = LessonPage(
+                lesson=dict(
+                    lesson_data
+                ),
+                user=self.user,
+                back_callback=(
+                    lambda k=source_key,
+                    transient_key=key:
+                    self.return_from_transient(
+                        k,
+                        transient_key,
+                    )
+                ),
+                open_quiz_callback=(
+                    self.open_quiz_page
+                ),
+                open_next_lesson_callback=(
+                    self.open_next_lesson
+                ),
+            )
+
+            page.lesson_completed.connect(
+                lambda completed_lesson_id,
+                source=source_learning_page,
+                return_key=source_key,
+                lesson_key=key:
+                self.lesson_completed(
+                    completed_lesson_id,
+                    source,
+                    return_key,
+                    lesson_key,
+                )
+            )
+
+            self.show_page(
+                key,
+                page,
+            )
+
+        except Exception as exc:
+            # Klikning jim qolishi mumkin emas. Foydalanuvchiga
+            # tushunarli xabar beriladi va Level sahifasi buzilmaydi.
+            QMessageBox.critical(
+                self,
+                "Darsni ochib bo'lmadi",
+                (
+                    "Dars sahifasini yuklashda ichki xato yuz berdi.\n\n"
+                    f"{exc}"
+                ),
+            )
 
     # ========================================================
     # QUIZ
