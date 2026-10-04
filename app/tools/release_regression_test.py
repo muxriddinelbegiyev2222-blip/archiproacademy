@@ -182,6 +182,35 @@ class ReleaseRegression(unittest.TestCase):
         self.assertFalse(prepare_application())
         self.assertEqual(len(query('SELECT * FROM quiz_options')), 2041 * 4)
 
+    def test_long_answer_wraps_and_remains_selectable(self):
+        from PySide6.QtCore import Qt
+        from PySide6.QtTest import QTest
+        from PySide6.QtWidgets import QVBoxLayout, QWidget, QScrollArea
+        from ui.answer_radio_button import AnswerRadioButton
+        holder = QWidget()
+        layout = QVBoxLayout(holder)
+        button = AnswerRadioButton('A. ' + 'Tekshirish dalilini chizma va sath bilan asoslang. ' * 8)
+        layout.addWidget(button)
+        holder.resize(420, 450)
+        holder.show()
+        events()
+        self.assertLess(button.width(), 420)
+        self.assertGreater(button.height(), 80)
+        self.assertGreaterEqual(button.answer_label.height(),
+                                button.answer_label.heightForWidth(button.answer_label.width()))
+        QTest.mouseClick(button, Qt.MouseButton.LeftButton,
+                         pos=button.answer_label.geometry().center())
+        self.assertTrue(button.isChecked())
+        holder.close()
+        holder.deleteLater()
+        events()
+        page = self.open_first()
+        self.shell.open_quiz_page(page)
+        events()
+        quiz = self.shell.page_cache[self.shell.current_page_key]
+        for scroll in quiz.findChildren(QScrollArea):
+            self.assertEqual(scroll.horizontalScrollBar().maximum(), 0)
+
     def test_all_menu_pages_and_level_back(self):
         for index, title in enumerate(self.shell.menu_items):
             with self.subTest(menu=title):

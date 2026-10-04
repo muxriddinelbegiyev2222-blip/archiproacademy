@@ -1,3 +1,5 @@
+from ui.answer_radio_button import AnswerRadioButton
+
 from PySide6.QtCore import (
     Qt,
     Signal,
@@ -11,7 +13,6 @@ from PySide6.QtWidgets import (
     QMainWindow,
     QMessageBox,
     QPushButton,
-    QRadioButton,
     QScrollArea,
     QVBoxLayout,
     QWidget,
@@ -490,7 +491,7 @@ class QuizWindow(QMainWindow):
                     )
                 )
 
-                button = QRadioButton(
+                button = AnswerRadioButton(
                     (
                         f"{letter}. "
                         f"{option['option_text']}"
