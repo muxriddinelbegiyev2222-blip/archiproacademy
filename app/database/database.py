@@ -349,6 +349,68 @@ def initialize_database():
         )
 
         # ====================================================
+        # CUSTOMER CONVENIENCE
+        # ====================================================
+
+        cursor.execute(
+            """
+            CREATE TABLE IF NOT EXISTS lesson_bookmarks (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+                user_id INTEGER NOT NULL,
+
+                lesson_id INTEGER NOT NULL,
+
+                created_at TEXT NOT NULL
+                    DEFAULT CURRENT_TIMESTAMP,
+
+                UNIQUE(
+                    user_id,
+                    lesson_id
+                ),
+
+                FOREIGN KEY(user_id)
+                    REFERENCES users(id)
+                    ON DELETE CASCADE,
+
+                FOREIGN KEY(lesson_id)
+                    REFERENCES lessons(id)
+                    ON DELETE CASCADE
+            )
+            """
+        )
+
+        cursor.execute(
+            """
+            CREATE TABLE IF NOT EXISTS lesson_notes (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+                user_id INTEGER NOT NULL,
+
+                lesson_id INTEGER NOT NULL,
+
+                note_text TEXT NOT NULL DEFAULT '',
+
+                updated_at TEXT NOT NULL
+                    DEFAULT CURRENT_TIMESTAMP,
+
+                UNIQUE(
+                    user_id,
+                    lesson_id
+                ),
+
+                FOREIGN KEY(user_id)
+                    REFERENCES users(id)
+                    ON DELETE CASCADE,
+
+                FOREIGN KEY(lesson_id)
+                    REFERENCES lessons(id)
+                    ON DELETE CASCADE
+            )
+            """
+        )
+
+        # ====================================================
         # QUIZ QUESTIONS
         # ====================================================
 
@@ -769,6 +831,22 @@ def initialize_database():
             CREATE INDEX IF NOT EXISTS
             idx_lesson_progress_user
             ON lesson_progress(user_id)
+            """
+        )
+
+        cursor.execute(
+            """
+            CREATE INDEX IF NOT EXISTS
+            idx_bookmarks_user
+            ON lesson_bookmarks(user_id)
+            """
+        )
+
+        cursor.execute(
+            """
+            CREATE INDEX IF NOT EXISTS
+            idx_notes_user
+            ON lesson_notes(user_id)
             """
         )
 
