@@ -56,14 +56,6 @@ atexit.register(
 )
 
 
-from PySide6.QtCore import (
-    Qt,
-)
-
-from PySide6.QtTest import (
-    QTest,
-)
-
 from PySide6.QtWidgets import (
     QApplication,
     QPushButton,
@@ -74,8 +66,8 @@ from database.database import (
     initialize_database,
 )
 
-from ui.app_shell import (
-    AppShell,
+from ui.dashboard_window import (
+    DashboardWindow,
 )
 
 
@@ -284,7 +276,7 @@ def main() -> int:
             seed_navigation_data()
         )
 
-        shell = AppShell(
+        shell = DashboardWindow(
             user
         )
 
@@ -334,10 +326,9 @@ def main() -> int:
             "OCHISH tugmasi disabled.",
         )
 
-        QTest.mouseClick(
-            open_button,
-            Qt.MouseButton.LeftButton,
-        )
+        open_button.click()
+        app.processEvents()
+        QApplication.sendPostedEvents()
         app.processEvents()
 
         lesson_key = (
