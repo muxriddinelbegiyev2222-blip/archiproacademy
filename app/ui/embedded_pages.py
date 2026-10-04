@@ -1,4 +1,5 @@
 import logging
+import re
 
 from PySide6.QtCore import (
     Qt,
@@ -40,6 +41,8 @@ from ui.quiz_window import (
 
 
 class LessonPage(QWidget):
+
+    reading_mode_changed = Signal(bool)
 
     lesson_completed = Signal(
         int
@@ -88,6 +91,9 @@ class LessonPage(QWidget):
         except Exception:
             self.bookmarked = False
 
+        self.reading_mode = False
+        self.reading_font_size = 17
+        self.reading_labels = []
         self.content_cards = []
 
         self.map_buttons = []
@@ -184,7 +190,7 @@ class LessonPage(QWidget):
 
             QLabel#lessonTitle {
                 color: #F5F8FC;
-                font-size: 31px;
+                font-size: 24px;
                 font-weight: 800;
             }
 
@@ -466,8 +472,8 @@ class LessonPage(QWidget):
                 border: 1px solid #5992FA;
                 border-radius: 10px;
                 color: #FFFFFF;
-                padding: 11px 23px;
-                min-height: 40px;
+                padding: 7px 14px;
+                min-height: 28px;
                 font-size: 14px;
                 font-weight: 800;
             }
@@ -537,14 +543,14 @@ class LessonPage(QWidget):
         )
 
         root.setContentsMargins(
-            26,
-            22,
-            26,
-            18,
+            16,
+            10,
+            16,
+            10,
         )
 
         root.setSpacing(
-            13
+            8
         )
 
         # ====================================================
@@ -562,10 +568,10 @@ class LessonPage(QWidget):
         )
 
         top_layout.setContentsMargins(
-            14,
             10,
-            14,
+            5,
             10,
+            5,
         )
 
         back_button = QPushButton(
@@ -586,9 +592,9 @@ class LessonPage(QWidget):
         )
 
         self.bookmark_button = QPushButton(
-            "★ BOOKMARKDA"
+            "★ XATCHO‘PDA"
             if self.bookmarked
-            else "☆ BOOKMARK"
+            else "☆ XATCHO‘P"
         )
         self.bookmark_button.setObjectName(
             "bookmarkButton"
@@ -601,6 +607,37 @@ class LessonPage(QWidget):
             self.bookmark_button
         )
 
+        self.details_button = QPushButton("DARS XARITASI")
+        self.details_button.setObjectName("lessonDetailsButton")
+        self.details_button.setCheckable(True)
+        self.details_button.toggled.connect(self.set_details_visible)
+        top_layout.addWidget(self.details_button)
+
+        self.font_smaller_button = QPushButton("A−")
+        self.font_smaller_button.setObjectName("readingFontSmaller")
+        self.font_smaller_button.clicked.connect(lambda: self.change_reading_font(-1))
+        top_layout.addWidget(self.font_smaller_button)
+        self.font_size_label = QLabel("17 px")
+        self.font_size_label.setObjectName("readingFontSize")
+        self.font_size_label.setStyleSheet("color: #CBD6E4; font-size: 12px;")
+        top_layout.addWidget(self.font_size_label)
+        self.font_larger_button = QPushButton("A+")
+        self.font_larger_button.setObjectName("readingFontLarger")
+        self.font_larger_button.clicked.connect(lambda: self.change_reading_font(1))
+        top_layout.addWidget(self.font_larger_button)
+        self.reading_button = QPushButton("O'QISH REJIMI")
+        self.reading_button.setObjectName("readingModeButton")
+        self.reading_button.setCheckable(True)
+        self.reading_button.toggled.connect(self.set_reading_mode)
+        top_layout.addWidget(self.reading_button)
+        top_bar.setStyleSheet(
+            "QPushButton { background-color: #15243A; color: #DCE6F2;"
+            " border: 1px solid #314765; border-radius: 7px;"
+            " padding: 5px 9px; min-height: 24px; font-size: 12px; }"
+            "QPushButton:hover { background-color: #203653; border-color: #5992FA; }"
+            "QPushButton:checked { background-color: #285CA3; border-color: #5992FA; color: #FFFFFF; }"
+            "QPushButton:disabled { background-color: #101C2C; color: #61738B; border-color: #243953; }"
+        )
         top_layout.addStretch()
 
         xp_badge = QLabel(
@@ -634,10 +671,10 @@ class LessonPage(QWidget):
         )
 
         hero_layout.setContentsMargins(
-            22,
-            19,
-            22,
-            19,
+            14,
+            9,
+            14,
+            9,
         )
 
         hero_layout.setSpacing(
@@ -768,6 +805,7 @@ class LessonPage(QWidget):
                 purpose
             )
 
+        self.lesson_hero = hero
         root.addWidget(
             hero
         )
@@ -857,6 +895,9 @@ class LessonPage(QWidget):
             self.progress_bar
         )
 
+        self.progress_card = progress_card
+        progress_card.hide()
+        self.lesson_map = None
         root.addWidget(
             progress_card
         )
@@ -939,6 +980,8 @@ class LessonPage(QWidget):
 
             map_layout.addStretch()
 
+            self.lesson_map = lesson_map
+            lesson_map.hide()
             root.addWidget(
                 lesson_map
             )
@@ -1178,10 +1221,10 @@ class LessonPage(QWidget):
         )
 
         footer_layout.setContentsMargins(
-            18,
-            14,
-            18,
-            14,
+            12,
+            6,
+            12,
+            6,
         )
 
         footer_layout.setSpacing(
@@ -1276,6 +1319,30 @@ class LessonPage(QWidget):
             0,
             self.update_scroll_progress,
         )
+
+    def set_details_visible(self, visible):
+        self.progress_card.setVisible(visible)
+        if self.lesson_map is not None:
+            self.lesson_map.setVisible(visible)
+
+    def set_reading_mode(self, enabled):
+        self.reading_mode = bool(enabled)
+        self.lesson_hero.setVisible(not enabled)
+        self.reading_mode_changed.emit(self.reading_mode)
+
+    def change_reading_font(self, delta):
+        size = max(14, min(24, self.reading_font_size + delta))
+        if size == self.reading_font_size:
+            return
+        self.reading_font_size = size
+        for label in self.reading_labels:
+            template = label.property("readingHtml")
+            label.setText(re.sub(r"font-size: \d+px;", f"font-size: {size}px;", template, count=1))
+            label.updateGeometry()
+        self.font_size_label.setText(f"{size} px")
+        self.font_smaller_button.setEnabled(size > 14)
+        self.font_larger_button.setEnabled(size < 24)
+        self.content_widget.adjustSize()
 
     # ========================================================
     # CONTENT CARD
@@ -1478,7 +1545,7 @@ class LessonPage(QWidget):
         html = f"""
         <div style="
             font-family: 'Segoe UI';
-            font-size: 15px;
+            font-size: {self.reading_font_size}px;
             line-height: 1.55;
             color: #CBD6E4;
         ">
@@ -1486,6 +1553,8 @@ class LessonPage(QWidget):
         </div>
         """
 
+        text.setProperty("readingHtml", html)
+        self.reading_labels.append(text)
         text.setText(
             html
         )
@@ -1852,9 +1921,9 @@ class LessonPage(QWidget):
             return
 
         self.bookmark_button.setText(
-            "★ BOOKMARKDA"
+            "★ XATCHO‘PDA"
             if self.bookmarked
-            else "☆ BOOKMARK"
+            else "☆ XATCHO‘P"
         )
 
     def save_note_silent(self):

@@ -211,6 +211,7 @@ class AppShell(QMainWindow):
         # ====================================================
 
         sidebar = QFrame()
+        self.sidebar = sidebar
 
         sidebar.setObjectName(
             "sidebar"
@@ -357,6 +358,7 @@ class AppShell(QMainWindow):
         # ====================================================
 
         self.stack = QStackedWidget()
+        self.stack.currentChanged.connect(self.sync_reading_sidebar)
 
         root.addWidget(
             sidebar
@@ -490,6 +492,10 @@ class AppShell(QMainWindow):
     # ========================================================
     # PAGE CACHE
     # ========================================================
+
+    def sync_reading_sidebar(self, *args):
+        page = self.stack.currentWidget()
+        self.sidebar.setVisible(not bool(getattr(page, "reading_mode", False)))
 
     def show_page(
         self,
@@ -1586,6 +1592,8 @@ class AppShell(QMainWindow):
                     self.open_next_lesson
                 ),
             )
+
+            page.reading_mode_changed.connect(self.sync_reading_sidebar)
 
             page.lesson_completed.connect(
                 lambda completed_lesson_id,

@@ -1268,7 +1268,9 @@ def audit_customer_features() -> None:
             "backup_imported",
         ],
         APP_DIR / "ui" / "embedded_pages.py": [
-            "BOOKMARK",
+            "XATCHO‘P",
+            "bookmarkButton",
+            "toggle_bookmark",
             "MENING ESLATMAM",
             "KEYINGI DARS",
             "open_next_lesson_callback",
