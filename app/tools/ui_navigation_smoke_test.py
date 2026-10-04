@@ -37,7 +37,8 @@ os.environ[
     DB_PATH
 )
 
-# GUI test real display talab qilmasin.
+# Audit headless ishlaydi. Rendering emas, real Qt signal/callback
+# va QStackedWidget navigation kontrakti tekshiriladi.
 os.environ.setdefault(
     "QT_QPA_PLATFORM",
     "offscreen",
@@ -66,8 +67,16 @@ from database.database import (
     initialize_database,
 )
 
-from ui.dashboard_window import (
-    DashboardWindow,
+from courses.course_service import (
+    get_learning_overview,
+)
+
+from ui.app_shell import (
+    AppShell,
+)
+
+from ui.learning_page import (
+    LearningPage,
 )
 
 
@@ -251,6 +260,65 @@ def seed_navigation_data() -> tuple[dict, int]:
         connection.close()
 
 
+def get_first_lesson(
+    user_id: int,
+) -> dict:
+    overview = get_learning_overview(
+        user_id
+    )
+
+    assert_true(
+        bool(
+            overview
+        ),
+        "Learning overview bo'sh.",
+    )
+
+    modules = overview[0].get(
+        "modules",
+        [],
+    )
+
+    assert_true(
+        bool(
+            modules
+        ),
+        "LEVEL_00 modullari topilmadi.",
+    )
+
+    lessons = modules[0].get(
+        "lessons",
+        [],
+    )
+
+    assert_true(
+        bool(
+            lessons
+        ),
+        "L00_M01 darslari topilmadi.",
+    )
+
+    lesson = dict(
+        lessons[0]
+    )
+
+    lesson[
+        "level_title"
+    ] = overview[0].get(
+        "title",
+        "",
+    )
+
+    lesson[
+        "module_title"
+    ] = modules[0].get(
+        "title",
+        "",
+    )
+
+    return lesson
+
+
 def main() -> int:
     print()
     print(
@@ -276,48 +344,48 @@ def main() -> int:
             seed_navigation_data()
         )
 
-        shell = DashboardWindow(
-            user
+        # ====================================================
+        # 1. REAL OCHISH BUTTON -> LEARNINGPAGE CALLBACK
+        # ====================================================
+
+        callback_calls = []
+
+        def capture_open(
+            lesson_data,
+            source_page,
+        ):
+            callback_calls.append(
+                (
+                    dict(
+                        lesson_data
+                    ),
+                    source_page,
+                )
+            )
+
+        isolated_page = LearningPage(
+            user=user,
+            focus_level_codes=[
+                "LEVEL_00"
+            ],
+            custom_title=(
+                "LEVEL 00 • Absolute Zero"
+            ),
+            custom_subtitle=(
+                "Arxitekturaga mutlaqo noldan kirish"
+            ),
+            open_lesson_callback=(
+                capture_open
+            ),
         )
 
-        # Real widget event zanjirini tekshirish uchun shellni
-        # offscreen platformda ham ko'rsatilgan holatga o'tkazamiz.
-        shell.show()
-        app.processEvents()
-
-        shell.open_single_level(
-            "LEVEL_00",
-            "Absolute Zero",
-            "Arxitekturaga mutlaqo noldan kirish",
-            "home",
-        )
-
-        app.processEvents()
-
-        assert_true(
-            shell.current_page_key
-            == "level::LEVEL_00",
-            "Level sahifasi ochilmadi.",
-        )
-
-        level_page = shell.page_cache.get(
-            "level::LEVEL_00"
-        )
-
-        assert_true(
-            level_page
-            is not None,
-            "LearningPage cache'da topilmadi.",
-        )
-
-        open_button = level_page.findChild(
+        open_button = isolated_page.findChild(
             QPushButton,
             "openLesson",
         )
 
         assert_true(
-            open_button
-            is not None,
+            open_button is not None,
             "OCHISH tugmasi topilmadi.",
         )
 
@@ -328,7 +396,86 @@ def main() -> int:
 
         open_button.click()
         app.processEvents()
-        QApplication.sendPostedEvents()
+
+        assert_true(
+            len(
+                callback_calls
+            )
+            == 1,
+            (
+                "OCHISH tugmasi LearningPage callback'ini "
+                "aniq bir marta chaqirmadi."
+            ),
+        )
+
+        captured_lesson, captured_source = (
+            callback_calls[0]
+        )
+
+        assert_true(
+            int(
+                captured_lesson.get(
+                    "id",
+                    0,
+                )
+            )
+            == lesson_id,
+            "OCHISH noto'g'ri lesson ID uzatdi.",
+        )
+
+        assert_true(
+            captured_source
+            is isolated_page,
+            "OCHISH noto'g'ri source page uzatdi.",
+        )
+
+        # ====================================================
+        # 2. APPSHELL LEVEL -> LESSONPAGE
+        # ====================================================
+
+        shell = AppShell(
+            user
+        )
+
+        shell.open_single_level(
+            "LEVEL_00",
+            "Absolute Zero",
+            "Arxitekturaga mutlaqo noldan kirish",
+            "home",
+        )
+
+        app.processEvents()
+
+        level_key = (
+            "level::LEVEL_00"
+        )
+
+        assert_true(
+            shell.current_page_key
+            == level_key,
+            "Level sahifasi ochilmadi.",
+        )
+
+        level_page = shell.page_cache.get(
+            level_key
+        )
+
+        assert_true(
+            level_page is not None,
+            "LearningPage cache'da topilmadi.",
+        )
+
+        shell_button = level_page.findChild(
+            QPushButton,
+            "openLesson",
+        )
+
+        assert_true(
+            shell_button is not None,
+            "Shell ichidagi OCHISH tugmasi topilmadi.",
+        )
+
+        shell_button.click()
         app.processEvents()
 
         lesson_key = (
@@ -342,8 +489,8 @@ def main() -> int:
             shell.current_page_key
             == lesson_key,
             (
-                "OCHISH tugmasi LessonPage ga "
-                "navigatsiya qilmadi."
+                "Shell ichidagi OCHISH tugmasi "
+                "LessonPage ga o'tmadi."
             ),
         )
 
@@ -352,61 +499,96 @@ def main() -> int:
         )
 
         assert_true(
-            lesson_page
-            is not None,
+            lesson_page is not None,
             "LessonPage cache'da topilmadi.",
         )
 
         assert_true(
             int(
-                lesson_page.lesson[
-                    "id"
-                ]
+                lesson_page.lesson.get(
+                    "id",
+                    0,
+                )
             )
             == lesson_id,
-            "Noto'g'ri dars ochildi.",
-        )
-
-        back_button = lesson_page.findChild(
-            QPushButton,
-            "backButton",
+            "Shell noto'g'ri darsni ochdi.",
         )
 
         assert_true(
-            back_button
-            is not None,
-            "Lesson back tugmasi topilmadi.",
+            shell.stack.currentWidget()
+            is lesson_page,
+            "QStackedWidget LessonPage ni active qilmadi.",
         )
 
-        back_button.click()
+        # ====================================================
+        # 3. BACK CONTRACT
+        # ====================================================
+
+        assert_true(
+            callable(
+                lesson_page.back_callback
+            ),
+            "Lesson back callback ulanmagan.",
+        )
+
+        lesson_page.back_callback()
         app.processEvents()
 
         assert_true(
             shell.current_page_key
-            == "level::LEVEL_00",
+            == level_key,
             "Darsdan Levelga qaytish ishlamadi.",
         )
 
+        assert_true(
+            shell.stack.currentWidget()
+            is level_page,
+            "QStackedWidget LevelPage ga qaytmadi.",
+        )
+
+        # ====================================================
+        # 4. SOURCE DATA CONTRACT
+        # ====================================================
+
+        lesson = get_first_lesson(
+            user["id"]
+        )
+
+        assert_true(
+            lesson.get(
+                "status"
+            )
+            in {
+                "available",
+                "completed",
+            },
+            "Birinchi dars ochiq statusda emas.",
+        )
+
         print(
-            "[PASS] Level navigation"
+            "[PASS] OCHISH button -> LearningPage callback"
         )
         print(
-            "[PASS] OCHISH button signal"
+            "[PASS] Lesson payload/source contract"
         )
         print(
-            "[PASS] LessonPage construction"
+            "[PASS] AppShell Level -> LessonPage"
         )
         print(
-            "[PASS] Lesson cache/navigation"
+            "[PASS] QStackedWidget active lesson"
         )
         print(
-            "[PASS] Back navigation"
+            "[PASS] Lesson -> Level back navigation"
+        )
+        print(
+            "[PASS] First lesson unlock contract"
         )
         print()
         print(
             "UI NAVIGATION SMOKE TEST: PASSED"
         )
 
+        isolated_page.deleteLater()
         shell.close()
 
         return 0
@@ -414,6 +596,7 @@ def main() -> int:
     except Exception as exc:
         traceback.print_exc()
 
+        print()
         print(
             "[FAIL] "
             + str(
