@@ -1613,5 +1613,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L02_M05_001",
+    "asset": "realistic-l02_m05_001.jpg",
+    "title": "Oshxona funksiyasi va zonalari — rasmga qarab tushuning",
+    "explanation": [
+      "1. Saqlash va yuvish. Chapdagi sovutgich va uning yonidagi oziq-ovqat javoni saqlashni, rakovina yuvishni ko‘rsatadi.",
+      "2. Tayyorlash va pishirish. Rakovina bilan plita orasida mahsulot kesiladigan ish yuzasi bor; o‘ngdagi qozon pishirish joyini ajratadi.",
+      "3. Ishni ketma-ket bog‘lang. Saqlash → yuvish → tayyorlash → pishirish jarayonida qaysi jihoz va yuzadan foydalaniladi? Har bosqichning foydalanish va ochilish joyini haqiqiy planda tekshiring.",
+      "Darsdagi bajarish: To‘rtta ishni planda ketma-ket belgilang → faol zonalar."
+    ],
+    "exercise": "To‘rtta ishni ketma-ket yozib, jihozlar bilan bog‘lang.",
+    "solution": "Oshxona zonalari real ish jarayonidan kelib chiqadi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M05_002",
+    "asset": "realistic-l02_m05_002.jpg",
+    "title": "Ishchi uchburchak — rasmga qarab tushuning",
+    "explanation": [
+      "1. Uch asosiy nuqta. Ko‘k bog‘lanish sovutgich, rakovina va plita orasidagi ish aloqasini shartli ko‘rsatadi. Bu chiziqlardan aniq masofa o‘lchanmaydi.",
+      "2. Ovqatlanish oqimi. Oldingi to‘q sariq yo‘l stol yoniga tashqi chekkadan keladi; oshxonaning uch nuqtasi orasini kesmaydi.",
+      "3. Vosita sifatida ishlating. Harakatni ochiq jihozlar va bir nechta foydalanuvchi holatida ham tekshiring. Chiziqli oshxonada uchburchak hosil qilishni majburiy maqsad deb olmang; real ish jarayoni asosiy mezon.",
+      "Darsdagi bajarish: Uch asosiy nuqtani bog‘lab, yo‘lni dining oqimi bilan solishtiring → mehmon ish yo‘lini kesmaydi."
+    ],
+    "exercise": "Sovutkich, yuvish va pishirish nuqtalari orasidagi yo‘lni chizing.",
+    "solution": "Ishchi uchburchak tahlil vositasi; bir nechta foydalanuvchi va chiziqli oshxona holati ham alohida tekshiriladi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M05_003",
+    "asset": "realistic-l02_m05_003.jpg",
+    "title": "Countertop va saqlash — rasmga qarab tushuning",
+    "explanation": [
+      "1. Tayyorlash yuzasi. Chapdagi yuvish va o‘ngdagi pishirish orasida kesish taxtasi turgan ish joyi bor.",
+      "2. Saqlashni vazifaga bog‘lang. Taxta ostidagi tortmada anjomlar, o‘ngdagi ochiq javonda idishlar, yuqorida tarelka va stakanlar ko‘rinadi.",
+      "3. Ochilgan holatni tekshiring. Tortma va shkaf eshigi oldinga chiqadi. Buyum olish hamda shu vaqtda o‘tish uchun joy yetadimi? Haqiqiy jihoz o‘lchami bilan tekshiring.",
+      "Darsdagi bajarish: Jihozlar orasiga tayyorlash yuzasi va saqlashni qo‘shing → har ishning joyi bor."
+    ],
+    "exercise": "Tayyorlash yuzasini yuvish va pishirish ishlari bilan bog‘lang.",
+    "solution": "Saqlash va ish yuzasi ish ketma-ketligini qo‘llab-quvvatlashi kerak.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M05_004",
+    "asset": "realistic-l02_m05_004.jpg",
+    "title": "Circulation va dining aloqasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Sovutgich foydalanishda. Chap orqada eshik ochilgan va odam mahsulot olmoqda. Yopiq eshik konturi bu holatni ko‘rsatmaydi.",
+      "2. Stul foydalanishda. O‘ngda odam stulda o‘tiribdi; stulning stol ostidagi yopiq joylashuvidan ko‘proq maydon ishlatiladi.",
+      "3. Yo‘lni birga tekshiring. Yashil yo‘l kirishdan oshxona ish joyiga bo‘sh pol bo‘ylab keladi. Ochiq sovutgich va stul holatida yo‘l saqlanishini haqiqiy planda o‘lchang; render norma kengligini tasdiqlamaydi.",
+      "Darsdagi bajarish: Sovutgich eshigi va stul surilishini tekshiring → ochilish va o‘tirish yo‘lni to‘smaydi."
+    ],
+    "exercise": "Stul tortilgan dining holati bilan oshxona harakatini solishtiring.",
+    "solution": "Ovqatlanish va pishirish yo‘llari bir-birini to‘smasligi tekshiriladi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M05_005",
+    "asset": "realistic-l02_m05_005.jpg",
+    "title": "Oshxona auditi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi bir vaqtdagi ish. Bir odam rakovinada, ikkinchisi ochiq sovutgich yonida. To‘q sariq maydon yaqin harakat va ochilish joyini ajratadi.",
+      "2. O‘ngdagi tartib. Sovutgich uzoqroq uchga joylashtirilgan; ikki odam yuvish va tayyorlash ishini bajarayotganda o‘rtadagi yashil yo‘l ochiq ko‘rinadi.",
+      "3. Auditni jihoz bilan bajaring. Har bir eshik va tortma ochilishi, suv ishlatiladigan joy hamda ikki odamning yo‘lini qayd qiling. Aniq jihoz o‘lchami va foydalanish holati asosida xulosa chiqaring; rasm universal tayyor oshxona rejasi emas.",
+      "Darsdagi bajarish: Ishlayotgan ikki odamni sxemaga qo‘shing → tor yoki kesishuvchi harakatlar aniqlanadi."
+    ],
+    "exercise": "Jihoz ochilishlari, suv va harakat bo‘yicha xato xaritasini tuzing.",
+    "solution": "Oshxona auditi haqiqiy jihoz o‘lchami va foydalanish holatiga tayanadi; umumiy raqamni ko‘r-ko‘rona ko‘chirmaydi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
