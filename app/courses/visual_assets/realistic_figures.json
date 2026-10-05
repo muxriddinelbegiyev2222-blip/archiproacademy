@@ -1103,5 +1103,260 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L01_M05_001",
+    "asset": "realistic-l01_m05_001.jpg",
+    "title": "Forma va hajm tushunchasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Kontur ikki yo‘nalishda o‘qiladi. Chapdagi past maket asosiy to‘rtburchak va oldidagi qo‘shimcha kirish konturini ko‘rsatadi.",
+      "2. Hajm balandlikni qo‘shadi. O‘ngdagi maketda devor, ustki qism va ayvon balandliklari bor. To‘q sariq tik chekka shu uchinchi yo‘nalishni ajratadi.",
+      "3. Maydon va hajmni aralashtirmang. Dars shartidagi 10×8 m kontur maydoni 80 m²; 3 m balandlikli oddiy prizmaning geometrik hajmi 240 m³. Bu hisob shartdan olinadi, suratdagi maketdan emas.",
+      "Darsdagi bajarish: Planni kontur, 3Dni balandlik bilan o‘qing → maydon va hajm boshqa kattalik."
+    ],
+    "exercise": "Plan konturi bilan uch o‘lchamli hajmni alohida ko‘rsating.",
+    "solution": "Kontur ikki o‘lchamli shakl, hajm esa balandlik va chuqurlikka ham ega makondir.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M05_002",
+    "asset": "realistic-l01_m05_002.jpg",
+    "title": "Oddiy geometrik hajmlar — rasmga qarab tushuning",
+    "explanation": [
+      "1. Oddiy hajmlarni ajrating. Chapda kub, o‘rtada cho‘zilgan to‘rtburchak prizma, o‘ngda silindr ko‘rsatilgan.",
+      "2. Uch yo‘nalishni ko‘ring. Prizmadagi gorizontal va tik belgilar en/uzunlik hamda balandlik farqini eslatadi; chuqurlik ham alohida yo‘nalish.",
+      "3. Binoni qismlarga ajrating. Orqadagi kichik maket oddiy hajmlarning bino ko‘rinishiga birlashishini ko‘rsatadi. Murakkab massani avval tushunarli geometrik qismlarda o‘qing.",
+      "Darsdagi bajarish: To‘rtburchak hajmni kenglik, chuqurlik, balandlik bilan belgilang → model tasvirga emas o‘lchamga tayanadi."
+    ],
+    "exercise": "Kub, prizma va silindrni sodda perspektivada chizing.",
+    "solution": "Oddiy hajmlarni o‘qish murakkab bino massasini qismlarga ajratishga yordam beradi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M05_003",
+    "asset": "realistic-l01_m05_003.jpg",
+    "title": "Hajmlarni birlashtirish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapda yonma-yon tutashish. Ochiq rangli asosiy hajm va rangli kirish qismi yon tomonda birlashgan.",
+      "2. O‘rtada ichkariroq tutashish. Kichik hajm asosiy kontur ichiga chuqurroq kirib, kirish atrofida boshqa bo‘shliq hosil qilgan.",
+      "3. O‘ngda oraliq bilan aloqa. Ikki qismni yopiq ustki yo‘l bog‘laydi. Har variantda kirish, ichki aloqa va ochiq-yopiq joyning vazifasini hujjatda tekshiring; maket o‘lchamli loyiha emas.",
+      "Darsdagi bajarish: Ayvon hajmini kirish tomoniga qo‘shing, yopilish va ochiqlikni ajrating → tushunarli kirish."
+    ],
+    "exercise": "Ikki hajmni yonma-yon, qisman kesishgan va oraliq bilan bog‘langan holda tasvirlang.",
+    "solution": "Birlashtirish turi kirish, ichki aloqa va tashqi massani birga o‘zgartiradi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M05_004",
+    "asset": "realistic-l01_m05_004.jpg",
+    "title": "Bo'shliq, kesish va chiqarish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Markazdagi hovli bo‘shlig‘i. Yashil chekka bilan ajratilgan joy ochiq osmon ostida; atrofdagi ochilishlar shu tomonga qaragan.",
+      "2. Chapdagi ayvon. To‘q sariq chekkali ustki qoplama ostida soyali ochiq joy bor. U yopiq xona ham, ochiq hovlining aynan o‘zi ham emas.",
+      "3. Bo‘shliqning vazifasini yozing. Qaysi xona yorug‘lik oladi, qayerdan kiriladi, qaysi joy ochiq yoki yopiq? Hajmdan joy ajratishning foydalanish sababi bo‘lsin; haqiqiy aloqa va o‘lcham planda tekshiriladi.",
+      "Darsdagi bajarish: Hajmdan ichki hovli bo‘shlig‘ini ajrating → qaysi xonalar yorug‘lik olishini yozing."
+    ],
+    "exercise": "Bitta hajmdan ayvon bo‘shlig‘ini ajratib, yopiq va ochiq qismlarni belgilang.",
+    "solution": "Bo‘shliq ham kompozitsiya elementi; kesish va chiqarishning funksional sababi ko‘rsatiladi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M05_005",
+    "asset": "realistic-l01_m05_005.jpg",
+    "title": "3D forma tahlili — rasmga qarab tushuning",
+    "explanation": [
+      "1. Foydalanadigan chiqishni toping. Olddagi yashil ajratilgan oynali qism ichida o‘tirish joyi bor; ayvon esa tashqi soyali joy yaratadi.",
+      "2. To‘q sariq bo‘rtmani savolga aylantiring. Uning planda qanday vazifasi bor, ichki joyga nima beradi? Tashqi chiqishning o‘zi asos bo‘lib qolmasin.",
+      "3. Bir nechta ko‘rinishda tekshiring. Yonidagi yuqoridan va kesilgan ko‘rinishlar bu tahlil usulini tushuntiradi. Haqiqiy hujjatda sath, aloqa va bo‘shliq dalillarini solishtiring, faqat chiroyli rakursga tayanmang.",
+      "Darsdagi bajarish: 3Ddagi har chiqishga plandagi sababni toping → sababsiz dekorativ bo‘rtma aniqlanadi."
+    ],
+    "exercise": "Uch variantning plan, kesim va soyali ko‘rinishini solishtiring.",
+    "solution": "3D tahlil faqat chiroyli rakurs emas; sath, aloqa va bo‘shliq dalillari ham tekshiriladi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M06_001",
+    "asset": "realistic-l01_m06_001.jpg",
+    "title": "Arxitektura uslubi nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapda qarorlar turlicha. Klassik ustun, tekis hajm, uchli ochilish va boshqa rom bir-biridan ajralib ko‘rinmoqda.",
+      "2. O‘ngda izchillikni qidiring. Yog‘och ayvon, bir xil rom tili, tinch devor va cheklangan panjara mavzusi birga o‘qiladi.",
+      "3. To‘rt mezon bilan yozing. Hajm, ochilish, material va detalni alohida tahlil qiling. Uslub bitta rang yoki bezak nomi bilan aniqlanmaydi.",
+      "Darsdagi bajarish: Uslubni bezakdan kengroq o‘qing: hajm, ochilish, material va konstruktiv ifoda → to‘rt mezon."
+    ],
+    "exercise": "Uslubni hajm, ochilish, material va detal belgilariga ajrating.",
+    "solution": "Uslub bitta bezak yoki rang bilan belgilanmaydi; bir nechta izchil qaror orqali o‘qiladi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M06_002",
+    "asset": "realistic-l01_m06_002.jpg",
+    "title": "Tarixiy uslublarni o'qish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Bu tarixiy foto emas. Tasvir tarixiy me’morchilikdan ilhomlangan o‘quv namuna; aniq yodgorlik, davr yoki o‘lchamning dalili sifatida olinmaydi.",
+      "2. Tuzilmani o‘qing. Markazdagi o‘q, yirik kirish va yon tomondagi takror ochilishlar ko‘rish tartibini yaratadi.",
+      "3. Bezakni prinsipdan ajrating. Rangli naqshli qoplama bilan hajm, nisbat va takror tartibi boshqa savollar. Haqiqiy tarixiy misolni tahlil qilganda uning davri va manbasini ham aniqlang, faqat naqshni ko‘chirmang.",
+      "Darsdagi bajarish: Tarixiy misolda o‘q, nisbat va ritmni ajrating → naqshni ko‘chirmasdan tamoyilni tushuning."
+    ],
+    "exercise": "Tarixiy bino tasviridan uch belgi topib, qaysi biri tuzilma va qaysi biri bezak ekanini yozing.",
+    "solution": "Tarixiy uslubni tahlil qilish davr va kontekstni anglashdan boshlanadi, tayyor ornamentni ko‘chirishdan emas.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M06_003",
+    "asset": "realistic-l01_m06_003.jpg",
+    "title": "Zamonaviy arxitektura — rasmga qarab tushuning",
+    "explanation": [
+      "1. Sodda tashqi hajm. Uy ko‘rinishi cheklangan hajm va materiallar orqali o‘qiladi; soddalik faqat oq rang degani emas.",
+      "2. Ochilish xonaga xizmat qiladi. Keng oyna umumiy xonaga, kichikroq oyna yotoq joyiga bog‘langan. Kesilgan tasvir ichki vazifani ochadi.",
+      "3. Foydalanishni asoslang. Plan, kirish, soyali joy, yorug‘lik va texnologik qarorlarni birga tekshiring. Chiroyli zamonaviy rakursning o‘zi loyiha yechilganini bildirmaydi.",
+      "Darsdagi bajarish: Zamonaviy misolda sodda hajm va funksional ochilishni tahlil qiling → soddalik ham tekshiruv talab qiladi."
+    ],
+    "exercise": "Zamonaviy variantda funksional plan va sodda hajmni asoslang.",
+    "solution": "Zamonaviy arxitektura avtomatik oq fasad degani emas; makon, texnologiya va foydalanish qarorlari muhim.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M06_004",
+    "asset": "realistic-l01_m06_004.jpg",
+    "title": "Uslublarni aralashtirish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Bitta mavzuni toping. Yashil kontur yog‘och geometrik panjaraning ikki joyda takrorlanishini ko‘rsatadi.",
+      "2. Boshqa detallarni unga bog‘lang. Ayvon yog‘ochi, romlar va tinch devor shu cheklangan tilni qo‘llab turibdi.",
+      "3. Vazifani ham yozing. Panjara aynan qayerda soya, chegaralash yoki ko‘rinishga xizmat qiladi? Faqat milliy naqshni qo‘shish yetmaydi; material va nisbat boshqa qarorlar bilan kelishsin.",
+      "Darsdagi bajarish: Ikki uslub elementini bir material va nisbatga moslashtiring → kelishilgan aralashma."
+    ],
+    "exercise": "Milliy elementdan bitta mavzuni tanlab, boshqa detallarni unga moslang.",
+    "solution": "Uslublarni aralashtirishda asosiy yo‘nalish va elementlarning vazifasi tushunarli bo‘lishi kerak.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M06_005",
+    "asset": "realistic-l01_m06_005.jpg",
+    "title": "Arxitektura uslubi auditi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Qarorlarni ajrating. Modeldagi devor, yog‘och kirish, rom, panjara va sokolni oldingi material namunalariga bog‘lab o‘qing.",
+      "2. Izchillikni tekshiring. Har material qaysi qismda va nima uchun ishlatilayotganini yozing. Bir xil rangning o‘zi bir xil konsepsiya degani emas.",
+      "3. Chetdagi bezakni savolga aylantiring. To‘q sariq kontur ichidagi oltinrang detal umumiy modelga qo‘shilmagan. Uni qo‘shishning vazifasi va tizimdagi o‘rni asoslanadimi? Har detalni shu mezon bilan baholang.",
+      "Darsdagi bajarish: Har detalga vazifa va umumiy tizimdagi o‘rnini yozing → sababsiz bezak ajraladi."
+    ],
+    "exercise": "Fasadning besh qarorini bir uslub xaritasida ko‘rsating.",
+    "solution": "Har qaror bir xil konsepsiyaga xizmat qilsa, uslub yaxlitligi dalil bilan tushuntiriladi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M01_001",
+    "asset": "realistic-l02_m01_001.jpg",
+    "title": "Ergonomika nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Harakatni nomlang. Rasmda shkafdan kiyim olish, stol yonida o‘tirish va krovat yonida choyshabni to‘g‘rilash ko‘rsatilgan. Xonani faqat mebel nomlari bilan tasvirlamang.",
+      "2. Harakat uchun joy ajrating. Yashil zona kirish va shkaf oldidagi foydalanishni, to‘q sariq zona stul atrofini tushuntiradi.",
+      "3. Ssenariyni tekshiring. Uxlash, kiyinish va ishlash bir-biriga qanday ta’sir qiladi? Aniq mebel va yo‘l o‘lchami hujjatda tekshiriladi; renderdagi zonalar norma o‘lchamlari emas.",
+      "Darsdagi bajarish: Avval odamning turish, o‘tirish, yurish harakatini belgilang → foydalanish ssenariysi."
+    ],
+    "exercise": "Xonada uxlash, kiyinish va ishlash harakatlarini yozing.",
+    "solution": "Ergonomika jihoz o‘lchami bilan insonning foydalanish harakatini birga ko‘radi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M01_002",
+    "asset": "realistic-l02_m01_002.jpg",
+    "title": "Inson tanasi va makon — rasmga qarab tushuning",
+    "explanation": [
+      "1. Tana va mebel konturi boshqa. Krovatning to‘q sariq chekkasi jihozning joyini ajratadi; odam esa uning tashqarisida turib foydalanadi.",
+      "2. Burilish va yetishni ko‘ring. Xira holatlar odamning turishi va burilishini, aniq holat buyumga qo‘l uzatishini ko‘rsatadi. Bular bir vaqtda turgan uch kishi emas, harakat misollari.",
+      "3. O‘lchamni to‘g‘ri manbadan oling. Darsdagi 2×1.6 m krovatni haqiqiy konturda joylashtiring, keyin harakat joyini tekshiring. Surat odam tanasi o‘lchamlarining jadvali emas.",
+      "Darsdagi bajarish: Mebelni haqiqiy o‘lchamli to‘rtburchak bilan chizing → 2×1.6 m krovat."
+    ],
+    "exercise": "Bir odam turishi, burilishi va buyumga yetishini eskizda ko‘rsating.",
+    "solution": "Tana joylashuvi va harakat maydoni mebel konturidan tashqariga chiqishi mumkin.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M01_003",
+    "asset": "realistic-l02_m01_003.jpg",
+    "title": "Mebel va foydalanish zonasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Jihozning joyi. To‘q sariq konturlar krovat, stol va shkafning egallagan joyini ajratadi.",
+      "2. Foydalanish holati. Shkaf eshigi ochiq, stul tortilgan; yashil zonalar shu holatlarda odam uchun kerak bo‘ladigan joyni ko‘rsatadi.",
+      "3. Xizmat joyini tekshiring. Krovat yonida choyshab almashtirish, shkafdan buyum olish va stuldan turish mumkinmi? Bo‘sh maydonning jami emas, aynan qayerda va qanday ishlatilishi muhim.",
+      "Darsdagi bajarish: Krovat yoniga kirish va choyshab almashtirish zonasini ajrating → xizmat ko‘rsatish joyi ko‘rinadi."
+    ],
+    "exercise": "Shkaf eshigi ochilgan va stul tortilgan holatni planga qo‘shing.",
+    "solution": "Jihoz konturi bilan foydalanish zonasi boshqa-boshqa tekshiruv qatlamlaridir.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M01_004",
+    "asset": "realistic-l02_m01_004.jpg",
+    "title": "Yurish yo'llari — rasmga qarab tushuning",
+    "explanation": [
+      "1. Kirishdan yo‘lni boshlang. Yashil yo‘l haqiqiy eshik ochilishidan xona ichiga keladi; eshik bargi yo‘nalishlarni yopmaydigan holatda ko‘rsatilgan.",
+      "2. Uch maqsadga boring. Chap yo‘l stolga, oldingi yo‘l krovat oldiga, o‘ng yo‘l shkafga keladi. Yo‘nalishlar mebel ustidan o‘tmaydi.",
+      "3. Har holatda tekshiring. Stul tortilganda, shkaf ochilganda va krovatdan foydalanilganda yo‘l qanday o‘zgaradi? Rasm yo‘l mantiqini tushuntiradi, haqiqiy kengliklar planda tekshiriladi.",
+      "Darsdagi bajarish: Eshikdan krovatgacha va shkafgacha uzluksiz yo‘l chizing → mebel yo‘lni kesmaydi."
+    ],
+    "exercise": "Kirishdan krovat va stolga boradigan yo‘llarni chizing.",
+    "solution": "Mebelni chetlab o‘tadigan majburiy yo‘l bilan erkin foydalanish yo‘li farqlanadi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M01_005",
+    "asset": "realistic-l02_m01_005.jpg",
+    "title": "Ergonomik xatolarni topish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi aniq konflikt. Xona eshigi va shkaf eshigining ochilgan barglari to‘q sariq joyda bir-biriga kelib qolgan.",
+      "2. O‘ngdagi tuzatish. Shkafning kirishga yaqin joylashuvi o‘zgargan; ochilgan eshiklar orasida yashil yo‘l uzluksiz davom etadi.",
+      "3. Harakat holatini yozing. Eshik, shkaf va stulni faqat yopiq holatda tekshirmang. Muammo qachon paydo bo‘lishi va qaysi o‘zgarish uni yo‘qotishini ko‘rsating; faqat xona kichik deyish yetmaydi.",
+      "Darsdagi bajarish: Eshik yoyi shkaf eshigi bilan to‘qnashsa mebel yoki ochilish yo‘nalishini o‘zgartiring → konflikt yo‘qoladi."
+    ],
+    "exercise": "Eshik, stul va shkaf to‘qnashuvini belgilang va bir variantni tuzating.",
+    "solution": "Muammo aniq harakat holatida ko‘rsatiladi; faqat “xona kichik” degan izoh yetmaydi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]

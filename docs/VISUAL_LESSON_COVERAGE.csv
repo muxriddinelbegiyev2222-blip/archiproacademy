@@ -39,21 +39,21 @@ L01_M04_002,L01_M04,Simmetrik fasad,illustrated,1,realistic-l01_m04_002.jpg
 L01_M04_003,L01_M04,Asimmetriya nima?,illustrated,1,realistic-l01_m04_003.jpg
 L01_M04_004,L01_M04,Asimmetrik balans,illustrated,1,realistic-l01_m04_004.jpg
 L01_M04_005,L01_M04,Simmetriya va asimmetriya xatolari,illustrated,1,realistic-l01_m04_005.jpg
-L01_M05_001,L01_M05,Forma va hajm tushunchasi,illustrated,1,l01_m05_001.svg
-L01_M05_002,L01_M05,Oddiy geometrik hajmlar,illustrated,1,l01_m05_002.svg
-L01_M05_003,L01_M05,Hajmlarni birlashtirish,illustrated,1,l01_m05_003.svg
-L01_M05_004,L01_M05,"Bo'shliq, kesish va chiqarish",illustrated,1,l01_m05_004.svg
-L01_M05_005,L01_M05,3D forma tahlili,illustrated,1,l01_m05_005.svg
-L01_M06_001,L01_M06,Arxitektura uslubi nima?,illustrated,1,l01_m06_001.svg
-L01_M06_002,L01_M06,Tarixiy uslublarni o'qish,illustrated,1,l01_m06_002.svg
-L01_M06_003,L01_M06,Zamonaviy arxitektura,illustrated,1,l01_m06_003.svg
-L01_M06_004,L01_M06,Uslublarni aralashtirish,illustrated,1,l01_m06_004.svg
-L01_M06_005,L01_M06,Arxitektura uslubi auditi,illustrated,1,l01_m06_005.svg
-L02_M01_001,L02_M01,Ergonomika nima?,illustrated,1,l02_m01_001.svg
-L02_M01_002,L02_M01,Inson tanasi va makon,illustrated,1,l02_m01_002.svg
-L02_M01_003,L02_M01,Mebel va foydalanish zonasi,illustrated,1,l02_m01_003.svg
-L02_M01_004,L02_M01,Yurish yo'llari,illustrated,1,l02_m01_004.svg
-L02_M01_005,L02_M01,Ergonomik xatolarni topish,illustrated,1,l02_m01_005.svg
+L01_M05_001,L01_M05,Forma va hajm tushunchasi,illustrated,1,realistic-l01_m05_001.jpg
+L01_M05_002,L01_M05,Oddiy geometrik hajmlar,illustrated,1,realistic-l01_m05_002.jpg
+L01_M05_003,L01_M05,Hajmlarni birlashtirish,illustrated,1,realistic-l01_m05_003.jpg
+L01_M05_004,L01_M05,"Bo'shliq, kesish va chiqarish",illustrated,1,realistic-l01_m05_004.jpg
+L01_M05_005,L01_M05,3D forma tahlili,illustrated,1,realistic-l01_m05_005.jpg
+L01_M06_001,L01_M06,Arxitektura uslubi nima?,illustrated,1,realistic-l01_m06_001.jpg
+L01_M06_002,L01_M06,Tarixiy uslublarni o'qish,illustrated,1,realistic-l01_m06_002.jpg
+L01_M06_003,L01_M06,Zamonaviy arxitektura,illustrated,1,realistic-l01_m06_003.jpg
+L01_M06_004,L01_M06,Uslublarni aralashtirish,illustrated,1,realistic-l01_m06_004.jpg
+L01_M06_005,L01_M06,Arxitektura uslubi auditi,illustrated,1,realistic-l01_m06_005.jpg
+L02_M01_001,L02_M01,Ergonomika nima?,illustrated,1,realistic-l02_m01_001.jpg
+L02_M01_002,L02_M01,Inson tanasi va makon,illustrated,1,realistic-l02_m01_002.jpg
+L02_M01_003,L02_M01,Mebel va foydalanish zonasi,illustrated,1,realistic-l02_m01_003.jpg
+L02_M01_004,L02_M01,Yurish yo'llari,illustrated,1,realistic-l02_m01_004.jpg
+L02_M01_005,L02_M01,Ergonomik xatolarni topish,illustrated,1,realistic-l02_m01_005.jpg
 L02_M02_001,L02_M02,Funksional zonalash nima?,illustrated,1,l02_m02_001.svg
 L02_M02_002,L02_M02,Public va private zonalar,illustrated,1,l02_m02_002.svg
 L02_M02_003,L02_M02,Service va xo'jalik zonasi,illustrated,1,l02_m02_003.svg
