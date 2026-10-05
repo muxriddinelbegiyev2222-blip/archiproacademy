@@ -342,86 +342,86 @@
   {
     "code": "L05_M05_001",
     "asset": "ac28-door-window.png",
-    "title": "Window Settings: deraza tanlash va sozlash",
+    "title": "Kutubxona elementi, o‘lcham va joylashtirish parametrlari",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-15.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/WindowSettings.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Window Settings: deraza tanlash va sozlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Door yoki Windowni tanlang, kutubxona elementini va o‘lchamni sozlang. Devor ustida joylashtiring → devorga bog‘langan ochilish."
+      "Chapda kutubxonadagi deraza turlari, o‘ngda tanlangan Window 26 parametrlari bor. Bu deraza sozlamasining namunasi; Door asbobida tegishli eshik elementi tanlanadi.",
+      "Preview and Positioning qismida eni 900, bo‘yi 1500 va Sill to Story 0 qiymati 1000 ko‘rsatilgan. Bular namunaviy kutubxona qiymatlari, darsdagi deraza sharti emas.",
+      "Kutubxona elementini tanlash bilan modelga joylashtirish boshqa amallardir. Door yoki Window mustaqil bo‘sh maydonga emas, mavjud devorga joylashtiriladi."
     ],
     "exercise": "Door va Windowni mos devorga joylashtirib, host aloqasini ko‘ring.",
     "solution": "Door va Window modeli devordagi ochilish bilan bog‘lanadi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 rasmiy qo‘llanmasidagi haqiqiy tasvir; skrinshotda Archicad Library 26 va Window 26 ko‘rsatilgan. O‘rnatilgan kutubxonaga qarab element nomi va parametrlar joylashuvi farq qiladi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L05_M05_002",
-    "asset": "ac28-door-position.png",
-    "title": "Door/Window: o‘lcham va joylashtirish paneli",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-16.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/PreviewPositioning.png",
-    "block": 0,
+    "asset": "ac28-door-opening-direction.png",
+    "title": "Planda eshik tabaqasining ochilish tomonini tanlash",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-306.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/OpeningDirection.png",
+    "block": 2,
     "explanation": [
-      "Door/Window: o‘lcham va joylashtirish paneli. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Eshikni 900×2100 mm qilib ochilish tomonini ko‘rsating, yoyni mebel bilan solishtiring → foydalanish tekshiruvi."
+      "Devor ichidagi qizil eshik tabaqasi va yoy uning ochilish yo‘lini ko‘rsatadi. To‘rt strelka joylashtirish paytida tanlanadigan tomonlarning oldindan ko‘rish belgisidir.",
+      "Kursorni kerakli tomon va ilmoq joyiga olib boring, oldindan ko‘rish yo‘nalishini tekshiring, keyin bosib tasdiqlang. Quyosh belgisi reveal tomonini bildiradi; u eshikning barcha vazifalari uchun bir xil ochilish qoidasi emas.",
+      "900 × 2100 mm — shu mashqning o‘quv sharti. Eni va bo‘yi to‘g‘ri bo‘lsa ham, yoyning mebel yoki yurish yo‘li bilan to‘qnashuvini alohida tekshiring."
     ],
     "exercise": "Eshik eni, balandligi va ochilish tomonini tekshirib, mebel yo‘li bilan solishtiring.",
     "solution": "To‘g‘ri o‘lcham ochilish tomoni va foydalanish yo‘li to‘g‘ri degani emas.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT qo‘llanmasidagi haqiqiy namuna. Rasm faqat ko‘rsatilgan panel yoki amalni tushuntiradi; versiya va kutubxonaga qarab ko‘rinish farq qiladi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L05_M05_003",
     "asset": "ac28-door-position.png",
-    "title": "Door/Window: o‘lcham va joylashtirish paneli",
+    "title": "Deraza: Width, Height va Sill uch boshqa qiymat",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-16.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/PreviewPositioning.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Door/Window: o‘lcham va joylashtirish paneli. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Deraza eni 1200, bo‘yi 1500, pastki sathi 900 mm bo‘lsa yuqori sath 2400 mm → kesim va fasadda tekshiring."
+      "Yuqoridagi 900 — deraza eni, uning ostidagi 1500 — bo‘yi. Sill to Story 0 ostidagi 1000 — deraza pastki sathining tanlangan qavatga nisbatan balandligi.",
+      "Mashqda enni 1200, bo‘yni 1500, Sillni 900 mm qilib kiriting. Agar tayanch qavat sathi 0 bo‘lsa, deraza tepasi 900 + 1500 = 2400 mm bo‘ladi.",
+      "Sill to Story, Sill to Wall Base va Header tayanchlari bir xil emas. Qaysi tayanchdan o‘lchayotganingizni tekshirib, natijani kesim hamda fasadda solishtiring. Rasmdagi Window 20 — eski kutubxona namunasi."
     ],
     "exercise": "Deraza balandligi va pastki sathini kesimda belgilang.",
     "solution": "Deraza balandligi bilan sill sathi alohida tekshiriladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 rasmiy qo‘llanmasidagi haqiqiy tasvir; skrinshotda Window 20 yozilgan. Parametr vazifasini tushuntiradi, kutubxona versiyasi va amaldagi sozlamalar bilan solishtiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L05_M05_004",
-    "asset": "ac28-door-position.png",
-    "title": "Door/Window: o‘lcham va joylashtirish paneli",
+    "asset": "ac28-door-flip-before.png",
+    "title": "Mavjud ochilishni tanlab Flip buyrug‘ini ishlatish",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-16.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/PreviewPositioning.png",
-    "block": 0,
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/Flip1.png",
+    "block": 3,
     "explanation": [
-      "Door/Window: o‘lcham va joylashtirish paneli. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Mavjud ochilishni tanlab parametrini o‘zgartiring, boshqa devorga o‘zboshimcha ko‘chirmang → bog‘lanish saqlanadi."
+      "Yashil qirralar ochilish tanlanganini, yuqoridagi qizil ramka Flip tugmasini ko‘rsatadi. Bu Door/Window uchun umumiy tahrirlash amali.",
+      "Flip ochilish yo‘nalishini boshqa tomonga almashtiradi, ramkaning joyini saqlaydi. Bu buyruq yangi eshik yaratish yoki boshqa host devorga ko‘chirish bilan teng emas.",
+      "Avval kerakli element tanlanganini tekshiring, so‘ng natijani plandagi yoy va 3D ko‘rinishi bilan solishtiring. Eni yoki bo‘yini tahrirlash uchun tanlangan elementning Settings parametrlarini oching."
     ],
     "exercise": "Bitta ochilish parametrini o‘zgartiring va plan, fasad, 3D natijalarini solishtiring.",
     "solution": "Ochilish tahriri bog‘liq ko‘rinishlarda muvofiq natija berishi kerak.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT qo‘llanmasidagi haqiqiy namuna. Rasm faqat ko‘rsatilgan panel yoki amalni tushuntiradi; versiya va kutubxonaga qarab ko‘rinish farq qiladi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L05_M05_005",
     "asset": "ac28-door-window.png",
-    "title": "Window Settings: deraza tanlash va sozlash",
+    "title": "Mini-loyiha: deraza parametrini qayd qilish",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-15.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/WindowSettings.png",
-    "block": 0,
+    "block": 3,
     "explanation": [
-      "Window Settings: deraza tanlash va sozlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: ID, o‘lcham, ochilish va sath jadvalini plan/fasad bilan solishtiring → ikki ochilishning bir xil ma’lumoti."
+      "Deraza Settings oynasidan kutubxona turini, Width, Height va Sill tayanchini qayd qiling. Rasmda 900, 1500 va 1000 bor; mashqdagi 1200, 1500 va 900 mm bilan aralashtirmang.",
+      "O‘z jadvalingizda deraza IDsi, host devori, eni, bo‘yi va sathini bir qatorda yozing. Ushbu kadr tanlangan namunaviy elementning ID jadvalini ko‘rsatmaydi.",
+      "900 mm pastki sath va 1500 mm bo‘y uchun yuqori sath 2400 mm bo‘ladi — bir xil tayanchdan hisoblang. Fasad va kesimdagi natijani shu qiymatlar bilan tekshiring."
     ],
     "exercise": "Ikki ochilish uchun o‘lcham, sath, host va foydalanish tekshiruvini topshiring.",
     "solution": "Door va Window auditi parametrni chizmada va foydalanish ssenariysida tasdiqlaydi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 rasmiy qo‘llanmasidagi haqiqiy tasvir; skrinshotda Archicad Library 26 va Window 26 ko‘rsatilgan. O‘rnatilgan kutubxonaga qarab element nomi va parametrlar joylashuvi farq qiladi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
@@ -3880,6 +3880,89 @@
     "exercise": "Slab konturi, sathi, qalinligi va teshigini bitta kesimda dalillang.",
     "solution": "Mini-loyiha poligon bilan vertikal joylashuvning birga to‘g‘riligini ko‘rsatadi.",
     "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M05_001",
+    "asset": "ac28-door-host-preview.png",
+    "title": "Joylashtirishdan oldin devor — hostni tekshirish",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-306.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/3DDoor1.png",
+    "block": 3,
+    "explanation": [
+      "Haqiqiy 3D kadrda devor ustida eshik ochilishining oldindan ko‘rish konturi ko‘rinadi. Kursor kerakli devor ustida bo‘lishi kerak.",
+      "Devorlar kesishgan joyda boshqa devor ajratilib qolsa, Tab bilan kerakli hostga o‘ting. Birinchi bosishda joylashuvni, keyingi bosishda ochilish tomonini tasdiqlaysiz.",
+      "Eshik yoki deraza o‘lchami devorning balandligi va joylashuviga mosligini tekshiring. Uni oddiy mustaqil Object kabi devordan uzib qo‘yish to‘g‘ri joylashtirish usuli emas."
+    ],
+    "exercise": "Door va Windowni mos devorga joylashtirib, host aloqasini ko‘ring.",
+    "solution": "Door va Window modeli devordagi ochilish bilan bog‘lanadi.",
+    "boundary": "Archicad 28 INT qo‘llanmasidagi haqiqiy namuna. Rasm faqat ko‘rsatilgan panel yoki amalni tushuntiradi; versiya va kutubxonaga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M05_002",
+    "asset": "ac28-door-opening-preview.png",
+    "title": "Xuddi shu ochilishni 3Dda tekshirish",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-306.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/3DDoor2.png",
+    "block": 6,
+    "explanation": [
+      "3D oldindan ko‘rishda eshik devor ichiga bog‘langan va ochilish tarafini tanlash strelkalari ko‘rinadi. Kadr devorga joylashtirish jarayonidan olingan.",
+      "Planda tanlangan tomon bilan 3Ddagi eshik tabaqasi mosligini tekshiring. Bu rasmda mebel yo‘q; to‘qnashuv yo‘qligi haqidagi xulosani o‘z mebelli planingizdan chiqaring."
+    ],
+    "exercise": "Eshik eni, balandligi va ochilish tomonini tekshirib, mebel yo‘li bilan solishtiring.",
+    "solution": "To‘g‘ri o‘lcham ochilish tomoni va foydalanish yo‘li to‘g‘ri degani emas.",
+    "boundary": "Archicad 28 INT qo‘llanmasidagi haqiqiy namuna. Rasm faqat ko‘rsatilgan panel yoki amalni tushuntiradi; versiya va kutubxonaga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M05_003",
+    "asset": "ac28-opening-height-anchor.png",
+    "title": "Pastki sath va Reveal chuqurligini aralashtirmang",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-16.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/SillHeaderAnchor.png",
+    "block": 6,
+    "explanation": [
+      "Sill to Story 0 yozuvi pastki sath qaysi qavatga bog‘langanini ko‘rsatadi. Pastdagi Reveal to Wall Core ro‘yxati esa ochilishning devor tanasi ichidagi chuqurlik tayanchini boshqaradi.",
+      "Rasmda ochilgan ro‘yxat Reveal uchun: Wall Face yoki Wall Core tanlanadi. Bu ro‘yxat derazaning 900 mm parapet balandligini almashtirmaydi.",
+      "Sath qiymatini, uning tayanchini va devor ichidagi chuqurlikni alohida yozing. Fasad ko‘rinishini sozlashdan oldin geometriya va bog‘lanishni tekshiring."
+    ],
+    "exercise": "Deraza balandligi va pastki sathini kesimda belgilang.",
+    "solution": "Deraza balandligi bilan sill sathi alohida tekshiriladi.",
+    "boundary": "Archicad 28 INT qo‘llanmasidagi haqiqiy namuna. Rasm faqat ko‘rsatilgan panel yoki amalni tushuntiradi; versiya va kutubxonaga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M05_004",
+    "asset": "ac28-door-flip-after.png",
+    "title": "Flipdan keyin: tabaqa yo‘nalishi o‘zgardi",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-16.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/Flip2.png",
+    "block": 6,
+    "explanation": [
+      "Oldingi kadr bilan solishtiring: ochilish ramkasi o‘sha joyda, tabaqa esa boshqa tarafga ochilgan. Faqat bitta rasmga qarab eski va yangi holatni adashtirmang.",
+      "O‘z elementingizda host devor, o‘lcham va sathni qayta tekshiring. Keyin plandagi yo‘l, fasaddagi ko‘rinish va 3D natija bir elementga tegishli ekanini solishtiring."
+    ],
+    "exercise": "Bitta ochilish parametrini o‘zgartiring va plan, fasad, 3D natijalarini solishtiring.",
+    "solution": "Ochilish tahriri bog‘liq ko‘rinishlarda muvofiq natija berishi kerak.",
+    "boundary": "Archicad 28 INT qo‘llanmasidagi haqiqiy namuna. Rasm faqat ko‘rsatilgan panel yoki amalni tushuntiradi; versiya va kutubxonaga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M05_005",
+    "asset": "ac28-door-opening-direction.png",
+    "title": "Mini-loyiha: eshik yo‘nalishi va foydalanish yo‘li",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-306.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/OpeningDirection.png",
+    "block": 4,
+    "explanation": [
+      "Eshik jadvalidagi 900 × 2100 mm o‘lchamni sozlamadan, ochilish tomonini esa plan yoyidan tasdiqlang. Devor — host va eshik joyini ham qayd qiling.",
+      "Yoy egallaydigan hududga mebel yoki boshqa eshik tabaqasi kirib qolmaganini o‘z planingizdan tekshiring. Qo‘llanmadagi kichik kadr mebel bilan moslikni isbotlamaydi.",
+      "Ikki ochilishning parametrlarini plan, fasad yoki kesim va 3D bilan solishtiring. O‘lcham yoki hostdagi farqni faqat yozuvni almashtirib yashirmang, element sozlamasini tuzating."
+    ],
+    "exercise": "Ikki ochilish uchun o‘lcham, sath, host va foydalanish tekshiruvini topshiring.",
+    "solution": "Door va Window auditi parametrni chizmada va foydalanish ssenariysida tasdiqlaydi.",
+    "boundary": "Archicad 28 INT qo‘llanmasidagi haqiqiy namuna. Rasm faqat ko‘rsatilgan panel yoki amalni tushuntiradi; versiya va kutubxonaga qarab ko‘rinish farq qiladi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   }
 ]
