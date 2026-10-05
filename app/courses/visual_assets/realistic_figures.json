@@ -1528,5 +1528,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L02_M04_001",
+    "asset": "realistic-l02_m04_001.jpg",
+    "title": "Mehmonxona vazifasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Kundalik ssenariy. Chapda ikki katta suhbatlashmoqda, bola stol yonida rasm chizmoqda. Bir xonada turli ishlar bir vaqtda bajariladi.",
+      "2. Mehmon kutish. O‘ngda divan va ikki kresloda to‘rt kishi suhbatlashmoqda. Mebel o‘sha, lekin odamlar soni va foydalanish holati boshqa.",
+      "3. Vazifani oldindan yozing. Har ssenariyga odamlar soni, faoliyat va bir vaqtdagi foydalanishni qayd qiling. Yana bitta ssenariyni o‘zingiz qo‘shib, mebel tanlashdan oldin talablarni tuzing.",
+      "Darsdagi bajarish: Mehmon soni va kundalik foydalanishni ajrating → xonaning ikki ssenariysi."
+    ],
+    "exercise": "Uch ssenariyni odamlar soni va bir vaqtda bajarilishiga ko‘ra yozing.",
+    "solution": "Xona vazifasi mebel tanlashdan oldin aniqlanadi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M04_002",
+    "asset": "realistic-l02_m04_002.jpg",
+    "title": "Mehmonxona ergonomikasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. O‘tirish va turish. Kreslo oldidagi to‘q sariq maydon odamning oyoqlari va turish harakati uchun joyni ko‘rsatadi. Faqat kreslo konturi yetarli emas.",
+      "2. Derazadan foydalanish. Yashil maydonda odam pardaga yaqinlashgan. Deraza yoniga borish ham xona foydalanishining bir qismi.",
+      "3. Harakatlarni birga tekshiring. Stol turishga xalaqit qiladimi, deraza va hovli eshigiga borish ochiqmi? Renderdagi zonalarni norma o‘lchami deb olmang; haqiqiy mebel va masofalar planda tekshiriladi.",
+      "Darsdagi bajarish: O‘tirish, suhbat va derazaga yaqinlashish zonalarini chizing → foydalaniladigan bo‘shliqlar."
+    ],
+    "exercise": "O‘tirish va turish harakatini kreslo va divan atrofida belgilang.",
+    "solution": "Ergonomika faqat divan sig‘ishini emas, undan foydalanish va unga yaqinlashishni ham qamraydi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M04_003",
+    "asset": "realistic-l02_m04_003.jpg",
+    "title": "Mebel joylashuvi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi tartib. Divan orqa devorda, ikkita kreslo stol atrofida suhbat guruhini hosil qilgan. O‘ng chekkada hovli eshigiga borish joyi ko‘rinadi.",
+      "2. O‘ngdagi tartib. Divan o‘ng devorga, kreslolar esa uning qarshisiga ko‘chirilgan. Chap chekka va orqa devor bo‘ylab ochiq joy qolgan.",
+      "3. Uch mezonni solishtiring. Suhbat, ekranga qarash va kirishdan hovliga yurishni har variantda tekshiring. Kreslodagi odamning ekranga qarash yo‘nalishi ham alohida baholanadi; chiroyli tartibning o‘zi yetarli emas.",
+      "Darsdagi bajarish: Divan va kreslolarni suhbat uchun bog‘lang, stolni yo‘lga qo‘ymang → guruhlangan mebel."
+    ],
+    "exercise": "Divan, stol va ekran uchun ikki joylashuv yarating.",
+    "solution": "Mebel tartibi ko‘rish, suhbat va harakatga bir vaqtda mos kelishi tekshiriladi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M04_004",
+    "asset": "realistic-l02_m04_004.jpg",
+    "title": "Circulation va mehmon oqimi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Suhbat guruhi. Divan, ikki kreslo va stol gilam ustida bir guruh bo‘lib turibdi; uch kishi o‘tirib suhbatlashmoqda.",
+      "2. Alohida o‘tish yo‘li. Yashil chiziq oldingi kirishdan xona chetlari bo‘ylab hovli eshigiga borishni ko‘rsatadi. U suhbat guruhining ichini kesmaydi.",
+      "3. Birga foydalanishni tekshiring. Bir odam hovliga ketayotganda boshqalarning suhbati va o‘tirish joyi saqlanadimi? Yo‘lning ochiq eshik holati va haqiqiy kengligi ham planda tekshiriladi.",
+      "Darsdagi bajarish: Kirishdan hovligacha yo‘lni o‘tirgan odamlar orasidan o‘tkazmang → tinch suhbat zonasi."
+    ],
+    "exercise": "Mehmon kirishi bilan hovliga chiqish yo‘lini o‘tirish guruhidan ajrating.",
+    "solution": "O‘tish yo‘li suhbat guruhini keraksiz kesib o‘tmasa, ikki ssenariy birga ishlaydi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M04_005",
+    "asset": "realistic-l02_m04_005.jpg",
+    "title": "Mehmonxona auditi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi to‘siq. Ochilgan eshikning erkin chekkasi kreslo yoniga kelib qolgan. To‘q sariq joy foydalanish konfliktini ajratadi.",
+      "2. O‘ngdagi tuzatish. Kreslo o‘tirish guruhiga yaqinroq surilgan; ochilgan eshik yonida yashil o‘tish joyi qolgan.",
+      "3. Auditga dalil yozing. Eshik qachon va qaysi jihozga xalaqit qiladi, o‘zgarishdan keyin nima yaxshilandi? Vazifa, mebel, ochilish va harakatni alohida baholab, xulosani foydalanish holati bilan asoslang.",
+      "Darsdagi bajarish: Eshik ochilganda kreslo to‘silishini tekshiring → mebelni surib yoki yo‘lni almashtirib tuzating."
+    ],
+    "exercise": "Har variantga vazifa, mebel, eshik va harakat bo‘yicha baho yozing.",
+    "solution": "Mehmonxona auditi foydalanish dalillariga asoslanadi; bitta chiroyli render yetarli emas.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
