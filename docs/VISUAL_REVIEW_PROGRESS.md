@@ -1,6 +1,6 @@
 # Visual review progress
 
-240 of 680 lessons have completed the current topic-specific visual review: 208 AI material renders and 32 lessons using documented Graphisoft screenshots. 440 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+245 of 680 lessons have completed the current topic-specific visual review: 208 AI material renders and 37 lessons using documented Graphisoft screenshots. 435 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -17,3 +17,5 @@ L05_M05: Window screenshots no longer stand in for door swing instruction. Actua
 L05_M06: Column cross-section versus height, centered reference axis and Beam reference elevation reviewed. Four screenshot lessons plus one original AI material frame for the mini-project; real Settings screenshots remain alongside that render.
 
 L05_M07: Object library gabarits, placement anchor, rotation/mirroring, base elevation and Drag a Copy reviewed. Bedroom access and dining-chair use illustrated with two new realistic renders; original lesson content remains unchanged.
+
+L05_M08: Line/Polyline distinction, Fill controls, Text readability, associative label placement and example model labels reviewed. Manual label text is not falsely described as automatically updating.

@@ -597,69 +597,69 @@
   {
     "code": "L05_M08_002",
     "asset": "ac28-fill.png",
-    "title": "Fill: 2D to‘ldirish sozlamalari",
+    "title": "Fill sozlamasi: naqsh, chegara va maydon matni",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-30.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/FillGeneralSettings.png",
-    "block": 0,
+    "block": 3,
     "explanation": [
-      "Fill: 2D to‘ldirish sozlamalari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Yopiq poligonga Fill bering, naqsh va chegarani sozlang → zona ko‘rinadi, BIM element yaratilmaydi."
+      "Solid Line yuqoridagi chegara turini, Roof Tiles esa tanlangan 2D fill naqshini ko‘rsatadi. Roof Tiles nomi tom modelini yaratganingizni bildirmaydi.",
+      "Foreground va Background penlari naqshning o‘qilishini boshqaradi. Show Area Text maydon matnini qo‘shadi; rasmda bu katak belgilanmagan.",
+      "Mashqdagi funksional zonaga mos sodda Fill tanlang, yopiq poligonni kiriting va yozuvni yopib qo‘ymaganini tekshiring. Subtract from Zones alohida maydon hisobiga ta’sir qiladi; zonalash rangini berish uchun uni tasodifan yoqmang."
     ],
     "exercise": "Fill bilan funksional zonani ko‘rsating va kontur yopilishini tekshiring.",
     "solution": "Fill grafik maydonni ifodalaydi; o‘zi 3D qurilish elementini yaratmaydi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasidagi haqiqiy 2D vosita namunasi. Rasmdagi son va kutubxona nomlari mashq qiymatlari emas; amaldagi versiyada tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L05_M08_003",
     "asset": "ac28-text-style.png",
-    "title": "Text Style: yozuvning shrift va grafik sozlamalari",
+    "title": "Text Style: varaqdagi shrift va o‘qilish",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-27.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/TextStyleUniform.png",
-    "block": 0,
+    "block": 2,
     "explanation": [
-      "Text Style: yozuvning shrift va grafik sozlamalari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Text bilan xona nomini yozing, shrift va o‘qilish kattaligini tekshiring → mustaqil izoh."
+      "Rasmda Arial shrift, 2.00 mm matn balandligi va 46 pen ko‘rsatilgan. Matnning qog‘ozdagi balandligi bilan xonadagi model o‘lchamini aralashtirmang.",
+      "Alignment belgisi matn tekislanishini, Frame ramkani, Opaque esa matn ostining rangini boshqaradi. Yozuv chizma ma’lumotini berkitib qolmasligi kerak.",
+      "Relative burchak maydonida 90.00° bor — bu qo‘llanma misoli. Xona nomi gorizontal kerak bo‘lsa, mos burchakni tanlang va Layout yoki PDF ko‘rinishida matn o‘qilishini tekshiring; shu rasm qiymatlarini tayyor standart deb ko‘chirmang."
     ],
     "exercise": "Text bilan izoh yozib, masshtabdagi o‘qilishini tekshiring.",
     "solution": "Izoh foydalanuvchi chiqaradigan varaqda o‘qiladigan bo‘lishi kerak.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasidagi haqiqiy 2D vosita namunasi. Rasmdagi son va kutubxona nomlari mashq qiymatlari emas; amaldagi versiyada tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L05_M08_004",
     "asset": "ac28-label.png",
-    "title": "Label: mazmun va oldindan ko‘rish paneli",
+    "title": "Text/Autotext Label: model ma’lumoti qayerdan olinadi?",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-28.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/LabelContentPreview.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Label: mazmun va oldindan ko‘rish paneli. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Labelni elementga bog‘lab tegishli ma’lumotni tanlang → modelga aloqali yozuv."
+      "Type and Preview qismida Text/Autotext tanlangan; o‘ngdagi #Element ID — oldindan ko‘rish maydonidagi dinamik ma’lumot namunasi. Bu tayyor modeldagi haqiqiy ID qiymati emas.",
+      "Labelga qo‘lda yozilgan oddiy matn o‘zi model parametriga aylanmaydi. Elementga bog‘langan yorliqda tegishli Autotext yoki parametr chiqaradigan Symbol Labelni tanlash kerak.",
+      "Kutubxonadagi Label 23 nomlari eski kutubxona namunalaridir. Yorliq turini tanlashdan keyin uning elementga bog‘lanish usulini ham tekshiring."
     ],
     "exercise": "Labelni elementga bog‘lang va element o‘zgarganda yorliqdagi ma’lumotni tekshiring.",
     "solution": "Bog‘langan yorliq bilan qo‘lda yozilgan matnning yangilanish xavfi farq qiladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasidagi haqiqiy 2D vosita namunasi. Rasmdagi son va kutubxona nomlari mashq qiymatlari emas; amaldagi versiyada tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L05_M08_005",
-    "asset": "ac28-label.png",
-    "title": "Label: mazmun va oldindan ko‘rish paneli",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-28.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/LabelContentPreview.png",
-    "block": 0,
+    "asset": "ac28-label-model-examples.png",
+    "title": "Mini-varaq: bir elementdan turli ma’lumot olish",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/070_Documentation-70.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/ManyLabels.png",
+    "block": 4,
     "explanation": [
-      "Label: mazmun va oldindan ko‘rish paneli. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Text va Labelni solishtiring, element o‘zgarganda qaysi biri yangilanishini ko‘ring → ma’lumot manbasi tushuniladi."
+      "Haqiqiy planda bitta devorga bir necha Label bog‘langan: SW - 001 IDsi, qatlamlar va o‘lcham ma’lumotlari turli ko‘rinishda chiqarilgan.",
+      "Bu qo‘llanma yorliq turlarini taqqoslash uchun ko‘p misolni bir joyda ko‘rsatadi. O‘z mini-varag‘ingizga barchasini qo‘shmang: zarur ma’lumotni tanlab, pointer va matnlar bir-birini yopmaganini tekshiring.",
+      "Textdagi qo‘lda yozilgan xona nomi bilan element parametridan kelgan Labelni solishtiring. Modelni o‘zgartirgach dinamik yorliq, kontur, Fill va izohlar mos qolganini tekshiring; rasm sonlari 4000 × 3000 mm mashqingizning natijasi emas."
     ],
     "exercise": "Chiziq, fill, matn va labelni ortiqcha ustma-ustliksiz joylashtiring.",
     "solution": "Mini-varaqda har grafik belgi aniq maqsad va o‘qiladigan tartibga ega bo‘ladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasidagi haqiqiy 2D vosita namunasi. Rasmdagi son va kutubxona nomlari mashq qiymatlari emas; amaldagi versiyada tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
@@ -4077,6 +4077,56 @@
     "exercise": "Stulni nusxalab, yangi nusxalar parametr va oralig‘ini tekshiring.",
     "solution": "Nusxalash yakunida obyektlar soni va joylashuvi mustaqil nazorat qilinadi.",
     "boundary": "Graphisoft Archicad 28 qo‘llanmasidagi haqiqiy namuna. Armchair 01 24 va Chairs 24 nomlari eski kutubxona misolidir; o‘rnatilgan kutubxonaga qarab element va parametrlar farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M08_001",
+    "asset": "ac28-line-polyline-difference.png",
+    "title": "Bir xil kontur, lekin tahrir tuzilishi boshqa",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/070_Documentation-23.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/LinePolyDiff.PNG",
+    "block": 2,
+    "explanation": [
+      "Qo‘llanma namunasida yuqorida alohida chiziq va yoylardan tuzilgan ketma-ket geometriya, pastda esa bitta Polyline ko‘rsatilgan. Ko‘rinishi o‘xshash bo‘lsa ham, elementlar tuzilishi farq qiladi.",
+      "Polyline bitta element bo‘ladi. Line asbobining Chained usuli bir-biriga ulangan alohida segmentlarni hosil qiladi; ularni guruhlash bitta Polylinega aylantirish bilan teng emas.",
+      "O‘z mashqingizda oddiy Line segmentini va Polyline konturini chizing. Arrow bilan tanlab, qaysi qism alohida yoki butun holda tanlanishini tekshiring; bu 2D elementlar o‘z-o‘zidan devor modelini yaratmaydi."
+    ],
+    "exercise": "Line va Polyline bilan alohida segment va uzluksiz kontur yarating.",
+    "solution": "Chiziq turi tanlovi tahrir qilinadigan geometriya tuzilishiga mos bo‘lishi kerak.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasidagi haqiqiy 2D vosita namunasi. Rasmdagi son va kutubxona nomlari mashq qiymatlari emas; amaldagi versiyada tekshiring.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M08_001",
+    "asset": "ac28-polyline-methods.png",
+    "title": "Polyline geometriya usullarini tanlash",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/070_Documentation-23.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/InfoBoxPolyLine.png",
+    "block": 5,
+    "explanation": [
+      "Info Boxdagi uch variant ketma-ket Polyline, Rectangle va Rotated Rectangle konturlari uchun. Chapdagi variant ketma-ket segmentlar chizishga xizmat qiladi.",
+      "Har segment oxirida bosib keyingisini davom ettiring; oxirgi nuqtada ikki marta bosib yakunlang. Yopiq kontur kerak bo‘lsa, yakun nuqtasini boshlanish nuqtasiga bog‘lang."
+    ],
+    "exercise": "Line va Polyline bilan alohida segment va uzluksiz kontur yarating.",
+    "solution": "Chiziq turi tanlovi tahrir qilinadigan geometriya tuzilishiga mos bo‘lishi kerak.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasidagi haqiqiy 2D vosita namunasi. Rasmdagi son va kutubxona nomlari mashq qiymatlari emas; amaldagi versiyada tekshiring.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M08_004",
+    "asset": "ac28-label-associative.png",
+    "title": "Associative Label: yorliqni elementga bog‘lash",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/070_Documentation-70.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/LabelAssoc.png",
+    "block": 6,
+    "explanation": [
+      "Info Boxdagi chapda qizil ramkali variant Associative Label usulini bildiradi. Kerakli element ustiga bosib, yorliqni shu elementga bog‘lang.",
+      "Bog‘langan yorliq element siljisa yoki o‘zgarsa aloqani saqlaydi; tanlangan dinamik parametrlar tegishli tarzda yangilanadi. Independent Label esa elementga bog‘lanmaydi.",
+      "Modeldagi IDni o‘zgartirib yorliqning ma’lumotini tekshiring. Yangilanmasa, element bog‘lanishi va dinamik ma’lumot turi tanlanganini tekshiring; oddiy qo‘lda yozilgan matn o‘z-o‘zidan yangilanmaydi."
+    ],
+    "exercise": "Labelni elementga bog‘lang va element o‘zgarganda yorliqdagi ma’lumotni tekshiring.",
+    "solution": "Bog‘langan yorliq bilan qo‘lda yozilgan matnning yangilanish xavfi farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasidagi haqiqiy 2D vosita namunasi. Rasmdagi son va kutubxona nomlari mashq qiymatlari emas; amaldagi versiyada tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   }
 ]
