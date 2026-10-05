@@ -2123,5 +2123,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L03_M01_001",
+    "asset": "realistic-l03_m01_001.jpg",
+    "title": "Uchastka nima va uni qanday o'qiymiz? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Tashqi aloqa. Oldinda ko‘cha va ochiq darvoza, ichkarida bo‘sh yer bor. Avval kirish tomoni va yerning tashqi aloqasini ajrating.",
+      "2. Mavjud holat. Chapda daraxt, orqada o‘ngda eski yordamchi bino, atrofda devor va qo‘shni uylar ko‘rinadi. Uy chizishdan oldin shu obyektlarni ro‘yxatga oling.",
+      "3. Manbani tekshiring. Ko‘ringan devor chizig‘i huquqiy yer chegarasiga teng deb olinmaydi. Chegara va o‘lchamni tegishli hujjat hamda o‘lchash ma’lumoti bilan aniqlang; rasm o‘quv tasviri.",
+      "Darsdagi bajarish: Kontur va ko‘cha bilan boshlang, o‘lcham manbasini yozing → tekshiriladigan asos."
+    ],
+    "exercise": "Chegara, ko‘cha va mavjud obyektlarni turli belgilar bilan chizing.",
+    "solution": "Uchastka ma’lumotlarini ajratish loyihalanadigan va o‘zgarmas sharoitni tushunishga yordam beradi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M01_002",
+    "asset": "realistic-l03_m01_002.jpg",
+    "title": "Uchastka shakli va proporsiyasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ikki shakl. Chapdagi uchastka kengroq, o‘ngdagisi torroq va uzunroq ko‘rinadi. Kirishdan orqa obyektlargacha bo‘lgan aloqani taqqoslang.",
+      "2. Bir xil yuza turli shaklda bo‘ladi. Darsdagi 20×30 m shart uchun 20×30=600 m², tomonlar nisbati 2:3. Boshqa 15×40 m shart ham 600 m², lekin 3:8 nisbatga ega. Rasm aniq masshtabli hisob chizmasi emas.",
+      "3. Hisobdan qarorga. Kenglik, chuqurlik va kirish joyi uy joylashuvi hamda yurish yo‘liga turlicha ta’sir qiladi. Yer yuzasini qurishga ruxsat etilgan maydon bilan tenglashtirmang.",
+      "Darsdagi bajarish: 20/30 nisbatni solishtiring, uy uchun cheklovlarni ajrating → shaklning ta’siri ko‘rinadi."
+    ],
+    "exercise": "20×30 m uchastkaning yuzasi va tomonlar nisbatini hisoblang.",
+    "solution": "Yuza 600 m²; nisbat 2:3. Bu hisob qurish mumkin bo‘lgan maydon yoki ruxsat etilgan zichlik emas.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M01_003",
+    "asset": "realistic-l03_m01_003.jpg",
+    "title": "Chegaralar va mavjud obyektlar — rasmga qarab tushuning",
+    "explanation": [
+      "1. Obyektni tanish. Chapda daraxt tanasi, o‘ngda eski bino, orqada mavjud devor ko‘rinadi. Har birini alohida obyekt sifatida qayd eting.",
+      "2. Joyini aniqlash. Oldinda o‘lchash asbobi, bino yonida o‘lchash belgisi bilan yordamchi turibdi. Obyekt o‘rnini suratga qarab taxmin qilish o‘rniga tekshirilgan o‘lchash manbasini oling.",
+      "3. Aniqlikni yozish. Jadvalda obyekt, joylashuv manbasi, ma’lumot sanasi va tekshirish kerak bo‘lgan savolni ajrating. Ko‘rinmaydigan kommunikatsiya yo‘llarini bu rasmdan taxmin qilib chizmang; tasvir asbob bilan ishlash yo‘riqnomasi emas.",
+      "Darsdagi bajarish: Mavjud daraxt, bino va kommunikatsiyani alohida belgilang → saqlash va aniqlashtirish ro‘yxati."
+    ],
+    "exercise": "Mavjud obyektlarning o‘rni va manba aniqligini yozing.",
+    "solution": "Chegara va obyekt joyi tekshirilgan ma’lumotga tayanadi; eskiz kadastr yoki topotasvirni almashtirmaydi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M01_004",
+    "asset": "realistic-l03_m01_004.jpg",
+    "title": "Uchastkaning kuchli va zaif tomonlari — rasmga qarab tushuning",
+    "explanation": [
+      "1. Kirish imkoniyati. Oldingi ko‘cha va darvoza yerga tashqi aloqani ko‘rsatadi. Kirish qarori uchun harakat, shovqin va haqiqiy sharoitlarni alohida o‘rganing.",
+      "2. Daraxtning ta’siri. Chapdagi daraxt soyasi yerga tushgan. Soya imkoniyat bo‘lishi mumkin, lekin daraxtni saqlash va uning loyiha bilan munosabatini ham tekshiring.",
+      "3. Atrof ta’siri. O‘ngdagi balandroq qo‘shni uy derazalari uchastka tomonga qaragan, eski bino esa joy egallaydi. Maxfiylik va mavjud obyektlarga bog‘liq cheklovlarni dalil bilan yozing; bitta tasvirdan yillik quyosh yoki soya xulosasi chiqarmang.",
+      "Darsdagi bajarish: Imkoniyat va cheklovni dalilga bog‘lang: ko‘cha kirish beradi, daraxt soya beradi → asoslangan xulosa."
+    ],
+    "exercise": "Ko‘cha, quyosh, daraxt va qo‘shni binolarni imkoniyat va cheklov jadvaliga joylang.",
+    "solution": "Kuchli va zaif tomonlar loyiha qaroriga qanday ta’sir qilishi bilan yoziladi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M01_005",
+    "asset": "realistic-l03_m01_005.jpg",
+    "title": "Site Analysis — birinchi audit — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ko‘rikdan boshlash. Darvoza yonidagi ikki odam mavjud yerni muhokama qilmoqda. Avval ko‘cha va kirish, devorlar, daraxt va eski bino bo‘yicha ma’lumot yig‘ing.",
+      "2. Bir varaqdagi tahlil. Tekshirilgan konturga kirish va mavjud obyektlarni tushiring; yoniga ularning loyiha qaroriga ta’sirini yozing. O‘ngdagi qo‘shni uy kabi tashqi sharoitlarni ham kiriting.",
+      "3. Fakt va noma’lumni ajratish. O‘lcham, chegara, kommunikatsiya yoki obyekt holati tekshirilmagan bo‘lsa, uni “tekshirish kerak” deb belgilang. Har xulosaga manba yozing; chiroyli rasmning o‘zi boshlang‘ich ma’lumotni tasdiqlamaydi.",
+      "Darsdagi bajarish: Geometriya, kirish, mavjud holat va noma’lum ma’lumotni bir varaqda jamlang → boshlang‘ich site tahlili."
+    ],
+    "exercise": "Noma’lum ma’lumotlarni “tekshirish kerak” ro‘yxatiga ajrating.",
+    "solution": "Site analysis taxminni fakt deb ko‘rsatmaydi; manba, aniqlik va keyingi tekshiruvni qayd qiladi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
