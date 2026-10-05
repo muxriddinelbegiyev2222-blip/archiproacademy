@@ -2038,5 +2038,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L02_M10_001",
+    "asset": "realistic-l02_m10_001.jpg",
+    "title": "Yordamchi xonalar vazifasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Kiyim va kir bilan ishlash. Yuqorida chapda kiyim tanlash, o‘ngda yuvilgan kiyimni yig‘ish ko‘rsatilgan. Garderob saqlashni, kir yuvish xonasi esa ish jarayonini tashkil qiladi.",
+      "2. Ombor vazifasi. Pastda chapdagi javonlarda mahsulotlar turiga qarab saqlanadi. Buyumning o‘zi bilan birga uni olish va qaytarish uchun odam turadigan joyni ajrating.",
+      "3. Xizmat vazifasi. Pastda o‘ngdagi texnik xonaga jihozni tekshirish uchun kirilgan. Har xona uchun kim kirishi, qanday ish bajarishi va qayerda turishini yozing; tasvirdagi jihozlar muhandislik loyihasi emas.",
+      "Darsdagi bajarish: Har yordamchi xona qaysi kundalik ishni bajarishini yozing → ortiqcha yoki yetishmayotgan xona aniqlanadi."
+    ],
+    "exercise": "Har yordamchi xonani kim va qachon ishlatishini yozing.",
+    "solution": "Yordamchi xona maydoni vazifasiga mos kelishi va asosiy hayot yo‘llari bilan bog‘lanishi kerak.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M10_002",
+    "asset": "realistic-l02_m10_002.jpg",
+    "title": "Garderob va storage — rasmga qarab tushuning",
+    "explanation": [
+      "1. Foydalanish tezligi. Chapdagi kundalik kiyim qo‘l yetadigan joyda, yuqoridagi qutilar va yig‘ilgan ko‘rpalar alohida. Kundalik va mavsumiy buyumlar ro‘yxatini ajrating.",
+      "2. Ochilgan holat. O‘ngdagi tortma oldinga chiqadi. Javonning yopiq chuqurligi bilan undan foydalanish joyi bir xil emas.",
+      "3. Yurish maydoni. O‘rtadagi yashil tasma o‘tishni ajratadi. Odam kiyim tanlaganda va tortma ochilganda qoladigan joyni planda tekshiring; rasm ranglari me’yoriy kenglikni bildirmaydi.",
+      "Darsdagi bajarish: Garderobda saqlash chuqurligi va odam yo‘lini ajrating → javon maydoni yurish maydoni emas."
+    ],
+    "exercise": "Mavsumiy buyum bilan kundalik kiyim uchun saqlashni ajrating.",
+    "solution": "Garderob va storage bir xil yaqinlik hamda foydalanish chastotasiga ega emas.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M10_003",
+    "asset": "realistic-l02_m10_003.jpg",
+    "title": "Laundry xonasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ajratish va yuvish. Chapdagi ikki savat kirlarni ajratishga, yonidagi mashina yuvishga xizmat qiladi. Ishni kiyim qayerdan kelishidan boshlab yozing.",
+      "2. Quritish va yig‘ish. Orqada kiyim osilgan quritgich, o‘ngda yig‘ish yuzasi bor. Nam kiyim bilan toza yig‘ilgan kiyim qayerga qo‘yilishini alohida belgilang.",
+      "3. Foydalanish va xizmat. Mashina eshigi ochiq, oldida bo‘sh joy mavjud. Jihozning ochilishi, xizmatga kirish, namlikni boshqarish va shamollatishni haqiqiy jihoz yo‘riqnomasi asosida tekshiring.",
+      "Darsdagi bajarish: Kir yuvish mashinasi, ajratish, quritish va yig‘ish tartibini chizing → izchil ish zanjiri."
+    ],
+    "exercise": "Kirni yig‘ish, yuvish, quritish va joylash jarayonini chizing.",
+    "solution": "Laundry rejasi jihozdan oldin namlik, xizmat va ish ketma-ketligini tekshiradi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M10_004",
+    "asset": "realistic-l02_m10_004.jpg",
+    "title": "Ombor va texnik xona — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi to‘siq. Qutilar jihoz oldidagi joyni egallagan. Jihoz xonaga sig‘sa ham, unga yaqinlashish va panelni ochish qiyinlashadi.",
+      "2. O‘ngdagi tartib. Qutilar yon javonlarda, oldidagi yo‘l ochiq; xizmat ko‘rsatuvchi odam ishlash joyiga kirgan. Saqlashni xizmat maydonidan ajrating.",
+      "3. Almashtirishni ham tekshiring. Kirish, ishlash va jihozni tashqariga olib chiqish yo‘lini planda belgilang. Zarur oraliqlar haqiqiy uskuna talabidan olinadi; bu tasvir ichki ulanishlarni o‘rgatmaydi.",
+      "Darsdagi bajarish: Texnik jihozga xizmat va almashtirish yo‘lini belgilang → xona faqat qurilma sig‘ishi bilan tanlanmaydi."
+    ],
+    "exercise": "Texnik xonada uskunaga xizmat ko‘rsatish yo‘lini belgilang.",
+    "solution": "Uskuna sig‘ishi yetarli emas; tegishli uskunaning xizmat va xavfsizlik talablariga kirish kerak.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M10_005",
+    "asset": "realistic-l02_m10_005.jpg",
+    "title": "Yordamchi xonalar auditi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Oshxona va mahsulot ombori. Chapdagi ikki joy oldidagi umumiy bo‘sh maydon orqali bog‘langan. Mahsulotni javondan ish yuzasiga olib kelish yo‘lini kuzating.",
+      "2. Yotoqxona va garderob. O‘ngdagi kiyim saqlash joyi yotoqxona yonida, unga oldingi ochiq maydondan kiriladi. Kiyim olish uchun qaysi xonalar orqali yurish kerakligini solishtiring.",
+      "3. Qo‘shnichilik auditi. Har yordamchi xona uchun vazifa, unga eng ko‘p murojaat qiladigan xona va foydalanish yo‘lini jadvalga yozing. Yonma-yon turishning o‘zi yetmaydi: haqiqiy ochilish, yurish va xizmat aloqasini ham tekshiring.",
+      "Darsdagi bajarish: Oshxonadan omborgacha va yotoqxonadan garderobgacha yo‘lni solishtiring → foydali qo‘shnichilik."
+    ],
+    "exercise": "Har yordamchi xona uchun vazifa, joylashuv va xizmat kirishini jadvalga yozing.",
+    "solution": "Audit foydalanilmaydigan yoki xizmatga yopiq joylarni aniq ko‘rsatadi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
