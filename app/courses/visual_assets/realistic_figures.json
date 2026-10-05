@@ -2548,5 +2548,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L03_M06_001",
+    "asset": "realistic-l03_m06_001.jpg",
+    "title": "Parking zonasi qanday ishlaydi? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Kirish aloqasi. Oldingi keng darvoza ko‘cha bilan ichki maydonni bog‘laydi. Ochiq darvoza bargi va ostona yo‘lning bir qismi sifatida tekshiriladi.",
+      "2. Ikki xil holat. Bitta mashina navес ostida to‘xtagan, ikkinchisi oldingi maydonda burilgan holatda. To‘xtash joyi bilan unga yetib borish maydonini ajrating.",
+      "3. To‘liq ketma-ketlik. Tanlangan transport uchun kirish, burilish, to‘xtash va chiqishni alohida chizing. Bu rasm harakatni muhokama qilish uchun; undagi burilish aniq transport trayektoriyasini tasdiqlamaydi.",
+      "Darsdagi bajarish: Transport kirish, to‘xtash va chiqish ketma-ketligini chizing → to‘liq parking ssenariysi."
+    ],
+    "exercise": "Transportning kirish, burilish, to‘xtash va chiqish holatlarini chizing.",
+    "solution": "Parking konturi statik avtomobil rasmi bilan cheklanmaydi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M06_002",
+    "asset": "realistic-l03_m06_002.jpg",
+    "title": "Bir va ikki avtomobil uchun parking — rasmga qarab tushuning",
+    "explanation": [
+      "1. Bitta mashinadan foydalanish. Chapdagi avtomobil eshigi ochilgan. Foydalanish joyi yopiq kuzov konturidan tashqariga chiqadi.",
+      "2. Ikki mashina. O‘ngda ikkala mashina yonma-yon, tashqi tomonlardagi eshiklar ochilgan, oldida umumiy bo‘sh maydon bor. Oradagi eshiklar ochilganda nima bo‘lishini ham sinang.",
+      "3. Mustaqil chiqish. Har mashinani ikkinchisi joyida turgan holatda chiqarishni chizmada tekshiring. Haqiqiy gabarit, eshik va harakat xususiyatidan foydalaning; rasm bo‘shliqlari tayyor me’yoriy o‘lcham emas.",
+      "Darsdagi bajarish: Ikki haqiqiy avtomobil gabariti va eshik ochilishini joylashtiring → foydalaniladigan yon zonalar."
+    ],
+    "exercise": "Bir va ikki avtomobil uchun mustaqil chiqish imkoniyatini solishtiring.",
+    "solution": "Ikki mashina sig‘ishi ikkala mashina xohlagan payt chiqishi degani emas.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M06_003",
+    "asset": "realistic-l03_m06_003.jpg",
+    "title": "Navес va carport — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi konflikt. Navес ustuni ochiladigan avtomobil eshigi oldidagi joyga kelgan. Tayanch sig‘ishi mashinadan qulay tushish degani emas.",
+      "2. O‘ngdagi o‘zgarish. Ustun eshikning erkin chekkasidan uzoqroqqa olingan, ular orasida bo‘sh joy ko‘rinadi. Eshik ochilishi bilan tayanch joyini birga ko‘ring.",
+      "3. Kelishilgan qaror. Tayanch, eshik, odam va mashina harakatini haqiqiy o‘lchamda tekshiring. Ustunni siljitish konstruktiv yechimga ham ta’sir qiladi; tasvir tom yoki tayanchning hisoblangan loyihasi emas.",
+      "Darsdagi bajarish: Navес ustunini mashina eshigi va burilishidan tashqarida ko‘rsating → tayanch joyi kelishiladi."
+    ],
+    "exercise": "Navес ustunlarini transport yo‘li va eshik ochilishi bilan solishtiring.",
+    "solution": "Carport tayanchi avtomobilga yaqinlashish va chiqishga xalaqit bermasligi tekshiriladi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M06_004",
+    "asset": "realistic-l03_m06_004.jpg",
+    "title": "Mashina va piyoda xavfsizligi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Orqaga chiqish maydoni. Mashinalarning orqa tomoni keng ichki maydonga qaragan. Shu maydonni transport harakati bilan bog‘lab tekshiring.",
+      "2. Piyoda aloqasi. Chapdagi kichik darvozadan uy eshigiga alohida yo‘l bor, odam shu yo‘lda yurmoqda. Ekilgan tasma uni mashina oldidagi maydondan ajratadi.",
+      "3. Bir paytdagi foydalanish. Mashina chiqayotgan va odam kelayotgan holatlarni birga chizing; ko‘rish, darvoza va uchrashuv joylarini aniqlang. Alohida yo‘l mavjudligi barcha xavflar bartaraf bo‘lganini avtomatik tasdiqlamaydi.",
+      "Darsdagi bajarish: Piyoda yo‘lini orqaga yuruvchi mashina zonasidan ajrating → to‘qnashuv xavfi kamayadi."
+    ],
+    "exercise": "Piyoda yo‘lini avtomobil orqaga yuradigan hududdan ajrating.",
+    "solution": "Odam va transport ssenariylari bir paytda ko‘riladi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M06_005",
+    "asset": "realistic-l03_m06_005.jpg",
+    "title": "Parking xatolarini topish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ketma-ket parkovka. Chapda oq mashina darvozaga yaqin, to‘q rangli mashina orqada. Orqadagi mashinaning to‘g‘ri chiqish yo‘lini oldingi mashina egallagan.",
+      "2. Yonma-yon parkovka. O‘ngda ikkala mashina oldida bo‘sh maydon bor, bittasi ikkinchisining bevosita oldida turmaydi. Har birining chiqish ssenariysini alohida tekshiring.",
+      "3. Audit natijasi. Oilaning foydalanish tartibiga qarab ketma-ket yoki mustaqil joy tanlovini asoslang. Tanlangan mashinalar o‘lchami, eshik ochilishi, ustun va darvozani qayd eting; faqat ikkita avtomobil rasmi sig‘ganiga tayanmang.",
+      "Darsdagi bajarish: Ikkinchi mashina birinchini bloklashini tekshiring → tandem yoki mustaqil joy qarori."
+    ],
+    "exercise": "Haqiqiy avtomobil o‘lchamlarini va foydalanish holatlarini qayd qiling.",
+    "solution": "Parking auditi tanlangan transportga tayanadi; yagona universal o‘lchamni tayyor norma deb olmaydi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
