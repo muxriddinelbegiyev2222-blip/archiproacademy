@@ -2718,5 +2718,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L03_M08_001",
+    "asset": "realistic-l03_m08_001.jpg",
+    "title": "Genplan tarkibi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Tarkibni toping. Oldinda ko‘cha va ikki kirish, ichkarida uy, navес, yashil hovli hamda orqadagi kichik ombor ko‘rinadi. Har obyektni alohida ajrating.",
+      "2. Aloqalarni o‘qing. Kichik ochiq darvozadan ayvonga yo‘l bor; keng darvoza parkovkaga, yon yo‘l esa orqa hovliga bog‘lanadi. Faqat obyekt konturi bilan cheklanmang.",
+      "3. Genplan hujjati. O‘z chizmangizda tekshirilgan chegara, shimol manbasi, sathlar, mavjud obyektlar, yo‘llar va shartli belgilarni kiriting. Maketda ko‘rinmaydigan bu ma’lumotlarni taxmin qilib to‘ldirmang.",
+      "Darsdagi bajarish: Kontur, shimol, sath va mavjud obyektni birinchi qatlamga qo‘ying → boshlang‘ich asos."
+    ],
+    "exercise": "Genplan uchun zarur qatlamlar va izohlar ro‘yxatini tuzing.",
+    "solution": "Chegara, shimol, obyektlar, yo‘llar, sathlar va shartli belgilar o‘qilishi kerak.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M08_002",
+    "asset": "realistic-l03_m08_002.jpg",
+    "title": "Genplan zonalash sxemasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Mehmon aloqasi. Oldingi chap xonada divan, tashqarida ayvon va stol bor. Xona eshigi shu tashqi foydalanish joyiga ochiladi.",
+      "2. Tinch va xizmat funksiyalari. Orqadagi yotoqxona bog‘ tomoniga qaragan; o‘ngdagi oshxona tashqi ovqatlanish stoliga eshik bilan bog‘langan. Parkovka alohida oldingi maydonda.",
+      "3. Ichki va tashqi reja. Har tashqi zonani undan foydalanadigan xona bilan bog‘lang, kirish va foydalanish vaqtini yozing. Bu qisqartirilgan funksional maket; haqiqiy uy plani, sath va ochilishlarni alohida chizmada muvofiqlashtiring.",
+      "Darsdagi bajarish: Uy va tashqi funksiyalarni foydalanish aloqasiga qarab joylashtiring → funksional sxema."
+    ],
+    "exercise": "Hovli zonalarini uy funksiyalariga mos bog‘lang.",
+    "solution": "Zonalash uy plani va tashqi foydalanish ssenariysidan ajralmaydi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M08_003",
+    "asset": "realistic-l03_m08_003.jpg",
+    "title": "Harakat va tashqi aloqalarni tekshirish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Piyoda zanjiri. Chapdagi ochiq darvoza, qoplamali yo‘l va ayvon kirishi ketma-ket bog‘langan. Odam shu yo‘lda yurmoqda.",
+      "2. Transport va xizmat zanjiri. Keng darvoza mashina maydoniga ulanadi; o‘ng chetdagi yo‘ldan quti ko‘targan odam omborga boradi. Har yo‘lning boshlanishi va oxirini toping.",
+      "3. Birgalikda tekshirish. Ochiq darvoza, to‘xtagan yoki chiqayotgan mashina, kelayotgan odam va xizmat buyumi holatini ustma-ust tekshiring. Yo‘llar uzilmasin va bir yo‘lning ishlashi boshqasini keraksiz to‘smasin.",
+      "Darsdagi bajarish: Piyoda, avtomobil va xizmat yo‘llarini boshqa chiziq bilan belgilang → konflikt ko‘rinadi."
+    ],
+    "exercise": "Ko‘cha–darvoza–parking–kirish va xizmat zanjirini tekshiring.",
+    "solution": "Tashqi aloqalar uzluksiz va bir-biriga mos bo‘lishi kerak.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M08_004",
+    "asset": "realistic-l03_m08_004.jpg",
+    "title": "Genplan professional auditi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Qarorni ko‘rsatish. Maket yonidagi odam chegaraga ishora qilmoqda. Tekshirilayotgan qaror qaysi obyekt yoki masofaga tegishli ekanini aniq yozing.",
+      "2. Tekshiruvni qayd etish. Ikkinchi odam natijani yozmoqda, yonida hujjat varag‘i bor. Jadvalda qaror, vazifa, ma’lumot manbasi va tekshiruv holatini ajrating.",
+      "3. Noma’lum savolni qoldirmang. Chegara, masofa, sath yoki muhandislik aloqasi tekshirilmagan bo‘lsa, uni aniq savol va keyingi tekshiruv bilan qayd eting. Maketning ko‘rinishi “hammasi joyida” degan xulosaga yetmaydi.",
+      "Darsdagi bajarish: Chegara, manba, noma’lum masofa va muhandis savolini jadvalga yozing → tekshiruv izi."
+    ],
+    "exercise": "Har qarorni manba, vazifa va tekshiruv holati bilan audit qiling.",
+    "solution": "Professional genplan “hammasi joyida” degan izoh emas, qayd etilgan tekshiruv natijasidir.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M08_005",
+    "asset": "realistic-l03_m08_005.jpg",
+    "title": "LEVEL 3 yakuniy genplan case — rasmga qarab tushuning",
+    "explanation": [
+      "1. Hovli taqsimoti. Chapda uy oldinroq va orqa bog‘ kattaroq ko‘rinadi; o‘ngda uy orqaroq va old hovli ko‘proq. Kirish, parkovka va ombor aloqalari ham ko‘rinadi.",
+      "2. Bir xil mezonlar. Har variantni piyoda va avtomobil kirishi, mehmon hamda oilaviy hovli, xizmat, yorug‘lik va sathlar bo‘yicha solishtiring. Bitta chiroyli ko‘rinishga qarab tanlamang.",
+      "3. Yakuniy topshiriq. Bir xil boshlang‘ich kontur va uy geometriyasi bilan haqiqiy genplan variantlarini tuzing, tanlov sababini va tuzatilgan xatolarni yozing. Renderlar taqqoslash tushunchasini beradi; aniq o‘lcham va talablar tekshirilgan hujjatda qoladi.",
+      "Darsdagi bajarish: Ikki variantni bir xil mezonda solishtiring → tanlangan genplan sabab bilan himoyalanadi."
+    ],
+    "exercise": "Bir varaq yakuniy genplan va izohlangan tuzatishlar ro‘yxatini topshiring.",
+    "solution": "Yakuniy case ichki plan, tashqi aloqa va sathlar mosligini ko‘rsatadi.",
+    "block": 12,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
