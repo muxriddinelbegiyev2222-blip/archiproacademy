@@ -2888,5 +2888,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L04_M02_001",
+    "asset": "realistic-l04_m02_001.jpg",
+    "title": "Mehmon oqimini tushunish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Kirishdan boshlang. Oldingi ochiq eshikdan markaziy yo‘lakka kiriladi. Chapda suhbat xonasi va uning orqasida ovqatlanish xonasi, o‘ngda mehmon sanuzeli bor; har biri yo‘lakka alohida ochilish bilan bog‘langan.",
+      "2. Uch yo‘lni kuzating. Kirishdan suhbatga, ovqat stoliga va sanuzelga borish uchun qaysi eshikdan o‘tilishini aniqlang. Mehmon faqat divanda o‘tirmaydi — yordamchi joylarga ham boradi.",
+      "3. Uchastka bilan bog‘lang. O‘z chizmangizda darvozadan uy eshigigacha yo‘lni ham qo‘shing. Har yo‘lning boshlanishi, oxiri, ochilishlari va to‘siqlarini belgilang; bu qisqartirilgan maketda yotoq zonasi ko‘rsatilmagan.",
+      "Darsdagi bajarish: Uch mehmon yo‘lini chizing → kerakli aloqalar."
+    ],
+    "exercise": "Mehmonning darvozadan xonagacha yo‘lini chizing.",
+    "solution": "Mehmon oqimi kirishdan boshlanadi, faqat mehmonxona ichida tugamaydi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M02_002",
+    "asset": "realistic-l04_m02_002.jpg",
+    "title": "Mehmonxona joylashuvi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Kutib olish joyi. Kirish yonidagi keng ochilish suhbat xonasiga olib boradi. Mehmon uy ichida uzoq yo‘l izlamasdan kutib olish joyiga yetadi.",
+      "2. Ko‘rinish chegarasi. O‘ngdagi devor oilaviy yo‘lakning bir qismini kirishdan yashiradi. Eshikning qayerga qarashi va devor burchagi shaxsiy joylarning ko‘rinishiga ta’sir qiladi.",
+      "3. Ikki variantni sinang. Mehmonxonani ikki joyda taklif qilib, kirishdan borish va oilaviy joylarning ko‘rinishini bir xil mezon bilan tekshiring. Yaqinlikning o‘zi yetmaydi: eshik ochilgandagi ko‘rinish va bir vaqtda yurish holatini ham yozing.",
+      "Darsdagi bajarish: Mehmonxonani kirishga yaqin joylashtirib, yotoqxona eshigini to‘g‘ridan-to‘g‘ri ko‘rinishdan chetga oling → tinch chegara."
+    ],
+    "exercise": "Mehmonxonani kirish va family zonaga nisbatan ikki variantda joylashtiring.",
+    "solution": "Joylashuv mehmonni kutish va oilaning maxfiyligini birga saqlashi kerak.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M02_003",
+    "asset": "realistic-l04_m02_003.jpg",
+    "title": "Guest WC va dining aloqasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Taom yo‘li. Chap orqada oshxona, oldinda ovqat stoli bor; taom ko‘targan odam ularni bog‘lovchi keng ochilishdan o‘tmoqda. Stol va surilgan stullar orasidan xizmat qilishni tekshiring.",
+      "2. Mehmon sanuzeli. O‘ngdagi sanuzelga yo‘lakdan kiriladi; ovqatlanish xonasiga yo‘lakning old qismida alohida ochilish bor. Ular orasidagi devor funksiyalarni ajratadi.",
+      "3. Aloqalarni tekshiring. Oshxona–stol va kirish–sanuzel yo‘llarini alohida belgilang, ularni yotoqxonadan majburiy o‘tkazmang. Haqiqiy chizmada eshik ochilishi, o‘tish joyi, ko‘rinish va foydalanish sharoitini birgalikda tekshiring.",
+      "Darsdagi bajarish: Diningni oshxona bilan, sanuzelni yo‘lak bilan bog‘lang → xizmat aloqasi."
+    ],
+    "exercise": "Guest WC va dining yo‘lini uxlash zonasidan o‘tkazmasdan tekshiring.",
+    "solution": "Yordamchi funksiyalarga kirish mehmon ssenariyining bir qismidir.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M02_004",
+    "asset": "realistic-l04_m02_004.jpg",
+    "title": "Mehmon va family privacy — rasmga qarab tushuning",
+    "explanation": [
+      "1. Mehmon yo‘li. Oldingi asosiy kirishdan chapdagi suhbat xonasiga ochiq eshik orqali boriladi. Suhbatdagi odamlar bilan oilaning har bir yurishini bir joyga yig‘ish shart emas.",
+      "2. Oila yo‘li. O‘ngda ona va bola alohida yo‘lakda turibdi; uning old qismi kirish joyiga ochilish bilan, orqa qismi oshxona va tinch zona bilan bog‘langan. Oila oshxonaga suhbat xonasi ichidan o‘tmasdan borishi mumkin.",
+      "3. Kesishish auditi. Mehmon kelgan vaqtda oila a’zosining oshxona hamda yotoq tomon borishini chizing. Umumiy kirishdagi uchrashish, ochiq eshikdan ko‘rinish va tor joylarni qayd eting; alohida yo‘lak barcha maxfiylik masalasini avtomatik hal qilmaydi.",
+      "Darsdagi bajarish: Oila mehmon payti oshxonaga va yotoqxonaga borishini chizing → mustaqil foydalanish."
+    ],
+    "exercise": "Mehmon va oila yo‘li kesishgan nuqtalarni qayd qiling.",
+    "solution": "Privacy masalasi eshik ko‘rinishi va harakat orqali tekshiriladi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M02_005",
+    "asset": "realistic-l04_m02_005.jpg",
+    "title": "Mehmon zonasi auditi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Muammoni toping. Chapdagi misolda kirish avval yotoqxonaga, undan esa suhbat xonasiga olib boradi. Mehmon karavot yonidan yurishga majbur — uyqu joyi o‘tish xonasiga aylangan.",
+      "2. Aloqani o‘zgartiring. O‘ngda yotoq va suhbat xonalariga umumiy yo‘lakdan alohida eshiklar bor. Mehmon suhbat joyiga bolaning xonasidan o‘tmasdan kiradi; yechim xona nomini almashtirish emas, kirish aloqasini qayta tuzishdir.",
+      "3. To‘rtta ssenariy. Mehmonning kirishi, ovqat stoliga borishi, sanuzeldan foydalanishi va oilaning tinch zonaga borishini alohida sinang. Har birida ishlaydigan yo‘l, qolgan ziddiyat va taklif qilingan tuzatishni yozing; bu rasm majburiy o‘tishning bitta misolini ko‘rsatadi.",
+      "Darsdagi bajarish: Yotoqxona majburiy o‘tish bo‘lsa eshik yoki yo‘lakni qayta joylashtiring → konflikt yechiladi."
+    ],
+    "exercise": "To‘rtta ssenariy bilan mehmon zonasi auditi tuzing.",
+    "solution": "Har ssenariy uchun ishlaydigan yo‘l va qolgan konflikt aniq yoziladi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
