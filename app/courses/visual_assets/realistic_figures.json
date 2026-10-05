@@ -2803,5 +2803,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L04_M01_001",
+    "asset": "realistic-l04_m01_001.jpg",
+    "title": "Oila hayoti va uy rejasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Oilani tinglang. Ota-ona maketdagi oshxona va yashash joyini ko‘rsatmoqda; ikki bolaning ham ehtiyojlarini so‘rang. Har kimning uyda bajaradigan ishi reja uchun boshlang‘ich ma’lumot bo‘ladi.",
+      "2. Kun tartibini yozing. Kim qachon uyg‘onadi, ovqatlanadi, o‘qiydi, ishlaydi va dam oladi? Ertalab, kunduz va kech uchun odam, faoliyat, kerakli joy hamda bir vaqtda foydalanish holatini qayd eting.",
+      "3. Rejaga aylantiring. Bir vaqtning o‘zida bajariladigan ishlar qaysi joylarga ehtiyoj tug‘dirishini aniqlang. Xona ro‘yxatini umumiy tasavvurdan emas, aynan shu oilaning javoblaridan tuzing.",
+      "Darsdagi bajarish: Kim qachon uyda va qanday ish bajarishini jadvalga yozing → oilaning real dasturi."
+    ],
+    "exercise": "Oila kunini ertalab, kunduz va kech ssenariylariga ajrating.",
+    "solution": "Mahalliy turmush talabi taxminiy stereotipdan emas, shu oilaning real hayotidan olinadi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M01_002",
+    "asset": "realistic-l04_m01_002.jpg",
+    "title": "Public va private hayot — rasmga qarab tushuning",
+    "explanation": [
+      "1. Umumiy joy. Markazdagi kirish joyidan chapdagi suhbat xonasiga alohida ochiq o‘tish bor. Mehmonni qabul qilish uchun uning bolaning uyqu yoki o‘qish joyidan o‘tishi talab qilinmaydi.",
+      "2. Shaxsiy joy. O‘ngda yotoq va o‘qish stoli, unga markaziy joydan boshqa ochilish orqali kiriladi. Mehmon yo‘li va oila a’zosining tinch joyga borish yo‘lini alohida kuzating.",
+      "3. Amaliy tekshiruv. Planda mehmon kirishi va oila yo‘lini ikki rangda belgilang; majburiy kesishish va ko‘rinib qoladigan shaxsiy joylarni toping. Maket faqat ikki funksiyaning aloqasini ko‘rsatadi; eshik, tovush va maxfiylikni haqiqiy rejangizda tekshiring.",
+      "Darsdagi bajarish: Mehmon va oilaning tinch yo‘lini ajrating → privacy saqlanadi."
+    ],
+    "exercise": "Mehmon yo‘li va oila yo‘lini ikki rangda chizing.",
+    "solution": "Umumiy va shaxsiy zonalar foydalanish ssenariyi bilan ajratiladi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M01_003",
+    "asset": "realistic-l04_m01_003.jpg",
+    "title": "Oila tarkibi va xonalar — rasmga qarab tushuning",
+    "explanation": [
+      "1. Uyqu va saqlash. Chapdagi ikki kishilik yotoq, yon stollar va shkaf ota-onaning dam olish hamda buyum saqlash ehtiyojini ko‘rsatadi. Faqat karavot sig‘ishiga qarab xona tanlamang.",
+      "2. Bolalar va ish. O‘rtada ikki bolaning yotoq va o‘qish joylari bor; o‘ngda kattalarning ishlash joyi va saqlash javonlari ko‘rinadi. Har odamga kerakli faoliyat, buyum va foydalanish vaqtini yozing.",
+      "3. Xona dasturi. Ehtiyojlarni birga bajarish mumkinmi yoki alohida joy kerakmi — shuni asoslang. Yosh o‘zgarishi va kelajak foydalanishini ham hisobga oling; rasm barcha oilaga bir xil xona sonini belgilamaydi.",
+      "Darsdagi bajarish: Har odam uchun uyqu, ish va saqlash ehtiyojini xona bilan bog‘lang → xona soni asoslanadi."
+    ],
+    "exercise": "Oila a’zolarining yosh, foydalanish va kelajak ehtiyojini xona dasturiga yozing.",
+    "solution": "Xona soni bilan har xona vazifasi va ustuvorligi birga qayd qilinadi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M01_004",
+    "asset": "realistic-l04_m01_004.jpg",
+    "title": "Uy va hovli aloqasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Dam olish aloqasi. Chapdagi yashash xonasi keng ochilish orqali hovlidagi soyali joyga bog‘langan. Ichkarida kitob o‘qish va tashqarida oilaviy dam olish bir-biriga yaqin joylashgan.",
+      "2. Ovqatlanish aloqasi. O‘ngdagi oshxonaning eshigi hovliga chiqadi; tayyor ovqatni markazdagi stolga olib borish mumkin. Bu yo‘lning boshlanishi, eshigi va stolga yetish joyini toping.",
+      "3. Kundalik foydalanish. Ovqat olib chiqish, stulni surish, hovlida yurish va xizmat ishlarini alohida sinang. Pog‘ona, eshik hamda mebel yo‘lni qanday o‘zgartirishini tekshirib, ichki va tashqi joylarni birgalikda rejalang.",
+      "Darsdagi bajarish: Oshxona va oilaviy yashash joyini hovliga bog‘lang → ichki-tashqi kundalik aloqa."
+    ],
+    "exercise": "Uy-hovli aloqasini ovqatlanish, dam olish va xizmat ishlari uchun tekshiring.",
+    "solution": "Hovli va uy bir-birini to‘ldiradigan makonlar sifatida loyihalanadi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M01_005",
+    "asset": "realistic-l04_m01_005.jpg",
+    "title": "O'zbek oilasi uchun plan auditi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ertalabki holat. Chapda bolalar kirish joyida oyoq kiyim va sumkalar bilan tayyorlanmoqda; yon xonada nonushta joyi bor. Odam, sumka va o‘tirib kiyinish joyi o‘tish yo‘lini qancha band qilishini kuzating.",
+      "2. Mehmon kelishi. O‘ngda mehmonlar shu kirish joyidan chapdagi suhbat xonasiga yo‘naladi, bola esa o‘ng xonada o‘qiydi. Mehmonning yo‘li o‘qish joyining ichidan o‘tmaydi.",
+      "3. Audit natijasi. O‘z rejangizni shu ikki ssenariyda sinang: kim qayerga boradi, qayerda to‘xtaydi va kimga xalaqit beradi? Aniqlangan ziddiyat, uning joyi va tuzatish sababini oiladan olingan topshiriq bilan bog‘lab yozing.",
+      "Darsdagi bajarish: Ertalab va mehmon kelgan paytni planda sinang → ziddiyat aniqlanadi."
+    ],
+    "exercise": "Rejani oila va mehmon ssenariylari bo‘yicha qayta o‘qing.",
+    "solution": "Plan auditi oiladan olingan briefga moslikni aniq dalil bilan ko‘rsatadi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
