@@ -3398,5 +3398,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L04_M08_001",
+    "asset": "realistic-l04_m08_001.jpg",
+    "title": "Fasad nimani ifodalaydi? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Xonani ochilish bilan bog‘lang. Chap deraza ortida divan va yashash joyi, o‘ng deraza ortida ish stoli ko‘rinadi. Markazdagi eshik haqiqiy kirishga xizmat qiladi.",
+      "2. Fasad tarkibi. Tom, ayvon, ustun, suvoq, tosh poydevor qismi va ochilishlar bir ko‘rinishni hosil qiladi. Mahalliy ifodani faqat naqshdan izlamang; bino qanday ishlashi ham fasadda ko‘rinadi.",
+      "3. Plandan fasadga. O‘z plangingizdagi xonalar va eshik-derazalarni fasad bilan solishtiring. Ochilish vazifasi, kirish, soya, material va detalni alohida yozing; tasvirdagi geometriya o‘lchamli loyiha chizmasi emas.",
+      "Darsdagi bajarish: Plandagi xonalar va ochilishlarni fasadga olib chiqing → haqiqiy bino ifodasi."
+    ],
+    "exercise": "Mahalliy belgi sifatida shakl, material, bo‘shliq va detalni ajrating.",
+    "solution": "Mahalliy fasad faqat ornament qo‘shish bilan tugamaydi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M08_002",
+    "asset": "realistic-l04_m08_002.jpg",
+    "title": "Mahalliy ruh va zamonaviy arxitektura — rasmga qarab tushuning",
+    "explanation": [
+      "1. An’anaviy misol. Chapda yog‘och ayvon, ochiq eshik va soyadagi o‘tirish joyi bor. Naqsh bilan birga uning ishlash tamoyilini ham ajrating.",
+      "2. Zamonaviy talqin. O‘ngda detallar soddaroq, ammo tom ostida dam olish va xonadan tashqariga chiqish aloqasi saqlangan. Mahalliy ruhni shaklni aynan ko‘chirmasdan ham davom ettirish mumkin.",
+      "3. Materialni asoslang. Tanlangan suvoq, yog‘och, g‘isht yoki toshning qayerda ishlatilishi, ko‘rinishi va parvarish sharoitini yozing. Estetik tanlovni haqiqiy tashqi muhit va material talablari bilan birga tekshiring.",
+      "Darsdagi bajarish: Mahalliy namunadan ishlash tamoyilini ajrating: soya, ichki-tashqi aloqa → bezakdan kengroq izoh."
+    ],
+    "exercise": "Tanlangan materialning ko‘rinishi, parvarishi va qo‘llash joyini yozing.",
+    "solution": "Material tanlovi estetik qaror bilan xizmat sharoitini ham qamrab oladi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M08_003",
+    "asset": "realistic-l04_m08_003.jpg",
+    "title": "Deraza, ayvon va soyalanish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Fazoviy aloqa. Deraza devorda, ayvon tomi esa uning oldiga chiqib turibdi; ustun tashqi chetda. Faqat fasaddagi konturdan tashqari haqiqiy chuqurlikni ham ko‘ring.",
+      "2. Soya ta’siri. Tom va yon sharoit oynaning turli qismlarini soyada qoldiradi. Bitta suratda ko‘ringan soya barcha vaqt va fasl uchun bir xil emas.",
+      "3. Fasad–kesim juftligi. Deraza, ayvon, tom chuqurligi va sathlarni o‘z o‘lchamli chizmangizda muvofiqlashtiring. Ko‘rinishdagi qaror xona foydalanishi va haqiqiy quyosh sharoiti bilan birga ishlashini tekshiring.",
+      "Darsdagi bajarish: Deraza, ayvon va tom soyasini kesimga bog‘lang → foydali detal."
+    ],
+    "exercise": "Deraza va ayvon soyasi uchun fasad-kesim juftligini chizing.",
+    "solution": "Ko‘rinish va iqlim qarori bir-biriga mos kelishi kerak.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M08_004",
+    "asset": "realistic-l04_m08_004.jpg",
+    "title": "Material va proporsiya — rasmga qarab tushuning",
+    "explanation": [
+      "1. Asosiy va yordamchi maydon. Katta yuzani och rangli suvoq egallaydi, pastki tasma g‘isht bilan ajratilgan. Har material bir xil darajada urg‘u bermaydi.",
+      "2. Bir detal oilasi. Eshik, deraza romlari va ayvon ustunlarida o‘xshash yog‘och ifoda ishlatilgan. Har ochilishga boshqa uslub qo‘shish o‘rniga izchil detal tanlovini kuzating.",
+      "3. Nisbatni sinang. Ikki asosiy material va bir aksentning maydon nisbatini o‘z fasadingizda tekshiring. Bir asosiy detal oilasini tanlab, raqobat qiladigan urg‘ularni soddalashtiring; rasmdan aniq foizni taxmin qilib olmang.",
+      "Darsdagi bajarish: Ikki asosiy material va bir aksentni nisbat bilan sinang → izchil ko‘rinish."
+    ],
+    "exercise": "Bitta asosiy detal oilasini tanlab, qolgan detallarni soddalashtiring.",
+    "solution": "Detal hierarxiyasi fasadni bir xil darajadagi ko‘p urg‘udan himoya qiladi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M08_005",
+    "asset": "realistic-l04_m08_005.jpg",
+    "title": "Mahalliy fasad auditi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Bezakni ajrating. Chapdagi fasadda deraza usti va eshik yoniga qo‘shimcha releflar qo‘shilgan. Ularning qanday vazifasi borligini alohida so‘rang.",
+      "2. Olib tashlash sinovi. O‘ngda shu qo‘shimcha releflar yo‘q, lekin kirish, deraza, ayvon tomi va ustunlar saqlangan. Vazifaga xizmat qiladigan elementni oddiy bezak bilan adashtirmang.",
+      "3. Muvofiqlashtirilgan audit. Fasadni plan, ochilish, material, parvarish va xizmat bo‘yicha tekshiring. Har element qolishi yoki soddalashishi sababini yozing; mahalliy ko‘rinish funksional hamda loyiha muvofiqligini almashtirmaydi.",
+      "Darsdagi bajarish: Fasad elementini olib tashlab vazifa o‘zgarishini tekshiring → ortiqcha dekor aniqlanadi."
+    ],
+    "exercise": "Plan, ochilish, material va xizmat nuqtai nazaridan fasadni audit qiling.",
+    "solution": "Mahalliy ruh funksiyani va loyiha koordinatsiyasini almashtirmaydi.",
+    "block": 11,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
