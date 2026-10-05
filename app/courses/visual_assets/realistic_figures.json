@@ -2973,5 +2973,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L04_M03_001",
+    "asset": "realistic-l04_m03_001.jpg",
+    "title": "Ichki hovli nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ochiq bo‘shliq. Markazda osmon ostidagi hovli, uning atrofida xonalar bor. Bu uy tashqarisidagi tasodifiy qoldiq joy emas — xonalar bilan bog‘langan ichki makon.",
+      "2. Vazifalar. Chapdagi yashash joyi hovliga ochiladi, o‘ngdagi deraza hovliga qaraydi; daraxt, o‘tirish joyi va qoplamali yo‘l boshqa foydalanishlarni ko‘rsatadi. Yorug‘lik, dam olish va yurish vazifalarini ajrating.",
+      "3. Plan va kesim. O‘z chizmangizda hovli konturi, unga qaragan eshik-derazalar va yuqoridagi ochiqlikni belgilang. Har aloqaning maqsadini yozing; hovlining foydasini faqat bezak yoki daraxt mavjudligi bilan asoslamang.",
+      "Darsdagi bajarish: Hovlining vazifasini yorug‘lik, dam olish yoki harakat deb aniqlang → maqsadli bo‘shliq."
+    ],
+    "exercise": "Hovli ochiq bo‘shliq va xona aloqalari sifatida plan-kesimda belgilang.",
+    "solution": "Ichki hovli faqat dekorativ bo‘shliq emas, makon tizimining bir qismidir.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M03_002",
+    "asset": "realistic-l04_m03_002.jpg",
+    "title": "Living va hovli aloqasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Eshik o‘rni. Yashash xonasidagi ochiq eshik to‘g‘ridan-to‘g‘ri hovliga olib chiqadi. Divan va stol ochilishdan chetda; odam o‘tirish joyini aylanib tashqariga borishi mumkin.",
+      "2. Sath va foydalanish. Xona poli bilan hovli qoplamasi orasida pog‘ona ko‘rinadi. Hovlidagi o‘tirish joyiga borishda shu o‘tish va eshik ostini ham hisobga oling, faqat derazadan ko‘rinishni tekshirish yetmaydi.",
+      "3. Ikki ssenariy. Xonadan hovliga chiqish va ichkari-tashqarida bir vaqtda o‘tirishni chizing. Haqiqiy foydalanuvchining imkoniyatlari, eshik ochilishi, sathlar va mebelning surilgan holatini tekshirib, qulay yo‘lni asoslang.",
+      "Darsdagi bajarish: Livingdan hovliga eshik va foydalanish yo‘lini chizing → kundalik aloqa."
+    ],
+    "exercise": "Livingdan hovliga chiqish va o‘tirish ssenariylarini chizing.",
+    "solution": "Aloqa eshik o‘rni, sath va foydalanish yo‘li bilan tekshiriladi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M03_003",
+    "asset": "realistic-l04_m03_003.jpg",
+    "title": "Privacy va ichki hovli — rasmga qarab tushuning",
+    "explanation": [
+      "1. Qarama-qarshi ko‘rinish. Chapdagi misolda bir yotoqxona derazasidan narigi xonaning karavoti ko‘rinadi. Hovli ichki bo‘lsa ham, xonalar o‘rtasida bevosita ko‘rish aloqasi bor.",
+      "2. Ekran ta’siri. O‘ngda deraza oldida lamellali yog‘och ekran bor. U ko‘rish va yorug‘likni o‘zgartiradi, lekin hamma burchakdan maxfiylik kafolati bermaydi; rasmda ham qarama-qarshi deraza ko‘rinmoqda.",
+      "3. Ko‘rish chiziqlari. Planda va kesimda deraza, odamning turgan yoki o‘tirgan joyi va qarama-qarshi xona tomon ko‘rish chiziqlarini belgilang. Deraza joyi, ekran burchagi hamda tungi yoritilgan holatni sinab, yechimning qaysi holatda ishlashini yozing.",
+      "Darsdagi bajarish: Qarama-qarshi yotoqxona derazalarining ko‘rish yo‘lini belgilang → privacy muammosi."
+    ],
+    "exercise": "Qarama-qarshi derazalarning ko‘rish chiziqlarini belgilang.",
+    "solution": "Ichki hovli avtomatik maxfiylik bermaydi; xona ko‘rish aloqasi nazorat qilinadi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M03_004",
+    "asset": "realistic-l04_m03_004.jpg",
+    "title": "Yorug'lik va shamollatish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Baland va tor holat. Chapda hovli atrofidagi devorlar balandroq, ochiq bo‘shliq torroq; pastki joyda soyalar ko‘proq ko‘rinadi. Devor balandligini hovli eni bilan birgalikda ko‘ring.",
+      "2. Pastroq va kengroq holat. O‘ngda osmon ochiqligi kengroq va devorlar pastroq. Ochiladigan derazalar ham ko‘rsatilgan; ularning mavjudligi haqiqiy havo almashinuvi yetarli ekanini o‘zi tasdiqlamaydi.",
+      "3. Tekshiruv asosi. Kesimda tekshirilgan en, balandlik, ochilish va qo‘shni to‘siqlarni yozing. Yorug‘lik uchun yo‘nalish, fasl va vaqtni, shamollatish uchun ochilishlar hamda haqiqiy sharoitni tekshiring; bu tasvir hisob-kitob natijasi emas.",
+      "Darsdagi bajarish: Hovli kesimida balandlik va ochiqlikni ko‘rsating → yorug‘lik va havo uchun tekshiruv asosi."
+    ],
+    "exercise": "Hovli eni, devor balandligi va ochilishlar bilan yorug‘likka ta’sirni izohlang.",
+    "solution": "Yorug‘lik va shamollatish haqiqiy geometriya hamda sharoitga bog‘liq.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M03_005",
+    "asset": "realistic-l04_m03_005.jpg",
+    "title": "Ichki hovli auditi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yurish yo‘li. Chap oldingi eshikdan qoplamali yo‘l hovli cheti bo‘ylab o‘ng orqadagi eshikka boradi. Savat ko‘targan odam shu chetdagi yo‘lda; yo‘lning boshlanishi va oxirini toping.",
+      "2. Tinch joy. Buvining o‘qishi va bolaning chizishi soyali o‘tirish joyida kechmoqda. O‘simliklar va joylashuv yurish yo‘lini shu faoliyatlarning o‘rtasidan olib o‘tmaslikka yordam beradi.",
+      "3. Uch holatda audit. Xonalar orasida o‘tish, tinch dam olish va xizmat buyumini olib yurishni bir vaqtda sinang. Plan va kesimda eshik, pog‘ona, yo‘l, soya hamda ko‘rinishlarni tekshirib, qolgan ziddiyat va tuzatishni yozing.",
+      "Darsdagi bajarish: Hovli bir vaqtda o‘tish va tinch dam olishga xizmat qilsa, yo‘lni chetga ajrating → faoliyatlar mos."
+    ],
+    "exercise": "Plan, kesim va uch foydalanish ssenariysi bilan hovlini audit qiling.",
+    "solution": "Hovli sifati renderdan tashqari foydalanish va muhit dalillarida ko‘rinadi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
