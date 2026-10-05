@@ -1868,5 +1868,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L02_M08_001",
+    "asset": "realistic-l02_m08_001.jpg",
+    "title": "Sanuzel funksiyasi va jihozlari — rasmga qarab tushuning",
+    "explanation": [
+      "1. Jihozlarni vazifaga bog‘lang. Chap oldinda qo‘l yuvish joyi, orqada unitaz, o‘ngda dush ko‘rinadi. Ularning foydalanish vazifalari boshqa-boshqa.",
+      "2. Ketma-ket foydalanish. Kirishdan har jihozga qanday yaqinlashiladi, yuvinishdan keyin sochiq qayerdan olinadi? Jihoz oldidagi bo‘sh polni ham vazifa bilan bog‘lang.",
+      "3. Xizmat ehtiyojini yozing. Suv bilan aloqa va tozalash yoki ta’mirlash uchun qayerga yetish kerakligini qayd qiling. Jihozlar ro‘yxati foydalanish tekshiruvining o‘rnini bosmaydi.",
+      "Darsdagi bajarish: Har jihozga vazifa va suv bilan aloqani yozing → sanitariya dasturi."
+    ],
+    "exercise": "Har jihozning vazifasi va xizmat uchun kirish ehtiyojini yozing.",
+    "solution": "Sanuzel rejasi jihozlar ro‘yxati bilan emas, foydalanish ketma-ketligi bilan tekshiriladi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M08_002",
+    "asset": "realistic-l02_m08_002.jpg",
+    "title": "Foydalanish zonalari — rasmga qarab tushuning",
+    "explanation": [
+      "1. Jihozning egallagan joyi. To‘q sariq konturlar yuvish javoni, unitaz va dush tagligi joyini ajratadi.",
+      "2. Foydalanish joyi. Yashil maydonlar jihozlarga yaqinlashishni ko‘rsatadi; chapda odam qo‘l yuvmoqda, dush eshigi esa ochiq holatda.",
+      "3. Holatlarni solishtiring. Eshik ochilganda va odam jihozdan foydalanganda qaysi maydon egallanadi? Zonalar ustma-ust tushsa, bir vaqtdagi foydalanish va xizmatni tekshiring; haqiqiy masofalar planda olinadi.",
+      "Darsdagi bajarish: Jihoz oldidagi foydalanish joyini chizing, zonalar ustma-ust tushishini baholang → xizmat qiladigan bo‘shliq."
+    ],
+    "exercise": "Har jihozga yaqinlashish va foydalanish holatini planga qo‘shing.",
+    "solution": "Jihoz konturi bilan foydalanuvchi egallaydigan zona bir xil emas.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M08_003",
+    "asset": "realistic-l02_m08_003.jpg",
+    "title": "Wet va dry zoning — rasmga qarab tushuning",
+    "explanation": [
+      "1. Nam hudud. Dush ichidagi ko‘k maydon va suv tomchilari suv bilan bevosita aloqadagi joyni ajratadi.",
+      "2. Nisbatan quruq aloqa. Kirishdan qo‘l yuvish va sochiq joyiga boruvchi to‘q sariq chiziq dush tagligidan tashqarida. Shisha chegara hududlar farqini ko‘rsatadi.",
+      "3. Suv ehtimolini baholang. Dush ochilganda suv qayerga chiqishi, polni tozalash va yurish holatini tekshiring. Nam–quruq zonalash uchun tasvir mantiq beradi; haqiqiy drenaj va himoya detali alohida hal qilinadi.",
+      "Darsdagi bajarish: Dushni nam zona, kirish va sochiq joyini nisbatan quruq zona sifatida belgilang → suv tarqalishi nazoratlanadi."
+    ],
+    "exercise": "Dushdan chiqadigan suv ehtimoli va quruq yurish yo‘lini ajrating.",
+    "solution": "Nam va quruq zonalash sirpanish, tozalash va foydalanish qulayligini birga ko‘radi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M08_004",
+    "asset": "realistic-l02_m08_004.jpg",
+    "title": "Eshik, privacy va circulation — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi bevosita ko‘rinish. To‘q sariq ko‘rish yo‘nalishi kirishdan unitaz tomon boradi. Ochiq eshik va yuvish joyining aloqasini ham tekshiring.",
+      "2. O‘ngdagi ajralish. Ichki to‘siq unitazni kirish tomondagi bevosita ko‘rinishdan ajratadi; yashil yo‘l qo‘l yuvish joyiga keladi.",
+      "3. Ikki masalani birga baholang. Eshikning to‘liq ochilishi jihoz va odamga xalaqit qiladimi, tashqaridan nima ko‘rinadi? Render universal ochilish qoidasini bermaydi; aniq eshik yoyi va foydalanish holati planda tekshiriladi.",
+      "Darsdagi bajarish: Eshik yoyini jihoz va odam bilan solishtiring → privacy va kirish saqlanadi."
+    ],
+    "exercise": "Ochiq eshikning yuvinish jihozi va maxfiylikka ta’sirini tekshiring.",
+    "solution": "Eshik joyi yo‘lni to‘smasligi va bevosita ko‘rish ssenariyi bilan baholanishi kerak.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M08_005",
+    "asset": "realistic-l02_m08_005.jpg",
+    "title": "Sanuzel auditi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Jihoz tagiga yetish. Chapdagi ochiq yuvish javonida quvur qismi ko‘rinadi, odam xizmat holatini tekshirmoqda. Buning uchun jihoz oldida ham joy kerak.",
+      "2. Xizmat va havo aloqasi. Orqadagi ochiq lyuk va o‘ng yuqoridagi shamollatish panjarasini toping. Ularning ishlashi hamda ularga kirish muhandis bilan kelishiladi.",
+      "3. Audit natijasini yozing. Haqiqiy jihoz ma’lumotlari, foydalanish maydoni, quvur yo‘li, shamollatish va xizmat kirishini tekshiring. Rasm xizmat savollarini ko‘rsatadi, quvur montajining tayyor detali emas.",
+      "Darsdagi bajarish: Quvur yo‘li, shamollatish va xizmat kirishini belgilang → arxitektura sxemasi muhandis bilan kelishiladi."
+    ],
+    "exercise": "Jihoz o‘lchami, foydalanish zonasi va xizmat kirishini qayta tekshiring.",
+    "solution": "Sanuzel auditi haqiqiy jihoz ma’lumotlari va tegishli talablar asosida bajariladi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
