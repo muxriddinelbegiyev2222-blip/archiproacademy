@@ -1783,5 +1783,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L02_M07_001",
+    "asset": "realistic-l02_m07_001.jpg",
+    "title": "Bolalar xonasi funksiyalari — rasmga qarab tushuning",
+    "explanation": [
+      "1. To‘rtta vazifani toping. Chapda uyqu joyi, orqada o‘qish stoli, o‘rtada o‘yin maydoni, o‘ngda saqlash javonlari ko‘rinadi.",
+      "2. Kun tartibini yozing. Bola qachon uxlaydi, o‘qiydi, o‘ynaydi va buyumlarini yig‘adi? Har vazifaning vaqti va foydalanish joyini alohida qayd qiling.",
+      "3. Faoliyatlar aloqasi. O‘yin tugagach buyumlar qayerga qo‘yiladi, stolga va krovatga qanday boriladi? Xonani faqat rang va mebel ro‘yxati bilan baholamang.",
+      "Darsdagi bajarish: Kun tartibini to‘rtta faoliyatga ajrating → har faoliyat uchun makon."
+    ],
+    "exercise": "To‘rtta vazifani kun davomida qachon bajarilishini yozing.",
+    "solution": "Bolalar xonasi faqat rang va kichik mebeldan iborat emas.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M07_002",
+    "asset": "realistic-l02_m07_002.jpg",
+    "title": "Yoshga mos rejalashtirish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Kichik bola ssenariysi. Chapda o‘yin, past stol va katta bilan birga foydalanish holati ko‘rinadi.",
+      "2. Maktab yoshidagi ssenariy. O‘ngda o‘qish stoli, mos stul, kitob va sumka uchun joy asosiyroq bo‘lgan. O‘yin uchun ham alohida joy qolgan.",
+      "3. Talablarni solishtiring. Yosh o‘zgarganda qaysi jihoz va foydalanish holati o‘zgarishini yozing. Aniq mebel o‘lchami katalog va haqiqiy foydalanuvchi bilan tekshiriladi; renderdagi proporsiya o‘lcham jadvali emas.",
+      "Darsdagi bajarish: Bola yoshiga mos mebel o‘lchamini tanlang → katalog va foydalanish tekshiruvi."
+    ],
+    "exercise": "Kichik bola va maktab yoshidagi bola uchun ikki ssenariy yarating.",
+    "solution": "Yosh o‘zgarishi o‘qish, o‘yin va saqlash talabini o‘zgartiradi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M07_003",
+    "asset": "realistic-l02_m07_003.jpg",
+    "title": "Xavfsizlik va ergonomika — rasmga qarab tushuning",
+    "explanation": [
+      "1. Og‘ir mebel savoli. Chapda katta javonning devor bilan aloqasi ko‘rilmoqda. Ustidagi buyumlar, ag‘darilish ehtimoli va mahkamlash talabi alohida tekshiriladi; rasmda mahkamlash yechimi tasdiqlanmagan.",
+      "2. Deraza savoli. O‘rtada tutqich va ochilish holati tekshirilmoqda. Bola derazaga qanday yaqinlashishi va nazorat qanday bo‘lishini ssenariy sifatida yozing.",
+      "3. Isitish jihozi savoli. O‘ngda radiator va yonidagi buyumlar ko‘rinadi. Issiq sirt bilan aloqa, tozalash va foydalanish holati uchun savollar tuzing; tasvirning o‘zi xavfsizlikni tasdiqlamaydi.",
+      "Darsdagi bajarish: Og‘ir shkaf, deraza va issiq jihoz xavflarini belgilang → mahkamlash va nazorat savollari."
+    ],
+    "exercise": "Mebel ag‘darilishi va derazaga chiqish kabi xavfli ssenariylarni belgilang.",
+    "solution": "Xavfsizlik tashqi ko‘rinishdan oldin foydalanish holatini tekshirish orqali baholanadi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M07_004",
+    "asset": "realistic-l02_m07_004.jpg",
+    "title": "Study, play va storage zonalari — rasmga qarab tushuning",
+    "explanation": [
+      "1. O‘qish joyi. Stol deraza yonida, unda bola kitob o‘qiyapti. Yorug‘lik va stuldan foydalanish holatini birga baholang.",
+      "2. O‘yin va saqlash. To‘q sariq maydon o‘yin joyini ajratadi; o‘ngdagi bola o‘yinchoqni javonga qo‘ymoqda. Buyumning foydalanish va yig‘ish yo‘li bog‘langan.",
+      "3. Harakat aloqasi. Yashil yo‘l kirishdan o‘yin maydonining cheti bo‘ylab stol va saqlash joyiga keladi. O‘yinchoqlar foydalanishda bo‘lganda ham bu yo‘lni tekshiring.",
+      "Darsdagi bajarish: Stol yorug‘ligi, o‘yin maydoni va o‘yinchoq saqlashni bog‘lang → bo‘sh joyning vazifasi bor."
+    ],
+    "exercise": "Stol, o‘yin va saqlash zonalarini harakat bilan bog‘lang.",
+    "solution": "Zonalar bir-birini to‘smasligi, ishlatilganda xona tartibi saqlanishi kerak.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M07_005",
+    "asset": "realistic-l02_m07_005.jpg",
+    "title": "Bolalar xonasi auditi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Hozirgi holat. Chapda past faoliyat stoli, o‘yinchoqlar va o‘yin gilami bor. Yo‘l kirishdan krovat yoniga o‘yin buyumlarini chetlab boradi.",
+      "2. Kelajakdagi holat. O‘ngda o‘qish stoli va stul, kitob va sumka joyi qo‘shilgan; kirish va krovat o‘rni saqlangan.",
+      "3. Moslashuvni dalil bilan ko‘rsating. Qaysi mebel almashadi, uning foydalanish joyi qayerda, ochiq eshik va yo‘l qanday ishlaydi? Universal deb yozishning o‘rniga ikki aniq variantni planda solishtiring.",
+      "Darsdagi bajarish: Eshik ochilishidan krovatgacha yo‘lni tekshiring → o‘yinchoq saqlash yo‘lga chiqmaydi."
+    ],
+    "exercise": "Hozirgi va kelajakdagi mebel variantlarini solishtiring.",
+    "solution": "Yaxshi yechimning moslashuvchanligi chizmada ko‘rsatiladi, shunchaki “universal” deb atalmasligi kerak.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
