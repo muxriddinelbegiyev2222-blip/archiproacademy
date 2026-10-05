@@ -257,14 +257,14 @@
   {
     "code": "L05_M04_001",
     "asset": "ac28-slab.png",
-    "title": "Slab: tuzilish va geometriya paneli",
+    "title": "Slab Settings: qalinlik, sath va material",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-5.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/SlabStructure.png",
-    "block": 0,
+    "block": 3,
     "explanation": [
-      "Slab: tuzilish va geometriya paneli. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Slab Toolni tanlang, sozlamasida tuzilish, qalinlik va sathni tekshiring. To‘rtburchak kontur kiriting → model elementi."
+      "Qizil ramkadagi birinchi tuzilish belgisi Basic Slabni, Concrete - Structural maydoni esa tanlangan Building Materialni ko‘rsatadi.",
+      "Chapdagi 300 — qalinlik, pastdagi 0 esa rasmda ko‘rsatilgan sath qiymati. Mashq uchun qalinlik va Reference Plane joyini alohida tekshiring; bu sonlar loyiha uchun majburiy konstruktiv talab emas.",
+      "Composite Slab tanlansa, qalinlik qatlamlar yig‘indisidan olinadi va bu yerda bevosita o‘zgarmaydi. Slab modelning hajmli elementi, oddiy Fill esa uning o‘rnini bosmaydi."
     ],
     "exercise": "Slab yarating va poligon chegarasini devor bilan solishtiring.",
     "solution": "Slab maydoni uning poligon konturi bilan belgilanadi.",
@@ -273,15 +273,15 @@
   },
   {
     "code": "L05_M04_002",
-    "asset": "ac28-slab.png",
-    "title": "Slab: tuzilish va geometriya paneli",
+    "asset": "ac28-slab-reference-plane.png",
+    "title": "Top va Bottom: sath qaysi yuzaga tegishli?",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-5.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/SlabStructure.png",
-    "block": 0,
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/BasicSlabRefPlane.png",
+    "block": 2,
     "explanation": [
-      "Slab: tuzilish va geometriya paneli. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Yuqori sath 0, qalinlik 200 mm bo‘lsa pastki sath −200 mm → kesimda tekshiriladigan farq."
+      "Slab Default Settingsning Reference Plane qismida Basic Slab uchun ikki variant bor: yuqori yoki pastki tekislik. Sath qiymati shu tanlangan tekislikka tegishli.",
+      "Mashqda yuqori sath 0 va qalinlik 200 mm bo‘lishi uchun Topni tanlang, loyiha birligini tekshirib sath va qalinlikni kiriting. Pastki yuz 0 − 200 = −200 mm bo‘ladi.",
+      "Agar Bottom tayanchini 0 sathda qoldirsangiz, plita yuqoriga qarab joylashadi: uning yuqori yuzi +200 mm bo‘ladi. Rasmda esa 300 va 3200 qiymatlari bor — bu mashq natijasi emas."
     ],
     "exercise": "Qalinlik va sath parametrlarini alohida o‘zgartirib, kesimda natijani ko‘ring.",
     "solution": "Slab qalinligini o‘zgartirish bilan uning joylashuv sathini o‘zgartirish boshqa-boshqa amallardir.",
@@ -290,15 +290,15 @@
   },
   {
     "code": "L05_M04_003",
-    "asset": "ac28-slab.png",
-    "title": "Slab: tuzilish va geometriya paneli",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-5.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/SlabStructure.png",
-    "block": 0,
+    "asset": "ac28-slab-methods.png",
+    "title": "Kontur chizishning uch usuli",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-127.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/SlabMethods.png",
+    "block": 1,
     "explanation": [
-      "Slab: tuzilish va geometriya paneli. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Burchaklarni modeldagi tayanch konturga bog‘lang, yopiq poligonni yakunlang → uzluksiz slab chegarasi."
+      "Chapdagi usul Polygonal, o‘rtadagi Rectangular, o‘ngdagi Rotated Rectangular Slab yaratish uchun. Oddiy to‘rtburchakni ikki qarama-qarshi burchak orqali kiritasiz.",
+      "Polygonal usulda kontur uchlarini ketma-ket belgilang va boshlanish nuqtasiga qaytib yoping. Burilgan to‘rtburchak usulida avval burilish yo‘nalishi aniqlanadi.",
+      "Kontur yopilgach, devorlarga nisbatan joyini va ortiqcha tugun qolmaganini tekshiring. Tashqi kontur bo‘yicha plita maydoni bilan xonaning ichki toza maydoni har doim teng bo‘lavermaydi."
     ],
     "exercise": "Kontur uchlarini tahrirlab, modelda yopiq poligon qolganini tekshiring.",
     "solution": "Slab konturi kerakli poligonni ifodalashi va tasodifiy ortiqcha uchlarga ega bo‘lmasligi kerak.",
@@ -308,14 +308,14 @@
   {
     "code": "L05_M04_004",
     "asset": "ac28-slab-hole.png",
-    "title": "Slabda ichki poligon bilan teshik yaratish",
+    "title": "Teshik yaratish: mavjud Slab ichiga yangi kontur",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-128.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/SlabDrawHole.png",
-    "block": 0,
+    "block": 2,
     "explanation": [
-      "Slabda ichki poligon bilan teshik yaratish. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Mavjud slabni tanlab ichki poligon teshigini yarating, 3Dda uning haqiqiy bo‘shliq ekanini ko‘ring → 1 m² teshik."
+      "Rasmda mavjud Slab tanlangan va uning ichida teshik konturi kiritilmoqda. Avval aynan shu Slabni tanlang, Slab asbobini faol qoldiring, so‘ng ichki yopiq poligonni chizing.",
+      "Ichki kontur Slab chegarasining ichida qolishi kerak. Shunda u yangi ustma-ust plita emas, mavjud plitadagi teshik sifatida talqin qilinadi.",
+      "Mashqdagi 1 m² teshikni 1000 × 1000 mm qilib kiriting. Rasmda boshqa shakldagi namuna bor; uning kattaligi yoki maydonini shu rasmga qarab ko‘chirmang."
     ],
     "exercise": "Teshik konturini kiriting va 3D yoki kesimda haqiqiy bo‘shliq paydo bo‘lganini tekshiring.",
     "solution": "Teshikni chiziq bilan tasvirlash slab geometriyasida bo‘shliq yaratishga teng emas.",
@@ -324,15 +324,15 @@
   },
   {
     "code": "L05_M04_005",
-    "asset": "ac28-slab-hole.png",
-    "title": "Slabda ichki poligon bilan teshik yaratish",
+    "asset": "ac28-slab-hole-result.png",
+    "title": "Mini-loyiha: poligon va teshik natijasini birga tekshirish",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-128.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/SlabDrawHole.png",
-    "block": 0,
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/3DSlabwithHole.png",
+    "block": 4,
     "explanation": [
-      "Slabda ichki poligon bilan teshik yaratish. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: 12 m² konturdan 1 m² teshikni ayiring → net geometrik maydon 11 m², hisoblash qoidasi alohida qayd etiladi."
+      "Haqiqiy 3D namuna teshikning plita qalinligi bo‘ylab ochilganini ko‘rsatadi. Bu L shaklidagi qo‘llanma misoli, mashqdagi 1000 × 1000 mm teshik emas.",
+      "Mashqda tashqi hisoblash konturi 4000 × 3000 mm bo‘lsa, maydon 12 m². 1000 × 1000 mm teshik 1 m²; sof geometrik qoldiq 11 m².",
+      "Bu hisob faqat aynan ko‘rsatilgan poligon uchun. Slab devorlarning tashqi yuziga chiqarilsa, uning kontur maydoni boshqacha bo‘ladi; xona maydoni va plita maydonini aralashtirmang."
     ],
     "exercise": "Slab konturi, sathi, qalinligi va teshigini bitta kesimda dalillang.",
     "solution": "Mini-loyiha poligon bilan vertikal joylashuvning birga to‘g‘riligini ko‘rsatadi.",
@@ -3798,6 +3798,87 @@
     ],
     "exercise": "Burchak tutashuvini planda va 3Dda ko‘rib, ortiqcha yoki uzilgan bo‘laklarni tuzating.",
     "solution": "Devor ulanishi faqat tashqi ko‘rinishda emas, element geometriyasida tekshiriladi.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M04_001",
+    "asset": "ac28-slab-selected.png",
+    "title": "Kontur modelning maydonini belgilaydi",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-128.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/SelectSlab.png",
+    "block": 5,
+    "explanation": [
+      "Tanlangan Slabning tashqi chetlari yashil bilan ajratilgan, burchaklarida tugunlar ko‘rinadi. Bu tekis to‘rtburchak poligonning hajmli ko‘rinishi.",
+      "Avval kontur devorlarga nisbatan qayerdan o‘tishini belgilang, keyin burchaklarni kiriting. Slabning cheti va devor yuzini ko‘z bilan taxmin qilish o‘rniga modeldagi tayanch nuqtalarga bog‘lang."
+    ],
+    "exercise": "Slab yarating va poligon chegarasini devor bilan solishtiring.",
+    "solution": "Slab maydoni uning poligon konturi bilan belgilanadi.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M04_002",
+    "asset": "ac28-slab-contour-3d.png",
+    "title": "3Dda tayanch tekisligi va Slab tanasini ajrating",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-126.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/SlabRefLine.png",
+    "block": 5,
+    "explanation": [
+      "Haqiqiy 3D misolda ko‘k qalin chiziq Slab Reference Plane konturini ko‘rsatadi; tananing yuqori yuzi, pastki yuzi va qalinligi undan ajratiladi.",
+      "Qalinlikni o‘zgartirish tananing ikki yuzi orasidagi masofani, sathni o‘zgartirish esa joylashuvini o‘zgartiradi. Natijani kesimda o‘lchab tekshiring."
+    ],
+    "exercise": "Qalinlik va sath parametrlarini alohida o‘zgartirib, kesimda natijani ko‘ring.",
+    "solution": "Slab qalinligini o‘zgartirish bilan uning joylashuv sathini o‘zgartirish boshqa-boshqa amallardir.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M04_003",
+    "asset": "ac28-slab-contour-3d.png",
+    "title": "Kontur tuguni va qirrasini tahrirlash",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-126.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/SlabRefLine.png",
+    "block": 4,
+    "explanation": [
+      "Konturdagi qora tugunlar burchaklarni bildiradi. Slabni tanlab, qirrasi yoki tugunidan tahrirlash amalini boshlaysiz; ko‘k kontur tayanch tekisligini ko‘rsatadi.",
+      "Kerakli burchakni modeldagi to‘g‘ri nuqtaga moslang. Tahrirdan keyin poligon yopiq qolganini, o‘zini kesib o‘tmasligini va devorlar chegarasiga nisbatan to‘g‘ri ekanini tekshiring."
+    ],
+    "exercise": "Kontur uchlarini tahrirlab, modelda yopiq poligon qolganini tekshiring.",
+    "solution": "Slab konturi kerakli poligonni ifodalashi va tasodifiy ortiqcha uchlarga ega bo‘lmasligi kerak.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M04_004",
+    "asset": "ac28-slab-hole-result.png",
+    "title": "Natija: 3Dda ochiq bo‘shliq hosil bo‘ldi",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-128.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/3DSlabwithHole.png",
+    "block": 3,
+    "explanation": [
+      "Bu rasm avvalgi kontur kiritishning tayyor 3D natijasini ko‘rsatadi: L shaklidagi joyda Slab materiali yo‘q, pastdagi fon va teshikning ichki qirralari ko‘rinadi.",
+      "O‘z mashqingizdagi kvadrat teshikni 3D yoki kesimda tekshiring. Faqat plan ustida kontur chizig‘i ko‘rinishi haqiqiy teshik yaratilganini isbotlamaydi."
+    ],
+    "exercise": "Teshik konturini kiriting va 3D yoki kesimda haqiqiy bo‘shliq paydo bo‘lganini tekshiring.",
+    "solution": "Teshikni chiziq bilan tasvirlash slab geometriyasida bo‘shliq yaratishga teng emas.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M04_005",
+    "asset": "ac28-slab-reference-plane.png",
+    "title": "Mini-loyiha: vertikal parametrlarni qayta tekshirish",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-5.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/BasicSlabRefPlane.png",
+    "block": 5,
+    "explanation": [
+      "Slab Settingsdagi Reference Plane va qalinlikni o‘qing, so‘ng kesimda yuqori va pastki yuzlarni tekshiring. 200 mm qalinlik va yuqori sath 0 sharti uchun pastki sath −200 mm bo‘lishi kerak.",
+      "Top tayanchi to‘g‘ri tanlanganini tekshiring. Top va Bottomni almashtirish faqat nomni o‘zgartirish emas: Slab tanasi joylashuvi ham o‘zgarishi mumkin.",
+      "Topshirish uchun kontur o‘lchamlari, teshik o‘lchami, sath va qalinlik ko‘rinadigan dalillarni saqlang. Qo‘llanma rasmidagi sonlar o‘zingiz bajargan ish natijasini tasdiqlamaydi."
+    ],
+    "exercise": "Slab konturi, sathi, qalinligi va teshigini bitta kesimda dalillang.",
+    "solution": "Mini-loyiha poligon bilan vertikal joylashuvning birga to‘g‘riligini ko‘rsatadi.",
     "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   }

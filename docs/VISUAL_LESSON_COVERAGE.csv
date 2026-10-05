@@ -194,11 +194,11 @@ L05_M03_002,L05_M03,Reference Line,illustrated,3,archicad-reference-plan.png|ac2
 L05_M03_003,L05_M03,Devor geometriyasi,illustrated,2,ac28-wall-chain-method.png|ac28-wall-rectangle-result.png
 L05_M03_004,L05_M03,Devorlarni ulash va tahrirlash,illustrated,2,ac28-wall-junction-plan.png|ac28-wall-reference-3d.png
 L05_M03_005,L05_M03,Wall Tool mini-loyiha,illustrated,1,ac28-wall-reference-3d.png
-L05_M04_001,L05_M04,Slab Tool asoslari,illustrated,2,l05_m04_001.svg|ac28-slab.png
-L05_M04_002,L05_M04,Slab qalinligi va balandligi,illustrated,2,l05_m04_002.svg|ac28-slab.png
-L05_M04_003,L05_M04,Slab konturini yaratish,illustrated,2,l05_m04_003.svg|ac28-slab.png
-L05_M04_004,L05_M04,Teshik va murakkab kontur,illustrated,2,l05_m04_004.svg|ac28-slab-hole.png
-L05_M04_005,L05_M04,Slab Tool mini-loyiha,illustrated,2,l05_m04_005.svg|ac28-slab-hole.png
+L05_M04_001,L05_M04,Slab Tool asoslari,illustrated,2,ac28-slab.png|ac28-slab-selected.png
+L05_M04_002,L05_M04,Slab qalinligi va balandligi,illustrated,2,ac28-slab-reference-plane.png|ac28-slab-contour-3d.png
+L05_M04_003,L05_M04,Slab konturini yaratish,illustrated,2,ac28-slab-methods.png|ac28-slab-contour-3d.png
+L05_M04_004,L05_M04,Teshik va murakkab kontur,illustrated,2,ac28-slab-hole.png|ac28-slab-hole-result.png
+L05_M04_005,L05_M04,Slab Tool mini-loyiha,illustrated,2,ac28-slab-hole-result.png|ac28-slab-reference-plane.png
 L05_M05_001,L05_M05,Door va Window asoslari,illustrated,2,l05_m05_001.svg|ac28-door-window.png
 L05_M05_002,L05_M05,Eshik o'lchami va ochilish yo'nalishi,illustrated,2,l05_m05_002.svg|ac28-door-position.png
 L05_M05_003,L05_M05,Deraza o'lchami va balandligi,illustrated,2,l05_m05_003.svg|ac28-door-position.png
