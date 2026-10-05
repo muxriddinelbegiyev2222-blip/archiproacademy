@@ -1443,5 +1443,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L02_M03_001",
+    "asset": "realistic-l02_m03_001.jpg",
+    "title": "Sirkulyatsiya nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Boshlanish nuqtasi. Uchta yo‘l ham oldingi kirishdan boshlanadi. Chapdagi to‘q sariq yo‘l mehmonxonaga, o‘rtadagi yashil yo‘l oshxonaga, ko‘k yo‘l yotoqxonaga boradi.",
+      "2. Eshik orqali o‘ting. Har yo‘l haqiqiy ochilishdan o‘tadi. Devorga to‘g‘ri chiziq chizish bilan yurish aloqasi hosil bo‘lmaydi.",
+      "3. Marshrutni qayd qiling. Qayerdan, qayerga va nima uchun yuriladi? Rasm boshlanish va maqsadni tushuntiradi; darsdagi 6 m va 3 m qiymatlarini ushbu renderdan o‘lchamang.",
+      "Darsdagi bajarish: Har safarni boshlanish va tugash nuqtasi bilan chizing → haqiqiy harakat yo‘li."
+    ],
+    "exercise": "Kirishdan eng ko‘p ishlatiladigan xonalarga marshrut chizing.",
+    "solution": "Sirkulyatsiya odamlar makonda qanday harakat qilishini tushuntiradi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M03_002",
+    "asset": "realistic-l02_m03_002.jpg",
+    "title": "Asosiy va ikkilamchi harakat yo'llari — rasmga qarab tushuning",
+    "explanation": [
+      "1. Asosiy aloqa. Keng yashil yo‘l kirish, yo‘lak va umumiy yashash–ovqatlanish joyini bog‘laydi. Mebel bu yo‘ldan chetda joylashgan.",
+      "2. Xizmat tarmog‘i. O‘ngdagi to‘q sariq yo‘l ochiq aloqadan kir yuvish joyiga keladi. U alohida vazifaga xizmat qiladi.",
+      "3. Foydalanish tezligini yozing. Qaysi safar kun davomida ko‘p takrorlanadi, qaysisi vaqti-vaqti bilan kerak? Rasmdagi chiziq qalinligi e’tibor darajasini bildiradi, me’yoriy yo‘lak kengligini emas.",
+      "Darsdagi bajarish: Ko‘p ishlatiladigan yo‘lni asosiy deb belgilang → mebel shu yo‘ldan chetga joylashadi."
+    ],
+    "exercise": "Kundalik yo‘l bilan vaqti-vaqti ishlatiladigan xizmat yo‘lini ajrating.",
+    "solution": "Asosiy va ikkilamchi yo‘llarning vazifasi bir xil emas; tez-tez yuriladigan aloqa soddaroq bo‘lishi kerak.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M03_003",
+    "asset": "realistic-l02_m03_003.jpg",
+    "title": "Koridor va o'tish zonalari — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yo‘lakning vazifasi. Chapdagi kirish va orqadagi uch xona ochilishi bir yo‘lak orqali bog‘langan. Yashil chiziq uning davomiyligini ko‘rsatadi.",
+      "2. Saqlash joyi. Ichki shkaf yonidagi to‘q sariq maydon buyum olish holatini ajratadi. Shkaf ichkariga joylashtirilgan, lekin undan foydalanish uchun ham joy kerak.",
+      "3. Bir vaqtdagi foydalanishni tekshiring. Odam shkafdan sumka olayotganda boshqa odam o‘ta oladimi? Yo‘lakning harakat va saqlash qismini alohida baholang; aniq kenglik haqiqiy planda tekshiriladi.",
+      "Darsdagi bajarish: Koridor maydoni va xizmat qiladigan xonalar sonini solishtiring → faqat qisqartirish emas, foyda baholanadi."
+    ],
+    "exercise": "Yo‘lakning qaysi qismi harakatga, qaysi qismi saqlashga xizmat qilishini belgilang.",
+    "solution": "Koridor maydoni faqat yo‘qotish emas, ammo har bir qismining zarur vazifasi bo‘lishi kerak.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M03_004",
+    "asset": "realistic-l02_m03_004.jpg",
+    "title": "Eshiklar va harakat to'qnashuvi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi konflikt. Ikki ochilgan eshikning erkin chekkalari bir-biriga kelib qolgan. To‘q sariq maydon muammo paydo bo‘ladigan joyni ajratadi.",
+      "2. O‘ngdagi farq. Eshiklarning joylashuvi va ochilish holati boshqacha, barglar orasida o‘tish joyi ko‘rinadi. Faqat yopiq holatdagi plan bu farqni to‘liq ko‘rsatmaydi.",
+      "3. Ochilish yoyini tekshiring. Har ikki eshikning to‘liq harakatini va odamning o‘tishini planda tekshiring. Rasm barcha eshiklarni ichkariga yoki tashqariga ochish qoidasi sifatida berilmagan.",
+      "Darsdagi bajarish: Eshiklarning to‘liq ochilish yoylarini chizing → ikki yoyning to‘qnashuvi ko‘rinadi."
+    ],
+    "exercise": "Eshiklarni ochiq holatda chizib, bir vaqtning o‘zida o‘tishni tekshiring.",
+    "solution": "Eshik konturi emas, ochilish yoyi va foydalanuvchi harakati to‘qnashuvni ko‘rsatadi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M03_005",
+    "asset": "realistic-l02_m03_005.jpg",
+    "title": "Sirkulyatsiya xatolarini topish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi uzoq yo‘l. Oshxonadan stol yoniga yetish uchun to‘q sariq yo‘l orqadagi ochilish orqali aylanib keladi.",
+      "2. O‘ngdagi qisqa aloqa. Oldingi tomondagi ochiq bog‘lanish yashil yo‘lni stol yoniga yaqinlashtiradi; yo‘l stol yoki devor ichidan o‘tmaydi.",
+      "3. Natijani dalil bilan solishtiring. Haqiqiy planda eski va yangi marshrut uzunligini hisoblang, eshik holati va foydalanish joyini ham tekshiring. Tasvirdagi ochilish o‘zgarishi qurilish uchun tayyor yechim emas; devor vazifasi alohida tekshiriladi.",
+      "Darsdagi bajarish: Bitta eshik o‘rnini surib yo‘llarni qayta chizing → to‘qnashuv bartaraf, foydalanish saqlanadi."
+    ],
+    "exercise": "Eng uzun majburiy yo‘lni qisqartirib, avvalgi va yangi variantni solishtiring.",
+    "solution": "Yaxshilash dalili marshrut va to‘qnashuv kamayishidir; o‘lchamsiz taxmin emas.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
