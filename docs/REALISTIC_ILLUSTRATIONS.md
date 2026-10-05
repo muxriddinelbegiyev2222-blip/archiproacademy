@@ -1,6 +1,6 @@
 # Realistic lesson illustration replacement
 
-Work in progress: 185 of 680 lessons reviewed and converted to material raster illustrations. 495 remain. See REALISTIC_LESSON_COVERAGE.csv for the exact list. A passing runtime audit or an image count does not mean this topic review is finished.
+Work in progress: 190 of 680 lessons reviewed and converted to material raster illustrations. 490 remain. See REALISTIC_LESSON_COVERAGE.csv for the exact list. A passing runtime audit or an image count does not mean this topic review is finished.
 
 The user's approved reference is a realistic material cutaway beside three numbered explanations in the existing ARCHIPRO UZ lesson reader. New pictures are generated with the built-in image generation tool, checked against the actual lesson and refined when misleading. Native text carries the explanations and exact exercise values. Generated illustrations are not measured drawings or engineering details. No SHNQ audit is claimed for this replacement phase; the user deferred it.
 

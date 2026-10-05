@@ -3143,5 +3143,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L04_M05_001",
+    "asset": "realistic-l04_m05_001.jpg",
+    "title": "Yozgi oshxona nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ketma-ket joylar. Chapda mahsulot va idish shkafi, keyin yuvish rakovinasi, uning yonida tayyorlash ish stoli bor. Odam sabzavot tayyorlamoqda; har ishning joyini alohida toping.",
+      "2. Pishirish va xizmat. O‘ngdagi jihoz tom chetidan tashqaridagi ochiq maydonda, ovqat stoli esa alohida turibdi. Yozgi oshxona bitta mangaldan iborat emas — mahsulotdan tayyor ovqat va idish yig‘ishgacha jarayon bor.",
+      "3. Jarayonni yozing. Saqlash, yuvish, tayyorlash, pishirish, stolga berish va tozalash uchun kerakli joy hamda yurishni belgilang. Jihozning haqiqiy o‘rni va foydalanish talablarini uning ko‘rsatmasi hamda mutaxassis tekshiruvi bilan aniqlang; render o‘rnatish chizmasi emas.",
+      "Darsdagi bajarish: Ovqat tayyorlash ketma-ketligini belgilang → saqlash→yuvish→tayyorlash→pishirish."
+    ],
+    "exercise": "Tayyorlash, pishirish, xizmat va tozalash jarayonlarini yozing.",
+    "solution": "Yozgi oshxona shunchaki mangal qo‘yilgan joy emas, xizmat tizimidir.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M05_002",
+    "asset": "realistic-l04_m05_002.jpg",
+    "title": "Asosiy oshxona bilan aloqa — rasmga qarab tushuning",
+    "explanation": [
+      "1. Boshlanish va oxir. Chapdagi ichki oshxona ochiq eshik orqali hovliga chiqadi; o‘ngda yozgi tayyorlash va yuvish joyi bor. Mahsulot ko‘targan odam ular orasidagi qoplamali yo‘lda yurmoqda.",
+      "2. Yuk bilan yurish. Eshik ostidagi pog‘ona, yo‘l va tashqi ish joyining cheti ko‘rinadi. Qo‘lda mahsulot yoki idish bo‘lganda har safar shu o‘tishlardan foydalaniladi.",
+      "3. Marshrutni sinang. Asosiy oshxonadan mahsulot, idish va boshqa buyum olib kelish yo‘llarini chizing. Haqiqiy masofa, sath, eshik va takroriy yurish sonini yozib, ikki oshxona aloqasini kundalik foydalanish bilan asoslang.",
+      "Darsdagi bajarish: Ichki oshxonadan tashqi oshxonaga mahsulot yo‘lini chizing → xizmat aloqasi."
+    ],
+    "exercise": "Asosiy oshxonadan buyum olib kelish marshrutini chizing.",
+    "solution": "Ikki oshxona aloqasi masofa va foydalanish chastotasi bilan tekshiriladi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M05_003",
+    "asset": "realistic-l04_m05_003.jpg",
+    "title": "Mangal, tutun va tashqi dining — rasmga qarab tushuning",
+    "explanation": [
+      "1. Faoliyatlarni ajrating. Chapda pishirish joyi, o‘ngda stol, orqaroqda bolaning yurish yo‘li ko‘rinadi. Ishlayotgan jihoz yonidan kim va nima uchun o‘tishini tekshiring.",
+      "2. Bitta tutun holati. Tasvirda tutun chap yuqoriga tarqalmoqda; stol va uy derazasi boshqa tomonda. Shamol o‘zgarsa bu holat ham o‘zgaradi, shuning uchun bitta rakursni doimiy yechim deb qabul qilmang.",
+      "3. Tekshiruv savollari. Turli shamolda tutun o‘tirish joyi, uy derazasi va qo‘shniga boradimi? Issiq jihozning o‘rni, yaqin materiallar va bolalar yo‘li haqiqiy sharoitda qayta tekshirilsin; ko‘ringan masofalarni tasvirdan norma sifatida olmang.",
+      "Darsdagi bajarish: Tutun va issiq jihoz zonasini dining va o‘yin yo‘lidan ajrating → tekshiruv savollari."
+    ],
+    "exercise": "Tutun va shamol ssenariylarini o‘tirish joyi bilan solishtiring.",
+    "solution": "Pishirish joyi mehmon va qo‘shni foydalanishiga ta’siri bilan baholanadi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M05_004",
+    "asset": "realistic-l04_m05_004.jpg",
+    "title": "Suv, saqlash va service — rasmga qarab tushuning",
+    "explanation": [
+      "1. Suv va idish. Rakovinada idish yuvilmoqda; yuqoridagi shkafda toza idishlar va yopiq saqlash qutilari bor. Yuvish, quritish va saqlashning ketma-ket ehtiyojlarini yozing.",
+      "2. Chiqindi va kirish. O‘ngdagi suriladigan bo‘limda qopqoqli idishlar, rakovina ostida esa xizmat uchun ochilgan shkaf bor. Eshik va surilma ochilganda ishchi yoki ta’mirlovchi qayerda turishini tekshiring.",
+      "3. Mutaxassisga savollar. Suv qayerdan keladi, oqova qayerga ketadi, mavsumiy foydalanish va tozalash qanday bajariladi, xizmat uchun qaysi joy ochiq qoladi? Talab va kirish imkonini topshiriqqa yozing; tasvirdagi quvurni tayyor muhandislik yechimi sifatida ko‘chirmang.",
+      "Darsdagi bajarish: Suv, chiqindi va idish saqlashni ish joyiga bog‘lang → uzluksiz xizmat."
+    ],
+    "exercise": "Suv, saqlash va xizmat ehtiyojini mutaxassisga savollar ro‘yxatiga yozing.",
+    "solution": "Muhandislik aloqalari ko‘rinishda yashirilsa ham, talab va xizmat imkoniyati aniqlanadi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M05_005",
+    "asset": "realistic-l04_m05_005.jpg",
+    "title": "Yozgi oshxona auditi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Taom va idish yo‘li. Odam yopiq taom idishini stolga olib kelmoqda; chapdagi odam ishlatilgan idishlarni rakovina yoniga qaytarmoqda. Jarayon ovqat stolga kelishi bilan tugamaydi.",
+      "2. Boshqa oqim. O‘ngdagi bola o‘simliklar ortidagi alohida yo‘lda yurmoqda. Xizmat yurishi, surilgan stullar va bolaning yo‘li bir paytda qayerda uchrashishini tekshiring.",
+      "3. To‘liq audit. Tayyorlashdan pishirish, stolga berish, idish yig‘ish va tozalashgacha barcha bosqichni yozing. Issiq idish bilan yurish bolalar oqimini kessa, stol yoki xizmat yo‘lini qayta joylashtirib, qolgan ziddiyatlarni ham qayd eting.",
+      "Darsdagi bajarish: Issiq idish bilan stolgacha yurishni sinang → bolalar oqimi kesilsa diningni suring."
+    ],
+    "exercise": "Ovqat tayyorlashdan idish yig‘ishgacha to‘liq ssenariyni audit qiling.",
+    "solution": "Yechim jarayonning barcha bosqichida qulaylik va xavfsizlikni ko‘rsatishi kerak.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
