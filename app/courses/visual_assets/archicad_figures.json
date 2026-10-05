@@ -87,14 +87,14 @@
   {
     "code": "L05_M02_001",
     "asset": "ac28-navigator.png",
-    "title": "Navigator: loyiha xaritalari",
+    "title": "Navigator: uch bosqichni piktogrammasidan ajrating",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/030_Interaction/030_Interaction-3.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/030_Interaction/NavigatorPalette00030.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Navigator: loyiha xaritalari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Navigator ichidagi Project Map, View Map va Layout Bookni ajrating → manba, saqlangan ko‘rinish, varaq."
+      "Yuqoridagi birinchi piktogramma Project Map, ikkinchisi View Map, uchinchisi Layout Book. To‘rtinchisi Publisher Sets — chiqarish to‘plamlari.",
+      "Rasmda birinchi xarita faol: qora piktogrammalar modelning manba ko‘rinishlarini bildiradi. Ground Floor ochish uchun shu nomni ikki marta bosing.",
+      "Project Map → View Map → Layout Book ketma-ketligi: manba ko‘rinish → sozlamalari saqlangan ko‘rinish → chizma joylangan hujjat varag‘i. Bu uchta alohida bino modeli degani emas."
     ],
     "exercise": "Navigator tarkibidagi xaritalarni topib, har birining vazifasini yozing.",
     "solution": "Model manbasi, saqlangan ko‘rinish va chiqariladigan varaq turli bosqichlardir.",
@@ -104,14 +104,14 @@
   {
     "code": "L05_M02_002",
     "asset": "ac28-project-map.png",
-    "title": "Project Map: modelning ishchi ko‘rinishlari",
+    "title": "Project Mapdan qavat planini ochish",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/030_Interaction/030_Interaction-4.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/030_Interaction/ProjectMapMini.png",
-    "block": 0,
+    "block": 2,
     "explanation": [
-      "Project Map: modelning ishchi ko‘rinishlari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Project Mapdan qavat planini oching → modelga bog‘langan ishchi ko‘rinish."
+      "Stories bo‘limida 2. Story, 1. Story va 0. Ground Floor bor. Rasmda Ground Floor tanlangan; bu qavatlar namunaviy loyiha tarkibidir.",
+      "Ground Floor nomini ikki marta bosib plan oynasini oching. Elevations ostidagi East, North, South va West Elevation tomon fasadlarini, 3D ostidagi Generic Perspective va Generic Axonometry hajmli ko‘rinishni ochadi.",
+      "Project Map manba ko‘rinishga kirishni beradi. Hujjat uchun masshtab va ko‘rsatish sozlamalarini saqlash keyingi View Map bosqichida bajariladi."
     ],
     "exercise": "Project Map orqali qavat planini oching va loyiha elementlarini aniqlang.",
     "solution": "Project Map loyiha tuzilishi va manba ko‘rinishlarga kirishni beradi.",
@@ -121,14 +121,14 @@
   {
     "code": "L05_M02_003",
     "asset": "ac28-view-map.png",
-    "title": "View Map: saqlangan ko‘rinishlar",
+    "title": "View Map: ko‘rinishning nomi va saqlangan sozlamalari",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/030_Interaction/030_Interaction-5.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/030_Interaction/ViewMapMini.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "View Map: saqlangan ko‘rinishlar. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Kerakli masshtab va ko‘rinish sozlamalarini tanlab View Mapda saqlang → takror ochiladigan hujjat ko‘rinishi."
+      "Ikkinchi piktogramma ajratilgan, ko‘rinish belgilarining rangi ko‘k. Floor Plans, Ceiling Plans va Structural Plans bir loyiha uchun turli maqsaddagi saqlangan ko‘rinishlar guruhidir.",
+      "Rasmda Floor Plans ichidagi 2. Story tanlangan. Pastdagi Properties qismida 02 Drafting qatlamlar to‘plami, 1:100 masshtab va 03 Building Plans ko‘rsatish sozlamasi ko‘rinadi.",
+      "Saqlangan viewni ikki marta ochish uning saqlangan ko‘rsatish sharoitini tiklaydi. Bu modeldagi elementlarni muzlatib qo‘yadigan surat emas: model o‘zgarishi tegishli ko‘rinishda aks etadi."
     ],
     "exercise": "Plan ko‘rinishini View Mapga saqlab, masshtab va ko‘rsatish sozlamalarini qayd qiling.",
     "solution": "Saqlangan view takroran ochiladigan ko‘rsatish sharoitini tartiblaydi.",
@@ -138,14 +138,14 @@
   {
     "code": "L05_M02_004",
     "asset": "ac28-layout.png",
-    "title": "Layout Book: topshiriladigan varaqlar",
+    "title": "Layout Book: varaq va uning ichidagi Drawing",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/070_Documentation-84.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/LayoutBook.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Layout Book: topshiriladigan varaqlar. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Layout Bookda varaq oching, saqlangan viewni drawing sifatida joylashtiring → hujjat varag‘i."
+      "Uchinchi piktogramma ajratilgan. Daraxtda Ground Floor varag‘i tanlangan; uning ostidagi 0. Ground Floor — shu varaqdagi chizma, QTO-12 Zone List esa jadval chizmasi.",
+      "Layout — chiqariladigan varaq, Drawing — unga joylangan ko‘rinish. Pastdagi Properties varaqning Master Layout andozasi va boshqa xususiyatlarini ko‘rsatadi; 900 / 450 — qo‘llanmadagi andoza misoli.",
+      "Kerakli varaq nomini ikki marta bosib oching. Layout Bookdagi tartibni model qavatlari tartibi deb qabul qilmang; varaq albomni tashkil qilish uchun xizmat qiladi."
     ],
     "exercise": "Saqlangan viewni Layoutga joylashtiring va varaqdagi o‘qilishini tekshiring.",
     "solution": "Layout Book chizmalarni chiqariladigan varaqlar ko‘rinishida tashkil qiladi.",
@@ -155,14 +155,14 @@
   {
     "code": "L05_M02_005",
     "asset": "ac28-view.png",
-    "title": "View Settings: hujjat ko‘rinishi parametrlari",
+    "title": "Saqlangan viewni manbasi va parametridan tekshiring",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/140_UserInterfaceDialogBoxes/140_UserInterfaceDialogBoxes-77.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/140_UserInterfaceDialogBoxes/ViewSettings.png",
-    "block": 0,
+    "block": 9,
     "explanation": [
-      "View Settings: hujjat ko‘rinishi parametrlari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Modeldagi o‘zgarishdan keyin view va drawingni tekshiring → uch bosqichning aloqasi saqlanadi."
+      "Source qatorida 0. Ground Floor yozilgan: ushbu view qaysi manba ko‘rinishga bog‘langanini ko‘rsatadi. Name maydonidagi GF bathroom — qo‘llanmadagi nomlash misoli.",
+      "General bo‘limida Layer Combination — 02 Drafting, Scale — 1:100, Pen Set — 01 Color Conceptual. Siz o‘zingiz saqlagan viewning nomi va parametrlari bilan solishtiring.",
+      "Get Current Window’s Settings joriy oynadagi sozlamalarni ushbu view sozlamalariga ko‘chiradi. Uni shunchaki tekshirish uchun bosmang: manba, saqlangan view va layoutdagi chizmani navbat bilan ochib, ko‘rinish holatini solishtiring."
     ],
     "exercise": "Manba plan, saqlangan view va layoutdagi chizmani ketma-ket oching.",
     "solution": "Bir modelni tahrirlash va uning hujjat ko‘rinishlarini boshqarish o‘zaro bog‘liq jarayondir.",
@@ -3635,6 +3635,104 @@
     ],
     "exercise": "Devor va eshikni topish, tanlash va ikki oynada tekshirish jarayonini takrorlang.",
     "solution": "Mini-amaliyot natijasi elementni adashmasdan topish va uning parametrini tushuntirishdir.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M02_001",
+    "asset": "ac28-view-map.png",
+    "title": "Ikkinchi bosqich — View Map",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/030_Interaction/030_Interaction-5.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/030_Interaction/ViewMapMini.png",
+    "block": 1,
+    "explanation": [
+      "View Mapdagi ko‘k belgilar sozlamalari saqlangan ko‘rinishlarni bildiradi. Pastdagi 1:100 — tanlangan viewning masshtabi.",
+      "Project Mapdagi qavatning manbasi bilan shu qavatdan saqlangan viewni farqlang: model bir xil, hujjat uchun ko‘rsatish sharoiti saqlanadi."
+    ],
+    "exercise": "Navigator tarkibidagi xaritalarni topib, har birining vazifasini yozing.",
+    "solution": "Model manbasi, saqlangan ko‘rinish va chiqariladigan varaq turli bosqichlardir.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M02_001",
+    "asset": "ac28-layout.png",
+    "title": "Uchinchi bosqich — Layout Book",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/070_Documentation-84.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/LayoutBook.png",
+    "block": 1,
+    "explanation": [
+      "Layout Bookning uchinchi piktogrammasini tanlang. Ground Floor varag‘i ostida Drawinglar ro‘yxati turibdi.",
+      "Viewni varaqka joylashtirsangiz, Drawing hosil bo‘ladi. Varaq chizmani chiqarish tartibini boshqaradi; bu yerda devorni qaytadan yaratish shart emas."
+    ],
+    "exercise": "Navigator tarkibidagi xaritalarni topib, har birining vazifasini yozing.",
+    "solution": "Model manbasi, saqlangan ko‘rinish va chiqariladigan varaq turli bosqichlardir.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M02_003",
+    "asset": "ac28-save-view-tab.png",
+    "title": "Plan ko‘rinishini saqlash buyrug‘i",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/030_Interaction/030_Interaction-5.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/030_Interaction/SaveViewTabBar.png",
+    "block": 5,
+    "explanation": [
+      "Ochiq plan yorlig‘ini o‘ng tugma bilan bosing va Save as View buyrug‘ini tanlang. Avval loyiha shartiga mos masshtab va qatlamlar holatini sozlang.",
+      "Bu amal viewpointning sozlamalarini view sifatida saqlash oynasini ochadi; nom berishning o‘zi modelni alohida faylga eksport qilmaydi."
+    ],
+    "exercise": "Plan ko‘rinishini View Mapga saqlab, masshtab va ko‘rsatish sozlamalarini qayd qiling.",
+    "solution": "Saqlangan view takroran ochiladigan ko‘rsatish sharoitini tartiblaydi.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M02_003",
+    "asset": "ac28-create-view.png",
+    "title": "View nomini va parametrlarini tekshirib Create bosing",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/030_Interaction/030_Interaction-5.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/030_Interaction/CreateViewTabBar.png",
+    "block": 5,
+    "explanation": [
+      "Saqlash oynasida Name usuli By Project Map bo‘lsa, nom manbadan olinadi. O‘zingiz nom berish uchun Customni tanlang; Source orqali qaysi qavatdan saqlayotganingizni tekshiring.",
+      "Scale va Layer Combinationni vazifangiz bilan solishtirib, Create tugmasini bosing. Natija View Mapda ko‘k belgi bilan paydo bo‘lishi kerak; rasm qiymatlari tayyor loyiha talabi emas."
+    ],
+    "exercise": "Plan ko‘rinishini View Mapga saqlab, masshtab va ko‘rsatish sozlamalarini qayd qiling.",
+    "solution": "Saqlangan view takroran ochiladigan ko‘rsatish sharoitini tartiblaydi.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M02_004",
+    "asset": "ac28-place-view-layout.png",
+    "title": "Saqlangan viewni varaqka joylashtirish",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/070_Documentation-88.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/PlaceOneView.png",
+    "block": 5,
+    "explanation": [
+      "Avval Layout Bookdan kerakli varaqni oching. Navigatorning View Map qismidan kerakli saqlangan viewni ochiq varaq ustiga sudrab qo‘ying.",
+      "Rasm view → varaq bog‘lanishini ko‘rsatadi: varaqdagi natija Drawing bo‘ladi. Varaqning bo‘sh maydonida chizma joylashuvi va o‘qilishini tekshiring.",
+      "Navigator xaritalari orasidagi qo‘shish, o‘chirish va sudrash amallari oddiy Undo navbatiga kirmaydi. Mashqni o‘quv faylida bajarib, nom va nishon varaqni oldindan tekshiring."
+    ],
+    "exercise": "Saqlangan viewni Layoutga joylashtiring va varaqdagi o‘qilishini tekshiring.",
+    "solution": "Layout Book chizmalarni chiqariladigan varaqlar ko‘rinishida tashkil qiladi.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M02_005",
+    "asset": "ac28-layout.png",
+    "title": "Manba o‘zgargandan keyin Drawingni tekshirish",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/070_Documentation-84.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/LayoutBook.png",
+    "block": 10,
+    "explanation": [
+      "Manba planni va undan saqlangan viewni tekshirgach, Layout Bookdagi tegishli varaqni oching. Varaq ostidagi Ground Floor Drawing aynan qaysi chizmaga qarayotganingizni ajratishga yordam beradi.",
+      "Layout Bookdagi yashil Update tugmasi tanlangan Drawingni yoki tanlangan varaqdagi Drawinglarni yangilaydi. Avval kerakli element tanlanganini tekshiring, keyin yangilangan chizmani ko‘ring.",
+      "Kutilgan devor o‘zgarishi ko‘rinmasa, boshqa qavat, boshqa view, yashirilgan qatlam yoki yangilanmagan Drawing holatini tekshiring. Chizmani tashqi ko‘rinishi o‘xshashligi bilan manbaga teng deb hisoblamang."
+    ],
+    "exercise": "Manba plan, saqlangan view va layoutdagi chizmani ketma-ket oching.",
+    "solution": "Bir modelni tahrirlash va uning hujjat ko‘rinishlarini boshqarish o‘zaro bog‘liq jarayondir.",
     "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   }

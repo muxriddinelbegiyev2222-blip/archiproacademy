@@ -184,11 +184,11 @@ L05_M01_002,L05_M01,ToolBox va Info Box,illustrated,2,ac28-toolbox.png|ac28-info
 L05_M01_003,L05_M01,2D va 3D oynalar,illustrated,2,ac28-navigator.png|ac28-tab-overview.png
 L05_M01_004,L05_M01,"Zoom, Pan va tanlash",illustrated,2,ac28-zoom.png|ac28-preview-pan.png
 L05_M01_005,L05_M01,Interfeys mini-amaliyoti,illustrated,2,ac28-info-box.png|ac28-selected-editable.png
-L05_M02_001,L05_M02,Navigator nima?,illustrated,2,l05_m02_001.svg|ac28-navigator.png
-L05_M02_002,L05_M02,Project Map,illustrated,2,l05_m02_002.svg|ac28-project-map.png
-L05_M02_003,L05_M02,View Map,illustrated,2,l05_m02_003.svg|ac28-view-map.png
-L05_M02_004,L05_M02,Layout Book,illustrated,2,l05_m02_004.svg|ac28-layout.png
-L05_M02_005,L05_M02,Navigator mini-amaliyoti,illustrated,2,l05_m02_005.svg|ac28-view.png
+L05_M02_001,L05_M02,Navigator nima?,illustrated,3,ac28-navigator.png|ac28-view-map.png|ac28-layout.png
+L05_M02_002,L05_M02,Project Map,illustrated,1,ac28-project-map.png
+L05_M02_003,L05_M02,View Map,illustrated,3,ac28-view-map.png|ac28-save-view-tab.png|ac28-create-view.png
+L05_M02_004,L05_M02,Layout Book,illustrated,2,ac28-layout.png|ac28-place-view-layout.png
+L05_M02_005,L05_M02,Navigator mini-amaliyoti,illustrated,2,ac28-view.png|ac28-layout.png
 L05_M03_001,L05_M03,Wall Tool asoslari,illustrated,2,archicad-reference-menu.png|ac28-wall.png
 L05_M03_002,L05_M03,Reference Line,illustrated,2,archicad-reference-plan.png|ac28-wall-thickness.png
 L05_M03_003,L05_M03,Devor geometriyasi,illustrated,2,l05_m03_003.svg|ac28-wall.png
