@@ -3313,5 +3313,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L04_M07_001",
+    "asset": "realistic-l04_m07_001.jpg",
+    "title": "Issiq iqlimni tushunish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Quyoshga duch kelish. Chapdagi katta derazadan yorug‘lik xona poli va o‘tirish joyiga kiradi. Faqat xona nomini emas, qaysi joyga qaysi vaqtda quyosh tushishini kuzating.",
+      "2. Soya va faoliyat. O‘ngdagi odam ayvon tomi ostida o‘qimoqda, hovlining boshqa qismi esa quyoshda. Xuddi shu faoliyatni turli joy va vaqtda bajarish sharoiti farq qiladi.",
+      "3. Muammoni yozing. Qizish manbai, foydalanish vaqti, fasl, quyosh hamda shamolga tegishli ma’lumotlarni ajrating. Tasvirdan harorat yoki sovish miqdorini o‘lchamang; issiq iqlimni bitta raqam bilan tavsiflamang.",
+      "Darsdagi bajarish: Qizish manbalari va foydalanish vaqtini qayd qiling → muammo ta’rifi."
+    ],
+    "exercise": "Iqlim va foydalanish vaqtiga tegishli ma’lumotlarni ajrating.",
+    "solution": "Issiq iqlimni bitta harorat raqami emas, quyosh, shamol va mavsum birga tavsiflaydi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M07_002",
+    "asset": "realistic-l04_m07_002.jpg",
+    "title": "Quyosh va orientatsiya — rasmga qarab tushuning",
+    "explanation": [
+      "1. Xona va deraza. Maketda ish stoli bir deraza yonida, yashash joyi boshqa ochilishlar bilan ko‘rsatilgan. Har derazani undan foydalanadigan faoliyat bilan bog‘lang.",
+      "2. Tomonni aniqlang. Uy fasadlari turli tomonga qaraydi, lekin rasmning yorug‘ligidan shimol yoki g‘arbni ishonchli aniqlab bo‘lmaydi. Haqiqiy uchastka planidagi tekshirilgan shimol belgisiga tayaning.",
+      "3. Kundalik ssenariy. Har xona orientatsiyasi, oyna joyi va ertalab-kechki foydalanishni jadvalda solishtiring. Deraza qarorini yorug‘lik, quyoshga duch kelish va tashqi sharoit bilan birga asoslang.",
+      "Darsdagi bajarish: Deraza tomonini shimol bilan solishtiring → quyoshga bog‘langan qaror."
+    ],
+    "exercise": "Xona orientatsiyasi va oynalar joyini kundalik ssenariy bilan solishtiring.",
+    "solution": "Orientatsiya qarori foydalanish va muhit sharoitiga bog‘liq.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M07_003",
+    "asset": "realistic-l04_m07_003.jpg",
+    "title": "Deraza va soyalanish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ustki soyabon. Chapda deraza ustida tashqi soyabon bor; uning ostida oynaning yuqori qismi soyalanadi. Pastdan keladigan quyosh uchun ta’sirini alohida tekshiring.",
+      "2. Lamellali ekran. O‘ngda oynaning oldida bo‘shliqli yog‘och ekran turibdi. Lamella holati ko‘rish, yorug‘lik va to‘g‘ridan-to‘g‘ri nur kirishini o‘zgartiradi; oynani butunlay yo‘qotish shart emas.",
+      "3. Ikki variantni tekshiring. Plan va kesimda deraza, ayvon yoki soyabon hamda ekran o‘rnini chizing. Haqiqiy yo‘nalish, fasl, vaqt va foydalanish bilan solishtirib, soya foydasi va yorug‘lik yo‘qotishini yozing.",
+      "Darsdagi bajarish: Tashqi soya variantini plan va kesimda chizing → ochilish bilan mos himoya."
+    ],
+    "exercise": "Deraza, ayvon va soyalash vositasi uchun ikki variant chizing.",
+    "solution": "Soyani boshqarish oynani butunlay yo‘qotish emas; yorug‘lik va issiqlik talabi birga ko‘riladi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M07_004",
+    "asset": "realistic-l04_m07_004.jpg",
+    "title": "Tabiiy shamollatish va hovli mikroiqlimi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ochilishlarni toping. Xonaning qarama-qarshi devorlarida ochilgan derazalar bor; chapda hovli, o‘ngda tashqi yo‘l ko‘rinadi. Havo almashinuvi uchun mavjud ochilishlar va ular orasidagi xona aloqasini aniqlang.",
+      "2. Sharoitni ajrating. Hovlidagi daraxt, tashqi to‘siq, deraza holati va xona ichidagi buyumlar birga ko‘riladi. Pardaning ko‘rinishi yoki ikki derazaning mavjudligi yetarli shamollatishning isboti emas.",
+      "3. Imkoniyatni tekshiring. Haqiqiy havo kirish-chiqish sharoiti, shamol, atrofdagi binolar va foydalanish vaqtini qayd eting. Taxminiy strelka bilan kafolat bermang; zarur tekshiruv va hisoblarni loyiha sharoitiga mos aniqlang.",
+      "Darsdagi bajarish: Havo kirish va chiqish yo‘lini ko‘rsating → tabiiy shamollatish imkoniyati, kafolat emas."
+    ],
+    "exercise": "Havo kirish-chiqish yo‘lini xona va hovli bilan tekshiring.",
+    "solution": "Shamollatish taxminiy strelka emas, ochilish va real sharoitga mos imkoniyat sifatida baholanadi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M07_005",
+    "asset": "realistic-l04_m07_005.jpg",
+    "title": "Issiq iqlim loyihasi auditi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yorug‘lik kamayishi. Chapda chuqur soyabon ostidagi ish joyi qorong‘iroq ko‘rsatilgan va stol chirog‘i yoqilgan. Soya bilan birga foydali kunduzgi yorug‘likni ham baholang.",
+      "2. Boshqariladigan holat. O‘ngda odam lamellali vositani sozlamoqda; stolga kunduzgi yorug‘lik tushadi. Qaysi holatda ko‘zga noqulay nur, soya yoki yorug‘lik yetishmasligi paydo bo‘lishini tekshiring.",
+      "3. Muvozanatli tanlov. Jadvalga oyna, yo‘nalish, soya vositasi, foydalanish vaqti, foyda va qolgan muammoni yozing. Har qarorning ishlash sharti ko‘rsatilishi kerak; ikki render aniq issiqlik yoki yorug‘lik hisobi o‘rnini bosmaydi.",
+      "Darsdagi bajarish: Soya foydasi, yorug‘lik yo‘qotishi va foydalanishni jadvalga yozing → muvozanatli tanlov."
+    ],
+    "exercise": "Oyna, soya, orientatsiya va foydalanishni bitta jadvalda audit qiling.",
+    "solution": "Iqlimga moslik har bir qarorning ishlash shartini ko‘rsatish bilan tushuntiriladi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
