@@ -3483,5 +3483,22 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L05_M06_005",
+    "asset": "realistic-l05_m06_005.jpg",
+    "title": "Column va Beam mini-loyiha — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ikki tayanch. Chap va o‘ngdagi tik beton ustunlarning pastki qismlari bir tekis yuzada turibdi. O‘z modelingizda ularning markazlarini A va B o‘qlari bilan bog‘lang; rasmdan 4000 mm oraliqni o‘lchamang.",
+      "2. Rigel ikki ustunga tayanadi. Tepada bitta gorizontal balka bor; ikki uchida ustun tepasiga tutashgan joylarni toping. Plan aloqasi bilan birga haqiqiy balandlikdagi tayanch aloqasi ham tekshiriladi.",
+      "3. Tekshiruvni hujjatlashtiring. Planda markazlar oralig‘i, kesimda tayanadigan yuzlar sathi, 3Dda ikki tutashuv bir modelga mos bo‘lsin. Bu materialli o‘quv maketi armatura, poydevor yoki hisoblangan birikma detalini ko‘rsatmaydi.",
+      "Darsdagi bajarish: A→rigel→B aloqasini plan va 3Dda tekshiring, konstruktiv qiymatlarni savolga ajrating → koordinatsiya natijasi."
+    ],
+    "exercise": "Ikki ustun, balka, o‘qlar va kesim bilan koordinatsiya natijasini topshiring.",
+    "solution": "Mini-loyiha geometrik muvofiqlikni ko‘rsatadi; yuk ko‘tarish qobiliyati alohida konstruktor hisobini talab qiladi.",
+    "block": 11,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]

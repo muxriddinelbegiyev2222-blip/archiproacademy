@@ -427,14 +427,14 @@
   {
     "code": "L05_M06_001",
     "asset": "ac28-column.png",
-    "title": "Column Settings: ustun geometriyasi",
+    "title": "Column Settings: kesim va balandlik alohida",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-33.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/ColumnDefaultSettings.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Column Settings: ustun geometriyasi. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Column Toolda o‘quv kesim va sathni tanlang, tayanch ID bering → taniladigan ustun."
+      "Yuqoridagi ikkita 300 qiymati ustun kesimining ikki yo‘nalishdagi o‘lchami. Zanjir belgisi ularni bir xil qilib bog‘lash uchun ishlatiladi; bu ustun balandligi emas.",
+      "2800 — namunadagi umumiy balandlik; maydon xira, chunki Top Link yuqori qavatga bog‘langan. Qat’iy balandlik kiritish kerak bo‘lsa Not linkedni tanlang.",
+      "Positioning qismidagi −200 yuqori qavatdan chekinish qiymati, pastki sath esa alohida. Mashqingizdagi kesim, sath, balandlik va IDni alohida qayd qiling; rasm sonlari yuk ko‘tarish hisobini tasdiqlamaydi."
     ],
     "exercise": "Columnning kesimi va balandligini tekshirib, planda belgilang.",
     "solution": "Ustunning plan kesimi va vertikal uzunligi alohida ma’lumotdir.",
@@ -443,15 +443,15 @@
   },
   {
     "code": "L05_M06_002",
-    "asset": "ac28-column.png",
-    "title": "Column Settings: ustun geometriyasi",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-33.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/ColumnDefaultSettings.png",
-    "block": 0,
+    "asset": "ac28-column-reference-axis.png",
+    "title": "Ustunni markazi bilan o‘qlar kesishuviga joylashtirish",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-34.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/ColumnEndCutsPanel.png",
+    "block": 1,
     "explanation": [
-      "Column Settings: ustun geometriyasi. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: A va B nuqtalarni o‘lcham bilan belgilang, ustun markazini shu nuqtaga qo‘ying → 4000 mm markazlar oralig‘i."
+      "Reference Axis of Core qismidagi to‘qqiz nuqtadan markaziy nuqta tanlangan. Shu tanlovda kiritish nuqtasi ustun kesimi markaziga tegishli bo‘ladi.",
+      "Burchak nuqtasi tanlansa, ustun markazi kursor qo‘yilgan nuqtaga to‘g‘ri kelmaydi. Tayanch o‘qi joyida qolib, ustun tanasi tanlangan variantga qarab siljiydi.",
+      "A va B o‘qlar kesishuvini oldindan belgilang. Markaziy tayanch bilan ikki ustunni shu nuqtalarga qo‘ying va markazlar oralig‘i 4000 mm ekanini o‘lcham bilan tekshiring; rasm o‘sha oraliqni ko‘rsatmaydi."
     ],
     "exercise": "Ikki ustunni belgilangan o‘qlar kesishuviga joylashtiring.",
     "solution": "Ustun koordinatasi tasodifiy ekran joyi bilan emas, loyiha o‘qi bilan nazorat qilinadi.",
@@ -461,14 +461,14 @@
   {
     "code": "L05_M06_003",
     "asset": "ac28-beam.png",
-    "title": "Beam Settings: rigel geometriyasi",
+    "title": "Beam Settings: kesim, uzunlik va sath",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-49.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/BeamDefault.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Beam Settings: rigel geometriyasi. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Beam Toolni tanlab boshlanish va tugash nuqtasini tayanchlarga bog‘lang → rigel geometriyasi."
+      "Yuqoridagi 400 va 300 — balka kesimining eni va bo‘yi. 2800 uzunlik qatori esa qo‘llanmadagi segment namunasiga tegishli; bu mashqdagi 4000 mm tayanchlar oralig‘i emas.",
+      "Positioning qismidagi to Project Zero qiymati 3000 — balka tayanch o‘qining sathi. Uni balka pastki yuzining sathi deb avtomatik qabul qilmang.",
+      "Boshlanish va tugash nuqtalarini ikki ustun tayanchiga bog‘lang. Kesim o‘lchami, o‘qning sathi va geometrik uzunlikni uch alohida parametr sifatida tekshiring."
     ],
     "exercise": "Ikki ustun orasida Beam yarating va boshlanish-tugash nuqtalarini tekshiring.",
     "solution": "Balka modeli tayanchlar bilan geometriya va sath bo‘yicha muvofiqlashtiriladi.",
@@ -477,15 +477,15 @@
   },
   {
     "code": "L05_M06_004",
-    "asset": "ac28-beam.png",
-    "title": "Beam Settings: rigel geometriyasi",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-49.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/BeamDefault.png",
-    "block": 0,
+    "asset": "ac28-beam-reference-axis.png",
+    "title": "Balka tayanch o‘qi tanadagi qaysi nuqtadan o‘tadi?",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-51.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/BeamRefAxisSettings.png",
+    "block": 4,
     "explanation": [
-      "Beam Settings: rigel geometriyasi. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Kesimda rigel sathi va ustun yuqorisini solishtiring → uzilgan tayanch yoki sath konflikti ko‘rinadi."
+      "Reference Axis to‘qqiz nuqtali boshqaruvida yuqori qatorning markaziy nuqtasi tanlangan. Bu holatda o‘q sathi balka yuqori yuziga tegishli, pastki yuziga emas.",
+      "Masalan, gorizontal 300 mm balandlikdagi balkada yuqori o‘q sathi +3000 mm bo‘lsa, pastki yuz +2700 mm bo‘ladi. Ustun tepasi bilan taqqoslashda aynan kerakli yuzni solishtiring.",
+      "Startdagi 75,00° boshqa parametr — yakun yuzining kesish burchagi. Uni balka uzunligi yoki butun balkani qiyalatish qiymati bilan aralashtirmang. Mazkur raqamlar tushuntirish misoli; kesim va tugun loyihada tekshiriladi."
     ],
     "exercise": "Ustun-balка tugunini kesimda ko‘rib, vertikal siljishlarni aniqlang.",
     "solution": "Planda tutash ko‘ringan elementlar balandlikda ajralgan bo‘lishi mumkin.",
@@ -495,14 +495,14 @@
   {
     "code": "L05_M06_005",
     "asset": "ac28-column.png",
-    "title": "Column Settings: ustun geometriyasi",
+    "title": "Mini-loyiha: ikki ustun parametrini tekshirish",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-33.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/ColumnDefaultSettings.png",
-    "block": 0,
+    "block": 2,
     "explanation": [
-      "Column Settings: ustun geometriyasi. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: A→rigel→B aloqasini plan va 3Dda tekshiring, konstruktiv qiymatlarni savolga ajrating → koordinatsiya natijasi."
+      "Ikki ustunning kesimi, pastki sathi va tepa bog‘lanishini alohida qayd qiling. Bu rasmda faqat bitta ustunning boshlang‘ich sozlamalari bor; ikkita tayyor tayanch modeli ko‘rsatilmagan.",
+      "Markaziy tayanch nuqtasini tanlab, A va B o‘qlarida joylashuvini tekshiring. 4000 mm qiymat markazlar oralig‘iga tegishli; ustunlarning ichki yuzlari orasidagi bo‘shliq bilan bir xil emas.",
+      "Parametrlar skrinshotini o‘z plandagi o‘qlar va o‘lcham bilan solishtiring. Yuk ko‘tarish qobiliyati geometrik moslikdan alohida konstruktor hisobini talab qiladi."
     ],
     "exercise": "Ikki ustun, balka, o‘qlar va kesim bilan koordinatsiya natijasini topshiring.",
     "solution": "Mini-loyiha geometrik muvofiqlikni ko‘rsatadi; yuk ko‘tarish qobiliyati alohida konstruktor hisobini talab qiladi.",
@@ -3963,6 +3963,71 @@
     "exercise": "Ikki ochilish uchun o‘lcham, sath, host va foydalanish tekshiruvini topshiring.",
     "solution": "Door va Window auditi parametrni chizmada va foydalanish ssenariysida tasdiqlaydi.",
     "boundary": "Archicad 28 INT qo‘llanmasidagi haqiqiy namuna. Rasm faqat ko‘rsatilgan panel yoki amalni tushuntiradi; versiya va kutubxonaga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M06_002",
+    "asset": "ac28-column-simple-placement.png",
+    "title": "Simple Column: bitta nuqta bilan tik ustun qo‘yish",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-22.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/ColumnInfoBoxSimple.png",
+    "block": 5,
+    "explanation": [
+      "Info Boxda qizil ramka Simple Column kiritish usulini ajratgan. Avval Column Settingsda kesim, balandlik, sath va tayanch nuqtasini tekshiring.",
+      "So‘ng o‘qlar kesishuviga bosing. Bir bosishning o‘zi koordinata to‘g‘ri degani emas; markaziy tayanch va modeldagi aniq nuqtaga bog‘lanishni tekshiring."
+    ],
+    "exercise": "Ikki ustunni belgilangan o‘qlar kesishuviga joylashtiring.",
+    "solution": "Ustun koordinatasi tasodifiy ekran joyi bilan emas, loyiha o‘qi bilan nazorat qilinadi.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M06_003",
+    "asset": "ac28-beam-single-placement.png",
+    "title": "Single Beam: ikki yakun nuqtasi bilan kiritish",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-38.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/BeamSingleInfo.png",
+    "block": 5,
+    "explanation": [
+      "Qizil ramka Single Beam usulini ko‘rsatadi. Balka ikki marta bosib — boshlanish va tugash nuqtalari bilan joylashtiriladi.",
+      "O‘z mashqingizda nuqtalarni ustunlarning kerakli tayanchlariga bog‘lang. 3Dda ham mavjud element nuqtalariga bog‘lanish mumkin; balka qiyaligi oldindan berilgan bo‘lsa, o‘sha sozlama natijaga ta’sir qiladi."
+    ],
+    "exercise": "Ikki ustun orasida Beam yarating va boshlanish-tugash nuqtalarini tekshiring.",
+    "solution": "Balka modeli tayanchlar bilan geometriya va sath bo‘yicha muvofiqlashtiriladi.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M06_004",
+    "asset": "ac28-column.png",
+    "title": "Ustun tepasi sathini ham shu tayanchdan o‘qing",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-33.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/ColumnDefaultSettings.png",
+    "block": 4,
+    "explanation": [
+      "Column balandligi, pastki sath va Top Link chekinishi ustun tepasining qayerda tugashini belgilaydi. Beamning tayanch o‘qi sathini Column balandligi bilan bevosita tenglashtirmang.",
+      "Bir xil koordinata tayanchida ustun tepasi va balka tayanadigan yuz sathini hisoblang. Masalan, balka pastki yuzi +2700, ustun tepasi +2600 mm bo‘lsa, orasida 100 mm uzilish bor.",
+      "Ikki skrinshot bitta tayyor modelning mos tugunini ko‘rsatmaydi. O‘z loyihangizda kesim chizig‘ini ulanishdan o‘tkazib, haqiqiy yuzlar tutashganini tekshiring."
+    ],
+    "exercise": "Ustun-balка tugunini kesimda ko‘rib, vertikal siljishlarni aniqlang.",
+    "solution": "Planda tutash ko‘ringan elementlar balandlikda ajralgan bo‘lishi mumkin.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M06_005",
+    "asset": "ac28-beam.png",
+    "title": "Mini-loyiha: rigelning kesimi va sathi",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-49.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/BeamDefault.png",
+    "block": 3,
+    "explanation": [
+      "Beamda kesim, tayanch o‘qi joyi va o‘q sathini qayd qiling. Qo‘llanmadagi 400, 300 va 3000 qiymatlari tayyor konstruktiv tanlov sifatida ko‘chirilmaydi.",
+      "Ikki ustun orasidagi balkani plan, kesim va 3Dda tekshiring. Tayanchga keladigan yuz, boshlanish va tugash nuqtalari hamda sath birga mos kelishi kerak."
+    ],
+    "exercise": "Ikki ustun, balka, o‘qlar va kesim bilan koordinatsiya natijasini topshiring.",
+    "solution": "Mini-loyiha geometrik muvofiqlikni ko‘rsatadi; yuk ko‘tarish qobiliyati alohida konstruktor hisobini talab qiladi.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   }
 ]

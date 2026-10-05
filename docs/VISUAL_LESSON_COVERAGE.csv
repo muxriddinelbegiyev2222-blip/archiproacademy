@@ -204,11 +204,11 @@ L05_M05_002,L05_M05,Eshik o'lchami va ochilish yo'nalishi,illustrated,2,ac28-doo
 L05_M05_003,L05_M05,Deraza o'lchami va balandligi,illustrated,2,ac28-door-position.png|ac28-opening-height-anchor.png
 L05_M05_004,L05_M05,Door va Window tahrirlash,illustrated,2,ac28-door-flip-before.png|ac28-door-flip-after.png
 L05_M05_005,L05_M05,Door va Window mini-loyiha,illustrated,2,ac28-door-window.png|ac28-door-opening-direction.png
-L05_M06_001,L05_M06,Column Tool asoslari,illustrated,2,l05_m06_001.svg|ac28-column.png
-L05_M06_002,L05_M06,Column joylashtirish,illustrated,2,l05_m06_002.svg|ac28-column.png
-L05_M06_003,L05_M06,Beam Tool asoslari,illustrated,2,l05_m06_003.svg|ac28-beam.png
-L05_M06_004,L05_M06,Column va Beam aloqasi,illustrated,2,l05_m06_004.svg|ac28-beam.png
-L05_M06_005,L05_M06,Column va Beam mini-loyiha,illustrated,2,l05_m06_005.svg|ac28-column.png
+L05_M06_001,L05_M06,Column Tool asoslari,illustrated,1,ac28-column.png
+L05_M06_002,L05_M06,Column joylashtirish,illustrated,2,ac28-column-reference-axis.png|ac28-column-simple-placement.png
+L05_M06_003,L05_M06,Beam Tool asoslari,illustrated,2,ac28-beam.png|ac28-beam-single-placement.png
+L05_M06_004,L05_M06,Column va Beam aloqasi,illustrated,2,ac28-beam-reference-axis.png|ac28-column.png
+L05_M06_005,L05_M06,Column va Beam mini-loyiha,illustrated,3,ac28-column.png|ac28-beam.png|realistic-l05_m06_005.jpg
 L05_M07_001,L05_M07,Object Tool asoslari,illustrated,2,l05_m07_001.svg|ac28-object.png
 L05_M07_002,L05_M07,Mebel joylashtirish,illustrated,2,l05_m07_002.svg|ac28-object.png
 L05_M07_003,L05_M07,Rotation va elevation,illustrated,2,l05_m07_003.svg|ac28-object.png
