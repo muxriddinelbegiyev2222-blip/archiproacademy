@@ -2,14 +2,14 @@
   {
     "code": "L05_M01_001",
     "asset": "ac28-palettes.png",
-    "title": "Window → Palettes: panellarni ko‘rsatish",
+    "title": "Asosiy panellarni yoqish: Window → Palettes",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/020_Configuration/020_Configuration-26.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/020_Configuration/PalettesMenu.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Window → Palettes: panellarni ko‘rsatish. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Ishchi maydon, ToolBox, Info Box va Navigatorni toping. Bir element tanlaganda qaysi panel o‘zgarishini kuzating → asbob va loyiha ajraladi."
+      "Window menyusida Palettes bandi ochilgan. O‘ngdagi ro‘yxatdan Toolbox, Info Box va Navigator nomlarini toping; belgi panelning ko‘rsatilayotganini bildiradi.",
+      "Toolbox — nima yaratishni tanlash, Info Box — asbob yoki tanlangan element parametrlarini ko‘rish, Navigator — loyiha ko‘rinishini ochish uchun.",
+      "Panel yo‘qolsa, shu menyudan uni qayta yoqing. Asbobni tanlash bilan Floor Plan yoki 3D oynasini ochish ikki alohida amaldir."
     ],
     "exercise": "Ish muhitida asboblar, Navigator va ish oynasini topib, vazifasini qayd qiling.",
     "solution": "Asbobni tanlash bilan loyiha ko‘rinishini almashtirish alohida amallardir.",
@@ -19,14 +19,14 @@
   {
     "code": "L05_M01_002",
     "asset": "ac28-toolbox.png",
-    "title": "Toolbox: element yaratish asboblari",
+    "title": "Toolbox: devor asbobi va tanlash vositasini ajrating",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/020_Configuration/020_Configuration-21.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/020_Configuration/ToolboxDefault.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Toolbox: element yaratish asboblari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: ToolBoxdan Wallni tanlang, asbob sozlamalarini oching. Info Boxdagi asosiy qiymatni tekshiring → tanlangan asbobga tegishli parametr."
+      "Design bo‘limida Wall, Slab, Column, Beam, Door va Window asboblari bor. Wall — devor, Door — eshik, Window — deraza yaratish vositasi.",
+      "Yuqoridagi Arrow mavjud elementni tanlaydi; Marquee hududni belgilaydi. Rasmda Marquee ko‘k bilan ajratilgan, Wall faol deb ko‘rsatilmagan.",
+      "Wall ustiga bir marta bosib devor asbobini faollashtiring; ikki marta bosish uning batafsil Settings oynasini ochadi. Chizishdan oldin Info Boxni tekshiring."
     ],
     "exercise": "Wall asbobini tanlang, so‘ng mavjud devorni belgilang va Info Box ma’lumotini solishtiring.",
     "solution": "Tanlangan element parametrlarini o‘zgartirish yangi element sozlamalaridan ajratiladi.",
@@ -36,14 +36,14 @@
   {
     "code": "L05_M01_003",
     "asset": "ac28-navigator.png",
-    "title": "Navigator: loyiha xaritalari",
+    "title": "Navigator: plan, kesim, fasad va 3Dni qayerdan ochasiz?",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/030_Interaction/030_Interaction-3.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/030_Interaction/NavigatorPalette00030.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Navigator: loyiha xaritalari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Floor Plan va 3Dda ayni devorni oching, kesim/fasadni alohida ko‘rinish deb o‘qing → element bitta, ko‘rinishlar turli."
+      "Project Map daraxtida Stories qavatlarni, Sections kesimlarni, Elevations fasadlarni, 3D esa hajmli ko‘rinishlarni guruhlaydi.",
+      "Stories ichidagi Ground Floor — pastki qavat plani. Kerakli ko‘rinish nomini ikki marta bosib oching; 3D bo‘limidagi perspektiva yoki aksonometriyani ham shunday ochasiz.",
+      "Bu rasm ko‘rinishlarni tanlash ro‘yxatini ko‘rsatadi. Plan va hajmning o‘zini navbatdagi haqiqiy ish oynasi namunasida solishtiring."
     ],
     "exercise": "Devorni planda va 3D oynada tekshiring.",
     "solution": "Plan belgi va joylashuvni, 3D esa hajm va balandlikni tushunishga yordam beradi.",
@@ -53,14 +53,14 @@
   {
     "code": "L05_M01_004",
     "asset": "ac28-zoom.png",
-    "title": "Zoom to Selection: tanlangan elementga yaqinlashish",
+    "title": "Zoom to Selection: tanlangan elementni ekranga yaqinlashtirish",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/030_Interaction/030_Interaction-9.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/030_Interaction/ZoomToSelection.png",
-    "block": 0,
+    "block": 7,
     "explanation": [
-      "Zoom to Selection: tanlangan elementga yaqinlashish. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Zoom bilan ko‘rish kattaligini, Pan bilan kadrni o‘zgartiring. Arrow orqali devorni tanlang → geometriya o‘zgarmaydi."
+      "Kontekst menyusida Zoom to Selection bandi ajratilgan. Avval Arrow bilan kerakli elementni tanlang, keyin o‘ng tugma menyusidan shu buyruqni bosing.",
+      "Buyruq elementni kattaroq ko‘rsatish uchun ko‘rish kadrini o‘zgartiradi. Devor uzunligi, eshik eni yoki model koordinatalari o‘zgarmaydi.",
+      "Bir nechta element tanlangan bo‘lsa, buyruq oxirgi tanlanganiga yaqinlashadi. Elementni tahrirlash va ekranda unga yaqinlashish natijalarini aralashtirmang."
     ],
     "exercise": "Zoom va Pan bilan devorga yaqinlashing, keyin faqat eshikni belgilang.",
     "solution": "Ekranni yaqinlashtirish model o‘lchamini o‘zgartirmaydi; tanlash esa tahrir nishonini belgilaydi.",
@@ -70,14 +70,14 @@
   {
     "code": "L05_M01_005",
     "asset": "ac28-info-box.png",
-    "title": "Wall Info Box: tanlangan asbob parametrlari",
+    "title": "Amaliyotning birinchi tekshiruvi: Wall Info Box",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/020_Configuration/020_Configuration-22.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/020_Configuration/WallInfoBox.png",
-    "block": 0,
+    "block": 9,
     "explanation": [
-      "Wall Info Box: tanlangan asbob parametrlari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Wallni tanlang, devor yarating, Arrow bilan tanlang, sozlamasini o‘qing, 3Dda tekshiring → to‘liq boshqaruv mashqi."
+      "Chapda Default Settings yozilgan: bu yangi yaratiladigan devorning boshlang‘ich sozlamalari. Rasm mavjud devor tanlangan holatni ko‘rsatmaydi.",
+      "Layer — Structural - Bearing, Reference Line Location — Outside Face, Structure — Masonry Block… deb ko‘rinadi. Bular qo‘llanma misoli; mashq uchun tayyor konstruktiv yechim emas.",
+      "Wallni tanlang, loyiha shartiga mos parametrlarni tekshiring va devor yarating. Keyin Arrow bilan o‘sha devorni tanlab, Default Settings holatidan Selected/Editable holatiga o‘tganini solishtiring."
     ],
     "exercise": "Devor va eshikni topish, tanlash va ikki oynada tekshirish jarayonini takrorlang.",
     "solution": "Mini-amaliyot natijasi elementni adashmasdan topish va uning parametrini tushuntirishdir.",
@@ -3550,6 +3550,91 @@
     ],
     "exercise": "Scope, ma’lumot va qabul qiluvchi tekshiruvini audit qiling.",
     "solution": "IFC auditida haqiqiy chiqarilgan model kelishilgan talab bilan solishtiriladi.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M01_001",
+    "asset": "ac28-tab-bar.png",
+    "title": "Ishchi maydon, asboblar va ko‘rinish yorliqlari",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/020_Configuration/020_Configuration-18.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/020_Configuration/TabBarUI.png",
+    "block": 2,
+    "explanation": [
+      "Markazdagi katta maydonda bino 3D ko‘rinishda ochilgan. Chapdagi vertikal piktogrammalar — Toolbox; yuqoridagi Main, Layer, Geometry Method maydonlari — Info Box.",
+      "Ground Floor, S-Office Building [3D / All], Section va West Elevation yorliqlari turli ko‘rinishlarga o‘tish uchun. Kesimning kichik oynasi yorliq ustidagi oldindan ko‘rish namunasidir.",
+      "Rasmda mavjud element tanlangan: Info Boxning Main qismida All Selected: 1 yozuvi bor. Navigator bu kadrda ko‘rsatilmagan; uni oldingi Window → Palettes misolidan yoqing."
+    ],
+    "exercise": "Ish muhitida asboblar, Navigator va ish oynasini topib, vazifasini qayd qiling.",
+    "solution": "Asbobni tanlash bilan loyiha ko‘rinishini almashtirish alohida amallardir.",
+    "boundary": "Graphisoft’ning Archicad 28 qo‘llanmasida berilgan haqiqiy skrinshot. Oyna sarlavhasida Archicad 24 ko‘rsatilgan; rasm navigatsiya prinsipini tushuntiradi, 28 interfeysining barcha detallarini tasdiqlamaydi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M01_002",
+    "asset": "ac28-info-box.png",
+    "title": "Info Box: asbobni tanlagandan keyin nima tekshiriladi?",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/020_Configuration/020_Configuration-22.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/020_Configuration/WallInfoBox.png",
+    "block": 2,
+    "explanation": [
+      "Main ostidagi Default Settings yangi element sozlamasini bildiradi. Layer element qaysi qatlamga tegishli bo‘lishini, Geometry Method chizish usulini boshqaradi.",
+      "Reference Line Location qismida Outside Face ko‘rsatilgan; Structure maydonida Masonry Block… yozuvi bor. Ushbu rasm devorning barcha parametrlarini ko‘rsatmaydi.",
+      "Avval Wallni tanlang, so‘ng tezkor parametrlarni o‘qing. Batafsil devor sozlamalari uchun Wall asbobining Settings oynasini oching; rasm qiymatlarini o‘z loyihangizga ko‘r-ko‘rona ko‘chirmang."
+    ],
+    "exercise": "Wall asbobini tanlang, so‘ng mavjud devorni belgilang va Info Box ma’lumotini solishtiring.",
+    "solution": "Tanlangan element parametrlarini o‘zgartirish yangi element sozlamalaridan ajratiladi.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M01_003",
+    "asset": "ac28-tab-overview.png",
+    "title": "Bir loyihaning plan, kesim va 3D ko‘rinishlari",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/020_Configuration/020_Configuration-18.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/020_Configuration/TabOverview.png",
+    "block": 5,
+    "explanation": [
+      "Chapdagi Ground Floor oldindan ko‘rish oynasi qavat planini, o‘rtadagi Section vertikal kesimni, o‘ngdagi Structural Analytical Model [3D / All] esa konstruktiv analitik modelni hajmda ko‘rsatadi.",
+      "Chap yuqoridagi qizil strelka Tab Overview tugmasini ko‘rsatadi. Uni bosib ochiq yorliqlar ko‘rinishini chiqaring, kerakli oldindan ko‘rish oynasini bosib o‘ting.",
+      "O‘ngdagi namuna to‘liq me’moriy 3D model emas. O‘zingiz yaratgan devorni oddiy 3D oynada tekshiring: plandagi joylashuv va hajmdagi balandlik bitta elementga tegishli bo‘lishi kerak."
+    ],
+    "exercise": "Devorni planda va 3D oynada tekshiring.",
+    "solution": "Plan belgi va joylashuvni, 3D esa hajm va balandlikni tushunishga yordam beradi.",
+    "boundary": "Graphisoft’ning Archicad 28 qo‘llanmasida berilgan haqiqiy skrinshot. Oyna sarlavhasida Archicad 24 ko‘rsatilgan; rasm navigatsiya prinsipini tushuntiradi, 28 interfeysining barcha detallarini tasdiqlamaydi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M01_004",
+    "asset": "ac28-preview-pan.png",
+    "title": "Pan: chizmani emas, ko‘rish kadrini siljiting",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/030_Interaction/030_Interaction-12.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/030_Interaction/NavPreviewPan.png",
+    "block": 1,
+    "explanation": [
+      "Navigator Preview butun 2D ko‘rinishning kichik nusxasini beradi; ichki ramka asosiy oynada hozir ko‘rinayotgan hududni bildiradi.",
+      "Window → Palettes → Navigator Preview orqali panelni oching. Ichki ramkaning o‘rtasidan qo‘l kursori bilan sudrasangiz, asosiy oynaning ko‘rish joyi siljiydi.",
+      "Ramkaning yonini yoki burchagini sudrash boshqa amal — yaqinlashtirishni o‘zgartiradi. Pan qilishda o‘rtasidan ushlang; devor yoki eshikning o‘zini ko‘chirmang."
+    ],
+    "exercise": "Zoom va Pan bilan devorga yaqinlashing, keyin faqat eshikni belgilang.",
+    "solution": "Ekranni yaqinlashtirish model o‘lchamini o‘zgartirmaydi; tanlash esa tahrir nishonini belgilaydi.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M01_005",
+    "asset": "ac28-selected-editable.png",
+    "title": "Amaliyotning ikkinchi tekshiruvi: Selected va Editable",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/020_Configuration/020_Configuration-22.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/020_Configuration/SelectEdit.png",
+    "block": 9,
+    "explanation": [
+      "Rasmda Selected: 16, Editable: 14 yozilgan. Bu misolda 16 element tanlangan, ulardan 14 tasi tahrirlanishi mumkin; ushbu sonlar sizning bitta devorli mashqingiz sharti emas.",
+      "Tanlangan elementlar bilan tahrirlanadigan elementlar soni farq qilishi mumkin, masalan qatlam qulflanganida. Info Box o‘zgarishi tahrirlanadigan elementlarga qo‘llanadi.",
+      "O‘z mashqingizda faqat yaratgan devoringizni tanlang va sonlarni tekshiring. Keyin parametrni o‘qib, plan hamda 3Dda aynan shu devorni solishtiring; shu tekshiruv bajarilgandan keyin eshik bilan davom eting."
+    ],
+    "exercise": "Devor va eshikni topish, tanlash va ikki oynada tekshirish jarayonini takrorlang.",
+    "solution": "Mini-amaliyot natijasi elementni adashmasdan topish va uning parametrini tushuntirishdir.",
     "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   }
