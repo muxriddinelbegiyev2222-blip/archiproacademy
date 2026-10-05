@@ -1953,5 +1953,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L02_M09_001",
+    "asset": "realistic-l02_m09_001.jpg",
+    "title": "Kirish zonasi va tambur — rasmga qarab tushuning",
+    "explanation": [
+      "1. Tashqaridan kelish. Chapdagi tashqi eshikdan kiriladi, uning yonidagi o‘tirish joyida poyabzal almashtirish ko‘rsatilgan.",
+      "2. Kiyim va qo‘l bo‘shatish. O‘ngdagi saqlash joyida kiyim qo‘yilmoqda; kichik yuzada sumka va kalit uchun joy bor.",
+      "3. Ichkariga o‘tish. Orqadagi ikkinchi eshik uy ichiga olib boradi. Tashqaridan kelgan odamning poyabzal, kiyim va buyumlar bilan ketma-ket harakatini yozing.",
+      "Darsdagi bajarish: Tashqaridan kelgan odamning poyabzal, kiyim va qo‘l bo‘shatish tartibini yozing → kirish ssenariysi."
+    ],
+    "exercise": "Tashqaridan ichkariga kirishning kiyim va poyabzal bilan bog‘liq bosqichlarini yozing.",
+    "solution": "Tambur va kirish zonasi harakat bilan birga tashqi-ichki o‘tishni tashkil qiladi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M09_002",
+    "asset": "realistic-l02_m09_002.jpg",
+    "title": "Hallway va circulation — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ikki ochilish. Oldingi tashqi eshik va orqadagi ichki eshik ochiq holatda ko‘rinadi. Yashil yo‘l haqiqiy ostonalarni bog‘laydi.",
+      "2. Ikki odam ssenariysi. Bir odam mahsulot bilan kirayotgan, ikkinchisi kiyimi bilan ichkariga o‘tayotgan holat ko‘rsatilgan.",
+      "3. Yo‘lni foydalanishda tekshiring. Odam to‘xtaganda, buyum ko‘targanda va eshiklar ochilganda nima o‘zgaradi? Tamburni faqat bo‘sh xona konturi bilan baholamang; haqiqiy kenglik va ochilish yoyini planda tekshiring.",
+      "Darsdagi bajarish: Ikki eshik orasidagi harakat va ochilish yoylarini chizing → tambur o‘tish joyini to‘smaydi."
+    ],
+    "exercise": "Ikki kishi bir vaqtda kirishi va o‘tishi uchun yo‘l chizing.",
+    "solution": "Hallway qulayligi bo‘sh kontur emas, foydalanish ssenariysi bilan tekshiriladi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M09_003",
+    "asset": "realistic-l02_m09_003.jpg",
+    "title": "Kiyim va poyabzal saqlash — rasmga qarab tushuning",
+    "explanation": [
+      "1. Poyabzal joyi. Chapda odam o‘tirib poyabzal kiymoqda, saqlash o‘rindiq ostida. To‘q sariq maydon o‘tirish va oyoq harakatini ajratadi.",
+      "2. Kiyim saqlash. O‘ngda ochilgan shkafdan foydalanilmoqda. Eshik va odam uchun joy yopiq shkaf konturidan tashqariga chiqadi.",
+      "3. Asosiy o‘tish. O‘rtadagi yashil maydon ikki kirishni bog‘laydi. Saqlashdan foydalanish paytida ham o‘tish aloqasini tekshiring; rangli maydon norma o‘lchami emas.",
+      "Darsdagi bajarish: Shkafni kirishga yaqin, ammo eshik yoyidan tashqarida joylashtiring → saqlash foydalaniladi."
+    ],
+    "exercise": "Shkaf ochilishi va o‘tirib poyabzal kiyish holatini chizing.",
+    "solution": "Saqlash mebelining foydalanish zonasi asosiy yo‘lni to‘smasligi kerak.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M09_004",
+    "asset": "realistic-l02_m09_004.jpg",
+    "title": "Door conflict va o'tish yo'llari — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi to‘qnashuv. Tashqi va ichki eshiklarning ochilgan erkin chekkalari bir joyga keladi. To‘q sariq maydon konflikt hududini ko‘rsatadi.",
+      "2. O‘ngdagi o‘zgarish. Ichki eshik boshqa joylashuvda ochilgan, ikki barg orasida yashil o‘tish maydoni qolgan.",
+      "3. To‘liq holatni tekshiring. Ikki eshikning ochilish yoylari va odam yo‘lini birga solishtiring. Joy yoki ochilish qarori haqiqiy ssenariy bilan baholanadi; rasm barcha eshiklar uchun bitta yo‘nalish qoidasini bermaydi.",
+      "Darsdagi bajarish: Ikkala eshikni ochilgan holatda solishtiring → to‘qnashuv bo‘lsa joy yoki yo‘nalishni o‘zgartiring."
+    ],
+    "exercise": "Ikkita eshikni bir vaqtda ochilgan holatda solishtiring.",
+    "solution": "Door conflict eshik yoylari va odam harakatining ustma-ust tushishidir.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M09_005",
+    "asset": "realistic-l02_m09_005.jpg",
+    "title": "Kirish va koridor auditi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Kirish vazifalari. Oldingi tamburda o‘tirish va kiyim saqlash yon tomonlarda, ichkariga o‘tish esa o‘rtada.",
+      "2. Alohida xona kirishlari. Markaziy yo‘lakdan chapdagi umumiy xonaga va o‘ngdagi yotoqxonaga alohida ochilish bor. Mehmon yo‘li yotoqxona orqali o‘tishi shart emas.",
+      "3. Besh audit savoli. Tashqaridan qayerga kiriladi? Poyabzal qayerda almashtiriladi? Kiyim qayerga qo‘yiladi? Ikki eshik birga ochilganda nima bo‘ladi? Mehmon va oila yo‘li qaysi xonalardan o‘tadi? Har xatoga alohida holat va tuzatish variantini yozing.",
+      "Darsdagi bajarish: Mehmon va oilaning uy ichiga yo‘lini chizing → yotoqxona kirish yo‘liga aylanmaydi."
+    ],
+    "exercise": "Kirish yo‘li, saqlash va eshiklarni besh savol bilan audit qiling.",
+    "solution": "Xatolar alohida holat va tuzatish varianti bilan qayd qilinadi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
