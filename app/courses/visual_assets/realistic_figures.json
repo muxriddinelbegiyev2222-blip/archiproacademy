@@ -1358,5 +1358,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L02_M02_001",
+    "asset": "realistic-l02_m02_001.jpg",
+    "title": "Funksional zonalash nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Umumiy zona. Chapdagi mehmonxona va ovqatlanish joyi bir guruh: bu yerda oila va mehmonlar birga foydalanadi.",
+      "2. Tinch zona. O‘ngdagi ikki yotoqxona markaziy yo‘lakdan alohida kiriladi. Bir yotoqxonaga borish uchun boshqasidan o‘tish talab qilinmaydi.",
+      "3. Xizmat guruhi. Orqadagi oshxona, kir yuvish joyi va sanuzel boshqa vazifalarni bajaradi. Xona nomiga qo‘shimcha ravishda kim, qachon va qanday foydalanishini yozing.",
+      "Darsdagi bajarish: Har xonaga vazifa va foydalanuvchi yozing → umumiy, tinch, xizmat guruhlari."
+    ],
+    "exercise": "Har xona vazifasini odam va foydalanish vaqti bilan yozing.",
+    "solution": "Funksional zonalash xonalarni nom bo‘yicha emas, foydalanish aloqasi bo‘yicha guruhlaydi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M02_002",
+    "asset": "realistic-l02_m02_002.jpg",
+    "title": "Public va private zonalar — rasmga qarab tushuning",
+    "explanation": [
+      "1. Mehmon yo‘lini kuzating. To‘q sariq yo‘l kirishdan o‘tirish joyiga keladi; u yotoqxona ichidan o‘tmaydi.",
+      "2. Chegarani toping. Yotoqxona orqada devor va eshik bilan ajratilgan. Ochiq eshik holatida ham kirishdan nima ko‘rinishini tekshiring.",
+      "3. Qarorni ssenariy bilan tekshiring. Mehmonlar o‘tirganda oila a’zosi tinch dam olishi mumkinmi? Yo‘l, ko‘rinish va shovqin masalasini alohida qayd qiling.",
+      "Darsdagi bajarish: Mehmonxona va tinch xonalar orasiga yo‘lak yoki boshqa chegara qo‘ying → begona harakat ajraladi."
+    ],
+    "exercise": "Mehmonlar yo‘lini yotoqxona eshiklaridan ajrating.",
+    "solution": "Umumiy zona tashrif buyuruvchiga, shaxsiy zona oilaning tinch hayotiga xizmat qiladi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M02_003",
+    "asset": "realistic-l02_m02_003.jpg",
+    "title": "Service va xo'jalik zonasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Xizmat vazifalarini ajrating. Chapda ovqat tayyorlash, o‘rtada oziq-ovqat saqlash, o‘ngda kir yuvish joyi ko‘rsatilgan.",
+      "2. Aloqani kuzating. Ko‘k yo‘l yon kirishdan oshxona va omborga, to‘q sariq yo‘l kir yuvish xonasiga boradi. Xonalar oldidagi yo‘lak ularni bog‘laydi.",
+      "3. Kundalik ishni sinang. Mahsulot olib kirish va kirlarni tashishda qaysi eshikdan o‘tiladi? Saqlash va tozalash ishlari uchun ham yo‘l va foydalanish joyini tekshiring.",
+      "Darsdagi bajarish: Oshxona, ombor va xo‘jalik yo‘lini bog‘lang → xizmat aloqasi qisqaradi."
+    ],
+    "exercise": "Kir yuvish, ombor va texnik xizmat uchun alohida aloqa xaritasini tuzing.",
+    "solution": "Xo‘jalik zonasi yordamchi bo‘lsa ham, kirish va xizmat yo‘liga muhtoj.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M02_004",
+    "asset": "realistic-l02_m02_004.jpg",
+    "title": "Xonalar qo'shnichiligi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Oshxona–ovqatlanish. Chapdagi namuna ish joyidan stolga qisqa ochiq aloqani ko‘rsatadi. Ovqat olib yurish yo‘li mebel ustidan o‘tmaydi.",
+      "2. Yotoqxona–sanuzel. O‘ngdagi xonalar yaqin, lekin orasida devor bor. Har biri umumiy yo‘lakdan o‘z eshigi bilan kiriladi.",
+      "3. Yaqinlik va ajralishni birga baholang. Ovqatlanish uchun qisqa aloqa kerak; uxlash uchun maxfiylik ham muhim. Jadvalda yaqin, neytral yoki ajratish qarorini sababi bilan yozing.",
+      "Darsdagi bajarish: Qo‘shnichilik jadvaliga yaqin, neytral, ajratish belgilarini yozing → oshxona–dining yaqin, mehmon–uyqu ajratish."
+    ],
+    "exercise": "Oshxona–ovqatlanish va yotoqxona–sanuzel juftligini jadvalga joylang.",
+    "solution": "Qo‘shnichilik qarori kerakli yaqinlik va kerakli ajralishni birga belgilaydi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M02_005",
+    "asset": "realistic-l02_m02_005.jpg",
+    "title": "Zonalashdagi tipik xatolar — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi muammo. Kirishdan mehmonxonaga boruvchi to‘q sariq yo‘l yotoqxona ichidan o‘tadi. Mehmon kelishi uxlash va kiyinish hududini bezovta qiladi.",
+      "2. O‘ngdagi o‘zgarish. Alohida yo‘lak qo‘shilgan; yashil yo‘l mehmonxonaga yotoqxonadan o‘tmasdan yetadi. Yotoqxonaning o‘z kirishi saqlangan.",
+      "3. Auditni kengaytiring. Shu kabi maxfiylik konfliktiga qo‘shimcha ravishda shovqin, hid va xizmat yo‘lini ham tekshiring. Qaysi eshik yoki xona aloqasi o‘zgarishi kerakligini aniq yozing.",
+      "Darsdagi bajarish: Kirishdan yotoqxonaga majburiy mehmon yo‘lini toping va eshikni yo‘lakka ko‘chiring → zonalar to‘qnashmaydi."
+    ],
+    "exercise": "Bir-biriga zid xona juftlarini aniqlab, zonalarni qayta tartiblang.",
+    "solution": "Zonalash auditi shovqin, hid, maxfiylik va yurish zanjirini dalil sifatida ishlatadi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
