@@ -2293,5 +2293,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L03_M03_001",
+    "asset": "realistic-l03_m03_001.jpg",
+    "title": "Ko'cha va uchastka aloqasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ko‘chadan boshlash. Oldinda ko‘cha va trotuar, devorda esa alohida piyoda hamda avtomobil kirishlari bor. Tashqi kelish yo‘lini darvoza ichidagi aloqa bilan birga kuzating.",
+      "2. Ikki davomiy aloqa. Chapdagi yo‘lak ayvonga, o‘ngdagi kengroq maydon avtomobil joyiga olib boradi. O‘rtadagi ekilgan maydon ularni ajratadi.",
+      "3. Kirish sharoiti. Ko‘cha cheti, trotuar, ostona va ochilgan darvoza holatini tekshiring. Haqiqiy chizmada ko‘rish va harakat sharoitini qayd eting; rasm darvoza eni yoki ko‘cha talabi uchun o‘lcham manbasi emas.",
+      "Darsdagi bajarish: Ko‘cha cheti va kirish nuqtalarini belgilang → tashqi aloqa."
+    ],
+    "exercise": "Ko‘chadan uchastkagacha kelish yo‘lini va ko‘rish nuqtalarini chizing.",
+    "solution": "Kirish sxemasi ko‘cha sharoiti bilan boshlanadi; darvoza alohida element emas.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M03_002",
+    "asset": "realistic-l03_m03_002.jpg",
+    "title": "Piyoda kirishi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Piyoda yo‘li. Chapdagi ochiq darvozadan uy eshigi tomon ketayotgan odam ko‘rinadi. Yo‘lga mashina qo‘yilmagan, o‘rtadagi ekilgan tasma parkovkadan ajratadi.",
+      "2. Uyga yetib borish. Yo‘lak oxirida ayvon pog‘onalari bor. Faqat darvoza va eshikni bog‘lamang: ostona, balandlik o‘zgarishi va foydalanuvchining ehtiyojini ham tekshiring.",
+      "3. Foydalanish sinovi. Sumka bilan kelish, qarama-qarshi odam bilan uchrashish va eshikni ochish holatini planda sinang. Rasmda ko‘rsatilgan pog‘onali yo‘lni hamma foydalanuvchi uchun tayyor yechim deb qabul qilmang.",
+      "Darsdagi bajarish: Piyodaning darvozadan eshikkacha yo‘lini chizing → to‘g‘ridan-to‘g‘ri va to‘siqsiz aloqa."
+    ],
+    "exercise": "Piyoda darvozadan uy eshigigacha uzluksiz yo‘l yarating.",
+    "solution": "Piyoda yo‘li avtomobil harakatiga keraksiz bog‘lanmasligi tekshiriladi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M03_003",
+    "asset": "realistic-l03_m03_003.jpg",
+    "title": "Avtomobil kirishi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Darvoza va yondashuv. Keng ochilish ko‘chani ichki maydon bilan bog‘laydi. Darvoza barglari ochilganda qoladigan haqiqiy joyni tekshiring.",
+      "2. Avtomobil holati. Mashina maydonda burilgan holatda, atrofida bo‘sh joy mavjud. Kirish, burilish, to‘xtash va qayta chiqish to‘rt alohida holatdir.",
+      "3. Haqiqiy transport bilan sinash. O‘z chizmangizda tanlangan avtomobilning o‘lchami va harakat xususiyatidan foydalaning; kuzov, yon tomon va ochiladigan eshiklarni tekshiring. Rasmdagi burilish aniq harakat trayektoriyasi hisobi emas.",
+      "Darsdagi bajarish: Avtomobil burilish va to‘xtash ssenariysini haqiqiy transport o‘lchamida chizing → ishlaydigan kirish."
+    ],
+    "exercise": "Avtomobilning kirish, to‘xtash va chiqish yo‘lini belgilang.",
+    "solution": "Avtomobil kirishi faqat darvoza eni bilan emas, real transport harakati bilan baholanadi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M03_004",
+    "asset": "realistic-l03_m03_004.jpg",
+    "title": "Mehmon va xo'jalik harakati — rasmga qarab tushuning",
+    "explanation": [
+      "1. Mehmon yo‘li. Chapda kelayotgan odam ayvon va asosiy kirish tomon yuradi. Kutib olish joyi shu yo‘l bilan bog‘langan.",
+      "2. Xo‘jalik yo‘li. O‘ngda mahsulot ko‘targan odam ochiq oshxona eshigiga boradi. Buyumni ayvondagi suhbat yoki shaxsiy xonalar orqali olib o‘tish zarurati kamayadi.",
+      "3. Oqimlarni tekshirish. Kim, qanday buyum bilan va qachon kirishini yozing. Yo‘llarning boshlanishi, uchrashishi va eshik oldidagi joyni solishtiring; bitta oila uchun qulay qarorni boshqa holatga tekshirmasdan ko‘chirmang.",
+      "Darsdagi bajarish: Mehmonni ayvon, xo‘jalik oqimini oshxona tomoniga ajrating → xizmat yo‘li tinch zonani kesmaydi."
+    ],
+    "exercise": "Mehmon va xizmat kirishi qayerda uchrashishini yozing.",
+    "solution": "Xizmat yukini shaxsiy zona orqali majburiy olib o‘tish alohida konflikt bo‘lishi mumkin.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M03_005",
+    "asset": "realistic-l03_m03_005.jpg",
+    "title": "Kirish sxemasidagi xatolar — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi kesishuv. O‘ngdagi kichik kirishdan keladigan och rangli yo‘lak chapga burilib, mashina maydonini kesadi. Mashina oldidagi shu uchrashuv joyini ajrating.",
+      "2. O‘ngdagi o‘zgarish. Piyoda kirishi chapga ko‘chirilgan, och rangli yo‘lak chet bo‘ylab ayvonga boradi. Mashina o‘ngdagi maydonda turadi; yo‘lni parkovka orqali aylantirish zarurati kamaygan.",
+      "3. Tuzatish auditi. Kesishuv, ko‘rishni to‘sadigan obyekt, ochilgan darvoza va piyoda eshigi oldini alohida tekshiring. Rasm marshrut farqini ko‘rsatadi; barcha xavflar yo‘qolganini yoki aniq masofalar yetarliligini tasdiqlamaydi.",
+      "Darsdagi bajarish: Mashina yo‘li piyoda eshigi oldini kesadigan joyni belgilang → ajratish yoki ko‘rinish yechimi."
+    ],
+    "exercise": "Piyoda-avtomobil kesishgan nuqtalarga yechim yozing.",
+    "solution": "Kirish auditining natijasi xavfli kesishuv, ko‘rish va yo‘l to‘siqlarini aniq qayd qiladi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
