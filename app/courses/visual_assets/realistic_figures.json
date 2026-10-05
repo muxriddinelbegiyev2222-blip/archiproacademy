@@ -1698,5 +1698,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L02_M06_001",
+    "asset": "realistic-l02_m06_001.jpg",
+    "title": "Yotoqxona vazifasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Uyqu joyi. Krovat xonaning asosiy jihozi, lekin xona vazifasi u bilan tugamaydi.",
+      "2. Kiyinish va saqlash. Bir odam krovat chetida oyoq kiyimini, ikkinchisi shkafdan ko‘ylakni olayotgani ko‘rinadi. Har ikki ish uchun alohida foydalanish joyi kerak.",
+      "3. Talablarni yozing. Uyqu tinchligi, kirishdan ko‘rinish, kiyinish va buyum olish yo‘lini qayd qiling. Rasm vazifalarni ko‘rsatadi; darsdagi 4×3 m xona va jihoz o‘lchamlari haqiqiy planda ishlatiladi.",
+      "Darsdagi bajarish: Uyqu, kiyinish va saqlashni uch alohida vazifa sifatida yozing → sokin xona dasturi."
+    ],
+    "exercise": "Tinchlik, maxfiylik va kundalik foydalanish talablarini yozing.",
+    "solution": "Yotoqxona vazifasi shunchaki krovat joylashuvi bilan tugamaydi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M06_002",
+    "asset": "realistic-l02_m06_002.jpg",
+    "title": "Krovat va harakat zonasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Jihoz konturi. To‘q sariq chekka krovatning egallagan joyini ajratadi.",
+      "2. Xizmat zonalari. Yashil maydon krovatning ikki yoni va oyoq tomonini bog‘laydi. Chapda choyshab to‘g‘rilash, o‘ngda yon tortmadan foydalanish ko‘rsatilgan.",
+      "3. Har ikki tomonga boring. Kirishdan krovatning ikki yoniga yetish va kundalik ishlarni bajarish mumkinmi? Jihoz konturi bilan foydalanish joyini alohida chizing; renderdagi kengliklar norma qiymati emas.",
+      "Darsdagi bajarish: Krovatni masshtabda chizing, ikki yon va oyoq tomonidagi harakatni belgilang → xizmat zonalari."
+    ],
+    "exercise": "Krovatning ikki yoniga yaqinlashish yo‘lini belgilang.",
+    "solution": "Jihozga foydalanish yo‘li mebel konturidan alohida tekshiriladi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M06_003",
+    "asset": "realistic-l02_m06_003.jpg",
+    "title": "Wardrobe va saqlash — rasmga qarab tushuning",
+    "explanation": [
+      "1. Saqlash hajmi. Ichkarida kiyimlar, buklangan buyumlar va tortma ko‘rinadi. Sig‘im shu buyumlarni joylashtirish imkonini bildiradi.",
+      "2. Foydalanish maydoni. Ochilgan eshik, tortma va buyum olayotgan odam to‘q sariq maydonda. Bular yopiq shkaf konturidan tashqariga chiqadi.",
+      "3. O‘tish yo‘li. Yashil yo‘l kirishdan krovat yoniga bo‘sh pol bo‘ylab boradi. Shkaf ochilganda yo‘l va foydalanish joyi haqiqiy o‘lcham bilan tekshiriladi.",
+      "Darsdagi bajarish: Shkaf eshigini ochilgan holatda chizing → foydalanish va kirish yo‘li mos."
+    ],
+    "exercise": "Garderobni ochilgan eshik va buyum olish holatida chizing.",
+    "solution": "Saqlash sig‘imi bilan foydalanish qulayligi ikkita alohida mezondir.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M06_004",
+    "asset": "realistic-l02_m06_004.jpg",
+    "title": "Master bedroom va oddiy bedroom — rasmga qarab tushuning",
+    "explanation": [
+      "1. Oddiy variant. Chapda krovat, shkaf, deraza va bitta kirish eshigi bor.",
+      "2. Shaxsiy sanuzelli variant. O‘ngda alohida devor va eshik bilan ajratilgan sanuzel qo‘shilgan. Uning kirishi krovatning oyoq tomonidagi hududga keladi.",
+      "3. Qo‘shimcha aloqani tekshiring. Sanuzel eshigi, tungi harakat, shovqin va namlik uxlash zonasiga qanday ta’sir qiladi? Maydonning o‘zi qulaylikni tasdiqlamaydi; ventilyatsiya va haqiqiy o‘lchamlar alohida tekshiriladi.",
+      "Darsdagi bajarish: Shaxsiy sanuzel qo‘shilsa, uning eshigi va namlik aloqasini tekshiring → kattaroq xona faqat maydon bilan baholanmaydi."
+    ],
+    "exercise": "Sanuzelli master variantni oddiy yotoqxona varianti bilan solishtiring.",
+    "solution": "Qo‘shimcha xona eshiklari asosiy uxlash zonasining tinchligi va harakatiga ta’sir qiladi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L02_M06_005",
+    "asset": "realistic-l02_m06_005.jpg",
+    "title": "Yotoqxona auditi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi siqilgan aloqa. Kirish eshigi, krovatning oyoq tomoni va ochilgan shkaf eshigi bitta yaqin hududga kelgan. To‘q sariq maydon tekshiriladigan joyni ajratadi.",
+      "2. O‘ngdagi o‘zgarish. Shkaf orqaroqqa joylashtirilgan, kirish eshigi yonida va krovatning o‘ng tomonida yashil foydalanish yo‘li ko‘rinadi.",
+      "3. Kundalik audit. Kirishdan krovat, shkaf va derazaga boring, ochiq eshik va jihoz holatini tekshiring. Rasm mantiqni taqqoslaydi; darsdagi aniq xona va jihoz o‘lchamlarini planda qo‘llab xulosa chiqaring.",
+      "Darsdagi bajarish: Eshik–krovat–shkaf yo‘lini yurib tasavvur qiling → to‘siq topilsa mebel sxemasini qayta tuzing."
+    ],
+    "exercise": "Eshik, krovat, garderob va yorug‘lik munosabatini tekshiring.",
+    "solution": "Yakuniy variant barcha kundalik harakatlar bilan tekshirilgandagina asoslanadi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
