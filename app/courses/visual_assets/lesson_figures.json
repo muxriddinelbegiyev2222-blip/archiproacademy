@@ -2720,57 +2720,6 @@
     "source_url": null
   },
   {
-    "code": "L05_M03_003",
-    "asset": "l05_m03_003.svg",
-    "title": "Devor geometriyasi — ko‘rgazmali namuna",
-    "explanation": [
-      "4000×3000 mm ichki xona, 200 mm devor qalinligi va 3000 mm o‘quv balandligi bilan yopiq kontur tuzamiz. Qiymatlar loyiha normativi emas.",
-      "To‘rtta segmentni 4000, 3000, 4000, 3000 mm bilan yopiq konturga chizing. Burchakda reference line mantiqini saqlang → geometrik yopiq xona.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
-    ],
-    "exercise": "To‘rt devor konturini yopib, 4000 × 3000 o‘lcham qayerga tegishli ekanini belgilang.",
-    "solution": "Geometriya natijasida o‘lcham reference line, ichki yuz yoki tashqi yuzga tegishli ekanligi aniq bo‘lishi kerak.",
-    "block": 8,
-    "recipe": "wall-plan",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": null
-  },
-  {
-    "code": "L05_M03_004",
-    "asset": "l05_m03_004.svg",
-    "title": "Devorlarni ulash va tahrirlash — ko‘rgazmali namuna",
-    "explanation": [
-      "4000×3000 mm ichki xona, 200 mm devor qalinligi va 3000 mm o‘quv balandligi bilan yopiq kontur tuzamiz. Qiymatlar loyiha normativi emas.",
-      "Burchakni yaqinlashtirib uchlarning tutashuvini tekshiring. Bo‘shliq bo‘lsa endpointni to‘g‘ri nuqtaga ulang, 3Dni ko‘ring → uzluksiz devor.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
-    ],
-    "exercise": "Burchak tutashuvini planda va 3Dda ko‘rib, ortiqcha yoki uzilgan bo‘laklarni tuzating.",
-    "solution": "Devor ulanishi faqat tashqi ko‘rinishda emas, element geometriyasida tekshiriladi.",
-    "block": 9,
-    "recipe": "wall-plan",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": null
-  },
-  {
-    "code": "L05_M03_005",
-    "asset": "l05_m03_005.svg",
-    "title": "Wall Tool mini-loyiha — ko‘rgazmali namuna",
-    "explanation": [
-      "4000×3000 mm ichki xona, 200 mm devor qalinligi va 3000 mm o‘quv balandligi bilan yopiq kontur tuzamiz. Qiymatlar loyiha normativi emas.",
-      "Ichki o‘lcham 4000×3000, tashqi 4400×3400, balandlik 3000 mm ni qayd qiling → o‘lchanadigan mini-loyiha.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
-    ],
-    "exercise": "To‘rt devor, yopiq kontur va ikki yo‘nalishdagi o‘lcham bilan mini-loyihani topshiring.",
-    "solution": "Wall mashqi natijasi tekshiriladigan kontur va izohlangan parametrlar bo‘ladi.",
-    "block": 10,
-    "recipe": "wall-plan",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": null
-  },
-  {
     "code": "L05_M04_001",
     "asset": "l05_m04_001.svg",
     "title": "Slab Tool asoslari — ko‘rgazmali namuna",

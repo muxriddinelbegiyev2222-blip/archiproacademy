@@ -172,14 +172,14 @@
   {
     "code": "L05_M03_001",
     "asset": "ac28-wall.png",
-    "title": "Wall: geometriya va sath sozlamalari",
+    "title": "Wall Settings: bog‘langan balandlik va qalinlikni ajrating",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-3.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/WallGeometry.png",
-    "block": 0,
+    "block": 3,
     "explanation": [
-      "Wall: geometriya va sath sozlamalari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Wallni tanlang, Wall Settingsda qalinlik 200, balandlik 3000 mm ni yozing. Ichki yuzaga mos reference line tanlang, Trackerda 4000 mm uzunlikni kiriting → parametrli devor."
+      "Wall Top qismida 1. Story (Home + 1) tanlangan: devor tepasi yuqori qavatga bog‘langan. Chapdagi 3100 balandlik maydoni xira; bu holatda sonni bevosita yozib bo‘lmaydi.",
+      "Mashqdagi qat’iy 3000 mm balandlik uchun Wall Topdan Not linkedni tanlang, keyin balandlikni kiriting. Qalinlikni 200 mm qilish uchun Basic devorni tanlang: Composite qalinligi qatlamlar yig‘indisidan olinadi.",
+      "O‘ngdagi 300 maydoni namunadagi qalinlik, chapdagi balandlik esa boshqa parametr. Loyiha uzunlik birligini mm deb tekshiring; 4000 mm uzunlik keyin chizishda Tracker orqali kiritiladi. Rasmda mashqning tayyor qiymatlari qo‘yilmagan."
     ],
     "exercise": "Wall bilan 4000 mm uzunlikdagi devor yarating va parametrlarini qayd qiling.",
     "solution": "Devor uzunligi, balandligi va qalinligi bir xil parametr emas.",
@@ -188,15 +188,15 @@
   },
   {
     "code": "L05_M03_002",
-    "asset": "ac28-wall-thickness.png",
-    "title": "Wall: geometriya va qalinlik maydoni",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-3.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/WallGeometry.png",
-    "block": 0,
+    "asset": "ac28-wall-reference-faces.png",
+    "title": "Reference Line: bir chiziqqa nisbatan uch joylashuv",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-7.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/RefLineSimpleWall.png",
+    "block": 2,
     "explanation": [
-      "Wall: geometriya va qalinlik maydoni. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Reference line tomonini ko‘ring. Ichki yuzalar 4000×3000 bo‘lsa tashqi o‘lcham 4400×3400 mm → qalinlik ikki tomondan qo‘shiladi."
+      "To‘q sariq uzlukli chiziq har uch misolda bir joyda. Outside misolida devor tanasi uning o‘ngida, Inside misolida chapida, Center misolida esa ikki tomonda joylashgan.",
+      "Demak, bitta tayanch chiziqni chizish devor ichki yuzini ham, tashqi yuzini ham avtomatik bir joyga qo‘ymaydi. Tanlangan yuz va chizish yo‘nalishini tekshiring.",
+      "Mashqda ichki toza o‘lcham 4000 × 3000 mm, har devor qalinligi 200 mm bo‘lsa, tashqi kontur 4400 × 3400 mm bo‘ladi: har yo‘nalishda ikki tomondagi 200 mm qo‘shiladi. Reference Line o‘lchamini ichki yuz o‘lchami bilan adashtirmang."
     ],
     "exercise": "Reference Line joyini o‘zgartirib, devor qalinligi qaysi tomonga joylashishini solishtiring.",
     "solution": "Reference Line noto‘g‘ri tanlansa, o‘lchangan ichki va tashqi kontur almashib ketishi mumkin.",
@@ -205,15 +205,15 @@
   },
   {
     "code": "L05_M03_003",
-    "asset": "ac28-wall.png",
-    "title": "Wall: geometriya va sath sozlamalari",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-3.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/WallGeometry.png",
-    "block": 0,
+    "asset": "ac28-wall-chain-method.png",
+    "title": "To‘rt segment uchun Chained Wall usuli",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-10.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/ChainWallMethod.png",
+    "block": 2,
     "explanation": [
-      "Wall: geometriya va sath sozlamalari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: To‘rtta segmentni 4000, 3000, 4000, 3000 mm bilan yopiq konturga chizing. Burchakda reference line mantiqini saqlang → geometrik yopiq xona."
+      "Info Boxdagi kichik qora strelkani oching va rasmda qizil bilan ajratilgan Chained Wall usulini tanlang. Har yangi segment avvalgisiga ulanib davom etadi.",
+      "Mashqda yo‘nalishlarni 90° qilib, 4000, 3000, 4000 va 3000 mm segmentlarni ketma-ket kiriting. Oxirgi nuqtani birinchi nuqtaga tutashtiring; yopilish va o‘lchamni tekshiring.",
+      "Kiritish paytida Info Box parametrini almashtirish yaratilayotgan zanjir segmentlariga ta’sir qiladi. Reference Line tomonini va 200 mm qalinlikni butun kontur bo‘ylab bir xil mantiqda saqlang."
     ],
     "exercise": "To‘rt devor konturini yopib, 4000 × 3000 o‘lcham qayerga tegishli ekanini belgilang.",
     "solution": "Geometriya natijasida o‘lcham reference line, ichki yuz yoki tashqi yuzga tegishli ekanligi aniq bo‘lishi kerak.",
@@ -222,15 +222,15 @@
   },
   {
     "code": "L05_M03_004",
-    "asset": "ac28-wall.png",
-    "title": "Wall: geometriya va sath sozlamalari",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-3.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/WallGeometry.png",
-    "block": 0,
+    "asset": "ac28-wall-junction-plan.png",
+    "title": "Tutashuv xatosi: devor tanalari tegishi yetarli emas",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-274.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/ModelParallelWalls.png",
+    "block": 6,
     "explanation": [
-      "Wall: geometriya va sath sozlamalari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Burchakni yaqinlashtirib uchlarning tutashuvini tekshiring. Bo‘shliq bo‘lsa endpointni to‘g‘ri nuqtaga ulang, 3Dni ko‘ring → uzluksiz devor."
+      "Rasm parallel, siljigan ikki qatlamli devorning plan ko‘rinishi. Tanalar bir-biriga tegadi, lekin Reference Line chiziqlari o‘zaro kesishmagan.",
+      "Wall–Wall ulanishini tozalash uchun Reference Line chiziqlari tutashishi kerak. Faqat tashqi kontur tegib turgani toza ulanishga kafolat bermaydi.",
+      "O‘z mashqingizda burchakni yaqinlashtiring, tayanch chiziqlarni ko‘rsating va yakun nuqtasini to‘g‘ri ulanish nuqtasiga yetkazing. So‘ng plan va 3Dda bo‘shliq yoki ortiqcha bo‘lak qolmaganini tekshiring."
     ],
     "exercise": "Burchak tutashuvini planda va 3Dda ko‘rib, ortiqcha yoki uzilgan bo‘laklarni tuzating.",
     "solution": "Devor ulanishi faqat tashqi ko‘rinishda emas, element geometriyasida tekshiriladi.",
@@ -239,15 +239,15 @@
   },
   {
     "code": "L05_M03_005",
-    "asset": "ac28-wall.png",
-    "title": "Wall: geometriya va sath sozlamalari",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-3.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/WallGeometry.png",
-    "block": 0,
+    "asset": "ac28-wall-reference-3d.png",
+    "title": "Mini-loyihaning hajmli tekshiruvi",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-7.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/WallRefLine3D.png",
+    "block": 5,
     "explanation": [
-      "Wall: geometriya va sath sozlamalari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Ichki o‘lcham 4000×3000, tashqi 4400×3400, balandlik 3000 mm ni qayd qiling → o‘lchanadigan mini-loyiha."
+      "Rasm Reference Line ko‘rsatilgan tanlangan devorlar namunasidir; mashqdagi to‘rt devorli 4000 × 3000 mm xonaning tayyor natijasi emas.",
+      "O‘z konturingizni 3Dda oching: barcha devorlarning pastki sathi bir xil, balandligi 3000 mm va burchaklarida uzilish bo‘lmasligi kerak. Keyin planga qaytib ichki yuzlar orasidagi ikki o‘lchamni tekshiring.",
+      "200 mm devor bilan ichki 4000 × 3000 mm kontur uchun tashqi o‘lcham 4400 × 3400 mm. Natijaga plan o‘lchamlari, Wall Settings parametrlari va 3D kadrini qo‘shing; faqat ko‘z bilan to‘rtburchakka o‘xshashi yetarli emas."
     ],
     "exercise": "To‘rt devor, yopiq kontur va ikki yo‘nalishdagi o‘lcham bilan mini-loyihani topshiring.",
     "solution": "Wall mashqi natijasi tekshiriladigan kontur va izohlangan parametrlar bo‘ladi.",
@@ -3733,6 +3733,71 @@
     ],
     "exercise": "Manba plan, saqlangan view va layoutdagi chizmani ketma-ket oching.",
     "solution": "Bir modelni tahrirlash va uning hujjat ko‘rinishlarini boshqarish o‘zaro bog‘liq jarayondir.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M03_001",
+    "asset": "ac28-wall-straight.png",
+    "title": "4000 mm devorni chizish usulini tanlash",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-8.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/SingleWall.png",
+    "block": 6,
+    "explanation": [
+      "Wall faol bo‘lgach, Info Boxdan Single Straight Wall usulini tanlang. Bu usul har safar bitta to‘g‘ri devor segmentini yaratadi.",
+      "Boshlanish nuqtasini belgilang, gorizontal yoki vertikal yo‘nalishni tekshiring va Trackerda 4000 mm masofani kiriting. Yakun nuqtasi belgilangach, uzunlik, balandlik va qalinlikni alohida tekshiring."
+    ],
+    "exercise": "Wall bilan 4000 mm uzunlikdagi devor yarating va parametrlarini qayd qiling.",
+    "solution": "Devor uzunligi, balandligi va qalinligi bir xil parametr emas.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M03_002",
+    "asset": "ac28-wall-reference-options.png",
+    "title": "Inside Face, Outside Face yoki Center qayerdan tanlanadi?",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-7.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/WallRefLineChoose.png",
+    "block": 6,
+    "explanation": [
+      "Wall Settingsning Reference Line ro‘yxatida Outside Face, Center va Inside Face bor. Bu rasm Basic devor uchun uch variantni ko‘rsatadi.",
+      "Mashqda ichki yuzga mos variantni tanlang va yo‘nalishni tekshiring. Rasmda qalinlik 0.05 va balandlik 0.90 ko‘rsatilgan — ular o‘quv mashqingizdagi 200 va 3000 mm emas.",
+      "Ko‘rinadigan tayanch chiziqlar uchun View → On-Screen View Options → Walls & Beams Reference Linesni yoqing. Sozlama o‘zgarganda devor tanasi qaysi tomonga siljiganini kuzating."
+    ],
+    "exercise": "Reference Line joyini o‘zgartirib, devor qalinligi qaysi tomonga joylashishini solishtiring.",
+    "solution": "Reference Line noto‘g‘ri tanlansa, o‘lchangan ichki va tashqi kontur almashib ketishi mumkin.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M03_003",
+    "asset": "ac28-wall-rectangle-result.png",
+    "title": "Yopiq kontur: burilgan to‘rtburchak namunasi",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-11.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/RotRect2.png",
+    "block": 5,
+    "explanation": [
+      "Haqiqiy Archicad namunasida to‘rtta devor yopiq to‘rtburchak hosil qilgan. 45,00° yozuvi kontur ekranda burilganini bildiradi; bu ichki burchaklar 45° degani emas.",
+      "Bu rasm Rotated Rectangle usulining natijasi; sizning mashqingizdagi 4000 × 3000 mm kontur chizilgan deb da’vo qilmaydi. O‘z konturingizda to‘rt burchak 90° va ichki yuzlar orasidagi o‘lchamlar to‘g‘ri ekanini tekshiring."
+    ],
+    "exercise": "To‘rt devor konturini yopib, 4000 × 3000 o‘lcham qayerga tegishli ekanini belgilang.",
+    "solution": "Geometriya natijasida o‘lcham reference line, ichki yuz yoki tashqi yuzga tegishli ekanligi aniq bo‘lishi kerak.",
+    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M03_004",
+    "asset": "ac28-wall-reference-3d.png",
+    "title": "Burchaklarni 3Dda ham tekshiring",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-7.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/WallRefLine3D.png",
+    "block": 5,
+    "explanation": [
+      "Tanlangan devorlarning qirralari yashil, tayanch chiziqlari alohida rang bilan ko‘rsatilgan. Bu 3D kadr balandlik va burchakdagi tutashuvni ko‘rishga yordam beradi.",
+      "Planda chiziqlar tutashganini tekshirishdan keyin 3Dni oching: pastki sath, yuqori sath va tutashayotgan tanalar mos kelishi kerak. 3D tashqi ko‘rinishi plan geometriyasini tekshirish o‘rnini bosmaydi."
+    ],
+    "exercise": "Burchak tutashuvini planda va 3Dda ko‘rib, ortiqcha yoki uzilgan bo‘laklarni tuzating.",
+    "solution": "Devor ulanishi faqat tashqi ko‘rinishda emas, element geometriyasida tekshiriladi.",
     "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   }
