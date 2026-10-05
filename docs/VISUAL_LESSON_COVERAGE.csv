@@ -6,19 +6,19 @@ L00_M02_001,L00_M02,Plan nima?,illustrated,1,realistic-l00_m02_001.jpg
 L00_M02_002,L00_M02,Fasad nima?,illustrated,1,realistic-l00_m02_002.jpg
 L00_M02_003,L00_M02,Kesim nima?,illustrated,1,realistic-l00_m02_003.jpg
 L00_M02_004,L00_M02,Genplan nima?,illustrated,1,realistic-l00_m02_004.jpg
-L00_M03_001,L00_M03,Masshtab tushunchasi,illustrated,1,scale.svg
-L00_M03_002,L00_M03,O'lchamlarni o'qish,illustrated,1,dimension.svg
-L00_M03_003,L00_M03,Otmetka va balandlik,illustrated,1,levels.svg
-L00_M04_001,L00_M04,Fundament nima?,illustrated,1,foundation.svg
-L00_M04_002,L00_M04,Devor nima va turlari,illustrated,1,walls.svg
-L00_M04_003,L00_M04,Ustun va rigel nima?,illustrated,1,frame.svg
-L00_M04_004,L00_M04,"Pol, plita va shift",illustrated,1,slab.svg
-L00_M04_005,L00_M04,Tom nima va qanday ishlaydi?,illustrated,1,roof-concept.png
-L00_M04_006,L00_M04,Eshik va deraza,illustrated,1,openings.svg
-L00_M05_001,L00_M05,Yaxshi planni qanday taniymiz?,illustrated,1,plan-check.svg
-L00_M05_002,L00_M05,Yomon plandagi xatolar,illustrated,1,plan-error.svg
-L00_M05_003,L00_M05,Fasadni tahlil qilish,illustrated,1,facade-check.svg
-L00_M05_004,L00_M05,LEVEL 0 yakuniy tahlil,illustrated,1,intro-audit.svg
+L00_M03_001,L00_M03,Masshtab tushunchasi,illustrated,1,realistic-l00_m03_001.jpg
+L00_M03_002,L00_M03,O'lchamlarni o'qish,illustrated,1,realistic-l00_m03_002.jpg
+L00_M03_003,L00_M03,Otmetka va balandlik,illustrated,1,realistic-l00_m03_003.jpg
+L00_M04_001,L00_M04,Fundament nima?,illustrated,1,realistic-l00_m04_001.jpg
+L00_M04_002,L00_M04,Devor nima va turlari,illustrated,1,realistic-l00_m04_002.jpg
+L00_M04_003,L00_M04,Ustun va rigel nima?,illustrated,1,realistic-l00_m04_003.jpg
+L00_M04_004,L00_M04,"Pol, plita va shift",illustrated,1,realistic-l00_m04_004.jpg
+L00_M04_005,L00_M04,Tom nima va qanday ishlaydi?,illustrated,1,realistic-l00_m04_005.jpg
+L00_M04_006,L00_M04,Eshik va deraza,illustrated,1,realistic-l00_m04_006.jpg
+L00_M05_001,L00_M05,Yaxshi planni qanday taniymiz?,illustrated,1,realistic-l00_m05_001.jpg
+L00_M05_002,L00_M05,Yomon plandagi xatolar,illustrated,1,realistic-l00_m05_002.jpg
+L00_M05_003,L00_M05,Fasadni tahlil qilish,illustrated,1,realistic-l00_m05_003.jpg
+L00_M05_004,L00_M05,LEVEL 0 yakuniy tahlil,illustrated,1,realistic-l00_m05_004.jpg
 L01_M01_001,L01_M01,Kompozitsiya nima?,illustrated,1,l01_m01_001.svg
 L01_M01_002,L01_M01,Kompozitsion markaz,illustrated,1,l01_m01_002.svg
 L01_M01_003,L01_M01,Vizual balans,illustrated,1,l01_m01_003.svg
@@ -179,151 +179,151 @@ L04_M08_002,L04_M08,Mahalliy ruh va zamonaviy arxitektura,illustrated,1,l04_m08_
 L04_M08_003,L04_M08,"Deraza, ayvon va soyalanish",illustrated,1,l04_m08_003.svg
 L04_M08_004,L04_M08,Material va proporsiya,illustrated,1,l04_m08_004.svg
 L04_M08_005,L04_M08,Mahalliy fasad auditi,illustrated,1,l04_m08_005.svg
-L05_M01_001,L05_M01,Archicad ish muhiti,illustrated,2,l05_m01_001.svg;ac28-palettes.png
-L05_M01_002,L05_M01,ToolBox va Info Box,illustrated,2,l05_m01_002.svg;ac28-toolbox.png
-L05_M01_003,L05_M01,2D va 3D oynalar,illustrated,2,l05_m01_003.svg;ac28-navigator.png
-L05_M01_004,L05_M01,"Zoom, Pan va tanlash",illustrated,2,l05_m01_004.svg;ac28-zoom.png
-L05_M01_005,L05_M01,Interfeys mini-amaliyoti,illustrated,2,l05_m01_005.svg;ac28-info-box.png
-L05_M02_001,L05_M02,Navigator nima?,illustrated,2,l05_m02_001.svg;ac28-navigator.png
-L05_M02_002,L05_M02,Project Map,illustrated,2,l05_m02_002.svg;ac28-project-map.png
-L05_M02_003,L05_M02,View Map,illustrated,2,l05_m02_003.svg;ac28-view-map.png
-L05_M02_004,L05_M02,Layout Book,illustrated,2,l05_m02_004.svg;ac28-layout.png
-L05_M02_005,L05_M02,Navigator mini-amaliyoti,illustrated,2,l05_m02_005.svg;ac28-view.png
-L05_M03_001,L05_M03,Wall Tool asoslari,illustrated,2,archicad-reference-menu.png;ac28-wall.png
-L05_M03_002,L05_M03,Reference Line,illustrated,2,archicad-reference-plan.png;ac28-wall-thickness.png
-L05_M03_003,L05_M03,Devor geometriyasi,illustrated,2,l05_m03_003.svg;ac28-wall.png
-L05_M03_004,L05_M03,Devorlarni ulash va tahrirlash,illustrated,2,l05_m03_004.svg;ac28-wall.png
-L05_M03_005,L05_M03,Wall Tool mini-loyiha,illustrated,2,l05_m03_005.svg;ac28-wall.png
-L05_M04_001,L05_M04,Slab Tool asoslari,illustrated,2,l05_m04_001.svg;ac28-slab.png
-L05_M04_002,L05_M04,Slab qalinligi va balandligi,illustrated,2,l05_m04_002.svg;ac28-slab.png
-L05_M04_003,L05_M04,Slab konturini yaratish,illustrated,2,l05_m04_003.svg;ac28-slab.png
-L05_M04_004,L05_M04,Teshik va murakkab kontur,illustrated,2,l05_m04_004.svg;ac28-slab-hole.png
-L05_M04_005,L05_M04,Slab Tool mini-loyiha,illustrated,2,l05_m04_005.svg;ac28-slab-hole.png
-L05_M05_001,L05_M05,Door va Window asoslari,illustrated,2,l05_m05_001.svg;ac28-door-window.png
-L05_M05_002,L05_M05,Eshik o'lchami va ochilish yo'nalishi,illustrated,2,l05_m05_002.svg;ac28-door-position.png
-L05_M05_003,L05_M05,Deraza o'lchami va balandligi,illustrated,2,l05_m05_003.svg;ac28-door-position.png
-L05_M05_004,L05_M05,Door va Window tahrirlash,illustrated,2,l05_m05_004.svg;ac28-door-position.png
-L05_M05_005,L05_M05,Door va Window mini-loyiha,illustrated,2,l05_m05_005.svg;ac28-door-window.png
-L05_M06_001,L05_M06,Column Tool asoslari,illustrated,2,l05_m06_001.svg;ac28-column.png
-L05_M06_002,L05_M06,Column joylashtirish,illustrated,2,l05_m06_002.svg;ac28-column.png
-L05_M06_003,L05_M06,Beam Tool asoslari,illustrated,2,l05_m06_003.svg;ac28-beam.png
-L05_M06_004,L05_M06,Column va Beam aloqasi,illustrated,2,l05_m06_004.svg;ac28-beam.png
-L05_M06_005,L05_M06,Column va Beam mini-loyiha,illustrated,2,l05_m06_005.svg;ac28-column.png
-L05_M07_001,L05_M07,Object Tool asoslari,illustrated,2,l05_m07_001.svg;ac28-object.png
-L05_M07_002,L05_M07,Mebel joylashtirish,illustrated,2,l05_m07_002.svg;ac28-object.png
-L05_M07_003,L05_M07,Rotation va elevation,illustrated,2,l05_m07_003.svg;ac28-object.png
-L05_M07_004,L05_M07,Nusxalash va obyektlarni tahrirlash,illustrated,2,l05_m07_004.svg;ac28-object.png
-L05_M07_005,L05_M07,Object Tool mini-loyiha,illustrated,2,l05_m07_005.svg;ac28-object.png
+L05_M01_001,L05_M01,Archicad ish muhiti,illustrated,2,l05_m01_001.svg|ac28-palettes.png
+L05_M01_002,L05_M01,ToolBox va Info Box,illustrated,2,l05_m01_002.svg|ac28-toolbox.png
+L05_M01_003,L05_M01,2D va 3D oynalar,illustrated,2,l05_m01_003.svg|ac28-navigator.png
+L05_M01_004,L05_M01,"Zoom, Pan va tanlash",illustrated,2,l05_m01_004.svg|ac28-zoom.png
+L05_M01_005,L05_M01,Interfeys mini-amaliyoti,illustrated,2,l05_m01_005.svg|ac28-info-box.png
+L05_M02_001,L05_M02,Navigator nima?,illustrated,2,l05_m02_001.svg|ac28-navigator.png
+L05_M02_002,L05_M02,Project Map,illustrated,2,l05_m02_002.svg|ac28-project-map.png
+L05_M02_003,L05_M02,View Map,illustrated,2,l05_m02_003.svg|ac28-view-map.png
+L05_M02_004,L05_M02,Layout Book,illustrated,2,l05_m02_004.svg|ac28-layout.png
+L05_M02_005,L05_M02,Navigator mini-amaliyoti,illustrated,2,l05_m02_005.svg|ac28-view.png
+L05_M03_001,L05_M03,Wall Tool asoslari,illustrated,2,archicad-reference-menu.png|ac28-wall.png
+L05_M03_002,L05_M03,Reference Line,illustrated,2,archicad-reference-plan.png|ac28-wall-thickness.png
+L05_M03_003,L05_M03,Devor geometriyasi,illustrated,2,l05_m03_003.svg|ac28-wall.png
+L05_M03_004,L05_M03,Devorlarni ulash va tahrirlash,illustrated,2,l05_m03_004.svg|ac28-wall.png
+L05_M03_005,L05_M03,Wall Tool mini-loyiha,illustrated,2,l05_m03_005.svg|ac28-wall.png
+L05_M04_001,L05_M04,Slab Tool asoslari,illustrated,2,l05_m04_001.svg|ac28-slab.png
+L05_M04_002,L05_M04,Slab qalinligi va balandligi,illustrated,2,l05_m04_002.svg|ac28-slab.png
+L05_M04_003,L05_M04,Slab konturini yaratish,illustrated,2,l05_m04_003.svg|ac28-slab.png
+L05_M04_004,L05_M04,Teshik va murakkab kontur,illustrated,2,l05_m04_004.svg|ac28-slab-hole.png
+L05_M04_005,L05_M04,Slab Tool mini-loyiha,illustrated,2,l05_m04_005.svg|ac28-slab-hole.png
+L05_M05_001,L05_M05,Door va Window asoslari,illustrated,2,l05_m05_001.svg|ac28-door-window.png
+L05_M05_002,L05_M05,Eshik o'lchami va ochilish yo'nalishi,illustrated,2,l05_m05_002.svg|ac28-door-position.png
+L05_M05_003,L05_M05,Deraza o'lchami va balandligi,illustrated,2,l05_m05_003.svg|ac28-door-position.png
+L05_M05_004,L05_M05,Door va Window tahrirlash,illustrated,2,l05_m05_004.svg|ac28-door-position.png
+L05_M05_005,L05_M05,Door va Window mini-loyiha,illustrated,2,l05_m05_005.svg|ac28-door-window.png
+L05_M06_001,L05_M06,Column Tool asoslari,illustrated,2,l05_m06_001.svg|ac28-column.png
+L05_M06_002,L05_M06,Column joylashtirish,illustrated,2,l05_m06_002.svg|ac28-column.png
+L05_M06_003,L05_M06,Beam Tool asoslari,illustrated,2,l05_m06_003.svg|ac28-beam.png
+L05_M06_004,L05_M06,Column va Beam aloqasi,illustrated,2,l05_m06_004.svg|ac28-beam.png
+L05_M06_005,L05_M06,Column va Beam mini-loyiha,illustrated,2,l05_m06_005.svg|ac28-column.png
+L05_M07_001,L05_M07,Object Tool asoslari,illustrated,2,l05_m07_001.svg|ac28-object.png
+L05_M07_002,L05_M07,Mebel joylashtirish,illustrated,2,l05_m07_002.svg|ac28-object.png
+L05_M07_003,L05_M07,Rotation va elevation,illustrated,2,l05_m07_003.svg|ac28-object.png
+L05_M07_004,L05_M07,Nusxalash va obyektlarni tahrirlash,illustrated,2,l05_m07_004.svg|ac28-object.png
+L05_M07_005,L05_M07,Object Tool mini-loyiha,illustrated,2,l05_m07_005.svg|ac28-object.png
 L05_M08_001,L05_M08,Line va Polyline,illustrated,1,l05_m08_001.svg
-L05_M08_002,L05_M08,Fill Tool,illustrated,2,l05_m08_002.svg;ac28-fill.png
-L05_M08_003,L05_M08,Text Tool,illustrated,2,l05_m08_003.svg;ac28-text-style.png
-L05_M08_004,L05_M08,Label Tool,illustrated,2,l05_m08_004.svg;ac28-label.png
-L05_M08_005,L05_M08,2D grafik mini-loyiha,illustrated,2,l05_m08_005.svg;ac28-label.png
-L05_M09_001,L05_M09,Dimension Tool asoslari,illustrated,2,l05_m09_001.svg;ac28-dimension.png
-L05_M09_002,L05_M09,Tashqi o'lchamlar,illustrated,2,l05_m09_002.svg;ac28-dimension.png
-L05_M09_003,L05_M09,Ichki o'lchamlar,illustrated,2,l05_m09_003.svg;ac28-dimension.png
-L05_M09_004,L05_M09,Chain dimension va grafik tartib,illustrated,2,l05_m09_004.svg;ac28-dimension.png
-L05_M09_005,L05_M09,Dimension mini-loyiha,illustrated,2,l05_m09_005.svg;ac28-dimension.png
-L05_M10_001,L05_M10,Loyihani boshlash va reja,illustrated,2,l05_m10_001.svg;ac28-stories.png
-L05_M10_002,L05_M10,Devor va slab modeli,illustrated,2,l05_m10_002.svg;ac28-wall.png
-L05_M10_003,L05_M10,"Door, Window va mebel",illustrated,2,l05_m10_003.svg;ac28-door-window.png
-L05_M10_004,L05_M10,2D grafika va Dimension,illustrated,2,l05_m10_004.svg;ac28-dimension.png
-L05_M10_005,L05_M10,Birinchi loyiha auditi,illustrated,2,l05_m10_005.svg;ac28-zone.png
-L06_M01_001,L06_M01,Stories tushunchasi,illustrated,2,l06_m01_001.svg;ac28-stories.png
-L06_M01_002,L06_M01,Story Settings va balandliklar,illustrated,2,l06_m01_002.svg;ac28-stories.png
-L06_M01_003,L06_M01,Home Story va elementlar,illustrated,2,l06_m01_003.svg;ac28-home-story.png
-L06_M01_004,L06_M01,Ko'p qavatli model workflow,illustrated,2,l06_m01_004.svg;ac28-stories.png
-L06_M01_005,L06_M01,Stories professional audit,illustrated,2,l06_m01_005.svg;ac28-home-story.png
-L06_M02_001,L06_M02,Layer tushunchasi,illustrated,2,l06_m02_001.svg;ac28-layers.png
-L06_M02_002,L06_M02,Layer Settings,illustrated,2,l06_m02_002.svg;ac28-layers.png
-L06_M02_003,L06_M02,Layer Combination,illustrated,2,l06_m02_003.svg;ac28-layer-combination.png
-L06_M02_004,L06_M02,Professional layer struktura,illustrated,2,l06_m02_004.svg;ac28-layers.png
-L06_M02_005,L06_M02,Layers professional audit,illustrated,2,l06_m02_005.svg;ac28-layer-combination.png
-L06_M03_001,L06_M03,Building Material tushunchasi,illustrated,2,l06_m03_001.svg;ac28-material.png
-L06_M03_002,L06_M03,Building Material va Surface farqi,illustrated,2,l06_m03_002.svg;ac28-material.png
-L06_M03_003,L06_M03,Cut Fill va kesim ko'rinishi,illustrated,2,l06_m03_003.svg;ac28-material.png
-L06_M03_004,L06_M03,Intersection Priority va model tutashuvi,illustrated,2,l06_m03_004.svg;ac28-material.png
-L06_M03_005,L06_M03,Building Materials professional audit,illustrated,2,l06_m03_005.svg;ac28-material.png
-L06_M04_001,L06_M04,Composite Structure tushunchasi,illustrated,2,l06_m04_001.svg;ac28-composite.png
-L06_M04_002,L06_M04,Skin va Building Material,illustrated,2,l06_m04_002.svg;ac28-composite.png
-L06_M04_003,L06_M04,Qatlam qalinligi va tartibi,illustrated,2,l06_m04_003.svg;ac28-composite.png
-L06_M04_004,L06_M04,Composite elementlar bilan ishlash,illustrated,2,l06_m04_004.svg;ac28-composite.png
-L06_M04_005,L06_M04,Composite professional audit,illustrated,2,l06_m04_005.svg;ac28-composite.png
-L06_M05_001,L06_M05,Complex Profile tushunchasi,illustrated,2,l06_m05_001.svg;ac28-profile.png
-L06_M05_002,L06_M05,Profile Manager bilan ishlash,illustrated,2,l06_m05_002.svg;ac28-profile-edit.png
-L06_M05_003,L06_M05,"Wall, Beam va Column profillari",illustrated,2,l06_m05_003.svg;ac28-profile.png
-L06_M05_004,L06_M05,Material va geometriya mantig'i,illustrated,2,l06_m05_004.svg;ac28-profile-edit.png
-L06_M05_005,L06_M05,Complex Profile professional audit,illustrated,2,l06_m05_005.svg;ac28-profile.png
-L06_M06_001,L06_M06,Roof Tool asoslari,illustrated,2,l06_m06_001.svg;ac28-roof.png
-L06_M06_002,L06_M06,Single-plane va Multi-plane Roof,illustrated,2,l06_m06_002.svg;ac28-roof.png
-L06_M06_003,L06_M06,"Pitch, overhang va tom konturi",illustrated,2,l06_m06_003.svg;ac28-roof-pitch.png
-L06_M06_004,L06_M06,Murakkab tom tutashuvlari,illustrated,2,l06_m06_004.svg;ac28-roof.png
-L06_M06_005,L06_M06,Roof professional audit,illustrated,2,l06_m06_005.svg;ac28-roof.png
-L06_M07_001,L06_M07,Stair Tool va zinapoya geometriyasi,illustrated,2,l06_m07_001.svg;ac28-stair.png
-L06_M07_002,L06_M07,"Tread, riser, flight va landing",illustrated,2,l06_m07_002.svg;ac28-stair.png
-L06_M07_003,L06_M07,Qavatlararo bog'lanish,illustrated,2,l06_m07_003.svg;ac28-stair.png
-L06_M07_004,L06_M07,Murakkab Stair geometriyasi,illustrated,2,l06_m07_004.svg;ac28-stair-turn.png
-L06_M07_005,L06_M07,Stair professional audit,illustrated,2,l06_m07_005.svg;ac28-stair.png
-L06_M08_001,L06_M08,Railing Tool asoslari,illustrated,2,l06_m08_001.svg;ac28-railing.png
-L06_M08_002,L06_M08,"Posts, Rails va Handrails",illustrated,2,l06_m08_002.svg;ac28-railing-parts.png
-L06_M08_003,L06_M08,Baluster va Panel tizimi,illustrated,2,l06_m08_003.svg;ac28-railing-parts.png
-L06_M08_004,L06_M08,Stair va balkon bilan bog'lash,illustrated,2,l06_m08_004.svg;ac28-railing.png
-L06_M08_005,L06_M08,Railing professional audit,illustrated,2,l06_m08_005.svg;ac28-railing.png
-L06_M09_001,L06_M09,Mesh Tool va relyef tushunchasi,illustrated,2,l06_m09_001.svg;ac28-mesh.png
-L06_M09_002,L06_M09,Mesh konturi va balandlik nuqtalari,illustrated,2,l06_m09_002.svg;ac28-mesh-points.png
-L06_M09_003,L06_M09,Nishabli uchastka modeli,illustrated,2,l06_m09_003.svg;ac28-mesh-points.png
-L06_M09_004,L06_M09,Uy va relyef aloqasi,illustrated,2,l06_m09_004.svg;ac28-mesh.png
-L06_M09_005,L06_M09,Mesh professional audit,illustrated,2,l06_m09_005.svg;ac28-mesh-points.png
-L06_M10_001,L06_M10,Zone tushunchasi,illustrated,2,l06_m10_001.svg;ac28-zone.png
-L06_M10_002,L06_M10,Zone chegarasi va maydon,illustrated,2,l06_m10_002.svg;ac28-zone.png
-L06_M10_003,L06_M10,Zone Stamp va xona ma'lumotlari,illustrated,2,l06_m10_003.svg;ac28-zone-name.png
-L06_M10_004,L06_M10,Funksional zonalar va loyiha tahlili,illustrated,2,l06_m10_004.svg;ac28-zone.png
-L06_M10_005,L06_M10,Zones professional audit,illustrated,2,l06_m10_005.svg;ac28-zone-area.png
-L07_M01_001,L07_M01,Favorites tushunchasi,illustrated,2,l07_m01_001.svg;ac28-favorite.png
-L07_M01_002,L07_M01,Favorite yaratish va qo'llash,illustrated,2,l07_m01_002.svg;ac28-favorite-new.png
-L07_M01_003,L07_M01,Professional Favorite kutubxonasi,illustrated,2,l07_m01_003.svg;ac28-favorite.png
-L07_M01_004,L07_M01,Favorites va standartlashtirish,illustrated,2,l07_m01_004.svg;ac28-favorite-new.png
-L07_M01_005,L07_M01,Favorites professional audit,illustrated,2,l07_m01_005.svg;ac28-favorite.png
-L07_M02_001,L07_M02,Graphic Overrides tushunchasi,illustrated,2,l07_m02_001.svg;ac28-override.png
-L07_M02_002,L07_M02,Graphic Override Rules,illustrated,2,l07_m02_002.svg;ac28-override.png
-L07_M02_003,L07_M02,Graphic Override Combination,illustrated,2,l07_m02_003.svg;ac28-override.png
-L07_M02_004,L07_M02,Modelni tahliliy ko'rinishlarda ko'rsatish,illustrated,2,l07_m02_004.svg;ac28-override.png
-L07_M02_005,L07_M02,Graphic Overrides professional audit,illustrated,2,l07_m02_005.svg;ac28-override.png
-L07_M03_001,L07_M03,Model View Options tushunchasi,illustrated,2,l07_m03_001.svg;ac28-mvo.png
-L07_M03_002,L07_M03,Model ko'rinishini boshqarish,illustrated,2,l07_m03_002.svg;ac28-mvo.png
-L07_M03_003,L07_M03,MVO Combination,illustrated,2,l07_m03_003.svg;ac28-mvo.png
-L07_M03_004,L07_M03,View va MVO workflow,illustrated,2,l07_m03_004.svg;ac28-mvo.png
-L07_M03_005,L07_M03,Model View Options professional audit,illustrated,2,l07_m03_005.svg;ac28-mvo.png
-L07_M04_001,L07_M04,Renovation tushunchasi,illustrated,2,l07_m04_001.svg;ac28-renovation.png
-L07_M04_002,L07_M04,Renovation Status,illustrated,2,l07_m04_002.svg;ac28-renovation.png
-L07_M04_003,L07_M04,Renovation Filters,illustrated,2,l07_m04_003.svg;ac28-renovation.png
-L07_M04_004,L07_M04,Rekonstruksiya modeli workflow,illustrated,2,l07_m04_004.svg;ac28-renovation.png
-L07_M04_005,L07_M04,Renovation professional audit,illustrated,2,l07_m04_005.svg;ac28-renovation.png
-L07_M05_001,L07_M05,Schedules tushunchasi,illustrated,2,l07_m05_001.svg;ac28-schedule.png
-L07_M05_002,L07_M05,Criteria va Fields,illustrated,2,l07_m05_002.svg;ac28-criteria.png
-L07_M05_003,L07_M05,"Sorting, Grouping va hisoblash",illustrated,2,l07_m05_003.svg;ac28-fields.png
-L07_M05_004,L07_M05,"Door, Window va Zone Schedules",illustrated,2,l07_m05_004.svg;ac28-schedule.png
-L07_M05_005,L07_M05,Schedules professional audit,illustrated,2,l07_m05_005.svg;ac28-criteria.png
-L07_M06_001,L07_M06,BIM Properties tushunchasi,illustrated,2,l07_m06_001.svg;ac28-property.png
-L07_M06_002,L07_M06,Property yaratish va tuzilishi,illustrated,2,l07_m06_002.svg;ac28-property.png
-L07_M06_003,L07_M06,Element ma'lumotlarini standartlashtirish,illustrated,2,l07_m06_003.svg;ac28-property.png
-L07_M06_004,L07_M06,Properties va Schedules,illustrated,2,l07_m06_004.svg;ac28-fields.png
-L07_M06_005,L07_M06,Properties professional audit,illustrated,2,l07_m06_005.svg;ac28-property.png
-L07_M07_001,L07_M07,BIM Classification tushunchasi,illustrated,2,l07_m07_001.svg;ac28-classification.png
-L07_M07_002,L07_M07,Classification va element turi,illustrated,2,l07_m07_002.svg;ac28-classification.png
-L07_M07_003,L07_M07,Classification va Properties,illustrated,2,l07_m07_003.svg;ac28-classification.png
-L07_M07_004,L07_M07,Classification va Schedules,illustrated,2,l07_m07_004.svg;ac28-classification.png
-L07_M07_005,L07_M07,Classification professional audit,illustrated,2,l07_m07_005.svg;ac28-classification.png
-L07_M08_001,L07_M08,Hotlink va Module tushunchasi,illustrated,2,l07_m08_001.svg;ac28-hotlink.png
-L07_M08_002,L07_M08,Module yaratish mantig'i,illustrated,2,l07_m08_002.svg;ac28-hotlink.png
-L07_M08_003,L07_M08,Hotlink orqali bog'lash,illustrated,2,l07_m08_003.svg;ac28-hotlink-place.png
-L07_M08_004,L07_M08,Murakkab loyiha strukturasini boshqarish,illustrated,2,l07_m08_004.svg;ac28-hotlink.png
-L07_M08_005,L07_M08,Hotlink va Modules professional audit,illustrated,2,l07_m08_005.svg;ac28-hotlink.png
-L07_M09_001,L07_M09,Professional Template tushunchasi,illustrated,2,l07_m09_001.svg;ac28-layers.png
-L07_M09_002,L07_M09,Template strukturasi,illustrated,2,l07_m09_002.svg;ac28-material.png
-L07_M09_003,L07_M09,"View, Graphic va Documentation standard",illustrated,2,l07_m09_003.svg;ac28-view.png
-L07_M09_004,L07_M09,BIM data standard,illustrated,2,l07_m09_004.svg;ac28-classification.png
-L07_M09_005,L07_M09,Professional Template audit,illustrated,2,l07_m09_005.svg;ac28-stories.png
+L05_M08_002,L05_M08,Fill Tool,illustrated,2,l05_m08_002.svg|ac28-fill.png
+L05_M08_003,L05_M08,Text Tool,illustrated,2,l05_m08_003.svg|ac28-text-style.png
+L05_M08_004,L05_M08,Label Tool,illustrated,2,l05_m08_004.svg|ac28-label.png
+L05_M08_005,L05_M08,2D grafik mini-loyiha,illustrated,2,l05_m08_005.svg|ac28-label.png
+L05_M09_001,L05_M09,Dimension Tool asoslari,illustrated,2,l05_m09_001.svg|ac28-dimension.png
+L05_M09_002,L05_M09,Tashqi o'lchamlar,illustrated,2,l05_m09_002.svg|ac28-dimension.png
+L05_M09_003,L05_M09,Ichki o'lchamlar,illustrated,2,l05_m09_003.svg|ac28-dimension.png
+L05_M09_004,L05_M09,Chain dimension va grafik tartib,illustrated,2,l05_m09_004.svg|ac28-dimension.png
+L05_M09_005,L05_M09,Dimension mini-loyiha,illustrated,2,l05_m09_005.svg|ac28-dimension.png
+L05_M10_001,L05_M10,Loyihani boshlash va reja,illustrated,2,l05_m10_001.svg|ac28-stories.png
+L05_M10_002,L05_M10,Devor va slab modeli,illustrated,2,l05_m10_002.svg|ac28-wall.png
+L05_M10_003,L05_M10,"Door, Window va mebel",illustrated,2,l05_m10_003.svg|ac28-door-window.png
+L05_M10_004,L05_M10,2D grafika va Dimension,illustrated,2,l05_m10_004.svg|ac28-dimension.png
+L05_M10_005,L05_M10,Birinchi loyiha auditi,illustrated,2,l05_m10_005.svg|ac28-zone.png
+L06_M01_001,L06_M01,Stories tushunchasi,illustrated,2,l06_m01_001.svg|ac28-stories.png
+L06_M01_002,L06_M01,Story Settings va balandliklar,illustrated,2,l06_m01_002.svg|ac28-stories.png
+L06_M01_003,L06_M01,Home Story va elementlar,illustrated,2,l06_m01_003.svg|ac28-home-story.png
+L06_M01_004,L06_M01,Ko'p qavatli model workflow,illustrated,2,l06_m01_004.svg|ac28-stories.png
+L06_M01_005,L06_M01,Stories professional audit,illustrated,2,l06_m01_005.svg|ac28-home-story.png
+L06_M02_001,L06_M02,Layer tushunchasi,illustrated,2,l06_m02_001.svg|ac28-layers.png
+L06_M02_002,L06_M02,Layer Settings,illustrated,2,l06_m02_002.svg|ac28-layers.png
+L06_M02_003,L06_M02,Layer Combination,illustrated,2,l06_m02_003.svg|ac28-layer-combination.png
+L06_M02_004,L06_M02,Professional layer struktura,illustrated,2,l06_m02_004.svg|ac28-layers.png
+L06_M02_005,L06_M02,Layers professional audit,illustrated,2,l06_m02_005.svg|ac28-layer-combination.png
+L06_M03_001,L06_M03,Building Material tushunchasi,illustrated,2,l06_m03_001.svg|ac28-material.png
+L06_M03_002,L06_M03,Building Material va Surface farqi,illustrated,2,l06_m03_002.svg|ac28-material.png
+L06_M03_003,L06_M03,Cut Fill va kesim ko'rinishi,illustrated,2,l06_m03_003.svg|ac28-material.png
+L06_M03_004,L06_M03,Intersection Priority va model tutashuvi,illustrated,2,l06_m03_004.svg|ac28-material.png
+L06_M03_005,L06_M03,Building Materials professional audit,illustrated,2,l06_m03_005.svg|ac28-material.png
+L06_M04_001,L06_M04,Composite Structure tushunchasi,illustrated,2,l06_m04_001.svg|ac28-composite.png
+L06_M04_002,L06_M04,Skin va Building Material,illustrated,2,l06_m04_002.svg|ac28-composite.png
+L06_M04_003,L06_M04,Qatlam qalinligi va tartibi,illustrated,2,l06_m04_003.svg|ac28-composite.png
+L06_M04_004,L06_M04,Composite elementlar bilan ishlash,illustrated,2,l06_m04_004.svg|ac28-composite.png
+L06_M04_005,L06_M04,Composite professional audit,illustrated,2,l06_m04_005.svg|ac28-composite.png
+L06_M05_001,L06_M05,Complex Profile tushunchasi,illustrated,2,l06_m05_001.svg|ac28-profile.png
+L06_M05_002,L06_M05,Profile Manager bilan ishlash,illustrated,2,l06_m05_002.svg|ac28-profile-edit.png
+L06_M05_003,L06_M05,"Wall, Beam va Column profillari",illustrated,2,l06_m05_003.svg|ac28-profile.png
+L06_M05_004,L06_M05,Material va geometriya mantig'i,illustrated,2,l06_m05_004.svg|ac28-profile-edit.png
+L06_M05_005,L06_M05,Complex Profile professional audit,illustrated,2,l06_m05_005.svg|ac28-profile.png
+L06_M06_001,L06_M06,Roof Tool asoslari,illustrated,2,l06_m06_001.svg|ac28-roof.png
+L06_M06_002,L06_M06,Single-plane va Multi-plane Roof,illustrated,2,l06_m06_002.svg|ac28-roof.png
+L06_M06_003,L06_M06,"Pitch, overhang va tom konturi",illustrated,2,l06_m06_003.svg|ac28-roof-pitch.png
+L06_M06_004,L06_M06,Murakkab tom tutashuvlari,illustrated,2,l06_m06_004.svg|ac28-roof.png
+L06_M06_005,L06_M06,Roof professional audit,illustrated,2,l06_m06_005.svg|ac28-roof.png
+L06_M07_001,L06_M07,Stair Tool va zinapoya geometriyasi,illustrated,2,l06_m07_001.svg|ac28-stair.png
+L06_M07_002,L06_M07,"Tread, riser, flight va landing",illustrated,2,l06_m07_002.svg|ac28-stair.png
+L06_M07_003,L06_M07,Qavatlararo bog'lanish,illustrated,2,l06_m07_003.svg|ac28-stair.png
+L06_M07_004,L06_M07,Murakkab Stair geometriyasi,illustrated,2,l06_m07_004.svg|ac28-stair-turn.png
+L06_M07_005,L06_M07,Stair professional audit,illustrated,2,l06_m07_005.svg|ac28-stair.png
+L06_M08_001,L06_M08,Railing Tool asoslari,illustrated,2,l06_m08_001.svg|ac28-railing.png
+L06_M08_002,L06_M08,"Posts, Rails va Handrails",illustrated,2,l06_m08_002.svg|ac28-railing-parts.png
+L06_M08_003,L06_M08,Baluster va Panel tizimi,illustrated,2,l06_m08_003.svg|ac28-railing-parts.png
+L06_M08_004,L06_M08,Stair va balkon bilan bog'lash,illustrated,2,l06_m08_004.svg|ac28-railing.png
+L06_M08_005,L06_M08,Railing professional audit,illustrated,2,l06_m08_005.svg|ac28-railing.png
+L06_M09_001,L06_M09,Mesh Tool va relyef tushunchasi,illustrated,2,l06_m09_001.svg|ac28-mesh.png
+L06_M09_002,L06_M09,Mesh konturi va balandlik nuqtalari,illustrated,2,l06_m09_002.svg|ac28-mesh-points.png
+L06_M09_003,L06_M09,Nishabli uchastka modeli,illustrated,2,l06_m09_003.svg|ac28-mesh-points.png
+L06_M09_004,L06_M09,Uy va relyef aloqasi,illustrated,2,l06_m09_004.svg|ac28-mesh.png
+L06_M09_005,L06_M09,Mesh professional audit,illustrated,2,l06_m09_005.svg|ac28-mesh-points.png
+L06_M10_001,L06_M10,Zone tushunchasi,illustrated,2,l06_m10_001.svg|ac28-zone.png
+L06_M10_002,L06_M10,Zone chegarasi va maydon,illustrated,2,l06_m10_002.svg|ac28-zone.png
+L06_M10_003,L06_M10,Zone Stamp va xona ma'lumotlari,illustrated,2,l06_m10_003.svg|ac28-zone-name.png
+L06_M10_004,L06_M10,Funksional zonalar va loyiha tahlili,illustrated,2,l06_m10_004.svg|ac28-zone.png
+L06_M10_005,L06_M10,Zones professional audit,illustrated,2,l06_m10_005.svg|ac28-zone-area.png
+L07_M01_001,L07_M01,Favorites tushunchasi,illustrated,2,l07_m01_001.svg|ac28-favorite.png
+L07_M01_002,L07_M01,Favorite yaratish va qo'llash,illustrated,2,l07_m01_002.svg|ac28-favorite-new.png
+L07_M01_003,L07_M01,Professional Favorite kutubxonasi,illustrated,2,l07_m01_003.svg|ac28-favorite.png
+L07_M01_004,L07_M01,Favorites va standartlashtirish,illustrated,2,l07_m01_004.svg|ac28-favorite-new.png
+L07_M01_005,L07_M01,Favorites professional audit,illustrated,2,l07_m01_005.svg|ac28-favorite.png
+L07_M02_001,L07_M02,Graphic Overrides tushunchasi,illustrated,2,l07_m02_001.svg|ac28-override.png
+L07_M02_002,L07_M02,Graphic Override Rules,illustrated,2,l07_m02_002.svg|ac28-override.png
+L07_M02_003,L07_M02,Graphic Override Combination,illustrated,2,l07_m02_003.svg|ac28-override.png
+L07_M02_004,L07_M02,Modelni tahliliy ko'rinishlarda ko'rsatish,illustrated,2,l07_m02_004.svg|ac28-override.png
+L07_M02_005,L07_M02,Graphic Overrides professional audit,illustrated,2,l07_m02_005.svg|ac28-override.png
+L07_M03_001,L07_M03,Model View Options tushunchasi,illustrated,2,l07_m03_001.svg|ac28-mvo.png
+L07_M03_002,L07_M03,Model ko'rinishini boshqarish,illustrated,2,l07_m03_002.svg|ac28-mvo.png
+L07_M03_003,L07_M03,MVO Combination,illustrated,2,l07_m03_003.svg|ac28-mvo.png
+L07_M03_004,L07_M03,View va MVO workflow,illustrated,2,l07_m03_004.svg|ac28-mvo.png
+L07_M03_005,L07_M03,Model View Options professional audit,illustrated,2,l07_m03_005.svg|ac28-mvo.png
+L07_M04_001,L07_M04,Renovation tushunchasi,illustrated,2,l07_m04_001.svg|ac28-renovation.png
+L07_M04_002,L07_M04,Renovation Status,illustrated,2,l07_m04_002.svg|ac28-renovation.png
+L07_M04_003,L07_M04,Renovation Filters,illustrated,2,l07_m04_003.svg|ac28-renovation.png
+L07_M04_004,L07_M04,Rekonstruksiya modeli workflow,illustrated,2,l07_m04_004.svg|ac28-renovation.png
+L07_M04_005,L07_M04,Renovation professional audit,illustrated,2,l07_m04_005.svg|ac28-renovation.png
+L07_M05_001,L07_M05,Schedules tushunchasi,illustrated,2,l07_m05_001.svg|ac28-schedule.png
+L07_M05_002,L07_M05,Criteria va Fields,illustrated,2,l07_m05_002.svg|ac28-criteria.png
+L07_M05_003,L07_M05,"Sorting, Grouping va hisoblash",illustrated,2,l07_m05_003.svg|ac28-fields.png
+L07_M05_004,L07_M05,"Door, Window va Zone Schedules",illustrated,2,l07_m05_004.svg|ac28-schedule.png
+L07_M05_005,L07_M05,Schedules professional audit,illustrated,2,l07_m05_005.svg|ac28-criteria.png
+L07_M06_001,L07_M06,BIM Properties tushunchasi,illustrated,2,l07_m06_001.svg|ac28-property.png
+L07_M06_002,L07_M06,Property yaratish va tuzilishi,illustrated,2,l07_m06_002.svg|ac28-property.png
+L07_M06_003,L07_M06,Element ma'lumotlarini standartlashtirish,illustrated,2,l07_m06_003.svg|ac28-property.png
+L07_M06_004,L07_M06,Properties va Schedules,illustrated,2,l07_m06_004.svg|ac28-fields.png
+L07_M06_005,L07_M06,Properties professional audit,illustrated,2,l07_m06_005.svg|ac28-property.png
+L07_M07_001,L07_M07,BIM Classification tushunchasi,illustrated,2,l07_m07_001.svg|ac28-classification.png
+L07_M07_002,L07_M07,Classification va element turi,illustrated,2,l07_m07_002.svg|ac28-classification.png
+L07_M07_003,L07_M07,Classification va Properties,illustrated,2,l07_m07_003.svg|ac28-classification.png
+L07_M07_004,L07_M07,Classification va Schedules,illustrated,2,l07_m07_004.svg|ac28-classification.png
+L07_M07_005,L07_M07,Classification professional audit,illustrated,2,l07_m07_005.svg|ac28-classification.png
+L07_M08_001,L07_M08,Hotlink va Module tushunchasi,illustrated,2,l07_m08_001.svg|ac28-hotlink.png
+L07_M08_002,L07_M08,Module yaratish mantig'i,illustrated,2,l07_m08_002.svg|ac28-hotlink.png
+L07_M08_003,L07_M08,Hotlink orqali bog'lash,illustrated,2,l07_m08_003.svg|ac28-hotlink-place.png
+L07_M08_004,L07_M08,Murakkab loyiha strukturasini boshqarish,illustrated,2,l07_m08_004.svg|ac28-hotlink.png
+L07_M08_005,L07_M08,Hotlink va Modules professional audit,illustrated,2,l07_m08_005.svg|ac28-hotlink.png
+L07_M09_001,L07_M09,Professional Template tushunchasi,illustrated,2,l07_m09_001.svg|ac28-layers.png
+L07_M09_002,L07_M09,Template strukturasi,illustrated,2,l07_m09_002.svg|ac28-material.png
+L07_M09_003,L07_M09,"View, Graphic va Documentation standard",illustrated,2,l07_m09_003.svg|ac28-view.png
+L07_M09_004,L07_M09,BIM data standard,illustrated,2,l07_m09_004.svg|ac28-classification.png
+L07_M09_005,L07_M09,Professional Template audit,illustrated,2,l07_m09_005.svg|ac28-stories.png
 L08_M01_001,L08_M01,Fundament tushunchasi,illustrated,1,realistic-l08_m01_001.jpg
 L08_M01_002,L08_M01,Fundamentning asosiy turlari,illustrated,1,realistic-l08_m01_002.jpg
 L08_M01_003,L08_M01,Grunt va fundament munosabati,illustrated,1,realistic-l08_m01_003.jpg
@@ -339,11 +339,11 @@ L08_M03_002,L08_M03,"Ustun, rigel va yuk yo'li",illustrated,1,realistic-l08_m03_
 L08_M03_003,L08_M03,"Grid, o'qlar va span mantig'i",illustrated,1,realistic-l08_m03_003.jpg
 L08_M03_004,L08_M03,Arxitektura va karkas koordinatsiyasi,illustrated,1,realistic-l08_m03_004.jpg
 L08_M03_005,L08_M03,Karkas professional audit,illustrated,1,realistic-l08_m03_005.jpg
-L08_M04_001,L08_M04,Plita va qavatlararo yopma tushunchasi,illustrated,1,l08_m04_001.svg
-L08_M04_002,L08_M04,Plita tayanch sxemasi,illustrated,1,l08_m04_002.svg
-L08_M04_003,L08_M04,Ochilishlar va zinapoya bo'shligi,illustrated,1,l08_m04_003.svg
-L08_M04_004,L08_M04,"Balkon, konsol va chekka zonalar",illustrated,1,l08_m04_004.svg
-L08_M04_005,L08_M04,Plitalar professional audit,illustrated,1,l08_m04_005.svg
+L08_M04_001,L08_M04,Plita va qavatlararo yopma tushunchasi,illustrated,1,realistic-l08_m04_001.jpg
+L08_M04_002,L08_M04,Plita tayanch sxemasi,illustrated,1,realistic-l08_m04_002.jpg
+L08_M04_003,L08_M04,Ochilishlar va zinapoya bo'shligi,illustrated,1,realistic-l08_m04_003.jpg
+L08_M04_004,L08_M04,"Balkon, konsol va chekka zonalar",illustrated,1,realistic-l08_m04_004.jpg
+L08_M04_005,L08_M04,Plitalar professional audit,illustrated,1,realistic-l08_m04_005.jpg
 L08_M05_001,L08_M05,Tomning konstruktiv vazifasi,illustrated,1,realistic-l08_m05_001.jpg
 L08_M05_002,L08_M05,Tom yuk yo'li va tayanchlar,illustrated,1,realistic-l08_m05_002.jpg
 L08_M05_003,L08_M05,"Nishab, ridge va eave mantig'i",illustrated,1,realistic-l08_m05_003.jpg
@@ -434,11 +434,11 @@ L10_M05_002,L10_M05,Foydali va yo'qotilgan maydon,illustrated,1,l10_m05_002.svg
 L10_M05_003,L10_M05,Xonalararo konfliktlarni yechish,illustrated,1,l10_m05_003.svg
 L10_M05_004,L10_M05,Konstruktiv va MEP mantiq,illustrated,1,l10_m05_004.svg
 L10_M05_005,L10_M05,Final plan audit,illustrated,1,l10_m05_005.svg
-L10_M06_001,L10_M06,Modelni boshlash strategiyasi,illustrated,2,l10_m06_001.svg;ac28-stories.png
-L10_M06_002,L10_M06,"Stories, grid va asosiy elementlar",illustrated,2,l10_m06_002.svg;ac28-stories.png
-L10_M06_003,L10_M06,"Wall, slab, column va openings",illustrated,2,l10_m06_003.svg;ac28-wall.png
-L10_M06_004,L10_M06,Model koordinatsiyasi,illustrated,2,l10_m06_004.svg;ac28-column.png
-L10_M06_005,L10_M06,Archicad modeli professional audit,illustrated,2,l10_m06_005.svg;ac28-view.png
+L10_M06_001,L10_M06,Modelni boshlash strategiyasi,illustrated,2,l10_m06_001.svg|ac28-stories.png
+L10_M06_002,L10_M06,"Stories, grid va asosiy elementlar",illustrated,2,l10_m06_002.svg|ac28-stories.png
+L10_M06_003,L10_M06,"Wall, slab, column va openings",illustrated,2,l10_m06_003.svg|ac28-wall.png
+L10_M06_004,L10_M06,Model koordinatsiyasi,illustrated,2,l10_m06_004.svg|ac28-column.png
+L10_M06_005,L10_M06,Archicad modeli professional audit,illustrated,2,l10_m06_005.svg|ac28-view.png
 L10_M07_001,L10_M07,Fasad konsepsiyasi,illustrated,1,l10_m07_001.svg
 L10_M07_002,L10_M07,Proporsiya va ritm,illustrated,1,l10_m07_002.svg
 L10_M07_003,L10_M07,Ochilishlar va kirish aksenti,illustrated,1,l10_m07_003.svg
@@ -499,66 +499,66 @@ L11_M07_002,L11_M07,Qavatlar orasidagi vizual aloqa,illustrated,1,l11_m07_002.sv
 L11_M07_003,L11_M07,"Balkon, void va stair aksenti",illustrated,1,l11_m07_003.svg
 L11_M07_004,L11_M07,Material va hajm PRO,illustrated,1,l11_m07_004.svg
 L11_M07_005,L11_M07,2 qavatli fasad audit,illustrated,1,l11_m07_005.svg
-L11_M08_001,L11_M08,Ikki qavatli BIM struktura,illustrated,2,l11_m08_001.svg;ac28-layers.png
-L11_M08_002,L11_M08,Qavatlar modeli,illustrated,2,l11_m08_002.svg;ac28-stories.png
-L11_M08_003,L11_M08,"Stair, void va vertical systems",illustrated,2,l11_m08_003.svg;ac28-stair.png
-L11_M08_004,L11_M08,"Roof, facade va sections",illustrated,2,l11_m08_004.svg;ac28-roof.png
-L11_M08_005,L11_M08,To'liq BIM model audit,illustrated,2,l11_m08_005.svg;ac28-view.png
+L11_M08_001,L11_M08,Ikki qavatli BIM struktura,illustrated,2,l11_m08_001.svg|ac28-layers.png
+L11_M08_002,L11_M08,Qavatlar modeli,illustrated,2,l11_m08_002.svg|ac28-stories.png
+L11_M08_003,L11_M08,"Stair, void va vertical systems",illustrated,2,l11_m08_003.svg|ac28-stair.png
+L11_M08_004,L11_M08,"Roof, facade va sections",illustrated,2,l11_m08_004.svg|ac28-roof.png
+L11_M08_005,L11_M08,To'liq BIM model audit,illustrated,2,l11_m08_005.svg|ac28-view.png
 L11_M09_001,L11_M09,Ishchi loyiha tushunchasi,illustrated,1,l11_m09_001.svg
 L11_M09_002,L11_M09,Plan va o'lchamlar,illustrated,1,l11_m09_002.svg
 L11_M09_003,L11_M09,"Fasad, kesim va detallar",illustrated,1,l11_m09_003.svg
 L11_M09_004,L11_M09,Koordinatsiya va revision,illustrated,1,l11_m09_004.svg
 L11_M09_005,L11_M09,LEVEL 11 final ishchi loyiha auditi,illustrated,1,l11_m09_005.svg
-L12_M01_001,L12_M01,BIM nima?,illustrated,2,l12_m01_001.svg;ac28-schedule.png
-L12_M01_002,L12_M01,Model va ma'lumot,illustrated,2,l12_m01_002.svg;ac28-property.png
-L12_M01_003,L12_M01,BIM koordinatsiyasi,illustrated,2,l12_m01_003.svg;ac28-door-position.png
-L12_M01_004,L12_M01,BIM workflow,illustrated,2,l12_m01_004.svg;ac28-view.png
-L12_M01_005,L12_M01,BIM professional audit,illustrated,2,l12_m01_005.svg;ac28-schedule.png
-L12_M02_001,L12_M02,Element ma'lumoti tushunchasi,illustrated,2,l12_m02_001.svg;ac28-property.png
-L12_M02_002,L12_M02,"ID, nom va klassifikatsiya",illustrated,2,l12_m02_002.svg;ac28-classification.png
-L12_M02_003,L12_M02,Properties va parametrlar,illustrated,2,l12_m02_003.svg;ac28-property.png
-L12_M02_004,L12_M02,Data consistency,illustrated,2,l12_m02_004.svg;ac28-schedule.png
-L12_M02_005,L12_M02,Element Information audit,illustrated,2,l12_m02_005.svg;ac28-classification.png
-L12_M03_001,L12_M03,Schedule va spetsifikatsiya,illustrated,2,l12_m03_001.svg;ac28-schedule.png
-L12_M03_002,L12_M03,Criteria va fieldlar,illustrated,2,l12_m03_002.svg;ac28-criteria.png
-L12_M03_003,L12_M03,Door va window schedule,illustrated,2,l12_m03_003.svg;ac28-fields.png
-L12_M03_004,L12_M03,Quantity va data audit,illustrated,2,l12_m03_004.svg;ac28-fields.png
-L12_M03_005,L12_M03,Spetsifikatsiya professional audit,illustrated,2,l12_m03_005.svg;ac28-schedule.png
-L12_M04_001,L12_M04,View tushunchasi,illustrated,2,l12_m04_001.svg;ac28-view.png
-L12_M04_002,L12_M04,View settings mantig'i,illustrated,2,l12_m04_002.svg;ac28-view.png
-L12_M04_003,L12_M04,View naming va folders,illustrated,2,l12_m04_003.svg;ac28-view.png
-L12_M04_004,L12_M04,Documentation views,illustrated,2,l12_m04_004.svg;ac28-view.png
-L12_M04_005,L12_M04,View Map PRO audit,illustrated,2,l12_m04_005.svg;ac28-view.png
-L12_M05_001,L12_M05,Layout Book tushunchasi,illustrated,2,l12_m05_001.svg;ac28-layout.png
-L12_M05_002,L12_M05,Master Layout mantig'i,illustrated,2,l12_m05_002.svg;ac28-master.png
-L12_M05_003,L12_M05,Drawing placement,illustrated,2,l12_m05_003.svg;ac28-layout.png
-L12_M05_004,L12_M05,Sheet hierarchy va readability,illustrated,2,l12_m05_004.svg;ac28-layout.png
-L12_M05_005,L12_M05,Layout Book professional audit,illustrated,2,l12_m05_005.svg;ac28-layout.png
-L12_M06_001,L12_M06,Shtampning vazifasi,illustrated,2,l12_m06_001.svg;ac28-master.png
-L12_M06_002,L12_M06,Sheet identity,illustrated,2,l12_m06_002.svg;ac28-master.png
-L12_M06_003,L12_M06,Grafik standartlar,illustrated,2,l12_m06_003.svg;ac28-master.png
-L12_M06_004,L12_M06,Template standard,illustrated,2,l12_m06_004.svg;ac28-master.png
-L12_M06_005,L12_M06,Shtamp va standart audit,illustrated,2,l12_m06_005.svg;ac28-master.png
-L12_M07_001,L12_M07,Publisher tushunchasi,illustrated,2,l12_m07_001.svg;ac28-publisher.png
-L12_M07_002,L12_M07,Publisher Set,illustrated,2,l12_m07_002.svg;ac28-publisher.png
-L12_M07_003,L12_M07,Output naming,illustrated,2,l12_m07_003.svg;ac28-publisher.png
-L12_M07_004,L12_M07,PDF va boshqa deliverable nazorati,illustrated,2,l12_m07_004.svg;ac28-publish-method.png
-L12_M07_005,L12_M07,Publisher professional audit,illustrated,2,l12_m07_005.svg;ac28-publish-method.png
-L12_M08_001,L12_M08,DWG exchange tushunchasi,illustrated,2,l12_m08_001.svg;ac28-dwg.png
-L12_M08_002,L12_M08,Layer va mapping mantig'i,illustrated,2,l12_m08_002.svg;ac28-dwg.png
-L12_M08_003,L12_M08,"Scale, units va origin",illustrated,2,l12_m08_003.svg;ac28-dwg.png
-L12_M08_004,L12_M08,DWG QA va round-trip,illustrated,2,l12_m08_004.svg;ac28-dwg.png
-L12_M08_005,L12_M08,DWG professional audit,illustrated,2,l12_m08_005.svg;ac28-dwg.png
-L12_M09_001,L12_M09,IFC tushunchasi,illustrated,2,l12_m09_001.svg;ac28-ifc.png
-L12_M09_002,L12_M09,Classification va IFC data,illustrated,2,l12_m09_002.svg;ac28-ifc.png
-L12_M09_003,L12_M09,Model exchange scope,illustrated,2,l12_m09_003.svg;ac28-ifc.png
-L12_M09_004,L12_M09,IFC QA,illustrated,2,l12_m09_004.svg;ac28-ifc.png
-L12_M09_005,L12_M09,IFC professional audit,illustrated,2,l12_m09_005.svg;ac28-ifc.png
-L12_M10_001,L12_M10,Final BIM deliverable strategiyasi,illustrated,2,l12_m10_001.svg;ac28-publisher.png
-L12_M10_002,L12_M10,Views va schedules finalizatsiyasi,illustrated,2,l12_m10_002.svg;ac28-schedule.png
-L12_M10_003,L12_M10,Layout Book finalizatsiyasi,illustrated,2,l12_m10_003.svg;ac28-layout.png
-L12_M10_004,L12_M10,Publisher va exchange paketi,illustrated,2,l12_m10_004.svg;ac28-publish-method.png
-L12_M10_005,L12_M10,LEVEL 12 final BIM audit,illustrated,2,l12_m10_005.svg;ac28-publisher.png
+L12_M01_001,L12_M01,BIM nima?,illustrated,2,l12_m01_001.svg|ac28-schedule.png
+L12_M01_002,L12_M01,Model va ma'lumot,illustrated,2,l12_m01_002.svg|ac28-property.png
+L12_M01_003,L12_M01,BIM koordinatsiyasi,illustrated,2,l12_m01_003.svg|ac28-door-position.png
+L12_M01_004,L12_M01,BIM workflow,illustrated,2,l12_m01_004.svg|ac28-view.png
+L12_M01_005,L12_M01,BIM professional audit,illustrated,2,l12_m01_005.svg|ac28-schedule.png
+L12_M02_001,L12_M02,Element ma'lumoti tushunchasi,illustrated,2,l12_m02_001.svg|ac28-property.png
+L12_M02_002,L12_M02,"ID, nom va klassifikatsiya",illustrated,2,l12_m02_002.svg|ac28-classification.png
+L12_M02_003,L12_M02,Properties va parametrlar,illustrated,2,l12_m02_003.svg|ac28-property.png
+L12_M02_004,L12_M02,Data consistency,illustrated,2,l12_m02_004.svg|ac28-schedule.png
+L12_M02_005,L12_M02,Element Information audit,illustrated,2,l12_m02_005.svg|ac28-classification.png
+L12_M03_001,L12_M03,Schedule va spetsifikatsiya,illustrated,2,l12_m03_001.svg|ac28-schedule.png
+L12_M03_002,L12_M03,Criteria va fieldlar,illustrated,2,l12_m03_002.svg|ac28-criteria.png
+L12_M03_003,L12_M03,Door va window schedule,illustrated,2,l12_m03_003.svg|ac28-fields.png
+L12_M03_004,L12_M03,Quantity va data audit,illustrated,2,l12_m03_004.svg|ac28-fields.png
+L12_M03_005,L12_M03,Spetsifikatsiya professional audit,illustrated,2,l12_m03_005.svg|ac28-schedule.png
+L12_M04_001,L12_M04,View tushunchasi,illustrated,2,l12_m04_001.svg|ac28-view.png
+L12_M04_002,L12_M04,View settings mantig'i,illustrated,2,l12_m04_002.svg|ac28-view.png
+L12_M04_003,L12_M04,View naming va folders,illustrated,2,l12_m04_003.svg|ac28-view.png
+L12_M04_004,L12_M04,Documentation views,illustrated,2,l12_m04_004.svg|ac28-view.png
+L12_M04_005,L12_M04,View Map PRO audit,illustrated,2,l12_m04_005.svg|ac28-view.png
+L12_M05_001,L12_M05,Layout Book tushunchasi,illustrated,2,l12_m05_001.svg|ac28-layout.png
+L12_M05_002,L12_M05,Master Layout mantig'i,illustrated,2,l12_m05_002.svg|ac28-master.png
+L12_M05_003,L12_M05,Drawing placement,illustrated,2,l12_m05_003.svg|ac28-layout.png
+L12_M05_004,L12_M05,Sheet hierarchy va readability,illustrated,2,l12_m05_004.svg|ac28-layout.png
+L12_M05_005,L12_M05,Layout Book professional audit,illustrated,2,l12_m05_005.svg|ac28-layout.png
+L12_M06_001,L12_M06,Shtampning vazifasi,illustrated,2,l12_m06_001.svg|ac28-master.png
+L12_M06_002,L12_M06,Sheet identity,illustrated,2,l12_m06_002.svg|ac28-master.png
+L12_M06_003,L12_M06,Grafik standartlar,illustrated,2,l12_m06_003.svg|ac28-master.png
+L12_M06_004,L12_M06,Template standard,illustrated,2,l12_m06_004.svg|ac28-master.png
+L12_M06_005,L12_M06,Shtamp va standart audit,illustrated,2,l12_m06_005.svg|ac28-master.png
+L12_M07_001,L12_M07,Publisher tushunchasi,illustrated,2,l12_m07_001.svg|ac28-publisher.png
+L12_M07_002,L12_M07,Publisher Set,illustrated,2,l12_m07_002.svg|ac28-publisher.png
+L12_M07_003,L12_M07,Output naming,illustrated,2,l12_m07_003.svg|ac28-publisher.png
+L12_M07_004,L12_M07,PDF va boshqa deliverable nazorati,illustrated,2,l12_m07_004.svg|ac28-publish-method.png
+L12_M07_005,L12_M07,Publisher professional audit,illustrated,2,l12_m07_005.svg|ac28-publish-method.png
+L12_M08_001,L12_M08,DWG exchange tushunchasi,illustrated,2,l12_m08_001.svg|ac28-dwg.png
+L12_M08_002,L12_M08,Layer va mapping mantig'i,illustrated,2,l12_m08_002.svg|ac28-dwg.png
+L12_M08_003,L12_M08,"Scale, units va origin",illustrated,2,l12_m08_003.svg|ac28-dwg.png
+L12_M08_004,L12_M08,DWG QA va round-trip,illustrated,2,l12_m08_004.svg|ac28-dwg.png
+L12_M08_005,L12_M08,DWG professional audit,illustrated,2,l12_m08_005.svg|ac28-dwg.png
+L12_M09_001,L12_M09,IFC tushunchasi,illustrated,2,l12_m09_001.svg|ac28-ifc.png
+L12_M09_002,L12_M09,Classification va IFC data,illustrated,2,l12_m09_002.svg|ac28-ifc.png
+L12_M09_003,L12_M09,Model exchange scope,illustrated,2,l12_m09_003.svg|ac28-ifc.png
+L12_M09_004,L12_M09,IFC QA,illustrated,2,l12_m09_004.svg|ac28-ifc.png
+L12_M09_005,L12_M09,IFC professional audit,illustrated,2,l12_m09_005.svg|ac28-ifc.png
+L12_M10_001,L12_M10,Final BIM deliverable strategiyasi,illustrated,2,l12_m10_001.svg|ac28-publisher.png
+L12_M10_002,L12_M10,Views va schedules finalizatsiyasi,illustrated,2,l12_m10_002.svg|ac28-schedule.png
+L12_M10_003,L12_M10,Layout Book finalizatsiyasi,illustrated,2,l12_m10_003.svg|ac28-layout.png
+L12_M10_004,L12_M10,Publisher va exchange paketi,illustrated,2,l12_m10_004.svg|ac28-publish-method.png
+L12_M10_005,L12_M10,LEVEL 12 final BIM audit,illustrated,2,l12_m10_005.svg|ac28-publisher.png
 L13_M01_001,L13_M01,Birinchi suhbatning maqsadi,illustrated,1,l13_m01_001.svg
 L13_M01_002,L13_M01,To'g'ri savol berish,illustrated,1,l13_m01_002.svg
 L13_M01_003,L13_M01,Tinglash va qayd qilish,illustrated,1,l13_m01_003.svg
@@ -644,11 +644,11 @@ L15_M01_002,L15_M01,"Site, planning va ergonomika nazorati",illustrated,1,l15_m0
 L15_M01_003,L15_M01,Konstruktsiya va normativ fikrlash,illustrated,1,l15_m01_003.svg
 L15_M01_004,L15_M01,BIM va hujjatlashtirish nazariyasi,illustrated,1,l15_m01_004.svg
 L15_M01_005,L15_M01,PRO nazariya mastery audit,illustrated,1,l15_m01_005.svg
-L15_M02_001,L15_M02,Model setup challenge,illustrated,2,l15_m02_001.svg;ac28-stories.png
-L15_M02_002,L15_M02,Modeling challenge,illustrated,2,l15_m02_002.svg;ac28-wall.png
-L15_M02_003,L15_M02,Advanced BIM challenge,illustrated,2,l15_m02_003.svg;ac28-property.png
-L15_M02_004,L15_M02,Documentation challenge,illustrated,2,l15_m02_004.svg;ac28-publisher.png
-L15_M02_005,L15_M02,Archicad PRO final audit,illustrated,2,l15_m02_005.svg;ac28-schedule.png
+L15_M02_001,L15_M02,Model setup challenge,illustrated,2,l15_m02_001.svg|ac28-stories.png
+L15_M02_002,L15_M02,Modeling challenge,illustrated,2,l15_m02_002.svg|ac28-wall.png
+L15_M02_003,L15_M02,Advanced BIM challenge,illustrated,2,l15_m02_003.svg|ac28-property.png
+L15_M02_004,L15_M02,Documentation challenge,illustrated,2,l15_m02_004.svg|ac28-publisher.png
+L15_M02_005,L15_M02,Archicad PRO final audit,illustrated,2,l15_m02_005.svg|ac28-schedule.png
 L15_M03_001,L15_M03,Plan xatolarini topish,illustrated,1,l15_m03_001.svg
 L15_M03_002,L15_M03,Fasad va kesim xatolari,illustrated,1,l15_m03_002.svg
 L15_M03_003,L15_M03,Konstruktiv va MEP konfliktlari,illustrated,1,l15_m03_003.svg

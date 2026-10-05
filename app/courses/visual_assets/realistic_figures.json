@@ -457,5 +457,311 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L08_M04_001",
+    "asset": "realistic-l08_m04_001.jpg",
+    "title": "Plita va qavatlararo yopma tushunchasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Pol pardozini toping. Yuqoridagi xona tagidagi yog‘och qoplama yuriladigan yuzani hosil qiladi; u beton plita bilan bir xil element emas.",
+      "2. Plitani ajrating. Yog‘och ostidagi qalin kulrang qism qavatlararo yopmaning konstruktiv qismi. O‘ngdagi yaqin tasvirda qatlamlar bir-biriga tegib turgani ko‘rinadi.",
+      "3. Shift pardozini ajrating. Plita ostidagi yupqa oq qatlam pastki xonaning shift yuzasidir. Pardozni almashtirish va konstruktiv yopmani o‘zgartirish boshqa-boshqa qarorlar.",
+      "Darsdagi bajarish: Yopmani pol pardozidan ajrating, tayanchlarini belgilang → konstruktiv sxema."
+    ],
+    "exercise": "Plitani qavatlararo yopma sifatida kesimda belgilang.",
+    "solution": "Plita vazifasi sathlarni ajratish va yukni tayanchlarga uzatish bilan bog‘liq.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M04_002",
+    "asset": "realistic-l08_m04_002.jpg",
+    "title": "Plita tayanch sxemasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Tayanchlarni toping. Plita yon devorlar va olddagi rigel ustiga keladi; rigel uchlari tik ustunlar bilan bog‘langan.",
+      "2. Yuk yo‘lini kuzating. To‘q sariq strelkalar plitadan tayanchlarga, rigeldan esa ustunlarga davom etadi. Yashil chiziqlar tutashish joylarini ajratish uchun qo‘yilgan.",
+      "3. Kontur bilan tayanchni solishtiring. Orqadagi ochilish plitaning uzluksiz yuzasini o‘zgartiradi. Haqiqiy tayanch sxemasi faqat tashqi geometriyadan emas, konstruktiv hujjatdan aniqlanadi.",
+      "Darsdagi bajarish: Tayanch devor/rigellarni yopma konturi bilan solishtiring → uzatiladigan yuk yo‘li."
+    ],
+    "exercise": "Tayanch chiziqlari va ochilishni sxemada ko‘rsating.",
+    "solution": "Tayanch sxemasi geometriyadan tashqari konstruktiv ma’lumotni talab qiladi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M04_003",
+    "asset": "realistic-l08_m04_003.jpg",
+    "title": "Ochilishlar va zinapoya bo'shligi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Zinapoya va ochilishni bog‘lang. Chapdagi kesilgan ko‘rinishda zinapoya pastki qavatdan yuqori maydonchaga chiqadi; plitada unga joy ochilgan.",
+      "2. Yuqoridan tekshiring. O‘ngdagi tasvirda uzun to‘rtburchak ochilish va uning ichidagi zinapoya birga ko‘rinadi. Yashil chekka ochilish konturini ajratadi.",
+      "3. Ikki ko‘rinishda bir elementni tekshiring. Ochilishning o‘qlarga nisbatan joyi, zinapoya yo‘li va tayanchlarga ta’sirini plan hamda kesimda solishtiring. Bosh ustidagi haqiqiy masofa va ochilish kattaligi renderdan olinmaydi.",
+      "Darsdagi bajarish: Zinapoya teshigini plan va kesimda chizing → qaysi tayanch yoki elementga ta’sir bor."
+    ],
+    "exercise": "Zinapoya teshigining chetlarini o‘qlar bilan bog‘lang.",
+    "solution": "Ochilishning joyi va kattaligi konstruktiv koordinatsiyada aniq bo‘lishi kerak.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M04_004",
+    "asset": "realistic-l08_m04_004.jpg",
+    "title": "Balkon, konsol va chekka zonalar — rasmga qarab tushuning",
+    "explanation": [
+      "1. Konsolning ildizini toping. To‘q sariq belgi plita binodan tashqariga chiqishni boshlaydigan tutashish zonasini ajratadi. Balkon ostida alohida ustun ko‘rsatilmagan.",
+      "2. Erkin chetni ajrating. Yashil chiziq tashqi chetni ko‘rsatadi. Konsol va to‘siqning yuklari konstruktiv hisobda alohida ko‘riladi; rasmdagi qalinlik tayyor yechim emas.",
+      "3. Tashqi muhitni hisobga oling. Ho‘l tashqi qoplama va chetdagi suv chiqishi namlik masalasini eslatadi. Haqiqiy loyiha uchun suv himoyasi, nishab va chiqarish detali kelishiladi; rasmdagi chiqarish ko‘rinishi montaj ko‘rsatmasi emas.",
+      "Darsdagi bajarish: Balkon cheti va konsolni ajrating → hisob talab qiladigan alohida zona."
+    ],
+    "exercise": "Balkon cheti va konsolni asosiy plitadan ajratib ko‘rsating.",
+    "solution": "Konsol va chekka zona alohida konstruktiv hamda namlik masalalarini tug‘diradi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L08_M04_005",
+    "asset": "realistic-l08_m04_005.jpg",
+    "title": "Plitalar professional audit — rasmga qarab tushuning",
+    "explanation": [
+      "1. Uch savolni ajrating. To‘q sariq joylar ochilish cheti, tayanch bilan tutashish va balkon ildizini ko‘rsatadi.",
+      "2. Modelni hujjat bilan bog‘lang. Yonidagi yuqoridan va kesilgan ko‘rinishlar bir nechta manbani birga tekshirishni tushuntiradi. Haqiqiy planda ochilish joyi, kesimda esa tayanch va sathlar tekshiriladi.",
+      "3. Tasdiq holatini yozing. Qaysi ochilish, tayanch yoki chekka zona bo‘yicha javob borligini, qaysi biri ochiq qolganini konstruktorga yuboring. Model va chiroyli renderning borligi ko‘tarish qobiliyati tasdiqlanganini anglatmaydi.",
+      "Darsdagi bajarish: Teshik, tayanch va chekka zonalar ro‘yxatini konstruktorga yuboring → qarorlar kelishiladi."
+    ],
+    "exercise": "Ochilish, tayanch va balkon bo‘yicha tasdiq holatini audit qiling.",
+    "solution": "Plita modeli uning armaturasi yoki ko‘tarish qobiliyati tasdiqlanganini anglatmaydi.",
+    "block": 13,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L00_M03_001",
+    "asset": "realistic-l00_m03_001.jpg",
+    "title": "Masshtab tushunchasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Bir shakl, ikki kattalik. Chapdagi katta maket va o‘ngdagi kichik maketda deraza, eshik va xona tuzilishi o‘xshash saqlangan. Masshtab tasvirni kichraytiradi, haqiqiy xona o‘lchamini emas.",
+      "2. Nisbatni qo‘llang. Dars shartidagi 4000 mm uzunlik 1:100 chizmada 4000÷100=40 mm; 3000 mm esa 30 mm bo‘ladi. Rasmdagi maketdan bu qiymatlarni o‘lchamang.",
+      "3. Birlikni saqlang. Hisob boshida ham, oxirida ham birlikni yozing. Ekrandagi kattalashtirish yoki maketning suratdagi ko‘rinishi chizma masshtabi o‘rnini bosmaydi.",
+      "Darsdagi bajarish: Haqiqiy uzunlikni masshtab maxrajiga bo‘ling: 4000/100 → qog‘ozda 40 mm, 3000/100 → 30 mm."
+    ],
+    "exercise": "4 000 mm haqiqiy uzunlik 1:100 chizmada nechaga tengligini hisoblang.",
+    "solution": "4 000 / 100 = 40 mm. Masshtab nisbatni beradi; modelning haqiqiy o‘lchamini o‘zgartirmaydi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L00_M03_002",
+    "asset": "realistic-l00_m03_002.jpg",
+    "title": "O'lchamlarni o'qish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ichki o‘lchamni toping. Yashil chiziqlar xonaning ichki yuzalari orasidagi ikki yo‘nalishni ajratadi. Devorning tashqi konturi bilan sof ichki masofani aralashtirmang.",
+      "2. Yozilgan qiymatni o‘qing. Darsdagi 4000 mm=4 m, 3000 mm=3 m. Shu shart bilan xona maydoni 4×3=12 m² bo‘ladi; renderdagi chiziq uzunligi bu hisobning manbasi emas.",
+      "3. Nusxa va ekranni tekshiring. Pastdagi varaq bir xil xona tasvirining nusxasini ko‘rsatadi. Zoom yoki bosma kattaligi o‘zgarsa ham hujjatdagi o‘lcham yozuvi asos bo‘lib qoladi.",
+      "Darsdagi bajarish: Birlikni yozing: 4000 mm=4 m. Maydon 4×3 → 12 m². Ekrandagi zoomni o‘lcham deb olmang."
+    ],
+    "exercise": "Bir chiziqqa 4 000 mm yozilgan bo‘lsa, bosmadagi ko‘rinishdan emas, o‘lcham yozuvidan foydalaning.",
+    "solution": "4 000 mm = 4 m; ekran zoomi yoki noto‘g‘ri printer sozlamasi o‘lcham yozuvini almashtirmaydi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L00_M03_003",
+    "asset": "realistic-l00_m03_003.jpg",
+    "title": "Otmetka va balandlik — rasmga qarab tushuning",
+    "explanation": [
+      "1. Tayanch sathni ajrating. Chapdagi pastroq pol yashil, o‘ngdagi yuqoriroq pol to‘q sariq chiziq bilan ajratilgan. Otmetka belgilangan tayanchga nisbatan balandlikni bildiradi.",
+      "2. Farqni hisoblang. Dars shartida pastki pol ±0.000, yuqorigi pol +0.450 m. Farq +0.450−0.000=0.450 m, ya’ni 450 mm.",
+      "3. Pol yuzalarini solishtiring. Tik belgi ikki tugallangan pol sathi orasidagi farqni tushuntiradi. Zinapoya renderi o‘lchamli yechim emas; haqiqiy o‘tish va uning o‘lchamlari hujjatda alohida tekshiriladi.",
+      "Darsdagi bajarish: Ikki sathni ayiring: +0.450−0.000 → 0.450 m=450 mm. Farqni kesimda ikki pol orasida belgilang."
+    ],
+    "exercise": "±0.000 va +0.450 sathlari orasidagi farqni birlik bilan yozing.",
+    "solution": "Farq 0.450 m, ya’ni 450 mm. Otmetka tayanch sathga nisbatan balandlikni bildiradi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L00_M04_001",
+    "asset": "realistic-l00_m04_001.jpg",
+    "title": "Fundament nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yer bilan bino orasidagi tayanch. Yashil beton qism devor ostida, grunt ichida joylashgan. Uni xona ichidagi gorizontal pol plitasi bilan aralashtirmang.",
+      "2. Yuk yo‘lini kuzating. To‘q sariq strelkalar tom tayanchidan devor, poydevor va gruntga davom etadi. Bino faqat yer ustidagi ko‘rinishdan iborat emas.",
+      "3. Tur va o‘lchamni manbadan oling. Grunt qatlamlari, suv va yuk ma’lumoti poydevor tanlashda kerak. Rasmdagi beton kengligi va chuqurligi hisoblangan loyiha o‘lchami emas.",
+      "Darsdagi bajarish: Tomdan kelgan yuk yo‘lini devor yoki ustun orqali fundament va gruntgacha kuzating → uzluksiz tayanch sxemasi."
+    ],
+    "exercise": "Uy kesimida yer bilan bino orasidagi tayanchni ajrating.",
+    "solution": "Fundament yukni gruntga uzatadi; tur va o‘lcham grunt hamda hisobga bog‘liq, tashqi ko‘rinishga emas.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L00_M04_002",
+    "asset": "realistic-l00_m04_002.jpg",
+    "title": "Devor nima va turlari — rasmga qarab tushuning",
+    "explanation": [
+      "1. Tashqi devorni ajrating. Uy atrofidagi devor ichki xonalarni tashqi muhitdan chegaralaydi; uning ko‘p qismi yashil chekka bilan ajratilgan.",
+      "2. Ichki devor va bo‘luvchini toping. Markazdagi g‘ishtli ichki devor bilan sanuzel yonidagi ko‘k chekkali yengil karkasli bo‘luvchini solishtiring. Kesilgan chetda material farqi ko‘rinadi.",
+      "3. Vazifani hujjatdan aniqlang. Tashqi yoki ichki joylashuv, material va qalinlik ko‘taruvchi vazifani o‘zi tasdiqlamaydi. Qaysi element unga tayanishini va konstruktiv sxemani tekshiring.",
+      "Darsdagi bajarish: Tashqi, ichki va bo‘luvchi devorni vazifasi bo‘yicha belgilang. Ko‘taruvchi vazifani qalinlikdan taxmin qilmang → loyiha hujjatiga bog‘langan devor jadvali."
+    ],
+    "exercise": "Planda tashqi, ichki va bo‘luvchi devorlarni belgilab, vazifasini yozing.",
+    "solution": "Devorlarning barchasi bir xil yuk ko‘tarmaydi; konstruktiv vazifa loyiha hujjatida aniqlanadi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L00_M04_003",
+    "asset": "realistic-l00_m04_003.jpg",
+    "title": "Ustun va rigel nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ustun — tik tayanch. Chapdagi ikkita ustun yuqoridagi gorizontal rigelning uchlarini ko‘tarib turibdi; strelkalar umumiy yuk yo‘lini tushuntiradi.",
+      "2. Rigel — gorizontal element. Uning ikkala uchidagi tayanchlarni kuzating. Rigel, ustun va pastki tayanch bir tizim sifatida ko‘riladi.",
+      "3. O‘ngdagi holat — konflikt. Uzilgan chiziq olib tashlangan tayanchning o‘rnini bildiradi; u haqiqiy tayanch emas. Bu hisoblangan konsol yechimi emas: tayanchni olib tashlashdan oldin konstruktiv tekshiruv kerak.",
+      "Darsdagi bajarish: Rigel uchlarini ustun bilan bog‘lang. Bir tayanchni olib tashlaganda yuk yo‘li uzilishini ko‘rsating → tekshiruvga yuboriladigan konflikt."
+    ],
+    "exercise": "Ustun va rigelni topib, rigel yukini qaysi tayanchlarga uzatishini chizing.",
+    "solution": "Ustun odatda vertikal tayanch, rigel esa tayanchlarni bog‘laydigan gorizontal elementdir.",
+    "block": 5,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L00_M04_004",
+    "asset": "realistic-l00_m04_004.jpg",
+    "title": "Pol, plita va shift — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yuqoridagi pol qoplamasi. To‘q sariq chiziq yog‘och pardozning chetini ko‘rsatadi. U xona foydalanish yuzasi, beton plitaning o‘zi emas.",
+      "2. O‘rtadagi ko‘taruvchi yopma. Yashil chiziqli qalin beton qism ikki xona orasidagi konstruktiv elementni ajratadi.",
+      "3. Pastdagi osma shift. Ko‘k chekkali oq pardoz plitadan alohida, orada xizmat bo‘shlig‘i bor. Shift pardozini o‘zgartirish bilan ko‘taruvchi plitani o‘zgartirishni bir qaror deb olmang; render mahkamlash detali emas.",
+      "Darsdagi bajarish: Kesimda qoplama, ko‘taruvchi yopma va shiftni uch alohida qatlam sifatida belgilang → pardoz konstruksiya bilan aralashmaydi."
+    ],
+    "exercise": "Pol qoplamasi, ko‘taruvchi plita va shift bezagini kesimda ajrating.",
+    "solution": "Ko‘rinadigan shift bilan yuk ko‘taruvchi yopma bir narsa emas; qatlam va vazifalarni aralashtirmang.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L00_M04_005",
+    "asset": "realistic-l00_m04_005.jpg",
+    "title": "Tom nima va qanday ishlaydi? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Suvning tashqi yo‘li. Ko‘k strelkalar tom qoplamasi bo‘ylab pastga, novga va tashqi quvurga davom etadi.",
+      "2. Yukning tayanch yo‘li. To‘q sariq strelkalar yog‘och tom elementi bilan devor tepasidagi tayanch, undan devorga o‘tishni ko‘rsatadi. Bu suv oqish yo‘lidan boshqa jarayon.",
+      "3. Ikkala vazifani tekshiring. Tom shakli chiroyli bo‘lishidan tashqari, suv chiqishi va tayanch tizimi ham kelishilgan bo‘lsin. Bu tasvir birikma yoki yog‘och kesimini tanlash ko‘rsatmasi emas.",
+      "Darsdagi bajarish: Tomdagi suvni qiyalik bo‘ylab chiqish nuqtasigacha chizing. Tayanchlarini ko‘rsating → suv va yuk uchun ikki boshqa yo‘l."
+    ],
+    "exercise": "Tomda yog‘in tushadigan yuzadan suv chiqish nuqtasigacha yo‘lni belgilang.",
+    "solution": "Tomning vazifasi faqat shakl emas: himoya, suvni chiqarish va tayanchga yuk uzatish ham bor.",
+    "block": 5,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L00_M04_006",
+    "asset": "realistic-l00_m04_006.jpg",
+    "title": "Eshik va deraza — rasmga qarab tushuning",
+    "explanation": [
+      "1. Eshik ochilish zonasini toping. To‘q sariq yoy eshik bargi harakatlanadigan joyni tushuntiradi. Shu zonaga mebel qo‘yish yurish va ochilishga xalal berishi mumkin.",
+      "2. Derazani ikki ko‘rinishda bog‘lang. Katta tasvirdagi orqa devor derazasi o‘ngdagi tashqi ko‘rinishda ham markazda. Yashil rang bir xil ochilishni ajratadi.",
+      "3. Foydalanishni tekshiring. Eshik uchun yo‘l va ochilish, deraza uchun yorug‘lik va tashqi aloqani birga ko‘ring. Ochilish yo‘nalishini barcha xonalarga avtomatik bir xil qabul qilmang; haqiqiy vazifa va loyiha sharti tekshiriladi.",
+      "Darsdagi bajarish: Eshik yoyini planda, deraza joyini plan va fasadda solishtiring → yurishga xalal bermaydigan ochilish va kelishilgan ko‘rinish."
+    ],
+    "exercise": "Eshik ochilishi bilan deraza yorug‘lik vazifasini plan va fasadda ko‘rsating.",
+    "solution": "Eshik harakatni, deraza yorug‘lik va tashqi aloqani boshqaradi; o‘rni boshqa elementlar bilan tekshiriladi.",
+    "block": 5,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L00_M05_001",
+    "asset": "realistic-l00_m05_001.jpg",
+    "title": "Yaxshi planni qanday taniymiz? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Mehmon yo‘li. To‘q sariq yo‘l kirish bilan chap olddagi umumiy xonani bog‘laydi. Mehmon yotoqxonadan o‘tishi shart emas.",
+      "2. Kundalik vazifalar yaqin. Yashil yo‘l oshxona va ovqatlanish joyini bog‘laydi. Idish, mahsulot va odam harakatini birga tekshiring.",
+      "3. Tinch zona alohida. Ko‘k yo‘l o‘ngdagi yotoqxonadan umumiy yo‘lak orqali sanuzelga boradi. Rasm yo‘nalishlarni tushuntiradi; haqiqiy planda yo‘lak kengligi, eshik va mebel o‘lchamlari ham tekshiriladi.",
+      "Darsdagi bajarish: Kirishdan uch yo‘lni chizing: mehmon, oilaning kundalik harakati, xo‘jalik → B variantda yotoqxona kesilmaydi."
+    ],
+    "exercise": "Har variantda kirish–mehmonxona, oshxona–ovqatlanish va yotoqxona–sanuzel yo‘lini chizing.",
+    "solution": "Yaxshi plan ssenariylarni ortiqcha to‘qnashuvsiz bajaradi; maydonning o‘zi sifatni isbotlamaydi.",
+    "block": 5,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L00_M05_002",
+    "asset": "realistic-l00_m05_002.jpg",
+    "title": "Yomon plandagi xatolar — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi muammo. Oshxonaga borish yo‘li yotoqxona ichidan o‘tmoqda. Bu uxlayotgan odamning tinchini buzishi va xonani o‘tish zonasiga aylantirishi mumkin.",
+      "2. O‘ngdagi tuzatish. Alohida umumiy yo‘lakdan xonalarga kiriladi; oshxonaga borish uchun yotoqxonadan o‘tish kerak emas.",
+      "3. Oqibat va qarorni yozing. Muammo — yotoqxonadan tranzit; oqibat — shaxsiylik va tinchlikning buzilishi; tuzatish — umumiy kirish aloqasi. Haqiqiy variantda yangi yo‘lak egallagan maydon va eshiklar ham baholanadi.",
+      "Darsdagi bajarish: A variantdagi konfliktni belgilang, eshikni umumiy yo‘lakka ko‘chiring → yotoqxona o‘tish xonasi bo‘lmaydi."
+    ],
+    "exercise": "Har noto‘g‘ri yo‘lga “muammo–oqibat–tuzatish” jadvalini tuzing.",
+    "solution": "Xato nomi bilan birga kimga noqulaylik tug‘dirishi va qaysi aloqa o‘zgarishi aniq bo‘lishi kerak.",
+    "block": 5,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L00_M05_003",
+    "asset": "realistic-l00_m05_003.jpg",
+    "title": "Fasadni tahlil qilish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Fasadni xona vazifasi bilan bog‘lang. Chapdagi katta deraza umumiy xonaga, o‘ngdagi tor ochilish sanuzelga tegishli ekanini roofsiz tasvirda ko‘rish mumkin.",
+      "2. Bir joyni ikki ko‘rinishda toping. Markazda kirish, uning chapida katta deraza, o‘ngida tor deraza ikkala tasvirda ham shu tartibda.",
+      "3. Kirish va hajmni baholang. Ayvon kirishni ajratadi. Chiroyli fasad bilan birga ochilishlarning plandagi xonalarga mosligi ham dalil bo‘lsin; render o‘lchamli hujjat emas.",
+      "Darsdagi bajarish: Derazalarni plan bilan solishtiring. Kirish aksenti va hajm nisbatini belgilang → chiroyli ko‘rinish funksiyani yashirmaydi."
+    ],
+    "exercise": "Fasad ochilishlarini plan bilan tekshirib, kirishning qanday ajralishini tushuntiring.",
+    "solution": "Fasad qarori xonalarning vazifasi va ochilish joylariga mos kelgandagina asosli bo‘ladi.",
+    "block": 5,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L00_M05_004",
+    "asset": "realistic-l00_m05_004.jpg",
+    "title": "LEVEL 0 yakuniy tahlil — rasmga qarab tushuning",
+    "explanation": [
+      "1. Bitta derazani kuzating. Yashil rang chapdagi yuqoridan, o‘rtadagi tashqi va o‘ngdagi kesilgan material ko‘rinishda bir xil ochilishni ajratadi.",
+      "2. Har ko‘rinishning savoli boshqa. Planda — qaysi devorda va qayerda; fasadda — tashqi joylashuv; kesimda — pol, deraza tagi va yuqori chegara munosabati tekshiriladi.",
+      "3. Dalil bilan xulosa qiling. Haqiqiy hujjatda bir xil element IDsi, o‘lcham va sathlarni solishtiring. Ushbu renderlar buni qanday o‘qishni tushuntiradi; ulardan aniq o‘lcham yoki montaj detali olinmaydi.",
+      "Darsdagi bajarish: Plan, fasad va kesimdagi bitta derazani bir ID bilan kuzating → joyi va balandligi mos keladi."
+    ],
+    "exercise": "Bir variantni tanlab, uch kuchli tomon va uch tuzatish zaruratini dalil bilan yozing.",
+    "solution": "Yakuniy tahlil didga emas, plan, harakat, sath va foydalanish dalillariga tayanadi.",
+    "block": 5,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
