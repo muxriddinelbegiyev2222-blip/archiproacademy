@@ -209,11 +209,11 @@ L05_M06_002,L05_M06,Column joylashtirish,illustrated,2,ac28-column-reference-axi
 L05_M06_003,L05_M06,Beam Tool asoslari,illustrated,2,ac28-beam.png|ac28-beam-single-placement.png
 L05_M06_004,L05_M06,Column va Beam aloqasi,illustrated,2,ac28-beam-reference-axis.png|ac28-column.png
 L05_M06_005,L05_M06,Column va Beam mini-loyiha,illustrated,3,ac28-column.png|ac28-beam.png|realistic-l05_m06_005.jpg
-L05_M07_001,L05_M07,Object Tool asoslari,illustrated,2,l05_m07_001.svg|ac28-object.png
-L05_M07_002,L05_M07,Mebel joylashtirish,illustrated,2,l05_m07_002.svg|ac28-object.png
-L05_M07_003,L05_M07,Rotation va elevation,illustrated,2,l05_m07_003.svg|ac28-object.png
-L05_M07_004,L05_M07,Nusxalash va obyektlarni tahrirlash,illustrated,2,l05_m07_004.svg|ac28-object.png
-L05_M07_005,L05_M07,Object Tool mini-loyiha,illustrated,2,l05_m07_005.svg|ac28-object.png
+L05_M07_001,L05_M07,Object Tool asoslari,illustrated,2,ac28-object.png|ac28-object-anchor.png
+L05_M07_002,L05_M07,Mebel joylashtirish,illustrated,2,ac28-object.png|realistic-l05_m07_002.jpg
+L05_M07_003,L05_M07,Rotation va elevation,illustrated,2,ac28-object-elevation.png|ac28-object-rotation.png
+L05_M07_004,L05_M07,Nusxalash va obyektlarni tahrirlash,illustrated,2,ac28-drag-pet-palette.png|ac28-object-elevation.png
+L05_M07_005,L05_M07,Object Tool mini-loyiha,illustrated,2,ac28-object.png|realistic-l05_m07_005.jpg
 L05_M08_001,L05_M08,Line va Polyline,illustrated,1,l05_m08_001.svg
 L05_M08_002,L05_M08,Fill Tool,illustrated,2,l05_m08_002.svg|ac28-fill.png
 L05_M08_003,L05_M08,Text Tool,illustrated,2,l05_m08_003.svg|ac28-text-style.png

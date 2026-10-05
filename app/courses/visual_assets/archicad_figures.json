@@ -512,86 +512,86 @@
   {
     "code": "L05_M07_001",
     "asset": "ac28-object.png",
-    "title": "Object: kutubxona elementlarini ko‘rish va tanlash",
+    "title": "Object Settings: ko‘rinishdan oldin gabaritni o‘qing",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-9.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/LibPartBrowser.png",
-    "block": 0,
+    "block": 3,
     "explanation": [
-      "Object: kutubxona elementlarini ko‘rish va tanlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Object Toolda kerakli obyektni tanlang, haqiqiy gabaritini tekshiring → katalogga mos model."
+      "Chapda Chairs 24 kutubxonasi, o‘ngda tanlangan Armchair 01 24 parametrlari ko‘rsatilgan. Bu kreslo namunasidir; stol yoki krovat uchun tegishli boshqa obyektni tanlaysiz.",
+      "Preview and Positioningdagi 520 va 520 ikki gorizontal gabaritni, 660 esa obyekt balandligini bildiradi. Yuqoridagi 100 joylashuv sathi bo‘lib, kreslo balandligi emas.",
+      "Kerakli obyektni tanlab, katalog o‘lchamiga mos parametrlarni tekshiring. 3D chiroyli ko‘ringani krovat yoki stol real xona o‘lchamiga sig‘ganini isbotlamaydi."
     ],
     "exercise": "Object kutubxonasidan stol tanlab, o‘lcham parametrlarini tekshiring.",
     "solution": "Obyektning tashqi ko‘rinishi uning real o‘lchamlari o‘rnini bosa olmaydi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 qo‘llanmasidagi haqiqiy namuna. Armchair 01 24 va Chairs 24 nomlari eski kutubxona misolidir; o‘rnatilgan kutubxonaga qarab element va parametrlar farq qiladi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L05_M07_002",
     "asset": "ac28-object.png",
-    "title": "Object: kutubxona elementlarini ko‘rish va tanlash",
+    "title": "Mebel modeli uchun parametr va joylashuvni birga tekshiring",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-9.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/LibPartBrowser.png",
-    "block": 0,
+    "block": 6,
     "explanation": [
-      "Object: kutubxona elementlarini ko‘rish va tanlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Krovatni xonaga qo‘ying, eshik va shkaf foydalanish zonasini ajrating → ishlaydigan mebel sxemasi."
+      "Kutubxonada ko‘rinishi mos obyekt topilgach, uning ikki gabariti va balandligini tekshiring. Bu skrinshot kreslo tanlashni, navbatdagi realistik rasm esa krovat–shkaf joylashuvini tushuntiradi.",
+      "Mebel gabariti band qilgan maydon bilan foydalanish maydoni boshqa: stul tortiladi, eshik va shkaf tabaqasi ochiladi. Kutubxona obyektining mavjud Minimal Space parametrini ham tekshirish mumkin.",
+      "O‘z planingizda mebel konturi, ochiladigan qismlar va yurish yo‘lini ajrating. Bir obyektni kichraytirib qo‘yish orqali xona yetishmovchiligini yashirmang; haqiqiy gabarit bilan variantni tekshiring."
     ],
     "exercise": "Stol va stullarni xonaga joylashtirib, foydalanish zonasini chizing.",
     "solution": "Mebel rejasi faqat obyekt konturi emas, foydalanish uchun kerakli bo‘shliqni ham ko‘rsatadi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 qo‘llanmasidagi haqiqiy namuna. Armchair 01 24 va Chairs 24 nomlari eski kutubxona misolidir; o‘rnatilgan kutubxonaga qarab element va parametrlar farq qiladi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L05_M07_003",
-    "asset": "ac28-object.png",
-    "title": "Object: kutubxona elementlarini ko‘rish va tanlash",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-9.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/LibPartBrowser.png",
-    "block": 0,
+    "asset": "ac28-object-elevation.png",
+    "title": "Elevation: obyektning tagi qaysi sathda?",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-11.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/Base_Hieight_Object.png",
+    "block": 2,
     "explanation": [
-      "Object: kutubxona elementlarini ko‘rish va tanlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Rotationni o‘zgartirib 90° burilishni sinang, elevationni pol sathiga tekshiring → to‘g‘ri yo‘nalish va balandlik."
+      "Yuqoridagi 100 — Home Storyga nisbatan obyekt tagining chekinishi. to Project Zero ostidagi 100 esa tag sathini boshqa tayanchga nisbatan ko‘rsatadi; bu obyektning o‘z balandligi emas.",
+      "Pastdagi 660 obyekt balandligi. Pol ustidagi obyekt tagi polning tayyor yuqori sathiga mos bo‘lishi kerak; 0 qiymati ham har bir qavatda avtomatik to‘g‘ri degani emas.",
+      "Parametrni o‘zgartirgach 3Dda oyoqlar polga tegib turganini tekshiring. Faqat planda ko‘rinishidan havoda qolgan yoki polga botgan holatni aniqlab bo‘lmaydi."
     ],
     "exercise": "Stolni aylantiring va elevationni o‘zgartirib, planda hamda 3Dda farqni kuzating.",
     "solution": "Rotation yo‘nalishni, elevation esa vertikal joylashuvni boshqaradi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 qo‘llanmasidagi haqiqiy namuna. Armchair 01 24 va Chairs 24 nomlari eski kutubxona misolidir; o‘rnatilgan kutubxonaga qarab element va parametrlar farq qiladi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L05_M07_004",
-    "asset": "ac28-object.png",
-    "title": "Object: kutubxona elementlarini ko‘rish va tanlash",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-9.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/LibPartBrowser.png",
-    "block": 0,
+    "asset": "ac28-drag-pet-palette.png",
+    "title": "Drag va Drag a Copy: ko‘chirishmi yoki nusxalashmi?",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/030_Interaction/030_Interaction-71.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/030_Interaction/2DDrag.png",
+    "block": 1,
     "explanation": [
-      "Object: kutubxona elementlarini ko‘rish va tanlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Nusxa yaratilganda o‘lcham, layer va sathni tekshiring → kerakli element, tasodifiy dublikat emas."
+      "Pet Palette namunasida Drag belgisi ajratilgan. Oddiy Drag tanlangan elementni ko‘chiradi; original o‘rnida ikkinchi element qoldirmaydi.",
+      "Nusxa kerak bo‘lsa Edit → Move → Drag a Copyni tanlang. Windowsda oddiy Dragni bajarishda Ctrl bosish ham nusxa hosil qiladi; yangi joyni bosib tasdiqlang.",
+      "Rasm buyruq belgilarini ko‘rsatadi, tayyor stullar qatorini emas. Nusxalashdan keyin obyektlar soni, oralig‘i, sathi va layerini tekshiring; ustma-ust yashirin dublikat qoldirmang."
     ],
     "exercise": "Stulni nusxalab, yangi nusxalar parametr va oralig‘ini tekshiring.",
     "solution": "Nusxalash yakunida obyektlar soni va joylashuvi mustaqil nazorat qilinadi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 qo‘llanmasidagi haqiqiy amal namunasi; rasm faqat ko‘rsatilgan vositani tushuntiradi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L05_M07_005",
     "asset": "ac28-object.png",
-    "title": "Object: kutubxona elementlarini ko‘rish va tanlash",
+    "title": "Mini-loyiha: haqiqiy gabarit va foydalanish ssenariysi",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-9.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/LibPartBrowser.png",
-    "block": 0,
+    "block": 4,
     "explanation": [
-      "Object: kutubxona elementlarini ko‘rish va tanlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Plan va 3Dda mebelning pol, devor va ochilish bilan munosabatini tekshiring → foydalanish dalili."
+      "Stol, stul, krovat va shkaf uchun katalog gabaritini Settingsdan qayd qiling. Ushbu kreslo namunasidagi 520 × 520 × 660 barcha mebellarning o‘lchami emas.",
+      "Living, Dining va Bedroom bosqichlarini alohida tekshiring: o‘tirish, stulni tortish, krovat yonidan yurish va shkafni ochish holatlari farq qiladi.",
+      "Planda ochilish yo‘llari va foydalanish zonasini tekshirib, 3Dda pol, devor va mebel munosabatini solishtiring. Realistik Dining rasmi bu auditning bitta ssenariysini ko‘rsatadi, butun loyiha tayyorligini tasdiqlamaydi."
     ],
     "exercise": "Mebel konturi, eshik ochilishi va ishlatilayotgan stullar bilan yo‘lni audit qiling.",
     "solution": "Xona qulayligi bo‘sh plandan emas, mebel ishlatilayotgan ssenariydan tekshiriladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 qo‘llanmasidagi haqiqiy namuna. Armchair 01 24 va Chairs 24 nomlari eski kutubxona misolidir; o‘rnatilgan kutubxonaga qarab element va parametrlar farq qiladi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
@@ -4028,6 +4028,55 @@
     "exercise": "Ikki ustun, balka, o‘qlar va kesim bilan koordinatsiya natijasini topshiring.",
     "solution": "Mini-loyiha geometrik muvofiqlikni ko‘rsatadi; yuk ko‘tarish qobiliyati alohida konstruktor hisobini talab qiladi.",
     "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M07_001",
+    "asset": "ac28-object-anchor.png",
+    "title": "Objectning qaysi nuqtasi bilan joylashtirasiz?",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-11.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/ChairPlacement1.png",
+    "block": 5,
+    "explanation": [
+      "Plan oldindan ko‘rish oynasidagi X belgilar obyektning joylashtirish nuqtalaridir. Qizil ramkali nuqta hozir tanlangan tayanchni ko‘rsatadi.",
+      "Boshqa X nuqtani bossangiz, kiritish tayanchi o‘zgaradi. Obyektni devorga yoki boshqa mebelga joylashtirishda uning markazi bilan burchak tayanchini aralashtirmang."
+    ],
+    "exercise": "Object kutubxonasidan stol tanlab, o‘lcham parametrlarini tekshiring.",
+    "solution": "Obyektning tashqi ko‘rinishi uning real o‘lchamlari o‘rnini bosa olmaydi.",
+    "boundary": "Graphisoft Archicad 28 qo‘llanmasidagi haqiqiy namuna. Armchair 01 24 va Chairs 24 nomlari eski kutubxona misolidir; o‘rnatilgan kutubxonaga qarab element va parametrlar farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M07_003",
+    "asset": "ac28-object-rotation.png",
+    "title": "Rotation va Mirror boshqa-boshqa amallardir",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-11.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/RotateMirrorObject.png",
+    "block": 0,
+    "explanation": [
+      "Pastdagi 0.00° maydoni obyektning burilish burchagi. Mashqda 90° kiritib, planda yo‘nalish qanday o‘zgarganini tekshiring; bu sathni ko‘tarmaydi.",
+      "Relative yoki Absolute usuli burchak qaysi yo‘nalishdan o‘lchanishini boshqaradi. Burilgan ko‘rinishda burchakni loyiha koordinatalari bilan aralashtirmang.",
+      "Qizil ramkadagi belgi Mirror Library Part uchun: u obyektni akslantiradi, 90° aylantirish bilan teng emas. Natijani oldindan ko‘rish oynasida va modelda solishtiring."
+    ],
+    "exercise": "Stolni aylantiring va elevationni o‘zgartirib, planda hamda 3Dda farqni kuzating.",
+    "solution": "Rotation yo‘nalishni, elevation esa vertikal joylashuvni boshqaradi.",
+    "boundary": "Graphisoft Archicad 28 qo‘llanmasidagi haqiqiy namuna. Armchair 01 24 va Chairs 24 nomlari eski kutubxona misolidir; o‘rnatilgan kutubxonaga qarab element va parametrlar farq qiladi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M07_004",
+    "asset": "ac28-object-elevation.png",
+    "title": "Nusxaning gabariti va sathini tekshirish",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-11.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/Base_Hieight_Object.png",
+    "block": 3,
+    "explanation": [
+      "Nusxa yaratilgach uning Settings oynasida gabarit, Height, Home Story va tag sathini qayta o‘qing. Rasm Default Settings namunasidir; mavjud nusxani tahrirlash uchun modeldagi o‘sha nusxani avval tanlang.",
+      "Faqat yangi asbobning boshlang‘ich parametrini o‘zgartirib, eski stullar ham o‘zgardi deb o‘ylamang. Yangi nusxa va originalning qaysi biri tanlanganini tekshiring."
+    ],
+    "exercise": "Stulni nusxalab, yangi nusxalar parametr va oralig‘ini tekshiring.",
+    "solution": "Nusxalash yakunida obyektlar soni va joylashuvi mustaqil nazorat qilinadi.",
+    "boundary": "Graphisoft Archicad 28 qo‘llanmasidagi haqiqiy namuna. Armchair 01 24 va Chairs 24 nomlari eski kutubxona misolidir; o‘rnatilgan kutubxonaga qarab element va parametrlar farq qiladi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   }
 ]

@@ -201,10 +201,12 @@ class ReleaseRegression(unittest.TestCase):
         from courses.teaching.guides import GUIDES
         from courses.content_registry import get_all_lesson_content
         records = json.loads((ASSETS / 'lesson_figures.json').read_text(encoding='utf-8'))
-        self.assertEqual(len(records), 653)
-        self.assertEqual(len({r['code'] for r in records}), 653)
-        self.assertEqual(len({r['asset'] for r in records}), 653)
+        self.assertEqual(len({r['code'] for r in records}), len(records))
+        self.assertEqual(len({r['asset'] for r in records}), len(records))
         contents = get_all_lesson_content()
+        # Reviewed raster figures replace schematic records. Coverage is tied to
+        # the curriculum, rather than an obsolete fixed number of SVG entries.
+        self.assertEqual(set(CATALOG), set(contents))
         for row in records:
             with self.subTest(lesson=row['code']):
                 module = row['code'].rsplit('_', 1)[0]
@@ -223,6 +225,17 @@ class ReleaseRegression(unittest.TestCase):
             self.assertTrue(row['source_image_url'].startswith('https://help.graphisoft.com/AC/28/INT/'))
             self.assertIn('Graphisoft', row['credit'])
             self.assertIn(row['code'], CATALOG)
+        for manifest in ('archicad_figures.json', 'realistic_figures.json'):
+            for row in json.loads((ASSETS / manifest).read_text(encoding='utf-8')):
+                with self.subTest(manifest=manifest, lesson=row['code'], asset=row['asset']):
+                    module, number = row['code'].rsplit('_', 1)
+                    unit = WORKBOOKS[module]['units'][int(number) - 1]
+                    self.assertEqual(unit['code'], row['code'])
+                    self.assertEqual(row['exercise'], unit['action'])
+                    self.assertEqual(row['solution'], unit['result'])
+                    self.assertTrue(0 <= row['block'] < len(contents[row['code']]))
+                    self.assertTrue(row['explanation'])
+                    self.assertTrue(all(text.strip() for text in row['explanation']))
 
     def test_visual_zoom_font_layout_and_quiz_gates(self):
         from ui.lesson_visuals import LessonVisual

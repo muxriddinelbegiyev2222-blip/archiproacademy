@@ -3500,5 +3500,39 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L05_M07_002",
+    "asset": "realistic-l05_m07_002.jpg",
+    "title": "Mebel joylashtirish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Kirishdan krovatgacha. Chap olddagi eshikdan krovatning oldi va chap yoniga o‘tadigan bo‘sh pol ko‘rinadi. Old devor o‘quv tasvirda kesib olib tashlangan; bu alohida qo‘shimcha kirish emas.",
+      "2. Shkaf ochilishi. Chap orqadagi shkafning bitta tabaqasi ochilgan. Uning oldida turish va buyum olish maydonini krovat konturi bilan birga tekshiring; faqat yopiq shkaf gabariti yetarli emas.",
+      "3. Gabarit bilan sinang. O‘z mashqingizdagi 4 × 3 m xona va 2 × 1,6 m krovatni o‘lchamli modelda tekshiring. Rasm yo‘l va ochilish aloqasini tushuntiradi, shu aniq o‘lchamlar joylashtirilganini yoki me’yoriy moslikni isbotlamaydi.",
+      "Darsdagi bajarish: Krovatni xonaga qo‘ying, eshik va shkaf foydalanish zonasini ajrating → ishlaydigan mebel sxemasi."
+    ],
+    "exercise": "Stol va stullarni xonaga joylashtirib, foydalanish zonasini chizing.",
+    "solution": "Mebel rejasi faqat obyekt konturi emas, foydalanish uchun kerakli bo‘shliqni ham ko‘rsatadi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L05_M07_005",
+    "asset": "realistic-l05_m07_005.jpg",
+    "title": "Object Tool mini-loyiha — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ishlatilayotgan stul. Oldingi stul stoldan chiqarilgan; uning orqa tomoni yopiq holatdagidan ko‘proq joy egallaydi. Foydalanish holatini chizmasdan faqat stol konturi bilan baholamang.",
+      "2. Kirish va yurish joyi. Chapdagi eshik tabaqasi, stolning oldi va o‘ngidagi bo‘sh polni ajrating. O‘z plangingizda shu joylar orqali haqiqiy yurish yo‘li uzluksiz qolishini tekshiring.",
+      "3. Plan–3D auditi. Mebel gabariti, ochiladigan tabaqalar, pol sathi va foydalanish zonasi bir modelda mos bo‘lsin. Bu Dining bosqichining materialli misoli; Bedroom uchun krovat–shkaf namunasi oldingi darsda berilgan, aniq bo‘shliq sonlari o‘lchamli loyihada tekshiriladi.",
+      "Darsdagi bajarish: Plan va 3Dda mebelning pol, devor va ochilish bilan munosabatini tekshiring → foydalanish dalili."
+    ],
+    "exercise": "Mebel konturi, eshik ochilishi va ishlatilayotgan stullar bilan yo‘lni audit qiling.",
+    "solution": "Xona qulayligi bo‘sh plandan emas, mebel ishlatilayotgan ssenariydan tekshiriladi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
