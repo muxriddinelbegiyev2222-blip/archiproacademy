@@ -3058,5 +3058,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L04_M04_001",
+    "asset": "realistic-l04_m04_001.jpg",
+    "title": "Ayvon va terassa nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yopiq xona. Chapdagi yashash joyining devor va tom bilan o‘ralgan qismi kesib ochilgan holda ko‘rsatilgan. Uyning ichki xonasini tashqi o‘tirish joyi bilan adashtirmang.",
+      "2. Yarim ochiq va ochiq joy. Markazdagi stol ayvon tomi ostida, yonlari ochiq; o‘ngdagi qoplamali terassa ustida tom yo‘q. Farq faqat nomda emas, yopilish va foydalanish sharoitida.",
+      "3. Vazifani belgilang. Kesimda tom chegarasi, ochiq yonlar va pol sathlarini ajrating. Ovqatlanish, dam olish va yurish qayerda bajarilishini yozib, ayvon hamda terassani tashqi xona vazifasi bilan asoslang.",
+      "Darsdagi bajarish: Ayvonni yopiq xonadan ajrating, qaysi faoliyatni bajarishini yozing → tashqi xona vazifasi."
+    ],
+    "exercise": "Yopiq, yarim ochiq va ochiq zonalarni kesimda ajrating.",
+    "solution": "Ayvon va terassa foydalanish hamda yopilish sharoiti orqali tushuntiriladi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M04_002",
+    "asset": "realistic-l04_m04_002.jpg",
+    "title": "Ichki va tashqi makon o'tishi — rasmga qarab tushuning",
+    "explanation": [
+      "1. O‘tish zanjiri. Chapda xona, ochiq eshikdan keyin ayvon, o‘ngda esa hovliga tushadigan pog‘onalar bor. Eshikdan stol yonigacha va hovligacha yo‘lni ketma-ket kuzating.",
+      "2. Sath va yog‘in. Xona–ayvon chegarasi hamda ayvon–hovli sathlari bir xil emas. Tom chetida nov va quvur, tashqarida nam qoplama ko‘rinadi; bu obyektlarni haqiqiy suv yo‘li bilan tekshirish kerak.",
+      "3. Uzluksiz foydalanish. O‘z chizmangizda eshik ochilishi, mebel, sath va yog‘in ta’sirini birga tekshiring. Suv qayerga tushishi va qayerga ketishini belgilang; rasmning o‘zi drenaj yoki barcha foydalanuvchilar uchun qulaylik hisobini tasdiqlamaydi.",
+      "Darsdagi bajarish: Living eshigi va stol orasidagi harakatni chizing → uzluksiz o‘tish."
+    ],
+    "exercise": "Uy eshigidan hovligacha sath va harakat zanjirini chizing.",
+    "solution": "Ichki-tashqi o‘tish eshik, pol sathi va yog‘in sharoiti bilan bog‘liq.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M04_003",
+    "asset": "realistic-l04_m04_003.jpg",
+    "title": "Quyosh va soya — rasmga qarab tushuning",
+    "explanation": [
+      "1. Bir joy, turli yorug‘lik. Ikki tasvirda o‘xshash ayvon va stol ko‘rsatilgan, ammo pol, devor va odamga tushgan yorug‘lik hamda soya farq qiladi. Tom mavjudligi har bir vaqtda bir xil soyani bermaydi.",
+      "2. O‘tirish vaqtiga qarang. Stol atrofidagi qaysi joy soyada, qaysi joyga pastdan kelgan yorug‘lik tushayotganini toping. Oila ertalab yoki kech foydalanishiga qarab ehtiyoj ham o‘zgaradi.",
+      "3. Haqiqiy ssenariy. Loyihada tekshirilgan yo‘nalish, joy, fasl va vaqt bilan ertalab-kechki soyani tekshiring. Bu ikki tasvirni aniq quyosh hisobining o‘rniga ishlatmang; ular foydalanish vaqtini hisobga olish zarurligini tushuntiradi.",
+      "Darsdagi bajarish: Tom soyasi va foydalanish vaqtini solishtiring → kerakli soya."
+    ],
+    "exercise": "Ertalab va kechki o‘tirish joyi uchun soya ssenariylarini yozing.",
+    "solution": "Soya o‘tirish vaqtiga mos tekshiriladi, bitta tasodifiy rakurs bilan emas.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M04_004",
+    "asset": "realistic-l04_m04_004.jpg",
+    "title": "Ayvon ergonomikasi va mebel — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ishlayotgan mebel. Stol yonida odam o‘tiribdi, o‘ngdagi odam stulni surmoqda. Mebelning faqat yig‘ishtirilgan konturini emas, foydalanishdagi holatini tekshiring.",
+      "2. Xizmat va yurish. Choy ko‘targan odam eshikdan stol tomon yurmoqda; oldinda ustun va surilgan stullar bor. Eshik, ustun, stul hamda ayvon cheti orasidagi yo‘lni kuzating.",
+      "3. O‘lcham bilan sinang. Haqiqiy mebel o‘lchamlarini planga kiriting, stul surilishi va odam turishini qo‘shing. So‘ng piyoda yo‘lini chizing; rasmda keng ko‘ringan joyni o‘lchovsiz yetarli deb qabul qilmang.",
+      "Darsdagi bajarish: Mebelni haqiqiy o‘lchamda chizib, stul surilish joyini qo‘shing → foydalaniladigan dining."
+    ],
+    "exercise": "Mebel ishlatilayotgan holatda piyoda yo‘lini chizing.",
+    "solution": "Ayvon mebeli ochiq makon bo‘lsa ham foydalanish va harakat zonasiga muhtoj.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M04_005",
+    "asset": "realistic-l04_m04_005.jpg",
+    "title": "Ayvon va terassa auditi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yaqin joylashtirish xavfi. Chapda stol ochiq eshik tabaqasiga juda yaqin; shu joyda eshik harakati va odam o‘tishi bir-biriga xalaqit berishi mumkin. Eshikning butun ochilish yo‘lini tekshiring.",
+      "2. Mebelni chetga olish. O‘ngda stol uzoqroqqa surilib, eshik oldidagi bo‘sh joy kengaygan va odam o‘tmoqda. Qaror eshik oldini bo‘shatishga xizmat qiladi; eshikning ochilish yo‘nalishi har bir loyiha sharoitida alohida asoslanadi.",
+      "3. Birgalikdagi audit. Jadvalda sath, soya, suv va foydalanish holatini yozing. Eshik yoyi, surilgan stul va yurish yo‘lini haqiqiy planda ustma-ust tekshirib, to‘qnashuv bo‘lsa mebel yoki eshik joylashuvini qayta ko‘rib chiqing.",
+      "Darsdagi bajarish: Eshik yoyi stolga urilsa mebel yoki eshikni qayta joylashtiring → qulay o‘tish."
+    ],
+    "exercise": "Sath, soya, suv va foydalanish bo‘yicha tekshiruv jadvali tuzing.",
+    "solution": "Ayvon auditida barcha funksiyalar bir vaqtda ishlashi tekshiriladi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
