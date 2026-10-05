@@ -3228,5 +3228,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L04_M06_001",
+    "asset": "realistic-l04_m06_001.jpg",
+    "title": "Banja funksional sxemasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Kirish va kiyinish. Markazdagi tashqi kirish quruq kiyinish joyiga olib keladi; skameyka, shkaf va sochiqlar shu faoliyatga xizmat qiladi. Foydalanishni kirishdan boshlang.",
+      "2. Nam va dam olish joyi. Chapdagi yuvinish va o‘ngdagi dam olish joyiga markaziy xonadan alohida ochilishlar bor. Dam olish uchun yuvinish polidan majburiy o‘tish talab qilinmaydi.",
+      "3. Ketma-ketlik. Kirish, kiyinish, yuvinish, qurinish-kiyinish va dam olishni yo‘llari bilan chizing. Namlikni quruq joyga olib chiqish, tozalash va bir paytda foydalanishni ham tekshiring; bu maket jihoz yoki muhandislik hisobini bermaydi.",
+      "Darsdagi bajarish: Kirish→kiyinish→yuvinish→dam olish zanjirini chizing → funksional tartib."
+    ],
+    "exercise": "Foydalanish ketma-ketligini zonalar orasidagi yo‘l bilan chizing.",
+    "solution": "Banja funksional sxemasi ho‘l va quruq jarayonlarni ajratadi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M06_002",
+    "asset": "realistic-l04_m06_002.jpg",
+    "title": "Banja va uy aloqasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Qaytish aloqasi. Chapdagi yordamchi binoda kiyinish joyi, o‘ngda uy kirishi ko‘rinadi. Ular orasida tomli yo‘l bor; uyga qaytishdan oldin quruq kiyinish holatini hisobga oling.",
+      "2. Mavsumiy sharoit. Qoplama nam, tom cheti, ustunlar va uy oldidagi pog‘onalar ko‘rinadi. Tom mavjud bo‘lsa ham yo‘l doim quruq bo‘lishini taxmin qilmang.",
+      "3. Haqiqiy foydalanuvchi. Masofa, yog‘in, shamol, pol sathi va odamning yurish ehtiyojini mavsumlar bo‘yicha tekshiring. Nam joydan qaytish yashash xonasi va uning qoplamasiga qanday ta’sir qilishini yozing.",
+      "Darsdagi bajarish: Uyga qaytadigan odamning nam va quruq yo‘lini ajrating → yashash xonasi himoyalanadi."
+    ],
+    "exercise": "Uy bilan yordamchi bino orasidagi mavsumiy yo‘lni tekshiring.",
+    "solution": "Aloqa masofa, yog‘in, sath va foydalanuvchi ehtiyojiga mos baholanadi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M06_003",
+    "asset": "realistic-l04_m06_003.jpg",
+    "title": "Nam va quruq zonalar — rasmga qarab tushuning",
+    "explanation": [
+      "1. Namlik manbai. Chapda dush, shisha to‘siq, nam pol va suv qabul qilish panjarasi bor. Suv tarqalishi mumkin bo‘lgan chegaralarni toping.",
+      "2. Quruq foydalanish. O‘ngda skameyka, sochiq va kiyinish joyi ko‘rinadi; odam nam-quruq chegaraga ishora qilmoqda. Eshik osti hamda devor-pol tutashuvi shu ajralishning muhim joylari.",
+      "3. Muhandislik tekshiruvi. Suv qaysi yo‘nalishga ketadi, chegaradan o‘tadimi, tozalash qanday bajariladi — shu savollarni yozing. Nishab, gidroizolyatsiya va tutashuv yechimini tekshirilgan chizmada aniqlang; ko‘rinishdan ularning to‘g‘riligini isbotlab bo‘lmaydi.",
+      "Darsdagi bajarish: Namlik manbai, pol va devor tutashuvini belgilang → muhandislik tekshiruvi."
+    ],
+    "exercise": "Ho‘l zonadan quruq kiyinish maydoniga suv tarqalishini ko‘rib chiqing.",
+    "solution": "Nam-quruq ajralish xizmat, tozalash va foydalanish qulayligiga ta’sir qiladi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M06_004",
+    "asset": "realistic-l04_m06_004.jpg",
+    "title": "Ombor, texnik va service xonalari — rasmga qarab tushuning",
+    "explanation": [
+      "1. Saqlashga kirish. Chapdagi omborda javon va buyumlar bor, tashqi eshikdan ichkariga kiriladi. Kerakli buyumni olish hamda katta buyumni olib chiqishni tekshiring.",
+      "2. Xizmatga kirish. O‘ngdagi texnik xona alohida eshik bilan ochiladi; usta asbob qutisi bilan kiradi va yopiq jihoz oldida bo‘sh joy bor. Ombordagi buyumlarni shu xizmat joyiga yig‘mang.",
+      "3. Jihoz talabini kelishish. Haqiqiy uskuna turi, xizmat uchun kerakli bo‘shliq, kirish, almashtirish va shamollatish talablarini yozing. Tasvirdagi shkaf hamda panjara muayyan uskunaga tayyor texnik yechimni anglatmaydi.",
+      "Darsdagi bajarish: Jihozga xizmat, saqlash va texnik kirishni chizing → yashirin konflikt ochiladi."
+    ],
+    "exercise": "Texnik uskuna va ombor uchun xizmat kirishini belgilang.",
+    "solution": "Texnik xona kirish, shamollatish va uskuna talablariga muvofiqlashtiriladi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L04_M06_005",
+    "asset": "realistic-l04_m06_005.jpg",
+    "title": "Banja va yordamchi bino auditi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Suv chiqarish savoli. Odam chapdagi pol panjarasiga ishora qilmoqda. Suv qayerdan kelib, qanday yig‘ilishi va qayerga ketishini chizmada tekshiring.",
+      "2. Havo va foydalanish. Yuqorida deraza va panjara, o‘ngda quruq skameyka hamda saqlash joyi bor. Ochilish, namlik, kiyinish va tozalashni birgalikda ko‘rib chiqing.",
+      "3. Kelishiladigan ro‘yxat. Foydalanish, suv, shamollatish, xizmat va tegishli xavfsizlik talablari bo‘yicha savol, mas’ul mutaxassis va tekshiruv holatini yozing. Rasm borligi masalalar hal qilinganini bildirmaydi — yechimlar haqiqiy loyiha hujjatida kelishiladi.",
+      "Darsdagi bajarish: Ventilyatsiya va suv chiqarish savollarini jadvalga yozing → kelishiladigan yechim."
+    ],
+    "exercise": "Foydalanish, suv, xizmat va tegishli xavfsizlik talablari uchun audit ro‘yxati tuzing.",
+    "solution": "Yordamchi bino auditi arxitektura bilan muhandislik masalalarini birga qayd qiladi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
