@@ -763,5 +763,345 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L01_M01_001",
+    "asset": "realistic-l01_m01_001.jpg",
+    "title": "Kompozitsiya nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Asosiy nuqtani toping. Yashil kontur kirish ayvoni, eshik va uning oldidagi maydonni bir guruh sifatida ajratadi.",
+      "2. Yordamchi ritmni ko‘ring. Kirishning ikki tomonida ikkitadan deraza takrorlanmoqda. Ular asosiy kirish bilan raqobatlashmay, fasad tartibini qo‘llaydi.",
+      "3. Fon vazifasini tushuning. Tinch devor yuzasi deraza va kirishni o‘qishga yordam beradi. Kompozitsiya har bir detalni alohida bezashdan ko‘ra, ularning o‘zaro tartibini tuzishdir.",
+      "Darsdagi bajarish: Fasad elementlarini asosiy, yordamchi va fon guruhiga bo‘ling → kirish asosiy, derazalar ritm, devor fon."
+    ],
+    "exercise": "Fasadni yirik hajm, ochilish va kirish guruhiga ajrating.",
+    "solution": "Kompozitsiya elementlarning o‘zaro tartibidir; elementlarni alohida bezash umumiy tuzilmani bermaydi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M01_002",
+    "asset": "realistic-l01_m01_002.jpg",
+    "title": "Kompozitsion markaz — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ko‘z avval kirishni topadi. Markazdagi oldinga chiqqan ayvon va soyadagi eshik asosiy nuqtani ajratadi.",
+      "2. Rangdan tashqari vositalar bor. Hajmning chiqishi, chuqurlik, soya va oldidagi pog‘onalar kirishni ko‘rsatadi; yon derazalar tinchroq.",
+      "3. Rangsiz tekshiring. Eskizda rangni olib tashlaganda ham kirish topiladimi? Asosiy hajmni kuchaytirish va yordamchi bezakni kamaytirish ko‘rish tartibini aniqlashtiradi.",
+      "Darsdagi bajarish: Kirish oldidagi hajmni ajrating, qolgan bezakni kamaytiring → ko‘z avval kirishni topadi."
+    ],
+    "exercise": "Kirishni rangsiz eskizda ham topiladigan asosiy nuqtaga aylantiring.",
+    "solution": "Kompozitsion markaz ko‘rish ketma-ketligini boshqaradi; hamma element bir xil urg‘uga ega bo‘lmaydi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M01_003",
+    "asset": "realistic-l01_m01_003.jpg",
+    "title": "Vizual balans — rasmga qarab tushuning",
+    "explanation": [
+      "1. O‘ngdagi katta hajm. Qoramtir yog‘och yuzasi va keng ochilish bir kuchli guruh bo‘lib ko‘rinadi.",
+      "2. Chapdagi kichik elementlar. Uzunroq och devor ichida uchta kichik qoramtir deraza bor. Ularning umumiy ta’sirini o‘ngdagi katta hajm bilan solishtiring.",
+      "3. Balans simmetriya bilan cheklanmaydi. Rang, hajm, ochilish va bo‘shliq birga baholanadi. Variantni vazifaga qarab muvozanatlash kerak; bu rasm universal sonli balans formulasi emas.",
+      "Darsdagi bajarish: Chap va o‘ng hajmning kengligi, rangi va bo‘shlig‘ini solishtiring → og‘ir tomon qarshi element bilan muvozanatlanadi."
+    ],
+    "exercise": "O‘ngdagi katta hajmni chapdagi bir nechta kichik element bilan solishtiring.",
+    "solution": "Vizual balans faqat simmetriya emas; hajm, bo‘shliq va qoramtir yuzalar og‘irligi ham ta’sir qiladi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M01_004",
+    "asset": "realistic-l01_m01_004.jpg",
+    "title": "Dominanta va aksent — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapda urg‘ular raqobatlashadi. Qizil derazalar, ko‘k derazalar va yashil kirish bir vaqtda e’tibor so‘raydi.",
+      "2. O‘ngda bitta dominanta. Kirish rangi saqlangan, deraza romlari esa tinchroq. Ko‘zning asosiy nuqtasi aniqroq ajraladi.",
+      "3. Kichik aksent asosiy nuqtani qo‘llaydi. Eshik dastagi kabi kichik detal yangi teng markaz yaratmasdan kirishga xizmat qilishi mumkin. Har kuchli rang va bezakning umumiy vazifasini tekshiring.",
+      "Darsdagi bajarish: Bitta aksent tanlang: kirish yoki ayvon. Ikkinchi kuchli rangni susaytiring → ikkita markaz raqobatlashmaydi."
+    ],
+    "exercise": "Bitta dominanta va bitta kichik aksentni belgilang.",
+    "solution": "Dominanta asosiy e’tiborni ushlaydi, aksent uni qo‘llaydi; ko‘p teng dominanta ko‘rish tartibini buzadi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M01_005",
+    "asset": "realistic-l01_m01_005.jpg",
+    "title": "Kompozitsiyadagi tipik xatolar — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi ortiqcha guruhlar. Deraza usti bezaklari, devordagi dekorativ tik qismlar va kirish tepasidagi yirik naqsh bir-biriga qo‘shilib ketgan.",
+      "2. O‘ngdagi soddalashtirish. Shu eshik va to‘rtta deraza saqlangan, lekin raqobatlashayotgan bezaklar kamaygan. Kirish va ochilishlar tartibi ravshanroq.",
+      "3. Detalni vazifasi bilan baholang. Bezakni yashirganda nima o‘zgaradi? Bu misol barcha an’anaviy naqshni chiqarish talabi emas; har detal umumiy kompozitsiyani qanday qo‘llashini asoslash mashqi.",
+      "Darsdagi bajarish: Har bezakni yashirib ko‘ring: ma’no o‘zgarmasa olib tashlang → ortiqcha elementlar qisqaradi."
+    ],
+    "exercise": "Kirishga aloqasi yo‘q uch xil bezakni chiqarib, oldingi variant bilan solishtiring.",
+    "solution": "Kamroq element ham yaxlit kompozitsiya bera oladi; har detalning umumiy tuzilmadagi vazifasi asoslanadi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M02_001",
+    "asset": "realistic-l01_m02_001.jpg",
+    "title": "Proporsiya nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. En va balandlik boshqa o‘lcham. Yashil gorizontal belgi enni, to‘q sariq tik belgi balandlikni ajratadi. Chapdagi shakl kvadratga yaqin, o‘ngdagi esa cho‘zilgan.",
+      "2. Nisbatni sonlardan hisoblang. Dars misolida 1.2:1.2=1:1; 1.2:1.8=2:3. Bu qiymatlar mashq shartidan olinadi, tasvirdagi romni o‘lchashdan emas.",
+      "3. Butun shakl bilan bog‘lang. Bir ochilishning nisbatini umumiy fasad ichida baholang. Proporsiya — qismlar o‘rtasidagi nisbat; o‘zi bilan xona vazifasini almashtirmaydi.",
+      "Darsdagi bajarish: 12/3 nisbatni hisoblang → umumiy gorizontal nisbat 4:1. Elementlar shu fon ichida baholanadi."
+    ],
+    "exercise": "Ikki derazaning en–balandlik nisbatini hisoblang.",
+    "solution": "1.2:1.2 = 1:1, 1.2:1.8 = 2:3; proporsiya qismlar o‘rtasidagi nisbatdir.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M02_002",
+    "asset": "realistic-l01_m02_002.jpg",
+    "title": "Inson va bino masshtabi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Tanish o‘lchovni yoniga qo‘ying. Odamlar kirish maydonida turgani sabab eshik va ayvon kattaligi kundalik foydalanish bilan bog‘lanadi.",
+      "2. Masshtab va proporsiyani ajrating. Odam bilan bino munosabati masshtabni o‘qishga yordam beradi; eshik enining balandligiga munosabati esa proporsiya.",
+      "3. Bir xil sathda solishtiring. Fasad eskizida odamni kirish poliga bog‘lang. Surat perspektivasi va o‘quv tasviridan aniq inson yoki eshik o‘lchamini olish kerak emas.",
+      "Darsdagi bajarish: Inson siluetini kirish yoniga qo‘ying → bino balandligini tanish o‘lchov bilan o‘qish mumkin."
+    ],
+    "exercise": "Fasad eskiziga odam siluetini qo‘shib, kirish qanday o‘qilishini tekshiring.",
+    "solution": "Masshtab odam va bino munosabatini, proporsiya esa shakl qismlari munosabatini tushuntiradi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M02_003",
+    "asset": "realistic-l01_m02_003.jpg",
+    "title": "Deraza va eshik proporsiyasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yuqori chiziqlarni birga ko‘ring. Yashil chiziq eshik va derazalarning yuqori chegaralarini solishtirishni tushuntiradi.",
+      "2. Nisbat va joylashuvni ajrating. Chapdagi deraza tikroq, o‘ngdagi kengroq; ularning eni, bo‘yi va pastki sathi alohida savollar.",
+      "3. Xona bilan tekshiring. Dars misolida 1.2÷1.5=0.8. Hisobdan keyin xona ehtiyoji va boshqa ochilishlar bilan mosligini ko‘ring. Hamma loyihada yuqori chiziqlar majburiy bir xil bo‘lishi kerak degan xulosa chiqarmang.",
+      "Darsdagi bajarish: Deraza enini balandligiga bo‘ling: 1.2/1.5 → 0.8. Keyin xona ehtiyoji bilan solishtiring."
+    ],
+    "exercise": "Eshik va deraza tepa chiziqlarini birga o‘qing.",
+    "solution": "Ochilishlar nisbatini tekshirish faqat deraza shakliga emas, xona, sath va boshqa ochilishlarga ham tegishli.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M02_004",
+    "asset": "realistic-l01_m02_004.jpg",
+    "title": "Fasad proporsiyasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yuqorida uch bo‘lak. Yashil ajratishlar fasadni uch guruhda o‘qishni tushuntiradi. Darsdagi variant: 12 m÷3=4 m dan uch bo‘lak.",
+      "2. Pastda to‘rt bo‘lak. Boshqa mashq varianti: 12 m÷4=3 m dan to‘rt bo‘lak. Bu uch bo‘lakli variant bilan bir xil tarmoq emas.",
+      "3. Ochilishni guruh bilan bog‘lang. Har variantda deraza markazi va devor bo‘shlig‘ini tekshiring. Tasvirlar nisbat tushunchasini beradi; aniq bo‘linish chizma o‘lchamlari bilan qo‘yiladi.",
+      "Darsdagi bajarish: Fasadni uchta 4 m bo‘lakka ajrating, ochilishlarning markazini belgilang → o‘lchanadigan proporsiya tarmog‘i."
+    ],
+    "exercise": "12 m fasadni 3 m dan to‘rtta vizual qismga ajratib, bir variant chizing.",
+    "solution": "12/3 = 4 qism — o‘quv moduli; fasadning har qismi shu tartibga qanday bog‘lanishi ko‘rsatiladi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M02_005",
+    "asset": "realistic-l01_m02_005.jpg",
+    "title": "Proporsiyadagi xatolarni topish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Katta ochilishning vazifasini toping. O‘ngdagi to‘q sariq belgi sanuzel oldidagi keng shaffof ochilishni ajratadi; ichkaridagi jihozlar tashqaridan ko‘rinmoqda.",
+      "2. Muammoni did bilan cheklamang. Bu misolda savol faqat katta-kichik shakl haqida emas, shaxsiylik va xona foydalanishi haqida ham.",
+      "3. Asosini tekshirib tuzating. Ochilish o‘lchami va shaffofligini plan, xona vazifasi, yorug‘lik va foydalanish talabi bilan solishtiring. Katta derazaning o‘zi universal xato degan qoida yo‘q; bu tasvir konfliktni aniqlash mashqi.",
+      "Darsdagi bajarish: Bir deraza tasodifan 2 m keng bo‘lsa, sababini izlang → xona funksiyasi asos bo‘lmasa tuzating."
+    ],
+    "exercise": "Eng katta ochilish xonaning vazifasiga mos keladimi, plan bilan solishtiring.",
+    "solution": "Proporsion muammo estetik sabab bilan birga funksional sababga ham ega bo‘lishi mumkin.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M03_001",
+    "asset": "realistic-l01_m03_001.jpg",
+    "title": "Arxitekturada ritm nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Takrorlanayotgan element. Uchta derazaning shakli, yuqori va pastki sathi o‘xshash. Yashil belgilar markazlarni ajratadi.",
+      "2. Interval ham ritmning bir qismi. Dars shartidagi markazlar 2, 5 va 8 m: 5−2=3 m, 8−5=3 m. Bu masofalar shartdan olinadi, renderdan emas.",
+      "3. Element va oralig‘ini birga yozing. Faqat derazalar bir xil deyish yetmaydi; ularning takrorlanish tartibi va masofasi ham aniqlanadi.",
+      "Darsdagi bajarish: Markazlar orasini ayiring: 5−2=3, 8−5=3 → teng ritm."
+    ],
+    "exercise": "Takrorlanayotgan element va oralig‘ini belgilang.",
+    "solution": "Ritm faqat bir xil element emas, ularning takrorlanish tartibi va intervalidir.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M03_002",
+    "asset": "realistic-l01_m03_002.jpg",
+    "title": "Derazalar ritmi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yuqorida shakllar farqli. Deraza eni, balandligi va ustki shakli bir xil emas. Teng masofaning o‘zi yagona ritm hosil qilishga yetmasligi mumkin.",
+      "2. Pastda takror tartibli. Bir xil romlar va yuqori sath yashil chiziq bilan birga o‘qiladi.",
+      "3. Farqning sababini toping. Haqiqiy loyihada boshqa xona vazifasi o‘zgarishni asoslay oladi. Mashq tasodifiy farqni ongli qarordan ajratishni o‘rgatadi, hamma derazani majburiy bir xil qilishni emas.",
+      "Darsdagi bajarish: Deraza eni va yuqori sathini tenglashtiring → faqat masofa emas, shakl ham takrorlanadi."
+    ],
+    "exercise": "Deraza markazlari orasidagi masofalarni bir qatorda yozing.",
+    "solution": "Tasodifiy farqlar bilan ataylab tanlangan interval o‘rtasidagi farq o‘lchamlar orqali ko‘rinadi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M03_003",
+    "asset": "realistic-l01_m03_003.jpg",
+    "title": "Ustun va vertikal elementlar ritmi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ustunlar oralig‘ini ko‘ring. To‘rtta tik tayanch ayvonning uchta oralig‘ini hosil qiladi; yashil belgilar ularni ajratadi.",
+      "2. Deraza bilan munosabat. Har oraliq ichida bitta deraza bor. To‘q sariq belgilar ochilish markazlarini ko‘rsatadi; ustun derazaning oldini to‘sib turmaydi.",
+      "3. Ikki ritmni solishtiring. Ustun o‘qlari, deraza markazlari va kirish joyini hujjatda birga tekshiring. Rasm konstruktiv tayanch o‘lchami yoki hisobini belgilamaydi.",
+      "Darsdagi bajarish: Ustun markazlarini shu tarmoqqa solishtiring → ustun va ochilishlar ikki zid ritm yaratmaydi."
+    ],
+    "exercise": "Ustun o‘qlari bilan deraza ritmini bir eskizda solishtiring.",
+    "solution": "Vertikal elementlar va ochilishlar bir-biriga qarshi tasodifiy tartib hosil qilmasligi tekshiriladi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M03_004",
+    "asset": "realistic-l01_m03_004.jpg",
+    "title": "Ritmni ataylab buzish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Takror fonini toping. Tor derazalar va bir xil yuqori-pastki sathlar fasadda qaytariladi.",
+      "2. Kirishdagi istisno. To‘q sariq kontur chuqurroq va kengroq kirish guruhini ajratadi. Bu o‘zgarish kelish joyini ko‘rsatishga xizmat qiladi.",
+      "3. Qarorni asoslang. Ritmni qayerda va nima uchun o‘zgartirganingizni yozing. Kirishdagi ongli urg‘uni boshqa joylardagi sababsiz interval farqlaridan ajrating.",
+      "Darsdagi bajarish: Kirishga yaqin intervalni ataylab o‘zgartiring va sababini yozing → aksent ongli istisno."
+    ],
+    "exercise": "Kirish joyida ritmni bir marta o‘zgartirib, sababini yozing.",
+    "solution": "Ritmni buzish markazni ajratishi mumkin, lekin o‘zgarish qarorning bir qismi bo‘lishi kerak.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M03_005",
+    "asset": "realistic-l01_m03_005.jpg",
+    "title": "Ritm xatolarini topish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yuqoridagi farqni toping. To‘q sariq romli uchinchi deraza oldingi intervalga nisbatan yaqinroq; o‘ngda ko‘proq bo‘sh devor qolgan.",
+      "2. Pastdagi tartibni solishtiring. Yashil belgilar takror markazlarini ajratadi. Rasm farqni ko‘rishni, hujjat esa uni o‘lchashni ta’minlaydi.",
+      "3. Sababini tekshiring. Dars misolida 8.0−7.6=0.4 m siljish bor. Xona yoki foydalanish sababi bormi? Farq asoslanmasa tuzating; har bir o‘zgarishni avtomatik xato deb atamang.",
+      "Darsdagi bajarish: X=7.6 m derazani toping: farq 0.4 m → xato yoki funksional sabab ekanini tekshiring."
+    ],
+    "exercise": "Ikki variantda takror, interval va urg‘uni tekshiruvchi jadval tuzing.",
+    "solution": "Ritm auditi har farqni xato demaydi; farqning vazifasi tushuntirilishini talab qiladi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M04_001",
+    "asset": "realistic-l01_m04_001.jpg",
+    "title": "Simmetriya nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Markaziy o‘qni toping. Yashil chiziq tom cho‘qqisi va kirish markazidan o‘tadi. Ikki yon deraza shu o‘qqa nisbatan juftlanadi.",
+      "2. O‘qdan masofani solishtiring. Dars shartida o‘q 6 m, deraza markazlari 3 va 9 m: 6−3=3, 9−6=3 m.",
+      "3. Moslikni tekshiring. Faqat masofa emas, shakl, sath va ramka ham taqqoslanadi. Aniq masofa rasm perspektivasidan emas, hujjat o‘lchamidan olinadi.",
+      "Darsdagi bajarish: O‘qdan masofani o‘lchang: 6−3=3 va 9−6=3 → markazlar simmetrik."
+    ],
+    "exercise": "Fasad markaziy o‘qini chizib, ikki tomondagi elementlarni juftlang.",
+    "solution": "Simmetriya elementlarning o‘qqa nisbatan mosligi bilan tekshiriladi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M04_002",
+    "asset": "realistic-l01_m04_002.jpg",
+    "title": "Simmetrik fasad — rasmga qarab tushuning",
+    "explanation": [
+      "1. Fasad juftlarini toping. Markaziy kirishning ikki tomonidagi derazalar shakl va balandlik jihatdan o‘xshash.",
+      "2. Xonaga xizmatini tekshiring. O‘ngdagi ochiq tasvirda chap xona umumiy, o‘ng xona yotoq uchun; har biri old derazasi bilan bog‘langan.",
+      "3. Tashqi tartib ichki vazifani buzmasin. Xona kirishi, mebel, yorug‘lik va yurish yo‘lini tekshiring. Simmetrik fasadning o‘zi qulay plan borligini tasdiqlamaydi.",
+      "Darsdagi bajarish: Deraza shakli, balandligi va ramkasini ham solishtiring → joyning o‘zi yetmaydi."
+    ],
+    "exercise": "Simmetrik variant ochilishlarini ichki xonalar bilan solishtiring.",
+    "solution": "Tashqi simmetriya uchun xonaning yorug‘lik yoki harakat vazifasini buzish asosli yechim emas.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M04_003",
+    "asset": "realistic-l01_m04_003.jpg",
+    "title": "Asimmetriya nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Kirish o‘qdan chetda. Chapdagi ajratilgan kirish bilan o‘ngdagi kattaroq hajm ko‘zgudek takrorlanmaydi.",
+      "2. Umumiy tartib saqlangan. Material, sokol va gorizontal bog‘lanish farqli qismlarni yaxlit ko‘rinishga birlashtiradi.",
+      "3. Funksional sababni yozing. Kirishni ko‘chirish plan va odam harakatiga qanday yordam beradi? Darsdagi x=2 m qiymat hujjat sharti; renderdan koordinata olinmaydi.",
+      "Darsdagi bajarish: Kirishni x=2 m ga ko‘chiring → simmetriya buzildi, funksional sababni yozing."
+    ],
+    "exercise": "O‘qdan ikki tomonda farqli hajmli variant yarating.",
+    "solution": "Asimmetriya tartibsizlik emas; teng bo‘lmagan qismlar orqali ham yaxlit kompozitsiya tuziladi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M04_004",
+    "asset": "realistic-l01_m04_004.jpg",
+    "title": "Asimmetrik balans — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yopiq hajmni toping. Chapdagi to‘q sariq konturli qoramtir kirish qismi bir kuchli guruh bo‘lib ko‘rinadi.",
+      "2. Ochiq bo‘shliqni solishtiring. O‘ngdagi yashil kontur ayvonning kengroq ochiq qismini ajratadi. Bu chap hajmni takrorlamaydi.",
+      "3. Og‘irlik bilan balansni baholang. Hajm, material, soya va bo‘shliq birga ishlaydi. Asimmetrik balans elementlarni ko‘zgudek takrorlash bilan cheklanmaydi.",
+      "Darsdagi bajarish: Kirish hajmiga qarshi ayvon yoki bo‘shliqni sinang → asimmetrik balans tekshiriladi."
+    ],
+    "exercise": "Katta bo‘shliqni qarshi tomondagi hajm va material bilan muvozanatlang.",
+    "solution": "Asimmetrik balans vizual og‘irlik orqali tushuntiriladi, elementlarni ko‘zgudek takrorlash orqali emas.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L01_M04_005",
+    "asset": "realistic-l01_m04_005.jpg",
+    "title": "Simmetriya va asimmetriya xatolari — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi funksional yo‘qotish. Markazdagi eshikdan kelgan to‘q sariq yo‘l yotoqxona yonidan uning ichida o‘tadi; xona tinch foydalanish joyi bo‘lib qolmaydi.",
+      "2. O‘ngdagi umumiy yo‘l. Chetdagi kirish alohida yo‘lakka keladi; yashil yo‘l yotoqxonani kesmasdan umumiy xonaga boradi.",
+      "3. Bir xil mezon bilan tekshiring. Kirishning o‘qilishi, xona aloqasi, shaxsiylik va vizual muvozanatni ikkala variantda baholang. Simmetriya uchun foydalanishni qurbon qilish asosli qaror emas.",
+      "Darsdagi bajarish: Planni fasadga moslash uchun yotoqxonani buzayotgan qarorni aniqlang → foydalanish ustuvor qoladi."
+    ],
+    "exercise": "Simmetrik va asimmetrik variantni bir xil mezonlarda tekshiring.",
+    "solution": "Kirishning o‘qilishi, xona aloqasi va umumiy muvozanat ikkala variant uchun ham baholanadi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
