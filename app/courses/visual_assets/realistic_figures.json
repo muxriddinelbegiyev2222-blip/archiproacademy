@@ -2378,5 +2378,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L03_M04_001",
+    "asset": "realistic-l03_m04_001.jpg",
+    "title": "Uyni uchastkaga joylashtirish prinsipi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Uch joylashuv. Chapda uy oldinga yaqin, o‘rtada markazga yaqin, o‘ngda orqaroqda. Uy konturi o‘zgarganda old va orqa bo‘shliqlar qanday almashishini kuzating.",
+      "2. Yon aloqalar. Uy yonidagi yo‘laklar va chegara devorlarini alohida toping. Kirishdan orqa hovliga borish ham joylashtirish qarorining bir qismidir.",
+      "3. Teng shartda sinash. O‘z variantlaringizni bir xil tekshirilgan chegara, shimol va uy konturi bilan chizing. Render ko‘rinishni tushuntiradi; undagi bo‘shliqlarni me’yoriy masofa yoki aniq o‘lcham deb olmang.",
+      "Darsdagi bajarish: Uy konturini chegaralar va kirish bilan solishtiring → tekshirilishi kerak bo‘lgan masofalar."
+    ],
+    "exercise": "Uch variantni bir xil chegara va shimol sxemasiga joylashtiring.",
+    "solution": "Variantlarni solishtirish uchun boshlang‘ich sharoit bir xil saqlanadi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M04_002",
+    "asset": "realistic-l03_m04_002.jpg",
+    "title": "Old hovli va orqa hovli — rasmga qarab tushuning",
+    "explanation": [
+      "1. Old hovli vazifasi. Chapdagi darvozadan kelgan mehmon ayvonda kutib olinmoqda. Kirish, kelish va suhbatga bog‘liq joylarni ajrating.",
+      "2. Oilaviy hovli vazifasi. O‘ngda oila daraxt va ayvon yonidagi stolda dam olmoqda. Uy eshigi shu foydalanish joyi bilan bog‘langan.",
+      "3. Vazifadan joylashuvga. Har hovli uchun kim foydalanishi, qachon ishlatishi, qaysi xonadan chiqishi va qanday yo‘l bilan borishini yozing. “Old” yoki “orqa” degan nomning o‘zi qulaylikni asoslamaydi.",
+      "Darsdagi bajarish: Old hovliga kirish va mehmon, orqaga oilaviy dam olishni joylashtiring → vazifali hovli."
+    ],
+    "exercise": "Old hovli va ichki dam olish hovlisining vazifasini yozing.",
+    "solution": "Hovlining nomi emas, kim va qanday foydalanishi joylashtirishni asoslaydi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M04_003",
+    "asset": "realistic-l03_m04_003.jpg",
+    "title": "Uy, quyosh va privacy — rasmga qarab tushuning",
+    "explanation": [
+      "1. Qarama-qarshi ko‘rish. Chapdagi yotoqxona oynasidan qo‘shni binoning derazalari ko‘rinadi. Xona ichidagi qaysi joylar tashqaridan ko‘rinishi mumkinligini tekshiring.",
+      "2. Ekran varianti. O‘ngdagi yog‘och elementlar ko‘rish va yorug‘likni o‘zgartiradi, lekin qo‘shni bino hali ham ayrim bo‘shliqlardan ko‘rinadi. Ekran borligi to‘liq maxfiylik isboti emas.",
+      "3. Birga baholash. Xona ochilishini qo‘shni ko‘rish nuqtalari, foydalanish vaqti, quyosh va yorug‘lik bilan solishtiring. Ekran yoki uy joylashuvi o‘zgarishidan keyin har bir natijani qayta tekshiring.",
+      "Darsdagi bajarish: Yotoqxona ochilishini qo‘shni va quyosh bilan solishtiring → privacy va yorug‘lik bahosi."
+    ],
+    "exercise": "Har variantda xona ochilishlari, soya va qo‘shni ko‘rishini solishtiring.",
+    "solution": "Privacy va quyoshga moslik bitta chiroyli genplan tasviri bilan isbotlanmaydi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M04_004",
+    "asset": "realistic-l03_m04_004.jpg",
+    "title": "Uy va parking aloqasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Mashinadan tushish. Odam ochiq avtomobil eshigi yonida mahsulot bilan turibdi. Eshikning ochilishi va odam turadigan joy parkovka konturidan tashqariga chiqadi.",
+      "2. Uyga yurish. Bo‘sh yo‘l mashina yonidan ayvonga olib boradi. Ayvonning yopiq qismi yakunda himoya beradi, yo‘lning qolgan qismi yomg‘ir ostida.",
+      "3. Yomg‘irli holat sinovi. Buyum ko‘tarib yurish, qoplama, suvning yig‘ilishi, balandlik o‘zgarishi va eshik oldida to‘xtashni tekshiring. Tasvirning ho‘l yuzasi suv oqimi yoki qoplama xavfsizligi hisobini tasdiqlamaydi.",
+      "Darsdagi bajarish: Parkingdan uyga piyoda yo‘lini belgilang → mashina o‘rtasidan majburiy o‘tish yo‘q."
+    ],
+    "exercise": "Parkingdan uyga yomg‘irli paytdagi piyoda yo‘lini chizing.",
+    "solution": "Uy-parking aloqasi masofa, harakat va foydalanish ssenariyi bilan tekshiriladi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M04_005",
+    "asset": "realistic-l03_m04_005.jpg",
+    "title": "Uy joylashtirish xatolarini topish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi konflikt. Mashina asosiy kirish oldida joylashgan, oldingi bo‘shliq torroq. Piyoda kirishidan eshikkacha borishda mashina va uy orasidagi aloqani kuzating.",
+      "2. O‘ngdagi o‘zgarish. Mashina o‘ng tomonda, kichik darvozadan keladigan qoplamali yo‘l uy kirishiga ulanadi. Uy orqaroqqa surilganda old va orqa hovli o‘rtasidagi taqsimot ham o‘zgaradi.",
+      "3. Asoslangan tanlov. Har variantni kirish, foydalaniladigan hovli, yon aloqa, yorug‘lik va tekshiriladigan cheklovlar bo‘yicha jadvalda baholang. Bir xil boshlang‘ich geometriya bilan aniq chizma tuzing; renderdagi yechimni tayyor me’yoriy loyiha deb olmang.",
+      "Darsdagi bajarish: Har variant uchun foydalanish, kirish va tekshiruv jadvali yozing → asoslangan tanlov."
+    ],
+    "exercise": "Variantlarni kirish, hovli, yorug‘lik va cheklov bo‘yicha jadvalda baholang.",
+    "solution": "Tanlov dalillarga tayanadi; me’yoriy masofalar alohida rasmiy manbadan tekshiriladi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
