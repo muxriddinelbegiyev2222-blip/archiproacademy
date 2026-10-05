@@ -2208,5 +2208,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L03_M02_001",
+    "asset": "realistic-l03_m02_001.jpg",
+    "title": "Shimolni aniqlash va orientatsiya — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yo‘nalishni tekshirish. Odam kompasni kaftida gorizontal ushlab, joydagi yo‘nalishni kuzatmoqda. Qog‘ozning yuqori tomonini o‘z-o‘zidan shimol deb qabul qilmang.",
+      "2. Chizma bilan bog‘lash. Qo‘ldagi varaq va orqadagi uchastka bir ishning ikki qismi: joydagi yo‘nalish chizmada tekshirilgan manba bilan qayd etiladi. Rasm kompasidagi belgidan uchastkaning aniq shimolini o‘qimang.",
+      "3. Saqlanadigan natija. Shimol strelkasi bilan birga uning manbasini yozing. Kuzatuv, hujjat va o‘lchash ma’lumoti mos kelmasa, yo‘nalishni aniqlashtiring; bu tasvir geodezik yo‘nalishni tasdiqlamaydi.",
+      "Darsdagi bajarish: Shimol manbasini aniqlang, chizmada strelka qo‘ying → tekshirilgan orientatsiya."
+    ],
+    "exercise": "Shimol strelkasini manbasi bilan joylashtiring.",
+    "solution": "Orientatsiya taxminiy qog‘oz yuqorisidan emas, tasdiqlangan shimol yo‘nalishidan olinadi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M02_002",
+    "asset": "realistic-l03_m02_002.jpg",
+    "title": "Quyosh kun davomida qanday harakat qiladi? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi holat. Pastroq yorug‘likda ustun soyasi uzoqqa tushgan. Soya nimadan boshlanishi va qayergacha borishini kuzating.",
+      "2. O‘rta va o‘ngdagi farq. O‘rtada ustun soyasi qisqaroq, o‘ngda yana uzun va boshqa tomonga yo‘nalgan. Bir xil joyning yoritilishi kun davomida o‘zgarishini solishtiring.",
+      "3. Kuzatuv sharti. O‘z mashqingizda joy, sana va vaqtni yozing, so‘ng yo‘nalish hamda soyani tekshiring. Rasm sifat jihatidan taqqoslash beradi; undagi uzunlik yoki burchakni aniq quyosh hisobiga ko‘chirmang.",
+      "Darsdagi bajarish: Ertalab va kechki quyoshni sxematik belgilang. Aniq burchakni taxmin qilmang → joy va sanaga bog‘liq tahlil."
+    ],
+    "exercise": "Ertalab, tush va kech uchun quyosh yo‘nalishini joy va mavsumga bog‘lang.",
+    "solution": "Quyoshning holati vaqt, fasl va joyga bog‘liq; bitta kun sxemasi yil bo‘yi bir xil emas.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M02_003",
+    "asset": "realistic-l03_m02_003.jpg",
+    "title": "Xonalarni orientatsiya qilish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Tongdagi foydalanish. Chapda yotoqxonada uyg‘onish va derazadan kirayotgan yorug‘lik ko‘rsatilgan. Xonadan odatda qaysi vaqtda foydalanilishini yozing.",
+      "2. O‘qishdagi qulaylik. O‘ngda stol ustida birga o‘qish, deraza yonida yorug‘likni yumshatuvchi elementlar ko‘rinadi. Ish yuzasi, odamning qarashi va yorug‘lik aloqasini solishtiring.",
+      "3. Orientatsiya qarori. Xona vazifasi va foydalanish vaqtini uchastkaning tekshirilgan tomonlari bilan bog‘lang; yorug‘lik, qizish va soyalanishni birga baholang. Rasmning chap yoki o‘ng tomonini sharq yoki g‘arb deb olmang.",
+      "Darsdagi bajarish: Xona foydalanish vaqtini tomon bilan solishtiring → tongda foydalaniladigan xona uchun sharq sinovi."
+    ],
+    "exercise": "Xonalar foydalanish vaqtini orientatsiya bilan solishtiring.",
+    "solution": "Xonani yo‘nalishga qo‘yish kundalik ssenariy va iqlim bilan asoslanadi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M02_004",
+    "asset": "realistic-l03_m02_004.jpg",
+    "title": "Issiq tomonlar va soya — rasmga qarab tushuning",
+    "explanation": [
+      "1. Himoyasiz ochilish. Chapdagi oynaning oldida tashqi ekran yo‘q, yorug‘lik to‘g‘ridan-to‘g‘ri oynaga keladi.",
+      "2. Tashqi ekran varianti. O‘ngda oynaning tashqarisida ramkaga mahkamlangan vertikal yog‘och elementlar bor. Ular tushayotgan nurning bir qismini to‘sadi, orasidagi bo‘shliqlar ko‘rish va yorug‘lik aloqasini qoldiradi.",
+      "3. Variantni tekshirish. Darsdagi g‘arb ochilishi uchun shu kabi tashqi himoya variantini sinang. Haqiqiy yo‘nalish, vaqt, ko‘rish va xona yorug‘ligini tekshiring; rasm ekran oralig‘i yoki qizish kamayishining tayyor hisobini bermaydi.",
+      "Darsdagi bajarish: G‘arb ochilishiga tashqi soyalanish variantini chizing → yorug‘lik va qizish birga baholanadi."
+    ],
+    "exercise": "Qo‘shni bino va ayvon soya hosil qiladigan qismlarni belgilang.",
+    "solution": "Soyaning foydasi yoki zarari xona vazifasi hamda ko‘rilayotgan vaqtga bog‘liq.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M02_005",
+    "asset": "realistic-l03_m02_005.jpg",
+    "title": "Quyosh diagrammasi va site audit — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi soya. Qo‘shni balandroq bino uchastkaning kattaroq qismiga soya tashlaydi. O‘z binongizdan tashqaridagi obyektlarni ham tahlilga kiriting.",
+      "2. O‘ngdagi farq. Shu joyning boshqa yoritilish holatida soyali maydon torroq ko‘rinadi. Qaysi foydalanish maydoni yorug‘ yoki soyada qolayotganini solishtiring.",
+      "3. Takror tekshiriladigan audit. Joy, tekshirilgan shimol, sana, vaqt, bino va qo‘shni obyektlarning haqiqiy geometriyasini qayd eting. Rasm tushunchani ko‘rsatadi; quyosh diagrammasi va insolyatsiya hisobining o‘rnini bosmaydi.",
+      "Darsdagi bajarish: Tanlangan sana, bino va qo‘shni soyasini qayd qiling → takror tekshiriladigan diagramma."
+    ],
+    "exercise": "Diagrammada joy, sana va vaqtni yozib, noma’lumlarni belgilang.",
+    "solution": "Quyosh auditi tekshiriladigan shartlarga ega bo‘ladi; orientatsiya insolyatsiya hisobini avtomatik almashtirmaydi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
