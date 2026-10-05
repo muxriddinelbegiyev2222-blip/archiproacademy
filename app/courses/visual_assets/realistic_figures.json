@@ -2463,5 +2463,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L03_M05_001",
+    "asset": "realistic-l03_m05_001.jpg",
+    "title": "Hovlini funksional zonalash — rasmga qarab tushuning",
+    "explanation": [
+      "1. Faoliyatlarni ajrating. Orqada ayvon ostida ovqatlanish, o‘rtada bola o‘yini va yonida kuzatib o‘tirish, chapda ekilgan maydon ko‘rinadi.",
+      "2. Xizmat joyi va yo‘li. O‘ngdagi asbob saqlash joyiga darvozadan keladigan qoplamali yo‘l ulanadi. U o‘yin maysasi orqali o‘tmaydi.",
+      "3. Zonalar dasturi. Har faoliyat uchun foydalanuvchi, vaqt, kerakli joy va qo‘shni faoliyatni yozing. Hovlini faqat chiroyli buyumlar bilan to‘ldirmang: yurish, ishlash va kuzatish aloqalarini ham tekshiring.",
+      "Darsdagi bajarish: Har tashqi faoliyatga vaqt va foydalanuvchi yozing → zonalar dasturi."
+    ],
+    "exercise": "Hovli funksiyalarini shovqin, maxfiylik va foydalanish vaqtiga ko‘ra ajrating.",
+    "solution": "Hovli zonalari bir-biriga kerakli aloqa va kerakli ajralish bilan bog‘lanadi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M05_002",
+    "asset": "realistic-l03_m05_002.jpg",
+    "title": "Family va mehmon hovlisi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Mehmon aloqasi. Chapdagi darvozadan kelgan odam yaqinroq ovqatlanish joyiga boradi. Shu yo‘l va stol atrofidagi harakatni alohida kuzating.",
+      "2. Tinch oilaviy joy. O‘ngda daraxt tagida katta va bola birga o‘qimoqda. Ekilgan tasma bu joyni mehmon yo‘lidan ajratadi.",
+      "3. Ikki ssenariyni sinash. Mehmon kelayotgan paytda oilaning dam olish holatini planda tekshiring. Qaysi yo‘llar uchrashishi zarur, qaysi kesishuvni kamaytirish mumkin? Ekilgan tasma shovqin yoki maxfiylikni to‘liq hal qildi deb hisoblamang.",
+      "Darsdagi bajarish: Mehmon diningni kirish bilan, oilaviy dam olishni tinch xona bilan bog‘lang → privacy."
+    ],
+    "exercise": "Mehmonlar yo‘lini oilaning tinch dam olish zonasidan ajrating.",
+    "solution": "Bir hovlida ikki ssenariy bo‘lishi mumkin, ammo majburiy kesishuvlar asoslanadi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M05_003",
+    "asset": "realistic-l03_m05_003.jpg",
+    "title": "Yozgi ovqatlanish va dam olish zonasi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Oshxonadan boshlash. O‘ngdagi ochiq eshikdan oshxona ko‘rinadi, odam taom bilan stol tomon kelmoqda. Xizmat yo‘li qoplamali maydon orqali o‘tadi.",
+      "2. O‘yin bilan ajralish. Chapdagi bola o‘yin maydoni ekilgan tasma ortida. Taom olib kelish yo‘li shu maysa orqali o‘tishi shart emas.",
+      "3. Stolning foydalanish joyi. Stulni surish, o‘tirish va patnis bilan xizmat qilish holatini birga tekshiring. Stol sig‘ishi yetarli emas: oshxona eshigi, yo‘l va o‘tirgan odamlar orasidagi aloqa ham ishlashi kerak.",
+      "Darsdagi bajarish: Ovqat tayyorlashdan stolgacha yo‘lni chizing → issiq idishlar o‘yin maydonini kesmaydi."
+    ],
+    "exercise": "Ovqatlanish stolini oshxona va xizmat yo‘li bilan bog‘lang.",
+    "solution": "Yozgi ovqatlanish zonasida mebel sig‘ishi bilan ovqat olib kelish yo‘li ham tekshiriladi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M05_004",
+    "asset": "realistic-l03_m05_004.jpg",
+    "title": "Yashil va xo'jalik zonalari — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yashil dam olish joyi. Chapda daraxt va o‘rindiq, o‘ngda esa xo‘jalik asboblari saqlanadigan kichik ombor bor.",
+      "2. Ko‘rinishni filtrlash. O‘rtadagi yog‘och ekran ikki vazifani ajratadi. Ekran yonidagi qoplamali yo‘l ombor eshigiga kirishni qoldirgan.",
+      "3. Xizmat sinovi. Asbobni olish, ko‘tarib chiqish va joyiga qaytarishni planda ko‘rsating. Xo‘jalik joyini yashirish uchun uning kirishini yopmang; ochilgan eshik va ishlash joyini ham tekshiring.",
+      "Darsdagi bajarish: Yashil va xo‘jalik joylarini xizmat yo‘liga bog‘lang → ko‘rinish va foydalanish kelishadi."
+    ],
+    "exercise": "Ombor va xizmat ishlarini yashil dam olish maydonidan ajrating.",
+    "solution": "Xo‘jalik zona yashirilsa ham, unga ishlash va xizmat uchun kirish kerak.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M05_005",
+    "asset": "realistic-l03_m05_005.jpg",
+    "title": "Hovli zonalaridagi xatolar — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi to‘siqlar. Koptok va o‘yinchoq mashina patnis olib kelinadigan qoplamali yo‘lda turibdi. Stol stullari ombor eshigi oldiga yaqinlashgan.",
+      "2. O‘ngdagi tartib. O‘yinchoqlar maysa yonidagi savatda, stol boshqa joyda, asosiy yo‘l bo‘sh. Harakat va saqlash joylari ajratilgan.",
+      "3. To‘liq hovli auditi. Har zonaning kirishi, foydalanishi va xizmatini tekshiring; shovqin va ovqat tayyorlash bo‘lsa tutun ta’sirini ham alohida baholang. Eshik ochilgan holatni sinang. Rasm yo‘l to‘siqlarini tushuntiradi, barcha sharoitlar tekshirildi degani emas.",
+      "Darsdagi bajarish: Shovqin, tutun va piyoda oqimini ustma-ust chizing → konflikt zonalari ajraladi."
+    ],
+    "exercise": "Har zonaga kirish, foydalanish va xizmat yo‘lini audit qiling.",
+    "solution": "Hovli auditi dekoratsiya emas, kundalik ishlarning bajarilishini tekshiradi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
