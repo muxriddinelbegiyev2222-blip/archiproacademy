@@ -2633,5 +2633,90 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L03_M07_001",
+    "asset": "realistic-l03_m07_001.jpg",
+    "title": "Relyef nima? — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yer bir tekis emas. Chap orqadagi daraxt va bino tomoni balandroq, oldingi ko‘cha tomoni pastroq ko‘rinadi. Relyef yer sathining o‘zgarishidir.",
+      "2. Ikki nuqta. Yuqori va pastdagi yog‘och belgilarni toping. Har nuqtaning sathi bir xil tayanchga nisbatan yozilgandagina ularni solishtirish mumkin.",
+      "3. Plandan kesimga. Uchastka konturi balandlikni o‘zi bermaydi: tekshirilgan sathlarni plan va kesimga kiriting. Rasmda ko‘ringan qiyalikni darsdagi aniq 0.5 m farq bilan tenglashtirmang.",
+      "Darsdagi bajarish: Nuqtalar va sathlarni bir tayanchga nisbatan yozing → solishtiriladigan geometriya."
+    ],
+    "exercise": "Ikki nuqta orasidagi sath farqini yozing.",
+    "solution": "Relyef yer sathining o‘zgarishidir; plan konturi balandlik ma’lumotini o‘zi bermaydi.",
+    "block": 6,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M07_002",
+    "asset": "realistic-l03_m07_002.jpg",
+    "title": "Baland va past nuqtalarni o'qish — rasmga qarab tushuning",
+    "explanation": [
+      "1. O‘lchash aloqasi. Chapdagi asbob balandroq yerda, o‘ngdagi reykali yordamchi pastroq nuqtada turibdi. Tasvir sath ma’lumotini yig‘ish tushunchasini ko‘rsatadi.",
+      "2. Nishab hisobi. Dars shartida balandlik farqi 0.5 m, gorizontal masofa 10 m: 0.5/10×100=5%. Mustaqil 0.6 m va 20 m shartda 0.6/20×100=3%. Rasm reykasidan bu sonlarni o‘qimang.",
+      "3. Natijaning chegarasi. Bu ikki nuqta orasidagi o‘rtacha nishab. Oradagi keskin o‘zgarishlarni alohida tekshiring; 3% yoki 5% natija bino yoki yo‘l uchun ruxsat etilgan nishab me’yori emas.",
+      "Darsdagi bajarish: 0.5/10×100 hisoblang → o‘rtacha nishab 5%. Mahalliy keskin o‘zgarish alohida tekshiriladi."
+    ],
+    "exercise": "O‘quv nishabini 0.6/20×100 bo‘yicha hisoblang.",
+    "solution": "Nishab 3 foiz; bu hisob bino yoki yo‘l uchun ruxsat etilgan nishab me’yori emas.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M07_003",
+    "asset": "realistic-l03_m07_003.jpg",
+    "title": "Uyni nishabga joylashtirish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Yuqoriroq pol sathi. Chapdagi uy kirishiga yer yo‘lidan ko‘proq pog‘ona bilan chiqiladi. Yer va kirish sathi orasidagi farqni kuzating.",
+      "2. Pastroq joylashuv. O‘ngda kirish pog‘onalari kamroq, balandroq yon yer esa uy devoriga yaqinroq keladi. Faqat kirish osonligi bilan qaror qilmang.",
+      "3. Birgalikdagi kesim. Haqiqiy yer sathi, pol, ostona, kirish va suv yo‘lini bitta kesimda bog‘lang. Bu maket konstruktiv yoki drenaj yechimi emas; sath qarorini tegishli tekshiruvlar bilan asoslang.",
+      "Darsdagi bajarish: Uy polini sath bilan bog‘lab kirish kesimini chizing → yer va bino aloqasi."
+    ],
+    "exercise": "Binoni ikki turli sathga joylashtirib, kirish kesimini chizing.",
+    "solution": "Bino sathi kirish, yer va drenaj bilan birga tanlanadi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M07_004",
+    "asset": "realistic-l03_m07_004.jpg",
+    "title": "Kesish, to'ldirish va suv oqimi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Kesish. Chapda balandroq yerning bir qismi olinib, tekisroq maydon hosil qilingan; chiqarilgan grunt oldindagi uyum bilan ajratilgan.",
+      "2. To‘ldirish. O‘ngda pastroq tomonga qo‘shilgan grunt maydonni ko‘targan. Oldingi ochiq qirrada qo‘shilgan va mavjud yer munosabati ko‘rinadi.",
+      "3. Yer va suv aloqasi. Har variantda past nuqta va suvning keyingi yo‘lini tekshiring. Grunt turi, tayanch, zichlash va qo‘shni yerga ta’sir alohida muvofiqlashtiriladi; tasvir qurilish uchun qatlam yoki nishab yo‘riqnomasi emas.",
+      "Darsdagi bajarish: Kesish va to‘ldirish joyini, suvning pastga yo‘lini ko‘rsating → yer ishlari muammosi ko‘rinadi."
+    ],
+    "exercise": "Kesish va to‘ldirish zonalarini alohida belgilang.",
+    "solution": "Grunt ishlari suv oqimi, tayanch va qo‘shni yerga ta’siri bilan muvofiqlashtiriladi.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L03_M07_005",
+    "asset": "realistic-l03_m07_005.jpg",
+    "title": "Relyefdagi xatolarni topish — rasmga qarab tushuning",
+    "explanation": [
+      "1. Past joyni topish. O‘ngdagi devor yonida suv yig‘ilgan, chapdagi qoplamali yo‘l esa boshqa sathda. Kuzatuvni o‘lchash ma’lumoti bilan tekshiring.",
+      "2. Qo‘shni sharoiti. Chegara devori ortida boshqa uy bor. Suvni tasodifan shu tomonga chiqarish muammoni yechilgan deb hisoblashga asos bo‘lmaydi.",
+      "3. Tekshiruv vazifasi. Past nuqta, yer sathlari, suv yig‘ilishi va chiqarish imkoniyatlarini qayd etib, drenaj yechimini mutaxassis bilan aniqlashtiring. Bu rasm muammoni ko‘rsatadi; tayyor suv chiqarish loyihasini bermaydi.",
+      "Darsdagi bajarish: Past nuqtani qo‘shni tomonga oqizayotgan yechimni toping → drenaj loyihasini mutaxassis bilan aniqlashtiring."
+    ],
+    "exercise": "Past nuqta va suv chiqarish yechimini mutaxassis bilan tekshiruvga yozing.",
+    "solution": "Relyef auditi suvni qo‘shniga tasodifiy yo‘naltirishni to‘g‘ri yechim deb qabul qilmaydi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
