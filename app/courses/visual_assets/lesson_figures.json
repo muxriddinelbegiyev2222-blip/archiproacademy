@@ -8131,137 +8131,145 @@
   {
     "code": "L13_M07_003",
     "asset": "l13_m07_003.svg",
-    "title": "Trade-offni tushuntirish — ko‘rgazmali namuna",
+    "title": "Trade-offni tushuntirish — arxitekturaviy eskiz",
     "explanation": [
-      "Mijoz kirishni markazga ko‘chirmoqchi, ammo bu yotoqxona privacy va koridorga ta’sir qiladi.",
-      "Foyda va yo‘qotish jadvalini tuzing → trade-off.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Uch panel qaror, uning foydasi va cheklovini birga ko‘rish g‘oyasini ko‘rsatadi.",
+      "2. Katta glazing, ochiq plan yoki kuchli forma faqat afzallik emas; privacy, iqlim, budget, structure yoki maintenance kabi oqibatlarni ham tushuntirish kerak.",
+      "3. Mijozga faqat plusni ko‘rsatish professional qaror emas. Variantning foydasi, cheklovi va ta’siri birga aytiladi.",
+      "Darsdagi bajarish: Uch qaror uchun Benefit → Trade-off → Impact zanjirini yozing."
     ],
-    "exercise": "Xona qo‘shishning foydasi va hovli yo‘qotishini ko‘rsating.",
-    "solution": "Trade-off qarorning ikki tomonini tushuntiradi.",
+    "exercise": "3 ta loyiha qarori uchun foyda va cheklovni yonma-yon ko‘rsating.",
+    "solution": "Trade-off qarorning foydasi bilan birga muhim cheklov va oqibatlarni ochiq tushuntirishdir.",
     "block": 5,
     "recipe": "variants",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/workflow eskizi. Kartochkalar va variantlar o‘quv mantiqini ko‘rsatadi; real loyiha qarorlari client brief, site va texnik koordinatsiya bilan aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L13_M07_004",
     "asset": "l13_m07_004.svg",
-    "title": "Kelishmovchilikni boshqarish — ko‘rgazmali namuna",
+    "title": "Kelishmovchilikni boshqarish — arxitekturaviy eskiz",
     "explanation": [
-      "Mijoz kirishni markazga ko‘chirmoqchi, ammo bu yotoqxona privacy va koridorga ta’sir qiladi.",
-      "Muqobil yechimni taklif qilib ustuvorlikni aniqlang → boshqariladigan kelishmovchilik.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Ikki tomonlama suhbat eskizi mijoz va arxitektor o‘rtasidagi fikr farqini professional dialogga aylantirishni ko‘rsatadi.",
+      "2. Muammo → sabab → alternativ → ta’sir formatida gapirilsa, bahs shaxsiy diddan loyiha mezonlariga qaytadi.",
+      "3. Mijoz fikrini kamsitish yoki avtoritet bilan bosish o‘rniga, variant va oqibatlar tushuntiriladi.",
+      "Darsdagi bajarish: Qiyin e’tiroz uchun 3 bosqichli professional javob yozing."
     ],
-    "exercise": "Kelishmovchilik uchun mezonli ikki muqobil taklif qiling.",
-    "solution": "Konflikt aniq variant va qaror bilan boshqariladi.",
+    "exercise": "Mijoz e’tiroziga sabab, alternativ va ta’sir bilan javob bering.",
+    "solution": "Professional kelishmovchilik boshqaruvi suhbatni shaxsiy bahsdan loyiha mezonlariga qaytaradi.",
     "block": 5,
     "recipe": "variants",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/workflow eskizi. Kartochkalar va variantlar o‘quv mantiqini ko‘rsatadi; real loyiha qarorlari client brief, site va texnik koordinatsiya bilan aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L13_M07_005",
     "asset": "l13_m07_005.svg",
-    "title": "Qarorni himoya qilish audit — ko‘rgazmali namuna",
+    "title": "Qarorni himoya qilish audit — arxitekturaviy eskiz",
     "explanation": [
-      "Mijoz kirishni markazga ko‘chirmoqchi, ammo bu yotoqxona privacy va koridorga ta’sir qiladi.",
-      "Tanlangan yechim va qolgan cheklovni qayd qiling → himoyalangan qaror.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi checklist, markazdagi loyiha varianti va o‘ngdagi qaror kartasi decision defense workflowini ko‘rsatadi.",
+      "2. Qaror brief yoki site daliliga bog‘langanmi, trade-off aytilganmi, alternativ ko‘rilganmi va mijoz qarori qayd qilinganmi — tekshiriladi.",
+      "3. “Shunday yaxshi” degan izoh yetmaydi; professional himoya sabab, dalil va ta’sirga tayanadi.",
+      "Darsdagi bajarish: Decision → Reason → Evidence → Trade-off → Alternative → Impact → Client decision zanjirini audit qiling."
     ],
-    "exercise": "Mijoz qarori va qayta tekshiriladigan masalani topshiring.",
-    "solution": "Qaror auditida kelishuv qaysi dalilga tayanishi qayd etiladi.",
+    "exercise": "Bitta arxitektura qarorini dalil va alternativ bilan audit qiling.",
+    "solution": "Decision defense auditi loyiha qarorini tushunarli, tekshiriladigan va hujjatlashtirilgan holatga keltiradi.",
     "block": 4,
     "recipe": "coordination",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/workflow eskizi. Kartochkalar va variantlar o‘quv mantiqini ko‘rsatadi; real loyiha qarorlari client brief, site va texnik koordinatsiya bilan aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L13_M08_001",
     "asset": "l13_m08_001.svg",
-    "title": "Simulyatsiya: birinchi murojaat — ko‘rgazmali namuna",
+    "title": "Simulyatsiya: birinchi murojaat — arxitekturaviy eskiz",
     "explanation": [
-      "Simulyatsiyada murojaat, brief, ikki variant, taqdimot va bitta tuzatish ketma-ket bajariladi.",
-      "Murojaatni savol va ochiq shartlar bilan qayd qiling → boshlang‘ich yozuv.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi mijoz suhbati va o‘ngdagi savol kartalari tarqoq talablarni tartibli ma’lumotga aylantirishni ko‘rsatadi.",
+      "2. Birinchi murojaatda darhol plan chizishdan oldin family, rooms, site, budget, style, timeline va prioritylar aniqlashtiriladi.",
+      "3. Missing information va assumptions alohida yoziladi; ular keyinchalik fakt sifatida qolib ketmasin.",
+      "Darsdagi bajarish: 20 savollik client interview va meeting note strukturasi yarating."
     ],
-    "exercise": "Birinchi murojaatdan ma’lum va noma’lum ma’lumotni ajrating.",
-    "solution": "Simulyatsiya ishni tayyor yechimdan emas, vazifani aniqlashdan boshlaydi.",
+    "exercise": "Birinchi suhbatdan professional interview va meeting note yarating.",
+    "solution": "Real loyiha to‘liq briefdan emas, to‘g‘ri savol va aniqlashtirishdan boshlanadi.",
     "block": 5,
     "recipe": "brief",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/workflow eskizi. Kartochkalar va variantlar o‘quv mantiqini ko‘rsatadi; real loyiha qarorlari client brief, site va texnik koordinatsiya bilan aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L13_M08_002",
     "asset": "l13_m08_002.svg",
-    "title": "Simulyatsiya: brief va variantlar — ko‘rgazmali namuna",
+    "title": "Simulyatsiya: brief va variantlar — arxitekturaviy eskiz",
     "explanation": [
-      "Simulyatsiyada murojaat, brief, ikki variant, taqdimot va bitta tuzatish ketma-ket bajariladi.",
-      "Tasdiqlangan briefga A/B variant tayyorlang → aniq qamrov.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi brief kartasi va uch xil konsept varianti bir xil talablar uchun real farqli strategiyalar tayyorlashni ko‘rsatadi.",
+      "2. Variantlar faqat fasad rangi yoki mayda detal bilan emas, plan, zoning, orientation yoki massing strategiyasi bilan farqlansin.",
+      "3. Arxitektorning shaxsiy didi briefdan ustun qo‘yilmaydi; variantlar client needs va site evidence bilan solishtiriladi.",
+      "Darsdagi bajarish: Brief + A/B/C variant comparison tayyorlang."
     ],
-    "exercise": "Brief va ikki variantni bir xil mezonlar bilan tayyorlang.",
-    "solution": "Variantlar tasdiqlangan talablarni solishtirishga xizmat qiladi.",
+    "exercise": "Tasdiqlangan briefdan uch real strategik variant yarating.",
+    "solution": "Variantlar bir xil briefga turli mantiqiy yechimlarni ko‘rsatib, mezonlar bilan solishtiriladi.",
     "block": 5,
     "recipe": "variants",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/workflow eskizi. Kartochkalar va variantlar o‘quv mantiqini ko‘rsatadi; real loyiha qarorlari client brief, site va texnik koordinatsiya bilan aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L13_M08_003",
     "asset": "l13_m08_003.svg",
-    "title": "Simulyatsiya: prezentatsiya — ko‘rgazmali namuna",
+    "title": "Simulyatsiya: prezentatsiya — arxitekturaviy eskiz",
     "explanation": [
-      "Simulyatsiyada murojaat, brief, ikki variant, taqdimot va bitta tuzatish ketma-ket bajariladi.",
-      "Ikki qarorni plan va mezon jadvali bilan ko‘rsating → mijoz tushunadigan taqdimot.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Katta taqdimot doskasi brief, site, konsepsiya va plan ketma-ketligini, yonidagi mijoz kartasi esa feedbackni ifodalaydi.",
+      "2. Taqdimot mijozni chiroyli render bilan hayratlantirishdan ko‘ra qaror mantiqini tushuntirishga xizmat qiladi.",
+      "3. Feedback yozib olinadi, noaniq gaplar aniqlashtiriladi va keyingi revision uchun konkret punktlarga aylantiriladi.",
+      "Darsdagi bajarish: 10 daqiqalik presentation script va feedback form tuzing."
     ],
-    "exercise": "Taqdimotda talab, yechim va oqibatni izohlang.",
-    "solution": "Prezentatsiya loyiha qarorini tushunarli qiladi.",
+    "exercise": "Briefdan plan va trade-offlargacha tushunarli taqdimot ketma-ketligi yarating.",
+    "solution": "Professional prezentatsiya qaror mantiqini tushuntiradi va tekshiriladigan feedback yig‘adi.",
     "block": 5,
     "recipe": "presentation",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/workflow eskizi. Kartochkalar va variantlar o‘quv mantiqini ko‘rsatadi; real loyiha qarorlari client brief, site va texnik koordinatsiya bilan aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L13_M08_004",
     "asset": "l13_m08_004.svg",
-    "title": "Simulyatsiya: revision va konflikt — ko‘rgazmali namuna",
+    "title": "Simulyatsiya: revision va konflikt — arxitekturaviy eskiz",
     "explanation": [
-      "Simulyatsiyada murojaat, brief, ikki variant, taqdimot va bitta tuzatish ketma-ket bajariladi.",
-      "Tuzatishning scope va revisionini yozing → boshqariladigan o‘zgarish.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi belgilangan plan conflictni, markazdagi kartalar trade-off va approvalni, o‘ngdagi log esa revision tarixini ko‘rsatadi.",
+      "2. Yangi xona, past budget va o‘zgarmas maydon kabi qarama-qarshi talablar yashirilmaydi; alternativ va oqibat bilan muhokama qilinadi.",
+      "3. Feedback impact check va tasdiqsiz modelga kiritilmaydi. Har revisionning sababi va ta’siri qayd qilinadi.",
+      "Darsdagi bajarish: Uch konflikt ssenariysi uchun Response → Impact → Approval → Revision plan yozing."
     ],
-    "exercise": "Ish xonasi qo‘shilishining scope va maydonga ta’sirini qayd qiling.",
-    "solution": "Revisionning oqibati yangi versiyada nazorat qilinadi.",
+    "exercise": "Revision va konfliktlarni ta’sir va approval bilan boshqaring.",
+    "solution": "Nazoratli revision qaror sababi, ta’siri va tasdiq tarixini saqlaydi.",
     "block": 5,
     "recipe": "feedback",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/workflow eskizi. Kartochkalar va variantlar o‘quv mantiqini ko‘rsatadi; real loyiha qarorlari client brief, site va texnik koordinatsiya bilan aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L13_M08_005",
     "asset": "l13_m08_005.svg",
-    "title": "LEVEL 13 real loyiha audit — ko‘rgazmali namuna",
+    "title": "LEVEL 13 real loyiha audit — arxitekturaviy eskiz",
     "explanation": [
-      "Simulyatsiyada murojaat, brief, ikki variant, taqdimot va bitta tuzatish ketma-ket bajariladi.",
-      "Brief→qaror→feedback→yangilangan hujjat zanjirini tekshiring → loyiha tarixi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Ketma-ket kartalar first contactdan final recordgacha bo‘lgan real loyiha workflowini bir zanjirda ko‘rsatadi.",
+      "2. Interview, brief, budget, variant, presentation, feedback, revision va decision defense orasida yo‘qolgan bosqich bo‘lmasligi tekshiriladi.",
+      "3. Final natija faqat chizma emas; mijoz qarorlari va revision tarixi ham hujjatlashtirilgan bo‘lishi kerak.",
+      "Darsdagi bajarish: First contact → Interview → Brief → Variants → Presentation → Feedback → Revision → Decision → Final record zanjirini audit qiling."
     ],
-    "exercise": "Brief, variant, qaror va revision jurnalini audit qiling.",
-    "solution": "Real loyiha simulyatori izchil ish jarayoni va dalillarni tekshiradi.",
+    "exercise": "LEVEL 13 mijoz bilan ishlash workflowini boshidan oxirigacha audit qiling.",
+    "solution": "Real loyiha auditi qaror, feedback va revisionlar nazoratli va hujjatlashtirilganini tasdiqlaydi.",
     "block": 4,
     "recipe": "audit",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/workflow eskizi. Kartochkalar va variantlar o‘quv mantiqini ko‘rsatadi; real loyiha qarorlari client brief, site va texnik koordinatsiya bilan aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
