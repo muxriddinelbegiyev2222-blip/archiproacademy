@@ -1,6 +1,6 @@
 # Visual review progress
 
-305 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 5 lessons using topic-specific architectural sketches. 375 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+310 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 10 lessons using topic-specific architectural sketches. 370 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -43,3 +43,5 @@ L06_M08: Railing hierarchy, Segment/Node structure, Pattern Editor components, a
 L06_M09: Mesh reference plane/construction methods and New Mesh Points workflow reviewed. Survey, sloping site, house-on-slope and terrain-audit material renders were remapped with Mesh-specific explanations; repeated slope SVG diagrams were removed.
 
 L06_M10: Zone concept, boundary/area response, Zone Stamp readability, functional grouping and multi-source Zone audit reviewed. Five repetitive generic diagrams were rebuilt as topic-specific light architectural sketches while the genuine Archicad screenshots remain as software references.
+
+L07_M01: Favorites concept, create/apply workflow, library organization, standardization and audit reviewed. Five repeated generic diagrams were rebuilt as topic-specific light architectural workflow sketches; official Archicad screenshots remain as the software reference layer.

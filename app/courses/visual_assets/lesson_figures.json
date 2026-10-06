@@ -2812,86 +2812,91 @@
   {
     "code": "L07_M01_001",
     "asset": "l07_m01_001.svg",
-    "title": "Favorites tushunchasi — ko‘rgazmali namuna",
+    "title": "Favorites tushunchasi — arxitekturaviy eskiz",
     "explanation": [
-      "Bir xil sozlangan 200 mm o‘quv devorni Favorite qilib saqlaymiz, keyin ikkinchi elementga qo‘llaymiz.",
-      "Favoriteni element emas, sozlamalar to‘plami deb ajrating → qayta foydalanish.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi tekshirilgan element sozlamasi saqlangan konfiguratsiya sifatida ajratilgan; o‘ngda shu baza bir nechta yangi elementga qo‘llanadi.",
+      "2. Favorite chizilgan elementning nusxasi emas. U qayta ishlatiladigan structure, layer, material va boshqa parametrlar to‘plamidir.",
+      "3. Bir xil bazani qayta qo‘llash takroriy sozlashni kamaytiradi, lekin har yangi elementning loyiha konteksti baribir tekshiriladi.",
+      "Darsdagi bajarish: Bir elementda takror ishlatiladigan parametrlarni ajrating va Favorite mantig‘ini yozing."
     ],
     "exercise": "Takror ishlatiladigan parametrlarni sanang.",
     "solution": "Favorite element sozlamalarini qayta qo‘llashni tartiblaydi.",
     "block": 8,
     "recipe": "favorite",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Belgilar workflow mantig‘ini ko‘rsatadi; aniq loyiha standarti yoki universal naming sifatida olinmaydi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M01_002",
     "asset": "l07_m01_002.svg",
-    "title": "Favorite yaratish va qo'llash — ko‘rgazmali namuna",
+    "title": "Favorite yaratish va qo‘llash — arxitekturaviy eskiz",
     "explanation": [
-      "Bir xil sozlangan 200 mm o‘quv devorni Favorite qilib saqlaymiz, keyin ikkinchi elementga qo‘llaymiz.",
-      "To‘g‘ri sozlangan Wall parametrlarini saqlab nom bering → nazoratli namuna.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Avval chapdagi namuna elementning tuzilma va materiallari tekshiriladi. Xato elementni Favorite qilish xatoni tez ko‘paytiradi.",
+      "2. Markazdagi kartochka saqlangan sozlama g‘oyasini ko‘rsatadi. Favorite nomi vazifani tushuntiradigan va keyin topish oson bo‘ladigan bo‘lsin.",
+      "3. O‘ngda bir nechta yangi element bir xil bazadan yaratilgan. Qo‘llagandan keyin yo‘nalish, geometriya va joyga xos parametrlar alohida audit qilinadi.",
+      "Darsdagi bajarish: Tekshirilgan elementdan Favorite yarating, so‘ng uni yangi elementda sinang."
     ],
     "exercise": "O‘quv devor sozlamasini saqlab, yangi devorga qo‘llang.",
     "solution": "Natija yangi elementning parametrlarini tekshirish bilan tasdiqlanadi.",
     "block": 8,
     "recipe": "favorite",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Belgilar workflow mantig‘ini ko‘rsatadi; aniq loyiha standarti yoki universal naming sifatida olinmaydi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M01_003",
     "asset": "l07_m01_003.svg",
-    "title": "Professional Favorite kutubxonasi — ko‘rgazmali namuna",
+    "title": "Professional Favorite kutubxonasi — arxitekturaviy eskiz",
     "explanation": [
-      "Bir xil sozlangan 200 mm o‘quv devorni Favorite qilib saqlaymiz, keyin ikkinchi elementga qo‘llaymiz.",
-      "Nomda vazifa va variantni ajrating → AR_WALL_SAMPLE_200 kabi tushunarli yozuv.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Kartochkalar turli element oilalarini ifodalaydi: wall, slab, roof, door, window va object uchun alohida, tartibli namunalar.",
+      "2. Kutubxonada nomning maqsadi — kerakli variantni tez topish. Vaqtinchalik yoki noaniq nomlar element vazifasini tushuntirmaydi.",
+      "3. Juda ko‘p deyarli bir xil Favorite tanlashni qiyinlashtiradi. Faqat qayta ishlatiladigan va aniq farqi bor variantlarni saqlang.",
+      "Darsdagi bajarish: Element turi va vazifasi bo‘yicha tushunarli Favorite strukturasi yarating."
     ],
     "exercise": "Favorite nomiga vazifa va farqlovchi xususiyatni kiriting.",
     "solution": "Kutubxonadagi nom foydalanuvchiga kerakli variantni topishga yordam beradi.",
     "block": 8,
     "recipe": "favorite",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Belgilar workflow mantig‘ini ko‘rsatadi; aniq loyiha standarti yoki universal naming sifatida olinmaydi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M01_004",
     "asset": "l07_m01_004.svg",
-    "title": "Favorites va standartlashtirish — ko‘rgazmali namuna",
+    "title": "Favorites va standartlashtirish — arxitekturaviy eskiz",
     "explanation": [
-      "Bir xil sozlangan 200 mm o‘quv devorni Favorite qilib saqlaymiz, keyin ikkinchi elementga qo‘llaymiz.",
-      "Yangi devorga qo‘llang, parametrini namuna bilan solishtiring → standartlashtirish.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Bir qatordagi elementlar bir xil bazaviy Favorite’dan chiqqanini tasavvur qiling: ularning structure, layer va material mantig‘i izchil qoladi.",
+      "2. Standartlashtirish elementlarning hammasini geometrik jihatdan bir xil qilish degani emas. Favorite boshlang‘ich parametrlarni izchil qiladi.",
+      "3. Jamoa bitta tushunarli standartdan foydalansa, qo‘lda qayta sozlashdan keladigan tasodifiy farqlar kamayadi; audit esa baribir saqlanadi.",
+      "Darsdagi bajarish: Bir xil vazifadagi elementlarni bazaviy parametrlar bo‘yicha solishtiring."
     ],
     "exercise": "Ikki foydalanuvchi tanlay oladigan standart parametr jadvali tuzing.",
     "solution": "Standartlashtirish sozlama va qo‘llash shartini tushunarli qiladi.",
     "block": 8,
     "recipe": "favorite",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Belgilar workflow mantig‘ini ko‘rsatadi; aniq loyiha standarti yoki universal naming sifatida olinmaydi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M01_005",
     "asset": "l07_m01_005.svg",
-    "title": "Favorites professional audit — ko‘rgazmali namuna",
+    "title": "Favorites professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Bir xil sozlangan 200 mm o‘quv devorni Favorite qilib saqlaymiz, keyin ikkinchi elementga qo‘llaymiz.",
-      "Favorite va yaratilgan elementni keyin o‘zgartirib bog‘lanish tabiatini tekshiring → avtomatik global yangilanish deb taxmin qilinmaydi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi chalkash kartochkalar dublikat, vaqtinchalik va noaniq Favorite’lar ko‘payib ketgan holatni ifodalaydi.",
+      "2. Auditda nom, element turi, Layer, material/structure, dublikat va eski variantlar tekshiriladi. Keraksiz nusxalar standartni yashirib yubormasin.",
+      "3. O‘ngdagi tartibli ro‘yxat auditdan keyingi holat: kamroq, aniq farqlanadigan va jamoa tushunadigan Favorite’lar.",
+      "Darsdagi bajarish: Dublikatlarni toping, standart variantlarni ajrating va qo‘llangan elementlarda natijani qayta tekshiring."
     ],
     "exercise": "Favorite bilan yaratilgan uch elementni solishtiring.",
     "solution": "Favorite auditi saqlangan va qo‘llangan parametrlar mosligini tekshiradi.",
     "block": 10,
     "recipe": "favorite",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Belgilar workflow mantig‘ini ko‘rsatadi; aniq loyiha standarti yoki universal naming sifatida olinmaydi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
