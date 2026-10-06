@@ -1,6 +1,6 @@
 # Visual review progress
 
-413 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 113 lessons using topic-specific architectural sketches. 267 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+418 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 118 lessons using topic-specific architectural sketches. 262 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -89,3 +89,5 @@ L13_M07: Trade-off explanation, disagreement management and decision-defense aud
 L13_M08: First contact, brief/variants, client presentation, controlled revision/conflict and Level 13 full workflow audit completed with topic-specific architectural workflow sketches.
 
 L14_M01: Narrow-site analysis, longitudinal zoning, daylight/courtyard strategy, circulation/privacy and professional audit completed with topic-specific architectural site/plan sketches.
+
+L14_M02: Irregular-site reading, primary building axis, residual-zone use, facade/perspective control and professional audit completed with topic-specific architectural site sketches.
