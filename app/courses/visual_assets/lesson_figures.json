@@ -5312,86 +5312,91 @@
   {
     "code": "L10_M04_001",
     "asset": "l10_m04_001.svg",
-    "title": "Bubble'dan planga o'tish — ko‘rgazmali namuna",
+    "title": "Bubble’dan planga o‘tish — arxitekturaviy eskiz",
     "explanation": [
-      "Aloqa sxemasini 4×3 m yotoqxona va o‘lchamli mebel yordamida devorli eskizga aylantiramiz.",
-      "Bubble aloqalarini saqlab xonalarni taxminiy o‘lchamli to‘rtburchakka o‘tkazing → boshlang‘ich plan.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi bubble sxema o‘ngdagi real xona geometriyasiga aylantirilgan; funksional aloqalar devor chizishda yo‘qolmasligi kerak.",
+      "2. Eskiz plan hali ishchi loyiha emas, lekin xonalar real shakl va foydalanishga yaqinlashadi.",
+      "3. Chiroyli kontur uchun bubble’dagi yaqinlik va circulation mantiqini buzib yubormang.",
+      "Darsdagi bajarish: Tanlangan bubble variantni oddiy devor konturlariga aylantiring."
     ],
-    "exercise": "Diagramma aloqasini plan konturiga o‘tkazing.",
-    "solution": "Planga o‘tishda funksional aloqa geometriya bilan tekshiriladi.",
+    "exercise": "Funksional bubble sxemani real xona geometriyasiga o‘tkazing.",
+    "solution": "Eskiz plan bubble’dagi funksional mantiqni real geometriya bilan sinaydi.",
     "block": 5,
     "recipe": "adjacency",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz-plan tasviri. Mebel va geometrik nisbatlar o‘quv misoli; aniq o‘lchamlar loyiha briefi va tekshiruvlardan olinadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M04_002",
     "asset": "l10_m04_002.svg",
-    "title": "Xona proporsiyasi va mebel — ko‘rgazmali namuna",
+    "title": "Xona proporsiyasi va mebel — arxitekturaviy eskiz",
     "explanation": [
-      "Aloqa sxemasini 4×3 m yotoqxona va o‘lchamli mebel yordamida devorli eskizga aylantiramiz.",
-      "Krovat/shkafni haqiqiy o‘lchamda chizib foydalanish yo‘lini ajrating → xona proporsiyasi tekshiriladi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Ikki xona variantida mebel va foydalanish zonalari xona proporsiyasi qanchalik muhimligini ko‘rsatadi.",
+      "2. Faqat maydon yetarli emas; juda tor yoki noqulay proporsiya katta xonani ham yomon ishlatishi mumkin.",
+      "3. Asosiy mebelni joylashtirib, o‘tish va foydalanish zonalarini real ssenariyda tekshiring.",
+      "Darsdagi bajarish: Mehmonxona, oshxona va yotoqxonada asosiy mebel testini bajaring."
     ],
-    "exercise": "Mebel konturi va ishlatish zonasini joylashtiring.",
-    "solution": "Xona proporsiyasi foydalanish bilan birga baholanadi.",
+    "exercise": "Xona shaklini real mebel va foydalanish ssenariysi bilan tekshiring.",
+    "solution": "Yaxshi proporsiya xona maydonini amalda foydali qiladi.",
     "block": 5,
     "recipe": "bed",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz-plan tasviri. Mebel va geometrik nisbatlar o‘quv misoli; aniq o‘lchamlar loyiha briefi va tekshiruvlardan olinadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M04_003",
     "asset": "l10_m04_003.svg",
-    "title": "Devor, eshik va circulation — ko‘rgazmali namuna",
+    "title": "Devor, eshik va circulation — arxitekturaviy eskiz",
     "explanation": [
-      "Aloqa sxemasini 4×3 m yotoqxona va o‘lchamli mebel yordamida devorli eskizga aylantiramiz.",
-      "Eshik yoyini kiriting, yo‘llar va devor qalinligini qo‘shing → funksional kontur.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Plan ichidagi eshik swinglari va strelkalar harakat yo‘llari bilan konfliktlarni ko‘rsatadi.",
+      "2. Eshiklar bir-biriga, mebelga yoki asosiy circulation yo‘liga urilmasligi kerak.",
+      "3. Keraksiz uzun koridor va dead space eskiz bosqichidayoq kamaytiriladi.",
+      "Darsdagi bajarish: Asosiy circulation yo‘llarini chizib, eshik konfliktlarini belgilang."
     ],
-    "exercise": "Eshiklar ochilgan holatda yo‘llarni tekshiring.",
-    "solution": "Devor va eshik qarori circulationni o‘zgartiradi.",
+    "exercise": "Eshik, mebel va circulation aloqasini birgalikda tekshiring.",
+    "solution": "Eskiz planda harakat va ochilishlar koordinatsiyasi erta hal qilinadi.",
     "block": 5,
     "recipe": "entry",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz-plan tasviri. Mebel va geometrik nisbatlar o‘quv misoli; aniq o‘lchamlar loyiha briefi va tekshiruvlardan olinadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M04_004",
     "asset": "l10_m04_004.svg",
-    "title": "Fasad va hovli bilan aloqa — ko‘rgazmali namuna",
+    "title": "Fasad va hovli bilan aloqa — arxitekturaviy eskiz",
     "explanation": [
-      "Aloqa sxemasini 4×3 m yotoqxona va o‘lchamli mebel yordamida devorli eskizga aylantiramiz.",
-      "Derazalarni xona va hovli ehtiyojidan joylashtirib fasad bilan solishtiring → tashqi aloqa.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi plan tashqi devordagi ochilish va hovli aloqasini, o‘ngdagi fasad esa shu qarorning tashqi ko‘rinishini ko‘rsatadi.",
+      "2. Public zona terasa yoki hovli bilan bog‘lanishi mumkin; ichki va tashqi makon birgalikda ishlaydi.",
+      "3. Plan ichida yaxshi ko‘ringan deraza tartibi fasadda tartibsiz natija bermasligi uchun ikkala ko‘rinish parallel tekshiriladi.",
+      "Darsdagi bajarish: Har tashqi devor bo‘yicha deraza va hovli aloqasini tekshiring."
     ],
-    "exercise": "Xonalarning fasad va hovli bilan aloqasini ko‘rsating.",
-    "solution": "Ichki plan tashqi ochilish va makon bilan muvofiqlashtiriladi.",
+    "exercise": "Plan qarorini hovli va fasad natijasi bilan birga ko‘ring.",
+    "solution": "Plan va fasad bir-biridan alohida emas; ochilish va tashqi aloqalar ikkala tizimda tekshiriladi.",
     "block": 5,
     "recipe": "local-facade",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz-plan tasviri. Mebel va geometrik nisbatlar o‘quv misoli; aniq o‘lchamlar loyiha briefi va tekshiruvlardan olinadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M04_005",
     "asset": "l10_m04_005.svg",
-    "title": "Eskiz plan professional audit — ko‘rgazmali namuna",
+    "title": "Eskiz plan professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Aloqa sxemasini 4×3 m yotoqxona va o‘lchamli mebel yordamida devorli eskizga aylantiramiz.",
-      "Xona jadvali, ichki o‘lcham va maydonni tekshiring → o‘qiladigan eskiz.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Checklist va final plan brief, proporsiya, mebel, circulation, openings va hovli aloqasini bir joyda tekshiradi.",
+      "2. Eskiz plan keyingi optimizatsiya bosqichi uchun barqaror funksional baza bo‘lishi kerak.",
+      "3. Audit faqat geometrik chiroyni emas, real foydalanish va tashqi aloqalarni tekshiradi.",
+      "Darsdagi bajarish: Brief → Bubble → Xona → Mebel → Circulation → Openings → Hovli/Fasad zanjirini audit qiling."
     ],
-    "exercise": "Diagramma, mebelli plan va aniqlangan konfliktni topshiring.",
-    "solution": "Eskiz auditida dastlabki funksional g‘oya o‘lchamli rejada ishlashi tekshiriladi.",
+    "exercise": "Eskiz plan funksiyasi va geometriyasini kompleks tekshiring.",
+    "solution": "Professional eskiz plan audit keyingi optimizatsiya uchun ishlaydigan baza beradi.",
     "block": 5,
     "recipe": "zone",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz-plan tasviri. Mebel va geometrik nisbatlar o‘quv misoli; aniq o‘lchamlar loyiha briefi va tekshiruvlardan olinadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
