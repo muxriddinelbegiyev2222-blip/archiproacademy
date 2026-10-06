@@ -3352,86 +3352,91 @@
   {
     "code": "L07_M07_001",
     "asset": "l07_m07_001.svg",
-    "title": "BIM Classification tushunchasi — ko‘rgazmali namuna",
+    "title": "BIM Classification tushunchasi — arxitekturaviy eskiz",
     "explanation": [
-      "Wall, Door va Zone elementlari tur bo‘yicha klassifikatsiyalanadi; property availability tekshiriladi.",
-      "Classificationni elementning kelishilgan turi deb ajrating → data tuzilmasi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi turli model elementlari o‘ngdagi tarmoqlangan guruhlarga ajratilgan; bu Classification elementlarni BIM ma’nosi bo‘yicha tartiblash g‘oyasini ko‘rsatadi.",
+      "2. Classification oddiy nom yoki rang emas. U elementning tizimdagi ma’nosi va vazifasini strukturaviy ma’lumot sifatida bildiradi.",
+      "3. Geometriya to‘g‘ri bo‘lsa ham noto‘g‘ri Classification keyingi Properties, Schedules va audit natijasini buzishi mumkin.",
+      "Darsdagi bajarish: Bir nechta elementni ularning BIM ma’nosi bo‘yicha guruhlarga ajrating."
     ],
-    "exercise": "Geometriya va elementning ma’no turini ajrating.",
-    "solution": "Classification elementning axborot tizimidagi turini belgilaydi.",
+    "exercise": "Model elementlarini BIM ma’nosi bo‘yicha guruhlang.",
+    "solution": "Classification model elementlarini vazifa va ma’no bo‘yicha tartiblaydi.",
     "block": 8,
     "recipe": "classification",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Guruh va kartochkalar o‘quv mantiqini ko‘rsatadi; haqiqiy Classification tizimi loyiha standartiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M07_002",
     "asset": "l07_m07_002.svg",
-    "title": "Classification va element turi — ko‘rgazmali namuna",
+    "title": "Classification va element turi — arxitekturaviy eskiz",
     "explanation": [
-      "Wall, Door va Zone elementlari tur bo‘yicha klassifikatsiyalanadi; property availability tekshiriladi.",
-      "Model element turi bilan classificationni solishtiring → Wall eshik sifatida ko‘rsatilmaydi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi devor geometriyasi element qaysi tool orqali yaratilganini, o‘ngdagi kartochka esa uning BIM ma’nosini ifodalaydi.",
+      "2. Element Type va Classification bir xil tushuncha emas. Geometrik vosita elementning vazifasini avtomatik to‘liq aniqlab bermaydi.",
+      "3. Professional BIM modelda geometriya, material, Properties va Classification alohida ma’lumot qatlamlari sifatida tekshiriladi.",
+      "Darsdagi bajarish: Bitta element uchun tool turi va BIM Classification’ni alohida yozing."
     ],
-    "exercise": "Uch element uchun mos tasnif tanlash sababini yozing.",
-    "solution": "Element turi tasodifiy shaklga emas, vazifaga mos bo‘lishi kerak.",
+    "exercise": "Element turi bilan BIM Classification farqini ko‘rsating.",
+    "solution": "Geometrik tool element qanday chizilganini, Classification esa uning BIM ma’nosini ifodalaydi.",
     "block": 8,
     "recipe": "classification",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Guruh va kartochkalar o‘quv mantiqini ko‘rsatadi; haqiqiy Classification tizimi loyiha standartiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M07_003",
     "asset": "l07_m07_003.svg",
-    "title": "Classification va Properties — ko‘rgazmali namuna",
+    "title": "Classification va Properties — arxitekturaviy eskiz",
     "explanation": [
-      "Wall, Door va Zone elementlari tur bo‘yicha klassifikatsiyalanadi; property availability tekshiriladi.",
-      "Kerakli property qaysi classificationga mavjudligini tekshiring → ko‘rinmagan maydon sababi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi element → markazdagi Classification → o‘ngdagi Property kartochkalari ma’lumot zanjirini ko‘rsatadi.",
+      "2. Classification qaysi turdagi Properties qaysi elementlarga mantiqan tegishli ekanini tashkil qilishga yordam beradi.",
+      "3. Noto‘g‘ri Classification elementga keraksiz yoki noto‘g‘ri Property to‘plami kelishiga sabab bo‘lishi mumkin.",
+      "Darsdagi bajarish: Door va Wall uchun mos Classification hamda foydali Properties’ni alohida bog‘lang."
     ],
-    "exercise": "Tasnifga bog‘liq Property mavjudligini tekshiring.",
-    "solution": "Classification ma’lumotlarning qo‘llanish doirasiga ta’sir qilishi mumkin.",
+    "exercise": "Classification bilan element Properties orasidagi aloqani ko‘rsating.",
+    "solution": "To‘g‘ri Classification tegishli BIM ma’lumotlarini mantiqan tashkil qilishga yordam beradi.",
     "block": 8,
     "recipe": "classification",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Guruh va kartochkalar o‘quv mantiqini ko‘rsatadi; haqiqiy Classification tizimi loyiha standartiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M07_004",
     "asset": "l07_m07_004.svg",
-    "title": "Classification va Schedules — ko‘rgazmali namuna",
+    "title": "Classification va Schedules — arxitekturaviy eskiz",
     "explanation": [
-      "Wall, Door va Zone elementlari tur bo‘yicha klassifikatsiyalanadi; property availability tekshiriladi.",
-      "Jadval mezoniga classification qo‘shib natijani sanang → mos elementlar.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Model elementi va Classification kartochkasidan keyingi jadval Schedule audit zanjirini ko‘rsatadi.",
+      "2. Classification Schedule Criteria sifatida kerakli BIM sinfidagi elementlarni ajratishda foydali bo‘lishi mumkin.",
+      "3. Schedule’da bo‘sh yoki noodatiy Classification ko‘rinsa, muammo jadvalda emas, model element ma’lumotida bo‘lishi mumkin.",
+      "Darsdagi bajarish: Element ID, turi, Classification va bitta Property ustunlari bilan audit jadvali tuzing."
     ],
-    "exercise": "Tasnif bo‘yicha jadvalga kirgan elementlarni solishtiring.",
-    "solution": "Noto‘g‘ri tasnif kerakli elementni jadvaldan chiqarib yuborishi mumkin.",
+    "exercise": "Classification asosida Schedule audit konsepsiyasini yarating.",
+    "solution": "Schedule klassifikatsiya ma’lumotidagi bo‘sh va noto‘g‘ri qiymatlarni topishga yordam beradi.",
     "block": 8,
     "recipe": "classification",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Guruh va kartochkalar o‘quv mantiqini ko‘rsatadi; haqiqiy Classification tizimi loyiha standartiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M07_005",
     "asset": "l07_m07_005.svg",
-    "title": "Classification professional audit — ko‘rgazmali namuna",
+    "title": "Classification professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Wall, Door va Zone elementlari tur bo‘yicha klassifikatsiyalanadi; property availability tekshiriladi.",
-      "Noto‘g‘ri classificationni elementdan tuzating → jadval va eksport manbasi mos.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi audit kartochkalari, markazdagi model elementi va o‘ngdagi jadval element → Classification → Properties → Schedule zanjirini ifodalaydi.",
+      "2. Auditda Classification mavjudligi, element vazifasiga mosligi, bir xil elementlardagi izchillik va tegishli Properties tekshiriladi.",
+      "3. Schedule natijasida aralash yoki bo‘sh qator chiqsa, elementning Classification va Property ma’lumotlarini manbada tuzating.",
+      "Darsdagi bajarish: Bitta elementni Classification’dan Schedule natijasigacha kuzatib audit qiling."
     ],
-    "exercise": "Model, tasnif va jadval mosligini audit qiling.",
-    "solution": "Classification auditi elementning vazifasi va ma’lumot tuzilishi izchilligini dalillaydi.",
+    "exercise": "Classification, Properties va Schedule natijasini birga audit qiling.",
+    "solution": "Professional audit BIM ma’lumot strukturasining izchilligini tekshiradi.",
     "block": 10,
     "recipe": "classification",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Guruh va kartochkalar o‘quv mantiqini ko‘rsatadi; haqiqiy Classification tizimi loyiha standartiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
