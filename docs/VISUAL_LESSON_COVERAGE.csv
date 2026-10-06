@@ -259,11 +259,11 @@ L06_M06_002,L06_M06,Single-plane va Multi-plane Roof,illustrated,1,ac28-roof.png
 L06_M06_003,L06_M06,"Pitch, overhang va tom konturi",illustrated,2,ac28-roof-pitch.png|realistic-l08_m05_003.jpg
 L06_M06_004,L06_M06,Murakkab tom tutashuvlari,illustrated,2,ac28-roof.png|realistic-l08_m05_005.jpg
 L06_M06_005,L06_M06,Roof professional audit,illustrated,2,ac28-roof-pitch.png|realistic-l08_m05_001.jpg
-L06_M07_001,L06_M07,Stair Tool va zinapoya geometriyasi,illustrated,2,l06_m07_001.svg|ac28-stair.png
-L06_M07_002,L06_M07,"Tread, riser, flight va landing",illustrated,2,l06_m07_002.svg|ac28-stair.png
-L06_M07_003,L06_M07,Qavatlararo bog'lanish,illustrated,2,l06_m07_003.svg|ac28-stair.png
-L06_M07_004,L06_M07,Murakkab Stair geometriyasi,illustrated,2,l06_m07_004.svg|ac28-stair-turn.png
-L06_M07_005,L06_M07,Stair professional audit,illustrated,2,l06_m07_005.svg|ac28-stair.png
+L06_M07_001,L06_M07,Stair Tool va zinapoya geometriyasi,illustrated,1,ac28-stair.png
+L06_M07_002,L06_M07,"Tread, riser, flight va landing",illustrated,1,ac28-stair.png
+L06_M07_003,L06_M07,Qavatlararo bog'lanish,illustrated,1,ac28-stair.png
+L06_M07_004,L06_M07,Murakkab Stair geometriyasi,illustrated,1,ac28-stair-turn.png
+L06_M07_005,L06_M07,Stair professional audit,illustrated,1,ac28-stair.png
 L06_M08_001,L06_M08,Railing Tool asoslari,illustrated,2,l06_m08_001.svg|ac28-railing.png
 L06_M08_002,L06_M08,"Posts, Rails va Handrails",illustrated,2,l06_m08_002.svg|ac28-railing-parts.png
 L06_M08_003,L06_M08,Baluster va Panel tizimi,illustrated,2,l06_m08_003.svg|ac28-railing-parts.png

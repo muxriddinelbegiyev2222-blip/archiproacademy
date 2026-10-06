@@ -1,6 +1,6 @@
 # Visual review progress
 
-285 of 680 lessons have completed the current topic-specific visual review: 218 AI material-render lessons and 67 lessons using documented Graphisoft screenshots. 395 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+290 of 680 lessons have completed the current topic-specific visual review: 218 AI material-render lessons and 72 lessons using documented Graphisoft screenshots. 390 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -35,3 +35,5 @@ L06_M04: Composite skins versus separators, material selection, Core/Finish/Othe
 L06_M05: Complex Profile concept, Profile Editor workflow, Use with availability, profile origin, Fill/Building Material logic and Plan/Section/3D audit reviewed against official Archicad 28 Help. Generic SVG supplements were removed for these five lessons; exact exercise values remain in native lesson text.
 
 L06_M06: Roof Settings, Single/Multi-plane selection, pitch units, overhang distinction and multi-view Roof audit reviewed. Four existing high-quality realistic roof teaching renders were remapped with lesson-specific explanations; generic repeated SVG roof diagrams were removed.
+
+L06_M07: Stair Top Link/Home Story, tread-riser controls, configurable Rules & Standards, turning types and multi-view Stair audit reviewed using actual Archicad 28 screenshots. Repeated 3000/18 generic SVG diagrams were removed; SHNQ verification remains deferred.

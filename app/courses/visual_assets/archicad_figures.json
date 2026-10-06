@@ -1376,86 +1376,86 @@
   {
     "code": "L06_M07_001",
     "asset": "ac28-stair.png",
-    "title": "Stair Settings: zinapoya sozlamalari",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-186.htm",
+    "title": "Stair Settings: qavat aloqasi va asosiy geometriya",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-187.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/StairDefaultSettings.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Stair Settings: zinapoya sozlamalari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Stair Toolda pastki va yuqori sathni bog‘lang → sathlararo aloqa."
+      "Top Link maydonida Stair yuqoridagi Story bilan bog‘langan; Home Story esa pastki tayanch qavatini bildiradi. Shu ikki sath zinapoyaning vertikal maqsadini beradi.",
+      "O‘ng tomonda Stair Width, riser soni, riser height va going kabi geometriya boshqaruvlari bor. Tool bu qiymatlar asosida model yaratadi, ammo zinapoya qayerdan boshlanishi va qayerga chiqishi arxitektura rejasida alohida hal qilinadi.",
+      "Chizishdan oldin pastki circulation, yuqori chiqish va slab opening joyini belgilang. Keyin Stairni Plan, Section va 3Dda shu yo‘l bilan solishtiring."
     ],
     "exercise": "Zinapoya boshlanish, tugash va yo‘nalishini planda belgilang.",
     "solution": "Zinapoya yo‘li qavatlar orasidagi haqiqiy harakatni ko‘rsatishi kerak.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT’dagi haqiqiy Stair sozlamasi. Rasmda ko‘rinadigan 1000, 20, 150, 300–350 va boshqa sonlar qo‘llanma/shablon namunasi; ular SHNQ yoki sizning loyihangiz uchun avtomatik talab emas.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M07_002",
     "asset": "ac28-stair.png",
-    "title": "Stair Settings: zinapoya sozlamalari",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-186.htm",
+    "title": "Tread va riser: Rules & Standards panelini to‘g‘ri o‘qing",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-188.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/StairDefaultSettings.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Stair Settings: zinapoya sozlamalari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: 3000/18 hisoblang → ≈166.7 mm riser. Bosish eni va flightni alohida belgilang."
+      "Rules & Standards ichida Riser Height (R) va Going (G) alohida qatorda ko‘rsatilgan. Tread — oyoq bosadigan gorizontal qism, riser esa ketma-ket treadlar orasidagi vertikal ko‘tarilish.",
+      "Yuqoridagi # maydoni riser/pog‘ona geometriyasining umumiy sonini boshqarishga xizmat qiladi; flight esa ketma-ket yurish segmenti, landing esa tekis segment. Ularni bitta tushuncha deb aralashtirmang.",
+      "Paneldagi min/max va 2R+G qiymatlari sozlanadigan qoidalar diapazoni. Ularni amaldagi mahalliy norma deb avtomatik qabul qilmang; bu bosqichda element nomi va geometrik aloqani to‘g‘ri o‘rganing."
     ],
     "exercise": "Tread, riser, flight va landingni kesimda alohida belgilang.",
     "solution": "Zinapoya qismlarining nomlari va o‘lchovlari chalkashtirilmaydi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT’dagi haqiqiy Stair sozlamasi. Rasmda ko‘rinadigan 1000, 20, 150, 300–350 va boshqa sonlar qo‘llanma/shablon namunasi; ular SHNQ yoki sizning loyihangiz uchun avtomatik talab emas.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M07_003",
     "asset": "ac28-stair.png",
-    "title": "Stair Settings: zinapoya sozlamalari",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-186.htm",
+    "title": "Top Link: Stair qavat balandligiga qanday bog‘lanadi?",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-187.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/StairDefaultSettings.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Stair Settings: zinapoya sozlamalari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Zinapoya yuqori qavatga yetishini, landing va slab teshigini kesimda tekshiring → uzluksiz yo‘l."
+      "Top Link 1. Story (Home + 1) deb tanlanganida Stair yuqori qavat sathiga bog‘lanadi. Home Story pastki qavatni ko‘rsatadi; offset maydonlari top/bottom sathdan chetlanishni boshqarishi mumkin.",
+      "Toplinked Stairda Story balandligi o‘zgarsa, Archicad Stairni yangi balandlikka moslashtirishga urinadi. Agar Rules & Standards bilan konflikt tug‘ilsa, model qayta tekshirish talab qiladi; eski geometriya avtomatik ravishda har doim to‘g‘ri bo‘lib qolmaydi.",
+      "Qavat balandligini o‘zgartirgandan keyin yuqori tread/landingning pol sathiga kelishini, slab openingni va headroomni Section hamda 3Dda qayta ko‘ring."
     ],
     "exercise": "Yuqori sath bilan zinapoya tugashini solishtiring.",
     "solution": "Qavatlararo bog‘lanish oxirgi qadam va pol sathi orqali tekshiriladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT’dagi haqiqiy Stair sozlamasi. Rasmda ko‘rinadigan 1000, 20, 150, 300–350 va boshqa sonlar qo‘llanma/shablon namunasi; ular SHNQ yoki sizning loyihangiz uchun avtomatik talab emas.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M07_004",
     "asset": "ac28-stair-turn.png",
-    "title": "Stair: burilish turini tanlash",
+    "title": "Turning Type: landing va winder variantlarini ajrating",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-181.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/TurningTypeSettings.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Stair: burilish turini tanlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Burilishli variantda bosishlar, qo‘nish va odam harakatini solishtiring → geometriya konflikti."
+      "Qizil ramka ichidagi turning-type piktogrammalari burilishning Automatic Landing yoki winder kabi yechimlarini tanlashga xizmat qiladi. Burilish shakli Stairning plan bo‘yicha egallagan joyini va walking line’ni o‘zgartiradi.",
+      "Landing tekis maydon; winderda esa burilish pog‘onalarning geometriyasi bilan yechiladi. Ularni faqat “joyga sig‘ishi” bo‘yicha emas, real harakat, yuqori/pastki chiqish va atrofdagi eshiklar bilan birga baholang.",
+      "Bir xil qavat balandligi uchun Straight va Turning variantlarni sinang. Plan footprintni, Sectiondagi headroomni va 3Ddagi burilish yo‘lini birgalikda solishtiring."
     ],
     "exercise": "Burilish yoki landingni o‘zgartirib, bosh uchun bo‘shliq va ochilishni tekshiring.",
     "solution": "Murakkab zinapoya yechimi yo‘l, ochilish va kesimni birga tekshirishni talab qiladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT’dagi haqiqiy Stair sozlamasi. Rasmda ko‘rinadigan 1000, 20, 150, 300–350 va boshqa sonlar qo‘llanma/shablon namunasi; ular SHNQ yoki sizning loyihangiz uchun avtomatik talab emas.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M07_005",
     "asset": "ac28-stair.png",
-    "title": "Stair Settings: zinapoya sozlamalari",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-186.htm",
+    "title": "Stair auditi: geometriya, toplink va qoidalarni birga tekshirish",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-187.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/StairDefaultSettings.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Stair Settings: zinapoya sozlamalari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Ko‘tarilish yig‘indisi, headroom, opening va himoyani tekshiruv ro‘yxatiga yozing → loyiha talablari bilan kelishish zarur."
+      "Audit boshida Stair Top Link/Home Story, umumiy balandlik, width, riser soni va going/riser qiymatlarini qayd qiling. Shundan keyin bu geometriya qavatlararo haqiqiy yo‘lga mos kelishini tekshiring.",
+      "Rules & Standards paneli geometrik cheklovlarni kiritishga yordam beradi, lekin dastur modeli o‘z-o‘zidan foydalanish xavfsizligi yoki mahalliy normativ muvofiqlik sertifikati emas.",
+      "Plan’da kirish va chiqish, Section’da qavat sathi/opening/headroom, 3Dda flight/landing yo‘li va konfliktlarni ko‘ring. Har topilgan kamchilikni qaysi viewda ko‘ringani bilan audit jadvaliga yozing."
     ],
     "exercise": "Geometriya, qavat aloqasi va normativ tekshiruv uchun savollarni topshiring.",
     "solution": "Dasturdagi Stair modeli foydalanish xavfsizligini avtomatik tasdiqlamaydi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT’dagi haqiqiy Stair sozlamasi. Rasmda ko‘rinadigan 1000, 20, 150, 300–350 va boshqa sonlar qo‘llanma/shablon namunasi; ular SHNQ yoki sizning loyihangiz uchun avtomatik talab emas.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
