@@ -309,11 +309,11 @@ L07_M06_002,Property yaratish va tuzilishi,reviewed_architectural_sketch,l07_m06
 L07_M06_003,Element ma'lumotlarini standartlashtirish,reviewed_architectural_sketch,l07_m06_003.svg
 L07_M06_004,Properties va Schedules,reviewed_architectural_sketch,l07_m06_004.svg
 L07_M06_005,Properties professional audit,reviewed_architectural_sketch,l07_m06_005.svg
-L07_M07_001,BIM Classification tushunchasi,pending_topic_review,
-L07_M07_002,Classification va element turi,pending_topic_review,
-L07_M07_003,Classification va Properties,pending_topic_review,
-L07_M07_004,Classification va Schedules,pending_topic_review,
-L07_M07_005,Classification professional audit,pending_topic_review,
+L07_M07_001,BIM Classification tushunchasi,reviewed_architectural_sketch,l07_m07_001.svg
+L07_M07_002,Classification va element turi,reviewed_architectural_sketch,l07_m07_002.svg
+L07_M07_003,Classification va Properties,reviewed_architectural_sketch,l07_m07_003.svg
+L07_M07_004,Classification va Schedules,reviewed_architectural_sketch,l07_m07_004.svg
+L07_M07_005,Classification professional audit,reviewed_architectural_sketch,l07_m07_005.svg
 L07_M08_001,Hotlink va Module tushunchasi,pending_topic_review,
 L07_M08_002,Module yaratish mantig'i,pending_topic_review,
 L07_M08_003,Hotlink orqali bog'lash,pending_topic_review,
