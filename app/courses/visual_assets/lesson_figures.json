@@ -4414,16 +4414,16 @@
     "asset": "l09_m02_001.svg",
     "title": "Turar joy obyektini normativ nuqtai nazardan o‘qish — arxitekturaviy eskiz",
     "explanation": [
-      "1. Plan turar joyni faqat xona maydoni emas, o‘zaro bog‘langan funksiyalar tizimi sifatida ko‘rsatadi.",
-      "2. O‘ngdagi checklist funksiya, zonalash, circulation, tabiiy sharoit, sanitar zonalar va xavfsizlikni birga tekshirish kerakligini eslatadi.",
-      "3. Aniq minimal maydon yoki o‘lcham eskizdan olinmaydi; amaldagi normativ manba alohida tekshiriladi.",
-      "Darsdagi bajarish: Bir uy planiga kamida 10 ta tekshiruv savoli tuzing."
+      "1. Chapdagi uy plani turar joyni faqat xonalar to‘plami emas, o‘zaro bog‘langan tizim sifatida ko‘rishni ifodalaydi.",
+      "2. O‘ngdagi checklist funksiyalar, zonalash, circulation, tabiiy sharoit, sanitar zonalar va xavfsizlik kabi tekshiruv yo‘nalishlarini eslatadi.",
+      "3. Minimal maydon, kenglik yoki balandlik kabi aniq raqamlar eskizdan olinmaydi; ular amaldagi tegishli normativ manbadan tekshiriladi.",
+      "Darsdagi bajarish: Bitta uy plani uchun kamida 10 ta normativ tekshiruv savoli tuzing."
     ],
-    "exercise": "Obyekt turi va foydalanish dasturini aniqlang.",
-    "solution": "Turar joy talablari obyektning haqiqiy turiga mos tanlanadi.",
+    "exercise": "Turar joy planini funksiya, circulation, sanitar va xavfsizlik nuqtai nazaridan audit qiling.",
+    "solution": "Turar joy normativ tekshiruvi xonalar o‘lchamidan kengroq bo‘lib, butun uy tizimini qamrab oladi.",
     "block": 6,
     "recipe": "norm",
-    "boundary": "Normativ tahlilni tushuntiruvchi yengil arxitekturaviy eskiz. Rang va geometriya o‘quv misoli; aniq normativ qiymat va minimal o‘lchamlar rasmiy hujjatdan tekshiriladi.",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy audit eskizi. Xona ranglari va plan shakllari konseptual; aniq minimal o‘lcham va normativ talablar amaldagi rasmiy manbadan olinadi.",
     "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
@@ -4432,16 +4432,16 @@
     "asset": "l09_m02_002.svg",
     "title": "Xona funksiyasi va o‘zaro aloqalar — arxitekturaviy eskiz",
     "explanation": [
-      "1. Rangli plan public, private va service zonalarni ajratadi; strelkalar ular orasidagi kundalik harakatni ko‘rsatadi.",
-      "2. Xonaning nomi emas, real foydalanish vazifasi va boshqa zonalar bilan aloqasi tahlil qilinadi.",
-      "3. Mehmon, oila va xizmat yo‘llari bir-biriga keraksiz konflikt yaratmasligi kerak.",
-      "Darsdagi bajarish: Uch funksional zonani ajratib, ular orasidagi konfliktlarni belgilang."
+      "1. Rangli zonalar public, private va service qismlarni konseptual ajratadi; ularning o‘zaro aloqasi foydalanuvchi harakatiga ta’sir qiladi.",
+      "2. Xona nomi emas, uning real funksiyasi va foydalanish holati tekshiruvda muhim.",
+      "3. Xonalar orasidagi ortiqcha kesishuv, noqulay circulation yoki service yo‘lining private zonadan o‘tishi funksional konflikt bo‘lishi mumkin.",
+      "Darsdagi bajarish: Public, private va service zonalarni ajratib, ular orasidagi konfliktlarni belgilang."
     ],
-    "exercise": "Har xonaning vazifasi va qo‘shni aloqasini jadvalga kiriting.",
-    "solution": "Xona nomi funksional va normativ tekshiruvga kirish ma’lumotidir.",
+    "exercise": "Xona funksiyasi va zonalar orasidagi real aloqani tekshiring.",
+    "solution": "Yaxshi zonalash real foydalanish, circulation va maxfiylik ehtiyojlarini muvofiqlashtiradi.",
     "block": 6,
     "recipe": "adjacency",
-    "boundary": "Normativ tahlilni tushuntiruvchi yengil arxitekturaviy eskiz. Rang va geometriya o‘quv misoli; aniq normativ qiymat va minimal o‘lchamlar rasmiy hujjatdan tekshiriladi.",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy audit eskizi. Xona ranglari va plan shakllari konseptual; aniq minimal o‘lcham va normativ talablar amaldagi rasmiy manbadan olinadi.",
     "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
@@ -4450,16 +4450,16 @@
     "asset": "l09_m02_003.svg",
     "title": "Sanitar va yordamchi zonalar — arxitekturaviy eskiz",
     "explanation": [
-      "1. Chapdagi oshxona/sanuzel/texnik zonalar, o‘ngdagi vertikal tarmoqlar arxitektura bilan MEP koordinatsiyasini ifodalaydi.",
-      "2. Sanitar jihozning plan ichiga sig‘ishi yetarli emas; suv, kanalizatsiya, ventilyatsiya, konstruksiya va namlik himoyasi ham tekshiriladi.",
-      "3. Ikki qavatli uyda nam zonalarni vertikal mantiqda koordinatsiya qilish muhandislik yechimini soddalashtirishi mumkin.",
+      "1. Eskiz wet/service zonalarni bir guruhda ko‘rsatadi; sanuzel va oshxona faqat mebel joylashuvi emas, MEP va namlik himoyasi bilan bog‘liq.",
+      "2. Suv, kanalizatsiya, ventilyatsiya va konstruktiv tutashuvlar oldindan koordinatsiya qilinsa loyiha soddalashadi.",
+      "3. Ikki qavatli uyda sanitar zonalarni qavatlar bo‘yicha mantiqiy yaqinlashtirish muhandislik yo‘llarini tartibga solishi mumkin.",
       "Darsdagi bajarish: Sanuzel va oshxona uchun arxitektura + MEP tekshiruv savollarini yozing."
     ],
-    "exercise": "Sanitar va yordamchi zonalarga tegishli tekshiruvlarni ajrating.",
-    "solution": "Har zona uchun tegishli talab va muhandislik aloqasi alohida qayd etiladi.",
+    "exercise": "Sanitar va yordamchi zonalarni MEP va namlik himoyasi bilan birga tekshiring.",
+    "solution": "Sanitar zonalar funksional va muhandislik koordinatsiyasini birga talab qiladi.",
     "block": 6,
     "recipe": "wet",
-    "boundary": "Normativ tahlilni tushuntiruvchi yengil arxitekturaviy eskiz. Rang va geometriya o‘quv misoli; aniq normativ qiymat va minimal o‘lchamlar rasmiy hujjatdan tekshiriladi.",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy audit eskizi. Xona ranglari va plan shakllari konseptual; aniq minimal o‘lcham va normativ talablar amaldagi rasmiy manbadan olinadi.",
     "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
@@ -4468,16 +4468,16 @@
     "asset": "l09_m02_004.svg",
     "title": "Qavatlar va vertikal aloqa — arxitekturaviy eskiz",
     "explanation": [
-      "1. Ikki qavat plani va ularni bog‘lagan zinapoya qavatlararo funksional aloqani ko‘rsatadi.",
-      "2. Zinapoya circulation, opening, qavat balandligi, konstruksiya va xavfsizlik bilan birga tekshiriladi.",
-      "3. Yuqori va pastki qavatlarni alohida chiroyli qilish yetarli emas; ular bitta uy sifatida izchil ishlashi kerak.",
-      "Darsdagi bajarish: Qavatlararo aloqa uchun 8 ta tekshiruv savolini yozing."
+      "1. Ikki qavatli kesim qavatlarni alohida planlar emas, zinapoya va vertikal tizimlar bilan bog‘langan yagona uy sifatida ko‘rsatadi.",
+      "2. Zinapoya circulation, qavat balandligi, opening, konstruksiya va xavfsizlik bilan birga tekshiriladi.",
+      "3. Yuqori va pastki qavatdagi funksiyalar, sanitar zonalar va shaftlar o‘zaro mantiqiy joylashishi kerak.",
+      "Darsdagi bajarish: Ikki qavatli uy uchun qavatlararo kamida 8 ta koordinatsiya savoli tuzing."
     ],
-    "exercise": "Qavatlar va vertikal yo‘lni band-dalil jadvaliga kiriting.",
-    "solution": "Qavatlararo aloqa plan va kesimda tekshiriladi.",
+    "exercise": "Qavatlararo circulation, opening va funksional aloqani birga tekshiring.",
+    "solution": "Vertikal aloqa ikki qavatli uyning funksional va texnik tizimlarini birlashtiradi.",
     "block": 6,
     "recipe": "stories",
-    "boundary": "Normativ tahlilni tushuntiruvchi yengil arxitekturaviy eskiz. Rang va geometriya o‘quv misoli; aniq normativ qiymat va minimal o‘lchamlar rasmiy hujjatdan tekshiriladi.",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy audit eskizi. Xona ranglari va plan shakllari konseptual; aniq minimal o‘lcham va normativ talablar amaldagi rasmiy manbadan olinadi.",
     "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
@@ -4486,16 +4486,16 @@
     "asset": "l09_m02_005.svg",
     "title": "Turar joy professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "1. Chapdagi plan va o‘ngdagi checklist turar joyni kompleks tizim sifatida audit qilish g‘oyasini ko‘rsatadi.",
-      "2. Obyekt turi, xonalar, zonalash, circulation, tabiiy sharoit, sanitar zonalar, vertikal aloqa va xavfsizlik birga tekshiriladi.",
-      "3. Bitta xona talabga mos bo‘lishi butun uy mos degani emas; loyiha o‘zgarsa tegishli bandlar qayta tekshiriladi.",
-      "Darsdagi bajarish: Har tekshiruv uchun manba, loyiha holati, status, izoh va yechim yozing."
+      "1. Olti blok kompleks auditning yo‘nalishlarini ifodalaydi: obyekt turi, plan, zonalash, sanitar, vertikal aloqa va qayd/status.",
+      "2. Bir xona talabga mos bo‘lishi butun uy mos degani emas; uy bo‘ylab o‘zaro bog‘liq masalalar tekshiriladi.",
+      "3. Loyiha o‘zgarsa ta’sirlangan normativ masalalar qayta tekshiriladi va audit jadvalidagi status yangilanadi.",
+      "Darsdagi bajarish: Obyekt → xona → zonalash → circulation → sanitar → vertikal aloqa → normativ manba zanjirini audit qiling."
     ],
-    "exercise": "Talab, band, chizma va tasdiq holatini audit qiling.",
-    "solution": "Turar joy auditi taxminiy moslikdan tekshirilgan moslikni ajratadi.",
+    "exercise": "Turar joy loyihasini kompleks checklist va manba qaydi bilan tekshiring.",
+    "solution": "Professional turar joy auditi funksional, texnik va normativ masalalarni yagona tekshiruv tizimida birlashtiradi.",
     "block": 6,
     "recipe": "norm",
-    "boundary": "Normativ tahlilni tushuntiruvchi yengil arxitekturaviy eskiz. Rang va geometriya o‘quv misoli; aniq normativ qiymat va minimal o‘lchamlar rasmiy hujjatdan tekshiriladi.",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy audit eskizi. Xona ranglari va plan shakllari konseptual; aniq minimal o‘lcham va normativ talablar amaldagi rasmiy manbadan olinadi.",
     "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
