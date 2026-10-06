@@ -9605,86 +9605,91 @@
   {
     "code": "L15_M08_001",
     "asset": "l15_m08_001.svg",
-    "title": "PRO readiness self-audit — ko‘rgazmali namuna",
+    "title": "PRO readiness self-audit — arxitekturaviy eskiz",
     "explanation": [
-      "Yakuniy self-auditda test bali, amaliy dalil, mustaqil qaror va ochiq bilim kamchiligi alohida yoziladi.",
-      "Ko‘nikmalarni ish daliliga bog‘lang → tayyorlik qaydi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi skill bloklari va markazdagi self-audit belgisi professional tayyorgarlikni bir nechta yo‘nalishda baholash g‘oyasini ko‘rsatadi.",
+      "2. Architecture, Planning, Site, Construction, Archicad, BIM, Documentation, Client va Presentation alohida kuch/zaiflik sifatida tekshiriladi.",
+      "3. Kursni tugatish avtomatik mastery degani emas; real ishda mustaqil bajarish darajasi muhim.",
+      "Darsdagi bajarish: Har skillni Strong / Medium / Weak sifatida baholang va dalil yozing."
     ],
-    "exercise": "Ko‘nikmalarni bajarilgan ish dalili bilan baholang.",
-    "solution": "PRO readiness faqat dars ochilganini emas, ko‘nikma namoyishini ko‘radi.",
+    "exercise": "Asosiy skilllar bo‘yicha self-audit qiling.",
+    "solution": "PRO readiness bir nechta professional ko‘nikmaning real amaliy darajasini tekshiradi.",
     "block": 4,
     "recipe": "audit",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/mastery eskizi. Grafikalar self-audit va workflow mantiqini ko‘rsatadi; real mastery amaliy topshiriq va audit natijasi bilan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M08_002",
     "asset": "l15_m08_002.svg",
-    "title": "Weak skill audit — ko‘rgazmali namuna",
+    "title": "Weak skill audit — arxitekturaviy eskiz",
     "explanation": [
-      "Yakuniy self-auditda test bali, amaliy dalil, mustaqil qaror va ochiq bilim kamchiligi alohida yoziladi.",
-      "Eng zaif ko‘nikmaga boshqa shartli mashq belgilang → rivojlanish reja.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi zaif skill kartochkalari o‘ngdagi bosqichma-bosqich improvement plan’ga aylanadi.",
+      "2. Zaif ko‘nikmani yashirish emas, uni aniq topish va oldingi modulga qaytib mustahkamlash professional rivojlanishning bir qismidir.",
+      "3. Improvement plan konkret bo‘lsin: qaysi skill, qaysi mashq, qachon va qanday tekshiriladi.",
+      "Darsdagi bajarish: 3 ta zaif skill uchun 30 kunlik improvement plan tuzing."
     ],
-    "exercise": "Zaif ko‘nikma uchun aniq takror mashq belgilang.",
-    "solution": "Weak skill audit kamchilikni bajariladigan o‘rganish rejasiga aylantiradi.",
+    "exercise": "Zaif ko‘nikmalarni aniq reja bilan mustahkamlang.",
+    "solution": "Weak-skill audit maqsadli mashq va qayta tekshirishni rejalashtiradi.",
     "block": 4,
     "recipe": "audit",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/mastery eskizi. Grafikalar self-audit va workflow mantiqini ko‘rsatadi; real mastery amaliy topshiriq va audit natijasi bilan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M08_003",
     "asset": "l15_m08_003.svg",
-    "title": "Integrated case challenge — ko‘rgazmali namuna",
+    "title": "Integrated case challenge — arxitekturaviy eskiz",
     "explanation": [
-      "Yakuniy self-auditda test bali, amaliy dalil, mustaqil qaror va ochiq bilim kamchiligi alohida yoziladi.",
-      "Integrated caseida brief, plan, model va outputni mustaqil bajaring → umumiy dalil.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Eskiz Site → Planning → BIM → Technical → Client decision kabi bir nechta ko‘nikmaning bitta case ichida birlashishini ko‘rsatadi.",
+      "2. Real ishda darslar alohida ishlamaydi; qarorlar bir-biriga ta’sir qiladi.",
+      "3. Bitta qarorni o‘zgartirganda site, plan, structure, MEP va client talabiga ta’sirini qayta ko‘rib chiqing.",
+      "Darsdagi bajarish: Murakkab residential case’ni briefdan yakuniy qarorgacha birlashtirib yeching."
     ],
-    "exercise": "Yangi integrated case uchun mustaqil yechim tayyorlang.",
-    "solution": "Transfer challenge bilimni boshqa sharoitda qo‘llashni tekshiradi.",
+    "exercise": "Bir case ichida bir nechta professional skillni integratsiya qiling.",
+    "solution": "Integrated challenge alohida bilimlarni real loyiha qarorlariga birlashtiradi.",
     "block": 4,
     "recipe": "audit",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/mastery eskizi. Grafikalar self-audit va workflow mantiqini ko‘rsatadi; real mastery amaliy topshiriq va audit natijasi bilan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M08_004",
     "asset": "l15_m08_004.svg",
-    "title": "Final submission readiness — ko‘rgazmali namuna",
+    "title": "Final submission readiness — arxitekturaviy eskiz",
     "explanation": [
-      "Yakuniy self-auditda test bali, amaliy dalil, mustaqil qaror va ochiq bilim kamchiligi alohida yoziladi.",
-      "Fayl ochilishi, revision va ochiq masalani tekshiring → topshirishga tayyor paket.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Checklist, loyiha, defense va portfolio bloklari final topshirishdan oldingi umumiy QA’ni ifodalaydi.",
+      "2. Missing file, wrong revision, unreadable drawing yoki inconsistent visual qolmasligi kerak.",
+      "3. Final project, defense va portfolio bir xil professional profil va loyiha holatini ko‘rsatishi kerak.",
+      "Darsdagi bajarish: Submission master checklist tuzib, barcha fayl va revisionlarni tekshiring."
     ],
-    "exercise": "Topshirishdan oldin fayllar va qabul mezonlarini qayta tekshiring.",
-    "solution": "Readiness paketning haqiqiy tarkibi va izchilligini tekshiradi.",
+    "exercise": "Final project, defense va portfolio paketini yagona QA bilan tekshiring.",
+    "solution": "Submission readiness barcha materialning to‘liq, izchil va topshirishga tayyor holatini tasdiqlaydi.",
     "block": 4,
     "recipe": "audit",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/mastery eskizi. Grafikalar self-audit va workflow mantiqini ko‘rsatadi; real mastery amaliy topshiriq va audit natijasi bilan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M08_005",
     "asset": "l15_m08_005.svg",
-    "title": "ARCHIPRO UZ yakuniy audit — ko‘rgazmali namuna",
+    "title": "ARCHIPRO UZ yakuniy audit — arxitekturaviy eskiz",
     "explanation": [
-      "Yakuniy self-auditda test bali, amaliy dalil, mustaqil qaror va ochiq bilim kamchiligi alohida yoziladi.",
-      "Bilaman, yordam kerak, tekshiruv zarur holatlarini yozing → halol yakuniy baho.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Markazdagi mastery belgisi va atrofdagi bloklar Learn → Practice → Test → Project → Audit → Improve → Repeat siklini ifodalaydi.",
+      "2. Professional arxitektura faqat dastur tugmalarini bilish emas; muammoni tushunish, qaror qilish, tekshirish, koordinatsiya va tushuntirishdir.",
+      "3. Yakuniy audit qaysi skill mustahkam, qaysi biri qayta ishlanishi kerakligini ko‘rsatadi.",
+      "Darsdagi bajarish: Barcha asosiy skilllarni yakuniy mastery checklist bilan tekshiring."
     ],
-    "exercise": "Yakuniy dalillar, ochiq savollar va keyingi o‘sish rejasini yozing.",
-    "solution": "Yakuniy audit o‘quv natijasini ko‘rsatadi; professional loyiha vakolati yoki ekspert tasdig‘ini avtomatik bermaydi.",
+    "exercise": "ARCHIPRO UZ bo‘yicha yakuniy mastery auditni bajaring.",
+    "solution": "Yakuniy audit professional workflow va doimiy yaxshilanish siklini mustahkamlaydi.",
     "block": 4,
     "recipe": "audit",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/mastery eskizi. Grafikalar self-audit va workflow mantiqini ko‘rsatadi; real mastery amaliy topshiriq va audit natijasi bilan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   }
 ]
