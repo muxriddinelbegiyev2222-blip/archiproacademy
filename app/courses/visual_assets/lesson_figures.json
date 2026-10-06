@@ -4682,87 +4682,92 @@
   {
     "code": "L09_M05_001",
     "asset": "l09_m05_001.svg",
-    "title": "Yong'in xavfsizligi fikrlashi — ko‘rgazmali namuna",
+    "title": "Yong‘in xavfsizligi fikrlashi — arxitekturaviy eskiz",
     "explanation": [
-      "Odamlar xonadan xavfsiz tashqariga chiqishi va tashqi xizmat kirishi bo‘yicha sxema tayyorlanadi.",
-      "Odam soni, foydalanish va xavf manbalarini yozing → tekshiruvning boshlanishi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Uy plani ichidagi turli zonalar va yon checklist yong‘in xavfsizligi bitta eshik yoki material emas, bir nechta tizimning birgalikdagi ishlashi ekanini ko‘rsatadi.",
+      "2. Odamlar, chiqish yo‘li, bo‘linishlar, konstruksiya, material va tashqi kirish yagona audit mantiqida ko‘riladi.",
+      "3. Aniq yong‘inga chidamlilik, masofa yoki boshqa qiymatlar eskizdan olinmaydi; ular amaldagi tegishli normativ bilan tekshiriladi.",
+      "Darsdagi bajarish: Bir uy uchun yong‘in xavfsizligi bo‘yicha 10 ta audit savoli tuzing."
     ],
-    "exercise": "Obyekt va foydalanish ssenariysiga tegishli xavflarni yozing.",
-    "solution": "Yong‘in xavfsizligi faqat bir eshik mavjudligi bilan tugamaydi.",
+    "exercise": "Yong‘in xavfsizligini odam, yo‘l, bo‘linish va tashqi kirishdan iborat tizim sifatida ko‘ring.",
+    "solution": "Yong‘in xavfsizligi bir nechta arxitektura va texnik qatlamlarning koordinatsiyasidir.",
     "block": 5,
     "recipe": "fire",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy yong‘in xavfsizligi eskizi. Yo‘llar va elementlar konseptual; aniq yong‘inga chidamlilik, masofa va o‘lchamlar amaldagi normativdan olinadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M05_002",
     "asset": "l09_m05_002.svg",
-    "title": "Odamlar, yo'llar va chiqishlar — ko‘rgazmali namuna",
+    "title": "Odamlar, yo‘llar va chiqishlar — arxitekturaviy eskiz",
     "explanation": [
-      "Odamlar xonadan xavfsiz tashqariga chiqishi va tashqi xizmat kirishi bo‘yicha sxema tayyorlanadi.",
-      "Xonadan chiqishgacha uzluksiz yo‘l chizing → to‘siq va qulflangan nuqta.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Plan ichidagi nuqtalar odamlarni, qizg‘ish yo‘l esa xonadan tashqi chiqishgacha bo‘lgan evakuatsiya yo‘nalishini ifodalaydi.",
+      "2. Kundalik circulation ishlayotgani favqulodda holatda yo‘l ham xavfsiz degani emas; yo‘l uzluksiz, tushunarli va to‘siqsiz bo‘lishi kerak.",
+      "3. Chiqish yo‘li bir xonadan boshlanib eshik, koridor va tashqi xavfsiz yo‘nalish bilan davom etadi.",
+      "Darsdagi bajarish: Bitta xonadan tashqarigacha odamning chiqish yo‘lini bosqichma-bosqich chizing."
     ],
-    "exercise": "Odamlardan chiqishgacha yo‘llarni belgilab, yetishmayotgan ma’lumotni qayd qiling.",
-    "solution": "Odamlar, yo‘llar va chiqishlar bir tizim sifatida tekshiriladi.",
+    "exercise": "Favqulodda chiqish yo‘lini foydalanuvchi nuqtai nazaridan tekshiring.",
+    "solution": "Xavfsiz chiqish yo‘li odamni uzluksiz ravishda xavfli zonadan tashqariga olib chiqadi.",
     "block": 5,
     "recipe": "fire",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy yong‘in xavfsizligi eskizi. Yo‘llar va elementlar konseptual; aniq yong‘inga chidamlilik, masofa va o‘lchamlar amaldagi normativdan olinadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M05_003",
     "asset": "l09_m05_003.svg",
-    "title": "Konstruksiya va materiallar bilan aloqa — ko‘rgazmali namuna",
+    "title": "Konstruksiya va materiallar bilan aloqa — arxitekturaviy eskiz",
     "explanation": [
-      "Odamlar xonadan xavfsiz tashqariga chiqishi va tashqi xizmat kirishi bo‘yicha sxema tayyorlanadi.",
-      "Material va konstruktiv yechimga tegishli tekshiruvni alohida yozing → mas’ulga yuboriladi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Uch panel devor, eshik va material/texnik ma’lumot kabi yong‘in xavfsizligi bilan bog‘liq turli elementlarni ko‘rsatadi.",
+      "2. Material nomi yoki ko‘rinishiga qarab uning yong‘in xususiyatini taxmin qilish mumkin emas; tegishli hujjat va texnik ma’lumot tekshiriladi.",
+      "3. Devor va eshik kabi elementlar yong‘in bo‘linishi yoki chiqish yo‘li vazifasiga ega bo‘lsa, ular birgalikda koordinatsiya qilinadi.",
+      "Darsdagi bajarish: Devor, eshik va qoplama uchun tekshirilishi kerak bo‘lgan xususiyatlar ro‘yxatini tuzing."
     ],
-    "exercise": "Material va konstruksiya tasdiqlarini talablar matritsasiga kiriting.",
-    "solution": "Materialning ko‘rinishi uning yong‘in tavsifini tasdiqlamaydi.",
+    "exercise": "Konstruksiya va materiallarning yong‘in xavfsizligi bilan aloqasini hujjat asosida tekshiring.",
+    "solution": "Elementning yong‘in bo‘yicha xususiyati nomi bilan emas, tegishli texnik va normativ dalil bilan tasdiqlanadi.",
     "block": 5,
     "recipe": "fire",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy yong‘in xavfsizligi eskizi. Yo‘llar va elementlar konseptual; aniq yong‘inga chidamlilik, masofa va o‘lchamlar amaldagi normativdan olinadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M05_004",
     "asset": "l09_m05_004.svg",
-    "title": "Uchastka va tashqi kirish — ko‘rgazmali namuna",
+    "title": "Uchastka va tashqi kirish — arxitekturaviy eskiz",
     "explanation": [
-      "Odamlar xonadan xavfsiz tashqariga chiqishi va tashqi xizmat kirishi bo‘yicha sxema tayyorlanadi.",
-      "Tashqi kirish va bino atrofi aloqasini genplanda ko‘rsating → xizmat savoli.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Uchastka eskizida bino, tashqi yo‘l va xizmat kirishi o‘zaro bog‘langan; yong‘in xavfsizligi faqat bino ichida tugamaydi.",
+      "2. Tashqi kirish, xizmat ko‘rsatish imkoniyati, qo‘shni obyektlar va uchastka cheklovlari ham auditga kiradi.",
+      "3. Mashina yo‘li yoki xizmat yo‘nalishini faqat chiroyli genplan elementi sifatida emas, real foydalanish ssenariysi sifatida tekshiring.",
+      "Darsdagi bajarish: Uchastkada bino va tashqi xizmat kirishi orasidagi asosiy yo‘lni belgilang."
     ],
-    "exercise": "Tashqi kirish va tegishli xizmat sharoitlarini genplanda ko‘rsating.",
-    "solution": "Bino xavfsizligi uchastka bilan bog‘liq sharoitlarni ham qamrab oladi.",
+    "exercise": "Uchastka va tashqi kirishlarni yong‘in xavfsizligi kontekstida tekshiring.",
+    "solution": "Tashqi kirish va uchastka aloqalari binodagi yong‘in xavfsizligi tizimining davomidir.",
     "block": 5,
     "recipe": "fire",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy yong‘in xavfsizligi eskizi. Yo‘llar va elementlar konseptual; aniq yong‘inga chidamlilik, masofa va o‘lchamlar amaldagi normativdan olinadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M05_005",
     "asset": "l09_m05_005.svg",
-    "title": "Yong'in xavfsizligi professional audit — ko‘rgazmali namuna",
+    "title": "Yong‘in xavfsizligi professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Odamlar xonadan xavfsiz tashqariga chiqishi va tashqi xizmat kirishi bo‘yicha sxema tayyorlanadi.",
-      "Manba, band, dalil va mutaxassis holatini qayd qiling → yechimning tekshirish izi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Olti blok yong‘in auditining asosiy savollarini jamlaydi: odamlar, chiqish, konstruksiya, material, tashqi yo‘l va qayd/status.",
+      "2. Bitta elementning to‘g‘ri bo‘lishi butun loyiha xavfsiz degani emas; tizim bo‘ylab uzluksizlik tekshiriladi.",
+      "3. Audit natijasi aniq manba, loyiha holati va ochiq masalalar bilan qayd qilinadi.",
+      "Darsdagi bajarish: Odam → yo‘l → chiqish → konstruksiya/material → tashqi kirish → normativ tekshiruv zanjirini audit qiling."
     ],
-    "exercise": "Mutaxassis, normativ band va ochiq masalalarni audit qiling.",
-    "solution": "Yong‘in auditi tekshirilmagan yechimni xavfsiz deb e’lon qilmaydi.",
+    "exercise": "Yong‘in xavfsizligini kompleks arxitekturaviy audit orqali tekshiring.",
+    "solution": "Professional audit odamlar harakati, qurilish elementlari va tashqi kirishni yagona xavfsizlik tizimida ko‘radi.",
     "block": 5,
     "recipe": "fire",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy yong‘in xavfsizligi eskizi. Yo‘llar va elementlar konseptual; aniq yong‘inga chidamlilik, masofa va o‘lchamlar amaldagi normativdan olinadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M06_001",
