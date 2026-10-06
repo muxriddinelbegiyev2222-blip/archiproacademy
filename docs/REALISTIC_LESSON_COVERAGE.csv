@@ -639,16 +639,16 @@ L14_M08_002,Case 1: murakkab site,reviewed_architectural_sketch,l14_m08_002.svg
 L14_M08_003,Case 2: murakkab oila programmasi,reviewed_architectural_sketch,l14_m08_003.svg
 L14_M08_004,Case 3: dizayn va texnik konflikt,reviewed_architectural_sketch,l14_m08_004.svg
 L14_M08_005,LEVEL 14 Advanced Case audit,reviewed_architectural_sketch,l14_m08_005.svg
-L15_M01_001,Arxitektura nazariyasi integratsiyasi,pending_topic_review,
-L15_M01_002,"Site, planning va ergonomika nazorati",pending_topic_review,
-L15_M01_003,Konstruktsiya va normativ fikrlash,pending_topic_review,
-L15_M01_004,BIM va hujjatlashtirish nazariyasi,pending_topic_review,
-L15_M01_005,PRO nazariya mastery audit,pending_topic_review,
-L15_M02_001,Model setup challenge,pending_topic_review,
-L15_M02_002,Modeling challenge,pending_topic_review,
-L15_M02_003,Advanced BIM challenge,pending_topic_review,
-L15_M02_004,Documentation challenge,pending_topic_review,
-L15_M02_005,Archicad PRO final audit,pending_topic_review,
+L15_M01_001,Arxitektura nazariyasi integratsiyasi,reviewed_architectural_sketch,l15_m01_001.svg
+L15_M01_002,"Site, planning va ergonomika nazorati",reviewed_architectural_sketch,l15_m01_002.svg
+L15_M01_003,Konstruktsiya va normativ fikrlash,reviewed_architectural_sketch,l15_m01_003.svg
+L15_M01_004,BIM va hujjatlashtirish nazariyasi,reviewed_architectural_sketch,l15_m01_004.svg
+L15_M01_005,PRO nazariya mastery audit,reviewed_architectural_sketch,l15_m01_005.svg
+L15_M02_001,Model setup challenge,reviewed_architectural_sketch,l15_m02_001.svg
+L15_M02_002,Modeling challenge,reviewed_architectural_sketch,l15_m02_002.svg
+L15_M02_003,Advanced BIM challenge,reviewed_architectural_sketch,l15_m02_003.svg
+L15_M02_004,Documentation challenge,reviewed_architectural_sketch,l15_m02_004.svg
+L15_M02_005,Archicad PRO final audit,reviewed_architectural_sketch,l15_m02_005.svg
 L15_M03_001,Plan xatolarini topish,pending_topic_review,
 L15_M03_002,Fasad va kesim xatolari,pending_topic_review,
 L15_M03_003,Konstruktiv va MEP konfliktlari,pending_topic_review,
