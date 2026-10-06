@@ -1,6 +1,6 @@
 # Visual review progress
 
-513 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 213 lessons using topic-specific architectural sketches. 167 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+548 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 248 lessons using topic-specific architectural sketches. 132 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -129,3 +129,17 @@ L10_M02: Site analysis concept, street/access/orientation, sun-wind-neighbor con
 L10_M03: Bubble Diagram concept, zoning/relationships, circulation, alternatives and professional bubble audit reviewed. Five generic visuals were rebuilt as topic-specific architectural bubble-diagram sketches.
 
 L10_M04: Bubble-to-plan transition, room proportion/furniture testing, door/circulation coordination, facade-yard linkage and sketch-plan audit reviewed. Five generic visuals were rebuilt as topic-specific architectural sketch-plan visuals.
+
+L10_M05: Plan optimization, dead-space efficiency, conflict resolution, structure/MEP logic and final plan audit rebuilt as topic-specific architectural sketches.
+
+L10_M06: BIM model startup, stories/grid, core model elements, multi-view coordination and model audit rebuilt as topic-specific architectural/BIM sketches.
+
+L10_M07: Facade concept, proportion/rhythm, opening/entrance emphasis, material/massing and facade audit rebuilt as architectural facade sketches.
+
+L10_M08: Roof concept, slope/drainage, ridge/eave/junctions, facade coordination and roof audit rebuilt as architectural roof sketches.
+
+L10_M09: Professional sections, levels/heights, structural openings, design checks and section audit rebuilt as architectural section sketches.
+
+L10_M10: Genplan strategy, pedestrian/vehicle movement, outdoor functions, levels/drainage and genplan audit rebuilt as architectural site sketches.
+
+L10_M11: Project album structure, plans/facades/sections, genplan/auxiliary drawings, layout quality and final Level 10 audit rebuilt as architectural documentation sketches.
