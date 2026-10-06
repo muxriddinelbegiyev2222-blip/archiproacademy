@@ -4502,87 +4502,92 @@
   {
     "code": "L09_M03_001",
     "asset": "l09_m03_001.svg",
-    "title": "Uchastkani normativ o'qish — ko‘rgazmali namuna",
+    "title": "Uchastkani normativ o‘qish — arxitekturaviy eskiz",
     "explanation": [
-      "20×30 m yerda bino, chegaralar va qo‘shni obyektlar genplanga joylangan; masofalar manbasi hali tekshirilmagan.",
-      "Yer va obyekt ma’lumotini rasmiy asosga bog‘lang → chegaraning manbasi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Uchastka chegarasi, ko‘cha, bino, daraxt va tarmoq belgisi birgalikda site kontekstni ko‘rsatadi.",
+      "2. Uchastka faqat uzunlik-kenglik emas; huquqiy chegara, kirish, relyef, tarmoqlar va atrof qurilish boshlang‘ich ma’lumotdir.",
+      "3. Aniq cheklov yoki masofa rasmiy hujjatsiz taxmin qilinmaydi.",
+      "Darsdagi bajarish: Uchastka uchun boshlang‘ich ma’lumot checklistini tuzing."
     ],
     "exercise": "Huquqiy chegara va eskiz konturini ajrating.",
     "solution": "Uchastka talabi ishonchli boshlang‘ich ma’lumotga tayanadi.",
     "block": 6,
     "recipe": "site",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Uchastka tahlilini tushuntiruvchi yengil genplan eskizi. Chegara masofalari va normativ qiymatlar shartli; aniq talablar rasmiy hujjatdan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M03_002",
     "asset": "l09_m03_002.svg",
-    "title": "Chegaralar, kirish va joylashtirish — ko‘rgazmali namuna",
+    "title": "Chegaralar, kirish va joylashtirish — arxitekturaviy eskiz",
     "explanation": [
-      "20×30 m yerda bino, chegaralar va qo‘shni obyektlar genplanga joylangan; masofalar manbasi hali tekshirilmagan.",
-      "Chekinish va kirish masofasini o‘lchang, tegishli hujjat bandiga bog‘lang → tekshiruvga tayyor qiymat.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Eskizda ko‘cha, piyoda va avtomobil kirishi hamda bino joylashuvi bir genplanda ko‘rsatilgan.",
+      "2. Chegara va kirishlar uy plani bilan boshidan koordinatsiya qilinadi; uy keyin tasodifiy uchastkaga qo‘yilmaydi.",
+      "3. Chegaradan aniq masofa eskizdan olinmaydi; amaldagi tegishli talab tekshiriladi.",
+      "Darsdagi bajarish: Chegara, ko‘cha, darvoza va asosiy kirishni belgilang."
     ],
     "exercise": "Chegara, ko‘cha va kirish nuqtalarini hujjat manbasi bilan belgilang.",
     "solution": "Joylashtirish tekshiruvida koordinatalar va manba aniq bo‘lishi kerak.",
     "block": 6,
     "recipe": "site",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Uchastka tahlilini tushuntiruvchi yengil genplan eskizi. Chegara masofalari va normativ qiymatlar shartli; aniq talablar rasmiy hujjatdan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M03_003",
     "asset": "l09_m03_003.svg",
-    "title": "Qo'shni obyektlar va tashqi aloqalar — ko‘rgazmali namuna",
+    "title": "Qo‘shni obyektlar va tashqi aloqalar — arxitekturaviy eskiz",
     "explanation": [
-      "20×30 m yerda bino, chegaralar va qo‘shni obyektlar genplanga joylangan; masofalar manbasi hali tekshirilmagan.",
-      "Qo‘shni bino, ko‘cha va kommunikatsiyani ko‘rsating → tashqi sharoit.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Markazdagi uchastka atrofidagi qo‘shni massalar kontekstning loyiha qarorlariga ta’sirini ko‘rsatadi.",
+      "2. Qo‘shni bino soyalanish, privacy, ko‘rinish, yong‘in xavfsizligi va kirishga ta’sir qilishi mumkin.",
+      "3. Uchastkaning to‘rt tomoni bo‘yicha alohida kontekst tahlili qiling.",
+      "Darsdagi bajarish: Har tomon uchun qo‘shni, quyosh, ko‘rinish, kirish va xavfni yozing."
     ],
     "exercise": "Qo‘shni binolar, xizmat tarmoqlari va tashqi aloqalarni qayd qiling.",
     "solution": "Qo‘shni sharoitlarni bilmasdan uchastka mosligi tasdiqlanmaydi.",
     "block": 6,
     "recipe": "site",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Uchastka tahlilini tushuntiruvchi yengil genplan eskizi. Chegara masofalari va normativ qiymatlar shartli; aniq talablar rasmiy hujjatdan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M03_004",
     "asset": "l09_m03_004.svg",
-    "title": "Genplan koordinatsiyasi — ko‘rgazmali namuna",
+    "title": "Genplan koordinatsiyasi — arxitekturaviy eskiz",
     "explanation": [
-      "20×30 m yerda bino, chegaralar va qo‘shni obyektlar genplanga joylangan; masofalar manbasi hali tekshirilmagan.",
-      "Genplan ma’lumoti va arxitektura konturini solishtiring → bir xil bino.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Bino, avtomobil yo‘li, piyoda yo‘li, yashil va xizmat zonalari bitta genplan tizimi sifatida ko‘rsatilgan.",
+      "2. Har zona bir-biriga xavfsiz va funksional bog‘lanishi kerak; muhandislik kirishlari ham oldindan o‘ylanadi.",
+      "3. Genplan dekorativ daraxtlar bilan tugamaydi; u foydalanish va tashqi aloqalarni boshqaradi.",
+      "Darsdagi bajarish: Zonalar orasidagi asosiy aloqalarni strelka bilan ko‘rsating."
     ],
     "exercise": "Genplanni plan va sathlar bilan solishtiring.",
     "solution": "Genplan ichki loyiha va tashqi sharoitlarni muvofiqlashtiradi.",
     "block": 6,
     "recipe": "site",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Uchastka tahlilini tushuntiruvchi yengil genplan eskizi. Chegara masofalari va normativ qiymatlar shartli; aniq talablar rasmiy hujjatdan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M03_005",
     "asset": "l09_m03_005.svg",
-    "title": "Uchastka professional audit — ko‘rgazmali namuna",
+    "title": "Uchastka professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "20×30 m yerda bino, chegaralar va qo‘shni obyektlar genplanga joylangan; masofalar manbasi hali tekshirilmagan.",
-      "Manbasiz masofani ochiq masala sifatida qayd qiling → tasdiqlanmagan qiymat yashirilmaydi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi site plan va o‘ngdagi checklist uchastkani hujjat, chegara, kirish, bino joyi, qo‘shni va tarmoqlar bo‘yicha audit qilishni ko‘rsatadi.",
+      "2. Har masalaga tekshirildi, ochiq savol yoki qayta ishlash kabi status bering.",
+      "3. Vizual chiroyli genplan normativ moslikni avtomatik tasdiqlamaydi.",
+      "Darsdagi bajarish: Uchastka audit jadvaliga manba, loyiha holati, status va yechim kiriting."
     ],
     "exercise": "Tasdiqlangan ma’lumot va yetishmayotgan bandlarni audit qiling.",
     "solution": "Uchastka auditi noma’lum chegarani aniq deb ko‘rsatmaydi.",
     "block": 6,
     "recipe": "site",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Uchastka tahlilini tushuntiruvchi yengil genplan eskizi. Chegara masofalari va normativ qiymatlar shartli; aniq talablar rasmiy hujjatdan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M04_001",
