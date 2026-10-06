@@ -2992,86 +2992,91 @@
   {
     "code": "L07_M03_001",
     "asset": "l07_m03_001.svg",
-    "title": "Model View Options tushunchasi — ko‘rgazmali namuna",
+    "title": "Model View Options tushunchasi — arxitekturaviy eskiz",
     "explanation": [
-      "Ayni model uchun soddalashtirilgan plan va batafsil hujjat ko‘rinishi yaratiladi.",
-      "MVOni model tafsilotini ko‘rsatish qoidasi deb ajrating → geometriya saqlanadi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chap va o‘ngda bir xil model turli tafsilot darajasida ko‘rsatilgan. MVO model elementlarini o‘chirib tashlamaydi; view ichida ularning qanday ifodalanishini boshqaradi.",
+      "2. Eshik, deraza, object va boshqa komponentlarning detal darajasi hujjat maqsadiga mos tanlanadi.",
+      "3. Soddalashtirilgan view model ma’lumotlari yo‘qolgan degani emas. Boshqa view’da batafsil ko‘rinish yana ishlatilishi mumkin.",
+      "Darsdagi bajarish: Bir xil modelni ikki xil MVO holatida solishtiring."
     ],
-    "exercise": "Ikki viewda ko‘rsatiladigan detalni solishtiring.",
-    "solution": "MVO modelning ko‘rsatish darajasini boshqarishga yordam beradi.",
+    "exercise": "Bir modelni batafsil va soddalashtirilgan MVOda ko‘rsating.",
+    "solution": "MVO modelni o‘zgartirmasdan ko‘rinish tafsilotini boshqaradi.",
     "block": 7,
     "recipe": "mvo",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ko‘rsatilgan soddalashtirishlar workflow misoli; aniq MVO imkoniyatlari element turi va Archicad sozlamasiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M03_002",
     "asset": "l07_m03_002.svg",
-    "title": "Model ko'rinishini boshqarish — ko‘rgazmali namuna",
+    "title": "Model ko‘rinishini boshqarish — arxitekturaviy eskiz",
     "explanation": [
-      "Ayni model uchun soddalashtirilgan plan va batafsil hujjat ko‘rinishi yaratiladi.",
-      "Kerakli element tafsilotini soddalashtirib viewni solishtiring → o‘qilish maqsadi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi tanlov kartochkalari turli model komponentlari uchun ko‘rsatish darajasini boshqarish g‘oyasini ifodalaydi.",
+      "2. O‘ngdagi plan tanlovlar natijasida soddalashgan. Qaysi elementlar tafsilotini kamaytirish kerakligi hujjat maqsadiga bog‘liq.",
+      "3. Grafikani soddalashtirish bilan model geometriyasini o‘zgartirishni aralashtirmang. MVO view darajasidagi boshqaruvdir.",
+      "Darsdagi bajarish: Bitta komponent ko‘rinishini o‘zgartirib, model ma’lumoti saqlanayotganini tekshiring."
     ],
-    "exercise": "Element turiga tegishli ko‘rsatish sozlamasini o‘zgartiring.",
-    "solution": "MVO natijasi qo‘llab-quvvatlanadigan element ko‘rinishida tekshiriladi.",
+    "exercise": "MVO orqali bitta model komponentining ko‘rinishini o‘zgartiring.",
+    "solution": "Ko‘rinish boshqaruvi hujjatni o‘qishni yengillashtiradi, modelni qayta qurmaydi.",
     "block": 8,
     "recipe": "mvo",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ko‘rsatilgan soddalashtirishlar workflow misoli; aniq MVO imkoniyatlari element turi va Archicad sozlamasiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M03_003",
     "asset": "l07_m03_003.svg",
-    "title": "MVO Combination — ko‘rgazmali namuna",
+    "title": "MVO Combination — arxitekturaviy eskiz",
     "explanation": [
-      "Ayni model uchun soddalashtirilgan plan va batafsil hujjat ko‘rinishi yaratiladi.",
-      "Sozlamani combination bilan saqlang → takror ishlatiladigan ko‘rinish.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi bir nechta parametr bloklari bitta MVO Combination ichida saqlanadigan ko‘rsatish qarorlarini ifodalaydi.",
+      "2. Combination tanlanganda shu ko‘rsatish holatlari birgalikda view’ga qo‘llanadi. Bu har safar parametrlarni qo‘lda takrorlashni kamaytiradi.",
+      "3. Combination nomi uning maqsadini tushuntirsin; o‘xshash va noma’lum variantlarni ko‘paytirish workflow’ni chalkashtiradi.",
+      "Darsdagi bajarish: Bir nechta MVO tanlovini bitta tushunarli Combination sifatida saqlang."
     ],
-    "exercise": "Eskiz va hujjat uchun nomlangan combination yarating.",
-    "solution": "Combination ko‘rsatish sozlamalarini vazifa bo‘yicha takrorlashga xizmat qiladi.",
+    "exercise": "Bir nechta MVO parametridan Combination tuzing.",
+    "solution": "MVO Combination view tafsilot sozlamalarini izchil qayta ishlatishga yordam beradi.",
     "block": 8,
     "recipe": "mvo",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ko‘rsatilgan soddalashtirishlar workflow misoli; aniq MVO imkoniyatlari element turi va Archicad sozlamasiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M03_004",
     "asset": "l07_m03_004.svg",
-    "title": "View va MVO workflow — ko‘rgazmali namuna",
+    "title": "View va MVO workflow — arxitekturaviy eskiz",
     "explanation": [
-      "Ayni model uchun soddalashtirilgan plan va batafsil hujjat ko‘rinishi yaratiladi.",
-      "Viewga tegishli combinationni bog‘lang, qayta ochib tekshiring → hujjat izchil.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi sozlamalar to‘plami va o‘ngdagi plan view bir-biriga bog‘langan workflow’ni ko‘rsatadi.",
+      "2. View saqlanganda unga mos MVO Combination ham muvofiqlashtiriladi. Keyin view ochilganda kutilgan tafsilot darajasi qayta olinadi.",
+      "3. Bir view’da ishlatilgan MVOni tasodifan o‘zgartirish boshqa saqlangan ko‘rinishlarga qanday ta’sir qilishini tekshiring.",
+      "Darsdagi bajarish: View nomi, maqsadi va unga bog‘langan MVO Combination’ni birga tekshiring."
     ],
-    "exercise": "Saqlangan viewni qayta ochib, MVO tanlovini tekshiring.",
-    "solution": "Viewning kutilgan ko‘rinishi saqlangan sozlamalar bilan nazorat qilinadi.",
+    "exercise": "Saqlangan view va uning MVO holatini solishtiring.",
+    "solution": "View workflowda model ko‘rinishi va MVO konfiguratsiyasi muvofiqlashtiriladi.",
     "block": 8,
     "recipe": "mvo",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ko‘rsatilgan soddalashtirishlar workflow misoli; aniq MVO imkoniyatlari element turi va Archicad sozlamasiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M03_005",
     "asset": "l07_m03_005.svg",
-    "title": "Model View Options professional audit — ko‘rgazmali namuna",
+    "title": "Model View Options professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Ayni model uchun soddalashtirilgan plan va batafsil hujjat ko‘rinishi yaratiladi.",
-      "Ikki viewni bir model bilan solishtiring → farq sozlamadan, tasodifiy o‘chirishdan emas.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi sozlama ro‘yxati, o‘ngdagi view natijasi bir xil maqsadga xizmat qilishi kerak.",
+      "2. Auditda noaniq Combination nomlari, tasodifiy tafsilot darajasi, view bilan mos kelmagan MVO va keraksiz dublikatlar tekshiriladi.",
+      "3. Yakuniy hujjatni kerakli masshtab va vazifada ko‘rib chiqing. Juda ko‘p detal ham, haddan tashqari soddalashtirish ham o‘qishni yomonlashtirishi mumkin.",
+      "Darsdagi bajarish: MVO Combination → View → hujjat natijasini bir zanjir sifatida audit qiling."
     ],
-    "exercise": "Ikki chiqarish ko‘rinishidagi detal va o‘qilishni audit qiling.",
-    "solution": "MVO auditi chizmaning maqsadga mos axborot darajasini tekshiradi.",
+    "exercise": "MVO Combination va view natijasini birga audit qiling.",
+    "solution": "MVO auditi saqlangan ko‘rsatish qoidasi bilan haqiqiy view natijasini solishtiradi.",
     "block": 10,
     "recipe": "mvo",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ko‘rsatilgan soddalashtirishlar workflow misoli; aniq MVO imkoniyatlari element turi va Archicad sozlamasiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
