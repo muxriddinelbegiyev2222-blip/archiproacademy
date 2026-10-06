@@ -299,11 +299,11 @@ L07_M04_002,Renovation Status,reviewed_architectural_sketch,l07_m04_002.svg
 L07_M04_003,Renovation Filters,reviewed_architectural_sketch,l07_m04_003.svg
 L07_M04_004,Rekonstruksiya modeli workflow,reviewed_architectural_sketch,l07_m04_004.svg
 L07_M04_005,Renovation professional audit,reviewed_architectural_sketch,l07_m04_005.svg
-L07_M05_001,Schedules tushunchasi,pending_topic_review,
-L07_M05_002,Criteria va Fields,pending_topic_review,
-L07_M05_003,"Sorting, Grouping va hisoblash",pending_topic_review,
-L07_M05_004,"Door, Window va Zone Schedules",pending_topic_review,
-L07_M05_005,Schedules professional audit,pending_topic_review,
+L07_M05_001,Schedules tushunchasi,reviewed_architectural_sketch,l07_m05_001.svg
+L07_M05_002,Criteria va Fields,reviewed_architectural_sketch,l07_m05_002.svg
+L07_M05_003,"Sorting, Grouping va hisoblash",reviewed_architectural_sketch,l07_m05_003.svg
+L07_M05_004,"Door, Window va Zone Schedules",reviewed_architectural_sketch,l07_m05_004.svg
+L07_M05_005,Schedules professional audit,reviewed_architectural_sketch,l07_m05_005.svg
 L07_M06_001,BIM Properties tushunchasi,pending_topic_review,
 L07_M06_002,Property yaratish va tuzilishi,pending_topic_review,
 L07_M06_003,Element ma'lumotlarini standartlashtirish,pending_topic_review,
