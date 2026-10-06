@@ -1,0 +1,9 @@
+# Visual update validation
+
+The 255-lesson checkpoint passed all 24 release regression tests under real PySide6 widgets with QT_QPA_PLATFORM=offscreen (313.639 seconds, exit 0). The suite opens all 680 lesson pages and checks the full PRO flow through 16 levels. Original lesson blocks, quiz data and progress behavior are covered by the release suite.
+
+The subsequent 270-lesson checkpoint passed the four focused visual tests: worked lesson/catalog alignment, complete asset inventory, zoom/font/layout/quiz gates, and missing-image fallback (5.831 seconds, exit 0). A separate inventory check confirms 213 AI render lessons plus 57 screenshot-only lessons, disjoint and unique. All 680 lesson contents still match the saved original content inventory.
+
+Two newly revised lessons (L05_M09_004 and L05_M10_005) were also opened in the actual lesson UI at 1366 × 768; content width matched the scroll viewport width. A damaged L02_M04_003 JPEG was regenerated from its intact original PNG; the previous decoder warning disappeared.
+
+These checks do not constitute a Windows executable build test, SHNQ verification or completion of the remaining 410 topic reviews.

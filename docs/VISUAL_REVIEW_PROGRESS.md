@@ -1,6 +1,6 @@
 # Visual review progress
 
-255 of 680 lessons have completed the current topic-specific visual review: 211 AI material renders and 44 lessons using documented Graphisoft screenshots. 425 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+270 of 680 lessons have completed the current topic-specific visual review: 213 AI material renders and 57 lessons using documented Graphisoft screenshots. 410 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -23,3 +23,9 @@ L05_M08: Line/Polyline distinction, Fill controls, Text readability, associative
 L05_M09: Associative dimensions, outer/core faces, room clear distances, linear chains and flexible text arrangement reviewed. 9000 mm worked example and 6000 mm independent exercises explicitly distinguished.
 
 L05_M10: First project reviewed with Story Settings, Wall/Slab, Window, Dimension, Zone and Object elevation captures; three new realistic material examples explain wall–slab contact, room access and a deliberately floating desk versus corrected placement.
+
+L06_M01: Story height/elevation distinction, Home Story, Top Link, offsets, relinking and multi-story audit reviewed. New realistic two-story cutaway shows vertically aligned walls and intermediate slab; circulation and engineering design are not claimed.
+
+L06_M02: Layer and combination distinctions, visibility/locking, new combination creation, Update persistence, intersection groups and saved-view audits reviewed. Legacy v2022 capture reused by official AC28 Help explicitly disclosed.
+
+L06_M03: Building Material versus Surface, Cut Fill/pens, intersection priority and project-wide attribute effects reviewed. Realistic brick samples explain appearance difference without implying a changed substrate or an engineered wall detail.

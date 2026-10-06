@@ -833,256 +833,255 @@
   {
     "code": "L06_M01_001",
     "asset": "ac28-stories.png",
-    "title": "Story Settings: qavatlar va sathlar",
+    "title": "Story — modelning ishchi sathi",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/140_UserInterfaceDialogBoxes/140_UserInterfaceDialogBoxes-33.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/140_UserInterfaceDialogBoxes/StorySettings.png",
     "block": 0,
     "explanation": [
-      "Story Settings: qavatlar va sathlar. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Qavatni ishchi daraja deb ajrating, qavat nomi va sathini yozing → tartibli vertikal asos."
+      "Jadvalda Ground Floor 0, undan yuqoridagi qavatlar 3100 va 6200 sathlarda. Story nomi yoki raqami model elementi emas: u devor, pol va obyektlarni vertikal tashkil qilishga xizmat qiladi.",
+      "Elevation loyiha noliga nisbatan sath; Height to Next qo‘shni yuqori qavatgacha masofa. Darsdagi 0 va +3000 mm sathlar boshqa o‘quv misoli, rasmda ular kiritilmagan.",
+      "Qavatni Navigator orqali oching, modelni 3D va kesim bilan solishtiring. Bitta qavat planda ochilishi barcha elementlar faqat shu sathda tugaydi degani emas."
     ],
     "exercise": "Qavat sathlarini chizmada ko‘rsatib, qavat tushunchasini model elementidan ajrating.",
     "solution": "Qavat modeli elementlarning tashkil qilinishiga xizmat qiladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy tasviri. Alohida skrinshotlardagi namunaviy sonlar bir loyiha qiymatlari deb birlashtirilmaydi; mashq sathlarini o‘z modelingizda tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M01_002",
     "asset": "ac28-stories.png",
-    "title": "Story Settings: qavatlar va sathlar",
+    "title": "Elevation va Height to Next bir xil tahrir emas",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/140_UserInterfaceDialogBoxes/140_UserInterfaceDialogBoxes-33.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/140_UserInterfaceDialogBoxes/StorySettings.png",
-    "block": 0,
+    "block": 3,
     "explanation": [
-      "Story Settings: qavatlar va sathlar. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Story Settingsda qavatlar oralig‘ini 3000 mm bilan belgilang → ikki sath."
+      "Rasmning 3100 − 0 = 3100 mm farqi jadvaldagi Height to Next bilan mos. Namunaning 3000 mm bosqichi va mustaqil 3.200 − 0.000 = 3.200 m mashqi boshqa sinovlar; har birini o‘z shartiga ko‘ra tekshiring.",
+      "Height to Nextni o‘zgartirish yuqoridagi qavatlar sathiga ham ta’sir qiladi. Elevationni o‘zgartirish esa bir qavat sathini siljitadi va qo‘shni qavatlar oralig‘ini o‘zgartiradi.",
+      "Tahrirdan keyin elementlarning yuqori/pastki bog‘lanishi va kesimni tekshiring. Qavat qo‘shish, o‘chirish yoki balandligini o‘zgartirish Undo navbatini tozalashi mumkin; avval fayl nusxasini saqlang."
     ],
     "exercise": "Story Settingsda sathlar farqini tekshiring: 3.200 − 0.000 = 3.200 m.",
     "solution": "Qavatlar oralig‘i sathlar ayirmasi bilan nazorat qilinadi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy tasviri. Alohida skrinshotlardagi namunaviy sonlar bir loyiha qiymatlari deb birlashtirilmaydi; mashq sathlarini o‘z modelingizda tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M01_003",
     "asset": "ac28-home-story.png",
-    "title": "Home Story: elementning tegishli qavati",
+    "title": "Home Story va Top Linkni alohida o‘qing",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-4.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/HomeStorySelect.png",
-    "block": 0,
+    "block": 2,
     "explanation": [
-      "Home Story: elementning tegishli qavati. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Devor Home Story va yuqori bog‘lanishini o‘qing → geometrik sath qavat nomidan farq qilishi mumkin."
+      "Ochiq Home Story ro‘yxatida 0. Ground Floor (Current) tanlangan. Yuqorida Top Link — 1. Story (Home + 1), yuqori chekinish −200, pastki chekinish 0 ko‘rsatilgan.",
+      "Kulrang 2800 maydoni yuqori bog‘lanishdan hisoblangan balandlik; Home Story nomining o‘zi devorning qayerda tugashini aytmaydi. Bu skrinshotning sonlarini Story Settingsdagi alohida 3100 misoli bilan qo‘shmang.",
+      "Oddiy Home Story almashtirish elementni yangi qavatga ko‘chirishi mumkin. Edit → Element Settings → Relink Home Story esa joyini saqlab bog‘lanishini almashtiradi; ikki amalni aralashtirmang."
     ],
     "exercise": "Bir elementning Home Storysi va elevationini yozing.",
     "solution": "Home Story bilan elementning haqiqiy vertikal joylashuvi birga tekshiriladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy tasviri. Alohida skrinshotlardagi namunaviy sonlar bir loyiha qiymatlari deb birlashtirilmaydi; mashq sathlarini o‘z modelingizda tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M01_004",
-    "asset": "ac28-stories.png",
-    "title": "Story Settings: qavatlar va sathlar",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/140_UserInterfaceDialogBoxes/140_UserInterfaceDialogBoxes-33.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/140_UserInterfaceDialogBoxes/StorySettings.png",
-    "block": 0,
+    "asset": "ac28-home-story.png",
+    "title": "Nusxadan keyin vertikal bog‘lanishni tekshiring",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-4.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/HomeStorySelect.png",
+    "block": 2,
     "explanation": [
-      "Story Settings: qavatlar va sathlar. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Har qavatni alohida modellang, ustun va devorlarni kesimda solishtiring → vertikal izchillik."
+      "Har qavat elementining Home Storysi, tag chekinishi va yuqori bog‘lanishini qayta o‘qing. Devorga nusxa berish avtomatik ravishda barcha sath va tutashuvlar to‘g‘ri bo‘ldi degani emas.",
+      "Planda devorlar ustma-ust ko‘rinsa ham kesimda orasida bo‘shliq yoki ortiqcha ustma-ustlik bo‘lishi mumkin. Yonidagi ikki qavatli model tasviri qavatlararo tekshirish aloqasini ko‘rsatadi."
     ],
     "exercise": "Ikki qavat devorlarini kesimda solishtirib, uzilish yoki ortiqcha tutashuvni toping.",
     "solution": "Ko‘p qavatli workflow qavat nusxalarini emas, uzluksiz model koordinatsiyasini talab qiladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy tasviri. Alohida skrinshotlardagi namunaviy sonlar bir loyiha qiymatlari deb birlashtirilmaydi; mashq sathlarini o‘z modelingizda tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M01_005",
     "asset": "ac28-home-story.png",
-    "title": "Home Story: elementning tegishli qavati",
+    "title": "Audit: qavat nomidan haqiqiy sathgacha",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-4.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/HomeStorySelect.png",
-    "block": 0,
+    "block": 3,
     "explanation": [
-      "Home Story: elementning tegishli qavati. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: 0 va +3000 sathini plan, 3D va kesimda tekshiring → qavat modeli mos."
+      "Home Story, pastki chekinish, Top Link va yuqori chekinishni har tekshirilayotgan element uchun yozing. Faqat qavat nomi to‘g‘ri ekaniga qarab auditni tugatmang.",
+      "Kesimda element tagi va tepa sathini, 3Dda uzilish yoki ortiqcha kesishishni tekshiring. Sathni o‘zgartirib, bog‘langan element qanday harakatlanganini alohida sinang.",
+      "Qavat o‘chirilsa unga bog‘langan element ham o‘chishi mumkin. Auditda qaysi qavat va element tekshirilganini, natijani hamda ochiq kamchilikni qayd qiling."
     ],
     "exercise": "Qavat sathlari, element bog‘lanishi va kesim natijasini audit qiling.",
     "solution": "Stories auditi har qavat uchun aniqlangan sath va element xulqini dalillaydi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy tasviri. Alohida skrinshotlardagi namunaviy sonlar bir loyiha qiymatlari deb birlashtirilmaydi; mashq sathlarini o‘z modelingizda tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M02_001",
     "asset": "ac28-layers.png",
-    "title": "Layers: element qatlamlari va holatlari",
+    "title": "Layer va Layer Combination boshqa ro‘yxatlar",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-4.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/Layer_Combinations_1.png",
     "block": 0,
     "explanation": [
-      "Layers: element qatlamlari va holatlari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Element vazifasini layerga bog‘lang → devor, mebel va o‘lcham guruhlari."
+      "O‘ngdagi Layers ro‘yxatida Structural - Bearing tanlangan; chapda 02 Drafting kombinatsiyasi. Element layeri bilan ko‘rinishga saqlangan kombinatsiya nomi bir xil tushuncha emas.",
+      "Layer statusida ko‘z — ko‘rinish, qulf — tahrirga ruxsat, keyingi belgi — 3D ko‘rinish turi. Oxirgi 1 intersection group raqami; u elementlar soni emas.",
+      "Devor, mebel va o‘lchamni tanlab har birining haqiqiy layerini yozing. O‘ngdagi papkalar layerlarni tartiblaydi; bitta elementni qaysi layerga qo‘yganingizni papka nomining o‘zi hal qilmaydi."
     ],
     "exercise": "Uch elementning layerini qayd qilib, layerning guruhlash vazifasini tushuntiring.",
     "solution": "Layer elementlarni ko‘rsatish va tashkil qilish vositasidir.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasidan haqiqiy tasvir. Shablon nomlari tayyor loyiha standarti emas; o‘zingizdagi layer va view sozlamalarini tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M02_002",
     "asset": "ac28-layers.png",
-    "title": "Layers: element qatlamlari va holatlari",
+    "title": "Hide va Lockni maqsadga qarab ishlating",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-4.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/Layer_Combinations_1.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Layers: element qatlamlari va holatlari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Layer Settingsda nom va ko‘rinish/qulf holatini tekshiring → boshqariladigan qatlam."
+      "Ko‘zni o‘chirish layer elementlarini ko‘rinishdan yashiradi, Delete bilan o‘chirmaydi. Qulf esa o‘sha elementlarni tasodifiy tahrirlashdan saqlash uchun.",
+      "Mashqda mebel layerini yashiring, so‘ng qayta ko‘rsating: elementlar yana joyida bo‘lishi kerak. Ko‘rinmayotgan elementni darhol qayta yaratib dublikat qoldirmang.",
+      "Layer holatini o‘zgartirish bilan ulangan Viewning kombinatsiyasi bir xil qolganini tekshiring. Boshqa saqlangan View ochilganda uning ko‘rinish sozlamasi qayta qo‘llanishi mumkin."
     ],
     "exercise": "Layer Settingsda mebel ko‘rinishini o‘zgartirib, model elementlari saqlanganini tekshiring.",
     "solution": "Layerni yashirish elementni o‘chirish bilan teng emas.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasidan haqiqiy tasvir. Shablon nomlari tayyor loyiha standarti emas; o‘zingizdagi layer va view sozlamalarini tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M02_003",
-    "asset": "ac28-layer-combination.png",
-    "title": "Layer Combinations: saqlangan qatlam holatlari",
+    "asset": "ac28-layer-combination-create.png",
+    "title": "Yangi kombinatsiya yaratish",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-6.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/Layers_Layer_Combinations1.png",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/Create_new_Layer_Combination.png",
     "block": 0,
     "explanation": [
-      "Layer Combinations: saqlangan qatlam holatlari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: PLANda uchalasini, DOCda keraklilarini yoqing va kombinatsiyani saqlang → takroriy ko‘rinish."
+      "Chap pastdagi New yangi Layer Combination yaratadi. Rasmda New Layer Combination nomi yozilmoqda; o‘ngdagi New esa boshqa ro‘yxat uchun, u bilan aralashtirmang.",
+      "Mashqda PLAN va DOC kabi tushunarli nom bering, tegishli layerlarni ko‘rsating yoki yashiring, so‘ng holatlarni kombinatsiyaga Update bilan saqlang.",
+      "Bir kombinatsiyadagi layer holati boshqasidan farq qilishi mumkin. Tayyor nomning o‘zi chiqarish plani to‘g‘ri ekanini isbotlamaydi."
     ],
     "exercise": "Ish plan va chiqarish plan uchun ikkita Layer Combination yarating.",
     "solution": "Combination vazifaga mos ko‘rinish holatini takrorlashga yordam beradi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasidan haqiqiy tasvir. Shablon nomlari tayyor loyiha standarti emas; o‘zingizdagi layer va view sozlamalarini tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M02_004",
     "asset": "ac28-layers.png",
-    "title": "Layers: element qatlamlari va holatlari",
+    "title": "Nomlash: vazifa, intizom va takrorlarni tekshiring",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-4.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/Layer_Combinations_1.png",
-    "block": 0,
+    "block": 5,
     "explanation": [
-      "Layers: element qatlamlari va holatlari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Nomlash va foydalanish qoidasini jadvalga yozing → yangi element to‘g‘ri guruhga tushadi."
+      "Structural - Bearing, Grid, Shear va Stair & Railing nomlari bir xil prefiks bilan vazifani ajratmoqda. Bu qo‘llanma shabloni misoli, majburiy nomlash me’yori emas.",
+      "Devor, mebel va o‘lcham uchun loyiha qoidasini jadvalga yozing; deyarli bir xil nomli takror layerlarni tekshiring. Bitta yangi elementni tanlab qoida bo‘yicha to‘g‘ri layerga tushganini tasdiqlang.",
+      "Intersection group raqamini tasodifan almashtirmang: u model tutashuviga ta’sir qilishi mumkin. Nomni o‘zgartirish bilan model geometriyasi hal bo‘ldi deb hisoblamang."
     ],
     "exercise": "Nomlarda vazifa va intizomni aks ettirib, takror layerlarni aniqlang.",
     "solution": "Layer strukturasining sifati tushunarli nomlash va boshqariladigan son bilan tekshiriladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasidan haqiqiy tasvir. Shablon nomlari tayyor loyiha standarti emas; o‘zingizdagi layer va view sozlamalarini tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M02_005",
-    "asset": "ac28-layer-combination.png",
-    "title": "Layer Combinations: saqlangan qatlam holatlari",
+    "asset": "ac28-layer-combination-popup.png",
+    "title": "Audit: qaysi kombinatsiya hozir qo‘llangan?",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-6.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/Layers_Layer_Combinations1.png",
-    "block": 0,
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/LayerComboPopUpControl.png",
+    "block": 5,
     "explanation": [
-      "Layer Combinations: saqlangan qatlam holatlari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Ko‘rinmagan elementni layer va view kombinatsiyasi orqali qidiring → yashirish o‘chirish emas."
+      "Pastdagi Quick Options menyusida Custom yozuvi va kombinatsiyalar ro‘yxati ochiq. Rasmning sarlavhasida Archicad v2022 D1 INT bor: Archicad 28 yordam sahifasi shu eski tasvirni qayta ishlatgan.",
+      "PLAN va DOC viewlarini navbat bilan ochib, kerakli layer holatini tekshiring. Yo‘qolgan element uchun avval layer va saqlangan View kombinatsiyasini solishtiring.",
+      "Bu 3D qo‘llanma modeli sizning sinov plangingiz emas. Har viewda devor, mebel va o‘lcham mavjudligini, ko‘rinishi va tahrir holatini alohida qayd qiling; Hide o‘chirish emas."
     ],
     "exercise": "Ikkala viewni ochib, kerakli elementlarning mavjudligini audit qiling.",
     "solution": "Layer auditi turli vazifalarda elementning kutilgan ko‘rinishini tekshiradi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasidan haqiqiy tasvir. Shablon nomlari tayyor loyiha standarti emas; o‘zingizdagi layer va view sozlamalarini tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M03_001",
     "asset": "ac28-material.png",
-    "title": "Building Materials: ichki material atributi",
+    "title": "Building Material: nom, kesim va yuz ko‘rinishi",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-22.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/BuildingMaterials.png",
     "block": 0,
     "explanation": [
-      "Building Materials: ichki material atributi. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Building Materialda fizik/kesim axborotini, Surfaceda yuzaki ko‘rinishni ajrating → ikki boshqa atribut."
+      "Chapda Brick, ID EF-04 tanlangan. O‘ngda Common Brick kesuvchi Fill, Brick - Red esa 3D Surface. Bitta atributda ular boshqa vazifalarni bajaradi.",
+      "Devorni tanlab Basic materialini yoki Composite qatlamlari materialini aniqlang. Oynadagi Brick tanlovi o‘zi barcha devorlarga shu material qo‘llanganini bildirmaydi.",
+      "Materialning nomi va tasnifini haqiqiy ma’lumot bilan tekshiring. Rasmdagi 540 intersection priority soni g‘ishtning hisobiy mustahkamligi emas."
     ],
     "exercise": "Bir devorga qo‘llangan Building Materialni yozing.",
     "solution": "Building Material elementning material atributini ifodalaydi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy atribut oynasi. Material nomi, Cut Fill, Surface va priority qiymati loyiha parametridir; bu fizik mustahkamlik yoki SHNQ mosligi tasdig‘i emas.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M03_002",
     "asset": "ac28-material.png",
-    "title": "Building Materials: ichki material atributi",
+    "title": "Surface almashtirish materialni almashtirish emas",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-22.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/BuildingMaterials.png",
-    "block": 0,
+    "block": 2,
     "explanation": [
-      "Building Materials: ichki material atributi. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Tashqi Surface rangini o‘zgartiring, kesim materialini solishtiring → bo‘yoq yadro materiali emas."
+      "Brick - Red maydoni materialning boshlang‘ich 3D yuzini beradi. Elementning Model panelida Surface override qo‘llash mumkin; o‘sha elementning asosiy Building Materiali alohida qoladi.",
+      "Mashqda 3D rangini o‘zgartirib, kesimdagi material va Cut Fillni qayta tekshiring. Har doim yangi rangning o‘zi beton devorni g‘ishtli devorga aylantirdi degani emas.",
+      "Yonidagi realistik ikki g‘isht namunasida tashqi yuz boshqa, ichki g‘isht esa saqlangan. Bu ko‘rinish farqini tushuntiradi, mahsulot yoki qatlamlar texnik yechimini emas."
     ],
     "exercise": "Kesimdagi materialni va 3Ddagi Surface ko‘rinishini solishtiring.",
     "solution": "Kesim materiali bilan sirtning vizual ko‘rinishi bir xil tushuncha emas.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy atribut oynasi. Material nomi, Cut Fill, Surface va priority qiymati loyiha parametridir; bu fizik mustahkamlik yoki SHNQ mosligi tasdig‘i emas.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M03_003",
     "asset": "ac28-material.png",
-    "title": "Building Materials: ichki material atributi",
+    "title": "Cut Fill va qalamlar kesimda o‘qiladi",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-22.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/BuildingMaterials.png",
     "block": 0,
     "explanation": [
-      "Building Materials: ichki material atributi. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Kesuvchi fill va qalamni belgilang, kesimda o‘qing → tushunarli material ifodasi."
+      "Common Brick kesuvchi Fillning naqshini tanlaydi. O‘ngdagi 168 oldingi qalam, −1 esa fon qalamining qiymati; ular materialning haqiqiy zichligi yoki qalinligi emas.",
+      "Fill Orientation bu oynada Composite va Complex Profile uchun mavjudligi qayd etilgan. Uni oddiy 3D Surface teksturasi burilishi bilan aralashtirmang.",
+      "Kesimda haqiqatan kesilgan elementni topib, Fill va qalamni o‘zgartirish natijasini tekshiring. Oyna faqat sozlamani ko‘rsatadi; tayyor kesim chiroyli chiqdi deb hali tasdiqlamaydi."
     ],
     "exercise": "Cut Fill o‘zgarganda kesim o‘qilishidagi farqni kuzating.",
     "solution": "Cut Fill kesilgan materialni grafik jihatdan farqlashga yordam beradi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy atribut oynasi. Material nomi, Cut Fill, Surface va priority qiymati loyiha parametridir; bu fizik mustahkamlik yoki SHNQ mosligi tasdig‘i emas.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M03_004",
-    "asset": "ac28-material.png",
-    "title": "Building Materials: ichki material atributi",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-22.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/BuildingMaterials.png",
+    "asset": "ac28-material-priority-slider.png",
+    "title": "Intersection Priority: nisbiy tutashuv ustuvorligi",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-23.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/IntersectionPriorityAdjust.png",
     "block": 0,
     "explanation": [
-      "Building Materials: ichki material atributi. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Tutashuvdagi material va intersection priorityni o‘qing → kesimdagi ustuvorlik sababi."
+      "Qizil ramkada Brick materialining Intersection Priority slayderi va 540 soni. Bu 0–999 oralig‘idagi model tutashuvi ustuvorligi; yuk ko‘tarish darajasi emas.",
+      "Atribut prioritysini o‘zgartirish shu Building Materialdan foydalangan barcha elementlarga ta’sir qilishi mumkin. Faqat bir holat kerak bo‘lsa alohida material nusxasi bilan boshqaring.",
+      "Bitta tugunda material, geometriya va layer intersection groupni birga tekshiring. Priorityni shunchaki oshirish orqali devor yoki slabning noto‘g‘ri sathini tuzatib bo‘lmaydi."
     ],
     "exercise": "Ikki material tutashuvini tekshirib, priority va geometriya ta’sirini qayd qiling.",
     "solution": "Material tutashuvi faqat rangga qarab baholanmaydi; ulanish shartlari tekshiriladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy atribut oynasi. Material nomi, Cut Fill, Surface va priority qiymati loyiha parametridir; bu fizik mustahkamlik yoki SHNQ mosligi tasdig‘i emas.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M03_005",
     "asset": "ac28-material.png",
-    "title": "Building Materials: ichki material atributi",
+    "title": "Audit: to‘rtta ma’lumotni bir elementga bog‘lang",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-22.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/BuildingMaterials.png",
-    "block": 0,
+    "block": 7,
     "explanation": [
-      "Building Materials: ichki material atributi. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Plan, kesim va 3Ddagi ma’lumotni bir material jadvaliga bog‘lang → moslik dalili."
+      "Element IDsi, Building Material yoki Composite qatlamlari, Cut Fill, Surface override va priorityni bir ro‘yxatda qayd qiling. Atribut oynasini ochishning o‘zi model auditini tugatmaydi.",
+      "Plan va kesimda material ifodasini, 3Dda yuz ko‘rinishini solishtiring. Tasodifan oq Surface berilgan g‘isht devor material ro‘yxatida beton deb qolmasin.",
+      "Model tugunidagi natijani ham tekshiring: qaysi element qaysi material bilan tutashgan, ko‘rinish override bormi va umumiy atribut tahriri boshqa joylarni o‘zgartirganmi?"
     ],
     "exercise": "Material nomi, kesim, Surface va tugun natijasini audit qiling.",
     "solution": "Material auditi vizual ko‘rinish bilan model atributi chalkashmaganini ko‘rsatadi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy atribut oynasi. Material nomi, Cut Fill, Surface va priority qiymati loyiha parametridir; bu fizik mustahkamlik yoki SHNQ mosligi tasdig‘i emas.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
@@ -4206,6 +4205,22 @@
     "exercise": "Izohlar va o‘lchamlar bilan model qarorlarini tushuntiring.",
     "solution": "Hujjat grafikasi modelni tekshirish va o‘qish uchun xizmat qiladi.",
     "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy ekran tasviri. Rasm qiymatlari darsdagi 4 × 3 m mashqning tayyor natijasi emas; parametrlarni o‘z modelingizda tekshiring.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L06_M02_003",
+    "asset": "ac28-layer-combination-update.png",
+    "title": "Holatlarni Update bilan kombinatsiyaga yozish",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-6.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/LayerComboLock.png",
+    "block": 5,
+    "explanation": [
+      "Rasmda 10 Show 3D Zones as Solid tanlangan; o‘ngdagi Finish - Ceiling, Floor va Wall layerlarining qulflari ajratilgan. Past chapdagi yashil Update Status belgisi o‘zgarishni kombinatsiyaga yozish uchun.",
+      "Kerakli kombinatsiyani tanlang, layerlarning holatini belgilang, Update qiling va boshqa kombinatsiyaga o‘tib qayta oching. Saqlangan holat tiklanganini amalda tekshiring."
+    ],
+    "exercise": "Ish plan va chiqarish plan uchun ikkita Layer Combination yarating.",
+    "solution": "Combination vazifaga mos ko‘rinish holatini takrorlashga yordam beradi.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasidan haqiqiy tasvir. Shablon nomlari tayyor loyiha standarti emas; o‘zingizdagi layer va view sozlamalarini tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   }
 ]

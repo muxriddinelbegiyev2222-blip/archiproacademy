@@ -3585,5 +3585,39 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L06_M01_004",
+    "asset": "realistic-l06_m01_004.jpg",
+    "title": "Ko'p qavatli model workflow — rasmga qarab tushuning",
+    "explanation": [
+      "1. Ikki qavatni ajrating. Pastki va yuqori xonalar orasidagi gorizontal slab bir qavatga yopma, boshqa qavatga pol vazifasini ko‘rsatadi. Eng yuqoridagi slab alohida tom/yopma qismidir.",
+      "2. Vertikal moslik. Yon devorlar ikki qavatda bir xil joyda davom etadi; slab bilan tutashuvlar ko‘rinadi. O‘z modelida devor tagi va tepa sathini kesimda solishtirib, bo‘shliq yoki ortiqcha kesishuvni toping.",
+      "3. Faqat koordinatsiya namunasi. Old devorlar ko‘rish uchun olib tashlangan, zinapoya va boshqa tizimlar tasvirlanmagan. Bu tayyor uy loyihasi yoki konstruktiv hisob emas; 0 va +3000 mm sathlarni o‘lchamli modelingizda kiriting.",
+      "Darsdagi bajarish: Har qavatni alohida modellang, ustun va devorlarni kesimda solishtiring → vertikal izchillik."
+    ],
+    "exercise": "Ikki qavat devorlarini kesimda solishtirib, uzilish yoki ortiqcha tutashuvni toping.",
+    "solution": "Ko‘p qavatli workflow qavat nusxalarini emas, uzluksiz model koordinatsiyasini talab qiladi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L06_M03_002",
+    "asset": "realistic-l06_m03_002.jpg",
+    "title": "Building Material va Surface farqi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdagi yuza. Ochiq qizil g‘isht va choklar ko‘rinadi. Modeldagi asosiy material ma’lumoti uning kesimi hamda atributiga bog‘lanadi.",
+      "2. O‘ngdagi ko‘rinish. Old yuza oq bo‘yalgan, yon kesim va yuqorida qizil g‘isht saqlangan. Tashqi ko‘rinish boshqa bo‘lsa ham asosiy material boshqa materialga avtomatik aylanmaydi.",
+      "3. Ikki manbani tekshiring. Archicadda Surface override va Building Materialni alohida o‘qing, so‘ng 3Dni kesim bilan solishtiring. Render faqat bu farqni tushuntiradi; qo‘shimcha fizik qatlam yoki uning qalinligini belgilamaydi.",
+      "Darsdagi bajarish: Tashqi Surface rangini o‘zgartiring, kesim materialini solishtiring → bo‘yoq yadro materiali emas."
+    ],
+    "exercise": "Kesimdagi materialni va 3Ddagi Surface ko‘rinishini solishtiring.",
+    "solution": "Kesim materiali bilan sirtning vizual ko‘rinishi bir xil tushuncha emas.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]
