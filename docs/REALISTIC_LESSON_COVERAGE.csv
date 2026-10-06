@@ -369,11 +369,11 @@ L08_M09_002,Konstruktorga ma'lumot tayyorlash,reviewed_architectural_sketch,l08_
 L08_M09_003,Koordinatsiya va savol-javob workflow,reviewed_architectural_sketch,l08_m09_003.svg
 L08_M09_004,O'zgarishlar va versiyalarni boshqarish,reviewed_architectural_sketch,l08_m09_004.svg
 L08_M09_005,Arxitektura-konstruktsiya professional audit,reviewed_architectural_sketch,l08_m09_005.svg
-L09_M01_001,Normativ hujjatni to'g'ri o'qish,pending_topic_review,
-L09_M01_002,Qo'llanish doirasi va obyekt turi,pending_topic_review,
-L09_M01_003,"Tahrir, sana va hujjat holati",pending_topic_review,
-L09_M01_004,"Band, havola va dalil bilan ishlash",pending_topic_review,
-L09_M01_005,Normativ savodxonlik professional audit,pending_topic_review,
+L09_M01_001,Normativ hujjatni to'g'ri o'qish,reviewed_architectural_sketch,l09_m01_001.svg
+L09_M01_002,Qo'llanish doirasi va obyekt turi,reviewed_architectural_sketch,l09_m01_002.svg
+L09_M01_003,"Tahrir, sana va hujjat holati",reviewed_architectural_sketch,l09_m01_003.svg
+L09_M01_004,"Band, havola va dalil bilan ishlash",reviewed_architectural_sketch,l09_m01_004.svg
+L09_M01_005,Normativ savodxonlik professional audit,reviewed_architectural_sketch,l09_m01_005.svg
 L09_M02_001,Turar joy obyektini normativ nuqtai nazardan o'qish,pending_topic_review,
 L09_M02_002,Xona funksiyasi va o'zaro aloqalar,pending_topic_review,
 L09_M02_003,Sanitar va yordamchi zonalar,pending_topic_review,
