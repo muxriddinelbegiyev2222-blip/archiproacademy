@@ -1,6 +1,6 @@
 # Visual review progress
 
-390 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 90 lessons using topic-specific architectural sketches. 290 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+395 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 95 lessons using topic-specific architectural sketches. 285 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -79,3 +79,5 @@ L09_M03: Site/document context, boundaries and access, neighboring context, genp
 L09_M04: Natural daylight, orientation/sun, external shading, plan-facade-section coordination and lighting/insolation audit reviewed. Five generic figures were rebuilt as topic-specific architectural lighting sketches; quantitative verification remains normative/calculation dependent.
 
 L09_M05: Fire-safety systems thinking, people/routes/exits, construction/material links, site/external access and professional fire-safety audit reviewed. Five generic figures were rebuilt as topic-specific architectural safety sketches; exact values remain normative-source dependent.
+
+L09_M06: Evacuation concept, route continuity, door-corridor-stair sequence, obstacle/error scenarios and professional evacuation audit reviewed. Five generic figures were rebuilt as topic-specific architectural escape-route sketches; exact dimensional requirements remain normative-source dependent.
