@@ -8635,86 +8635,91 @@
   {
     "code": "L14_M05_001",
     "asset": "l14_m05_001.svg",
-    "title": "Ko'p avlodli yashash ssenariysi — ko‘rgazmali namuna",
+    "title": "Ko‘p avlodli yashash ssenariysi — arxitekturaviy eskiz",
     "explanation": [
-      "Uch avlod uyida umumiy dining, tinch xonalar va mustaqil kundalik tartib bor.",
-      "Har avlodning vaqt, dam va xizmat ehtiyojini jadvalga yozing → real ssenariy.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Uch avlod uchun alohida foydalanuvchi kartalari kunlik ritm, mehmon, sokinlik va privacy ehtiyojlari turlicha bo‘lishini ko‘rsatadi.",
+      "2. Ko‘p avlodli uy faqat ko‘proq yotoqxona qo‘shish bilan hal bo‘lmaydi; routine va relationship plan qaroriga ta’sir qiladi.",
+      "3. Har household uchun kim qachon uyda va qaysi shared zonalardan foydalanishi aniqlashtiriladi.",
+      "Darsdagi bajarish: Uch avlod uchun daily-routine jadvali tuzing."
     ],
-    "exercise": "Avlodlar bo‘yicha kundalik ehtiyoj va mustaqillikni yozing.",
-    "solution": "Ko‘p avlodli dastur foydalanuvchilar farqini hisobga oladi.",
+    "exercise": "Turli avlodlarning kundalik ritmi va privacy ehtiyojlarini solishtiring.",
+    "solution": "Ko‘p avlodli uy ssenariysi xona sonidan oldin foydalanuvchilar hayot ritmini tushunishni talab qiladi.",
     "block": 5,
     "recipe": "brief",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy plan/workflow eskizi. Accessibility o‘lchamlari va texnik talablar konseptual; real loyiha amaldagi normativlar bo‘yicha tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M05_002",
     "asset": "l14_m05_002.svg",
-    "title": "Birgalik va mustaqillik — ko‘rgazmali namuna",
+    "title": "Birgalik va mustaqillik — arxitekturaviy eskiz",
     "explanation": [
-      "Uch avlod uyida umumiy dining, tinch xonalar va mustaqil kundalik tartib bor.",
-      "Umumiy uchrashish va mustaqil kirish variantini solishtiring → birgalik/privacy muvozanati.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Markazdagi shared living/dining ikki tomondagi private household zonalarni bog‘laydi.",
+      "2. Privacy oilani to‘liq ajratish degani emas; shared, semi-private va private darajalar muvozanat qilinadi.",
+      "3. Ba’zi householdlar uchun alohida living yoki kichik service zone kerak bo‘lishi mumkin.",
+      "Darsdagi bajarish: Shared / semi-private / private zonalash yarating."
     ],
-    "exercise": "Umumiy va mustaqil zonalarni ikki rangda ko‘rsating.",
-    "solution": "Birgalik va privacy muvozanati aniq aloqalar bilan tuziladi.",
+    "exercise": "Shared va private makonlar orasida muvozanat yarating.",
+    "solution": "Ko‘p avlodli uyda birgalik va mustaqillik fazoviy darajalar orqali boshqariladi.",
     "block": 5,
     "recipe": "adjacency",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy plan/workflow eskizi. Accessibility o‘lchamlari va texnik talablar konseptual; real loyiha amaldagi normativlar bo‘yicha tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M05_003",
     "asset": "l14_m05_003.svg",
-    "title": "Accessibility va kelajak — ko‘rgazmali namuna",
+    "title": "Accessibility va kelajak — arxitekturaviy eskiz",
     "explanation": [
-      "Uch avlod uyida umumiy dining, tinch xonalar va mustaqil kundalik tartib bor.",
-      "Kelajakdagi foydalanish va accessibility savollarini yo‘l bo‘yicha belgilang → moslashish.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi plan accessibility ehtiyojini, o‘ngdagi plan esa xonaning kelajakda boshqa vazifaga moslashishini ko‘rsatadi.",
+      "2. Uy uzoq muddat ishlatilgani uchun mobility va family composition o‘zgarishi oldindan ko‘riladi.",
+      "3. Aniq o‘lchamlar eskizdan olinmaydi; accessibility talablari amaldagi normativlar bo‘yicha tekshiriladi.",
+      "Darsdagi bajarish: Uy uchun 10 yillik adaptation scenario yozing."
     ],
-    "exercise": "Kelajakdagi harakat qiyinlashuvi uchun moslashuv ssenariysini yozing.",
-    "solution": "Accessibility va kelajak ehtiyoji konsepsiya bosqichida ko‘riladi.",
+    "exercise": "Bir xonaning kelajakda bedroom, study yoki caregiver roomga moslashishini ko‘rsating.",
+    "solution": "Future adaptability ko‘p avlodli uyda uzoq muddatli foydalanishni qo‘llab-quvvatlaydi.",
     "block": 5,
     "recipe": "accessible",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy plan/workflow eskizi. Accessibility o‘lchamlari va texnik talablar konseptual; real loyiha amaldagi normativlar bo‘yicha tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M05_004",
     "asset": "l14_m05_004.svg",
-    "title": "Kirish, oshxona va servis modeli — ko‘rgazmali namuna",
+    "title": "Kirish, oshxona va servis modeli — arxitekturaviy eskiz",
     "explanation": [
-      "Uch avlod uyida umumiy dining, tinch xonalar va mustaqil kundalik tartib bor.",
-      "Oshxona va xizmatning bitta/ajratilgan variantini baholang → kundalik oqibat.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Ikki plan turli household modelini ifodalaydi: ko‘proq shared service va ko‘proq mustaqil service variantlari.",
+      "2. Alohida yoki umumiy oshxona, kirish, laundry, pantry va storage oilaning real yashash odatiga bog‘liq.",
+      "3. Ko‘p avlodli oilalarning hammasi bir xil yashaydi deb taxmin qilinmaydi.",
+      "Darsdagi bajarish: Ikki family model uchun entrance + kitchen + service strategiyasini solishtiring."
     ],
-    "exercise": "Kirish, oshxona va servisning umumiy yoki alohida ishlashini solishtiring.",
-    "solution": "Xizmat modeli turli oilaviy ssenariylarga mos tanlanadi.",
+    "exercise": "Household ssenariysiga mos kirish va service modelini tanlang.",
+    "solution": "Service va kirish modeli foydalanuvchilar hayot tarziga mos holda tanlanadi.",
     "block": 5,
     "recipe": "kitchen",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy plan/workflow eskizi. Accessibility o‘lchamlari va texnik talablar konseptual; real loyiha amaldagi normativlar bo‘yicha tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M05_005",
     "asset": "l14_m05_005.svg",
-    "title": "Ko'p avlodli uy professional audit — ko‘rgazmali namuna",
+    "title": "Ko‘p avlodli uy professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Uch avlod uyida umumiy dining, tinch xonalar va mustaqil kundalik tartib bor.",
-      "Kirishdan xizmatgacha har foydalanuvchi yo‘lini tekshiring → audit.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi plan shared/private zonalar va circulationni, o‘ngdagi checklist esa avlodlar ehtiyoji va future adaptation auditini jamlaydi.",
+      "2. Privacy, older users, service capacity, entrances va moslashuvchanlik alohida tekshiriladi.",
+      "3. Auditning maqsadi oilani bo‘lib tashlash emas, turli ehtiyojlar bilan birga qulay yashashni ta’minlashdir.",
+      "Darsdagi bajarish: Profiles → routines → shared/private → accessibility → service → entrances → adaptability zanjirini audit qiling."
     ],
-    "exercise": "Har avlod yo‘li va konfliktlarini audit qiling.",
-    "solution": "Ko‘p avlodli uy auditida bir foydalanuvchi qulayligi boshqasining ehtiyojini yo‘qotmaydi.",
+    "exercise": "Ko‘p avlodli uy loyihasini ehtiyoj, privacy va kelajak moslashuvi bo‘yicha kompleks tekshiring.",
+    "solution": "Professional audit turli avlodlar uchun shared va independent hayot muvozanatini tekshiradi.",
     "block": 4,
     "recipe": "audit",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy plan/workflow eskizi. Accessibility o‘lchamlari va texnik talablar konseptual; real loyiha amaldagi normativlar bo‘yicha tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
