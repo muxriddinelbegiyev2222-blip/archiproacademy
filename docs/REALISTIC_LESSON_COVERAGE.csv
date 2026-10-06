@@ -591,14 +591,14 @@ L13_M06_004,O'zgarish ta'siri,reviewed_architectural_sketch,l13_m06_004.svg
 L13_M06_005,Mijoz tuzatishlari audit,reviewed_architectural_sketch,l13_m06_005.svg
 L13_M07_001,Arxitektura qarorini asoslash,reviewed_architectural_sketch,l13_m07_001.svg
 L13_M07_002,Brief va site bilan dalillash,reviewed_architectural_sketch,l13_m07_002.svg
-L13_M07_003,Trade-offni tushuntirish,pending_topic_review,
-L13_M07_004,Kelishmovchilikni boshqarish,pending_topic_review,
-L13_M07_005,Qarorni himoya qilish audit,pending_topic_review,
-L13_M08_001,Simulyatsiya: birinchi murojaat,pending_topic_review,
-L13_M08_002,Simulyatsiya: brief va variantlar,pending_topic_review,
-L13_M08_003,Simulyatsiya: prezentatsiya,pending_topic_review,
-L13_M08_004,Simulyatsiya: revision va konflikt,pending_topic_review,
-L13_M08_005,LEVEL 13 real loyiha audit,pending_topic_review,
+L13_M07_003,Trade-offni tushuntirish,reviewed_architectural_sketch,l13_m07_003.svg
+L13_M07_004,Kelishmovchilikni boshqarish,reviewed_architectural_sketch,l13_m07_004.svg
+L13_M07_005,Qarorni himoya qilish audit,reviewed_architectural_sketch,l13_m07_005.svg
+L13_M08_001,Simulyatsiya: birinchi murojaat,reviewed_architectural_sketch,l13_m08_001.svg
+L13_M08_002,Simulyatsiya: brief va variantlar,reviewed_architectural_sketch,l13_m08_002.svg
+L13_M08_003,Simulyatsiya: prezentatsiya,reviewed_architectural_sketch,l13_m08_003.svg
+L13_M08_004,Simulyatsiya: revision va konflikt,reviewed_architectural_sketch,l13_m08_004.svg
+L13_M08_005,LEVEL 13 real loyiha audit,reviewed_architectural_sketch,l13_m08_005.svg
 L14_M01_001,Tor uchastkani tahlil qilish,pending_topic_review,
 L14_M01_002,Uzunlamasına zonalash,pending_topic_review,
 L14_M01_003,Yorug'lik va ichki hovli,pending_topic_review,
