@@ -359,11 +359,11 @@ L08_M07_002,Building envelope va uzluksizlik,reviewed_architectural_sketch,l08_m
 L08_M07_003,Thermal bridge tushunchasi,reviewed_architectural_sketch,l08_m07_003.svg
 L08_M07_004,"Deraza, balkon va tutashuvlar",reviewed_architectural_sketch,l08_m07_004.svg
 L08_M07_005,Issiqlik izolyatsiyasi professional audit,reviewed_architectural_sketch,l08_m07_005.svg
-L08_M08_001,Seysmik yuk tushunchasi,pending_topic_review,
-L08_M08_002,Bino shakli va konstruktiv muntazamlik,pending_topic_review,
-L08_M08_003,Vertikal uzluksizlik va yumshoq qavat,pending_topic_review,
-L08_M08_004,"Massa, nosimmetriya va arxitektura qarorlari",pending_topic_review,
-L08_M08_005,Seysmik loyiha professional audit,pending_topic_review,
+L08_M08_001,Seysmik yuk tushunchasi,reviewed_architectural_sketch,l08_m08_001.svg
+L08_M08_002,Bino shakli va konstruktiv muntazamlik,reviewed_architectural_sketch,l08_m08_002.svg
+L08_M08_003,Vertikal uzluksizlik va yumshoq qavat,reviewed_architectural_sketch,l08_m08_003.svg
+L08_M08_004,"Massa, nosimmetriya va arxitektura qarorlari",reviewed_architectural_sketch,l08_m08_004.svg
+L08_M08_005,Seysmik loyiha professional audit,reviewed_architectural_sketch,l08_m08_005.svg
 L08_M09_001,Arxitektor va konstruktor roli,pending_topic_review,
 L08_M09_002,Konstruktorga ma'lumot tayyorlash,pending_topic_review,
 L08_M09_003,Koordinatsiya va savol-javob workflow,pending_topic_review,
