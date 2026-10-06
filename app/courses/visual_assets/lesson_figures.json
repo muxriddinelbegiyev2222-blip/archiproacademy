@@ -8545,86 +8545,91 @@
   {
     "code": "L14_M04_001",
     "asset": "l14_m04_001.svg",
-    "title": "Katta villa programmasi — ko‘rgazmali namuna",
+    "title": "Katta villa programmasi — arxitekturaviy eskiz",
     "explanation": [
-      "Villa dasturida oila, mehmon, ish, xizmat va tashqi dam olish klasterlari bor.",
-      "Xona ro‘yxatini foydalanuvchi va ssenariyga bog‘lang → asoslangan katta dastur.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Kartochkalar katta uy programmasini family, guest, leisure, service, staff, wellness, outdoor va technical funksiyalarga ajratish g‘oyasini ko‘rsatadi.",
+      "2. Katta maydon ko‘p xona qo‘shish uchun emas, real hayotdagi funksiyalarni izchil boshqarish uchun ishlatiladi.",
+      "3. Har xona va zona real foydalanish, adjacency va circulation bilan tekshiriladi.",
+      "Darsdagi bajarish: Villa uchun functional program matrix tuzing."
     ],
-    "exercise": "Har funksiyaning foydalanuvchi va vaqt ssenariysini yozing.",
-    "solution": "Katta programma aniq foydalanish bilan tartiblanadi.",
+    "exercise": "Katta villa funksiyalarini program matrix orqali guruhlang.",
+    "solution": "Katta villa programmasi ko‘p xonani emas, ko‘p funksiyani tizimli boshqarishni talab qiladi.",
     "block": 5,
     "recipe": "brief",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy program/plan/massing eskizi. Proporsiyalar konseptual; real maydon, strukturaviy va MEP yechimlar loyiha talablari bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M04_002",
     "asset": "l14_m04_002.svg",
-    "title": "Functional clusters — ko‘rgazmali namuna",
+    "title": "Functional clusters — arxitekturaviy eskiz",
     "explanation": [
-      "Villa dasturida oila, mehmon, ish, xizmat va tashqi dam olish klasterlari bor.",
-      "Klasterlarni yaqinlik va ajratish mezonida guruhlang → funksional tuzilma.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Olti rangli blok guest, family, service va boshqa funksional guruhlarni alohida cluster sifatida ifodalaydi.",
+      "2. Clustering navigatsiya, privacy va kundalik masofalarni boshqarishga yordam beradi.",
+      "3. Clusterlar bir-biridan ajralgan orollar emas; kerakli adjacencylar saqlanadi.",
+      "Darsdagi bajarish: Villa programmasini 5 functional clusterga ajrating."
     ],
-    "exercise": "Funksional clusterlar va ularning yaqinlik talabini chizing.",
-    "solution": "Cluster guruhlash murakkab dastur aloqalarini boshqaradi.",
+    "exercise": "Katta programni mantiqiy funksional bloklarga ajrating.",
+    "solution": "Functional clustering katta uyda navigatsiya va privacy’ni boshqarishni osonlashtiradi.",
     "block": 5,
     "recipe": "adjacency",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy program/plan/massing eskizi. Proporsiyalar konseptual; real maydon, strukturaviy va MEP yechimlar loyiha talablari bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M04_003",
     "asset": "l14_m04_003.svg",
-    "title": "Circulation va servis — ko‘rgazmali namuna",
+    "title": "Circulation va servis — arxitekturaviy eskiz",
     "explanation": [
-      "Villa dasturida oila, mehmon, ish, xizmat va tashqi dam olish klasterlari bor.",
-      "Xizmat va mehmon yo‘llarini alohida chizing → katta uyda oqim nazorati.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Yashil yo‘l family/guest harakatini, punktir yo‘llar service circulation’ni konseptual ko‘rsatadi.",
+      "2. Oshxona, storage, laundry va technical zonalar samarali bog‘lanadi, lekin reprezentativ zonalarni keraksiz kesib o‘tmaydi.",
+      "3. Guest, family va service movement kerakli joylarda ajraladi va kerakli joylarda nazoratli tutashadi.",
+      "Darsdagi bajarish: Uch circulation diagramini alohida chizing."
     ],
-    "exercise": "Mehmon, oila va servis marshrutlarini solishtiring.",
-    "solution": "Katta maydon avtomatik qulay circulation bermaydi.",
+    "exercise": "Guest, family va service circulation’ni alohida tahlil qiling.",
+    "solution": "Katta villada circulation funksional clusterlar va service efficiency bilan birga ishlaydi.",
     "block": 5,
     "recipe": "access",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy program/plan/massing eskizi. Proporsiyalar konseptual; real maydon, strukturaviy va MEP yechimlar loyiha talablari bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M04_004",
     "asset": "l14_m04_004.svg",
-    "title": "Massing, courtyard va landscape — ko‘rgazmali namuna",
+    "title": "Massing, courtyard va landscape — arxitekturaviy eskiz",
     "explanation": [
-      "Villa dasturida oila, mehmon, ish, xizmat va tashqi dam olish klasterlari bor.",
-      "Hajm, hovli va landshaftni shu aloqadan hosil qiling → yaxlit konsepsiya.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Bir nechta hajm va markaziy courtyard katta bino massasini inson masshtabiga yaqinlashtirish g‘oyasini ko‘rsatadi.",
+      "2. Villa terrace, pool, garden va courtyard bilan yagona fazoviy tizim sifatida tashkil qilinadi.",
+      "3. Katta monolit massing ichki yorug‘lik va uzoq circulation muammosini kuchaytirishi mumkin.",
+      "Darsdagi bajarish: Uch massing strategy ishlab chiqib, courtyard va landscape aloqasini solishtiring."
     ],
-    "exercise": "Hajm, hovli va landshaft aloqasini uch ssenariyda tekshiring.",
-    "solution": "Massing tashqi va ichki foydalanishni birlashtiradi.",
+    "exercise": "Katta villa massasini bir nechta hajm va tashqi makonlar bilan boshqaring.",
+    "solution": "Massingni bo‘lish va landscape bilan bog‘lash katta villani inson masshtabida tashkil qilishga yordam beradi.",
     "block": 5,
     "recipe": "massing",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy program/plan/massing eskizi. Proporsiyalar konseptual; real maydon, strukturaviy va MEP yechimlar loyiha talablari bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M04_005",
     "asset": "l14_m04_005.svg",
-    "title": "Katta villa professional audit — ko‘rgazmali namuna",
+    "title": "Katta villa professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Villa dasturida oila, mehmon, ish, xizmat va tashqi dam olish klasterlari bor.",
-      "Yo‘l, maydon, texnik murakkablik va foydalanishni jadvalda tekshiring → audit.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi cluster/plan sxemasi program, zoning va circulationni, o‘ngdagi checklist esa loyiha auditini jamlaydi.",
+      "2. Program, privacy, service, structure, MEP, massing va outdoor space bir tizim sifatida tekshiriladi.",
+      "3. Auditning maqsadi maydon katta bo‘lgani uchun murakkablikni ko‘paytirish emas, murakkab programni tushunarli tizimga aylantirishdir.",
+      "Darsdagi bajarish: Program → clusters → circulation → privacy → service → structure/MEP → massing → outdoor zanjirini audit qiling."
     ],
-    "exercise": "Yo‘l, xizmat va dastur mosligini audit qiling.",
-    "solution": "Villa auditi hajmdan tashqari foydalanish va parvarish oqibatlarini tekshiradi.",
+    "exercise": "Katta villa loyihasini funksional va fazoviy tizim sifatida kompleks tekshiring.",
+    "solution": "Professional audit katta programning tushunarli, samarali va koordinatsiyalangan ishlashini tekshiradi.",
     "block": 4,
     "recipe": "audit",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy program/plan/massing eskizi. Proporsiyalar konseptual; real maydon, strukturaviy va MEP yechimlar loyiha talablari bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
