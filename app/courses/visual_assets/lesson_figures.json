@@ -4324,16 +4324,16 @@
     "asset": "l09_m01_001.svg",
     "title": "Normativ hujjatni to‘g‘ri o‘qish — arxitekturaviy eskiz",
     "explanation": [
-      "1. Chapdagi hujjat sahifasi va ajratilgan qism normativni sarlavhadan emas, uning aniq mazmuni va konteksti bilan o‘qish kerakligini ko‘rsatadi.",
-      "2. Lupa hujjat ichidagi band, izoh va havolalarni tekshirishni, o‘ngdagi plan esa topilgan talabni real loyiha qarori bilan bog‘lashni ifodalaydi.",
-      "3. Aniq talabni yoddan yoki ikkilamchi matndan olmay, amaldagi rasmiy manbadan tekshiring.",
-      "Darsdagi bajarish: Hujjat → qo‘llanish doirasi → band → loyiha elementi zanjirini yozing."
+      "1. Chapdagi hujjat bloklari normativni nomi, maqsadi, qo‘llanish doirasi va tegishli bo‘limlari bilan birga o‘qish kerakligini ko‘rsatadi.",
+      "2. O‘ngdagi plan bitta loyiha savolini ifodalaydi. Normativ javobni planga qo‘llashdan oldin hujjat konteksti va aynan shu obyektga tegishliligi tekshiriladi.",
+      "3. Bitta skrinshot, alohida jumla yoki internetdagi qisqa izoh to‘liq normativ manba o‘rnini bosmaydi.",
+      "Darsdagi bajarish: Bitta loyiha savolini tanlab hujjat → bo‘lim → band → loyiha qarori zanjirini yozing."
     ],
-    "exercise": "Normativ hujjatdagi talabni loyiha elementi bilan dalil asosida bog‘lang.",
-    "solution": "Normativ savodxonlik talabni rasmiy manbadan topish, kontekstda o‘qish va loyiha qaroriga to‘g‘ri qo‘llashdan boshlanadi.",
+    "exercise": "Normativ hujjatni kontekst va loyiha savoli bilan bog‘lab o‘qing.",
+    "solution": "Normativ bilan professional ishlash hujjat konteksti, qo‘llanish doirasi va aniq loyiha holatini birga tekshiradi.",
     "block": 6,
     "recipe": "norm",
-    "boundary": "Normativni o‘qish workflowini tushuntiruvchi konseptual eskiz. Unda aniq SHNQ/QMQ bandi yoki normativ qiymat berilmagan; amaldagi rasmiy hujjat alohida tekshiriladi.",
+    "boundary": "Mavzuni tushuntiruvchi arxitekturaviy/normativ workflow eskizi. Eskizdagi hujjat va bandlar konseptual; real loyiha qarori uchun amaldagi rasmiy normativ manba alohida tekshiriladi.",
     "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
@@ -4342,16 +4342,16 @@
     "asset": "l09_m01_002.svg",
     "title": "Qo‘llanish doirasi va obyekt turi — arxitekturaviy eskiz",
     "explanation": [
-      "1. Chapdagi hujjat kartochkasi qo‘llanish doirasini, o‘ngdagi turli bino eskizlari esa qaysi obyektga talab tegishli ekanini aniqlash bosqichini ko‘rsatadi.",
-      "2. Bir hujjatdagi band barcha bino turlariga avtomatik tatbiq etilmaydi. Avval obyekt turi va scope tekshiriladi.",
-      "3. Obyektni noto‘g‘ri tasniflash keyingi barcha normativ xulosalarni noto‘g‘ri yo‘nalishga olib ketishi mumkin.",
-      "Darsdagi bajarish: Obyekt turi va hujjat qo‘llanish doirasini moslashtiring."
+      "1. Uch xil obyekt belgisi bir xil normativ talab avtomatik ravishda hamma obyektga bir xil tatbiq etilmasligini ko‘rsatadi.",
+      "2. Pastdagi umumiy tekshiruv kartasi bino funksiyasi, qavatlar soni, joylashuv va loyiha bosqichi kabi omillarni aniqlash zarurligini ifodalaydi.",
+      "3. Boshqa loyiha uchun topilgan talabni o‘z loyihangizga ko‘chirishdan oldin uning qo‘llanish doirasini qayta tekshiring.",
+      "Darsdagi bajarish: Uch xil obyekt uchun bir xil talabni qo‘llash mumkinmi degan tekshiruv savollarini tuzing."
     ],
-    "exercise": "Normativ hujjatning scope’i bilan loyiha obyekt turini solishtiring.",
-    "solution": "Talabni qo‘llashdan oldin hujjat aynan shu obyekt va sharoitga tegishli ekanini tasdiqlash kerak.",
+    "exercise": "Talabning aynan qaysi obyektga tatbiq etilishini tekshiring.",
+    "solution": "Qo‘llanish doirasi normativ talabni obyekt turi va loyiha sharoiti bilan bog‘laydi.",
     "block": 6,
     "recipe": "norm",
-    "boundary": "Normativni o‘qish workflowini tushuntiruvchi konseptual eskiz. Unda aniq SHNQ/QMQ bandi yoki normativ qiymat berilmagan; amaldagi rasmiy hujjat alohida tekshiriladi.",
+    "boundary": "Mavzuni tushuntiruvchi arxitekturaviy/normativ workflow eskizi. Eskizdagi hujjat va bandlar konseptual; real loyiha qarori uchun amaldagi rasmiy normativ manba alohida tekshiriladi.",
     "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
@@ -4360,16 +4360,16 @@
     "asset": "l09_m01_003.svg",
     "title": "Tahrir, sana va hujjat holati — arxitekturaviy eskiz",
     "explanation": [
-      "1. Ikki hujjat kartochkasi eski va yangiroq tahrirni konseptual solishtiradi; vaqt belgisi tahrir sanasi va hujjat holatini tekshirish zarurligini ko‘rsatadi.",
-      "2. “FINAL” yoki eski saqlangan nusxa amaldagi hujjat degani emas. Rasmiy manbada tahrir, sana va kuchdagi holat tekshiriladi.",
-      "3. Auditda ishlatilgan hujjat versiyasini qayd qilish keyinchalik loyiha qarorini dalillashni osonlashtiradi.",
-      "Darsdagi bajarish: Hujjat nomi, tahrir/sana va holatini audit yozuviga kiriting."
+      "1. Chapdagi eski hujjat va o‘ngdagi tekshirilgan hujjat normativning faqat nomini emas, amaldagi tahririni tekshirish zarurligini ko‘rsatadi.",
+      "2. Hujjat nomi, tahrir sanasi, o‘zgarishlar, rasmiy manba va tekshirilgan sana qayd qilinsa keyingi audit uchun iz qoladi.",
+      "3. Kompyuterda saqlangan eski PDF yoki oldingi loyiha papkasidagi nusxa avtomatik ravishda amaldagi hujjat hisoblanmaydi.",
+      "Darsdagi bajarish: Bitta normativ uchun nom, tahrir, manba, sana va tegishli banddan iborat tekshiruv kartasi yarating."
     ],
-    "exercise": "Normativ manbaning tahriri, sanasi va amaldagi holatini tekshiring.",
-    "solution": "Professional normativ tekshiruv qaysi hujjat versiyasi ishlatilganini aniq qayd qiladi.",
+    "exercise": "Normativ hujjatning amaldagi holati va manbasini qayd qiling.",
+    "solution": "Amaldagi tahrirni tekshirish normativ qarorning ishonchliligini ta’minlaydi.",
     "block": 6,
     "recipe": "norm",
-    "boundary": "Normativni o‘qish workflowini tushuntiruvchi konseptual eskiz. Unda aniq SHNQ/QMQ bandi yoki normativ qiymat berilmagan; amaldagi rasmiy hujjat alohida tekshiriladi.",
+    "boundary": "Mavzuni tushuntiruvchi arxitekturaviy/normativ workflow eskizi. Eskizdagi hujjat va bandlar konseptual; real loyiha qarori uchun amaldagi rasmiy normativ manba alohida tekshiriladi.",
     "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
@@ -4378,16 +4378,16 @@
     "asset": "l09_m01_004.svg",
     "title": "Band, havola va dalil bilan ishlash — arxitekturaviy eskiz",
     "explanation": [
-      "1. Chapdagi ajratilgan band va lupa aniq talabni topishni, o‘ngdagi plan esa shu talab taalluqli loyiha joyini dalil bilan ko‘rsatishni ifodalaydi.",
-      "2. “Normativda shunday” degan umumiy gap o‘rniga hujjat, band va loyiha dalili birgalikda qayd qilinadi.",
-      "3. Banddagi istisno, havola yoki boshqa bo‘limga yo‘naltirishni e’tiborsiz qoldirmang; talab kontekstda o‘qiladi.",
-      "Darsdagi bajarish: Bitta tekshiruv uchun hujjat → band → loyiha dalili → xulosa yozing."
+      "1. Eskiz manba hujjat → aniq band → loyiha qarori zanjirini ko‘rsatadi.",
+      "2. Professional xulosa “shunday bo‘lishi kerak” degan umumiy gap bilan emas, aniq hujjat va bandga tayangan dalil bilan yoziladi.",
+      "3. Aniq normativ raqamni bandni ko‘rmasdan xotiradan aytish xavfli; talabning qo‘llanish sharti ham band bilan birga o‘qiladi.",
+      "Darsdagi bajarish: Bitta loyiha qarorini talab → manba → band → qo‘llanish sharti → loyiha yechimi formatida yozing."
     ],
-    "exercise": "Normativ xulosani aniq band va loyiha dalili bilan bog‘lang.",
-    "solution": "Dalilli normativ audit xulosani manba va loyiha holati bilan tekshiriladigan qiladi.",
+    "exercise": "Loyiha qarorini aniq manba va band bilan asoslang.",
+    "solution": "Dalilga asoslangan workflow qarorning qayerdan kelganini keyinchalik ham tekshirish imkonini beradi.",
     "block": 6,
     "recipe": "norm",
-    "boundary": "Normativni o‘qish workflowini tushuntiruvchi konseptual eskiz. Unda aniq SHNQ/QMQ bandi yoki normativ qiymat berilmagan; amaldagi rasmiy hujjat alohida tekshiriladi.",
+    "boundary": "Mavzuni tushuntiruvchi arxitekturaviy/normativ workflow eskizi. Eskizdagi hujjat va bandlar konseptual; real loyiha qarori uchun amaldagi rasmiy normativ manba alohida tekshiriladi.",
     "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
@@ -4396,16 +4396,16 @@
     "asset": "l09_m01_005.svg",
     "title": "Normativ savodxonlik professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "1. Chapdagi checklist hujjat holati, scope, band va havolalarni; o‘ngdagi hujjat-plan juftligi esa manba bilan loyiha dalilini birga tekshirishni ko‘rsatadi.",
-      "2. Audit yozuvida savol, qo‘llanilgan hujjat, aniq band, loyiha holati, status va kerakli yechim bo‘lsin.",
-      "3. SHNQ va boshqa aniq talablarni bu eskizning o‘zidan olish mumkin emas; u faqat to‘g‘ri tekshiruv workflowini ko‘rsatadi.",
-      "Darsdagi bajarish: Manba → scope → tahrir → band → dalil → status checklistini to‘ldiring."
+      "1. Olti blok normativ auditning asosiy bosqichlarini ifodalaydi: savol, obyekt, manba, tahrir, band va loyiha bilan solishtirish.",
+      "2. Har bosqichda manba va status qayd qilinadi; bitta bandga moslik butun loyiha normativga mos degani emas.",
+      "3. Loyiha o‘zgarsa unga ta’sir qiladigan normativ masalalar qayta ochilib, qayta tekshirilishi kerak.",
+      "Darsdagi bajarish: Savol → obyekt → amaldagi manba → band → loyiha tekshiruvi → qayd checklistini to‘ldiring."
     ],
-    "exercise": "Normativ tekshiruvni manba va dalil bilan kompleks audit qiling.",
-    "solution": "Professional normativ audit xulosani tekshiriladigan rasmiy manba va loyiha daliliga tayantiradi.",
+    "exercise": "Normativ tekshiruvni bosqichma-bosqich audit qiling.",
+    "solution": "Professional normativ audit aniq savol, amaldagi manba va loyiha holatini qayd bilan bog‘laydi.",
     "block": 6,
     "recipe": "norm",
-    "boundary": "Normativni o‘qish workflowini tushuntiruvchi konseptual eskiz. Unda aniq SHNQ/QMQ bandi yoki normativ qiymat berilmagan; amaldagi rasmiy hujjat alohida tekshiriladi.",
+    "boundary": "Mavzuni tushuntiruvchi arxitekturaviy/normativ workflow eskizi. Eskizdagi hujjat va bandlar konseptual; real loyiha qarori uchun amaldagi rasmiy normativ manba alohida tekshiriladi.",
     "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
