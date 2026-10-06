@@ -1,6 +1,6 @@
 # Visual review progress
 
-350 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 50 lessons using topic-specific architectural sketches. 330 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+355 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 55 lessons using topic-specific architectural sketches. 325 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -61,3 +61,5 @@ L07_M07: BIM Classification concept, element type distinction, Property linkage,
 L07_M08: Hotlink/Module concept, module boundaries, source-link updates, complex project structure and professional audit reviewed. Five generic diagrams were rebuilt as topic-specific architectural workflow sketches; genuine Hotlink Manager/Place Hotlink screenshots remain interface references.
 
 L07_M09: Professional Template concept, template structure, view/graphic/documentation standard, BIM data standard and full template audit reviewed. Five generic diagrams were rebuilt as topic-specific architectural/workflow sketches; genuine Archicad layer/material/view/classification/story screenshots remain interface references.
+
+L08_M06: Moisture sources, foundation/ground contact, roof and balcony drainage, wet-room waterproofing and professional audit reviewed. Five generic diagrams were rebuilt as topic-specific architectural section/detail sketches; SHNQ verification remains deferred.
