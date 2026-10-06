@@ -8905,86 +8905,91 @@
   {
     "code": "L14_M08_001",
     "asset": "l14_m08_001.svg",
-    "title": "Case Study tahlil metodikasi — ko‘rgazmali namuna",
+    "title": "Case Study tahlil metodikasi — arxitekturaviy eskiz",
     "explanation": [
-      "Uch case: tor site, ko‘p avlodli oila va konstruktiv/estetik konflikt; bir xil tahlil mezoni qo‘llanadi.",
-      "Shart, qaror, dalil va cheklovni ajrating → case tahlili.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Ketma-ket kartalar Context → Brief → Constraints → Concept → Decisions → Conflicts → Solutions bosqichlarini ko‘rsatadi.",
+      "2. Case Study final formani ko‘chirish uchun emas, qaror ortidagi sabab va trade-offni tushunish uchun ishlatiladi.",
+      "3. Final render loyiha jarayonidagi constraint va konfliktlarni yashirishi mumkin; tahlil jarayonni ham o‘qiydi.",
+      "Darsdagi bajarish: Case Study template yarating."
     ],
-    "exercise": "Har caseni sharoit, qaror va natija tartibida yozing.",
-    "solution": "Case tahlili kontekstdan uzilgan chiroyli shaklni ko‘chirmaydi.",
+    "exercise": "Case Study tahlilini kontekstdan saboqgacha tizimli tashkil qiling.",
+    "solution": "Professional case study formani emas, qaror mantiqi va oqibatini tahlil qiladi.",
     "block": 5,
     "recipe": "audit",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy case/workflow eskizi. Diagrammalar konseptual; real qaror site, brief, structure, MEP, budget va amaldagi talablar bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M08_002",
     "asset": "l14_m08_002.svg",
-    "title": "Case 1: murakkab site — ko‘rgazmali namuna",
+    "title": "Case 1: murakkab site — arxitekturaviy eskiz",
     "explanation": [
-      "Uch case: tor site, ko‘p avlodli oila va konstruktiv/estetik konflikt; bir xil tahlil mezoni qo‘llanadi.",
-      "Tor site uchun kirish/yorug‘lik ikki variantini solishtiring → maydon bilan cheklanmagan yechim.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Qiyshiq boundary, nishab, bino, drainage va access bitta case ichida birlashgan.",
+      "2. Tor, qiyshiq va nishabli site muammolari alohida emas, bir qaror tizimida prioritetlanadi.",
+      "3. View’ni yaxshilab access yoki drainage’ni buzmaslik uchun har variant ko‘p mezonda tekshiriladi.",
+      "Darsdagi bajarish: Complex site uchun concept + section + access/drainage diagram tayyorlang."
     ],
-    "exercise": "Murakkab site uchun boshlang‘ich ma’lumot va ikki yechimni solishtiring.",
-    "solution": "Site case yechimi o‘lchangan cheklovlarga tayanadi.",
+    "exercise": "Murakkab site constraintlarini bitta yaxlit strategiyada yeching.",
+    "solution": "Complex-site case prioritet, trade-off va ko‘p tizimli tekshiruvni talab qiladi.",
     "block": 5,
     "recipe": "narrow",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy case/workflow eskizi. Diagrammalar konseptual; real qaror site, brief, structure, MEP, budget va amaldagi talablar bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M08_003",
     "asset": "l14_m08_003.svg",
-    "title": "Case 2: murakkab oila programmasi — ko‘rgazmali namuna",
+    "title": "Case 2: murakkab oila programmasi — arxitekturaviy eskiz",
     "explanation": [
-      "Uch case: tor site, ko‘p avlodli oila va konstruktiv/estetik konflikt; bir xil tahlil mezoni qo‘llanadi.",
-      "Oila caseida umumiy va mustaqil yo‘llarni chizing → ehtiyojga mos plan.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi shared/private planning va o‘ngdagi prioritet kartalari murakkab family briefni tashkil qilishni ko‘rsatadi.",
+      "2. Talablar critical, important va optional guruhlarga ajratiladi; ko‘p talab doim kattaroq uy degani emas.",
+      "3. Zoning va circulation family routine, privacy va service bilan birga tekshiriladi.",
+      "Darsdagi bajarish: Complex family brief + zoning + circulation matrix tayyorlang."
     ],
-    "exercise": "Murakkab oila uchun mustaqil va umumiy aloqani tekshiring.",
-    "solution": "Oila case ehtiyoj va foydalanish ssenariylarini dalillaydi.",
+    "exercise": "Murakkab programni prioritet va functional hierarchy bilan boshqaring.",
+    "solution": "Murakkab oila programmasi maydon qo‘shishdan ko‘ra talablarni tartibli tashkil qilish orqali yechiladi.",
     "block": 5,
     "recipe": "adjacency",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy case/workflow eskizi. Diagrammalar konseptual; real qaror site, brief, structure, MEP, budget va amaldagi talablar bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M08_004",
     "asset": "l14_m08_004.svg",
-    "title": "Case 3: dizayn va texnik konflikt — ko‘rgazmali namuna",
+    "title": "Case 3: dizayn va texnik konflikt — arxitekturaviy eskiz",
     "explanation": [
-      "Uch case: tor site, ko‘p avlodli oila va konstruktiv/estetik konflikt; bir xil tahlil mezoni qo‘llanadi.",
-      "Texnik konfliktni vakolatli mutaxassisga paket bilan yuboring → tekshiruvga tayyor masala.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Architecture, structure va technical/budget bloklari bir design gesture’ning turli ta’sirlarini ko‘rsatadi.",
+      "2. Kuchli arxitektura konsepsiyasi structure, MEP, envelope, budget va constructability bilan tekshiriladi.",
+      "3. Bitta hero element butun loyiha tizimini asossiz murakkablashtirmasligi kerak.",
+      "Darsdagi bajarish: 3 design gesture uchun architecture/structure/MEP/budget impact jadvali tuzing."
     ],
-    "exercise": "Dizayn-texnik konflikt uchun mutaxassislar bilan qaror jadvali tuzing.",
-    "solution": "Konflikt case muvofiqlashtirilgan trade-offni talab qiladi.",
+    "exercise": "Design qarorini texnik va moliyaviy oqibatlari bilan birga tekshiring.",
+    "solution": "Professional design trade-off arxitektura sifatini real texnik cheklovlar bilan muvozanatlaydi.",
     "block": 5,
     "recipe": "coordination",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy case/workflow eskizi. Diagrammalar konseptual; real qaror site, brief, structure, MEP, budget va amaldagi talablar bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M08_005",
     "asset": "l14_m08_005.svg",
-    "title": "LEVEL 14 Advanced Case audit — ko‘rgazmali namuna",
+    "title": "LEVEL 14 Advanced Case audit — arxitekturaviy eskiz",
     "explanation": [
-      "Uch case: tor site, ko‘p avlodli oila va konstruktiv/estetik konflikt; bir xil tahlil mezoni qo‘llanadi.",
-      "Uch case xulosasini bir xil mezonda tekshiring → ko‘chiriladigan metod.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Kartalar Context → Problem → Constraints → Alternatives → Test → Coordinate → Compare → Defend → Audit zanjirini ifodalaydi.",
+      "2. Site, program, structure, MEP va budget bir xil loyiha qarorida tekshiriladi.",
+      "3. Final variant dalil bilan himoya qilinadi va qayta audit qilinadi.",
+      "Darsdagi bajarish: LEVEL 14 final workflowini murakkab case ustida boshidan oxirigacha bajaring."
     ],
-    "exercise": "Uch casedan o‘rgangan qoidani qo‘llanish sharti bilan yozing.",
-    "solution": "Advanced audit boshqa loyihaga ko‘chiriladigan xulosa chegarasini tushuntiradi.",
+    "exercise": "Murakkab case’ni problem definitiondan final auditgacha boshqaring.",
+    "solution": "Advanced Case audit murakkab real sharoitda qarorlarning tizimli va dalilli ekanini tekshiradi.",
     "block": 4,
     "recipe": "audit",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy case/workflow eskizi. Diagrammalar konseptual; real qaror site, brief, structure, MEP, budget va amaldagi talablar bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
