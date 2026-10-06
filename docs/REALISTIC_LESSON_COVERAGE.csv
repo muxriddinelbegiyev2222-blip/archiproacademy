@@ -274,11 +274,11 @@ L06_M09_002,Mesh konturi va balandlik nuqtalari,reviewed_material_render,realist
 L06_M09_003,Nishabli uchastka modeli,reviewed_material_render,realistic-l03_m07_001.jpg
 L06_M09_004,Uy va relyef aloqasi,reviewed_material_render,realistic-l03_m07_003.jpg
 L06_M09_005,Mesh professional audit,reviewed_material_render,realistic-l03_m07_005.jpg
-L06_M10_001,Zone tushunchasi,pending_topic_review,
-L06_M10_002,Zone chegarasi va maydon,pending_topic_review,
-L06_M10_003,Zone Stamp va xona ma'lumotlari,pending_topic_review,
-L06_M10_004,Funksional zonalar va loyiha tahlili,pending_topic_review,
-L06_M10_005,Zones professional audit,pending_topic_review,
+L06_M10_001,Zone tushunchasi,reviewed_architectural_sketch,l06_m10_001.svg
+L06_M10_002,Zone chegarasi va maydon,reviewed_architectural_sketch,l06_m10_002.svg
+L06_M10_003,Zone Stamp va xona ma'lumotlari,reviewed_architectural_sketch,l06_m10_003.svg
+L06_M10_004,Funksional zonalar va loyiha tahlili,reviewed_architectural_sketch,l06_m10_004.svg
+L06_M10_005,Zones professional audit,reviewed_architectural_sketch,l06_m10_005.svg
 L07_M01_001,Favorites tushunchasi,pending_topic_review,
 L07_M01_002,Favorite yaratish va qo'llash,pending_topic_review,
 L07_M01_003,Professional Favorite kutubxonasi,pending_topic_review,

@@ -1,1 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="1100" viewBox="0 0 1150 1100"><rect width="1150" height="960" fill="#FFFDF7"/><g font-family="DejaVu Sans, Segoe UI, sans-serif"><text x="45" y="50" font-size="19" fill="#A65D35">L06_M10_005  /  O‘QUV NAMUNASI</text><text x="45" y="92" font-size="29" fill="#0E5558">Zones professional audit</text><text x="45" y="155" font-size="17" fill="#0E5558">Ichki 4×3 m xona Zone bilan hisoblanadi; xona nomi, raqami va hisoblash qoidasi qayd qilinadi.</text><g transform="translate(0,80)"><rect x="195" y="195" width="620" height="465" fill="#FFFDF7" stroke="#0E5558" stroke-width="8"/><line x1="470" y1="660" x2="570" y2="660" stroke="#FFFDF7" stroke-width="12"/><line x1="470" y1="655" x2="470" y2="555" stroke="#0E5558" stroke-width="3"/><path d="M570,655 A100,100 0 0,0 470,555" fill="none" stroke="#0E5558" stroke-width="2"/><line x1="310" y1="195" x2="495" y2="195" stroke="#D5E7ED" stroke-width="12"/><rect x="280" y="235" width="248" height="310" fill="#E9E1D3" stroke="#203B36" stroke-width="3"/><rect x="293" y="250" width="100" height="42" fill="#FFFDF7" stroke="#0E5558" stroke-width="2"/><rect x="410" y="250" width="100" height="42" fill="#FFFDF7" stroke="#0E5558" stroke-width="2"/><rect x="707" y="220" width="93" height="310" fill="#C9AD84" stroke="#203B36" stroke-width="3"/><text x="302" y="382" font-size="24" fill="#0E5558">KROVAT</text><text x="300" y="420" font-size="22" fill="#0E5558">1,6 × 2 m</text><rect x="210" y="210" width="590" height="435" fill="none" stroke="#A65D35" stroke-width="3"/><text x="255" y="590" font-size="24" fill="#A65D35">Z01 · YOTOQXONA · 12 m²</text><rect x="460" y="550" width="160" height="110" fill="none" stroke="#A65D35" stroke-width="5"/><text x="830" y="605" font-size="21" fill="#A65D35">Eshik yoyi</text></g><line x1="45" y1="835" x2="1105" y2="835" stroke="#0E5558" stroke-width="2"/><text x="45" y="875" font-size="22" fill="#0E5558">4×3=12 m² ni hisoblangan maydon bilan solishtiring, chegara/qoidani tekshiring</text><text x="45" y="1080" font-size="18" fill="#0E5558">Sxematik tasvir: qurilish detali, normativ minimum yoki haqiqiy Archicad skrinshoti emas.</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#fbfaf4"/>
+  
+<defs>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#53636a" flood-opacity=".16"/>
+  </filter>
+  <filter id="paper" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="7" result="n"/>
+    <feColorMatrix in="n" type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="table" tableValues="0 .035"/></feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+  <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#fffdf8"/><stop offset="1" stop-color="#e8e2d7"/>
+  </linearGradient>
+  <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ecd7ad"/><stop offset="1" stop-color="#c89e62"/>
+  </linearGradient>
+</defs>
+  <g filter="url(#paper)" stroke="#31434a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    
+<g filter="url(#shadow)">
+  <g transform="translate(105 135)">
+    <rect width="650" height="500" rx="10" fill="#fffef9" stroke-width="5"/>
+    <path d="M70 70 H575 V420 H70 Z" fill="url(#wall)" stroke-width="12"/>
+    <path d="M285 70 V420 M430 70 V420 M70 255 H575" stroke-width="10"/>
+    <g stroke="none" opacity=".78">
+      <rect x="90" y="90" width="175" height="145" rx="16" fill="#d9ebe2"/>
+      <rect x="305" y="90" width="105" height="145" rx="16" fill="#f3dfc6"/>
+      <rect x="450" y="90" width="105" height="145" rx="16" fill="#ead7e8"/>
+      <rect x="90" y="275" width="320" height="125" rx="16" fill="#d9e5f0"/>
+      <rect x="450" y="275" width="105" height="125" rx="16" fill="#e5e2c9"/>
+    </g>
+    <g stroke-width="3" fill="#fffef9">
+      <rect x="120" y="125" width="118" height="65" rx="10"/><path d="M140 145 H220 M140 164 H210" stroke="#71858a"/>
+      <rect x="115" y="305" width="150" height="68" rx="10"/><path d="M135 325 H245 M135 345 H220" stroke="#71858a"/>
+      <rect x="465" y="305" width="75" height="68" rx="10"/><path d="M477 325 H528 M477 345 H520" stroke="#71858a"/>
+    </g>
+  </g>
+  <g transform="translate(810 155)">
+    <rect width="270" height="330" rx="12" fill="#fffef9" stroke-width="5"/>
+    <path d="M30 70 H240 M30 125 H240 M30 180 H240 M30 235 H240 M30 290 H240" stroke="#b4c0c2" stroke-width="3"/>
+    <path d="M80 30 V300 M165 30 V300" stroke="#b4c0c2" stroke-width="3"/>
+    <g fill="#719e8c" stroke="none"><circle cx="50" cy="98" r="7"/><circle cx="50" cy="153" r="7"/><circle cx="50" cy="208" r="7"/><circle cx="50" cy="263" r="7"/></g>
+  </g>
+  <g transform="translate(875 545)" fill="none" stroke="#6c8f80" stroke-width="16">
+    <circle cx="55" cy="55" r="42"/><path d="M86 86 L135 135"/>
+  </g>
+  <path d="M980 610 l30 30 68-78" fill="none" stroke="#6c8f80" stroke-width="13"/>
+</g>
+
+  </g>
+</svg>

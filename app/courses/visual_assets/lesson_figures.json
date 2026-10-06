@@ -2722,86 +2722,91 @@
   {
     "code": "L06_M10_001",
     "asset": "l06_m10_001.svg",
-    "title": "Zone tushunchasi — ko‘rgazmali namuna",
+    "title": "Zone tushunchasi — arxitekturaviy eskiz",
     "explanation": [
-      "Ichki 4×3 m xona Zone bilan hisoblanadi; xona nomi, raqami va hisoblash qoidasi qayd qilinadi.",
-      "Zone Toolda xona ID va nomini tanlang → elementning kimligi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Devorlar xona geometriyasini beradi; yumshoq rangli maydon esa shu makonga bog‘langan Zone’ni ajratadi.",
+      "2. Bir xona ichidagi mebel va ochilishlar Zone’ning o‘zi emas. Zone xona haqida nom, raqam, maydon va boshqa BIM ma’lumotlarni saqlaydigan alohida element.",
+      "3. Plandagi rang faqat tushuntirish uchun. Haqiqiy Zone’ni Archicad element sifatida tanlang va uning parametrlarini Settings oynasidan tekshiring.",
+      "Darsdagi bajarish: Xona geometriyasi bilan Zone ma’lumotini bir-biridan ajrating."
     ],
     "exercise": "Zone va xona devorlarini planda alohida ko‘rsating.",
     "solution": "Zone xona ma’lumotini tashkil qiladi; devor geometriyasining o‘rnini bosa olmaydi.",
     "block": 7,
     "recipe": "zone",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Rang va shakllar o‘quv maqsadida; aniq maydon yoki normativ qiymat sifatida olinmaydi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L06_M10_002",
     "asset": "l06_m10_002.svg",
-    "title": "Zone chegarasi va maydon — ko‘rgazmali namuna",
+    "title": "Zone chegarasi va maydon — arxitekturaviy eskiz",
     "explanation": [
-      "Ichki 4×3 m xona Zone bilan hisoblanadi; xona nomi, raqami va hisoblash qoidasi qayd qilinadi.",
-      "Chegara aniqlash usulini tanlang, devorlar yopiq bo‘lsin → geometrik xona.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chap va o‘ng planda bitta devor joyi o‘zgargan. Shu bilan yashil Zone’ning chegarasi va egallagan maydoni ham o‘zgaradi.",
+      "2. Zone maydoni eski yozuvga emas, amaldagi aniqlangan chegaraga bog‘liq. Devor, ustun yoki ochiq chegara o‘zgarsa natijani qayta tekshiring.",
+      "3. Avtomatik yoki qo‘lda berilgan konturdan qat’i nazar, yakuniy Zone xona geometriyasini to‘g‘ri qamrab olayotganini tekshirish kerak.",
+      "Darsdagi bajarish: Bir devorni siljiting va Zone chegarasi qanday javob berishini kuzating."
     ],
     "exercise": "4 × 3 = 12 m² hisobini Zone chegarasi bilan solishtiring.",
     "solution": "Maydon natijasi tanlangan chegara va hisob shartlariga bog‘liq.",
     "block": 9,
     "recipe": "zone",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Rang va shakllar o‘quv maqsadida; aniq maydon yoki normativ qiymat sifatida olinmaydi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L06_M10_003",
     "asset": "l06_m10_003.svg",
-    "title": "Zone Stamp va xona ma'lumotlari — ko‘rgazmali namuna",
+    "title": "Zone Stamp va xona ma’lumotlari — arxitekturaviy eskiz",
     "explanation": [
-      "Ichki 4×3 m xona Zone bilan hisoblanadi; xona nomi, raqami va hisoblash qoidasi qayd qilinadi.",
-      "Stampda nom, raqam va maydonni ko‘rsating → ma’lumotning chizmaga chiqishi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Har bir rangli xona ichidagi oq kartochka Zone Stamp g‘oyasini ifodalaydi: bir element haqidagi ma’lumot plan ichida o‘qiladigan joyda ko‘rsatiladi.",
+      "2. Stampda xona nomi, raqami, maydon yoki kerakli boshqa parametrlar chiqishi mumkin. Qaysi ma’lumot kerakligi loyiha hujjatiga bog‘liq.",
+      "3. Stamp devor va mebelni bosib ketmasin, boshqa annotation bilan to‘qnashmasin va uzoqroq zoomda ham tartibli ko‘rinsin.",
+      "Darsdagi bajarish: Bir nechta xonaning Stamplarini bir xil grafik tartibda joylashtiring."
     ],
     "exercise": "Zone nomi, raqami va vazifasini stampda tekshiring.",
     "solution": "Xona identifikatsiyasi nom, raqam va vazifa orqali izchil yuritiladi.",
     "block": 8,
     "recipe": "zone",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Rang va shakllar o‘quv maqsadida; aniq maydon yoki normativ qiymat sifatida olinmaydi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L06_M10_004",
     "asset": "l06_m10_004.svg",
-    "title": "Funksional zonalar va loyiha tahlili — ko‘rgazmali namuna",
+    "title": "Funksional zonalar va loyiha tahlili — arxitekturaviy eskiz",
     "explanation": [
-      "Ichki 4×3 m xona Zone bilan hisoblanadi; xona nomi, raqami va hisoblash qoidasi qayd qilinadi.",
-      "Xonalarni umumiy, tinch va xizmat guruhiga ajrating → maydon dasturi bilan solishtirish.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Issiq rangli maydonlar umumiy foydalanish, ko‘k maydonlar tinch/private, yashil maydonlar service funksiyalarini ko‘rsatadigan o‘quv guruhlashidir.",
+      "2. Maqsad rang berish emas: Zone ma’lumotlari yordamida qaysi funksional guruh qancha joy egallashi va ular qanday bog‘langanini ko‘rish.",
+      "3. Koridor, public, private va service maydonlar nisbatini tahlil qiling. Zone hisobining o‘zi yaxshi reja borligini isbotlamaydi.",
+      "Darsdagi bajarish: Xonalarni funksiyasi bo‘yicha guruhlab, maydon balansini solishtiring."
     ],
     "exercise": "Living va xizmat zonalarini ajratib, funksional guruhlashni ko‘rsating.",
     "solution": "Zone ma’lumotlari reja tahlili va xonalar jadvali uchun ishlatiladi.",
     "block": 9,
     "recipe": "zone",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Rang va shakllar o‘quv maqsadida; aniq maydon yoki normativ qiymat sifatida olinmaydi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L06_M10_005",
     "asset": "l06_m10_005.svg",
-    "title": "Zones professional audit — ko‘rgazmali namuna",
+    "title": "Zones professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Ichki 4×3 m xona Zone bilan hisoblanadi; xona nomi, raqami va hisoblash qoidasi qayd qilinadi.",
-      "4×3=12 m² ni hisoblangan maydon bilan solishtiring, chegara/qoidani tekshiring → farq sababi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi plan Zone chegarasi va Stamplarni, o‘ngdagi jadval esa shu xonalar ma’lumotini boshqa ko‘rinishda tekshirish g‘oyasini ko‘rsatadi.",
+      "2. Auditda yetishmayotgan Zone, takror raqam, noto‘g‘ri chegara, noodatiy maydon va o‘qilmaydigan Stamp kabi xatolar alohida topiladi.",
+      "3. Plan chiroyli ko‘rinsa ham ma’lumot noto‘g‘ri bo‘lishi mumkin. Geometriya, Stamp va jadvalni bir xil xona identifikatori bo‘yicha solishtiring.",
+      "Darsdagi bajarish: Bitta Zone’ni plandan jadvalgacha kuzatib, ma’lumotlar mosligini tekshiring."
     ],
     "exercise": "Zone konturi, maydon, stamp va jadvalni solishtiring.",
     "solution": "Zone auditi geometrik chegara bilan hujjat ma’lumotining mosligini tekshiradi.",
     "block": 11,
     "recipe": "zone",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Rang va shakllar o‘quv maqsadida; aniq maydon yoki normativ qiymat sifatida olinmaydi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {

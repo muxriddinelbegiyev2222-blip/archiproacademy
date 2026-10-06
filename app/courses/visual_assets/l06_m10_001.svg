@@ -1,1 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="1100" viewBox="0 0 1150 1100"><rect width="1150" height="960" fill="#FFFDF7"/><g font-family="DejaVu Sans, Segoe UI, sans-serif"><text x="45" y="50" font-size="19" fill="#A65D35">L06_M10_001  /  O‘QUV NAMUNASI</text><text x="45" y="92" font-size="29" fill="#0E5558">Zone tushunchasi</text><text x="45" y="155" font-size="17" fill="#0E5558">Ichki 4×3 m xona Zone bilan hisoblanadi; xona nomi, raqami va hisoblash qoidasi qayd qilinadi.</text><g transform="translate(0,80)"><rect x="195" y="195" width="620" height="465" fill="#FFFDF7" stroke="#0E5558" stroke-width="8"/><line x1="470" y1="660" x2="570" y2="660" stroke="#FFFDF7" stroke-width="12"/><line x1="470" y1="655" x2="470" y2="555" stroke="#0E5558" stroke-width="3"/><path d="M570,655 A100,100 0 0,0 470,555" fill="none" stroke="#0E5558" stroke-width="2"/><line x1="310" y1="195" x2="495" y2="195" stroke="#D5E7ED" stroke-width="12"/><rect x="280" y="235" width="248" height="310" fill="#E9E1D3" stroke="#203B36" stroke-width="3"/><rect x="293" y="250" width="100" height="42" fill="#FFFDF7" stroke="#0E5558" stroke-width="2"/><rect x="410" y="250" width="100" height="42" fill="#FFFDF7" stroke="#0E5558" stroke-width="2"/><rect x="707" y="220" width="93" height="310" fill="#C9AD84" stroke="#203B36" stroke-width="3"/><text x="302" y="382" font-size="24" fill="#0E5558">KROVAT</text><text x="300" y="420" font-size="22" fill="#0E5558">1,6 × 2 m</text><rect x="210" y="210" width="590" height="435" fill="none" stroke="#A65D35" stroke-width="3"/><text x="255" y="590" font-size="24" fill="#A65D35">Z01 · YOTOQXONA · 12 m²</text><line x1="195" y1="710" x2="815" y2="710" stroke="#0E5558" stroke-width="2"/><line x1="195" y1="702" x2="195" y2="718" stroke="#0E5558" stroke-width="2"/><line x1="815" y1="702" x2="815" y2="718" stroke="#0E5558" stroke-width="2"/><text x="463.0" y="698" font-size="21" fill="#0E5558">4 m</text><text x="95" y="420" font-size="23" fill="#0E5558">3 m</text></g><line x1="45" y1="835" x2="1105" y2="835" stroke="#0E5558" stroke-width="2"/><text x="45" y="875" font-size="22" fill="#0E5558">Zone Toolda xona ID va nomini tanlang</text><text x="45" y="1080" font-size="18" fill="#0E5558">Sxematik tasvir: qurilish detali, normativ minimum yoki haqiqiy Archicad skrinshoti emas.</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#fbfaf4"/>
+  
+<defs>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#53636a" flood-opacity=".16"/>
+  </filter>
+  <filter id="paper" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="7" result="n"/>
+    <feColorMatrix in="n" type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="table" tableValues="0 .035"/></feComponentTransfer>
+    <feBlend in="SourceGraphic" mode="multiply"/>
+  </filter>
+  <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#fffdf8"/><stop offset="1" stop-color="#e8e2d7"/>
+  </linearGradient>
+  <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ecd7ad"/><stop offset="1" stop-color="#c89e62"/>
+  </linearGradient>
+</defs>
+  <g filter="url(#paper)" stroke="#31434a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    
+<g filter="url(#shadow)">
+  <path d="M180 170 H1015 V635 H180 Z" fill="url(#wall)"/>
+  <path d="M180 170 H1015 V635 H180 Z" fill="none" stroke-width="14"/>
+  <path d="M500 170 V420 M770 170 V635 M180 420 H1015" fill="none" stroke-width="12"/>
+  <path d="M500 330 V420 M610 420 H690 M770 315 V385 M365 420 H430" stroke="#fbfaf4" stroke-width="18"/>
+  <path d="M500 330 A90 90 0 0 1 590 420 M610 420 A80 80 0 0 0 690 500 M770 315 A70 70 0 0 0 840 385 M365 420 A65 65 0 0 1 430 485" fill="none" stroke="#6b7c82" stroke-width="3"/>
+  <rect x="205" y="195" width="270" height="200" rx="20" fill="#d9ebe2" opacity=".78" stroke="none"/>
+  <rect x="525" y="195" width="220" height="200" rx="20" fill="#f3dfc6" opacity=".8" stroke="none"/>
+  <rect x="205" y="445" width="540" height="165" rx="20" fill="#d9e5f0" opacity=".78" stroke="none"/>
+  <rect x="795" y="195" width="195" height="415" rx="20" fill="#ead7e8" opacity=".72" stroke="none"/>
+  <g stroke-width="3" opacity=".8">
+    <rect x="245" y="240" width="115" height="70" rx="8" fill="#e6d4b3"/><rect x="245" y="325" width="55" height="35" fill="#e6d4b3"/>
+    <rect x="555" y="240" width="140" height="70" rx="10" fill="#e6d4b3"/><circle cx="585" cy="335" r="18" fill="#c8b58d"/><circle cx="665" cy="335" r="18" fill="#c8b58d"/>
+    <rect x="275" y="490" width="185" height="70" rx="18" fill="#d5c5a7"/><rect x="500" y="490" width="140" height="60" rx="8" fill="#e3d1ab"/>
+    <rect x="840" y="240" width="105" height="45" rx="6" fill="#cbd8d8"/><rect x="840" y="315" width="105" height="45" rx="6" fill="#cbd8d8"/>
+  </g>
+</g>
+<g transform="translate(84 250)" stroke-width="3">
+  <rect width="62" height="160" rx="12" fill="#fffef9"/>
+  <circle cx="31" cy="35" r="11" fill="#6f9f8d" stroke="none"/>
+  <path d="M18 68 H44 M18 90 H44 M18 112 H40 M18 134 H36" stroke="#789096"/>
+</g>
+
+  </g>
+</svg>
