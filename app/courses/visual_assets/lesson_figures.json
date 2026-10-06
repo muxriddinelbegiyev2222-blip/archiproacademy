@@ -9335,86 +9335,91 @@
   {
     "code": "L15_M05_001",
     "asset": "l15_m05_001.svg",
-    "title": "Final loyiha: konsepsiya — ko‘rgazmali namuna",
+    "title": "Final loyiha: konsepsiya — arxitekturaviy eskiz",
     "explanation": [
-      "Final loyihada konsepsiya, plan/site, BIM va hujjatlar bitta briefga javob beradi.",
-      "Ikki konsepsiyani mezon bilan solishtiring → asoslangan tanlov.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Eskiz brief, site, diagram va massing variantlaridan asoslangan final yo‘nalishga o‘tish jarayonini ko‘rsatadi.",
+      "2. Birinchi sketch final qaror emas; kamida bir nechta variantni loyiha mezonlari bilan solishtiring.",
+      "3. Final konsepsiya keyingi plan, fasad va BIM qarorlariga tushunarli asos bo‘lishi kerak.",
+      "Darsdagi bajarish: Brief → Site → Diagram → Variantlar → Final yo‘nalish zanjirini tayyorlang."
     ],
-    "exercise": "Konsepsiyani talab, site va ikki variant bilan asoslang.",
-    "solution": "Final konsepsiya mezonga tayangan tanlov natijasidir.",
+    "exercise": "Kamida ikki konseptual variantni mezon bilan solishtiring.",
+    "solution": "Final konsepsiya dalilga tayangan tanlov natijasi bo‘ladi.",
     "block": 5,
     "recipe": "variants",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy final-project eskizi. Grafikalar konseptual; yakuniy loyiha o‘lchamlari, normativlar va texnik qarorlar alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M05_002",
     "asset": "l15_m05_002.svg",
-    "title": "Final loyiha: plan va site — ko‘rgazmali namuna",
+    "title": "Final loyiha: plan va site — arxitekturaviy eskiz",
     "explanation": [
-      "Final loyihada konsepsiya, plan/site, BIM va hujjatlar bitta briefga javob beradi.",
-      "Planni xonalar, mebel, yo‘l va genplan bilan tekshiring → funksional dalil.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi genplan uy, uchastka va harakat yo‘llarini bitta tizim sifatida ko‘rsatadi.",
+      "2. Plan faqat xonalar joylashuvi emas; ergonomika, circulation, privacy, daylight va site bilan birga ishlashi kerak.",
+      "3. O‘ngdagi kichik kartochkalar final plan va site qarorlarini alohida tekshirish g‘oyasini bildiradi.",
+      "Darsdagi bajarish: Furniture, circulation va genplanni bir-biriga mos holda tekshiring."
     ],
-    "exercise": "Plan va site qarorlarini mebel hamda yo‘llar bilan tekshiring.",
-    "solution": "Final reja foydalanish ssenariylarida ishlashi kerak.",
+    "exercise": "Final plan va genplan o‘zaro ishlashini tekshiring.",
+    "solution": "Professional plan bino ichki logikasi bilan site qarorlarini birlashtiradi.",
     "block": 4,
     "recipe": "genplan",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy final-project eskizi. Grafikalar konseptual; yakuniy loyiha o‘lchamlari, normativlar va texnik qarorlar alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M05_003",
     "asset": "l15_m05_003.svg",
-    "title": "Final loyiha: BIM va texnik koordinatsiya — ko‘rgazmali namuna",
+    "title": "Final loyiha: BIM va texnik koordinatsiya — arxitekturaviy eskiz",
     "explanation": [
-      "Final loyihada konsepsiya, plan/site, BIM va hujjatlar bitta briefga javob beradi.",
-      "Model/data va muhandislik savollarini kelishilgan holatga keltiring → koordinatsiya.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi karkas geometriyasi konstruktiv mantiqni, markazdagi servis elementlari MEP koordinatsiyasini ifodalaydi.",
+      "2. O‘ngdagi checklist BIM modelda ochiq konfliktlar qolmasligi kerakligini ko‘rsatadi.",
+      "3. Tayanch, stairs, openings, shafts va wet zones alohida fanlar emas — final modelda ular bir-biriga mos kelishi kerak.",
+      "Darsdagi bajarish: Structure + MEP + BIM bo‘yicha issue checklist tayyorlang."
     ],
-    "exercise": "BIM, konstruktsiya va MEP konfliktlarini jurnalga kiriting.",
-    "solution": "Texnik koordinatsiya kelishilgan qaror va mas’ulni talab qiladi.",
+    "exercise": "Final BIM modeldagi kritik texnik konfliktlarni tekshiring.",
+    "solution": "Texnik koordinatsiya model geometriyasi va muhandislik talablarini bir joyda kelishtiradi.",
     "block": 4,
     "recipe": "coordination",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy final-project eskizi. Grafikalar konseptual; yakuniy loyiha o‘lchamlari, normativlar va texnik qarorlar alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M05_004",
     "asset": "l15_m05_004.svg",
-    "title": "Final loyiha: fasad va hujjatlar — ko‘rgazmali namuna",
+    "title": "Final loyiha: fasad va hujjatlar — arxitekturaviy eskiz",
     "explanation": [
-      "Final loyihada konsepsiya, plan/site, BIM va hujjatlar bitta briefga javob beradi.",
-      "Fasad, kesim, layout va outputni ayni revisiondan tayyorlang → hujjat mosligi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi elevation va section konsepsiyaning tashqi va vertikal natijasini ko‘rsatadi.",
+      "2. O‘ngdagi plan/schedule/layout bloklari yakuniy hujjatlar bitta model holatidan chiqishi kerakligini ifodalaydi.",
+      "3. Fasad, roof, sections va material strategiyasi konsepsiyani davom ettirishi, hujjatlar esa bir xil revisionga tegishli bo‘lishi kerak.",
+      "Darsdagi bajarish: Elevation + Section + Schedule + Layout paketini bir versiyada yakunlang."
     ],
-    "exercise": "Fasad, kesim va varaqlarni yagona model versiyasidan tayyorlang.",
-    "solution": "Final hujjatlar bir xil loyiha holatini ifodalaydi.",
+    "exercise": "Final hujjatlar bir xil loyiha holatini ifodalashini tekshiring.",
+    "solution": "Professional documentation fasad, kesim va jadvalni bitta yakuniy modelga bog‘laydi.",
     "block": 4,
     "recipe": "documents",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy final-project eskizi. Grafikalar konseptual; yakuniy loyiha o‘lchamlari, normativlar va texnik qarorlar alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M05_005",
     "asset": "l15_m05_005.svg",
-    "title": "Final loyiha: professional audit — ko‘rgazmali namuna",
+    "title": "Final loyiha: professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Final loyihada konsepsiya, plan/site, BIM va hujjatlar bitta briefga javob beradi.",
-      "Brief bandlari, dalil va ochiq masalani yakuniy jadvalda tekshiring → real topshirish holati.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi checklist brief, site, BIM, documentation va QA bandlarini yakuniy tekshirish uchun ishlatiladi.",
+      "2. Markazdagi plan va section dalil sifatida, o‘ngdagi kartochkalar esa topshirish paketini ifodalaydi.",
+      "3. Audit faqat chiroyli ko‘rinishni emas, barcha talablar bajarilganini va ochiq masalalar qolmaganini tekshiradi.",
+      "Darsdagi bajarish: Brief → Site → Plan → BIM → Facade → Documentation → QA zanjirini yopib chiqing."
     ],
-    "exercise": "Paketni qabul mezonlari bo‘yicha qayta tekshiring.",
-    "solution": "Final loyiha auditida bajarilgan talablar va ochiq masalalar dalillanadi.",
+    "exercise": "Final project paketini barcha mezonlar bo‘yicha audit qiling.",
+    "solution": "Final loyiha auditida loyiha sifati, koordinatsiya va topshirish tayyorligi birgalikda tekshiriladi.",
     "block": 4,
     "recipe": "audit",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy final-project eskizi. Grafikalar konseptual; yakuniy loyiha o‘lchamlari, normativlar va texnik qarorlar alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
