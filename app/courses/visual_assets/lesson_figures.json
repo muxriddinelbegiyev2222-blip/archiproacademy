@@ -8365,86 +8365,91 @@
   {
     "code": "L14_M02_001",
     "asset": "l14_m02_001.svg",
-    "title": "Murakkab uchastkani o'qish — ko‘rgazmali namuna",
+    "title": "Murakkab uchastkani o‘qish — arxitekturaviy eskiz",
     "explanation": [
-      "Notekis uchastkada asosiy bino uchun oddiy o‘q va qolgan joylar uchun tashqi funksiyalar tanlanadi.",
-      "Chegaraning tekshirilgan konturini chizing → geometriya manbasi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Qiyshiq uchastka chegaralari turli ahamiyatdagi chiziqlar bilan ko‘rsatilgan; barcha chegara bino devoriga aylanishi shart emas.",
+      "2. Primary boundary, street edge, kirish, orientatsiya va foydalanish mumkin bo‘lgan asosiy zona alohida aniqlanadi.",
+      "3. Uchastka geometriyasini to‘liq takrorlash o‘rniga, bino uchun sodda va boshqariladigan ichki geometriya topiladi.",
+      "Darsdagi bajarish: Primary va secondary boundarylarni belgilab, bino uchun ishlaydigan markaziy zonani ajrating."
     ],
-    "exercise": "Chegara koordinatalari va o‘lchov manbasini qayd qiling.",
-    "solution": "Murakkab kontur ishonchli geometriya asosida o‘qiladi.",
+    "exercise": "Murakkab site ichida asosiy va ikkilamchi chegaralarni ajrating.",
+    "solution": "Murakkab uchastka tahlili site geometriyasini loyiha qaroriga aylantirishdan boshlanadi.",
     "block": 5,
     "recipe": "odd-site",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy site/plan eskizi. Proporsiyalar konseptual; real setback, kirish va normativ cheklovlar loyiha joyi bo‘yicha alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M02_002",
     "asset": "l14_m02_002.svg",
-    "title": "Asosiy bino o'qini tanlash — ko‘rgazmali namuna",
+    "title": "Asosiy bino o‘qini tanlash — arxitekturaviy eskiz",
     "explanation": [
-      "Notekis uchastkada asosiy bino uchun oddiy o‘q va qolgan joylar uchun tashqi funksiyalar tanlanadi.",
-      "Bino o‘qining ikki variantini kirish va xonalar bilan solishtiring → izchil ichki geometriya.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Qiyshiq chegara ichidagi to‘g‘ri to‘rtburchak bino va markaziy yashil o‘q sodda reference grid mantiqini ko‘rsatadi.",
+      "2. Asosiy o‘q structure, plan va fasadni boshqaradigan barqaror geometriya beradi.",
+      "3. Foydasiz o‘tkir burchaklar mebel, konstruksiya va qurilishni murakkablashtirishi mumkin; site qiyshiq bo‘lsa ham bino albatta qiyshiq bo‘lishi shart emas.",
+      "Darsdagi bajarish: Uch xil bino o‘qi variantini solishtirib eng sodda va foydalisini tanlang."
     ],
-    "exercise": "Bino o‘qi uchun ko‘cha va ichki funksiyaga mos ikki variantni solishtiring.",
-    "solution": "Bino o‘qi faqat qiya chegara nusxasi bo‘lishi shart emas.",
+    "exercise": "Murakkab uchastka ichida sodda va mantiqiy building axis tanlang.",
+    "solution": "Aniq o‘q va grid murakkab chegara ichida loyiha geometriyasini tartibga soladi.",
     "block": 5,
     "recipe": "odd-site",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy site/plan eskizi. Proporsiyalar konseptual; real setback, kirish va normativ cheklovlar loyiha joyi bo‘yicha alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M02_003",
     "asset": "l14_m02_003.svg",
-    "title": "Qolgan zonalardan foydalanish — ko‘rgazmali namuna",
+    "title": "Qolgan zonalardan foydalanish — arxitekturaviy eskiz",
     "explanation": [
-      "Notekis uchastkada asosiy bino uchun oddiy o‘q va qolgan joylar uchun tashqi funksiyalar tanlanadi.",
-      "Qolgan uchburchak/tor joyga ishlaydigan tashqi vazifa toping → qoldiq maydon foydasi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Bino tashqarisida qolgan qiyshiq maydonlar landshaft, courtyard, service yoki buffer sifatida maqsadli ishlatilgan.",
+      "2. Har kichik residual zone uchun real funksiya yoki landshaft mantiqi bo‘lishi kerak.",
+      "3. Bino sig‘magan geometriyani tasodifiy bo‘shliq deb qoldirmasdan, site kompozitsiyasining faol qismiga aylantirish mumkin.",
+      "Darsdagi bajarish: Qolgan maydonlarni 4 funksional kategoriyaga ajrating."
     ],
-    "exercise": "Qolgan uchburchak zonalarga xizmat yoki yashil vazifa taklif qiling.",
-    "solution": "Qoldiq zona foydalanish va parvarish bilan tekshiriladi.",
+    "exercise": "Residual zonalarni landscape, courtyard, service va buffer funksiyalariga ajrating.",
+    "solution": "Qolgan maydonlar maqsadli ishlatilsa murakkab site kamchilikdan imkoniyatga aylanadi.",
     "block": 5,
     "recipe": "odd-site",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy site/plan eskizi. Proporsiyalar konseptual; real setback, kirish va normativ cheklovlar loyiha joyi bo‘yicha alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M02_004",
     "asset": "l14_m02_004.svg",
-    "title": "Fasad va perspektiva nazorati — ko‘rgazmali namuna",
+    "title": "Fasad va perspektiva nazorati — arxitekturaviy eskiz",
     "explanation": [
-      "Notekis uchastkada asosiy bino uchun oddiy o‘q va qolgan joylar uchun tashqi funksiyalar tanlanadi.",
-      "Fasad va perspektivani genplan o‘qi bilan solishtiring → haqiqiy bino ifodasi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Uch qizil ko‘rish nuqtasi qiyshiq ko‘cha chizig‘idan binoning turli perspektivalarda qanday ko‘rinishini tekshirishni ko‘rsatadi.",
+      "2. Asosiy kirish va fasad kompozitsiyasi faqat plan ichida emas, real yondashuv yo‘nalishidan ham baholanadi.",
+      "3. Street line qiyshiq bo‘lsa, fasadning qaysi qismi birinchi ko‘rinishi va qaysi burchaklar dominant bo‘lishi o‘zgaradi.",
+      "Darsdagi bajarish: Site’da uch asosiy ko‘rish nuqtasini belgilab, fasad kompozitsiyasini solishtiring."
     ],
-    "exercise": "Perspektiv va plan orqali qiya joylashuv ta’sirini ko‘ring.",
-    "solution": "Fasad taassuroti site va ko‘rish nuqtasiga bog‘liq.",
+    "exercise": "Ko‘cha va kirishdan bino perspektivasini uch nuqtada tekshiring.",
+    "solution": "Murakkab uchastkada fasad plan geometriyasi bilan birga real ko‘rish yo‘nalishlari orqali boshqariladi.",
     "block": 5,
     "recipe": "odd-site",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy site/plan eskizi. Proporsiyalar konseptual; real setback, kirish va normativ cheklovlar loyiha joyi bo‘yicha alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M02_005",
     "asset": "l14_m02_005.svg",
-    "title": "Murakkab uchastka professional audit — ko‘rgazmali namuna",
+    "title": "Murakkab uchastka professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Notekis uchastkada asosiy bino uchun oddiy o‘q va qolgan joylar uchun tashqi funksiyalar tanlanadi.",
-      "Har cheklovni manba va variantga bog‘lang → audit jadvali.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi site sxemasi boundary, axis, building geometry va residual zonalarni, o‘ngdagi checklist esa audit savollarini jamlaydi.",
+      "2. Kirish, street perspective, residual zone va structural logic bir-biriga mos kelishi tekshiriladi.",
+      "3. Murakkab site yaxshi loyiha uchun murakkab bino talab qilmaydi; maqsad tartibli, tushunarli va site’dan foyda oladigan yechimdir.",
+      "Darsdagi bajarish: Boundary → axis → geometry → residual zones → circulation → facade → structure zanjirini audit qiling."
     ],
-    "exercise": "Kontur, o‘q, qoldiq zona va ochiq talablarni audit qiling.",
-    "solution": "Murakkab uchastka auditi barcha qarorlar bir koordinata tizimida ekanini tekshiradi.",
+    "exercise": "Murakkab site loyihasini geometriya, foydalanish va perspektiva bo‘yicha kompleks tekshiring.",
+    "solution": "Professional audit site murakkabligini boshqariladigan loyiha tizimiga aylantirganingizni tekshiradi.",
     "block": 4,
     "recipe": "odd-site",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy site/plan eskizi. Proporsiyalar konseptual; real setback, kirish va normativ cheklovlar loyiha joyi bo‘yicha alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
