@@ -1,6 +1,6 @@
 # Visual review progress
 
-360 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 60 lessons using topic-specific architectural sketches. 320 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+365 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 65 lessons using topic-specific architectural sketches. 315 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -65,3 +65,5 @@ L07_M09: Professional Template concept, template structure, view/graphic/documen
 L08_M06: Moisture sources, foundation/ground contact, roof and balcony drainage, wet-room waterproofing and professional audit reviewed. Five generic diagrams were rebuilt as topic-specific architectural section/detail sketches; SHNQ verification remains deferred.
 
 L08_M07: Thermal insulation concept, envelope continuity, thermal bridges, window/balcony/parapet junctions and professional audit reviewed. Five generic diagrams were rebuilt as topic-specific architectural section/detail sketches; SHNQ and quantitative thermal verification remain deferred.
+
+L08_M08: Seismic load concept, plan regularity, vertical continuity/soft-story risk, mass asymmetry and professional architectural-structural audit reviewed. Five generic diagrams were rebuilt as topic-specific conceptual architectural/structural sketches; no structural design values are inferred from the images.
