@@ -4052,86 +4052,91 @@
   {
     "code": "L08_M07_001",
     "asset": "l08_m07_001.svg",
-    "title": "Issiqlik izolyatsiyasi tushunchasi — ko‘rgazmali namuna",
+    "title": "Issiqlik izolyatsiyasi tushunchasi — arxitekturaviy eskiz",
     "explanation": [
-      "Devor–deraza, devor–yopma va balkon tutashuvlarini bino qobig‘i sifatida kuzatamiz.",
-      "Issiqlik oqimi yo‘li va himoya qatlamini kesimda belgilang → vazifa.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Uy kesimida yashil chiziq tashqi qobiq bo‘ylab uzluksiz issiqlik himoyasi g‘oyasini, to‘q sariq strelkalar esa issiqlik almashinuvi yo‘nalishini ko‘rsatadi.",
+      "2. Devor, tom, pol, deraza va eshik birgalikda building envelope hosil qiladi. Faqat bitta devorni izolyatsiya qilish butun qobiq muammosini hal qilmaydi.",
+      "3. Izolyatsiya qalinligi bu eskizdan olinmaydi; material, qalinlik va issiqlik ko‘rsatkichlari texnik hisob hamda amaldagi talablar bilan belgilanadi.",
+      "Darsdagi bajarish: Uy kesimida pol → devor → tom orqali tashqi qobiqni kuzating."
     ],
-    "exercise": "Issiqlik qarori bilan materialning tashqi rangini ajrating.",
-    "solution": "Issiqlik izolyatsiyasi bino qobig‘ining ishlashiga taalluqli.",
+    "exercise": "Building envelope elementlarini va issiqlik himoyasi yo‘lini belgilang.",
+    "solution": "Issiqlik izolyatsiyasi bino qobig‘ini uzluksiz himoya tizimi sifatida ishlashi kerak.",
     "block": 9,
     "recipe": "thermal",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy kesim/detail eskizi. Qatlamlar konseptual; aniq material, qalinlik va issiqlik ko‘rsatkichlari normativ hamda texnik hisob asosida aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M07_002",
     "asset": "l08_m07_002.svg",
-    "title": "Building envelope va uzluksizlik — ko‘rgazmali namuna",
+    "title": "Building envelope va uzluksizlik — arxitekturaviy eskiz",
     "explanation": [
-      "Devor–deraza, devor–yopma va balkon tutashuvlarini bino qobig‘i sifatida kuzatamiz.",
-      "Izolyatsiya chizig‘ini bino bo‘ylab uzluksiz kuzating → uzilish joylari.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Yashil continuity line pol, devor, tom va deraza atrofi bo‘ylab bir uzluksiz himoya yo‘lini ko‘rsatadi.",
+      "2. Devor–tom, devor–pol, parapet va deraza reveal kabi geometriya o‘zgaradigan joylarda izolyatsiya uzilib qolmasligi kerak.",
+      "3. Kesimda himoya chizig‘ini qalam bilan uzluksiz kuzata olmasangiz, o‘sha joy alohida detail va koordinatsiya talab qilishi mumkin.",
+      "Darsdagi bajarish: Kesim bo‘ylab insulation continuity line’ni uzmasdan chizing."
     ],
-    "exercise": "Qobiq bo‘ylab izolyatsiya qatlamining uzluksiz chizig‘ini torting.",
-    "solution": "Envelope uzluksizligi barcha tutashuvlarda tekshiriladi.",
+    "exercise": "Pol, devor, tom va ochilishlarda izolyatsiya uzluksizligini tekshiring.",
+    "solution": "Building envelope sifati alohida qatlamlardan ko‘ra ularning uzluksiz tutashishiga bog‘liq.",
     "block": 9,
     "recipe": "thermal",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy kesim/detail eskizi. Qatlamlar konseptual; aniq material, qalinlik va issiqlik ko‘rsatkichlari normativ hamda texnik hisob asosida aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M07_003",
     "asset": "l08_m07_003.svg",
-    "title": "Thermal bridge tushunchasi — ko‘rgazmali namuna",
+    "title": "Thermal bridge tushunchasi — arxitekturaviy eskiz",
     "explanation": [
-      "Devor–deraza, devor–yopma va balkon tutashuvlarini bino qobig‘i sifatida kuzatamiz.",
-      "Balkon plitasi kabi uzilgan qatlamni ajrating → thermal bridge savoli.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Beton plita tashqi qobiq qatlamini kesib o‘tgan joy qizil aylana bilan ajratilgan potensial thermal bridge zonasini ifodalaydi.",
+      "2. To‘q sariq strelka issiqlik oqimi mahalliy ravishda kuchayishi mumkin bo‘lgan yo‘lni ko‘rsatadi. Bu faqat energiya emas, ichki yuzaning sovishi va namlik xavfi bilan ham bog‘liq bo‘lishi mumkin.",
+      "3. Thermal bridge ta’siri eskizdan son bilan aniqlanmaydi; aniq baholash texnik hisob va loyiha tahlili bilan bajariladi.",
+      "Darsdagi bajarish: Balkon, plita chekkasi, ustun, deraza va tom-devor tutashuvida potensial thermal bridge zonalarini belgilang."
     ],
-    "exercise": "Uzilgan balkon tugunini thermal bridge ehtimoli sifatida qayd qiling.",
-    "solution": "Issiqlik ko‘prigi mahalliy issiqlik oqimini kuchaytirishi mumkin.",
+    "exercise": "Bino qobig‘ini kesib o‘tadigan konstruktiv elementlarni toping.",
+    "solution": "Thermal bridge issiqlik himoyasi lokal zaiflashishi mumkin bo‘lgan tutashuv zonasidir.",
     "block": 9,
     "recipe": "thermal",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy kesim/detail eskizi. Qatlamlar konseptual; aniq material, qalinlik va issiqlik ko‘rsatkichlari normativ hamda texnik hisob asosida aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M07_004",
     "asset": "l08_m07_004.svg",
-    "title": "Deraza, balkon va tutashuvlar — ko‘rgazmali namuna",
+    "title": "Deraza, balkon va tutashuvlar — arxitekturaviy eskiz",
     "explanation": [
-      "Devor–deraza, devor–yopma va balkon tutashuvlarini bino qobig‘i sifatida kuzatamiz.",
-      "Deraza perimetri va konstruktiv tugunni tekshiring → faqat devor markazi yetmaydi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi deraza detalida insulation frame atrofi bo‘ylab davom etishi kerak; yon, yuqori va pastki reveal zonalari alohida ko‘riladi.",
+      "2. Markazdagi balkon/plita detali konstruktiv element issiqlik qobig‘ini kesib o‘tishi mumkin bo‘lgan kritik nuqtani ko‘rsatadi.",
+      "3. O‘ngdagi parapet/tom detali tom insulation’i devor himoyasi bilan mantiqan ulanishi kerakligini ko‘rsatadi.",
+      "Darsdagi bajarish: Deraza, balkon, parapet va plita chekkasi uchun continuity savolini bittadan yozing."
     ],
-    "exercise": "Deraza, balkon va devor tugunlarini alohida kesimda ko‘rsating.",
-    "solution": "Tugun yechimi umumiy devor qalinligidan tashqari tekshiriladi.",
+    "exercise": "Deraza, balkon va parapet tutashuvlarida insulation continuity’ni tekshiring.",
+    "solution": "Kritik tutashuvlar issiqlik, konstruksiya va boshqa qatlamlar bilan birga koordinatsiya qilinadi.",
     "block": 9,
     "recipe": "thermal",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy kesim/detail eskizi. Qatlamlar konseptual; aniq material, qalinlik va issiqlik ko‘rsatkichlari normativ hamda texnik hisob asosida aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M07_005",
     "asset": "l08_m07_005.svg",
-    "title": "Issiqlik izolyatsiyasi professional audit — ko‘rgazmali namuna",
+    "title": "Issiqlik izolyatsiyasi professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Devor–deraza, devor–yopma va balkon tutashuvlarini bino qobig‘i sifatida kuzatamiz.",
-      "Har uzilishga detal, hisob va mas’ul yozing → tekshiruv topshirig‘i.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Olti kichik detail building envelope auditida ko‘riladigan tipik zonalarni ifodalaydi: umumiy qobiq, deraza, balkon, parapet va boshqa tutashuvlar.",
+      "2. Har detailda insulation continuity line uzilmayaptimi va konstruktiv element tashqi qobiqni kesib o‘tmayaptimi — tekshiring.",
+      "3. BIM modelda umumiy devor qalinligi yetarli emas; muhim junctionlar kesim/detail darajasida mantiqan tushunarli bo‘lishi kerak.",
+      "Darsdagi bajarish: Envelope → continuity → thermal bridge → openings → junction → BIM detail checklistini to‘ldiring."
     ],
-    "exercise": "Hisob kerak bo‘lgan joylarni va muvofiqlashtirish mas’ulini yozing.",
-    "solution": "Issiqlik auditi taxminiy qatlamni hisoblangan samaradorlik sifatida taqdim etmaydi.",
+    "exercise": "Building envelope va kritik tutashuvlarni kompleks audit qiling.",
+    "solution": "Professional thermal audit issiqlik qobig‘ining uzluksizligi va lokal zaif nuqtalarni birgalikda tekshiradi.",
     "block": 12,
     "recipe": "thermal",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy kesim/detail eskizi. Qatlamlar konseptual; aniq material, qalinlik va issiqlik ko‘rsatkichlari normativ hamda texnik hisob asosida aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
