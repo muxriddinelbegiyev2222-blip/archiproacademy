@@ -3534,5 +3534,56 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L05_M10_002",
+    "asset": "realistic-l05_m10_002.jpg",
+    "title": "Devor va slab modeli — rasmga qarab tushuning",
+    "explanation": [
+      "1. Devor–pol tutashuvi. Uch devor pastdagi beton slabning yuqori yuziga kelib tutashgan. Old devor ko‘rish uchun olib tashlangan; bu qurilishdagi ochiq fasad taklifi emas.",
+      "2. Qalinlikni ajrating. Olddagi kesilgan slab cheti bilan yon devorning tik kesimi boshqa elementlardir. Burchaklarda uzilish va tasodifiy ortiqcha devor yo‘qligini o‘z modelingizda tekshiring.",
+      "3. Plan va kesimda tasdiqlang. Ichki 4 × 3 m xona, 200 mm devor va slab sathini o‘lchamli modelda kiriting. Render bu aniq sonlar yoki konstruktiv birikma hisobining dalili emas; u element munosabatini ko‘rsatadi.",
+      "Darsdagi bajarish: Wall va Slabni alohida yaratib plan/3Dda tutashuvini tekshiring → yopiq hajm."
+    ],
+    "exercise": "Devor va slabni yaratib, kontur hamda sathni kesimda solishtiring.",
+    "solution": "Model bazasi plan konturi bilan vertikal koordinatsiyaning birligidir.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L05_M10_003",
+    "asset": "realistic-l05_m10_003.jpg",
+    "title": "Door, Window va mebel — rasmga qarab tushuning",
+    "explanation": [
+      "1. Kirish yo‘li. Chapdagi ochiq eshikdan stol va stul tomon uzluksiz bo‘sh pol bor. Eshik tabaqasi mebelga urilmayapti; ochilish yo‘nalishi har bir haqiqiy loyiha uchun alohida baholanadi.",
+      "2. Deraza va ish joyi. Orqa devorda bitta deraza, uning ostida stol; o‘ngda past javon turibdi. Deraza ochilishi, sill sathi va stol gabaritini modelda tekshiring, faqat render ko‘rinishiga tayanmang.",
+      "3. Foydalanishni sinang. Stulni tortish va o‘tirish holatida yo‘l qolishini planda o‘lchang. Old devor tasvir uchun olib tashlangan; rasm bir xonali o‘quv variantini ko‘rsatadi, darsdagi barcha uy xonalari tugaganini emas.",
+      "Darsdagi bajarish: Eshik, deraza va o‘lchamli mebelni qo‘shing, ochilish yoyini ko‘ring → foydalanish sxemasi."
+    ],
+    "exercise": "Eshik, deraza va mebelni joylashtirib, foydalanish yo‘lini tekshiring.",
+    "solution": "Ochilish va mebel qarorlari xonaning real foydalanishini ko‘rsatadi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L05_M10_005",
+    "asset": "realistic-l05_m10_005.jpg",
+    "title": "Birinchi loyiha auditi — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chap — ataylab ko‘rsatilgan xato. Stol oyoqlari bilan pol orasida bo‘shliq va alohida soyalar ko‘rinadi. Plan ko‘rinishida yaxshi joylashgan obyekt 3Dda baribir havoda qolishi mumkin.",
+      "2. O‘ng — tag sathi tuzatilgan. O‘sha stolning oyoqlari polga tegib turibdi. Obyekt balandligini kamaytirish emas, uning joylashuv sathini tekshirish kerak.",
+      "3. Audit dalili. Xatoni element IDsi, avvalgi va tuzatilgan sath, plan–3D–kesim dalili bilan qayd qiling. Bu bitta obyekt holati; devor, slab, ochilish, maydon va hujjatlar ham alohida tekshiriladi.",
+      "Darsdagi bajarish: 12 m² ichki maydon, tashqi kontur, sath va ochilishlarni jadvalga yozing → tekshiriladigan birinchi loyiha."
+    ],
+    "exercise": "Saqlangan fayl, plan, 3D, kesim va kamchilik ro‘yxatini topshiring.",
+    "solution": "Birinchi loyiha auditi yakunlangan ish bilan tuzatiladigan nuqsonni ajratadi.",
+    "block": 10,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]

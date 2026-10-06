@@ -1,6 +1,6 @@
 # Realistic lesson illustration replacement
 
-Work in progress: 208 of 680 lessons have accepted AI material raster illustrations. Another 37 lessons have reviewed genuine Graphisoft screenshots and topic-specific explanations; these are tracked in SCREENSHOT_LESSON_REVIEW.csv and do not count as AI images. Total topic review progress: 245 lessons; 435 still await this review. See VISUAL_REVIEW_PROGRESS.md and REALISTIC_LESSON_COVERAGE.csv for the exact distinction. A passing runtime audit or basic image presence does not mean the topic review is finished.
+Work in progress: 211 of 680 lessons have accepted AI material raster illustrations. Another 44 lessons have reviewed genuine Graphisoft screenshots and topic-specific explanations; these are tracked in SCREENSHOT_LESSON_REVIEW.csv and do not count as AI images. Total topic review progress: 255 lessons; 425 still await this review. See VISUAL_REVIEW_PROGRESS.md and REALISTIC_LESSON_COVERAGE.csv for the exact distinction. A passing runtime audit or basic image presence does not mean the topic review is finished.
 
 The user's approved reference is a realistic material cutaway beside three numbered explanations in the existing ARCHIPRO UZ lesson reader. New pictures are generated with the built-in image generation tool, checked against the actual lesson and refined when misleading. Native text carries the explanations and exact exercise values. Generated illustrations are not measured drawings or engineering details. No SHNQ audit is claimed for this replacement phase; the user deferred it.
 

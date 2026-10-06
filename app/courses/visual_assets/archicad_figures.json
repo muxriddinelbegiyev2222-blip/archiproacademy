@@ -665,171 +665,169 @@
   {
     "code": "L05_M09_001",
     "asset": "ac28-dimension.png",
-    "title": "Dimension: o‘lcham hisoblash turini tanlash",
+    "title": "Dimension: model bilan bog‘lanishni saqlang",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-22.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/DimensionType_calculate.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Dimension: o‘lcham hisoblash turini tanlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Dimension Toolda element nuqtalariga bog‘langan o‘lcham qo‘ying → modelga aloqali o‘lcham."
+      "Dimension Type qismidagi birinchi tanlangan belgi Linear usul: qo‘shni tayanch nuqtalar orasidagi masofalarni chiqaradi. Cumulative va Base-line boshqa hisob usullaridir.",
+      "Static Dimension katagi rasmda o‘chiq. Uni yoqish elementga bog‘lanmagan statik o‘lcham yaratadi; avtomatik yangilanish mashqi uchun elementdagi haqiqiy tayanchlarni tanlang.",
+      "Show Dimension Text Only ham o‘chiq: o‘lcham chiziqlari ko‘rinadi. Sonni qo‘lda yozish yoki matn bilan almashtirish elementlar orasidagi haqiqiy masofani o‘zgartirmaydi."
     ],
     "exercise": "Dimension bilan ikki aniq nuqta orasini o‘lchang va elementga bog‘lanishini tekshiring.",
     "solution": "O‘lcham dalili to‘g‘ri tayanch nuqtalariga bog‘lanishi kerak.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasining haqiqiy tasviri. Ko‘rsatilgan sonlar qo‘llanma modeliga tegishli; darsdagi mustaqil mashq qiymatlarini o‘z modelingizda kiriting va birliklarni tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L05_M09_002",
-    "asset": "ac28-dimension.png",
-    "title": "Dimension: o‘lcham hisoblash turini tanlash",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-22.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/DimensionType_calculate.png",
-    "block": 0,
+    "asset": "ac28-dimension-outer-faces.png",
+    "title": "Outer Faces: to‘liq devor qalinligi",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/070_Documentation-36.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/DimOuterFace.png",
+    "block": 1,
     "explanation": [
-      "Dimension: o‘lcham hisoblash turini tanlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Tashqi kontur nuqtalarini tanlab umumiy gabaritni qo‘ying → 9000 mm."
+      "Tanlangan Outer Faces usulida 0.470 devorning eng tashqi ikki yuzi orasini ko‘rsatadi. Bu bino uzunligi yoki o‘qdan o‘qqacha masofa emas.",
+      "Tashqi gabarit uchun ham boshlanish va tugash yuzlarini bir ma’noli tanlang. Darsning namunaviy zanjiri 9000 mm; mustaqil mashqdagi 6000 mm esa boshqa sinov, bu rasm ikkisini tasdiqlamaydi."
     ],
     "exercise": "Tashqi 6000 mm o‘lchamni qo‘ying va qaysi yuzlar orasini o‘lchaganini yozing.",
     "solution": "Tashqi o‘lcham uchun tanlangan yuz yoki o‘q bir ma’noli bo‘lishi kerak.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasining haqiqiy tasviri. Ko‘rsatilgan sonlar qo‘llanma modeliga tegishli; darsdagi mustaqil mashq qiymatlarini o‘z modelingizda kiriting va birliklarni tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L05_M09_003",
-    "asset": "ac28-dimension.png",
-    "title": "Dimension: o‘lcham hisoblash turini tanlash",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-22.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/DimensionType_calculate.png",
+    "asset": "ac28-dimension-core-faces.png",
+    "title": "Core Faces xona ichki masofasi bilan teng emas",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/070_Documentation-36.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/DimCores.png",
     "block": 0,
     "explanation": [
-      "Dimension: o‘lcham hisoblash turini tanlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Ichki xona yuzalarini o‘lchab foydali masofani yozing → devor o‘qi bilan aralashmaydi."
+      "Core Faces tanlovida 0.250 faqat devor yadrosi qalinligini bildiradi. Oldingi Outer Faces rasmida to‘liq qalinlik 0.470 edi; farq boshqa qatlamlardan keladi.",
+      "Xonaning sof masofasi uchun qarama-qarshi tayyor ichki yuzlarni tanlang. Devor yadrosi, Reference Line yoki o‘qni tanlash boshqa masofani beradi; ularni ichki sof o‘lcham deb yozmang."
     ],
     "exercise": "Ichki bo‘laklarni o‘lchab, devor qalinligi bilan farqini tushuntiring.",
     "solution": "Ichki sof o‘lcham tashqi kontur bilan avtomatik teng emas.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasining haqiqiy tasviri. Ko‘rsatilgan sonlar qo‘llanma modeliga tegishli; darsdagi mustaqil mashq qiymatlarini o‘z modelingizda kiriting va birliklarni tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L05_M09_004",
-    "asset": "ac28-dimension.png",
-    "title": "Dimension: o‘lcham hisoblash turini tanlash",
+    "asset": "ac28-dimension-linear-chain.png",
+    "title": "Linear zanjir: bo‘laklar qanday o‘qiladi?",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-22.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/DimensionType_calculate.png",
-    "block": 0,
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/LinearDimLinear.png",
+    "block": 1,
     "explanation": [
-      "Dimension: o‘lcham hisoblash turini tanlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Zanjir o‘lchamda 4000+3000+2000 ni umumiy o‘lcham bilan solishtiring → yig‘indi 9000."
+      "Rasmda ketma-ket 0.900, 1.200 va 0.900 masofalar alohida yozilgan. Ular qo‘shni tayanchlar orasidagi bo‘laklardir, har safar boshlang‘ich noldan o‘lchangan qiymatlar emas.",
+      "Namuna birliklari va modelini dars mashqi bilan aralashtirmang: ishlangan misolda 4000 + 3000 + 2000 = 9000 mm; mustaqil mashqda 2000 + 4000 = 6000 mm.",
+      "Yig‘indi bilan umumiy o‘lchamni faqat bir xil boshlanish va tugash nuqtalari bo‘lganda solishtiring. Yetishmagan yoki ortiqcha tayanchni son ustiga qo‘lda yozish orqali yashirmang."
     ],
     "exercise": "2000 + 4000 = 6000 zanjirini tekshirib, matnlar to‘qnashuvini tuzating.",
     "solution": "O‘lcham zanjiri yig‘indisi umumiy o‘lchamga mos kelishi va o‘qilishi kerak.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasining haqiqiy tasviri. Ko‘rsatilgan sonlar qo‘llanma modeliga tegishli; darsdagi mustaqil mashq qiymatlarini o‘z modelingizda kiriting va birliklarni tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L05_M09_005",
     "asset": "ac28-dimension.png",
-    "title": "Dimension: o‘lcham hisoblash turini tanlash",
+    "title": "Mini-loyiha: siljitishdan keyingi sinov",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-22.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/DimensionType_calculate.png",
-    "block": 0,
+    "block": 5,
     "explanation": [
-      "Dimension: o‘lcham hisoblash turini tanlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Bir nuqtani 500 mm suring va o‘lchamlarni tekshiring → bog‘langan o‘lcham yangilanadi."
+      "Static Dimensionni o‘chiq qoldiring va o‘lcham tayanchlarini element nuqtalariga bog‘lang. Modeldagi bitta nuqtani mashqdagi 500 mmga suring.",
+      "Avvalgi va yangi masofani solishtiring: o‘zgarish yo‘nalishi va tayanchga qarab bir bo‘lak ortishi, boshqasi kamayishi mumkin; har bir son avtomatik 500 mmga ortadi degani emas.",
+      "Yangilanmasa tayanch bog‘lanishini, statik rejimni va matnning qo‘lda almashtirilmaganini tekshiring. Bu Settings tasviri sinov natijasi emas: natijani o‘z modelingizda amalda tasdiqlaysiz."
     ],
     "exercise": "Bir elementni siljitib, o‘lchamning yangilanishini tekshiring.",
     "solution": "Mini-amaliyot faqat dastlabki raqamni emas, o‘zgarishdan keyingi o‘lcham bog‘lanishini ham tasdiqlaydi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasining haqiqiy tasviri. Ko‘rsatilgan sonlar qo‘llanma modeliga tegishli; darsdagi mustaqil mashq qiymatlarini o‘z modelingizda kiriting va birliklarni tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L05_M10_001",
     "asset": "ac28-stories.png",
-    "title": "Story Settings: qavatlar va sathlar",
+    "title": "Boshlanish: qavat sathi va qavatlar oralig‘i",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/140_UserInterfaceDialogBoxes/140_UserInterfaceDialogBoxes-33.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/140_UserInterfaceDialogBoxes/StorySettings.png",
-    "block": 0,
+    "block": 3,
     "explanation": [
-      "Story Settings: qavatlar va sathlar. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Birlik, qavat, sath va fayl nomini belgilang, o‘lchamli eskizni tayyorlang → boshlang‘ich reja."
+      "Ground Floor 0 sathda, keyingi qavatlar 3100 va 6200 sathlarda ko‘rsatilgan. Elevation qavatning loyiha noliga nisbatan sathi; Height to Next esa keyingi qavatgacha masofa.",
+      "Mashq uchun birlik, qavat va sathni oldindan qayd qiling; rasmda ko‘ringan 3100ni tayyor loyiha talabi deb ko‘chirmang. Story Settings birlikni yoki fayl nomini sozlaydigan oyna emas.",
+      "Faylni aniq nom bilan saqlang, qavat parametrlarini va boshlang‘ich eskizni qayd qiling. Delete Story o‘sha Home Storyga biriktirilgan elementlarni ham o‘chiradi; boshlang‘ich shablonni tushunmasdan qavatni yo‘qotmang."
     ],
     "exercise": "Faylni aniq nom bilan saqlang, birlik va qavat sathini qayd qiling.",
     "solution": "Birinchi loyihaning boshlanishi fayl, birlik va sath aniqligidir.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy ekran tasviri. Rasm qiymatlari darsdagi 4 × 3 m mashqning tayyor natijasi emas; parametrlarni o‘z modelingizda tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L05_M10_002",
     "asset": "ac28-wall.png",
-    "title": "Wall: geometriya va sath sozlamalari",
+    "title": "Wall: balandlik va kontur birga tekshiriladi",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-3.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/WallGeometry.png",
     "block": 0,
     "explanation": [
-      "Wall: geometriya va sath sozlamalari. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Wall va Slabni alohida yaratib plan/3Dda tutashuvini tekshiring → yopiq hajm."
+      "Wall Top yuqori qavatga bog‘langan bo‘lsa balandlik qavatlar sathiga qarab keladi. Bitta devorning past yoki baland qolishini faqat plan orqali sezmasligingiz mumkin.",
+      "200 mm o‘quv devori uchun uning Basic qalinligi yoki Composite tuzilishini tekshiring. Ichki 4 × 3 m kontur bilan tashqi kontur boshqa; Reference Line joyini hisobga oling.",
+      "Avval burchaklar va tutashuvlarni planda, so‘ng devor tepa sathi va tagini 3D hamda kesimda tekshiring. Rasm mashq qiymatlari allaqachon kiritilganini bildirmaydi."
     ],
     "exercise": "Devor va slabni yaratib, kontur hamda sathni kesimda solishtiring.",
     "solution": "Model bazasi plan konturi bilan vertikal koordinatsiyaning birligidir.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy ekran tasviri. Rasm qiymatlari darsdagi 4 × 3 m mashqning tayyor natijasi emas; parametrlarni o‘z modelingizda tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L05_M10_003",
     "asset": "ac28-door-window.png",
-    "title": "Window Settings: deraza tanlash va sozlash",
+    "title": "Window: sill, gabarit va devor bilan aloqa",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-15.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/WindowSettings.png",
-    "block": 0,
+    "block": 2,
     "explanation": [
-      "Window Settings: deraza tanlash va sozlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Eshik, deraza va o‘lchamli mebelni qo‘shing, ochilish yoyini ko‘ring → foydalanish sxemasi."
+      "Bu Window Settings: Door ochilish yo‘nalishini ko‘rsatadigan rasm emas. Window 20 va kutubxona nomlari qo‘llanmadagi eski kutubxona namunasidir.",
+      "Width va Height ochilish gabaritini, Sill esa tanlangan tayanchga nisbatan pastki sathni belgilaydi. Bir xil derazalar balandligini fasadda ham tekshiring.",
+      "Deraza, stol va kirish joyi birga ishlasin. Realistik xona tasviri joylashuv fikrini ko‘rsatadi; kutubxona o‘lchami va foydalanish bo‘shlig‘ini o‘lchamli planda tasdiqlang."
     ],
     "exercise": "Eshik, deraza va mebelni joylashtirib, foydalanish yo‘lini tekshiring.",
     "solution": "Ochilish va mebel qarorlari xonaning real foydalanishini ko‘rsatadi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy ekran tasviri. Rasm qiymatlari darsdagi 4 × 3 m mashqning tayyor natijasi emas; parametrlarni o‘z modelingizda tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L05_M10_004",
     "asset": "ac28-dimension.png",
-    "title": "Dimension: o‘lcham hisoblash turini tanlash",
+    "title": "Hujjat: bog‘langan o‘lcham va o‘qiladigan matn",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-22.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/DimensionType_calculate.png",
-    "block": 0,
+    "block": 3,
     "explanation": [
-      "Dimension: o‘lcham hisoblash turini tanlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Xona nomi, maydon va bog‘langan o‘lchamni qo‘shing → o‘qiladigan plan."
+      "Linear usul va o‘chiq Static Dimension katagi ko‘rinadi. Element nuqtalariga bog‘langan o‘lcham qo‘ying; 4000 yoki 3000ni oddiy Text bilan yozish o‘lchash emas.",
+      "Xona nomi, maydon va o‘lchamlar bir-birini yopmasin. Ichki kontur haqiqatan 4 × 3 m bo‘lsa uning geometrik maydoni 12 m²; Zone hisobidagi chegara va chegirmalarni alohida tekshiring.",
+      "Planda ham, PDF yoki Layoutning chiqish miqyosida ham tekshiring. Modelni o‘zgartirib bog‘langan o‘lcham yangilanayotganini sinang."
     ],
     "exercise": "Izohlar va o‘lchamlar bilan model qarorlarini tushuntiring.",
     "solution": "Hujjat grafikasi modelni tekshirish va o‘qish uchun xizmat qiladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy ekran tasviri. Rasm qiymatlari darsdagi 4 × 3 m mashqning tayyor natijasi emas; parametrlarni o‘z modelingizda tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L05_M10_005",
-    "asset": "ac28-zone.png",
-    "title": "Zone Settings: xona maydoni elementi",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-7.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/ZoneSettings.png",
-    "block": 0,
+    "asset": "ac28-object-elevation.png",
+    "title": "Audit: tag sathi balandlik bilan boshqa parametr",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-11.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/Base_Hieight_Object.png",
+    "block": 2,
     "explanation": [
-      "Zone Settings: xona maydoni elementi. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: 12 m² ichki maydon, tashqi kontur, sath va ochilishlarni jadvalga yozing → tekshiriladigan birinchi loyiha."
+      "Yuqoridagi 100 obyekt tagining sathini, pastdagi 660 esa obyektning o‘z balandligini bildiradi. Rasm kreslo parametrini ko‘rsatadi; stol ham o‘z parametrlari bilan tekshiriladi.",
+      "Obyekt tagi tayyor pol sathiga mos bo‘lsin. 0 qiymati har bir modelda pol usti degani emas; Home Story, chekinish va polning yuqori yuzini birga solishtiring.",
+      "Yonidagi ikki realistik namuna aynan shu farqni ochadi: chapda havoda qolgan stol — xato, o‘ngda polga tushirilgan stol. Bu butun loyiha auditi yakunlanganini bildirmaydi."
     ],
     "exercise": "Saqlangan fayl, plan, 3D, kesim va kamchilik ro‘yxatini topshiring.",
     "solution": "Birinchi loyiha auditi yakunlangan ish bilan tuzatiladigan nuqsonni ajratadi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy ekran tasviri. Rasm qiymatlari darsdagi 4 × 3 m mashqning tayyor natijasi emas; parametrlarni o‘z modelingizda tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
@@ -4127,6 +4125,87 @@
     "exercise": "Labelni elementga bog‘lang va element o‘zgarganda yorliqdagi ma’lumotni tekshiring.",
     "solution": "Bog‘langan yorliq bilan qo‘lda yozilgan matnning yangilanish xavfi farq qiladi.",
     "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasidagi haqiqiy 2D vosita namunasi. Rasmdagi son va kutubxona nomlari mashq qiymatlari emas; amaldagi versiyada tekshiring.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M09_001",
+    "asset": "ac28-dimension-reference-points.png",
+    "title": "Konturga bosish: qaysi tayanch tanlandi?",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/070_Documentation-36.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/DimWallThickness.PNG",
+    "block": 2,
+    "explanation": [
+      "Qalam kursor devor konturida; belgilangan tayanchlar qatlam yuzlari va Reference Line bo‘ylab ko‘rinadi. Qaysi nuqtalar chiqishi Dimension Details tanloviga bog‘liq.",
+      "O‘lchamoqchi bo‘lgan yuzlarni tanlang, zanjirni ikki marta bosib tugating va Hammer kursor bilan o‘lcham joyini belgilang. Bu namuna devor qalinligi uchun; xona masofasida ikki tegishli ichki yuzni tanlaysiz."
+    ],
+    "exercise": "Dimension bilan ikki aniq nuqta orasini o‘lchang va elementga bog‘lanishini tekshiring.",
+    "solution": "O‘lcham dalili to‘g‘ri tayanch nuqtalariga bog‘lanishi kerak.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasining haqiqiy tasviri. Ko‘rsatilgan sonlar qo‘llanma modeliga tegishli; darsdagi mustaqil mashq qiymatlarini o‘z modelingizda kiriting va birliklarni tekshiring.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M09_002",
+    "asset": "ac28-dimension.png",
+    "title": "Tashqi o‘lcham chizig‘ini o‘qiladigan joyga qo‘ying",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/070_Documentation-36.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/DimOuterFace.png",
+    "block": 4,
+    "explanation": [
+      "Witness Line belgilarida chiqarma chiziqlarning ko‘rinishi tanlanadi. Rasmda oxirgi usul tanlangan; Marker Type o‘lcham uchining belgisini boshqaradi.",
+      "Umumiy gabarit va bo‘lak o‘lchamlar boshqa-boshqa chiziqda aniq o‘qilsin. O‘lcham matni devor, eshik va qo‘shni matnni yopmasin; chiqish varag‘i miqyosida tekshiring."
+    ],
+    "exercise": "Tashqi 6000 mm o‘lchamni qo‘ying va qaysi yuzlar orasini o‘lchaganini yozing.",
+    "solution": "Tashqi o‘lcham uchun tanlangan yuz yoki o‘q bir ma’noli bo‘lishi kerak.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasining haqiqiy tasviri. Ko‘rsatilgan sonlar qo‘llanma modeliga tegishli; darsdagi mustaqil mashq qiymatlarini o‘z modelingizda kiriting va birliklarni tekshiring.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M09_004",
+    "asset": "ac28-dimension-text-flexible.png",
+    "title": "Flexible: qisqa bo‘lakda matnni joylashtirish",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-22.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/FlexibleDim.png",
+    "block": 4,
+    "explanation": [
+      "Qizil ramkadagi Flexible usuli tor joyda matnlarni chetga yoki balandroqqa joylashtiradi. Namunada 0.627 soni qo‘shni 0.900 yozuvlaridan yuqorida turibdi.",
+      "Bu grafik joylashuvni o‘zgartiradi, model masofasini emas. Avtomatik tartibdan keyin matn qaysi bo‘lakka tegishli ekani ravshan qolganini tekshiring."
+    ],
+    "exercise": "2000 + 4000 = 6000 zanjirini tekshirib, matnlar to‘qnashuvini tuzating.",
+    "solution": "O‘lcham zanjiri yig‘indisi umumiy o‘lchamga mos kelishi va o‘qilishi kerak.",
+    "boundary": "Graphisoft Archicad 28 rasmiy qo‘llanmasining haqiqiy tasviri. Ko‘rsatilgan sonlar qo‘llanma modeliga tegishli; darsdagi mustaqil mashq qiymatlarini o‘z modelingizda kiriting va birliklarni tekshiring.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M10_002",
+    "asset": "ac28-slab.png",
+    "title": "Slab: yuqori sath va qalinlik",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-5.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/SlabStructure.png",
+    "block": 3,
+    "explanation": [
+      "Reference Plane yuqori yoki pastki tekislikka qo‘yilgani Elevationni talqin qilishga ta’sir qiladi. Polning yuqori sathi bilan pastki sathini aralashtirmang.",
+      "Devor tagi va slabning yuqori yuzini kesimda solishtiring. Slab konturi devor tagini qoplaydimi yoki faqat xona ichimi — mashqdagi vazifani oldindan belgilang."
+    ],
+    "exercise": "Devor va slabni yaratib, kontur hamda sathni kesimda solishtiring.",
+    "solution": "Model bazasi plan konturi bilan vertikal koordinatsiyaning birligidir.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy ekran tasviri. Rasm qiymatlari darsdagi 4 × 3 m mashqning tayyor natijasi emas; parametrlarni o‘z modelingizda tekshiring.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L05_M10_004",
+    "asset": "ac28-zone.png",
+    "title": "Zone Stamp: qaysi ma’lumot chiqariladi?",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-7.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/ZoneSettings.png",
+    "block": 1,
+    "explanation": [
+      "Zone Selection Settingsda bitta element tanlangan. Settings ostida Zone Identification 1:50 sahifasi ochilgan; menyuda Basic Data va Area, Volume kabi boshqa sahifalar ham bor.",
+      "Bu rasmda xona maydonining tayyor 12 m² natijasi ko‘rsatilmagan. Xona nomi va maydon chiqarish uchun tegishli sahifa hamda Zone chegarasini sozlang, keyin plandagi natijani tekshiring.",
+      "Zone hisobini o‘zgartirgach Design → Update Zones orqali qayta hisoblang. Matnni qo‘lda 12 m²ga almashtirish noto‘g‘ri chegarani tuzatmaydi."
+    ],
+    "exercise": "Izohlar va o‘lchamlar bilan model qarorlarini tushuntiring.",
+    "solution": "Hujjat grafikasi modelni tekshirish va o‘qish uchun xizmat qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy ekran tasviri. Rasm qiymatlari darsdagi 4 × 3 m mashqning tayyor natijasi emas; parametrlarni o‘z modelingizda tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   }
 ]

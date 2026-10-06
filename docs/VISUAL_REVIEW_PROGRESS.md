@@ -1,6 +1,6 @@
 # Visual review progress
 
-245 of 680 lessons have completed the current topic-specific visual review: 208 AI material renders and 37 lessons using documented Graphisoft screenshots. 435 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+255 of 680 lessons have completed the current topic-specific visual review: 211 AI material renders and 44 lessons using documented Graphisoft screenshots. 425 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -19,3 +19,7 @@ L05_M06: Column cross-section versus height, centered reference axis and Beam re
 L05_M07: Object library gabarits, placement anchor, rotation/mirroring, base elevation and Drag a Copy reviewed. Bedroom access and dining-chair use illustrated with two new realistic renders; original lesson content remains unchanged.
 
 L05_M08: Line/Polyline distinction, Fill controls, Text readability, associative label placement and example model labels reviewed. Manual label text is not falsely described as automatically updating.
+
+L05_M09: Associative dimensions, outer/core faces, room clear distances, linear chains and flexible text arrangement reviewed. 9000 mm worked example and 6000 mm independent exercises explicitly distinguished.
+
+L05_M10: First project reviewed with Story Settings, Wall/Slab, Window, Dimension, Zone and Object elevation captures; three new realistic material examples explain wall–slab contact, room access and a deliberately floating desk versus corrected placement.

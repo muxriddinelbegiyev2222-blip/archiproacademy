@@ -219,16 +219,16 @@ L05_M08_002,L05_M08,Fill Tool,illustrated,1,ac28-fill.png
 L05_M08_003,L05_M08,Text Tool,illustrated,1,ac28-text-style.png
 L05_M08_004,L05_M08,Label Tool,illustrated,2,ac28-label.png|ac28-label-associative.png
 L05_M08_005,L05_M08,2D grafik mini-loyiha,illustrated,1,ac28-label-model-examples.png
-L05_M09_001,L05_M09,Dimension Tool asoslari,illustrated,2,l05_m09_001.svg|ac28-dimension.png
-L05_M09_002,L05_M09,Tashqi o'lchamlar,illustrated,2,l05_m09_002.svg|ac28-dimension.png
-L05_M09_003,L05_M09,Ichki o'lchamlar,illustrated,2,l05_m09_003.svg|ac28-dimension.png
-L05_M09_004,L05_M09,Chain dimension va grafik tartib,illustrated,2,l05_m09_004.svg|ac28-dimension.png
-L05_M09_005,L05_M09,Dimension mini-loyiha,illustrated,2,l05_m09_005.svg|ac28-dimension.png
-L05_M10_001,L05_M10,Loyihani boshlash va reja,illustrated,2,l05_m10_001.svg|ac28-stories.png
-L05_M10_002,L05_M10,Devor va slab modeli,illustrated,2,l05_m10_002.svg|ac28-wall.png
-L05_M10_003,L05_M10,"Door, Window va mebel",illustrated,2,l05_m10_003.svg|ac28-door-window.png
-L05_M10_004,L05_M10,2D grafika va Dimension,illustrated,2,l05_m10_004.svg|ac28-dimension.png
-L05_M10_005,L05_M10,Birinchi loyiha auditi,illustrated,2,l05_m10_005.svg|ac28-zone.png
+L05_M09_001,L05_M09,Dimension Tool asoslari,illustrated,2,ac28-dimension.png|ac28-dimension-reference-points.png
+L05_M09_002,L05_M09,Tashqi o'lchamlar,illustrated,2,ac28-dimension-outer-faces.png|ac28-dimension.png
+L05_M09_003,L05_M09,Ichki o'lchamlar,illustrated,1,ac28-dimension-core-faces.png
+L05_M09_004,L05_M09,Chain dimension va grafik tartib,illustrated,2,ac28-dimension-linear-chain.png|ac28-dimension-text-flexible.png
+L05_M09_005,L05_M09,Dimension mini-loyiha,illustrated,1,ac28-dimension.png
+L05_M10_001,L05_M10,Loyihani boshlash va reja,illustrated,1,ac28-stories.png
+L05_M10_002,L05_M10,Devor va slab modeli,illustrated,3,ac28-wall.png|ac28-slab.png|realistic-l05_m10_002.jpg
+L05_M10_003,L05_M10,"Door, Window va mebel",illustrated,2,ac28-door-window.png|realistic-l05_m10_003.jpg
+L05_M10_004,L05_M10,2D grafika va Dimension,illustrated,2,ac28-dimension.png|ac28-zone.png
+L05_M10_005,L05_M10,Birinchi loyiha auditi,illustrated,2,ac28-object-elevation.png|realistic-l05_m10_005.jpg
 L06_M01_001,L06_M01,Stories tushunchasi,illustrated,2,l06_m01_001.svg|ac28-stories.png
 L06_M01_002,L06_M01,Story Settings va balandliklar,illustrated,2,l06_m01_002.svg|ac28-stories.png
 L06_M01_003,L06_M01,Home Story va elementlar,illustrated,2,l06_m01_003.svg|ac28-home-story.png
