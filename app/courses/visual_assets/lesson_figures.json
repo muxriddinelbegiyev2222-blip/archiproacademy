@@ -8815,86 +8815,91 @@
   {
     "code": "L14_M07_001",
     "asset": "l14_m07_001.svg",
-    "title": "Design Clinic metodikasi — ko‘rgazmali namuna",
+    "title": "Design Clinic metodikasi — arxitekturaviy eskiz",
     "explanation": [
-      "Clinicda planda yo‘l konflikti, fasadda zid deraza, BIMda dublikat ID topildi.",
-      "Belgini emas sababni qidiring: foydalanish, geometriya, data → diagnostika.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi muammo, markazdagi diagnostic savollar va o‘ngdagi yaxshilangan natija Design Clinic workflowini ko‘rsatadi.",
+      "2. Maqsad “yoqdi/yoqmadi” emas: symptom, root cause, impact va alternative aniqlanadi.",
+      "3. Muammo sababini tushunmasdan elementlarni ko‘chirish yangi konflikt yaratishi mumkin.",
+      "Darsdagi bajarish: Eski loyiha uchun 10 ta diagnostic savol yozing."
     ],
-    "exercise": "Muammo, sabab, tuzatish va qayta tekshiruv jadvalini tuzing.",
-    "solution": "Design Clinic simptomni sababdan ajratadi.",
+    "exercise": "Observe → symptom → root cause → alternative → test → fix zanjirini ko‘rsating.",
+    "solution": "Design Clinic loyiha muammosining sababini topib, tekshirilgan yechimga olib boradi.",
     "block": 5,
     "recipe": "audit",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy diagnostic eskiz. Before/after variantlar o‘quv misoli; real loyiha qarori funksional, texnik va site ma’lumotlari bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M07_002",
     "asset": "l14_m07_002.svg",
-    "title": "Plan diagnostikasi — ko‘rgazmali namuna",
+    "title": "Plan diagnostikasi — arxitekturaviy eskiz",
     "explanation": [
-      "Clinicda planda yo‘l konflikti, fasadda zid deraza, BIMda dublikat ID topildi.",
-      "Eshik yoyini va odam yo‘lini chizing → plan konflikti.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chap plan zoning/circulation muammosini, o‘ng plan esa root cause tuzatilgandan keyingi soddaroq harakatni ko‘rsatadi.",
+      "2. Uzun koridor symptom bo‘lishi mumkin; asl sabab noto‘g‘ri zoning yoki adjacency bo‘lishi mumkin.",
+      "3. Kosmetik dekor funksional muammoni hal qilmaydi.",
+      "Darsdagi bajarish: 5 symptom va ularning root cause’ini toping."
     ],
-    "exercise": "Plan yo‘lini foydalanuvchi ssenariyi bilan tekshiring.",
-    "solution": "Plan diagnostikasi real foydalanish konfliktini topadi.",
+    "exercise": "Plan simptomlarini sabab bilan bog‘lab, tuzatishdan keyin qayta tekshiring.",
+    "solution": "Plan diagnostikasi muammoning ko‘rinishi emas, ildiz sababini topishga qaratiladi.",
     "block": 5,
     "recipe": "entry",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy diagnostic eskiz. Before/after variantlar o‘quv misoli; real loyiha qarori funksional, texnik va site ma’lumotlari bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M07_003",
     "asset": "l14_m07_003.svg",
-    "title": "Fasad va massing diagnostikasi — ko‘rgazmali namuna",
+    "title": "Fasad va massing diagnostikasi — arxitekturaviy eskiz",
     "explanation": [
-      "Clinicda planda yo‘l konflikti, fasadda zid deraza, BIMda dublikat ID topildi.",
-      "Fasad derazasini plan ID bilan solishtiring → manba ziddiyati.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chap fasaddagi tartibsiz opening va massa, o‘ngdagi variantda hierarxiya va proporsiya bilan qayta tashkil qilingan.",
+      "2. Fasad muammosi ichki plan, massing yoki entry logic’dan kelishi mumkin.",
+      "3. Faqat material va rang almashtirish kompozitsion root cause’ni hal qilmaydi.",
+      "Darsdagi bajarish: Bir fasad uchun 5 root-cause tahlil yozing."
     ],
-    "exercise": "Fasad-model farqini aniq ochilish bilan qayd qiling.",
-    "solution": "Fasad diagnostikasi geometriya va vizual qarorni solishtiradi.",
+    "exercise": "Fasad simptomini massing, opening va plan sababi bilan bog‘lang.",
+    "solution": "Facade clinic kompozitsion muammoni uning ildiz sababi orqali tuzatadi.",
     "block": 5,
     "recipe": "local-facade",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy diagnostic eskiz. Before/after variantlar o‘quv misoli; real loyiha qarori funksional, texnik va site ma’lumotlari bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M07_004",
     "asset": "l14_m07_004.svg",
-    "title": "BIM va texnik diagnostika — ko‘rgazmali namuna",
+    "title": "BIM va texnik diagnostika — arxitekturaviy eskiz",
     "explanation": [
-      "Clinicda planda yo‘l konflikti, fasadda zid deraza, BIMda dublikat ID topildi.",
-      "Dublikat IDni haqiqiy element bilan aniqlang → data muammosi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. To‘rtta view kartasi plan, section, structure/MEP va documentationni cross-check qilishni ko‘rsatadi.",
+      "2. Grafik chiroyli bo‘lsa ham Stories, stair, roof, shaft, opening yoki MEP conflict bo‘lishi mumkin.",
+      "3. Plan, section, elevation va 3D bir-biriga qarshi ma’lumot bermasligi kerak.",
+      "Darsdagi bajarish: 15 bandli BIM/technical audit bajaring."
     ],
-    "exercise": "Takror ID va koordinatsiya konfliktini manba modelda toping.",
-    "solution": "BIM diagnostikasi jadvaldan manba ma’lumotigacha boradi.",
+    "exercise": "Bir muhim elementni bir nechta view va tizim bo‘yicha tekshiring.",
+    "solution": "Technical clinic model va hujjatlar orasidagi nomuvofiqliklarni cross-view audit bilan topadi.",
     "block": 5,
     "recipe": "info",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy diagnostic eskiz. Before/after variantlar o‘quv misoli; real loyiha qarori funksional, texnik va site ma’lumotlari bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M07_005",
     "asset": "l14_m07_005.svg",
-    "title": "Design Clinic final audit — ko‘rgazmali namuna",
+    "title": "Design Clinic final audit — arxitekturaviy eskiz",
     "explanation": [
-      "Clinicda planda yo‘l konflikti, fasadda zid deraza, BIMda dublikat ID topildi.",
-      "Har xatoga sabab, tuzatish va qayta test yozing → yopilgan clinic qaydi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Ketma-ket kartalar Observe → Symptom → Root Cause → Prioritize → Alternatives → Test → Fix bosqichlarini ifodalaydi.",
+      "2. Fix kiritilgach loyiha qayta audit qilinadi, chunki bir muammo yechimi boshqa konflikt yaratishi mumkin.",
+      "3. Yakuniy variant root cause’ni hal qilgani va loyiha sifatini yaxshilagani dalil bilan ko‘rsatiladi.",
+      "Darsdagi bajarish: Clinic workflowini bir real loyiha muammosida boshidan oxirigacha bajaring."
     ],
-    "exercise": "Uch tuzatishni qayta tekshirib, qolgan riskni yozing.",
-    "solution": "Klinik audit tuzatish bajarilganidan keyingi natijani tasdiqlaydi.",
+    "exercise": "Muammoni topishdan final qayta auditgacha to‘liq Design Clinic jarayonini bajaring.",
+    "solution": "Design Clinic final audit yechimning root cause’ni hal qilganini va yangi konflikt yaratmaganini tekshiradi.",
     "block": 4,
     "recipe": "audit",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy diagnostic eskiz. Before/after variantlar o‘quv misoli; real loyiha qarori funksional, texnik va site ma’lumotlari bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
