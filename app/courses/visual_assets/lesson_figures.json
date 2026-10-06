@@ -8725,86 +8725,91 @@
   {
     "code": "L14_M06_001",
     "asset": "l14_m06_001.svg",
-    "title": "Premium fasad tushunchasi — ko‘rgazmali namuna",
+    "title": "Premium fasad tushunchasi — arxitekturaviy eskiz",
     "explanation": [
-      "Premium fasadda asosiy hajm, bitta aksent material va nazoratli yorug‘lik sxemasi tanlanadi.",
-      "Sifat mezonini detal, nisbat va foydalanish bilan yozing → qimmat material yagona mezon emas.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Fasad eskizi premium taassurotni ko‘p dekor emas, tartibli massing, opening va material nisbatlari orqali ko‘rsatadi.",
+      "2. Har element umumiy kompozitsiyaga xizmat qiladi; qimmat materialning o‘zi sifat yaratmaydi.",
+      "3. Landscape va approach fasadni qanday qabul qilishga ta’sir qiladi.",
+      "Darsdagi bajarish: Premium fasad uchun 5 ta sifat mezonini yozing."
     ],
-    "exercise": "Premium sifatni detal, proporsiya va xizmat mezonlari bilan ifodalang.",
-    "solution": "Qimmat materialning o‘zi yuqori loyiha sifatini bermaydi.",
+    "exercise": "Premium fasad sifatini bezakdan alohida mezonlar bilan baholang.",
+    "solution": "Premium taassurot proporsiya, material sifati, detal va kompozitsion intizomdan keladi.",
     "block": 5,
     "recipe": "premium",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy fasad/massing eskizi. Material va proporsiyalar konseptual; real facade detail, envelope va konstruktiv yechimlar loyiha bo‘yicha alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M06_002",
     "asset": "l14_m06_002.svg",
-    "title": "Proporsiya va massing PRO — ko‘rgazmali namuna",
+    "title": "Proporsiya va massing PRO — arxitekturaviy eskiz",
     "explanation": [
-      "Premium fasadda asosiy hajm, bitta aksent material va nazoratli yorug‘lik sxemasi tanlanadi.",
-      "Massingni asosiy/yordamchi hajmga ajrating → iyerarxiya.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Ikki oq massa materialdan oldin hajm, solid/void va opening proporsiyasini solishtirishni ko‘rsatadi.",
+      "2. Yaxshi massing fasad materialisiz ham o‘qilishi kerak.",
+      "3. Qimmat material yomon proporsiya va keraksiz hajmni yashirmaydi.",
+      "Darsdagi bajarish: Fasadni materialsiz oq massa sifatida audit qiling."
     ],
-    "exercise": "Hajm va bo‘shliqlar hierarxiyasini soddalashtiring.",
-    "solution": "Massing asosiy g‘oyaning o‘qilishini ta’minlaydi.",
+    "exercise": "Massing va opening proporsiyasini materialdan oldin tekshiring.",
+    "solution": "Fasadning asosiy kompozitsion bazasi massing va proporsiyadan boshlanadi.",
     "block": 5,
     "recipe": "premium",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy fasad/massing eskizi. Material va proporsiyalar konseptual; real facade detail, envelope va konstruktiv yechimlar loyiha bo‘yicha alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M06_003",
     "asset": "l14_m06_003.svg",
-    "title": "Material va detal hierarxiyasi — ko‘rgazmali namuna",
+    "title": "Material va detal hierarxiyasi — arxitekturaviy eskiz",
     "explanation": [
-      "Premium fasadda asosiy hajm, bitta aksent material va nazoratli yorug‘lik sxemasi tanlanadi.",
-      "Material tutashuvi va detalni kesimda ko‘rsating → bajariladigan ifoda.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Primary, secondary va accent materiallar alohida rolda ko‘rsatilgan.",
+      "2. Qizil belgilar material tutashuvi va opening atrofidagi detail zonalarni ajratadi.",
+      "3. Fasad konsepsiyasi real quriladigan corner, reveal va junction detallariga aylanishi kerak.",
+      "Darsdagi bajarish: 5 ta kritik facade detail zonasini belgilang."
     ],
-    "exercise": "Asosiy va yordamchi materiallarni ajratib, tutashuvini chizing.",
-    "solution": "Material hierarxiyasi real detal bilan tekshiriladi.",
+    "exercise": "Materiallarni hierarxiya bo‘yicha ajratib, kritik tutashuvlarni toping.",
+    "solution": "Material sifati kompozitsiya va detal tutashuvlari bilan birga ishlaydi.",
     "block": 5,
     "recipe": "premium",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy fasad/massing eskizi. Material va proporsiyalar konseptual; real facade detail, envelope va konstruktiv yechimlar loyiha bo‘yicha alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M06_004",
     "asset": "l14_m06_004.svg",
-    "title": "Yorug'lik, soya va landscape — ko‘rgazmali namuna",
+    "title": "Yorug‘lik, soya va landscape — arxitekturaviy eskiz",
     "explanation": [
-      "Premium fasadda asosiy hajm, bitta aksent material va nazoratli yorug‘lik sxemasi tanlanadi.",
-      "Yorug‘lik, soya va landshaftning kirishga ta’sirini chizing → makon sifati.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Quyosh va diagonal nurlar recess, canopy va volume shift orqali soya fasad xarakterini o‘zgartirishini ko‘rsatadi.",
+      "2. Daraxt va ground line fasadning landscape bilan birga qabul qilinishini eslatadi.",
+      "3. Kuchli tungi lighting yomon kunduzgi kompozitsiyani professional yechimga aylantirmaydi.",
+      "Darsdagi bajarish: Morning / noon / evening facade perceptionni tahlil qiling."
     ],
-    "exercise": "Yorug‘lik, soya va landshaftning fasadga ta’sirini solishtiring.",
-    "solution": "Fasad sifati kunduzgi sharoit va atrof makon bilan bog‘liq.",
+    "exercise": "Fasadni kunduzgi yorug‘lik, soya va landscape bilan birga baholang.",
+    "solution": "Fasad material bilan birga yorug‘lik va tashqi makon ta’sirida o‘qiladi.",
     "block": 5,
     "recipe": "premium",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy fasad/massing eskizi. Material va proporsiyalar konseptual; real facade detail, envelope va konstruktiv yechimlar loyiha bo‘yicha alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M06_005",
     "asset": "l14_m06_005.svg",
-    "title": "Premium fasad professional audit — ko‘rgazmali namuna",
+    "title": "Premium fasad professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Premium fasadda asosiy hajm, bitta aksent material va nazoratli yorug‘lik sxemasi tanlanadi.",
-      "Renderni plan, detal va xizmat sharti bilan tekshiring → ko‘rinishning dalili.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi fasad massing, opening, material va landscape savollarini, o‘ngdagi checklist esa audit ketma-ketligini jamlaydi.",
+      "2. Massing → proportion → solid/void → hierarchy → material → detail → shadow → landscape → constructability zanjiri tekshiriladi.",
+      "3. Barcha fasadlar bir xil dizayn tilida va qurilish mantig‘ida ishlashi kerak.",
+      "Darsdagi bajarish: Premium facade audit checklistni to‘liq bajaring."
     ],
-    "exercise": "Ko‘rinish, detal, xizmat va funksional moslikni audit qiling.",
-    "solution": "Premium audit bezak sonini emas, izchil va ishlaydigan qarorni baholaydi.",
+    "exercise": "Fasadni kompozitsiya, material, detail va constructability bo‘yicha kompleks tekshiring.",
+    "solution": "Professional audit premium sifatni dekor emas, yaxlit arxitektura tizimi sifatida tekshiradi.",
     "block": 4,
     "recipe": "premium",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy fasad/massing eskizi. Material va proporsiyalar konseptual; real facade detail, envelope va konstruktiv yechimlar loyiha bo‘yicha alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
