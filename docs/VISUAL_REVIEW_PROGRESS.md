@@ -1,6 +1,6 @@
 # Visual review progress
 
-280 of 680 lessons have completed the current topic-specific visual review: 214 AI material renders and 66 lessons using documented Graphisoft screenshots. 400 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+285 of 680 lessons have completed the current topic-specific visual review: 218 AI material-render lessons and 67 lessons using documented Graphisoft screenshots. 395 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -33,3 +33,5 @@ L06_M03: Building Material versus Surface, Cut Fill/pens, intersection priority 
 L06_M04: Composite skins versus separators, material selection, Core/Finish/Other, thickness totals and composite reference lines reviewed. Four-layer exploded material sample illustrates the exercise without claiming a complete wall assembly.
 
 L06_M05: Complex Profile concept, Profile Editor workflow, Use with availability, profile origin, Fill/Building Material logic and Plan/Section/3D audit reviewed against official Archicad 28 Help. Generic SVG supplements were removed for these five lessons; exact exercise values remain in native lesson text.
+
+L06_M06: Roof Settings, Single/Multi-plane selection, pitch units, overhang distinction and multi-view Roof audit reviewed. Four existing high-quality realistic roof teaching renders were remapped with lesson-specific explanations; generic repeated SVG roof diagrams were removed.

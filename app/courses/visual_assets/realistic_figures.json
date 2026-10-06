@@ -3636,5 +3636,73 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L06_M06_001",
+    "asset": "realistic-l00_m04_005.jpg",
+    "title": "Roof hajmini real bino qismi sifatida o‘qing",
+    "explanation": [
+      "1. Qiyalik faqat chiziq emas. Sopol qoplama yuqori ridge tomondan eave tomonga tushadi; tom ostidagi yog‘och hajm va devor tayanchi birga ko‘rinadi.",
+      "2. Tom bino bilan bog‘langan. Eave devordan tashqariga chiqadi, tayanch esa devor ustiga keladi. Archicaddagi Roof sathi va pitchi fasad hamda kesimdagi shu fazoviy natijani yaratadi.",
+      "3. Suv va geometriyani ajrating. Ko‘k strelkalar suv yo‘lini ko‘rsatadi, ammo modeldagi pitch qiymatini rasmga qarab o‘lchamang; uni Roof Settings va Sectiondan oling.",
+      "Darsdagi bajarish: Roofni plan konturi + sath + pitch + 3D hajm sifatida tekshiring."
+    ],
+    "exercise": "Tom konturi, pivot va balandlikka tegishli parametrlarni qayd qiling.",
+    "solution": "Roof Tool natijasi plandagi kontur bilan vertikal qiyalikning birligidir.",
+    "block": 7,
+    "boundary": "Mavzuni tushuntiruvchi realistik tasvir. Perspektivdan aniq pitch, overhang yoki konstruktiv o‘lcham olmang; sonlarni Archicad modeli va dars shartidan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L06_M06_003",
+    "asset": "realistic-l08_m05_003.jpg",
+    "title": "Pitch, ridge, eave va overhangni 3D hajmda ajrating",
+    "explanation": [
+      "1. Ridge eng yuqori tutashuv chizig‘i sifatida ko‘rinadi; eave esa qiyalikning pastki cheti. Pitch bu ikki sath orasidagi geometrik munosabatni o‘zgartiradi.",
+      "2. Devor tashqarisida qolgan tom cheti overhang natijasini ko‘rsatadi. Overhangni kattalashtirish pitchni avtomatik o‘zgartirmaydi.",
+      "3. Pastdagi fasad namunasi tomning tashqi proporsiyasini ko‘rsatadi. Archicadda sonli pitch va eave chiqishini modeldan tekshiring; render faqat fazoviy farqni tushuntiradi.",
+      "Darsdagi bajarish: Pitchni bir marta, overhangni alohida bir marta o‘zgartirib natijalarni solishtiring."
+    ],
+    "exercise": "Pitch va overhangni bittadan o‘zgartirib, kesimdagi natijani kuzating.",
+    "solution": "Pitch ridge balandligiga, overhang esa tom cheti joyiga boshqa-boshqa ta’sir qiladi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi realistik tasvir. Perspektivdan aniq pitch, overhang yoki konstruktiv o‘lcham olmang; sonlarni Archicad modeli va dars shartidan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L06_M06_004",
+    "asset": "realistic-l08_m05_005.jpg",
+    "title": "Murakkab tomni bir nechta ko‘rinishda tekshiring",
+    "explanation": [
+      "1. Yuqoridan ko‘rinishda bir nechta roof plane, ridge/hip chiziqlari va ochilishlar ko‘rinadi. Murakkab geometriyada qaysi plane qaysi plane bilan uchrashishini ajrating.",
+      "2. Fasad ko‘rinishi tomning bino hajmiga nisbatan balandligini ko‘rsatadi. Plan to‘g‘ri ko‘ringani bilan fasad proporsiyasi noto‘g‘ri bo‘lishi mumkin.",
+      "3. Ochiq kesma tasvir tom ichidagi fazoni ko‘rsatadi. Bu konstruktiv detal emas; Archicadda real junctionni Plan + 3D + Sectionda tekshirish kerak.",
+      "Darsdagi bajarish: Ikkilamchi hajm tomi asosiy tomga qayerda tutashishini uch ko‘rinishda bir xil nuqtadan tekshiring."
+    ],
+    "exercise": "Tom-tom va tom-devor tutashuvini plan hamda kesimda tekshiring.",
+    "solution": "Murakkab Roof tutashuvi faqat tashqi render bilan emas, model kesimi bilan tasdiqlanadi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi realistik tasvir. Perspektivdan aniq pitch, overhang yoki konstruktiv o‘lcham olmang; sonlarni Archicad modeli va dars shartidan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L06_M06_005",
+    "asset": "realistic-l08_m05_001.jpg",
+    "title": "Roof auditida geometriya bilan real vazifani bog‘lang",
+    "explanation": [
+      "1. Tom qiyaligi, eave va tayanchni bir kadrda ajrating. Modelda Roof devordan uzilib yoki ortiqcha kirib ketmaganini Sectionda tekshiring.",
+      "2. Suv qiyalik bo‘ylab eave tomon yuradi. Bu rasm drenaj detali tanlash uchun emas, noto‘g‘ri slope yoki kontur real foydalanishga ta’sir qilishini eslatish uchun.",
+      "3. Auditda Roofning konturi, pitchi, overhangi, ridge/valley va wall–roof aloqasini alohida bandlar bilan tekshiring. Har bandning dalili boshqa ko‘rinishda bo‘lishi mumkin.",
+      "Darsdagi bajarish: Plan, 3D, Section va Elevationdan bittadan dalil yig‘ib Roof audit jadvalini to‘ldiring."
+    ],
+    "exercise": "Kontur, sath, nishab, chiqinti va tutashuv ro‘yxatini audit qiling.",
+    "solution": "Professional Roof auditi model geometriyasi va bino bilan aloqani birga tekshiradi.",
+    "block": 11,
+    "boundary": "Mavzuni tushuntiruvchi realistik tasvir. Perspektivdan aniq pitch, overhang yoki konstruktiv o‘lcham olmang; sonlarni Archicad modeli va dars shartidan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]

@@ -254,11 +254,11 @@ L06_M05_002,Profile Manager bilan ishlash,reviewed_documented_screenshots,
 L06_M05_003,"Wall, Beam va Column profillari",reviewed_documented_screenshots,
 L06_M05_004,Material va geometriya mantig'i,reviewed_documented_screenshots,
 L06_M05_005,Complex Profile professional audit,reviewed_documented_screenshots,
-L06_M06_001,Roof Tool asoslari,pending_topic_review,
-L06_M06_002,Single-plane va Multi-plane Roof,pending_topic_review,
-L06_M06_003,"Pitch, overhang va tom konturi",pending_topic_review,
-L06_M06_004,Murakkab tom tutashuvlari,pending_topic_review,
-L06_M06_005,Roof professional audit,pending_topic_review,
+L06_M06_001,Roof Tool asoslari,reviewed_material_render,realistic-l00_m04_005.jpg
+L06_M06_002,Single-plane va Multi-plane Roof,reviewed_documented_screenshots,
+L06_M06_003,"Pitch, overhang va tom konturi",reviewed_material_render,realistic-l08_m05_003.jpg
+L06_M06_004,Murakkab tom tutashuvlari,reviewed_material_render,realistic-l08_m05_005.jpg
+L06_M06_005,Roof professional audit,reviewed_material_render,realistic-l08_m05_001.jpg
 L06_M07_001,Stair Tool va zinapoya geometriyasi,pending_topic_review,
 L06_M07_002,"Tread, riser, flight va landing",pending_topic_review,
 L06_M07_003,Qavatlararo bog'lanish,pending_topic_review,

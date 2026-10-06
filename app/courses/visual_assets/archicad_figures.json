@@ -1291,86 +1291,86 @@
   {
     "code": "L06_M06_001",
     "asset": "ac28-roof.png",
-    "title": "Roof: sath va geometriya paneli",
+    "title": "Roof Settings: tayanch sathi, tuzilma va qiyalik",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-4.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/RoofGeoPanel.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Roof: sath va geometriya paneli. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Roof Toolda tayanch/pivot sathi va qiyalikni belgilang → geometriyaning asosi."
+      "Geometry and Positioning panelida Roofning Home Storysi, Project Zero’ga nisbatan sathi, Basic/Composite tuzilma tanlovi va pitch maydoni bir joyda ko‘rinadi. Tom konturi planda chizilsa ham uning vertikal holati shu parametrlar bilan boshqariladi.",
+      "Pastdagi ikki geometriya piktogrammasi Single-plane va Multi-plane usullarini ajratadi. Tomni faqat yuqoridan chizilgan poligon deb emas, qiyalik va sathga ega 3D element deb o‘qing.",
+      "Skrinshotdagi 45° va 3100 qiymatlarini ko‘chirmang. O‘z mashqingizda tayanch/pivot sathi, qiyalik va 3D natijani Section hamda Elevation bilan tekshiring."
     ],
     "exercise": "Tom konturi, pivot va balandlikka tegishli parametrlarni qayd qiling.",
     "solution": "Tom modelining plan konturi bilan vertikal geometriyasi alohida tekshiriladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT’dagi haqiqiy Roof sozlamasi. Skrinshotdagi 3100, 45° va boshqa qiymatlar qo‘llanma namunasi; dars mashqining majburiy qiymati emas.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M06_002",
     "asset": "ac28-roof.png",
-    "title": "Roof: sath va geometriya paneli",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-4.htm",
+    "title": "Single-plane va Multi-plane: geometriya usulini tanlash",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-59.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/RoofGeoPanel.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Roof: sath va geometriya paneli. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Bir tekislikni chizing, keyin ko‘p tekislikli variant bilan solishtiring → boshqaruv farqi."
+      "Paneldagi ikki roof-geometriya tugmasi bir tekislikli va ko‘p tekislikli usulni ajratadi. Single-plane alohida tom tekisligini mustaqil boshqarish uchun, Multi-plane esa bog‘langan bir nechta tekislikni bitta Roof elementi sifatida boshqarish uchun ishlatiladi.",
+      "Multi-plane tanlanganida bir tekislik tahriri qo‘shni tekisliklar geometriyasiga ham ta’sir qilishi mumkin. Shu sabab “ko‘p tekislik” bir-biridan uzilgan alohida tomlar degani emas.",
+      "Bir xil uy konturini ikkala usulda sinab, qaysi holatda ridge, eave va ikkilamchi hajmni boshqarish tushunarliroq bo‘lishini 3Dda solishtiring."
     ],
     "exercise": "Single-plane va Multi-plane variantlarni bir xil kontur uchun solishtiring.",
     "solution": "Tom turi geometrik vazifaga mos tanlanadi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT’dagi haqiqiy Roof sozlamasi. Skrinshotdagi 3100, 45° va boshqa qiymatlar qo‘llanma namunasi; dars mashqining majburiy qiymati emas.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M06_003",
     "asset": "ac28-roof-pitch.png",
-    "title": "Roof: qiyalik qiymatini tanlash",
+    "title": "Pitch: gradus yoki foiz birligini ajrating",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-4.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/RoofPitch001.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Roof: qiyalik qiymatini tanlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: 2×tan(30°) hisoblang → ≈1.155 m ko‘tarilish, ridge sathi tayanchdan shu farqda."
+      "Pitch maydonining o‘ngidagi tanlovda gradus belgisi va foiz belgisi ko‘rinadi. Birlikni tekshirmasdan faqat sonni kiritish tom qiyaligini noto‘g‘ri talqin qilishga olib kelishi mumkin.",
+      "Pitch o‘zgarsa roof plane aylanishi, ridge balandligi va fasaddagi tom hajmi o‘zgaradi. Overhang esa boshqa parametr: u tom chetining pivot/konturga nisbatan chiqishini boshqaradi.",
+      "Mashqda pitch va overhangni bittadan o‘zgartiring; qaysi o‘zgarish qiyalikni, qaysi biri eave joyini siljitganini Section va Elevationda alohida qayd qiling."
     ],
     "exercise": "Pitch va overhangni bittadan o‘zgartirib, kesimdagi natijani kuzating.",
     "solution": "Nishab bilan tom chiqintisini o‘zgartirish turli geometriya natijasini beradi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT’dagi haqiqiy Roof sozlamasi. Skrinshotdagi 3100, 45° va boshqa qiymatlar qo‘llanma namunasi; dars mashqining majburiy qiymati emas.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M06_004",
     "asset": "ac28-roof.png",
-    "title": "Roof: sath va geometriya paneli",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-4.htm",
+    "title": "Murakkab Roof: umumiy sozlama — yakuniy tutashuv emas",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-74.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/RoofGeoPanel.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Roof: sath va geometriya paneli. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Burchak va vodiy tutashuvlarini 3D/kesimda tekshiring → bo‘shliq va suv muammosi ko‘rinadi."
+      "Bu panel tomning boshlang‘ich sath va pitch sozlamasini ko‘rsatadi, lekin ridge, valley yoki ikki hajm tutashuvining tayyor natijasini ko‘rsatmaydi. Murakkab tomni faqat shu oynaga qarab tasdiqlamang.",
+      "Multi-plane Roofda pivot line, ridge va contour tahriri qo‘shni plane’larni qayta hisoblatishi mumkin. Alohida plane uchun pitch yoki eaves overhangni maxsus sozlash mumkin; natijani 3Dda tekshirish shart.",
+      "Ikki tom bir-birini kesib o‘tgan, bo‘shliq qolgan yoki pastroq hajm devoriga kirib ketgan joylarni Plan bilan birga Section va 3Dda toping."
     ],
     "exercise": "Tom-tom va tom-devor tutashuvini plan hamda kesimda tekshiring.",
     "solution": "Chiroyli 3D ko‘rinish tugundagi uzilish yoki kesishuvni yashirishi mumkin.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT’dagi haqiqiy Roof sozlamasi. Skrinshotdagi 3100, 45° va boshqa qiymatlar qo‘llanma namunasi; dars mashqining majburiy qiymati emas.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M06_005",
-    "asset": "ac28-roof.png",
-    "title": "Roof: sath va geometriya paneli",
+    "asset": "ac28-roof-pitch.png",
+    "title": "Roof auditi: sath, pitch va geometriya usulini qayta tekshirish",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-4.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/RoofGeoPanel.png",
-    "block": 0,
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/RoofPitch001.png",
+    "block": 1,
     "explanation": [
-      "Roof: sath va geometriya paneli. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Kontur, overhang, ridge va suv yo‘lini bir jadvalga yozing → tekshiriladigan tom."
+      "Auditda Home Story va Project Zero sathi, Basic/Composite tuzilma, Single/Multi-plane tanlovi va pitch birligini birinchi bo‘lib qayd qiling. Bitta noto‘g‘ri boshlang‘ich parametr keyingi ridge va eave holatini ham o‘zgartiradi.",
+      "Keyin kontur va overhangni planda, ridge/valleyni 3Dda, wall–roof vertikal aloqasini Sectionda, umumiy proporsiyani Elevationda tekshiring. Bitta ko‘rinish bilan audit tugamaydi.",
+      "Audit yozuvida har bir xato uchun dalil ko‘rinishini va tuzatilgan parametrni ko‘rsating; skrinshotdagi qo‘llanma qiymatlarini loyiha me’yori sifatida ishlatmang."
     ],
     "exercise": "Kontur, sath, nishab, chiqinti va tutashuv ro‘yxatini audit qiling.",
     "solution": "Roof auditida har parametrning modeldagi dalili ko‘rsatiladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT’dagi haqiqiy Roof sozlamasi. Skrinshotdagi 3100, 45° va boshqa qiymatlar qo‘llanma namunasi; dars mashqining majburiy qiymati emas.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
