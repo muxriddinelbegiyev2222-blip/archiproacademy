@@ -4412,87 +4412,92 @@
   {
     "code": "L09_M02_001",
     "asset": "l09_m02_001.svg",
-    "title": "Turar joy obyektini normativ nuqtai nazardan o'qish — ko‘rgazmali namuna",
+    "title": "Turar joy obyektini normativ nuqtai nazardan o‘qish — arxitekturaviy eskiz",
     "explanation": [
-      "Uyda yashash, yordamchi va nam xonalar bor; xonalar vazifasi loyiha talabi va hujjat doirasi bilan bog‘lanadi.",
-      "Obyekt va foydalanishni yozing → tegishli hujjatni tanlash asosi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Plan turar joyni faqat xona maydoni emas, o‘zaro bog‘langan funksiyalar tizimi sifatida ko‘rsatadi.",
+      "2. O‘ngdagi checklist funksiya, zonalash, circulation, tabiiy sharoit, sanitar zonalar va xavfsizlikni birga tekshirish kerakligini eslatadi.",
+      "3. Aniq minimal maydon yoki o‘lcham eskizdan olinmaydi; amaldagi normativ manba alohida tekshiriladi.",
+      "Darsdagi bajarish: Bir uy planiga kamida 10 ta tekshiruv savoli tuzing."
     ],
     "exercise": "Obyekt turi va foydalanish dasturini aniqlang.",
     "solution": "Turar joy talablari obyektning haqiqiy turiga mos tanlanadi.",
     "block": 6,
     "recipe": "norm",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Normativ tahlilni tushuntiruvchi yengil arxitekturaviy eskiz. Rang va geometriya o‘quv misoli; aniq normativ qiymat va minimal o‘lchamlar rasmiy hujjatdan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M02_002",
     "asset": "l09_m02_002.svg",
-    "title": "Xona funksiyasi va o'zaro aloqalar — ko‘rgazmali namuna",
+    "title": "Xona funksiyasi va o‘zaro aloqalar — arxitekturaviy eskiz",
     "explanation": [
-      "Uyda yashash, yordamchi va nam xonalar bor; xonalar vazifasi loyiha talabi va hujjat doirasi bilan bog‘lanadi.",
-      "Xona funksiyasi va qo‘shnichiligini jadvalga joylang → talab savollari.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Rangli plan public, private va service zonalarni ajratadi; strelkalar ular orasidagi kundalik harakatni ko‘rsatadi.",
+      "2. Xonaning nomi emas, real foydalanish vazifasi va boshqa zonalar bilan aloqasi tahlil qilinadi.",
+      "3. Mehmon, oila va xizmat yo‘llari bir-biriga keraksiz konflikt yaratmasligi kerak.",
+      "Darsdagi bajarish: Uch funksional zonani ajratib, ular orasidagi konfliktlarni belgilang."
     ],
     "exercise": "Har xonaning vazifasi va qo‘shni aloqasini jadvalga kiriting.",
     "solution": "Xona nomi funksional va normativ tekshiruvga kirish ma’lumotidir.",
     "block": 6,
     "recipe": "adjacency",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Normativ tahlilni tushuntiruvchi yengil arxitekturaviy eskiz. Rang va geometriya o‘quv misoli; aniq normativ qiymat va minimal o‘lchamlar rasmiy hujjatdan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M02_003",
     "asset": "l09_m02_003.svg",
-    "title": "Sanitar va yordamchi zonalar — ko‘rgazmali namuna",
+    "title": "Sanitar va yordamchi zonalar — arxitekturaviy eskiz",
     "explanation": [
-      "Uyda yashash, yordamchi va nam xonalar bor; xonalar vazifasi loyiha talabi va hujjat doirasi bilan bog‘lanadi.",
-      "Sanuzel, oshxona va texnik xizmat aloqasini ajrating → muhandis/normativ tekshiruv.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi oshxona/sanuzel/texnik zonalar, o‘ngdagi vertikal tarmoqlar arxitektura bilan MEP koordinatsiyasini ifodalaydi.",
+      "2. Sanitar jihozning plan ichiga sig‘ishi yetarli emas; suv, kanalizatsiya, ventilyatsiya, konstruksiya va namlik himoyasi ham tekshiriladi.",
+      "3. Ikki qavatli uyda nam zonalarni vertikal mantiqda koordinatsiya qilish muhandislik yechimini soddalashtirishi mumkin.",
+      "Darsdagi bajarish: Sanuzel va oshxona uchun arxitektura + MEP tekshiruv savollarini yozing."
     ],
     "exercise": "Sanitar va yordamchi zonalarga tegishli tekshiruvlarni ajrating.",
     "solution": "Har zona uchun tegishli talab va muhandislik aloqasi alohida qayd etiladi.",
     "block": 6,
     "recipe": "wet",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Normativ tahlilni tushuntiruvchi yengil arxitekturaviy eskiz. Rang va geometriya o‘quv misoli; aniq normativ qiymat va minimal o‘lchamlar rasmiy hujjatdan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M02_004",
     "asset": "l09_m02_004.svg",
-    "title": "Qavatlar va vertikal aloqa — ko‘rgazmali namuna",
+    "title": "Qavatlar va vertikal aloqa — arxitekturaviy eskiz",
     "explanation": [
-      "Uyda yashash, yordamchi va nam xonalar bor; xonalar vazifasi loyiha talabi va hujjat doirasi bilan bog‘lanadi.",
-      "Qavat va vertikal yo‘lni plan/kesimda ko‘rsating → evakuatsiya va foydalanish savoli.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Ikki qavat plani va ularni bog‘lagan zinapoya qavatlararo funksional aloqani ko‘rsatadi.",
+      "2. Zinapoya circulation, opening, qavat balandligi, konstruksiya va xavfsizlik bilan birga tekshiriladi.",
+      "3. Yuqori va pastki qavatlarni alohida chiroyli qilish yetarli emas; ular bitta uy sifatida izchil ishlashi kerak.",
+      "Darsdagi bajarish: Qavatlararo aloqa uchun 8 ta tekshiruv savolini yozing."
     ],
     "exercise": "Qavatlar va vertikal yo‘lni band-dalil jadvaliga kiriting.",
     "solution": "Qavatlararo aloqa plan va kesimda tekshiriladi.",
     "block": 6,
     "recipe": "stories",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Normativ tahlilni tushuntiruvchi yengil arxitekturaviy eskiz. Rang va geometriya o‘quv misoli; aniq normativ qiymat va minimal o‘lchamlar rasmiy hujjatdan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M02_005",
     "asset": "l09_m02_005.svg",
-    "title": "Turar joy professional audit — ko‘rgazmali namuna",
+    "title": "Turar joy professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Uyda yashash, yordamchi va nam xonalar bor; xonalar vazifasi loyiha talabi va hujjat doirasi bilan bog‘lanadi.",
-      "Har masalaga manba, band, dalil va status yozing → tekshiruv jadvali.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi plan va o‘ngdagi checklist turar joyni kompleks tizim sifatida audit qilish g‘oyasini ko‘rsatadi.",
+      "2. Obyekt turi, xonalar, zonalash, circulation, tabiiy sharoit, sanitar zonalar, vertikal aloqa va xavfsizlik birga tekshiriladi.",
+      "3. Bitta xona talabga mos bo‘lishi butun uy mos degani emas; loyiha o‘zgarsa tegishli bandlar qayta tekshiriladi.",
+      "Darsdagi bajarish: Har tekshiruv uchun manba, loyiha holati, status, izoh va yechim yozing."
     ],
     "exercise": "Talab, band, chizma va tasdiq holatini audit qiling.",
     "solution": "Turar joy auditi taxminiy moslikdan tekshirilgan moslikni ajratadi.",
     "block": 6,
     "recipe": "norm",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Normativ tahlilni tushuntiruvchi yengil arxitekturaviy eskiz. Rang va geometriya o‘quv misoli; aniq normativ qiymat va minimal o‘lchamlar rasmiy hujjatdan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M03_001",
