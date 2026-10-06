@@ -4862,87 +4862,92 @@
   {
     "code": "L09_M07_001",
     "asset": "l09_m07_001.svg",
-    "title": "Accessibility tushunchasi — ko‘rgazmali namuna",
+    "title": "Accessibility tushunchasi — arxitekturaviy eskiz",
     "explanation": [
-      "Kirishdan sanuzelgacha aravachada yuruvchi odam ssenariysi: sath farqi, eshik va jihozga yaqinlashish bor.",
-      "Foydalanuvchi harakatini boshlanishdan xizmatgacha yozing → uzluksiz foydalanish zanjiri.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Eskiz uchastka va bino ichidagi uzluksiz harakat yo‘lini ko‘rsatadi; accessibility faqat bitta rampa yoki bitta eshik bilan cheklanmaydi.",
+      "2. Foydalanuvchi uchastkadan asosiy funksional zonagacha mustaqil va xavfsiz harakat qila olishi kerak.",
+      "3. Yo‘lning bitta joyidagi sath, eshik yoki to‘siq butun foydalanish zanjirini uzishi mumkin.",
+      "Darsdagi bajarish: Uchastka kirishidan asosiy xona va xizmat zonasigacha bo‘lgan yo‘lni belgilang."
     ],
-    "exercise": "Turli foydalanuvchilar ehtiyojini ssenariyda yozing.",
-    "solution": "Accessibility mustaqil va qulay foydalanish zanjirini ko‘radi.",
+    "exercise": "Accessibility’ni uzluksiz foydalanish zanjiri sifatida ko‘ring.",
+    "solution": "Accessibility tashqi kirishdan ichki funksiyalargacha bo‘lgan uzluksiz va foydalaniladigan muhitni talab qiladi.",
     "block": 5,
     "recipe": "accessible",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy accessibility eskizi. Yo‘l va zonalar konseptual; aniq o‘lcham, nishab va boshqa talablar amaldagi tegishli normativ manbadan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M07_002",
     "asset": "l09_m07_002.svg",
-    "title": "Kirish va harakat zanjiri — ko‘rgazmali namuna",
+    "title": "Kirish va harakat zanjiri — arxitekturaviy eskiz",
     "explanation": [
-      "Kirishdan sanuzelgacha aravachada yuruvchi odam ssenariysi: sath farqi, eshik va jihozga yaqinlashish bor.",
-      "Yo‘ldagi sath farqi va to‘siqlarni belgilang → mos yechim savoli.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Ketma-ket besh nuqta ko‘cha/uchastka, bino kirishi, hall, circulation va asosiy funksiya kabi bosqichlarni ifodalaydi.",
+      "2. Har transition, eshik, burilish va sath farqi alohida nazorat nuqtasi bo‘lishi mumkin.",
+      "3. Bitta nuqta mos bo‘lsa ham keyingi bosqichdagi to‘siq butun chain’ni buzadi.",
+      "Darsdagi bajarish: Accessibility chain uchun kamida 8 ta nazorat nuqtasini yozing."
     ],
-    "exercise": "Uchastkadan kerakli xonagacha uzluksiz harakat yo‘lini chizing.",
-    "solution": "Bitta qulay kirish butun bino foydalanishi qulayligini kafolatlamaydi.",
+    "exercise": "Kirishdan asosiy funksiyagacha bo‘lgan barcha transitionlarni tekshiring.",
+    "solution": "Accessibility chain barcha ketma-ket nazorat nuqtalarining uzluksiz ishlashiga bog‘liq.",
     "block": 5,
     "recipe": "accessible",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy accessibility eskizi. Yo‘l va zonalar konseptual; aniq o‘lcham, nishab va boshqa talablar amaldagi tegishli normativ manbadan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M07_003",
     "asset": "l09_m07_003.svg",
-    "title": "Eshik, sath va vertikal aloqa — ko‘rgazmali namuna",
+    "title": "Eshik, sath va vertikal aloqa — arxitekturaviy eskiz",
     "explanation": [
-      "Kirishdan sanuzelgacha aravachada yuruvchi odam ssenariysi: sath farqi, eshik va jihozga yaqinlashish bor.",
-      "Eshik, burilish va vertikal aloqani haqiqiy yordamchi vosita bilan chizing → foydalanish dalili.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Uch panel eshik, sath farqi/rampa va vertikal aloqa elementlarini alohida ko‘rsatadi.",
+      "2. Eshikning joylashuvi, ochilishi, threshold va yondashuv zonasi real foydalanish bilan birga tekshiriladi.",
+      "3. Sath farqi va qavatlararo aloqa foydalanuvchining mustaqil harakatini cheklamasligi kerak; aniq o‘lchamlar normativdan olinadi.",
+      "Darsdagi bajarish: Kirish eshigi, bitta ichki eshik va bitta sath farqi uchun foydalanish ssenariysi yozing."
     ],
-    "exercise": "Sath, eshik va vertikal aloqa to‘siqlarini qayd qiling.",
-    "solution": "Har to‘siq tegishli o‘lchov va talab bilan tekshiriladi.",
+    "exercise": "Eshik, sath farqi va vertikal aloqani accessibility zanjiri ichida tekshiring.",
+    "solution": "Foydalanish qulayligi elementning o‘zi bilan emas, unga yondashuv va keyingi harakat bilan birga baholanadi.",
     "block": 6,
     "recipe": "accessible",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy accessibility eskizi. Yo‘l va zonalar konseptual; aniq o‘lcham, nishab va boshqa talablar amaldagi tegishli normativ manbadan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M07_004",
     "asset": "l09_m07_004.svg",
-    "title": "Sanitar va foydalanish zonalari — ko‘rgazmali namuna",
+    "title": "Sanitar va foydalanish zonalari — arxitekturaviy eskiz",
     "explanation": [
-      "Kirishdan sanuzelgacha aravachada yuruvchi odam ssenariysi: sath farqi, eshik va jihozga yaqinlashish bor.",
-      "Sanuzelda jihozga yaqinlashish va foydalanish zonasini ko‘rsating → mustaqil xizmat savoli.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Plan ichidagi aylana manevr/yakqinlashuv zonasini, boshqa bloklar esa sanitar va asosiy foydalanish zonalarini ifodalaydi.",
+      "2. Jihozni plan ichiga sig‘dirishning o‘zi yetarli emas; unga yaqinlashish, burilish va foydalanish ketma-ketligi ham ko‘riladi.",
+      "3. Sanitar zona butun accessibility chain’ning bir qismi sifatida tekshiriladi.",
+      "Darsdagi bajarish: Sanitar xona uchun kamida 6 ta accessibility audit savoli yozing."
     ],
-    "exercise": "Sanitar xona foydalanish va manevr zonasini mebel bilan tekshiring.",
-    "solution": "Jihoz mavjudligi uning mustaqil foydalanishga mosligini tasdiqlamaydi.",
+    "exercise": "Sanitar va xizmat zonalarini real foydalanish ssenariysi bilan tekshiring.",
+    "solution": "Accessible sanitar zona jihoz, yondashuv, manevr va circulationning birgalikdagi ishlashiga bog‘liq.",
     "block": 5,
     "recipe": "accessible",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy accessibility eskizi. Yo‘l va zonalar konseptual; aniq o‘lcham, nishab va boshqa talablar amaldagi tegishli normativ manbadan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M07_005",
     "asset": "l09_m07_005.svg",
-    "title": "Accessibility professional audit — ko‘rgazmali namuna",
+    "title": "Accessibility professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Kirishdan sanuzelgacha aravachada yuruvchi odam ssenariysi: sath farqi, eshik va jihozga yaqinlashish bor.",
-      "Talab, jihoz, manba va mutaxassis tekshiruvini jadvalga yozing → izchil xulosa.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Olti blok tashqi kirish, eshik, circulation, foydalanish zonasi, audit qaydi va yakuniy statusni ifodalaydi.",
+      "2. Bitta accessible element butun bino mos degani emas; zanjir tashqi kirishdan sanitar va asosiy funksiyalargacha tekshiriladi.",
+      "3. Auditda aniq normativ manba, loyiha joyi va status qayd qilinadi.",
+      "Darsdagi bajarish: Uchastka → bino kirishi → sath/eshik → circulation → funksiya → sanitar zona → normativ audit zanjirini tekshiring."
     ],
-    "exercise": "Foydalanuvchi, yo‘l, band va dalil matritsasini topshiring.",
-    "solution": "Accessibility auditi uzluksiz foydalanish zanjiridagi bo‘shliqlarni aniqlaydi.",
+    "exercise": "Accessibility tizimini tashqi kirishdan asosiy funksiyalargacha kompleks audit qiling.",
+    "solution": "Professional accessibility auditi barcha ketma-ket foydalanish nuqtalarini yagona zanjirda tekshiradi.",
     "block": 5,
     "recipe": "accessible",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy accessibility eskizi. Yo‘l va zonalar konseptual; aniq o‘lcham, nishab va boshqa talablar amaldagi tegishli normativ manbadan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M08_001",
