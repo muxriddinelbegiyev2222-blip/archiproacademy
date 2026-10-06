@@ -2902,86 +2902,91 @@
   {
     "code": "L07_M02_001",
     "asset": "l07_m02_001.svg",
-    "title": "Graphic Overrides tushunchasi — ko‘rgazmali namuna",
+    "title": "Graphic Overrides tushunchasi — arxitekturaviy eskiz",
     "explanation": [
-      "Yangi devorlarni yashil, tekshirilmagan elementlarni boshqa rang bilan tahliliy ko‘rsatamiz.",
-      "Graphic Override geometriyani emas ko‘rinishni o‘zgartirishini ajrating → tahliliy grafik.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi oddiy plan modelning asosiy geometriyasini, o‘ngdagi rangli plan esa ayni modelga qo‘llangan grafik override natijasini ifodalaydi.",
+      "2. Graphic Override element geometriyasini o‘zgartirmaydi; u mezonga mos elementlarning ko‘rinishini vaqtincha boshqacha ko‘rsatadi.",
+      "3. Rang va chiziq o‘quv misoli. Haqiqiy loyiha uchun qaysi mezon va grafik usul foydali ekanini vazifaga qarab belgilang.",
+      "Darsdagi bajarish: Model bilan uning tahliliy grafik ko‘rinishini alohida tushuntiring."
     ],
-    "exercise": "Oddiy view bilan tahliliy viewni solishtiring.",
-    "solution": "Graphic Override modelning tahliliy ko‘rinishini tashkil qiladi.",
+    "exercise": "Oddiy ko‘rinish va override qo‘llangan ko‘rinishni solishtiring.",
+    "solution": "Graphic Override modelni emas, uning ko‘rinishini tahlil uchun o‘zgartiradi.",
     "block": 8,
     "recipe": "overrides",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ranglar tahlil mantiqini ko‘rsatadi; loyiha standarti yoki normativ rang kodi sifatida olinmaydi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M02_002",
     "asset": "l07_m02_002.svg",
-    "title": "Graphic Override Rules — ko‘rgazmali namuna",
+    "title": "Graphic Override Rules — arxitekturaviy eskiz",
     "explanation": [
-      "Yangi devorlarni yashil, tekshirilmagan elementlarni boshqa rang bilan tahliliy ko‘rsatamiz.",
-      "Rule uchun aniq element mezoni va grafik natija belgilang → maqsadli qoida.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi ketma-ket bloklar rule mantig‘ini ko‘rsatadi: avval mezon tanlanadi, keyin unga mos elementga grafik usul beriladi.",
+      "2. O‘ngdagi plan faqat tanlangan mezonga mos elementlar ajratilganini ko‘rsatadi. Boshqa elementlar o‘z holicha qolishi mumkin.",
+      "3. Rule juda keng yozilsa keraksiz elementlar ham bo‘yaladi; juda tor yozilsa kerakli elementlar qolib ketadi. Natijani modelda tekshiring.",
+      "Darsdagi bajarish: Bitta aniq mezon tuzing va qaysi elementlar ushlanayotganini tekshiring."
     ],
-    "exercise": "Tanlash mezoni va ko‘rinish natijasini alohida yozing.",
-    "solution": "Rule qaysi elementga qanday grafik o‘zgarish qo‘llanishini belgilaydi.",
+    "exercise": "Bir mezon va uning grafik natijasini yozing.",
+    "solution": "Rule mezon bilan grafik natijani bog‘laydi.",
     "block": 9,
     "recipe": "overrides",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ranglar tahlil mantiqini ko‘rsatadi; loyiha standarti yoki normativ rang kodi sifatida olinmaydi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M02_003",
     "asset": "l07_m02_003.svg",
-    "title": "Graphic Override Combination — ko‘rgazmali namuna",
+    "title": "Graphic Override Combination — arxitekturaviy eskiz",
     "explanation": [
-      "Yangi devorlarni yashil, tekshirilmagan elementlarni boshqa rang bilan tahliliy ko‘rsatamiz.",
-      "Qoidalarni combinationga yig‘ib tartibini tekshiring → bir elementga zid qoida ta’siri ko‘rinadi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi uch rule kartochkasi bir nechta tahliliy qoida bitta Combination ichida ketma-ket ishlashi mumkinligini ko‘rsatadi.",
+      "2. O‘ngdagi plan bir nechta grafik qatlam natijasi bir ko‘rinishda birlashgan holatni ifodalaydi.",
+      "3. Rules tartibi va ustuvorligi natijaga ta’sir qilishi mumkin. Bir xil element bir nechta mezonga tushsa, yakuniy ko‘rinishni tekshiring.",
+      "Darsdagi bajarish: Ikki yoki uch rule’ni bitta Combination ichida sinab, konfliktni kuzating."
     ],
-    "exercise": "Ikki qoidani combinationga yig‘ib, to‘qnashuvini tekshiring.",
-    "solution": "Bir nechta qoida ishlaganda yakuniy ko‘rinish tekshirilishi kerak.",
+    "exercise": "Bir nechta rule’dan Combination tuzing.",
+    "solution": "Combination bir nechta grafik tahlil qoidasini bitta ko‘rinishga birlashtiradi.",
     "block": 9,
     "recipe": "overrides",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ranglar tahlil mantiqini ko‘rsatadi; loyiha standarti yoki normativ rang kodi sifatida olinmaydi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M02_004",
     "asset": "l07_m02_004.svg",
-    "title": "Modelni tahliliy ko'rinishlarda ko'rsatish — ko‘rgazmali namuna",
+    "title": "Modelni tahliliy ko‘rinishlarda ko‘rsatish — arxitekturaviy eskiz",
     "explanation": [
-      "Yangi devorlarni yashil, tekshirilmagan elementlarni boshqa rang bilan tahliliy ko‘rsatamiz.",
-      "Planni oddiy va tahliliy ko‘rinishda solishtiring → faqat grafik o‘zgargan.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Uch plan ayni modelni turli maqsadda ko‘rish mumkinligini ko‘rsatadi: oddiy, muammo ajratilgan va boshqa tahliliy kombinatsiya.",
+      "2. Bir xil modeldan bir nechta tahliliy view olish xatoni tez ko‘rishga yordam beradi; model nusxalarini yaratish shart emas.",
+      "3. Har tahliliy ko‘rinishning maqsadi aniq bo‘lsin. Ko‘p rang ishlatishning o‘zi foydali analiz degani emas.",
+      "Darsdagi bajarish: Bitta model uchun ikki xil tahlil maqsadini ajrating va view natijasini solishtiring."
     ],
-    "exercise": "Tahliliy ko‘rinish orqali noto‘g‘ri belgilangan elementni toping.",
-    "solution": "Rang diagnostika vositasi; model ma’lumotining o‘rnini bosa olmaydi.",
+    "exercise": "Bir modelni ikki xil override kombinatsiyada ko‘rsating.",
+    "solution": "Tahliliy view bir xil modelni turli savollar bo‘yicha o‘qishga yordam beradi.",
     "block": 9,
     "recipe": "overrides",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ranglar tahlil mantiqini ko‘rsatadi; loyiha standarti yoki normativ rang kodi sifatida olinmaydi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M02_005",
     "asset": "l07_m02_005.svg",
-    "title": "Graphic Overrides professional audit — ko‘rgazmali namuna",
+    "title": "Graphic Overrides professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Yangi devorlarni yashil, tekshirilmagan elementlarni boshqa rang bilan tahliliy ko‘rsatamiz.",
-      "Legend va view sozlamasini yozing → foydalanuvchi rang ma’nosini tushunadi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi rule ro‘yxati, o‘ngdagi model natijasi bir-biriga bog‘langan bo‘lishi kerak. Rule nomi va mezoni ko‘rinayotgan natijani tushuntira olsin.",
+      "2. Auditda keraksiz dublikat rule, noto‘g‘ri mezon, kutilmagan ustuvorlik va noto‘g‘ri Combination tanlovi tekshiriladi.",
+      "3. Yakuniy view’ni oddiy model bilan solishtiring. Override muammoni ko‘rsatishi kerak, yangi chalkashlik yaratmasligi kerak.",
+      "Darsdagi bajarish: Rule → Combination → View zanjirini tekshirib, bir xatoni dalil bilan toping."
     ],
-    "exercise": "Qoidalar, kombinatsiya va topilgan xatoni audit qiling.",
-    "solution": "Override auditi kutilgan elementlar ajratilganini dalillaydi.",
+    "exercise": "Rule, Combination va natijaviy view’ni birga audit qiling.",
+    "solution": "Graphic Override auditi mezon bilan ko‘rinish natijasining mosligini tekshiradi.",
     "block": 11,
     "recipe": "overrides",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ranglar tahlil mantiqini ko‘rsatadi; loyiha standarti yoki normativ rang kodi sifatida olinmaydi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
