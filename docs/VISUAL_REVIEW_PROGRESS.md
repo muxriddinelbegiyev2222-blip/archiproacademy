@@ -1,6 +1,6 @@
 # Visual review progress
 
-400 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 100 lessons using topic-specific architectural sketches. 280 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+408 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 108 lessons using topic-specific architectural sketches. 272 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -83,3 +83,7 @@ L09_M05: Fire-safety systems thinking, people/routes/exits, construction/materia
 L09_M06: Evacuation concept, route continuity, door-corridor-stair sequence, obstacle/error scenarios and professional evacuation audit reviewed. Five generic figures were rebuilt as topic-specific architectural escape-route sketches; exact dimensional requirements remain normative-source dependent.
 
 L09_M07: Accessibility concept, entrance/movement chain, door-level-vertical circulation, sanitary/use zones and professional accessibility audit reviewed. Five generic figures were rebuilt as topic-specific architectural accessibility sketches; exact dimensional requirements remain normative-source dependent.
+
+L13_M07: Trade-off explanation, disagreement management and decision-defense audit completed with topic-specific architectural workflow sketches.
+
+L13_M08: First contact, brief/variants, client presentation, controlled revision/conflict and Level 13 full workflow audit completed with topic-specific architectural workflow sketches.
