@@ -5222,86 +5222,91 @@
   {
     "code": "L10_M03_001",
     "asset": "l10_m03_001.svg",
-    "title": "Bubble Diagram tushunchasi — ko‘rgazmali namuna",
+    "title": "Bubble Diagram tushunchasi — arxitekturaviy eskiz",
     "explanation": [
-      "Kirish K, mehmon M, oshxona O, tinch zona T va hovli H pufakchalar bilan ko‘rsatiladi.",
-      "Har xonani o‘lchamsiz pufakcha qilib chizing → avval aloqa.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Rangli doiralar xonalarni devorsiz funksional bloklar sifatida ko‘rsatadi; asosiy maqsad yaqinlik va aloqani tez sinashdir.",
+      "2. Bu bosqichda aniq devor va o‘lchamga erta o‘tish variant qidirishni cheklashi mumkin.",
+      "3. Bubble’lar xona nomi, funksiyasi va kerakli aloqani ifodalaydi; keyin ular eskiz planga aylanadi.",
+      "Darsdagi bajarish: Briefdagi barcha xonalarni alohida bubble sifatida joylashtiring."
     ],
-    "exercise": "Xonalarni kattalik bo‘yicha emas, aloqa bo‘yicha diagrammalang.",
-    "solution": "Bubble Diagram avval funksional aloqani sinaydi.",
+    "exercise": "Xonalarni devorsiz funksional bloklar sifatida tartiblang.",
+    "solution": "Bubble Diagram aniq geometriyadan oldin funksional struktura va yaqinliklarni tekshiradi.",
     "block": 5,
     "recipe": "adjacency",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy bubble-diagram eskizi. Doira o‘lchami va joylashuvi konseptual; aniq xona o‘lchamlari keyingi plan bosqichida belgilanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M03_002",
     "asset": "l10_m03_002.svg",
-    "title": "Zonalar va aloqalar — ko‘rgazmali namuna",
+    "title": "Zonalar va aloqalar — arxitekturaviy eskiz",
     "explanation": [
-      "Kirish K, mehmon M, oshxona O, tinch zona T va hovli H pufakchalar bilan ko‘rsatiladi.",
-      "K–M, O–dining, living–H uchun kerakli bog‘lanishni, M–T uchun ajratishni yozing → aniq munosabat.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Issiq ranglar public, ko‘k private, yashil service zonalarini ifodalaydi.",
+      "2. Chiziqlar Required / Preferred / Avoid kabi funksional aloqalarni tekshirishga yordam beradi.",
+      "3. Har xona barcha xonalar bilan bevosita bog‘lanishi shart emas; kerakli yaqinliklar ustuvor qilinadi.",
+      "Darsdagi bajarish: Xonalar uchun Required / Preferred / Avoid aloqalar jadvalini tuzing."
     ],
-    "exercise": "Public, private va service guruhlarni rang bilan ajrating.",
-    "solution": "Guruhlash vazifalarni chalkashtirmasdan solishtirishga yordam beradi.",
+    "exercise": "Public, private va service zonalar orasidagi kerakli aloqalarni aniqlang.",
+    "solution": "Zonalash va aloqa diagrammasi plan funksiyasining mantiqiy skeletini yaratadi.",
     "block": 5,
     "recipe": "adjacency",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy bubble-diagram eskizi. Doira o‘lchami va joylashuvi konseptual; aniq xona o‘lchamlari keyingi plan bosqichida belgilanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M03_003",
     "asset": "l10_m03_003.svg",
-    "title": "Kirish va circulation — ko‘rgazmali namuna",
+    "title": "Kirish va circulation — arxitekturaviy eskiz",
     "explanation": [
-      "Kirish K, mehmon M, oshxona O, tinch zona T va hovli H pufakchalar bilan ko‘rsatiladi.",
-      "Kirishdan M va Tga ikki yo‘l chizing → privacy.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Strelkalar mehmon, oila va service harakat yo‘llarini bubble’lar orasida ko‘rsatadi.",
+      "2. Kirishdan public, private va service zonalarga o‘tish tushunarli va qisqa bo‘lishi kerak.",
+      "3. Har aloqani uzun koridor bilan hal qilish foydali maydonni kamaytirishi mumkin.",
+      "Darsdagi bajarish: Mehmon, oila va service uchun uchta circulation yo‘lini chizing."
     ],
-    "exercise": "Mehmon va xizmat yo‘llarini alohida chizing.",
-    "solution": "Circulation turli foydalanuvchilar yo‘lining konfliktini ko‘rsatadi.",
+    "exercise": "Bubble diagram bosqichida asosiy harakat yo‘llarini tekshiring.",
+    "solution": "Circulation diagram foydalanuvchi yo‘llarini devor chizishdan oldin optimallashtiradi.",
     "block": 5,
     "recipe": "adjacency",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy bubble-diagram eskizi. Doira o‘lchami va joylashuvi konseptual; aniq xona o‘lchamlari keyingi plan bosqichida belgilanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M03_004",
     "asset": "l10_m03_004.svg",
-    "title": "Variantlar yaratish — ko‘rgazmali namuna",
+    "title": "Variantlar yaratish — arxitekturaviy eskiz",
     "explanation": [
-      "Kirish K, mehmon M, oshxona O, tinch zona T va hovli H pufakchalar bilan ko‘rsatiladi.",
-      "A variant umumiy yo‘lakli, B variant ajratilgan zonali bo‘lsin → haqiqiy alternativalar.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Uch alohida bubble sxema bir brief uchun turli funksional yechimlar bo‘lishi mumkinligini ko‘rsatadi.",
+      "2. Variantlar zonalash, kirish, privacy va circulation strategiyasida farqlanishi mumkin.",
+      "3. Birinchi g‘oyani avtomatik final deb olmang; mezonlar bilan solishtirish kuchliroq qaror beradi.",
+      "Darsdagi bajarish: Bir brief uchun A/B/C uchta bubble variant yarating."
     ],
-    "exercise": "Ikki variantning uchta asosiy farqini yozing.",
-    "solution": "Haqiqiy variant aloqa yoki foydalanish qarorini o‘zgartiradi.",
+    "exercise": "Bir brief uchun bir nechta funksional variant ishlab chiqing.",
+    "solution": "Variantlash qarorni tasodifdan chiqarib, mezonlar bilan solishtirishga imkon beradi.",
     "block": 5,
     "recipe": "adjacency",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy bubble-diagram eskizi. Doira o‘lchami va joylashuvi konseptual; aniq xona o‘lchamlari keyingi plan bosqichida belgilanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M03_005",
     "asset": "l10_m03_005.svg",
-    "title": "Bubble Diagram professional audit — ko‘rgazmali namuna",
+    "title": "Bubble Diagram professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Kirish K, mehmon M, oshxona O, tinch zona T va hovli H pufakchalar bilan ko‘rsatiladi.",
-      "Ikki variantni yo‘l, privacy va hovli aloqasi bilan solishtiring → dalilli tanlov.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Checklist va final bubble sxema briefdan tanlovgacha bo‘lgan funksional auditni ko‘rsatadi.",
+      "2. Barcha xonalar, zonalash, yaqinliklar, privacy, circulation va site aloqasi tekshiriladi.",
+      "3. Bubble yaxshi bo‘lmasa keyingi aniq geometriya yomon funksiyani yashirishi mumkin.",
+      "Darsdagi bajarish: Brief → zonalar → aloqalar → circulation → site → variant → tanlov zanjirini audit qiling."
     ],
-    "exercise": "Brief talablari bilan ikkala diagrammani solishtiring.",
-    "solution": "Bubble audit eng yaxshi ko‘ringan shaklni emas, mezonga mos aloqani tanlaydi.",
+    "exercise": "Eng kuchli bubble variantni funksional mezonlar bilan tanlang.",
+    "solution": "Professional bubble audit aniq plan bosqichidan oldin funksional yechimni tasdiqlaydi.",
     "block": 5,
     "recipe": "adjacency",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy bubble-diagram eskizi. Doira o‘lchami va joylashuvi konseptual; aniq xona o‘lchamlari keyingi plan bosqichida belgilanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
