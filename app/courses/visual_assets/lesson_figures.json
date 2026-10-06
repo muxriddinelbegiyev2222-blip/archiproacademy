@@ -9515,86 +9515,91 @@
   {
     "code": "L15_M07_001",
     "asset": "l15_m07_001.svg",
-    "title": "Portfolio strategiyasi — ko‘rgazmali namuna",
+    "title": "Portfolio strategiyasi — arxitekturaviy eskiz",
     "explanation": [
-      "Portfolio uchun uch loyiha tanlanadi; har biri vazifa, qaror va shaxsiy hissani ko‘rsatadi.",
-      "Kimga va qanday ko‘nikma ko‘rsatilishini yozing → portfolio maqsadi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi loyiha materiallari o‘ngdagi tartibli portfolio spreadiga yig‘ilgan; bu portfolio rasm albomi emas, professional hikoya ekanini ko‘rsatadi.",
+      "2. Portfolio maqsadi ish, mijoz yoki ta’limga qarab farq qiladi; selection va presentation shu targetga xizmat qilishi kerak.",
+      "3. Har sahifa sizning fikrlash, muammo yechish va natija yaratish usulingizni ko‘rsatsin.",
+      "Darsdagi bajarish: Portfolio targetini bir jumlada yozib, keyingi selectionni shu maqsadga bog‘lang."
     ],
-    "exercise": "Portfolio auditoriyasi va ko‘rsatiladigan ko‘nikmani yozing.",
-    "solution": "Strategiya ish tanlovini maqsadga bog‘laydi.",
+    "exercise": "Portfolio maqsadi va kim uchun tayyorlanayotganini aniq yozing.",
+    "solution": "Kuchli portfolio maqsadga mos ravishda skill, jarayon va natijani ko‘rsatadi.",
     "block": 4,
     "recipe": "portfolio",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil portfolio/arxitektura presentation eskizi. Layoutlar konseptual; yakuniy portfolio formati va vizual uslubi target hamda loyiha materialiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M07_002",
     "asset": "l15_m07_002.svg",
-    "title": "Project selection — ko‘rgazmali namuna",
+    "title": "Project selection — arxitekturaviy eskiz",
     "explanation": [
-      "Portfolio uchun uch loyiha tanlanadi; har biri vazifa, qaror va shaxsiy hissani ko‘rsatadi.",
-      "Takroriy renderdan ko‘ra boshqa masalalarni yechgan loyihalarni tanlang → qamrov.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. To‘rtta loyiha namunasi orasidan eng kuchli va turli skilllarni ko‘rsatadiganlari ajratiladi.",
+      "2. Har qilgan loyihani qo‘shish shart emas; kuchsiz yoki takroriy loyiha umumiy sifatni pasaytirishi mumkin.",
+      "3. Selection’da loyiha sifati bilan birga qaysi skillni ko‘rsatishi ham hisobga olinadi.",
+      "Darsdagi bajarish: Loyihalarni Strong / Maybe / Remove guruhlariga ajrating."
     ],
-    "exercise": "Har loyiha uchun o‘z rolingiz va dalilni belgilang.",
-    "solution": "Project selection muallif hissasi va ko‘nikmani aniq ko‘rsatishi kerak.",
+    "exercise": "Portfolio uchun eng kuchli va bir-birini to‘ldiradigan loyihalarni tanlang.",
+    "solution": "Project selection sonni emas, professional kuch va xilma-xillikni optimallashtiradi.",
     "block": 4,
     "recipe": "portfolio",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil portfolio/arxitektura presentation eskizi. Layoutlar konseptual; yakuniy portfolio formati va vizual uslubi target hamda loyiha materialiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M07_003",
     "asset": "l15_m07_003.svg",
-    "title": "Project story — ko‘rgazmali namuna",
+    "title": "Project story — arxitekturaviy eskiz",
     "explanation": [
-      "Portfolio uchun uch loyiha tanlanadi; har biri vazifa, qaror va shaxsiy hissani ko‘rsatadi.",
-      "Har loyiha uchun brief→qaror→dalil→natija hikoyasini yozing → tushunarli case.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Eskiz Context → Problem → Process → Decision → Result ketma-ketligini vizual bosqichlarga ajratadi.",
+      "2. Faqat final render emas, diagram, plan va muhim qaror jarayonlari ham professional reasoningni ko‘rsatadi.",
+      "3. Har loyiha uchun qisqa va tushunarli story bo‘lsin; ortiqcha matn asosiy fikrni yashirmasin.",
+      "Darsdagi bajarish: Bitta loyiha uchun 5 bosqichli project story yozing."
     ],
-    "exercise": "Muammo, jarayon, qaror va natija hikoyasini yozing.",
-    "solution": "Project story faqat yakuniy tasvir bilan cheklanmaydi.",
+    "exercise": "Loyihani muammo, jarayon, qaror va natija orqali tushuntiring.",
+    "solution": "Project story final tasvir bilan birga qarorlarning qanday shakllanganini ko‘rsatadi.",
     "block": 4,
     "recipe": "portfolio",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil portfolio/arxitektura presentation eskizi. Layoutlar konseptual; yakuniy portfolio formati va vizual uslubi target hamda loyiha materialiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M07_004",
     "asset": "l15_m07_004.svg",
-    "title": "Grafik va matn hierarxiyasi — ko‘rgazmali namuna",
+    "title": "Grafik va matn hierarxiyasi — arxitekturaviy eskiz",
     "explanation": [
-      "Portfolio uchun uch loyiha tanlanadi; har biri vazifa, qaror va shaxsiy hissani ko‘rsatadi.",
-      "Asosiy chizma, yordamchi rasm va qisqa matnni iyerarxiya bilan joylang → o‘qiladigan sahifa.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi teng og‘irlikdagi tartib bilan o‘ngdagi aniq hierarxiyali spreadni solishtiring.",
+      "2. Har sahifada bitta asosiy message bo‘lsa, foydalanuvchi qayerdan o‘qishni va nimaga qarashni tez tushunadi.",
+      "3. Sarlavha, asosiy vizual, yordamchi chizma va qisqa matn o‘zaro ustuvorlikda joylashtiriladi.",
+      "Darsdagi bajarish: Bir spreadni asosiy message, dominant visual va yordamchi ma’lumot bilan qayta tuzing."
     ],
-    "exercise": "Matn, chizma va renderning o‘qilish hierarxiyasini tekshiring.",
-    "solution": "Grafik tartib o‘quvchiga eng muhim axborotni tez topishga yordam beradi.",
+    "exercise": "Portfolio spreadida aniq vizual va matn hierarxiyasi yarating.",
+    "solution": "Hierarchy sahifani tez o‘qiladigan va professional ko‘rinadigan tizimga aylantiradi.",
     "block": 5,
     "recipe": "portfolio",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil portfolio/arxitektura presentation eskizi. Layoutlar konseptual; yakuniy portfolio formati va vizual uslubi target hamda loyiha materialiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M07_005",
     "asset": "l15_m07_005.svg",
-    "title": "Portfolio professional audit — ko‘rgazmali namuna",
+    "title": "Portfolio professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Portfolio uchun uch loyiha tanlanadi; har biri vazifa, qaror va shaxsiy hissani ko‘rsatadi.",
-      "Shaxsiy hissa, mualliflik, revision va texnik da’voni tekshiring → halol portfolio.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Checklist, plan, elevation va presentation bloklari portfolio auditini bir nechta mezonda bajarish kerakligini ko‘rsatadi.",
+      "2. Target, Selection, Story, Drawings, Visuals, Text, Hierarchy va Consistency alohida tekshiriladi.",
+      "3. Yakuniy QA’da keraksiz material, noto‘g‘ri matn, o‘qilmaydigan chizma yoki uslubdagi nomuvofiqlik olib tashlanadi.",
+      "Darsdagi bajarish: Portfolio’ni targetdan final QA’gacha checklist bilan tekshiring."
     ],
-    "exercise": "Manba, ruxsat, rol va o‘qilish bo‘yicha audit qiling.",
-    "solution": "Portfolio audit o‘z hissasini va taqdim etilgan ishning dalilini tekshiradi.",
+    "exercise": "Portfolio tarkibi, story, grafik sifat va izchillikni kompleks audit qiling.",
+    "solution": "Professional portfolio auditi mazmun, tanlov va taqdimot sifatini birgalikda tekshiradi.",
     "block": 4,
     "recipe": "portfolio",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil portfolio/arxitektura presentation eskizi. Layoutlar konseptual; yakuniy portfolio formati va vizual uslubi target hamda loyiha materialiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
