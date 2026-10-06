@@ -1,6 +1,6 @@
 # Visual review progress
 
-508 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 208 lessons using topic-specific architectural sketches. 172 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+513 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 213 lessons using topic-specific architectural sketches. 167 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -127,3 +127,5 @@ L10_M01: Client brief definition, family/lifestyle scenarios, room program, cons
 L10_M02: Site analysis concept, street/access/orientation, sun-wind-neighbor context, terrain/existing elements and professional site audit reviewed. Five generic visuals were rebuilt as topic-specific architectural site-analysis sketches.
 
 L10_M03: Bubble Diagram concept, zoning/relationships, circulation, alternatives and professional bubble audit reviewed. Five generic visuals were rebuilt as topic-specific architectural bubble-diagram sketches.
+
+L10_M04: Bubble-to-plan transition, room proportion/furniture testing, door/circulation coordination, facade-yard linkage and sketch-plan audit reviewed. Five generic visuals were rebuilt as topic-specific architectural sketch-plan visuals.
