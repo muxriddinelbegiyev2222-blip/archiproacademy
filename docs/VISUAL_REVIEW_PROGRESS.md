@@ -1,6 +1,6 @@
 # Visual review progress
 
-375 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 75 lessons using topic-specific architectural sketches. 305 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+380 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 80 lessons using topic-specific architectural sketches. 300 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -71,3 +71,5 @@ L08_M08: Seismic load concept, plan regularity, vertical continuity/soft-story r
 L08_M09: Architect/structural-engineer roles, information package, issue workflow, version/change management and professional coordination audit reviewed. Five generic diagrams were rebuilt as topic-specific architectural coordination sketches; structural design remains the engineer’s calculation responsibility.
 
 L09_M01: Normative document reading workflow, scope/object type, revision/date/status, clause/evidence linkage and professional normative audit reviewed. Five generic diagrams were rebuilt as topic-specific evidence/workflow sketches. Exact SHNQ/QMQ verification remains deferred.
+
+L09_M02: Residential normative analysis, room functions/zoning, sanitary-support zones, vertical circulation and full residential audit reviewed. Five generic diagrams were rebuilt as topic-specific architectural plan/workflow sketches; exact normative values remain deferred to official-source verification.
