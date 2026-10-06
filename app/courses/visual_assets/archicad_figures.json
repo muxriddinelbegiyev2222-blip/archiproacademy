@@ -1461,86 +1461,86 @@
   {
     "code": "L06_M08_001",
     "asset": "ac28-railing.png",
-    "title": "Railing Settings: panjara tizimi",
+    "title": "Railing Settings: tizim, Segment va Node tuzilmasi",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-211.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/RailingSelectionSettings.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Railing Settings: panjara tizimi. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Railing Toolda yo‘l va bog‘lanishni tanlang → chet bo‘ylab tizim."
+      "Chapdagi daraxtda Railing ikki asosiy qismga ajralgan: Segment va Node. Segment ostida Toprail, Handrails, Rails, Inner Posts, Balusters va Panels; Node ostida Post, Connections va Ends boshqariladi.",
+      "Geometry and Positioning qismidagi Node and Railing Associativity hamda Segment Associativity Railing boshqa model elementiga bog‘liq ishlashi mumkinligini ko‘rsatadi. Shu sabab Railing oddiy bitta obyekt emas, yo‘l va komponentlardan tuzilgan ierarxik BIM elementi.",
+      "Darsda avval himoyalanadigan chet yo‘lini belgilang, keyin uning segmentlari va tugunlarini aniqlang. Detallarni path noto‘g‘ri bo‘lsa bezashning foydasi yo‘q."
     ],
     "exercise": "Railing yo‘lini belgilab, boshlanish va tugashini ko‘ring.",
     "solution": "Railing modelining yo‘li himoyalanadigan chet bilan muvofiq bo‘lishi kerak.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT’dagi haqiqiy Railing sozlamasi. Skrinshotdagi 1000, 50, 90° va boshqa qiymatlar o‘quv interfeysi namunasi; ular mahalliy xavfsizlik normasi sifatida qabul qilinmaydi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M08_002",
     "asset": "ac28-railing-parts.png",
-    "title": "Railing: segment va tarkibiy qismlar",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-213.htm",
+    "title": "Pattern Editor: Post, Rail va Handrailni tizimda ajrating",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-214.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/RailingSegmentSettings.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Railing: segment va tarkibiy qismlar. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Post, Rail va Handrailning vazifasini ajrating → tayanch, gorizontal qism, qo‘l tutish."
+      "Yuqoridagi Pattern Editor bir Segment ichidagi komponentlar tartibini ko‘rsatadi. Chap daraxtdagi Toprail, Handrails, Rails va Inner Posts alohida sozlanadigan elementlardir.",
+      "Post odatda Node bilan bog‘liq vertikal tayanch; Rail umumiy gorizontal/qiya element; Handrail esa qo‘l tutishga mo‘ljallangan alohida komponent. Tashqi ko‘rinishi o‘xshash bo‘lsa ham vazifasi va sozlamasi bir xil emas.",
+      "Patternni ortiqcha komponent bilan to‘ldirmang. Har bir qo‘shilgan Rail yoki Postning vazifasini ayta olmasangiz, u modelni va dizaynni keraksiz murakkablashtirishi mumkin."
     ],
     "exercise": "Posts, Rails va Handrailsni ko‘rinishda alohida belgilang.",
     "solution": "Tayanch, gorizontal qism va tutqich vazifalari bir-biridan farqlanadi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT’dagi haqiqiy Railing sozlamasi. Skrinshotdagi 1000, 50, 90° va boshqa qiymatlar o‘quv interfeysi namunasi; ular mahalliy xavfsizlik normasi sifatida qabul qilinmaydi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M08_003",
     "asset": "ac28-railing-parts.png",
-    "title": "Railing: segment va tarkibiy qismlar",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-213.htm",
+    "title": "Baluster va Panel: Pattern ichidagi to‘ldirish mantig‘i",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-222.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/RailingSegmentSettings.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Railing: segment va tarkibiy qismlar. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Baluster yoki Panel to‘ldirishni tanlang, bo‘shliqlarni ko‘rsating → xavfsizlik tekshiruvi uchun ma’lumot."
+      "Pattern Editorda ko‘p takrorlanuvchi vertikal chiziqlar Baluster ritmini tushunishga yordam beradi. Balusters chap daraxtda alohida komponent sifatida boshqariladi va pattern ichida takrorlanadi.",
+      "Panels ham alohida komponent; u bo‘sh zonani panel bilan to‘ldirish uchun ishlatiladi. Graphisoft mantig‘ida bir xil bo‘sh maydonda Baluster va Panelni bir vaqtda qo‘yish cheklangan bo‘lishi mumkin, shuning uchun variantni ongli tanlang.",
+      "Burchak, segment oxiri va pattern taqsimotida baluster ritmi kutilmaganda siqilishi yoki kesilishi mumkin. Shu joylarni 3D va Elevationda alohida ko‘ring."
     ],
     "exercise": "Baluster va Panel variantlarining yopilish hamda ko‘rinish farqini yozing.",
     "solution": "To‘ldirish turi ko‘rinish va foydalanish talablariga ta’sir qiladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT’dagi haqiqiy Railing sozlamasi. Skrinshotdagi 1000, 50, 90° va boshqa qiymatlar o‘quv interfeysi namunasi; ular mahalliy xavfsizlik normasi sifatida qabul qilinmaydi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M08_004",
     "asset": "ac28-railing.png",
-    "title": "Railing Settings: panjara tizimi",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-211.htm",
+    "title": "Associative Railing: Stair, Slab va boshqa chetlarni kuzatish",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-207.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/RailingSelectionSettings.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Railing Settings: panjara tizimi. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Stair yoki balkon bilan bog‘lab sath o‘zgarganda aloqani tekshiring → model mosligi."
+      "Railing default holatda associative bo‘lishi mumkin. Archicadda u Stair, Slab, Wall, Roof yoki Mesh kabi elementlarga bog‘lanishi mumkin; parent geometriyasi o‘zgarsa Railing ham moslashadi.",
+      "Stairda qiya flight bilan gorizontal landing orasidagi o‘tish, balkonda esa slab chetini kuzatish alohida tekshiriladi. Avtomatik moslashish natijani tekshirishni bekor qilmaydi.",
+      "Stair flight yoki landingni o‘zgartirgandan keyin Railingning boshlanish/tugashi, noto‘g‘ri tomonga o‘tib ketishi va uzluksizligini Plan + 3D + Section/Elevationda tekshiring."
     ],
     "exercise": "Railingni stair va balkon sathlari bilan kesimda solishtiring.",
     "solution": "Bog‘lanish yo‘l va sath o‘zgarganda qayta tekshiriladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT’dagi haqiqiy Railing sozlamasi. Skrinshotdagi 1000, 50, 90° va boshqa qiymatlar o‘quv interfeysi namunasi; ular mahalliy xavfsizlik normasi sifatida qabul qilinmaydi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M08_005",
-    "asset": "ac28-railing.png",
-    "title": "Railing Settings: panjara tizimi",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-211.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/RailingSelectionSettings.png",
-    "block": 0,
+    "asset": "ac28-railing-parts.png",
+    "title": "Railing auditi: path, pattern va component continuity",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-215.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/RailingSegmentSettings.png",
+    "block": 1,
     "explanation": [
-      "Railing Settings: panjara tizimi. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Uzluksizlik, chetlar, balandlik va talabni jadvalga yozing → mutaxassis bilan tekshiriladigan himoya."
+      "Auditda avval Segment path va Node joylarini tekshiring; keyin Pattern Editor ichida Toprail/Handrail/Rail, Post/Inner Post, Baluster yoki Panel tarkibini sanang. Komponent mavjudligi uning to‘g‘ri joylashganini anglatmaydi.",
+      "Pattern Distribution and Position usuli segment bo‘ylab takrorlanish qanday tarqalishini boshqaradi. Segment uzunligi o‘zgarganda ritm kesilib qolishi, cho‘zilishi yoki qayta taqsimlanishi mumkin.",
+      "Stair va balkon chetlarida continuity, burilish, boshlanish/tugash va ochiq qolgan zonalarni tekshiring. Balandlik va oralig‘ kabi xavfsizlik sonlari esa keyingi normativ tekshiruvda alohida tasdiqlanadi."
     ],
     "exercise": "Uzilish, balandlik, elementlar va mutaxassis tekshiruvini audit jadvaliga kiriting.",
     "solution": "Railing modeli dalil beradi, normativ moslik esa tegishli talablar bilan tekshiriladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT’dagi haqiqiy Railing sozlamasi. Skrinshotdagi 1000, 50, 90° va boshqa qiymatlar o‘quv interfeysi namunasi; ular mahalliy xavfsizlik normasi sifatida qabul qilinmaydi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
