@@ -4232,86 +4232,91 @@
   {
     "code": "L08_M09_001",
     "asset": "l08_m09_001.svg",
-    "title": "Arxitektor va konstruktor roli — ko‘rgazmali namuna",
+    "title": "Arxitektor va konstruktor roli — arxitekturaviy eskiz",
     "explanation": [
-      "AR-01 arxitektura plani va ST-01 konstruktiv sxemada bitta ustun joyi zid.",
-      "Kim qaror beradi va kim tekshiradi degan vazifani yozing → arxitektor/konstruktor chegarasi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi plan arxitektura qarorlarini, o‘ngdagi karkas konstruktiv tizimni ifodalaydi; markazdagi ikki tomonlama bog‘lanish ular bir-birini to‘ldirishini ko‘rsatadi.",
+      "2. Arxitektor funksional va fazoviy yechimni, konstruktor esa yuk ko‘taruvchi tizim va hisoblarni boshqaradi; hech biri ikkinchisining javobgarligini taxmin bilan almashtirmaydi.",
+      "3. Kuchli loyiha katta opening, tayanch joyi, qavat balandligi va boshqa kesishadigan masalalarni erta koordinatsiya qiladi.",
+      "Darsdagi bajarish: Arxitektor va konstruktor qarorlari kesishadigan kamida besh nuqtani ajrating."
     ],
-    "exercise": "Arxitektura talabi bilan hisob mas’uliyatini ajrating.",
-    "solution": "Har mutaxassisning qarori va tasdiq doirasi aniqlanadi.",
+    "exercise": "Arxitektor va konstruktor vazifalari hamda koordinatsiya nuqtalarini ajrating.",
+    "solution": "Professional hamkorlik ikki mutaxassisning aniq javobgarligi va kelishilgan loyiha qarorlariga tayanadi.",
     "block": 9,
     "recipe": "coordination",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy koordinatsiya eskizi. Konstruktiv hisob, element kesimi va muhandislik qarorlari tasvirdan olinmaydi; ular tegishli mutaxassislar tomonidan ishlab chiqiladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M09_002",
     "asset": "l08_m09_002.svg",
-    "title": "Konstruktorga ma'lumot tayyorlash — ko‘rgazmali namuna",
+    "title": "Konstruktorga ma’lumot tayyorlash — arxitekturaviy eskiz",
     "explanation": [
-      "AR-01 arxitektura plani va ST-01 konstruktiv sxemada bitta ustun joyi zid.",
-      "Plan, kesim, o‘q va o‘zgarish sababini paketga kiriting → to‘liq kirish ma’lumoti.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Olti kartochka konstruktor uchun kerak bo‘ladigan asosiy loyiha paketini konseptual ko‘rsatadi: plan, kesim, grid/o‘qlar, sathlar, openinglar va versiya/status ma’lumoti.",
+      "2. Konstruktor taxmin bilan ishlamasligi uchun yuborilayotgan material bir xil koordinata, grid va sath mantiqiga ega bo‘lsin.",
+      "3. Faqat eski PDF yetarli bo‘lmasligi mumkin; qaysi versiya amaldagi ekanini va nima o‘zgarganini paket bilan birga ko‘rsating.",
+      "Darsdagi bajarish: Konstruktor uchun yuboriladigan minimum loyiha ma’lumotlarini ro‘yxat qilib tekshiring."
     ],
-    "exercise": "O‘qlar, sathlar, ochilishlar va versiya bilan paket tayyorlang.",
-    "solution": "Konstruktor uchun ma’lumot o‘lchanadigan va versiyasi aniqlangan bo‘lishi kerak.",
+    "exercise": "Konstruktor uchun plan, kesim, o‘qlar, sathlar va versiya ma’lumotini tayyorlang.",
+    "solution": "Tartibli koordinatsiya paketi konstruktorning arxitektura niyatini to‘g‘ri o‘qishiga yordam beradi.",
     "block": 9,
     "recipe": "coordination",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy koordinatsiya eskizi. Konstruktiv hisob, element kesimi va muhandislik qarorlari tasvirdan olinmaydi; ular tegishli mutaxassislar tomonidan ishlab chiqiladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M09_003",
     "asset": "l08_m09_003.svg",
-    "title": "Koordinatsiya va savol-javob workflow — ko‘rgazmali namuna",
+    "title": "Koordinatsiya va savol-javob workflow — arxitekturaviy eskiz",
     "explanation": [
-      "AR-01 arxitektura plani va ST-01 konstruktiv sxemada bitta ustun joyi zid.",
-      "K-01 konfliktga joy, ta’sir, savol va mas’ul yozing → izchil so‘rov.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi plan ichidagi qizil doira aniq konflikt joyini, markazdagi issue kartochkasi esa muammo va savolni tartibli yozish bosqichini ko‘rsatadi.",
+      "2. O‘ngdagi status kartochkalari javobni modelga kiritish va masalani tekshirib yopish workflowini ifodalaydi.",
+      "3. “Bu joyni nima qilamiz?” kabi umumiy savol o‘rniga joylashuv, muammo, sabab, variant va kerakli javob aniq yoziladi.",
+      "Darsdagi bajarish: Bitta konstruktiv konflikt uchun joy, muammo, taklif, mas’ul va statusli issue yarating."
     ],
-    "exercise": "Konfliktni koordinata, rasm va aniq savol bilan qayd qiling.",
-    "solution": "Koordinatsiya xabari muammo joyi va kutilgan qarorni bildiradi.",
+    "exercise": "Aniq koordinatsiya issue yozib, javobni modeldagi o‘zgarish bilan yopishni ko‘rsating.",
+    "solution": "Issue workflow savolni aniq dalil, mas’ul va modelga kiritilgan javob bilan boshqaradi.",
     "block": 9,
     "recipe": "coordination",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy koordinatsiya eskizi. Konstruktiv hisob, element kesimi va muhandislik qarorlari tasvirdan olinmaydi; ular tegishli mutaxassislar tomonidan ishlab chiqiladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M09_004",
     "asset": "l08_m09_004.svg",
-    "title": "O'zgarishlar va versiyalarni boshqarish — ko‘rgazmali namuna",
+    "title": "O‘zgarishlar va versiyalarni boshqarish — arxitekturaviy eskiz",
     "explanation": [
-      "AR-01 arxitektura plani va ST-01 konstruktiv sxemada bitta ustun joyi zid.",
-      "Javob kelganda revision, sana va tegishli ko‘rinishlarni yangilang → iz qoladi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi oldingi plan va o‘ngdagi yangilangan plan loyiha versiyalari o‘rtasidagi farqni ko‘rsatadi; qizil belgi o‘zgargan kritik zonani ajratadi.",
+      "2. Arxitektor va konstruktor bir xil eng so‘nggi versiyada ishlashi kerak. Fayl nomidagi “FINAL”ning o‘zi bu holatni kafolatlamaydi.",
+      "3. Change log’da ustun, opening, qavat sathi, balkon, tom yoki boshqa konstruktiv ahamiyatli o‘zgarish qisqa va tushunarli qayd qilinadi.",
+      "Darsdagi bajarish: V01 → V02 o‘zgarishlarini plan va change log orqali bir-biriga bog‘lang."
     ],
-    "exercise": "O‘zgarish jurnalida eski-yangi holat va tasdiqni yozing.",
-    "solution": "Revision boshqaruvi eskirgan ma’lumot bilan ishlash xavfini kamaytiradi.",
+    "exercise": "Versiyalar va kritik o‘zgarishlarni izchil boshqaring.",
+    "solution": "Versiya nazorati barcha ishtirokchilar ayni loyiha holati bilan ishlashini ta’minlashga yordam beradi.",
     "block": 9,
     "recipe": "coordination",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy koordinatsiya eskizi. Konstruktiv hisob, element kesimi va muhandislik qarorlari tasvirdan olinmaydi; ular tegishli mutaxassislar tomonidan ishlab chiqiladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M09_005",
     "asset": "l08_m09_005.svg",
-    "title": "Arxitektura-konstruktsiya professional audit — ko‘rgazmali namuna",
+    "title": "Arxitektura-konstruktsiya professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "AR-01 arxitektura plani va ST-01 konstruktiv sxemada bitta ustun joyi zid.",
-      "K-01ni qayta ochib barcha chizmada moslikni tekshiring → yopilgan konflikt.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi checklist va o‘ngdagi ustma-ust koordinatsiya plani arxitektura bilan konstruksiya ma’lumotlarini birgalikda tekshirish g‘oyasini ko‘rsatadi.",
+      "2. Auditda versiya, grid/o‘qlar, sathlar, ustun va konstruktiv devorlar, katta openinglar va ochiq issue’lar solishtiriladi.",
+      "3. Ko‘rinishda bir-biriga mos tushgan elementlar ham ID, sath va versiya bo‘yicha tekshirilishi kerak; faqat ko‘z bilan mos kelishi yetarli emas.",
+      "Darsdagi bajarish: Bitta qavatda grid, sath, tayanch va openinglarni arxitektura hamda konstruktor modelida solishtiring."
     ],
-    "exercise": "Eng so‘nggi ikki paketni solishtirib, ochiq savollarni audit qiling.",
-    "solution": "Hamkorlik auditi barcha qarorlar bir xil versiyaga tegishli ekanini tekshiradi.",
+    "exercise": "Arxitektura va konstruktsiya modeli o‘rtasidagi asosiy koordinatsiya nuqtalarini audit qiling.",
+    "solution": "Professional koordinatsiya auditi bir xil versiya va geometriya asosida ochiq konfliktlarni tizimli yopadi.",
     "block": 13,
     "recipe": "coordination",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy koordinatsiya eskizi. Konstruktiv hisob, element kesimi va muhandislik qarorlari tasvirdan olinmaydi; ular tegishli mutaxassislar tomonidan ishlab chiqiladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
