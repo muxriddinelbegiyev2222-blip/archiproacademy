@@ -3532,86 +3532,91 @@
   {
     "code": "L07_M09_001",
     "asset": "l07_m09_001.svg",
-    "title": "Professional Template tushunchasi — ko‘rgazmali namuna",
+    "title": "Professional Template tushunchasi — arxitekturaviy eskiz",
     "explanation": [
-      "Template ichida birlik, layers, materials, favorites, views va layout qoidalari saqlanadi; loyiha modeli esa tozalanadi.",
-      "Templateni takroriy boshlang‘ich sozlama deb ajrating → tayyor loyiha bilan farq.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi markaziy baza yangi loyiha boshlang‘ich standartini, o‘ngdagi bir nechta uy esa shu bazadan boshlangan turli loyihalarni ifodalaydi.",
+      "2. Professional Template bo‘sh fayl emas; Layers, Favorites, Views, Schedules va boshqa kerakli standartlar oldindan tartiblangan ishchi bazadir.",
+      "3. Template maqsadi loyiha turiga mos bo‘lishi kerak. Bitta template har qanday loyiha uchun avtomatik ideal bo‘lmaydi.",
+      "Darsdagi bajarish: Template’dan yangi loyiha boshlaganda qayta yaratmaslik kerak bo‘lgan standartlarni sanang."
     ],
-    "exercise": "Template bilan tugallangan loyihani ajrating.",
-    "solution": "Template qayta ishlatiladigan boshlang‘ich loyiha standartidir.",
+    "exercise": "Template maqsadi va qayta ishlatiladigan standartlarini yozing.",
+    "solution": "Professional Template yangi loyihani izchil va tez boshlash uchun tayyorlangan standart bazadir.",
     "block": 9,
     "recipe": "layers",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/workflow eskizi. Kartochka va loyiha shakllari o‘quv mantiqini ko‘rsatadi; aniq Template tarkibi tashkilot va loyiha turiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M09_002",
     "asset": "l07_m09_002.svg",
-    "title": "Template strukturasi — ko‘rgazmali namuna",
+    "title": "Template strukturasi — arxitekturaviy eskiz",
     "explanation": [
-      "Template ichida birlik, layers, materials, favorites, views va layout qoidalari saqlanadi; loyiha modeli esa tozalanadi.",
-      "Kerakli atribut va namingni ro‘yxatlang → izchil boshlang‘ich to‘plam.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Olti kartochka Template ichidagi asosiy tizimlarni ifodalaydi: Layers, Favorites, Attributes, Views va boshqa qayta ishlatiladigan sozlamalar.",
+      "2. Bu qismlar alohida-alohida emas, yagona naming va loyiha workflowi bilan bog‘langan tizim bo‘lishi kerak.",
+      "3. Test, dublikat yoki vazifasi noma’lum Attributes va Favorites Template ichida qolib ketmasin.",
+      "Darsdagi bajarish: Template strukturasini mantiqiy bo‘limlarga ajratib, har bo‘lim vazifasini yozing."
     ],
-    "exercise": "Layer, atribut, Favorite va nomlash tuzilmasini ro‘yxatlang.",
-    "solution": "Template struktura uchun kerakli boshlang‘ich sozlamalarni jamlaydi.",
+    "exercise": "Layers, Favorites, Attributes va Viewsni yagona tizimga joylashtiring.",
+    "solution": "Template strukturasi standart element va sozlamalarni izchil tizimga birlashtiradi.",
     "block": 11,
     "recipe": "layers",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/workflow eskizi. Kartochka va loyiha shakllari o‘quv mantiqini ko‘rsatadi; aniq Template tarkibi tashkilot va loyiha turiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M09_003",
     "asset": "l07_m09_003.svg",
-    "title": "View, Graphic va Documentation standard — ko‘rgazmali namuna",
+    "title": "View, Graphic va Documentation standard — arxitekturaviy eskiz",
     "explanation": [
-      "Template ichida birlik, layers, materials, favorites, views va layout qoidalari saqlanadi; loyiha modeli esa tozalanadi.",
-      "Sinov view va layoutni ochib masshtab, qalam va drawing manbasini tekshiring → hujjat standarti.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Uch panel plan, kesim/fasad va jadval kabi turli hujjat view’larini bir xil grafik til bilan tashkil qilish g‘oyasini ko‘rsatadi.",
+      "2. View Map, Graphic Overrides va Model View Options hujjat maqsadiga mos, oldindan tekshirilgan kombinatsiyalar bilan ishlashi kerak.",
+      "3. View nomlari, tafsilot darajasi va grafik sozlama hujjat turiga mos bo‘lsa, loyiha jamoasi bir xil standartda ishlaydi.",
+      "Darsdagi bajarish: Plan, Section/Elevation va Schedule uchun view standartini bir tizimda rejalashtiring."
     ],
-    "exercise": "View, grafik va layout namunasini chiqarib ko‘ring.",
-    "solution": "Standartning sifati haqiqiy chiqarish namunasida tekshiriladi.",
+    "exercise": "View va grafik standartlarni hujjat turlari bo‘yicha tashkil qiling.",
+    "solution": "Yaxshi Template bir xil modeldan izchil va tushunarli hujjat ko‘rinishlarini chiqaradi.",
     "block": 10,
     "recipe": "documents",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/workflow eskizi. Kartochka va loyiha shakllari o‘quv mantiqini ko‘rsatadi; aniq Template tarkibi tashkilot va loyiha turiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M09_004",
     "asset": "l07_m09_004.svg",
-    "title": "BIM data standard — ko‘rgazmali namuna",
+    "title": "BIM data standard — arxitekturaviy eskiz",
     "explanation": [
-      "Template ichida birlik, layers, materials, favorites, views va layout qoidalari saqlanadi; loyiha modeli esa tozalanadi.",
-      "Classification va propertiesni namuna elementida sinang → BIM data ishlashi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Eskiz Model → Classification → Properties → Schedule zanjirini ko‘rsatadi; Template BIM ma’lumotining shu bosqichlarini oldindan tartibga solishi mumkin.",
+      "2. Faqat kerakli Properties, Classification va Schedules saqlansin. Ortiqcha BIM data Template’ni og‘ir va tushunarsiz qiladi.",
+      "3. Audit Schedule yangi loyiha boshidan bo‘sh, noto‘g‘ri yoki nomuvofiq qiymatlarni topishda ishlatilishi mumkin.",
+      "Darsdagi bajarish: Template uchun kerakli Property, Classification va Schedule paketini rejalashtiring."
     ],
-    "exercise": "Classification va Property uchun bo‘sh o‘quv elementini sinang.",
-    "solution": "BIM standart kerakli ma’lumotni to‘ldirish imkonini berishi kerak.",
+    "exercise": "Template ichida BIM data va audit zanjirini tashkil qiling.",
+    "solution": "BIM data standard model ma’lumotlarini izchil kiritish va audit qilishni qo‘llab-quvvatlaydi.",
     "block": 10,
     "recipe": "classification",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/workflow eskizi. Kartochka va loyiha shakllari o‘quv mantiqini ko‘rsatadi; aniq Template tarkibi tashkilot va loyiha turiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M09_005",
     "asset": "l07_m09_005.svg",
-    "title": "Professional Template audit — ko‘rgazmali namuna",
+    "title": "Professional Template audit — arxitekturaviy eskiz",
     "explanation": [
-      "Template ichida birlik, layers, materials, favorites, views va layout qoidalari saqlanadi; loyiha modeli esa tozalanadi.",
-      "Yangi loyiha ochib keraksiz eski model yo‘qligini va sozlamalar ishlashini tekshiring → toza template.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi checklist Template struktura, Attributes, Favorites, Views, Graphics va BIM data bo‘yicha audit bosqichlarini ifodalaydi.",
+      "2. O‘ngdagi sinov uyi Template’ni haqiqiy kichik test project bilan tekshirish zarurligini ko‘rsatadi.",
+      "3. Faqat sozlamalar mavjudligini emas, ular birga ishlayotganini tekshiring: element yarating, view saqlang, schedule oching va hujjat natijasini ko‘ring.",
+      "Darsdagi bajarish: Template’ni yangi test loyiha sifatida ochib, asosiy workflowlarni boshidan oxirigacha sinang."
     ],
-    "exercise": "Template asosida yangi fayl ochib, ortiqcha loyiha elementlarini tekshiring.",
-    "solution": "Template auditi toza boshlang‘ich fayl va ishlaydigan standartlarni tasdiqlaydi.",
+    "exercise": "Template’ni struktura va real test project bilan audit qiling.",
+    "solution": "Professional Template audit sozlamalar mavjudligini emas, real loyiha workflowida ishlashini tasdiqlaydi.",
     "block": 18,
     "recipe": "audit",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/workflow eskizi. Kartochka va loyiha shakllari o‘quv mantiqini ko‘rsatadi; aniq Template tarkibi tashkilot va loyiha turiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
