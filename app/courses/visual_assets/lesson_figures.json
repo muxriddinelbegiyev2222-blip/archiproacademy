@@ -8995,7 +8995,7 @@
   {
     "code": "L15_M01_001",
     "asset": "l15_m01_001.svg",
-    "title": "Arxitektura nazariyasi integratsiyasi — ko‘rgazmali namuna",
+    "title": "Arxitektura nazariyasi integratsiyasi — arxitekturaviy eskiz",
     "explanation": [
       "Final case: to‘rt kishilik uy, site cheklovi, plan, model va hujjat bir qarorlar tizimiga bog‘lanadi.",
       "Har qarorni brief/site bandiga bog‘lang → nazariya integratsiyasi.",
@@ -9005,14 +9005,14 @@
     "solution": "Integratsiya alohida ta’riflarni loyiha qaroriga bog‘laydi.",
     "block": 5,
     "recipe": "brief",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/BIM eskiz. Diagramma o‘quv maqsadida; aniq loyiha, normativ yoki dastur parametrlari real vazifada alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M01_002",
     "asset": "l15_m01_002.svg",
-    "title": "Site, planning va ergonomika nazorati — ko‘rgazmali namuna",
+    "title": "Site, planning va ergonomika nazorati — arxitekturaviy eskiz",
     "explanation": [
       "Final case: to‘rt kishilik uy, site cheklovi, plan, model va hujjat bir qarorlar tizimiga bog‘lanadi.",
       "Mebel, yo‘l, orientatsiya va privacy ni planda tekshiring → foydalanish dalili.",
@@ -9022,14 +9022,14 @@
     "solution": "Nazariy bilim foydalanish daliliga aylantiriladi.",
     "block": 4,
     "recipe": "bed",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/BIM eskiz. Diagramma o‘quv maqsadida; aniq loyiha, normativ yoki dastur parametrlari real vazifada alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M01_003",
     "asset": "l15_m01_003.svg",
-    "title": "Konstruktsiya va normativ fikrlash — ko‘rgazmali namuna",
+    "title": "Konstruktsiya va normativ fikrlash — arxitekturaviy eskiz",
     "explanation": [
       "Final case: to‘rt kishilik uy, site cheklovi, plan, model va hujjat bir qarorlar tizimiga bog‘lanadi.",
       "Tayanch/normativ masalalarni tasdiqlangan va ochiq guruhga ajrating → vakolat chegarasi.",
@@ -9039,14 +9039,14 @@
     "solution": "Professional fikrlash o‘z qarori va mutaxassis doirasini farqlaydi.",
     "block": 5,
     "recipe": "coordination",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/BIM eskiz. Diagramma o‘quv maqsadida; aniq loyiha, normativ yoki dastur parametrlari real vazifada alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M01_004",
     "asset": "l15_m01_004.svg",
-    "title": "BIM va hujjatlashtirish nazariyasi — ko‘rgazmali namuna",
+    "title": "BIM va hujjatlashtirish nazariyasi — arxitekturaviy eskiz",
     "explanation": [
       "Final case: to‘rt kishilik uy, site cheklovi, plan, model va hujjat bir qarorlar tizimiga bog‘lanadi.",
       "D01 elementini model→schedule→layout→output bo‘ylab kuzating → BIM izchilligi.",
@@ -9056,14 +9056,14 @@
     "solution": "BIM nazariyasi axborotning manbadan chiqarishgacha izchilligini ko‘radi.",
     "block": 4,
     "recipe": "bim",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/BIM eskiz. Diagramma o‘quv maqsadida; aniq loyiha, normativ yoki dastur parametrlari real vazifada alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M01_005",
     "asset": "l15_m01_005.svg",
-    "title": "PRO nazariya mastery audit — ko‘rgazmali namuna",
+    "title": "PRO nazariya mastery audit — arxitekturaviy eskiz",
     "explanation": [
       "Final case: to‘rt kishilik uy, site cheklovi, plan, model va hujjat bir qarorlar tizimiga bog‘lanadi.",
       "Qaror, dalil, cheklov va tuzatishni yakuniy jadvalda jamlang → mastery dalili.",
@@ -9073,14 +9073,14 @@
     "solution": "Mastery audit faqat balldan tashqari tushunilmagan ko‘nikmani ko‘rsatadi.",
     "block": 4,
     "recipe": "audit",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/BIM eskiz. Diagramma o‘quv maqsadida; aniq loyiha, normativ yoki dastur parametrlari real vazifada alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M02_001",
     "asset": "l15_m02_001.svg",
-    "title": "Model setup challenge — ko‘rgazmali namuna",
+    "title": "Model setup challenge — arxitekturaviy eskiz",
     "explanation": [
       "Challenge natijasi bitta tekshirilgan mini-model, jadval va chiqarilgan ikki varaq; har bosqichga dalil saqlanadi.",
       "Stories, units, layers va IDni sozlang → setup qaydi.",
@@ -9090,14 +9090,14 @@
     "solution": "Setup challenge qayta tekshiriladigan model asosini talab qiladi.",
     "block": 5,
     "recipe": "layers",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/BIM eskiz. Diagramma o‘quv maqsadida; aniq loyiha, normativ yoki dastur parametrlari real vazifada alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M02_002",
     "asset": "l15_m02_002.svg",
-    "title": "Modeling challenge — ko‘rgazmali namuna",
+    "title": "Modeling challenge — arxitekturaviy eskiz",
     "explanation": [
       "Challenge natijasi bitta tekshirilgan mini-model, jadval va chiqarilgan ikki varaq; har bosqichga dalil saqlanadi.",
       "Devor, slab va openingsni o‘lcham bilan yarating → geometriya dalili.",
@@ -9107,14 +9107,14 @@
     "solution": "Modeling challenge yashirin sath va tutashuv xatolarini tekshiradi.",
     "block": 4,
     "recipe": "mini-model",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/BIM eskiz. Diagramma o‘quv maqsadida; aniq loyiha, normativ yoki dastur parametrlari real vazifada alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M02_003",
     "asset": "l15_m02_003.svg",
-    "title": "Advanced BIM challenge — ko‘rgazmali namuna",
+    "title": "Advanced BIM challenge — arxitekturaviy eskiz",
     "explanation": [
       "Challenge natijasi bitta tekshirilgan mini-model, jadval va chiqarilgan ikki varaq; har bosqichga dalil saqlanadi.",
       "Properties, classification va schedule bilan bitta elementni kuzating → data dalili.",
@@ -9124,14 +9124,14 @@
     "solution": "Advanced BIM challenge ma’lumot sifatini tekshiradi.",
     "block": 4,
     "recipe": "classification",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/BIM eskiz. Diagramma o‘quv maqsadida; aniq loyiha, normativ yoki dastur parametrlari real vazifada alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M02_004",
     "asset": "l15_m02_004.svg",
-    "title": "Documentation challenge — ko‘rgazmali namuna",
+    "title": "Documentation challenge — arxitekturaviy eskiz",
     "explanation": [
       "Challenge natijasi bitta tekshirilgan mini-model, jadval va chiqarilgan ikki varaq; har bosqichga dalil saqlanadi.",
       "View, layout va Publisher orqali PDF chiqaring → haqiqiy output.",
@@ -9141,14 +9141,14 @@
     "solution": "Documentation challenge haqiqiy chiqarilgan faylni tekshiradi.",
     "block": 4,
     "recipe": "publisher",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/BIM eskiz. Diagramma o‘quv maqsadida; aniq loyiha, normativ yoki dastur parametrlari real vazifada alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M02_005",
     "asset": "l15_m02_005.svg",
-    "title": "Archicad PRO final audit — ko‘rgazmali namuna",
+    "title": "Archicad PRO final audit — arxitekturaviy eskiz",
     "explanation": [
       "Challenge natijasi bitta tekshirilgan mini-model, jadval va chiqarilgan ikki varaq; har bosqichga dalil saqlanadi.",
       "Model, data va PDFni solishtiring → uch yoqlama moslik.",
@@ -9158,8 +9158,8 @@
     "solution": "Archicad final audit bajarilgan ishning dalillari va qolgan masalalarni talab qiladi.",
     "block": 4,
     "recipe": "audit",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/BIM eskiz. Diagramma o‘quv maqsadida; aniq loyiha, normativ yoki dastur parametrlari real vazifada alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
