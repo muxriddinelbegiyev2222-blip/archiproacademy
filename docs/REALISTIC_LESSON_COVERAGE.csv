@@ -394,11 +394,11 @@ L09_M05_002,"Odamlar, yo'llar va chiqishlar",reviewed_architectural_sketch,l09_m
 L09_M05_003,Konstruksiya va materiallar bilan aloqa,reviewed_architectural_sketch,l09_m05_003.svg
 L09_M05_004,Uchastka va tashqi kirish,reviewed_architectural_sketch,l09_m05_004.svg
 L09_M05_005,Yong'in xavfsizligi professional audit,reviewed_architectural_sketch,l09_m05_005.svg
-L09_M06_001,Evakuatsiya tushunchasi,pending_topic_review,
-L09_M06_002,Evakuatsiya yo'li,pending_topic_review,
-L09_M06_003,"Eshik, koridor va zinapoya",pending_topic_review,
-L09_M06_004,To'siqlar va xato ssenariylar,pending_topic_review,
-L09_M06_005,Evakuatsiya professional audit,pending_topic_review,
+L09_M06_001,Evakuatsiya tushunchasi,reviewed_architectural_sketch,l09_m06_001.svg
+L09_M06_002,Evakuatsiya yo'li,reviewed_architectural_sketch,l09_m06_002.svg
+L09_M06_003,"Eshik, koridor va zinapoya",reviewed_architectural_sketch,l09_m06_003.svg
+L09_M06_004,To'siqlar va xato ssenariylar,reviewed_architectural_sketch,l09_m06_004.svg
+L09_M06_005,Evakuatsiya professional audit,reviewed_architectural_sketch,l09_m06_005.svg
 L09_M07_001,Accessibility tushunchasi,pending_topic_review,
 L09_M07_002,Kirish va harakat zanjiri,pending_topic_review,
 L09_M07_003,"Eshik, sath va vertikal aloqa",pending_topic_review,
