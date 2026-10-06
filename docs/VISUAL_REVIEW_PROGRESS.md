@@ -1,6 +1,6 @@
 # Visual review progress
 
-320 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 20 lessons using topic-specific architectural sketches. 360 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+325 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 25 lessons using topic-specific architectural sketches. 355 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -49,3 +49,5 @@ L07_M01: Favorites concept, create/apply workflow, library organization, standar
 L07_M02: Graphic Override concept, rule logic, combinations, analytical views and audit reviewed. Five repetitive diagrams were rebuilt as topic-specific light architectural analysis sketches; official Archicad screenshots remain available for interface reference.
 
 L07_M03: Model View Options concept, component display control, MVO combinations, saved-view workflow and audit reviewed. Five repeated diagrams were rebuilt as topic-specific light architectural sketches; the genuine MVO screenshot remains the interface reference.
+
+L07_M04: Renovation concept, status assignment, filters, reconstruction workflow and audit reviewed. Five generic diagrams were rebuilt as topic-specific light architectural sketches; the genuine Renovation screenshot remains the interface reference.

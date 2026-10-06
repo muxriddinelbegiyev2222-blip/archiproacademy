@@ -3082,86 +3082,91 @@
   {
     "code": "L07_M04_001",
     "asset": "l07_m04_001.svg",
-    "title": "Renovation tushunchasi — ko‘rgazmali namuna",
+    "title": "Renovation tushunchasi — arxitekturaviy eskiz",
     "explanation": [
-      "Bitta mavjud devor, bitta buziladigan devor va bitta yangi devor rekonstruksiya modelida belgilanadi.",
-      "Renovationni elementning loyiha bosqichi holati sifatida ajrating → mavjud/buziladigan/yangi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi plan mavjud holat, o‘ngdagi plan esa rekonstruksiya qarorlari qo‘shilgan bir xil modelni ifodalaydi.",
+      "2. Renovation workflow mavjud, buziladigan va yangi elementlarni bir model ichida holat bilan boshqarishga yordam beradi.",
+      "3. Ranglar faqat o‘quv eskizi. Muhim narsa — elementning to‘g‘ri statusi va kerakli filterdagi natijasi.",
+      "Darsdagi bajarish: Bir xil modelda mavjud, olib tashlanadigan va yangi elementlarni ajrating."
     ],
-    "exercise": "Uch turdagi o‘zgarishni loyiha tarixidan ajrating.",
-    "solution": "Renovation modelda vaqt holatini tushuntiradi.",
+    "exercise": "Mavjud va loyihaviy holatni bir modelda ajrating.",
+    "solution": "Renovation status elementning rekonstruksiya jarayonidagi rolini belgilaydi.",
     "block": 8,
     "recipe": "renovation",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ranglar o‘quv maqsadida tanlangan; Archicad Renovation filterlaridagi haqiqiy grafik sozlamalar alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M04_002",
     "asset": "l07_m04_002.svg",
-    "title": "Renovation Status — ko‘rgazmali namuna",
+    "title": "Renovation Status — arxitekturaviy eskiz",
     "explanation": [
-      "Bitta mavjud devor, bitta buziladigan devor va bitta yangi devor rekonstruksiya modelida belgilanadi.",
-      "Har devorga haqiqiy holatni tayinlang → element ma’lumoti.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Eskizda uch xil yumshoq rang elementlarning uch xil rekonstruksiya holatini vizual ajratish uchun ishlatilgan.",
+      "2. Status elementning o‘zi haqida ma’lumot beradi; filter esa keyin shu statuslar qanday ko‘rinishini boshqaradi.",
+      "3. Bir elementga noto‘g‘ri status berilsa barcha Renovation view’larda noto‘g‘ri natija chiqishi mumkin.",
+      "Darsdagi bajarish: Tanlangan elementlar statusini tekshirib, qaysi bosqichga tegishli ekanini tasdiqlang."
     ],
-    "exercise": "Har elementga tegishli statusni yozing.",
-    "solution": "Mavjud, buziladigan va yangi elementlar izchil tasniflanadi.",
+    "exercise": "Mavjud, buziladigan va yangi elementlarga status bering.",
+    "solution": "Status rekonstruksiya elementlarini yagona modelda ajratadi.",
     "block": 9,
     "recipe": "renovation",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ranglar o‘quv maqsadida tanlangan; Archicad Renovation filterlaridagi haqiqiy grafik sozlamalar alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M04_003",
     "asset": "l07_m04_003.svg",
-    "title": "Renovation Filters — ko‘rgazmali namuna",
+    "title": "Renovation Filters — arxitekturaviy eskiz",
     "explanation": [
-      "Bitta mavjud devor, bitta buziladigan devor va bitta yangi devor rekonstruksiya modelida belgilanadi.",
-      "Existing, Demolition va New Construction filtrlarini solishtiring → maqsadga mos ko‘rinish.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Uch kichik plan ayni modelning turli filterlar bilan ko‘rsatilgan holatini ifodalaydi.",
+      "2. Bir filter mavjud holatni, boshqasi buzish ishlarini, uchinchisi esa taklif etilgan holatni ko‘rsatishi mumkin.",
+      "3. Filter element statusini o‘zgartirmaydi; faqat qaysi status qanday ko‘rinishini boshqaradi.",
+      "Darsdagi bajarish: Bir modelni kamida ikki filter bilan ochib, bir elementning ko‘rinishini solishtiring."
     ],
-    "exercise": "Mavjud holat va taklif etilgan holat filterlarini solishtiring.",
-    "solution": "Filter statusga mos ko‘rsatish natijasini beradi.",
+    "exercise": "Bir xil modelni turli Renovation Filterlarda ko‘rsating.",
+    "solution": "Filter statuslarni hujjat maqsadiga mos ko‘rsatadi.",
     "block": 9,
     "recipe": "renovation",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ranglar o‘quv maqsadida tanlangan; Archicad Renovation filterlaridagi haqiqiy grafik sozlamalar alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M04_004",
     "asset": "l07_m04_004.svg",
-    "title": "Rekonstruksiya modeli workflow — ko‘rgazmali namuna",
+    "title": "Rekonstruksiya modeli workflow — arxitekturaviy eskiz",
     "explanation": [
-      "Bitta mavjud devor, bitta buziladigan devor va bitta yangi devor rekonstruksiya modelida belgilanadi.",
-      "Buzish va yangi qurish chizmalarini alohida saqlang → topshirish mantiqi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi mavjud plan — kirish ma’lumoti; markazdagi status ketma-ketligi elementlarni tasniflash bosqichini ko‘rsatadi.",
+      "2. O‘ngdagi natija modelning mavjud, olib tashlanadigan va yangi qismlari bitta workflowda boshqarilganini ifodalaydi.",
+      "3. Yangi geometriyani chizishdan oldin mavjud holat ishonchli modellanganmi va statuslar to‘g‘rimi — tekshiring.",
+      "Darsdagi bajarish: Mavjud model → status → filter → hujjat zanjirini tartib bilan tekshiring."
     ],
-    "exercise": "Buzish va yangi ish ko‘rinishlari orasida elementlarni tekshiring.",
-    "solution": "Rekonstruksiya workflow bir xil elementni qarama-qarshi hujjatlarda chalkashtirmaydi.",
+    "exercise": "Rekonstruksiya modelining bosqichlarini ketma-ket yozing.",
+    "solution": "Professional workflow mavjud holatni hujjatlashtirishdan boshlanadi.",
     "block": 10,
     "recipe": "renovation",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ranglar o‘quv maqsadida tanlangan; Archicad Renovation filterlaridagi haqiqiy grafik sozlamalar alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M04_005",
     "asset": "l07_m04_005.svg",
-    "title": "Renovation professional audit — ko‘rgazmali namuna",
+    "title": "Renovation professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Bitta mavjud devor, bitta buziladigan devor va bitta yangi devor rekonstruksiya modelida belgilanadi.",
-      "Har filtrda uch element holatini tekshiring → yo‘qolgan yoki noto‘g‘ri ko‘rsatilgan element topiladi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi plan element statuslarini, o‘ngdagi kartochkalar esa filter va audit nuqtalarini birga tekshirish g‘oyasini ko‘rsatadi.",
+      "2. Auditda noto‘g‘ri status, filterda yo‘qolib qolgan element, takror geometriya va mavjud/yangi qismlar orasidagi konfliktlar topiladi.",
+      "3. Har muhim elementni kamida mavjud, buzish va taklif etilgan view’larda kuzating. Bir viewdagi to‘g‘ri ko‘rinish yetarli emas.",
+      "Darsdagi bajarish: Bitta elementni statusdan barcha kerakli filterlargacha kuzatib audit qiling."
     ],
-    "exercise": "Status, filter va chiqariladigan varaqlarni audit qiling.",
-    "solution": "Renovation auditida har elementning hujjatlardagi holati dalillanadi.",
+    "exercise": "Status, filter va geometriya natijasini birga audit qiling.",
+    "solution": "Renovation auditi bir modeldagi bosqich ma’lumotlari va view natijasining mosligini tekshiradi.",
     "block": 11,
     "recipe": "renovation",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ranglar o‘quv maqsadida tanlangan; Archicad Renovation filterlaridagi haqiqiy grafik sozlamalar alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
