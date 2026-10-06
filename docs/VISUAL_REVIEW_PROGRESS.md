@@ -1,6 +1,6 @@
 # Visual review progress
 
-478 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 178 lessons using topic-specific architectural sketches. 202 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+483 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 183 lessons using topic-specific architectural sketches. 197 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -115,3 +115,5 @@ L15_M04: Final brief intake, requirement classification, constraints/risks, deli
 L15_M05: Final project concept, plan/site, BIM/technical coordination, facade/documentation and professional audit reviewed. Five generic visuals were rebuilt as topic-specific light architectural final-project sketches.
 
 L15_M06: Defense story structure, evidence-based decisions, technical explanation, jury Q&A and final defense audit reviewed. Five generic visuals were rebuilt as topic-specific architectural presentation sketches.
+
+L15_M07: Portfolio strategy, project selection, project story, graphic/text hierarchy and professional portfolio audit reviewed. Five generic visuals were rebuilt as topic-specific architectural portfolio sketches.
