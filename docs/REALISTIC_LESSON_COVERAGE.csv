@@ -599,11 +599,11 @@ L13_M08_002,Simulyatsiya: brief va variantlar,reviewed_architectural_sketch,l13_
 L13_M08_003,Simulyatsiya: prezentatsiya,reviewed_architectural_sketch,l13_m08_003.svg
 L13_M08_004,Simulyatsiya: revision va konflikt,reviewed_architectural_sketch,l13_m08_004.svg
 L13_M08_005,LEVEL 13 real loyiha audit,reviewed_architectural_sketch,l13_m08_005.svg
-L14_M01_001,Tor uchastkani tahlil qilish,pending_topic_review,
-L14_M01_002,Uzunlamasına zonalash,pending_topic_review,
-L14_M01_003,Yorug'lik va ichki hovli,pending_topic_review,
-L14_M01_004,Circulation va privacy,pending_topic_review,
-L14_M01_005,Tor uchastka professional audit,pending_topic_review,
+L14_M01_001,Tor uchastkani tahlil qilish,reviewed_architectural_sketch,l14_m01_001.svg
+L14_M01_002,Uzunlamasına zonalash,reviewed_architectural_sketch,l14_m01_002.svg
+L14_M01_003,Yorug'lik va ichki hovli,reviewed_architectural_sketch,l14_m01_003.svg
+L14_M01_004,Circulation va privacy,reviewed_architectural_sketch,l14_m01_004.svg
+L14_M01_005,Tor uchastka professional audit,reviewed_architectural_sketch,l14_m01_005.svg
 L14_M02_001,Murakkab uchastkani o'qish,pending_topic_review,
 L14_M02_002,Asosiy bino o'qini tanlash,pending_topic_review,
 L14_M02_003,Qolgan zonalardan foydalanish,pending_topic_review,
