@@ -75,3 +75,5 @@ L09_M01: Normative document reading workflow, scope/object type, revision/date/s
 L09_M02: Residential normative analysis, room functions/zoning, sanitary-support zones, vertical circulation and full residential audit reviewed. Five generic diagrams were rebuilt as topic-specific architectural plan/workflow sketches; exact normative values remain deferred to official-source verification.
 
 L09_M03: Site/document context, boundaries and access, neighboring context, genplan coordination and full site audit reviewed. Five generic diagrams were rebuilt as topic-specific genplan sketches; exact site setbacks and planning requirements remain deferred to official-source verification.
+
+L09_M04: Natural daylight, orientation/sun, external shading, plan-facade-section coordination and lighting/insolation audit reviewed. Five generic figures were rebuilt as topic-specific architectural lighting sketches; quantitative verification remains normative/calculation dependent.
