@@ -4142,86 +4142,91 @@
   {
     "code": "L08_M08_001",
     "asset": "l08_m08_001.svg",
-    "title": "Seysmik yuk tushunchasi — ko‘rgazmali namuna",
+    "title": "Seysmik yuk tushunchasi — arxitekturaviy eskiz",
     "explanation": [
-      "Ikki qavatli eskizda pastki qavat ochiq, yuqorisi zich devorli; nosimmetrik hajm mavjud.",
-      "Gorizontal ta’sir uchun massa va tayanch yo‘lini sxematik belgilang → seysmik savol.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Ko‘k strelkalar grunt harakatini, to‘q sariq strelkalar esa bino massasining inertsiya javobini konseptual ko‘rsatadi.",
+      "2. Zilzila paytida plita, ustun, devor, fundament va grunt bitta konstruktiv tizim sifatida ishlaydi; yuk yo‘li uzluksiz bo‘lishi kerak.",
+      "3. Eskiz kuch qiymati yoki hisob natijasini bermaydi. Seysmik koeffitsiyent, kesim, armatura va deformatsiyalar konstruktorning aniq hisobi bilan belgilanadi.",
+      "Darsdagi bajarish: Bino massasi → konstruktiv tizim → fundament → grunt umumiy yuk yo‘lini chizing."
     ],
-    "exercise": "Seysmik ta’sirni faqat vertikal og‘irlikdan ajrating.",
-    "solution": "Seysmik ishlash bino tizimining dinamik ta’sirga javobi bilan bog‘liq.",
+    "exercise": "Seysmik ta’sir va umumiy yuk yo‘lini konseptual ko‘rsating.",
+    "solution": "Seysmik ta’sir bino massasining gorizontal inertsiya javobi va uzluksiz konstruktiv yuk yo‘li bilan tushuntiriladi.",
     "block": 9,
     "recipe": "seismic",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual arxitekturaviy/konstruktiv eskiz. Kuchlar, element kesimlari, armatura, ruxsat etilgan muntazamlik va seysmik ko‘rsatkichlar undan olinmaydi; bular amaldagi talab va konstruktor hisobi bilan aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M08_002",
     "asset": "l08_m08_002.svg",
-    "title": "Bino shakli va konstruktiv muntazamlik — ko‘rgazmali namuna",
+    "title": "Bino shakli va konstruktiv muntazamlik — arxitekturaviy eskiz",
     "explanation": [
-      "Ikki qavatli eskizda pastki qavat ochiq, yuqorisi zich devorli; nosimmetrik hajm mavjud.",
-      "Plan va balandlikdagi muntazamlikni ajrating → ikkita mezon.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi to‘rtburchak plan tayanch va geometriyasi muntazam, o‘ngdagi L-shakl esa keskin geometriya o‘zgarishiga ega o‘quv misolidir.",
+      "2. Murakkab yoki nosimmetrik shakl yomon arxitektura degani emas, lekin konstruktiv xatti-harakatni murakkablashtirishi mumkin.",
+      "3. Katta konsol, keskin chiqish va bir tomda to‘plangan qattiqlik elementlari konstruktor bilan boshidan koordinatsiya qilinadi.",
+      "Darsdagi bajarish: Muntazam va notekis planlarning konstruktiv koordinatsiya farqini tushuntiring."
     ],
-    "exercise": "Plan va kesimda shakl hamda tayanch muntazamligini belgilang.",
-    "solution": "Muntazamlik masalalari konsepsiya bosqichida konstruktor bilan ko‘riladi.",
+    "exercise": "Oddiy va murakkab plan shaklini konstruktiv muntazamlik nuqtai nazaridan solishtiring.",
+    "solution": "Muntazamlik konstruktiv tizimni tushunish va koordinatsiya qilishni osonlashtiradi.",
     "block": 9,
     "recipe": "seismic",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual arxitekturaviy/konstruktiv eskiz. Kuchlar, element kesimlari, armatura, ruxsat etilgan muntazamlik va seysmik ko‘rsatkichlar undan olinmaydi; bular amaldagi talab va konstruktor hisobi bilan aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M08_003",
     "asset": "l08_m08_003.svg",
-    "title": "Vertikal uzluksizlik va yumshoq qavat — ko‘rgazmali namuna",
+    "title": "Vertikal uzluksizlik va yumshoq qavat — arxitekturaviy eskiz",
     "explanation": [
-      "Ikki qavatli eskizda pastki qavat ochiq, yuqorisi zich devorli; nosimmetrik hajm mavjud.",
-      "Pastki qavat tayanchlarini yuqori bilan solishtiring → yumshoq qavat ehtimoli, tashxis emas.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi sxemada ustunlar qavatlar bo‘yicha uzluksiz davom etadi; o‘ngdagi sxemada pastki qavat keskin ochilib, yuqoridagi tayanch tizimi o‘zgaradi.",
+      "2. Bir qavat boshqalarga nisbatan ancha ochiq yoki kam qattiqlikka ega bo‘lsa, soft-story xavfi nuqtai nazaridan alohida tekshiriladi.",
+      "3. Yuqoridagi ustun yoki devor pastda davom etmasa, yukni boshqa yo‘lga uzatadigan transfer yechim konstruktor bilan hisoblanadi.",
+      "Darsdagi bajarish: Ikki qavatli sxemada tayanchlarning vertikal davomiyligini tekshiring."
     ],
-    "exercise": "Pastki qavat va yuqori qavat tayanch farqini ko‘rsating.",
-    "solution": "Vertikal keskin o‘zgarishlar va yumshoq qavat ehtimoli alohida tekshiriladi.",
+    "exercise": "Ustun va konstruktiv devorlarning qavatlar bo‘yicha uzluksizligini tekshiring.",
+    "solution": "Vertikal muntazamlik yuk ko‘taruvchi tizimning qavatlar orasida tushunarli davom etishini talab qiladi.",
     "block": 9,
     "recipe": "seismic",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual arxitekturaviy/konstruktiv eskiz. Kuchlar, element kesimlari, armatura, ruxsat etilgan muntazamlik va seysmik ko‘rsatkichlar undan olinmaydi; bular amaldagi talab va konstruktor hisobi bilan aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M08_004",
     "asset": "l08_m08_004.svg",
-    "title": "Massa, nosimmetriya va arxitektura qarorlari — ko‘rgazmali namuna",
+    "title": "Massa, nosimmetriya va arxitektura qarorlari — arxitekturaviy eskiz",
     "explanation": [
-      "Ikki qavatli eskizda pastki qavat ochiq, yuqorisi zich devorli; nosimmetrik hajm mavjud.",
-      "Nosimmetrik og‘ir hajmni ko‘rsating → massa va qattiqlik munosabati bo‘yicha savol.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi markazlashgan plan nisbatan muvozanatli, o‘ngdagi plan esa og‘ir massa bir tomonda to‘plangan konseptual misol sifatida berilgan.",
+      "2. Massa va qattiqlikning notekis taqsimlanishi seysmik javobni murakkablashtirishi mumkin; katta opening, og‘ir tom yoki konsol konstruktiv koordinatsiyani talab qiladi.",
+      "3. Fasad yoki reja o‘zgarishi tayanch tizimiga ta’sir qilsa, u faqat estetik qaror sifatida ko‘rilmaydi.",
+      "Darsdagi bajarish: Massa, katta opening va nosimmetriya yaratadigan arxitektura qarorlarini belgilang."
     ],
-    "exercise": "Og‘ir elementlar va nosimmetrik joylashuvni qayd qiling.",
-    "solution": "Massa va qattiqlik taqsimoti arxitektura qarorlariga bog‘liq bo‘lishi mumkin.",
+    "exercise": "Massa va geometrik nosimmetriyani konstruktor bilan muvofiqlashtiriladigan omil sifatida tahlil qiling.",
+    "solution": "Arxitektura qarorlari bino massasi va konstruktiv muntazamlikka ta’siri bilan birga ko‘riladi.",
     "block": 9,
     "recipe": "seismic",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual arxitekturaviy/konstruktiv eskiz. Kuchlar, element kesimlari, armatura, ruxsat etilgan muntazamlik va seysmik ko‘rsatkichlar undan olinmaydi; bular amaldagi talab va konstruktor hisobi bilan aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M08_005",
     "asset": "l08_m08_005.svg",
-    "title": "Seysmik loyiha professional audit — ko‘rgazmali namuna",
+    "title": "Seysmik loyiha professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Ikki qavatli eskizda pastki qavat ochiq, yuqorisi zich devorli; nosimmetrik hajm mavjud.",
-      "Konfliktli plan/kesimni konstruktorga bering → hisob va kelishuv talab qilinadi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Kichik eskizlar plan shakli, tayanch tizimi, yumshoq qavat, massa, katta opening va audit checklist kabi asosiy savollarni bir varaqda jamlaydi.",
+      "2. Auditda forma, massa, plan muntazamligi, vertikal uzluksizlik, tayanchlar va katta ochilishlar konstruktor modeli bilan koordinatsiya qilinadi.",
+      "3. Bu tasvir konstruktiv hisob emas. Arxitektor potensial konfliktlarni erta aniqlaydi va hisob uchun konstruktor bilan ishlaydi.",
+      "Darsdagi bajarish: Forma → massa → tayanchlar → vertikal uzluksizlik → openings → koordinatsiya checklistini to‘ldiring."
     ],
-    "exercise": "Seysmik hudud ma’lumoti va konstruktor tekshiruvini talablar ro‘yxatiga kiriting.",
-    "solution": "Seysmik audit geometrik ko‘rikni professional hisob o‘rniga qo‘ymaydi.",
+    "exercise": "Seysmik loyiha uchun arxitektura va konstruktiv koordinatsiya auditini bajaring.",
+    "solution": "Professional audit seysmik jihatdan muhim arxitektura qarorlarini konstruktor hisobi bilan muvofiqlashtirishga xizmat qiladi.",
     "block": 14,
     "recipe": "seismic",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual arxitekturaviy/konstruktiv eskiz. Kuchlar, element kesimlari, armatura, ruxsat etilgan muntazamlik va seysmik ko‘rsatkichlar undan olinmaydi; bular amaldagi talab va konstruktor hisobi bilan aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
