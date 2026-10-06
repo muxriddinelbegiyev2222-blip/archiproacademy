@@ -3704,5 +3704,73 @@
     "boundary": "Mavzuni tushuntiruvchi realistik tasvir. Perspektivdan aniq pitch, overhang yoki konstruktiv o‘lcham olmang; sonlarni Archicad modeli va dars shartidan tekshiring.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L06_M09_002",
+    "asset": "realistic-l03_m07_002.jpg",
+    "title": "Balandlik nuqtasi oldin o‘lchanadi, keyin Meshga kiritiladi",
+    "explanation": [
+      "1. Chapdagi geodezik asbob va o‘ngdagi reyka yer sathlarini o‘lchash jarayonini ko‘rsatadi. Mesh nuqtalarini ko‘z bilan taxmin qilish o‘rniga o‘lchov manbasiga bog‘lash kerak.",
+      "2. Nishabli uchastkada turli joylar bir xil elevationga ega emas. Plan koordinatasi bilan elevation juftligi birgalikda terrain nuqtasini ma’noli qiladi.",
+      "3. O‘lchangan nuqtalarni Meshga kiritgach 3D va Section profilini tekshiring; rasmning o‘zidan sonli balandlik o‘qimang.",
+      "Darsdagi bajarish: nuqta koordinatasi + sath + manba uchligini qayd qiling."
+    ],
+    "exercise": "Kontur va balandlik nuqtalarini kiriting, birlikni tekshiring.",
+    "solution": "Relyef nuqtasi ishonchli o‘lchov manbasi bilan birga modelga kiritiladi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi realistik tasvir. Rasmning perspektivasidan aniq sath yoki nishab qiymati olinmaydi; loyiha sonlari o‘lchov/topografiya va Archicad modelidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L06_M09_003",
+    "asset": "realistic-l03_m07_001.jpg",
+    "title": "Nishabli uchastkani ko‘z bilan emas, sathlar bilan o‘qing",
+    "explanation": [
+      "1. Yer chap-orqa tomondan ko‘cha tomonga pasayib boradi; bir qarashda ham nishab yo‘nalishi seziladi, ammo aniq foizni suratdan olish mumkin emas.",
+      "2. Devor va qoziqlar turli balandlik zonalarini vizual taqqoslashga yordam beradi. Mesh modelida bu farq elevation nuqtalari bilan ifodalanadi.",
+      "3. Section chizig‘ini yuqori va past zona orqali o‘tkazib, tabiiy profilni ko‘ring; bitta noto‘g‘ri nuqta sun’iy keskin qiyalik yaratmasin.",
+      "Darsdagi bajarish: yuqori→past yo‘nalishni belgilang va model sathlari bilan tasdiqlang."
+    ],
+    "exercise": "0.600 / 20 × 100 = 3% o‘quv nishabini hisoblang.",
+    "solution": "Nishab yo‘nalishi tasvirda ko‘rinishi mumkin, sonli nishab esa sath va masofadan hisoblanadi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi realistik tasvir. Rasmning perspektivasidan aniq sath yoki nishab qiymati olinmaydi; loyiha sonlari o‘lchov/topografiya va Archicad modelidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L06_M09_004",
+    "asset": "realistic-l03_m07_003.jpg",
+    "title": "Uy va relyef: bir xil bino turli vertikal joylashuvda",
+    "explanation": [
+      "1. Chap va o‘ng variantlarda bir xil uy qiya yerga boshqa-boshqa munosabatda joylashgan. Kirish pog‘onalari va yer bilan tutashuv darhol o‘zgaradi.",
+      "2. Faqat ‘uy sig‘di’ degan plan xulosasi yetmaydi. Entrance, terrace va piyoda yo‘li sathlarini Sectionda real terrain bilan solishtirish kerak.",
+      "3. Qazish/to‘ldirish hajmini bu renderdan aniqlamang. Dars maqsadi bino reference level va Mesh topografiyasi o‘rtasidagi fazoviy konfliktni ko‘rish.",
+      "Darsdagi bajarish: uy pol sathi + kirish + terrain profilini bitta Sectionda ko‘rsating."
+    ],
+    "exercise": "Bino pol sathi bilan terrainni kesimda solishtiring.",
+    "solution": "Bino joylashuvi relyef, kirish va tashqi circulation bilan birga baholanadi.",
+    "block": 9,
+    "boundary": "Mavzuni tushuntiruvchi realistik tasvir. Rasmning perspektivasidan aniq sath yoki nishab qiymati olinmaydi; loyiha sonlari o‘lchov/topografiya va Archicad modelidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
+  },
+  {
+    "code": "L06_M09_005",
+    "asset": "realistic-l03_m07_005.jpg",
+    "title": "Mesh auditida suv yig‘iladigan past zonani ham toping",
+    "explanation": [
+      "1. Hovlidagi suv to‘plangan past joy relyef auditi faqat ‘3D chiroyli ko‘rinyaptimi’ degan savol emasligini ko‘rsatadi.",
+      "2. Uy devori, yo‘lak va tuproq sathlarini solishtiring: qaysi yo‘nalishda suv yig‘ilishi mumkinligini o‘z loyihangizda topografik sathlar bilan tekshiring.",
+      "3. Rasm drenaj loyihasi emas. Auditda shubhali past nuqtani qayd qiling, lekin yechimni tegishli muhandislik ma’lumoti va loyiha talabiga bog‘lang.",
+      "Darsdagi bajarish: kontur, kritik sath, bino aloqasi va suv yo‘li savollarini bitta auditga yig‘ing."
+    ],
+    "exercise": "Mesh nuqtalari, kesim va kirishdagi sath farqini topshiring.",
+    "solution": "Mesh auditi terrain geometriyasi bilan bino va tashqi foydalanish konfliktlarini birga aniqlaydi.",
+    "block": 11,
+    "boundary": "Mavzuni tushuntiruvchi realistik tasvir. Rasmning perspektivasidan aniq sath yoki nishab qiymati olinmaydi; loyiha sonlari o‘lchov/topografiya va Archicad modelidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]

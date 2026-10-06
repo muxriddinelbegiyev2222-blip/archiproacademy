@@ -1,6 +1,6 @@
 # Visual review progress
 
-295 of 680 lessons have completed the current topic-specific visual review: 218 AI material-render lessons and 77 lessons using documented Graphisoft screenshots. 385 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+300 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons and 78 lessons using documented Graphisoft screenshots. 380 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -39,3 +39,5 @@ L06_M06: Roof Settings, Single/Multi-plane selection, pitch units, overhang dist
 L06_M07: Stair Top Link/Home Story, tread-riser controls, configurable Rules & Standards, turning types and multi-view Stair audit reviewed using actual Archicad 28 screenshots. Repeated 3000/18 generic SVG diagrams were removed; SHNQ verification remains deferred.
 
 L06_M08: Railing hierarchy, Segment/Node structure, Pattern Editor components, associativity to Stair/Slab and pattern distribution reviewed using actual Archicad 28 screenshots. Generic railing SVG supplements were removed; numeric safety compliance remains outside this deferred SHNQ phase.
+
+L06_M09: Mesh reference plane/construction methods and New Mesh Points workflow reviewed. Survey, sloping site, house-on-slope and terrain-audit material renders were remapped with Mesh-specific explanations; repeated slope SVG diagrams were removed.

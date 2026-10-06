@@ -1546,86 +1546,86 @@
   {
     "code": "L06_M09_001",
     "asset": "ac28-mesh.png",
-    "title": "Mesh: yer modeli tuzilishini tanlash",
+    "title": "Mesh Settings: reference plane va construction method",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-6.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/MeshConstruction.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Mesh: yer modeli tuzilishini tanlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Meshni yer modeli, slabni bino elementi deb ajrating → vazifalar boshqa."
+      "Geometry and Positioning qismida Mesh reference plane sathi, Home Story/Project Zero aloqasi va uchta construction method ko‘rinadi: Surface Only, Surface with Skirt va Solid Body.",
+      "Mesh relyef yuzasini nodlar balandligi va ular orasidagi interpolatsiya orqali ifodalaydi. Bu Slab yoki bino polini almashtiradigan obyekt emas; vazifasi yer geometriyasini modelda boshqarish.",
+      "Darsda avval tekis Mesh yarating, so‘ng uning reference plane va 3D yuzasini ajrating. Keyingi darslarda shu yuzaga o‘lchangan balandlik nuqtalari qo‘shiladi."
     ],
     "exercise": "Terrainni bino elementidan ajratib, Mesh vazifasini yozing.",
     "solution": "Mesh uchastkaning relyef geometriyasini o‘quv modelida ifodalaydi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT’dagi haqiqiy Mesh interfeysi. Skrinshotdagi qiymatlar va construction method tanlovi o‘quv namunasi; relyef balandliklari real loyihada geodezik/topografik ma’lumotdan olinadi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M09_002",
     "asset": "ac28-mesh-points.png",
-    "title": "Mesh: yangi balandlik nuqtalarini qo‘shish",
+    "title": "New Mesh Points: yangi nuqtalar va surface fitting",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-133.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/NewMeshPoints.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Mesh: yangi balandlik nuqtalarini qo‘shish. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Yopiq Mesh konturi va sath nuqtalarini kiriting → tekshiriladigan relyef."
+      "New Mesh Points oynasi yangi nuqtalarni qo‘shish yoki yopiq poligon orqali hole yaratish variantini beradi. Drop-down’da No Surface Fitting, Fit to User Ridges va Fit to All Ridges mavjud.",
+      "Fit to User Ridges yangi nuqtalarni joriy Mesh yuzasiga joylashtirib user-defined ridgelarni saqlaydi; Fit to All Ridges esa mavjud barcha ridgelarni saqlab aniqroq, lekin ko‘proq ridge hosil qilishi mumkin.",
+      "Bu oyna balandlik qiymatini qayerdan olishni hal qilmaydi. Real sathlar geodezik/topografik manbadan keladi; noto‘g‘ri kiritilgan bitta nuqta relyefni keskin buzishi mumkin."
     ],
     "exercise": "Kontur va balandlik nuqtalarini kiriting, birlikni tekshiring.",
     "solution": "Relyef nuqtasi plan koordinatasi va sath qiymati bilan aniqlanadi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT’dagi haqiqiy Mesh interfeysi. Skrinshotdagi qiymatlar va construction method tanlovi o‘quv namunasi; relyef balandliklari real loyihada geodezik/topografik ma’lumotdan olinadi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M09_003",
     "asset": "ac28-mesh-points.png",
-    "title": "Mesh: yangi balandlik nuqtalarini qo‘shish",
+    "title": "Nishab yaratish: nuqtalarni qo‘shish yetarli emas — sath ham to‘g‘ri bo‘lsin",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-133.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/NewMeshPoints.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Mesh: yangi balandlik nuqtalarini qo‘shish. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Kesimda 0.5/10=5% o‘rtacha nishabni ko‘rsating → sathlar mos."
+      "Nishab Meshdagi ikki yoki undan ortiq nuqtaning turli elevation qiymatlari orasida yuzaga keladi. New Mesh Points dialogi topologiyani boshqaradi, lekin nishabning haqiqiy yo‘nalishi siz kiritgan sathlardan keladi.",
+      "Qo‘shni nuqtalarda tasodifiy katta sath farqi sun’iy cho‘qqi yoki chuqurlik yaratadi. 3Ddagi shaklni ko‘rish bilan birga Sectionda profilni ham tekshiring.",
+      "Nishab foizini alohida hisoblash mumkin, lekin bu hisob ruxsat etilgan loyiha qiymatini avtomatik belgilamaydi. Modeldagi sath, gorizontal masofa va o‘lchov manbasini birga saqlang."
     ],
     "exercise": "0.600 / 20 × 100 = 3% o‘quv nishabini hisoblang.",
     "solution": "Nishab vertikal farqning gorizontal masofaga nisbatidir; bu hisob ruxsat etilgan qiymatni belgilamaydi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT’dagi haqiqiy Mesh interfeysi. Skrinshotdagi qiymatlar va construction method tanlovi o‘quv namunasi; relyef balandliklari real loyihada geodezik/topografik ma’lumotdan olinadi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M09_004",
     "asset": "ac28-mesh.png",
-    "title": "Mesh: yer modeli tuzilishini tanlash",
+    "title": "Uy–relyef auditi Mesh Settings bilan tugamaydi",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/150_UserInterfaceToolSettings-6.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/150_UserInterfaceToolSettings/MeshConstruction.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Mesh: yer modeli tuzilishini tanlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Uy konturi va kirishni relyefga joylashtiring → yer-bino kesishishi ko‘rinadi."
+      "Mesh Settings reference plane va yer modelining bazaviy tuzilishini beradi. Bino pol sathi esa boshqa elementlarning Stories/sath tizimidan keladi; ikkalasini bir son deb aralashtirmang.",
+      "Uy joylashtirilgach entrance, terrace, driveway va hovli nuqtalarini Mesh bilan Sectionda kesib ko‘ring. Bino havoda qolishi yoki yer modelining bino ichiga kirib ketishi shu yerda seziladi.",
+      "Cut/fill g‘oyasi fazoviy tahlil uchun foydali, ammo bu darsdan avtomatik yer ishlari hajmi yoki muhandislik yechimi olinmaydi."
     ],
     "exercise": "Bino pol sathi bilan terrainni kesimda solishtiring.",
     "solution": "Bino-relyef aloqasi kirish, yerga tutashuv va suv yo‘li bilan koordinatsiya qilinadi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT’dagi haqiqiy Mesh interfeysi. Skrinshotdagi qiymatlar va construction method tanlovi o‘quv namunasi; relyef balandliklari real loyihada geodezik/topografik ma’lumotdan olinadi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M09_005",
     "asset": "ac28-mesh-points.png",
-    "title": "Mesh: yangi balandlik nuqtalarini qo‘shish",
+    "title": "Mesh auditida nuqta manbasi, ridge va 3D profilni tekshiring",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-133.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/NewMeshPoints.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Mesh: yangi balandlik nuqtalarini qo‘shish. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Suv yo‘li, kesish/to‘ldirish va noma’lum gruntni qayd qiling → muhandislik savollari."
+      "Auditda tashqi Mesh konturi, user-defined ridgeler va muhim balandlik nuqtalarining manbasini qayd qiling. Har bir nuqta ‘taxmin’ yoki ‘o‘lchangan’ ekanini ajratish model ishonchliligi uchun muhim.",
+      "Fit to User/All Ridges kabi surface fitting tanlovi Mesh triangulation va nuqtalarning joriy yuzaga qanday qo‘shilishiga ta’sir qiladi. Model ko‘rinishi silliq bo‘lsa ham sath ma’lumoti xato bo‘lishi mumkin.",
+      "Plan’da kontur/nuqtalar, 3Dda g‘ayritabiiy cho‘qqi-chuqurlik, Sectionda bino–yer sathi va kirish/yo‘l profilini tekshiring. Suv yig‘iladigan past nuqtalarni ham alohida qayd qiling."
     ],
     "exercise": "Mesh nuqtalari, kesim va kirishdagi sath farqini topshiring.",
     "solution": "Mesh auditida modelning sathlari o‘lchangan ma’lumotlarga mosligi tekshiriladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Archicad 28 INT’dagi haqiqiy Mesh interfeysi. Skrinshotdagi qiymatlar va construction method tanlovi o‘quv namunasi; relyef balandliklari real loyihada geodezik/topografik ma’lumotdan olinadi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
