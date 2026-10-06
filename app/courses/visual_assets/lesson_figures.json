@@ -5042,86 +5042,91 @@
   {
     "code": "L10_M01_001",
     "asset": "l10_m01_001.svg",
-    "title": "Texnik topshiriq nima? — ko‘rgazmali namuna",
+    "title": "Texnik topshiriq nima? — arxitekturaviy eskiz",
     "explanation": [
-      "To‘rt kishilik oila uch yotoqxona, mehmonxona va ish joyi so‘radi. Maydon va budjet chegarasi aniqlanadi.",
-      "Mijoz istagi, vazifa va cheklovni alohida yozing → brief.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi suhbat kartasi mijoz ehtiyojini yig‘ishni, o‘ngdagi bloklar esa bu ma’lumotni tizimli briefga aylantirishni ko‘rsatadi.",
+      "2. Texnik topshiriq faqat xona soni emas; oila, hayot tarzi, xonalar, ustuvorlik va cheklovlarni birlashtiradi.",
+      "3. Brief noaniq bo‘lsa keyingi plan tez-tez qayta ishlanishi mumkin.",
+      "Darsdagi bajarish: Birinchi mijoz suhbatiga 15 ta aniq savol tayyorlang."
     ],
-    "exercise": "Texnik topshiriqni istaklar ro‘yxatidan ajrating.",
-    "solution": "Brief talab, cheklov, ustuvorlik va natija mezonini birlashtiradi.",
+    "exercise": "Mijoz ehtiyojlarini tizimli texnik topshiriqqa aylantiring.",
+    "solution": "Professional brief loyiha boshlanishidan oldin kim, qanday yashashi va qanday cheklovlar borligini aniqlaydi.",
     "block": 5,
     "recipe": "brief",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy brief eskizi. Diagram va kartochkalar o‘quv mantiqini ko‘rsatadi; real loyiha talablari mijoz va loyiha sharoitidan olinadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M01_002",
     "asset": "l10_m01_002.svg",
-    "title": "Oila va yashash ssenariysi — ko‘rgazmali namuna",
+    "title": "Oila va yashash ssenariysi — arxitekturaviy eskiz",
     "explanation": [
-      "To‘rt kishilik oila uch yotoqxona, mehmonxona va ish joyi so‘radi. Maydon va budjet chegarasi aniqlanadi.",
-      "Uyqu, ish, mehmon va xo‘jalik kun tartibini jadvalga kiriting → real ssenariy.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Oila tarkibi bir xil bo‘lsa ham kundalik odatlar turlicha bo‘lishi mumkin; plan shu farqni hisobga oladi.",
+      "2. Mehmon kutish, ish rejimi, ovqatlanish va privacy talabi public/private zonalar aloqasini o‘zgartiradi.",
+      "3. “Bir kunlik hayot” ssenariysi real foydalanish ketma-ketligini ko‘rsatishga yordam beradi.",
+      "Darsdagi bajarish: Oila uchun ertalabdan kechgacha bir kunlik yashash ssenariysini yozing."
     ],
-    "exercise": "Bir kunlik oila ssenariylarini yozing.",
-    "solution": "Xona talabi kundalik faoliyatdan chiqariladi.",
+    "exercise": "Oila tarkibi va kundalik odatlarni plan qarorlariga bog‘lang.",
+    "solution": "Yashash ssenariysi bir xil xona sonidan ham turli plan ehtiyojlari kelib chiqishini ko‘rsatadi.",
     "block": 5,
     "recipe": "brief",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy brief eskizi. Diagram va kartochkalar o‘quv mantiqini ko‘rsatadi; real loyiha talablari mijoz va loyiha sharoitidan olinadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M01_003",
     "asset": "l10_m01_003.svg",
-    "title": "Xonalar dasturi — ko‘rgazmali namuna",
+    "title": "Xonalar dasturi — arxitekturaviy eskiz",
     "explanation": [
-      "To‘rt kishilik oila uch yotoqxona, mehmonxona va ish joyi so‘radi. Maydon va budjet chegarasi aniqlanadi.",
-      "Xona jadvali: nom, foydalanuvchi, vazifa, aloqa, ustuvorlik va tasdiqlangan maydon → rejalashtirish asosi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi ro‘yxat xona nomlarini, o‘ngdagi bubble diagram esa ularning funksional aloqasini ko‘rsatadi.",
+      "2. Har xona uchun vazifa, foydalanuvchi, ustuvorlik, boshqa xonalar bilan aloqa va tabiiy yorug‘lik ehtiyoji yoziladi.",
+      "3. PUBLIC, PRIVATE va SERVICE guruhlash keyingi bubble diagram va plan uchun tartib yaratadi.",
+      "Darsdagi bajarish: 4 kishilik bir qavatli uy uchun room program va bubble diagram tuzing."
     ],
-    "exercise": "Xonalar dasturida vazifa, foydalanuvchi va aloqani belgilang.",
-    "solution": "Room program xona nomlaridan tashqari foydalanishni tushuntiradi.",
+    "exercise": "Xonalar ro‘yxatini funksional aloqalar va zonalash bilan to‘ldiring.",
+    "solution": "Room program faqat nomlar ro‘yxati emas, keyingi plan uchun funksional modeldir.",
     "block": 5,
     "recipe": "brief",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy brief eskizi. Diagram va kartochkalar o‘quv mantiqini ko‘rsatadi; real loyiha talablari mijoz va loyiha sharoitidan olinadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M01_004",
     "asset": "l10_m01_004.svg",
-    "title": "Cheklovlar va ustuvorliklar — ko‘rgazmali namuna",
+    "title": "Cheklovlar va ustuvorliklar — arxitekturaviy eskiz",
     "explanation": [
-      "To‘rt kishilik oila uch yotoqxona, mehmonxona va ish joyi so‘radi. Maydon va budjet chegarasi aniqlanadi.",
-      "Majburiy va muhokama qilinadigan talabni ajrating → variant tanlovi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi cheklovlar ro‘yxati uchastka, normativ, budjet, konstruktsiya, iqlim va vaqtni ifodalaydi.",
+      "2. O‘ngdagi uch daraja talablarni MUST HAVE, NICE TO HAVE va OPTIONAL guruhlariga ajratish g‘oyasini ko‘rsatadi.",
+      "3. “Hammasi muhim” qaror qabul qilishni qiyinlashtiradi; ustuvorlik trade-off paytida yordam beradi.",
+      "Darsdagi bajarish: Mijoz talablarini uch ustuvorlik darajasiga ajrating."
     ],
-    "exercise": "Majburiy, afzal va keyinga qoldiriladigan talablarni ajrating.",
-    "solution": "Ustuvorlik konfliktli qarorlarni mezon bilan hal qilishga yordam beradi.",
+    "exercise": "Real cheklovlar bilan mijoz istaklarini ustuvorlik bo‘yicha tartiblang.",
+    "solution": "Ustuvorlik cheklovlar paytida qaysi talabni saqlash va qaysi birini moslashtirishni aniqlashtiradi.",
     "block": 5,
     "recipe": "brief",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy brief eskizi. Diagram va kartochkalar o‘quv mantiqini ko‘rsatadi; real loyiha talablari mijoz va loyiha sharoitidan olinadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M01_005",
     "asset": "l10_m01_005.svg",
-    "title": "Professional brief audit — ko‘rgazmali namuna",
+    "title": "Professional brief audit — arxitekturaviy eskiz",
     "explanation": [
-      "To‘rt kishilik oila uch yotoqxona, mehmonxona va ish joyi so‘radi. Maydon va budjet chegarasi aniqlanadi.",
-      "Har noma’lum shartga savol va mas’ul yozing, mijoz tasdig‘ini qayd qiling → ishlanadigan topshiriq.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Checklist oila, hayot tarzi, xona programmasi, zonalash, cheklov, budjet va tasdiqlashni bir joyda tekshiradi.",
+      "2. Markazdagi plan brief qarorlarining keyingi chizmaga o‘tishini, o‘ngdagi kartochka esa mijoz bilan tasdiqlashni ifodalaydi.",
+      "3. Tasdiqlanmagan yoki tushunarsiz brief keyingi bosqichda katta qayta ishlash xavfini oshiradi.",
+      "Darsdagi bajarish: Briefni 8 bandli checklist bilan audit qilib, mijoz bilan tasdiqlang."
     ],
-    "exercise": "Noma’lum ma’lumot va tasdiqlanishi kerak bo‘lgan talabni audit qiling.",
-    "solution": "Brief auditi taxminni mijoz tasdig‘idan ajratadi.",
+    "exercise": "Texnik topshiriqni loyiha boshlanishidan oldin to‘liq audit qiling.",
+    "solution": "Professional brief audit keyingi site va plan bosqichlari uchun barqaror boshlang‘ich asos yaratadi.",
     "block": 5,
     "recipe": "brief",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy brief eskizi. Diagram va kartochkalar o‘quv mantiqini ko‘rsatadi; real loyiha talablari mijoz va loyiha sharoitidan olinadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
