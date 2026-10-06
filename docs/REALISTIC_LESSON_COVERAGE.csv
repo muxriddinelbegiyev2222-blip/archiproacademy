@@ -389,11 +389,11 @@ L09_M04_002,Orientatsiya va quyosh,reviewed_architectural_sketch,l09_m04_002.svg
 L09_M04_003,Soyalanish va qo'shni obyektlar,reviewed_architectural_sketch,l09_m04_003.svg
 L09_M04_004,"Plan, fasad va kesim koordinatsiyasi",reviewed_architectural_sketch,l09_m04_004.svg
 L09_M04_005,Yoritish va insolyatsiya audit,reviewed_architectural_sketch,l09_m04_005.svg
-L09_M05_001,Yong'in xavfsizligi fikrlashi,pending_topic_review,
-L09_M05_002,"Odamlar, yo'llar va chiqishlar",pending_topic_review,
-L09_M05_003,Konstruksiya va materiallar bilan aloqa,pending_topic_review,
-L09_M05_004,Uchastka va tashqi kirish,pending_topic_review,
-L09_M05_005,Yong'in xavfsizligi professional audit,pending_topic_review,
+L09_M05_001,Yong'in xavfsizligi fikrlashi,reviewed_architectural_sketch,l09_m05_001.svg
+L09_M05_002,"Odamlar, yo'llar va chiqishlar",reviewed_architectural_sketch,l09_m05_002.svg
+L09_M05_003,Konstruksiya va materiallar bilan aloqa,reviewed_architectural_sketch,l09_m05_003.svg
+L09_M05_004,Uchastka va tashqi kirish,reviewed_architectural_sketch,l09_m05_004.svg
+L09_M05_005,Yong'in xavfsizligi professional audit,reviewed_architectural_sketch,l09_m05_005.svg
 L09_M06_001,Evakuatsiya tushunchasi,pending_topic_review,
 L09_M06_002,Evakuatsiya yo'li,pending_topic_review,
 L09_M06_003,"Eshik, koridor va zinapoya",pending_topic_review,
