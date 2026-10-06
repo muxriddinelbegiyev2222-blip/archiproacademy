@@ -4952,87 +4952,92 @@
   {
     "code": "L09_M08_001",
     "asset": "l09_m08_001.svg",
-    "title": "Normativ xatolarni tanish — ko‘rgazmali namuna",
+    "title": "Normativ xatolarni tanish — arxitekturaviy audit eskizi",
     "explanation": [
-      "Auditda eski hujjat, bandi yo‘q raqam va yangilanmagan genplan topildi.",
-      "Har xatoni manba, talqin, geometriya yoki hujjat guruhiga ajrating → sabab turi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi besh kartochka normativ xatolarning asosiy manbalarini ifodalaydi: manba, qo‘llanish, talqin, loyiha va koordinatsiya.",
+      "2. Markazdagi plan xatosi normativ muammo faqat noto‘g‘ri raqam emasligini ko‘rsatadi; noto‘g‘ri tasnif yoki noto‘g‘ri talqin ham xatoga olib keladi.",
+      "3. “Hamma shunday qiladi” yoki “eshitganman” professional dalil emas; audit amaldagi va tegishli manbaga tayanadi.",
+      "Darsdagi bajarish: 5 kategoriya bo‘yicha bittadan normativ xato ssenariysi yozing."
     ],
-    "exercise": "Dalilsiz, noto‘g‘ri doirali va eskirgan xulosalarni ajrating.",
-    "solution": "Normativ xatolar manba, qo‘llanish va talqinda yuz berishi mumkin.",
+    "exercise": "Normativ xatolarni manba, qo‘llanish, talqin, loyiha va koordinatsiya bo‘yicha tasniflang.",
+    "solution": "Professional normativ audit xatoning turini avval aniqlab, keyin dalil bilan tekshiradi.",
     "block": 5,
     "recipe": "norm",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Normativ audit mantiqini tushuntiruvchi yengil arxitekturaviy eskiz. Aniq SHNQ/QMQ bandlari va sonli talablar bu rasmdan olinmaydi; rasmiy amaldagi manba alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M08_002",
     "asset": "l09_m08_002.svg",
-    "title": "Noto'g'ri manba va noto'g'ri talqin — ko‘rgazmali namuna",
+    "title": "Noto‘g‘ri manba va noto‘g‘ri talqin — arxitekturaviy audit eskizi",
     "explanation": [
-      "Auditda eski hujjat, bandi yo‘q raqam va yangilanmagan genplan topildi.",
-      "Hujjat tahriri va obyekt doirasini rasmiy asosdan solishtiring → noto‘g‘ri manba aniqlanadi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi hujjat kartasi eski yoki noma’lum manbadan kelgan noto‘g‘ri dalil xavfini ifodalaydi.",
+      "2. Markazdagi source-check kartasi hujjat nomi, tahrir, sana, qo‘llanish doirasi va kerakli bandni tekshirish kerakligini ko‘rsatadi.",
+      "3. Bitta jumlani kontekstdan uzib ishlatmang; bandning butun bo‘lim va obyekt tasnifi bilan aloqasi bo‘lishi mumkin.",
+      "Darsdagi bajarish: Bitta talab uchun source-check kartasi tuzing."
     ],
-    "exercise": "Asl hujjatni topish va tahririni tekshirish yo‘lini yozing.",
-    "solution": "Ijtimoiy tarmoqdagi skrinshot birlamchi normativ manba o‘rnini bosa olmaydi.",
+    "exercise": "Normativ manbani hujjat holati va qo‘llanish doirasi bilan tekshiring.",
+    "solution": "To‘g‘ri manba va kontekst normativ talqinning ishonchliligini belgilaydi.",
     "block": 5,
     "recipe": "norm",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Normativ audit mantiqini tushuntiruvchi yengil arxitekturaviy eskiz. Aniq SHNQ/QMQ bandlari va sonli talablar bu rasmdan olinmaydi; rasmiy amaldagi manba alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M08_003",
     "asset": "l09_m08_003.svg",
-    "title": "Plan va genplandagi xatolar — ko‘rgazmali namuna",
+    "title": "Plan va genplandagi xatolar — arxitekturaviy audit eskizi",
     "explanation": [
-      "Auditda eski hujjat, bandi yo‘q raqam va yangilanmagan genplan topildi.",
-      "Planni genplan bilan ustma-ust tekshiring → boshqa kontur yoki masofa.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi plan/genplan ichidagi ajratilgan nuqtalar circulation, sanitar zona, kirish, yoritish yoki uchastka cheklovi kabi potensial konfliktlarni ifodalaydi.",
+      "2. O‘ngdagi ro‘yxat xatoni ko‘rish bilan cheklanmasdan uni tekshiruv bandiga aylantirish kerakligini ko‘rsatadi.",
+      "3. Chiroyli plan avtomatik ravishda normativga mos degani emas; funksional va uchastka qarorlari alohida audit qilinadi.",
+      "Darsdagi bajarish: Bitta uy planida topilishi mumkin bo‘lgan 10 normativ xato ssenariysini yozing."
     ],
-    "exercise": "Plan va genplandagi har muammoni aniq joy bilan belgilang.",
-    "solution": "Xato joyi va tegishli chizma aniqlanmasa, tuzatishni tekshirib bo‘lmaydi.",
+    "exercise": "Plan va genplandagi potensial normativ konfliktlarni tizimli toping.",
+    "solution": "Find-the-mistake mashqi normativ auditda vizual xatoni dalilli tekshiruvga aylantiradi.",
     "block": 5,
     "recipe": "genplan",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Normativ audit mantiqini tushuntiruvchi yengil arxitekturaviy eskiz. Aniq SHNQ/QMQ bandlari va sonli talablar bu rasmdan olinmaydi; rasmiy amaldagi manba alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M08_004",
     "asset": "l09_m08_004.svg",
-    "title": "Koordinatsiya va hujjatlashtirish xatolari — ko‘rgazmali namuna",
+    "title": "Koordinatsiya va hujjatlashtirish xatolari — arxitekturaviy audit eskizi",
     "explanation": [
-      "Auditda eski hujjat, bandi yo‘q raqam va yangilanmagan genplan topildi.",
-      "Qaror qaydi va revisionni tekshiring → yo‘qolgan kelishuv.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi arxitektura plan, markazdagi konstruktiv sxema va o‘ngdagi audit kartasi bir xil loyiha versiyasida ishlashi kerak.",
+      "2. Arxitektura, konstruktsiya va MEP turli revisionlarda bo‘lsa normativ xulosa ishonchsiz bo‘lishi mumkin.",
+      "3. Auditda qaysi loyiha versiyasi, sana va qaysi normativ manba ishlatilgani qayd qilinadi.",
+      "Darsdagi bajarish: Versiya → model → normativ audit → issue → qayta tekshiruv workflowini yozing."
     ],
-    "exercise": "O‘zgargan band ta’siridagi chizmalar ro‘yxatini tuzing.",
-    "solution": "Hujjat tuzatishi barcha bog‘liq ko‘rinishlarga yetkaziladi.",
+    "exercise": "Normativ auditni oxirgi koordinatsiyalangan loyiha versiyasi bilan bog‘lang.",
+    "solution": "Koordinatsiya va hujjatlashtirish audit natijasining qayta tekshirilishini ta’minlaydi.",
     "block": 5,
     "recipe": "coordination",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Normativ audit mantiqini tushuntiruvchi yengil arxitekturaviy eskiz. Aniq SHNQ/QMQ bandlari va sonli talablar bu rasmdan olinmaydi; rasmiy amaldagi manba alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M08_005",
     "asset": "l09_m08_005.svg",
-    "title": "LEVEL 9 professional normativ audit — ko‘rgazmali namuna",
+    "title": "LEVEL 9 professional normativ audit — arxitekturaviy audit eskizi",
     "explanation": [
-      "Auditda eski hujjat, bandi yo‘q raqam va yangilanmagan genplan topildi.",
-      "Har muammoga mas’ul, tuzatish va qayta tekshiruv yozing → yopiladigan audit.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Checklist, loyiha dalili va source/status kartalari yakuniy normativ auditning barcha qismlarini bir joyga jamlaydi.",
+      "2. Obyekt → amaldagi manba → qo‘llanish doirasi → loyiha tekshiruvi → issue → yechim → qayta tekshiruv → hujjatlashtirish ketma-ketligi saqlanadi.",
+      "3. Aniq manba va loyiha dalilisiz “MOS” statusi berilmaydi.",
+      "Darsdagi bajarish: LEVEL 9 checklist bo‘yicha to‘liq audit jadvali tayyorlang."
     ],
-    "exercise": "Manba, band, tuzatish va qayta tekshiruvni audit qiling.",
-    "solution": "Final normativ audit ochiq masalalar va tasdiqlangan natijalarni ajratadi.",
+    "exercise": "Normativ auditni manba, loyiha dalili, issue va qayta tekshiruv bilan yakunlang.",
+    "solution": "Professional normativ audit xulosa emas, dalil va qayta tekshiruvga ega izchil jarayondir.",
     "block": 6,
     "recipe": "norm",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Normativ audit mantiqini tushuntiruvchi yengil arxitekturaviy eskiz. Aniq SHNQ/QMQ bandlari va sonli talablar bu rasmdan olinmaydi; rasmiy amaldagi manba alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L10_M01_001",
