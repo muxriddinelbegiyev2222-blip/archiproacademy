@@ -8455,86 +8455,91 @@
   {
     "code": "L14_M03_001",
     "asset": "l14_m03_001.svg",
-    "title": "Nishabli site analysis — ko‘rgazmali namuna",
+    "title": "Nishabli site analysis — arxitekturaviy eskiz",
     "explanation": [
-      "10 m yo‘nalishda 1 m sath farqi; bino, kirish va tashqi suv aloqasi kesimda tekshiriladi.",
-      "Manbali sath nuqtalarini joylang, 1/10×100=10% o‘rtacha nishab → tahlil.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring. Vertikal o‘zgarish ko‘rgazmalilik uchun kattalashtirilgan: rasm burchagidan nishabni o‘lchamang. Nishab = sathlar farqi ÷ gorizontal masofa × 100%."
+      "1. Contour chiziqlari site’ning 3D relyefini, qizil va ko‘k nuqtalar high/low zonalarni ko‘rsatadi.",
+      "2. Slope direction, kirish, suv yo‘li va ko‘rinishlar birgalikda tahlil qilinadi.",
+      "3. Nishabli uchastkani tekis deb qabul qilib loyiha boshlash terrain bilan konflikt keltirishi mumkin.",
+      "Darsdagi bajarish: High/low point va asosiy slope directionni belgilang."
     ],
-    "exercise": "2 / 20 × 100 = 10% hisobini va o‘lchov shartini yozing.",
-    "solution": "Site nishabi sath farqi va gorizontal masofaga tayanadi.",
+    "exercise": "Contour va spot-level ma’lumotidan nishab yo‘nalishini o‘qing.",
+    "solution": "Nishabli site tahlili relyefni uch o‘lchamli tizim sifatida tushunishdan boshlanadi.",
     "block": 5,
     "recipe": "slope-advanced",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy terrain/section eskizi. Retaining o‘lchami, earthwork va drainage qiymatlari konseptual; real loyiha topografiya, geotexnika va konstruktiv hisob bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M03_002",
     "asset": "l14_m03_002.svg",
-    "title": "Bino sathi va terrain — ko‘rgazmali namuna",
+    "title": "Bino sathi va terrain — arxitekturaviy eskiz",
     "explanation": [
-      "10 m yo‘nalishda 1 m sath farqi; bino, kirish va tashqi suv aloqasi kesimda tekshiriladi.",
-      "Uy pol sathining ikki variantini terrain bilan solishtiring → yer ishlari oqibati.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring. Vertikal o‘zgarish ko‘rgazmalilik uchun kattalashtirilgan: rasm burchagidan nishabni o‘lchamang. Nishab = sathlar farqi ÷ gorizontal masofa × 100%."
+      "1. Bino qiyalik ustida ongli referens sathga joylashtirilgan; yashil chiziq konseptual 0.000 darajasini ko‘rsatadi.",
+      "2. Bino sathi qazish va to‘ldirish hajmi, kirish va tashqi level’lar bilan bog‘liq.",
+      "3. Earthwork yoki retaining hajmini topografik ma’lumotsiz taxmin qilish mumkin emas.",
+      "Darsdagi bajarish: Uch bino level strategiyasini section orqali solishtiring."
     ],
-    "exercise": "Bino sathining ikki variantini terrain kesimida ko‘rsating.",
-    "solution": "Sath tanlovi yer ishlari, kirish va namlikka ta’sir qiladi.",
+    "exercise": "Bino 0.000 sathini mavjud terrain bilan bog‘lang.",
+    "solution": "Bino sathi terrain, access va cut/fill bilan birga tanlanadi.",
     "block": 5,
     "recipe": "slope-advanced",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy terrain/section eskizi. Retaining o‘lchami, earthwork va drainage qiymatlari konseptual; real loyiha topografiya, geotexnika va konstruktiv hisob bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M03_003",
     "asset": "l14_m03_003.svg",
-    "title": "Split-level va terracing — ko‘rgazmali namuna",
+    "title": "Split-level va terracing — arxitekturaviy eskiz",
     "explanation": [
-      "10 m yo‘nalishda 1 m sath farqi; bino, kirish va tashqi suv aloqasi kesimda tekshiriladi.",
-      "Split-level va terracing variantini foydalanish yo‘li bilan chizing → sathlararo harakat.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring. Vertikal o‘zgarish ko‘rgazmalilik uchun kattalashtirilgan: rasm burchagidan nishabni o‘lchamang. Nishab = sathlar farqi ÷ gorizontal masofa × 100%."
+      "1. Uch bosqichli bino massasi qiyalikka mos ravishda sathlarning ketma-ket tushishini ko‘rsatadi.",
+      "2. Tashqi terracing ham terrain bilan ishlashning bir usuli; platformalar orasidagi circulation alohida tekshiriladi.",
+      "3. Ko‘p level avtomatik ravishda yaxshi loyiha emas; accessibility va ichki harakat murakkablashishi mumkin.",
+      "Darsdagi bajarish: Flat platform va split-level konsepsiyalarini taqqoslang."
     ],
-    "exercise": "Split-level va terracing uchun foydalanish farqini yozing.",
-    "solution": "Pog‘onali yechim sath va harakatni birga muvofiqlashtiradi.",
+    "exercise": "Nishabga mos split-level va terracing strategiyasini ko‘rsating.",
+    "solution": "Split-level terrain bilan ishlashi mumkin, lekin circulation va accessibility bilan birga tekshiriladi.",
     "block": 5,
     "recipe": "slope-advanced",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy terrain/section eskizi. Retaining o‘lchami, earthwork va drainage qiymatlari konseptual; real loyiha topografiya, geotexnika va konstruktiv hisob bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M03_004",
     "asset": "l14_m03_004.svg",
-    "title": "Drenaj, retaining va access — ko‘rgazmali namuna",
+    "title": "Drenaj, retaining va access — arxitekturaviy eskiz",
     "explanation": [
-      "10 m yo‘nalishda 1 m sath farqi; bino, kirish va tashqi suv aloqasi kesimda tekshiriladi.",
-      "Drenaj, retaining va kirishni alohida mutaxassis savoliga ajrating → texnik kelishuv.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring. Vertikal o‘zgarish ko‘rgazmalilik uchun kattalashtirilgan: rasm burchagidan nishabni o‘lchamang. Nishab = sathlar farqi ÷ gorizontal masofa × 100%."
+      "1. Ko‘k strelkalar surface water yo‘lini, qalin vertikal element retaining zonasini, pastdagi yo‘l esa accessni ko‘rsatadi.",
+      "2. Nishabli site’da suv yo‘li bino va retaining elementlardan xavfsiz uzoqlashtirilishi kerak.",
+      "3. Retaining wall o‘lchami va armaturasi eskizdan olinmaydi; geotexnik ma’lumot va konstruktor hisobi talab qilinadi.",
+      "Darsdagi bajarish: Drainage, retaining va access konfliktlarini sectionda aniqlang."
     ],
-    "exercise": "Suv yo‘li, retaining va kirish masalalarini mutaxassis savoliga aylantiring.",
-    "solution": "Nishabli yechim geotexnika va drenaj koordinatsiyasini talab qiladi.",
+    "exercise": "Suv yo‘li, retaining va kirish yo‘nalishini bir sectionda koordinatsiya qiling.",
+    "solution": "Nishabli site’da drainage, retaining va access yagona terrain tizimi sifatida ko‘riladi.",
     "block": 5,
     "recipe": "slope-advanced",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy terrain/section eskizi. Retaining o‘lchami, earthwork va drainage qiymatlari konseptual; real loyiha topografiya, geotexnika va konstruktiv hisob bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M03_005",
     "asset": "l14_m03_005.svg",
-    "title": "Nishabli yer professional audit — ko‘rgazmali namuna",
+    "title": "Nishabli yer professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "10 m yo‘nalishda 1 m sath farqi; bino, kirish va tashqi suv aloqasi kesimda tekshiriladi.",
-      "Plan/kesimda sath, yo‘l va suvni birga tekshiring → izchil site yechimi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring. Vertikal o‘zgarish ko‘rgazmalilik uchun kattalashtirilgan: rasm burchagidan nishabni o‘lchamang. Nishab = sathlar farqi ÷ gorizontal masofa × 100%."
+      "1. Chapdagi section terrain, bino, drainage, retaining va accessni bitta ko‘rinishda jamlaydi.",
+      "2. O‘ngdagi checklist survey, slope, building level, cut/fill, circulation, drainage, retaining va structure bosqichlarini eslatadi.",
+      "3. Auditning maqsadi bino terrain ustiga “qo‘yilgan” emas, terrain bilan ishlaydigan yechim ekanini tekshirishdir.",
+      "Darsdagi bajarish: Survey → slope → level → cut/fill → access → drainage → retaining → structure zanjirini audit qiling."
     ],
-    "exercise": "Kesim, kirish va tasdiq holatini audit qiling.",
-    "solution": "Nishabli yer auditida o‘quv sxemasi hisoblangan tayanch yechimi deb qabul qilinmaydi.",
+    "exercise": "Nishabli site loyihasini terrain va texnik risklar bo‘yicha kompleks tekshiring.",
+    "solution": "Professional slope audit bino va terrain qarorlarining o‘zaro mosligini tekshiradi.",
     "block": 4,
     "recipe": "slope-advanced",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy terrain/section eskizi. Retaining o‘lchami, earthwork va drainage qiymatlari konseptual; real loyiha topografiya, geotexnika va konstruktiv hisob bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
