@@ -4234,16 +4234,16 @@
     "asset": "l08_m09_001.svg",
     "title": "Arxitektor va konstruktor roli — arxitekturaviy eskiz",
     "explanation": [
-      "1. Chapdagi plan arxitektura qarorlarini, o‘ngdagi karkas konstruktiv tizimni ifodalaydi; markazdagi ikki tomonlama bog‘lanish ular bir-birini to‘ldirishini ko‘rsatadi.",
-      "2. Arxitektor funksional va fazoviy yechimni, konstruktor esa yuk ko‘taruvchi tizim va hisoblarni boshqaradi; hech biri ikkinchisining javobgarligini taxmin bilan almashtirmaydi.",
-      "3. Kuchli loyiha katta opening, tayanch joyi, qavat balandligi va boshqa kesishadigan masalalarni erta koordinatsiya qiladi.",
-      "Darsdagi bajarish: Arxitektor va konstruktor qarorlari kesishadigan kamida besh nuqtani ajrating."
+      "1. Chapdagi arxitektura plan va o‘ngdagi konstruktiv karkas bitta loyiha ichidagi ikki xil mas’uliyat qatlamini ifodalaydi.",
+      "2. Arxitektor fazoviy va funksional yechimni, konstruktor esa yuk ko‘taruvchi tizim va hisoblangan konstruktiv yechimlarni boshqaradi; ular bir-birining o‘rnini bosmaydi.",
+      "3. Markazdagi ikki tomonlama aloqa belgisi professional koordinatsiya buyruq emas, savol–javob va kelishilgan yechim ekanini ko‘rsatadi.",
+      "Darsdagi bajarish: Arxitektor va konstruktor qarorlari kesishadigan kamida 5 ta koordinatsiya nuqtasini yozing."
     ],
-    "exercise": "Arxitektor va konstruktor vazifalari hamda koordinatsiya nuqtalarini ajrating.",
-    "solution": "Professional hamkorlik ikki mutaxassisning aniq javobgarligi va kelishilgan loyiha qarorlariga tayanadi.",
+    "exercise": "Arxitektor va konstruktor vazifalari hamda umumiy koordinatsiya nuqtalarini ajrating.",
+    "solution": "Kuchli loyiha arxitektura va konstruksiya qarorlarini aniq mas’uliyat bilan muvofiqlashtiradi.",
     "block": 9,
     "recipe": "coordination",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy koordinatsiya eskizi. Konstruktiv hisob, element kesimi va muhandislik qarorlari tasvirdan olinmaydi; ular tegishli mutaxassislar tomonidan ishlab chiqiladi.",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/koordinatsiya eskizi. Ko‘rsatilgan grid, tayanch va issue shakllari konseptual; konstruktiv qarorlar konstruktor hisobi va loyiha koordinatsiyasi bilan belgilanadi.",
     "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
@@ -4252,16 +4252,16 @@
     "asset": "l08_m09_002.svg",
     "title": "Konstruktorga ma’lumot tayyorlash — arxitekturaviy eskiz",
     "explanation": [
-      "1. Olti kartochka konstruktor uchun kerak bo‘ladigan asosiy loyiha paketini konseptual ko‘rsatadi: plan, kesim, grid/o‘qlar, sathlar, openinglar va versiya/status ma’lumoti.",
-      "2. Konstruktor taxmin bilan ishlamasligi uchun yuborilayotgan material bir xil koordinata, grid va sath mantiqiga ega bo‘lsin.",
-      "3. Faqat eski PDF yetarli bo‘lmasligi mumkin; qaysi versiya amaldagi ekanini va nima o‘zgarganini paket bilan birga ko‘rsating.",
-      "Darsdagi bajarish: Konstruktor uchun yuboriladigan minimum loyiha ma’lumotlarini ro‘yxat qilib tekshiring."
+      "1. Kartochkalar konstruktor uchun kerak bo‘ladigan asosiy axborot turlarini ifodalaydi: plan, kesim, o‘qlar, sathlar, ochilishlar va loyiha statusi.",
+      "2. Ma’lumot faqat chizma ko‘rinishi emas; sana, versiya va ochiq savollar ham birga boshqarilsa koordinatsiya tushunarli bo‘ladi.",
+      "3. Eski PDF yoki noma’lum versiyadagi model konstruktorni noto‘g‘ri qarorga olib kelishi mumkin; yuborilayotgan paketning statusi aniq bo‘lsin.",
+      "Darsdagi bajarish: Konstruktor uchun yuboriladigan loyiha paketini tartibli ro‘yxat qilib tuzing."
     ],
-    "exercise": "Konstruktor uchun plan, kesim, o‘qlar, sathlar va versiya ma’lumotini tayyorlang.",
-    "solution": "Tartibli koordinatsiya paketi konstruktorning arxitektura niyatini to‘g‘ri o‘qishiga yordam beradi.",
+    "exercise": "Konstruktorga kerakli loyiha ma’lumotlari paketini tayyorlang.",
+    "solution": "Aniq plan, grid, level, opening va versiya ma’lumoti konstruktiv ishning ishonchli boshlang‘ich bazasidir.",
     "block": 9,
     "recipe": "coordination",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy koordinatsiya eskizi. Konstruktiv hisob, element kesimi va muhandislik qarorlari tasvirdan olinmaydi; ular tegishli mutaxassislar tomonidan ishlab chiqiladi.",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/koordinatsiya eskizi. Ko‘rsatilgan grid, tayanch va issue shakllari konseptual; konstruktiv qarorlar konstruktor hisobi va loyiha koordinatsiyasi bilan belgilanadi.",
     "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
@@ -4270,16 +4270,16 @@
     "asset": "l08_m09_003.svg",
     "title": "Koordinatsiya va savol-javob workflow — arxitekturaviy eskiz",
     "explanation": [
-      "1. Chapdagi plan ichidagi qizil doira aniq konflikt joyini, markazdagi issue kartochkasi esa muammo va savolni tartibli yozish bosqichini ko‘rsatadi.",
-      "2. O‘ngdagi status kartochkalari javobni modelga kiritish va masalani tekshirib yopish workflowini ifodalaydi.",
-      "3. “Bu joyni nima qilamiz?” kabi umumiy savol o‘rniga joylashuv, muammo, sabab, variant va kerakli javob aniq yoziladi.",
-      "Darsdagi bajarish: Bitta konstruktiv konflikt uchun joy, muammo, taklif, mas’ul va statusli issue yarating."
+      "1. Chapdagi plan muammo joyini, markazdagi issue kartochkasi aniq savol va taklifni, o‘ngdagi status kartalari esa javobning boshqarilishini ifodalaydi.",
+      "2. Yaxshi issue joylashuv, muammo, sabab, rasm/view, taklif, mas’ul va status bilan tekshiriladigan bo‘ladi.",
+      "3. Konstruktor javob berganidan keyin arxitektura modeli va tegishli chizmalar yangilanmaguncha koordinatsiya yopilgan hisoblanmaydi.",
+      "Darsdagi bajarish: Bitta real konflikt uchun location → issue → response → model update zanjirini yozing."
     ],
-    "exercise": "Aniq koordinatsiya issue yozib, javobni modeldagi o‘zgarish bilan yopishni ko‘rsating.",
-    "solution": "Issue workflow savolni aniq dalil, mas’ul va modelga kiritilgan javob bilan boshqaradi.",
+    "exercise": "Aniq koordinatsiya issue’si yozib, javobni modelga kiritish workflowini ko‘rsating.",
+    "solution": "Professional savol-javob workflow muammoni joyi, taklifi va statusi bilan boshqaradi.",
     "block": 9,
     "recipe": "coordination",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy koordinatsiya eskizi. Konstruktiv hisob, element kesimi va muhandislik qarorlari tasvirdan olinmaydi; ular tegishli mutaxassislar tomonidan ishlab chiqiladi.",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/koordinatsiya eskizi. Ko‘rsatilgan grid, tayanch va issue shakllari konseptual; konstruktiv qarorlar konstruktor hisobi va loyiha koordinatsiyasi bilan belgilanadi.",
     "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
@@ -4288,16 +4288,16 @@
     "asset": "l08_m09_004.svg",
     "title": "O‘zgarishlar va versiyalarni boshqarish — arxitekturaviy eskiz",
     "explanation": [
-      "1. Chapdagi oldingi plan va o‘ngdagi yangilangan plan loyiha versiyalari o‘rtasidagi farqni ko‘rsatadi; qizil belgi o‘zgargan kritik zonani ajratadi.",
-      "2. Arxitektor va konstruktor bir xil eng so‘nggi versiyada ishlashi kerak. Fayl nomidagi “FINAL”ning o‘zi bu holatni kafolatlamaydi.",
-      "3. Change log’da ustun, opening, qavat sathi, balkon, tom yoki boshqa konstruktiv ahamiyatli o‘zgarish qisqa va tushunarli qayd qilinadi.",
-      "Darsdagi bajarish: V01 → V02 o‘zgarishlarini plan va change log orqali bir-biriga bog‘lang."
+      "1. Chapdagi V01 va o‘ngdagi V02 planlar orasidagi farq qizil aylana bilan ajratilgan; yon kartochka change log g‘oyasini ko‘rsatadi.",
+      "2. Arxitektor va konstruktor turli versiyada ishlasa, koordinatsiya xatosi paydo bo‘ladi. Har yuborilgan faylning sana va versiyasi aniq bo‘lsin.",
+      "3. Ustun, konstruktiv devor, katta opening, qavat balandligi, balkon yoki tom shakli kabi kritik o‘zgarishlar alohida qayd qilinadi.",
+      "Darsdagi bajarish: V01 → V02 uchun qisqa change log tuzing va konstruktorga ta’sir qiladigan bandlarni ajrating."
     ],
-    "exercise": "Versiyalar va kritik o‘zgarishlarni izchil boshqaring.",
-    "solution": "Versiya nazorati barcha ishtirokchilar ayni loyiha holati bilan ishlashini ta’minlashga yordam beradi.",
+    "exercise": "Versiya va change log orqali o‘zgarishlarni boshqaring.",
+    "solution": "Versiya nazorati barcha mutaxassislar bir xil loyiha holati bilan ishlashini ta’minlaydi.",
     "block": 9,
     "recipe": "coordination",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy koordinatsiya eskizi. Konstruktiv hisob, element kesimi va muhandislik qarorlari tasvirdan olinmaydi; ular tegishli mutaxassislar tomonidan ishlab chiqiladi.",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/koordinatsiya eskizi. Ko‘rsatilgan grid, tayanch va issue shakllari konseptual; konstruktiv qarorlar konstruktor hisobi va loyiha koordinatsiyasi bilan belgilanadi.",
     "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
@@ -4306,16 +4306,16 @@
     "asset": "l08_m09_005.svg",
     "title": "Arxitektura-konstruktsiya professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "1. Chapdagi checklist va o‘ngdagi ustma-ust koordinatsiya plani arxitektura bilan konstruksiya ma’lumotlarini birgalikda tekshirish g‘oyasini ko‘rsatadi.",
-      "2. Auditda versiya, grid/o‘qlar, sathlar, ustun va konstruktiv devorlar, katta openinglar va ochiq issue’lar solishtiriladi.",
-      "3. Ko‘rinishda bir-biriga mos tushgan elementlar ham ID, sath va versiya bo‘yicha tekshirilishi kerak; faqat ko‘z bilan mos kelishi yetarli emas.",
-      "Darsdagi bajarish: Bitta qavatda grid, sath, tayanch va openinglarni arxitektura hamda konstruktor modelida solishtiring."
+      "1. Olti kartochka koordinatsiya auditining asosiy qatlamlarini ifodalaydi: versiya, grid, sath, tayanchlar, openings va issue/status.",
+      "2. Auditda arxitektura va konstruktiv model bir xil o‘qlar, level va oxirgi versiyada ekanligi tekshiriladi.",
+      "3. Ustun, devor, shaft, stair opening va boshqa kesishuvchi nuqtalar ikki modelda bir-biriga mos kelishi kerak; topilgan masala issue sifatida yopilguncha kuzatiladi.",
+      "Darsdagi bajarish: Versiya → grid → level → tayanch → opening → issue status zanjiri bo‘yicha audit qiling."
     ],
-    "exercise": "Arxitektura va konstruktsiya modeli o‘rtasidagi asosiy koordinatsiya nuqtalarini audit qiling.",
-    "solution": "Professional koordinatsiya auditi bir xil versiya va geometriya asosida ochiq konfliktlarni tizimli yopadi.",
+    "exercise": "Arxitektura va konstruktsiya modelini asosiy koordinatsiya nuqtalari bo‘yicha kompleks tekshiring.",
+    "solution": "Professional koordinatsiya auditi ikki modelning versiya, geometriya va ochiq masalalar bo‘yicha mosligini tasdiqlaydi.",
     "block": 13,
     "recipe": "coordination",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy koordinatsiya eskizi. Konstruktiv hisob, element kesimi va muhandislik qarorlari tasvirdan olinmaydi; ular tegishli mutaxassislar tomonidan ishlab chiqiladi.",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/koordinatsiya eskizi. Ko‘rsatilgan grid, tayanch va issue shakllari konseptual; konstruktiv qarorlar konstruktor hisobi va loyiha koordinatsiyasi bilan belgilanadi.",
     "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
