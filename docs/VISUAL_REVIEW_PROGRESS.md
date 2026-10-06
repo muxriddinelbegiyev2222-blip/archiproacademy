@@ -1,6 +1,6 @@
 # Visual review progress
 
-458 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 158 lessons using topic-specific architectural sketches. 222 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+468 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 168 lessons using topic-specific architectural sketches. 212 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -107,3 +107,7 @@ L14_M08: Case-study analysis method, complex-site case, complex-family case, des
 L15_M01: Integrated theory, site/planning/ergonomics, structure/normative thinking, BIM/documentation theory and PRO theory audit completed with topic-specific architectural/BIM sketches.
 
 L15_M02: Model setup, modeling, advanced BIM, documentation and Archicad PRO audit challenges completed with topic-specific architectural/BIM sketches.
+
+L15_M03: Plan, facade/section, structure/MEP, BIM/documentation error finding and Root Cause PRO audit completed with topic-specific diagnostic architectural sketches.
+
+L15_M04: Final brief intake, requirement classification, constraints/risks, deliverables/success criteria and technical brief audit completed with topic-specific workflow sketches.
