@@ -1,6 +1,6 @@
 # Visual review progress
 
-423 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 123 lessons using topic-specific architectural sketches. 257 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+428 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 128 lessons using topic-specific architectural sketches. 252 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -93,3 +93,5 @@ L14_M01: Narrow-site analysis, longitudinal zoning, daylight/courtyard strategy,
 L14_M02: Irregular-site reading, primary building axis, residual-zone use, facade/perspective control and professional audit completed with topic-specific architectural site sketches.
 
 L14_M03: Sloped-site analysis, building level/terrain, split-level/terracing, drainage-retaining-access coordination and professional audit completed with topic-specific terrain/section sketches.
+
+L14_M04: Large-villa program, functional clusters, guest/family/service circulation, massing/courtyard/landscape and professional audit completed with topic-specific architectural program/plan/massing sketches.
