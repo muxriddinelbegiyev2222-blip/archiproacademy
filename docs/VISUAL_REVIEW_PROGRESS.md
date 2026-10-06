@@ -1,6 +1,6 @@
 # Visual review progress
 
-493 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 193 lessons using topic-specific architectural sketches. 187 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+498 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 198 lessons using topic-specific architectural sketches. 182 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -121,3 +121,5 @@ L15_M07: Portfolio strategy, project selection, project story, graphic/text hier
 L15_M08: PRO readiness self-audit, weak-skill improvement, integrated case challenge, submission readiness and ARCHIPRO UZ final mastery audit reviewed. Five generic visuals were rebuilt as topic-specific architectural/mastery sketches.
 
 L09_M08: Normative error taxonomy, source/context checking, plan/genplan conflicts, version/documentation coordination and final Level 9 audit reviewed. Five generic visuals were rebuilt as topic-specific architectural normative-audit sketches; exact SHNQ/QMQ verification remains deferred.
+
+L10_M01: Client brief definition, family/lifestyle scenarios, room program, constraints/priorities and professional brief audit reviewed. Five generic visuals were rebuilt as topic-specific architectural brief sketches.
