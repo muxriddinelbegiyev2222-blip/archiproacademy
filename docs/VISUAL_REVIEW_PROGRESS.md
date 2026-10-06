@@ -1,6 +1,6 @@
 # Visual review progress
 
-275 of 680 lessons have completed the current topic-specific visual review: 214 AI material renders and 61 lessons using documented Graphisoft screenshots. 405 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+280 of 680 lessons have completed the current topic-specific visual review: 214 AI material renders and 66 lessons using documented Graphisoft screenshots. 400 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -31,3 +31,5 @@ L06_M02: Layer and combination distinctions, visibility/locking, new combination
 L06_M03: Building Material versus Surface, Cut Fill/pens, intersection priority and project-wide attribute effects reviewed. Realistic brick samples explain appearance difference without implying a changed substrate or an engineered wall detail.
 
 L06_M04: Composite skins versus separators, material selection, Core/Finish/Other, thickness totals and composite reference lines reviewed. Four-layer exploded material sample illustrates the exercise without claiming a complete wall assembly.
+
+L06_M05: Complex Profile concept, Profile Editor workflow, Use with availability, profile origin, Fill/Building Material logic and Plan/Section/3D audit reviewed against official Archicad 28 Help. Generic SVG supplements were removed for these five lessons; exact exercise values remain in native lesson text.

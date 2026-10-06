@@ -1172,86 +1172,120 @@
   {
     "code": "L06_M05_001",
     "asset": "ac28-profile.png",
-    "title": "Profile Manager: maxsus profil boshqaruvi",
+    "title": "Profile Manager: Complex Profile — saqlangan kesim atributi",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-53.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/ProfileManager.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Profile Manager: maxsus profil boshqaruvi. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Profilni oddiy to‘rtburchakdan farqlang → maxsus kesim geometriyasi."
+      "Profile Manager ro‘yxatida Precast Beam T, Generic Beam, Generic Column va boshqa saqlangan profillar ko‘rinadi. Chapdagi preview tanlangan profilning aynan kesim shaklini ko‘rsatadi; bu hali mustaqil bino elementi emas.",
+      "Use with piktogrammalari profil qaysi element turlarida ishlatilishini belgilaydi. Shu sabab Complex Profile’ni oddiy 3D obyekt deb emas, Wall/Column/Beam va ayrim komponentlarga qo‘llanadigan kesim atributi deb o‘qing.",
+      "Dars mashqidagi L-shaklli kesimni avval qog‘ozda ajrating: standart to‘rtburchak yetarli bo‘lmasa, maxsus profil mantiqan asoslanadi. Skrinshotdagi Precast Beam T geometriyasini mashq o‘lchami deb qabul qilmang."
     ],
     "exercise": "Profil zarur bo‘lgan geometriyani chizib, oddiy elementdan farqini yozing.",
     "solution": "Complex Profile kesim shaklini aniq boshqarish zaruratiga javob beradi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 Help’dagi haqiqiy ekran tasviri. Interfeys va loyiha nomi versiya yoki shablon bo‘yicha farq qilishi mumkin; rasm darsdagi mashq qiymatlarini avtomatik tasdiqlamaydi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M05_002",
     "asset": "ac28-profile-edit.png",
-    "title": "Profile Editor: profil konturini tahrirlash",
+    "title": "Profile Editor: kesimni tahrirlash va boshqarish",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-54.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/ProfileEditorWindow.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Profile Editor: profil konturini tahrirlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Profile Managerda kontur, material va foydalaniladigan element turini belgilang → saqlangan profil."
+      "Profile Editor alohida 2D tahrirlash oynasi. Rasmda Joist - Timber profili, nominal Width va Height, Construction/Drafting qatlamlari hamda Width Stretch va Height Stretch modifierlari ko‘rinadi.",
+      "Graphisoft qo‘llanmasiga ko‘ra profilning haqiqiy komponentlari Fill va Hotspotlardan tuziladi; oddiy yordamchi chiziq yoki o‘lchamlar drafting vositasi bo‘lib, profil tanasiga avtomatik kirmaydi. Shuning uchun kontur toza va yopiq bo‘lishini tekshiring.",
+      "Profilni saqlashdan oldin nomini vazifaga mos qo‘ying va mavjud profilni tahrirlash boshqa joylarda ishlatilayotgan elementlarga ta’sir qilishi mumkinligini hisobga oling."
     ],
     "exercise": "Profile Managerda o‘quv profil konturi va materiallarini tekshiring.",
     "solution": "Profilning yopiq konturlari va materiallari uning model kesimini belgilaydi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 Help’dagi haqiqiy ekran tasviri. Interfeys va loyiha nomi versiya yoki shablon bo‘yicha farq qilishi mumkin; rasm darsdagi mashq qiymatlarini avtomatik tasdiqlamaydi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M05_003",
     "asset": "ac28-profile.png",
-    "title": "Profile Manager: maxsus profil boshqaruvi",
+    "title": "Use with: profil qaysi elementlarda ishlaydi?",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-53.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/ProfileManager.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Profile Manager: maxsus profil boshqaruvi. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Wall, Beam yoki Column uchun qo‘llanishini tekshirib mos asbobga qo‘llang → mos element."
+      "Profile Managerdagi Use with qatori profilni Wall, Column, Beam, Railing component yoki mos Library Part uchun mavjud qilishni boshqaradi. Ro‘yxatdagi kichik piktogrammalar ham profilning qaysi turga tegishli ekanini ko‘rsatadi.",
+      "Darsda Wall, Beam va Column profilini bir xil deb qabul qilmang: kesim bir xil ko‘rinsa ham element turi, tayanch nuqtasi va yo‘nalishdagi natija alohida tekshiriladi.",
+      "Profilni mos asbobga qo‘llagach Plan, Section va 3Dni solishtiring. Faqat Profile Manager preview’i modeldagi haqiqiy yo‘nalish va tutashuvni isbotlamaydi."
     ],
     "exercise": "Profilni mos Wall, Beam yoki Columnga qo‘llab, yo‘nalishini ko‘ring.",
     "solution": "Bir profilning elementga qo‘llanishi asbobga mosligi va yo‘nalishi bilan tekshiriladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 Help’dagi haqiqiy ekran tasviri. Interfeys va loyiha nomi versiya yoki shablon bo‘yicha farq qilishi mumkin; rasm darsdagi mashq qiymatlarini avtomatik tasdiqlamaydi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L06_M05_003",
+    "asset": "ac28-profile-edit.png",
+    "title": "Profile Origin va yo‘nalishni tekshirish",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-62.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/ProfileEditorWindow.png",
+    "block": 5,
+    "explanation": [
+      "Profil editoridagi koordinata/origin nuqtasi modelda muhim tayanchdir: devorda u reference line bilan, column yoki beamda esa element o‘qi bilan bog‘lanadi.",
+      "Shaklni origin atrofida noto‘g‘ri joylashtirish profilni elementga biriktirganda kutilmagan siljish yoki teskari ko‘rinishga olib kelishi mumkin. Shu sabab kesimning qayeri tayanchga tushishini oldindan belgilang.",
+      "Bir xil profilni turli element turlarida sinaganda faqat tashqi ko‘rinishni emas, reference/axis munosabatini ham Section va 3Dda tekshiring."
+    ],
+    "exercise": "Profilni mos Wall, Beam yoki Columnga qo‘llab, yo‘nalishini ko‘ring.",
+    "solution": "Bir profilning elementga qo‘llanishi asbobga mosligi va yo‘nalishi bilan tekshiriladi.",
+    "boundary": "Graphisoft Archicad 28 Help’dagi haqiqiy ekran tasviri. Interfeys va loyiha nomi versiya yoki shablon bo‘yicha farq qilishi mumkin; rasm darsdagi mashq qiymatlarini avtomatik tasdiqlamaydi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M05_004",
     "asset": "ac28-profile-edit.png",
-    "title": "Profile Editor: profil konturini tahrirlash",
+    "title": "Profil komponenti: geometriya, Building Material va kesim mantig‘i",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-54.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/ProfileEditorWindow.png",
-    "block": 0,
+    "block": 2,
     "explanation": [
-      "Profile Editor: profil konturini tahrirlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Kesimni 3Ddagi elementga solishtiring → kontur, material va yo‘nalish mos."
+      "Profile Editorda ko‘rinayotgan profil Fill komponentlardan tuziladi. Graphisoft qo‘llanmasiga ko‘ra tanlangan Fill uchun Building Material va Cut Line sozlamalari beriladi; shu sabab material faqat rang emas, kesim ma’lumotining ham bir qismidir.",
+      "Rasmda Components paneli yopiq holatda; uning sozlamalari Core/Finish/Other tasnifi va surface override kabi xususiyatlarni boshqarishi mumkin. Ko‘rinmagan parametrni rasmdan taxmin qilmang — editor ichida tanlangan fillni ochib tekshiring.",
+      "Keraksiz mayda segmentlar va yordamchi chiziqlarni profil tanasi deb qabul qilmang. Yakuniy auditda geometriya, material va kesim grafikasi bir xil mantiqqa xizmat qilishi kerak."
     ],
     "exercise": "Profil materiallari va uchlarining kesim natijasini solishtiring.",
     "solution": "Profil grafik chizma bo‘lib qolmasdan elementda kutilgan geometriyani berishi kerak.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 Help’dagi haqiqiy ekran tasviri. Interfeys va loyiha nomi versiya yoki shablon bo‘yicha farq qilishi mumkin; rasm darsdagi mashq qiymatlarini avtomatik tasdiqlamaydi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M05_005",
     "asset": "ac28-profile.png",
-    "title": "Profile Manager: maxsus profil boshqaruvi",
+    "title": "Complex Profile auditi: nom, Use with va qayta foydalanish",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-53.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/ProfileManager.png",
-    "block": 0,
+    "block": 1,
     "explanation": [
-      "Profile Manager: maxsus profil boshqaruvi. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: O‘lcham va foydalanish holatini jadvalga yozing → qayta ishlatiladigan profil tavsifi."
+      "Auditni profil nomidan boshlang: vazifasi nomidan tushunarlimi, Copy/Test kabi vaqtinchalik nomlar qolmaganmi va Use with tanlovi haqiqiy qo‘llanish joyiga mosmi — tekshiring.",
+      "Profile Manager preview’i kesimni tez ko‘rsatadi, lekin butun audit emas. Xuddi shu profil qaysi elementlarda qo‘llanganini va o‘zgartirish boshqa elementlarga ta’sir qilishini ham hisobga oling.",
+      "Saqlangan profilni qayta ishlatishning foydasi — bir xil kesimni markazlashgan boshqarish; xavfi — xato tahrir ko‘p elementga tarqalishi. Shuning uchun o‘zgartirishdan oldin foydalanish joylarini aniqlang."
     ],
     "exercise": "Profil nomi, qo‘llanish joyi va ikki tekshiruv kesimini topshiring.",
     "solution": "Complex Profile auditi qayta foydalaniladigan kesimning boshqarilishini dalillaydi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft Archicad 28 Help’dagi haqiqiy ekran tasviri. Interfeys va loyiha nomi versiya yoki shablon bo‘yicha farq qilishi mumkin; rasm darsdagi mashq qiymatlarini avtomatik tasdiqlamaydi.",
+    "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
+  },
+  {
+    "code": "L06_M05_005",
+    "asset": "ac28-profile-edit.png",
+    "title": "Complex Profile auditi: kontur, origin, material va model natijasi",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-54.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/ProfileEditorWindow.png",
+    "block": 6,
+    "explanation": [
+      "Editor ichida yopiq profil geometriyasi, origin bilan munosabat, material komponentlari va kerak bo‘lsa modifierlarni tekshiring. Drafting yordamchi elementlari yakuniy profil tanasi bilan adashmasin.",
+      "Keyin profilni haqiqiy elementga qo‘llab Plan, Section va 3D natijani solishtiring. Profil editorida to‘g‘ri ko‘ringan kesim modelda noto‘g‘ri yo‘nalish yoki tayanch bilan chiqishi mumkin.",
+      "Yakuniy dalil sifatida profil nomi, qaysi element turida ishlatilgani, tekshiruv kesimi va 3D natijasini bitta audit yozuvida saqlang; skrinshotdagi 80×240 o‘lcham darsning majburiy soni emas."
+    ],
+    "exercise": "Profil nomi, qo‘llanish joyi va ikki tekshiruv kesimini topshiring.",
+    "solution": "Complex Profile auditi qayta foydalaniladigan kesimning boshqarilishini dalillaydi.",
+    "boundary": "Graphisoft Archicad 28 Help’dagi haqiqiy ekran tasviri. Interfeys va loyiha nomi versiya yoki shablon bo‘yicha farq qilishi mumkin; rasm darsdagi mashq qiymatlarini avtomatik tasdiqlamaydi.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
