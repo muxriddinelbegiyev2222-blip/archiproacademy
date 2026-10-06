@@ -1,6 +1,6 @@
 # Visual review progress
 
-438 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 138 lessons using topic-specific architectural sketches. 242 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+443 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 143 lessons using topic-specific architectural sketches. 237 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -99,3 +99,5 @@ L14_M04: Large-villa program, functional clusters, guest/family/service circulat
 L14_M05: Multigenerational living scenarios, shared/private balance, future accessibility/adaptation, entrance-kitchen-service models and professional audit completed with topic-specific architectural planning sketches.
 
 L14_M06: Premium-facade concept, proportion/massing, material/detail hierarchy, light-shadow-landscape and professional audit completed with topic-specific architectural facade sketches.
+
+L14_M07: Design Clinic methodology, plan diagnostics, facade/massing diagnostics, BIM/technical diagnostics and final audit completed with topic-specific diagnostic architectural sketches.
