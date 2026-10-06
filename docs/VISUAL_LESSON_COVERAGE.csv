@@ -244,11 +244,11 @@ L06_M03_002,L06_M03,Building Material va Surface farqi,illustrated,2,ac28-materi
 L06_M03_003,L06_M03,Cut Fill va kesim ko'rinishi,illustrated,1,ac28-material.png
 L06_M03_004,L06_M03,Intersection Priority va model tutashuvi,illustrated,1,ac28-material-priority-slider.png
 L06_M03_005,L06_M03,Building Materials professional audit,illustrated,1,ac28-material.png
-L06_M04_001,L06_M04,Composite Structure tushunchasi,illustrated,2,l06_m04_001.svg|ac28-composite.png
-L06_M04_002,L06_M04,Skin va Building Material,illustrated,2,l06_m04_002.svg|ac28-composite.png
-L06_M04_003,L06_M04,Qatlam qalinligi va tartibi,illustrated,2,l06_m04_003.svg|ac28-composite.png
-L06_M04_004,L06_M04,Composite elementlar bilan ishlash,illustrated,2,l06_m04_004.svg|ac28-composite.png
-L06_M04_005,L06_M04,Composite professional audit,illustrated,2,l06_m04_005.svg|ac28-composite.png
+L06_M04_001,L06_M04,Composite Structure tushunchasi,illustrated,1,ac28-composite.png
+L06_M04_002,L06_M04,Skin va Building Material,illustrated,2,ac28-composite-material.png|realistic-l06_m04_002.jpg
+L06_M04_003,L06_M04,Qatlam qalinligi va tartibi,illustrated,1,ac28-composite-core-finish.png
+L06_M04_004,L06_M04,Composite elementlar bilan ishlash,illustrated,1,ac28-wall-reference-composite.png
+L06_M04_005,L06_M04,Composite professional audit,illustrated,1,ac28-composite-core-finish.png
 L06_M05_001,L06_M05,Complex Profile tushunchasi,illustrated,2,l06_m05_001.svg|ac28-profile.png
 L06_M05_002,L06_M05,Profile Manager bilan ishlash,illustrated,2,l06_m05_002.svg|ac28-profile-edit.png
 L06_M05_003,L06_M05,"Wall, Beam va Column profillari",illustrated,2,l06_m05_003.svg|ac28-profile.png

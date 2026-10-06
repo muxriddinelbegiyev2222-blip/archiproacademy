@@ -7,3 +7,5 @@ The subsequent 270-lesson checkpoint passed the four focused visual tests: worke
 Two newly revised lessons (L05_M09_004 and L05_M10_005) were also opened in the actual lesson UI at 1366 × 768; content width matched the scroll viewport width. A damaged L02_M04_003 JPEG was regenerated from its intact original PNG; the previous decoder warning disappeared.
 
 These checks do not constitute a Windows executable build test, SHNQ verification or completion of the remaining 410 topic reviews.
+
+The 275-lesson checkpoint additionally passed the same four focused tests (5.938 seconds, exit 0); 214 AI and 61 screenshot-only reviews are disjoint and unique. All original content blocks remain equal to the saved 680-lesson inventory. 405 lessons remain for topic review.

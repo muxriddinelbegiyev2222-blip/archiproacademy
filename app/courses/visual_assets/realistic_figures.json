@@ -3619,5 +3619,22 @@
     "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
     "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
     "source_url": null
+  },
+  {
+    "code": "L06_M04_002",
+    "asset": "realistic-l06_m04_002.jpg",
+    "title": "Skin va Building Material — rasmga qarab tushuning",
+    "explanation": [
+      "1. Chapdan o‘ngga. Yupqa pardoz namunasi, g‘isht yadro, sariq tolali izolyatsiya va yana yupqa pardoz ko‘rsatilgan. Har birini boshqa material va vazifa bilan bog‘lang.",
+      "2. Ajratilgan maket. Qatlamlar tushunish uchun bir-biridan uzoqlashtirilgan; oradagi bo‘shliqlar haqiqiy devorda shunday havo qatlami kerak degani emas. Bu mustaqil turadigan devor qismlarini qurish ko‘rsatmasi emas.",
+      "3. Modelga kiriting. 15+200+100+15 mm mashq qiymatlarini Composite atributiga yozing va jami 330 mmni tekshiring. Perspektiv rasmdan qalinlik o‘lchanmaydi; tarkib va birikma haqiqiy loyiha uchun alohida yechiladi.",
+      "Darsdagi bajarish: Har qatlamga material va vazifa yozing → pardoz, yadro, izolyatsiya, pardoz."
+    ],
+    "exercise": "Har skinning materialini yozib, qatlam vazifasini izohlang.",
+    "solution": "Qatlam nomi uning material va funksiyasi bilan birga tushuntiriladi.",
+    "block": 8,
+    "boundary": "Mavzuni tushuntiruvchi tasvir. O‘lcham va birikmalarni undan qurilish uchun ko‘chirib olmang.",
+    "credit": "ARCHIPRO UZ — AI yordamida aynan shu mavzu uchun tayyorlangan materialli tasvir",
+    "source_url": null
   }
 ]

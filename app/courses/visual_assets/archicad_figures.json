@@ -1087,86 +1087,86 @@
   {
     "code": "L06_M04_001",
     "asset": "ac28-composite.png",
-    "title": "Composite: alohida qatlam qalinligini tahrirlash",
+    "title": "Composite: Skin va Separatorni ajrating",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-28.htm",
     "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/SkinThickness.png",
     "block": 0,
     "explanation": [
-      "Composite: alohida qatlam qalinligini tahrirlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Composite tuzilmasini alohida skinlarga ajrating → ko‘p qatlamli element."
+      "Edit Skin and Line Structure ro‘yxatida Plaster - Gypsum, Concrete Block - Structural va yana Plaster - Gypsum — material qatlamlari. Solid yozilgan qatorlar qatlamlarni ajratish chiziqlari, qo‘shimcha material emas.",
+      "Use with belgisi bu tuzilma qaysi asboblar uchun mavjudligini belgilaydi. Wall belgisi tanlangan namuna barcha slab yoki tomga mos keladi degani emas.",
+      "Bu 100 Block Double Plastered namunasidir; darsdagi to‘rtta qatlamli 330 mm devorni tasdiqlamaydi. Har bir skinning materialini, vazifasini va qalinligini alohida qayd qiling."
     ],
     "exercise": "Oddiy devor va Composite devorni kesimda solishtiring.",
     "solution": "Composite bir element ichidagi qatlamli tuzilishni tavsiflaydi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy atribut namunasi. Qo‘llanma tarkibi darsdagi 15+200+100+15 mm o‘quv devori emas; mashq qatlamlarini alohida kiriting va tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M04_002",
-    "asset": "ac28-composite.png",
-    "title": "Composite: alohida qatlam qalinligini tahrirlash",
+    "asset": "ac28-composite-material.png",
+    "title": "Har bir Skin uchun Building Material tanlash",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-28.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/SkinThickness.png",
-    "block": 0,
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/CompositeChooseBM.png",
+    "block": 1,
     "explanation": [
-      "Composite: alohida qatlam qalinligini tahrirlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Har qatlamga material va vazifa yozing → pardoz, yadro, izolyatsiya, pardoz."
+      "Tanlangan qatlam — Insulation - Plastic Soft; uning yonidagi tugma Building Materials ro‘yxatini ochgan. Ro‘yxatda Mineral Hard va Mineral Soft kabi boshqa materiallar ham mavjud.",
+      "Bu oynada Timber - Roof va Membrane - Vapor Barrier ham ko‘rinadi: u alohida qo‘llanma tuzilmasi, darsdagi devorning tayyor tarkibi emas.",
+      "O‘z o‘quv devoringizda pardoz, yadro, izolyatsiya va pardozga mos materialni tanlang. Yonidagi realistik namuna mineral tolali izolyatsiyani tasvirlaydi; skrinshotda tanlangan Plastic Soft bilan aynan bir mahsulot deb hisoblamang."
     ],
     "exercise": "Har skinning materialini yozib, qatlam vazifasini izohlang.",
     "solution": "Qatlam nomi uning material va funksiyasi bilan birga tushuntiriladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy atribut namunasi. Qo‘llanma tarkibi darsdagi 15+200+100+15 mm o‘quv devori emas; mashq qatlamlarini alohida kiriting va tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M04_003",
-    "asset": "ac28-composite.png",
-    "title": "Composite: alohida qatlam qalinligini tahrirlash",
+    "asset": "ac28-composite-core-finish.png",
+    "title": "Qalinlik yig‘indisi va qatlam vazifasi",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-28.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/SkinThickness.png",
-    "block": 0,
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/CoreFinish.png",
+    "block": 2,
     "explanation": [
-      "Composite: alohida qatlam qalinligini tahrirlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: 15+200+100+15 hisoblang → jami 330 mm, tartibni ichki/tashqi yo‘nalishda tekshiring."
+      "Tanlangan qatlamning Type menyusida Core, Finish va Other ochilgan. Bu tasnif ko‘rinish va Reference Line kabi boshqa ishlashlarga ham ta’sir qiladi; faqat sarlavha uchun emas.",
+      "Rasmdagi Total thickness 300 mm boshqa tuzilmaning qiymati. Dars mashqida 15 + 200 + 100 + 15 = 330 mm; aniq kiritilgan skin qiymatlari yig‘indisini o‘z oynangizdagi total bilan solishtiring.",
+      "Composite ro‘yxatining birinchi qatlamini devorda Outside, slab va tomda Top deb talqin qilinadi. Ichki–tashqi yo‘nalishni native modelda tekshiring; son yig‘indisi to‘g‘ri bo‘lsa ham qatlam tartibi noto‘g‘ri bo‘lishi mumkin."
     ],
     "exercise": "20 + 200 + 80 = 300 mm hisobini tekshirib, qatlam tartibini ko‘rsating.",
     "solution": "Umumiy qalinlik qatlamlar yig‘indisi, tartib esa ichki-tashqi tuzilishga ta’sir qiladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy atribut namunasi. Qo‘llanma tarkibi darsdagi 15+200+100+15 mm o‘quv devori emas; mashq qatlamlarini alohida kiriting va tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M04_004",
-    "asset": "ac28-composite.png",
-    "title": "Composite: alohida qatlam qalinligini tahrirlash",
-    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-28.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/SkinThickness.png",
-    "block": 0,
+    "asset": "ac28-wall-reference-composite.png",
+    "title": "Composite Wall: Reference Line qayerdan o‘tadi?",
+    "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/040_ElementsVB-7.htm",
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/040_ElementsVB/WallRefLineComposite.png",
+    "block": 1,
     "explanation": [
-      "Composite: alohida qatlam qalinligini tahrirlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Composite devorga qo‘llang, reference line va kesimni ko‘ring → model tarkibi mos."
+      "Reference Line tanlovlari butun devorning Outside/Center/Inside joylariga hamda Core bilan bog‘langan joylarga xizmat qiladi. Yadro yo‘q bo‘lsa Core tanlovlari faol bo‘lmasligi mumkin.",
+      "Composite tarkibidagi Core va Finishni aniqlang, keyin devorni tanlangan tayanch bo‘yicha joylashtiring. Butun devor markazi bilan yadro markazi har doim bir nuqta emas.",
+      "Reference Line variantini o‘zgartirishda devor tanasi siljishi mumkin; reja, kesim va burchak tutashuvini qayta tekshiring. Qo‘llanma skrinshoti 330 mm o‘quv devoringizning natijasi emas."
     ],
     "exercise": "Composite devorni ochilish va slab bilan kesimda tekshiring.",
     "solution": "Qatlamli element tanlovi tutashuvlar bilan muvofiqlashtiriladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy atribut namunasi. Qo‘llanma tarkibi darsdagi 15+200+100+15 mm o‘quv devori emas; mashq qatlamlarini alohida kiriting va tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
     "code": "L06_M04_005",
-    "asset": "ac28-composite.png",
-    "title": "Composite: alohida qatlam qalinligini tahrirlash",
+    "asset": "ac28-composite-core-finish.png",
+    "title": "Audit: tarkib va modeldagi yo‘nalish",
     "source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/025_Attributes-28.htm",
-    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/SkinThickness.png",
-    "block": 0,
+    "source_image_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/025_Attributes/CoreFinish.png",
+    "block": 7,
     "explanation": [
-      "Composite: alohida qatlam qalinligini tahrirlash. Bu Archicad 28 INT rasmiy qo‘llanmasidagi haqiqiy tasvir.",
-      "Rasmdagi maydon va panel nomlarini toping. Qo‘llanma ekranidagi qiymatlar darsning o‘quv sonlari bilan bir xil bo‘lishi shart emas; qiymatni dars sharti bo‘yicha kiriting.",
-      "Mavzudagi bajarish: Kesimda qalinliklar va tutashuvni solishtiring → qatlamlar chizmada yo‘qolmagan."
+      "Har bir material skinni sanang, uning qalinligi va Type tasnifini qayd qiling. Separator qatorini skin hisobiga qo‘shmang.",
+      "Tuzilma elementda haqiqatan qo‘llanganini tekshiring; kesimdagi tashqi–ichki ketma-ketlik va umumiy qalinlik o‘sha atribut bilan mos bo‘lsin.",
+      "Burchaklarda qatlamlar, Reference Line va material prioritysini solishtiring. Atributni o‘zgartirish undan foydalangan boshqa elementlarga ham ta’sir qilishi mumkin; faqat bitta ko‘rinishni tekshirib qolmang."
     ],
     "exercise": "Materiallar, qatlam tartibi, yig‘indi va kesimni topshiring.",
     "solution": "Composite auditida nomdan tashqari haqiqiy qatlam geometriyasi tekshiriladi.",
-    "boundary": "Archicad 28 INT namunasi. Rasm faqat sarlavhada aytilgan panel yoki amalni ko‘rsatadi; versiya va interfeys tiliga qarab ko‘rinish farq qiladi.",
+    "boundary": "Graphisoft rasmiy qo‘llanmasining haqiqiy atribut namunasi. Qo‘llanma tarkibi darsdagi 15+200+100+15 mm o‘quv devori emas; mashq qatlamlarini alohida kiriting va tekshiring.",
     "credit": "Graphisoft Archicad 28 Help — rasmiy qo‘llanma tasviri; © Graphisoft"
   },
   {
