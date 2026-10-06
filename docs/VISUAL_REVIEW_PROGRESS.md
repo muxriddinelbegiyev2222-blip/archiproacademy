@@ -1,6 +1,6 @@
 # Visual review progress
 
-335 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 35 lessons using topic-specific architectural sketches. 345 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+340 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 40 lessons using topic-specific architectural sketches. 340 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
 
 Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
 
@@ -55,3 +55,5 @@ L07_M04: Renovation concept, status assignment, filters, reconstruction workflow
 L07_M05: Schedule concept, Criteria/Fields, sorting/grouping, Door-Window-Zone schedules and audit reviewed. Five generic diagrams were rebuilt as topic-specific architectural/data sketches; genuine Scheme/Criteria/Fields screenshots remain the software references.
 
 L07_M06: BIM Properties concept, Property definition, data standardization, Schedule integration and professional audit reviewed. Five generic diagrams were rebuilt as topic-specific architectural/data sketches; genuine Property Manager and Schedule screenshots remain software references.
+
+L07_M07: BIM Classification concept, element type distinction, Property linkage, Schedule usage and professional audit reviewed. Five generic diagrams were rebuilt as topic-specific architectural/data sketches; the genuine Classification Manager screenshot remains the software reference.
