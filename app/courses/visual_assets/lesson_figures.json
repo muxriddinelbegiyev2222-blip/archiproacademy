@@ -4772,87 +4772,92 @@
   {
     "code": "L09_M06_001",
     "asset": "l09_m06_001.svg",
-    "title": "Evakuatsiya tushunchasi — ko‘rgazmali namuna",
+    "title": "Evakuatsiya tushunchasi — arxitekturaviy eskiz",
     "explanation": [
-      "Yotoqxonadan tashqariga yo‘l ikki eshik va yo‘lakdan o‘tadi; bitta shkaf yo‘lga chiqib turibdi.",
-      "Boshlanish, xavfsiz tugash va oraliq nuqtalarni belgilang → evakuatsiya zanjiri.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Plan ichidagi qizg‘ish yo‘l odamning xavfli zonadan chiqish tomon harakatini konseptual ko‘rsatadi.",
+      "2. Evakuatsiya bitta eshik emas; xonadan boshlanib eshik, koridor, zinapoya va yakuniy xavfsiz chiqish bilan bog‘langan uzluksiz zanjirdir.",
+      "3. Kundalik harakat yo‘li qulay bo‘lsa ham favqulodda holatdagi chiqish ssenariysi alohida tekshiriladi.",
+      "Darsdagi bajarish: Bir xonadan tashqarigacha evakuatsiya zanjirini ketma-ket chizing."
     ],
-    "exercise": "Evakuatsiya maqsadini kundalik yo‘ldan ajrating.",
-    "solution": "Evakuatsiya favqulodda chiqish ssenariysini tekshiradi.",
+    "exercise": "Evakuatsiyani xonadan xavfsiz chiqishgacha bo‘lgan uzluksiz yo‘l sifatida tushuning.",
+    "solution": "Evakuatsiya foydalanuvchini xavfli zonadan xavfsiz joyga olib chiqadigan uzluksiz harakat zanjiridir.",
     "block": 5,
     "recipe": "escape",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy evakuatsiya eskizi. Yo‘nalishlar konseptual; aniq masofa, kenglik, chiqish soni va boshqa talablar amaldagi normativ manbadan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M06_002",
     "asset": "l09_m06_002.svg",
-    "title": "Evakuatsiya yo'li — ko‘rgazmali namuna",
+    "title": "Evakuatsiya yo‘li — arxitekturaviy eskiz",
     "explanation": [
-      "Yotoqxonadan tashqariga yo‘l ikki eshik va yo‘lakdan o‘tadi; bitta shkaf yo‘lga chiqib turibdi.",
-      "Yo‘lni haqiqiy geometrik masofa bilan o‘lchang, tegishli talabga bog‘lang → dalil.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Qizg‘ish yo‘nalish xonadan chiqishgacha bo‘lgan evakuatsiya yo‘lini, pastdagi vertikal strelka esa yo‘lning keyingi bosqichga uzatilishini ko‘rsatadi.",
+      "2. Yo‘l uzluksiz, tushunarli va to‘siqsiz bo‘lishi kerak; burilish, eshik va yo‘nalish almashadigan joylar alohida ko‘riladi.",
+      "3. Aniq masofa yoki kenglikni eskizdan olmang; tegishli normativdan tekshiriladi.",
+      "Darsdagi bajarish: Evakuatsiya yo‘lidagi barcha transition va nazorat nuqtalarini belgilang."
     ],
-    "exercise": "Boshlanish nuqtasidan yakuniy chiqishgacha uzluksiz yo‘l chizing.",
-    "solution": "Yo‘l alohida chiziq bo‘laklari emas, to‘liq harakat zanjiridir.",
+    "exercise": "Evakuatsiya yo‘lini xonadan chiqishgacha bosqichma-bosqich tekshiring.",
+    "solution": "Yo‘lning har bir qismi keyingi xavfsiz qism bilan uzluksiz bog‘lanishi kerak.",
     "block": 5,
     "recipe": "escape",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy evakuatsiya eskizi. Yo‘nalishlar konseptual; aniq masofa, kenglik, chiqish soni va boshqa talablar amaldagi normativ manbadan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M06_003",
     "asset": "l09_m06_003.svg",
-    "title": "Eshik, koridor va zinapoya — ko‘rgazmali namuna",
+    "title": "Eshik, koridor va zinapoya — arxitekturaviy eskiz",
     "explanation": [
-      "Yotoqxonadan tashqariga yo‘l ikki eshik va yo‘lakdan o‘tadi; bitta shkaf yo‘lga chiqib turibdi.",
-      "Eshik ochilishi, koridor va zinapoyani birga tekshiring → tor yoki uzilgan nuqta.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Uch panel evakuatsiya zanjiridagi eshik, koridor va zinapoyani alohida ko‘rsatadi.",
+      "2. Bitta elementning to‘g‘ri bo‘lishi yetarli emas; eshikdan chiqish, koridorda harakat va zinapoyaga o‘tish bir-biriga mos ishlashi kerak.",
+      "3. Ochilish yo‘nalishi, torayish, sath va burilish kabi masalalar real foydalanish ssenariysi bilan tekshiriladi.",
+      "Darsdagi bajarish: Eshik → koridor → zinapoya zanjirida potensial to‘siqlarni yozing."
     ],
-    "exercise": "Eshik, koridor va zinapoya shartlarini tegishli talab bilan bog‘lang.",
-    "solution": "Har yo‘l bo‘lagi birgalikda ishlashi kerak.",
+    "exercise": "Eshik, koridor va zinapoyani yagona evakuatsiya zanjiri sifatida tekshiring.",
+    "solution": "Evakuatsiya sifati ketma-ket elementlarning uzluksiz va xavfsiz ishlashiga bog‘liq.",
     "block": 6,
     "recipe": "escape",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy evakuatsiya eskizi. Yo‘nalishlar konseptual; aniq masofa, kenglik, chiqish soni va boshqa talablar amaldagi normativ manbadan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M06_004",
     "asset": "l09_m06_004.svg",
-    "title": "To'siqlar va xato ssenariylar — ko‘rgazmali namuna",
+    "title": "To‘siqlar va xato ssenariylar — arxitekturaviy eskiz",
     "explanation": [
-      "Yotoqxonadan tashqariga yo‘l ikki eshik va yo‘lakdan o‘tadi; bitta shkaf yo‘lga chiqib turibdi.",
-      "Shkaf va qulflanadigan eshikni sxemada ajrating → to‘siq ko‘rinadi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Eskizda yo‘lga tushgan to‘siqlar va konflikt zonalari qizg‘ish belgi bilan ko‘rsatilgan.",
+      "2. Mebel, ochilish yo‘nalishi, torayish yoki noto‘g‘ri joylashgan element evakuatsiya yo‘lini buzishi mumkin.",
+      "3. Auditni faqat ideal plan bo‘yicha emas, real foydalanish va xato ssenariylari bo‘yicha ham o‘tkazing.",
+      "Darsdagi bajarish: Evakuatsiya yo‘liga xalaqit berishi mumkin bo‘lgan kamida 6 ta xato ssenariyni yozing."
     ],
-    "exercise": "Mebel va ochiq eshik bilan toraygan joylarni qayd qiling.",
-    "solution": "To‘siqlar yo‘lning foydalanish holatida tekshiriladi.",
+    "exercise": "Evakuatsiya yo‘lida real to‘siq va konfliktlarni oldindan aniqlang.",
+    "solution": "Xato ssenariy auditi ideal plan ortida yashirinadigan foydalanish muammolarini topadi.",
     "block": 5,
     "recipe": "escape",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy evakuatsiya eskizi. Yo‘nalishlar konseptual; aniq masofa, kenglik, chiqish soni va boshqa talablar amaldagi normativ manbadan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M06_005",
     "asset": "l09_m06_005.svg",
-    "title": "Evakuatsiya professional audit — ko‘rgazmali namuna",
+    "title": "Evakuatsiya professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Yotoqxonadan tashqariga yo‘l ikki eshik va yo‘lakdan o‘tadi; bitta shkaf yo‘lga chiqib turibdi.",
-      "To‘siqni bartaraf qilib yo‘lni qayta tekshiring, bandni qayd qiling → o‘zgarish dalili.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Olti blok odam, eshik, koridor, to‘siq, chiqish yo‘nalishi va audit statusini jamlaydi.",
+      "2. Auditda yo‘l boshidan oxirigacha uzluksiz tekshiriladi; bitta xavfsiz element butun marshrut xavfsiz degani emas.",
+      "3. Natija aniq loyiha joyi va normativ manba bilan qayd qilinadi.",
+      "Darsdagi bajarish: Odam → eshik → koridor → zinapoya/chiqish → to‘siqlar → normativ qayd zanjirini audit qiling."
     ],
-    "exercise": "Yo‘l, band, o‘lchov va mas’ul tasdig‘ini audit qiling.",
-    "solution": "Evakuatsiya mosligi taxminiy chiziq bilan emas, tekshirilgan dalillar bilan asoslanadi.",
+    "exercise": "Evakuatsiya marshrutini boshidan oxirigacha kompleks audit qiling.",
+    "solution": "Professional evakuatsiya auditi yo‘lning barcha elementlari va potensial to‘siqlarini yagona zanjirda tekshiradi.",
     "block": 5,
     "recipe": "escape",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy evakuatsiya eskizi. Yo‘nalishlar konseptual; aniq masofa, kenglik, chiqish soni va boshqa talablar amaldagi normativ manbadan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M07_001",
