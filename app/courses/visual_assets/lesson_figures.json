@@ -4592,87 +4592,92 @@
   {
     "code": "L09_M04_001",
     "asset": "l09_m04_001.svg",
-    "title": "Tabiiy yorug'lik tushunchasi — ko‘rgazmali namuna",
+    "title": "Tabiiy yorug‘lik tushunchasi — arxitekturaviy eskiz",
     "explanation": [
-      "Bir xonaning derazasi qo‘shni baland bino soyasida qolishi mumkin; plan va kesim birgalikda tekshiriladi.",
-      "Yoritish va to‘g‘ridan-to‘g‘ri quyosh tushishini ajrating → boshqa tekshiruvlar.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Kesimdagi sariq nurlar derazadan kirayotgan tabiiy yorug‘lik yo‘lini, xonaning chuqurligi esa yorug‘lik taqsimotiga ta’sir qiladigan geometriyani ko‘rsatadi.",
+      "2. Deraza borligi avtomatik ravishda yetarli tabiiy yorug‘lik degani emas; xona funksiyasi, deraza joyi, xona chuqurligi, orientatsiya va tashqi to‘siqlar birga tahlil qilinadi.",
+      "3. Eskiz faqat tushuntiruvchi model; aniq koeffitsiyent va talablar amaldagi normativ hamda tegishli hisob usuli bilan tekshiriladi.",
+      "Darsdagi bajarish: Bitta xonada tabiiy yorug‘likka ta’sir qiladigan kamida 6 ta omilni belgilang."
     ],
-    "exercise": "Tabiiy yoritish bilan to‘g‘ridan-to‘g‘ri quyosh tushishini ajrating.",
-    "solution": "Yoritish va insolyatsiya bir xil tushuncha emas.",
-    "block": 5,
+    "exercise": "Xona geometriyasi, deraza va tashqi muhitning tabiiy yorug‘likka ta’sirini tahlil qiling.",
+    "solution": "Tabiiy yorug‘lik deraza, xona geometriyasi va tashqi sharoitlarning birgalikdagi natijasidir.",
+    "block": 6,
     "recipe": "light",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy yorug‘lik eskizi. Quyosh nurlari va soyalar konseptual; aniq insolyatsiya va tabiiy yoritish qiymatlari amaldagi normativ va hisob usuli bilan aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M04_002",
     "asset": "l09_m04_002.svg",
-    "title": "Orientatsiya va quyosh — ko‘rgazmali namuna",
+    "title": "Orientatsiya va quyosh — arxitekturaviy eskiz",
     "explanation": [
-      "Bir xonaning derazasi qo‘shni baland bino soyasida qolishi mumkin; plan va kesim birgalikda tekshiriladi.",
-      "Orientatsiya, joy va tekshirish sanasini yozing → takror tekshiriladigan shart.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Markazdagi plan va aylana diagramma bino orientatsiyasini, ikki tomondagi quyosh belgilari esa kun davomida turli yo‘nalishlardan keladigan quyoshni konseptual ko‘rsatadi.",
+      "2. Bitta yo‘nalishni barcha xonalar uchun universal eng yaxshi deb qabul qilish to‘g‘ri emas; xona funksiyasi, iqlim va tashqi kontekst hisobga olinadi.",
+      "3. Orientatsiya qarori fasad kompozitsiyasi bilan birga ichki komfort va soyalanish strategiyasiga ham ta’sir qiladi.",
+      "Darsdagi bajarish: Uy xonalarini orientatsiya bo‘yicha ko‘rib, har birining sababini yozing."
     ],
-    "exercise": "Orientatsiya, sana va vaqt shartlarini qayd qiling.",
-    "solution": "Quyoshga oid xulosa tekshiruv sharoitlari bilan birga beriladi.",
-    "block": 5,
+    "exercise": "Xona funksiyasi va orientatsiya qarorini birga tahlil qiling.",
+    "solution": "Orientatsiya qarori quyosh, iqlim va xona funksiyasi bilan birga baholanadi.",
+    "block": 6,
     "recipe": "light",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy yorug‘lik eskizi. Quyosh nurlari va soyalar konseptual; aniq insolyatsiya va tabiiy yoritish qiymatlari amaldagi normativ va hisob usuli bilan aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M04_003",
     "asset": "l09_m04_003.svg",
-    "title": "Soyalanish va qo'shni obyektlar — ko‘rgazmali namuna",
+    "title": "Soyalanish va qo‘shni obyektlar — arxitekturaviy eskiz",
     "explanation": [
-      "Bir xonaning derazasi qo‘shni baland bino soyasida qolishi mumkin; plan va kesim birgalikda tekshiriladi.",
-      "Qo‘shni kontur va balandlikni kesimga qo‘ying → soya to‘sig‘i.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi pastroq bino va o‘ngdagi balandroq qo‘shni obyekt orasidagi geometriya tashqi soyalanish ta’sirini ko‘rsatadi.",
+      "2. Deraza va fasad yechimi yaxshi bo‘lsa ham, qo‘shni bino, ayvon, balkon, tom chiqishi yoki daraxt tabiiy yorug‘likni sezilarli kamaytirishi mumkin.",
+      "3. Soyalanishni faqat fasadda emas, uchastka va kesim kontekstida ham ko‘rish kerak.",
+      "Darsdagi bajarish: Uchastkadagi potensial soyalanish manbalarini belgilang va qaysi xonalarga ta’sir qilishini yozing."
     ],
-    "exercise": "Qo‘shni bino va ayvonning soya ta’sirini modelga kiriting.",
-    "solution": "Faqat deraza maydoni bilan yorug‘lik sifati to‘liq baholanmaydi.",
-    "block": 5,
+    "exercise": "Qo‘shni obyektlar va tashqi elementlarning soyalanish ta’sirini tekshiring.",
+    "solution": "Yoritish auditi binoni atrof kontekstdan ajratib emas, birgalikda ko‘radi.",
+    "block": 6,
     "recipe": "light",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy yorug‘lik eskizi. Quyosh nurlari va soyalar konseptual; aniq insolyatsiya va tabiiy yoritish qiymatlari amaldagi normativ va hisob usuli bilan aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M04_004",
     "asset": "l09_m04_004.svg",
-    "title": "Plan, fasad va kesim koordinatsiyasi — ko‘rgazmali namuna",
+    "title": "Plan, fasad va kesim koordinatsiyasi — arxitekturaviy eskiz",
     "explanation": [
-      "Bir xonaning derazasi qo‘shni baland bino soyasida qolishi mumkin; plan va kesim birgalikda tekshiriladi.",
-      "Deraza joyi va sathini plan/fasad/kesimda solishtiring → bir ochilish.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi plan deraza joyi va xona chuqurligini, markazdagi fasad deraza balandligi va proporsiyasini, o‘ngdagi kesim esa vertikal soyalanishni ko‘rsatadi.",
+      "2. Tabiiy yorug‘lik bo‘yicha yakuniy xulosa faqat bitta ko‘rinishga tayanmasligi kerak.",
+      "3. Bir xil deraza plan, fasad va kesimda bir-biriga mos tushishi hamda tashqi shading elementlari bilan koordinatsiya qilinishi kerak.",
+      "Darsdagi bajarish: Bitta xona uchun plan, fasad va kesim bo‘yicha alohida audit savollarini tuzing."
     ],
-    "exercise": "Plan, fasad va kesimda deraza hamda to‘siqlarni solishtiring.",
-    "solution": "Yorug‘lik tahlili haqiqiy geometriyaga tayanadi.",
+    "exercise": "Yoritish qarorini plan, fasad va kesimda bir xil mantiqda tekshiring.",
+    "solution": "Ko‘p ko‘rinishli koordinatsiya yorug‘likka ta’sir qiluvchi geometrik omillarni to‘liqroq ko‘rsatadi.",
     "block": 6,
     "recipe": "light",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy yorug‘lik eskizi. Quyosh nurlari va soyalar konseptual; aniq insolyatsiya va tabiiy yoritish qiymatlari amaldagi normativ va hisob usuli bilan aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M04_005",
     "asset": "l09_m04_005.svg",
-    "title": "Yoritish va insolyatsiya audit — ko‘rgazmali namuna",
+    "title": "Yoritish va insolyatsiya audit — arxitekturaviy eskiz",
     "explanation": [
-      "Bir xonaning derazasi qo‘shni baland bino soyasida qolishi mumkin; plan va kesim birgalikda tekshiriladi.",
-      "Hisob yoki tegishli tekshiruv manbasini qayd qiling → tasdiqlanmagan holat ochiq.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Olti kartochka yoritish auditining asosiy bosqichlarini ifodalaydi: xona, orientatsiya, deraza, tashqi to‘siq, tekshiruv va natija.",
+      "2. Xona ko‘zga yorug‘ ko‘rinishi normativ yoki texnik hisob o‘rnini bosmaydi.",
+      "3. Audit natijasi xona, muammo, tekshiruv usuli, manba, natija va yechim ko‘rinishida qayd qilinsa keyingi o‘zgarishlarda qayta tekshirish osonlashadi.",
+      "Darsdagi bajarish: Funksiya → orientatsiya → deraza → tashqi to‘siq → hisob/manba → qayd zanjirini to‘ldiring."
     ],
-    "exercise": "Talab bandi, tahlil usuli va natijani audit jadvaliga yozing.",
-    "solution": "Yoritish auditi ko‘z bilan baholangan renderni hisoblangan moslik deb qabul qilmaydi.",
-    "block": 5,
+    "exercise": "Tabiiy yorug‘lik va insolyatsiyani kompleks audit workflow orqali tekshiring.",
+    "solution": "Professional yoritish auditi geometriya, tashqi kontekst va rasmiy tekshiruvni yagona zanjirga birlashtiradi.",
+    "block": 6,
     "recipe": "light",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": "https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari"
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy yorug‘lik eskizi. Quyosh nurlari va soyalar konseptual; aniq insolyatsiya va tabiiy yoritish qiymatlari amaldagi normativ va hisob usuli bilan aniqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "source_url": null
   },
   {
     "code": "L09_M05_001",
