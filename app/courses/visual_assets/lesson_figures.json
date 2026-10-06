@@ -3962,86 +3962,91 @@
   {
     "code": "L08_M06_001",
     "asset": "l08_m06_001.svg",
-    "title": "Namlik va gidroizolyatsiya tushunchasi — ko‘rgazmali namuna",
+    "title": "Namlik va gidroizolyatsiya tushunchasi — arxitekturaviy eskiz",
     "explanation": [
-      "Nam xona pol-devor tutashuvi, balkon va yerga tegadigan devor uch xil suv manbasiga ega.",
-      "Har namlik manbasini yozing: ichki foydalanish, yog‘in, grunt → boshqa sharoitlar.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Uy kesimida ko‘k strelkalar namlik kelishi mumkin bo‘lgan turli yo‘llarni ko‘rsatadi: tom, grunt va ichki nam zona.",
+      "2. Yashil chiziq himoya qatlamining uzluksizligi g‘oyasini ifodalaydi. Gidroizolyatsiya faqat katta tekis yuzada emas, barcha tutashuvlarda davom etishi kerak.",
+      "3. Eng xavfli joylar ko‘pincha burchak, quvur o‘tishi, threshold va tomdagi penetratsiyalardir; bitta zaif detal butun tizimni zaiflashtirishi mumkin.",
+      "Darsdagi bajarish: Suv manbasi → suv yo‘li → himoya qatlamini kesimda ketma-ket kuzating."
     ],
-    "exercise": "Suv kelish manbasi va chiqish yo‘lini uch zona uchun yozing.",
-    "solution": "Gidroizolyatsiya qarori namlik manbasiga mos bo‘lishi kerak.",
+    "exercise": "Uyda namlik tushishi mumkin bo‘lgan zonalar va manbalarni belgilang.",
+    "solution": "Gidroizolyatsiya suv manbasi va harakat yo‘liga javob beradigan uzluksiz himoya tizimidir.",
     "block": 9,
     "recipe": "waterproof",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy kesim eskizi. Qatlamlar va strelkalar konseptual; qurilish o‘lchami, material tanlovi yoki normativ detal sifatida ko‘chirilmaydi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M06_002",
     "asset": "l08_m06_002.svg",
-    "title": "Fundament va yer bilan tutashuv — ko‘rgazmali namuna",
+    "title": "Fundament va yer bilan tutashuv — arxitekturaviy eskiz",
     "explanation": [
-      "Nam xona pol-devor tutashuvi, balkon va yerga tegadigan devor uch xil suv manbasiga ega.",
-      "Yer bilan tutashuv kesimida himoya va chiqarish yo‘lini ko‘rsating → muhandis savoli.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Kesimda grunt tomoni, fundament devori va tashqi himoya qatlamini alohida ko‘ring; yer osti qismi namlik bilan uzoq muddat aloqada bo‘lishi mumkin.",
+      "2. Yashil qatlam devor va poydevor tutashuvida uzluksiz davom etishi kerak bo‘lgan himoya mantiqini ko‘rsatadi.",
+      "3. Quvur penetratsiyasi va pastki drenaj zonasi alohida kritik nuqtalar. Aniq yechim grunt, suv va texnik loyiha ma’lumotiga asoslanadi.",
+      "Darsdagi bajarish: Grunt → membrana → fundament → penetratsiya → drenaj yo‘lini kesimda tekshiring."
     ],
-    "exercise": "Fundament-yer tugunida uzluksiz himoya yo‘lini sxemada belgilang.",
-    "solution": "Yer bilan tutashuvda suv ta’siri va qatlam uzluksizligi tekshiriladi.",
+    "exercise": "Fundament kesimida namlik va penetratsiya zonalarini belgilang.",
+    "solution": "Yer bilan tutashuv auditi membrana uzluksizligi, penetratsiya va suvni boshqarishni birga ko‘radi.",
     "block": 9,
     "recipe": "waterproof",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy kesim eskizi. Qatlamlar va strelkalar konseptual; qurilish o‘lchami, material tanlovi yoki normativ detal sifatida ko‘chirilmaydi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M06_003",
     "asset": "l08_m06_003.svg",
-    "title": "Tom, balkon va tashqi zonalar — ko‘rgazmali namuna",
+    "title": "Tom, balkon va tashqi zonalar — arxitekturaviy eskiz",
     "explanation": [
-      "Nam xona pol-devor tutashuvi, balkon va yerga tegadigan devor uch xil suv manbasiga ega.",
-      "Balkonda suvni chiqish nuqtasigacha kuzating → to‘planish joyi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi tomda suv qiyalik bo‘ylab past nuqtaga va chiqarish nuqtasiga yuradi; tom shakli suv yo‘li bilan birga o‘qiladi.",
+      "2. O‘ngdagi balkon kesimida nishab, drain, eshik thresholdi va gidroizolyatsiya qatlamining o‘zaro munosabati ko‘rsatilgan.",
+      "3. Parapet, eshik va tom penetratsiyasi kabi tutashuvlar katta tekis yuzadan ko‘ra ko‘proq nazorat talab qilishi mumkin.",
+      "Darsdagi bajarish: Tom yoki balkonda eng yuqori nuqtadan drain/chiqishgacha suv yo‘lini chizing."
     ],
-    "exercise": "Balkon sathi va suv chiqarish yo‘lini kesimda chizing.",
-    "solution": "Tashqi zona faqat qoplama bilan emas, nishab va suv chiqishi bilan ko‘riladi.",
+    "exercise": "Tom va balkonda nishab, drain va kritik tutashuvlarni tekshiring.",
+    "solution": "Tashqi nam zonada suv yo‘li, sath va gidroizolyatsiya uzluksizligi birgalikda ishlaydi.",
     "block": 9,
     "recipe": "waterproof",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy kesim eskizi. Qatlamlar va strelkalar konseptual; qurilish o‘lchami, material tanlovi yoki normativ detal sifatida ko‘chirilmaydi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M06_004",
     "asset": "l08_m06_004.svg",
-    "title": "Wet room va ichki nam zonalar — ko‘rgazmali namuna",
+    "title": "Wet room va ichki nam zonalar — arxitekturaviy eskiz",
     "explanation": [
-      "Nam xona pol-devor tutashuvi, balkon va yerga tegadigan devor uch xil suv manbasiga ega.",
-      "Dushda pol, devor va kirish tutashuvini chizing → himoya uziladigan nuqtalar.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Dush xonasi kesimida yashil chiziq pol ostidagi himoya qatlamining devorga ko‘tarilib, uzluksiz davom etishini ko‘rsatadi.",
+      "2. Ko‘k strelkalar suvning floor drain tomon yo‘nalishini tushuntiradi; nishab va drain bir-biriga mos bo‘lishi kerak.",
+      "3. Quvur penetratsiyasi va eshik thresholdi himoya qatlamini uzib yuborishi mumkin bo‘lgan kritik zonalardir. Tile qoplamani o‘zi to‘liq waterproofing tizimi deb qabul qilmang.",
+      "Darsdagi bajarish: Floor-wall junction, drain, quvur o‘tishi va eshik zonasini bitta kesimda tekshiring."
     ],
-    "exercise": "Ho‘l xona devor-pol va quvur o‘tish tugunlarini belgilang.",
-    "solution": "Namlik himoyasining uzilishi ko‘pincha tutashuv va o‘tishlarda yuz beradi.",
+    "exercise": "Wet roomdagi kritik gidroizolyatsiya nuqtalarini ajrating.",
+    "solution": "Wet room himoyasi pol, devor, drain, penetratsiya va threshold koordinatsiyasiga bog‘liq.",
     "block": 9,
     "recipe": "waterproof",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy kesim eskizi. Qatlamlar va strelkalar konseptual; qurilish o‘lchami, material tanlovi yoki normativ detal sifatida ko‘chirilmaydi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M06_005",
     "asset": "l08_m06_005.svg",
-    "title": "Gidroizolyatsiya professional audit — ko‘rgazmali namuna",
+    "title": "Gidroizolyatsiya professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Nam xona pol-devor tutashuvi, balkon va yerga tegadigan devor uch xil suv manbasiga ega.",
-      "Har tugun uchun manba, detal va mas’ulni qayd eting → tekshiriladigan yechim.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Olti kichik eskiz auditda alohida ko‘riladigan tipik kritik zonalarni ifodalaydi: drain, fundament, tom, penetratsiya, nishab va wet room.",
+      "2. Har detalda bir xil savolni bering: suv qayerdan keladi, qayerga ketadi va himoya qatlami qayerda uzilishi mumkin?",
+      "3. BIM modeldagi umumiy geometriya yetarli emas; muhim tutashuv va penetratsiyalar mantiqan tushunarli detail bilan tekshirilishi kerak.",
+      "Darsdagi bajarish: Suv manbasi → yo‘l → himoya → tutashuv → penetratsiya → drainage checklistini to‘ldiring."
     ],
-    "exercise": "Manba, himoya, tugun va xizmat tekshiruvini audit qiling.",
-    "solution": "Gidroizolyatsiya auditi tanlangan tizimning ishlab chiqaruvchi va loyiha talablariga mosligini tekshiradi.",
+    "exercise": "Gidroizolyatsiya tizimini kritik detallar bo‘yicha kompleks audit qiling.",
+    "solution": "Professional audit suv yo‘li va himoya uzluksizligini barcha kritik tutashuvlarda tekshiradi.",
     "block": 12,
     "recipe": "waterproof",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy kesim eskizi. Qatlamlar va strelkalar konseptual; qurilish o‘lchami, material tanlovi yoki normativ detal sifatida ko‘chirilmaydi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
