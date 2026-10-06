@@ -5402,7 +5402,7 @@
   {
     "code": "L10_M05_001",
     "asset": "l10_m05_001.svg",
-    "title": "Plan optimizatsiyasi tushunchasi — ko‘rgazmali namuna",
+    "title": "Plan optimizatsiyasi tushunchasi — arxitekturaviy eskiz",
     "explanation": [
       "A variant koridori 12 m², B variant 8 m²; Bda mehmon yo‘li yotoqxonani kesib o‘tadi.",
       "Muammoni mezon bilan belgilang: maydon, yo‘l, privacy → maqsadli optimizatsiya.",
@@ -5412,14 +5412,14 @@
     "solution": "Plan optimizatsiyasi faqat maydonni qisqartirish emas, talablarni yaxshiroq bajarishdir.",
     "block": 5,
     "recipe": "variants",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M05_002",
     "asset": "l10_m05_002.svg",
-    "title": "Foydali va yo'qotilgan maydon — ko‘rgazmali namuna",
+    "title": "Foydali va yo'qotilgan maydon — arxitekturaviy eskiz",
     "explanation": [
       "A variant koridori 12 m², B variant 8 m²; Bda mehmon yo‘li yotoqxonani kesib o‘tadi.",
       "12−8=4 m² tejalishni qayd qiling, yo‘qotilgan qulaylikni yozing → maydon yagona mezon emas.",
@@ -5429,14 +5429,14 @@
     "solution": "Maydon ulushi tahlil ko‘rsatkichi; qulaylik hukmi foydalanish bilan tekshiriladi.",
     "block": 5,
     "recipe": "variants",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M05_003",
     "asset": "l10_m05_003.svg",
-    "title": "Xonalararo konfliktlarni yechish — ko‘rgazmali namuna",
+    "title": "Xonalararo konfliktlarni yechish — arxitekturaviy eskiz",
     "explanation": [
       "A variant koridori 12 m², B variant 8 m²; Bda mehmon yo‘li yotoqxonani kesib o‘tadi.",
       "Konfliktli eshik yoki xona aloqasini o‘zgartiring → Bdagi privacy tiklanadi.",
@@ -5446,14 +5446,14 @@
     "solution": "Konfliktni yechish boshqa xonaning vazifasini buzmasligi kerak.",
     "block": 5,
     "recipe": "entry",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M05_004",
     "asset": "l10_m05_004.svg",
-    "title": "Konstruktiv va MEP mantiq — ko‘rgazmali namuna",
+    "title": "Konstruktiv va MEP mantiq — arxitekturaviy eskiz",
     "explanation": [
       "A variant koridori 12 m², B variant 8 m²; Bda mehmon yo‘li yotoqxonani kesib o‘tadi.",
       "Tayanch va nam zonalarni yangi plan bilan solishtiring → texnik ta’sir.",
@@ -5463,14 +5463,14 @@
     "solution": "Plan yaxshilanishi konstruktiv va MEP muvofiqlikni saqlashi kerak.",
     "block": 5,
     "recipe": "stack",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M05_005",
     "asset": "l10_m05_005.svg",
-    "title": "Final plan audit — ko‘rgazmali namuna",
+    "title": "Final plan audit — arxitekturaviy eskiz",
     "explanation": [
       "A variant koridori 12 m², B variant 8 m²; Bda mehmon yo‘li yotoqxonani kesib o‘tadi.",
       "Oldin/keyin jadvalda barcha mezonni qayta tekshiring → haqiqiy yaxshilanish.",
@@ -5480,14 +5480,14 @@
     "solution": "Final plan audit o‘zgarishning foydasi va yo‘qotishini dalillaydi.",
     "block": 5,
     "recipe": "audit",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M06_001",
     "asset": "l10_m06_001.svg",
-    "title": "Modelni boshlash strategiyasi — ko‘rgazmali namuna",
+    "title": "Modelni boshlash strategiyasi — arxitekturaviy eskiz",
     "explanation": [
       "Tasdiqlangan eskizdan qavat, o‘q, devor, slab va ochilishlar bilan BIM asosini yaratamiz.",
       "Eskiz, birlik va versiyani belgilab model ketma-ketligini yozing → reja.",
@@ -5497,14 +5497,14 @@
     "solution": "Modeling strategiyasi tayanch geometriyadan detalgacha izchil yuradi.",
     "block": 5,
     "recipe": "brief",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M06_002",
     "asset": "l10_m06_002.svg",
-    "title": "Stories, grid va asosiy elementlar — ko‘rgazmali namuna",
+    "title": "Stories, grid va asosiy elementlar — arxitekturaviy eskiz",
     "explanation": [
       "Tasdiqlangan eskizdan qavat, o‘q, devor, slab va ochilishlar bilan BIM asosini yaratamiz.",
       "Stories va gridni sath/o‘lcham bilan sozlang → tekshiriladigan asos.",
@@ -5514,14 +5514,14 @@
     "solution": "Model setup barcha elementlar uchun umumiy koordinata asosini beradi.",
     "block": 5,
     "recipe": "grid",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M06_003",
     "asset": "l10_m06_003.svg",
-    "title": "Wall, slab, column va openings — ko‘rgazmali namuna",
+    "title": "Wall, slab, column va openings — arxitekturaviy eskiz",
     "explanation": [
       "Tasdiqlangan eskizdan qavat, o‘q, devor, slab va ochilishlar bilan BIM asosini yaratamiz.",
       "Asosiy devor va slabdan keyin ustun/ochilishlarni joylang → bosqichli model.",
@@ -5531,14 +5531,14 @@
     "solution": "Asosiy elementlar mustaqil emas, o‘zaro muvofiq model bo‘laklaridir.",
     "block": 5,
     "recipe": "mini-model",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M06_004",
     "asset": "l10_m06_004.svg",
-    "title": "Model koordinatsiyasi — ko‘rgazmali namuna",
+    "title": "Model koordinatsiyasi — arxitekturaviy eskiz",
     "explanation": [
       "Tasdiqlangan eskizdan qavat, o‘q, devor, slab va ochilishlar bilan BIM asosini yaratamiz.",
       "Plan va kesimda tayanch, ochilish va sathni solishtiring → koordinatsiya.",
@@ -5548,14 +5548,14 @@
     "solution": "Model koordinatsiyasi bir nechta ko‘rinish bilan tekshiriladi.",
     "block": 5,
     "recipe": "frame",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M06_005",
     "asset": "l10_m06_005.svg",
-    "title": "Archicad modeli professional audit — ko‘rgazmali namuna",
+    "title": "Archicad modeli professional audit — arxitekturaviy eskiz",
     "explanation": [
       "Tasdiqlangan eskizdan qavat, o‘q, devor, slab va ochilishlar bilan BIM asosini yaratamiz.",
       "Modelni brief, xona jadvali va o‘lcham bilan tekshiring → eskizga mos natija.",
@@ -5565,14 +5565,14 @@
     "solution": "Model audit bajarilgan geometriya va qolgan savollarni ajratadi.",
     "block": 5,
     "recipe": "audit",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M07_001",
     "asset": "l10_m07_001.svg",
-    "title": "Fasad konsepsiyasi — ko‘rgazmali namuna",
+    "title": "Fasad konsepsiyasi — arxitekturaviy eskiz",
     "explanation": [
       "Plan ochilishlari va kirish joyidan fasad konsepsiyasi ishlab chiqiladi.",
       "Plandagi xonani deraza bilan bog‘lang → funksional ochilish.",
@@ -5582,14 +5582,14 @@
     "solution": "Konsepsiya tashqi ko‘rinishning funksional asosini tushuntiradi.",
     "block": 5,
     "recipe": "composition",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M07_002",
     "asset": "l10_m07_002.svg",
-    "title": "Proporsiya va ritm — ko‘rgazmali namuna",
+    "title": "Proporsiya va ritm — arxitekturaviy eskiz",
     "explanation": [
       "Plan ochilishlari va kirish joyidan fasad konsepsiyasi ishlab chiqiladi.",
       "Deraza markazlari va hajm nisbatini o‘lchang → tekshiriladigan ritm.",
@@ -5599,14 +5599,14 @@
     "solution": "Proporsiya elementlar o‘rtasidagi nisbat va hierarxiya bilan o‘qiladi.",
     "block": 5,
     "recipe": "composition",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M07_003",
     "asset": "l10_m07_003.svg",
-    "title": "Ochilishlar va kirish aksenti — ko‘rgazmali namuna",
+    "title": "Ochilishlar va kirish aksenti — arxitekturaviy eskiz",
     "explanation": [
       "Plan ochilishlari va kirish joyidan fasad konsepsiyasi ishlab chiqiladi.",
       "Kirishni bitta aksent bilan ajrating → tushunarli kirish.",
@@ -5616,14 +5616,14 @@
     "solution": "Kirish belgisi haqiqiy kirishni tushunarli qilishi kerak.",
     "block": 5,
     "recipe": "composition",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M07_004",
     "asset": "l10_m07_004.svg",
-    "title": "Material va hajm — ko‘rgazmali namuna",
+    "title": "Material va hajm — arxitekturaviy eskiz",
     "explanation": [
       "Plan ochilishlari va kirish joyidan fasad konsepsiyasi ishlab chiqiladi.",
       "Materiallarni asosiy, yordamchi va aksent guruhiga bo‘ling → izchil ifoda.",
@@ -5633,14 +5633,14 @@
     "solution": "Material qarori hajm, detal va foydalanish bilan bog‘lanadi.",
     "block": 5,
     "recipe": "composition",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M07_005",
     "asset": "l10_m07_005.svg",
-    "title": "Fasad professional audit — ko‘rgazmali namuna",
+    "title": "Fasad professional audit — arxitekturaviy eskiz",
     "explanation": [
       "Plan ochilishlari va kirish joyidan fasad konsepsiyasi ishlab chiqiladi.",
       "Plan–fasad–kesimdagi ochilishlarni bir ID orqali solishtiring → mos chizmalar.",
@@ -5650,14 +5650,14 @@
     "solution": "Fasad auditi chiroyli tasvir bilan model mosligini birga tekshiradi.",
     "block": 5,
     "recipe": "composition",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M08_001",
     "asset": "l10_m08_001.svg",
-    "title": "Tom konsepsiyasi — ko‘rgazmali namuna",
+    "title": "Tom konsepsiyasi — arxitekturaviy eskiz",
     "explanation": [
       "L-shaklli uy tomining ikki varianti: sodda hajmlar va murakkab tutashuvli yechim.",
       "Uy hajmini alohida qismlarga ajrating → tom vazifasi.",
@@ -5667,14 +5667,14 @@
     "solution": "Tom konsepsiyasi estetik va amaliy vazifalarni birlashtiradi.",
     "block": 5,
     "recipe": "roof-plan",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M08_002",
     "asset": "l10_m08_002.svg",
-    "title": "Nishab va suv yo'li — ko‘rgazmali namuna",
+    "title": "Nishab va suv yo'li — arxitekturaviy eskiz",
     "explanation": [
       "L-shaklli uy tomining ikki varianti: sodda hajmlar va murakkab tutashuvli yechim.",
       "Har qiyalikda suv yo‘lini chiqarish nuqtasiga chizing → to‘planish nuqtasi.",
@@ -5684,14 +5684,14 @@
     "solution": "Nishab suvni qayerga yo‘naltirishini ko‘rsatishi kerak.",
     "block": 5,
     "recipe": "roof-plan",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M08_003",
     "asset": "l10_m08_003.svg",
-    "title": "Ridge, eave va tutashuvlar — ko‘rgazmali namuna",
+    "title": "Ridge, eave va tutashuvlar — arxitekturaviy eskiz",
     "explanation": [
       "L-shaklli uy tomining ikki varianti: sodda hajmlar va murakkab tutashuvli yechim.",
       "Ridge, eave va vodiy chiziqlarini sath bilan belgilang → tutashuv geometriyasi.",
@@ -5701,14 +5701,14 @@
     "solution": "Tom elementlari va tugunlari bir xil geometriyani ifodalaydi.",
     "block": 5,
     "recipe": "roof-plan",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M08_004",
     "asset": "l10_m08_004.svg",
-    "title": "Tom va fasad koordinatsiyasi — ko‘rgazmali namuna",
+    "title": "Tom va fasad koordinatsiyasi — arxitekturaviy eskiz",
     "explanation": [
       "L-shaklli uy tomining ikki varianti: sodda hajmlar va murakkab tutashuvli yechim.",
       "Tom konturini fasad va kesimga solishtiring → balandlik mosligi.",
@@ -5718,14 +5718,14 @@
     "solution": "Tom qarori tashqi ko‘rinish va kirishdan foydalanishga ta’sir qiladi.",
     "block": 5,
     "recipe": "roof-plan",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M08_005",
     "asset": "l10_m08_005.svg",
-    "title": "Tom professional audit — ko‘rgazmali namuna",
+    "title": "Tom professional audit — arxitekturaviy eskiz",
     "explanation": [
       "L-shaklli uy tomining ikki varianti: sodda hajmlar va murakkab tutashuvli yechim.",
       "Ikki variantni suv, tayanch, shakl va xizmat bilan taqqoslang → asoslangan tanlov.",
@@ -5735,14 +5735,14 @@
     "solution": "Tom auditi ochiq muhandislik masalalarini yashirmaydi.",
     "block": 5,
     "recipe": "roof-plan",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M09_001",
     "asset": "l10_m09_001.svg",
-    "title": "Professional kesim tushunchasi — ko‘rgazmali namuna",
+    "title": "Professional kesim tushunchasi — arxitekturaviy eskiz",
     "explanation": [
       "Kesim kirish, zinapoya yoki balandlik o‘zgarishi orqali o‘tadi; ±0.000 va +3.000 m sathlar ko‘rsatiladi.",
       "Kesuvchi chiziqni muhim ichki aloqadan o‘tkazing → maqsadli kesim.",
@@ -5752,14 +5752,14 @@
     "solution": "Professional kesim qarorni tekshiradigan joyni ko‘rsatadi.",
     "block": 5,
     "recipe": "stories",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M09_002",
     "asset": "l10_m09_002.svg",
-    "title": "Sathlar va balandliklar — ko‘rgazmali namuna",
+    "title": "Sathlar va balandliklar — arxitekturaviy eskiz",
     "explanation": [
       "Kesim kirish, zinapoya yoki balandlik o‘zgarishi orqali o‘tadi; ±0.000 va +3.000 m sathlar ko‘rsatiladi.",
       "Pol, yopma, shift va tom sathlarini belgilang → vertikal ma’lumot.",
@@ -5769,14 +5769,14 @@
     "solution": "Balandlik tekshiruvi aniq tayanch sathiga bog‘lanadi.",
     "block": 5,
     "recipe": "stories",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M09_003",
     "asset": "l10_m09_003.svg",
-    "title": "Konstruksiya va openinglar — ko‘rgazmali namuna",
+    "title": "Konstruksiya va openinglar — arxitekturaviy eskiz",
     "explanation": [
       "Kesim kirish, zinapoya yoki balandlik o‘zgarishi orqali o‘tadi; ±0.000 va +3.000 m sathlar ko‘rsatiladi.",
       "Tayanch va openinglarni model bilan solishtiring → konflikt.",
@@ -5786,14 +5786,14 @@
     "solution": "Kesim yashirin vertikal konfliktni dalillaydi.",
     "block": 5,
     "recipe": "stories",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M09_004",
     "asset": "l10_m09_004.svg",
-    "title": "Kesim orqali dizayn tekshiruvi — ko‘rgazmali namuna",
+    "title": "Kesim orqali dizayn tekshiruvi — arxitekturaviy eskiz",
     "explanation": [
       "Kesim kirish, zinapoya yoki balandlik o‘zgarishi orqali o‘tadi; ±0.000 va +3.000 m sathlar ko‘rsatiladi.",
       "Odam harakati, yorug‘lik va bosh usti bo‘shligini kesimda ko‘ring → dizayn tekshiruvi.",
@@ -5803,14 +5803,14 @@
     "solution": "Kesim orqali dizayn qarori texnik oqibat bilan baholanadi.",
     "block": 5,
     "recipe": "stories",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M09_005",
     "asset": "l10_m09_005.svg",
-    "title": "Kesim professional audit — ko‘rgazmali namuna",
+    "title": "Kesim professional audit — arxitekturaviy eskiz",
     "explanation": [
       "Kesim kirish, zinapoya yoki balandlik o‘zgarishi orqali o‘tadi; ±0.000 va +3.000 m sathlar ko‘rsatiladi.",
       "Har sath va ochilishni plan/fasadga bog‘lang → mos hujjatlar.",
@@ -5820,14 +5820,14 @@
     "solution": "Kesim auditida tuzatish barcha tegishli ko‘rinishlarga yetkaziladi.",
     "block": 5,
     "recipe": "stories",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M10_001",
     "asset": "l10_m10_001.svg",
-    "title": "Final genplan strategiyasi — ko‘rgazmali namuna",
+    "title": "Final genplan strategiyasi — arxitekturaviy eskiz",
     "explanation": [
       "Uy, parking, ayvon, o‘yin va xo‘jalik zonasi yakuniy genplanda birlashtiriladi.",
       "Briefdagi tashqi vazifalarni genplan elementiga bog‘lang → qamrov.",
@@ -5837,14 +5837,14 @@
     "solution": "Final genplan bino bilan uchastkani yagona foydalanish tizimiga keltiradi.",
     "block": 5,
     "recipe": "genplan",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M10_002",
     "asset": "l10_m10_002.svg",
-    "title": "Piyoda va avtomobil harakati — ko‘rgazmali namuna",
+    "title": "Piyoda va avtomobil harakati — arxitekturaviy eskiz",
     "explanation": [
       "Uy, parking, ayvon, o‘yin va xo‘jalik zonasi yakuniy genplanda birlashtiriladi.",
       "Piyoda va avtomobil harakatini alohida chizing → konflikt tekshiruvi.",
@@ -5854,14 +5854,14 @@
     "solution": "Harakat konfliktlari foydalanish ssenariysida tekshiriladi.",
     "block": 5,
     "recipe": "genplan",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M10_003",
     "asset": "l10_m10_003.svg",
-    "title": "Hovli va tashqi funksiyalar — ko‘rgazmali namuna",
+    "title": "Hovli va tashqi funksiyalar — arxitekturaviy eskiz",
     "explanation": [
       "Uy, parking, ayvon, o‘yin va xo‘jalik zonasi yakuniy genplanda birlashtiriladi.",
       "Hovli funksiyalarini uy xonalari bilan bog‘lang → foydali tashqi aloqa.",
@@ -5871,14 +5871,14 @@
     "solution": "Tashqi funksiyalar bo‘sh joyga tasodifiy qo‘yilmaydi.",
     "block": 5,
     "recipe": "genplan",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M10_004",
     "asset": "l10_m10_004.svg",
-    "title": "Sath, drenaj va tashqi koordinatsiya — ko‘rgazmali namuna",
+    "title": "Sath, drenaj va tashqi koordinatsiya — arxitekturaviy eskiz",
     "explanation": [
       "Uy, parking, ayvon, o‘yin va xo‘jalik zonasi yakuniy genplanda birlashtiriladi.",
       "Sath va suv chiqarish yo‘lini kesim bilan solishtiring → muhandislik savoli.",
@@ -5888,14 +5888,14 @@
     "solution": "Tashqi koordinatsiya plan bilan vertikal sharoitni birga ko‘radi.",
     "block": 5,
     "recipe": "genplan",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M10_005",
     "asset": "l10_m10_005.svg",
-    "title": "Genplan professional audit — ko‘rgazmali namuna",
+    "title": "Genplan professional audit — arxitekturaviy eskiz",
     "explanation": [
       "Uy, parking, ayvon, o‘yin va xo‘jalik zonasi yakuniy genplanda birlashtiriladi.",
       "Chegara, manba, tekshiruv va noma’lum holatni ro‘yxatlang → yakuniy genplan dalili.",
@@ -5905,14 +5905,14 @@
     "solution": "Genplan auditi boshlang‘ich ma’lumot va loyiha qarorlari izchilligini tekshiradi.",
     "block": 5,
     "recipe": "genplan",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M11_001",
     "asset": "l10_m11_001.svg",
-    "title": "Loyiha albomi strukturasi — ko‘rgazmali namuna",
+    "title": "Loyiha albomi strukturasi — arxitekturaviy eskiz",
     "explanation": [
       "Albomi A-01 genplan, A-02 plan, A-03 fasad, A-04 kesim va A-05 izoh/tekshiruvdan iborat o‘quv paket.",
       "Sheet ro‘yxati va maqsadini yozing → qamrov.",
@@ -5922,14 +5922,14 @@
     "solution": "Albom struktura orqali loyiha hikoyasini tushunarli qiladi.",
     "block": 5,
     "recipe": "album",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M11_002",
     "asset": "l10_m11_002.svg",
-    "title": "Plan, fasad va kesimlar — ko‘rgazmali namuna",
+    "title": "Plan, fasad va kesimlar — arxitekturaviy eskiz",
     "explanation": [
       "Albomi A-01 genplan, A-02 plan, A-03 fasad, A-04 kesim va A-05 izoh/tekshiruvdan iborat o‘quv paket.",
       "Plan, fasad va kesimni bir xil model revisionidan tayyorlang → moslik.",
@@ -5939,14 +5939,14 @@
     "solution": "Asosiy chizmalar bir xil loyiha holatini ifodalashi kerak.",
     "block": 5,
     "recipe": "album",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M11_003",
     "asset": "l10_m11_003.svg",
-    "title": "Genplan va yordamchi chizmalar — ko‘rgazmali namuna",
+    "title": "Genplan va yordamchi chizmalar — arxitekturaviy eskiz",
     "explanation": [
       "Albomi A-01 genplan, A-02 plan, A-03 fasad, A-04 kesim va A-05 izoh/tekshiruvdan iborat o‘quv paket.",
       "Genplan va kerakli yordamchi chizmani qo‘shing → loyiha konteksti.",
@@ -5956,14 +5956,14 @@
     "solution": "Qo‘shimcha chizma asosiy qarorni tushuntirishga xizmat qiladi.",
     "block": 5,
     "recipe": "album",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M11_004",
     "asset": "l10_m11_004.svg",
-    "title": "Layout va grafik sifat — ko‘rgazmali namuna",
+    "title": "Layout va grafik sifat — arxitekturaviy eskiz",
     "explanation": [
       "Albomi A-01 genplan, A-02 plan, A-03 fasad, A-04 kesim va A-05 izoh/tekshiruvdan iborat o‘quv paket.",
       "Layoutda sarlavha, masshtab, drawing va o‘qilish sifatini tekshiring → tushunarli varaq.",
@@ -5973,14 +5973,14 @@
     "solution": "Grafik sifat haqiqiy varaqdagi o‘qilish bilan baholanadi.",
     "block": 5,
     "recipe": "album",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M11_005",
     "asset": "l10_m11_005.svg",
-    "title": "LEVEL 10 final loyiha audit — ko‘rgazmali namuna",
+    "title": "LEVEL 10 final loyiha audit — arxitekturaviy eskiz",
     "explanation": [
       "Albomi A-01 genplan, A-02 plan, A-03 fasad, A-04 kesim va A-05 izoh/tekshiruvdan iborat o‘quv paket.",
       "PDFni ochib sahifa soni, sarlavha, o‘lcham va versiyani solishtiring → chiqarilgan fayl tekshirilgan.",
@@ -5990,8 +5990,8 @@
     "solution": "Final albom auditida paket tarkibi va versiyasi tekshiriladi.",
     "block": 5,
     "recipe": "album",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
