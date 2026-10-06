@@ -9425,86 +9425,91 @@
   {
     "code": "L15_M06_001",
     "asset": "l15_m06_001.svg",
-    "title": "Himoya strukturasi — ko‘rgazmali namuna",
+    "title": "Himoya strukturasi — arxitekturaviy eskiz",
     "explanation": [
-      "Himoyada uch qaror tushuntiriladi: zonalash, site joylashuv va BIM hujjat izchilligi.",
-      "Himoyani ehtiyoj→qaror→dalil→cheklov tartibida tuzing → tushunarli hikoya.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Eskiz loyiha hikoyasini Problem → Brief → Site → Concept → Plan → Technical logic → Final result ketma-ketligida ko‘rsatish g‘oyasini beradi.",
+      "2. Himoya paytida tomoshabin qarorlar qayerdan kelganini va nima uchun tanlanganini tushunishi kerak.",
+      "3. Slaydlar chiroyli bo‘lishi yetarli emas; har asosiy qarorning dalili va natijasi bo‘lsin.",
+      "Darsdagi bajarish: 15 daqiqalik defense uchun 6–8 bosqichli hikoya skeletini tuzing."
     ],
-    "exercise": "Himoyani vazifa, qaror, dalil va natija tartibida tuzing.",
-    "solution": "Himoya loyiha hikoyasini tushunarli va tekshiriladigan qiladi.",
-    "block": 4,
+    "exercise": "Himoya hikoyasini muammo, dalil, qaror va natija ketma-ketligida tuzing.",
+    "solution": "Kuchli defense loyiha qarorlarini tushunarli hikoya va dalillar bilan bog‘laydi.",
+    "block": 5,
     "recipe": "presentation",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy presentation eskizi. Grafikalar himoya mantiqini ko‘rsatadi; aniq loyiha qarori va texnik dalillar final loyiha materiallaridan olinadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M06_002",
     "asset": "l15_m06_002.svg",
-    "title": "Konsept va qarorlarni asoslash — ko‘rgazmali namuna",
+    "title": "Konsept va qarorlarni asoslash — arxitekturaviy eskiz",
     "explanation": [
-      "Himoyada uch qaror tushuntiriladi: zonalash, site joylashuv va BIM hujjat izchilligi.",
-      "Har konsept qaroriga plan yoki diagramma ko‘rsating → asoslangan fikr.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi dalil, markazdagi qaror va o‘ngdagi natija Evidence → Decision → Benefit mantiqini ifodalaydi.",
+      "2. Har katta arxitektura qarori brief, site yoki aniq loyiha mezoniga bog‘lanishi kerak.",
+      "3. “Chiroyli ko‘ringani uchun” yakka asos bo‘lib qolmasin; foyda, cheklov va trade-off ham ko‘rsatiladi.",
+      "Darsdagi bajarish: 5 ta asosiy qarorni Evidence → Decision → Benefit formatida yozing."
     ],
-    "exercise": "Konsept tanlovini brief va site bilan izohlang.",
-    "solution": "Qaror dalili shaxsiy diddan tashqari loyiha sharoitiga tayanadi.",
+    "exercise": "Asosiy qarorlarni dalil va foyda bilan asoslang.",
+    "solution": "Professional himoyada qarorlar hissiy emas, loyiha mezonlari bilan tushuntiriladi.",
     "block": 4,
     "recipe": "presentation",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy presentation eskizi. Grafikalar himoya mantiqini ko‘rsatadi; aniq loyiha qarori va texnik dalillar final loyiha materiallaridan olinadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M06_003",
     "asset": "l15_m06_003.svg",
-    "title": "Texnik qarorlarni himoya qilish — ko‘rgazmali namuna",
+    "title": "Texnik qarorlarni himoya qilish — arxitekturaviy eskiz",
     "explanation": [
-      "Himoyada uch qaror tushuntiriladi: zonalash, site joylashuv va BIM hujjat izchilligi.",
-      "Texnik qarorning vakolat va tekshiruv holatini aniq ayting → taxmin yashirilmaydi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Eskiz structure, MEP va BIM koordinatsiyasini bir-biriga bog‘langan texnik qatlamlar sifatida ko‘rsatadi.",
+      "2. Arxitektor o‘z modelidagi texnik mantiqni tushuntira olishi kerak, lekin aniq muhandislik hisobini tegishli mutaxassis tasdiqlashini ochiq aytadi.",
+      "3. Savolga javob berishda modeldagi dalil view, issue yoki section bilan ko‘rsatilsa ishonchlilik oshadi.",
+      "Darsdagi bajarish: Structure, MEP va BIM bo‘yicha 10 ta savolga dalilli javob tayyorlang."
     ],
-    "exercise": "Texnik yechimning tasdiq doirasi va ochiq savolini ayting.",
-    "solution": "Texnik himoya taxminni hisoblangan natija deb ko‘rsatmaydi.",
+    "exercise": "Texnik qarorni model dalili va mutaxassislik chegarasi bilan tushuntiring.",
+    "solution": "Professional confidence texnik mantiqni bilish va vakolat chegarasini to‘g‘ri aytishdan keladi.",
     "block": 4,
     "recipe": "presentation",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy presentation eskizi. Grafikalar himoya mantiqini ko‘rsatadi; aniq loyiha qarori va texnik dalillar final loyiha materiallaridan olinadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M06_004",
     "asset": "l15_m06_004.svg",
-    "title": "Savol-javob va tanqid — ko‘rgazmali namuna",
+    "title": "Savol-javob va tanqid — arxitekturaviy eskiz",
     "explanation": [
-      "Himoyada uch qaror tushuntiriladi: zonalash, site joylashuv va BIM hujjat izchilligi.",
-      "Tanqidni savolga ajratib dalil bilan javob bering, noma’lumni tan oling → foydali muloqot.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi savol kartochkasi tanqid yoki murakkab savolni, markazdagi javob struktura esa tekshirilgan professional javobni ifodalaydi.",
+      "2. Tanqidni hujum sifatida emas, qarorni qayta tekshirish imkoniyati sifatida qabul qiling.",
+      "3. Aniq bilmagan savolga taxminiy javob bermang; qaysi ma’lumotni tekshirish kerakligini ayting.",
+      "Darsdagi bajarish: 10 ta qiyin jury savoli uchun qisqa, dalilli va professional javob tayyorlang."
     ],
-    "exercise": "Tanqidga dalil yoki tekshirish rejasi bilan javob bering.",
-    "solution": "Savol-javobda noma’lum masala ochiq qayd etiladi.",
+    "exercise": "Murakkab savolga dalil, chegara va keyingi qadam bilan javob bering.",
+    "solution": "Professional Q&A aniqlik, dalil va halollikni saqlaydi.",
     "block": 4,
     "recipe": "presentation",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy presentation eskizi. Grafikalar himoya mantiqini ko‘rsatadi; aniq loyiha qarori va texnik dalillar final loyiha materiallaridan olinadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M06_005",
     "asset": "l15_m06_005.svg",
-    "title": "Final defense audit — ko‘rgazmali namuna",
+    "title": "Final defense audit — arxitekturaviy eskiz",
     "explanation": [
-      "Himoyada uch qaror tushuntiriladi: zonalash, site joylashuv va BIM hujjat izchilligi.",
-      "Javob, yangi masala va keyingi ishni qayd qiling → himoya natijasi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Checklist, diagram, drawing va Q&A bloklari himoyaning boshidan oxirigacha audit qilinishini ko‘rsatadi.",
+      "2. Story, Evidence, Drawings, Technical logic, Trade-offs, Q&A va Closing bir-biriga mos bo‘lishi kerak.",
+      "3. Himoya vaqtini sinovdan o‘tkazing; juda uzun izoh yoki dalilsiz slaydlar yakuniy ta’sirni pasaytiradi.",
+      "Darsdagi bajarish: To‘liq defense’ni vaqt bilan sinab, checklist bo‘yicha yakuniy audit qiling."
     ],
-    "exercise": "Himoya xulosasi va keyingi tuzatishlarni topshiring.",
-    "solution": "Defense audit qarorlar va qabul qilingan feedback izchilligini tekshiradi.",
-    "block": 3,
+    "exercise": "Defense’ni story, dalil, chizma, texnik mantiq va Q&A bo‘yicha audit qiling.",
+    "solution": "Final defense auditi taqdimotning mazmuni, ishonchliligi va oqimini tekshiradi.",
+    "block": 4,
     "recipe": "presentation",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy presentation eskizi. Grafikalar himoya mantiqini ko‘rsatadi; aniq loyiha qarori va texnik dalillar final loyiha materiallaridan olinadi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
