@@ -491,56 +491,56 @@ L11_M05_004,"Void, konstruktsiya va xavfsizlik",reviewed_architectural_sketch,l1
 L11_M05_005,Void professional audit,reviewed_architectural_sketch,l11_m05_005.svg
 L11_M06_001,Balkon va terassa funksiyasi,reviewed_architectural_sketch,l11_m06_001.svg
 L11_M06_002,Ichki-tashqi aloqa,reviewed_architectural_sketch,l11_m06_002.svg
-L11_M06_003,Konstruktiv va thermal bridge mantig'i,pending_topic_review,
-L11_M06_004,Gidroizolyatsiya va drainage,pending_topic_review,
-L11_M06_005,Balkon va terassa audit,pending_topic_review,
-L11_M07_001,Ikki qavatli fasad proporsiyasi,pending_topic_review,
-L11_M07_002,Qavatlar orasidagi vizual aloqa,pending_topic_review,
-L11_M07_003,"Balkon, void va stair aksenti",pending_topic_review,
-L11_M07_004,Material va hajm PRO,pending_topic_review,
-L11_M07_005,2 qavatli fasad audit,pending_topic_review,
-L11_M08_001,Ikki qavatli BIM struktura,pending_topic_review,
-L11_M08_002,Qavatlar modeli,pending_topic_review,
-L11_M08_003,"Stair, void va vertical systems",pending_topic_review,
-L11_M08_004,"Roof, facade va sections",pending_topic_review,
-L11_M08_005,To'liq BIM model audit,pending_topic_review,
-L11_M09_001,Ishchi loyiha tushunchasi,pending_topic_review,
-L11_M09_002,Plan va o'lchamlar,pending_topic_review,
-L11_M09_003,"Fasad, kesim va detallar",pending_topic_review,
-L11_M09_004,Koordinatsiya va revision,pending_topic_review,
-L11_M09_005,LEVEL 11 final ishchi loyiha auditi,pending_topic_review,
-L12_M01_001,BIM nima?,pending_topic_review,
-L12_M01_002,Model va ma'lumot,pending_topic_review,
-L12_M01_003,BIM koordinatsiyasi,pending_topic_review,
-L12_M01_004,BIM workflow,pending_topic_review,
-L12_M01_005,BIM professional audit,pending_topic_review,
-L12_M02_001,Element ma'lumoti tushunchasi,pending_topic_review,
-L12_M02_002,"ID, nom va klassifikatsiya",pending_topic_review,
-L12_M02_003,Properties va parametrlar,pending_topic_review,
-L12_M02_004,Data consistency,pending_topic_review,
-L12_M02_005,Element Information audit,pending_topic_review,
-L12_M03_001,Schedule va spetsifikatsiya,pending_topic_review,
-L12_M03_002,Criteria va fieldlar,pending_topic_review,
-L12_M03_003,Door va window schedule,pending_topic_review,
-L12_M03_004,Quantity va data audit,pending_topic_review,
-L12_M03_005,Spetsifikatsiya professional audit,pending_topic_review,
-L12_M04_001,View tushunchasi,pending_topic_review,
-L12_M04_002,View settings mantig'i,pending_topic_review,
-L12_M04_003,View naming va folders,pending_topic_review,
-L12_M04_004,Documentation views,pending_topic_review,
-L12_M04_005,View Map PRO audit,pending_topic_review,
-L12_M05_001,Layout Book tushunchasi,pending_topic_review,
-L12_M05_002,Master Layout mantig'i,pending_topic_review,
-L12_M05_003,Drawing placement,pending_topic_review,
-L12_M05_004,Sheet hierarchy va readability,pending_topic_review,
-L12_M05_005,Layout Book professional audit,pending_topic_review,
-L12_M06_001,Shtampning vazifasi,pending_topic_review,
-L12_M06_002,Sheet identity,pending_topic_review,
-L12_M06_003,Grafik standartlar,pending_topic_review,
-L12_M06_004,Template standard,pending_topic_review,
-L12_M06_005,Shtamp va standart audit,pending_topic_review,
-L12_M07_001,Publisher tushunchasi,pending_topic_review,
-L12_M07_002,Publisher Set,pending_topic_review,
+L11_M06_003,Konstruktiv va thermal bridge mantig'i,reviewed_architectural_sketch,l11_m06_003.svg
+L11_M06_004,Gidroizolyatsiya va drainage,reviewed_architectural_sketch,l11_m06_004.svg
+L11_M06_005,Balkon va terassa audit,reviewed_architectural_sketch,l11_m06_005.svg
+L11_M07_001,Ikki qavatli fasad proporsiyasi,reviewed_architectural_sketch,l11_m07_001.svg
+L11_M07_002,Qavatlar orasidagi vizual aloqa,reviewed_architectural_sketch,l11_m07_002.svg
+L11_M07_003,"Balkon, void va stair aksenti",reviewed_architectural_sketch,l11_m07_003.svg
+L11_M07_004,Material va hajm PRO,reviewed_architectural_sketch,l11_m07_004.svg
+L11_M07_005,2 qavatli fasad audit,reviewed_architectural_sketch,l11_m07_005.svg
+L11_M08_001,Ikki qavatli BIM struktura,reviewed_architectural_sketch,l11_m08_001.svg
+L11_M08_002,Qavatlar modeli,reviewed_architectural_sketch,l11_m08_002.svg
+L11_M08_003,"Stair, void va vertical systems",reviewed_architectural_sketch,l11_m08_003.svg
+L11_M08_004,"Roof, facade va sections",reviewed_architectural_sketch,l11_m08_004.svg
+L11_M08_005,To'liq BIM model audit,reviewed_architectural_sketch,l11_m08_005.svg
+L11_M09_001,Ishchi loyiha tushunchasi,reviewed_architectural_sketch,l11_m09_001.svg
+L11_M09_002,Plan va o'lchamlar,reviewed_architectural_sketch,l11_m09_002.svg
+L11_M09_003,"Fasad, kesim va detallar",reviewed_architectural_sketch,l11_m09_003.svg
+L11_M09_004,Koordinatsiya va revision,reviewed_architectural_sketch,l11_m09_004.svg
+L11_M09_005,LEVEL 11 final ishchi loyiha auditi,reviewed_architectural_sketch,l11_m09_005.svg
+L12_M01_001,BIM nima?,reviewed_architectural_sketch,l12_m01_001.svg
+L12_M01_002,Model va ma'lumot,reviewed_architectural_sketch,l12_m01_002.svg
+L12_M01_003,BIM koordinatsiyasi,reviewed_architectural_sketch,l12_m01_003.svg
+L12_M01_004,BIM workflow,reviewed_architectural_sketch,l12_m01_004.svg
+L12_M01_005,BIM professional audit,reviewed_architectural_sketch,l12_m01_005.svg
+L12_M02_001,Element ma'lumoti tushunchasi,reviewed_architectural_sketch,l12_m02_001.svg
+L12_M02_002,"ID, nom va klassifikatsiya",reviewed_architectural_sketch,l12_m02_002.svg
+L12_M02_003,Properties va parametrlar,reviewed_architectural_sketch,l12_m02_003.svg
+L12_M02_004,Data consistency,reviewed_architectural_sketch,l12_m02_004.svg
+L12_M02_005,Element Information audit,reviewed_architectural_sketch,l12_m02_005.svg
+L12_M03_001,Schedule va spetsifikatsiya,reviewed_architectural_sketch,l12_m03_001.svg
+L12_M03_002,Criteria va fieldlar,reviewed_architectural_sketch,l12_m03_002.svg
+L12_M03_003,Door va window schedule,reviewed_architectural_sketch,l12_m03_003.svg
+L12_M03_004,Quantity va data audit,reviewed_architectural_sketch,l12_m03_004.svg
+L12_M03_005,Spetsifikatsiya professional audit,reviewed_architectural_sketch,l12_m03_005.svg
+L12_M04_001,View tushunchasi,reviewed_architectural_sketch,l12_m04_001.svg
+L12_M04_002,View settings mantig'i,reviewed_architectural_sketch,l12_m04_002.svg
+L12_M04_003,View naming va folders,reviewed_architectural_sketch,l12_m04_003.svg
+L12_M04_004,Documentation views,reviewed_architectural_sketch,l12_m04_004.svg
+L12_M04_005,View Map PRO audit,reviewed_architectural_sketch,l12_m04_005.svg
+L12_M05_001,Layout Book tushunchasi,reviewed_architectural_sketch,l12_m05_001.svg
+L12_M05_002,Master Layout mantig'i,reviewed_architectural_sketch,l12_m05_002.svg
+L12_M05_003,Drawing placement,reviewed_architectural_sketch,l12_m05_003.svg
+L12_M05_004,Sheet hierarchy va readability,reviewed_architectural_sketch,l12_m05_004.svg
+L12_M05_005,Layout Book professional audit,reviewed_architectural_sketch,l12_m05_005.svg
+L12_M06_001,Shtampning vazifasi,reviewed_architectural_sketch,l12_m06_001.svg
+L12_M06_002,Sheet identity,reviewed_architectural_sketch,l12_m06_002.svg
+L12_M06_003,Grafik standartlar,reviewed_architectural_sketch,l12_m06_003.svg
+L12_M06_004,Template standard,reviewed_architectural_sketch,l12_m06_004.svg
+L12_M06_005,Shtamp va standart audit,reviewed_architectural_sketch,l12_m06_005.svg
+L12_M07_001,Publisher tushunchasi,reviewed_architectural_sketch,l12_m07_001.svg
+L12_M07_002,Publisher Set,reviewed_architectural_sketch,l12_m07_002.svg
 L12_M07_003,Output naming,pending_topic_review,
 L12_M07_004,PDF va boshqa deliverable nazorati,pending_topic_review,
 L12_M07_005,Publisher professional audit,pending_topic_review,
