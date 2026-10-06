@@ -349,11 +349,11 @@ L08_M05_002,Tom yuk yo'li va tayanchlar,reviewed_material_render,realistic-l08_m
 L08_M05_003,"Nishab, ridge va eave mantig'i",reviewed_material_render,realistic-l08_m05_003.jpg
 L08_M05_004,Tom openings va arxitektura koordinatsiyasi,reviewed_material_render,realistic-l08_m05_004.jpg
 L08_M05_005,Tom konstruksiyasi professional audit,reviewed_material_render,realistic-l08_m05_005.jpg
-L08_M06_001,Namlik va gidroizolyatsiya tushunchasi,pending_topic_review,
-L08_M06_002,Fundament va yer bilan tutashuv,pending_topic_review,
-L08_M06_003,"Tom, balkon va tashqi zonalar",pending_topic_review,
-L08_M06_004,Wet room va ichki nam zonalar,pending_topic_review,
-L08_M06_005,Gidroizolyatsiya professional audit,pending_topic_review,
+L08_M06_001,Namlik va gidroizolyatsiya tushunchasi,reviewed_architectural_sketch,l08_m06_001.svg
+L08_M06_002,Fundament va yer bilan tutashuv,reviewed_architectural_sketch,l08_m06_002.svg
+L08_M06_003,"Tom, balkon va tashqi zonalar",reviewed_architectural_sketch,l08_m06_003.svg
+L08_M06_004,Wet room va ichki nam zonalar,reviewed_architectural_sketch,l08_m06_004.svg
+L08_M06_005,Gidroizolyatsiya professional audit,reviewed_architectural_sketch,l08_m06_005.svg
 L08_M07_001,Issiqlik izolyatsiyasi tushunchasi,pending_topic_review,
 L08_M07_002,Building envelope va uzluksizlik,pending_topic_review,
 L08_M07_003,Thermal bridge tushunchasi,pending_topic_review,
