@@ -384,11 +384,11 @@ L09_M03_002,"Chegaralar, kirish va joylashtirish",reviewed_architectural_sketch,
 L09_M03_003,Qo'shni obyektlar va tashqi aloqalar,reviewed_architectural_sketch,l09_m03_003.svg
 L09_M03_004,Genplan koordinatsiyasi,reviewed_architectural_sketch,l09_m03_004.svg
 L09_M03_005,Uchastka professional audit,reviewed_architectural_sketch,l09_m03_005.svg
-L09_M04_001,Tabiiy yorug'lik tushunchasi,pending_topic_review,
-L09_M04_002,Orientatsiya va quyosh,pending_topic_review,
-L09_M04_003,Soyalanish va qo'shni obyektlar,pending_topic_review,
-L09_M04_004,"Plan, fasad va kesim koordinatsiyasi",pending_topic_review,
-L09_M04_005,Yoritish va insolyatsiya audit,pending_topic_review,
+L09_M04_001,Tabiiy yorug'lik tushunchasi,reviewed_architectural_sketch,l09_m04_001.svg
+L09_M04_002,Orientatsiya va quyosh,reviewed_architectural_sketch,l09_m04_002.svg
+L09_M04_003,Soyalanish va qo'shni obyektlar,reviewed_architectural_sketch,l09_m04_003.svg
+L09_M04_004,"Plan, fasad va kesim koordinatsiyasi",reviewed_architectural_sketch,l09_m04_004.svg
+L09_M04_005,Yoritish va insolyatsiya audit,reviewed_architectural_sketch,l09_m04_005.svg
 L09_M05_001,Yong'in xavfsizligi fikrlashi,pending_topic_review,
 L09_M05_002,"Odamlar, yo'llar va chiqishlar",pending_topic_review,
 L09_M05_003,Konstruksiya va materiallar bilan aloqa,pending_topic_review,
