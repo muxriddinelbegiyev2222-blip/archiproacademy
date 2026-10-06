@@ -3262,86 +3262,91 @@
   {
     "code": "L07_M06_001",
     "asset": "l07_m06_001.svg",
-    "title": "BIM Properties tushunchasi — ko‘rgazmali namuna",
+    "title": "BIM Properties tushunchasi — arxitekturaviy eskiz",
     "explanation": [
-      "Eshiklarda Finish_Code nomli o‘quv property bor: D01=A, D02=B. Bir xil yozilish tekshiriladi.",
-      "Propertyni elementning qo‘shimcha ma’lumoti deb ajrating → oddiy text emas.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi model elementi geometriyani, o‘ngdagi ma’lumot kartochkasi esa shu elementga bog‘langan qo‘shimcha BIM ma’lumot qatlamini ifodalaydi.",
+      "2. Property element shaklining o‘zi emas. U element vazifasi, izohi, kodi yoki boshqa loyiha ma’lumotlarini tartibli saqlashga xizmat qiladi.",
+      "3. Chizmaga oddiy Text yozish bilan element Property’sini aralashtirmang; ma’lumot element bilan strukturaviy bog‘langan bo‘lishi kerak.",
+      "Darsdagi bajarish: Bitta element uchun geometriyadan tashqari foydali bo‘ladigan ma’lumotlarni ajrating."
     ],
-    "exercise": "Geometrik parametr bilan qo‘shimcha Propertyni ajrating.",
-    "solution": "Property loyiha ma’lumotini boshqarish uchun qo‘llanadi.",
+    "exercise": "Element geometriyasi va qo‘shimcha BIM ma’lumotini alohida ko‘rsating.",
+    "solution": "Property elementga mazmunli BIM ma’lumot qatlamini qo‘shadi.",
     "block": 8,
     "recipe": "property",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Kartochkalar va qiymatlar o‘quv mantiqini ko‘rsatadi; haqiqiy Property sozlamalari loyiha va Archicad konfiguratsiyasiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M06_002",
     "asset": "l07_m06_002.svg",
-    "title": "Property yaratish va tuzilishi — ko‘rgazmali namuna",
+    "title": "Property yaratish va tuzilishi — arxitekturaviy eskiz",
     "explanation": [
-      "Eshiklarda Finish_Code nomli o‘quv property bor: D01=A, D02=B. Bir xil yozilish tekshiriladi.",
-      "Property Managerda nom, turi va qo‘llanish imkoniyatini belgilang → nazoratli maydon.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi kartochka Property nomi va maqsadini, o‘ngdagi bloklar esa qiymat turi va qo‘llanish mantiqini ifodalaydi.",
+      "2. Property yaratishdan oldin uning nima uchun kerakligi va qaysi elementlarda ishlatilishi aniq bo‘lsin.",
+      "3. Bir xil ma’lumotni turli formatlarda yozish keyingi Schedule va auditni buzadi. Naming va qiymat formati izchil bo‘lsin.",
+      "Darsdagi bajarish: Property nomi, maqsadi, qiymat turi va qaysi elementlarga tegishli ekanini yozing."
     ],
-    "exercise": "Property nomi, turi va mumkin bo‘lgan qiymatlarni belgilang.",
-    "solution": "Ma’lumot turi noto‘g‘ri tanlansa, saralash va hisoblash buzilishi mumkin.",
+    "exercise": "Bitta Property konsepsiyasini maqsad va qiymat turi bilan tuzing.",
+    "solution": "To‘g‘ri Property maqsad, nom, qiymat turi va qo‘llanish doirasiga ega bo‘ladi.",
     "block": 9,
     "recipe": "property",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Kartochkalar va qiymatlar o‘quv mantiqini ko‘rsatadi; haqiqiy Property sozlamalari loyiha va Archicad konfiguratsiyasiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M06_003",
     "asset": "l07_m06_003.svg",
-    "title": "Element ma'lumotlarini standartlashtirish — ko‘rgazmali namuna",
+    "title": "Element ma’lumotlarini standartlashtirish — arxitekturaviy eskiz",
     "explanation": [
-      "Eshiklarda Finish_Code nomli o‘quv property bor: D01=A, D02=B. Bir xil yozilish tekshiriladi.",
-      "Ikki eshikka A/B qiymatlarini kiriting, bo‘sh va noto‘g‘ri yozilishni ajrating → izchil data.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Uch bir xil element ostidagi bir xil ma’lumot kartochkalari Property qiymatlarini izchil yuritish g‘oyasini ko‘rsatadi.",
+      "2. Property mavjud bo‘lishining o‘zi yetarli emas; qiymatlar to‘liq, bir xil formatda va element vazifasiga mos bo‘lishi kerak.",
+      "3. Copy-Paste qilingan elementlarda eski qiymat qolib ketishi mumkin. Shu sabab takror elementlarni ma’lumot bo‘yicha ham audit qiling.",
+      "Darsdagi bajarish: Bir xil turdagi elementlarda bitta Property qiymatini ketma-ket solishtiring."
     ],
-    "exercise": "Bir tushuncha uchun yagona qiymat yozish qoidasini yarating.",
-    "solution": "Standart qiymatlar erkin va turlicha yozilgan ma’lumotdan osonroq tekshiriladi.",
+    "exercise": "Bir xil turdagi elementlarda Property qiymatlarini audit qiling.",
+    "solution": "Standartlashtirish BIM ma’lumotini izchil va tekshiriladigan holatda saqlaydi.",
     "block": 9,
     "recipe": "property",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Kartochkalar va qiymatlar o‘quv mantiqini ko‘rsatadi; haqiqiy Property sozlamalari loyiha va Archicad konfiguratsiyasiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M06_004",
     "asset": "l07_m06_004.svg",
-    "title": "Properties va Schedules — ko‘rgazmali namuna",
+    "title": "Properties va Schedules — arxitekturaviy eskiz",
     "explanation": [
-      "Eshiklarda Finish_Code nomli o‘quv property bor: D01=A, D02=B. Bir xil yozilish tekshiriladi.",
-      "Schedule Fieldsga propertyni qo‘shing → D01=A, D02=B ko‘rinadi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi element, markazdagi Property kartochkasi va o‘ngdagi jadval Model → Property → Schedule zanjirini ko‘rsatadi.",
+      "2. Property Schedule Field sifatida ko‘rsatilganda bir nechta element ma’lumotini bitta jadvalda tez tekshirish mumkin.",
+      "3. Schedule’dagi bo‘sh yoki noodatiy katak manba elementdagi Property muammosini ko‘rsatishi mumkin. Jadvalni qo‘lda yamashdan oldin modelni tekshiring.",
+      "Darsdagi bajarish: Bitta Property’ni elementdan Schedule ustunigacha kuzating."
     ],
-    "exercise": "Propertyni jadvalga chiqarib, bo‘sh qiymatlarni toping.",
-    "solution": "Schedule Property ma’lumotining to‘liqligini nazorat qilishga yordam beradi.",
+    "exercise": "Property qiymatini Schedule orqali tekshiring.",
+    "solution": "Properties Schedule va audit workflowida model ma’lumotini foydali qiladi.",
     "block": 9,
     "recipe": "property",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Kartochkalar va qiymatlar o‘quv mantiqini ko‘rsatadi; haqiqiy Property sozlamalari loyiha va Archicad konfiguratsiyasiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L07_M06_005",
     "asset": "l07_m06_005.svg",
-    "title": "Properties professional audit — ko‘rgazmali namuna",
+    "title": "Properties professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Eshiklarda Finish_Code nomli o‘quv property bor: D01=A, D02=B. Bir xil yozilish tekshiriladi.",
-      "Bo‘sh qiymatni izlab elementdan tuzating → manba va jadval mos.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi audit kartochkasi, markazdagi model elementi va o‘ngdagi ma’lumot kartochkasi Property auditining bir nechta bosqichini ifodalaydi.",
+      "2. Auditda maqsad, naming, qiymat turi, elementlarga qo‘llanish, bo‘sh yoki noto‘g‘ri qiymatlar va Schedule natijasi tekshiriladi.",
+      "3. Ko‘p Property bo‘lishi sifat belgisi emas. Keraksiz, takror yoki vazifasi noma’lum Properties tizimni murakkablashtiradi.",
+      "Darsdagi bajarish: Maqsad → Property → Element → Qiymat → Schedule zanjirini tekshiring."
     ],
-    "exercise": "Nomi, turi, mavjudligi va qiymatlar izchilligini audit qiling.",
-    "solution": "Properties auditida kerakli elementlar to‘g‘ri ma’lumotga ega ekanligi tekshiriladi.",
+    "exercise": "Property tizimini model va Schedule bilan birga audit qiling.",
+    "solution": "Professional audit ma’lumotning maqsadi, to‘liqligi va izchilligini tekshiradi.",
     "block": 11,
     "recipe": "property",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Kartochkalar va qiymatlar o‘quv mantiqini ko‘rsatadi; haqiqiy Property sozlamalari loyiha va Archicad konfiguratsiyasiga bog‘liq.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
