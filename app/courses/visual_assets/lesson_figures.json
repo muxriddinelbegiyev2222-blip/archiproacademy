@@ -8275,86 +8275,91 @@
   {
     "code": "L14_M01_001",
     "asset": "l14_m01_001.svg",
-    "title": "Tor uchastkani tahlil qilish — ko‘rgazmali namuna",
+    "title": "Tor uchastkani tahlil qilish — arxitekturaviy eskiz",
     "explanation": [
-      "12×40 m tor o‘quv uchastka; bir xil 480 m² maydon keng uchastkadek ishlamaydi.",
-      "Kenglik va uzunlikni alohida baholang → torlik oqibati.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Markazdagi tor uzun uchastka, ikki yon qo‘shni va ko‘cha tomoni site cheklovlarini bir qarashda ko‘rsatadi.",
+      "2. Tahlilda eni bilan birga uzunlik, kirish, orientatsiya, qo‘shnilar, privacy va tabiiy yorug‘lik yo‘nalishlari ham ko‘riladi.",
+      "3. Keng uy planini shunchaki siqish o‘rniga, uchastkaning o‘z geometriyasidan loyiha strategiyasi chiqariladi.",
+      "Darsdagi bajarish: Tor uchastka uchun 10 bandli site analysis tuzing."
     ],
-    "exercise": "240 m² geometrik maydonni hisoblab, normativ cheklovni alohida qayd qiling.",
-    "solution": "Uchastka maydoni qurilishi mumkin bo‘lgan maydon bilan teng emas.",
+    "exercise": "Tor uchastkaning kirish, qo‘shni, yorug‘lik va privacy cheklovlarini belgilang.",
+    "solution": "Tor uchastka alohida rejalashtirish strategiyasini talab qiladi.",
     "block": 5,
     "recipe": "narrow",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy plan/site eskizi. Proporsiyalar o‘quv maqsadida; real setback, courtyard o‘lchami va normativ masofalar loyiha joyi bo‘yicha alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M01_002",
     "asset": "l14_m01_002.svg",
-    "title": "Uzunlamasına zonalash — ko‘rgazmali namuna",
+    "title": "Uzunlamasına zonalash — arxitekturaviy eskiz",
     "explanation": [
-      "12×40 m tor o‘quv uchastka; bir xil 480 m² maydon keng uchastkadek ishlamaydi.",
-      "Umumiy/tinch/xizmat zonani uzunlik bo‘ylab sinang → funksional ketma-ketlik.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. To‘rt rangli uzun zona kirish, public, private va service funksiyalarini uchastka o‘qi bo‘ylab ketma-ket joylashtirish g‘oyasini ko‘rsatadi.",
+      "2. Uzun plan foydasiz koridorga aylanmasligi uchun circulation zonalash bilan integratsiya qilinadi.",
+      "3. Har bir zona oldingi va keyingi makon bilan mantiqiy bog‘lanishi, privacy esa ko‘chadan ichkariga qarab bosqichma-bosqich oshishi mumkin.",
+      "Darsdagi bajarish: 3 xil longitudinal zoning variant yarating."
     ],
-    "exercise": "Uzunlamasiga zonalashning ikki variantini chizing.",
-    "solution": "Tor uchastka aloqalar va yo‘l uzunligini qayta o‘ylashni talab qiladi.",
+    "exercise": "Kirishdan private zonagacha ketma-ket funksional sxema tuzing.",
+    "solution": "Uzunlamasına zonalash tor geometriyada funksiyalarni izchil va samarali joylashtirishga yordam beradi.",
     "block": 5,
     "recipe": "narrow",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy plan/site eskizi. Proporsiyalar o‘quv maqsadida; real setback, courtyard o‘lchami va normativ masofalar loyiha joyi bo‘yicha alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M01_003",
     "asset": "l14_m01_003.svg",
-    "title": "Yorug'lik va ichki hovli — ko‘rgazmali namuna",
+    "title": "Yorug‘lik va ichki hovli — arxitekturaviy eskiz",
     "explanation": [
-      "12×40 m tor o‘quv uchastka; bir xil 480 m² maydon keng uchastkadek ishlamaydi.",
-      "Ichki hovli yoki yorug‘lik bo‘shlig‘i variantini kesimda tekshiring → yorug‘lik savoli.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Markazdagi ochiq courtyard chuqur plan ichiga tabiiy yorug‘lik olib kirish uchun fazoviy vosita sifatida ko‘rsatilgan.",
+      "2. Light well yoki courtyard tashqi devordan uzoq ichki zonalarni yoritishga yordam berishi mumkin.",
+      "3. Courtyard hajmi, joyi va ochiqligi eskizdan olinmaydi; site, iqlim, privacy va normativ talablar bilan tekshiriladi.",
+      "Darsdagi bajarish: Plan chuqurligi bo‘yicha natural light diagram chizing."
     ],
-    "exercise": "Ichki hovli va yon ochilish imkoniyatlarini tahlil qiling.",
-    "solution": "Yorug‘lik qarori qo‘shni sharoit va real geometriyaga bog‘liq.",
+    "exercise": "Ichki zonalarga yorug‘lik yetib borishi uchun courtyard yoki light-well strategiyasini ko‘rsating.",
+    "solution": "Tor va chuqur planda tabiiy yorug‘lik alohida loyiha masalasi sifatida yechiladi.",
     "block": 5,
     "recipe": "narrow",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy plan/site eskizi. Proporsiyalar o‘quv maqsadida; real setback, courtyard o‘lchami va normativ masofalar loyiha joyi bo‘yicha alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M01_004",
     "asset": "l14_m01_004.svg",
-    "title": "Circulation va privacy — ko‘rgazmali namuna",
+    "title": "Circulation va privacy — arxitekturaviy eskiz",
     "explanation": [
-      "12×40 m tor o‘quv uchastka; bir xil 480 m² maydon keng uchastkadek ishlamaydi.",
-      "Kirishdan uzoq xonagacha yo‘l va privacy ni chizing → uzun koridor konflikti.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Yashil yo‘l asosiy family circulation’ni, punktir yo‘l esa guest movement’ni konseptual ko‘rsatadi.",
+      "2. Guest circulation private xonalarni kesib o‘tmasligi va uzun koridor mustaqil “yo‘qotilgan maydon” bo‘lib qolmasligi kerak.",
+      "3. Ko‘chadan private zona tomon spatial transition bosqichma-bosqich kuchaytiriladi.",
+      "Darsdagi bajarish: Guest va family circulation’ni alohida chizib, kesishuvlarni toping."
     ],
-    "exercise": "Mehmon yo‘li va xususiy xonalar ko‘rish aloqasini tekshiring.",
-    "solution": "Circulation va privacy tor uchastkada birgalikda baholanadi.",
+    "exercise": "Uzun plan ichida circulation va privacy zonalarini birga tekshiring.",
+    "solution": "Tor uyda harakat yo‘li funksiyalar bilan integratsiya qilinib, privacy bosqichma-bosqich boshqariladi.",
     "block": 5,
     "recipe": "narrow",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy plan/site eskizi. Proporsiyalar o‘quv maqsadida; real setback, courtyard o‘lchami va normativ masofalar loyiha joyi bo‘yicha alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L14_M01_005",
     "asset": "l14_m01_005.svg",
-    "title": "Tor uchastka professional audit — ko‘rgazmali namuna",
+    "title": "Tor uchastka professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "12×40 m tor o‘quv uchastka; bir xil 480 m² maydon keng uchastkadek ishlamaydi.",
-      "Ikki variantni yo‘l, yorug‘lik va foydalanish bilan taqqoslang → asoslangan tanlov.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi uzun plan zoning, courtyard va circulationni, o‘ngdagi checklist esa audit savollarini birlashtiradi.",
+      "2. Site, linear zoning, light, courtyard, circulation, privacy, structure va facade bir-biridan alohida emas, yagona loyiha tizimi sifatida tekshiriladi.",
+      "3. Yaxshi tor uy faqat xonalarni sig‘dirish emas; yorug‘lik, harakat va privacy ishlaydigan fazoviy yechim bo‘lishi kerak.",
+      "Darsdagi bajarish: Site → zoning → light → courtyard → circulation → privacy → structure → facade zanjirini audit qiling."
     ],
-    "exercise": "Site, yorug‘lik, yo‘l va tasdiqlanmagan talablarni audit qiling.",
-    "solution": "Tor uchastka auditi geometriya yechimini normativ moslikdan ajratadi.",
+    "exercise": "Tor uchastka loyihasini funksional, fazoviy va site omillari bo‘yicha kompleks tekshiring.",
+    "solution": "Professional audit tor uchastka cheklovlarini ishlaydigan loyiha strategiyasiga aylantirganingizni tekshiradi.",
     "block": 4,
     "recipe": "narrow",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy plan/site eskizi. Proporsiyalar o‘quv maqsadida; real setback, courtyard o‘lchami va normativ masofalar loyiha joyi bo‘yicha alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
