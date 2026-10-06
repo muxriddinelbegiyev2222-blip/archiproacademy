@@ -9165,7 +9165,7 @@
   {
     "code": "L15_M03_001",
     "asset": "l15_m03_001.svg",
-    "title": "Plan xatolarini topish — ko‘rgazmali namuna",
+    "title": "Plan xatolarini topish — arxitekturaviy eskiz",
     "explanation": [
       "Root cause case: scheduleda eski en, fasadda boshqa deraza, planda mebel eshikni to‘sadi.",
       "Yo‘l va mebelni chizing, simptomni sababga bog‘lang → plan tashxisi.",
@@ -9175,14 +9175,14 @@
     "solution": "Plan xatosi konturdan tashqari ssenariy bilan aniqlanadi.",
     "block": 4,
     "recipe": "entry",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/diagnostic workflow eskizi. Diagramma o‘quv maqsadida; real loyiha yechimi va texnik talablar loyiha ma’lumotlari bilan alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M03_002",
     "asset": "l15_m03_002.svg",
-    "title": "Fasad va kesim xatolari — ko‘rgazmali namuna",
+    "title": "Fasad va kesim xatolari — arxitekturaviy eskiz",
     "explanation": [
       "Root cause case: scheduleda eski en, fasadda boshqa deraza, planda mebel eshikni to‘sadi.",
       "Opening IDni plan/fasad/kesimda solishtiring → manba ziddiyati.",
@@ -9192,14 +9192,14 @@
     "solution": "Chizma xatosi noto‘g‘ri view yoki geometriyadan kelishi mumkin.",
     "block": 4,
     "recipe": "openings",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/diagnostic workflow eskizi. Diagramma o‘quv maqsadida; real loyiha yechimi va texnik talablar loyiha ma’lumotlari bilan alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M03_003",
     "asset": "l15_m03_003.svg",
-    "title": "Konstruktiv va MEP konfliktlari — ko‘rgazmali namuna",
+    "title": "Konstruktiv va MEP konfliktlari — arxitekturaviy eskiz",
     "explanation": [
       "Root cause case: scheduleda eski en, fasadda boshqa deraza, planda mebel eshikni to‘sadi.",
       "Konstruktiv/MEP konfliktni joy va mas’ul bilan yozing → koordinatsiya.",
@@ -9209,14 +9209,14 @@
     "solution": "Texnik konflikt bir intizomning ruxsatsiz o‘zgarishi bilan hal qilinmaydi.",
     "block": 4,
     "recipe": "coordination",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/diagnostic workflow eskizi. Diagramma o‘quv maqsadida; real loyiha yechimi va texnik talablar loyiha ma’lumotlari bilan alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M03_004",
     "asset": "l15_m03_004.svg",
-    "title": "BIM va documentation xatolari — ko‘rgazmali namuna",
+    "title": "BIM va documentation xatolari — arxitekturaviy eskiz",
     "explanation": [
       "Root cause case: scheduleda eski en, fasadda boshqa deraza, planda mebel eshikni to‘sadi.",
       "Schedule manbasi va layout update holatini tekshiring → eski data sababi.",
@@ -9226,14 +9226,14 @@
     "solution": "Documentation xatosi chiqarish zanjirida aniqlanadi.",
     "block": 4,
     "recipe": "schedule",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/diagnostic workflow eskizi. Diagramma o‘quv maqsadida; real loyiha yechimi va texnik talablar loyiha ma’lumotlari bilan alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M03_005",
     "asset": "l15_m03_005.svg",
-    "title": "Root Cause PRO audit — ko‘rgazmali namuna",
+    "title": "Root Cause PRO audit — arxitekturaviy eskiz",
     "explanation": [
       "Root cause case: scheduleda eski en, fasadda boshqa deraza, planda mebel eshikni to‘sadi.",
       "Asosiy sababni tuzatib barcha tegishli chiqishni qayta oching → regressiya tekshiruvi.",
@@ -9243,14 +9243,14 @@
     "solution": "Root cause audit simptom qayta paydo bo‘lmasligi uchun manba sababini tekshiradi.",
     "block": 4,
     "recipe": "audit",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/diagnostic workflow eskizi. Diagramma o‘quv maqsadida; real loyiha yechimi va texnik talablar loyiha ma’lumotlari bilan alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M04_001",
     "asset": "l15_m04_001.svg",
-    "title": "Final briefni qabul qilish — ko‘rgazmali namuna",
+    "title": "Final briefni qabul qilish — arxitekturaviy eskiz",
     "explanation": [
       "Final briefda majburiy, muhokama qilinadigan, noma’lum talab va topshirish fayllari ajratiladi.",
       "Briefni asl mijoz qaydiga solishtiring → qamrov.",
@@ -9260,14 +9260,14 @@
     "solution": "Final briefni qabul qilish boshlang‘ich noaniqlikni aniqlaydi.",
     "block": 4,
     "recipe": "brief",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/diagnostic workflow eskizi. Diagramma o‘quv maqsadida; real loyiha yechimi va texnik talablar loyiha ma’lumotlari bilan alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M04_002",
     "asset": "l15_m04_002.svg",
-    "title": "Talablarni klassifikatsiya qilish — ko‘rgazmali namuna",
+    "title": "Talablarni klassifikatsiya qilish — arxitekturaviy eskiz",
     "explanation": [
       "Final briefda majburiy, muhokama qilinadigan, noma’lum talab va topshirish fayllari ajratiladi.",
       "Har talabni majburiy/variant/aniqlashtirish deb belgilang → izchil klassifikatsiya.",
@@ -9277,14 +9277,14 @@
     "solution": "Talab tasnifi yakuniy qabulni mezon bilan boshqaradi.",
     "block": 4,
     "recipe": "brief",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/diagnostic workflow eskizi. Diagramma o‘quv maqsadida; real loyiha yechimi va texnik talablar loyiha ma’lumotlari bilan alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M04_003",
     "asset": "l15_m04_003.svg",
-    "title": "Constraints va risklar — ko‘rgazmali namuna",
+    "title": "Constraints va risklar — arxitekturaviy eskiz",
     "explanation": [
       "Final briefda majburiy, muhokama qilinadigan, noma’lum talab va topshirish fayllari ajratiladi.",
       "Site, budjet, vaqt va texnik riskni manba bilan yozing → boshqariladigan cheklov.",
@@ -9294,14 +9294,14 @@
     "solution": "Risk jadvali noaniqlikni nazoratli ishga aylantiradi.",
     "block": 4,
     "recipe": "brief",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/diagnostic workflow eskizi. Diagramma o‘quv maqsadida; real loyiha yechimi va texnik talablar loyiha ma’lumotlari bilan alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M04_004",
     "asset": "l15_m04_004.svg",
-    "title": "Deliverables va success criteria — ko‘rgazmali namuna",
+    "title": "Deliverables va success criteria — arxitekturaviy eskiz",
     "explanation": [
       "Final briefda majburiy, muhokama qilinadigan, noma’lum talab va topshirish fayllari ajratiladi.",
       "Deliverable va qabul mezonini yozing: PDF ochiladi, views mos, masalalar qaydli → tekshiriladigan natija.",
@@ -9311,14 +9311,14 @@
     "solution": "Success criteria topshiriq bajarilganini tekshirishga imkon beradi.",
     "block": 4,
     "recipe": "brief",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/diagnostic workflow eskizi. Diagramma o‘quv maqsadida; real loyiha yechimi va texnik talablar loyiha ma’lumotlari bilan alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L15_M04_005",
     "asset": "l15_m04_005.svg",
-    "title": "Final texnik topshiriq auditi — ko‘rgazmali namuna",
+    "title": "Final texnik topshiriq auditi — arxitekturaviy eskiz",
     "explanation": [
       "Final briefda majburiy, muhokama qilinadigan, noma’lum talab va topshirish fayllari ajratiladi.",
       "Tasdiq va ochiq masalani yakuniy ro‘yxatga qo‘ying → ishlanadigan topshiriq.",
@@ -9328,8 +9328,8 @@
     "solution": "Final brief audit yechim ishlab chiqish uchun aniq asos yaratadi.",
     "block": 3,
     "recipe": "brief",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/diagnostic workflow eskizi. Diagramma o‘quv maqsadida; real loyiha yechimi va texnik talablar loyiha ma’lumotlari bilan alohida tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
