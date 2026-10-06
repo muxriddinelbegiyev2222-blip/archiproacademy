@@ -399,11 +399,11 @@ L09_M06_002,Evakuatsiya yo'li,reviewed_architectural_sketch,l09_m06_002.svg
 L09_M06_003,"Eshik, koridor va zinapoya",reviewed_architectural_sketch,l09_m06_003.svg
 L09_M06_004,To'siqlar va xato ssenariylar,reviewed_architectural_sketch,l09_m06_004.svg
 L09_M06_005,Evakuatsiya professional audit,reviewed_architectural_sketch,l09_m06_005.svg
-L09_M07_001,Accessibility tushunchasi,pending_topic_review,
-L09_M07_002,Kirish va harakat zanjiri,pending_topic_review,
-L09_M07_003,"Eshik, sath va vertikal aloqa",pending_topic_review,
-L09_M07_004,Sanitar va foydalanish zonalari,pending_topic_review,
-L09_M07_005,Accessibility professional audit,pending_topic_review,
+L09_M07_001,Accessibility tushunchasi,reviewed_architectural_sketch,l09_m07_001.svg
+L09_M07_002,Kirish va harakat zanjiri,reviewed_architectural_sketch,l09_m07_002.svg
+L09_M07_003,"Eshik, sath va vertikal aloqa",reviewed_architectural_sketch,l09_m07_003.svg
+L09_M07_004,Sanitar va foydalanish zonalari,reviewed_architectural_sketch,l09_m07_004.svg
+L09_M07_005,Accessibility professional audit,reviewed_architectural_sketch,l09_m07_005.svg
 L09_M08_001,Normativ xatolarni tanish,pending_topic_review,
 L09_M08_002,Noto'g'ri manba va noto'g'ri talqin,pending_topic_review,
 L09_M08_003,Plan va genplandagi xatolar,pending_topic_review,
