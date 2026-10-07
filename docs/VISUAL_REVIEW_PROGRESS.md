@@ -1,8 +1,8 @@
 # Visual review progress
 
-548 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 248 lessons using topic-specific architectural sketches. 132 lessons remain to be reviewed. Basic image presence across all 680 lessons does not mean this review is complete.
+680 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 380 lessons using topic-specific architectural sketches. 0 lessons remain for topic-specific visual review.
 
-Screenshot review details: SCREENSHOT_LESSON_REVIEW.csv. AI render details: REALISTIC_LESSON_COVERAGE.csv. Original lesson blocks, quizzes and application behavior are unchanged by this screenshot update.
+Review details are tracked in REALISTIC_LESSON_COVERAGE.csv, SCREENSHOT_LESSON_REVIEW.csv and VISUAL_LESSON_COVERAGE.csv. This pass changes visual teaching support and related metadata; original lesson blocks, quizzes and application behavior are not intentionally changed by the visual review.
 
 For L05_M01, generic SVG supplements were replaced by inspected screenshots with distinct Uzbek explanations for Toolbox, Info Box, Navigator, Tab Overview, Zoom to Selection and Navigator Preview panning. Graphisoft’s Archicad 28 documentation reuses some Archicad 24 screenshots; the lesson captions state that limitation explicitly. SHNQ verification is deferred.
 
@@ -143,3 +143,12 @@ L10_M09: Professional sections, levels/heights, structural openings, design chec
 L10_M10: Genplan strategy, pedestrian/vehicle movement, outdoor functions, levels/drainage and genplan audit rebuilt as architectural site sketches.
 
 L10_M11: Project album structure, plans/facades/sections, genplan/auxiliary drawings, layout quality and final Level 10 audit rebuilt as architectural documentation sketches.
+
+## Final 680-lesson inventory audit
+
+- REALISTIC_LESSON_COVERAGE.csv contains 680 unique lesson codes and no pending topic-review rows.
+- Final status mix: 222 reviewed material-render lessons, 78 reviewed documented-screenshot lessons and 380 reviewed architectural-sketch lessons.
+- Every reviewed coverage asset currently exists in app/courses/visual_assets.
+- Every one of the 680 coverage lesson codes has at least one visual metadata entry across lesson_figures.json, realistic_figures.json or archicad_figures.json.
+- VISUAL_LESSON_COVERAGE.csv also contains 680 unique lesson codes and matches the same lesson-code set.
+- SHNQ verification remains a separate later task unless explicitly completed elsewhere; this final count is the topic-specific visual review count.
