@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><rect width="1200" height="800" fill="#fbfaf4"/><g stroke="#34464d" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="70" y="100" width="1060" height="600" rx="24" fill="#fffef9"/><g transform="translate(110 145)"><g><rect width="270" height="220" rx="18" fill="#e5eee8"/><path d="M50 55h180M50 100h180M50 145h135" stroke="#75888d" stroke-width="3"/></g><g transform="translate(310 0)"><rect width="270" height="220" rx="18" fill="#e7ebef"/><rect x="50" y="45" width="170" height="120" fill="#fffef9" stroke-width="7"/></g><g transform="translate(620 0)"><rect width="270" height="220" rx="18" fill="#f0ece5"/><path d="M50 55h180M50 95h180M50 135h180M50 175h130" stroke="#75888d" stroke-width="3"/></g><g transform="translate(0 270)"><rect width="270" height="220" rx="18" fill="#eef0e8"/><circle cx="135" cy="105" r="55" fill="none" stroke="#8ea4b0" stroke-width="7"/></g><g transform="translate(310 270)"><rect width="270" height="220" rx="18" fill="#f0e5d7"/><path d="M65 160c70-80 125-100 170-105" stroke="#a66f50" stroke-width="8"/></g><g transform="translate(620 270)"><rect width="270" height="220" rx="18" fill="#e5eee8"/><path d="M80 95l24 24 52-66" stroke="#6f9f8d" stroke-width="10"/></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<rect width="1200" height="800" fill="#fbfaf4"/>
+<g stroke="#34464d" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<rect x="90" y="90" width="1020" height="620" rx="24" fill="#fffef9"/>
+<path d="M160 610h180v-65h110v-65h110v-65h150" stroke="#71838a" stroke-width="15"/>
+<path d="M710 415h150v-65h110v-65h90" stroke="#71838a" stroke-width="15"/>
+<rect x="610" y="395" width="130" height="35" fill="#d8c39d" stroke="#71838a" stroke-width="5"/>
+<path d="M120 235h430M760 235h300" stroke="#68777d" stroke-width="18"/>
+<path d="M550 235h210" stroke="#a66f50" stroke-width="9" stroke-dasharray="18 12"/>
+<path d="M645 240v155" stroke="#4d8ca7" stroke-width="7"/>
+<path d="M630 260l15-22 15 22M630 372l15 22 15-22" stroke="#4d8ca7" stroke-width="7"/>
+<circle cx="645" cy="315" r="25" fill="#dfe9dd" stroke="#6f9f8d" stroke-width="5"/>
+<path d="M540 175v80M760 175v80" stroke="#a66f50" stroke-width="6"/>
+<path d="M505 150h290" stroke="#a66f50" stroke-width="6"/>
+<path d="M535 130l-30 20 30 20M765 130l30 20-30 20" stroke="#a66f50" stroke-width="6"/>
+</g></svg>
