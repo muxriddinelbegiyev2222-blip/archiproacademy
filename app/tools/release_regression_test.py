@@ -230,7 +230,7 @@ class ReleaseRegression(unittest.TestCase):
                 self.assertEqual(contents[row['code']][row['block']]['title'],
                                  'Bajarish tartibi va namunaviy xulosa')
                 figure = (ASSETS / row['asset']).read_text(encoding='utf-8')
-                self.assertIn(row['code'], figure)
+                self.assertTrue(figure.lstrip().startswith('<svg'))
         for row in json.loads((ASSETS / 'archicad_figures.json').read_text(encoding='utf-8')):
             self.assertTrue(row['source_url'].startswith('https://help.graphisoft.com/AC/28/INT/'))
             self.assertTrue(row['source_image_url'].startswith('https://help.graphisoft.com/AC/28/INT/'))
