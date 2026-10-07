@@ -3660,171 +3660,171 @@
   {
     "code": "L08_M02_001",
     "asset": "l08_m02_001.svg",
-    "title": "Devorning konstruktiv vazifasi — ko‘rgazmali namuna",
+    "title": "Devorning roli shakldan emas, tizimdan aniqlanadi",
     "explanation": [
-      "Ikki qavatli eskizda pastki devorda katta ochilish, uning ustida yuqori devor mavjud.",
-      "Devorning ko‘taruvchi yoki bo‘luvchi rolini hujjatdan aniqlang → vazifa qaydi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Chap sxemada yuk yo‘li devor orqali davom etishi mumkin bo‘lgan holat, o‘ng sxemada esa karkas ichidagi bo‘luvchi devor misoli ajratilgan.",
+      "Bir xil ko‘ringan devorlar turli konstruktiv vazifaga ega bo‘lishi mumkin; tashqi ko‘rinishning o‘zi xulosa uchun yetarli emas.",
+      "Devor rolini loyiha ma’lumoti va konstruktor bilan tekshiring; eskiz konstruktiv hisob bermaydi."
     ],
     "exercise": "Har devorning konstruktiv vazifasini belgilash uchun savol tuzing.",
     "solution": "Devorning ko‘rinishi uning yuk ko‘taruvchi ekanini tasdiqlamaydi.",
     "block": 9,
     "recipe": "wall",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy konstruktiv hisob, tasdiqlangan detal yoki universal normativ o‘lcham emas. Natijani loyiha ma’lumoti va konstruktor bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — mavzuga mos ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L08_M02_002",
     "asset": "l08_m02_002.svg",
-    "title": "Yuk ko'taruvchi va to'ldiruvchi devor — ko‘rgazmali namuna",
+    "title": "Devorli tizim va karkasli tizimni taqqoslash",
     "explanation": [
-      "Ikki qavatli eskizda pastki devorda katta ochilish, uning ustida yuqori devor mavjud.",
-      "Material, yuk va tayanch ma’lumotini solishtiring → tashqi ko‘rinishdan chiqarilmagan xulosa.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Chapda devor yuk yo‘lining qismi bo‘lishi mumkin bo‘lgan tizim, o‘ngda ustun-rigel karkasi orasidagi to‘ldiruvchi devor ko‘rsatilgan.",
+      "Tashqi yoki ichki joylashuv ham, materialning o‘zi ham devorning yuk ko‘taruvchi ekanini avtomatik isbotlamaydi.",
+      "Avval umumiy konstruktiv sxemani aniqlang, keyin devor vazifasini shu tizim ichida tekshiring."
     ],
     "exercise": "Yuk ko‘taruvchi va to‘ldiruvchi devorlarni loyiha ma’lumotiga ko‘ra ajrating.",
     "solution": "Tasnif konstruktor bilan kelishilgan tizimga mos bo‘lishi kerak.",
     "block": 9,
     "recipe": "wall",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy konstruktiv hisob, tasdiqlangan detal yoki universal normativ o‘lcham emas. Natijani loyiha ma’lumoti va konstruktor bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — mavzuga mos ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L08_M02_003",
     "asset": "l08_m02_003.svg",
-    "title": "Devorlar, ochilishlar va yuk yo'li — ko‘rgazmali namuna",
+    "title": "Ochilish yuk yo‘lini o‘zgartiradigan nuqta",
     "explanation": [
-      "Ikki qavatli eskizda pastki devorda katta ochilish, uning ustida yuqori devor mavjud.",
-      "Yuqori devordan yuk yo‘lini chizing, ochilish ustida uzilish joyini belgilang → konstruktiv konflikt.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Katta ochilish devor uzluksizligini buzadigan joy sifatida ko‘rsatilgan; yuqoridagi ta’sir yon tayanchlarga qanday uzatilishi alohida yechim talab qiladi.",
+      "Eshik, vitraj yoki MEP teshigi konstruktiv devorda paydo bo‘lsa, bu faqat fasad/interyer o‘zgarishi emas.",
+      "Eskiz ochilish usti elementining tayyor yechimini bermaydi; aniq yechim konstruktor hisobi bilan aniqlanadi."
     ],
     "exercise": "Ochilish ustidagi yuk yo‘lini sxemada ko‘rsating.",
     "solution": "Ochilish devor uzluksizligi va yuk uzatilishiga ta’sir qiladi.",
     "block": 9,
     "recipe": "wall",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy konstruktiv hisob, tasdiqlangan detal yoki universal normativ o‘lcham emas. Natijani loyiha ma’lumoti va konstruktor bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — mavzuga mos ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L08_M02_004",
     "asset": "l08_m02_004.svg",
-    "title": "Qavatlararo devor koordinatsiyasi — ko‘rgazmali namuna",
+    "title": "Qavatlararo tayanch zanjirini ustma-ust tekshirish",
     "explanation": [
-      "Ikki qavatli eskizda pastki devorda katta ochilish, uning ustida yuqori devor mavjud.",
-      "Ikki qavat devor o‘qlarini ustma-ust qo‘ying → siljish miqdori va manbasi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Chapda yuqori va pastki devor bir o‘qda, o‘ngda esa yuqori devor pastdagi tayanchdan siljigan holat ko‘rsatilgan.",
+      "Siljish paydo bo‘lsa plan, kesim va o‘qlar birgalikda tekshiriladi; yuk yo‘li alohida savolga aylanadi.",
+      "Eskiz transfer konstruksiyasini taxmin qilmaydi; faqat koordinatsiya muammosini ko‘rsatadi."
     ],
     "exercise": "Qavatlar devorlarini ustma-ust solishtirib, siljigan tayanchni qayd qiling.",
     "solution": "Qavatlararo koordinatsiya vertikal yuk yo‘li izchilligini tekshiradi.",
     "block": 9,
     "recipe": "wall",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy konstruktiv hisob, tasdiqlangan detal yoki universal normativ o‘lcham emas. Natijani loyiha ma’lumoti va konstruktor bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — mavzuga mos ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L08_M02_005",
     "asset": "l08_m02_005.svg",
-    "title": "Devor konstruksiyasi professional audit — ko‘rgazmali namuna",
+    "title": "Devor auditini uch bosqichda tashkil qilish",
     "explanation": [
-      "Ikki qavatli eskizda pastki devorda katta ochilish, uning ustida yuqori devor mavjud.",
-      "Konflikt ID, plan va kesimni konstruktorga yuboring → javob va kelishilgan yechim qaydi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Audit devor vazifasi va yuk yo‘li, ochilish/qavatlararo moslik hamda model-versiya muvofiqligini alohida tekshiradi.",
+      "Plan va kesimdagi holat, katta ochilishlar va konstruktor bilan kelishilgan oxirgi versiya bir-biriga mos bo‘lishi kerak.",
+      "Auditning natijasi taxminiy konstruktiv detal emas, balki tekshiriladigan savollar va kelishilgan qarorlar ro‘yxatidir."
     ],
     "exercise": "Devor turi, ochilish va tayanch bo‘yicha savollar jadvalini topshiring.",
     "solution": "Devor auditi geometrik konflikt va tasdiqlanishi kerak bo‘lgan konstruktiv masalani ajratadi.",
     "block": 12,
     "recipe": "wall",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy konstruktiv hisob, tasdiqlangan detal yoki universal normativ o‘lcham emas. Natijani loyiha ma’lumoti va konstruktor bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — mavzuga mos ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L08_M03_001",
     "asset": "l08_m03_001.svg",
-    "title": "Karkas konstruktiv tizimi — ko‘rgazmali namuna",
+    "title": "Karkasni bog‘langan tayanch tizimi sifatida o‘qing",
     "explanation": [
-      "O‘quv o‘qlar A/B oralig‘i 4000 mm, 1/2 oralig‘i 3000 mm. To‘rtta tayanch va rigellar koordinatsiya qilinadi.",
-      "Karkasni tayanch va ular orasidagi elementlar tizimi sifatida belgilang → sxema.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Eskiz ustun va rigellarni yagona tizimda ko‘rsatadi; karkas tasodifiy joylashtirilgan ustunlar yig‘indisi emas.",
+      "Yuklar elementlar orasida mantiqiy uzatilishi va qavatlar bo‘yicha tayanchlar koordinatsiyada bo‘lishi kerak.",
+      "Ustun/rigel kesimi yoki ruxsat etilgan oraliq bu eskizdan olinmaydi; ular konstruktor hisobi bilan aniqlanadi."
     ],
     "exercise": "Karkas va xona devorlari vazifasini ajrating.",
     "solution": "Karkas tizimi asosiy yuk uzatilishini tashkil qiladi.",
     "block": 10,
     "recipe": "frame",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy konstruktiv hisob, tasdiqlangan detal yoki universal normativ o‘lcham emas. Natijani loyiha ma’lumoti va konstruktor bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — mavzuga mos ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L08_M03_002",
     "asset": "l08_m03_002.svg",
-    "title": "Ustun, rigel va yuk yo'li — ko‘rgazmali namuna",
+    "title": "Yopmadan fundamentgacha yuk zanjiri",
     "explanation": [
-      "O‘quv o‘qlar A/B oralig‘i 4000 mm, 1/2 oralig‘i 3000 mm. To‘rtta tayanch va rigellar koordinatsiya qilinadi.",
-      "Yopma→rigel→ustun→fundament yo‘lini chizing → yuk zanjiri.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Yopma ta’siri rigelga, rigeldan ustunlarga, ustunlardan fundamentga uzatiladigan soddalashtirilgan zanjir ko‘rsatilgan.",
+      "Yuk yo‘li qayerdadir uzilib yoki tayanch keskin siljib qolsa, koordinatsiya va konstruktiv yechim qayta tekshiriladi.",
+      "Bu konseptual sxema haqiqiy yuk qiymatlari, element kesimlari yoki armatura yechimini ko‘rsatmaydi."
     ],
     "exercise": "Plita, balka, ustun va fundament orasidagi yuk yo‘lini chizing.",
     "solution": "Tayanchlar uzluksiz tizim sifatida tekshiriladi.",
     "block": 10,
     "recipe": "frame",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy konstruktiv hisob, tasdiqlangan detal yoki universal normativ o‘lcham emas. Natijani loyiha ma’lumoti va konstruktor bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — mavzuga mos ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L08_M03_003",
     "asset": "l08_m03_003.svg",
-    "title": "Grid, o'qlar va span mantig'i — ko‘rgazmali namuna",
+    "title": "Grid o‘qlari va span tushunchasi",
     "explanation": [
-      "O‘quv o‘qlar A/B oralig‘i 4000 mm, 1/2 oralig‘i 3000 mm. To‘rtta tayanch va rigellar koordinatsiya qilinadi.",
-      "O‘qlarni nomlab markaz masofalarini qo‘ying → 4×3 m o‘quv bay.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "A/B va 1/2 o‘qlari to‘rtta tayanch markazini yagona koordinatsiya tizimiga bog‘laydi.",
+      "4000×3000 mm qiymatlar aynan shu darsning o‘quv misoli; ular universal konstruktiv tavsiya emas.",
+      "Span tayanch markazlari orasidagi masofani tushunishga yordam beradi; haqiqiy oraliq yetarliligi hisobga bog‘liq."
     ],
     "exercise": "O‘qlar va tayanch oralig‘ini o‘lchab, span nomini yozing.",
     "solution": "Span tayanchlar orasidagi masofani ifodalaydi; u avtomatik ruxsat etilgan kesimni bermaydi.",
     "block": 10,
     "recipe": "grid",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy konstruktiv hisob, tasdiqlangan detal yoki universal normativ o‘lcham emas. Natijani loyiha ma’lumoti va konstruktor bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — mavzuga mos ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L08_M03_004",
     "asset": "l08_m03_004.svg",
-    "title": "Arxitektura va karkas koordinatsiyasi — ko‘rgazmali namuna",
+    "title": "Ustun joylashuvini arxitektura bilan birga tekshirish",
     "explanation": [
-      "O‘quv o‘qlar A/B oralig‘i 4000 mm, 1/2 oralig‘i 3000 mm. To‘rtta tayanch va rigellar koordinatsiya qilinadi.",
-      "Ustun o‘rnini eshik, yo‘l va mebel bilan solishtiring → funksional konflikt.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Chapdagi plan ustun eshik harakat yo‘liga to‘qnashgan konfliktni, o‘ngdagi fasad esa ustun-oyna ritmi koordinatsiyasini ko‘rsatadi.",
+      "Ustun xona harakati, mebel, eshik, deraza, zinapoya va MEP bilan bir vaqtda tekshiriladi.",
+      "Karkas arxitektura tugagandan keyin tasodifiy qo‘shilmaydi; loyiha boshidan birga rivojlantiriladi."
     ],
     "exercise": "Kirish va deraza konfliktini planda hamda kesimda ko‘rsating.",
     "solution": "Karkas koordinatsiyasi foydalanish va balandlik talablarini birga tekshiradi.",
     "block": 10,
     "recipe": "grid",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy konstruktiv hisob, tasdiqlangan detal yoki universal normativ o‘lcham emas. Natijani loyiha ma’lumoti va konstruktor bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — mavzuga mos ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L08_M03_005",
     "asset": "l08_m03_005.svg",
-    "title": "Karkas professional audit — ko‘rgazmali namuna",
+    "title": "Karkas professional audit zanjiri",
     "explanation": [
-      "O‘quv o‘qlar A/B oralig‘i 4000 mm, 1/2 oralig‘i 3000 mm. To‘rtta tayanch va rigellar koordinatsiya qilinadi.",
-      "Plan, kesim va konflikt jadvalini bir ID tizimida bog‘lang → kelishilgan koordinatsiya.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Grid → ustun → rigel → yuk yo‘li → fundament → arxitektura → BIM/MEP ketma-ketligi kompleks audit mantiqini ko‘rsatadi.",
+      "Qavatlararo davomiylik, arxitektura konflikti, MEP to‘qnashuvi va fundamentning oxirgi gridga mosligi birgalikda tekshiriladi.",
+      "Audit konstruktiv hisobni almashtirmaydi; muammoni aniq qayd etib, tegishli mutaxassis bilan kelishuvga olib boradi."
     ],
     "exercise": "Konflikt joyi, ta’sir va konstruktor savolini audit jadvaliga kiriting.",
     "solution": "Karkas auditida o‘zgarish hisoblangan tizimga ta’siri bilan kelishiladi.",
     "block": 13,
     "recipe": "coordination",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy konstruktiv hisob, tasdiqlangan detal yoki universal normativ o‘lcham emas. Natijani loyiha ma’lumoti va konstruktor bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — mavzuga mos ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
