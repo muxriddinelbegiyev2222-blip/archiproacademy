@@ -76,9 +76,10 @@
   "remaining_required_sketch_rechecks": 220,
   "next_start": "L08_M04_001",
   "validation": {
-    "svg_root_and_close": "pending final check",
-    "metadata_binding": "updated",
-    "curriculum_content": "unchanged by this batch"
+    "svg_root_and_close": "10/10 passed",
+    "metadata_binding": "10/10 passed",
+    "curriculum_content": "lesson/test source files unchanged by this batch",
+    "windows_ci": "pending/checked separately"
   },
   "note": "These are conceptual teaching sketches, not structural calculations or approved construction details."
 }
