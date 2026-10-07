@@ -1,3 +1,12 @@
+# Current quality recheck — 2026-10-07
+
+Technical coverage is 680/680. This does not establish that all drawings meet the requested hand-sketch quality.
+Three final lessons (L15_M08_003–005) have new illustrated architectural sketches and corresponding Uzbek captions.
+The other 377 entries from the previous 380-sketch group await visual-style recheck. See [QUALITY_RECHECK_2026_10_07.md](QUALITY_RECHECK_2026_10_07.md).
+The earlier inventory record below is retained as history, not a final quality acceptance.
+
+---
+
 # Visual review progress
 
 680 of 680 lessons have completed the current topic-specific visual review: 222 AI material-render lessons, 78 lessons using documented Graphisoft screenshots and 380 lessons using topic-specific architectural sketches. 0 lessons remain for topic-specific visual review.

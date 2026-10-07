@@ -9666,55 +9666,52 @@
   {
     "code": "L15_M08_003",
     "asset": "l15_m08_003.svg",
-    "title": "Integrated case challenge — arxitekturaviy eskiz",
+    "title": "Bir loyiha — bog‘langan qarorlar",
     "explanation": [
-      "1. Eskiz Site → Planning → BIM → Technical → Client decision kabi bir nechta ko‘nikmaning bitta case ichida birlashishini ko‘rsatadi.",
-      "2. Real ishda darslar alohida ishlamaydi; qarorlar bir-biriga ta’sir qiladi.",
-      "3. Bitta qarorni o‘zgartirganda site, plan, structure, MEP va client talabiga ta’sirini qayta ko‘rib chiqing.",
-      "Darsdagi bajarish: Murakkab residential case’ni briefdan yakuniy qarorgacha birlashtirib yeching."
+      "Hovlili uy misolida uchastka, xona plani, fasad va kesim bir qarorning turli tomonlarini ko‘rsatadi.",
+      "Qizil belgi oynaga oid qarorni boshqa ko‘rinishlarda ham tekshirish kerakligini eslatadi; tasvirlar muvofiqligi avtomatik tasdiqlanmaydi.",
+      "Bir ochilishni o‘zgartirsangiz, tegishli plan, fasad, kesim, konstruktiv va muhandislik aloqalarini alohida solishtiring."
     ],
-    "exercise": "Bir case ichida bir nechta professional skillni integratsiya qiling.",
-    "solution": "Integrated challenge alohida bilimlarni real loyiha qarorlariga birlashtiradi.",
+    "exercise": "Bitta turar joy loyihasida deraza joyini o‘zgartiring va qaysi chizmalar hamda mutaxassis qarorlari qayta tekshirilishini yozing.",
+    "solution": "Ochilish joyi plan, fasad va tegishli kesimda solishtiriladi; konstruksiya, muhandislik tizimlari va mijoz talablari bilan ta’siri qayd qilinadi.",
     "block": 4,
     "recipe": "audit",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/mastery eskizi. Grafikalar self-audit va workflow mantiqini ko‘rsatadi; real mastery amaliy topshiriq va audit natijasi bilan tasdiqlanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "AI yordamida yaratilgan tushuntiruvchi arxitektura eskizi. Chizmalar konseptual: aniq o‘lcham, normativ moslik yoki hujjatlar muvofiqligi tasdiqlangan deb qabul qilinmaydi. O‘z loyiha materiallaringizni alohida tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L15_M08_004",
     "asset": "l15_m08_004.svg",
-    "title": "Final submission readiness — arxitekturaviy eskiz",
+    "title": "Topshirishdan oldin loyiha paketini tekshiring",
     "explanation": [
-      "1. Checklist, loyiha, defense va portfolio bloklari final topshirishdan oldingi umumiy QA’ni ifodalaydi.",
-      "2. Missing file, wrong revision, unreadable drawing yoki inconsistent visual qolmasligi kerak.",
-      "3. Final project, defense va portfolio bir xil professional profil va loyiha holatini ko‘rsatishi kerak.",
-      "Darsdagi bajarish: Submission master checklist tuzib, barcha fayl va revisionlarni tekshiring."
+      "Muqova, uchastka chizmasi, plan, fasad va kesim yakuniy paketning turli hujjatlarini ko‘rsatadi.",
+      "Har bir varaqning loyiha nomi va tahriri tekshiriladi; bir xil sath va ochilishlar tegishli chizmalarda solishtiriladi.",
+      "Eskizdagi uy va varaq chizmalari o‘quv tasvirlari. Ularni tayyor, muvofiqlashtirilgan ishchi loyiha sifatida ko‘chirmang."
     ],
-    "exercise": "Final project, defense va portfolio paketini yagona QA bilan tekshiring.",
-    "solution": "Submission readiness barcha materialning to‘liq, izchil va topshirishga tayyor holatini tasdiqlaydi.",
+    "exercise": "Yakuniy loyiha, taqdimot va portfolio fayllarini ochib, to‘liqlik, tahrir, o‘qilish va o‘zaro moslik bo‘yicha ro‘yxat tuzing.",
+    "solution": "Yetishmagan fayl, eski tahrir yoki chizmalar orasidagi tafovut aniqlansa, tuzatish va qayta tekshiruv qayd etiladi; faqat fayl mavjudligi topshirishga tayyorlikni isbotlamaydi.",
     "block": 4,
     "recipe": "audit",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/mastery eskizi. Grafikalar self-audit va workflow mantiqini ko‘rsatadi; real mastery amaliy topshiriq va audit natijasi bilan tasdiqlanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "AI yordamida yaratilgan tushuntiruvchi arxitektura eskizi. Chizmalar konseptual: aniq o‘lcham, normativ moslik yoki hujjatlar muvofiqligi tasdiqlangan deb qabul qilinmaydi. O‘z loyiha materiallaringizni alohida tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L15_M08_005",
     "asset": "l15_m08_005.svg",
-    "title": "ARCHIPRO UZ yakuniy audit — arxitekturaviy eskiz",
+    "title": "Yakuniy audit: qarorlarni dalil bilan tekshiring",
     "explanation": [
-      "1. Markazdagi mastery belgisi va atrofdagi bloklar Learn → Practice → Test → Project → Audit → Improve → Repeat siklini ifodalaydi.",
-      "2. Professional arxitektura faqat dastur tugmalarini bilish emas; muammoni tushunish, qaror qilish, tekshirish, koordinatsiya va tushuntirishdir.",
-      "3. Yakuniy audit qaysi skill mustahkam, qaysi biri qayta ishlanishi kerakligini ko‘rsatadi.",
-      "Darsdagi bajarish: Barcha asosiy skilllarni yakuniy mastery checklist bilan tekshiring."
+      "Xonalar va harakat, fasad va ochilishlar, uchastka va kirish, kesim va sathlar alohida tekshiriladigan yo‘nalishlardir.",
+      "Markazdagi kesib ko‘rsatilgan uy foydalanish va konstruktiv aloqalarni tushuntiruvchi konseptual namuna; u hisoblangan konstruktiv yechim emas.",
+      "O‘z loyihangiz, amaliy ko‘nikmalaringiz va tuzatishlaringizni tekshirish dalillari bilan qayd qiling. Test bali loyiha ekspertizasi o‘rnini bosmaydi."
     ],
-    "exercise": "ARCHIPRO UZ bo‘yicha yakuniy mastery auditni bajaring.",
-    "solution": "Yakuniy audit professional workflow va doimiy yaxshilanish siklini mustahkamlaydi.",
+    "exercise": "O‘z yakuniy loyihangiz bo‘yicha to‘rt yo‘nalishda muammo, dalil, tuzatish va qayta tekshiruvni yozing; zaif ko‘nikmalar uchun mashq rejasini belgilang.",
+    "solution": "Yakuniy audit o‘zaro bog‘langan loyiha hujjatlari va amaliy ko‘nikmalarni tekshirishni, aniqlangan kamchiliklarni esa aniq mashq va tuzatish bilan yopishni talab qiladi.",
     "block": 4,
     "recipe": "audit",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/mastery eskizi. Grafikalar self-audit va workflow mantiqini ko‘rsatadi; real mastery amaliy topshiriq va audit natijasi bilan tasdiqlanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "AI yordamida yaratilgan tushuntiruvchi arxitektura eskizi. Chizmalar konseptual: aniq o‘lcham, normativ moslik yoki hujjatlar muvofiqligi tasdiqlangan deb qabul qilinmaydi. O‘z loyiha materiallaringizni alohida tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan arxitekturaviy o‘quv eskizi",
     "source_url": null
   }
 ]
