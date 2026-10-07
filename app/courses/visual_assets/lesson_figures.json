@@ -2732,8 +2732,8 @@
     "solution": "Zone xona ma’lumotini tashkil qiladi; devor geometriyasining o‘rnini bosa olmaydi.",
     "block": 7,
     "recipe": "zone",
-    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
-    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
@@ -2749,8 +2749,8 @@
     "solution": "Maydon natijasi tanlangan chegara va hisob shartlariga bog‘liq.",
     "block": 9,
     "recipe": "zone",
-    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
-    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
@@ -2766,8 +2766,8 @@
     "solution": "Xona identifikatsiyasi nom, raqam va vazifa orqali izchil yuritiladi.",
     "block": 8,
     "recipe": "zone",
-    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
-    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
@@ -2783,8 +2783,8 @@
     "solution": "Zone ma’lumotlari reja tahlili va xonalar jadvali uchun ishlatiladi.",
     "block": 9,
     "recipe": "zone",
-    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
-    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
@@ -2800,8 +2800,8 @@
     "solution": "Zone auditi geometrik chegara bilan hujjat ma’lumotining mosligini tekshiradi.",
     "block": 11,
     "recipe": "zone",
-    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
-    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
@@ -2817,8 +2817,8 @@
     "solution": "Favorite element sozlamalarini qayta qo‘llashni tartiblaydi.",
     "block": 8,
     "recipe": "favorite",
-    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
-    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
@@ -2834,8 +2834,8 @@
     "solution": "Natija yangi elementning parametrlarini tekshirish bilan tasdiqlanadi.",
     "block": 8,
     "recipe": "favorite",
-    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
-    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
@@ -2861,16 +2861,16 @@
     "asset": "l07_m01_004.svg",
     "title": "Bir xil vazifadagi elementlarning bazasini tekshiring",
     "explanation": [
-      "Chapda bir xil vazifadagi tashqi devorlar sozlamasi alohida tekshiruvga ajratilgan. Qizil belgi — audit nuqtasi; o‘zi konstruktiv xato tasdig‘i emas.",
-      "O‘ngda tekshirilgan Favorite bazasi bilan tuzilma va qatlamlar izchil yuritiladi. Bir vazifa uchun tasodifiy parametr farqi qolmasligi tekshiriladi.",
-      "Barcha loyiha devorlari bir xil bo‘lishi shart emas. Aynan bir xil vazifadagi elementlarni taqqoslang, yo‘nalish va joyga xos talablarni alohida tekshiring."
+      "Chapdagi ikkita kesim ataylab turlicha: yuqorida g‘ishtli, pastda yengil karkasli namuna. Qizil belgi bir xil vazifa uchun parametr farqini tekshirish nuqtasini ko‘rsatadi.",
+      "O‘ngda ikkita namunaning bazaviy tuzilma va qatlamlari mos. Favorite bilan ishlaganda elementning joyga xos uzunligi va ochilishlari alohida qoladi.",
+      "Eskiz yengil devorni tashqi devor sifatida qo‘llash tavsiyasi emas. Har elementning vazifasi, tuzilma talabi va haqiqiy model parametri tekshiriladi."
     ],
     "exercise": "Ikki foydalanuvchi tanlay oladigan standart parametr jadvali tuzing.",
     "solution": "Standartlashtirish sozlama va qo‘llash shartini tushunarli qiladi.",
     "block": 8,
     "recipe": "favorite",
-    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
-    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
@@ -2886,8 +2886,8 @@
     "solution": "Favorite auditi saqlangan va qo‘llangan parametrlar mosligini tekshiradi.",
     "block": 10,
     "recipe": "favorite",
-    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
-    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
@@ -2903,8 +2903,8 @@
     "solution": "Graphic Override modelni emas, uning ko‘rinishini tahlil uchun o‘zgartiradi.",
     "block": 8,
     "recipe": "overrides",
-    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
-    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
@@ -2920,152 +2920,144 @@
     "solution": "Rule mezon bilan grafik natijani bog‘laydi.",
     "block": 9,
     "recipe": "overrides",
-    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
-    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M02_003",
     "asset": "l07_m02_003.svg",
-    "title": "Graphic Override Combination — arxitekturaviy eskiz",
+    "title": "Qoidalarni kombinatsiyada tekshiring",
     "explanation": [
-      "1. Chapdagi uch rule kartochkasi bir nechta tahliliy qoida bitta Combination ichida ketma-ket ishlashi mumkinligini ko‘rsatadi.",
-      "2. O‘ngdagi plan bir nechta grafik qatlam natijasi bir ko‘rinishda birlashgan holatni ifodalaydi.",
-      "3. Rules tartibi va ustuvorligi natijaga ta’sir qilishi mumkin. Bir xil element bir nechta mezonga tushsa, yakuniy ko‘rinishni tekshiring.",
-      "Darsdagi bajarish: Ikki yoki uch rule’ni bitta Combination ichida sinab, konfliktni kuzating."
+      "Tashqi devor, ichki devor va oynalar alohida mezon guruhlariga ajratilgan. Ranglar ushbu o‘quv misolidagi legenda bilan tushuntiriladi.",
+      "Bir kombinatsiyada bir nechta qoida ishlatilganda bir elementga mos keladigan qoidalar ustma-ust tushishi mumkin. Savol belgisi shu tekshiruv nuqtasini bildiradi.",
+      "Ustuvorlikni rasm rangidan taxmin qilmang. Haqiqiy kombinatsiyadagi qoida tartibi, element mezoni va ko‘rinish natijasini Archicadda tekshiring."
     ],
     "exercise": "Bir nechta rule’dan Combination tuzing.",
     "solution": "Combination bir nechta grafik tahlil qoidasini bitta ko‘rinishga birlashtiradi.",
     "block": 9,
     "recipe": "overrides",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ranglar tahlil mantiqini ko‘rsatadi; loyiha standarti yoki normativ rang kodi sifatida olinmaydi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M02_004",
     "asset": "l07_m02_004.svg",
-    "title": "Modelni tahliliy ko‘rinishlarda ko‘rsatish — arxitekturaviy eskiz",
+    "title": "Grafik ajratish model geometriyasini o‘zgartirmaydi",
     "explanation": [
-      "1. Uch plan ayni modelni turli maqsadda ko‘rish mumkinligini ko‘rsatadi: oddiy, muammo ajratilgan va boshqa tahliliy kombinatsiya.",
-      "2. Bir xil modeldan bir nechta tahliliy view olish xatoni tez ko‘rishga yordam beradi; model nusxalarini yaratish shart emas.",
-      "3. Har tahliliy ko‘rinishning maqsadi aniq bo‘lsin. Ko‘p rang ishlatishning o‘zi foydali analiz degani emas.",
-      "Darsdagi bajarish: Bitta model uchun ikki xil tahlil maqsadini ajrating va view natijasini solishtiring."
+      "Ikki plandagi devor va ochilishlar bir xil; o‘ngda tekshiriladigan devor qizil grafikada ajratilgan. Shu devor chapdagi oddiy ko‘rinishda ham bor.",
+      "Qizil aylana audit joyini ajratadi. Rang o‘zgargani devor materiali yoki tuzilmasi ham almashtirildi degani emas.",
+      "Pastdagi material namunasi va MODEL O‘ZGARMAGAN yozuvi grafik natija bilan model ma’lumotini ajratadi. Haqiqiy element parametri va qoida mezonini tekshiring."
     ],
     "exercise": "Bir modelni ikki xil override kombinatsiyada ko‘rsating.",
     "solution": "Tahliliy view bir xil modelni turli savollar bo‘yicha o‘qishga yordam beradi.",
     "block": 9,
     "recipe": "overrides",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ranglar tahlil mantiqini ko‘rsatadi; loyiha standarti yoki normativ rang kodi sifatida olinmaydi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M02_005",
     "asset": "l07_m02_005.svg",
-    "title": "Graphic Overrides professional audit — arxitekturaviy eskiz",
+    "title": "Mezonga tushmay qolgan elementni aniqlang",
     "explanation": [
-      "1. Chapdagi rule ro‘yxati, o‘ngdagi model natijasi bir-biriga bog‘langan bo‘lishi kerak. Rule nomi va mezoni ko‘rinayotgan natijani tushuntira olsin.",
-      "2. Auditda keraksiz dublikat rule, noto‘g‘ri mezon, kutilmagan ustuvorlik va noto‘g‘ri Combination tanlovi tekshiriladi.",
-      "3. Yakuniy view’ni oddiy model bilan solishtiring. Override muammoni ko‘rsatishi kerak, yangi chalkashlik yaratmasligi kerak.",
-      "Darsdagi bajarish: Rule → Combination → View zanjirini tekshirib, bir xatoni dalil bilan toping."
+      "Rangli planda tashqi va ichki devor guruhlari legenda bilan ajratilgan. Kulrang qolgan namuna savol bilan belgilangan.",
+      "Kulrang qolishi har doim xato emas: elementning mezoni, classificationi va qoida kombinatsiyasi tekshiriladi. Kerakli guruhga tegishli bo‘lsa, sababini toping.",
+      "Audit xulosasida qaysi element, qaysi mezon va qaysi ko‘rinish tekshirilganini yozing. Grafik ranglarni o‘zgartirish bilan modeldagi ma’lumot xatosini yashirmang."
     ],
     "exercise": "Rule, Combination va natijaviy view’ni birga audit qiling.",
     "solution": "Graphic Override auditi mezon bilan ko‘rinish natijasining mosligini tekshiradi.",
     "block": 11,
     "recipe": "overrides",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ranglar tahlil mantiqini ko‘rsatadi; loyiha standarti yoki normativ rang kodi sifatida olinmaydi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M03_001",
     "asset": "l07_m03_001.svg",
-    "title": "Model View Options tushunchasi — arxitekturaviy eskiz",
+    "title": "Bir modelning sodda va batafsil tasviri",
     "explanation": [
-      "1. Chap va o‘ngda bir xil model turli tafsilot darajasida ko‘rsatilgan. MVO model elementlarini o‘chirib tashlamaydi; view ichida ularning qanday ifodalanishini boshqaradi.",
-      "2. Eshik, deraza, object va boshqa komponentlarning detal darajasi hujjat maqsadiga mos tanlanadi.",
-      "3. Soddalashtirilgan view model ma’lumotlari yo‘qolgan degani emas. Boshqa view’da batafsil ko‘rinish yana ishlatilishi mumkin.",
-      "Darsdagi bajarish: Bir xil modelni ikki xil MVO holatida solishtiring."
+      "Bitta xona modeli ikkita ko‘rinishga manba bo‘ladi. Devor, eshik va oynalar ko‘rinishlarda saqlanadi; chiziq va detal ifodasi farqlanadi.",
+      "Sodda ko‘rinish umumiy tuzilmani, batafsil ko‘rinish esa ochilish va material belgisini o‘qishga yordam beradi. Bu modeldagi elementni o‘chirib tashlash amali emas.",
+      "MVO sozlamasini ko‘rinish maqsadiga moslang va haqiqiy Archicad ekranida natijani tekshiring."
     ],
     "exercise": "Bir modelni batafsil va soddalashtirilgan MVOda ko‘rsating.",
     "solution": "MVO modelni o‘zgartirmasdan ko‘rinish tafsilotini boshqaradi.",
     "block": 7,
     "recipe": "mvo",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ko‘rsatilgan soddalashtirishlar workflow misoli; aniq MVO imkoniyatlari element turi va Archicad sozlamasiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M03_002",
     "asset": "l07_m03_002.svg",
-    "title": "Model ko‘rinishini boshqarish — arxitekturaviy eskiz",
+    "title": "Oyna tasvirida detal darajasini tanlang",
     "explanation": [
-      "1. Chapdagi tanlov kartochkalari turli model komponentlari uchun ko‘rsatish darajasini boshqarish g‘oyasini ifodalaydi.",
-      "2. O‘ngdagi plan tanlovlar natijasida soddalashgan. Qaysi elementlar tafsilotini kamaytirish kerakligi hujjat maqsadiga bog‘liq.",
-      "3. Grafikani soddalashtirish bilan model geometriyasini o‘zgartirishni aralashtirmang. MVO view darajasidagi boshqaruvdir.",
-      "Darsdagi bajarish: Bitta komponent ko‘rinishini o‘zgartirib, model ma’lumoti saqlanayotganini tekshiring."
+      "Uch oyna namunasining tashqi geometriyasi va materiali bir xil. Farq chiziq, rama va kichik detalning qanday ifodalanishida.",
+      "Sodda, o‘rta va batafsil yozuvlari tushuncha misoli. Har bir Archicad versiyasi yoki library elementi aynan uchta shunday tanlovga ega deb olinmaydi.",
+      "Ko‘rinish maqsadiga mos sozlamani mavjud haqiqiy panelda tanlang; model geometriyasi va element parametri o‘zgarmaganini tekshiring."
     ],
     "exercise": "MVO orqali bitta model komponentining ko‘rinishini o‘zgartiring.",
     "solution": "Ko‘rinish boshqaruvi hujjatni o‘qishni yengillashtiradi, modelni qayta qurmaydi.",
     "block": 8,
     "recipe": "mvo",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ko‘rsatilgan soddalashtirishlar workflow misoli; aniq MVO imkoniyatlari element turi va Archicad sozlamasiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M03_003",
     "asset": "l07_m03_003.svg",
-    "title": "MVO Combination — arxitekturaviy eskiz",
+    "title": "Eskiz, hujjat va audit ko‘rinishlari",
     "explanation": [
-      "1. Chapdagi bir nechta parametr bloklari bitta MVO Combination ichida saqlanadigan ko‘rsatish qarorlarini ifodalaydi.",
-      "2. Combination tanlanganda shu ko‘rsatish holatlari birgalikda view’ga qo‘llanadi. Bu har safar parametrlarni qo‘lda takrorlashni kamaytiradi.",
-      "3. Combination nomi uning maqsadini tushuntirsin; o‘xshash va noma’lum variantlarni ko‘paytirish workflow’ni chalkashtiradi.",
-      "Darsdagi bajarish: Bir nechta MVO tanlovini bitta tushunarli Combination sifatida saqlang."
+      "Bitta modeldan uch maqsadli ko‘rinish chiqariladi: eskiz, hujjat va audit. Har bir varaqda plan tuzilmasi va ochilishlarni solishtirish mumkin.",
+      "Ko‘rinish nomi bilan birga tegishli detal sozlamasini saqlash kerak. Faqat varaq nomini o‘zgartirish kerakli MVOni kafolatlamaydi.",
+      "Bu konseptual ko‘rinishlar to‘plami. Haqiqiy View Mapda saqlangan sozlamani va qayta ochilgan ko‘rinishdagi natijani tekshiring."
     ],
     "exercise": "Bir nechta MVO parametridan Combination tuzing.",
     "solution": "MVO Combination view tafsilot sozlamalarini izchil qayta ishlatishga yordam beradi.",
     "block": 8,
     "recipe": "mvo",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ko‘rsatilgan soddalashtirishlar workflow misoli; aniq MVO imkoniyatlari element turi va Archicad sozlamasiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M03_004",
     "asset": "l07_m03_004.svg",
-    "title": "View va MVO workflow — arxitekturaviy eskiz",
+    "title": "Saqlangan ko‘rinishni qayta ochib tekshiring",
     "explanation": [
-      "1. Chapdagi sozlamalar to‘plami va o‘ngdagi plan view bir-biriga bog‘langan workflow’ni ko‘rsatadi.",
-      "2. View saqlanganda unga mos MVO Combination ham muvofiqlashtiriladi. Keyin view ochilganda kutilgan tafsilot darajasi qayta olinadi.",
-      "3. Bir view’da ishlatilgan MVOni tasodifan o‘zgartirish boshqa saqlangan ko‘rinishlarga qanday ta’sir qilishini tekshiring.",
-      "Darsdagi bajarish: View nomi, maqsadi va unga bog‘langan MVO Combination’ni birga tekshiring."
+      "Eskiz va hujjat varaqlari bir modelga bog‘langan; har biri o‘z ko‘rinish maqsadi va MVO sozlamasini saqlashi kerak.",
+      "Qaytish strelkasi hujjat ko‘rinishini qayta ochib tekshirishni bildiradi. Ish oynasida ko‘rinadigan joriy detal bilan saqlangan View sozlamasini chalkashtirmang.",
+      "Haqiqiy loyihada Viewni boshqa oynadan qayta oching, plan va fasaddagi ifodani tekshiring, so‘ng saqlash natijasini qayd qiling."
     ],
     "exercise": "Saqlangan view va uning MVO holatini solishtiring.",
     "solution": "View workflowda model ko‘rinishi va MVO konfiguratsiyasi muvofiqlashtiriladi.",
     "block": 8,
     "recipe": "mvo",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ko‘rsatilgan soddalashtirishlar workflow misoli; aniq MVO imkoniyatlari element turi va Archicad sozlamasiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M03_005",
     "asset": "l07_m03_005.svg",
-    "title": "Model View Options professional audit — arxitekturaviy eskiz",
+    "title": "Element modelda bormi yoki tasvir soddalashganmi?",
     "explanation": [
-      "1. Chapdagi sozlama ro‘yxati, o‘ngdagi view natijasi bir xil maqsadga xizmat qilishi kerak.",
-      "2. Auditda noaniq Combination nomlari, tasodifiy tafsilot darajasi, view bilan mos kelmagan MVO va keraksiz dublikatlar tekshiriladi.",
-      "3. Yakuniy hujjatni kerakli masshtab va vazifada ko‘rib chiqing. Juda ko‘p detal ham, haddan tashqari soddalashtirish ham o‘qishni yomonlashtirishi mumkin.",
-      "Darsdagi bajarish: MVO Combination → View → hujjat natijasini bir zanjir sifatida audit qiling."
+      "Ikki planda bir xil xonalar, devorlar va ochilishlar bor. Oyna va eshikning ifoda detali ko‘rinishlar o‘rtasida farqlanadi.",
+      "Bog‘lovchi chiziq ayni oynani ikki ko‘rinishda topishga yordam beradi. Soddaroq belgi element modeldan yo‘qoldi degani emas.",
+      "Auditda avval elementning modelda mavjudligini, keyin MVO va saqlangan View sozlamasini tekshiring. Natijani ko‘rinish nomi bilan yozing."
     ],
     "exercise": "MVO Combination va view natijasini birga audit qiling.",
     "solution": "MVO auditi saqlangan ko‘rsatish qoidasi bilan haqiqiy view natijasini solishtiradi.",
     "block": 10,
     "recipe": "mvo",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ko‘rsatilgan soddalashtirishlar workflow misoli; aniq MVO imkoniyatlari element turi va Archicad sozlamasiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {

@@ -110,12 +110,12 @@
     {
       "code": "L07_M01_004",
       "asset": "app/courses/visual_assets/l07_m01_004.svg",
-      "source_png_sha256": "95837a647e5d5cc81101c7a27f79fe0743925fbaa374a48f590825fd1d63d8e8",
-      "embedded_sha256": "aa0719565c7b2c6f99abe5211e283c337b991c5a5275c5682c02d52555eb8b1f",
+      "source_png_sha256": "d48732b6d32e030db38382d6c3a51946bc71386b99887bd288423d22676d2711",
+      "embedded_sha256": "5030407f98547d59b5f185ecc9906db1c38b037ca8f5d803f6507d08435a21ab",
       "width": 1536,
       "height": 1024,
-      "bytes": 1103378,
-      "svg_bytes": 1471592,
+      "bytes": 993085,
+      "svg_bytes": 1324532,
       "prompt": "Use case: scientific-educational. Asset type: one ARCHIPRO UZ lesson illustration, 1536x1024 landscape. Style: professional architect's hand drawn pencil and fine ink drawing with restrained watercolor washes on clean warm ivory paper, recognizable real residential architecture, detailed doors, windows, believable furniture, material hatching, airy editorial layout, clear line hierarchy. Beautiful but practical teaching image, legible at laptop size. No vector icon look, no generic rectangles standing in for buildings, no photographic render, no software window or fabricated interface. No logos or watermarks. Short Uzbek labels only when explicitly listed. Architectural concept illustration, not construction documents. Make the illustrated comparison the dominant subject, avoid decorative extra scenes. Title exact 'BIR XIL VAZIFA — BIR XIL BAZA'. Two detailed compact house cutaway model fragments left and right, identical design with windowed external walls and light room furniture, ink/pencil masonry hatching. Left labeled 'TASODIFIY SOZLASH': two external walls of SAME purpose have clearly different section fills and visibly different thicknesses; small red circles around two magnified inconsistent wall-section samples. Right labeled 'STANDART BAZA': same two wall sections consistently equal, identical hatching and wall thickness; a center paper Favorite parameter card linked with two teal arrows to them. Two short handwritten labels on right inset 'QATLAM' and 'TUZILMA'. This is conceptual standardization comparison, not structural approval. No numbers, no software UI, no claiming every wall in every project must be identical; identical-purpose exterior wall samples only. Make differences clearly readable, keep clean warm paper and restrained red-teal annotations.",
       "generator": "Built-in imagegen",
       "format": "JPEG quality 96, 4:4:4; original pixel dimensions retained"
@@ -158,6 +158,110 @@
       "prompt": "Use case: scientific-educational. Asset type: one ARCHIPRO UZ lesson illustration, 1536x1024 landscape. Style: professional architect's hand drawn pencil and fine ink drawing with restrained watercolor washes on clean warm ivory paper, recognizable real residential architecture, detailed doors, windows, believable furniture, material hatching, airy editorial layout, clear line hierarchy. Beautiful but practical teaching image, legible at laptop size. No vector icon look, no generic rectangles standing in for buildings, no photographic render, no software window or fabricated interface. No logos or watermarks. Short Uzbek labels only when explicitly listed. Architectural concept illustration, not construction documents. Make the illustrated comparison the dominant subject, avoid decorative extra scenes. Title exact 'MEZON → GRAFIK NATIJA'. Left a detailed hand-drawn small-house top view plan, clear wall thickness, doors, windows, sofa and kitchen, thin gray partitions. A visible TEAL pencil selection line follows ONLY OUTER walls, never interior. Above left handwritten paper note exact 'MEZON: TASHQI DEVOR'. A single clear arrow connects to the SAME identical plan on right, where ONLY exterior walls are coral red hatch and interior partitions still grayscale. Right label 'NATIJA: QIZIL AJRATISH'. Small coral swatch below with 'SHARTGA MOS'. No geometry change, no material change, no colorful room floor fill. Illustrate a selection criterion and graphical result, not UI. Sparse typography, recognizable real house plan, realistic ink/pencil with watercolor accent.",
       "generator": "Built-in imagegen",
       "format": "JPEG quality 96, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L07_M02_003",
+      "asset": "app/courses/visual_assets/l07_m02_003.svg",
+      "source_png_sha256": "4b7b413e9a0942232a6e9ce2670aa841681330258c5baa51719964e90eea1dbf",
+      "embedded_sha256": "ceced3f49d7124393d89e6fa650600305879203d02e30ae496a87c5622e16529",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 861237,
+      "svg_bytes": 1148715,
+      "prompt": "Use case: scientific-educational. Asset type: one ARCHIPRO UZ lesson illustration, 1536x1024 landscape. Style: professional architect's hand drawn pencil and fine ink drawing with restrained watercolor washes on clean warm ivory paper, recognizable real residential architecture, detailed doors, windows, believable furniture, material hatching, airy editorial layout, clear line hierarchy. Beautiful but practical teaching image, legible at laptop size. No vector icon look, no generic rectangles standing in for buildings, no photographic render, no software window or fabricated interface. No logos or watermarks. Short Uzbek labels only when explicitly listed. Architectural concept illustration, not construction documents. Make the illustrated comparison the dominant subject, avoid decorative extra scenes. Title exact 'QOIDALAR BIRIKMASI'. Main center/right is detailed TOP VIEW of one small two-bedroom house, pale grayscale rooms with actual furniture, thick exterior wall hatching and thinner partitions, door arcs and glazed window openings. Exterior walls coral muted hatch, all actual internal partition walls pale blue hatch, window openings green accented. Left three small handwritten rule cards with exact '1: TASHQI DEVOR', '2: ICHKI DEVOR', '3: DERAZA'; color swatches coral, blue, green respectively. Cards connect via thin converging arrows to ONE paper heading 'AUDIT KO‘RINISHI', then single leader to resulting plan. Below a tiny conflicting-rule vignette: one exterior wall sample with coral-and-blue pencil marks and a red '?' beside exact 'QOIDALAR TARTIBI'. Do not state which arbitrary color always wins; teach multiple rules organized into one view and possible overlap requires checking. No software interface, no fake menus, no dimension numbers.",
+      "generator": "Built-in imagegen",
+      "format": "JPEG quality 96, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L07_M02_004",
+      "asset": "app/courses/visual_assets/l07_m02_004.svg",
+      "source_png_sha256": "7f6be8986082ec2b061a2a482e37e31078509052c2160f2dee5afee0419bc823",
+      "embedded_sha256": "0069060b28f916b7f21ec987196141e9c1a97437349ceaf6942e415629409e68",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 747765,
+      "svg_bytes": 997436,
+      "prompt": "Use case: scientific-educational. Asset type: one ARCHIPRO UZ lesson illustration, 1536x1024 landscape. Style: professional architect's hand drawn pencil and fine ink drawing with restrained watercolor washes on clean warm ivory paper, recognizable real residential architecture, detailed doors, windows, believable furniture, material hatching, airy editorial layout, clear line hierarchy. Beautiful but practical teaching image, legible at laptop size. No vector icon look, no generic rectangles standing in for buildings, no photographic render, no software window or fabricated interface. No logos or watermarks. Short Uzbek labels only when explicitly listed. Architectural concept illustration, not construction documents. Make the illustrated comparison the dominant subject, avoid decorative extra scenes. Title exact 'XATONI KO‘RINISHDA TOPING'. Two identical detailed TOP VIEW small residential plans side by side. Same walls, doors, windows and furniture in both. Left grayscale label 'ODDIY PLAN'. Right grayscale label 'AUDIT KO‘RINISHI': highlight ONLY one interior short wall in coral-red and draw one red pencil ellipse around that wall. A precise thin leader from ellipse to handwritten note 'QATLAMNI TEKSHIR'. Below a short arrow points from colored wall in audit plan to a magnified real wall sample with original neutral masonry surface, label 'MODEL O‘ZGARMADI'. No widespread red floor fill; only the flagged wall. Illustrate graphical detection of a mis-grouped BIM element, not a structurally dangerous building. Actual architectural drawing with refined door arcs and furniture, no software UI.",
+      "generator": "Built-in imagegen",
+      "format": "JPEG quality 96, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L07_M02_005",
+      "asset": "app/courses/visual_assets/l07_m02_005.svg",
+      "source_png_sha256": "c23a3b7e22e6d6a3d9ae1e32c26e764c267751fd892ea60608bda3afbf7022d4",
+      "embedded_sha256": "55d7a1accf1f2d4875cdce84d67fd659694f48decad39e04f7ded79babc82536",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 791831,
+      "svg_bytes": 1056180,
+      "prompt": "Use case: scientific-educational. Asset type: one ARCHIPRO UZ lesson illustration, 1536x1024 landscape. Style: professional architect's hand drawn pencil and fine ink drawing with restrained watercolor washes on clean warm ivory paper, recognizable real residential architecture, detailed doors, windows, believable furniture, material hatching, airy editorial layout, clear line hierarchy. Beautiful but practical teaching image, legible at laptop size. No vector icon look, no generic rectangles standing in for buildings, no photographic render, no software window or fabricated interface. No logos or watermarks. Short Uzbek labels only when explicitly listed. Architectural concept illustration, not construction documents. Make the illustrated comparison the dominant subject, avoid decorative extra scenes. Title exact 'GRAFIK AUDIT'. Large detailed single TOP VIEW plan of a plausible four-room one-story house, doors/windows/furniture well drawn. ONLY exterior walls muted coral hatch, ONLY interior partition walls blue hatch, unclassified ONE short internal wall neutral gray circled red with '?'. Right tidy three-item handwritten legend: coral swatch 'TASHQI DEVOR', blue swatch 'ICHKI DEVOR', gray swatch 'TEKSHIRILMAGAN'. Thin leader from gray circled wall to exact note 'MEZONNI TEKSHIR'. Bottom three small handwritten checklist labels 'MEZON', 'QOIDA', 'KO‘RINISH' connected in that order by thin arrows, not software controls. Teaching focus is verify legend, criteria and matching display; no claim graphical colors certify model correctness. No software UI or dimension values. White/ivory margin, readable labels.",
+      "generator": "Built-in imagegen",
+      "format": "JPEG quality 96, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L07_M03_001",
+      "asset": "app/courses/visual_assets/l07_m03_001.svg",
+      "source_png_sha256": "d788fba3402e4ba326361a3276e2f0381b5289a6cd99a33bcaf14982ff2b2b19",
+      "embedded_sha256": "e46c8a0a1b241c016686675cc12300aa7e31cf14b2d4eaab925f01d333365d24",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 681434,
+      "svg_bytes": 908982,
+      "prompt": "Use case: scientific-educational. Asset type: one ARCHIPRO UZ lesson illustration, 1536x1024 landscape. Style: professional architect's hand drawn pencil and fine ink drawing with restrained watercolor washes on clean warm ivory paper, recognizable real residential architecture, detailed doors, windows, believable furniture, material hatching, airy editorial layout, clear line hierarchy. Beautiful but practical teaching image, legible at laptop size. No vector icon look, no generic rectangles standing in for buildings, no photographic render, no software window or fabricated interface. No logos or watermarks. Short Uzbek labels only when explicitly listed. Architectural concept illustration, not construction documents. Make the illustrated comparison the dominant subject, avoid decorative extra scenes. Title exact 'MODEL VA TASVIR DETALI'. Main upper half one detailed axonometric cutaway of a single rectangular room with two thick walls, one glazed window and one simple door, modest sofa. Two fine branch arrows lead to two SAME-sized drawing panels below showing this same room in top view: left labeled 'SODDA KO‘RINISH', with plain wall outline, same doorway and window opening, sparse door/window symbols; right 'BATAFSIL KO‘RINISH', same geometry but finer frame lines and leaf detail on window and door symbol, wall section hatching. The only difference is representation detail, NO moved/deleted wall, window or doorway. Avoid extra furniture that could confuse model vs view. Exact short note 'BIR MODEL'. No software UI. Refined pencil and watercolor, architectural illustration clearly recognizable as the same room across views.",
+      "generator": "Built-in imagegen",
+      "format": "JPEG quality 96, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L07_M03_002",
+      "asset": "app/courses/visual_assets/l07_m03_002.svg",
+      "source_png_sha256": "361f645e5485f273de1fcdf899eb52868e22047400e90b5c3624d8f134727d1b",
+      "embedded_sha256": "bc6e6f279dda0c43ed9c63683c5b0eebcb3ec280e9c442cb08d696991f75fd02",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 609568,
+      "svg_bytes": 813162,
+      "prompt": "Use case: scientific-educational. Asset type: one ARCHIPRO UZ lesson illustration, 1536x1024 landscape. Style: professional architect's hand drawn pencil and fine ink drawing with restrained watercolor washes on clean warm ivory paper, recognizable real residential architecture, detailed doors, windows, believable furniture, material hatching, airy editorial layout, clear line hierarchy. Beautiful but practical teaching image, legible at laptop size. No vector icon look, no generic rectangles standing in for buildings, no photographic render, no software window or fabricated interface. No logos or watermarks. Short Uzbek labels only when explicitly listed. Architectural concept illustration, not construction documents. Make the illustrated comparison the dominant subject, avoid decorative extra scenes. Title exact 'DETAL DARAJASINI TANLANG'. Three small hand-drawn identical standalone architectural WINDOW assemblies shown in axonometric aligned side-by-side at same size: left simple frame/glass outlines with label 'SODDA', center moderate frame line detail with label 'O‘RTA', right detailed frame, mullions, hinge and material hatching label 'BATAFSIL'. All windows have same outer geometry and same two-pane division and glazing opening, no change to physical model. Beneath one small top-down rectangular room plan with a thin leader to the SAME window location. Annotation exact 'KO‘RINISH MAQSADI'. This is a conceptual detail-level example, not a claim every element/version has exactly these three settings. Do not show menu options, software screens, UI buttons, or numeric dimensions. Keep beautiful architecture pen and watercolor rather than graphic icons.",
+      "generator": "Built-in imagegen",
+      "format": "JPEG quality 96, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L07_M03_003",
+      "asset": "app/courses/visual_assets/l07_m03_003.svg",
+      "source_png_sha256": "d3f90233711fc180cd00120bf3402d975f3d500819e26d9172fd43dcc3bfdd44",
+      "embedded_sha256": "caeb9443d2b4b5d3c874679a154252ad8cb31b089513be4808ffa239ea6649ef",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 704753,
+      "svg_bytes": 940073,
+      "prompt": "Use case: scientific-educational. Asset type: one ARCHIPRO UZ lesson illustration, 1536x1024 landscape. Style: professional architect's hand drawn pencil and fine ink drawing with restrained watercolor washes on clean warm ivory paper, recognizable real residential architecture, detailed doors, windows, believable furniture, material hatching, airy editorial layout, clear line hierarchy. Beautiful but practical teaching image, legible at laptop size. No vector icon look, no generic rectangles standing in for buildings, no photographic render, no software window or fabricated interface. No logos or watermarks. Short Uzbek labels only when explicitly listed. Architectural concept illustration, not construction documents. Make the illustrated comparison the dominant subject, avoid decorative extra scenes. Title exact 'MAQSADLI KO‘RINISHLAR'. Center a detailed small one-storey house cutaway as ONE source model. Below, three paper drawing sheets with exact headings 'ESKIZ', 'HUJJAT', 'AUDIT'. Each contains the same unmistakable two-room outline, central entry, one window per room and two interior door openings, drawn at same orientation. ESKIZ sheet is clean minimal linework; HUJJAT has carefully hatched wall material and fine window/door detail; AUDIT has thin teal outlines marking same opening locations. Thin arrows from the single model to each sheet. Short exact top caption 'SOZLAMANI SAQLANG'. Must not add/remove physical walls between the sheets, no actual program interface or fake dropdown. Focus on saving distinct graphic purpose, not random copies named Final2. Few labels only.",
+      "generator": "Built-in imagegen",
+      "format": "JPEG quality 96, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L07_M03_004",
+      "asset": "app/courses/visual_assets/l07_m03_004.svg",
+      "source_png_sha256": "27ef3887e5d7cb1b22021f979f49a82e3c151ea6076f93782d3211148fd51a29",
+      "embedded_sha256": "e9e4fefe29beb7ad192c60eda45652b52dc61599d81a5b211b5be686fff95061",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 858584,
+      "svg_bytes": 1145189,
+      "prompt": "Use case: scientific-educational. Asset type: one ARCHIPRO UZ lesson illustration, 1536x1024 landscape. Style: professional architect's hand drawn pencil and fine ink drawing with restrained watercolor washes on clean warm ivory paper, recognizable real residential architecture, detailed doors, windows, believable furniture, material hatching, airy editorial layout, clear line hierarchy. Beautiful but practical teaching image, legible at laptop size. No vector icon look, no generic rectangles standing in for buildings, no photographic render, no software window or fabricated interface. No logos or watermarks. Short Uzbek labels only when explicitly listed. Architectural concept illustration, not construction documents. Make the illustrated comparison the dominant subject, avoid decorative extra scenes. Title exact 'SAQLANGAN KO‘RINISH'. A detailed source cutaway house at upper left, then two drawing paper sheets to the right representing two SAVED views, same plan outline and openings. First labeled 'ESKIZ', second 'HUJJAT'. Beneath each sheet one small handwritten note 'MVO' in a paper tag, linked clearly to its own sheet. A large curved return arrow beneath the HUJJAT sheet loops back to that sheet, exact label 'QAYTA OCHIB TEKSHIR'. A thin arrow from same source house branches toward both sheets. The sheets depict same model in lighter versus more detailed pen strokes, not two redesigned buildings. No software window, no fake menu. Teach preserved view settings checked when reopened, credible architecture drawings and tasteful light washes.",
+      "generator": "Built-in imagegen",
+      "format": "JPEG quality 96, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L07_M03_005",
+      "asset": "app/courses/visual_assets/l07_m03_005.svg",
+      "source_png_sha256": "651acfc37e68a77809375099e4c3ee0e6cbcc1be5333a97a8cd85183c08b073c",
+      "embedded_sha256": "fc2046e1644adde5adeff82328aa5a716614e25802951b7c393862f38fa83931",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 684472,
+      "svg_bytes": 913044,
+      "prompt": "Use case: scientific-educational. Asset type: one ARCHIPRO UZ lesson illustration, 1536x1024 landscape. Style: professional architect's hand drawn pencil and fine ink drawing with restrained watercolor washes on clean warm ivory paper, recognizable real residential architecture, detailed doors, windows, believable furniture, material hatching, airy editorial layout, clear line hierarchy. Beautiful but practical teaching image, legible at laptop size. No vector icon look, no generic rectangles standing in for buildings, no photographic render, no software window or fabricated interface. No logos or watermarks. Short Uzbek labels only when explicitly listed. Architectural concept illustration, not construction documents. Make the illustrated comparison the dominant subject, avoid decorative extra scenes. Title exact 'KO‘RINISHLARNI TEKSHIRING'. One simple rectangular two-room top-down house plan duplicated in two large side-by-side drawing sheets: left exact label 'ESKIZ', right 'HUJJAT'. Both contain the same TWO rooms, same central outside entry doorway, one same window in each room, one same internal door opening; no furniture so geometry is easy to compare. Left window and door symbols simplified, right window frame and material hatching detailed. A thin teal trace line connects the same right-room window location across sheets and small pencil circles around that window in both. Exact note below 'ELEMENT MODELDA BOR'. Under both sheets tiny pencil sketch of the same 3D two-room building serves as source. Keep every physical opening and wall present in both plans; drawing style/detail is only difference. No software UI, no dimensions, no new physical elements.",
+      "generator": "Built-in imagegen",
+      "format": "JPEG quality 96, 4:4:4; original pixel dimensions retained"
     }
   ],
   "not_complete": true,
@@ -167,11 +271,12 @@
     "Explanations reviewed against visible generated subject",
     "JPEG embedded at original pixel dimensions; PNG originals retained by image generation",
     "Local project audit 393 passed; database audit 225 passed",
-    "Windows CI verification follows push"
+    "Windows CI e624344: seven audits and full regression passed; actual EXE curriculum verification passed (run 37573365600). Later changes require next-head verification."
   ],
   "notes": [
     "Image annotations illustrate concepts and are not a fabricated Archicad interface.",
     "L06_M10_002 is explicitly unscaled; numerical calculations use labels.",
-    "L06_M10_005 deliberately mismatches table area 15 with correct geometry/stamp area 12."
+    "L06_M10_005 deliberately mismatches table area 15 with correct geometry/stamp area 12.",
+    "L07_M01_004 wall inset clarified to make inconsistent baseline visible; conceptual comparison, not construction approval."
   ]
 }
