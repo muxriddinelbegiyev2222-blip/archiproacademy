@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-07",
+  "scope": "L08_M02_001–005 and L08_M03_001–005",
+  "batch_size": 10,
+  "purpose": "Replace repeated generic wall/frame diagrams with distinct lesson-specific architectural teaching sketches.",
+  "lessons": [
+    {
+      "code": "L08_M02_001",
+      "asset": "app/courses/visual_assets/l08_m02_001.svg",
+      "title": "Devorning konstruktiv vazifasi",
+      "status": "reworked"
+    },
+    {
+      "code": "L08_M02_002",
+      "asset": "app/courses/visual_assets/l08_m02_002.svg",
+      "title": "Yuk ko‘taruvchi va to‘ldiruvchi devor",
+      "status": "reworked"
+    },
+    {
+      "code": "L08_M02_003",
+      "asset": "app/courses/visual_assets/l08_m02_003.svg",
+      "title": "Devorlar, ochilishlar va yuk yo‘li",
+      "status": "reworked"
+    },
+    {
+      "code": "L08_M02_004",
+      "asset": "app/courses/visual_assets/l08_m02_004.svg",
+      "title": "Qavatlararo devor koordinatsiyasi",
+      "status": "reworked"
+    },
+    {
+      "code": "L08_M02_005",
+      "asset": "app/courses/visual_assets/l08_m02_005.svg",
+      "title": "Devor konstruksiyasi professional audit",
+      "status": "reworked"
+    },
+    {
+      "code": "L08_M03_001",
+      "asset": "app/courses/visual_assets/l08_m03_001.svg",
+      "title": "Karkas konstruktiv tizimi",
+      "status": "reworked"
+    },
+    {
+      "code": "L08_M03_002",
+      "asset": "app/courses/visual_assets/l08_m03_002.svg",
+      "title": "Ustun, rigel va yuk yo‘li",
+      "status": "reworked"
+    },
+    {
+      "code": "L08_M03_003",
+      "asset": "app/courses/visual_assets/l08_m03_003.svg",
+      "title": "Grid, o‘qlar va span mantig‘i",
+      "status": "reworked"
+    },
+    {
+      "code": "L08_M03_004",
+      "asset": "app/courses/visual_assets/l08_m03_004.svg",
+      "title": "Arxitektura va karkas koordinatsiyasi",
+      "status": "reworked"
+    },
+    {
+      "code": "L08_M03_005",
+      "asset": "app/courses/visual_assets/l08_m03_005.svg",
+      "title": "Karkas professional audit",
+      "status": "reworked"
+    }
+  ],
+  "skipped_optional_or_text_only": [],
+  "preserved": [
+    "lesson content",
+    "quiz questions",
+    "exercise",
+    "solution",
+    "application behavior"
+  ],
+  "remaining_required_sketch_rechecks": 220,
+  "next_start": "L08_M04_001",
+  "validation": {
+    "svg_root_and_close": "pending final check",
+    "metadata_binding": "updated",
+    "curriculum_content": "unchanged by this batch"
+  },
+  "note": "These are conceptual teaching sketches, not structural calculations or approved construction details."
+}
