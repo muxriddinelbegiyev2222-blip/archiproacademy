@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><rect width="1200" height="800" fill="#fbfaf4"/><g stroke="#34464d" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="70" y="100" width="1060" height="600" rx="24" fill="#fffef9"/><g transform="translate(110 145)"><g><rect width="270" height="220" rx="18" fill="#e5eee8"/><path d="M50 55h180M50 100h180M50 145h135" stroke="#75888d" stroke-width="3"/></g><g transform="translate(310 0)"><rect width="270" height="220" rx="18" fill="#e7ebef"/><rect x="50" y="45" width="170" height="120" fill="#fffef9" stroke-width="7"/></g><g transform="translate(620 0)"><rect width="270" height="220" rx="18" fill="#f0ece5"/><path d="M50 55h180M50 95h180M50 135h180M50 175h130" stroke="#75888d" stroke-width="3"/></g><g transform="translate(0 270)"><rect width="270" height="220" rx="18" fill="#eef0e8"/><circle cx="135" cy="105" r="55" fill="none" stroke="#8ea4b0" stroke-width="7"/></g><g transform="translate(310 270)"><rect width="270" height="220" rx="18" fill="#f0e5d7"/><path d="M65 160c70-80 125-100 170-105" stroke="#a66f50" stroke-width="8"/></g><g transform="translate(620 270)"><rect width="270" height="220" rx="18" fill="#e5eee8"/><path d="M80 95l24 24 52-66" stroke="#6f9f8d" stroke-width="10"/></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<rect width="1200" height="800" fill="#fbfaf4"/>
+<g stroke="#34464d" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<rect x="90" y="90" width="1020" height="620" rx="24" fill="#fffef9"/>
+<path d="M180 600V180h760v420" stroke="#68777d" stroke-width="14"/>
+<path d="M180 390h300M760 390h180" stroke="#68777d" stroke-width="18"/>
+<rect x="220" y="215" width="160" height="320" fill="#bad1d1" stroke="#75888d" stroke-width="7"/>
+<path d="M300 215v320M220 375h160" stroke="#75888d" stroke-width="4"/>
+<path d="M415 220l170 210" stroke="#d6b65e" stroke-width="15" opacity=".75"/>
+<path d="M465 220l160 200" stroke="#d6b65e" stroke-width="10" opacity=".55"/>
+<path d="M540 540h240" stroke="#d8c39d" stroke-width="60"/>
+<rect x="585" y="470" width="120" height="60" rx="15" fill="#e7eee9" stroke="#6f9f8d" stroke-width="4"/>
+<path d="M830 240h120M830 280h90M830 320h110" stroke="#75888d" stroke-width="3"/>
+<path d="M500 385v-165" stroke="#6f9f8d" stroke-width="8"/>
+<path d="M485 245l15-25 15 25" stroke="#6f9f8d" stroke-width="8"/>
+</g></svg>
