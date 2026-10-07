@@ -1,3 +1,11 @@
+# Rasm zarurligi bo‘yicha yangi qaror — 2026-10-07
+
+680 darsning maqsadi va amaliyoti qayta ko‘rib chiqildi: 65 darsga alohida rasm kerak emas (C), 44 darsda ixtiyoriy (B), 571 darsda ko‘rgazmali misol saqlanadi (A). C va B uchun jami 109 ta yangi rasm yasash majburiy emas. A soni yangi AI rasm ishlab chiqish soni emas: mavjud sifatli chizma yoki haqiqiy skrinshot yetarli bo‘lishi mumkin.
+
+[To‘liq rasm zarurligi auditi](LESSON_IMAGE_NECESSITY_2026_10_07.md) va [680 dars reyestri](LESSON_IMAGE_NECESSITY_2026_10_07.csv). Bu bosqich mavjud asset yoki dars bog‘lanishini o‘zgartirmadi; oldingi 680/680 texnik qamrov bilan ta’limiy zarurat alohida baholandi.
+
+---
+
 # Current quality recheck — 2026-10-07
 
 Technical coverage is 680/680. This does not establish that all drawings meet the requested hand-sketch quality.
