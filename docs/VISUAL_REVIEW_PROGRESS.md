@@ -1,8 +1,8 @@
 # Davom etayotgan eskiz sifati yangilanishi — 2026-10-07
 
-61 zarur darsning eski sxemalari yangi, ko‘rib chiqilgan izohli arxitektura eskizlariga almashtirildi. Oxirgi 10 talik: L08_M02_001–005 va L08_M03_001–005. Avvalgi 51 dars saqlangan.
+71 zarur darsning eski sxemalari yangi, ko‘rib chiqilgan izohli arxitektura eskizlariga almashtirildi. Oxirgi 10 talik: L08_M04_001–005 va L11_M01_001–005. Avvalgi 61 dars saqlangan.
 
-282 zarur eski eskiz darsidan ushbu 61 dars va avvalgi L15_M08_003 yangilangan: **220 zarur eskiz dars** hali ushbu sifat qayta ko‘rigidan o‘tmagan. Keyingi navbat L08_M04_001 dan boshlanadi; A toifasi va avvalgi yangilanishlar reyestri bilan tekshirib tanlanadi. Materialli tasvirlar va haqiqiy skrinshotlar bu hisobdan alohida; umumiy ish tugallanmadi.
+282 zarur eski eskiz darsidan ushbu 71 dars va avvalgi L15_M08_003 yangilangan: **210 zarur eskiz dars** hali ushbu sifat qayta ko‘rigidan o‘tmagan. Keyingi navbat L11_M02_001 dan boshlanadi; A toifasi va avvalgi yangilanishlar reyestri bilan tekshirib tanlanadi. Materialli tasvirlar va haqiqiy skrinshotlar bu hisobdan alohida; umumiy ish tugallanmadi.
 
 L07_M09_001, L07_M09_002 va L08_M01_003 rasm majburiy bo‘lmagan darslar sifatida yangi rasm navbatidan o‘tkazildi. Mavjud dars, mashq, test va amaliy bloklar saqlanadi.
 
