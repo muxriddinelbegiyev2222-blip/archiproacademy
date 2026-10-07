@@ -151,4 +151,5 @@ L10_M11: Project album structure, plans/facades/sections, genplan/auxiliary draw
 - Every reviewed coverage asset currently exists in app/courses/visual_assets.
 - Every one of the 680 coverage lesson codes has at least one visual metadata entry across lesson_figures.json, realistic_figures.json or archicad_figures.json.
 - VISUAL_LESSON_COVERAGE.csv also contains 680 unique lesson codes and matches the same lesson-code set.
+- 380 architectural-sketch lessons now reference 380 unique asset blobs; the duplicate-sketch audit reports zero duplicate groups.
 - SHNQ verification remains a separate later task unless explicitly completed elsewhere; this final count is the topic-specific visual review count.
