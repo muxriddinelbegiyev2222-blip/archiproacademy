@@ -3063,217 +3063,205 @@
   {
     "code": "L07_M04_001",
     "asset": "l07_m04_001.svg",
-    "title": "Renovation tushunchasi — arxitekturaviy eskiz",
+    "title": "Mavjud, buziladigan va yangi elementlar",
     "explanation": [
-      "1. Chapdagi plan mavjud holat, o‘ngdagi plan esa rekonstruksiya qarorlari qo‘shilgan bir xil modelni ifodalaydi.",
-      "2. Renovation workflow mavjud, buziladigan va yangi elementlarni bir model ichida holat bilan boshqarishga yordam beradi.",
-      "3. Ranglar faqat o‘quv eskizi. Muhim narsa — elementning to‘g‘ri statusi va kerakli filterdagi natijasi.",
-      "Darsdagi bajarish: Bir xil modelda mavjud, olib tashlanadigan va yangi elementlarni ajrating."
+      "Kulrang tashqi devor — saqlanadigan mavjud element, qizil uzlukli bo‘luvchi — buziladigan element, ko‘k bo‘luvchi — yangi element.",
+      "Uch holat bir rekonstruksiya modelining turli elementlariga tegishli. Bitta elementning statusini uning loyihadagi haqiqiy vazifasi bo‘yicha belgilang.",
+      "Ranglar ushbu eskiz legendasi; dasturdagi majburiy standart ranglar emas. Konstruktiv buzish qarori alohida mutaxassis tekshiruvini talab qiladi."
     ],
     "exercise": "Mavjud va loyihaviy holatni bir modelda ajrating.",
     "solution": "Renovation status elementning rekonstruksiya jarayonidagi rolini belgilaydi.",
     "block": 8,
     "recipe": "renovation",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ranglar o‘quv maqsadida tanlangan; Archicad Renovation filterlaridagi haqiqiy grafik sozlamalar alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M04_002",
     "asset": "l07_m04_002.svg",
-    "title": "Renovation Status — arxitekturaviy eskiz",
+    "title": "Holatni har bir elementga belgilang",
     "explanation": [
-      "1. Eskizda uch xil yumshoq rang elementlarning uch xil rekonstruksiya holatini vizual ajratish uchun ishlatilgan.",
-      "2. Status elementning o‘zi haqida ma’lumot beradi; filter esa keyin shu statuslar qanday ko‘rinishini boshqaradi.",
-      "3. Bir elementga noto‘g‘ri status berilsa barcha Renovation view’larda noto‘g‘ri natija chiqishi mumkin.",
-      "Darsdagi bajarish: Tanlangan elementlar statusini tekshirib, qaysi bosqichga tegishli ekanini tasdiqlang."
+      "Mavjud tashqi devor va ustun kulrang; eski bo‘luvchi va eski eshik qizil; yangi bo‘luvchi va yangi eshik ko‘k bilan ajratilgan.",
+      "Eshik va uni o‘ragan devor alohida elementlardir. Faqat devorga status berib, eshik ma’lumotini tekshirmasdan qoldirmang.",
+      "Haqiqiy modeldagi elementlarni navbat bilan tanlab, statusni tekshiring. Bu konsept eskizi konstruktiv buzishga ruxsat bermaydi."
     ],
     "exercise": "Mavjud, buziladigan va yangi elementlarga status bering.",
     "solution": "Status rekonstruksiya elementlarini yagona modelda ajratadi.",
     "block": 9,
     "recipe": "renovation",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ranglar o‘quv maqsadida tanlangan; Archicad Renovation filterlaridagi haqiqiy grafik sozlamalar alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M04_003",
     "asset": "l07_m04_003.svg",
-    "title": "Renovation Filters — arxitekturaviy eskiz",
+    "title": "Element holati va ko‘rinish filtri",
     "explanation": [
-      "1. Uch kichik plan ayni modelning turli filterlar bilan ko‘rsatilgan holatini ifodalaydi.",
-      "2. Bir filter mavjud holatni, boshqasi buzish ishlarini, uchinchisi esa taklif etilgan holatni ko‘rsatishi mumkin.",
-      "3. Filter element statusini o‘zgartirmaydi; faqat qaysi status qanday ko‘rinishini boshqaradi.",
-      "Darsdagi bajarish: Bir modelni kamida ikki filter bilan ochib, bir elementning ko‘rinishini solishtiring."
+      "Uch planda tashqi qobiq, oynalar va kirish saqlangan. Mavjud planda chap bo‘luvchi bor; buzish rejasida u qizil uzlukli; yangi loyihada boshqa joydagi ko‘k bo‘luvchi bor.",
+      "Status element ma’lumotidir; filtr esa maqsadga qarab ko‘rinishda nima chiqarilishini boshqaradi. Eski bo‘luvchi yakuniy taklif ko‘rinishida chiqarilmagan.",
+      "Rang va filtr nomlari o‘quv misoli. Haqiqiy loyihada har element statusi va tanlangan filtr sozlamasini birga tekshiring."
     ],
     "exercise": "Bir xil modelni turli Renovation Filterlarda ko‘rsating.",
     "solution": "Filter statuslarni hujjat maqsadiga mos ko‘rsatadi.",
     "block": 9,
     "recipe": "renovation",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ranglar o‘quv maqsadida tanlangan; Archicad Renovation filterlaridagi haqiqiy grafik sozlamalar alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M04_004",
     "asset": "l07_m04_004.svg",
-    "title": "Rekonstruksiya modeli workflow — arxitekturaviy eskiz",
+    "title": "Eski eshik, yangi to‘ldirish va yangi eshik",
     "explanation": [
-      "1. Chapdagi mavjud plan — kirish ma’lumoti; markazdagi status ketma-ketligi elementlarni tasniflash bosqichini ko‘rsatadi.",
-      "2. O‘ngdagi natija modelning mavjud, olib tashlanadigan va yangi qismlari bitta workflowda boshqarilganini ifodalaydi.",
-      "3. Yangi geometriyani chizishdan oldin mavjud holat ishonchli modellanganmi va statuslar to‘g‘rimi — tekshiring.",
-      "Darsdagi bajarish: Mavjud model → status → filter → hujjat zanjirini tartib bilan tekshiring."
+      "Chapda eski eshik mavjud. Markazda u buziladigan element sifatida ajratilgan. O‘ngda eski ochilish yangi to‘ldirish bilan yopilgan va boshqa joyda yangi eshik ko‘rsatilgan.",
+      "Eski eshik, yangi to‘ldirish va yangi eshik — uch alohida element tarixi. Eski eshikni shunchaki ko‘chirib, hammasiga mavjud statusini qoldirmang.",
+      "Bu ichki fragmentdagi holat modeli; yangi ochilishning konstruktiv imkoniyati mutaxassis bilan tekshiriladi. Status, filtr va taklif ko‘rinishini audit qiling."
     ],
     "exercise": "Rekonstruksiya modelining bosqichlarini ketma-ket yozing.",
     "solution": "Professional workflow mavjud holatni hujjatlashtirishdan boshlanadi.",
     "block": 10,
     "recipe": "renovation",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ranglar o‘quv maqsadida tanlangan; Archicad Renovation filterlaridagi haqiqiy grafik sozlamalar alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M04_005",
     "asset": "l07_m04_005.svg",
-    "title": "Renovation professional audit — arxitekturaviy eskiz",
+    "title": "Taklif ko‘rinishidagi eski elementni toping",
     "explanation": [
-      "1. Chapdagi plan element statuslarini, o‘ngdagi kartochkalar esa filter va audit nuqtalarini birga tekshirish g‘oyasini ko‘rsatadi.",
-      "2. Auditda noto‘g‘ri status, filterda yo‘qolib qolgan element, takror geometriya va mavjud/yangi qismlar orasidagi konfliktlar topiladi.",
-      "3. Har muhim elementni kamida mavjud, buzish va taklif etilgan view’larda kuzating. Bir viewdagi to‘g‘ri ko‘rinish yetarli emas.",
-      "Darsdagi bajarish: Bitta elementni statusdan barcha kerakli filterlargacha kuzatib audit qiling."
+      "Chapdagi XATO KO‘RINISHda buzilgan eski bo‘luvchi qizil uzlukli chiziqda hali ko‘rsatilgan. Savol belgisi ataylab audit nuqtasini bildiradi.",
+      "O‘ngdagi taklif ko‘rinishida eski bo‘luvchi chiqarilmagan; saqlanadigan qobiq va yangi ko‘k bo‘luvchi bor.",
+      "Bu filtr natijasini taqqoslash mashqi. Haqiqiy elementni o‘chirishga shoshilmasdan status va filtrni tekshiring, so‘ng ayni Viewni qayta oching."
     ],
     "exercise": "Status, filter va geometriya natijasini birga audit qiling.",
     "solution": "Renovation auditi bir modeldagi bosqich ma’lumotlari va view natijasining mosligini tekshiradi.",
     "block": 11,
     "recipe": "renovation",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ranglar o‘quv maqsadida tanlangan; Archicad Renovation filterlaridagi haqiqiy grafik sozlamalar alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M05_001",
     "asset": "l07_m05_001.svg",
-    "title": "Schedules tushunchasi — arxitekturaviy eskiz",
+    "title": "Jadval yozuvining manbasi — model elementi",
     "explanation": [
-      "1. Chapdagi plan model elementlarini, o‘ngdagi jadval esa o‘sha elementlardan yig‘ilgan tartibli ma’lumot ko‘rinishini ifodalaydi.",
-      "2. Schedule qo‘lda yozilgan oddiy jadval emas; mezonga tushgan model elementlari va tanlangan fields asosida hosil bo‘ladi.",
-      "3. Model o‘zgarsa schedule natijasini ham tekshiring; jadval model bilan bog‘langan ma’lumot sifatida ishlatiladi.",
-      "Darsdagi bajarish: Bitta elementni modeldan jadvaldagi qatorigacha kuzating."
+      "Modelda D01, D02 va D03 eshiklari ajratilgan; bog‘lovchi chiziqlar har birini o‘z yozuvi bilan birlashtiradi.",
+      "Rasmdagi qog‘oz ro‘yxat bog‘lanish g‘oyasini tushuntiradi; Archicad interfeysi yoki haqiqiy eksport emas. Schedule ma’lumoti tanlangan model elementlaridan olinadi.",
+      "Darsdagi amaliyotda eshik, oyna va xona jadvali uchun qanday ma’lumot kerakligini belgilang. Noto‘g‘ri model parametri jadvalda ham muammo keltirishi mumkin."
     ],
     "exercise": "Model elementlari bilan Schedule qatorlarini solishtiring.",
     "solution": "Schedule model ma’lumotini tanlangan mezon va ustunlar bo‘yicha tartiblaydi.",
     "block": 8,
     "recipe": "schedule",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Jadval ustunlari va ranglar o‘quv misoli; haqiqiy Schedule tarkibi loyiha vazifasiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M05_002",
     "asset": "l07_m05_002.svg",
-    "title": "Criteria va Fields — arxitekturaviy eskiz",
+    "title": "Criteria elementni, Fields ma’lumotni tanlaydi",
     "explanation": [
-      "1. Chapdagi yuqori blok Criteria g‘oyasini bildiradi: qaysi elementlar jadvalga kirishini mezon belgilaydi.",
-      "2. Pastdagi bloklar Fields g‘oyasini ko‘rsatadi: tanlangan elementlarning qaysi ma’lumotlari ustun sifatida chiqishini belgilaysiz.",
-      "3. Juda keng Criteria ortiqcha qatorlarni, noto‘g‘ri Fields esa foydasiz jadvalni keltiradi; natijani model bilan tekshiring.",
-      "Darsdagi bajarish: Avval element mezonini, keyin kerakli ustunlarni alohida yozing."
+      "Chapdagi mezon ikkita eshikni ajratadi; deraza bu eshik guruhi tashqarisida qoladi. Criteria — jadvalga qaysi element tushishi.",
+      "O‘ngdagi ID va EN ustunlari chiqadigan ma’lumotni bildiradi. Bo‘sh kataklar o‘quv shabloni, haqiqiy model qiymatini ifodalamaydi.",
+      "Mezon ortiqcha element olmaganini yoki kerakli elementni chetda qoldirmaganini tekshiring. Fieldsni jadval maqsadiga moslang."
     ],
     "exercise": "Criteria va Fieldsni alohida belgilab jadval natijasini tekshiring.",
     "solution": "Criteria elementlarni tanlaydi, Fields esa ko‘rsatiladigan ma’lumotni belgilaydi.",
     "block": 10,
     "recipe": "schedule",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Jadval ustunlari va ranglar o‘quv misoli; haqiqiy Schedule tarkibi loyiha vazifasiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M05_003",
     "asset": "l07_m05_003.svg",
-    "title": "Sorting, Grouping va hisoblash — arxitekturaviy eskiz",
+    "title": "Uch element ikki guruhga birlashishi mumkin",
     "explanation": [
-      "1. Chapdagi tartibsiz jadval xom qatorlarni, o‘ngdagi jadval esa guruhlangan va ajratilgan natijani ifodalaydi.",
-      "2. Sorting qatorlar ketma-ketligini, Grouping o‘xshash elementlarni tashkil qilishni, hisoblash esa son yoki yig‘indi natijasini boshqarishi mumkin.",
-      "3. Guruhlash natijasida alohida elementlar yo‘qolgandek ko‘rinsa, jadval qaysi darajada umumlashtirilganini tekshiring.",
-      "Darsdagi bajarish: Bir jadvalni avval tartibsiz, keyin grouping bilan ko‘rib farqini tushuntiring."
+      "W01 va W02 bir xil turdagi alohida oynalar, W03 esa boshqa tur. Uch model elementi ikki tur guruhiga ajratilgan.",
+      "T01 va T02 guruh yozuvlari elementlarning o‘z IDsi bilan bir narsa emas. Guruhlangan satrlar sonini haqiqiy element soni deb olmang.",
+      "Haqiqiy jadvalda ID bo‘yicha tartib, grouping mezoni va miqdor maydonini tekshiring. Ushbu misol qurilish smetasi yoki avtomatik hisob standarti emas."
     ],
     "exercise": "Sorting va Grouping natijasini solishtiring.",
     "solution": "Jadval tashkiloti ma’lumotni tez o‘qish va hisoblashga yordam beradi.",
     "block": 10,
     "recipe": "schedule",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Jadval ustunlari va ranglar o‘quv misoli; haqiqiy Schedule tarkibi loyiha vazifasiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M05_004",
     "asset": "l07_m05_004.svg",
-    "title": "Door, Window va Zone Schedules — arxitekturaviy eskiz",
+    "title": "Door, Window va Zone jadvali manbalari",
     "explanation": [
-      "1. Uch alohida jadval eshik, deraza va xona/Zone ma’lumotlari turli Schedule vazifalariga ega bo‘lishini ko‘rsatadi.",
-      "2. Har bir jadval uchun Criteria va Fields boshqa bo‘lishi mumkin; faqat hujjat maqsadiga kerakli ustunlarni tanlang.",
-      "3. Jadvaldagi qatorni modeldagi haqiqiy element bilan tekshirib, ID, o‘lcham yoki xona ma’lumoti izchil ekanini ko‘ring.",
-      "Darsdagi bajarish: Door, Window va Zone uchun qaysi ustunlar kerakligini alohida tanlang."
+      "D01 eshik, W01 oyna, Z01 xona Zone elementi alohida jadval vazifalariga manba bo‘ladi.",
+      "Eshik va oynada ID, tur va en foydali bo‘lishi mumkin; Zone uchun ID, nom va maydon tanlangan. Bo‘sh satrlar tushuncha shabloni.",
+      "Rasmdagi uch ustun to‘liq tayyor spetsifikatsiya emas. Dars amaliyotidagi talabga ko‘ra qo‘shimcha Fieldsni tanlang va kerakli ma’lumotni haqiqiy modeldan tekshiring."
     ],
     "exercise": "Uch turdagi schedule uchun kerakli fieldsni ajrating.",
     "solution": "Har Schedule o‘z element turi va hujjat maqsadiga mos tuziladi.",
     "block": 10,
     "recipe": "schedule",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Jadval ustunlari va ranglar o‘quv misoli; haqiqiy Schedule tarkibi loyiha vazifasiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M05_005",
     "asset": "l07_m05_005.svg",
-    "title": "Schedules professional audit — arxitekturaviy eskiz",
+    "title": "D01 yozuvini modeldagi eshik bilan solishtiring",
     "explanation": [
-      "1. Chapdagi model va o‘ngdagi jadval auditda ikki tomondan tekshiriladi: jadval modeldagi elementlarni to‘liq va to‘g‘ri ifodalashi kerak.",
-      "2. Noto‘g‘ri Criteria, yetishmayotgan Field, dublikat qator, noto‘g‘ri grouping yoki eski ma’lumotni alohida tekshiring.",
-      "3. Jadvalda noodatiy qiymat ko‘rsangiz, uni qo‘lda tuzatishdan oldin manba element parametrini tekshiring.",
-      "Darsdagi bajarish: Jadvaldagi bir noodatiy qatorni modeldagi manbasigacha kuzatib, sababini toping."
+      "Jadvaldagi D01 ayni IDli eshikka bog‘langan; EN katagi ataylab bo‘sh va audit savoli bilan ajratilgan.",
+      "Bo‘sh katakning sababi maydon tanlovi, manba parametri yoki kerakli qiymatning mavjudligi bilan bog‘liq bo‘lishi mumkin. Rasm tayyor o‘lcham bermaydi.",
+      "Modeldagi eshikni tanlab, darsdagi amaliy o‘lchamni tekshiring. Criteria va Fieldsni qayta ko‘rib, jadvalni yangilang va natijani solishtiring."
     ],
     "exercise": "Schedule mezoni, ustunlari va model mosligini audit qiling.",
     "solution": "Schedule auditi jadval bilan model ma’lumotlari orasidagi bog‘lanishni tasdiqlaydi.",
     "block": 11,
     "recipe": "schedule",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Jadval ustunlari va ranglar o‘quv misoli; haqiqiy Schedule tarkibi loyiha vazifasiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M06_001",
     "asset": "l07_m06_001.svg",
-    "title": "BIM Properties tushunchasi — arxitekturaviy eskiz",
+    "title": "Geometriya va bog‘langan Property ma’lumoti",
     "explanation": [
-      "1. Chapdagi model elementi geometriyani, o‘ngdagi ma’lumot kartochkasi esa shu elementga bog‘langan qo‘shimcha BIM ma’lumot qatlamini ifodalaydi.",
-      "2. Property element shaklining o‘zi emas. U element vazifasi, izohi, kodi yoki boshqa loyiha ma’lumotlarini tartibli saqlashga xizmat qiladi.",
-      "3. Chizmaga oddiy Text yozish bilan element Property’sini aralashtirmang; ma’lumot element bilan strukturaviy bog‘langan bo‘lishi kerak.",
-      "Darsdagi bajarish: Bitta element uchun geometriyadan tashqari foydali bo‘ladigan ma’lumotlarni ajrating."
+      "En va balandlik eshik geometriyasiga tegishli. Property kartochkasidagi vazifa va loyiha kodi qo‘shimcha loyiha ma’lumotini ifodalaydi.",
+      "Bog‘langan kartochka element bilan yuritiladigan ma’lumot g‘oyasini ko‘rsatadi. Alohida ODDIY TEXT yozuvi elementning strukturalangan Propertysi bo‘lib qolmaydi.",
+      "Haqiqiy modelda kerakli Propertyning elementda mavjudligini va qiymatini tekshiring; chizmada yozuv borligidan xulosa qilmang."
     ],
     "exercise": "Element geometriyasi va qo‘shimcha BIM ma’lumotini alohida ko‘rsating.",
     "solution": "Property elementga mazmunli BIM ma’lumot qatlamini qo‘shadi.",
     "block": 8,
     "recipe": "property",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Kartochkalar va qiymatlar o‘quv mantiqini ko‘rsatadi; haqiqiy Property sozlamalari loyiha va Archicad konfiguratsiyasiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M06_002",
     "asset": "l07_m06_002.svg",
-    "title": "Property yaratish va tuzilishi — arxitekturaviy eskiz",
+    "title": "Property nomi, turi va qiymati",
     "explanation": [
-      "1. Chapdagi kartochka Property nomi va maqsadini, o‘ngdagi bloklar esa qiymat turi va qo‘llanish mantiqini ifodalaydi.",
-      "2. Property yaratishdan oldin uning nima uchun kerakligi va qaysi elementlarda ishlatilishi aniq bo‘lsin.",
-      "3. Bir xil ma’lumotni turli formatlarda yozish keyingi Schedule va auditni buzadi. Naming va qiymat formati izchil bo‘lsin.",
-      "Darsdagi bajarish: Property nomi, maqsadi, qiymat turi va qaysi elementlarga tegishli ekanini yozing."
+      "Door Function — ma’lumot nomi, MATN — konseptual qiymat turi, KIRISH — element uchun kiritiladigan namunaviy qiymat.",
+      "KIRISH va ICHKI loyiha ichidagi kelishilgan yozuv misollari. Bu kartochkalar dastur menyusi yoki universal tayyor parametrlar to‘plami emas.",
+      "Property maqsadi, qo‘llanadigan elementlari va qiymat formatini oldindan belgilang. Haqiqiy Property Managerda mavjud tur va sozlamani tekshiring."
     ],
     "exercise": "Bitta Property konsepsiyasini maqsad va qiymat turi bilan tuzing.",
     "solution": "To‘g‘ri Property maqsad, nom, qiymat turi va qo‘llanish doirasiga ega bo‘ladi.",
     "block": 9,
     "recipe": "property",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Kartochkalar va qiymatlar o‘quv mantiqini ko‘rsatadi; haqiqiy Property sozlamalari loyiha va Archicad konfiguratsiyasiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
     "source_url": null
   },
   {
