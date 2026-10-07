@@ -2722,127 +2722,120 @@
   {
     "code": "L06_M10_001",
     "asset": "l06_m10_001.svg",
-    "title": "Zone tushunchasi — arxitekturaviy eskiz",
+    "title": "Xona devori va Zone chegarasi",
     "explanation": [
-      "1. Devorlar xona geometriyasini beradi; yumshoq rangli maydon esa shu makonga bog‘langan Zone’ni ajratadi.",
-      "2. Bir xona ichidagi mebel va ochilishlar Zone’ning o‘zi emas. Zone xona haqida nom, raqam, maydon va boshqa BIM ma’lumotlarni saqlaydigan alohida element.",
-      "3. Plandagi rang faqat tushuntirish uchun. Haqiqiy Zone’ni Archicad element sifatida tanlang va uning parametrlarini Settings oynasidan tekshiring.",
-      "Darsdagi bajarish: Xona geometriyasi bilan Zone ma’lumotini bir-biridan ajrating."
+      "Devor chiziqlari makonni o‘raydi; yashil maydon va uzlukli kontur esa xona ichidagi Zone chegarasini ajratadi. Mebel Zone elementi emas.",
+      "Z01 va MEHMONXONA yozuvi shu makonning identifikatori va nomini ko‘rsatadi. Zone geometriya bilan birga xona ma’lumotini yuritadi.",
+      "Archicadda shu xonani tanlab, Zone konturi va parametrlarini mavjud haqiqiy Settings skrinshoti bilan solishtiring."
     ],
     "exercise": "Zone va xona devorlarini planda alohida ko‘rsating.",
     "solution": "Zone xona ma’lumotini tashkil qiladi; devor geometriyasining o‘rnini bosa olmaydi.",
     "block": 7,
     "recipe": "zone",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Rang va shakllar o‘quv maqsadida; aniq maydon yoki normativ qiymat sifatida olinmaydi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
     "source_url": null
   },
   {
     "code": "L06_M10_002",
     "asset": "l06_m10_002.svg",
-    "title": "Zone chegarasi va maydon — arxitekturaviy eskiz",
+    "title": "Chegara o‘zgarsa, maydon ham o‘zgaradi",
     "explanation": [
-      "1. Chap va o‘ng planda bitta devor joyi o‘zgargan. Shu bilan yashil Zone’ning chegarasi va egallagan maydoni ham o‘zgaradi.",
-      "2. Zone maydoni eski yozuvga emas, amaldagi aniqlangan chegaraga bog‘liq. Devor, ustun yoki ochiq chegara o‘zgarsa natijani qayta tekshiring.",
-      "3. Avtomatik yoki qo‘lda berilgan konturdan qat’i nazar, yakuniy Zone xona geometriyasini to‘g‘ri qamrab olayotganini tekshirish kerak.",
-      "Darsdagi bajarish: Bir devorni siljiting va Zone chegarasi qanday javob berishini kuzating."
+      "Chapdagi o‘quv shartida ichki o‘lcham 4 × 3 m: maydon 12 m². Hisob devorning tashqi konturi bo‘yicha olinmaydi.",
+      "O‘ngdagi qo‘shimcha misolda bitta devor 0,5 m ichkariga siljigan: 3,5 × 3 = 10,5 m². Eski Zone yozuvini yangi chegara bilan qayta tekshiring.",
+      "Eskiz masshtabli ishchi chizma emas. Hisobni rasmning ekrandagi eni yoki balandligidan emas, yozilgan o‘lchamdan bajaring; modelda Zone maydonini qayta tekshiring."
     ],
     "exercise": "4 × 3 = 12 m² hisobini Zone chegarasi bilan solishtiring.",
     "solution": "Maydon natijasi tanlangan chegara va hisob shartlariga bog‘liq.",
     "block": 9,
     "recipe": "zone",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Rang va shakllar o‘quv maqsadida; aniq maydon yoki normativ qiymat sifatida olinmaydi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
     "source_url": null
   },
   {
     "code": "L06_M10_003",
     "asset": "l06_m10_003.svg",
-    "title": "Zone Stamp va xona ma’lumotlari — arxitekturaviy eskiz",
+    "title": "Xona raqami, nomi va vazifa maydoni",
     "explanation": [
-      "1. Har bir rangli xona ichidagi oq kartochka Zone Stamp g‘oyasini ifodalaydi: bir element haqidagi ma’lumot plan ichida o‘qiladigan joyda ko‘rsatiladi.",
-      "2. Stampda xona nomi, raqami, maydon yoki kerakli boshqa parametrlar chiqishi mumkin. Qaysi ma’lumot kerakligi loyiha hujjatiga bog‘liq.",
-      "3. Stamp devor va mebelni bosib ketmasin, boshqa annotation bilan to‘qnashmasin va uzoqroq zoomda ham tartibli ko‘rinsin.",
-      "Darsdagi bajarish: Bir nechta xonaning Stamplarini bir xil grafik tartibda joylashtiring."
+      "Uch xonada Z01, Z02 va Z03 identifikatorlari bor. Har bir oq yozuv kartochkasi tegishli xonaning bo‘sh joyiga qo‘yilgan.",
+      "Kattalashtirilgan Z01 namunasi raqam, nom va vazifa maydonini ajratadi. XONA VAZIFASI — to‘ldiriladigan maydon o‘rni; haqiqiy modelda undan foydalanish vazifasini yozing.",
+      "Stamp joyi xona chegarasini o‘zgartirmaydi. Modeldagi nom/raqamni plan yozuvi bilan solishtiring va annotationni mebel yoki eshik yoyiga ustma-ust qo‘ymang."
     ],
     "exercise": "Zone nomi, raqami va vazifasini stampda tekshiring.",
     "solution": "Xona identifikatsiyasi nom, raqam va vazifa orqali izchil yuritiladi.",
     "block": 8,
     "recipe": "zone",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Rang va shakllar o‘quv maqsadida; aniq maydon yoki normativ qiymat sifatida olinmaydi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
     "source_url": null
   },
   {
     "code": "L06_M10_004",
     "asset": "l06_m10_004.svg",
-    "title": "Funksional zonalar va loyiha tahlili — arxitekturaviy eskiz",
+    "title": "Umumiy, shaxsiy va xizmat zonalari",
     "explanation": [
-      "1. Issiq rangli maydonlar umumiy foydalanish, ko‘k maydonlar tinch/private, yashil maydonlar service funksiyalarini ko‘rsatadigan o‘quv guruhlashidir.",
-      "2. Maqsad rang berish emas: Zone ma’lumotlari yordamida qaysi funksional guruh qancha joy egallashi va ular qanday bog‘langanini ko‘rish.",
-      "3. Koridor, public, private va service maydonlar nisbatini tahlil qiling. Zone hisobining o‘zi yaxshi reja borligini isbotlamaydi.",
-      "Darsdagi bajarish: Xonalarni funksiyasi bo‘yicha guruhlab, maydon balansini solishtiring."
+      "Sariq — mehmonxona va umumiy foydalanish, ko‘k — yotoqxonalar, yashil — oshxona va yordamchi xizmat maydoni. Legenda ranglarning ma’nosini beradi.",
+      "Kirishdan umumiy xonaga yo‘l yotoqxonadan o‘tmaydi; neytral yo‘lak oilaning shaxsiy xonalarini alohida bog‘laydi.",
+      "Bu plan parchasi funksional guruhlashni o‘rgatadi, to‘liq loyiha emas. Zone guruhlarini foydalanuvchi ssenariysi va modeldagi xona ma’lumotlari bilan tekshiring."
     ],
     "exercise": "Living va xizmat zonalarini ajratib, funksional guruhlashni ko‘rsating.",
     "solution": "Zone ma’lumotlari reja tahlili va xonalar jadvali uchun ishlatiladi.",
     "block": 9,
     "recipe": "zone",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Rang va shakllar o‘quv maqsadida; aniq maydon yoki normativ qiymat sifatida olinmaydi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
     "source_url": null
   },
   {
     "code": "L06_M10_005",
     "asset": "l06_m10_005.svg",
-    "title": "Zones professional audit — arxitekturaviy eskiz",
+    "title": "Zone auditi: plan va jadvaldagi farqni toping",
     "explanation": [
-      "1. Chapdagi plan Zone chegarasi va Stamplarni, o‘ngdagi jadval esa shu xonalar ma’lumotini boshqa ko‘rinishda tekshirish g‘oyasini ko‘rsatadi.",
-      "2. Auditda yetishmayotgan Zone, takror raqam, noto‘g‘ri chegara, noodatiy maydon va o‘qilmaydigan Stamp kabi xatolar alohida topiladi.",
-      "3. Plan chiroyli ko‘rinsa ham ma’lumot noto‘g‘ri bo‘lishi mumkin. Geometriya, Stamp va jadvalni bir xil xona identifikatori bo‘yicha solishtiring.",
-      "Darsdagi bajarish: Bitta Zone’ni plandan jadvalgacha kuzatib, ma’lumotlar mosligini tekshiring."
+      "Plandagi Z01 uchun yozilgan ichki o‘lcham 4 × 3 m; hisob 12 m². Xona stampida ham 12 m² turibdi.",
+      "Jadvaldagi ayni Z01 satrida 15 m² ataylab xato yozilgan va qizil bilan ajratilgan. Bir xil identifikator bo‘yicha plan, stamp va jadvalni solishtiring.",
+      "To‘g‘ri xulosa — eski yoki qo‘lda yozilgan satrni ko‘r-ko‘rona qabul qilish emas. Modeldagi joriy chegara, hisob qoidasi va jadval manbasini qayta tekshirib xatoni tuzating."
     ],
     "exercise": "Zone konturi, maydon, stamp va jadvalni solishtiring.",
     "solution": "Zone auditi geometrik chegara bilan hujjat ma’lumotining mosligini tekshiradi.",
     "block": 11,
     "recipe": "zone",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Rang va shakllar o‘quv maqsadida; aniq maydon yoki normativ qiymat sifatida olinmaydi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
     "source_url": null
   },
   {
     "code": "L07_M01_001",
     "asset": "l07_m01_001.svg",
-    "title": "Favorites tushunchasi — arxitekturaviy eskiz",
+    "title": "Saqlangan sozlama yangi elementda qayta qo‘llanadi",
     "explanation": [
-      "1. Chapdagi tekshirilgan element sozlamasi saqlangan konfiguratsiya sifatida ajratilgan; o‘ngda shu baza bir nechta yangi elementga qo‘llanadi.",
-      "2. Favorite chizilgan elementning nusxasi emas. U qayta ishlatiladigan structure, layer, material va boshqa parametrlar to‘plamidir.",
-      "3. Bir xil bazani qayta qo‘llash takroriy sozlashni kamaytiradi, lekin har yangi elementning loyiha konteksti baribir tekshiriladi.",
-      "Darsdagi bajarish: Bir elementda takror ishlatiladigan parametrlarni ajrating va Favorite mantig‘ini yozing."
+      "Chapdagi devor namunasi tuzilma, qalinlik va boshqa bazaviy parametrlarni ajratadi; markazdagi kartochka saqlangan Favorite g‘oyasini ko‘rsatadi.",
+      "O‘ngdagi devorlar bir bazadan foydalanishi mumkin, lekin ularning uzunligi va joylashuvi alohida. Favorite butun xona yoki barcha ochilishlarning tayyor nusxasi emas.",
+      "Eskizdagi eshik alohida elementni ifodalaydi. Yangi devorda bazaviy sozlamalar va joyga xos geometriyani haqiqiy modelda tekshiring."
     ],
     "exercise": "Takror ishlatiladigan parametrlarni sanang.",
     "solution": "Favorite element sozlamalarini qayta qo‘llashni tartiblaydi.",
     "block": 8,
     "recipe": "favorite",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Belgilar workflow mantig‘ini ko‘rsatadi; aniq loyiha standarti yoki universal naming sifatida olinmaydi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
     "source_url": null
   },
   {
     "code": "L07_M01_002",
     "asset": "l07_m01_002.svg",
-    "title": "Favorite yaratish va qo‘llash — arxitekturaviy eskiz",
+    "title": "Tekshirish, saqlash va qo‘llash ketma-ketligi",
     "explanation": [
-      "1. Avval chapdagi namuna elementning tuzilma va materiallari tekshiriladi. Xato elementni Favorite qilish xatoni tez ko‘paytiradi.",
-      "2. Markazdagi kartochka saqlangan sozlama g‘oyasini ko‘rsatadi. Favorite nomi vazifani tushuntiradigan va keyin topish oson bo‘ladigan bo‘lsin.",
-      "3. O‘ngda bir nechta yangi element bir xil bazadan yaratilgan. Qo‘llagandan keyin yo‘nalish, geometriya va joyga xos parametrlar alohida audit qilinadi.",
-      "Darsdagi bajarish: Tekshirilgan elementdan Favorite yarating, so‘ng uni yangi elementda sinang."
+      "Avval chapdagi namuna elementning sozlamasi tekshiriladi. Noto‘g‘ri elementni saqlash xatoni keyingi elementlarga ko‘paytiradi.",
+      "Markazda tekshirilgan parametrlar Favorite sifatida saqlanadi. O‘ngda shu baza yangi devorlarga qo‘llanib, kesim namunasi bilan solishtiriladi.",
+      "Bu tushuncha eskizi; Favorite tugmalari va panel amallari uchun darsdagi haqiqiy Archicad skrinshotidan foydalaning."
     ],
     "exercise": "O‘quv devor sozlamasini saqlab, yangi devorga qo‘llang.",
     "solution": "Natija yangi elementning parametrlarini tekshirish bilan tasdiqlanadi.",
     "block": 8,
     "recipe": "favorite",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Belgilar workflow mantig‘ini ko‘rsatadi; aniq loyiha standarti yoki universal naming sifatida olinmaydi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
     "source_url": null
   },
   {
@@ -2866,73 +2859,69 @@
   {
     "code": "L07_M01_004",
     "asset": "l07_m01_004.svg",
-    "title": "Favorites va standartlashtirish — arxitekturaviy eskiz",
+    "title": "Bir xil vazifadagi elementlarning bazasini tekshiring",
     "explanation": [
-      "1. Bir qatordagi elementlar bir xil bazaviy Favorite’dan chiqqanini tasavvur qiling: ularning structure, layer va material mantig‘i izchil qoladi.",
-      "2. Standartlashtirish elementlarning hammasini geometrik jihatdan bir xil qilish degani emas. Favorite boshlang‘ich parametrlarni izchil qiladi.",
-      "3. Jamoa bitta tushunarli standartdan foydalansa, qo‘lda qayta sozlashdan keladigan tasodifiy farqlar kamayadi; audit esa baribir saqlanadi.",
-      "Darsdagi bajarish: Bir xil vazifadagi elementlarni bazaviy parametrlar bo‘yicha solishtiring."
+      "Chapda bir xil vazifadagi tashqi devorlar sozlamasi alohida tekshiruvga ajratilgan. Qizil belgi — audit nuqtasi; o‘zi konstruktiv xato tasdig‘i emas.",
+      "O‘ngda tekshirilgan Favorite bazasi bilan tuzilma va qatlamlar izchil yuritiladi. Bir vazifa uchun tasodifiy parametr farqi qolmasligi tekshiriladi.",
+      "Barcha loyiha devorlari bir xil bo‘lishi shart emas. Aynan bir xil vazifadagi elementlarni taqqoslang, yo‘nalish va joyga xos talablarni alohida tekshiring."
     ],
     "exercise": "Ikki foydalanuvchi tanlay oladigan standart parametr jadvali tuzing.",
     "solution": "Standartlashtirish sozlama va qo‘llash shartini tushunarli qiladi.",
     "block": 8,
     "recipe": "favorite",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Belgilar workflow mantig‘ini ko‘rsatadi; aniq loyiha standarti yoki universal naming sifatida olinmaydi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
     "source_url": null
   },
   {
     "code": "L07_M01_005",
     "asset": "l07_m01_005.svg",
-    "title": "Favorites professional audit — arxitekturaviy eskiz",
+    "title": "Favorite auditi va avval yaratilgan elementlar",
     "explanation": [
-      "1. Chapdagi chalkash kartochkalar dublikat, vaqtinchalik va noaniq Favorite’lar ko‘payib ketgan holatni ifodalaydi.",
-      "2. Auditda nom, element turi, Layer, material/structure, dublikat va eski variantlar tekshiriladi. Keraksiz nusxalar standartni yashirib yubormasin.",
-      "3. O‘ngdagi tartibli ro‘yxat auditdan keyingi holat: kamroq, aniq farqlanadigan va jamoa tushunadigan Favorite’lar.",
-      "Darsdagi bajarish: Dublikatlarni toping, standart variantlarni ajrating va qo‘llangan elementlarda natijani qayta tekshiring."
+      "A va B namunalarining bazaviy kesimi bir-biriga mos; Cda boshqa qatlam ajratilib, tekshiruv savoli qo‘yilgan. Har elementni saqlangan baza bilan solishtiring.",
+      "Pastdagi yangi sozlama kartochkasi avval yaratilgan A/B/C elementlari bilan uzilgan strelka orqali ajratilgan. Favorite yangilansa, eski elementlar avtomatik yangilandi deb taxmin qilmang.",
+      "Modelda yaratilgan uch elementning haqiqiy parametrlarini qayta oching; aniqlangan farqning sababini va kerakli tuzatishni qayd qiling."
     ],
     "exercise": "Favorite bilan yaratilgan uch elementni solishtiring.",
     "solution": "Favorite auditi saqlangan va qo‘llangan parametrlar mosligini tekshiradi.",
     "block": 10,
     "recipe": "favorite",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Belgilar workflow mantig‘ini ko‘rsatadi; aniq loyiha standarti yoki universal naming sifatida olinmaydi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
     "source_url": null
   },
   {
     "code": "L07_M02_001",
     "asset": "l07_m02_001.svg",
-    "title": "Graphic Overrides tushunchasi — arxitekturaviy eskiz",
+    "title": "Bir modelning oddiy va tahliliy ko‘rinishi",
     "explanation": [
-      "1. Chapdagi oddiy plan modelning asosiy geometriyasini, o‘ngdagi rangli plan esa ayni modelga qo‘llangan grafik override natijasini ifodalaydi.",
-      "2. Graphic Override element geometriyasini o‘zgartirmaydi; u mezonga mos elementlarning ko‘rinishini vaqtincha boshqacha ko‘rsatadi.",
-      "3. Rang va chiziq o‘quv misoli. Haqiqiy loyiha uchun qaysi mezon va grafik usul foydali ekanini vazifaga qarab belgilang.",
-      "Darsdagi bajarish: Model bilan uning tahliliy grafik ko‘rinishini alohida tushuntiring."
+      "Ikkala planda xonalar, ochilishlar va mebel joylashuvi bir xil. O‘ngda tashqi devorlar grafik jihatdan ajratilgan.",
+      "Rangli ko‘rinish materialni yoki devor geometriyasini almashtirish degani emas. Bu o‘quv misolida ayni modelni tekshirish uchun grafik farq berilgan.",
+      "Mavjud haqiqiy Graphic Override skrinshoti bilan qoida va ko‘rinishni solishtiring; model parametrini keraksiz o‘zgartirmang."
     ],
     "exercise": "Oddiy ko‘rinish va override qo‘llangan ko‘rinishni solishtiring.",
     "solution": "Graphic Override modelni emas, uning ko‘rinishini tahlil uchun o‘zgartiradi.",
     "block": 8,
     "recipe": "overrides",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ranglar tahlil mantiqini ko‘rsatadi; loyiha standarti yoki normativ rang kodi sifatida olinmaydi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
     "source_url": null
   },
   {
     "code": "L07_M02_002",
     "asset": "l07_m02_002.svg",
-    "title": "Graphic Override Rules — arxitekturaviy eskiz",
+    "title": "Tanlash mezoni va grafik natijani ajrating",
     "explanation": [
-      "1. Chapdagi ketma-ket bloklar rule mantig‘ini ko‘rsatadi: avval mezon tanlanadi, keyin unga mos elementga grafik usul beriladi.",
-      "2. O‘ngdagi plan faqat tanlangan mezonga mos elementlar ajratilganini ko‘rsatadi. Boshqa elementlar o‘z holicha qolishi mumkin.",
-      "3. Rule juda keng yozilsa keraksiz elementlar ham bo‘yaladi; juda tor yozilsa kerakli elementlar qolib ketadi. Natijani modelda tekshiring.",
-      "Darsdagi bajarish: Bitta aniq mezon tuzing va qaysi elementlar ushlanayotganini tekshiring."
+      "Chapdagi kontur tekshiriladigan tashqi devor guruhini ko‘rsatadi. Ichki bo‘luvchi devorlar bu mezonga kiritilmagan.",
+      "O‘ngda ayni guruh qizil grafikada ajratilgan; plan tuzilishi o‘zgarmagan. Mezon — qaysi element, natija — u qanday ko‘rinadi.",
+      "Haqiqiy modelda qoidaga ortiqcha element tushmaganini va kerakli element chetda qolmaganini tekshiring. Ranglar ushbu mashqning o‘quv legendasidir."
     ],
     "exercise": "Bir mezon va uning grafik natijasini yozing.",
     "solution": "Rule mezon bilan grafik natijani bog‘laydi.",
     "block": 9,
     "recipe": "overrides",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy eskiz. Ranglar tahlil mantiqini ko‘rsatadi; loyiha standarti yoki normativ rang kodi sifatida olinmaydi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "O‘quv eskizi, masshtabli ishchi chizma emas. Hisobni yozilgan mashq shartidan bajaring. Tasvir dastur interfeysi yoki tayyor konstruktiv/normativ yechim o‘rnini bosa olmaydi.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va mavzu bo‘yicha tekshirilgan izohli arxitektura eskizi",
     "source_url": null
   },
   {
