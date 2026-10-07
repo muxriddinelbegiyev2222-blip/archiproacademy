@@ -22,5 +22,6 @@ Static repository checks on the current visual-review branch confirmed:
 - Zero metadata entries pointing to missing visual asset files.
 - 680 rows and 680 unique lesson codes in VISUAL_LESSON_COVERAGE.csv, with the same lesson-code set as REALISTIC_LESSON_COVERAGE.csv.
 - 380 architectural-sketch coverage rows resolve to 380 unique asset blobs; zero duplicate-sketch groups remain after the topic-specific redraw pass.
+- Asset mapping is consistent: all 380 architectural-sketch coverage rows point to the same asset recorded in both VISUAL_LESSON_COVERAGE.csv and lesson_figures.json.
 
 This is a static inventory/consistency audit. It does not replace a fresh Windows executable build, a fresh full PySide6 UI regression run, or deferred SHNQ/normative verification.
