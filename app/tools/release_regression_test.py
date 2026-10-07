@@ -193,6 +193,10 @@ class ReleaseRegression(unittest.TestCase):
         for asset in {s['asset'] for specs in CATALOG.values() for s in specs}:
             with self.subTest(asset=asset):
                 self.assertFalse(load_figure(asset).isNull())
+        for code, specs in CATALOG.items():
+            with self.subTest(sketch_coverage=code):
+                self.assertTrue(any(spec['asset'].lower().endswith('.svg') for spec in specs),
+                                code + ' must keep at least one topic sketch')
 
     def test_extended_visuals_match_each_worked_lesson(self):
         import json
@@ -230,7 +234,8 @@ class ReleaseRegression(unittest.TestCase):
             self.assertTrue(row['source_image_url'].startswith('https://help.graphisoft.com/AC/28/INT/'))
             self.assertIn('Graphisoft', row['credit'])
             self.assertIn(row['code'], CATALOG)
-        for manifest in ('archicad_figures.json', 'realistic_figures.json'):
+        for manifest in ('archicad_figures.json', 'realistic_figures.json',
+                         'supplemental_sketches.json'):
             for row in json.loads((ASSETS / manifest).read_text(encoding='utf-8')):
                 with self.subTest(manifest=manifest, lesson=row['code'], asset=row['asset']):
                     module, number = row['code'].rsplit('_', 1)

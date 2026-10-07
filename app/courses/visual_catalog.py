@@ -201,14 +201,26 @@ try:
         reviewed[code] = entry
     # Validate the complete manifest before replacing any mapping.
     for code, entry in reviewed.items():
-        documented = [spec for spec in CATALOG[code]
-                      if (spec.get('source_url') or '').startswith('https://help.graphisoft.com/')]
-        CATALOG[code] = documented
+        preserved = [spec for spec in CATALOG[code]
+                     if spec['asset'].lower().endswith('.svg')
+                     or (spec.get('source_url') or '').startswith('https://help.graphisoft.com/')]
+        CATALOG[code] = preserved
         add(code, **entry)
 except Exception as exc:
     _LOAD_ERRORS.append('realistic_figures.json: ' + str(exc))
     logging.error('Realistic lesson manifest unavailable: %s', _LOAD_ERRORS[-1])
 
+
+
+# Every lesson keeps at least one lightweight topic sketch. Rendered material
+# studies and official Archicad screenshots remain as supplemental visuals.
+try:
+    supplemental_records = json.loads((ASSETS / 'supplemental_sketches.json').read_text(encoding='utf-8'))
+    for entry in supplemental_records:
+        add(**entry)
+except Exception as exc:
+    _LOAD_ERRORS.append('supplemental_sketches.json: ' + str(exc))
+    logging.error('Supplemental sketch manifest unavailable: %s', _LOAD_ERRORS[-1])
 
 def asset_path(filename):
     """Catalog paths stay beneath the packaged figures directory."""
