@@ -1,10 +1,14 @@
 # Davom etayotgan eskiz sifati yangilanishi — 2026-10-07
 
-31 zarur darsning eski sxemalari yangi, ko‘rib chiqilgan izohli arxitektura eskizlariga almashtirildi: L06_M10_001–005, L07_M01_001/002/004/005, L07_M02_001–005, L07_M03_001–005, L07_M04_001–005, L07_M05_001–005 va L07_M06_001/002. L07_M01_003 rasm kerak bo‘lmagan dars sifatida o‘tkazildi. Haqiqiy Graphisoft skrinshotlari saqlanadi.
+51 zarur darsning eski sxemalari yangi, ko‘rib chiqilgan izohli arxitektura eskizlariga almashtirildi. Oxirgi 20 talik: L07_M06_003–005, L07_M07_001–005, L07_M08_001–005, L07_M09_003–005, L08_M01_001/002/004/005. Avvalgi 31 dars saqlangan.
 
-282 zarur eski eskiz darsidan ushbu 31 dars va avvalgi L15_M08_003 yangilangan: 250 zarur eskiz dars hali ushbu sifat qayta ko‘rigidan o‘tmagan. Materialli tasvirlar va haqiqiy skrinshotlar bu hisobdan alohida; umumiy sifat ishi tugallangan deb belgilanmadi.
+282 zarur eski eskiz darsidan ushbu 51 dars va avvalgi L15_M08_003 yangilangan: **230 zarur eskiz dars** hali ushbu sifat qayta ko‘rigidan o‘tmagan. Keyingi navbat L08_M02_001 dan boshlanadi; A toifasi va avvalgi yangilanishlar reyestri bilan tekshirib tanlanadi. Materialli tasvirlar va haqiqiy skrinshotlar bu hisobdan alohida; umumiy ish tugallanmadi.
 
-[Promptlar, tasvirlar va tekshiruv qaydi](VISUAL_QUALITY_REWORK_2026_10_07.json). Rasmlar asl 1536×1024 piksel o‘lchamida joylandi. Oldingi 11 rasm uchun Windows auditi, to‘liq regressiya va haqiqiy EXE tekshiruvi muvaffaqiyatli yakunlandi (run 37573365600). Keyingi rasmlar joriy commit tekshiruviga kiradi.
+L07_M09_001, L07_M09_002 va L08_M01_003 rasm majburiy bo‘lmagan darslar sifatida yangi rasm navbatidan o‘tkazildi. Mavjud dars, mashq, test va amaliy bloklar saqlanadi.
+
+[Oxirgi 20 talikning promptlari, tasvirlari va tekshiruv qaydi](VISUAL_BATCH_20_2026_10_07.json). Rasmlar 1536×1024 o‘lchamida, avvalgi yangilanishlardagi JPEG quality 96 va 4:4:4 formatida SVG ichiga joylandi. 20 tasvirning o‘qilishi, SVG tuzilishi va dars bog‘lanishi lokal tekshirildi. Windows auditi va EXE tekshiruvi ushbu commit GitHub’ga saqlangach bajariladi.
+
+Oldingi `1b9936e` commit uchun ARCHIPRO CI muvaffaqiyatli: run 37576003815. [Avvalgi yangilanishlar qaydi](VISUAL_QUALITY_REWORK_2026_10_07.json).
 
 ---
  Rasm zarurligi bo‘yicha yangi qaror — 2026-10-07
@@ -179,3 +183,4 @@ L10_M11: Project album structure, plans/facades/sections, genplan/auxiliary draw
 - VISUAL_LESSON_COVERAGE.csv also contains 680 unique lesson codes and matches the same lesson-code set.
 - 380 architectural-sketch lessons now reference 380 unique asset blobs; the duplicate-sketch audit reports zero duplicate groups.
 - SHNQ verification remains a separate later task unless explicitly completed elsewhere; this final count is the topic-specific visual review count.
+

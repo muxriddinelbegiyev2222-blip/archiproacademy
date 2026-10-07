@@ -3267,235 +3267,222 @@
   {
     "code": "L07_M06_003",
     "asset": "l07_m06_003.svg",
-    "title": "Element ma’lumotlarini standartlashtirish — arxitekturaviy eskiz",
+    "title": "Bir ma’no uchun yagona yozuv",
     "explanation": [
-      "1. Uch bir xil element ostidagi bir xil ma’lumot kartochkalari Property qiymatlarini izchil yuritish g‘oyasini ko‘rsatadi.",
-      "2. Property mavjud bo‘lishining o‘zi yetarli emas; qiymatlar to‘liq, bir xil formatda va element vazifasiga mos bo‘lishi kerak.",
-      "3. Copy-Paste qilingan elementlarda eski qiymat qolib ketishi mumkin. Shu sabab takror elementlarni ma’lumot bo‘yicha ham audit qiling.",
-      "Darsdagi bajarish: Bir xil turdagi elementlarda bitta Property qiymatini ketma-ket solishtiring."
+      "Uch eshikda bir xil vazifa KIRISH, Kirish va kirish shaklida yozilgan. Farq geometriyada emas, matn formatida.",
+      "Jamoa kelishgan yagona yozuv qoidasini qo‘llang. Pastdagi KIRISH kartasi shu misoldagi standart qiymatdir.",
+      "Bir xil turdagi elementlar va ko‘chirilgan nusxalarda qiymatni qayta tekshiring; bu qoida dastur tomonidan avtomatik bajariladi degani emas."
     ],
     "exercise": "Bir xil turdagi elementlarda Property qiymatlarini audit qiling.",
     "solution": "Standartlashtirish BIM ma’lumotini izchil va tekshiriladigan holatda saqlaydi.",
     "block": 9,
     "recipe": "property",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Kartochkalar va qiymatlar o‘quv mantiqini ko‘rsatadi; haqiqiy Property sozlamalari loyiha va Archicad konfiguratsiyasiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy dastur interfeysi, o‘lchamli ishchi chizma yoki tasdiqlangan konstruktiv yechim emas. Natijani darsdagi amaliyot va loyiha ma’lumotlari bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M06_004",
     "asset": "l07_m06_004.svg",
-    "title": "Properties va Schedules — arxitekturaviy eskiz",
+    "title": "Jadvaldagi bo‘sh qiymatni manbadan tekshiring",
     "explanation": [
-      "1. Chapdagi element, markazdagi Property kartochkasi va o‘ngdagi jadval Model → Property → Schedule zanjirini ko‘rsatadi.",
-      "2. Property Schedule Field sifatida ko‘rsatilganda bir nechta element ma’lumotini bitta jadvalda tez tekshirish mumkin.",
-      "3. Schedule’dagi bo‘sh yoki noodatiy katak manba elementdagi Property muammosini ko‘rsatishi mumkin. Jadvalni qo‘lda yamashdan oldin modelni tekshiring.",
-      "Darsdagi bajarish: Bitta Property’ni elementdan Schedule ustunigacha kuzating."
+      "D01 eshigining vazifasi KIRISH deb ko‘rsatilgan; D02 eshigida esa qiymat aniqlashtirilishi kerak.",
+      "Chiziqlar har bir eshikni jadvaldagi o‘z ID qatoriga bog‘laydi. D02 yonidagi bo‘sh katak audit nuqtasidir.",
+      "Haqiqiy modelda Property mavjudligi, qiymati va jadval maydonini tekshiring. Qog‘oz jadval tushuncha misoli, dastur oynasi emas."
     ],
     "exercise": "Property qiymatini Schedule orqali tekshiring.",
     "solution": "Properties Schedule va audit workflowida model ma’lumotini foydali qiladi.",
     "block": 9,
     "recipe": "property",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Kartochkalar va qiymatlar o‘quv mantiqini ko‘rsatadi; haqiqiy Property sozlamalari loyiha va Archicad konfiguratsiyasiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy dastur interfeysi, o‘lchamli ishchi chizma yoki tasdiqlangan konstruktiv yechim emas. Natijani darsdagi amaliyot va loyiha ma’lumotlari bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M06_005",
     "asset": "l07_m06_005.svg",
-    "title": "Properties professional audit — arxitekturaviy eskiz",
+    "title": "Xususiyat nomi, turi va qiymatini tekshiring",
     "explanation": [
-      "1. Chapdagi audit kartochkasi, markazdagi model elementi va o‘ngdagi ma’lumot kartochkasi Property auditining bir nechta bosqichini ifodalaydi.",
-      "2. Auditda maqsad, naming, qiymat turi, elementlarga qo‘llanish, bo‘sh yoki noto‘g‘ri qiymatlar va Schedule natijasi tekshiriladi.",
-      "3. Ko‘p Property bo‘lishi sifat belgisi emas. Keraksiz, takror yoki vazifasi noma’lum Properties tizimni murakkablashtiradi.",
-      "Darsdagi bajarish: Maqsad → Property → Element → Qiymat → Schedule zanjirini tekshiring."
+      "D01 — eshik identifikatori; VAZIFA — xususiyat nomi; MATN — qiymat turi; KIRISH — ushbu element uchun qiymat.",
+      "TASNIFGA MOSMI? savoli xususiyat ushbu tasnifdagi elementga qo‘llanishini tekshirishni bildiradi.",
+      "Xususiyat nomini element nomi bilan aralashtirmang. Yakunda qiymatni jadvalga chiqarib, bo‘sh va nomuvofiq yozuvlarni solishtiring."
     ],
     "exercise": "Property tizimini model va Schedule bilan birga audit qiling.",
     "solution": "Professional audit ma’lumotning maqsadi, to‘liqligi va izchilligini tekshiradi.",
     "block": 11,
     "recipe": "property",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Kartochkalar va qiymatlar o‘quv mantiqini ko‘rsatadi; haqiqiy Property sozlamalari loyiha va Archicad konfiguratsiyasiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy dastur interfeysi, o‘lchamli ishchi chizma yoki tasdiqlangan konstruktiv yechim emas. Natijani darsdagi amaliyot va loyiha ma’lumotlari bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M07_001",
     "asset": "l07_m07_001.svg",
-    "title": "BIM Classification tushunchasi — arxitekturaviy eskiz",
+    "title": "Element shakli va BIM ma’nosi",
     "explanation": [
-      "1. Chapdagi turli model elementlari o‘ngdagi tarmoqlangan guruhlarga ajratilgan; bu Classification elementlarni BIM ma’nosi bo‘yicha tartiblash g‘oyasini ko‘rsatadi.",
-      "2. Classification oddiy nom yoki rang emas. U elementning tizimdagi ma’nosi va vazifasini strukturaviy ma’lumot sifatida bildiradi.",
-      "3. Geometriya to‘g‘ri bo‘lsa ham noto‘g‘ri Classification keyingi Properties, Schedules va audit natijasini buzishi mumkin.",
-      "Darsdagi bajarish: Bir nechta elementni ularning BIM ma’nosi bo‘yicha guruhlarga ajrating."
+      "G‘isht devor, eshik va deraza alohida vazifali elementlar sifatida ko‘rsatilgan. Pastdagi yozuvlar ularning tushunarli tasnif misollaridir.",
+      "Tasnif elementning BIM tizimidagi ma’nosini bildiradi; oddiy rang yoki tasvir ostidagi yozuvning o‘zi haqiqiy model tasnifi emas.",
+      "Modelda tanlangan tasnif tizimi va uning versiyasiga mos qiymatni tekshiring. Rasmda tizimning rasmiy kodlari berilmagan."
     ],
     "exercise": "Model elementlarini BIM ma’nosi bo‘yicha guruhlang.",
     "solution": "Classification model elementlarini vazifa va ma’no bo‘yicha tartiblaydi.",
     "block": 8,
     "recipe": "classification",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Guruh va kartochkalar o‘quv mantiqini ko‘rsatadi; haqiqiy Classification tizimi loyiha standartiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy dastur interfeysi, o‘lchamli ishchi chizma yoki tasdiqlangan konstruktiv yechim emas. Natijani darsdagi amaliyot va loyiha ma’lumotlari bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M07_002",
     "asset": "l07_m07_002.svg",
-    "title": "Classification va element turi — arxitekturaviy eskiz",
+    "title": "Modellashtirish vositasi va element vazifasi",
     "explanation": [
-      "1. Chapdagi devor geometriyasi element qaysi tool orqali yaratilganini, o‘ngdagi kartochka esa uning BIM ma’nosini ifodalaydi.",
-      "2. Element Type va Classification bir xil tushuncha emas. Geometrik vosita elementning vazifasini avtomatik to‘liq aniqlab bermaydi.",
-      "3. Professional BIM modelda geometriya, material, Properties va Classification alohida ma’lumot qatlamlari sifatida tekshiriladi.",
-      "Darsdagi bajarish: Bitta element uchun tool turi va BIM Classification’ni alohida yozing."
+      "Markazdagi o‘rindiq MORPH vositasida yaratilgan geometriya misoli, vazifasi esa mebeldir.",
+      "Chap tomon qanday yaratilganini, o‘ng tomon element nima vazifa bajarishini ajratadi. Bir vosita turli ma’nodagi shakllarni yaratishi mumkin.",
+      "Bu tasnifni qo‘lda tekshirish uchun misol; dastur har qanday Morph elementni avtomatik mebelga aylantiradi degani emas."
     ],
     "exercise": "Element turi bilan BIM Classification farqini ko‘rsating.",
     "solution": "Geometrik tool element qanday chizilganini, Classification esa uning BIM ma’nosini ifodalaydi.",
     "block": 8,
     "recipe": "classification",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Guruh va kartochkalar o‘quv mantiqini ko‘rsatadi; haqiqiy Classification tizimi loyiha standartiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy dastur interfeysi, o‘lchamli ishchi chizma yoki tasdiqlangan konstruktiv yechim emas. Natijani darsdagi amaliyot va loyiha ma’lumotlari bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M07_003",
     "asset": "l07_m07_003.svg",
-    "title": "Classification va Properties — arxitekturaviy eskiz",
+    "title": "Tasnif xususiyat mavjudligiga ta’sir qiladi",
     "explanation": [
-      "1. Chapdagi element → markazdagi Classification → o‘ngdagi Property kartochkalari ma’lumot zanjirini ko‘rsatadi.",
-      "2. Classification qaysi turdagi Properties qaysi elementlarga mantiqan tegishli ekanini tashkil qilishga yordam beradi.",
-      "3. Noto‘g‘ri Classification elementga keraksiz yoki noto‘g‘ri Property to‘plami kelishiga sabab bo‘lishi mumkin.",
-      "Darsdagi bajarish: Door va Wall uchun mos Classification hamda foydali Properties’ni alohida bog‘lang."
+      "Ushbu misolda ESHIK VAZIFASI xususiyati eshik tasnifi uchun ajratilgan. KIRISH — eshikka berilgan qiymat.",
+      "Devor yonidagi uzilgan aloqa aynan shu misoldagi mavjudlik sozlamasini bildiradi; devorlarda hech qanday xususiyat bo‘lmaydi degani emas.",
+      "Haqiqiy loyihada xususiyatning qaysi tasniflarga ochiqligini tekshiring. Xususiyat ko‘rinmasa, qiymat kiritishdan oldin tasnif va mavjudlik sozlamasini ko‘ring."
     ],
     "exercise": "Classification bilan element Properties orasidagi aloqani ko‘rsating.",
     "solution": "To‘g‘ri Classification tegishli BIM ma’lumotlarini mantiqan tashkil qilishga yordam beradi.",
     "block": 8,
     "recipe": "classification",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Guruh va kartochkalar o‘quv mantiqini ko‘rsatadi; haqiqiy Classification tizimi loyiha standartiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy dastur interfeysi, o‘lchamli ishchi chizma yoki tasdiqlangan konstruktiv yechim emas. Natijani darsdagi amaliyot va loyiha ma’lumotlari bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M07_004",
     "asset": "l07_m07_004.svg",
-    "title": "Classification va Schedules — arxitekturaviy eskiz",
+    "title": "Tasnif mezoni jadval tarkibini ajratadi",
     "explanation": [
-      "1. Model elementi va Classification kartochkasidan keyingi jadval Schedule audit zanjirini ko‘rsatadi.",
-      "2. Classification Schedule Criteria sifatida kerakli BIM sinfidagi elementlarni ajratishda foydali bo‘lishi mumkin.",
-      "3. Schedule’da bo‘sh yoki noodatiy Classification ko‘rinsa, muammo jadvalda emas, model element ma’lumotida bo‘lishi mumkin.",
-      "Darsdagi bajarish: Element ID, turi, Classification va bitta Property ustunlari bilan audit jadvali tuzing."
+      "D01 eshik va W01 deraza bir modeldagi turli elementlardir. ESHIKLAR ro‘yxatida faqat D01 ko‘rsatilgan.",
+      "Bog‘lovchi chiziq jadval qatorining manbasini ko‘rsatadi. W01 bu eshiklar misoliga kiritilmagan.",
+      "Haqiqiy jadvalda mezon, tasnif tizimi va kutilgan elementlar ro‘yxatini solishtiring. Rasm oddiy tushuntirish, haqiqiy dastur eksporti emas."
     ],
     "exercise": "Classification asosida Schedule audit konsepsiyasini yarating.",
     "solution": "Schedule klassifikatsiya ma’lumotidagi bo‘sh va noto‘g‘ri qiymatlarni topishga yordam beradi.",
     "block": 8,
     "recipe": "classification",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Guruh va kartochkalar o‘quv mantiqini ko‘rsatadi; haqiqiy Classification tizimi loyiha standartiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy dastur interfeysi, o‘lchamli ishchi chizma yoki tasdiqlangan konstruktiv yechim emas. Natijani darsdagi amaliyot va loyiha ma’lumotlari bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M07_005",
     "asset": "l07_m07_005.svg",
-    "title": "Classification professional audit — arxitekturaviy eskiz",
+    "title": "Geometriya to‘g‘ri bo‘lsa ham tasnif xato bo‘lishi mumkin",
     "explanation": [
-      "1. Chapdagi audit kartochkalari, markazdagi model elementi va o‘ngdagi jadval element → Classification → Properties → Schedule zanjirini ifodalaydi.",
-      "2. Auditda Classification mavjudligi, element vazifasiga mosligi, bir xil elementlardagi izchillik va tegishli Properties tekshiriladi.",
-      "3. Schedule natijasida aralash yoki bo‘sh qator chiqsa, elementning Classification va Property ma’lumotlarini manbada tuzating.",
-      "Darsdagi bajarish: Bitta elementni Classification’dan Schedule natijasigacha kuzatib audit qiling."
+      "Ikkala panelda D01 eshigi ko‘rsatilgan. Chapdagi DERAZA tasnifi ataylab xato sifatida belgilangan.",
+      "O‘ngdagi ESHIK tasnifi mazkur element vazifasiga mos. Tuzatish uchun eshik shaklini qayta chizish shart emas.",
+      "Manba elementning tasnifi, unga bog‘liq xususiyatlar va jadval natijasini ketma-ket qayta tekshiring."
     ],
     "exercise": "Classification, Properties va Schedule natijasini birga audit qiling.",
     "solution": "Professional audit BIM ma’lumot strukturasining izchilligini tekshiradi.",
     "block": 10,
     "recipe": "classification",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/data eskiz. Guruh va kartochkalar o‘quv mantiqini ko‘rsatadi; haqiqiy Classification tizimi loyiha standartiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy dastur interfeysi, o‘lchamli ishchi chizma yoki tasdiqlangan konstruktiv yechim emas. Natijani darsdagi amaliyot va loyiha ma’lumotlari bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M08_001",
     "asset": "l07_m08_001.svg",
-    "title": "Hotlink va Module tushunchasi — arxitekturaviy eskiz",
+    "title": "Bitta manba va ikkita bog‘langan modul",
     "explanation": [
-      "1. Chapdagi alohida model qismi bitta Module manbasini, o‘ngdagi to‘rtta takrorlangan blok esa shu modulning asosiy loyihada qayta ishlatilishini ifodalaydi.",
-      "2. Module mantiqan ajratilgan model qismi; Hotlink esa shu manbani boshqa loyiha ichida bog‘langan holda ishlatish usulidir.",
-      "3. Manba moduldagi xato yoki o‘zgarish bir nechta joyga tarqalishi mumkin. Shu sabab manba sifati va nazorati muhim.",
-      "Darsdagi bajarish: Takrorlanuvchi model qismi bilan uning Hotlink nusxalarini ajrating."
+      "Chapdagi sanuzel — manba modul misoli; o‘ngdagi A va B — asosiy loyihada undan foydalaniladigan joylar.",
+      "Chiziqlar fayl bilan bog‘lanish g‘oyasini ko‘rsatadi. Oddiy nusxa ko‘chirishda bunday manba bog‘lanishi saqlanmasligi mumkin.",
+      "Manba o‘zgargach, asosiy loyihada Hotlink yangilanishini bajaring va har bir joydagi natijani tekshiring. Eskiz o‘lchamli joylashuv chizmasi emas."
     ],
     "exercise": "Module va Hotlink o‘rtasidagi manba-bog‘lanish munosabatini ko‘rsating.",
     "solution": "Module alohida boshqariladigan model qismi, Hotlink esa uni asosiy loyihaga bog‘laydi.",
     "block": 8,
     "recipe": "hotlink",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy workflow eskizi. Module va bog‘lanish shakllari o‘quv misoli; haqiqiy fayl struktura va Hotlink sozlamalari loyiha workflowiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy dastur interfeysi, o‘lchamli ishchi chizma yoki tasdiqlangan konstruktiv yechim emas. Natijani darsdagi amaliyot va loyiha ma’lumotlari bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M08_002",
     "asset": "l07_m08_002.svg",
-    "title": "Module yaratish mantig‘i — arxitekturaviy eskiz",
+    "title": "Modulga kiradigan elementlarni aniq ajrating",
     "explanation": [
-      "1. Chapdagi katta plan ichida punktir bilan ajratilgan qism Module chegarasini ifodalaydi; o‘ngda shu qism alohida boshqariladigan model sifatida ko‘rsatilgan.",
-      "2. Module chegarasi aniq bo‘lsin: qaysi elementlar modulga kirishi, qaysilari asosiy modelda qolishi oldindan belgilanadi.",
-      "3. Juda katta Module boshqarishni og‘irlashtiradi, juda mayda modullar esa tizimni keraksiz murakkablashtiradi. Maqsadga mos balans kerak.",
-      "Darsdagi bajarish: Loyiha planida alohida boshqarishga arziydigan bitta mantiqiy qismni ajrating."
+      "Ko‘k uzlukli chegara sanuzel qismini ajratadi; yotoqxona, mehmonxona va oshxona uning tashqarisida.",
+      "O‘ngdagi alohida tasvir manba tarkibida nimalar bo‘lishini ko‘rsatadi. Devor, eshik va jihozlarning qaysi faylga tegishliligini oldindan belgilang.",
+      "Manba faylini tushunarli nomlang. Umumiy devor yoki boshqa elementni ham manbada, ham asosiy modelda takrorlab yubormaslikni tekshiring."
     ],
     "exercise": "Module chegarasi va tarkibini aniq belgilang.",
     "solution": "Yaxshi Module loyiha strukturasini soddalashtiradigan aniq mantiqiy chegaraga ega.",
     "block": 9,
     "recipe": "hotlink",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy workflow eskizi. Module va bog‘lanish shakllari o‘quv misoli; haqiqiy fayl struktura va Hotlink sozlamalari loyiha workflowiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy dastur interfeysi, o‘lchamli ishchi chizma yoki tasdiqlangan konstruktiv yechim emas. Natijani darsdagi amaliyot va loyiha ma’lumotlari bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M08_003",
     "asset": "l07_m08_003.svg",
-    "title": "Hotlink orqali bog‘lash — arxitekturaviy eskiz",
+    "title": "Modulning koordinatasi, sathi va yo‘nalishi",
     "explanation": [
-      "1. Chapdagi manba Module markazdagi bog‘lanish orqali uchta Hotlink nusxaga tarqalgan; bu bitta manbadan ko‘p joyda foydalanish mantiqini ko‘rsatadi.",
-      "2. Manba o‘zgarsa, bog‘langan nusxalar yangilanish orqali shu o‘zgarishni qabul qilishi mumkin.",
-      "3. Source yo‘li buzilsa yoki update bajarilmasa, asosiy loyihada eski ma’lumot qolishi mumkin. Bog‘lanish holatini tekshirib boring.",
-      "Darsdagi bajarish: Bitta source Module va bir nechta Hotlink instance uchun update zanjirini chizing."
+      "A va B bir manbaning ikki joydagi misoli. Umumiy ±0.000 belgisi qabul qilingan tayanch sathni bildiradi.",
+      "O belgisi va yo‘naltiruvchi chiziqlar joylashtirishni tekshirish g‘oyasini ko‘rsatadi; ular koordinata qiymatlari yoki o‘lchov chizmasi emas.",
+      "Haqiqiy modelda kiritish nuqtasi, qavatga nisbatan balandlik, burilish va akslantirishni alohida tekshiring."
     ],
     "exercise": "Module manbasi va Hotlink nusxalar orasidagi update zanjirini ko‘rsating.",
     "solution": "Hotlink bog‘langan manbadagi o‘zgarishni nazoratli tarzda asosiy loyihaga olib kiradi.",
     "block": 9,
     "recipe": "hotlink",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy workflow eskizi. Module va bog‘lanish shakllari o‘quv misoli; haqiqiy fayl struktura va Hotlink sozlamalari loyiha workflowiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy dastur interfeysi, o‘lchamli ishchi chizma yoki tasdiqlangan konstruktiv yechim emas. Natijani darsdagi amaliyot va loyiha ma’lumotlari bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M08_004",
     "asset": "l07_m08_004.svg",
-    "title": "Murakkab loyiha strukturasini boshqarish — arxitekturaviy eskiz",
+    "title": "Manba yangilangach har ikki nusxani tekshiring",
     "explanation": [
-      "1. Yuqoridagi asosiy loyiha tuguni pastdagi uch modul bilan bog‘langan; bu katta modelni mantiqiy qismlarga ajratish g‘oyasini ko‘rsatadi.",
-      "2. Har Module aniq vazifa va mas’uliyatga ega bo‘lsin. Takroriy qismlar, alohida bloklar yoki jamoa bo‘lib boshqariladigan qismlar ajratilishi mumkin.",
-      "3. Modullar to‘g‘ri bo‘lsa ham, ularning balandlik, grid, joylashuv va ulanish nuqtalari asosiy loyihada koordinatsiya qilinishi shart.",
-      "Darsdagi bajarish: MAIN PROJECT va unga bog‘langan modullar xaritasini tuzing."
+      "V2 manbada rakovina yonidagi ko‘k shkaf ajratilgan. A va B ko‘rinishlarida ham shu o‘zgarish bor.",
+      "YANGILASH bosqichi manbadagi saqlangan o‘zgarishni asosiy loyihaga olib kirish harakatini bildiradi.",
+      "Haqiqiy faylda manbani saqlang, Hotlinkni yangilang va ikkala nusxadagi natijani solishtiring. Rasm avtomatik uzluksiz sinxronlashni va’da qilmaydi."
     ],
     "exercise": "Murakkab loyiha uchun Module struktura xaritasini yarating.",
     "solution": "Module struktura aniqlik, jamoaviy nazorat va takroriy ishni kamaytirishga xizmat qiladi.",
     "block": 9,
     "recipe": "hotlink",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy workflow eskizi. Module va bog‘lanish shakllari o‘quv misoli; haqiqiy fayl struktura va Hotlink sozlamalari loyiha workflowiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy dastur interfeysi, o‘lchamli ishchi chizma yoki tasdiqlangan konstruktiv yechim emas. Natijani darsdagi amaliyot va loyiha ma’lumotlari bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M08_005",
     "asset": "l07_m08_005.svg",
-    "title": "Hotlink va Modules professional audit — arxitekturaviy eskiz",
+    "title": "Manba, versiya, sath va yangilanish auditi",
     "explanation": [
-      "1. Chapdagi checklist, markazdagi Module va o‘ngdagi source ma’lumotlari auditning maqsad → source → position → update zanjirini ko‘rsatadi.",
-      "2. Auditda Module maqsadi, tarkibi, naming, source, joylashuv, orientatsiya va yangilanish holati tekshiriladi.",
-      "3. Ishlayotgan Hotlink hali professional boshqaruv degani emas; eski source, noto‘g‘ri balandlik yoki noma’lum mas’ul loyiha xatosiga aylanishi mumkin.",
-      "Darsdagi bajarish: Bitta Hotlink instance’ni source’dan asosiy loyiha joylashuvigacha tekshiring."
+      "SANUZEL.mod — manba nomi misoli; V2 — ushbu mashqdagi versiya belgisi; ±0.000 — qabul qilingan sath.",
+      "Bir xil fayl nomi turli papkalarda bo‘lishi mumkin. To‘liq yo‘l, manba mavjudligi va qaysi versiya yuklanganini tekshiring.",
+      "YANGILANISH: TEKSHIR yozuvi ish tugaganini emas, tekshiruv zarurligini bildiradi. Joylashuv, orientatsiya va natijani ham ko‘ring."
     ],
     "exercise": "Module source, Hotlink joylashuvi va update holatini audit qiling.",
     "solution": "Professional Hotlink auditi manba, bog‘lanish, pozitsiya va yangilanishni birgalikda tekshiradi.",
     "block": 11,
     "recipe": "hotlink",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy workflow eskizi. Module va bog‘lanish shakllari o‘quv misoli; haqiqiy fayl struktura va Hotlink sozlamalari loyiha workflowiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy dastur interfeysi, o‘lchamli ishchi chizma yoki tasdiqlangan konstruktiv yechim emas. Natijani darsdagi amaliyot va loyiha ma’lumotlari bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
@@ -3537,89 +3524,86 @@
   {
     "code": "L07_M09_003",
     "asset": "l07_m09_003.svg",
-    "title": "View, Graphic va Documentation standard — arxitekturaviy eskiz",
+    "title": "Plan, fasad va varaqning yagona grafik tili",
     "explanation": [
-      "1. Uch panel plan, kesim/fasad va jadval kabi turli hujjat view’larini bir xil grafik til bilan tashkil qilish g‘oyasini ko‘rsatadi.",
-      "2. View Map, Graphic Overrides va Model View Options hujjat maqsadiga mos, oldindan tekshirilgan kombinatsiyalar bilan ishlashi kerak.",
-      "3. View nomlari, tafsilot darajasi va grafik sozlama hujjat turiga mos bo‘lsa, loyiha jamoasi bir xil standartda ishlaydi.",
-      "Darsdagi bajarish: Plan, Section/Elevation va Schedule uchun view standartini bir tizimda rejalashtiring."
+      "Plandagi kirish joylashgan devorda markaziy eshik va ikki yon deraza bor. Fasad va varaqda shu old devor ko‘rsatilgan.",
+      "Plan boshqa devorlardagi ochilishlarni ham ko‘rsatishi mumkin; bitta fasadda ularning barchasi ko‘rinishi shart emas.",
+      "Saqlangan ko‘rinish, grafik sozlama va varaqdagi natijani birga tekshiring. Bu eskiz masshtabli loyiha hujjati yoki tayyor shablon emas."
     ],
     "exercise": "View va grafik standartlarni hujjat turlari bo‘yicha tashkil qiling.",
     "solution": "Yaxshi Template bir xil modeldan izchil va tushunarli hujjat ko‘rinishlarini chiqaradi.",
     "block": 10,
     "recipe": "documents",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/workflow eskizi. Kartochka va loyiha shakllari o‘quv mantiqini ko‘rsatadi; aniq Template tarkibi tashkilot va loyiha turiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy dastur interfeysi, o‘lchamli ishchi chizma yoki tasdiqlangan konstruktiv yechim emas. Natijani darsdagi amaliyot va loyiha ma’lumotlari bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M09_004",
     "asset": "l07_m09_004.svg",
-    "title": "BIM data standard — arxitekturaviy eskiz",
+    "title": "Yangi sinov elementida BIM ma’lumotini tekshiring",
     "explanation": [
-      "1. Eskiz Model → Classification → Properties → Schedule zanjirini ko‘rsatadi; Template BIM ma’lumotining shu bosqichlarini oldindan tartibga solishi mumkin.",
-      "2. Faqat kerakli Properties, Classification va Schedules saqlansin. Ortiqcha BIM data Template’ni og‘ir va tushunarsiz qiladi.",
-      "3. Audit Schedule yangi loyiha boshidan bo‘sh, noto‘g‘ri yoki nomuvofiq qiymatlarni topishda ishlatilishi mumkin.",
-      "Darsdagi bajarish: Template uchun kerakli Property, Classification va Schedule paketini rejalashtiring."
+      "D01 sinov eshigiga ESHIK tasnifi berilgan, VAZIFA qiymati esa savol bilan qoldirilgan.",
+      "Model kartasi va jadvaldagi savol bitta manba qiymatini tekshirish kerakligini bildiradi.",
+      "Xususiyat mavjudligi va loyiha uchun kerakli qiymatni sinang. Bo‘sh qiymat muammo ekanini loyiha talabi belgilaydi; barcha maydonlar ham majburiy emas."
     ],
     "exercise": "Template ichida BIM data va audit zanjirini tashkil qiling.",
     "solution": "BIM data standard model ma’lumotlarini izchil kiritish va audit qilishni qo‘llab-quvvatlaydi.",
     "block": 10,
     "recipe": "classification",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/workflow eskizi. Kartochka va loyiha shakllari o‘quv mantiqini ko‘rsatadi; aniq Template tarkibi tashkilot va loyiha turiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy dastur interfeysi, o‘lchamli ishchi chizma yoki tasdiqlangan konstruktiv yechim emas. Natijani darsdagi amaliyot va loyiha ma’lumotlari bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L07_M09_005",
     "asset": "l07_m09_005.svg",
-    "title": "Professional Template audit — arxitekturaviy eskiz",
+    "title": "Shablonni yangi faylda amalda sinang",
     "explanation": [
-      "1. Chapdagi checklist Template struktura, Attributes, Favorites, Views, Graphics va BIM data bo‘yicha audit bosqichlarini ifodalaydi.",
-      "2. O‘ngdagi sinov uyi Template’ni haqiqiy kichik test project bilan tekshirish zarurligini ko‘rsatadi.",
-      "3. Faqat sozlamalar mavjudligini emas, ular birga ishlayotganini tekshiring: element yarating, view saqlang, schedule oching va hujjat natijasini ko‘ring.",
-      "Darsdagi bajarish: Template’ni yangi test loyiha sifatida ochib, asosiy workflowlarni boshidan oxirigacha sinang."
+      "Chapdagi qizil devor avvalgi loyihadan qolgan bo‘lishi mumkin bo‘lgan elementni audit uchun ajratadi.",
+      "O‘ngdagi sinov modeli eshik va deraza bilan ko‘rsatilgan. Bu barcha mavjud geometriyani o‘chirish ko‘rsatmasi emas.",
+      "Keraksiz elementlarni aniqlang, so‘ng model, saqlangan ko‘rinish va jadvalni amalda tekshiring. Bo‘sh kataklar sinov hali bajarilishi kerakligini bildiradi."
     ],
     "exercise": "Template’ni struktura va real test project bilan audit qiling.",
     "solution": "Professional Template audit sozlamalar mavjudligini emas, real loyiha workflowida ishlashini tasdiqlaydi.",
     "block": 18,
     "recipe": "audit",
-    "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/workflow eskizi. Kartochka va loyiha shakllari o‘quv mantiqini ko‘rsatadi; aniq Template tarkibi tashkilot va loyiha turiga bog‘liq.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy dastur interfeysi, o‘lchamli ishchi chizma yoki tasdiqlangan konstruktiv yechim emas. Natijani darsdagi amaliyot va loyiha ma’lumotlari bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L08_M01_001",
     "asset": "l08_m01_001.svg",
-    "title": "Fundament tushunchasi — ko‘rgazmali namuna",
+    "title": "Yukning fundament orqali gruntga uzatilishi",
     "explanation": [
-      "Eskizda fundament chizilgan, lekin geologiya va yuk ma’lumoti yo‘q. Qarorni tekshirish uchun konstruktorga kirish ma’lumotlari tayyorlanadi.",
-      "Tomdan gruntgacha yuk yo‘lini kesimda belgilang → fundamentning vazifasi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Strelkalar tomdan devorga, fundamentga va gruntga uzatiladigan vertikal yuk yo‘lining konseptual misolini ko‘rsatadi.",
+      "Fundament ustki konstruksiya bilan grunt orasidagi tayanch tizimining bir qismidir. Rasm uning o‘lchami yoki armaturasini belgilamaydi.",
+      "Bu faqat bitta tushuntirish misoli; shamol, seysmik ta’sir, haqiqiy yuklar va grunt sharoiti alohida hisobga olinadi."
     ],
     "exercise": "Fundamentni ustki konstruksiya va grunt orasidagi aloqa sifatida belgilang.",
     "solution": "Fundament qarori yuk yo‘li va grunt sharoitini birga ko‘radi.",
     "block": 9,
     "recipe": "foundation",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy dastur interfeysi, o‘lchamli ishchi chizma yoki tasdiqlangan konstruktiv yechim emas. Natijani darsdagi amaliyot va loyiha ma’lumotlari bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L08_M01_002",
     "asset": "l08_m01_002.svg",
-    "title": "Fundamentning asosiy turlari — ko‘rgazmali namuna",
+    "title": "Fundament turlarini shakli va vazifasi bo‘yicha ajrating",
     "explanation": [
-      "Eskizda fundament chizilgan, lekin geologiya va yuk ma’lumoti yo‘q. Qarorni tekshirish uchun konstruktorga kirish ma’lumotlari tayyorlanadi.",
-      "Lenta, alohida tayanch, plita va qoziqli tizimni tayanch/yer sharti bo‘yicha taqqoslang → tanlov uchun kerakli ma’lumot.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Lenta devor bo‘ylab davom etadi; alohida tayanch ustun ostida ko‘rsatilgan; plita maydon bo‘ylab yaxlit asos; qoziqli misolda tayanch chuqurroq qatlamlarga uzatiladi.",
+      "To‘rtta tasvir asosiy farqlarni tushuntiradi. Grunt qatlamining rangi, qoziqlar soni va element qalinligi tayyor loyihaviy ko‘rsatma emas.",
+      "Ikki turni taqqoslashda yuk, geologiya, suv va qurilish sharoiti haqida qaysi ma’lumot zarurligini yozing. Tanlov hisob bilan asoslanadi."
     ],
     "exercise": "Ikki fundament turini faqat qo‘llanish omillari bilan solishtiring.",
     "solution": "Fundament turini tasviridan tanlash hisob va geologiya o‘rnini bosa olmaydi.",
     "block": 9,
     "recipe": "foundation",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy dastur interfeysi, o‘lchamli ishchi chizma yoki tasdiqlangan konstruktiv yechim emas. Natijani darsdagi amaliyot va loyiha ma’lumotlari bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
@@ -3642,35 +3626,35 @@
   {
     "code": "L08_M01_004",
     "asset": "l08_m01_004.svg",
-    "title": "Arxitektura loyihasida fundament koordinatsiyasi — ko‘rgazmali namuna",
+    "title": "Arxitektura va konstruktiv hujjatlarni muvofiqlashtiring",
     "explanation": [
-      "Eskizda fundament chizilgan, lekin geologiya va yuk ma’lumoti yo‘q. Qarorni tekshirish uchun konstruktorga kirish ma’lumotlari tayyorlanadi.",
-      "Arxitektura o‘qlari va tayanchlarini konstruktiv sxema bilan solishtiring → moslik savoli.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Chapda arxitektura konturi, o‘ngda fundament bilan bog‘liq konseptual kontur bor. 1 va A o‘qlari umumiy koordinatsiya belgilari misolidir.",
+      "Pastdagi fragment devor, tayanch va ±0.000 sathni birga solishtirish g‘oyasini ko‘rsatadi. Undan kesim yoki chuqurlik o‘lchamini olmang.",
+      "Konstruktorga haqiqiy o‘qlar, sathlar, tayanchlar va ochilishlar ma’lumotini yuboring. Eskizdagi mos ko‘rinish konstruktiv hisob o‘rnini bosmaydi."
     ],
     "exercise": "O‘qlar, sathlar va arxitektura ochilishlarini konstruktorga yuboriladigan paketga kiriting.",
     "solution": "Fundament koordinatsiyasi arxitektura tayanchlari va sathlarining aniqligini talab qiladi.",
     "block": 10,
     "recipe": "foundation",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy dastur interfeysi, o‘lchamli ishchi chizma yoki tasdiqlangan konstruktiv yechim emas. Natijani darsdagi amaliyot va loyiha ma’lumotlari bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L08_M01_005",
     "asset": "l08_m01_005.svg",
-    "title": "Fundament professional audit — ko‘rgazmali namuna",
+    "title": "Tasdiqlangan ma’lumot bilan taxminni ajrating",
     "explanation": [
-      "Eskizda fundament chizilgan, lekin geologiya va yuk ma’lumoti yo‘q. Qarorni tekshirish uchun konstruktorga kirish ma’lumotlari tayyorlanadi.",
-      "Manba, yetishmayotgan ma’lumot va mas’ulni yozing → oldindan tanlangan fundament tasdiqlanmagan.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Grunt yonidagi savol belgisi geologik sharoitni aniqlashtirish zaruratini bildiradi. Chizilgan fundament tasdiqlangan loyiha degani emas.",
+      "Ikki papka ma’lumotni dalilli va aniqlashtiriladigan qismlarga ajratish uchun. Bo‘sh satrlar va kataklar ataylab to‘ldirilmagan.",
+      "Geologiya, yuklar va hisob bo‘yicha hujjat manbasi, sana hamda mas’ulni yozing. Hisobsiz yoki manbasiz kesimni qurilishga tayyor deb belgilamang."
     ],
     "exercise": "Hisoblangan va taxmin qilingan ma’lumotlarni alohida audit qiling.",
     "solution": "Fundament auditi tasdiqlanmagan kesimni qurilishga tayyor yechim sifatida ko‘rsatmaydi.",
     "block": 12,
     "recipe": "foundation",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; haqiqiy dastur interfeysi, o‘lchamli ishchi chizma yoki tasdiqlangan konstruktiv yechim emas. Natijani darsdagi amaliyot va loyiha ma’lumotlari bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan va ko‘rib chiqilgan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
