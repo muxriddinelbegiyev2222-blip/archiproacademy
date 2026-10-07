@@ -3830,86 +3830,86 @@
   {
     "code": "L08_M04_001",
     "asset": "l08_m04_001.svg",
-    "title": "Plita va qavatlararo yopma tushunchasi — ko‘rgazmali namuna",
+    "title": "Plita yuk uzatuvchi konstruktiv element sifatida",
     "explanation": [
-      "Yopmada zinapoya teshigi va balkon chiqishi bor; tayanchlarni kesimda tekshiramiz.",
-      "Yopmani pol pardozidan ajrating, tayanchlarini belgilang → konstruktiv sxema.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Plita pol pardozidan alohida konstruktiv element sifatida ko‘rsatilgan.",
+      "Yuk plitadan tayanchlarga va pastki tizimga uzatiladi.",
+      "Rasm plita qalinligi yoki armatura yechimini bermaydi."
     ],
     "exercise": "Plitani qavatlararo yopma sifatida kesimda belgilang.",
     "solution": "Plita vazifasi sathlarni ajratish va yukni tayanchlarga uzatish bilan bog‘liq.",
     "block": 9,
     "recipe": "slab",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; tayyor konstruktiv hisob, universal normativ o‘lcham yoki tasdiqlangan ishchi detal emas.",
+    "credit": "ARCHIPRO UZ — mavzuga mos yangilangan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L08_M04_002",
     "asset": "l08_m04_002.svg",
-    "title": "Plita tayanch sxemasi — ko‘rgazmali namuna",
+    "title": "Plita tayanch sxemasini o‘qing",
     "explanation": [
-      "Yopmada zinapoya teshigi va balkon chiqishi bor; tayanchlarni kesimda tekshiramiz.",
-      "Tayanch devor/rigellarni yopma konturi bilan solishtiring → uzatiladigan yuk yo‘li.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Plita konturi bilan birga devor, rigel va ustun kabi tayanchlar ko‘rsatilgan.",
+      "Plitaning ishlash mantiqini faqat konturdan emas, tayanch tizimidan o‘qing.",
+      "Haqiqiy tayanch yo‘nalishi konstruktor modeli bilan tekshiriladi."
     ],
     "exercise": "Tayanch chiziqlari va ochilishni sxemada ko‘rsating.",
     "solution": "Tayanch sxemasi geometriyadan tashqari konstruktiv ma’lumotni talab qiladi.",
     "block": 9,
     "recipe": "slab",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; tayyor konstruktiv hisob, universal normativ o‘lcham yoki tasdiqlangan ishchi detal emas.",
+    "credit": "ARCHIPRO UZ — mavzuga mos yangilangan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L08_M04_003",
     "asset": "l08_m04_003.svg",
-    "title": "Ochilishlar va zinapoya bo'shligi — ko‘rgazmali namuna",
+    "title": "Zinapoya bo‘shlig‘i plita koordinatsiyasining bir qismi",
     "explanation": [
-      "Yopmada zinapoya teshigi va balkon chiqishi bor; tayanchlarni kesimda tekshiramiz.",
-      "Zinapoya teshigini plan va kesimda chizing → qaysi tayanch yoki elementga ta’sir bor.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Zinapoya teshigi plita ichidagi alohida ochilish sifatida ajratilgan.",
+      "Ochilish konturi zinapoya geometriyasi, tayanch va kesim bilan birga tekshiriladi.",
+      "Teshik kattalashsa konstruktiv yechim qayta ko‘riladi."
     ],
     "exercise": "Zinapoya teshigining chetlarini o‘qlar bilan bog‘lang.",
     "solution": "Ochilishning joyi va kattaligi konstruktiv koordinatsiyada aniq bo‘lishi kerak.",
     "block": 9,
     "recipe": "slab",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; tayyor konstruktiv hisob, universal normativ o‘lcham yoki tasdiqlangan ishchi detal emas.",
+    "credit": "ARCHIPRO UZ — mavzuga mos yangilangan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L08_M04_004",
     "asset": "l08_m04_004.svg",
-    "title": "Balkon, konsol va chekka zonalar — ko‘rgazmali namuna",
+    "title": "Balkon va konsol chekka zonasi",
     "explanation": [
-      "Yopmada zinapoya teshigi va balkon chiqishi bor; tayanchlarni kesimda tekshiramiz.",
-      "Balkon cheti va konsolni ajrating → hisob talab qiladigan alohida zona.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Plitadan tashqariga chiqqan balkon/konsol zona alohida ajratilgan.",
+      "Chekka zona tayanch, suv va issiqlik tugunlari bilan koordinatsiya qilinadi.",
+      "Eskiz konsol o‘lchamini konstruktiv tavsiya sifatida bermaydi."
     ],
     "exercise": "Balkon cheti va konsolni asosiy plitadan ajratib ko‘rsating.",
     "solution": "Konsol va chekka zona alohida konstruktiv hamda namlik masalalarini tug‘diradi.",
     "block": 9,
     "recipe": "slab",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; tayyor konstruktiv hisob, universal normativ o‘lcham yoki tasdiqlangan ishchi detal emas.",
+    "credit": "ARCHIPRO UZ — mavzuga mos yangilangan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L08_M04_005",
     "asset": "l08_m04_005.svg",
-    "title": "Plitalar professional audit — ko‘rgazmali namuna",
+    "title": "Plita professional audit zanjiri",
     "explanation": [
-      "Yopmada zinapoya teshigi va balkon chiqishi bor; tayanchlarni kesimda tekshiramiz.",
-      "Teshik, tayanch va chekka zonalar ro‘yxatini konstruktorga yuboring → qarorlar kelishiladi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Audit tayanch, ochilish va chekka zonalarni alohida tekshiradi.",
+      "Plan, kesim, konstruktor modeli va oxirgi versiya bir-biriga mos bo‘lishi kerak.",
+      "Audit konstruktiv hisobni almashtirmaydi."
     ],
     "exercise": "Ochilish, tayanch va balkon bo‘yicha tasdiq holatini audit qiling.",
     "solution": "Plita modeli uning armaturasi yoki ko‘tarish qobiliyati tasdiqlanganini anglatmaydi.",
     "block": 13,
     "recipe": "slab",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; tayyor konstruktiv hisob, universal normativ o‘lcham yoki tasdiqlangan ishchi detal emas.",
+    "credit": "ARCHIPRO UZ — mavzuga mos yangilangan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
@@ -5950,86 +5950,86 @@
   {
     "code": "L11_M01_001",
     "asset": "l11_m01_001.svg",
-    "title": "2 qavatli uy mantig'i — ko‘rgazmali namuna",
+    "title": "Ikki qavatli uy — bitta vertikal tizim",
     "explanation": [
-      "Pastki qavatda umumiy, yuqorida tinch xonalar; zinapoya ikki qavatni bog‘laydi.",
-      "Kun tartibini qavatlar bo‘yicha ajrating → foydalanish taqsimoti.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Ikki qavat alohida plan emas, vertikal bog‘langan tizim sifatida ko‘rsatilgan.",
+      "Harakat, tayanch, wet-zone va fasad qarorlari qavatlar orasida bog‘lanadi.",
+      "Konseptual sxema aniq konstruktiv yechim bermaydi."
     ],
     "exercise": "Bir va ikki qavatli variantning foydalanish farqini yozing.",
     "solution": "Ikki qavatli konsepsiya maydondan tashqari vertikal harakatni ham baholaydi.",
     "block": 5,
     "recipe": "two-storey",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; tayyor konstruktiv hisob, universal normativ o‘lcham yoki tasdiqlangan ishchi detal emas.",
+    "credit": "ARCHIPRO UZ — mavzuga mos yangilangan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L11_M01_002",
     "asset": "l11_m01_002.svg",
-    "title": "Qavatlar orasidagi funksiya — ko‘rgazmali namuna",
+    "title": "Qavatlar bo‘yicha funksiya taqsimoti",
     "explanation": [
-      "Pastki qavatda umumiy, yuqorida tinch xonalar; zinapoya ikki qavatni bog‘laydi.",
-      "Mehmon yo‘lini pastda, uyqu yo‘lini yuqorida chizing → privacy.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1-qavat public/service, 2-qavat private zona sifatida o‘quv misoli ko‘rsatilgan.",
+      "Taqsimot foydalanuvchi ssenariysi va briefga tayanadi.",
+      "Bu universal rejalashtirish qoidasi emas."
     ],
     "exercise": "Har qavat vazifasini kunlik ssenariy bilan belgilang.",
     "solution": "Qavatlar funksiyasi foydalanuvchining harakatiga mos tanlanadi.",
     "block": 5,
     "recipe": "two-storey",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; tayyor konstruktiv hisob, universal normativ o‘lcham yoki tasdiqlangan ishchi detal emas.",
+    "credit": "ARCHIPRO UZ — mavzuga mos yangilangan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L11_M01_003",
     "asset": "l11_m01_003.svg",
-    "title": "Vertikal yadro — ko‘rgazmali namuna",
+    "title": "Vertikal yadro: zina va service stack",
     "explanation": [
-      "Pastki qavatda umumiy, yuqorida tinch xonalar; zinapoya ikki qavatni bog‘laydi.",
-      "Zinapoya va nam/texnik yadro uchun joyni erta belgilang → vertikal asos.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Zinapoya va service shaft vertikal yadro tarkibida ko‘rsatilgan.",
+      "Yadro harakat, MEP va qavatlararo bog‘lanishni birlashtiradi.",
+      "Yadro o‘lchamlari va texnik yechim loyiha talabiga bog‘liq."
     ],
     "exercise": "Zinapoya va xizmat yadrosini ikki planda bog‘lang.",
     "solution": "Vertikal yadro qavatlar aloqasi va koordinatsiya tayanchidir.",
     "block": 5,
     "recipe": "two-storey",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; tayyor konstruktiv hisob, universal normativ o‘lcham yoki tasdiqlangan ishchi detal emas.",
+    "credit": "ARCHIPRO UZ — mavzuga mos yangilangan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L11_M01_004",
     "asset": "l11_m01_004.svg",
-    "title": "Massing va fasad — ko‘rgazmali namuna",
+    "title": "Massing va fasad qavat mantiqidan kelib chiqadi",
     "explanation": [
-      "Pastki qavatda umumiy, yuqorida tinch xonalar; zinapoya ikki qavatni bog‘laydi.",
-      "Ikki qavat hajmini fasadga olib chiqing → ochilish va massa mos.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Ikki qavatli hajm ichki funksional taqsimot bilan bog‘langan holda ko‘rsatilgan.",
+      "Fasad ritmi, kirish va hajm nisbatlari ichki qavat mantiqini ifodalashi kerak.",
+      "Material va detal yechimi bu konseptual eskizdan alohida."
     ],
     "exercise": "Ikki qavat hajmini fasad va kesimda solishtiring.",
     "solution": "Massing ichki qavat tuzilishi bilan muvofiq bo‘lishi kerak.",
     "block": 5,
     "recipe": "two-storey",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; tayyor konstruktiv hisob, universal normativ o‘lcham yoki tasdiqlangan ishchi detal emas.",
+    "credit": "ARCHIPRO UZ — mavzuga mos yangilangan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
     "code": "L11_M01_005",
     "asset": "l11_m01_005.svg",
-    "title": "2 qavatli konsepsiya auditi — ko‘rgazmali namuna",
+    "title": "Ikki qavatli konsepsiya auditi",
     "explanation": [
-      "Pastki qavatda umumiy, yuqorida tinch xonalar; zinapoya ikki qavatni bog‘laydi.",
-      "Qavatlarni ustma-ust, kesim va foydalanish bilan tekshiring → konsepsiya dalili.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Audit qavat roli, vertikal yadro, stack/tayanch va fasadni bir zanjirda tekshiradi.",
+      "Har bir qaror ikkala qavat bo‘yicha ishlashi tekshiriladi.",
+      "Konstruktiv va MEP tasdiqlari tegishli mutaxassislar bilan olinadi."
     ],
     "exercise": "Brief, ikki plan va yadro aloqasini audit qiling.",
     "solution": "Konsepsiya auditida vertikal foydalanishning ishlashi dalillanadi.",
     "block": 4,
     "recipe": "two-storey",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv eskizi; tayyor konstruktiv hisob, universal normativ o‘lcham yoki tasdiqlangan ishchi detal emas.",
+    "credit": "ARCHIPRO UZ — mavzuga mos yangilangan arxitektura eskizi, 2026-10-07",
     "source_url": null
   },
   {
