@@ -1,3 +1,13 @@
+# Tasdiqlangan yangilanish — 2026-10-08
+
+L11_M02_001–005 uchun 5 ta yangi mavzuga mos arxitekturaviy eskiz yaratildi, ko‘zdan kechirildi va darslarga bog‘landi. L11_M02_005 birinchi variantidagi izoh chizig‘i tuzatildi. Beshala rasm Qt orqali ochildi; darsdagi ko‘rinishi va kattalashtirish oynasi tekshirildi. Dars bloklari, mashqlar, testlar va o‘tish qoidalari saqlangan.
+
+Ish davom etmoqda. Oldingi “210 qoldi” soni to‘liq sifat tasdig‘i emas: 282 zarur eskiz darsining tasvir yaratish qaydlari bilan kesishmasida 234 ta qayta tekshirish nomzodi topildi; ushbu 5 tasi yangilandi. Materialli tasvirlar va haqiqiy skrinshotlar alohida saqlanadi. Barcha darslar mukammal yakunlandi deb hisoblanmaydi.
+
+Yangi eskizlar va tekshiruv dalillari: [2026-10-08 qaydi](VISUAL_REWORK_2026_10_08.json). To‘liq Windows tekshiruvlari joriy commit uchun hali kutilmoqda.
+
+---
+
 # Davom etayotgan eskiz sifati yangilanishi — 2026-10-07
 
 71 zarur darsning eski sxemalari yangi, ko‘rib chiqilgan izohli arxitektura eskizlariga almashtirildi. Oxirgi 10 talik: L08_M04_001–005 va L11_M01_001–005. Avvalgi 61 dars saqlangan.

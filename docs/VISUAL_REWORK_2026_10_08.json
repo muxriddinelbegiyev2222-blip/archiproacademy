@@ -1,0 +1,73 @@
+{
+  "source_commit": "70887fe0a33bb31daa20f82add73469be48311cc",
+  "complete": false,
+  "generator": "Built-in imagegen",
+  "accepted": [
+    {
+      "code": "L11_M02_001",
+      "asset": "app/courses/visual_assets/l11_m02_001.svg",
+      "source_png_sha256": "47d317b81dd53ccbb2f79030811e129b927774dd1a0fc599dc2ca6558ee26a57",
+      "embedded_sha256": "081fdba1d7d1f4ef3cb633cb9d59c6f2ead0fafc9e4699ac223c777929c9ad76",
+      "svg_sha256": "faacd4ddbe910ef0d9f95bac4dc2e4911f1663847398c9b51f336997a5afdb5c",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Use case: scientific-educational. Asset type: ARCHIPRO UZ lesson L11_M02_001, Qavatlar bo‘yicha zonalash. Make one professional architectural pencil and fine ink sketch with restrained watercolor on warm ivory paper, landscape 1536x1024. An Uzbekistan family two-storey house shown as spacious exploded axonometric cutaway, upper floor lifted above lower with dashed aligned corners. Recognizable detailed walls, door openings, stair connection and furniture, no photorealism and no flat vector blocks. Ground floor: welcoming living/dining room with sofa/table in pale ochre, kitchen and small bathroom in pale blue at rear. Upper floor: two quiet bedrooms with beds in pale sage, bathroom directly above lower bathroom in pale blue. Keep stair landings consistent. Three short Uzbek labels with fine leaders 'UMUMIY', 'TINCH', 'XIZMAT'; floor labels '1-QAVAT','2-QAVAT'; title 'QAVATLAR BO‘YICHA ZONALASH'. Teach room function and vertical relations at first glance. Dominant architectural illustration, ample whitespace, legible few labels, no dimensions, no normative claims, no fabricated software UI, no generic icon look, no watermarks. This is a concept illustration, not an exact plan.",
+      "corrected": false,
+      "visual_review": "Both floors, living/bedroom/service zoning and floor labels inspected; concept only.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L11_M02_002",
+      "asset": "app/courses/visual_assets/l11_m02_002.svg",
+      "source_png_sha256": "bb3a3669d5f0abd26eb4d862db87f310469d650c684a93a811403eaa47aa5bf4",
+      "embedded_sha256": "611b75514a731edb301c65cbce6368598e25f18e9b341a83cc5972884b0f8c50",
+      "svg_sha256": "2a7b89f9c0cfa8fc018150affb2daea473c2a6e1b3cc86ac3e3c54a9609515e0",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Use case: scientific-educational. ARCHIPRO UZ teaching illustration, 1536x1024 landscape. Professional detailed architectural graphite, fine ink and restrained watercolor on ivory paper. Recognizable real Uzbek family house, clearly visible doors, furniture, windows, cutaway rooms, sophisticated hand sketch, not photorealism or vector blocks. Large dominant drawing, sparse Uzbek labels, no fake software interface, no dimensions, no normative claims. Concept illustration only. Title 'MEHMON VA OILA YO‘LI'. Draw two-storey house sectional perspective with actual visible staircase and upper landing. Ground entry splits to left guest sitting room with sofa and right family staircase; upstairs private bedrooms. Use one ochre arrow from main entry terminating in guest living room on ground floor. Distinct teal arrow from entry to stairs and upper landing ending at bedroom door. A dotted short violet route from bedroom to adjacent upstairs bathroom. Labels 'MEHMON', 'OILA', 'TUNGI YO‘L'. Show that guests need not enter bedrooms. Keep doors open for all paths, no lines through walls.",
+      "corrected": false,
+      "visual_review": "Separate guest/family/night paths and Uzbek labels inspected; arrow routing described as conceptual.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L11_M02_003",
+      "asset": "app/courses/visual_assets/l11_m02_003.svg",
+      "source_png_sha256": "24b6f110e54687d25514eb53e429aec7b7d3c559bf8c414183bc16578081ec34",
+      "embedded_sha256": "9bfacb519406b3ac69dc52ef4062d265d9784fa050759d03b46f1d90e6ef143f",
+      "svg_sha256": "5436897d397fa84b209ddd57f8b27fad414f275ee6a7f6a30ac2b1f1a829cda4",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Use case: scientific-educational. ARCHIPRO UZ teaching illustration, 1536x1024 landscape. Professional detailed architectural graphite, fine ink and restrained watercolor on ivory paper. Recognizable real Uzbek family house, clearly visible doors, furniture, windows, cutaway rooms, sophisticated hand sketch, not photorealism or vector blocks. Large dominant drawing, sparse Uzbek labels, no fake software interface, no dimensions, no normative claims. Concept illustration only. Title 'NAM XONALAR VA SHAXTA'. Large close architectural two-storey sectional cutaway: upstairs bathroom directly above ground bathroom, visible realistic toilet, sink, tiled waterproof-looking surfaces. An accessible vertical shaft beside both bathrooms contains one continuous blue pipe from bottom up through both floors to roof. Short branches reach both sinks without passing bedroom. Tiny separate right vignette shows bathroom shifted sideways above living room with extended horizontal pipe in amber and question marker. Labels 'USTMA-UST', 'SHAXTA', 'UZUN YO‘L'. Do not draw pipe construction joint specifications; focus vertical alignment and service access.",
+      "corrected": false,
+      "visual_review": "Aligned wet zones versus longer route inspected; plumbing drawing is conceptual and caption expressly excludes construction use.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L11_M02_004",
+      "asset": "app/courses/visual_assets/l11_m02_004.svg",
+      "source_png_sha256": "e187746911fa7d69d87225caf87d1d980a79efa84e7dc5654240583bf44410c8",
+      "embedded_sha256": "c091b35fcb1048beee7d3192c554f4f62ffd4a7e75cc7a20351846603e3c5844",
+      "svg_sha256": "41fa1987d3f500a0c49b16df2f877ffd25e2bd6132d6848babbfe1d590afdd5e",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Use case: scientific-educational. ARCHIPRO UZ teaching illustration, 1536x1024 landscape. Professional detailed architectural graphite, fine ink and restrained watercolor on ivory paper. Recognizable real Uzbek family house, clearly visible doors, furniture, windows, cutaway rooms, sophisticated hand sketch, not photorealism or vector blocks. Large dominant drawing, sparse Uzbek labels, no fake software interface, no dimensions, no normative claims. Concept illustration only. Title 'TAYANCHLAR UZLUKSIZLIGI'. Side-by-side detailed cutaway perspective studies of same two-storey masonry house. Left: aligned upper loadbearing wall, lower wall, footing under wall with three thin teal vertical dashed guide lines; label 'MOS TAYANCH'. Right: upper wall ends over broad unsupported lower living-room opening, no invented transfer beam; amber ring around mismatch and label 'KONSTRUKTOR BILAN'. Sparse leaders and visible brick textures make geometry clear. No green checkmark or safety certification, no force values. Different problem visible immediately.",
+      "corrected": false,
+      "visual_review": "Aligned and interrupted supports inspected; no assumption that illustrated slab resolves transfer.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L11_M02_005",
+      "asset": "app/courses/visual_assets/l11_m02_005.svg",
+      "source_png_sha256": "33828b55d5b95c3e49eb6113534b2b4ba8d565a8c93bb51cbbeec3ce7ad3bd80",
+      "embedded_sha256": "4286b4a5bfd9a8ba3a82ed263b45d4eadeeda32e84586337967597188703db02",
+      "svg_sha256": "cfddcb95db39b89a764b51762a943004d3b743aea56802d000b6cfa3b811c86f",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Use case: scientific-educational. ARCHIPRO UZ teaching illustration, 1536x1024 landscape. Professional detailed architectural graphite, fine ink and restrained watercolor on ivory paper. Recognizable real Uzbek family house, clearly visible doors, furniture, windows, cutaway rooms, sophisticated hand sketch, not photorealism or vector blocks. Large dominant drawing, sparse Uzbek labels, no fake software interface, no dimensions, no normative claims. Concept illustration only. Title 'QAVATLAR ALOQASINI TEKSHIRISH'. One detailed exploded two-storey house cutaway at left, right narrow margin four simple Uzbek callout labels, each leader terminating on relevant building element: 'HARAKAT' at staircase continuous landings, 'NAM ZONA' at aligned blue tiled bathrooms, 'TAYANCH' at aligned hatched walls, 'OCHILISH' at real window opening aligned with exterior facade. Floor plans with visible furniture and door access; no decorative paperwork, no numbers or quiz question list. Show one coherent physical house connecting functions and technical relations.",
+      "corrected": true,
+      "visual_review": "Rejected first version with ambiguous leader; regenerated non-exploded two-floor cutaway, all four leaders and labels inspected.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    }
+  ],
+  "accepted_count": 5
+}

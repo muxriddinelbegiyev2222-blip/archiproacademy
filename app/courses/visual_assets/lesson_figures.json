@@ -6035,86 +6035,86 @@
   {
     "code": "L11_M02_001",
     "asset": "l11_m02_001.svg",
-    "title": "Qavatlar bo'yicha zonalash — ko‘rgazmali namuna",
+    "title": "Qavatlar bo‘yicha zonalash",
     "explanation": [
-      "Ikki qavatda sanuzellar ustma-ust, yotoqxonalar yuqorida; pastda mehmon oqimi mavjud.",
-      "Har qavat xonalarini umumiy/tinch/xizmat guruhiga ajrating → zonalar.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Pastki qavatdagi mehmon va ovqatlanish joylari umumiy zonani, yuqoridagi yotoqxonalar tinch zonani ko‘rsatadi.",
+      "Ko‘k rang xizmat xonalarini ajratadi. Ikki qavatdagi sanuzellarning o‘zaro joylashuvini solishtiring.",
+      "Qavatlar tushunish uchun ajratib ko‘rsatilgan. Eskiz aniq o‘lchamli plan emas."
     ],
     "exercise": "Qavat zonalarini bitta ustma-ust sxemaga kiriting.",
     "solution": "Vertikal zonalash qavatlar orasidagi munosabatni ochib beradi.",
     "block": 5,
     "recipe": "stack",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L11_M02_002",
     "asset": "l11_m02_002.svg",
-    "title": "Public va private vertikal aloqa — ko‘rgazmali namuna",
+    "title": "Mehmon va oilaning qavatlararo yo‘li",
     "explanation": [
-      "Ikki qavatda sanuzellar ustma-ust, yotoqxonalar yuqorida; pastda mehmon oqimi mavjud.",
-      "Pastki kirishdan yuqori xonagacha yo‘lni chizing → vertikal privacy.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Sariq yo‘l kirishdan pastdagi mehmonxonaga, ko‘k yo‘l zinapoya orqali oilaning yuqori xonalariga olib boradi.",
+      "Binafsha belgi yotoqxona va sanuzel orasidagi tungi aloqani ajratadi. Mehmon yo‘li yotoqxonalar orqali o‘tmasligini tekshiring.",
+      "Rangli chiziqlar harakat yo‘nalishini tushuntiradi; yo‘lak va ochilish o‘lchamlari loyiha planida tekshiriladi."
     ],
     "exercise": "Mehmon va oilaning xususiy yo‘llarini solishtiring.",
     "solution": "Public-private ajralish qavatlar orasida ham tekshiriladi.",
     "block": 5,
     "recipe": "stack",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L11_M02_003",
     "asset": "l11_m02_003.svg",
-    "title": "Wet zones va service stack — ko‘rgazmali namuna",
+    "title": "Nam xonalar va muhandislik shaxtasi",
     "explanation": [
-      "Ikki qavatda sanuzellar ustma-ust, yotoqxonalar yuqorida; pastda mehmon oqimi mavjud.",
-      "Nam xonalar va quvur yo‘lini ustma-ust solishtiring → wet stack koordinatsiyasi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Asosiy kesimda ikki sanuzel ustma-ust joylashgan; yonidagi shaxta qavatlararo muhandislik yo‘lini ko‘rsatadi.",
+      "O‘ngdagi taqqoslashda sanuzel shaxtadan uzoqlashgani uchun gorizontal yo‘l uzaygan.",
+      "Quvurlar faqat bog‘lanishni tushuntiradi. Ulanish detali, diametr, nishab va xizmat ko‘rsatish joylari bu eskizdan olinmaydi."
     ],
     "exercise": "Ho‘l zonalar va shaft uchun yo‘lni belgilang.",
     "solution": "Wet stack qarori quvurlar va xizmat imkoniyatini muvofiqlashtiradi.",
     "block": 5,
     "recipe": "stack",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L11_M02_004",
     "asset": "l11_m02_004.svg",
-    "title": "Konstruktiv stacking — ko‘rgazmali namuna",
+    "title": "Qavatlar orasida tayanchlar uzluksizligi",
     "explanation": [
-      "Ikki qavatda sanuzellar ustma-ust, yotoqxonalar yuqorida; pastda mehmon oqimi mavjud.",
-      "Devor/ustun tayanchlarini qavatlar orasida solishtiring → konstruktiv uzluksizlik savoli.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Chapdagi shtrix chiziq yuqori devor, pastki tayanch va poydevorning bir yo‘nalishda davom etishini ko‘rsatadi.",
+      "O‘ngdagi aylana yuqori tayanch ostida keng ochilish paydo bo‘lgan joyni ajratadi. Bu holat konstruktor bilan muvofiqlashtiriladi.",
+      "Ko‘rinadigan yopma tayanch o‘zgarishini o‘z-o‘zidan hal qilmaydi; konstruktiv yechim va hisob alohida talab etiladi."
     ],
     "exercise": "Yuqori tayanchlarni pastki karkas bilan solishtiring.",
     "solution": "Stacking konstruktiv uzluksizlik va konfliktlarni aniqlaydi.",
     "block": 5,
     "recipe": "stack",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L11_M02_005",
     "asset": "l11_m02_005.svg",
-    "title": "Qavatlar zonalashi audit — ko‘rgazmali namuna",
+    "title": "Qavatlar o‘rtasidagi aloqalarni tekshirish",
     "explanation": [
-      "Ikki qavatda sanuzellar ustma-ust, yotoqxonalar yuqorida; pastda mehmon oqimi mavjud.",
-      "Plan va kesimdagi to‘rtta aloqa: harakat, nam zona, tayanch, ochilish → audit.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "To‘rtta izoh zinapoya, nam xona, tayanch devori va deraza ochilishini alohida ko‘rsatadi.",
+      "Qavatlar planini kesim bilan solishtirib, harakat yo‘li, nam xonalar va tayanchlarning mosligini tekshiring.",
+      "Bu tushunchalarni jamlovchi eskiz. Haqiqiy loyihada ochilish, sath va tugunlar o‘z chizmalari bo‘yicha tekshiriladi."
     ],
     "exercise": "Ikki konflikt uchun muvofiqlashtirilgan yechim savolini topshiring.",
     "solution": "Qavat auditida funksional va texnik qarorlar birga ko‘riladi.",
     "block": 4,
     "recipe": "stack",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
