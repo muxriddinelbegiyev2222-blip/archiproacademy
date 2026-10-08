@@ -1,5 +1,15 @@
 # Yangi tekshirilgan partiya — 2026-10-08
 
+Partiya: L10_M03_001, L10_M03_002, L10_M03_003. Mavzuga mos izohli arxitektura eskizlari tekshirilib darslarga bog‘landi. Tasvirlarning asl o‘lchami saqlandi.
+
+**234 nomzod: 55 qabul qilingan eskiz + 16 yangi rasm ixtiyoriy dars + 163 yangilanish kutilayotgan dars.** Boshlang‘ich 204 nomzoddan 25 ta eskiz tiklandi yoki yangilandi; 16 dars yangi rasm navbatidan o‘tkazildi; 163 dars qolgan. Ish tugallanmagan.
+
+Qabul va xeshlar: [VISUAL_REWORK_2026_10_08.json](VISUAL_REWORK_2026_10_08.json). Qarorlar: [VISUAL_CANDIDATE_REVIEW_2026_10_08.json](VISUAL_CANDIDATE_REVIEW_2026_10_08.json). Keyingi navbat: **L10_M03_004**.
+
+---
+
+# Yangi tekshirilgan partiya — 2026-10-08
+
 Partiya: L10_M02_002, L10_M02_003, L10_M02_004. Mavzuga mos izohli arxitektura eskizlari tekshirilib darslarga bog‘landi. Tasvirlarning asl o‘lchami saqlandi.
 
 **234 nomzod: 52 qabul qilingan eskiz + 16 yangi rasm ixtiyoriy dars + 166 yangilanish kutilayotgan dars.** Boshlang‘ich 204 nomzoddan 22 ta eskiz tiklandi yoki yangilandi; 16 dars yangi rasm navbatidan o‘tkazildi; 166 dars qolgan. Ish tugallanmagan.

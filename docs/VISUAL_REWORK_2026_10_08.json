@@ -678,7 +678,46 @@
       "corrected": false,
       "visual_review": "Qiya uchastka, tekis bino terrassasi, daraxt, quduq va old kesmadagi quvur tushunarli ajratilgan. Ko‘rsatkichlar o‘z elementlariga tegadi; aniq sath, masofa yoki konstruktiv hisob da’vosi yo‘q.",
       "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L10_M03_001",
+      "asset": "app/courses/visual_assets/l10_m03_001.svg",
+      "source_png_sha256": "4cd20810c48056582e5ea563e5e9030d0f834330bc7d565724316c9609e47578",
+      "embedded_sha256": "60f65d2cc2b52ff989498e7a1a9cd8169168af0c5c58cdf5818ddb6b1fa99bec",
+      "svg_sha256": "b423397c3a8b947480b7bd9490e33c0f79894069538c922770ee1ced618f4c0e",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Professional architect's real sketchbook teaching sheet, fine graphite, expressive but controlled architectural ink and soft watercolor on warm ivory paper, landscape1536x1024. Exact heading 'AVVAL XONALAR ALOQASI'. Topic early bubble diagram before dimensioned walls. This MUST be an authentic hand-sketched architectural concept drawing, not vector infographic, not generic circles on a screen. Centre one generously sized organic bubble study: hand-drawn irregular oval clusters with subtle watercolor and handwritten Uzbek room names, no walls or exact floorplan boundaries. Bottom near margin one oval labelled 'Kirish', connected by short hand-drawn line to central oval 'Mehmonxona'. Central oval connects LEFT to oval 'Oshxona', RIGHT to small oval 'Hall'; 'Hall' connects top-right to 'Yotoqxona' and smaller 'Sanuzel'. Exactly six distinct readable room labels once each, generous room for labels. Lines connect the oval BOUNDARIES, avoid crossing inside text, no arrows. Small loose pencil traces of alternative oval positions lightly under final lines convey real design exploration. At left lower margin a small genuine pencil exterior concept sketch of modest house facade, visually subordinate and unlabelled, not a wall plan; main diagram remains dominant. Annotation exact 'Hali devor va o‘lcham yo‘q' below main study. Rich paper texture and hand line weight, organic architectural designer marks; no dimensions, no furniture pretending precise plans, no English, no digital vectors, no UI cards, no generic clipart. Do not draw extra unlabeled bubbles or irrelevant objects.",
+      "corrected": false,
+      "visual_review": "Olti xonaning funksional aloqasi qo‘lda ishlangan qalam-akvarel tadqiqotida o‘qiladi; devor yoki o‘lchamli plan bilan adashtirilmaydi. Uy eskizi mavzu kontekstini beradi. Xonalar kattaligi maydon hisobini bildirmaydi.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L10_M03_002",
+      "asset": "app/courses/visual_assets/l10_m03_002.svg",
+      "source_png_sha256": "e1dc2ba60c0b5d9d2c3c7eeabdcbe202e02a0a7ee772f2beeeb38d701e9a4a9f",
+      "embedded_sha256": "1a4db81bf425f444e6934e13e8da16070fc80ce3009c70b8c84ee2308064618e",
+      "svg_sha256": "dcf45512d3457ed0fa6fb4c853422451d40dd964673177d18a8a7763c422582f",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Professional hand-drawn architectural teaching sketch on ivory paper, detailed controlled graphite/ink with transparent watercolor, landscape1536x1024. Exact Uzbek heading 'UMUMIY, SHAXSIY VA XIZMAT ZONALARI'. One dominant furnished roofless axonometric cutaway of a modest single-storey family home, believable doors, walls and furniture. Front central main entrance opens to compact entry vestibule and hall. LEFT half contains living/dining space with sofa and dining table, wash its floor pale ochre and label 'Umumiy zona'. BACK RIGHT contains two bedrooms with beds; floor soft sage green, label 'Shaxsiy zona'. FRONT RIGHT adjacent to living/dining and entry contains kitchen with counters, and small laundry room with washing machine, floor muted pale blue, label 'Xizmat zonasi'. Clearly distinct floor color GROUPS, no wall color that hides furniture. Keep realistic internal connections with hall into bedrooms; kitchen is adjacent to dining. Sparse exact two detail labels 'Oshxona — ovqatlanish' points kitchen-dining connection; 'Kirish — garderob' points entrance coat closet. Thin label leaders end at right elements and do not cross text. Enough empty circulation space between furniture. No arrows, no numerical dimensions, no simplistic bubble/vector diagrams, no English public/private/service, no UI cards or clipart. Rich professional handrendered architecture not photorealistic. Illustrative concept, not dimensioned or regulation certified design.",
+      "corrected": false,
+      "visual_review": "Umumiy zona ocher, yotoq xonalari yashil, oshxona va kir yuvish xonasi ko‘k rangda. Kirish-garderob va oshxona-ovqatlanish joyi aniq belgilangan. Fazoviy ko‘rgazmali misol funksional guruhlashni tushuntiradi.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L10_M03_003",
+      "asset": "app/courses/visual_assets/l10_m03_003.svg",
+      "source_png_sha256": "aa42c73423d1a243c03e60a549e2e3fa1dcaa2bc2b894e94ed90a25188ffcd19",
+      "embedded_sha256": "4b37b1c632d7fd77e3125f9972c7eddabfe6e81a4e87ae4e31d985742eee640a",
+      "svg_sha256": "b44abae94e235f09418efa9d41c1c7fbc31cc62f4b09869d670d7f61c899c739",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Professional architectural teaching sketch, meticulous human graphite/ink and muted watercolor on ivory paper, landscape1536x1024. Exact Uzbek header 'MEHMON VA XIZMAT HARAKATI'. Two side-by-side roofless axonometric cutaway studies of SAME modest one-storey house. HOUSE geometry identical in both: front door at bottom centre enters small vestibule; living room with sofa to left accessible directly from vestibule; kitchen to right has secondary external service door from side courtyard; hall to rear separates two bedrooms with beds. LEFT title 'Mehmon yo‘li': a visitor carrying coat at front door, subtle ochre continuous floor ribbon from outside front door through vestibule ONLY into living room at left, entirely through existing door openings, no ribbon across walls, no arrows; bedrooms quiet uncolored. RIGHT title 'Xizmat yo‘li': person carrying grocery bag at right-side courtyard service doorway into kitchen, subtle muted blue continuous floor ribbon through side service door ONLY to kitchen counters, no ribbon to bedroom or living room, no arrows. One exact label 'Shaxsiy xonalar' above each rear bedroom group with fine leader. Consistent believable windows, doors, furniture, clean empty walkways, rich architecture lineweight and warm watercolor, spare readable Uzbek labels, no numbers or normative claims, no vector scheme, no generic diagram cards, no UI or English. Show short clear distinct real routes and keep all highlighted routes physically coherent.",
+      "corrected": false,
+      "visual_review": "Ikkala uy konturi, xonalari va mebeli bir xil. Ocher mehmon yo‘li old eshikdan umumiy xonaga, ko‘k xizmat yo‘li yon eshikdan oshxonaga boradi. Rangli harakat pol zonalari devorlarni kesmaydi; shaxsiy xonalar alohida.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
     }
   ],
-  "accepted_count": 52
+  "accepted_count": 55
 }

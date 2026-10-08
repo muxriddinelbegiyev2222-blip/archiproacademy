@@ -5145,55 +5145,55 @@
   {
     "code": "L10_M03_001",
     "asset": "l10_m03_001.svg",
-    "title": "Bubble Diagram tushunchasi — arxitekturaviy eskiz",
+    "title": "Devorlardan oldin funksional aloqani izlash",
     "explanation": [
-      "1. Rangli doiralar xonalarni devorsiz funksional bloklar sifatida ko‘rsatadi; asosiy maqsad yaqinlik va aloqani tez sinashdir.",
-      "2. Bu bosqichda aniq devor va o‘lchamga erta o‘tish variant qidirishni cheklashi mumkin.",
-      "3. Bubble’lar xona nomi, funksiyasi va kerakli aloqani ifodalaydi; keyin ular eskiz planga aylanadi.",
-      "Darsdagi bajarish: Briefdagi barcha xonalarni alohida bubble sifatida joylashtiring."
+      "1. Har bir pufakcha xona yoki funksiyani ifodalaydi; hali devor va aniq o‘lcham yo‘q.",
+      "2. Bog‘lovchi chiziqlar kerakli yaqinlikni tekshirishga yordam beradi.",
+      "3. Misolda kirish umumiy xonaga, hall esa yotoqxona va sanuzelga bog‘langan.",
+      "4. Pufakcha kattaligi hisoblangan maydon emas. O‘z briefingizdagi xonalar va aloqalar bilan qayta ishlang."
     ],
     "exercise": "Xonalarni devorsiz funksional bloklar sifatida tartiblang.",
     "solution": "Bubble Diagram aniq geometriyadan oldin funksional struktura va yaqinliklarni tekshiradi.",
     "block": 5,
     "recipe": "adjacency",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy bubble-diagram eskizi. Doira o‘lchami va joylashuvi konseptual; aniq xona o‘lchamlari keyingi plan bosqichida belgilanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M03_002",
     "asset": "l10_m03_002.svg",
-    "title": "Zonalar va aloqalar — arxitekturaviy eskiz",
+    "title": "Funksional zonalar va kerakli yaqinliklar",
     "explanation": [
-      "1. Issiq ranglar public, ko‘k private, yashil service zonalarini ifodalaydi.",
-      "2. Chiziqlar Required / Preferred / Avoid kabi funksional aloqalarni tekshirishga yordam beradi.",
-      "3. Har xona barcha xonalar bilan bevosita bog‘lanishi shart emas; kerakli yaqinliklar ustuvor qilinadi.",
-      "Darsdagi bajarish: Xonalar uchun Required / Preferred / Avoid aloqalar jadvalini tuzing."
+      "1. Ocher umumiy zona mehmon qabul qilish va birgalikdagi faoliyat uchun ajratilgan.",
+      "2. Yashil shaxsiy zona yotoq xonalarini guruhlaydi; xizmat zonasi ko‘k rangda.",
+      "3. Kirish-garderob hamda oshxona-ovqatlanish yaqinligi foydalanish ssenariysi bilan tekshiriladi.",
+      "4. Har bir xona bilan bevosita aloqa shart emas. O‘z briefingiz uchun zarur, ma’qul va chetlashiladigan aloqalarni yozing."
     ],
     "exercise": "Public, private va service zonalar orasidagi kerakli aloqalarni aniqlang.",
     "solution": "Zonalash va aloqa diagrammasi plan funksiyasining mantiqiy skeletini yaratadi.",
     "block": 5,
     "recipe": "adjacency",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy bubble-diagram eskizi. Doira o‘lchami va joylashuvi konseptual; aniq xona o‘lchamlari keyingi plan bosqichida belgilanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M03_003",
     "asset": "l10_m03_003.svg",
-    "title": "Kirish va circulation — arxitekturaviy eskiz",
+    "title": "Mehmon va xizmat yo‘llarini ajratish",
     "explanation": [
-      "1. Strelkalar mehmon, oila va service harakat yo‘llarini bubble’lar orasida ko‘rsatadi.",
-      "2. Kirishdan public, private va service zonalarga o‘tish tushunarli va qisqa bo‘lishi kerak.",
-      "3. Har aloqani uzun koridor bilan hal qilish foydali maydonni kamaytirishi mumkin.",
-      "Darsdagi bajarish: Mehmon, oila va service uchun uchta circulation yo‘lini chizing."
+      "1. Chapda mehmon asosiy kirish orqali umumiy xonaga o‘tadi.",
+      "2. O‘ngda xizmat yoki mahsulot olib kirish yon eshikdan oshxonaga bog‘langan.",
+      "3. Shaxsiy xonalar ikkala ko‘rinishda ham orqa hall orqali ajratilgan.",
+      "4. O‘z diagrammangizda mehmon, oila va xizmat yo‘llarini alohida tekshiring. Misol har bir uyda alohida xizmat eshigi shartligini bildirmaydi."
     ],
     "exercise": "Bubble diagram bosqichida asosiy harakat yo‘llarini tekshiring.",
     "solution": "Circulation diagram foydalanuvchi yo‘llarini devor chizishdan oldin optimallashtiradi.",
     "block": 5,
     "recipe": "adjacency",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy bubble-diagram eskizi. Doira o‘lchami va joylashuvi konseptual; aniq xona o‘lchamlari keyingi plan bosqichida belgilanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
