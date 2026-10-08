@@ -639,7 +639,46 @@
       "corrected": true,
       "visual_review": "Chapda hall ichidagi eshik ochilish zonalari kesishishi ajratilgan. O‘ngda avtomobil dastlab yo‘l chetida edi; tahrirdan keyin ochiq piyoda darvozasi qarshisidagi yo‘lakni to‘smoqda. Fazoviy muammolar konkret; normativ xulosa chiqarilmagan.",
       "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L10_M02_002",
+      "asset": "app/courses/visual_assets/l10_m02_002.svg",
+      "source_png_sha256": "a473e0c4db346483d28a362c2da674f25401707c0de92ac14131790acbbde0ce",
+      "embedded_sha256": "185a60de8fa716a8caf2165ee2f253945d20c57582d31ab10693bcbac1a04ed2",
+      "svg_sha256": "7a9603c5fc35f7f75d6df8e823b78f1743a74bc501d4a5b55b08b0927ccd3e3b",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "ARCHIPRO UZ professional architect pencil/ink watercolor sketch, warm ivory paper landscape1536x1024. Exact heading 'KIRISH, KO‘CHA VA ORIENTATSIYA'. Draw one detailed overhead architectural SITE PLAN of a realistic modest single-storey Uzbek house inside rectangular walled garden plot. Street along bottom with pavement, clearly separate pedestrian gate bottom centre-left connected by curved garden path to front house door; wide driveway gate bottom-right connected to car parking bay. House believable hipped roof, front porch, planting and human scale. Hand-drawn north orientation marker in empty top-left margin: slender arrow straight UP with label 'Shimol'. Other exact Uzbek annotation labels in margins with fine leader lines: 'Ko‘cha' points street pavement; 'Piyoda kirishi' points pedestrian gate; 'Avtomobil kirishi' points wide vehicle gate; 'Bino kirishi' points house front door. Clearly separate pedestrian path from driveway, rich true architectural sketch line weight, materials, subtle sage gardens and ochre walking path. No numerical dimensions, no sun diagram, no legal requirements, no approval checks, no vector infographic, no generic UI or clipart, no English. All geometry and entrance positions coherent; legible sparse labels with uncrossed leaders and generous margins.",
+      "corrected": false,
+      "visual_review": "Piyoda darvozasi uy eshigiga bog‘langan; alohida avtomobil darvozasi yon to‘xtash joyiga olib boradi. Shimol belgisi mavjud. Kirishlar va ko‘cha izohlari o‘qiladi; konseptual orientatsiya real manzilga bog‘lanmagan.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L10_M02_003",
+      "asset": "app/courses/visual_assets/l10_m02_003.svg",
+      "source_png_sha256": "e255e7fe8e1a336f9639f8489a7087e16217db4cbae61ad8b856e122503d6776",
+      "embedded_sha256": "4cb2569bdfc8dbbbaba328df949ac2052c42f3de90ca81107ea2f00a4a2fd015",
+      "svg_sha256": "fb59f8daad13d7a157de4d95d337ccadd8c3302c3463671d695bcb38be4e50f5",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Professional architect's environmental site analysis drawing, exceptionally fine pencil/ink with restrained watercolor on ivory, landscape1536x1024. Exact Uzbek heading 'QUYOSH, SHAMOL VA QO‘SHNI TA’SIRI'. Three LARGE detailed hand-drawn architectural vignettes in horizontal row, open paper composition WITHOUT boxed cards. Each depicts same modest one-storey home in garden from similar aerial angle, so compare three separate factors. LEFT labelled 'Soyalanish': tall neighboring two-storey building to left of small home, low afternoon sun visible upper left, neighbor casts long physical shadow across part of small home's yard and lower windows to right, coherent single light direction; leader 'Qo‘shni soyasi' points actual shaded yard area. MIDDLE labelled 'Mahalliy shamol': same house with sheltered garden terrace behind a permeable hedge; two subtle flowing pencil wind streamlines from left to right around building, their arrowheads direction consistent, no universal prevailingwind assertion. Leader 'Himoyalangan ayvon' points terrace on sheltered far side. RIGHT labelled 'Ko‘rish yo‘nalishi': same home beside neighboring house with elevated window visually overlooking its yard terrace; fine dashed sight line from neighbor window down to terrace, leader 'Hovlining maxfiyligi' points terrace. No exact orientation, numerical sun angles, seasonal claims, dimensions or normative judgment; only illustrative site conditions to investigate. Detailed architecture, landscape human scale, leader lines accurately positioned, clean readable Uzbek text, subtle ochre/sage washes. No photorealism, vectors, clipart, simplistic symbols, UI, English or checkmarks.",
+      "corrected": true,
+      "visual_review": "Uchta alohida muhit omili realistik uy va hovli misolida ajratilgan. Ko‘rish chizig‘i avval tomda tugagan; tahrirdan keyin ayvon tomon yo‘naltirilgan. Shamol yo‘nalishi va soyalanish o‘quv farazi, haqiqiy iqlim ma’lumoti emas; ko‘rish chizig‘i tekshirish yo‘nalishi sifatida izohlangan.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L10_M02_004",
+      "asset": "app/courses/visual_assets/l10_m02_004.svg",
+      "source_png_sha256": "93811a197369c9ceb644f3813d0c9180d7f9378ea5103e127900b1bb1c5812a5",
+      "embedded_sha256": "fe31409fe3ad6248f7e69ba83150e540678f91da734c633309702c64463e6dca",
+      "svg_sha256": "f7350ed7e328f0b97d2ad0a49fa94fd29068bc62f97d5a64defc0a16ba615d3b",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Professional architect's educational landscape sectional perspective, fine graphite pencil and architectural ink with gentle watercolor washes on warm ivory paper, landscape1536x1024. Exact heading Uzbek 'RELYEF VA MAVJUD ELEMENTLAR'. One coherent detailed oblique cutaway of an existing SLOPING residential plot with a modest one-storey proposed house on a level terrace, slope rises at back-left and descends foreground-right. Clearly show a dark soil cut face along foreground to expose genuine changes in ground elevation. Include one large mature tree at back-left with roots lightly visible in cutsoil near trunk, an existing small masonry well with lid near right garden edge, and a buried utility pipeline visible in the cutaway foreground passing ALONG the edge of plot, clear of house foundation. Sparse exact handwritten Uzbek annotations with thin precise leaders: 'Yer sathi' points actual sloping ground contour, 'Saqlanadigan daraxt' points mature tree trunk, 'Mavjud quduq' points well, 'Yer osti tarmog‘i' points exposed buried pipe. Rich believable architecture, earth strata and garden context, subtle green foliage, pale ochre soil. NOT approved construction details: no dimensions, no numeric levels, no pipe specifications, no arrow flow claims, no foundation engineering approval, no fictional regulations. This drawing shows objects to survey and record, not validated placement clearances. No genericvector diagram, clipart, digital UI, checkmarks or English. Clean margins and accurate leader endpoints.",
+      "corrected": false,
+      "visual_review": "Qiya uchastka, tekis bino terrassasi, daraxt, quduq va old kesmadagi quvur tushunarli ajratilgan. Ko‘rsatkichlar o‘z elementlariga tegadi; aniq sath, masofa yoki konstruktiv hisob da’vosi yo‘q.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
     }
   ],
-  "accepted_count": 49
+  "accepted_count": 52
 }

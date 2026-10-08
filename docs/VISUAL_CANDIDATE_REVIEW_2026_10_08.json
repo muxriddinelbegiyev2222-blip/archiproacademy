@@ -2,9 +2,9 @@
   "source_commit": "ec7db30e096c65d95917e84082fbd22547914adf",
   "scope": "196 remaining candidates after recovering eight unsaved illustrations",
   "visually_inspected": 196,
-  "updated": 11,
+  "updated": 14,
   "new_image_optional": 16,
-  "replacement_pending": 169,
+  "replacement_pending": 166,
   "complete": false,
   "records": [
     {
@@ -191,8 +191,8 @@
       "source_path": "app/courses/level10_module02.py",
       "source_git_sha_at_review": "67db03a7576dc7dc9a7a09aa230b9824451e0051",
       "visual_style": "simple_vector_requires_rework",
-      "decision": "replacement_pending",
-      "reason": "Mavzu fazoviy yoki chizma natijasini ko‘rishni talab qiladi; mavjud tasvir sodda vektor belgilaridan iborat, professional arxitektura eskizi darajasiga mos emas."
+      "decision": "updated",
+      "reason": "Mavzuga mos izohli eskiz ko‘zdan kechirildi, dasturda ochildi va darsga bog‘landi."
     },
     {
       "code": "L10_M02_003",
@@ -202,8 +202,8 @@
       "source_path": "app/courses/level10_module02.py",
       "source_git_sha_at_review": "67db03a7576dc7dc9a7a09aa230b9824451e0051",
       "visual_style": "simple_vector_requires_rework",
-      "decision": "replacement_pending",
-      "reason": "Mavzu fazoviy yoki chizma natijasini ko‘rishni talab qiladi; mavjud tasvir sodda vektor belgilaridan iborat, professional arxitektura eskizi darajasiga mos emas."
+      "decision": "updated",
+      "reason": "Mavzuga mos izohli eskiz ko‘zdan kechirildi, dasturda ochildi va darsga bog‘landi."
     },
     {
       "code": "L10_M02_004",
@@ -213,8 +213,8 @@
       "source_path": "app/courses/level10_module02.py",
       "source_git_sha_at_review": "67db03a7576dc7dc9a7a09aa230b9824451e0051",
       "visual_style": "simple_vector_requires_rework",
-      "decision": "replacement_pending",
-      "reason": "Mavzu fazoviy yoki chizma natijasini ko‘rishni talab qiladi; mavjud tasvir sodda vektor belgilaridan iborat, professional arxitektura eskizi darajasiga mos emas."
+      "decision": "updated",
+      "reason": "Mavzuga mos izohli eskiz ko‘zdan kechirildi, dasturda ochildi va darsga bog‘landi."
     },
     {
       "code": "L10_M02_005",

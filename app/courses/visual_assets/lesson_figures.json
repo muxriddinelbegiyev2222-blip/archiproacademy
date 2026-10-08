@@ -5073,55 +5073,55 @@
   {
     "code": "L10_M02_002",
     "asset": "l10_m02_002.svg",
-    "title": "Kirish, ko‘cha va orientatsiya — arxitekturaviy eskiz",
+    "title": "Ko‘cha, alohida kirishlar va shimol",
     "explanation": [
-      "1. Ko‘cha tomoni, gate va uchastka kirishlari tashqi aloqa strategiyasini belgilaydi.",
-      "2. Piyoda, avtomobil va service kirishlarini alohida ko‘rish mumkin; ularning yo‘llari bir-biriga xalaqit bermasligi kerak.",
-      "3. North yo‘nalishi keyingi quyosh va xona orientatsiyasi uchun asos bo‘ladi.",
-      "Darsdagi bajarish: Site’da north, street, gate va asosiy kirishlarni belgilang."
+      "1. Ko‘cha uchastkaning tashqi aloqasini beradi; piyoda va avtomobil darvozalari alohida ko‘rsatilgan.",
+      "2. Piyoda yo‘li darvozadan bino kirishigacha davom etadi.",
+      "3. Shimol belgisi keyingi orientatsiya tahlili uchun tayanch. Bu o‘quv misolidagi yo‘nalish bo‘lib, haqiqiy uchastkada aniqlanadi.",
+      "4. Xizmat va mehmon kirishlari loyiha dasturi bo‘yicha alohida tahlil qilinishi mumkin."
     ],
     "exercise": "Ko‘cha, kirish va orientatsiyani bitta site diagramda ko‘rsating.",
     "solution": "Tashqi aloqa va orientatsiya uy joylashuvi hamda circulation qarorlariga ta’sir qiladi.",
     "block": 5,
     "recipe": "site",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy site eskizi. Quyosh, shamol, relyef va kirish belgilarining joylashuvi konseptual; real loyiha survey va joy ma’lumotlari bilan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M02_003",
     "asset": "l10_m02_003.svg",
-    "title": "Quyosh, shamol va qo‘shnilar — arxitekturaviy eskiz",
+    "title": "Soyalanish, shamol va hovli maxfiyligi",
     "explanation": [
-      "1. Quyosh belgisi tabiiy yorug‘lik va soyalanishni, ko‘k strelkalar shamol yo‘nalishini, qo‘shni hajm esa kontekst ta’sirini ifodalaydi.",
-      "2. Qo‘shni bino, baland devor yoki daraxt privacy va daylightga ta’sir qilishi mumkin.",
-      "3. Iqlim diagrammasi sonli hisob o‘rnini bosmaydi; u loyiha strategiyasi uchun konseptual tahlil vositasidir.",
-      "Darsdagi bajarish: Quyosh, shamol va qo‘shnilar uchun alohida uchta diagramma tuzing."
+      "1. Chapda qo‘shni bino soyasi hovli va uyga ta’sir qilishi mumkinligi ko‘rsatilgan; haqiqiy soyalanish joy va vaqtga bog‘liq.",
+      "2. O‘rtada misol shamol yo‘nalishi hamda ayvon joylashuvi ajratilgan. Mahalliy shamol haqiqiy ma’lumot bilan aniqlanadi.",
+      "3. O‘ngda qo‘shni derazasidan hovli ayvoni tomon ko‘rish yo‘nalishi tahlil qilinadi; real ko‘rinish to‘siq va balandliklar bilan tekshiriladi.",
+      "4. Uch omilni alohida qayd qilib, keyin birgalikda solishtiring. Tasvir universal orientatsiya yoki iqlim xulosasi bermaydi."
     ],
     "exercise": "Iqlim va atrof kontekstning bino joylashuviga ta’sirini tahlil qiling.",
     "solution": "Quyosh, shamol va qo‘shni kontekst site strategiyasining muhim qatlamlaridir.",
     "block": 5,
     "recipe": "site",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy site eskizi. Quyosh, shamol, relyef va kirish belgilarining joylashuvi konseptual; real loyiha survey va joy ma’lumotlari bilan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L10_M02_004",
     "asset": "l10_m02_004.svg",
-    "title": "Relyef va mavjud elementlar — arxitekturaviy eskiz",
+    "title": "Yer sathi va mavjud elementlarni qayd qilish",
     "explanation": [
-      "1. Kontur chiziqlari relyefni, daraxt va mavjud obyektlar esa saqlash yoki ko‘chirish kerak bo‘lishi mumkin bo‘lgan site elementlarini ifodalaydi.",
-      "2. Relyef kirish, drenaj, bino sathi va tashqi yo‘llarga ta’sir qiladi.",
-      "3. Real o‘lchovsiz uchastkani ideal tekis deb qabul qilmang.",
-      "Darsdagi bajarish: Mavjud elementlarni Keep / Remove / Verify guruhlariga ajrating."
+      "1. Qiya yer sathi bino kirishi, pol sathi va suv ketishi bilan bog‘liq savollarni tug‘diradi.",
+      "2. Daraxt va quduq kabi mavjud elementlarni joyi hamda holati bilan qayd qiling.",
+      "3. Kesmadagi quvur yer osti tarmog‘i borligini tushuntiradi; haqiqiy yo‘nalish, chuqurlik va turi ishonchli manbadan tekshiriladi.",
+      "4. Saqlash, olib tashlash yoki qo‘shimcha tekshirish qarorini o‘lchov va tegishli dalilga bog‘lang."
     ],
     "exercise": "Relyef va mavjud obyektlarni loyiha qarorining bir qismi sifatida tekshiring.",
     "solution": "Site qarori real balandlik va mavjud kontekstni hisobga olishi kerak.",
     "block": 5,
     "recipe": "site",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy site eskizi. Quyosh, shamol, relyef va kirish belgilarining joylashuvi konseptual; real loyiha survey va joy ma’lumotlari bilan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
