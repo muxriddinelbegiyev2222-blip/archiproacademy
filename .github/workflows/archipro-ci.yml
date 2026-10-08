@@ -86,10 +86,11 @@ jobs:
 
       # Optional download convenience: storage quota must not mask audit/build results.
       - name: Upload verified Windows client
+        if: github.event_name == 'workflow_dispatch'
         continue-on-error: true
         uses: actions/upload-artifact@v4
         with:
           name: ARCHIPRO_UZ_Client_1.0.6
           path: dist/ARCHIPRO UZ.exe
           if-no-files-found: error
-          retention-days: 7
+          retention-days: 3

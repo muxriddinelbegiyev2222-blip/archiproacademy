@@ -1,0 +1,51 @@
+name: Media storage maintenance
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/media-maintenance.yml', 'tools/compact_lesson_media.py']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Remove superseded Windows build artifacts, retaining newest two
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const artifacts = await github.paginate(github.rest.actions.listArtifactsForRepo, {
+              owner: context.repo.owner, repo: context.repo.repo, per_page: 100
+            });
+            const builds = artifacts.filter(a => a.name === 'ARCHIPRO_UZ_Client_1.0.6' && !a.expired)
+              .sort((a,b) => Date.parse(b.created_at) - Date.parse(a.created_at));
+            const removed = [];
+            for (const artifact of builds.slice(2)) {
+              await github.rest.actions.deleteArtifact({owner: context.repo.owner,
+                repo: context.repo.repo, artifact_id: artifact.id});
+              removed.push({id: artifact.id, bytes: artifact.size_in_bytes});
+            }
+            const report = {kept: builds.slice(0,2).map(a=>({id:a.id,bytes:a.size_in_bytes})),
+              deleted: removed, freed_bytes: removed.reduce((n,a)=>n+a.bytes,0)};
+            require('fs').writeFileSync('artifact-cleanup.json', JSON.stringify(report,null,2));
+            console.log(JSON.stringify(report));
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install image review dependencies
+        run: python -m pip install Pillow PySide6
+      - name: Prepare full-resolution compact images for review
+        env:
+          QT_QPA_PLATFORM: offscreen
+        run: python tools/compact_lesson_media.py
+      - name: Upload compact candidate and cleanup report
+        uses: actions/upload-artifact@v4
+        with:
+          name: compact-media-review
+          path: |
+            compact-media-review.zip
+            artifact-cleanup.json
+          retention-days: 1
