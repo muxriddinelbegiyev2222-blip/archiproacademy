@@ -1,10 +1,10 @@
-# Tasdiqlangan yangilanish — 2026-10-08
+# Tekshirilgan yangilanish — 2026-10-08
 
-L11_M02_001–005 uchun 5 ta yangi mavzuga mos arxitekturaviy eskiz yaratildi, ko‘zdan kechirildi va darslarga bog‘landi. L11_M02_005 birinchi variantidagi izoh chizig‘i tuzatildi. Beshala rasm Qt orqali ochildi; darsdagi ko‘rinishi va kattalashtirish oynasi tekshirildi. Dars bloklari, mashqlar, testlar va o‘tish qoidalari saqlangan.
+19 ta yangi arxitekturaviy eskiz ko‘zdan kechirildi va darslarga bog‘landi. Qabul qilingan tasvirlar, tuzatishlar va manba xeshlari [qayd faylida](VISUAL_REWORK_2026_10_08.json). Ish hali tugallanmadi; 234 qayta tekshirish nomzodidan 19 tasi shu bosqichda yangilandi.
 
-Ish davom etmoqda. Oldingi “210 qoldi” soni to‘liq sifat tasdig‘i emas: 282 zarur eskiz darsining tasvir yaratish qaydlari bilan kesishmasida 234 ta qayta tekshirish nomzodi topildi; ushbu 5 tasi yangilandi. Materialli tasvirlar va haqiqiy skrinshotlar alohida saqlanadi. Barcha darslar mukammal yakunlandi deb hisoblanmaydi.
+Avvalgi c2f89c3 commit uchun CI 37689680150 muvaffaqiyatli: barcha 7 audit va Windows paket tekshiruvi o‘tgan. Yangi o‘zgarishlar uchun masofaviy CI natijasi alohida tekshiriladi.
 
-Yangi eskizlar va tekshiruv dalillari: [2026-10-08 qaydi](VISUAL_REWORK_2026_10_08.json). To‘liq Windows tekshiruvlari joriy commit uchun hali kutilmoqda.
+Issiqlik ko‘prigi mashqidagi noaniq “uzilgan balkon” iborasi izolyatsiya uzilishi deb aniqlashtirildi. Testlar va darsdan o‘tish qoidalari o‘zgartirilmagan.
 
 ---
 

@@ -1834,7 +1834,7 @@ WORKBOOKS = {'L00_M01': {'case': 'To‘rt kishilik oila uy so‘radi. Chiroyli f
                         'result': 'Envelope uzluksizligi barcha tutashuvlarda tekshiriladi.',
                         'code': 'L08_M07_002',
                         'title': 'Building envelope va uzluksizlik'},
-                       {'action': 'Uzilgan balkon tugunini thermal bridge ehtimoli sifatida qayd qiling.',
+                       {'action': 'Balkon tutashuvida issiqlik izolyatsiyasi uzilgan joyni issiqlik ko‘prigi ehtimoli sifatida qayd qiling.',
                         'result': 'Issiqlik ko‘prigi mahalliy issiqlik oqimini kuchaytirishi mumkin.',
                         'code': 'L08_M07_003',
                         'title': 'Thermal bridge tushunchasi'},

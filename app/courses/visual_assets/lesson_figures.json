@@ -3915,145 +3915,137 @@
   {
     "code": "L08_M06_001",
     "asset": "l08_m06_001.svg",
-    "title": "Namlik va gidroizolyatsiya tushunchasi — arxitekturaviy eskiz",
+    "title": "Namlik manbalari va harakat yo‘llari",
     "explanation": [
-      "1. Uy kesimida ko‘k strelkalar namlik kelishi mumkin bo‘lgan turli yo‘llarni ko‘rsatadi: tom, grunt va ichki nam zona.",
-      "2. Yashil chiziq himoya qatlamining uzluksizligi g‘oyasini ifodalaydi. Gidroizolyatsiya faqat katta tekis yuzada emas, barcha tutashuvlarda davom etishi kerak.",
-      "3. Eng xavfli joylar ko‘pincha burchak, quvur o‘tishi, threshold va tomdagi penetratsiyalardir; bitta zaif detal butun tizimni zaiflashtirishi mumkin.",
-      "Darsdagi bajarish: Suv manbasi → suv yo‘li → himoya qatlamini kesimda ketma-ket kuzating."
+      "Eskiz ichki suv, yog‘in va tuproqdagi namlikni uch manba sifatida ajratadi.",
+      "Ko‘k chiziqlar himoya yetarli bo‘lmagan holatda suv kirishi yoki namlik tarqalishi mumkin bo‘lgan yo‘llarni ko‘rsatadi.",
+      "Gidroizolyatsiya qarori manba va ta’sirga mos tanlanadi. Tasvir qatlamlar uchun tayyor ishchi detal emas."
     ],
     "exercise": "Uyda namlik tushishi mumkin bo‘lgan zonalar va manbalarni belgilang.",
     "solution": "Gidroizolyatsiya suv manbasi va harakat yo‘liga javob beradigan uzluksiz himoya tizimidir.",
     "block": 9,
     "recipe": "waterproof",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy kesim eskizi. Qatlamlar va strelkalar konseptual; qurilish o‘lchami, material tanlovi yoki normativ detal sifatida ko‘chirilmaydi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M06_002",
     "asset": "l08_m06_002.svg",
-    "title": "Fundament va yer bilan tutashuv — arxitekturaviy eskiz",
+    "title": "Poydevor va yer bilan tutashuv",
     "explanation": [
-      "1. Kesimda grunt tomoni, fundament devori va tashqi himoya qatlamini alohida ko‘ring; yer osti qismi namlik bilan uzoq muddat aloqada bo‘lishi mumkin.",
-      "2. Yashil qatlam devor va poydevor tutashuvida uzluksiz davom etishi kerak bo‘lgan himoya mantiqini ko‘rsatadi.",
-      "3. Quvur penetratsiyasi va pastki drenaj zonasi alohida kritik nuqtalar. Aniq yechim grunt, suv va texnik loyiha ma’lumotiga asoslanadi.",
-      "Darsdagi bajarish: Grunt → membrana → fundament → penetratsiya → drenaj yo‘lini kesimda tekshiring."
+      "Kesimda yerga tutash devor, himoya qatlami, tashqi yo‘lak va drenajning o‘zaro joylashuvi ko‘rsatilgan.",
+      "Sirt suvi binodan uzoqlashishi, namlik himoyasi esa tutashuvlarda uzilmasligi nazorat qilinadi.",
+      "Qatlamlar tarkibi, drenaj zarurati va suv chiqarish manzili geologiya hamda loyiha hisobiga bog‘liq; eskizdan tayyor detal ko‘chirilmaydi."
     ],
     "exercise": "Fundament kesimida namlik va penetratsiya zonalarini belgilang.",
     "solution": "Yer bilan tutashuv auditi membrana uzluksizligi, penetratsiya va suvni boshqarishni birga ko‘radi.",
     "block": 9,
     "recipe": "waterproof",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy kesim eskizi. Qatlamlar va strelkalar konseptual; qurilish o‘lchami, material tanlovi yoki normativ detal sifatida ko‘chirilmaydi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M06_003",
     "asset": "l08_m06_003.svg",
-    "title": "Tom, balkon va tashqi zonalar — arxitekturaviy eskiz",
+    "title": "Balkon va tashqi zonalarda suv chiqarish",
     "explanation": [
-      "1. Chapdagi tomda suv qiyalik bo‘ylab past nuqtaga va chiqarish nuqtasiga yuradi; tom shakli suv yo‘li bilan birga o‘qiladi.",
-      "2. O‘ngdagi balkon kesimida nishab, drain, eshik thresholdi va gidroizolyatsiya qatlamining o‘zaro munosabati ko‘rsatilgan.",
-      "3. Parapet, eshik va tom penetratsiyasi kabi tutashuvlar katta tekis yuzadan ko‘ra ko‘proq nazorat talab qilishi mumkin.",
-      "Darsdagi bajarish: Tom yoki balkonda eng yuqori nuqtadan drain/chiqishgacha suv yo‘lini chizing."
+      "Strelkalar balkon yuzasidan suv chiqish joyi va pastga tushuvchi quvurga yo‘nalishni ko‘rsatadi.",
+      "Yaqin ko‘rinishda qoplama bilan suv chiqish joyining tutashuvi ajratilgan. Shu uzluksizlik tom va boshqa tashqi nam zonalarda ham tekshiriladi.",
+      "Tasvir suv yo‘lini o‘rgatadi. Balkonning konstruktiv turi, qatlam qalinligi va haqiqiy nishabi loyiha bo‘yicha aniqlanadi."
     ],
     "exercise": "Tom va balkonda nishab, drain va kritik tutashuvlarni tekshiring.",
     "solution": "Tashqi nam zonada suv yo‘li, sath va gidroizolyatsiya uzluksizligi birgalikda ishlaydi.",
     "block": 9,
     "recipe": "waterproof",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy kesim eskizi. Qatlamlar va strelkalar konseptual; qurilish o‘lchami, material tanlovi yoki normativ detal sifatida ko‘chirilmaydi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M06_004",
     "asset": "l08_m06_004.svg",
-    "title": "Wet room va ichki nam zonalar — arxitekturaviy eskiz",
+    "title": "Nam xonadagi muhim tutashuvlar",
     "explanation": [
-      "1. Dush xonasi kesimida yashil chiziq pol ostidagi himoya qatlamining devorga ko‘tarilib, uzluksiz davom etishini ko‘rsatadi.",
-      "2. Ko‘k strelkalar suvning floor drain tomon yo‘nalishini tushuntiradi; nishab va drain bir-biriga mos bo‘lishi kerak.",
-      "3. Quvur penetratsiyasi va eshik thresholdi himoya qatlamini uzib yuborishi mumkin bo‘lgan kritik zonalardir. Tile qoplamani o‘zi to‘liq waterproofing tizimi deb qabul qilmang.",
-      "Darsdagi bajarish: Floor-wall junction, drain, quvur o‘tishi va eshik zonasini bitta kesimda tekshiring."
+      "Yaqin ko‘rinishlar devor burchagi, quvur o‘tishi, drenaj va eshik oldidagi tutashuvlarni ajratadi.",
+      "Bu joylarda namlikdan himoya qatlamining uzluksizligi tekshiriladi; plitkaning o‘zi buni tasdiqlamaydi.",
+      "Aylanadagi rasmlar namunaviy tutashuvlardir. Aniq material tizimi va montaj detali loyiha bo‘yicha tanlanadi."
     ],
     "exercise": "Wet roomdagi kritik gidroizolyatsiya nuqtalarini ajrating.",
     "solution": "Wet room himoyasi pol, devor, drain, penetratsiya va threshold koordinatsiyasiga bog‘liq.",
     "block": 9,
     "recipe": "waterproof",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy kesim eskizi. Qatlamlar va strelkalar konseptual; qurilish o‘lchami, material tanlovi yoki normativ detal sifatida ko‘chirilmaydi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M06_005",
     "asset": "l08_m06_005.svg",
-    "title": "Gidroizolyatsiya professional audit — arxitekturaviy eskiz",
+    "title": "Gidroizolyatsiyani tekshirish",
     "explanation": [
-      "1. Olti kichik eskiz auditda alohida ko‘riladigan tipik kritik zonalarni ifodalaydi: drain, fundament, tom, penetratsiya, nishab va wet room.",
-      "2. Har detalda bir xil savolni bering: suv qayerdan keladi, qayerga ketadi va himoya qatlami qayerda uzilishi mumkin?",
-      "3. BIM modeldagi umumiy geometriya yetarli emas; muhim tutashuv va penetratsiyalar mantiqan tushunarli detail bilan tekshirilishi kerak.",
-      "Darsdagi bajarish: Suv manbasi → yo‘l → himoya → tutashuv → penetratsiya → drainage checklistini to‘ldiring."
+      "Uy va yaqin ko‘rinishlar namlik manbasi, himoya qatlami, tutashuv hamda xizmat ko‘rsatish holatini birga ko‘rishga yordam beradi.",
+      "Suv chiqish joyida ifloslanish, qatlam shikasti va suv to‘planishi alohida tekshiriladi.",
+      "Tasvir tekshiruv savollarini ko‘rsatadi; bino yoki detalning to‘g‘ri bajarilganini tasdiqlamaydi."
     ],
     "exercise": "Gidroizolyatsiya tizimini kritik detallar bo‘yicha kompleks audit qiling.",
     "solution": "Professional audit suv yo‘li va himoya uzluksizligini barcha kritik tutashuvlarda tekshiradi.",
     "block": 12,
     "recipe": "waterproof",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy kesim eskizi. Qatlamlar va strelkalar konseptual; qurilish o‘lchami, material tanlovi yoki normativ detal sifatida ko‘chirilmaydi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M07_001",
     "asset": "l08_m07_001.svg",
-    "title": "Issiqlik izolyatsiyasi tushunchasi — arxitekturaviy eskiz",
+    "title": "Issiqlik izolyatsiyasining vazifasi",
     "explanation": [
-      "1. Uy kesimida yashil chiziq tashqi qobiq bo‘ylab uzluksiz issiqlik himoyasi g‘oyasini, to‘q sariq strelkalar esa issiqlik almashinuvi yo‘nalishini ko‘rsatadi.",
-      "2. Devor, tom, pol, deraza va eshik birgalikda building envelope hosil qiladi. Faqat bitta devorni izolyatsiya qilish butun qobiq muammosini hal qilmaydi.",
-      "3. Izolyatsiya qalinligi bu eskizdan olinmaydi; material, qalinlik va issiqlik ko‘rsatkichlari texnik hisob hamda amaldagi talablar bilan belgilanadi.",
-      "Darsdagi bajarish: Uy kesimida pol → devor → tom orqali tashqi qobiqni kuzating."
+      "Sariq qatlamlar tom, devor va polning issiqlik himoyasini ajratadi. Strelkalar issiqlik almashinuvi haqidagi tushunchani beradi.",
+      "Sirt rangiga doir taqqoslash quyosh ostida qizishga tegishli; och rang issiqlik izolyatsiyasining o‘rnini bosmaydi.",
+      "Qatlamning haqiqiy samarasi material, qalinlik, tutashuvlar va hisob bilan baholanadi."
     ],
     "exercise": "Building envelope elementlarini va issiqlik himoyasi yo‘lini belgilang.",
     "solution": "Issiqlik izolyatsiyasi bino qobig‘ini uzluksiz himoya tizimi sifatida ishlashi kerak.",
     "block": 9,
     "recipe": "thermal",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy kesim/detail eskizi. Qatlamlar konseptual; aniq material, qalinlik va issiqlik ko‘rsatkichlari normativ hamda texnik hisob asosida aniqlanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M07_002",
     "asset": "l08_m07_002.svg",
-    "title": "Building envelope va uzluksizlik — arxitekturaviy eskiz",
+    "title": "Bino qobig‘ining uzluksizligi",
     "explanation": [
-      "1. Yashil continuity line pol, devor, tom va deraza atrofi bo‘ylab bir uzluksiz himoya yo‘lini ko‘rsatadi.",
-      "2. Devor–tom, devor–pol, parapet va deraza reveal kabi geometriya o‘zgaradigan joylarda izolyatsiya uzilib qolmasligi kerak.",
-      "3. Kesimda himoya chizig‘ini qalam bilan uzluksiz kuzata olmasangiz, o‘sha joy alohida detail va koordinatsiya talab qilishi mumkin.",
-      "Darsdagi bajarish: Kesim bo‘ylab insulation continuity line’ni uzmasdan chizing."
+      "Sariq belgi tashqi devor, tom, yerga tutash pol va deraza atrofidagi himoya yo‘lini kuzatishga yordam beradi.",
+      "Ikki isitiladigan qavat orasidagi ichki yopma tashqi qobiq bilan bir xil vazifa bajarmaydi.",
+      "Tutashuvdagi uzilishlar alohida detal va issiqlik hisobi orqali baholanadi. Qatlamlar bu yerda konseptual."
     ],
     "exercise": "Pol, devor, tom va ochilishlarda izolyatsiya uzluksizligini tekshiring.",
     "solution": "Building envelope sifati alohida qatlamlardan ko‘ra ularning uzluksiz tutashishiga bog‘liq.",
     "block": 9,
     "recipe": "thermal",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy kesim/detail eskizi. Qatlamlar konseptual; aniq material, qalinlik va issiqlik ko‘rsatkichlari normativ hamda texnik hisob asosida aniqlanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M07_003",
     "asset": "l08_m07_003.svg",
-    "title": "Thermal bridge tushunchasi — arxitekturaviy eskiz",
+    "title": "Issiqlik ko‘prigi",
     "explanation": [
-      "1. Beton plita tashqi qobiq qatlamini kesib o‘tgan joy qizil aylana bilan ajratilgan potensial thermal bridge zonasini ifodalaydi.",
-      "2. To‘q sariq strelka issiqlik oqimi mahalliy ravishda kuchayishi mumkin bo‘lgan yo‘lni ko‘rsatadi. Bu faqat energiya emas, ichki yuzaning sovishi va namlik xavfi bilan ham bog‘liq bo‘lishi mumkin.",
-      "3. Thermal bridge ta’siri eskizdan son bilan aniqlanmaydi; aniq baholash texnik hisob va loyiha tahlili bilan bajariladi.",
-      "Darsdagi bajarish: Balkon, plita chekkasi, ustun, deraza va tom-devor tutashuvida potensial thermal bridge zonalarini belgilang."
+      "Uzluksiz beton balkon plitasi devordagi izolyatsiya qatlamini kesib o‘tgan joy ajratilgan.",
+      "Strelkalar iliq ichkaridan sovuq tashqariga beton bo‘ylab issiqlik oqimi kuchayishi mumkinligini ko‘rsatadi.",
+      "Gap betonning sinishi haqida emas, issiqlik himoyasining shu tugunda zaiflashishi haqida. Miqdoriy baho hisob bilan aniqlanadi."
     ],
     "exercise": "Bino qobig‘ini kesib o‘tadigan konstruktiv elementlarni toping.",
     "solution": "Thermal bridge issiqlik himoyasi lokal zaiflashishi mumkin bo‘lgan tutashuv zonasidir.",
     "block": 9,
     "recipe": "thermal",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy kesim/detail eskizi. Qatlamlar konseptual; aniq material, qalinlik va issiqlik ko‘rsatkichlari normativ hamda texnik hisob asosida aniqlanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
@@ -4131,55 +4123,52 @@
   {
     "code": "L08_M08_003",
     "asset": "l08_m08_003.svg",
-    "title": "Vertikal uzluksizlik va yumshoq qavat — arxitekturaviy eskiz",
+    "title": "Vertikal uzluksizlik va yumshoq qavat",
     "explanation": [
-      "1. Chapdagi sxemada ustunlar qavatlar bo‘yicha uzluksiz davom etadi; o‘ngdagi sxemada pastki qavat keskin ochilib, yuqoridagi tayanch tizimi o‘zgaradi.",
-      "2. Bir qavat boshqalarga nisbatan ancha ochiq yoki kam qattiqlikka ega bo‘lsa, soft-story xavfi nuqtai nazaridan alohida tekshiriladi.",
-      "3. Yuqoridagi ustun yoki devor pastda davom etmasa, yukni boshqa yo‘lga uzatadigan transfer yechim konstruktor bilan hisoblanadi.",
-      "Darsdagi bajarish: Ikki qavatli sxemada tayanchlarning vertikal davomiyligini tekshiring."
+      "Chapdagi misolda tayanchlar qavatlar bo‘yicha davom etadi; o‘ngdagi misolda pastki qavat ancha ochiq va yuqoridagi markaziy tayanch ostida davomiylik yo‘q.",
+      "Bu farqlar vertikal tayanchlar va qavatlar bikrligini konstruktor bilan tekshirish zaruratini ko‘rsatadi.",
+      "Ochiq qavatning o‘zi yakuniy tashxis emas. Bino tizimi, bikrlik va yuklar hisobda tekshiriladi."
     ],
     "exercise": "Ustun va konstruktiv devorlarning qavatlar bo‘yicha uzluksizligini tekshiring.",
     "solution": "Vertikal muntazamlik yuk ko‘taruvchi tizimning qavatlar orasida tushunarli davom etishini talab qiladi.",
     "block": 9,
     "recipe": "seismic",
     "boundary": "Konseptual arxitekturaviy/konstruktiv eskiz. Kuchlar, element kesimlari, armatura, ruxsat etilgan muntazamlik va seysmik ko‘rsatkichlar undan olinmaydi; bular amaldagi talab va konstruktor hisobi bilan aniqlanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M08_004",
     "asset": "l08_m08_004.svg",
-    "title": "Massa, nosimmetriya va arxitektura qarorlari — arxitekturaviy eskiz",
+    "title": "Massa va nosimmetriya",
     "explanation": [
-      "1. Chapdagi markazlashgan plan nisbatan muvozanatli, o‘ngdagi plan esa og‘ir massa bir tomonda to‘plangan konseptual misol sifatida berilgan.",
-      "2. Massa va qattiqlikning notekis taqsimlanishi seysmik javobni murakkablashtirishi mumkin; katta opening, og‘ir tom yoki konsol konstruktiv koordinatsiyani talab qiladi.",
-      "3. Fasad yoki reja o‘zgarishi tayanch tizimiga ta’sir qilsa, u faqat estetik qaror sifatida ko‘rilmaydi.",
-      "Darsdagi bajarish: Massa, katta opening va nosimmetriya yaratadigan arxitektura qarorlarini belgilang."
+      "Chap va o‘ng misolda hajmlar hamda ochiq qismlar turlicha taqsimlangan. Plan bilan hajmiy ko‘rinishni birga solishtiring.",
+      "Tashqi ko‘rinish massa markazi yoki bikrlik markazini hisoblashning o‘rnini bosmaydi.",
+      "Nosimmetriya ta’siri haqiqiy material, tayanch tizimi va seysmik hisob asosida baholanadi; eskiz faqat tekshiruv savolini ochadi."
     ],
     "exercise": "Massa va geometrik nosimmetriyani konstruktor bilan muvofiqlashtiriladigan omil sifatida tahlil qiling.",
     "solution": "Arxitektura qarorlari bino massasi va konstruktiv muntazamlikka ta’siri bilan birga ko‘riladi.",
     "block": 9,
     "recipe": "seismic",
     "boundary": "Konseptual arxitekturaviy/konstruktiv eskiz. Kuchlar, element kesimlari, armatura, ruxsat etilgan muntazamlik va seysmik ko‘rsatkichlar undan olinmaydi; bular amaldagi talab va konstruktor hisobi bilan aniqlanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M08_005",
     "asset": "l08_m08_005.svg",
-    "title": "Seysmik loyiha professional audit — arxitekturaviy eskiz",
+    "title": "Seysmik loyiha tekshiruvi",
     "explanation": [
-      "1. Kichik eskizlar plan shakli, tayanch tizimi, yumshoq qavat, massa, katta opening va audit checklist kabi asosiy savollarni bir varaqda jamlaydi.",
-      "2. Auditda forma, massa, plan muntazamligi, vertikal uzluksizlik, tayanchlar va katta ochilishlar konstruktor modeli bilan koordinatsiya qilinadi.",
-      "3. Bu tasvir konstruktiv hisob emas. Arxitektor potensial konfliktlarni erta aniqlaydi va hisob uchun konstruktor bilan ishlaydi.",
-      "Darsdagi bajarish: Forma → massa → tayanchlar → vertikal uzluksizlik → openings → koordinatsiya checklistini to‘ldiring."
+      "Asosiy model va yon misollar bino shakli, tayanchlar uzluksizligi, ochiq pastki qavat hamda qo‘shni hajmlarni tekshirishni eslatadi.",
+      "Bo‘sh kataklar tasdiq belgisi emas: har bir savolga chizma, hisob yoki mutaxassis javobi bilan dalil kiritiladi.",
+      "Ko‘p qavatli bino umumiy o‘quv misoli sifatida berilgan; eskiz seysmik xavfsizlik xulosasi emas."
     ],
     "exercise": "Seysmik loyiha uchun arxitektura va konstruktiv koordinatsiya auditini bajaring.",
     "solution": "Professional audit seysmik jihatdan muhim arxitektura qarorlarini konstruktor hisobi bilan muvofiqlashtirishga xizmat qiladi.",
     "block": 14,
     "recipe": "seismic",
     "boundary": "Konseptual arxitekturaviy/konstruktiv eskiz. Kuchlar, element kesimlari, armatura, ruxsat etilgan muntazamlik va seysmik ko‘rsatkichlar undan olinmaydi; bular amaldagi talab va konstruktor hisobi bilan aniqlanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
@@ -6120,52 +6109,52 @@
   {
     "code": "L11_M03_001",
     "asset": "l11_m03_001.svg",
-    "title": "Zinapoya geometriyasi — ko‘rgazmali namuna",
+    "title": "Zinapoyaning gorizontal va vertikal geometriyasi",
     "explanation": [
-      "3000 mm ikki qavat farqi, 18 o‘quv ko‘tarilish; zinapoya, landing va slab opening birga tekshiriladi.",
-      "Sathlar farqini aniqlab ko‘tarilish soniga bo‘ling → 166.7 mm o‘quv riser.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Asosiy eskiz zinapoyaning vertikal ko‘tarilishini va gorizontal yo‘lini ajratadi; kichik plan shu yo‘lning yuqoridan ko‘rinishini beradi.",
+      "Sath farqi tayyor pol sathlari orasida tekshiriladi. Tuzatilgan yuqori belgi yopmaning pastiga emas, pol sathiga yo‘naltirilgan.",
+      "Eskiz aniq pog‘ona sanog‘i yoki o‘lchamli loyiha emas. Hisob va plan-kesim mosligi dars sharti bo‘yicha tekshiriladi."
     ],
     "exercise": "Sath farqi va yo‘l konturini planda-kesimda belgilang.",
     "solution": "Zinapoya geometriyasi gorizontal yo‘l va vertikal ko‘tarilishdan tuziladi.",
     "block": 5,
     "recipe": "stair",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L11_M03_002",
     "asset": "l11_m03_002.svg",
-    "title": "Rise, tread va flight mantig'i — ko‘rgazmali namuna",
+    "title": "Pog‘ona, bosish va marsh",
     "explanation": [
-      "3000 mm ikki qavat farqi, 18 o‘quv ko‘tarilish; zinapoya, landing va slab opening birga tekshiriladi.",
-      "Bosish, flight va landingni alohida o‘lchang → foydalanish geometriyasi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Yirik ko‘rinishda vertikal ko‘tarilish va gorizontal bosish yuzasi alohida belgilangan. O‘ngdagi misol butun marshni ko‘rsatadi.",
+      "3200 ÷ 20 = 160 mm — 3200 mm sath farqi 20 ta teng ko‘tarilishga bo‘lingan o‘quv hisobidir.",
+      "Bu son majburiy o‘lcham emas. Bosish, maydoncha, bosh usti bo‘shlig‘i va tegishli talablar alohida tekshiriladi."
     ],
     "exercise": "3200 / 20 = 160 mm o‘quv riserini hisoblang.",
     "solution": "Riser balandligi umumiy ko‘tarilishning riser soniga bo‘linishi bilan topiladi.",
     "block": 5,
     "recipe": "stair",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L11_M03_003",
     "asset": "l11_m03_003.svg",
-    "title": "Landing, headroom va opening — ko‘rgazmali namuna",
+    "title": "Zinapoyada bosh ustidagi bo‘shliq",
     "explanation": [
-      "3000 mm ikki qavat farqi, 18 o‘quv ko‘tarilish; zinapoya, landing va slab opening birga tekshiriladi.",
-      "Kesimda headroom va slab teshigini tekshiring → bosh ustidagi konflikt ko‘rinadi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Chapda odam tik turishi uchun bo‘shliq bor; o‘ngda past to‘sin harakatni cheklaydi.",
+      "Bo‘shliq pog‘ona yuzasi bilan ustidagi eng yaqin to‘siq orasida, harakat yo‘li bo‘ylab tekshiriladi.",
+      "Bu o‘lchamsiz taqqoslash. Ochilish, maydoncha va tegishli loyiha talablari alohida tekshiriladi."
     ],
     "exercise": "Landing, ochilish va bosh uchun bo‘shliqni kesimda tekshiring.",
     "solution": "Qadam hisobi landing va headroom mosligini avtomatik bermaydi.",
     "block": 5,
     "recipe": "stair",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
