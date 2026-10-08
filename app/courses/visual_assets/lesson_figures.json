@@ -4695,55 +4695,55 @@
   {
     "code": "L09_M06_001",
     "asset": "l09_m06_001.svg",
-    "title": "Evakuatsiya tushunchasi — arxitekturaviy eskiz",
+    "title": "Kundalik faoliyat va binodan chiqishni ajratish",
     "explanation": [
-      "1. Plan ichidagi qizg‘ish yo‘l odamning xavfli zonadan chiqish tomon harakatini konseptual ko‘rsatadi.",
-      "2. Evakuatsiya bitta eshik emas; xonadan boshlanib eshik, koridor, zinapoya va yakuniy xavfsiz chiqish bilan bog‘langan uzluksiz zanjirdir.",
-      "3. Kundalik harakat yo‘li qulay bo‘lsa ham favqulodda holatdagi chiqish ssenariysi alohida tekshiriladi.",
-      "Darsdagi bajarish: Bir xonadan tashqarigacha evakuatsiya zanjirini ketma-ket chizing."
+      "1. Chapdagi misolda odam uy ichida odatdagi faoliyatini davom ettiryapti.",
+      "2. O‘ngdagi misolda odam ochiq tashqi eshikdan hovliga chiqmoqda.",
+      "3. Evakuatsiya tahlilida maqsad faqat boshqa xonaga o‘tish emas, xavfli hududdan tegishli tashqi joyga chiqish imkoniyatini tekshirishdir.",
+      "4. Haqiqiy loyihada butun yo‘l, eshiklar, to‘siqlar va tegishli talablar alohida tekshiriladi; eskiz umumiy tushunchani ko‘rsatadi."
     ],
     "exercise": "Evakuatsiyani xonadan xavfsiz chiqishgacha bo‘lgan uzluksiz yo‘l sifatida tushuning.",
     "solution": "Evakuatsiya foydalanuvchini xavfli zonadan xavfsiz joyga olib chiqadigan uzluksiz harakat zanjiridir.",
     "block": 5,
     "recipe": "escape",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy evakuatsiya eskizi. Yo‘nalishlar konseptual; aniq masofa, kenglik, chiqish soni va boshqa talablar amaldagi normativ manbadan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L09_M06_002",
     "asset": "l09_m06_002.svg",
-    "title": "Evakuatsiya yo‘li — arxitekturaviy eskiz",
+    "title": "Xonadan tashqarigacha uzluksiz yo‘l",
     "explanation": [
-      "1. Qizg‘ish yo‘nalish xonadan chiqishgacha bo‘lgan evakuatsiya yo‘lini, pastdagi vertikal strelka esa yo‘lning keyingi bosqichga uzatilishini ko‘rsatadi.",
-      "2. Yo‘l uzluksiz, tushunarli va to‘siqsiz bo‘lishi kerak; burilish, eshik va yo‘nalish almashadigan joylar alohida ko‘riladi.",
-      "3. Aniq masofa yoki kenglikni eskizdan olmang; tegishli normativdan tekshiriladi.",
-      "Darsdagi bajarish: Evakuatsiya yo‘lidagi barcha transition va nazorat nuqtalarini belgilang."
+      "1. Yo‘l yotoq xonasidan ochiq ichki eshik orqali yo‘lakka chiqadi.",
+      "2. Yo‘lakdagi strelkalar tashqi eshikka, so‘ng hovliga yo‘nalgan.",
+      "3. Har bir o‘tish joyida eshik ochilishi, mebel va boshqa to‘siqlarni alohida tekshiring.",
+      "4. Haqiqiy loyiha yo‘lini boshlanish nuqtasidan tashqi chiqishgacha uzluksiz kuzating; kenglik va masofa talablari alohida tekshiriladi."
     ],
     "exercise": "Evakuatsiya yo‘lini xonadan chiqishgacha bosqichma-bosqich tekshiring.",
     "solution": "Yo‘lning har bir qismi keyingi xavfsiz qism bilan uzluksiz bog‘lanishi kerak.",
     "block": 5,
     "recipe": "escape",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy evakuatsiya eskizi. Yo‘nalishlar konseptual; aniq masofa, kenglik, chiqish soni va boshqa talablar amaldagi normativ manbadan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L09_M06_003",
     "asset": "l09_m06_003.svg",
-    "title": "Eshik, koridor va zinapoya — arxitekturaviy eskiz",
+    "title": "Eshik, yo‘lak va zinapoya bir harakat tizimida",
     "explanation": [
-      "1. Uch panel evakuatsiya zanjiridagi eshik, koridor va zinapoyani alohida ko‘rsatadi.",
-      "2. Bitta elementning to‘g‘ri bo‘lishi yetarli emas; eshikdan chiqish, koridorda harakat va zinapoyaga o‘tish bir-biriga mos ishlashi kerak.",
-      "3. Ochilish yo‘nalishi, torayish, sath va burilish kabi masalalar real foydalanish ssenariysi bilan tekshiriladi.",
-      "Darsdagi bajarish: Eshik → koridor → zinapoya zanjirida potensial to‘siqlarni yozing."
+      "1. Ochiq tashqi eshik, pastki yo‘lak va yuqori qavatga chiqadigan zinapoyani bir kesimda ko‘ring.",
+      "2. Harakat yo‘li bittagina eshikdan iborat emas: eshik, yo‘lak, zinapoya va maydonchalar o‘zaro bog‘langan.",
+      "3. Har qism uchun eshik ochilishi, to‘siq va uzilish ehtimolini haqiqiy loyiha chizmasida tekshiring.",
+      "4. Eskiz elementlar aloqasini tushuntiradi; zinapoya geometriyasi va evakuatsiya talablari loyiha hamda tegishli manbalar asosida alohida tekshiriladi."
     ],
     "exercise": "Eshik, koridor va zinapoyani yagona evakuatsiya zanjiri sifatida tekshiring.",
     "solution": "Evakuatsiya sifati ketma-ket elementlarning uzluksiz va xavfsiz ishlashiga bog‘liq.",
     "block": 6,
     "recipe": "escape",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy evakuatsiya eskizi. Yo‘nalishlar konseptual; aniq masofa, kenglik, chiqish soni va boshqa talablar amaldagi normativ manbadan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {

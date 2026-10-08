@@ -2,9 +2,9 @@
   "source_commit": "ec7db30e096c65d95917e84082fbd22547914adf",
   "scope": "196 remaining candidates after recovering eight unsaved illustrations",
   "visually_inspected": 196,
-  "updated": 3,
+  "updated": 6,
   "new_image_optional": 15,
-  "replacement_pending": 178,
+  "replacement_pending": 175,
   "complete": false,
   "records": [
     {
@@ -16,7 +16,7 @@
       "source_git_sha_at_review": "2f480ce3e56062ddfaf47d279461ed5c74b26cdc",
       "visual_style": "simple_vector_requires_rework",
       "decision": "updated",
-      "reason": "Mavzuga mos yangi izohli eskiz ko‘zdan kechirildi va darsga bog‘landi."
+      "reason": "Mavzuga mos izohli eskiz ko‘zdan kechirildi, dasturda ochildi va darsga bog‘landi."
     },
     {
       "code": "L09_M04_005",
@@ -38,7 +38,7 @@
       "source_git_sha_at_review": "ecbeb918a419cba4628bb9aef6266d2a43544930",
       "visual_style": "simple_vector_requires_rework",
       "decision": "updated",
-      "reason": "Mavzuga mos yangi izohli eskiz ko‘zdan kechirildi va darsga bog‘landi."
+      "reason": "Mavzuga mos izohli eskiz ko‘zdan kechirildi, dasturda ochildi va darsga bog‘landi."
     },
     {
       "code": "L09_M05_004",
@@ -49,7 +49,7 @@
       "source_git_sha_at_review": "ecbeb918a419cba4628bb9aef6266d2a43544930",
       "visual_style": "simple_vector_requires_rework",
       "decision": "updated",
-      "reason": "Mavzuga mos yangi izohli eskiz ko‘zdan kechirildi va darsga bog‘landi."
+      "reason": "Mavzuga mos izohli eskiz ko‘zdan kechirildi, dasturda ochildi va darsga bog‘landi."
     },
     {
       "code": "L09_M05_005",
@@ -70,8 +70,8 @@
       "source_path": "app/courses/level09_module06.py",
       "source_git_sha_at_review": "c60afd0ba17eb296881f345be06194ffdfe0fd18",
       "visual_style": "simple_vector_requires_rework",
-      "decision": "replacement_pending",
-      "reason": "Mavzu fazoviy yoki chizma natijasini ko‘rishni talab qiladi; mavjud tasvir sodda vektor belgilaridan iborat, professional arxitektura eskizi darajasiga mos emas."
+      "decision": "updated",
+      "reason": "Mavzuga mos izohli eskiz ko‘zdan kechirildi, dasturda ochildi va darsga bog‘landi."
     },
     {
       "code": "L09_M06_002",
@@ -81,8 +81,8 @@
       "source_path": "app/courses/level09_module06.py",
       "source_git_sha_at_review": "c60afd0ba17eb296881f345be06194ffdfe0fd18",
       "visual_style": "simple_vector_requires_rework",
-      "decision": "replacement_pending",
-      "reason": "Mavzu fazoviy yoki chizma natijasini ko‘rishni talab qiladi; mavjud tasvir sodda vektor belgilaridan iborat, professional arxitektura eskizi darajasiga mos emas."
+      "decision": "updated",
+      "reason": "Mavzuga mos izohli eskiz ko‘zdan kechirildi, dasturda ochildi va darsga bog‘landi."
     },
     {
       "code": "L09_M06_003",
@@ -92,8 +92,8 @@
       "source_path": "app/courses/level09_module06.py",
       "source_git_sha_at_review": "c60afd0ba17eb296881f345be06194ffdfe0fd18",
       "visual_style": "simple_vector_requires_rework",
-      "decision": "replacement_pending",
-      "reason": "Mavzu fazoviy yoki chizma natijasini ko‘rishni talab qiladi; mavjud tasvir sodda vektor belgilaridan iborat, professional arxitektura eskizi darajasiga mos emas."
+      "decision": "updated",
+      "reason": "Mavzuga mos izohli eskiz ko‘zdan kechirildi, dasturda ochildi va darsga bog‘landi."
     },
     {
       "code": "L09_M06_004",

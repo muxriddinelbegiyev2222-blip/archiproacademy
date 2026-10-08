@@ -1,3 +1,13 @@
+# Yangi tekshirilgan partiya — 2026-10-08
+
+Partiya: L09_M06_001, L09_M06_002, L09_M06_003. Mavzuga mos izohli arxitektura eskizlari tekshirilib darslarga bog‘landi. Tasvirlarning asl o‘lchami saqlandi.
+
+**234 nomzod: 44 qabul qilingan eskiz + 15 yangi rasm ixtiyoriy dars + 175 yangilanish kutilayotgan dars.** Boshlang‘ich 204 nomzoddan 14 ta eskiz tiklandi yoki yangilandi; 15 dars yangi rasm navbatidan o‘tkazildi; 175 dars qolgan. Ish tugallanmagan.
+
+Qabul va xeshlar: [VISUAL_REWORK_2026_10_08.json](VISUAL_REWORK_2026_10_08.json). Qarorlar: [VISUAL_CANDIDATE_REVIEW_2026_10_08.json](VISUAL_CANDIDATE_REVIEW_2026_10_08.json). Keyingi navbat: **L09_M06_004**.
+
+---
+
 # Nomzodlar ko‘rigi va yangi partiya — 2026-10-08
 
 Boshlang‘ich commit: `93d96dc`; 30 ta qabul qilingan eskiz. `ec7db30` commitida 8 ta saqlanmay qolgan eskiz tiklandi. Qolgan 196 tasvirning barchasi dastur chizish mexanizmi bilan ochilib ko‘zdan kechirildi.

@@ -535,7 +535,46 @@
       "corrected": true,
       "visual_review": "Vehicle and pedestrian paths, open thresholds, public street, building and courtyard inspected. Closed pedestrian gate in first version rejected and corrected with imagegen. No access-clearance certification.",
       "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L09_M06_001",
+      "asset": "app/courses/visual_assets/l09_m06_001.svg",
+      "source_png_sha256": "4545d9f4d13e84db87dc2f53669f1e9d158110045e6b021e1a6ff8e403b294f8",
+      "embedded_sha256": "45203dbebeaaac1c2aa18ebe6e2a83ecb2f43b828882b0dc586cebbd557a007e",
+      "svg_sha256": "36b84ea4cdda276ac72e165c36e39c701b24f07a74dfe9cbe086d2350b2be00a",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Use case scientific-educational. ARCHIPRO UZ L09_M06_001 'Evakuatsiya tushunchasi'. Landscape1536x1024 professional detailed graphite/fineink architectural sketch, muted watercolor on warm ivory paper. Clear side-by-side SAME single-storey Uzbek home interior sectional perspective: left everyday trip from living room towards kitchen, right leaving the dwelling from living room via hallway through OPEN exterior doorway to garden. Only two rooms and hall, do not overcomplicate. Living room contains small sofa and seated person, kitchen has counter at rear left; right-view person is walking toward outside through visibly open doorway. Thin ochre route left ends at kitchen doorway; thin teal route right follows walkable hall and exits house into open garden. Mark 'KUNDALIK YO‘L' above left view and 'TASHQARIGA CHIQISH' above right view. Large title 'EVAKUATSIYA TUSHUNCHASI'. Concept comparison of destination, not a code-compliant escape plan. All route strokes must lie on floors and pass through clearly open door gaps, never through walls. Detailed recognisable house, coherent cutaway, sparse labels and large calm whitespace. No fire scene, panic, dimensions, compliance symbols, code claims, English, artificial software controls or flat vector icon cards.\nCorrection: Correct this teaching image to avoid misleading arrows. REMOVE EVERY colored route arrow in BOTH views, including garden and hallway arrows. Preserve architecture, two side-by-side views, pencil/watercolor style, heading EVAKUATSIYA TUSHUNCHASI and left label KUNDALIK YO‘L. In LEFT view keep the seated resident on sofa for ordinary household activity. In RIGHT view remove the seated resident so sofa is empty. Change the person at the EXTERIOR doorway to clearly WALK OUT from house into courtyard: show face and chest toward viewer, one foot stepping AWAY from the open front door onto the exterior paving. The person must be outside, immediately forward of the outer threshold, moving into garden. Do not add any new arrows. Right caption should read exactly 'BINODAN CHIQISH'. Keep right outer door open. This image teaches ordinary activity versus leaving a dwelling without claiming an exact routing diagram.",
+      "corrected": true,
+      "visual_review": "Misleading route arrows in first image rejected. Corrected image inspected: ordinary seated activity left, empty sofa and person stepping out through open exterior door right; all arrows removed.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L09_M06_002",
+      "asset": "app/courses/visual_assets/l09_m06_002.svg",
+      "source_png_sha256": "44e0d3680cff759fe2a964bc1a3010b4d7c84ac0b8b4b2259a1fae44c456f65f",
+      "embedded_sha256": "b1af8bb0538d27241ed48eb1d5e181a5ec7a5b1709235175f99dcda0ecd8bdca",
+      "svg_sha256": "1df47c40955ab133b906c0082c6cdfd1050203f0f6a61415f680d592f41b0642",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Use case scientific-educational. ARCHIPRO UZ lesson L09_M06_002 'Evakuatsiya yo‘li'. Landscape1536x1024 architect's detailed graphite and fine ink sketch with restrained watercolor on ivory paper. High cutaway view of a VERY SIMPLE one-storey home with two furnished rooms on LEFT of one long straight hallway. Hallway has a wide open exterior doorway at FRONT, leading into paved courtyard. All relevant side-room doors are shown physically open, with visible gaps in walls. Bedroom rear left with bed, living room front left sofa. One thin teal route starts on bedroom floor beside bed, passes through visibly OPEN bedroom doorway into hall, then follows the STRAIGHT hall toward front exterior doorway, goes through its visible open threshold and ends outside on courtyard. Arrowheads point toward courtyard, never entering house. No route passing any solid wall, closed door or furniture. Large clear title 'UZLUKSIZ CHIQISH YO‘LI'; only labels 'XONA' at bedroom, 'YO‘LAK' in hall, 'OCHIQ ESHIK' on outer doorway, 'TASHQARI' in courtyard. Make opening sequence legible at first glance. Architectural materials, wall thickness, furniture and door leaves clear, ample whitespace. Conceptual teaching drawing only; no dimensions, calculations, compliance ticks, standards claims, fire scene, English, simulated software or generic vector cards.",
+      "corrected": false,
+      "visual_review": "Route inspected: begins in bedroom, crosses visible open doorway, proceeds on hallway floor, exits open exterior doorway to courtyard; arrowheads consistently point outwards.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L09_M06_003",
+      "asset": "app/courses/visual_assets/l09_m06_003.svg",
+      "source_png_sha256": "54c2bd37fba37c2e5874bebd756e6ca7b3fb2b9c1245651ed7805f0119814cc9",
+      "embedded_sha256": "e60f71b2e701f6f3803e8bdd3f02b8c6a158b9c20cb3c279a116605e708907e1",
+      "svg_sha256": "a37dd5004e632af75984ee28de8bc3fcad81218ce2d1b84a59f74ae86abd76fc",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Use case scientific-educational. ARCHIPRO UZ L09_M06_003 'Eshik, koridor va zinapoya'. One1536x1024 landscape professional architectural graphite, fine ink and light watercolor on ivory paper. Dominant detailed TWO-STOREY residential SECTIONAL PERSPECTIVE. Main subject: a real recognisable straight stair flight along side wall from clear ground-floor hallway to an upper-floor landing; the stair must touch both floors, have visible evenly drawn treads and continuous handrail, with upper landing connected to an upstairs doorway. At ground level hallway leads to an OPEN exterior doorway at front. Show adjacent furnished living room ground floor and bedroom upper floor in subdued tones so circulation stays focus. Three precise fine leader labels only: 'ZINAPOYA' points to staircase, 'YO‘LAK' points to clear ground-floor hall, 'ESHIK' points to open outer doorway. Big title 'ESHIK, YO‘LAK VA ZINAPOYA'. Small walking figure in hall makes spatial relation understandable. NO route arrows. Wall thickness, floor slabs, doorway gaps and stair landings must be legible, not abstract schematic blocks. Light detailed architectural materials, calm composition and ample whitespace. Educational relationship only, no geometric dimensions, tread numbers, normative compliance marks, construction joint specifications, English, fake UI or flat vector icons.",
+      "corrected": false,
+      "visual_review": "Interrupted generation output recovered and visually inspected. Three leaders terminate on outer door, hallway floor and stair tread; straight staircase visibly joins ground floor and upper landing. Concept only, no dimension or safety approval.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
     }
   ],
-  "accepted_count": 41
+  "accepted_count": 44
 }
