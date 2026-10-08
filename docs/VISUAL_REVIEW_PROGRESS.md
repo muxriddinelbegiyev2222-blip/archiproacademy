@@ -1,10 +1,8 @@
 # Tekshirilgan yangilanish — 2026-10-08
 
-19 ta yangi arxitekturaviy eskiz ko‘zdan kechirildi va darslarga bog‘landi. Qabul qilingan tasvirlar, tuzatishlar va manba xeshlari [qayd faylida](VISUAL_REWORK_2026_10_08.json). Ish hali tugallanmadi; 234 qayta tekshirish nomzodidan 19 tasi shu bosqichda yangilandi.
+30 ta eskiz ko‘zdan kechirilib darslarga bog‘landi. [Qabul qaydi](VISUAL_REWORK_2026_10_08.json). 234 qayta tekshirish nomzodidan shu bosqichda 30 tasi yangilandi; ish davom etmoqda.
 
-Avvalgi c2f89c3 commit uchun CI 37689680150 muvaffaqiyatli: barcha 7 audit va Windows paket tekshiruvi o‘tgan. Yangi o‘zgarishlar uchun masofaviy CI natijasi alohida tekshiriladi.
-
-Issiqlik ko‘prigi mashqidagi noaniq “uzilgan balkon” iborasi izolyatsiya uzilishi deb aniqlashtirildi. Testlar va darsdan o‘tish qoidalari o‘zgartirilmagan.
+9508fd8 commit uchun CI 37718472266 muvaffaqiyatli yakunlandi: audit va Windows paket tekshiruvlari o‘tgan. Keyingi o‘zgarishlarning CI natijasi alohida tekshiriladi.
 
 ---
 

@@ -4051,73 +4051,69 @@
   {
     "code": "L08_M07_004",
     "asset": "l08_m07_004.svg",
-    "title": "Deraza, balkon va tutashuvlar — arxitekturaviy eskiz",
+    "title": "Deraza, balkon va tutashuvlar",
     "explanation": [
-      "1. Chapdagi deraza detalida insulation frame atrofi bo‘ylab davom etishi kerak; yon, yuqori va pastki reveal zonalari alohida ko‘riladi.",
-      "2. Markazdagi balkon/plita detali konstruktiv element issiqlik qobig‘ini kesib o‘tishi mumkin bo‘lgan kritik nuqtani ko‘rsatadi.",
-      "3. O‘ngdagi parapet/tom detali tom insulation’i devor himoyasi bilan mantiqan ulanishi kerakligini ko‘rsatadi.",
-      "Darsdagi bajarish: Deraza, balkon, parapet va plita chekkasi uchun continuity savolini bittadan yozing."
+      "Asosiy uy kesimi va o‘ngdagi uch yaqin ko‘rinish deraza cheti, balkon tutashuvi va devor qatlamlarini kuzatishga yordam beradi.",
+      "Sariq qatlam bo‘ylab izolyatsiya uzluksizligini kuzating; deraza perimetri, tokcha va balkon chetida alohida detal so‘raladi.",
+      "Yaqin ko‘rinishlar mustaqil konseptual misollar: ulardan qatlam qalinligi, mahkamlash yoki tayyor konstruktiv yechim olinmaydi."
     ],
     "exercise": "Deraza, balkon va parapet tutashuvlarida insulation continuity’ni tekshiring.",
     "solution": "Kritik tutashuvlar issiqlik, konstruksiya va boshqa qatlamlar bilan birga koordinatsiya qilinadi.",
     "block": 9,
     "recipe": "thermal",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy kesim/detail eskizi. Qatlamlar konseptual; aniq material, qalinlik va issiqlik ko‘rsatkichlari normativ hamda texnik hisob asosida aniqlanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M07_005",
     "asset": "l08_m07_005.svg",
-    "title": "Issiqlik izolyatsiyasi professional audit — arxitekturaviy eskiz",
+    "title": "Issiqlik izolyatsiyasi tekshiruvi",
     "explanation": [
-      "1. Olti kichik detail building envelope auditida ko‘riladigan tipik zonalarni ifodalaydi: umumiy qobiq, deraza, balkon, parapet va boshqa tutashuvlar.",
-      "2. Har detailda insulation continuity line uzilmayaptimi va konstruktiv element tashqi qobiqni kesib o‘tmayaptimi — tekshiring.",
-      "3. BIM modelda umumiy devor qalinligi yetarli emas; muhim junctionlar kesim/detail darajasida mantiqan tushunarli bo‘lishi kerak.",
-      "Darsdagi bajarish: Envelope → continuity → thermal bridge → openings → junction → BIM detail checklistini to‘ldiring."
+      "Uy kesimi atrofidagi oltita detal qobiqning turli tutashuvlarini alohida ko‘rib chiqishga undaydi.",
+      "Bo‘sh kartochkalar uchun tekshiriladigan joy, kerakli hisob yoki detal, mas’ul va javob holatini yozing.",
+      "Tom, tashqi devor, deraza, poydevor va yerga yaqin polning issiqlik himoyasini birgalikda tekshiring; tasvir issiqlik hisobi o‘rnini bosmaydi."
     ],
     "exercise": "Building envelope va kritik tutashuvlarni kompleks audit qiling.",
     "solution": "Professional thermal audit issiqlik qobig‘ining uzluksizligi va lokal zaif nuqtalarni birgalikda tekshiradi.",
     "block": 12,
     "recipe": "thermal",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy kesim/detail eskizi. Qatlamlar konseptual; aniq material, qalinlik va issiqlik ko‘rsatkichlari normativ hamda texnik hisob asosida aniqlanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M08_001",
     "asset": "l08_m08_001.svg",
-    "title": "Seysmik yuk tushunchasi — arxitekturaviy eskiz",
+    "title": "Seysmik yuk tushunchasi",
     "explanation": [
-      "1. Ko‘k strelkalar grunt harakatini, to‘q sariq strelkalar esa bino massasining inertsiya javobini konseptual ko‘rsatadi.",
-      "2. Zilzila paytida plita, ustun, devor, fundament va grunt bitta konstruktiv tizim sifatida ishlaydi; yuk yo‘li uzluksiz bo‘lishi kerak.",
-      "3. Eskiz kuch qiymati yoki hisob natijasini bermaydi. Seysmik koeffitsiyent, kesim, armatura va deformatsiyalar konstruktorning aniq hisobi bilan belgilanadi.",
-      "Darsdagi bajarish: Bino massasi → konstruktiv tizim → fundament → grunt umumiy yuk yo‘lini chizing."
+      "Qizil strelkalar og‘irlik kuchini, pastdagi ikki tomonlama ko‘k strelka zamin harakatini shartli ifodalaydi.",
+      "Qavatlar yonidagi ko‘k strelkalar gorizontal ta’sirni, o‘ngdagi punktir holatlar bino tizimining tebranish javobini tushuntiradi.",
+      "Zilzilada inersiya, massa, qattiqlik va zamin bilan aloqa birgalikda hisoblanadi. Strelkalar kuch miqdori yoki tayyor hisob sxemasi emas."
     ],
     "exercise": "Seysmik ta’sir va umumiy yuk yo‘lini konseptual ko‘rsating.",
     "solution": "Seysmik ta’sir bino massasining gorizontal inertsiya javobi va uzluksiz konstruktiv yuk yo‘li bilan tushuntiriladi.",
     "block": 9,
     "recipe": "seismic",
     "boundary": "Konseptual arxitekturaviy/konstruktiv eskiz. Kuchlar, element kesimlari, armatura, ruxsat etilgan muntazamlik va seysmik ko‘rsatkichlar undan olinmaydi; bular amaldagi talab va konstruktor hisobi bilan aniqlanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L08_M08_002",
     "asset": "l08_m08_002.svg",
-    "title": "Bino shakli va konstruktiv muntazamlik — arxitekturaviy eskiz",
+    "title": "Bino shakli va konstruktiv muntazamlik",
     "explanation": [
-      "1. Chapdagi to‘rtburchak plan tayanch va geometriyasi muntazam, o‘ngdagi L-shakl esa keskin geometriya o‘zgarishiga ega o‘quv misolidir.",
-      "2. Murakkab yoki nosimmetrik shakl yomon arxitektura degani emas, lekin konstruktiv xatti-harakatni murakkablashtirishi mumkin.",
-      "3. Katta konsol, keskin chiqish va bir tomda to‘plangan qattiqlik elementlari konstruktor bilan boshidan koordinatsiya qilinadi.",
-      "Darsdagi bajarish: Muntazam va notekis planlarning konstruktiv koordinatsiya farqini tushuntiring."
+      "Uy kesimi, reja, fasad va yon kesim tayanchlarni turli ko‘rinishlarda solishtirishga yordam beradi.",
+      "Qizil o‘qlar va ko‘rinadigan ustunlar bo‘yicha qavatlararo davomiylikni kuzating; reja va kesimni birga tekshiring.",
+      "Bu muntazamlikni o‘rganish uchun konseptual misol. O‘qlar oralig‘i, element kesimi va seysmik moslik konstruktor hisobi bilan aniqlanadi."
     ],
     "exercise": "Oddiy va murakkab plan shaklini konstruktiv muntazamlik nuqtai nazaridan solishtiring.",
     "solution": "Muntazamlik konstruktiv tizimni tushunish va koordinatsiya qilishni osonlashtiradi.",
     "block": 9,
     "recipe": "seismic",
     "boundary": "Konseptual arxitekturaviy/konstruktiv eskiz. Kuchlar, element kesimlari, armatura, ruxsat etilgan muntazamlik va seysmik ko‘rsatkichlar undan olinmaydi; bular amaldagi talab va konstruktor hisobi bilan aniqlanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
@@ -4210,19 +4206,18 @@
   {
     "code": "L08_M09_003",
     "asset": "l08_m09_003.svg",
-    "title": "Koordinatsiya va savol-javob workflow — arxitekturaviy eskiz",
+    "title": "Koordinatsiya va savol-javob ish tartibi",
     "explanation": [
-      "1. Chapdagi plan muammo joyini, markazdagi issue kartochkasi aniq savol va taklifni, o‘ngdagi status kartalari esa javobning boshqarilishini ifodalaydi.",
-      "2. Yaxshi issue joylashuv, muammo, sabab, rasm/view, taklif, mas’ul va status bilan tekshiriladigan bo‘ladi.",
-      "3. Konstruktor javob berganidan keyin arxitektura modeli va tegishli chizmalar yangilanmaguncha koordinatsiya yopilgan hisoblanmaydi.",
-      "Darsdagi bajarish: Bitta real konflikt uchun location → issue → response → model update zanjirini yozing."
+      "Chapdagi rejada eshik yonidagi tayanch tekshiruv nuqtasi sifatida belgilangan; markazdagi yaqin ko‘rinish muammoni tushuntirishga yordam beradi.",
+      "Masala kartochkasiga joylashuv, kuzatilgan to‘qnashuv, savol, taklif va mas’ulni yozing.",
+      "O‘ngdagi reja muvofiqlashtirilgan variantni ko‘rib chiqish bosqichini ifodalaydi. Masala javobi model va tegishli chizmalarda tekshirilgach yopiladi."
     ],
     "exercise": "Aniq koordinatsiya issue’si yozib, javobni modelga kiritish workflowini ko‘rsating.",
     "solution": "Professional savol-javob workflow muammoni joyi, taklifi va statusi bilan boshqaradi.",
     "block": 9,
     "recipe": "coordination",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/koordinatsiya eskizi. Ko‘rsatilgan grid, tayanch va issue shakllari konseptual; konstruktiv qarorlar konstruktor hisobi va loyiha koordinatsiyasi bilan belgilanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
@@ -4246,19 +4241,18 @@
   {
     "code": "L08_M09_005",
     "asset": "l08_m09_005.svg",
-    "title": "Arxitektura-konstruktsiya professional audit — arxitekturaviy eskiz",
+    "title": "Arxitektura-konstruktsiya tekshiruvi",
     "explanation": [
-      "1. Olti kartochka koordinatsiya auditining asosiy qatlamlarini ifodalaydi: versiya, grid, sath, tayanchlar, openings va issue/status.",
-      "2. Auditda arxitektura va konstruktiv model bir xil o‘qlar, level va oxirgi versiyada ekanligi tekshiriladi.",
-      "3. Ustun, devor, shaft, stair opening va boshqa kesishuvchi nuqtalar ikki modelda bir-biriga mos kelishi kerak; topilgan masala issue sifatida yopilguncha kuzatiladi.",
-      "Darsdagi bajarish: Versiya → grid → level → tayanch → opening → issue status zanjiri bo‘yicha audit qiling."
+      "Arxitektura va konstruktiv rejalarni yonma-yon solishtiring: o‘qlar, tayanchlar, zinapoya va teshiklar ikkala paketda tekshiriladi.",
+      "Sariq doiralar alohida ko‘rib chiqiladigan nuqtalarni ko‘rsatadi; ular xato yoki moslik haqida yakuniy xulosa emas.",
+      "Bo‘sh tekshiruv varag‘iga versiya, sath, o‘qlar, tayanchlar, ochilishlar va ochiq savollar holatini kiriting."
     ],
     "exercise": "Arxitektura va konstruktsiya modelini asosiy koordinatsiya nuqtalari bo‘yicha kompleks tekshiring.",
     "solution": "Professional koordinatsiya auditi ikki modelning versiya, geometriya va ochiq masalalar bo‘yicha mosligini tasdiqlaydi.",
     "block": 13,
     "recipe": "coordination",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/koordinatsiya eskizi. Ko‘rsatilgan grid, tayanch va issue shakllari konseptual; konstruktiv qarorlar konstruktor hisobi va loyiha koordinatsiyasi bilan belgilanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
@@ -4354,91 +4348,86 @@
   {
     "code": "L09_M02_001",
     "asset": "l09_m02_001.svg",
-    "title": "Turar joy obyektini normativ nuqtai nazardan o‘qish — arxitekturaviy eskiz",
+    "title": "Turar joyni normativ tekshirish",
     "explanation": [
-      "1. Chapdagi uy plani turar joyni faqat xonalar to‘plami emas, o‘zaro bog‘langan tizim sifatida ko‘rishni ifodalaydi.",
-      "2. O‘ngdagi checklist funksiyalar, zonalash, circulation, tabiiy sharoit, sanitar zonalar va xavfsizlik kabi tekshiruv yo‘nalishlarini eslatadi.",
-      "3. Minimal maydon, kenglik yoki balandlik kabi aniq raqamlar eskizdan olinmaydi; ular amaldagi tegishli normativ manbadan tekshiriladi.",
-      "Darsdagi bajarish: Bitta uy plani uchun kamida 10 ta normativ tekshiruv savoli tuzing."
+      "Uy aksonometriyasida yashash, yotoq, oshxona va sanitar xonalarning vazifasini aniqlang.",
+      "Obyekt turi va foydalanish dasturi tegishli normativ hujjatlarni tanlash uchun boshlang‘ich ma’lumot bo‘ladi.",
+      "Tekshiruv varag‘iga funksiya, harakat, tabiiy yoritish, sanitar zona va xavfsizlik savollarini yozing. Rasm aniq me’yor yoki minimal o‘lcham bermaydi."
     ],
     "exercise": "Turar joy planini funksiya, circulation, sanitar va xavfsizlik nuqtai nazaridan audit qiling.",
     "solution": "Turar joy normativ tekshiruvi xonalar o‘lchamidan kengroq bo‘lib, butun uy tizimini qamrab oladi.",
     "block": 6,
     "recipe": "norm",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy audit eskizi. Xona ranglari va plan shakllari konseptual; aniq minimal o‘lcham va normativ talablar amaldagi rasmiy manbadan olinadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L09_M02_002",
     "asset": "l09_m02_002.svg",
-    "title": "Xona funksiyasi va o‘zaro aloqalar — arxitekturaviy eskiz",
+    "title": "Xona funksiyasi va o‘zaro aloqalar",
     "explanation": [
-      "1. Rangli zonalar public, private va service qismlarni konseptual ajratadi; ularning o‘zaro aloqasi foydalanuvchi harakatiga ta’sir qiladi.",
-      "2. Xona nomi emas, uning real funksiyasi va foydalanish holati tekshiruvda muhim.",
-      "3. Xonalar orasidagi ortiqcha kesishuv, noqulay circulation yoki service yo‘lining private zonadan o‘tishi funksional konflikt bo‘lishi mumkin.",
-      "Darsdagi bajarish: Public, private va service zonalarni ajratib, ular orasidagi konfliktlarni belgilang."
+      "Rejadagi sariq umumiy hudud, yashil yotoq xonalari va ko‘k xizmat zonasi funksiyalarni ajratib ko‘rsatadi.",
+      "Strelkalar zonalar orasidagi aloqalarni eslatadi. Pastdagi alohida ko‘rinishlar ovqatlanish, dam olish va ovqat tayyorlash faoliyatlarini ko‘rsatadi.",
+      "Eshiklar, mebel va yo‘laklarni birga tekshiring; rangli ajratishning o‘zi qulaylik yoki normativ moslikni tasdiqlamaydi."
     ],
     "exercise": "Xona funksiyasi va zonalar orasidagi real aloqani tekshiring.",
     "solution": "Yaxshi zonalash real foydalanish, circulation va maxfiylik ehtiyojlarini muvofiqlashtiradi.",
     "block": 6,
     "recipe": "adjacency",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy audit eskizi. Xona ranglari va plan shakllari konseptual; aniq minimal o‘lcham va normativ talablar amaldagi rasmiy manbadan olinadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L09_M02_003",
     "asset": "l09_m02_003.svg",
-    "title": "Sanitar va yordamchi zonalar — arxitekturaviy eskiz",
+    "title": "Sanitar va yordamchi zonalar",
     "explanation": [
-      "1. Eskiz wet/service zonalarni bir guruhda ko‘rsatadi; sanuzel va oshxona faqat mebel joylashuvi emas, MEP va namlik himoyasi bilan bog‘liq.",
-      "2. Suv, kanalizatsiya, ventilyatsiya va konstruktiv tutashuvlar oldindan koordinatsiya qilinsa loyiha soddalashadi.",
-      "3. Ikki qavatli uyda sanitar zonalarni qavatlar bo‘yicha mantiqiy yaqinlashtirish muhandislik yo‘llarini tartibga solishi mumkin.",
-      "Darsdagi bajarish: Sanuzel va oshxona uchun arxitektura + MEP tekshiruv savollarini yozing."
+      "Uy kesimida sanitar xonalarning qavatlar bo‘yicha yaqin joylashuvi va oshxona bilan muhandislik aloqasi ko‘rsatilgan.",
+      "Ko‘k vertikal hudud xizmat kommunikatsiyalari uchun koordinatsiya qilinadigan joyni shartli ajratadi; o‘ngdagi ko‘rinishlar nam xona va xizmatga kirishni eslatadi.",
+      "Suv, kanalizatsiya, ventilyatsiya va namlikdan himoya alohida loyihalanadi. Rasm quvurlarni ulash sxemasi emas."
     ],
     "exercise": "Sanitar va yordamchi zonalarni MEP va namlik himoyasi bilan birga tekshiring.",
     "solution": "Sanitar zonalar funksional va muhandislik koordinatsiyasini birga talab qiladi.",
     "block": 6,
     "recipe": "wet",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy audit eskizi. Xona ranglari va plan shakllari konseptual; aniq minimal o‘lcham va normativ talablar amaldagi rasmiy manbadan olinadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L09_M02_004",
     "asset": "l09_m02_004.svg",
-    "title": "Qavatlar va vertikal aloqa — arxitekturaviy eskiz",
+    "title": "Qavatlar va vertikal aloqa",
     "explanation": [
-      "1. Ikki qavatli kesim qavatlarni alohida planlar emas, zinapoya va vertikal tizimlar bilan bog‘langan yagona uy sifatida ko‘rsatadi.",
-      "2. Zinapoya circulation, qavat balandligi, opening, konstruksiya va xavfsizlik bilan birga tekshiriladi.",
-      "3. Yuqori va pastki qavatdagi funksiyalar, sanitar zonalar va shaftlar o‘zaro mantiqiy joylashishi kerak.",
-      "Darsdagi bajarish: Ikki qavatli uy uchun qavatlararo kamida 8 ta koordinatsiya savoli tuzing."
+      "Markaziy kesim zinapoya marshlari, oraliq maydoncha va yuqori qavat yo‘lagini ko‘rsatadi.",
+      "Yonlardagi reja misollarida zinapoyaning ikkala qavatdagi joyini va xonalarga kirish yo‘llarini solishtiring.",
+      "Zina o‘lchamlari, bosh usti bo‘shligi, to‘siqlar va yopmadagi ochilish alohida tekshiriladi; eskizdan me’yoriy qiymat olinmaydi."
     ],
     "exercise": "Qavatlararo circulation, opening va funksional aloqani birga tekshiring.",
     "solution": "Vertikal aloqa ikki qavatli uyning funksional va texnik tizimlarini birlashtiradi.",
     "block": 6,
     "recipe": "stories",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy audit eskizi. Xona ranglari va plan shakllari konseptual; aniq minimal o‘lcham va normativ talablar amaldagi rasmiy manbadan olinadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L09_M02_005",
     "asset": "l09_m02_005.svg",
-    "title": "Turar joy professional audit — arxitekturaviy eskiz",
+    "title": "Turar joy tekshiruvi",
     "explanation": [
-      "1. Olti blok kompleks auditning yo‘nalishlarini ifodalaydi: obyekt turi, plan, zonalash, sanitar, vertikal aloqa va qayd/status.",
-      "2. Bir xona talabga mos bo‘lishi butun uy mos degani emas; uy bo‘ylab o‘zaro bog‘liq masalalar tekshiriladi.",
-      "3. Loyiha o‘zgarsa ta’sirlangan normativ masalalar qayta tekshiriladi va audit jadvalidagi status yangilanadi.",
-      "Darsdagi bajarish: Obyekt → xona → zonalash → circulation → sanitar → vertikal aloqa → normativ manba zanjirini audit qiling."
+      "Markazdagi hovlili uy va to‘rtta alohida ko‘rinish turar joyni bir nechta jihatdan tekshirishni eslatadi.",
+      "Kirish va harakat yo‘li, deraza va yoritish, sanitar xona, zinapoya hamda to‘siqlar uchun tekshiruv savollari yozing.",
+      "Bo‘sh jadvalga manba, aniqlangan holat, ochiq savol va keyingi amalni kiriting. Chiroyli reja normativ moslikning tasdig‘i emas."
     ],
     "exercise": "Turar joy loyihasini kompleks checklist va manba qaydi bilan tekshiring.",
     "solution": "Professional turar joy auditi funksional, texnik va normativ masalalarni yagona tekshiruv tizimida birlashtiradi.",
     "block": 6,
     "recipe": "norm",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy audit eskizi. Xona ranglari va plan shakllari konseptual; aniq minimal o‘lcham va normativ talablar amaldagi rasmiy manbadan olinadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
