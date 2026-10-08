@@ -4749,19 +4749,19 @@
   {
     "code": "L09_M06_004",
     "asset": "l09_m06_004.svg",
-    "title": "To‘siqlar va xato ssenariylar — arxitekturaviy eskiz",
+    "title": "Mebel yo‘lni qanday toraytiradi?",
     "explanation": [
-      "1. Eskizda yo‘lga tushgan to‘siqlar va konflikt zonalari qizg‘ish belgi bilan ko‘rsatilgan.",
-      "2. Mebel, ochilish yo‘nalishi, torayish yoki noto‘g‘ri joylashgan element evakuatsiya yo‘lini buzishi mumkin.",
-      "3. Auditni faqat ideal plan bo‘yicha emas, real foydalanish va xato ssenariylari bo‘yicha ham o‘tkazing.",
-      "Darsdagi bajarish: Evakuatsiya yo‘liga xalaqit berishi mumkin bo‘lgan kamida 6 ta xato ssenariyni yozing."
+      "1. Chapdagi kreslo va oyoq kiyim javoni yurish yo‘lini toraytirgan.",
+      "2. O‘ngdagi misolda kreslo yon xonaga ko‘chirilgan, yo‘lakning tashqi eshikkacha bo‘lgan qismi ochiq qolgan.",
+      "3. Harakatni mebel joylashtirilgan holatda tekshiring; bo‘sh plan bilan cheklanmang.",
+      "4. Haqiqiy loyihada eshik ochilishi, yo‘l kengligi va boshqa talablar o‘lchamlar hamda tegishli manbalar bilan tekshiriladi."
     ],
     "exercise": "Evakuatsiya yo‘lida real to‘siq va konfliktlarni oldindan aniqlang.",
     "solution": "Xato ssenariy auditi ideal plan ortida yashirinadigan foydalanish muammolarini topadi.",
     "block": 5,
     "recipe": "escape",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy evakuatsiya eskizi. Yo‘nalishlar konseptual; aniq masofa, kenglik, chiqish soni va boshqa talablar amaldagi normativ manbadan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
@@ -4803,37 +4803,37 @@
   {
     "code": "L09_M07_002",
     "asset": "l09_m07_002.svg",
-    "title": "Kirish va harakat zanjiri — arxitekturaviy eskiz",
+    "title": "Ko‘chadan xizmat xonasigacha qulay yo‘l",
     "explanation": [
-      "1. Ketma-ket besh nuqta ko‘cha/uchastka, bino kirishi, hall, circulation va asosiy funksiya kabi bosqichlarni ifodalaydi.",
-      "2. Har transition, eshik, burilish va sath farqi alohida nazorat nuqtasi bo‘lishi mumkin.",
-      "3. Bitta nuqta mos bo‘lsa ham keyingi bosqichdagi to‘siq butun chain’ni buzadi.",
-      "Darsdagi bajarish: Accessibility chain uchun kamida 8 ta nazorat nuqtasini yozing."
+      "1. Harakatni ko‘chadan boshlang: yondashuv yo‘li va bino kirishining tutashuvini ko‘ring.",
+      "2. Eshikdan keyingi hall hamda xizmat xonasiga o‘tish birgalikda tekshiriladi.",
+      "3. Ocher rang harakat zonasini ajratadi; eshik, burilish va mebel yaqinidagi bo‘sh joyni alohida tekshiring.",
+      "4. Bu konseptual o‘quv misoli. Haqiqiy loyihada sath, qiyalik, eshik va manevr o‘lchamlari tegishli talablar bilan tekshiriladi."
     ],
     "exercise": "Kirishdan asosiy funksiyagacha bo‘lgan barcha transitionlarni tekshiring.",
     "solution": "Accessibility chain barcha ketma-ket nazorat nuqtalarining uzluksiz ishlashiga bog‘liq.",
     "block": 5,
     "recipe": "accessible",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy accessibility eskizi. Yo‘l va zonalar konseptual; aniq o‘lcham, nishab va boshqa talablar amaldagi tegishli normativ manbadan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L09_M07_003",
     "asset": "l09_m07_003.svg",
-    "title": "Eshik, sath va vertikal aloqa — arxitekturaviy eskiz",
+    "title": "Ostona, sath farqi va qavatlararo aloqa",
     "explanation": [
-      "1. Uch panel eshik, sath farqi/rampa va vertikal aloqa elementlarini alohida ko‘rsatadi.",
-      "2. Eshikning joylashuvi, ochilishi, threshold va yondashuv zonasi real foydalanish bilan birga tekshiriladi.",
-      "3. Sath farqi va qavatlararo aloqa foydalanuvchining mustaqil harakatini cheklamasligi kerak; aniq o‘lchamlar normativdan olinadi.",
-      "Darsdagi bajarish: Kirish eshigi, bitta ichki eshik va bitta sath farqi uchun foydalanish ssenariysi yozing."
+      "1. Chapda eshik ostonasi va tashqi yo‘lak bilan ichki pol orasidagi sath farqi alohida belgilangan.",
+      "2. Aravacha bilan yondashuvda eshik ochilishi, ostona va manevr joyi birgalikda tahlil qilinadi.",
+      "3. O‘ngda zinapoya bilan birga lift ko‘rsatilgan. Qavatlararo yo‘lning foydalanuvchiga mosligi alohida tekshiriladi.",
+      "4. Eskiz o‘lchamli loyiha emas: haqiqiy yechim, o‘lchov va foydalanish sharoitlari tegishli talablar asosida tekshiriladi."
     ],
     "exercise": "Eshik, sath farqi va vertikal aloqani accessibility zanjiri ichida tekshiring.",
     "solution": "Foydalanish qulayligi elementning o‘zi bilan emas, unga yondashuv va keyingi harakat bilan birga baholanadi.",
     "block": 6,
     "recipe": "accessible",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy accessibility eskizi. Yo‘l va zonalar konseptual; aniq o‘lcham, nishab va boshqa talablar amaldagi tegishli normativ manbadan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {

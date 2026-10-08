@@ -2,9 +2,9 @@
   "source_commit": "ec7db30e096c65d95917e84082fbd22547914adf",
   "scope": "196 remaining candidates after recovering eight unsaved illustrations",
   "visually_inspected": 196,
-  "updated": 6,
-  "new_image_optional": 15,
-  "replacement_pending": 175,
+  "updated": 9,
+  "new_image_optional": 16,
+  "replacement_pending": 171,
   "complete": false,
   "records": [
     {
@@ -103,8 +103,8 @@
       "source_path": "app/courses/level09_module06.py",
       "source_git_sha_at_review": "c60afd0ba17eb296881f345be06194ffdfe0fd18",
       "visual_style": "simple_vector_requires_rework",
-      "decision": "replacement_pending",
-      "reason": "Mavzu fazoviy yoki chizma natijasini ko‘rishni talab qiladi; mavjud tasvir sodda vektor belgilaridan iborat, professional arxitektura eskizi darajasiga mos emas."
+      "decision": "updated",
+      "reason": "Mavzuga mos izohli eskiz ko‘zdan kechirildi, dasturda ochildi va darsga bog‘landi."
     },
     {
       "code": "L09_M06_005",
@@ -114,8 +114,8 @@
       "source_path": "app/courses/level09_module06.py",
       "source_git_sha_at_review": "c60afd0ba17eb296881f345be06194ffdfe0fd18",
       "visual_style": "simple_vector_requires_rework",
-      "decision": "replacement_pending",
-      "reason": "Mavzu fazoviy yoki chizma natijasini ko‘rishni talab qiladi; mavjud tasvir sodda vektor belgilaridan iborat, professional arxitektura eskizi darajasiga mos emas."
+      "decision": "new_image_optional",
+      "reason": "Dars evakuatsiya auditi ketma-ketligi, muammo qaydi va yetti savolli tekshiruv ro‘yxatini o‘rgatadi. Fazoviy yo‘l, zinapoya va to‘siqlar M06_001–004 eskizlarida ko‘rsatilgan; bu yakuniy auditga alohida dekorativ rasm shart emas. Mavjud dars mazmuni saqlanadi."
     },
     {
       "code": "L09_M07_002",
@@ -125,8 +125,8 @@
       "source_path": "app/courses/level09_module07.py",
       "source_git_sha_at_review": "a3666b89e6819c76f50ca9ed795404fd494d6864",
       "visual_style": "simple_vector_requires_rework",
-      "decision": "replacement_pending",
-      "reason": "Mavzu fazoviy yoki chizma natijasini ko‘rishni talab qiladi; mavjud tasvir sodda vektor belgilaridan iborat, professional arxitektura eskizi darajasiga mos emas."
+      "decision": "updated",
+      "reason": "Mavzuga mos izohli eskiz ko‘zdan kechirildi, dasturda ochildi va darsga bog‘landi."
     },
     {
       "code": "L09_M07_003",
@@ -136,8 +136,8 @@
       "source_path": "app/courses/level09_module07.py",
       "source_git_sha_at_review": "a3666b89e6819c76f50ca9ed795404fd494d6864",
       "visual_style": "simple_vector_requires_rework",
-      "decision": "replacement_pending",
-      "reason": "Mavzu fazoviy yoki chizma natijasini ko‘rishni talab qiladi; mavjud tasvir sodda vektor belgilaridan iborat, professional arxitektura eskizi darajasiga mos emas."
+      "decision": "updated",
+      "reason": "Mavzuga mos izohli eskiz ko‘zdan kechirildi, dasturda ochildi va darsga bog‘landi."
     },
     {
       "code": "L09_M07_004",

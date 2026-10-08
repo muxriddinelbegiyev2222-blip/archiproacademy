@@ -574,7 +574,46 @@
       "corrected": false,
       "visual_review": "Interrupted generation output recovered and visually inspected. Three leaders terminate on outer door, hallway floor and stair tread; straight staircase visibly joins ground floor and upper landing. Concept only, no dimension or safety approval.",
       "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L09_M06_004",
+      "asset": "app/courses/visual_assets/l09_m06_004.svg",
+      "source_png_sha256": "69d77a33c9e2126bc75c49e13b3b8215dabd3dd0a33fd6eec6e66500e1bda6f7",
+      "embedded_sha256": "45d7c921e6e385c7f144673075e10dd630a797f9dc446110700dcca2ddfed984",
+      "svg_sha256": "03736c7b969820c5090903bda7afc34e715b1cc9d0ea8a59b018191076fe7f87",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Use case scientific-educational. ARCHIPRO UZ lesson L09_M06_004. Create one1536x1024 professional detailed architectural pencil and ink illustration with muted watercolor on ivory paper. Two SIDE-BY-SIDE interior corridor perspectives of SAME Uzbek family house, seen toward an open outer doorway and sunlit garden beyond. LEFT: a large armchair and low shoe cabinet visibly obstruct the corridor approaching doorway; right: exactly same door, windows, corridor and furniture but chair moved into adjacent living-room alcove, cabinet against side wall, clear walking strip from foreground to open exit. No arrows and no ticks. Detailed architectural door frames, tile floor, walls and understandable furniture placement. Exact title 'YO‘LDAGI TO‘SIQLAR'. Left label 'TO‘SIQ BOR'; right label 'YO‘L OCHIQ'. Emphasise physical obstruction comparison, not safety certification. No dimensions, regulations, English, flames, photorealism, fake UI or flat vector cards. Sparse readable Uzbek text and calm hand-drawn composition.",
+      "corrected": false,
+      "visual_review": "Same corridor compared in both views; armchair obstructs left corridor and is moved into adjacent room on right, leaving visible clear floor strip to open outer door. No dimension or compliance claim.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L09_M07_002",
+      "asset": "app/courses/visual_assets/l09_m07_002.svg",
+      "source_png_sha256": "e87f3f3212c62bbd252930035e8407643932a409860486874a4d9f1d836a6898",
+      "embedded_sha256": "b3e737f2d136cae43cfafe81d51aa895a171e62e5b44d71fc5a32b66aa5003df",
+      "svg_sha256": "22a41ef856e949b998058c659f03747048bcff07beb5398913a8db5ce7d392c9",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Create one exceptionally professional architect's hand-drawn teaching sketch on warm ivory paper, landscape 1536x1024. Finely controlled graphite and architectural ink with subtle watercolor, realistic building construction, confident human architectural sketchbook quality, no vector diagram, no clipart, no UI cards. Topic: continuous accessible route from street and plot entrance into the main room of a small one-storey community building. Draw a believable roofless isometric architectural cutaway showing street sidewalk foreground, a gently sloped broad entrance approach with railings connected to level landing, flush entrance door, spacious unobstructed hall, and adjacent service room with open wide doorway. A wheelchair user at the entrance and another wheelchair user inside the service room make the connected route legible. Use a continuous subtle ochre floor strip along the actual walkable ground from sidewalk via approach through entrance and hall into the room; no arrows, no isolated route floating above walls, no steps in this route. Include only these accurately readable Uzbek labels as handwritten architect annotations with fine leader lines pointing to the corresponding elements: heading 'UZLUKSIZ QULAY YO‘L'; 'Ko‘chadan kirish'; 'Sathlar tutashuvi'; 'Kirish eshigi'; 'To‘siqsiz hall'; 'Xizmat xonasi'. Space labels away from drawing clutter. This is an illustrative conceptual accessibility teaching sketch, not a certified compliant drawing: no dimensions, slope percentages, regulation numbers, checkmarks, symbols of approval or claims of compliance. Maintain realistic perspective, consistent floor levels and coherent door openings. Restrained sage and ochre washes, pleasing rich linework, generous clean margin.",
+      "corrected": false,
+      "visual_review": "Ko‘cha, kirish yondashuvi, eshik, hall va xizmat xonasi realistik kesma aksonometriyada ajratilgan; ocher pol qismi harakat zonasini tushuntiradi. Mebel yo‘l chetida. Izohlar o‘qiladi; o‘lcham va normativga moslik tasdig‘i berilmagan.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L09_M07_003",
+      "asset": "app/courses/visual_assets/l09_m07_003.svg",
+      "source_png_sha256": "2b4ae2ef0699447e8686518e5c6feebd4a414956fa3f0ca8f550105ee799757e",
+      "embedded_sha256": "51596f9bbf619ec4a8c5fa9a726470938658979be2f7e1818a4fd6ef33101d27",
+      "svg_sha256": "324b47dab61f3134196c1608a57326e53a616bad0b75a0654e89b22a627f9f8e",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "One professional architectural teaching plate, fine graphite and ink hand drawing with gentle watercolor on warm ivory paper, landscape1536x1024. Header in beautiful legible Uzbek 'ESHIK VA SATH TO‘SIQLARI'. Two large separate detailed architectural cutaway sketches, not vector icons or schematic boxes. Left: entrance vestibule at ground level, open hinged entrance door, clearly visible raised doorway sill across opening and single small step between outdoor paving and indoor tiled floor; a wheelchair user approaching from outside stopped BEFORE the sill. Draw coherent realistic wheelchair, recognizable floor elevation difference and door swing room. Label leader lines exactly 'Eshik ostonasi' pointing ONLY to raised sill, 'Sath farqi' pointing ONLY to small floor step. Right: believable two-storey interior section of a small public building with a stair to upper landing, and enclosed passenger elevator shaft alongside with simple glazed cab at lower floor and door opening at upper landing; wheelchair user beside closed lower elevator door with space to approach. Labels exactly 'Zinapoya' pointing to stair, 'Qavatlararo aloqa' pointing to elevator shaft. These are objects to examine, not proof of suitability. No dimensions, no numerical slope, no normative assertions, no checkmarks, no arrows, no claims of accessibility compliance. Meticulous architecture materials and legible sparse labels, ample margins, coherent section geometry. No English, no digital vectors, no clipart, no diagram cards, no photorealism.",
+      "corrected": true,
+      "visual_review": "Ostona va sath farqi ko‘rsatkichlari o‘z joyida; qavatlararo aloqa ko‘rsatkichi dastlab devorga tushgan, tahrirdan keyin lift shaxtasiga yo‘naltirilgan. Zinapoya va lift birga ko‘rsatilgan; misol muvofiqlik tasdig‘i emas.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
     }
   ],
-  "accepted_count": 44
+  "accepted_count": 47
 }
