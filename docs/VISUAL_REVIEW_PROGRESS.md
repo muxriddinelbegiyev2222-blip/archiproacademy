@@ -1,3 +1,15 @@
+# Nomzodlar ko‘rigi va yangi partiya — 2026-10-08
+
+Boshlang‘ich commit: `93d96dc`; 30 ta qabul qilingan eskiz. `ec7db30` commitida 8 ta saqlanmay qolgan eskiz tiklandi. Qolgan 196 tasvirning barchasi dastur chizish mexanizmi bilan ochilib ko‘zdan kechirildi.
+
+Yangi partiya: L09_M04_004, L09_M05_002, L09_M05_004 uchun 3 ta izohli arxitektura eskizi yaratildi. Tashqi kirish tasviridagi yopiq piyoda darvozasi tuzatildi. Tasvirlarning asl o‘lchami saqlandi, o‘zbekcha izohlar darslarga bog‘landi.
+
+**Jami 234 nomzod: 41 qabul qilingan eskiz + 15 yangi rasm ixtiyoriy dars + 178 yangilanish kutilayotgan dars.** Boshlang‘ich 204 nomzoddan 8 tasi tiklandi, 3 tasi yangilandi, 15 tasi yangi rasm navbatidan o‘tkazildi. Qolgan ish tugallanmagan.
+
+[196 nomzodning qarorlari va manba xeshlari](VISUAL_CANDIDATE_REVIEW_2026_10_08.json). [Qabul va tasvir xeshlari](VISUAL_REWORK_2026_10_08.json). Keyingi navbat: **L09_M06_001**.
+
+Mahalliy tekshiruv: database audit — 225 PASS, 0 WARNING, 0 ERROR; yangi eskizlar Qt SVG mexanizmi bilan ochildi va dars bog‘lanishlari tekshirildi. Mahalliy loyiha barcha avvalgi katta bitmaplarni o‘z ichiga olmaydi; to‘liq qamrov va Windows yig‘masi GitHub CI’da tekshiriladi. Windows paket tekshiruvi installer sinovi yoki yakuniy sotuv tasdig‘i emas.
+
 # Tiklangan va tekshirilgan partiya — 2026-10-08
 
 GitHub `93d96dc` holatidagi 30 ta qabul qilingan eskiz saqlandi. Avvalgi ish papkasidan GitHub’ga kiritilmay qolgan 8 ta mavzuga mos eskiz tiklandi: L09_M03_001–005, L09_M04_001–003. Tasvirlar va o‘zbekcha izohlar qayta ko‘zdan kechirildi.

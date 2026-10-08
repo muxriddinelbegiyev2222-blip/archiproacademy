@@ -496,7 +496,46 @@
       "corrected": true,
       "visual_review": "Removed physically inconsistent sun disks and ray directions; corrected comparison to diffuse daylight and sky obstruction.",
       "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L09_M04_004",
+      "asset": "app/courses/visual_assets/l09_m04_004.svg",
+      "source_png_sha256": "e8790cb3af7333796a4fdabe7b0d8a80f2e4f749e1a992a2890c6ab322de07f9",
+      "embedded_sha256": "1c389f56048299b1af1fbd8a313bb655eb764512d6a1e00f953605650d1e6eb1",
+      "svg_sha256": "94b4f6beb4dfa78ad47984251fffc0a2dffbe567ff160c418efdf9d7bc116369",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Use case: scientific-educational. Asset: ARCHIPRO UZ lesson L09_M04_004, Plan, fasad va kesim koordinatsiyasi. Create one landscape 1536x1024 professional architectural pencil and fine ink sketch with restrained watercolor washes on warm ivory paper. Three spacious coordinated views of the same modest single-storey Uzbek home: top-down furnished floor plan left, front facade centre, cutaway section right. All views show the same large living-room window facing a courtyard; shade canopy is visible in facade and section; section makes the window opening and interior daylight path understandable. Clear recognisable architecture and furniture, textured pencil outlines, subtle sage/ochre/blue washes. Main purpose is comparing the position of an opening in three views, not an engineering or normative drawing. Exact Uzbek title 'PLAN, FASAD VA KESIM'. Three large short labels under views 'PLAN', 'FASAD', 'KESIM'. One restrained teal circle around the living room window in each view; no arrows through solid walls. No numerical dimensions, normative claims, calculation, copied app interface, English text, decorative icons, flat vector cards or photorealism. Large clear architectural drawing and ample whitespace.",
+      "corrected": false,
+      "visual_review": "Plan, facade and section views inspected; same highlighted living-room window and canopy relation are legible. Conceptual sketch, not a measured coordinated drawing.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L09_M05_002",
+      "asset": "app/courses/visual_assets/l09_m05_002.svg",
+      "source_png_sha256": "c93315556668c998efdab4bc7d1c0c42444d25aaed28d19331243809e6cd714c",
+      "embedded_sha256": "93e18a61c33cc528be32931e8f549c1e1697fe407e95b07f5090b280be34954a",
+      "svg_sha256": "165f31ba12f93a7c31028b4bc6945aaced53ec346dfb9e0c30b64b2d91ce8f35",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Use case: scientific-educational. ARCHIPRO UZ lesson L09_M05_002 'Odamlar, yo‘llar va chiqishlar'. One 1536x1024 landscape professional pencil and fine ink architectural sketch with restrained watercolor on warm ivory paper. Dominant roofless axonometric cutaway of a simple one-storey Uzbek family dwelling with recognisable furnished bedroom left, living room middle, open hallway connecting to a clearly visible main entry at front right. Three small understated human figures in rooms. One continuous fine teal route begins beside a bedroom figure, passes only through clearly drawn open doorways along hall, exits through open exterior doorway and finishes in open courtyard, never through walls or furniture. Sparse large Uzbek-only title 'ODAMDAN CHIQISHGACHA'; labels 'XONA' at bedroom, 'YO‘LAK' at unobstructed hall, 'CHIQISH' at exterior door, 'HOVLI' outside. Make route and door openings unambiguous. Rich but clean architectural sketch, light details and ample whitespace. Concept of tracing movement only, no simulated emergency flames, no safety approval marks, dimensions, normative prescriptions, exact route distances, English or fabricated software UI. Do not draw generic vector rectangles or icon cards.",
+      "corrected": false,
+      "visual_review": "Bedroom, shared space, hallway, open outer door and courtyard inspected. Movement is an illustrative scenario; it does not establish compliant escape geometry.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L09_M05_004",
+      "asset": "app/courses/visual_assets/l09_m05_004.svg",
+      "source_png_sha256": "ca04149eb579a7748ce5421ef3cb9167129f6a8b0be5904cb07eba60e2258cb8",
+      "embedded_sha256": "994192b265ea4d8a3c4c2a59df41ead201fa4fc26380953b95d0be0ad9107183",
+      "svg_sha256": "651a849199e83c414d86b40210f63e6d7ad7ac71c71263850b036fe0da31a33c",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Use case: scientific-educational. Asset ARCHIPRO UZ lesson L09_M05_004 'Uchastka va tashqi kirish'. One professional detailed architectural graphite/fine ink and restrained watercolor sketch on warm ivory paper, landscape1536x1024. High oblique view of modest single-storey Uzbek home, enclosed rectangular courtyard and public street at bottom. Show two separated pedestrian gate and wider vehicle gate, unobstructed short driveway to a clear stopping area near building, restrained red fire-service truck stopped on public street outside the vehicle gate. Include roof, boundary, neighboring buildings, mature trees and porch; all legible architectural objects. Fine ochre route from truck through OPEN wide gate to service access area; thin teal pedestrian route through SMALL gate to front entrance. No routes through house, fence or trees. Title exactly 'UCHASTKA VA TASHQI KIRISH'; only three clear Uzbek callouts 'KO‘CHA', 'XIZMAT KIRISHI', 'PIYODA YO‘LI'. Main idea is seeing street–gate–approach relationship and possible obstacles, not a certified firefighting access plan. No dimensions, turning radii, numerical clearances, green checks, compliance claims, fabricated UI, English, flat vector boxes, photographs or dramatic fire. Spacious restrained professional hand drawing.\nCorrection: Edit this architectural teaching sketch. Change ONLY the SMALL PEDESTRIAN GATE at left of the large vehicle gate: it is currently CLOSED with a teal path passing through it. Make that small gate visibly OPEN, with its leaf rotated inward against the courtyard-side fence, leaving the pedestrian threshold fully clear. The teal path must pass through the visible open gap. Preserve the whole rest of the image: same house, fence, large already-open vehicle gate, red fire truck, landscaping, watercolor pencil style, exact title and Uzbek labels, arrows and image dimensions. Do not move the wide service entrance or any labels. This is a precise correction to make an unobstructed pedagogical pedestrian route.",
+      "corrected": true,
+      "visual_review": "Vehicle and pedestrian paths, open thresholds, public street, building and courtyard inspected. Closed pedestrian gate in first version rejected and corrected with imagegen. No access-clearance certification.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
     }
   ],
-  "accepted_count": 38
+  "accepted_count": 41
 }

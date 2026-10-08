@@ -4569,19 +4569,19 @@
   {
     "code": "L09_M04_004",
     "asset": "l09_m04_004.svg",
-    "title": "Plan, fasad va kesim koordinatsiyasi — arxitekturaviy eskiz",
+    "title": "Plan, fasad va kesimda derazani tekshirish",
     "explanation": [
-      "1. Chapdagi plan deraza joyi va xona chuqurligini, markazdagi fasad deraza balandligi va proporsiyasini, o‘ngdagi kesim esa vertikal soyalanishni ko‘rsatadi.",
-      "2. Tabiiy yorug‘lik bo‘yicha yakuniy xulosa faqat bitta ko‘rinishga tayanmasligi kerak.",
-      "3. Bir xil deraza plan, fasad va kesimda bir-biriga mos tushishi hamda tashqi shading elementlari bilan koordinatsiya qilinishi kerak.",
-      "Darsdagi bajarish: Bitta xona uchun plan, fasad va kesim bo‘yicha alohida audit savollarini tuzing."
+      "1. Chapdagi plan derazaning xona va hovliga nisbatan joyini ko‘rsatadi.",
+      "2. Markazdagi fasad deraza, eshik va ayvonning tashqi aloqasini ko‘rsatadi.",
+      "3. O‘ngdagi kesim ochilish, xona balandligi va soyalanish elementini ko‘rishga yordam beradi.",
+      "4. Haqiqiy loyihada ochilishning joyi va sathini uchala chizmada o‘lchamlar bilan solishtiring. Tasvir konseptual misol; undagi shakllar aniq o‘lchamli loyiha o‘rnini bosmaydi."
     ],
     "exercise": "Yoritish qarorini plan, fasad va kesimda bir xil mantiqda tekshiring.",
     "solution": "Ko‘p ko‘rinishli koordinatsiya yorug‘likka ta’sir qiluvchi geometrik omillarni to‘liqroq ko‘rsatadi.",
     "block": 6,
     "recipe": "light",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy yorug‘lik eskizi. Quyosh nurlari va soyalar konseptual; aniq insolyatsiya va tabiiy yoritish qiymatlari amaldagi normativ va hisob usuli bilan aniqlanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
@@ -4623,19 +4623,19 @@
   {
     "code": "L09_M05_002",
     "asset": "l09_m05_002.svg",
-    "title": "Odamlar, yo‘llar va chiqishlar — arxitekturaviy eskiz",
+    "title": "Odam turgan joydan tashqi chiqishgacha",
     "explanation": [
-      "1. Plan ichidagi nuqtalar odamlarni, qizg‘ish yo‘l esa xonadan tashqi chiqishgacha bo‘lgan evakuatsiya yo‘nalishini ifodalaydi.",
-      "2. Kundalik circulation ishlayotgani favqulodda holatda yo‘l ham xavfsiz degani emas; yo‘l uzluksiz, tushunarli va to‘siqsiz bo‘lishi kerak.",
-      "3. Chiqish yo‘li bir xonadan boshlanib eshik, koridor va tashqi xavfsiz yo‘nalish bilan davom etadi.",
-      "Darsdagi bajarish: Bitta xonadan tashqarigacha odamning chiqish yo‘lini bosqichma-bosqich chizing."
+      "1. Odam turgan xonadan boshlang va eshik orqali keyingi xonaga o‘tishini kuzating.",
+      "2. Ichki harakat tashqi chiqish va hovligacha davom etadi; yo‘lning har bir qismi alohida tekshiriladi.",
+      "3. Mebel, eshik ochilishi va devorlar haqiqiy loyihada yo‘lni to‘smasligini tekshiring.",
+      "4. Eskiz yo‘lni kuzatish tushunchasini ko‘rsatadi. Evakuatsiya yo‘lining aniq geometriyasi va talabga mosligi loyiha chizmalari hamda tegishli hisob bilan tekshiriladi."
     ],
     "exercise": "Favqulodda chiqish yo‘lini foydalanuvchi nuqtai nazaridan tekshiring.",
     "solution": "Xavfsiz chiqish yo‘li odamni uzluksiz ravishda xavfli zonadan tashqariga olib chiqadi.",
     "block": 5,
     "recipe": "fire",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy yong‘in xavfsizligi eskizi. Yo‘llar va elementlar konseptual; aniq yong‘inga chidamlilik, masofa va o‘lchamlar amaldagi normativdan olinadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
@@ -4659,19 +4659,19 @@
   {
     "code": "L09_M05_004",
     "asset": "l09_m05_004.svg",
-    "title": "Uchastka va tashqi kirish — arxitekturaviy eskiz",
+    "title": "Ko‘chadan uchastkaga piyoda va xizmat kirishi",
     "explanation": [
-      "1. Uchastka eskizida bino, tashqi yo‘l va xizmat kirishi o‘zaro bog‘langan; yong‘in xavfsizligi faqat bino ichida tugamaydi.",
-      "2. Tashqi kirish, xizmat ko‘rsatish imkoniyati, qo‘shni obyektlar va uchastka cheklovlari ham auditga kiradi.",
-      "3. Mashina yo‘li yoki xizmat yo‘nalishini faqat chiroyli genplan elementi sifatida emas, real foydalanish ssenariysi sifatida tekshiring.",
-      "Darsdagi bajarish: Uchastkada bino va tashqi xizmat kirishi orasidagi asosiy yo‘lni belgilang."
+      "1. Ko‘cha bilan uchastka orasidagi piyoda va transport kirishlarini alohida ko‘ring.",
+      "2. Sariq yo‘l xizmat transportining kirish yo‘nalishini, ko‘k yo‘l piyodaning uyga borishini ko‘rsatadi.",
+      "3. Haqiqiy genplanda darvoza, daraxt, ayvon, turish maydoni va boshqa to‘siqlarni transport harakati bilan solishtiring.",
+      "4. Bu konseptual eskiz. Transportning burilish imkoniyati, gabariti va yong‘in xizmatiga kirish talablari alohida manba va hisob bilan tekshiriladi."
     ],
     "exercise": "Uchastka va tashqi kirishlarni yong‘in xavfsizligi kontekstida tekshiring.",
     "solution": "Tashqi kirish va uchastka aloqalari binodagi yong‘in xavfsizligi tizimining davomidir.",
     "block": 5,
     "recipe": "fire",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy yong‘in xavfsizligi eskizi. Yo‘llar va elementlar konseptual; aniq yong‘inga chidamlilik, masofa va o‘lchamlar amaldagi normativdan olinadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
