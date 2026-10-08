@@ -1,3 +1,13 @@
+# Tiklangan va tekshirilgan partiya — 2026-10-08
+
+GitHub `93d96dc` holatidagi 30 ta qabul qilingan eskiz saqlandi. Avvalgi ish papkasidan GitHub’ga kiritilmay qolgan 8 ta mavzuga mos eskiz tiklandi: L09_M03_001–005, L09_M04_001–003. Tasvirlar va o‘zbekcha izohlar qayta ko‘zdan kechirildi.
+
+Jami 234 nomzoddan **38 tasi qabul qilindi, 196 tasi qolgan**. Ish tugallanmagan. Keyingi navbat: L09_M04_004. Qabul va tasvir xeshlari: [VISUAL_REWORK_2026_10_08.json](VISUAL_REWORK_2026_10_08.json). Dars matni, testlar va litsenziya fayllari bu partiyada o‘zgartirilmadi.
+
+`93d96dc` uchun GitHub Actions 37745361373: audit va Windows package — success. Yangi commit tekshiruvlari alohida tasdiqlanadi.
+
+---
+
 # Tekshirilgan yangilanish — 2026-10-08
 
 30 ta eskiz ko‘zdan kechirilib darslarga bog‘landi. [Qabul qaydi](VISUAL_REWORK_2026_10_08.json). 234 qayta tekshirish nomzodidan shu bosqichda 30 tasi yangilandi; ish davom etmoqda.

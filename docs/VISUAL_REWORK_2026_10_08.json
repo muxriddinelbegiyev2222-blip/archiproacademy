@@ -392,7 +392,111 @@
       "corrected": false,
       "visual_review": "Reviewed architectural subject and Uzbek heading; independent conceptual examples are described without measured or normative claims.",
       "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L09_M03_001",
+      "asset": "app/courses/visual_assets/l09_m03_001.svg",
+      "source_png_sha256": "24d91759914334d6def9511b1a8e759b8d779c980a2fb08809f0d8a4354d51f4",
+      "embedded_sha256": "a33a62baf22eac9d84e9cb0693b343b71b4c3130618b20dc1fca754214534ed3",
+      "svg_sha256": "2a20dcb28ea2f1e7ffd556df15e48085c501739f401472f6595048819989cad5",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Create a landscape 1536x1024 educational architectural graphite-pencil and pale-watercolor plate on ivory paper. Hand sketch, no photorealistic rendering, no generic vector boxes. Exact Uzbek heading only: 'Uchastkani normativ o‘qish'. No other words, letters, numbers, dimensions or compliance stamps. Scene: A detailed oblique bird's-eye drawing of a residential parcel with existing small house, perimeter fence, street, trees, service utility cover and survey tripod. Beside it separate paper site sketch showing dashed parcel outline and a small blank official-document folder. Explain need to compare sketch boundary with verified documents; do not imply dashed line is legally confirmed. Fine architectural linework, calm sage/ochre/blue accents, readable distinct objects, balanced margins. Conceptual study, not a measured or legally verified project.",
+      "corrected": false,
+      "visual_review": "Visually reviewed architectural subjects and exact heading. Captions distinguish conceptual examples from verified dimensions; M03_004 mismatched room contour explicitly used as coordination exercise.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L09_M03_002",
+      "asset": "app/courses/visual_assets/l09_m03_002.svg",
+      "source_png_sha256": "84c11f2f75e4e8166005a172f1456143311bfcdaab82dc66dcecd8c3d4fdc48e",
+      "embedded_sha256": "a5d7b4b103cda8ee413f1ac05ccba173e82fd8ffc0ef9912b2eb1e46200237fa",
+      "svg_sha256": "ec731d456b5789c38cd15b3e9689cf1c7b47dd0f69ddadc4fff67e069e3eaf08",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Create a landscape 1536x1024 educational architectural graphite-pencil and pale-watercolor plate on ivory paper. Hand sketch, no photorealistic rendering, no generic vector boxes. Exact Uzbek heading only: 'Chegaralar, kirish va joylashtirish'. No other words, letters, numbers, dimensions or compliance stamps. Scene: Large top-down detailed residential site plan. Street along bottom, parcel fence with separate pedestrian gate and broad vehicle gate, house set within landscaped parcel, driveway reaching two-car canopy, separate garden path reaching front door. Two subtle colored arrows follow the two real open access paths. A small lower vignette street-level view of distinct gates. No paths through buildings. Fine architectural linework, calm sage/ochre/blue accents, readable distinct objects, balanced margins. Conceptual study, not a measured or legally verified project.",
+      "corrected": false,
+      "visual_review": "Visually reviewed architectural subjects and exact heading. Captions distinguish conceptual examples from verified dimensions; M03_004 mismatched room contour explicitly used as coordination exercise.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L09_M03_003",
+      "asset": "app/courses/visual_assets/l09_m03_003.svg",
+      "source_png_sha256": "b42306bdb05544b3a0b2f46998256d6186b8f169bd85163653d3e5c5b5f3ae34",
+      "embedded_sha256": "efe0eb7d0c238d34d6029c8679a4c52fd7f5699e26a7797bc2a3f862a4662801",
+      "svg_sha256": "68beee310167bb6db6efea6530977c8398f6b73b953e08129d9a8e70f25843cd",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Create a landscape 1536x1024 educational architectural graphite-pencil and pale-watercolor plate on ivory paper. Hand sketch, no photorealistic rendering, no generic vector boxes. Exact Uzbek heading only: 'Qo‘shni obyektlar va tashqi aloqalar'. No other words, letters, numbers, dimensions or compliance stamps. Scene: Detailed bird's-eye view of three neighboring residential parcels along one street. Central home tinted pale ochre, neighboring taller homes muted gray. Show afternoon shadows cast consistently to one side, trees, facing windows, central private courtyard, utility pole along street and service cover. Lower two separate pencil vignettes compare sightline from neighbor window into yard and shaded garden. No quantitative shadow study or precise utility routing. Fine architectural linework, calm sage/ochre/blue accents, readable distinct objects, balanced margins. Conceptual study, not a measured or legally verified project.",
+      "corrected": false,
+      "visual_review": "Visually reviewed architectural subjects and exact heading. Captions distinguish conceptual examples from verified dimensions; M03_004 mismatched room contour explicitly used as coordination exercise.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L09_M03_004",
+      "asset": "app/courses/visual_assets/l09_m03_004.svg",
+      "source_png_sha256": "4c27f43c999a5c37566e3ca1c50e9175509ff84f1e0966cdcf24e9e67bd442ab",
+      "embedded_sha256": "c03008c717fd35c2745f3d327ddaadb979cb495f3e2b1f223e1eb57acf18eb5a",
+      "svg_sha256": "22a430d46706ed25b9d5b89ae0696950f26c1430bbc514b54ba1c61f0f04a24a",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Create a landscape 1536x1024 educational architectural graphite-pencil and pale-watercolor plate on ivory paper. Hand sketch, no photorealistic rendering, no generic vector boxes. Exact Uzbek heading only: 'Genplan koordinatsiyasi'. No other words, letters, numbers, dimensions or compliance stamps. Scene: Large attractive detailed top-down site plan of an Uzbek courtyard home with street, two-car canopy, pedestrian garden path, terrace, utility service corner, existing trees. Beside it smaller ground floor plan of same simple rectangular house and a small longitudinal site section showing street, gate, garden path and house entrance on gentle slope. Match house footprint and entrance orientation. Show coordination of site and building, no numerical levels. Fine architectural linework, calm sage/ochre/blue accents, readable distinct objects, balanced margins. Conceptual study, not a measured or legally verified project.",
+      "corrected": false,
+      "visual_review": "Visually reviewed architectural subjects and exact heading. Captions distinguish conceptual examples from verified dimensions; M03_004 mismatched room contour explicitly used as coordination exercise.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L09_M03_005",
+      "asset": "app/courses/visual_assets/l09_m03_005.svg",
+      "source_png_sha256": "f146c82b37313d7ba7b5fddd872155ea7859e6abddff2713f3ff2a53ffb9acea",
+      "embedded_sha256": "c629f9915c18056b0f0fe85fb1d809b943f1425454d851d2c9e43cb181b68155",
+      "svg_sha256": "71b7d5f243e9f5639c16b45a2b1e5dcf89e2ae8a76dafb49a1d8f20cd8e35687",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Landscape 1536x1024 educational architectural plate, graphite pencil and pale watercolor on cream paper. Exact Uzbek heading only 'Uchastka tekshiruvi'. No other text, letters, numbers, dimensions, code citations, compliance badges. Detailed residential site plan on left: house, street, fence, pedestrian and car gates, garden, utility corner. Two amber circles around uncertain fence corner and utility cover. On right a blank ruled audit table with four columns, no words and no checkmarks; beneath it three small detailed vignettes of survey instrument, property document folder, street entrance. Teach recording confirmed versus missing source information. Draw substantial detailed buildings and furnishings with accurate perspective, calm blue/sage/ochre accents, generous clear spacing. Hand-drawn, not photorealistic and not vector graphics. Conceptual explanation only.",
+      "corrected": false,
+      "visual_review": "Visually reviewed architectural subjects and exact heading. Captions distinguish conceptual examples from verified dimensions; M03_004 mismatched room contour explicitly used as coordination exercise.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L09_M04_001",
+      "asset": "app/courses/visual_assets/l09_m04_001.svg",
+      "source_png_sha256": "0ab6f89d85beb5e3cf6560917291c8333509d467b9cc404c70fd486102beee6b",
+      "embedded_sha256": "2139eca616cc98dfa434500b4ac7e6ce1362739c5a616a44ede13ac0f5bdd8c3",
+      "svg_sha256": "604d1d26f30ca20dbcc3ec54374c48548b6e50b132cdfdc53598ed2f845f3e57",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Landscape 1536x1024 educational architectural plate, graphite pencil and pale watercolor on cream paper. Exact Uzbek heading only 'Tabiiy yorug‘lik tushunchasi'. No other text, letters, numbers, dimensions, code citations, compliance badges. Two equally sized cutaway views of the SAME furnished study room side by side, each with big window at left and desk at right. Left view overcast sky outside, soft diffuse daylight throughout room, no direct sun patch. Right view clear sky with angled sunlight through window creating a bright geometric patch on floor and diffuse ambient light elsewhere. Distinguish daylight from direct sunlight, no labels except title, no quantitative light-level claim. Draw substantial detailed buildings and furnishings with accurate perspective, calm blue/sage/ochre accents, generous clear spacing. Hand-drawn, not photorealistic and not vector graphics. Conceptual explanation only.",
+      "corrected": false,
+      "visual_review": "Visually reviewed architectural subjects and exact heading. Captions distinguish conceptual examples from verified dimensions; M03_004 mismatched room contour explicitly used as coordination exercise.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L09_M04_002",
+      "asset": "app/courses/visual_assets/l09_m04_002.svg",
+      "source_png_sha256": "851ef4ac4ba381dcfb0173da56e6756b6c5d01b9c9ed0ada38b6f2ea3c165c2b",
+      "embedded_sha256": "860dadc082be6a2a6c8a743aab1bc65790ada0852ed733acd5430d3453e1f4cb",
+      "svg_sha256": "2e97909bf705f8c700af74e2282bccd1f71b9fe46498ed064767700d1b394c77",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Landscape 1536x1024 educational architectural plate, graphite pencil and pale watercolor on cream paper. Exact Uzbek heading only 'Orientatsiya va quyosh'. No other text, letters, numbers, dimensions, code citations, compliance badges. Central top-down home with garden and windows, north arrow symbol without letter near plan. Above three small separate sun position sketches with same house at morning, midday and afternoon, sun moving left to top to right and shadows extending opposite consistently. Below one detailed window shading vignette with exterior canopy. Conceptual solar orientation study, no clock times or dates, no exact angles or seasonal claims. Draw substantial detailed buildings and furnishings with accurate perspective, calm blue/sage/ochre accents, generous clear spacing. Hand-drawn, not photorealistic and not vector graphics. Conceptual explanation only.",
+      "corrected": false,
+      "visual_review": "Visually reviewed architectural subjects and exact heading. Captions distinguish conceptual examples from verified dimensions; M03_004 mismatched room contour explicitly used as coordination exercise.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L09_M04_003",
+      "asset": "app/courses/visual_assets/l09_m04_003.svg",
+      "source_png_sha256": "94cfe8cb8f9f776848801498e6d05be821a4c90d3b006d33a756e341faa390a2",
+      "embedded_sha256": "c50d3a18e2fad2716698966feb0df133bb83031cfb6a1fb341b22c0fda9a34e4",
+      "svg_sha256": "e5836621d5e8fcbba7de8d44b6452de678cf65e0f283da41f96be816a93070f5",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Correct the lighting physics in this architectural teaching image. Preserve title 'Soyalanish va qo‘shni obyektlar', buildings, composition and drawing style. REMOVE all drawn sun disks and yellow ray lines from all three panels. Make both upper skies softly overcast pale blue-gray. LEFT room must be noticeably dimmer with soft diffuse ambient light and NO direct sun patch anywhere inside; tall neighboring building restricts sky view. RIGHT room and garden have brighter diffuse daylight due to open sky, but NO hard direct sun patch. Bottom canopy vignette also diffuse overcast light. This now teaches sky obstruction and shading qualitatively, not specific sun angles. Keep 1536x1024.",
+      "corrected": true,
+      "visual_review": "Removed physically inconsistent sun disks and ray directions; corrected comparison to diffuse daylight and sky obstruction.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
     }
   ],
-  "accepted_count": 30
+  "accepted_count": 38
 }

@@ -4433,145 +4433,137 @@
   {
     "code": "L09_M03_001",
     "asset": "l09_m03_001.svg",
-    "title": "Uchastkani normativ o‘qish — arxitekturaviy eskiz",
+    "title": "Uchastkani normativ o‘qish",
     "explanation": [
-      "1. Uchastka chegarasi, ko‘cha, bino, daraxt va tarmoq belgisi birgalikda site kontekstni ko‘rsatadi.",
-      "2. Uchastka faqat uzunlik-kenglik emas; huquqiy chegara, kirish, relyef, tarmoqlar va atrof qurilish boshlang‘ich ma’lumotdir.",
-      "3. Aniq cheklov yoki masofa rasmiy hujjatsiz taxmin qilinmaydi.",
-      "Darsdagi bajarish: Uchastka uchun boshlang‘ich ma’lumot checklistini tuzing."
+      "Uchastka ko‘rinishi, o‘lchov asbobi va hujjat papkasi boshlang‘ich ma’lumotni yig‘ish bosqichlarini eslatadi.",
+      "Qizil punktir eskiz konturidir; u huquqiy chegarani tasdiqlamaydi. Chegara manbasi va koordinatalar rasmiy hujjat bilan tekshiriladi.",
+      "Ko‘cha, mavjud bino, daraxt, kirish va tarmoqlar haqidagi ma’lumotni alohida qayd qiling."
     ],
     "exercise": "Huquqiy chegara va eskiz konturini ajrating.",
     "solution": "Uchastka talabi ishonchli boshlang‘ich ma’lumotga tayanadi.",
     "block": 6,
     "recipe": "site",
     "boundary": "Uchastka tahlilini tushuntiruvchi yengil genplan eskizi. Chegara masofalari va normativ qiymatlar shartli; aniq talablar rasmiy hujjatdan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L09_M03_002",
     "asset": "l09_m03_002.svg",
-    "title": "Chegaralar, kirish va joylashtirish — arxitekturaviy eskiz",
+    "title": "Chegaralar, kirish va joylashtirish",
     "explanation": [
-      "1. Eskizda ko‘cha, piyoda va avtomobil kirishi hamda bino joylashuvi bir genplanda ko‘rsatilgan.",
-      "2. Chegara va kirishlar uy plani bilan boshidan koordinatsiya qilinadi; uy keyin tasodifiy uchastkaga qo‘yilmaydi.",
-      "3. Chegaradan aniq masofa eskizdan olinmaydi; amaldagi tegishli talab tekshiriladi.",
-      "Darsdagi bajarish: Chegara, ko‘cha, darvoza va asosiy kirishni belgilang."
+      "Yashil strelka piyoda darvozasidan uyga, ko‘k strelka avtomobil darvozasidan soyabonga olib boradi.",
+      "Ko‘cha, uchastka chegarasi, ikkala kirish va uy eshigi o‘zaro muvofiqlashtiriladi.",
+      "Eskizdan chekinish yoki yo‘l kengligi olinmaydi; haqiqiy o‘lchamlar va tegishli talablar loyiha ma’lumotlari asosida tekshiriladi."
     ],
     "exercise": "Chegara, ko‘cha va kirish nuqtalarini hujjat manbasi bilan belgilang.",
     "solution": "Joylashtirish tekshiruvida koordinatalar va manba aniq bo‘lishi kerak.",
     "block": 6,
     "recipe": "site",
     "boundary": "Uchastka tahlilini tushuntiruvchi yengil genplan eskizi. Chegara masofalari va normativ qiymatlar shartli; aniq talablar rasmiy hujjatdan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L09_M03_003",
     "asset": "l09_m03_003.svg",
-    "title": "Qo‘shni obyektlar va tashqi aloqalar — arxitekturaviy eskiz",
+    "title": "Qo‘shni obyektlar va tashqi aloqalar",
     "explanation": [
-      "1. Markazdagi uchastka atrofidagi qo‘shni massalar kontekstning loyiha qarorlariga ta’sirini ko‘rsatadi.",
-      "2. Qo‘shni bino soyalanish, privacy, ko‘rinish, yong‘in xavfsizligi va kirishga ta’sir qilishi mumkin.",
-      "3. Uchastkaning to‘rt tomoni bo‘yicha alohida kontekst tahlili qiling.",
-      "Darsdagi bajarish: Har tomon uchun qo‘shni, quyosh, ko‘rinish, kirish va xavfni yozing."
+      "Markazdagi uy qo‘shni binolar va umumiy ko‘cha bilan birga ko‘rsatilgan.",
+      "Pastdagi alohida ko‘rinishlar qo‘shni derazadan hovliga ko‘rinish va yashil hududdagi soya masalalarini ochib beradi.",
+      "Har tomon bo‘yicha qo‘shni qurilish, shaxsiylik, yoritish, kirish va tarmoqlarni tekshiring; tasvir aniq soyalash hisobi emas."
     ],
     "exercise": "Qo‘shni binolar, xizmat tarmoqlari va tashqi aloqalarni qayd qiling.",
     "solution": "Qo‘shni sharoitlarni bilmasdan uchastka mosligi tasdiqlanmaydi.",
     "block": 6,
     "recipe": "site",
     "boundary": "Uchastka tahlilini tushuntiruvchi yengil genplan eskizi. Chegara masofalari va normativ qiymatlar shartli; aniq talablar rasmiy hujjatdan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L09_M03_004",
     "asset": "l09_m03_004.svg",
-    "title": "Genplan koordinatsiyasi — arxitekturaviy eskiz",
+    "title": "Genplan koordinatsiyasi",
     "explanation": [
-      "1. Bino, avtomobil yo‘li, piyoda yo‘li, yashil va xizmat zonalari bitta genplan tizimi sifatida ko‘rsatilgan.",
-      "2. Har zona bir-biriga xavfsiz va funksional bog‘lanishi kerak; muhandislik kirishlari ham oldindan o‘ylanadi.",
-      "3. Genplan dekorativ daraxtlar bilan tugamaydi; u foydalanish va tashqi aloqalarni boshqaradi.",
-      "Darsdagi bajarish: Zonalar orasidagi asosiy aloqalarni strelka bilan ko‘rsating."
+      "Genplan, alohida uy rejasi va uchastka kesimini birgalikda solishtirish kerak.",
+      "Bino konturi, kirish yo‘li va sathlardan tashqari ichki xonalar ham mos bo‘lishi lozim: bu misolda sanitar xona konturlari farqini topib, tekshiruv masalasi sifatida qayd qiling.",
+      "Pastdagi kesim ko‘cha bilan uy kirishi orasidagi sath aloqasini eslatadi; haqiqiy nishab va balandliklar o‘lchanadi."
     ],
     "exercise": "Genplanni plan va sathlar bilan solishtiring.",
     "solution": "Genplan ichki loyiha va tashqi sharoitlarni muvofiqlashtiradi.",
     "block": 6,
     "recipe": "site",
     "boundary": "Uchastka tahlilini tushuntiruvchi yengil genplan eskizi. Chegara masofalari va normativ qiymatlar shartli; aniq talablar rasmiy hujjatdan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L09_M03_005",
     "asset": "l09_m03_005.svg",
-    "title": "Uchastka professional audit — arxitekturaviy eskiz",
+    "title": "Uchastka tekshiruvi",
     "explanation": [
-      "1. Chapdagi site plan va o‘ngdagi checklist uchastkani hujjat, chegara, kirish, bino joyi, qo‘shni va tarmoqlar bo‘yicha audit qilishni ko‘rsatadi.",
-      "2. Har masalaga tekshirildi, ochiq savol yoki qayta ishlash kabi status bering.",
-      "3. Vizual chiroyli genplan normativ moslikni avtomatik tasdiqlamaydi.",
-      "Darsdagi bajarish: Uchastka audit jadvaliga manba, loyiha holati, status va yechim kiriting."
+      "Sariq doiralar chegara burchagi va xizmat nuqtasini tekshirish uchun ajratadi.",
+      "Jadvalning to‘rt ustuniga manba, loyiha holati, ochiq savol va yechimni yozing.",
+      "O‘lchov, hujjatlar va joydagi holat bir-biriga solishtiriladi; noma’lum chegarani tasdiqlangan deb belgilamang."
     ],
     "exercise": "Tasdiqlangan ma’lumot va yetishmayotgan bandlarni audit qiling.",
     "solution": "Uchastka auditi noma’lum chegarani aniq deb ko‘rsatmaydi.",
     "block": 6,
     "recipe": "site",
     "boundary": "Uchastka tahlilini tushuntiruvchi yengil genplan eskizi. Chegara masofalari va normativ qiymatlar shartli; aniq talablar rasmiy hujjatdan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L09_M04_001",
     "asset": "l09_m04_001.svg",
-    "title": "Tabiiy yorug‘lik tushunchasi — arxitekturaviy eskiz",
+    "title": "Tabiiy yorug‘lik tushunchasi",
     "explanation": [
-      "1. Kesimdagi sariq nurlar derazadan kirayotgan tabiiy yorug‘lik yo‘lini, xonaning chuqurligi esa yorug‘lik taqsimotiga ta’sir qiladigan geometriyani ko‘rsatadi.",
-      "2. Deraza borligi avtomatik ravishda yetarli tabiiy yorug‘lik degani emas; xona funksiyasi, deraza joyi, xona chuqurligi, orientatsiya va tashqi to‘siqlar birga tahlil qilinadi.",
-      "3. Eskiz faqat tushuntiruvchi model; aniq koeffitsiyent va talablar amaldagi normativ hamda tegishli hisob usuli bilan tekshiriladi.",
-      "Darsdagi bajarish: Bitta xonada tabiiy yorug‘likka ta’sir qiladigan kamida 6 ta omilni belgilang."
+      "Chapdagi bulutli sharoitda xona tarqoq kunduzgi yorug‘lik oladi; o‘ngda esa derazadan tushgan bevosita quyosh dog‘i ham ko‘rinadi.",
+      "Tabiiy yoritish va insolyatsiya bir xil tushuncha emas; ularning tekshiruv shartlari alohida qayd qilinadi.",
+      "Xona chuqurligi, deraza, tashqi to‘siqlar va foydalanish vazifasini tahlil qiling; yorqin eskiz yorug‘lik hisobi o‘rnini bosmaydi."
     ],
     "exercise": "Xona geometriyasi, deraza va tashqi muhitning tabiiy yorug‘likka ta’sirini tahlil qiling.",
     "solution": "Tabiiy yorug‘lik deraza, xona geometriyasi va tashqi sharoitlarning birgalikdagi natijasidir.",
     "block": 5,
     "recipe": "light",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy yorug‘lik eskizi. Quyosh nurlari va soyalar konseptual; aniq insolyatsiya va tabiiy yoritish qiymatlari amaldagi normativ va hisob usuli bilan aniqlanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L09_M04_002",
     "asset": "l09_m04_002.svg",
-    "title": "Orientatsiya va quyosh — arxitekturaviy eskiz",
+    "title": "Orientatsiya va quyosh",
     "explanation": [
-      "1. Markazdagi plan va aylana diagramma bino orientatsiyasini, ikki tomondagi quyosh belgilari esa kun davomida turli yo‘nalishlardan keladigan quyoshni konseptual ko‘rsatadi.",
-      "2. Bitta yo‘nalishni barcha xonalar uchun universal eng yaxshi deb qabul qilish to‘g‘ri emas; xona funksiyasi, iqlim va tashqi kontekst hisobga olinadi.",
-      "3. Orientatsiya qarori fasad kompozitsiyasi bilan birga ichki komfort va soyalanish strategiyasiga ham ta’sir qiladi.",
-      "Darsdagi bajarish: Uy xonalarini orientatsiya bo‘yicha ko‘rib, har birining sababini yozing."
+      "Yuqoridagi alohida uy ko‘rinishlari quyosh yo‘nalishi o‘zgarganda yorug‘lik va soya munosabatini kuzatishni eslatadi.",
+      "Genplanda yo‘nalishni aniqlang; tahlil uchun joy, sana va vaqtni alohida kiriting.",
+      "Deraza ustidagi soyabon quyoshdan himoya omilidir. Rasmdagi belgilar aniq quyosh trayektoriyasi, burchak yoki soya davomiyligi hisobi emas."
     ],
     "exercise": "Xona funksiyasi va orientatsiya qarorini birga tahlil qiling.",
     "solution": "Orientatsiya qarori quyosh, iqlim va xona funksiyasi bilan birga baholanadi.",
     "block": 5,
     "recipe": "light",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy yorug‘lik eskizi. Quyosh nurlari va soyalar konseptual; aniq insolyatsiya va tabiiy yoritish qiymatlari amaldagi normativ va hisob usuli bilan aniqlanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
     "code": "L09_M04_003",
     "asset": "l09_m04_003.svg",
-    "title": "Soyalanish va qo‘shni obyektlar — arxitekturaviy eskiz",
+    "title": "Soyalanish va qo‘shni obyektlar",
     "explanation": [
-      "1. Chapdagi pastroq bino va o‘ngdagi balandroq qo‘shni obyekt orasidagi geometriya tashqi soyalanish ta’sirini ko‘rsatadi.",
-      "2. Deraza va fasad yechimi yaxshi bo‘lsa ham, qo‘shni bino, ayvon, balkon, tom chiqishi yoki daraxt tabiiy yorug‘likni sezilarli kamaytirishi mumkin.",
-      "3. Soyalanishni faqat fasadda emas, uchastka va kesim kontekstida ham ko‘rish kerak.",
-      "Darsdagi bajarish: Uchastkadagi potensial soyalanish manbalarini belgilang va qaysi xonalarga ta’sir qilishini yozing."
+      "Chapdagi yaqin va baland qo‘shni bino osmon ko‘rinishini cheklaydi; o‘ngdagi ochiqroq holatda xona ko‘proq tarqoq yorug‘lik olishi mumkin.",
+      "Pastdagi ayvon misoli deraza oldidagi tashqi to‘siqni alohida tahlil qilishni eslatadi.",
+      "Qo‘shni bino va ayvon geometriyasini modelga kiriting. Bu taqqoslash miqdoriy yoritish yoki aniq quyosh soyasi hisobi emas."
     ],
     "exercise": "Qo‘shni obyektlar va tashqi elementlarning soyalanish ta’sirini tekshiring.",
     "solution": "Yoritish auditi binoni atrof kontekstdan ajratib emas, birgalikda ko‘radi.",
     "block": 5,
     "recipe": "light",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy yorug‘lik eskizi. Quyosh nurlari va soyalar konseptual; aniq insolyatsiya va tabiiy yoritish qiymatlari amaldagi normativ va hisob usuli bilan aniqlanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
