@@ -613,7 +613,33 @@
       "corrected": true,
       "visual_review": "Ostona va sath farqi ko‘rsatkichlari o‘z joyida; qavatlararo aloqa ko‘rsatkichi dastlab devorga tushgan, tahrirdan keyin lift shaxtasiga yo‘naltirilgan. Zinapoya va lift birga ko‘rsatilgan; misol muvofiqlik tasdig‘i emas.",
       "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L09_M07_004",
+      "asset": "app/courses/visual_assets/l09_m07_004.svg",
+      "source_png_sha256": "26fbdaccb9fe8573a19d7279b7ecc5276f5dad7d8206394aabb527a19de4671a",
+      "embedded_sha256": "49e79773870341af7756e79b35ddbe1846690bac7e8338638c48b298f9e31667",
+      "svg_sha256": "54e5a4496bad37bd4f7a511319d97f200cde7ecc4d503f167457a01ec0745610",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Create an exceptionally professional architectural pencil, ink and restrained watercolor sketch on ivory paper, landscape1536x1024. Topic accessible bathroom space analysis. Heading exact Uzbek 'SANITAR XONADA FOYDALANISH ZONASI'. One detailed roofless oblique cutaway of a spacious single-user bathroom: toilet against back wall toward right, horizontal grab bars on rear and right wall, generous unobstructed lateral space on LEFT of toilet for wheelchair approach; washbasin on left side wall near entrance with open clear knee space underneath, no base cabinet; entrance foreground wide open door swinging OUTWARD away from bathroom interior. Draw one wheelchair user inside, in the free central floor space oriented toward toilet. Maintain realistic bathroom fixture size and coherent perspective. Show central maneuvering floor space in subtle transparent sage wash, lateral transfer floor space left of toilet in pale ochre wash. Sparse readable hand-lettered Uzbek annotations with precise leaders: 'Manevr joyi' points central empty floor, 'Jihozga yondashuv' points open lateral space left of toilet, 'Rakovana ostidagi bo‘sh joy' points empty space UNDER basin (use spelling 'Rakovina ostidagi bo‘sh joy'), 'Eshik ochilishi' points outward door leaf. Rich fine hand-sketched material lines, humane believable wheelchair anatomy, no vector symbols, no layout cards, no ticks, no numerical dimensions, no compliance claims, no English. Conceptual educational architecture sketch rather than dimensioned construction plan. Avoid drawn circle on top of person.",
+      "corrected": false,
+      "visual_review": "Jihozlar, markaziy manevr zonasi, jihoz yonidagi yondashuv va tashqariga ochilgan eshik ajratilgan. Rakovina tagida shkaf yo‘q. Tasvir foydalanuvchi va jihozlarning birgalikdagi joylashuvini tahlil qiladi; muvofiqlik o‘lchovlari berilmagan.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
+    },
+    {
+      "code": "L09_M08_003",
+      "asset": "app/courses/visual_assets/l09_m08_003.svg",
+      "source_png_sha256": "02666ea9b4f44124f7d80689b56b797d39cf4209add3485d95262063a6a0de77",
+      "embedded_sha256": "1f0a43d9cb0b732c285697ac721bf12a45951ffacfc825682f4ffe1ee584f7cf",
+      "svg_sha256": "4038b252a81d20c3c031784835f46bbbd6bda4f24ec302297e2ea6353a2ce7e3",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Professional architect's educational hand-drawn presentation plate, refined graphite architectural ink and watercolor on warm ivory paper, landscape1536x1024. Topic locating specific circulation conflicts in house plan and site placement, NOT regulations compliance. Header exact Uzbek 'PLAN VA GENPLAN: KONFLIKTNI TOPING'. Two large richly detailed architectural views of the SAME compact single-storey rectangular home and garden gate: LEFT labelled 'Uy plani' show overhead roofless furnished floor plan with entry hall, living room, kitchen, two bedrooms and one bathroom. Focus one genuine visible error: bathroom hinged door swings outward into a narrow hall overlapping the entry door swing; show both thin architectural swing arcs clearly with dashed ochre highlight around overlapping floor zone. Sparse label 'Eshiklar to‘qnashuvi' leader ending exactly at this overlap. RIGHT labelled 'Uchastkadagi kirish' show oblique aerial site sketch of same home, perimeter hedge, street sidewalk, pedestrian gate, front entrance at central facade and a large parked car positioned immediately in front of the pedestrian gate blocking the actual walkway between gate and house entrance. Label 'Yo‘lni to‘sayotgan avtomobil' pointing to this car. Both sketches use meticulous architectural hand linework, realistic furniture/door sizes and believable coherent geometry. No arrows, no normative numeric distances, no checkmarks, no redgreen approval icons, no clipart, no generic vector cards, no English. Clear actual physical defects as hypothetical teaching examples; ample legible annotation margins, muted sage/ochre.",
+      "corrected": true,
+      "visual_review": "Chapda hall ichidagi eshik ochilish zonalari kesishishi ajratilgan. O‘ngda avtomobil dastlab yo‘l chetida edi; tahrirdan keyin ochiq piyoda darvozasi qarshisidagi yo‘lakni to‘smoqda. Fazoviy muammolar konkret; normativ xulosa chiqarilmagan.",
+      "encoding": "JPEG quality 95, 4:4:4; original pixel dimensions retained"
     }
   ],
-  "accepted_count": 47
+  "accepted_count": 49
 }

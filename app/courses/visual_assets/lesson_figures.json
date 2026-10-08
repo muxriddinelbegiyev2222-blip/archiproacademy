@@ -4839,19 +4839,19 @@
   {
     "code": "L09_M07_004",
     "asset": "l09_m07_004.svg",
-    "title": "Sanitar va foydalanish zonalari — arxitekturaviy eskiz",
+    "title": "Sanitar xonada yondashuv va manevr joyi",
     "explanation": [
-      "1. Plan ichidagi aylana manevr/yakqinlashuv zonasini, boshqa bloklar esa sanitar va asosiy foydalanish zonalarini ifodalaydi.",
-      "2. Jihozni plan ichiga sig‘dirishning o‘zi yetarli emas; unga yaqinlashish, burilish va foydalanish ketma-ketligi ham ko‘riladi.",
-      "3. Sanitar zona butun accessibility chain’ning bir qismi sifatida tekshiriladi.",
-      "Darsdagi bajarish: Sanitar xona uchun kamida 6 ta accessibility audit savoli yozing."
+      "1. Yashil pol qismi burilish va manevr joyini tushuntiradi; jihozlarning o‘zi bilan cheklanmang.",
+      "2. Ocher zona jihozga yondashishni ko‘rsatadi. Haqiqiy foydalanish va ko‘chib o‘tish usuli uchun yon bo‘shliqni tekshiring.",
+      "3. Rakovina ostidagi bo‘sh joy va eshikning ochilish yo‘nalishi yondashuvga ta’sir qiladi.",
+      "4. Bu konseptual misol: jihoz, tutqich, eshik va manevr joyining o‘lchamlari loyiha hamda tegishli talablar bo‘yicha tekshiriladi."
     ],
     "exercise": "Sanitar va xizmat zonalarini real foydalanish ssenariysi bilan tekshiring.",
     "solution": "Accessible sanitar zona jihoz, yondashuv, manevr va circulationning birgalikdagi ishlashiga bog‘liq.",
     "block": 5,
     "recipe": "accessible",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy accessibility eskizi. Yo‘l va zonalar konseptual; aniq o‘lcham, nishab va boshqa talablar amaldagi tegishli normativ manbadan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
@@ -4911,19 +4911,19 @@
   {
     "code": "L09_M08_003",
     "asset": "l09_m08_003.svg",
-    "title": "Plan va genplandagi xatolar — arxitekturaviy audit eskizi",
+    "title": "Plan va genplanda muammo joyini aniqlash",
     "explanation": [
-      "1. Chapdagi plan/genplan ichidagi ajratilgan nuqtalar circulation, sanitar zona, kirish, yoritish yoki uchastka cheklovi kabi potensial konfliktlarni ifodalaydi.",
-      "2. O‘ngdagi ro‘yxat xatoni ko‘rish bilan cheklanmasdan uni tekshiruv bandiga aylantirish kerakligini ko‘rsatadi.",
-      "3. Chiroyli plan avtomatik ravishda normativga mos degani emas; funksional va uchastka qarorlari alohida audit qilinadi.",
-      "Darsdagi bajarish: Bitta uy planida topilishi mumkin bo‘lgan 10 normativ xato ssenariysini yozing."
+      "1. Chapdagi ajratilgan joyda eshiklarning ochilish zonalari bir-biriga xalaqit berishi mumkin.",
+      "2. O‘ngdagi avtomobil ochiq piyoda darvozasi qarshisidagi yo‘lakni to‘sgan.",
+      "3. Muammoni faqat ro‘yxatga yozmang: uning joyini tegishli plan yoki genplanda belgilang.",
+      "4. Bu xato topish uchun konseptual misol. Haqiqiy loyihadagi o‘lchovlar va normativ moslik alohida dalillar bilan tekshiriladi."
     ],
     "exercise": "Plan va genplandagi potensial normativ konfliktlarni tizimli toping.",
     "solution": "Find-the-mistake mashqi normativ auditda vizual xatoni dalilli tekshiruvga aylantiradi.",
     "block": 5,
     "recipe": "genplan",
     "boundary": "Normativ audit mantiqini tushuntiruvchi yengil arxitekturaviy eskiz. Aniq SHNQ/QMQ bandlari va sonli talablar bu rasmdan olinmaydi; rasmiy amaldagi manba alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — AI yordamida yaratilgan, mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
   {
