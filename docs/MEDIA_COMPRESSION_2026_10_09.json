@@ -2916,6 +2916,42 @@
       "quality": 92,
       "before_sha256": "5062ef8d16d4af1f0f40ef0b03413ece93c34d606699cdf20ca981ed5ff63100",
       "after_sha256": "7b3d827a28c839b2d11f01cea337d0b0b488720db6606c2014e632fe04253096"
+    },
+    {
+      "before": "app/courses/visual_assets/l06_m10_001.svg",
+      "after": "app/courses/visual_assets/sketch-l06_m10_001.jpg",
+      "before_bytes": 1048605,
+      "after_bytes": 398313,
+      "width": 1536,
+      "height": 1024,
+      "quality": 84,
+      "before_sha256": "ef4ce1d0dcaeaece23ee0f56a779d4a4d57eefd0268183aa78c838015309b406",
+      "after_sha256": "275b1f23b45a1f395544708f1dd5a2cafb0e101b14a3d4f9f4cc293ee6b25f92",
+      "recovery_source": "Regenerated from recorded original lesson prompt after source recovery failed"
+    },
+    {
+      "before": "app/courses/visual_assets/l06_m10_003.svg",
+      "after": "app/courses/visual_assets/sketch-l06_m10_003.jpg",
+      "before_bytes": 1048605,
+      "after_bytes": 396449,
+      "width": 1536,
+      "height": 1024,
+      "quality": 89,
+      "before_sha256": "3e176b6e89d360f3c802b0bcd892f947aefba9fb85dee548345d25fd015ad8d0",
+      "after_sha256": "726fffd8b86dab45066a66412adec536e48eae442ed54c4f81af7034db43d4c4",
+      "recovery_source": "Regenerated from recorded original lesson prompt after source recovery failed"
+    },
+    {
+      "before": "app/courses/visual_assets/l06_m10_004.svg",
+      "after": "app/courses/visual_assets/sketch-l06_m10_004.jpg",
+      "before_bytes": 1048605,
+      "after_bytes": 387386,
+      "width": 1536,
+      "height": 1024,
+      "quality": 83,
+      "before_sha256": "3e700feb6befe3f614c8639aee3f73e4923bdff9faa71d52005eaaedefa94566",
+      "after_sha256": "13f12b50ef9847e88a30d0c561c00b108d1ee0d57ea23695c0551f6419312163",
+      "recovery_source": "Regenerated from recorded original lesson prompt after source recovery failed"
     }
   ],
   "renames": {
@@ -3014,7 +3050,10 @@
     "l15_m08_003.svg": "sketch-l15_m08_003.jpg",
     "l15_m08_004.svg": "sketch-l15_m08_004.jpg",
     "l15_m08_005.svg": "sketch-l15_m08_005.jpg",
-    "roof-concept.png": "roof-concept.jpg"
+    "roof-concept.png": "roof-concept.jpg",
+    "l06_m10_001.svg": "sketch-l06_m10_001.jpg",
+    "l06_m10_003.svg": "sketch-l06_m10_003.jpg",
+    "l06_m10_004.svg": "sketch-l06_m10_004.jpg"
   },
   "deleted_paths": [
     "app/courses/visual_assets/l06_m10_002.svg",
@@ -3112,10 +3151,13 @@
     "app/courses/visual_assets/l15_m08_003.svg",
     "app/courses/visual_assets/l15_m08_004.svg",
     "app/courses/visual_assets/l15_m08_005.svg",
-    "app/courses/visual_assets/roof-concept.png"
+    "app/courses/visual_assets/roof-concept.png",
+    "app/courses/visual_assets/l06_m10_001.svg",
+    "app/courses/visual_assets/l06_m10_003.svg",
+    "app/courses/visual_assets/l06_m10_004.svg"
   ],
-  "before_bytes": 217257355,
-  "after_bytes": 102147081,
+  "before_bytes": 220403170,
+  "after_bytes": 103329229,
   "changed_paths": [
     "app/courses/visual_assets/ac28-profile.png",
     "app/courses/visual_assets/ac28-tab-bar.png",
@@ -3383,42 +3425,12 @@
     "app/courses/visual_assets/sketch-l15_m08_004.jpg",
     "app/courses/visual_assets/sketch-l15_m08_005.jpg",
     "app/courses/visual_catalog.py",
-    "docs/VISUAL_REWORK_2026_10_08.json"
+    "docs/VISUAL_REWORK_2026_10_08.json",
+    "app/courses/visual_assets/sketch-l06_m10_001.jpg",
+    "app/courses/visual_assets/sketch-l06_m10_003.jpg",
+    "app/courses/visual_assets/sketch-l06_m10_004.jpg"
   ],
   "blocked_records": [
-    {
-      "before": "app/courses/visual_assets/l06_m10_001.svg",
-      "after": "app/courses/visual_assets/sketch-l06_m10_001.jpg",
-      "before_bytes": 1048605,
-      "after_bytes": 18716,
-      "width": 1536,
-      "height": 1024,
-      "quality": 95,
-      "before_sha256": "ef4ce1d0dcaeaece23ee0f56a779d4a4d57eefd0268183aa78c838015309b406",
-      "after_sha256": "2e412e1e5e0d77a014f71589ef8dc31540ec724ac9f014b13446b729fc927ae0"
-    },
-    {
-      "before": "app/courses/visual_assets/l06_m10_003.svg",
-      "after": "app/courses/visual_assets/sketch-l06_m10_003.jpg",
-      "before_bytes": 1048605,
-      "after_bytes": 18716,
-      "width": 1536,
-      "height": 1024,
-      "quality": 95,
-      "before_sha256": "3e176b6e89d360f3c802b0bcd892f947aefba9fb85dee548345d25fd015ad8d0",
-      "after_sha256": "2e412e1e5e0d77a014f71589ef8dc31540ec724ac9f014b13446b729fc927ae0"
-    },
-    {
-      "before": "app/courses/visual_assets/l06_m10_004.svg",
-      "after": "app/courses/visual_assets/sketch-l06_m10_004.jpg",
-      "before_bytes": 1048605,
-      "after_bytes": 18716,
-      "width": 1536,
-      "height": 1024,
-      "quality": 95,
-      "before_sha256": "3e700feb6befe3f614c8639aee3f73e4923bdff9faa71d52005eaaedefa94566",
-      "after_sha256": "2e412e1e5e0d77a014f71589ef8dc31540ec724ac9f014b13446b729fc927ae0"
-    },
     {
       "before": "app/courses/visual_assets/l07_m01_001.svg",
       "after": "app/courses/visual_assets/sketch-l07_m01_001.jpg",
@@ -3542,6 +3554,6 @@
     }
   ],
   "complete": false,
-  "converted_count": 264,
-  "blocked_count": 14
+  "converted_count": 267,
+  "blocked_count": 11
 }

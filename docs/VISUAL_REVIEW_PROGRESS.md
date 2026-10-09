@@ -1,3 +1,11 @@
+# Buzilgan eskizlarni tiklash — 2026-10-09
+
+Partiya: L06_M10_001, L06_M10_003, L06_M10_004. Mavzuga mos eskizlar qayta tayyorlandi, izohlar bilan bog‘landi; har bir JPEG 400 000 baytdan kichik. Katta PNG asl nusxalari GitHub’ga qo‘shilmadi.
+
+278 ta katta fayldan **267 tasi tayyor, 11 tasi buzilgan asl tasvirni almashtirish navbatida**. Asosiy 204 nomzod navbatidan 156 dars qolgan. Git tarixi tozalanmagan; reliz auditi yakunlanmagan.
+
+---
+
 # Hajmni kamaytirish va buzilgan tasvirlarni tiklash — 2026-10-09
 
 264 ta rasm 400 000 baytdan oshmaydigan shaklga keltirildi. Piksel o‘lchamlari saqlandi. Shu fayllar jami 217 257 355 baytdan 102 147 081 baytga kamaydi. JPEG siqishi matematik jihatdan yo‘qotishli; ko‘rinish yonma-yon namunalarda tekshirildi.

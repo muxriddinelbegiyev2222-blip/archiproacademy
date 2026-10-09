@@ -2721,7 +2721,7 @@
   },
   {
     "code": "L06_M10_001",
-    "asset": "l06_m10_001.svg",
+    "asset": "sketch-l06_m10_001.jpg",
     "title": "Xona devori va Zone chegarasi",
     "explanation": [
       "Devor chiziqlari makonni o‘raydi; yashil maydon va uzlukli kontur esa xona ichidagi Zone chegarasini ajratadi. Mebel Zone elementi emas.",
@@ -2733,7 +2733,7 @@
     "block": 7,
     "recipe": "zone",
     "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
-    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
+    "credit": "ARCHIPRO UZ — mavzuga mos AI arxitektura eskizi; ko‘rib tekshirilgan, 2026-10-09",
     "source_url": null
   },
   {
@@ -2755,7 +2755,7 @@
   },
   {
     "code": "L06_M10_003",
-    "asset": "l06_m10_003.svg",
+    "asset": "sketch-l06_m10_003.jpg",
     "title": "Xona raqami, nomi va vazifa maydoni",
     "explanation": [
       "Uch xonada Z01, Z02 va Z03 identifikatorlari bor. Har bir oq yozuv kartochkasi tegishli xonaning bo‘sh joyiga qo‘yilgan.",
@@ -2767,12 +2767,12 @@
     "block": 8,
     "recipe": "zone",
     "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
-    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
+    "credit": "ARCHIPRO UZ — mavzuga mos AI arxitektura eskizi; ko‘rib tekshirilgan, 2026-10-09",
     "source_url": null
   },
   {
     "code": "L06_M10_004",
-    "asset": "l06_m10_004.svg",
+    "asset": "sketch-l06_m10_004.jpg",
     "title": "Umumiy, shaxsiy va xizmat zonalari",
     "explanation": [
       "Sariq — mehmonxona va umumiy foydalanish, ko‘k — yotoqxonalar, yashil — oshxona va yordamchi xizmat maydoni. Legenda ranglarning ma’nosini beradi.",
@@ -2784,7 +2784,7 @@
     "block": 9,
     "recipe": "zone",
     "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
-    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
+    "credit": "ARCHIPRO UZ — mavzuga mos AI arxitektura eskizi; ko‘rib tekshirilgan, 2026-10-09",
     "source_url": null
   },
   {

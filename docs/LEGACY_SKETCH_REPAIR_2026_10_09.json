@@ -1,0 +1,42 @@
+{
+  "reason": "Old SVG embedded base64 truncated during previous upload; complete source unavailable",
+  "generator": "Built-in imagegen",
+  "records": [
+    {
+      "code": "L06_M10_001",
+      "asset": "app/courses/visual_assets/sketch-l06_m10_001.jpg",
+      "prompt": "Use case: scientific-educational. Asset type: one ARCHIPRO UZ lesson illustration, 1536x1024 landscape. Style: professional architect's hand drawn pencil and fine ink drawing with restrained watercolor washes on clean warm ivory paper, recognizable real residential architecture, detailed doors, windows, believable furniture, material hatching, airy editorial layout, clear line hierarchy. Beautiful but practical teaching image, legible at laptop size. No vector icon look, no generic rectangles standing in for buildings, no photographic render, no software window or fabricated interface. No logos or watermarks. Short Uzbek labels only when explicitly listed. Architectural concept illustration, not construction documents. Make the illustrated comparison the dominant subject, avoid decorative extra scenes. Title exactly 'XONA VA ZONE'. A spacious one-storey room shown in cutaway axonometric, with textured masonry enclosing walls, visible open doorway and a real glazed window, sofa and low table. The floor footprint INSIDE the walls has translucent pale green wash with a dashed teal perimeter, covering the whole internal floor around furniture. A fine leader pointing to masonry has exact label 'DEVOR'; a leader to green floor says 'ZONE CHEGARASI'. To the right a clean handwritten information card 'Z01' and 'MEHMONXONA', with a dotted line to the green floor. Make wall thickness distinct from the green zone footprint. Do not depict a Zone as a physical additional wall. No dimensions and no numeric area. Fine architectural sketch with enough construction detail to understand real room.",
+      "source_png_sha256": "740413fe517347e174f604040d8451d1c8663c235f0ad6ccd5aa7eb673d335bb",
+      "file_sha256": "275b1f23b45a1f395544708f1dd5a2cafb0e101b14a3d4f9f4cc293ee6b25f92",
+      "file_bytes": 398313,
+      "width": 1536,
+      "height": 1024,
+      "quality": 84,
+      "visual_review": "Topic, labels, architectural detail and conceptual boundary checked before acceptance"
+    },
+    {
+      "code": "L06_M10_003",
+      "asset": "app/courses/visual_assets/sketch-l06_m10_003.jpg",
+      "prompt": "Use case: scientific-educational. Asset type: one ARCHIPRO UZ lesson illustration, 1536x1024 landscape. Style: professional architect's hand drawn pencil and fine ink drawing with restrained watercolor washes on clean warm ivory paper, recognizable real residential architecture, detailed doors, windows, believable furniture, material hatching, airy editorial layout, clear line hierarchy. Beautiful but practical teaching image, legible at laptop size. No vector icon look, no generic rectangles standing in for buildings, no photographic render, no software window or fabricated interface. No logos or watermarks. Short Uzbek labels only when explicitly listed. Architectural concept illustration, not construction documents. Make the illustrated comparison the dominant subject, avoid decorative extra scenes. Title exactly 'XONA MA’LUMOTLARI'. A detailed top down pencil/ink architectural floor plan fragment of three distinct rooms plus a connected central corridor. A living room with sofa/table, kitchen with clear countertop/sink and dining, bedroom with bed and wardrobe. Fine door swings, window openings, thick hatched walls, no perspective. Each room has a pale green wash and one readable small white annotation box positioned in FREE floor area away from furniture and door arcs. Exact box texts 'Z01 / MEHMONXONA', 'Z02 / OSHXONA', 'Z03 / YOTOQXONA'. On the right an enlarged inset of the Z01 annotation with 'Z01', 'MEHMONXONA', 'XONA VAZIFASI', and leader lines from these three short texts labeled 'RAQAM', 'NOM', 'VAZIFA'. Connect inset by thin dotted leader to the living-room stamp. Annotation is data on the drawing, not a physical object. No area numbers, no dimensions. The enlarged inset is the learning focus, and labels should be sharp and readable.",
+      "source_png_sha256": "5f660fab7674f6b4871a7560c318016d167d26c446fda5c16de762229a29cf2c",
+      "file_sha256": "726fffd8b86dab45066a66412adec536e48eae442ed54c4f81af7034db43d4c4",
+      "file_bytes": 396449,
+      "width": 1536,
+      "height": 1024,
+      "quality": 89,
+      "visual_review": "Topic, labels, architectural detail and conceptual boundary checked before acceptance"
+    },
+    {
+      "code": "L06_M10_004",
+      "asset": "app/courses/visual_assets/sketch-l06_m10_004.jpg",
+      "prompt": "Use case: scientific-educational. Asset type: one ARCHIPRO UZ lesson illustration, 1536x1024 landscape. Style: professional architect's hand drawn pencil and fine ink drawing with restrained watercolor washes on clean warm ivory paper, recognizable real residential architecture, detailed doors, windows, believable furniture, material hatching, airy editorial layout, clear line hierarchy. Beautiful but practical teaching image, legible at laptop size. No vector icon look, no generic rectangles standing in for buildings, no photographic render, no software window or fabricated interface. No logos or watermarks. Short Uzbek labels only when explicitly listed. Architectural concept illustration, not construction documents. Make the illustrated comparison the dominant subject, avoid decorative extra scenes. Title exactly 'FUNKSIONAL ZONALAR'. A detailed top-view hand-drawn architectural plan of a plausible one-storey Uzbek family home: entrance hall at lower center connects directly to living+dining left, a short corridor branches to two quiet bedrooms at upper right, and a kitchen/storage/service area upper left. Real furniture, door openings with swing arcs, thin window gaps, thick masonry exterior walls and thinner partitions. Apply three translucent watercolor colors cleanly INSIDE room boundaries: warm ochre for living and dining public spaces, muted pale blue for bedrooms private spaces, pale sage green for kitchen/storage service. Keep corridor neutral cream, and public circulation from entrance to living must not pass through bedrooms. Below/right a clearly legible legend with exact labels 'UMUMIY', 'SHAXSIY', 'XIZMAT'. Use matching color swatches and leaders to the correct group. Show only a few lightly drawn dotted walking arrows from entrance to living and corridor; no confusing arrow web. No areas, no dimensions. Furniture and actual floor plan quality, not abstract zoning bubble shapes.",
+      "source_png_sha256": "6cefb9458c6bb8a4bca6081e22dd68672946ddacd3fba666222c63afb5aaf35f",
+      "file_sha256": "13f12b50ef9847e88a30d0c561c00b108d1ee0d57ea23695c0551f6419312163",
+      "file_bytes": 387386,
+      "width": 1536,
+      "height": 1024,
+      "quality": 83,
+      "visual_review": "Topic, labels, architectural detail and conceptual boundary checked before acceptance"
+    }
+  ]
+}
