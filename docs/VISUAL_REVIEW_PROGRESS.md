@@ -1,3 +1,25 @@
+# Hajmni kamaytirish va buzilgan tasvirlarni tiklash — 2026-10-09
+
+264 ta rasm 400 000 baytdan oshmaydigan shaklga keltirildi. Piksel o‘lchamlari saqlandi. Shu fayllar jami 217 257 355 baytdan 102 147 081 baytga kamaydi. JPEG siqishi matematik jihatdan yo‘qotishli; ko‘rinish yonma-yon namunalarda tekshirildi.
+
+25 ta eski SVG ichida uzilgan base64 aniqlandi. 11 tasi to‘liq asl nusxa va oldingi reyestr xeshi bilan tiklandi; 14 tasi tiklash navbatida. Bo‘sh siqilgan nusxalar dasturga qabul qilinmadi. Siqish hisoboti: [MEDIA_COMPRESSION_2026_10_09.json](MEDIA_COMPRESSION_2026_10_09.json).
+
+50 ta eskirgan Windows build artefakti o‘chirilib, 10 647 487 536 bayt bo‘shatildi. Oxirgi ikki build saqlandi. Git tarixidagi katta asl rasmlar hali tozalanmagan; joriy fayllarni almashtirish tarix hajmini o‘zi kamaytirmaydi.
+
+Asosiy 204 nomzod bo‘yicha: **25 tiklangan/yangilangan, 7 sifatli tasviri saqlangan, 16 yangi rasm talab qilmaydigan, 156 qolgan**. Yuqoridagi 11 ta eski SVG ta’miri alohida hisoblanadi. Keyingi ish: qolgan 14 buzilgan rasm, so‘ng Git tarixi va L10_M03_004 dan davom.
+
+---
+
+# Yangi tekshirilgan partiya — 2026-10-08
+
+Partiya: L12_M02_003, L12_M03_001, L12_M03_002, L12_M04_001, L12_M04_002, L12_M05_001, L12_M05_002. Har bir dars bo‘yicha qaror va katalog bog‘lanishi tekshirildi. Yangilangan eskizlar yoki saqlangan haqiqiy tasvirlar reyestrda qayd etilgan.
+
+**234 nomzod: 55 qabul qilingan eskiz + 7 sifatli haqiqiy tasviri saqlangan dars + 16 yangi rasm ixtiyoriy dars + 156 yangilanish kutilayotgan dars.** Boshlang‘ich 204 nomzoddan 25 ta eskiz tiklandi yoki yangilandi; 7 darsning sifatli haqiqiy tasviri saqlandi; 16 dars yangi rasm navbatidan o‘tkazildi; 156 dars qolgan. Ish tugallanmagan.
+
+Qabul va xeshlar: [VISUAL_REWORK_2026_10_08.json](VISUAL_REWORK_2026_10_08.json). Qarorlar: [VISUAL_CANDIDATE_REVIEW_2026_10_08.json](VISUAL_CANDIDATE_REVIEW_2026_10_08.json). Keyingi navbat: **L10_M03_004**.
+
+---
+
 # Yangi tekshirilgan partiya — 2026-10-08
 
 Partiya: L10_M03_001, L10_M03_002, L10_M03_003. Mavzuga mos izohli arxitektura eskizlari tekshirilib darslarga bog‘landi. Tasvirlarning asl o‘lchami saqlandi.

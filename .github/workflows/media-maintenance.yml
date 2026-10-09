@@ -1,8 +1,5 @@
 name: Media storage maintenance
 on:
-  push:
-    branches: [main]
-    paths: ['.github/workflows/media-maintenance.yml', 'tools/compact_lesson_media.py']
   workflow_dispatch:
 permissions:
   contents: read

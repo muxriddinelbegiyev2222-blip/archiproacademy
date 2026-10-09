@@ -4,7 +4,7 @@
   "visually_inspected": 196,
   "updated": 17,
   "new_image_optional": 16,
-  "replacement_pending": 163,
+  "replacement_pending": 156,
   "complete": false,
   "records": [
     {
@@ -1115,8 +1115,12 @@
       "source_path": "app/courses/level12_module02.py",
       "source_git_sha_at_review": "75cff5e60272e2e5c571ac2d829c8baeffbc9dc4",
       "visual_style": "simple_vector_requires_rework",
-      "decision": "replacement_pending",
-      "reason": "Mavzu fazoviy yoki chizma natijasini ko‘rishni talab qiladi; mavjud tasvir sodda vektor belgilaridan iborat, professional arxitektura eskizi darajasiga mos emas."
+      "decision": "existing_image_retained",
+      "reason": "Property Manager tasvirida property nomi, turi va qiymat ta’rifi ko‘rinadi; qo‘shimcha BIM ma’lumoti haqidagi darsga mos. Asl skrinshot va o‘zbekcha izohlar saqlandi; keraksiz umumiy SVG qo‘shimchasi dars katalogidan chiqarildi.",
+      "retained_asset": "app/courses/visual_assets/ac28-property.png",
+      "retained_asset_sha256": "5faa306eee52db324bfba244a9247a3457e16675f25a8a415837a4d060205818",
+      "retained_source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/045_PropertiesClassifications/045_PropertiesClassifications-5.htm",
+      "visual_review": "Asl o‘lcham va kontakt varaqda ko‘zdan kechirildi; rasm mavzu panelini ko‘rsatadi. Rasm ichidagi inglizcha UI nomlari haqiqiy interfeysga tegishli, tashqi izohlar o‘zbekcha."
     },
     {
       "code": "L12_M02_005",
@@ -1137,8 +1141,12 @@
       "source_path": "app/courses/level12_module03.py",
       "source_git_sha_at_review": "6844049a3b7e1ab2096bb79447a90c46bfbac58f",
       "visual_style": "simple_vector_requires_rework",
-      "decision": "replacement_pending",
-      "reason": "Mavzu fazoviy yoki chizma natijasini ko‘rishni talab qiladi; mavjud tasvir sodda vektor belgilaridan iborat, professional arxitektura eskizi darajasiga mos emas."
+      "decision": "existing_image_retained",
+      "reason": "Scheme Settings haqiqiy tasvirida jadval turlari, Criteria va Fields bo‘limlari bor; modelga bog‘liq jadval tushunchasiga mos. Asl skrinshot va o‘zbekcha izohlar saqlandi; keraksiz umumiy SVG qo‘shimchasi dars katalogidan chiqarildi.",
+      "retained_asset": "app/courses/visual_assets/ac28-schedule.png",
+      "retained_asset_sha256": "168f0d5e64e8361506e2a746f60ac928be10bca23bedc5e987fd9cc2e85bb40f",
+      "retained_source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/140_UserInterfaceDialogBoxes/140_UserInterfaceDialogBoxes-68.htm",
+      "visual_review": "Asl o‘lcham va kontakt varaqda ko‘zdan kechirildi; rasm mavzu panelini ko‘rsatadi. Rasm ichidagi inglizcha UI nomlari haqiqiy interfeysga tegishli, tashqi izohlar o‘zbekcha."
     },
     {
       "code": "L12_M03_002",
@@ -1148,8 +1156,12 @@
       "source_path": "app/courses/level12_module03.py",
       "source_git_sha_at_review": "6844049a3b7e1ab2096bb79447a90c46bfbac58f",
       "visual_style": "simple_vector_requires_rework",
-      "decision": "replacement_pending",
-      "reason": "Mavzu fazoviy yoki chizma natijasini ko‘rishni talab qiladi; mavjud tasvir sodda vektor belgilaridan iborat, professional arxitektura eskizi darajasiga mos emas."
+      "decision": "existing_image_retained",
+      "reason": "Door mezoni va Add Criteria boshqaruvi haqiqiy tasvirda ko‘rinadi; mezon tanlash amaliyotiga mos. Asl skrinshot va o‘zbekcha izohlar saqlandi; keraksiz umumiy SVG qo‘shimchasi dars katalogidan chiqarildi.",
+      "retained_asset": "app/courses/visual_assets/ac28-criteria.png",
+      "retained_asset_sha256": "2705bc95a94c8864d2d662a64f84d246a96210247be6f0bedb90655dec921089",
+      "retained_source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/140_UserInterfaceDialogBoxes/140_UserInterfaceDialogBoxes-70.htm",
+      "visual_review": "Asl o‘lcham va kontakt varaqda ko‘zdan kechirildi; rasm mavzu panelini ko‘rsatadi. Rasm ichidagi inglizcha UI nomlari haqiqiy interfeysga tegishli, tashqi izohlar o‘zbekcha."
     },
     {
       "code": "L12_M03_003",
@@ -1192,8 +1204,12 @@
       "source_path": "app/courses/level12_module04.py",
       "source_git_sha_at_review": "71ebabaca4e6d754475afae321794711c34ebe78",
       "visual_style": "simple_vector_requires_rework",
-      "decision": "replacement_pending",
-      "reason": "Mavzu fazoviy yoki chizma natijasini ko‘rishni talab qiladi; mavjud tasvir sodda vektor belgilaridan iborat, professional arxitektura eskizi darajasiga mos emas."
+      "decision": "existing_image_retained",
+      "reason": "View Settings haqiqiy tasvirida manba, identifikatsiya va saqlanadigan ko‘rinish sozlamalari ko‘rinadi; View tushunchasiga mos. Asl skrinshot va o‘zbekcha izohlar saqlandi; keraksiz umumiy SVG qo‘shimchasi dars katalogidan chiqarildi.",
+      "retained_asset": "app/courses/visual_assets/ac28-view.png",
+      "retained_asset_sha256": "07d2828995f2e35e6e3123c82a3abfad07559b4904b0c4c0d66773511c5a828c",
+      "retained_source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/140_UserInterfaceDialogBoxes/140_UserInterfaceDialogBoxes-77.htm",
+      "visual_review": "Asl o‘lcham va kontakt varaqda ko‘zdan kechirildi; rasm mavzu panelini ko‘rsatadi. Rasm ichidagi inglizcha UI nomlari haqiqiy interfeysga tegishli, tashqi izohlar o‘zbekcha."
     },
     {
       "code": "L12_M04_002",
@@ -1203,8 +1219,12 @@
       "source_path": "app/courses/level12_module04.py",
       "source_git_sha_at_review": "71ebabaca4e6d754475afae321794711c34ebe78",
       "visual_style": "simple_vector_requires_rework",
-      "decision": "replacement_pending",
-      "reason": "Mavzu fazoviy yoki chizma natijasini ko‘rishni talab qiladi; mavjud tasvir sodda vektor belgilaridan iborat, professional arxitektura eskizi darajasiga mos emas."
+      "decision": "existing_image_retained",
+      "reason": "View Settingsdagi Layer Combination, Scale, Pen Set va Model View Options darsdagi grafik sozlamalar uchun yetarli haqiqiy misol. Asl skrinshot va o‘zbekcha izohlar saqlandi; keraksiz umumiy SVG qo‘shimchasi dars katalogidan chiqarildi.",
+      "retained_asset": "app/courses/visual_assets/ac28-view.png",
+      "retained_asset_sha256": "07d2828995f2e35e6e3123c82a3abfad07559b4904b0c4c0d66773511c5a828c",
+      "retained_source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/140_UserInterfaceDialogBoxes/140_UserInterfaceDialogBoxes-77.htm",
+      "visual_review": "Asl o‘lcham va kontakt varaqda ko‘zdan kechirildi; rasm mavzu panelini ko‘rsatadi. Rasm ichidagi inglizcha UI nomlari haqiqiy interfeysga tegishli, tashqi izohlar o‘zbekcha."
     },
     {
       "code": "L12_M04_004",
@@ -1236,8 +1256,12 @@
       "source_path": "app/courses/level12_module05.py",
       "source_git_sha_at_review": "7dadccb56aa9df4ca561ffb6a2cfcd4b3cbd633c",
       "visual_style": "simple_vector_requires_rework",
-      "decision": "replacement_pending",
-      "reason": "Mavzu fazoviy yoki chizma natijasini ko‘rishni talab qiladi; mavjud tasvir sodda vektor belgilaridan iborat, professional arxitektura eskizi darajasiga mos emas."
+      "decision": "existing_image_retained",
+      "reason": "Layout Book Navigator haqiqiy tasvirida albom va varaqlar iyerarxiyasi ko‘rinadi; hujjat ketma-ketligi darsiga mos. Asl skrinshot va o‘zbekcha izohlar saqlandi; keraksiz umumiy SVG qo‘shimchasi dars katalogidan chiqarildi.",
+      "retained_asset": "app/courses/visual_assets/ac28-layout.png",
+      "retained_asset_sha256": "ba9e7fb6ae332b38ad61d2b726ae74eb3477b33292f459ae504c38509e533bdf",
+      "retained_source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/070_Documentation-84.htm",
+      "visual_review": "Asl o‘lcham va kontakt varaqda ko‘zdan kechirildi; rasm mavzu panelini ko‘rsatadi. Rasm ichidagi inglizcha UI nomlari haqiqiy interfeysga tegishli, tashqi izohlar o‘zbekcha."
     },
     {
       "code": "L12_M05_002",
@@ -1247,8 +1271,12 @@
       "source_path": "app/courses/level12_module05.py",
       "source_git_sha_at_review": "7dadccb56aa9df4ca561ffb6a2cfcd4b3cbd633c",
       "visual_style": "simple_vector_requires_rework",
-      "decision": "replacement_pending",
-      "reason": "Mavzu fazoviy yoki chizma natijasini ko‘rishni talab qiladi; mavjud tasvir sodda vektor belgilaridan iborat, professional arxitektura eskizi darajasiga mos emas."
+      "decision": "existing_image_retained",
+      "reason": "Mavjud Master Layout shtampi takroriy varaq ma’lumotlari va avtomatik maydonlarni ko‘rsatadi; umumiy shtamp darsiga mos. Asl skrinshot va o‘zbekcha izohlar saqlandi; keraksiz umumiy SVG qo‘shimchasi dars katalogidan chiqarildi.",
+      "retained_asset": "app/courses/visual_assets/ac28-master.png",
+      "retained_asset_sha256": "c358f3a6b44cc7cb9ba8344fd969d943267069be608227838195105f138cd4c6",
+      "retained_source_url": "https://help.graphisoft.com/AC/28/INT/_AC28_Help/070_Documentation/070_Documentation-86.htm",
+      "visual_review": "Asl o‘lcham va kontakt varaqda ko‘zdan kechirildi; rasm mavzu panelini ko‘rsatadi. Rasm ichidagi inglizcha UI nomlari haqiqiy interfeysga tegishli, tashqi izohlar o‘zbekcha."
     },
     {
       "code": "L12_M05_003",
@@ -2163,5 +2191,6 @@
       "decision": "replacement_pending",
       "reason": "Mavzu fazoviy yoki chizma natijasini ko‘rishni talab qiladi; mavjud tasvir sodda vektor belgilaridan iborat, professional arxitektura eskizi darajasiga mos emas."
     }
-  ]
+  ],
+  "existing_image_retained": 7
 }

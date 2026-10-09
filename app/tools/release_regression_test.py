@@ -195,8 +195,34 @@ class ReleaseRegression(unittest.TestCase):
                 self.assertFalse(load_figure(asset).isNull())
         for code, specs in CATALOG.items():
             with self.subTest(sketch_coverage=code):
-                self.assertTrue(any(spec['asset'].lower().endswith('.svg') for spec in specs),
-                                code + ' must keep at least one topic sketch')
+                self.assertTrue(any(spec['asset'].lower().endswith('.svg')
+                                    or spec['asset'].startswith('sketch-')
+                                    or (spec.get('source_url') or '').startswith('https://help.graphisoft.com/')
+                                    for spec in specs),
+                                code + ' must keep a topic sketch or authentic software capture')
+
+    def test_compacted_media_integrity(self):
+        import hashlib
+        import json
+        from pathlib import Path
+        from PySide6.QtGui import QImage
+        root = Path(__file__).resolve().parents[2]
+        report = json.loads((root / 'docs/MEDIA_COMPRESSION_2026_10_09.json').read_text())
+        for record in report['records']:
+            with self.subTest(asset=record['after']):
+                path = root / record['after']
+                data = path.read_bytes()
+                self.assertLessEqual(len(data), 400000)
+                self.assertEqual(hashlib.sha256(data).hexdigest(), record['after_sha256'])
+                image = QImage(str(path))
+                self.assertFalse(image.isNull())
+                self.assertEqual((image.width(), image.height()),
+                                 (record['width'], record['height']))
+                colors = [image.pixelColor(x, y).lightness()
+                          for y in range(0, image.height(), max(1, image.height() // 40))
+                          for x in range(0, image.width(), max(1, image.width() // 40))]
+                self.assertGreater(max(colors) - min(colors), 10,
+                                   'Compacted image must not be blank')
 
     def test_extended_visuals_match_each_worked_lesson(self):
         import json
@@ -229,8 +255,12 @@ class ReleaseRegression(unittest.TestCase):
                 self.assertTrue(row['solution'].strip())
                 self.assertEqual(contents[row['code']][row['block']]['title'],
                                  'Bajarish tartibi va namunaviy xulosa')
-                figure = (ASSETS / row['asset']).read_text(encoding='utf-8')
-                self.assertTrue(figure.lstrip().startswith('<svg'))
+                figure_path = ASSETS / row['asset']
+                if figure_path.suffix.lower() == '.svg':
+                    self.assertTrue(figure_path.read_text(encoding='utf-8').lstrip().startswith('<svg'))
+                else:
+                    from PySide6.QtGui import QImage
+                    self.assertFalse(QImage(str(figure_path)).isNull())
         for row in json.loads((ASSETS / 'archicad_figures.json').read_text(encoding='utf-8')):
             self.assertTrue(row['source_url'].startswith('https://help.graphisoft.com/AC/28/INT/'))
             self.assertTrue(row['source_image_url'].startswith('https://help.graphisoft.com/AC/28/INT/'))

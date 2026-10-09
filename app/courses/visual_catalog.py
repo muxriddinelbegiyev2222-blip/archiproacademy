@@ -86,7 +86,7 @@ add('L00_M04_004', 'slab.svg', 'Pol, plita va shift bir xil emas',
     ['Yuqori qavatdagi pol, konstruktiv yopma va pastki xonaning shiftini ajrating.',
      'Pardoz qatlami bilan yuk ko‘taruvchi qatlam vazifasi farq qiladi.'],
     'Shift pardozini konstruktiv plita deb qabul qilish to‘g‘rimi?', 'Yo‘q. Konstruktiv element va pardoz loyiha qatlamlari orqali aniqlanadi.')
-add('L00_M04_005', 'roof-concept.png', 'Tom, devor va pastki tayanchlar',
+add('L00_M04_005', 'roof-concept.jpg', 'Tom, devor va pastki tayanchlar',
     ['Tom qoplamasi va uning ostidagi tayanch tizimi ajratib ko‘rsatilgan.',
      'Yukning uzatilishini roof-load sxemasidagi strelkalar bilan solishtiring.'],
     'Tom qoplamasi bilan konstruktiv tayanchni ajrating.', 'Qoplama ustki himoya; ostidagi konstruktiv tizim yuk uzatishda qatnashadi.',
@@ -114,7 +114,7 @@ add('L00_M05_004', 'intro-audit.svg', 'Yakuniy tahlil: qarorni asoslash',
      'Plan, fasad, kesim va genplan bitta loyiha bo‘yicha solishtiriladi.'],
     'Bitta qarorni uch dalil bilan asoslang.', 'Foydalanish ehtiyoji, chizmadagi aloqa va tekshiruv natijasini ko‘rsating.')
 
-add('L08_M05_001', 'roof-concept.png', 'Tomning vazifasini tasvirdan ajrating',
+add('L08_M05_001', 'roof-concept.jpg', 'Tomning vazifasini tasvirdan ajrating',
     ['Ustki qoplama, konstruktiv tizim, devor va pastki tayanchlarni toping.',
      'Tasvir faqat tushuntirish uchun: birikma va kesimlar tasdiqlangan konstruktiv yechim emas.'],
     'Tomni faqat tashqi ko‘rinish deb baholashda nima unutiladi?',
@@ -203,6 +203,7 @@ try:
     for code, entry in reviewed.items():
         preserved = [spec for spec in CATALOG[code]
                      if spec['asset'].lower().endswith('.svg')
+                     or spec['asset'].startswith('sketch-')
                      or (spec.get('source_url') or '').startswith('https://help.graphisoft.com/')]
         CATALOG[code] = preserved
         add(code, **entry)

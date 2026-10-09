@@ -2738,7 +2738,7 @@
   },
   {
     "code": "L06_M10_002",
-    "asset": "l06_m10_002.svg",
+    "asset": "sketch-l06_m10_002.jpg",
     "title": "Chegara o‘zgarsa, maydon ham o‘zgaradi",
     "explanation": [
       "Chapdagi o‘quv shartida ichki o‘lcham 4 × 3 m: maydon 12 m². Hisob devorning tashqi konturi bo‘yicha olinmaydi.",
@@ -2789,7 +2789,7 @@
   },
   {
     "code": "L06_M10_005",
-    "asset": "l06_m10_005.svg",
+    "asset": "sketch-l06_m10_005.jpg",
     "title": "Zone auditi: plan va jadvaldagi farqni toping",
     "explanation": [
       "Plandagi Z01 uchun yozilgan ichki o‘lcham 4 × 3 m; hisob 12 m². Xona stampida ham 12 m² turibdi.",
@@ -2892,7 +2892,7 @@
   },
   {
     "code": "L07_M02_001",
-    "asset": "l07_m02_001.svg",
+    "asset": "sketch-l07_m02_001.jpg",
     "title": "Bir modelning oddiy va tahliliy ko‘rinishi",
     "explanation": [
       "Ikkala planda xonalar, ochilishlar va mebel joylashuvi bir xil. O‘ngda tashqi devorlar grafik jihatdan ajratilgan.",
@@ -2909,7 +2909,7 @@
   },
   {
     "code": "L07_M02_002",
-    "asset": "l07_m02_002.svg",
+    "asset": "sketch-l07_m02_002.jpg",
     "title": "Tanlash mezoni va grafik natijani ajrating",
     "explanation": [
       "Chapdagi kontur tekshiriladigan tashqi devor guruhini ko‘rsatadi. Ichki bo‘luvchi devorlar bu mezonga kiritilmagan.",
@@ -2943,7 +2943,7 @@
   },
   {
     "code": "L07_M02_004",
-    "asset": "l07_m02_004.svg",
+    "asset": "sketch-l07_m02_004.jpg",
     "title": "Grafik ajratish model geometriyasini o‘zgartirmaydi",
     "explanation": [
       "Ikki plandagi devor va ochilishlar bir xil; o‘ngda tekshiriladigan devor qizil grafikada ajratilgan. Shu devor chapdagi oddiy ko‘rinishda ham bor.",
@@ -2960,7 +2960,7 @@
   },
   {
     "code": "L07_M02_005",
-    "asset": "l07_m02_005.svg",
+    "asset": "sketch-l07_m02_005.jpg",
     "title": "Mezonga tushmay qolgan elementni aniqlang",
     "explanation": [
       "Rangli planda tashqi va ichki devor guruhlari legenda bilan ajratilgan. Kulrang qolgan namuna savol bilan belgilangan.",
@@ -2977,7 +2977,7 @@
   },
   {
     "code": "L07_M03_001",
-    "asset": "l07_m03_001.svg",
+    "asset": "sketch-l07_m03_001.jpg",
     "title": "Bir modelning sodda va batafsil tasviri",
     "explanation": [
       "Bitta xona modeli ikkita ko‘rinishga manba bo‘ladi. Devor, eshik va oynalar ko‘rinishlarda saqlanadi; chiziq va detal ifodasi farqlanadi.",
@@ -2994,7 +2994,7 @@
   },
   {
     "code": "L07_M03_002",
-    "asset": "l07_m03_002.svg",
+    "asset": "sketch-l07_m03_002.jpg",
     "title": "Oyna tasvirida detal darajasini tanlang",
     "explanation": [
       "Uch oyna namunasining tashqi geometriyasi va materiali bir xil. Farq chiziq, rama va kichik detalning qanday ifodalanishida.",
@@ -3011,7 +3011,7 @@
   },
   {
     "code": "L07_M03_003",
-    "asset": "l07_m03_003.svg",
+    "asset": "sketch-l07_m03_003.jpg",
     "title": "Eskiz, hujjat va audit ko‘rinishlari",
     "explanation": [
       "Bitta modeldan uch maqsadli ko‘rinish chiqariladi: eskiz, hujjat va audit. Har bir varaqda plan tuzilmasi va ochilishlarni solishtirish mumkin.",
@@ -3028,7 +3028,7 @@
   },
   {
     "code": "L07_M03_004",
-    "asset": "l07_m03_004.svg",
+    "asset": "sketch-l07_m03_004.jpg",
     "title": "Saqlangan ko‘rinishni qayta ochib tekshiring",
     "explanation": [
       "Eskiz va hujjat varaqlari bir modelga bog‘langan; har biri o‘z ko‘rinish maqsadi va MVO sozlamasini saqlashi kerak.",
@@ -3045,7 +3045,7 @@
   },
   {
     "code": "L07_M03_005",
-    "asset": "l07_m03_005.svg",
+    "asset": "sketch-l07_m03_005.jpg",
     "title": "Element modelda bormi yoki tasvir soddalashganmi?",
     "explanation": [
       "Ikki planda bir xil xonalar, devorlar va ochilishlar bor. Oyna va eshikning ifoda detali ko‘rinishlar o‘rtasida farqlanadi.",
@@ -3079,7 +3079,7 @@
   },
   {
     "code": "L07_M04_002",
-    "asset": "l07_m04_002.svg",
+    "asset": "sketch-l07_m04_002.jpg",
     "title": "Holatni har bir elementga belgilang",
     "explanation": [
       "Mavjud tashqi devor va ustun kulrang; eski bo‘luvchi va eski eshik qizil; yangi bo‘luvchi va yangi eshik ko‘k bilan ajratilgan.",
@@ -3096,7 +3096,7 @@
   },
   {
     "code": "L07_M04_003",
-    "asset": "l07_m04_003.svg",
+    "asset": "sketch-l07_m04_003.jpg",
     "title": "Element holati va ko‘rinish filtri",
     "explanation": [
       "Uch planda tashqi qobiq, oynalar va kirish saqlangan. Mavjud planda chap bo‘luvchi bor; buzish rejasida u qizil uzlukli; yangi loyihada boshqa joydagi ko‘k bo‘luvchi bor.",
@@ -3113,7 +3113,7 @@
   },
   {
     "code": "L07_M04_004",
-    "asset": "l07_m04_004.svg",
+    "asset": "sketch-l07_m04_004.jpg",
     "title": "Eski eshik, yangi to‘ldirish va yangi eshik",
     "explanation": [
       "Chapda eski eshik mavjud. Markazda u buziladigan element sifatida ajratilgan. O‘ngda eski ochilish yangi to‘ldirish bilan yopilgan va boshqa joyda yangi eshik ko‘rsatilgan.",
@@ -3130,7 +3130,7 @@
   },
   {
     "code": "L07_M04_005",
-    "asset": "l07_m04_005.svg",
+    "asset": "sketch-l07_m04_005.jpg",
     "title": "Taklif ko‘rinishidagi eski elementni toping",
     "explanation": [
       "Chapdagi XATO KO‘RINISHda buzilgan eski bo‘luvchi qizil uzlukli chiziqda hali ko‘rsatilgan. Savol belgisi ataylab audit nuqtasini bildiradi.",
@@ -3215,7 +3215,7 @@
   },
   {
     "code": "L07_M05_005",
-    "asset": "l07_m05_005.svg",
+    "asset": "sketch-l07_m05_005.jpg",
     "title": "D01 yozuvini modeldagi eshik bilan solishtiring",
     "explanation": [
       "Jadvaldagi D01 ayni IDli eshikka bog‘langan; EN katagi ataylab bo‘sh va audit savoli bilan ajratilgan.",
@@ -3232,7 +3232,7 @@
   },
   {
     "code": "L07_M06_001",
-    "asset": "l07_m06_001.svg",
+    "asset": "sketch-l07_m06_001.jpg",
     "title": "Geometriya va bog‘langan Property ma’lumoti",
     "explanation": [
       "En va balandlik eshik geometriyasiga tegishli. Property kartochkasidagi vazifa va loyiha kodi qo‘shimcha loyiha ma’lumotini ifodalaydi.",
@@ -3266,7 +3266,7 @@
   },
   {
     "code": "L07_M06_003",
-    "asset": "l07_m06_003.svg",
+    "asset": "sketch-l07_m06_003.jpg",
     "title": "Bir ma’no uchun yagona yozuv",
     "explanation": [
       "Uch eshikda bir xil vazifa KIRISH, Kirish va kirish shaklida yozilgan. Farq geometriyada emas, matn formatida.",
@@ -3283,7 +3283,7 @@
   },
   {
     "code": "L07_M06_004",
-    "asset": "l07_m06_004.svg",
+    "asset": "sketch-l07_m06_004.jpg",
     "title": "Jadvaldagi bo‘sh qiymatni manbadan tekshiring",
     "explanation": [
       "D01 eshigining vazifasi KIRISH deb ko‘rsatilgan; D02 eshigida esa qiymat aniqlashtirilishi kerak.",
@@ -3300,7 +3300,7 @@
   },
   {
     "code": "L07_M06_005",
-    "asset": "l07_m06_005.svg",
+    "asset": "sketch-l07_m06_005.jpg",
     "title": "Xususiyat nomi, turi va qiymatini tekshiring",
     "explanation": [
       "D01 — eshik identifikatori; VAZIFA — xususiyat nomi; MATN — qiymat turi; KIRISH — ushbu element uchun qiymat.",
@@ -3317,7 +3317,7 @@
   },
   {
     "code": "L07_M07_001",
-    "asset": "l07_m07_001.svg",
+    "asset": "sketch-l07_m07_001.jpg",
     "title": "Element shakli va BIM ma’nosi",
     "explanation": [
       "G‘isht devor, eshik va deraza alohida vazifali elementlar sifatida ko‘rsatilgan. Pastdagi yozuvlar ularning tushunarli tasnif misollaridir.",
@@ -3334,7 +3334,7 @@
   },
   {
     "code": "L07_M07_002",
-    "asset": "l07_m07_002.svg",
+    "asset": "sketch-l07_m07_002.jpg",
     "title": "Modellashtirish vositasi va element vazifasi",
     "explanation": [
       "Markazdagi o‘rindiq MORPH vositasida yaratilgan geometriya misoli, vazifasi esa mebeldir.",
@@ -3351,7 +3351,7 @@
   },
   {
     "code": "L07_M07_003",
-    "asset": "l07_m07_003.svg",
+    "asset": "sketch-l07_m07_003.jpg",
     "title": "Tasnif xususiyat mavjudligiga ta’sir qiladi",
     "explanation": [
       "Ushbu misolda ESHIK VAZIFASI xususiyati eshik tasnifi uchun ajratilgan. KIRISH — eshikka berilgan qiymat.",
@@ -3368,7 +3368,7 @@
   },
   {
     "code": "L07_M07_004",
-    "asset": "l07_m07_004.svg",
+    "asset": "sketch-l07_m07_004.jpg",
     "title": "Tasnif mezoni jadval tarkibini ajratadi",
     "explanation": [
       "D01 eshik va W01 deraza bir modeldagi turli elementlardir. ESHIKLAR ro‘yxatida faqat D01 ko‘rsatilgan.",
@@ -3385,7 +3385,7 @@
   },
   {
     "code": "L07_M07_005",
-    "asset": "l07_m07_005.svg",
+    "asset": "sketch-l07_m07_005.jpg",
     "title": "Geometriya to‘g‘ri bo‘lsa ham tasnif xato bo‘lishi mumkin",
     "explanation": [
       "Ikkala panelda D01 eshigi ko‘rsatilgan. Chapdagi DERAZA tasnifi ataylab xato sifatida belgilangan.",
@@ -3402,7 +3402,7 @@
   },
   {
     "code": "L07_M08_001",
-    "asset": "l07_m08_001.svg",
+    "asset": "sketch-l07_m08_001.jpg",
     "title": "Bitta manba va ikkita bog‘langan modul",
     "explanation": [
       "Chapdagi sanuzel — manba modul misoli; o‘ngdagi A va B — asosiy loyihada undan foydalaniladigan joylar.",
@@ -3419,7 +3419,7 @@
   },
   {
     "code": "L07_M08_002",
-    "asset": "l07_m08_002.svg",
+    "asset": "sketch-l07_m08_002.jpg",
     "title": "Modulga kiradigan elementlarni aniq ajrating",
     "explanation": [
       "Ko‘k uzlukli chegara sanuzel qismini ajratadi; yotoqxona, mehmonxona va oshxona uning tashqarisida.",
@@ -3436,7 +3436,7 @@
   },
   {
     "code": "L07_M08_003",
-    "asset": "l07_m08_003.svg",
+    "asset": "sketch-l07_m08_003.jpg",
     "title": "Modulning koordinatasi, sathi va yo‘nalishi",
     "explanation": [
       "A va B bir manbaning ikki joydagi misoli. Umumiy ±0.000 belgisi qabul qilingan tayanch sathni bildiradi.",
@@ -3453,7 +3453,7 @@
   },
   {
     "code": "L07_M08_004",
-    "asset": "l07_m08_004.svg",
+    "asset": "sketch-l07_m08_004.jpg",
     "title": "Manba yangilangach har ikki nusxani tekshiring",
     "explanation": [
       "V2 manbada rakovina yonidagi ko‘k shkaf ajratilgan. A va B ko‘rinishlarida ham shu o‘zgarish bor.",
@@ -3470,7 +3470,7 @@
   },
   {
     "code": "L07_M08_005",
-    "asset": "l07_m08_005.svg",
+    "asset": "sketch-l07_m08_005.jpg",
     "title": "Manba, versiya, sath va yangilanish auditi",
     "explanation": [
       "SANUZEL.mod — manba nomi misoli; V2 — ushbu mashqdagi versiya belgisi; ±0.000 — qabul qilingan sath.",
@@ -3523,7 +3523,7 @@
   },
   {
     "code": "L07_M09_003",
-    "asset": "l07_m09_003.svg",
+    "asset": "sketch-l07_m09_003.jpg",
     "title": "Plan, fasad va varaqning yagona grafik tili",
     "explanation": [
       "Plandagi kirish joylashgan devorda markaziy eshik va ikki yon deraza bor. Fasad va varaqda shu old devor ko‘rsatilgan.",
@@ -3540,7 +3540,7 @@
   },
   {
     "code": "L07_M09_004",
-    "asset": "l07_m09_004.svg",
+    "asset": "sketch-l07_m09_004.jpg",
     "title": "Yangi sinov elementida BIM ma’lumotini tekshiring",
     "explanation": [
       "D01 sinov eshigiga ESHIK tasnifi berilgan, VAZIFA qiymati esa savol bilan qoldirilgan.",
@@ -3557,7 +3557,7 @@
   },
   {
     "code": "L07_M09_005",
-    "asset": "l07_m09_005.svg",
+    "asset": "sketch-l07_m09_005.jpg",
     "title": "Shablonni yangi faylda amalda sinang",
     "explanation": [
       "Chapdagi qizil devor avvalgi loyihadan qolgan bo‘lishi mumkin bo‘lgan elementni audit uchun ajratadi.",
@@ -3574,7 +3574,7 @@
   },
   {
     "code": "L08_M01_001",
-    "asset": "l08_m01_001.svg",
+    "asset": "sketch-l08_m01_001.jpg",
     "title": "Yukning fundament orqali gruntga uzatilishi",
     "explanation": [
       "Strelkalar tomdan devorga, fundamentga va gruntga uzatiladigan vertikal yuk yo‘lining konseptual misolini ko‘rsatadi.",
@@ -3591,7 +3591,7 @@
   },
   {
     "code": "L08_M01_002",
-    "asset": "l08_m01_002.svg",
+    "asset": "sketch-l08_m01_002.jpg",
     "title": "Fundament turlarini shakli va vazifasi bo‘yicha ajrating",
     "explanation": [
       "Lenta devor bo‘ylab davom etadi; alohida tayanch ustun ostida ko‘rsatilgan; plita maydon bo‘ylab yaxlit asos; qoziqli misolda tayanch chuqurroq qatlamlarga uzatiladi.",
@@ -3625,7 +3625,7 @@
   },
   {
     "code": "L08_M01_004",
-    "asset": "l08_m01_004.svg",
+    "asset": "sketch-l08_m01_004.jpg",
     "title": "Arxitektura va konstruktiv hujjatlarni muvofiqlashtiring",
     "explanation": [
       "Chapda arxitektura konturi, o‘ngda fundament bilan bog‘liq konseptual kontur bor. 1 va A o‘qlari umumiy koordinatsiya belgilari misolidir.",
@@ -3642,7 +3642,7 @@
   },
   {
     "code": "L08_M01_005",
-    "asset": "l08_m01_005.svg",
+    "asset": "sketch-l08_m01_005.jpg",
     "title": "Tasdiqlangan ma’lumot bilan taxminni ajrating",
     "explanation": [
       "Grunt yonidagi savol belgisi geologik sharoitni aniqlashtirish zaruratini bildiradi. Chizilgan fundament tasdiqlangan loyiha degani emas.",
@@ -3914,7 +3914,7 @@
   },
   {
     "code": "L08_M06_001",
-    "asset": "l08_m06_001.svg",
+    "asset": "sketch-l08_m06_001.jpg",
     "title": "Namlik manbalari va harakat yo‘llari",
     "explanation": [
       "Eskiz ichki suv, yog‘in va tuproqdagi namlikni uch manba sifatida ajratadi.",
@@ -3931,7 +3931,7 @@
   },
   {
     "code": "L08_M06_002",
-    "asset": "l08_m06_002.svg",
+    "asset": "sketch-l08_m06_002.jpg",
     "title": "Poydevor va yer bilan tutashuv",
     "explanation": [
       "Kesimda yerga tutash devor, himoya qatlami, tashqi yo‘lak va drenajning o‘zaro joylashuvi ko‘rsatilgan.",
@@ -3948,7 +3948,7 @@
   },
   {
     "code": "L08_M06_003",
-    "asset": "l08_m06_003.svg",
+    "asset": "sketch-l08_m06_003.jpg",
     "title": "Balkon va tashqi zonalarda suv chiqarish",
     "explanation": [
       "Strelkalar balkon yuzasidan suv chiqish joyi va pastga tushuvchi quvurga yo‘nalishni ko‘rsatadi.",
@@ -3965,7 +3965,7 @@
   },
   {
     "code": "L08_M06_004",
-    "asset": "l08_m06_004.svg",
+    "asset": "sketch-l08_m06_004.jpg",
     "title": "Nam xonadagi muhim tutashuvlar",
     "explanation": [
       "Yaqin ko‘rinishlar devor burchagi, quvur o‘tishi, drenaj va eshik oldidagi tutashuvlarni ajratadi.",
@@ -3982,7 +3982,7 @@
   },
   {
     "code": "L08_M06_005",
-    "asset": "l08_m06_005.svg",
+    "asset": "sketch-l08_m06_005.jpg",
     "title": "Gidroizolyatsiyani tekshirish",
     "explanation": [
       "Uy va yaqin ko‘rinishlar namlik manbasi, himoya qatlami, tutashuv hamda xizmat ko‘rsatish holatini birga ko‘rishga yordam beradi.",
@@ -3999,7 +3999,7 @@
   },
   {
     "code": "L08_M07_001",
-    "asset": "l08_m07_001.svg",
+    "asset": "sketch-l08_m07_001.jpg",
     "title": "Issiqlik izolyatsiyasining vazifasi",
     "explanation": [
       "Sariq qatlamlar tom, devor va polning issiqlik himoyasini ajratadi. Strelkalar issiqlik almashinuvi haqidagi tushunchani beradi.",
@@ -4016,7 +4016,7 @@
   },
   {
     "code": "L08_M07_002",
-    "asset": "l08_m07_002.svg",
+    "asset": "sketch-l08_m07_002.jpg",
     "title": "Bino qobig‘ining uzluksizligi",
     "explanation": [
       "Sariq belgi tashqi devor, tom, yerga tutash pol va deraza atrofidagi himoya yo‘lini kuzatishga yordam beradi.",
@@ -4033,7 +4033,7 @@
   },
   {
     "code": "L08_M07_003",
-    "asset": "l08_m07_003.svg",
+    "asset": "sketch-l08_m07_003.jpg",
     "title": "Issiqlik ko‘prigi",
     "explanation": [
       "Uzluksiz beton balkon plitasi devordagi izolyatsiya qatlamini kesib o‘tgan joy ajratilgan.",
@@ -4050,7 +4050,7 @@
   },
   {
     "code": "L08_M07_004",
-    "asset": "l08_m07_004.svg",
+    "asset": "sketch-l08_m07_004.jpg",
     "title": "Deraza, balkon va tutashuvlar",
     "explanation": [
       "Asosiy uy kesimi va o‘ngdagi uch yaqin ko‘rinish deraza cheti, balkon tutashuvi va devor qatlamlarini kuzatishga yordam beradi.",
@@ -4067,7 +4067,7 @@
   },
   {
     "code": "L08_M07_005",
-    "asset": "l08_m07_005.svg",
+    "asset": "sketch-l08_m07_005.jpg",
     "title": "Issiqlik izolyatsiyasi tekshiruvi",
     "explanation": [
       "Uy kesimi atrofidagi oltita detal qobiqning turli tutashuvlarini alohida ko‘rib chiqishga undaydi.",
@@ -4084,7 +4084,7 @@
   },
   {
     "code": "L08_M08_001",
-    "asset": "l08_m08_001.svg",
+    "asset": "sketch-l08_m08_001.jpg",
     "title": "Seysmik yuk tushunchasi",
     "explanation": [
       "Qizil strelkalar og‘irlik kuchini, pastdagi ikki tomonlama ko‘k strelka zamin harakatini shartli ifodalaydi.",
@@ -4101,7 +4101,7 @@
   },
   {
     "code": "L08_M08_002",
-    "asset": "l08_m08_002.svg",
+    "asset": "sketch-l08_m08_002.jpg",
     "title": "Bino shakli va konstruktiv muntazamlik",
     "explanation": [
       "Uy kesimi, reja, fasad va yon kesim tayanchlarni turli ko‘rinishlarda solishtirishga yordam beradi.",
@@ -4118,7 +4118,7 @@
   },
   {
     "code": "L08_M08_003",
-    "asset": "l08_m08_003.svg",
+    "asset": "sketch-l08_m08_003.jpg",
     "title": "Vertikal uzluksizlik va yumshoq qavat",
     "explanation": [
       "Chapdagi misolda tayanchlar qavatlar bo‘yicha davom etadi; o‘ngdagi misolda pastki qavat ancha ochiq va yuqoridagi markaziy tayanch ostida davomiylik yo‘q.",
@@ -4135,7 +4135,7 @@
   },
   {
     "code": "L08_M08_004",
-    "asset": "l08_m08_004.svg",
+    "asset": "sketch-l08_m08_004.jpg",
     "title": "Massa va nosimmetriya",
     "explanation": [
       "Chap va o‘ng misolda hajmlar hamda ochiq qismlar turlicha taqsimlangan. Plan bilan hajmiy ko‘rinishni birga solishtiring.",
@@ -4152,7 +4152,7 @@
   },
   {
     "code": "L08_M08_005",
-    "asset": "l08_m08_005.svg",
+    "asset": "sketch-l08_m08_005.jpg",
     "title": "Seysmik loyiha tekshiruvi",
     "explanation": [
       "Asosiy model va yon misollar bino shakli, tayanchlar uzluksizligi, ochiq pastki qavat hamda qo‘shni hajmlarni tekshirishni eslatadi.",
@@ -4205,7 +4205,7 @@
   },
   {
     "code": "L08_M09_003",
-    "asset": "l08_m09_003.svg",
+    "asset": "sketch-l08_m09_003.jpg",
     "title": "Koordinatsiya va savol-javob ish tartibi",
     "explanation": [
       "Chapdagi rejada eshik yonidagi tayanch tekshiruv nuqtasi sifatida belgilangan; markazdagi yaqin ko‘rinish muammoni tushuntirishga yordam beradi.",
@@ -4240,7 +4240,7 @@
   },
   {
     "code": "L08_M09_005",
-    "asset": "l08_m09_005.svg",
+    "asset": "sketch-l08_m09_005.jpg",
     "title": "Arxitektura-konstruktsiya tekshiruvi",
     "explanation": [
       "Arxitektura va konstruktiv rejalarni yonma-yon solishtiring: o‘qlar, tayanchlar, zinapoya va teshiklar ikkala paketda tekshiriladi.",
@@ -4347,7 +4347,7 @@
   },
   {
     "code": "L09_M02_001",
-    "asset": "l09_m02_001.svg",
+    "asset": "sketch-l09_m02_001.jpg",
     "title": "Turar joyni normativ tekshirish",
     "explanation": [
       "Uy aksonometriyasida yashash, yotoq, oshxona va sanitar xonalarning vazifasini aniqlang.",
@@ -4364,7 +4364,7 @@
   },
   {
     "code": "L09_M02_002",
-    "asset": "l09_m02_002.svg",
+    "asset": "sketch-l09_m02_002.jpg",
     "title": "Xona funksiyasi va o‘zaro aloqalar",
     "explanation": [
       "Rejadagi sariq umumiy hudud, yashil yotoq xonalari va ko‘k xizmat zonasi funksiyalarni ajratib ko‘rsatadi.",
@@ -4381,7 +4381,7 @@
   },
   {
     "code": "L09_M02_003",
-    "asset": "l09_m02_003.svg",
+    "asset": "sketch-l09_m02_003.jpg",
     "title": "Sanitar va yordamchi zonalar",
     "explanation": [
       "Uy kesimida sanitar xonalarning qavatlar bo‘yicha yaqin joylashuvi va oshxona bilan muhandislik aloqasi ko‘rsatilgan.",
@@ -4398,7 +4398,7 @@
   },
   {
     "code": "L09_M02_004",
-    "asset": "l09_m02_004.svg",
+    "asset": "sketch-l09_m02_004.jpg",
     "title": "Qavatlar va vertikal aloqa",
     "explanation": [
       "Markaziy kesim zinapoya marshlari, oraliq maydoncha va yuqori qavat yo‘lagini ko‘rsatadi.",
@@ -4415,7 +4415,7 @@
   },
   {
     "code": "L09_M02_005",
-    "asset": "l09_m02_005.svg",
+    "asset": "sketch-l09_m02_005.jpg",
     "title": "Turar joy tekshiruvi",
     "explanation": [
       "Markazdagi hovlili uy va to‘rtta alohida ko‘rinish turar joyni bir nechta jihatdan tekshirishni eslatadi.",
@@ -4432,7 +4432,7 @@
   },
   {
     "code": "L09_M03_001",
-    "asset": "l09_m03_001.svg",
+    "asset": "sketch-l09_m03_001.jpg",
     "title": "Uchastkani normativ o‘qish",
     "explanation": [
       "Uchastka ko‘rinishi, o‘lchov asbobi va hujjat papkasi boshlang‘ich ma’lumotni yig‘ish bosqichlarini eslatadi.",
@@ -4449,7 +4449,7 @@
   },
   {
     "code": "L09_M03_002",
-    "asset": "l09_m03_002.svg",
+    "asset": "sketch-l09_m03_002.jpg",
     "title": "Chegaralar, kirish va joylashtirish",
     "explanation": [
       "Yashil strelka piyoda darvozasidan uyga, ko‘k strelka avtomobil darvozasidan soyabonga olib boradi.",
@@ -4466,7 +4466,7 @@
   },
   {
     "code": "L09_M03_003",
-    "asset": "l09_m03_003.svg",
+    "asset": "sketch-l09_m03_003.jpg",
     "title": "Qo‘shni obyektlar va tashqi aloqalar",
     "explanation": [
       "Markazdagi uy qo‘shni binolar va umumiy ko‘cha bilan birga ko‘rsatilgan.",
@@ -4483,7 +4483,7 @@
   },
   {
     "code": "L09_M03_004",
-    "asset": "l09_m03_004.svg",
+    "asset": "sketch-l09_m03_004.jpg",
     "title": "Genplan koordinatsiyasi",
     "explanation": [
       "Genplan, alohida uy rejasi va uchastka kesimini birgalikda solishtirish kerak.",
@@ -4500,7 +4500,7 @@
   },
   {
     "code": "L09_M03_005",
-    "asset": "l09_m03_005.svg",
+    "asset": "sketch-l09_m03_005.jpg",
     "title": "Uchastka tekshiruvi",
     "explanation": [
       "Sariq doiralar chegara burchagi va xizmat nuqtasini tekshirish uchun ajratadi.",
@@ -4517,7 +4517,7 @@
   },
   {
     "code": "L09_M04_001",
-    "asset": "l09_m04_001.svg",
+    "asset": "sketch-l09_m04_001.jpg",
     "title": "Tabiiy yorug‘lik tushunchasi",
     "explanation": [
       "Chapdagi bulutli sharoitda xona tarqoq kunduzgi yorug‘lik oladi; o‘ngda esa derazadan tushgan bevosita quyosh dog‘i ham ko‘rinadi.",
@@ -4534,7 +4534,7 @@
   },
   {
     "code": "L09_M04_002",
-    "asset": "l09_m04_002.svg",
+    "asset": "sketch-l09_m04_002.jpg",
     "title": "Orientatsiya va quyosh",
     "explanation": [
       "Yuqoridagi alohida uy ko‘rinishlari quyosh yo‘nalishi o‘zgarganda yorug‘lik va soya munosabatini kuzatishni eslatadi.",
@@ -4551,7 +4551,7 @@
   },
   {
     "code": "L09_M04_003",
-    "asset": "l09_m04_003.svg",
+    "asset": "sketch-l09_m04_003.jpg",
     "title": "Soyalanish va qo‘shni obyektlar",
     "explanation": [
       "Chapdagi yaqin va baland qo‘shni bino osmon ko‘rinishini cheklaydi; o‘ngdagi ochiqroq holatda xona ko‘proq tarqoq yorug‘lik olishi mumkin.",
@@ -4568,7 +4568,7 @@
   },
   {
     "code": "L09_M04_004",
-    "asset": "l09_m04_004.svg",
+    "asset": "sketch-l09_m04_004.jpg",
     "title": "Plan, fasad va kesimda derazani tekshirish",
     "explanation": [
       "1. Chapdagi plan derazaning xona va hovliga nisbatan joyini ko‘rsatadi.",
@@ -4622,7 +4622,7 @@
   },
   {
     "code": "L09_M05_002",
-    "asset": "l09_m05_002.svg",
+    "asset": "sketch-l09_m05_002.jpg",
     "title": "Odam turgan joydan tashqi chiqishgacha",
     "explanation": [
       "1. Odam turgan xonadan boshlang va eshik orqali keyingi xonaga o‘tishini kuzating.",
@@ -4658,7 +4658,7 @@
   },
   {
     "code": "L09_M05_004",
-    "asset": "l09_m05_004.svg",
+    "asset": "sketch-l09_m05_004.jpg",
     "title": "Ko‘chadan uchastkaga piyoda va xizmat kirishi",
     "explanation": [
       "1. Ko‘cha bilan uchastka orasidagi piyoda va transport kirishlarini alohida ko‘ring.",
@@ -4694,7 +4694,7 @@
   },
   {
     "code": "L09_M06_001",
-    "asset": "l09_m06_001.svg",
+    "asset": "sketch-l09_m06_001.jpg",
     "title": "Kundalik faoliyat va binodan chiqishni ajratish",
     "explanation": [
       "1. Chapdagi misolda odam uy ichida odatdagi faoliyatini davom ettiryapti.",
@@ -4712,7 +4712,7 @@
   },
   {
     "code": "L09_M06_002",
-    "asset": "l09_m06_002.svg",
+    "asset": "sketch-l09_m06_002.jpg",
     "title": "Xonadan tashqarigacha uzluksiz yo‘l",
     "explanation": [
       "1. Yo‘l yotoq xonasidan ochiq ichki eshik orqali yo‘lakka chiqadi.",
@@ -4730,7 +4730,7 @@
   },
   {
     "code": "L09_M06_003",
-    "asset": "l09_m06_003.svg",
+    "asset": "sketch-l09_m06_003.jpg",
     "title": "Eshik, yo‘lak va zinapoya bir harakat tizimida",
     "explanation": [
       "1. Ochiq tashqi eshik, pastki yo‘lak va yuqori qavatga chiqadigan zinapoyani bir kesimda ko‘ring.",
@@ -4748,7 +4748,7 @@
   },
   {
     "code": "L09_M06_004",
-    "asset": "l09_m06_004.svg",
+    "asset": "sketch-l09_m06_004.jpg",
     "title": "Mebel yo‘lni qanday toraytiradi?",
     "explanation": [
       "1. Chapdagi kreslo va oyoq kiyim javoni yurish yo‘lini toraytirgan.",
@@ -4802,7 +4802,7 @@
   },
   {
     "code": "L09_M07_002",
-    "asset": "l09_m07_002.svg",
+    "asset": "sketch-l09_m07_002.jpg",
     "title": "Ko‘chadan xizmat xonasigacha qulay yo‘l",
     "explanation": [
       "1. Harakatni ko‘chadan boshlang: yondashuv yo‘li va bino kirishining tutashuvini ko‘ring.",
@@ -4820,7 +4820,7 @@
   },
   {
     "code": "L09_M07_003",
-    "asset": "l09_m07_003.svg",
+    "asset": "sketch-l09_m07_003.jpg",
     "title": "Ostona, sath farqi va qavatlararo aloqa",
     "explanation": [
       "1. Chapda eshik ostonasi va tashqi yo‘lak bilan ichki pol orasidagi sath farqi alohida belgilangan.",
@@ -4838,7 +4838,7 @@
   },
   {
     "code": "L09_M07_004",
-    "asset": "l09_m07_004.svg",
+    "asset": "sketch-l09_m07_004.jpg",
     "title": "Sanitar xonada yondashuv va manevr joyi",
     "explanation": [
       "1. Yashil pol qismi burilish va manevr joyini tushuntiradi; jihozlarning o‘zi bilan cheklanmang.",
@@ -4910,7 +4910,7 @@
   },
   {
     "code": "L09_M08_003",
-    "asset": "l09_m08_003.svg",
+    "asset": "sketch-l09_m08_003.jpg",
     "title": "Plan va genplanda muammo joyini aniqlash",
     "explanation": [
       "1. Chapdagi ajratilgan joyda eshiklarning ochilish zonalari bir-biriga xalaqit berishi mumkin.",
@@ -5072,7 +5072,7 @@
   },
   {
     "code": "L10_M02_002",
-    "asset": "l10_m02_002.svg",
+    "asset": "sketch-l10_m02_002.jpg",
     "title": "Ko‘cha, alohida kirishlar va shimol",
     "explanation": [
       "1. Ko‘cha uchastkaning tashqi aloqasini beradi; piyoda va avtomobil darvozalari alohida ko‘rsatilgan.",
@@ -5090,7 +5090,7 @@
   },
   {
     "code": "L10_M02_003",
-    "asset": "l10_m02_003.svg",
+    "asset": "sketch-l10_m02_003.jpg",
     "title": "Soyalanish, shamol va hovli maxfiyligi",
     "explanation": [
       "1. Chapda qo‘shni bino soyasi hovli va uyga ta’sir qilishi mumkinligi ko‘rsatilgan; haqiqiy soyalanish joy va vaqtga bog‘liq.",
@@ -5108,7 +5108,7 @@
   },
   {
     "code": "L10_M02_004",
-    "asset": "l10_m02_004.svg",
+    "asset": "sketch-l10_m02_004.jpg",
     "title": "Yer sathi va mavjud elementlarni qayd qilish",
     "explanation": [
       "1. Qiya yer sathi bino kirishi, pol sathi va suv ketishi bilan bog‘liq savollarni tug‘diradi.",
@@ -5144,7 +5144,7 @@
   },
   {
     "code": "L10_M03_001",
-    "asset": "l10_m03_001.svg",
+    "asset": "sketch-l10_m03_001.jpg",
     "title": "Devorlardan oldin funksional aloqani izlash",
     "explanation": [
       "1. Har bir pufakcha xona yoki funksiyani ifodalaydi; hali devor va aniq o‘lcham yo‘q.",
@@ -5162,7 +5162,7 @@
   },
   {
     "code": "L10_M03_002",
-    "asset": "l10_m03_002.svg",
+    "asset": "sketch-l10_m03_002.jpg",
     "title": "Funksional zonalar va kerakli yaqinliklar",
     "explanation": [
       "1. Ocher umumiy zona mehmon qabul qilish va birgalikdagi faoliyat uchun ajratilgan.",
@@ -5180,7 +5180,7 @@
   },
   {
     "code": "L10_M03_003",
-    "asset": "l10_m03_003.svg",
+    "asset": "sketch-l10_m03_003.jpg",
     "title": "Mehmon va xizmat yo‘llarini ajratish",
     "explanation": [
       "1. Chapda mehmon asosiy kirish orqali umumiy xonaga o‘tadi.",
@@ -6004,7 +6004,7 @@
   },
   {
     "code": "L11_M02_001",
-    "asset": "l11_m02_001.svg",
+    "asset": "sketch-l11_m02_001.jpg",
     "title": "Qavatlar bo‘yicha zonalash",
     "explanation": [
       "Pastki qavatdagi mehmon va ovqatlanish joylari umumiy zonani, yuqoridagi yotoqxonalar tinch zonani ko‘rsatadi.",
@@ -6021,7 +6021,7 @@
   },
   {
     "code": "L11_M02_002",
-    "asset": "l11_m02_002.svg",
+    "asset": "sketch-l11_m02_002.jpg",
     "title": "Mehmon va oilaning qavatlararo yo‘li",
     "explanation": [
       "Sariq yo‘l kirishdan pastdagi mehmonxonaga, ko‘k yo‘l zinapoya orqali oilaning yuqori xonalariga olib boradi.",
@@ -6038,7 +6038,7 @@
   },
   {
     "code": "L11_M02_003",
-    "asset": "l11_m02_003.svg",
+    "asset": "sketch-l11_m02_003.jpg",
     "title": "Nam xonalar va muhandislik shaxtasi",
     "explanation": [
       "Asosiy kesimda ikki sanuzel ustma-ust joylashgan; yonidagi shaxta qavatlararo muhandislik yo‘lini ko‘rsatadi.",
@@ -6055,7 +6055,7 @@
   },
   {
     "code": "L11_M02_004",
-    "asset": "l11_m02_004.svg",
+    "asset": "sketch-l11_m02_004.jpg",
     "title": "Qavatlar orasida tayanchlar uzluksizligi",
     "explanation": [
       "Chapdagi shtrix chiziq yuqori devor, pastki tayanch va poydevorning bir yo‘nalishda davom etishini ko‘rsatadi.",
@@ -6072,7 +6072,7 @@
   },
   {
     "code": "L11_M02_005",
-    "asset": "l11_m02_005.svg",
+    "asset": "sketch-l11_m02_005.jpg",
     "title": "Qavatlar o‘rtasidagi aloqalarni tekshirish",
     "explanation": [
       "To‘rtta izoh zinapoya, nam xona, tayanch devori va deraza ochilishini alohida ko‘rsatadi.",
@@ -6089,7 +6089,7 @@
   },
   {
     "code": "L11_M03_001",
-    "asset": "l11_m03_001.svg",
+    "asset": "sketch-l11_m03_001.jpg",
     "title": "Zinapoyaning gorizontal va vertikal geometriyasi",
     "explanation": [
       "Asosiy eskiz zinapoyaning vertikal ko‘tarilishini va gorizontal yo‘lini ajratadi; kichik plan shu yo‘lning yuqoridan ko‘rinishini beradi.",
@@ -6106,7 +6106,7 @@
   },
   {
     "code": "L11_M03_002",
-    "asset": "l11_m03_002.svg",
+    "asset": "sketch-l11_m03_002.jpg",
     "title": "Pog‘ona, bosish va marsh",
     "explanation": [
       "Yirik ko‘rinishda vertikal ko‘tarilish va gorizontal bosish yuzasi alohida belgilangan. O‘ngdagi misol butun marshni ko‘rsatadi.",
@@ -6123,7 +6123,7 @@
   },
   {
     "code": "L11_M03_003",
-    "asset": "l11_m03_003.svg",
+    "asset": "sketch-l11_m03_003.jpg",
     "title": "Zinapoyada bosh ustidagi bo‘shliq",
     "explanation": [
       "Chapda odam tik turishi uchun bo‘shliq bor; o‘ngda past to‘sin harakatni cheklaydi.",
@@ -6802,23 +6802,6 @@
     "source_url": null
   },
   {
-    "code": "L12_M02_003",
-    "asset": "l12_m02_003.svg",
-    "title": "Properties va parametrlar — ko‘rgazmali namuna",
-    "explanation": [
-      "D01/D02 eshiklari va W01 derazasi bor; ID, classification va Finish_Code ma’lumoti to‘ldiriladi.",
-      "Finish_Code=A/B ni mos eshiklarga kiriting, bo‘sh qiymatni alohida belgilang → nazoratli property.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
-    ],
-    "exercise": "Property turi va qiymat yozish qoidasini belgilang.",
-    "solution": "Parametr qiymati kelishilgan ma’lumot turiga mos bo‘lishi kerak.",
-    "block": 5,
-    "recipe": "info",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": null
-  },
-  {
     "code": "L12_M02_004",
     "asset": "l12_m02_004.svg",
     "title": "Data consistency — ko‘rgazmali namuna",
@@ -6848,40 +6831,6 @@
     "solution": "Element Information audit manba va chiqarilgan ma’lumot mosligini tasdiqlaydi.",
     "block": 4,
     "recipe": "info",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": null
-  },
-  {
-    "code": "L12_M03_001",
-    "asset": "l12_m03_001.svg",
-    "title": "Schedule va spetsifikatsiya — ko‘rgazmali namuna",
-    "explanation": [
-      "D01=900 mm va D02=800 mm eshiklar, W01 deraza; eshik spetsifikatsiyasi ikki satr bo‘lishi kerak.",
-      "Schedule manbasi elementlardan kelishini ajrating → qo‘lda ro‘yxat emas.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
-    ],
-    "exercise": "Spetsifikatsiyaning maqsadi va model manbasini yozing.",
-    "solution": "Jadval dalili qaysi element va ma’lumotdan olingani bilan tushuntiriladi.",
-    "block": 5,
-    "recipe": "schedule",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": null
-  },
-  {
-    "code": "L12_M03_002",
-    "asset": "l12_m03_002.svg",
-    "title": "Criteria va fieldlar — ko‘rgazmali namuna",
-    "explanation": [
-      "D01=900 mm va D02=800 mm eshiklar, W01 deraza; eshik spetsifikatsiyasi ikki satr bo‘lishi kerak.",
-      "Scheme Settingsda Door mezoni, ID/Width fieldlari tanlang → kerakli data.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
-    ],
-    "exercise": "Criteria va Fieldsni tekshirib, yo‘q eshik sababini toping.",
-    "solution": "Element yo‘qligi mezon yoki manba ma’lumotidagi xatodan kelishi mumkin.",
-    "block": 5,
-    "recipe": "schedule",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
     "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
     "source_url": null
@@ -6938,40 +6887,6 @@
     "source_url": null
   },
   {
-    "code": "L12_M04_001",
-    "asset": "l12_m04_001.svg",
-    "title": "View tushunchasi — ko‘rgazmali namuna",
-    "explanation": [
-      "Bir modeldan PLAN_100 va DETAIL_20 saqlangan viewlari tayyorlanadi.",
-      "Viewni sozlamali saqlangan ko‘rinish deb ajrating → Project Map manbasidan farq.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
-    ],
-    "exercise": "Manba plan va saqlangan viewni ajrating.",
-    "solution": "View modelni ma’lum ko‘rsatish sharoitida saqlaydi.",
-    "block": 5,
-    "recipe": "view",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": null
-  },
-  {
-    "code": "L12_M04_002",
-    "asset": "l12_m04_002.svg",
-    "title": "View settings mantig'i — ko‘rgazmali namuna",
-    "explanation": [
-      "Bir modeldan PLAN_100 va DETAIL_20 saqlangan viewlari tayyorlanadi.",
-      "Masshtab, layer combination, qalam va ko‘rinish parametrini tanlang → maqsadli view.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
-    ],
-    "exercise": "Scale, layer va ko‘rsatish sozlamalarini qayd qiling.",
-    "solution": "View settings chizmaning qayta ochilgandagi ko‘rinishini boshqaradi.",
-    "block": 5,
-    "recipe": "view",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": null
-  },
-  {
     "code": "L12_M04_003",
     "asset": "l12_m04_003.svg",
     "title": "View naming va folders — ko‘rgazmali namuna",
@@ -7018,40 +6933,6 @@
     "solution": "View Map auditida ishlatilmaydigan va chalkash viewlar aniqlanadi.",
     "block": 4,
     "recipe": "view",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": null
-  },
-  {
-    "code": "L12_M05_001",
-    "asset": "l12_m05_001.svg",
-    "title": "Layout Book tushunchasi — ko‘rgazmali namuna",
-    "explanation": [
-      "A3 masterda A-01 plan va A-02 kesim drawinglari joylashtiriladi.",
-      "Layout Bookni topshiriladigan varaqlar tuzilmasi sifatida o‘qing → hujjat iyerarxiyasi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
-    ],
-    "exercise": "View va Layout vazifalarini ajrating.",
-    "solution": "Layout chiqariladigan varaqni tashkil qiladi.",
-    "block": 5,
-    "recipe": "documents",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
-    "source_url": null
-  },
-  {
-    "code": "L12_M05_002",
-    "asset": "l12_m05_002.svg",
-    "title": "Master Layout mantig'i — ko‘rgazmali namuna",
-    "explanation": [
-      "A3 masterda A-01 plan va A-02 kesim drawinglari joylashtiriladi.",
-      "Masterga ramka, shtamp va foydalaniladigan varaq maydonini joylang → umumiy asos.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
-    ],
-    "exercise": "Master Layoutda umumiy shtamp va chegarani joylashtiring.",
-    "solution": "Master umumiy varaq elementlarini boshqarishga yordam beradi.",
-    "block": 5,
-    "recipe": "documents",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
     "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
     "source_url": null
@@ -9588,7 +9469,7 @@
   },
   {
     "code": "L15_M08_003",
-    "asset": "l15_m08_003.svg",
+    "asset": "sketch-l15_m08_003.jpg",
     "title": "Bir loyiha — bog‘langan qarorlar",
     "explanation": [
       "Hovlili uy misolida uchastka, xona plani, fasad va kesim bir qarorning turli tomonlarini ko‘rsatadi.",
@@ -9605,7 +9486,7 @@
   },
   {
     "code": "L15_M08_004",
-    "asset": "l15_m08_004.svg",
+    "asset": "sketch-l15_m08_004.jpg",
     "title": "Topshirishdan oldin loyiha paketini tekshiring",
     "explanation": [
       "Muqova, uchastka chizmasi, plan, fasad va kesim yakuniy paketning turli hujjatlarini ko‘rsatadi.",
@@ -9622,7 +9503,7 @@
   },
   {
     "code": "L15_M08_005",
-    "asset": "l15_m08_005.svg",
+    "asset": "sketch-l15_m08_005.jpg",
     "title": "Yakuniy audit: qarorlarni dalil bilan tekshiring",
     "explanation": [
       "Xonalar va harakat, fasad va ochilishlar, uchastka va kirish, kesim va sathlar alohida tekshiriladigan yo‘nalishlardir.",

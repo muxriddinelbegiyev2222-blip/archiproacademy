@@ -9,7 +9,7 @@ import re
 import zipfile
 
 os.environ.setdefault('QT_QPA_PLATFORM', 'offscreen')
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageStat
 from PySide6.QtCore import QBuffer, QIODevice
 from PySide6.QtGui import QImage, QPainter
 from PySide6.QtSvg import QSvgRenderer
@@ -32,6 +32,8 @@ def jpeg_below_limit(im):
 
 
 def svg_image(path):
+    if b"bytes omitted" in path.read_bytes():
+        raise ValueError(f"Truncated embedded image: {path}")
     renderer = QSvgRenderer(str(path))
     if not renderer.isValid():
         raise ValueError(f'Invalid SVG: {path}')
@@ -44,7 +46,10 @@ def svg_image(path):
     buf = QBuffer()
     buf.open(QIODevice.OpenModeFlag.WriteOnly)
     image.save(buf, 'PNG')
-    return Image.open(io.BytesIO(bytes(buf.data()))).convert('RGB')
+    result = Image.open(io.BytesIO(bytes(buf.data()))).convert('RGB')
+    if max(ImageStat.Stat(result).stddev) < 3:
+        raise ValueError(f'Blank SVG rendering requires manual recovery: {path}')
+    return result
 
 
 def run():
