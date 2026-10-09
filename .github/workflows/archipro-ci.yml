@@ -3,6 +3,9 @@ name: ARCHIPRO CI
 on:
   push:
     branches: [main, curriculum-quality-v1.0.6]
+    paths-ignore:
+      - "docs/**"
+      - "*.md"
   workflow_dispatch:
 
 jobs:
@@ -68,6 +71,7 @@ jobs:
 
 
   package:
+    if: github.event_name == 'workflow_dispatch'
     runs-on: windows-latest
     timeout-minutes: 15
     steps:
