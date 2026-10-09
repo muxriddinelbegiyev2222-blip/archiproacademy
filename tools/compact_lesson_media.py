@@ -54,8 +54,15 @@ def svg_image(path):
 
 def run():
     app = QApplication.instance() or QApplication([])
+    destination = ROOT / 'docs/MEDIA_COMPRESSION_2026_10_09.json'
+    previous = json.loads(destination.read_text(encoding='utf-8')) if destination.exists() else {}
+    known_blocked = {item['before']: item for item in previous.get('blocked_records', [])}
     report = {'limit_bytes': LIMIT, 'pixel_dimensions_preserved': True,
-              'records': [], 'renames': {}, 'deleted_paths': []}
+              'records': list(previous.get('records', [])),
+              'renames': dict(previous.get('renames', {})),
+              'deleted_paths': list(previous.get('deleted_paths', [])),
+              'blocked_records': []}
+    new_records = []
     changed = set()
     comparisons = []
     for path in sorted(ASSETS.iterdir()):
@@ -65,7 +72,18 @@ def run():
         if len(original) <= LIMIT:
             continue
         if path.suffix == '.svg':
-            im = svg_image(path)
+            try:
+                im = svg_image(path)
+            except ValueError as exc:
+                rel = str(path.relative_to(ROOT))
+                if rel not in known_blocked:
+                    raise  # Do not silently accept a newly corrupted asset.
+                report['blocked_records'].append({
+                    **known_blocked[rel],
+                    'error': str(exc),
+                })
+                print('NEEDS IMAGE REPAIR:', rel, str(exc), flush=True)
+                continue
             target = path.with_name('sketch-' + path.stem + '.jpg')
             encoded, quality = jpeg_below_limit(im)
         else:
@@ -99,7 +117,9 @@ def run():
                   'after_bytes': len(encoded), 'width': im.width, 'height': im.height,
                   'quality': quality, 'before_sha256': hashlib.sha256(original).hexdigest(),
                   'after_sha256': hashlib.sha256(encoded).hexdigest()}
+        report['records'] = [old for old in report['records'] if old['before'] != old_rel]
         report['records'].append(record)
+        new_records.append(record)
         # Review samples include the most demanding encodings and all UI captures.
         if isinstance(quality, str) or quality < 70 or len(comparisons) < 8:
             comparisons.append((path.name, im.copy(), after.copy()))
@@ -117,9 +137,9 @@ def run():
             changed.add(str(path.relative_to(ROOT)))
 
     registry = ROOT / 'docs/VISUAL_REWORK_2026_10_08.json'
-    if registry.exists():
+    if registry.exists() and new_records:
         data = json.loads(registry.read_text())
-        by_old = {x['before']: x for x in report['records']}
+        by_old = {x['before']: x for x in new_records}
         for item in data['accepted']:
             if item['asset'] in by_old:
                 r = by_old[item['asset']]
@@ -132,10 +152,22 @@ def run():
                     item['original_svg_sha256'] = item.pop('svg_sha256')
         registry.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
         changed.add(str(registry.relative_to(ROOT)))
+    # Re-run safety: prior completed conversions must still exist and match.
+    for item in report['records']:
+        finished = ROOT / item['after']
+        if not finished.is_file():
+            raise FileNotFoundError(f"Previously converted asset missing: {finished}")
+        if hashlib.sha256(finished.read_bytes()).hexdigest() != item['after_sha256']:
+            raise ValueError(f"Previously converted asset hash mismatch: {finished}")
+        if finished.stat().st_size > LIMIT:
+            raise ValueError(f"Previously converted asset exceeds 400 KB: {finished}")
+
     report['before_bytes'] = sum(x['before_bytes'] for x in report['records'])
     report['after_bytes'] = sum(x['after_bytes'] for x in report['records'])
-    report['changed_paths'] = sorted(changed)
-    destination = ROOT / 'docs/MEDIA_COMPRESSION_2026_10_09.json'
+    report['changed_paths'] = sorted(set(previous.get('changed_paths', [])) | changed)
+    report['converted_count'] = len(report['records'])
+    report['blocked_count'] = len(report['blocked_records'])
+    report['complete'] = not report['blocked_records']
     destination.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
     changed.add(str(destination.relative_to(ROOT)))
     review_dir = ROOT / 'media-review'
@@ -152,8 +184,13 @@ def run():
             archive.write(ROOT / name, name)
         for path in review_dir.glob('*.jpg'):
             archive.write(path, str(path.relative_to(ROOT)))
-    print(json.dumps({'changed': len(report['records']), 'before_bytes': report['before_bytes'],
-                      'after_bytes': report['after_bytes'], 'review_samples': len(comparisons)}))
+    print(json.dumps({'converted_this_run': len(new_records),
+                      'converted_total': report['converted_count'],
+                      'blocked': report['blocked_count'],
+                      'complete': report['complete'],
+                      'before_bytes': report['before_bytes'],
+                      'after_bytes': report['after_bytes'],
+                      'review_samples': len(comparisons)}))
 
 
 if __name__ == '__main__':
