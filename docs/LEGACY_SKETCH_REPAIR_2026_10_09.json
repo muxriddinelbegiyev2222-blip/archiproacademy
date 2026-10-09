@@ -37,6 +37,55 @@
       "height": 1024,
       "quality": 83,
       "visual_review": "Topic, labels, architectural detail and conceptual boundary checked before acceptance"
+    },
+    {
+      "code": "L07_M01_001",
+      "asset": "app/courses/visual_assets/sketch-l07_m01_001.jpg",
+      "prompt": "Use case: scientific-educational. Asset type: one ARCHIPRO UZ lesson illustration, 1536x1024 landscape. Style: professional architect's hand drawn pencil and fine ink drawing with restrained watercolor washes on clean warm ivory paper, recognizable real residential architecture, detailed doors, windows, believable furniture, material hatching, airy editorial layout, clear line hierarchy. Beautiful but practical teaching image, legible at laptop size. No vector icon look, no generic rectangles standing in for buildings, no photographic render, no software window or fabricated interface. No logos or watermarks. Short Uzbek labels only when explicitly listed. Architectural concept illustration, not construction documents. Make the illustrated comparison the dominant subject, avoid decorative extra scenes. Title exact 'SAQLANGAN SOZLAMALAR'. One detailed axonometric cutaway sample of a residential masonry wall on left, with fine ink hatching, plaster surface, believable section layers; three short leaders label 'TUZILMA', 'QALINLIK', 'QATLAM'. At center a handwritten paper card titled 'FAVORITE', below 'SAQLANGAN SOZLAMA'. A clear arrow from the sample to the card, then three separate arrows from card to three new wall samples on right: one long straight wall, one short wall, one wall with a doorway; all share the SAME material hatch and thickness but DIFFERENT lengths and openings. Make their different geometry obvious. Lower note exact 'PARAMETR QAYTA QO‘LLANADI'. Teach Favorite saves reusable settings, not an entire identical geometric copy or linked global instance. Paper-and-pencil architecture workshop teaching plate, real material wall samples instead of generic boxes. No software UI, no menu, no dimensions, no numbers.",
+      "source_png_sha256": "906937e21d7a7cd84cc3c8d3a1ec6b3de88f3c795bbec34e0e496cf8497c8e10",
+      "file_sha256": "464c8e3df56cd0608f2426a4244888ee79705a3e61702db2849bf493e85c4a48",
+      "file_bytes": 395648,
+      "width": 1536,
+      "height": 1024,
+      "quality": 82,
+      "visual_review": "Topic, labels, architectural detail and conceptual boundary checked before acceptance"
+    },
+    {
+      "code": "L07_M01_002",
+      "asset": "app/courses/visual_assets/sketch-l07_m01_002.jpg",
+      "prompt": "Use case: scientific-educational. Asset type: one ARCHIPRO UZ lesson illustration, 1536x1024 landscape. Style: professional architect's hand drawn pencil and fine ink drawing with restrained watercolor washes on clean warm ivory paper, recognizable real residential architecture, detailed doors, windows, believable furniture, material hatching, airy editorial layout, clear line hierarchy. Beautiful but practical teaching image, legible at laptop size. No vector icon look, no generic rectangles standing in for buildings, no photographic render, no software window or fabricated interface. No logos or watermarks. Short Uzbek labels only when explicitly listed. Architectural concept illustration, not construction documents. Make the illustrated comparison the dominant subject, avoid decorative extra scenes. Title exact 'TEKSHIR • SAQLA • QO‘LLA'. Three sequential panels left-to-right with exact labels 'TEKSHIR', 'SAQLA', 'QO‘LLA'. Left an architectural wall-section sample with masonry and plaster, three labeled leaders 'TUZILMA', 'QALINLIK', 'QATLAM' and a restrained teal checkmark. Middle a clean paper card 'FAVORITE' connected from left via single arrow. Right a small detailed cutaway room corner with two new walls built using same material pattern as the sample, doorway and window, and a teal pencil outline on one newly applied wall. A small magnified wall section inset beneath right matches sample. Show applying verified wall settings to new geometry and then checking result, not copy-pasting the entire room. No software interface, no fake controls, no arbitrary material layer thicknesses or construction dimensions. Mostly recognizable architecture, few labels and arrows, clear visual progression.",
+      "source_png_sha256": "19aaec99d1cf130dca1c335696d711065355617458df11b6cfd5e723a26dcccb",
+      "file_sha256": "8837a2b2d45550293029f800f57c5a5282e392bba767c2fe413afa30b9909995",
+      "file_bytes": 389350,
+      "width": 1536,
+      "height": 1024,
+      "quality": 82,
+      "visual_review": "Topic, labels, architectural detail and conceptual boundary checked before acceptance"
+    },
+    {
+      "code": "L07_M01_004",
+      "asset": "app/courses/visual_assets/sketch-l07_m01_004.jpg",
+      "prompt": "Use case: scientific-educational. Asset type: one ARCHIPRO UZ lesson illustration, 1536x1024 landscape. Style: professional architect's hand drawn pencil and fine ink drawing with restrained watercolor washes on clean warm ivory paper, recognizable real residential architecture, detailed doors, windows, believable furniture, material hatching, airy editorial layout, clear line hierarchy. Beautiful but practical teaching image, legible at laptop size. No vector icon look, no generic rectangles standing in for buildings, no photographic render, no software window or fabricated interface. No logos or watermarks. Short Uzbek labels only when explicitly listed. Architectural concept illustration, not construction documents. Make the illustrated comparison the dominant subject, avoid decorative extra scenes. Title exact 'BIR XIL VAZIFA — BIR XIL BAZA'. Two detailed compact house cutaway model fragments left and right, identical design with windowed external walls and light room furniture, ink/pencil masonry hatching. Left labeled 'TASODIFIY SOZLASH': two external walls of SAME purpose have clearly different section fills and visibly different thicknesses; small red circles around two magnified inconsistent wall-section samples. Right labeled 'STANDART BAZA': same two wall sections consistently equal, identical hatching and wall thickness; a center paper Favorite parameter card linked with two teal arrows to them. Two short handwritten labels on right inset 'QATLAM' and 'TUZILMA'. This is conceptual standardization comparison, not structural approval. No numbers, no software UI, no claiming every wall in every project must be identical; identical-purpose exterior wall samples only. Make differences clearly readable, keep clean warm paper and restrained red-teal annotations.",
+      "source_png_sha256": "b7d74a4bdb93e4e9d89ae6209cd8425a432cd39d0719902be1029b62db523ffd",
+      "file_sha256": "06047b79476e1f2cb1546477088524bdd31a2ee686aecb7586aeb32a97ecc26c",
+      "file_bytes": 399384,
+      "width": 1536,
+      "height": 1024,
+      "quality": 77,
+      "visual_review": "Topic, labels, architectural detail and conceptual boundary checked before acceptance",
+      "revision": "Edited comparison: red examples differ (brick/insulation versus concrete); teal examples match. Corrected FAVORITE card and removed misleading leftward settings arrow."
+    },
+    {
+      "code": "L07_M01_005",
+      "asset": "app/courses/visual_assets/sketch-l07_m01_005.jpg",
+      "prompt": "Use case: scientific-educational. Asset type: one ARCHIPRO UZ lesson illustration, 1536x1024 landscape. Style: professional architect's hand drawn pencil and fine ink drawing with restrained watercolor washes on clean warm ivory paper, recognizable real residential architecture, detailed doors, windows, believable furniture, material hatching, airy editorial layout, clear line hierarchy. Beautiful but practical teaching image, legible at laptop size. No vector icon look, no generic rectangles standing in for buildings, no photographic render, no software window or fabricated interface. No logos or watermarks. Short Uzbek labels only when explicitly listed. Architectural concept illustration, not construction documents. Make the illustrated comparison the dominant subject, avoid decorative extra scenes. Title exact 'FAVORITE AUDITI'. Upper main panel: three detailed axonometric wall samples labeled 'A', 'B', 'C', each with a realistic doorway; A and B have same masonry hatch and thickness, C has a different wall section cross-hatch highlighted by red pencil circle. A paper card below labeled 'FAVORITE' has the A/B hatch as saved baseline. Teal comparison leaders from card to A/B and a red question marker pointing to C. Bottom small second visual: a card labeled 'YANGI SOZLAMA' with a changed hatch; to its right the three ALREADY CREATED samples keep original hatches, separated from card by a broken dashed arrow and exact note 'QAYTA TEKSHIR'. Teach compare each created element to baseline; changing a saved Favorite must not be portrayed as automatic global retrofit of existing walls. No software UI or fake interactive buttons; short labels, actual architectural material details.",
+      "source_png_sha256": "845c4bb286a1a6cb2388ef1ac4b4511de5ece143f6b3a1439749c11f584aee53",
+      "file_sha256": "2dd89b5c39196d0196a8a7c2ef74cd8e969c2142ed781c7ca29788819184fd2e",
+      "file_bytes": 394860,
+      "width": 1536,
+      "height": 1024,
+      "quality": 86,
+      "visual_review": "Topic, labels, architectural detail and conceptual boundary checked before acceptance"
     }
   ]
 }

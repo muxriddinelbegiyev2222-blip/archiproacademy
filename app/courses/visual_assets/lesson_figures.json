@@ -2806,7 +2806,7 @@
   },
   {
     "code": "L07_M01_001",
-    "asset": "l07_m01_001.svg",
+    "asset": "sketch-l07_m01_001.jpg",
     "title": "Saqlangan sozlama yangi elementda qayta qo‘llanadi",
     "explanation": [
       "Chapdagi devor namunasi tuzilma, qalinlik va boshqa bazaviy parametrlarni ajratadi; markazdagi kartochka saqlangan Favorite g‘oyasini ko‘rsatadi.",
@@ -2818,12 +2818,12 @@
     "block": 8,
     "recipe": "favorite",
     "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
-    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
+    "credit": "ARCHIPRO UZ — mavzuga mos AI arxitektura eskizi; ko‘rib tekshirilgan, 2026-10-09",
     "source_url": null
   },
   {
     "code": "L07_M01_002",
-    "asset": "l07_m01_002.svg",
+    "asset": "sketch-l07_m01_002.jpg",
     "title": "Tekshirish, saqlash va qo‘llash ketma-ketligi",
     "explanation": [
       "Avval chapdagi namuna elementning sozlamasi tekshiriladi. Noto‘g‘ri elementni saqlash xatoni keyingi elementlarga ko‘paytiradi.",
@@ -2835,7 +2835,7 @@
     "block": 8,
     "recipe": "favorite",
     "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
-    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
+    "credit": "ARCHIPRO UZ — mavzuga mos AI arxitektura eskizi; ko‘rib tekshirilgan, 2026-10-09",
     "source_url": null
   },
   {
@@ -2858,7 +2858,7 @@
   },
   {
     "code": "L07_M01_004",
-    "asset": "l07_m01_004.svg",
+    "asset": "sketch-l07_m01_004.jpg",
     "title": "Bir xil vazifadagi elementlarning bazasini tekshiring",
     "explanation": [
       "Chapdagi ikkita kesim ataylab turlicha: yuqorida g‘ishtli, pastda yengil karkasli namuna. Qizil belgi bir xil vazifa uchun parametr farqini tekshirish nuqtasini ko‘rsatadi.",
@@ -2870,12 +2870,12 @@
     "block": 8,
     "recipe": "favorite",
     "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
-    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
+    "credit": "ARCHIPRO UZ — mavzuga mos AI arxitektura eskizi; ko‘rib tekshirilgan, 2026-10-09",
     "source_url": null
   },
   {
     "code": "L07_M01_005",
-    "asset": "l07_m01_005.svg",
+    "asset": "sketch-l07_m01_005.jpg",
     "title": "Favorite auditi va avval yaratilgan elementlar",
     "explanation": [
       "A va B namunalarining bazaviy kesimi bir-biriga mos; Cda boshqa qatlam ajratilib, tekshiruv savoli qo‘yilgan. Har elementni saqlangan baza bilan solishtiring.",
@@ -2887,7 +2887,7 @@
     "block": 10,
     "recipe": "favorite",
     "boundary": "Konseptual o‘quv eskizi; ishchi chizma yoki dastur interfeysi emas. Haqiqiy model va darsdagi amaliy sozlamalar bilan tekshiring.",
-    "credit": "ARCHIPRO UZ — original AI architectural teaching sketch, visually reviewed, 2026-10-07",
+    "credit": "ARCHIPRO UZ — mavzuga mos AI arxitektura eskizi; ko‘rib tekshirilgan, 2026-10-09",
     "source_url": null
   },
   {

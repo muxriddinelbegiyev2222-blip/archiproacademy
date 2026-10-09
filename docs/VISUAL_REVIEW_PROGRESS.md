@@ -1,5 +1,13 @@
 # Buzilgan eskizlarni tiklash — 2026-10-09
 
+Partiya: L07_M01_001, L07_M01_002, L07_M01_004, L07_M01_005. Mavzuga mos eskizlar qayta tayyorlandi, izohlar bilan bog‘landi; har bir JPEG 400 000 baytdan kichik. Katta PNG asl nusxalari GitHub’ga qo‘shilmadi.
+
+278 ta katta fayldan **271 tasi tayyor, 7 tasi buzilgan asl tasvirni almashtirish navbatida**. Asosiy 204 nomzod navbatidan 156 dars qolgan. Git tarixi tozalanmagan; reliz auditi yakunlanmagan.
+
+---
+
+# Buzilgan eskizlarni tiklash — 2026-10-09
+
 Partiya: L06_M10_001, L06_M10_003, L06_M10_004. Mavzuga mos eskizlar qayta tayyorlandi, izohlar bilan bog‘landi; har bir JPEG 400 000 baytdan kichik. Katta PNG asl nusxalari GitHub’ga qo‘shilmadi.
 
 278 ta katta fayldan **267 tasi tayyor, 11 tasi buzilgan asl tasvirni almashtirish navbatida**. Asosiy 204 nomzod navbatidan 156 dars qolgan. Git tarixi tozalanmagan; reliz auditi yakunlanmagan.
