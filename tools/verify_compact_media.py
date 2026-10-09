@@ -42,10 +42,10 @@ def verify(root=ROOT, require_complete=False):
             errors.append(f"Image SHA-256 mismatch: {relative}")
         suffix = path.suffix.lower()
         if suffix in (".jpg", ".jpeg"):
-            if not (data.startswith(b"\\xff\\xd8") and data.endswith(b"\\xff\\xd9")):
+            if not (data.startswith(b"\xff\xd8") and data.endswith(b"\xff\xd9")):
                 errors.append(f"Invalid JPEG boundaries: {relative}")
         elif suffix == ".png":
-            if not (data.startswith(b"\\x89PNG\\r\\n\\x1a\\n") and data[-12:-8] == b"IEND"):
+            if not (data.startswith(b"\x89PNG\r\n\x1a\n") and data[-8:-4] == b"IEND"):
                 errors.append(f"Invalid PNG boundaries: {relative}")
         else:
             errors.append(f"Unexpected converted image format: {relative}")
