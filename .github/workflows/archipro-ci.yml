@@ -25,6 +25,12 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
 
+      - name: Check lesson image integrity
+        shell: pwsh
+        run: |
+          python -m py_compile tools/compact_lesson_media.py tools/verify_compact_media.py
+          python tools/verify_compact_media.py
+
       - name: Project audit
         shell: pwsh
         run: python app/tools/project_audit.py
