@@ -2926,7 +2926,7 @@
   },
   {
     "code": "L07_M02_003",
-    "asset": "l07_m02_003.svg",
+    "asset": "sketch-l07_m02_003.jpg",
     "title": "Qoidalarni kombinatsiyada tekshiring",
     "explanation": [
       "Tashqi devor, ichki devor va oynalar alohida mezon guruhlariga ajratilgan. Ranglar ushbu o‘quv misolidagi legenda bilan tushuntiriladi.",
@@ -3062,7 +3062,7 @@
   },
   {
     "code": "L07_M04_001",
-    "asset": "l07_m04_001.svg",
+    "asset": "sketch-l07_m04_001.jpg",
     "title": "Mavjud, buziladigan va yangi elementlar",
     "explanation": [
       "Kulrang tashqi devor — saqlanadigan mavjud element, qizil uzlukli bo‘luvchi — buziladigan element, ko‘k bo‘luvchi — yangi element.",
@@ -3147,7 +3147,7 @@
   },
   {
     "code": "L07_M05_001",
-    "asset": "l07_m05_001.svg",
+    "asset": "sketch-l07_m05_001.jpg",
     "title": "Jadval yozuvining manbasi — model elementi",
     "explanation": [
       "Modelda D01, D02 va D03 eshiklari ajratilgan; bog‘lovchi chiziqlar har birini o‘z yozuvi bilan birlashtiradi.",
@@ -3164,7 +3164,7 @@
   },
   {
     "code": "L07_M05_002",
-    "asset": "l07_m05_002.svg",
+    "asset": "sketch-l07_m05_002.jpg",
     "title": "Criteria elementni, Fields ma’lumotni tanlaydi",
     "explanation": [
       "Chapdagi mezon ikkita eshikni ajratadi; deraza bu eshik guruhi tashqarisida qoladi. Criteria — jadvalga qaysi element tushishi.",
@@ -3181,7 +3181,7 @@
   },
   {
     "code": "L07_M05_003",
-    "asset": "l07_m05_003.svg",
+    "asset": "sketch-l07_m05_003.jpg",
     "title": "Uch element ikki guruhga birlashishi mumkin",
     "explanation": [
       "W01 va W02 bir xil turdagi alohida oynalar, W03 esa boshqa tur. Uch model elementi ikki tur guruhiga ajratilgan.",
@@ -3198,7 +3198,7 @@
   },
   {
     "code": "L07_M05_004",
-    "asset": "l07_m05_004.svg",
+    "asset": "sketch-l07_m05_004.jpg",
     "title": "Door, Window va Zone jadvali manbalari",
     "explanation": [
       "D01 eshik, W01 oyna, Z01 xona Zone elementi alohida jadval vazifalariga manba bo‘ladi.",
@@ -3249,7 +3249,7 @@
   },
   {
     "code": "L07_M06_002",
-    "asset": "l07_m06_002.svg",
+    "asset": "sketch-l07_m06_002.jpg",
     "title": "Property nomi, turi va qiymati",
     "explanation": [
       "Door Function — ma’lumot nomi, MATN — konseptual qiymat turi, KIRISH — element uchun kiritiladigan namunaviy qiymat.",

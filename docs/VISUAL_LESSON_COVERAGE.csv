@@ -286,7 +286,7 @@ L07_M01_004,L07_M01,Favorites va standartlashtirish,illustrated,2,l07_m01_004.sv
 L07_M01_005,L07_M01,Favorites professional audit,illustrated,2,l07_m01_005.svg|ac28-favorite.png
 L07_M02_001,L07_M02,Graphic Overrides tushunchasi,illustrated,2,l07_m02_001.svg|ac28-override.png
 L07_M02_002,L07_M02,Graphic Override Rules,illustrated,2,l07_m02_002.svg|ac28-override.png
-L07_M02_003,L07_M02,Graphic Override Combination,illustrated,2,l07_m02_003.svg|ac28-override.png
+L07_M02_003,L07_M02,Graphic Override Combination,illustrated,2,sketch-l07_m02_003.jpg|ac28-override.png
 L07_M02_004,L07_M02,Modelni tahliliy ko'rinishlarda ko'rsatish,illustrated,2,l07_m02_004.svg|ac28-override.png
 L07_M02_005,L07_M02,Graphic Overrides professional audit,illustrated,2,l07_m02_005.svg|ac28-override.png
 L07_M03_001,L07_M03,Model View Options tushunchasi,illustrated,2,l07_m03_001.svg|ac28-mvo.png
@@ -294,18 +294,18 @@ L07_M03_002,L07_M03,Model ko'rinishini boshqarish,illustrated,2,l07_m03_002.svg|
 L07_M03_003,L07_M03,MVO Combination,illustrated,2,l07_m03_003.svg|ac28-mvo.png
 L07_M03_004,L07_M03,View va MVO workflow,illustrated,2,l07_m03_004.svg|ac28-mvo.png
 L07_M03_005,L07_M03,Model View Options professional audit,illustrated,2,l07_m03_005.svg|ac28-mvo.png
-L07_M04_001,L07_M04,Renovation tushunchasi,illustrated,2,l07_m04_001.svg|ac28-renovation.png
+L07_M04_001,L07_M04,Renovation tushunchasi,illustrated,2,sketch-l07_m04_001.jpg|ac28-renovation.png
 L07_M04_002,L07_M04,Renovation Status,illustrated,2,l07_m04_002.svg|ac28-renovation.png
 L07_M04_003,L07_M04,Renovation Filters,illustrated,2,l07_m04_003.svg|ac28-renovation.png
 L07_M04_004,L07_M04,Rekonstruksiya modeli workflow,illustrated,2,l07_m04_004.svg|ac28-renovation.png
 L07_M04_005,L07_M04,Renovation professional audit,illustrated,2,l07_m04_005.svg|ac28-renovation.png
-L07_M05_001,L07_M05,Schedules tushunchasi,illustrated,2,l07_m05_001.svg|ac28-schedule.png
-L07_M05_002,L07_M05,Criteria va Fields,illustrated,2,l07_m05_002.svg|ac28-criteria.png
-L07_M05_003,L07_M05,"Sorting, Grouping va hisoblash",illustrated,2,l07_m05_003.svg|ac28-fields.png
-L07_M05_004,L07_M05,"Door, Window va Zone Schedules",illustrated,2,l07_m05_004.svg|ac28-schedule.png
+L07_M05_001,L07_M05,Schedules tushunchasi,illustrated,2,sketch-l07_m05_001.jpg|ac28-schedule.png
+L07_M05_002,L07_M05,Criteria va Fields,illustrated,2,sketch-l07_m05_002.jpg|ac28-criteria.png
+L07_M05_003,L07_M05,"Sorting, Grouping va hisoblash",illustrated,2,sketch-l07_m05_003.jpg|ac28-fields.png
+L07_M05_004,L07_M05,"Door, Window va Zone Schedules",illustrated,2,sketch-l07_m05_004.jpg|ac28-schedule.png
 L07_M05_005,L07_M05,Schedules professional audit,illustrated,2,l07_m05_005.svg|ac28-criteria.png
 L07_M06_001,L07_M06,BIM Properties tushunchasi,illustrated,2,l07_m06_001.svg|ac28-property.png
-L07_M06_002,L07_M06,Property yaratish va tuzilishi,illustrated,2,l07_m06_002.svg|ac28-property.png
+L07_M06_002,L07_M06,Property yaratish va tuzilishi,illustrated,2,sketch-l07_m06_002.jpg|ac28-property.png
 L07_M06_003,L07_M06,Element ma'lumotlarini standartlashtirish,illustrated,2,l07_m06_003.svg|ac28-property.png
 L07_M06_004,L07_M06,Properties va Schedules,illustrated,2,l07_m06_004.svg|ac28-fields.png
 L07_M06_005,L07_M06,Properties professional audit,illustrated,2,l07_m06_005.svg|ac28-property.png
