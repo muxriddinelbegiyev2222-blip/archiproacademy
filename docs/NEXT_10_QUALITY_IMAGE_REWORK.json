@@ -2,7 +2,7 @@
   "source": "docs/VISUAL_CANDIDATE_REVIEW_2026_10_08.json",
   "reviewed_source_commit": "ec7db30e096c65d95917e84082fbd22547914adf",
   "created_for": "Next 10 queued topic-specific architectural image replacements",
-  "status": "in_progress_1_installed_9_pending",
+  "status": "in_progress_2_installed_8_pending",
   "max_bytes": 400000,
   "format": "JPEG",
   "visual_style": "professional architectural pencil and thin-ink sketch, restrained watercolor washes, warm ivory paper, detailed realistic Uzbek house plan with doors/windows/furniture; no generic vector diagrams or fabricated UI",
@@ -28,7 +28,14 @@
       "current_asset": "app/courses/visual_assets/l10_m03_005.svg",
       "target_asset": "app/courses/visual_assets/sketch-l10_m03_005.jpg",
       "art_direction": "Bubble diagramdan oldingi va keyingi tekshiruv: mehmon, oshxona, ota-ona va bolalar xonalari uchun munosabatlar, yo‘laklar, keraksiz kesishishlarni sinab ko‘rilgan bir qavatli uy kontsepti. Professional tekshirish qaydlari.",
-      "status": "pending_image_generation_and_visual_review"
+      "status": "installed_in_main",
+      "final_asset": "app/courses/visual_assets/sketch-l10_m03_005.jpg",
+      "image_bytes": 303676,
+      "width": 1536,
+      "height": 1024,
+      "image_sha256": "d592acac2c0ce428b11be6f9907a04c152fe5675d44a1736583f66ab81c71ad3",
+      "image_git_blob": "116a762388b423a4b5536cc5195d1d27359f0c25",
+      "technical_status": "image and lesson maps installed; full application audit pending"
     },
     {
       "code": "L10_M04_001",
@@ -95,5 +102,5 @@
       "status": "pending_image_generation_and_visual_review"
     }
   ],
-  "installed_count": 1
+  "installed_count": 2
 }
