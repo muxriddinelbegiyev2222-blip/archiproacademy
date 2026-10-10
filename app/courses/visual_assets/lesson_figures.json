@@ -5381,15 +5381,16 @@
     "asset": "l10_m05_004.svg",
     "title": "Konstruktiv va MEP mantiq — arxitekturaviy eskiz",
     "explanation": [
-      "A variant koridori 12 m², B variant 8 m²; Bda mehmon yo‘li yotoqxonani kesib o‘tadi.",
-      "Tayanch va nam zonalarni yangi plan bilan solishtiring → texnik ta’sir.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Rejada konstruktiv devor va katta ochilishlar, oshxona va sanuzelning nam zonalari hamda muhandislik kommunikatsiyalari bir-biriga mos kelishini tekshiring.",
+      "2. Tayanch yo‘li va muhandislik quvurlarini bir xil narsa deb hisoblamang: yuk ko‘taruvchi elementni kesib o‘tish mumkinligini faqat konstruktiv va MEP loyihachilari belgilaydi.",
+      "3. Kirish va xonalar joylashuvi bilan birga quvur yo‘li, ventkanal hamda texnik xizmat ko‘rsatish maydoni uchun joy qolishini nazorat qiling.",
+      "Darsdagi bajarish: reja nusxasida tayanch, suv/oqova va elektr/shamollatish ehtimoliy yo‘nalishlarini uch rangda belgilang; ikki ehtimoliy to‘qnashuvni yozing."
     ],
     "exercise": "Taklifni karkas va muhandislik zonalari bilan solishtiring.",
     "solution": "Plan yaxshilanishi konstruktiv va MEP muvofiqlikni saqlashi kerak.",
     "block": 5,
     "recipe": "stack",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "boundary": "Konseptual o‘quv eskizi: undagi o‘lcham, tayanch, kanal va yo‘nalishlar hisoblangan konstruktiv yoki muhandislik yechimi sifatida qabul qilinmaydi. Aniqlik amaldagi talablar va mutaxassis tekshiruvi bilan tasdiqlanadi.",
     "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
@@ -5398,15 +5399,16 @@
     "asset": "l10_m05_005.svg",
     "title": "Final plan audit — arxitekturaviy eskiz",
     "explanation": [
-      "A variant koridori 12 m², B variant 8 m²; Bda mehmon yo‘li yotoqxonani kesib o‘tadi.",
-      "Oldin/keyin jadvalda barcha mezonni qayta tekshiring → haqiqiy yaxshilanish.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Yakuniy reja faqat chiroyli ko‘rinishi bilan baholanmaydi: brief, zonalash, mebel, harakatlanish, eshiklar, privacy, deraza va hovli aloqasi tekshiriladi.",
+      "2. Plan yechimini konstruksiya va muhandislik tarmoqlari bilan kelishtirish uchun ochiq savollar ro‘yxati tuzing. Hal qilinmagan bandni 'tasdiqlandi' deb belgilamang.",
+      "3. Kamchiliklar bo‘yicha muammo, chizmadagi dalil, tuzatish va takroriy tekshiruvni alohida qayd eting.",
+      "Darsdagi bajarish: o‘z eskizingizdagi uchta muammoni belgilang, qayta ishlangan plan bilan solishtirib, tekshiruv jadvalini to‘ldiring."
     ],
     "exercise": "Oldingi-yangi plan va uch mezon bo‘yicha natijani topshiring.",
     "solution": "Final plan audit o‘zgarishning foydasi va yo‘qotishini dalillaydi.",
     "block": 5,
     "recipe": "audit",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "boundary": "Konseptual o‘quv eskizi: undagi o‘lcham, tayanch, kanal va yo‘nalishlar hisoblangan konstruktiv yoki muhandislik yechimi sifatida qabul qilinmaydi. Aniqlik amaldagi talablar va mutaxassis tekshiruvi bilan tasdiqlanadi.",
     "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
