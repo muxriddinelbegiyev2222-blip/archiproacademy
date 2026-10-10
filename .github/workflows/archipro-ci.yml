@@ -31,8 +31,9 @@ jobs:
       - name: Check lesson image integrity
         shell: pwsh
         run: |
-          python -m py_compile tools/compact_lesson_media.py tools/verify_compact_media.py
+          python -m py_compile tools/compact_lesson_media.py tools/verify_compact_media.py tools/verify_course_visuals.py
           python tools/verify_compact_media.py
+          python tools/verify_course_visuals.py
 
       - name: Project audit
         shell: pwsh
