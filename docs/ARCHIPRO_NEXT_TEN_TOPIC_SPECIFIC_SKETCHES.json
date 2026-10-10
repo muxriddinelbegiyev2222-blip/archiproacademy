@@ -2,7 +2,7 @@
   "reference": "docs/VISUAL_CANDIDATE_REVIEW_2026_10_08.json",
   "date": "2026-10-10",
   "batch_size": 10,
-  "installed_count": 2,
+  "installed_count": 4,
   "status": "partially_integrated",
   "requirements": {
     "images_per_lesson": 1,
@@ -54,7 +54,13 @@
       "old_asset": "app/courses/visual_assets/l10_m06_002.svg",
       "target_asset": "app/courses/visual_assets/sketch-l10_m06_002.jpg",
       "art_direction": "Bir qavatli uy asosida ±0.000 sath tushunchasi va 1-qavat plani, ikki-uch konstruktiv o‘q bilan 3D aksonometrik model. O‘qlar, tashqi devor va qavat sathi bir xil geometrik obyektda mos bo‘lsin, normativ qiymatlar tasdiqlanmaguncha ishlatilmasin.",
-      "status": "awaiting_individual_high_resolution_illustration"
+      "status": "installed_in_main_static_integrity_pending",
+      "final_asset": "app/courses/visual_assets/sketch-l10_m06_002.jpg",
+      "image_bytes": 226376,
+      "image_git_sha": "ba6510c7139343fc7bfea634158918d30336cf81",
+      "sha256": "b9fbc8b5982e8c74dbd68ccb257be7f690693c6a172074d66d345e2837a6cec9",
+      "width": 1536,
+      "height": 1024
     },
     {
       "code": "L10_M06_003",
@@ -62,7 +68,13 @@
       "old_asset": "app/courses/visual_assets/l10_m06_003.svg",
       "target_asset": "app/courses/visual_assets/sketch-l10_m06_003.jpg",
       "art_direction": "Xuddi shu uy bo‘yicha to‘rt qatlam: tashqi devor, yopma/plita, bitta ustun, eshik/deraza ochilishi. Plan va 3D aksoda devorning uzluksizligi, plita chegarasi va ochilishlar mantiqan mos; struktura hisoblangan deb yozilmasin.",
-      "status": "awaiting_individual_high_resolution_illustration"
+      "status": "installed_in_main_static_integrity_pending",
+      "final_asset": "app/courses/visual_assets/sketch-l10_m06_003.jpg",
+      "image_bytes": 202161,
+      "image_git_sha": "d97a860e45e90dc031520d69aeec62f9ac769c91",
+      "sha256": "b74cad26e4b758b6fcbc0c519281e8b39369c10896534d52c1d02863b7960d70",
+      "width": 1536,
+      "height": 1024
     },
     {
       "code": "L10_M06_004",

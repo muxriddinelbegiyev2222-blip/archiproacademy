@@ -5431,36 +5431,38 @@
   },
   {
     "code": "L10_M06_002",
-    "asset": "l10_m06_002.svg",
-    "title": "Stories, grid va asosiy elementlar — arxitekturaviy eskiz",
+    "asset": "sketch-l10_m06_002.jpg",
+    "title": "Qavatlar, o‘qlar va asosiy elementlar — arxitekturaviy eskiz",
     "explanation": [
-      "Tasdiqlangan eskizdan qavat, o‘q, devor, slab va ochilishlar bilan BIM asosini yaratamiz.",
-      "Stories va gridni sath/o‘lcham bilan sozlang → tekshiriladigan asos.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi uy planida A–C va 1–4 o‘qlari bir xil model koordinata tizimini tashkil qiladi.",
+      "2. O‘qlar bino elementlarini izchil joylashtirish uchun referensdir; nomlar va joylashuv loyiha bo‘yicha belgilanadi.",
+      "3. O‘ngdagi kesimda birinchi qavat uchun ±0.000 sath shartli boshlanish sifatida ko‘rsatilgan; tom sathi loyihaga ko‘ra tekshiriladi.",
+      "Darsdagi bajarish: qavat sathlari va o‘qlarni sozlab, model boshlanish nuqtasini qayd qiling."
     ],
     "exercise": "Qavat, o‘q va birlikni tekshirib, boshlang‘ich view yarating.",
     "solution": "Model setup barcha elementlar uchun umumiy koordinata asosini beradi.",
     "block": 5,
     "recipe": "grid",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv diagrammasi. Tasvirdagi qavatlar, o‘qlar, devor/plita/ustun shakllari hisoblangan konstruktiv loyiha emas. Loyiha koordinatalari, o‘lcham va me’yorlar mutaxassis tomonidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga oid BIM model elementlari va eskiz reja",
     "source_url": null
   },
   {
     "code": "L10_M06_003",
-    "asset": "l10_m06_003.svg",
-    "title": "Wall, slab, column va openings — arxitekturaviy eskiz",
+    "asset": "sketch-l10_m06_003.jpg",
+    "title": "Devor, plita, ustun va ochilishlar — arxitekturaviy eskiz",
     "explanation": [
-      "Tasdiqlangan eskizdan qavat, o‘q, devor, slab va ochilishlar bilan BIM asosini yaratamiz.",
-      "Asosiy devor va slabdan keyin ustun/ochilishlarni joylang → bosqichli model.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi uy planida devor, plita, ustun va ochilish elementlari joylashuvi belgilangan.",
+      "2. O‘ngdagi ajratilgan modelda yuqori plita, devorlar, ustunlar va ochilishlar alohida ko‘rsatiladi; ular faqat 2D chiziqlar bo‘lmasligi kerak.",
+      "3. Eshik va derazalarni faqat plan ko‘rinishida emas, fasad va 3D modelda ham tekshiring. Dublikat devor yoki noto‘g‘ri kesishuv bo‘lmasin.",
+      "Darsdagi bajarish: to‘rtta element toifasini ketma-ket yarating va 2D/3D mosligini tekshiring."
     ],
     "exercise": "Devor, slab, ustun va ochilishlarni ketma-ket yarating.",
     "solution": "Asosiy elementlar mustaqil emas, o‘zaro muvofiq model bo‘laklaridir.",
     "block": 5,
     "recipe": "mini-model",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Konseptual o‘quv diagrammasi. Tasvirdagi qavatlar, o‘qlar, devor/plita/ustun shakllari hisoblangan konstruktiv loyiha emas. Loyiha koordinatalari, o‘lcham va me’yorlar mutaxassis tomonidan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga oid BIM model elementlari va eskiz reja",
     "source_url": null
   },
   {
