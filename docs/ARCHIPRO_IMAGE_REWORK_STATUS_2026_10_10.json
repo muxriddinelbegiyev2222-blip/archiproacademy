@@ -1,0 +1,14 @@
+{
+  "source_review": "docs/VISUAL_CANDIDATE_REVIEW_2026_10_08.json",
+  "review_pending_initial": 156,
+  "individually_replaced_on_main": 1,
+  "still_to_replace": 155,
+  "seven_corrupted_images_repaired": 7,
+  "seven_media_registry_recorded": 278,
+  "seven_media_registry_complete": true,
+  "completed_new_codes": [
+    "L10_M03_004"
+  ],
+  "next_batch": "docs/NEXT_10_QUALITY_IMAGE_REWORK.json",
+  "note": "Full GUI and Windows release regression tests have not yet been verified after JPEG changes; previous 8 October review preserved as historical baseline."
+}

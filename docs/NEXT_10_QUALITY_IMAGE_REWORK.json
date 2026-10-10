@@ -2,7 +2,7 @@
   "source": "docs/VISUAL_CANDIDATE_REVIEW_2026_10_08.json",
   "reviewed_source_commit": "ec7db30e096c65d95917e84082fbd22547914adf",
   "created_for": "Next 10 queued topic-specific architectural image replacements",
-  "status": "queued_not_generated_or_integrated",
+  "status": "in_progress_1_installed_9_pending",
   "max_bytes": 400000,
   "format": "JPEG",
   "visual_style": "professional architectural pencil and thin-ink sketch, restrained watercolor washes, warm ivory paper, detailed realistic Uzbek house plan with doors/windows/furniture; no generic vector diagrams or fabricated UI",
@@ -13,7 +13,14 @@
       "current_asset": "app/courses/visual_assets/l10_m03_004.svg",
       "target_asset": "app/courses/visual_assets/sketch-l10_m03_004.jpg",
       "art_direction": "Bir xil uchastka uchun ikki uy funksional zonalash varianti: A kirishdan umumiy yashash zonasiga qisqa yo‘l; B hovliga ochilgan mehmonxona. Haqiqiy devor, deraza, mebel va yurish chiziqlari; ikki variantning murosalari alohida ko‘rsatiladi.",
-      "status": "pending_image_generation_and_visual_review"
+      "status": "installed_in_main",
+      "final_asset": "app/courses/visual_assets/sketch-l10_m03_004.jpg",
+      "image_bytes": 398150,
+      "width": 1536,
+      "height": 1024,
+      "image_sha256": "07d0c95f3aa8b50f5244b30d298587f15294f44456878cd042d79a3583f502d9",
+      "image_git_blob": "4ecc49edb654183ff14c13878dad527b96cbedf8",
+      "technical_status": "image and mapping installed; full application audit pending"
     },
     {
       "code": "L10_M03_005",
@@ -87,5 +94,6 @@
       "art_direction": "Yotoqxona eshigi va sanuzel kirishi to‘qnashuvi, oshxona-mehmonxona oqimi konfliktlari ko‘rsatilgan real uy plani, yonida mavzuga mos hal qilingan variant.",
       "status": "pending_image_generation_and_visual_review"
     }
-  ]
+  ],
+  "installed_count": 1
 }
