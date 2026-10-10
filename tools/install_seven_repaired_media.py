@@ -64,6 +64,7 @@ def install(package):
     inventory_paths = [
         ROOT / "docs/REALISTIC_LESSON_COVERAGE.csv",
         ROOT / "docs/VISUAL_LESSON_COVERAGE.csv",
+        ROOT / "docs/ALL_LESSON_SKETCH_COVERAGE.csv",
     ]
     candidates = (
         list((ROOT / "app").rglob("*.py"))
