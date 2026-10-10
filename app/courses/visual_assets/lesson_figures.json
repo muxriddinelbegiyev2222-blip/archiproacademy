@@ -5378,7 +5378,7 @@
   },
   {
     "code": "L10_M05_004",
-    "asset": "l10_m05_004.svg",
+    "asset": "sketch-l10_m05_004.jpg",
     "title": "Konstruktiv va MEP mantiq — arxitekturaviy eskiz",
     "explanation": [
       "1. Rejada konstruktiv devor va katta ochilishlar, oshxona va sanuzelning nam zonalari hamda muhandislik kommunikatsiyalari bir-biriga mos kelishini tekshiring.",
@@ -5390,13 +5390,13 @@
     "solution": "Plan yaxshilanishi konstruktiv va MEP muvofiqlikni saqlashi kerak.",
     "block": 5,
     "recipe": "stack",
-    "boundary": "Konseptual o‘quv eskizi: undagi o‘lcham, tayanch, kanal va yo‘nalishlar hisoblangan konstruktiv yoki muhandislik yechimi sifatida qabul qilinmaydi. Aniqlik amaldagi talablar va mutaxassis tekshiruvi bilan tasdiqlanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Mavzuga oid o‘quv uchun konseptual eskiz va diagramma. Ushbu tasvirdagi tayanchlar va kommunikatsiya yo‘nalishlari texnik hisoblangan loyiha emas; me’yoriy talablarga moslik konstruktor va muhandis bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos o‘quv arxitektura rejasi va texnik diagramma",
     "source_url": null
   },
   {
     "code": "L10_M05_005",
-    "asset": "l10_m05_005.svg",
+    "asset": "sketch-l10_m05_005.jpg",
     "title": "Final plan audit — arxitekturaviy eskiz",
     "explanation": [
       "1. Yakuniy reja faqat chiroyli ko‘rinishi bilan baholanmaydi: brief, zonalash, mebel, harakatlanish, eshiklar, privacy, deraza va hovli aloqasi tekshiriladi.",
@@ -5408,8 +5408,8 @@
     "solution": "Final plan audit o‘zgarishning foydasi va yo‘qotishini dalillaydi.",
     "block": 5,
     "recipe": "audit",
-    "boundary": "Konseptual o‘quv eskizi: undagi o‘lcham, tayanch, kanal va yo‘nalishlar hisoblangan konstruktiv yoki muhandislik yechimi sifatida qabul qilinmaydi. Aniqlik amaldagi talablar va mutaxassis tekshiruvi bilan tasdiqlanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Mavzuga oid o‘quv uchun konseptual eskiz va diagramma. Ushbu tasvirdagi tayanchlar va kommunikatsiya yo‘nalishlari texnik hisoblangan loyiha emas; me’yoriy talablarga moslik konstruktor va muhandis bilan tekshiriladi.",
+    "credit": "ARCHIPRO UZ — mavzuga mos o‘quv arxitektura rejasi va texnik diagramma",
     "source_url": null
   },
   {

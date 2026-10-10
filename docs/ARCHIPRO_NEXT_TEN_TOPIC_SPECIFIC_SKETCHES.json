@@ -2,8 +2,8 @@
   "reference": "docs/VISUAL_CANDIDATE_REVIEW_2026_10_08.json",
   "date": "2026-10-10",
   "batch_size": 10,
-  "installed_count": 0,
-  "status": "planned_only_not_generated_or_uploaded",
+  "installed_count": 2,
+  "status": "partially_integrated",
   "requirements": {
     "images_per_lesson": 1,
     "resolution": "1536x1024",
@@ -26,7 +26,13 @@
       "old_asset": "app/courses/visual_assets/l10_m05_004.svg",
       "target_asset": "app/courses/visual_assets/sketch-l10_m05_004.jpg",
       "art_direction": "Chindan bir qavatli uy uchun bitta katta aksonometriya va shu uyga mos plan: tashqi tayanch devorlar va ochilishlar qoramtir; suv/oqova ko‘k; elektr sariq; shamollatish qizil yo‘nalishlarda alohida belgilanadi. Yo‘llar konstruktiv devor va tayanchlarga hech qanday hisoblangan yechim sifatida uzatilmasin; ikkita konflikt nuqtasi va muhandis bilan tekshiriladigan savol alohida ajratilsin.",
-      "status": "awaiting_individual_high_resolution_illustration"
+      "status": "installed_in_main_static_integrity_pending",
+      "final_asset": "app/courses/visual_assets/sketch-l10_m05_004.jpg",
+      "image_bytes": 225079,
+      "image_git_sha": "899d7776d9f2b33d526efcea1dd1f13237431ce0",
+      "sha256": "485a8be9e1858dd13ba777911a4b354f0a81fc7bf0d2284e63cb4376d217a006",
+      "width": 1536,
+      "height": 1024
     },
     {
       "code": "L10_M05_005",
@@ -34,7 +40,13 @@
       "old_asset": "app/courses/visual_assets/l10_m05_005.svg",
       "target_asset": "app/courses/visual_assets/sketch-l10_m05_005.jpg",
       "art_direction": "Bir xil mebelli uy rejasining diagnostika nusxasi va tuzatilgan nusxasi yonma-yon. Eshik ochilish yoylari, harakat yo‘li, hovli aloqasi, konstruktsiya va MEP joyi bo‘yicha aniqlangan uch muammo → qayta tekshiruv jadvali. Tasdiqlanmagan bandlarga yashil belgi qo‘yilmasin.",
-      "status": "awaiting_individual_high_resolution_illustration"
+      "status": "installed_in_main_static_integrity_pending",
+      "final_asset": "app/courses/visual_assets/sketch-l10_m05_005.jpg",
+      "image_bytes": 231999,
+      "image_git_sha": "84f753ba65af119373465d91329aa92fef09be85",
+      "sha256": "151255645e44c2a88a5825a9a14709a340e0ad6aaa2c13ea7459d47579b0d787",
+      "width": 1536,
+      "height": 1024
     },
     {
       "code": "L10_M06_002",

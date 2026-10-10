@@ -1,8 +1,8 @@
 {
   "source_review": "docs/VISUAL_CANDIDATE_REVIEW_2026_10_08.json",
   "review_pending_initial": 156,
-  "individually_replaced_on_main": 10,
-  "still_to_replace": 146,
+  "individually_replaced_on_main": 12,
+  "still_to_replace": 144,
   "seven_corrupted_images_repaired": 7,
   "seven_media_registry_recorded": 278,
   "seven_media_registry_complete": true,
@@ -16,12 +16,14 @@
     "L10_M04_005",
     "L10_M05_001",
     "L10_M05_002",
-    "L10_M05_003"
+    "L10_M05_003",
+    "L10_M05_004",
+    "L10_M05_005"
   ],
   "next_batch": "docs/ARCHIPRO_NEXT_TEN_TOPIC_SPECIFIC_SKETCHES.json",
-  "note": "Last 2 candidate images rejected as off-topic and NOT integrated. Replacement count remains 10 of 156, 146 pending. 3 inventories, image explanations and instructional content improved. Static Git tree reports 334 JPEG files all <=400 KB, 680 lesson records and zero missing nonempty assets. Full GUI/Windows regression and newly added static Python verifier await a successful CI run.",
+  "note": "12/156 original low-quality sketch assets replaced; remaining 144. Two latest topic-specific technical diagrams integrated and inventories synced. New static image integrity script in CI, CI Windows workflow failing before step logs; final production QA pending.",
   "last_verified_main_commit": "f7904804ecdaa2616d80a71c59f1bfb2b18e1c9b",
-  "next_lesson_to_replace": "L10_M05_004",
+  "next_lesson_to_replace": "L10_M06_002",
   "static_integrity_audit": {
     "reviewed_course_count": 680,
     "course_coverage_unique_ids": 680,
@@ -50,24 +52,22 @@
   },
   "last_integrated_batch": {
     "codes": [
-      "L10_M04_001",
-      "L10_M04_002",
-      "L10_M04_003",
-      "L10_M04_004",
-      "L10_M04_005",
-      "L10_M05_001",
-      "L10_M05_002",
-      "L10_M05_003"
+      "L10_M05_004",
+      "L10_M05_005"
     ],
-    "count": 8,
-    "max_jpeg_bytes": 400000,
+    "count": 2,
     "dimensions": [
       1536,
       1024
     ],
+    "jpeg_sizes": [
+      225079,
+      231999
+    ],
     "runtime_visual_json_updated": true,
     "auxiliary_csv_inventory_updated": true,
-    "gui_verified": false
+    "gui_verified": false,
+    "comment": "Educational technical drawings; SHNQ and full runtime not verified."
   },
   "inventory_reconciliation": {
     "completed_for": [
