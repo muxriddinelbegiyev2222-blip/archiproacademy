@@ -11,5 +11,33 @@
     "L10_M03_005"
   ],
   "next_batch": "docs/NEXT_10_QUALITY_IMAGE_REWORK.json",
-  "note": "Full GUI and Windows release regression tests have not yet been verified after JPEG changes; previous 8 October review preserved as historical baseline."
+  "note": "Full GUI and Windows release regression tests have not yet been verified after JPEG changes; previous 8 October review preserved as historical baseline.",
+  "last_verified_main_commit": "f7904804ecdaa2616d80a71c59f1bfb2b18e1c9b",
+  "next_lesson_to_replace": "L10_M04_001",
+  "static_integrity_audit": {
+    "reviewed_course_count": 680,
+    "course_coverage_unique_ids": 680,
+    "visual_coverage_referenced_assets": 856,
+    "visual_coverage_missing_referenced_assets": 0,
+    "sketch_coverage_referenced_assets": 680,
+    "sketch_coverage_missing_referenced_assets": 0,
+    "compact_media_record_count": 278,
+    "compact_media_missing_in_git_tree": 0,
+    "compact_media_bytes_mismatch": 0,
+    "compact_media_over_400000_bytes": 0,
+    "known_damaged_svg_remaining": 0,
+    "replacement_coverage_csv_old_svg_references_fixed": {
+      "realistic": 98,
+      "visual": 98,
+      "all_sketch": 102
+    }
+  },
+  "github_actions": {
+    "most_recent_checked_run_id": 38064846640,
+    "head_sha": "c83f3f72bc01195e84156286fcd155805af13dff",
+    "audit_job_conclusion": "failure",
+    "job_steps_reported": 0,
+    "cause": "not confirmed (no audit steps or job logs available)",
+    "full_runtime_qa_verified": false
+  }
 }
