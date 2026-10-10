@@ -59,7 +59,18 @@ def install(package):
             plan.append((record, by_stem[code], source, dest, data))
 
     changes = {}
-    for path in list((ROOT / "app").rglob("*.py")) + list(ASSETS.glob("*.json")):
+    # Keep both runtime mappings and human-reviewed 680-lesson inventories
+    # synchronized. Audit history itself must retain the old source names.
+    inventory_paths = [
+        ROOT / "docs/REALISTIC_LESSON_COVERAGE.csv",
+        ROOT / "docs/VISUAL_LESSON_COVERAGE.csv",
+    ]
+    candidates = (
+        list((ROOT / "app").rglob("*.py"))
+        + list((ROOT / "app").rglob("*.json"))
+        + [p for p in inventory_paths if p.is_file()]
+    )
+    for path in candidates:
         text = path.read_text(encoding="utf-8")
         changed = text
         for record, blocked, source, dest, data in plan:
