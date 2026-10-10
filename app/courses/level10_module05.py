@@ -30,16 +30,20 @@ LEVEL10_MODULE05_CONTENT = {
         {"title": "Mini-amaliyot", "type": "example", "text": "Plan bo'yicha 10 ta conflict-check bajaring."},
     ],
     "L10_M05_004": [
-        {"title": "Plan faqat arxitektura emas", "type": "highlight", "text": "Konstruksiya va MEP talablarini erta hisobga olish keyingi qayta ishlashni kamaytiradi."},
-        {"title": "Wet zones", "type": "normal", "text": "Sanuzel, oshxona va texnik zonalarning muhandislik aloqasi ko'riladi."},
-        {"title": "Tayanch mantiqi", "type": "normal", "text": "Devor, ustun va katta ochilishlar konstruktiv tizim bilan koordinatsiya qilinadi."},
-        {"title": "Xato", "type": "warning", "text": "Arxitektura planini konstruktor va MEPga umuman joy qoldirmasdan yakunlamang."},
+        {"title": "Bir qavatli uy misolida 3 qatlam", "type": "highlight", "text": "Bir xil reja ustida uch narsani alohida tekshiring: 1) tashqi va ichki tayanch tizimi; 2) suv va kanalizatsiya yo‘nalishlari; 3) elektr hamda shamollatish uchun zarur joylar. Bu qatlamlar bir-biriga xalaqit bermasligi kerak."},
+        {"title": "Tayanch va katta ochilishlar", "type": "normal", "text": "Tashqi devor, ustun va katta deraza yoki eshik ochilishini rejada belgilang. Yuk qayerdan qayerga uzatilishi konstruktiv loyihada tekshiriladi. Katta ochilishni faqat fasad chiroyli ko‘rinsin deb tayanch sxemasidan mustaqil o‘zgartirmang."},
+        {"title": "Oshxona va sanuzelning muhandislik aloqasi", "type": "normal", "text": "Oshxona, sanuzel va texnik xonani rejada toping. Suv kirishi, oqova chiqishi, quvurlarni olib borish va xizmat ko‘rsatish joyini muhokama qiling. Yaqin joylashuv qulay bo‘lishi mumkin, lekin aniq quvur yo‘li, nishab va quvvat muhandis tomonidan hisoblanadi."},
+        {"title": "To‘qnashuv misoli", "type": "warning", "text": "Shamollatish kanali yirik to‘sin orqali o‘tishi yoki elektr jihozi xizmat ko‘rsatib bo‘lmaydigan burchakda qolishi mumkin. Buni rejaning dastlabki bosqichida aniqlash keyingi qimmat qayta ishlashdan saqlaydi."},
+        {"title": "Mini-amaliyot: uch rang bilan tekshiring", "type": "example", "text": "O‘zingizning eskiz rejangiz nusxasida tayanchlarni qora, suv va kanalizatsiya ehtimoliy yo‘nalishlarini ko‘k, elektr va shamollatish uchun ajratilgan zonalarni to‘q sariq bilan ko‘rsating. Kamida ikkita ehtimoliy to‘qnashuvni aniqlang va 'tekshirish kerak' deb yozing."},
+        {"title": "Muhim chegara", "type": "normal", "text": "Bu dars konstruktiv yoki muhandislik hisobining o‘rnini bosmaydi. O‘lcham, tayanch, quvur nishabi va xavfsizlik talablarini amaldagi me'yorlar hamda tegishli mutaxassis hisobiga tayangan holda tasdiqlash kerak."},
     ],
     "L10_M05_005": [
-        {"title": "Final plan audit", "type": "highlight", "text": "Brief → zonalash → xonalar → mebel → circulation → privacy → konstruktsiya → MEP → site → final plan."},
-        {"title": "Professional checklist", "type": "example", "text": "1. Briefga javob beradimi?<br><br>2. Dead space kamayganmi?<br><br>3. Mebel ishlaydimi?<br><br>4. Eshiklar konflikt qilmayaptimi?<br><br>5. Privacy saqlanganmi?<br><br>6. Wet zones mantiqiymi?<br><br>7. Konstruktiv sxema mumkinmi?<br><br>8. Site bilan aloqa saqlanganmi?<br><br>9. Fasadga asos bor-mi?"},
-        {"title": "Freeze point", "type": "normal", "text": "Plan yetarlicha audit qilingach keyingi BIM model bosqichiga o'tiladi."},
-        {"title": "Keyingi modul", "type": "highlight", "text": "Keyingi bosqich: ARCHICAD MODELI."},
+        {"title": "Yakuniy reja tekshiruvi", "type": "highlight", "text": "Dastlabki eskizni tasdiqlashdan oldin uni texnik topshiriq bilan qayta solishtiring. Chiroyli ko‘rinishning o‘zi yetarli emas: reja ishlashi, xonalar, harakat yo‘li va texnik imkoniyat dalil bilan tekshiriladi."},
+        {"title": "To‘qqiz yo‘nalishdagi tekshiruv", "type": "example", "text": "1. Xonalar topshiriqqa mosmi?<br><br>2. Jamoat va shaxsiy zonalar ajratilganmi?<br><br>3. Mebel haqiqatan sig‘adimi?<br><br>4. Eshiklar ochilganda to‘qnashuv yo‘qmi?<br><br>5. Keraksiz uzun yo‘lak qolmaganmi?<br><br>6. Deraza, hovli va kirish o‘zaro mosmi?<br><br>7. Oshxona va sanuzelning muhandislik aloqasi ko‘rib chiqilganmi?<br><br>8. Tayanch va katta ochilishlar mutaxassis bilan kelishilishi belgilanganmi?<br><br>9. Xatolar va yechilmagan savollar ro‘yxati yozilganmi?"},
+        {"title": "Audit jadvali: muammo → dalil → yechim", "type": "normal", "text": "Masalan: 'Yotoqxona eshigi shkafga tegadi' — buni eshik ochilish yoyi va mebel konturi bilan ko‘rsating. Eshik yoki shkaf joyini o‘zgartiring; keyin bir xil rejada qayta tekshiring. Har bir tuzatishga mas'ul va holat yozing."},
+        {"title": "Mini-amaliyot: rejaning ikki nusxasi", "type": "example", "text": "A nusxada kamida uchta muammoni rang bilan belgilang. B nusxada aniq tuzatishlarni ko‘rsating. O‘zgarishdan keyin xona, eshik va yurish yo‘li bir-biriga mos qolganini qayta tekshiring."},
+        {"title": "Yakuniy qaror", "type": "warning", "text": "Reja bo‘yicha ochiq savollar qolsa, uni 'to‘liq tasdiqlangan loyiha' deb belgilamang. Eskizni BIM modelga o‘tkazish mumkin bo‘lsa ham, qurilish me'yorlari, konstruksiya va muhandislik yechimlari keyingi mutaxassis tekshiruvini talab etadi."},
+        {"title": "Keyingi bosqich", "type": "highlight", "text": "Tekshirilgan va tuzatilgan reja asosida Archicad modelini qurishni boshlang. Modellash davomida aniqlangan yangi konfliktlarni ham audit ro‘yxatiga qaytaring."},
     ],
 }
 
