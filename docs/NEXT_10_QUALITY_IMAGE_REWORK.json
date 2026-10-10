@@ -1,0 +1,91 @@
+{
+  "source": "docs/VISUAL_CANDIDATE_REVIEW_2026_10_08.json",
+  "reviewed_source_commit": "ec7db30e096c65d95917e84082fbd22547914adf",
+  "created_for": "Next 10 queued topic-specific architectural image replacements",
+  "status": "queued_not_generated_or_integrated",
+  "max_bytes": 400000,
+  "format": "JPEG",
+  "visual_style": "professional architectural pencil and thin-ink sketch, restrained watercolor washes, warm ivory paper, detailed realistic Uzbek house plan with doors/windows/furniture; no generic vector diagrams or fabricated UI",
+  "records": [
+    {
+      "code": "L10_M03_004",
+      "title": "Variantlar yaratish",
+      "current_asset": "app/courses/visual_assets/l10_m03_004.svg",
+      "target_asset": "app/courses/visual_assets/sketch-l10_m03_004.jpg",
+      "art_direction": "Bir xil uchastka uchun ikki uy funksional zonalash varianti: A kirishdan umumiy yashash zonasiga qisqa yo‘l; B hovliga ochilgan mehmonxona. Haqiqiy devor, deraza, mebel va yurish chiziqlari; ikki variantning murosalari alohida ko‘rsatiladi.",
+      "status": "pending_image_generation_and_visual_review"
+    },
+    {
+      "code": "L10_M03_005",
+      "title": "Bubble Diagram professional audit",
+      "current_asset": "app/courses/visual_assets/l10_m03_005.svg",
+      "target_asset": "app/courses/visual_assets/sketch-l10_m03_005.jpg",
+      "art_direction": "Bubble diagramdan oldingi va keyingi tekshiruv: mehmon, oshxona, ota-ona va bolalar xonalari uchun munosabatlar, yo‘laklar, keraksiz kesishishlarni sinab ko‘rilgan bir qavatli uy kontsepti. Professional tekshirish qaydlari.",
+      "status": "pending_image_generation_and_visual_review"
+    },
+    {
+      "code": "L10_M04_001",
+      "title": "Bubble'dan planga o'tish",
+      "current_asset": "app/courses/visual_assets/l10_m04_001.svg",
+      "target_asset": "app/courses/visual_assets/sketch-l10_m04_001.jpg",
+      "art_direction": "Chapda funksional pufaklar diagrammasi, o‘ngda shu makonlarning haqiqiy bir qavatli uy eskiz-planiga aylangan holati; tashqi va ichki devor, ochilish va mebel mantiqan mos.",
+      "status": "pending_image_generation_and_visual_review"
+    },
+    {
+      "code": "L10_M04_002",
+      "title": "Xona proporsiyasi va mebel",
+      "current_asset": "app/courses/visual_assets/l10_m04_002.svg",
+      "target_asset": "app/courses/visual_assets/sketch-l10_m04_002.jpg",
+      "art_direction": "Yotoqxona, mehmonxona, oshxona jihozlari bilan to‘ldirilgan bir qavatli uy plani. Tor xona va mebel sig‘adigan proporsiya yonma-yon taqqoslanadi; o‘lchamlar normativ sifatida berilmasin.",
+      "status": "pending_image_generation_and_visual_review"
+    },
+    {
+      "code": "L10_M04_003",
+      "title": "Devor, eshik va circulation",
+      "current_asset": "app/courses/visual_assets/l10_m04_003.svg",
+      "target_asset": "app/courses/visual_assets/sketch-l10_m04_003.jpg",
+      "art_direction": "Uyga kirishdan oshxona va mehmonxonagacha davomli yo‘l, eshiklar ochilish yoylari va qisqa koridor. Noto‘g‘ri eshik-yurish konflikti va tuzatilgan reja yonma-yon.",
+      "status": "pending_image_generation_and_visual_review"
+    },
+    {
+      "code": "L10_M04_004",
+      "title": "Fasad va hovli bilan aloqa",
+      "current_asset": "app/courses/visual_assets/l10_m04_004.svg",
+      "target_asset": "app/courses/visual_assets/sketch-l10_m04_004.jpg",
+      "art_direction": "Bir xil uy plani va unga bog‘langan hovli/fasad eskizi: oshxona hovli tomonga, mehmonxona yorug‘likka, deraza va eshiklar plan-fasad muvofiqligi ko‘rsatiladi.",
+      "status": "pending_image_generation_and_visual_review"
+    },
+    {
+      "code": "L10_M04_005",
+      "title": "Eskiz plan professional audit",
+      "current_asset": "app/courses/visual_assets/l10_m04_005.svg",
+      "target_asset": "app/courses/visual_assets/sketch-l10_m04_005.jpg",
+      "art_direction": "Eskiz plan diagnostikasi: devor, deraza, ochiladigan eshik, mebel, yurish, uchastka kirishi va xonalar funksiyasi belgilangan batafsil bir qavatli uy; noaniq chizma xatolari va tekshirish yechimi.",
+      "status": "pending_image_generation_and_visual_review"
+    },
+    {
+      "code": "L10_M05_001",
+      "title": "Plan optimizatsiyasi tushunchasi",
+      "current_asset": "app/courses/visual_assets/l10_m05_001.svg",
+      "target_asset": "app/courses/visual_assets/sketch-l10_m05_001.jpg",
+      "art_direction": "Bir xil uy uchun oldingi va keyingi optimallashtirilgan plan: ortiqcha yo‘lak qisqaradi, xonalarning foydalanish sathi oshadi, barcha eshiklar erkin ochiladi. Haqiqiy mebel asosida tekshirish.",
+      "status": "pending_image_generation_and_visual_review"
+    },
+    {
+      "code": "L10_M05_002",
+      "title": "Foydali va yo'qotilgan maydon",
+      "current_asset": "app/courses/visual_assets/l10_m05_002.svg",
+      "target_asset": "app/courses/visual_assets/sketch-l10_m05_002.jpg",
+      "art_direction": "Uy eskiz planida mebelli xonalar konturlari: chapda ko‘p bo‘laklangan yo‘lak va yaroqsiz burchaklar, o‘ngda yaxshilangan funksional nisbatlar. Sun’iy foiz ko‘rsatmaslik.",
+      "status": "pending_image_generation_and_visual_review"
+    },
+    {
+      "code": "L10_M05_003",
+      "title": "Xonalararo konfliktlarni yechish",
+      "current_asset": "app/courses/visual_assets/l10_m05_003.svg",
+      "target_asset": "app/courses/visual_assets/sketch-l10_m05_003.jpg",
+      "art_direction": "Yotoqxona eshigi va sanuzel kirishi to‘qnashuvi, oshxona-mehmonxona oqimi konfliktlari ko‘rsatilgan real uy plani, yonida mavzuga mos hal qilingan variant.",
+      "status": "pending_image_generation_and_visual_review"
+    }
+  ]
+}
