@@ -1,8 +1,8 @@
 {
   "source_review": "docs/VISUAL_CANDIDATE_REVIEW_2026_10_08.json",
   "review_pending_initial": 156,
-  "individually_replaced_on_main": 14,
-  "still_to_replace": 142,
+  "individually_replaced_on_main": 21,
+  "still_to_replace": 135,
   "seven_corrupted_images_repaired": 7,
   "seven_media_registry_recorded": 278,
   "seven_media_registry_complete": true,
@@ -20,12 +20,19 @@
     "L10_M05_004",
     "L10_M05_005",
     "L10_M06_002",
-    "L10_M06_003"
+    "L10_M06_003",
+    "L10_M06_004",
+    "L10_M06_005",
+    "L10_M07_001",
+    "L10_M07_002",
+    "L10_M07_003",
+    "L10_M07_004",
+    "L10_M07_005"
   ],
   "next_batch": "docs/ARCHIPRO_NEXT_TEN_TOPIC_SPECIFIC_SKETCHES.json",
-  "note": "14/156 low-quality sketches replaced; 142 remain. JPEG files linked and three inventories synchronized; executable GUI/Windows build not yet verified.",
+  "note": "21/156 topic-specific quality reworks installed. 135 remain. Seven latest JPEGs 1536x1024 <=400000 bytes. Roof lesson L10_M08_001/002/003 images not yet correctly generated. Windows GUI regression not yet confirmed.",
   "last_verified_main_commit": "f7904804ecdaa2616d80a71c59f1bfb2b18e1c9b",
-  "next_lesson_to_replace": "L10_M06_004",
+  "next_lesson_to_replace": "L10_M08_001",
   "static_integrity_audit": {
     "reviewed_course_count": 680,
     "course_coverage_unique_ids": 680,
@@ -54,22 +61,24 @@
   },
   "last_integrated_batch": {
     "codes": [
-      "L10_M06_002",
-      "L10_M06_003"
+      "L10_M06_004",
+      "L10_M06_005",
+      "L10_M07_001",
+      "L10_M07_002",
+      "L10_M07_003",
+      "L10_M07_004",
+      "L10_M07_005"
     ],
-    "count": 2,
+    "count": 7,
+    "max_jpeg_bytes": 400000,
     "dimensions": [
       1536,
       1024
     ],
-    "jpeg_sizes": [
-      226376,
-      202161
-    ],
     "runtime_visual_json_updated": true,
     "auxiliary_csv_inventory_updated": true,
     "gui_verified": false,
-    "comment": "Next two topic-specific BIM learning diagrams, with lesson-specific explanatory steps."
+    "notes": "Seven topic-matched individual illustrations installed in one atomic Git commit; three generated courtyard/circulation drafts for L10_M08_001/002/003 deliberately rejected as off-topic for roof lessons."
   },
   "inventory_reconciliation": {
     "completed_for": [

@@ -5467,121 +5467,128 @@
   },
   {
     "code": "L10_M06_004",
-    "asset": "l10_m06_004.svg",
+    "asset": "sketch-l10_m06_004.jpg",
     "title": "Model koordinatsiyasi — arxitekturaviy eskiz",
     "explanation": [
-      "Tasdiqlangan eskizdan qavat, o‘q, devor, slab va ochilishlar bilan BIM asosini yaratamiz.",
-      "Plan va kesimda tayanch, ochilish va sathni solishtiring → koordinatsiya.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi qavat plani, o‘rtadagi kesim va o‘ngdagi aksonometriya bitta uy modelining uch xil ko‘rinishini ko‘rsatadi.",
+      "2. A–C o‘qlarini, deraza va devorlarning joyini ko‘rinishlar orasida solishtiring. Faqat 3Dda chiroyli ko‘ringan element plan va kesimda ham mantiqan bir xil bo‘lishi kerak.",
+      "3. Pastdagi xato namunalari planda va 3D modelda deraza, devor yoki eshik joyining siljib ketishini tushuntiradi.",
+      "Mini-amaliyot: o‘z modelingizda bitta deraza, bitta eshik va bitta tashqi devorni plan, kesim va 3Dda belgilang va mosligini tekshiring."
     ],
     "exercise": "Plan-kesim-3D orqali ochilish va sath konfliktini toping.",
     "solution": "Model koordinatsiyasi bir nechta ko‘rinish bilan tekshiriladi.",
     "block": 5,
     "recipe": "frame",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "O‘quv maqsadidagi konseptual arxitekturaviy eskiz. Chizmada ko‘rsatilgan mebel, element va sathlar normativ yoki hisoblangan konstruktiv loyiha emas; haqiqiy loyiha qarorlari mustaqil tekshiriladi.",
+    "credit": "ARCHIPRO UZ — dars mavzusiga mos yangi arxitekturaviy tushuntiruvchi eskiz",
     "source_url": null
   },
   {
     "code": "L10_M06_005",
-    "asset": "l10_m06_005.svg",
+    "asset": "sketch-l10_m06_005.jpg",
     "title": "Archicad modeli professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Tasdiqlangan eskizdan qavat, o‘q, devor, slab va ochilishlar bilan BIM asosini yaratamiz.",
-      "Modelni brief, xona jadvali va o‘lcham bilan tekshiring → eskizga mos natija.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Model auditida qavat plani, qavat sathi/ko‘rsatkichlari va 3D geometriyani bir-biridan ajratmay, bitta tizim sifatida tekshiring.",
+      "2. Belgilangan muammolar — noto‘g‘ri qavatga biriktirilgan element, yo‘qolgan deraza yoki eshik ochilishi va boshqa element bilan kesishish.",
+      "3. Xatolikni ko‘rishning o‘zi yetmaydi: qaysi elementni qayta bog‘lash yoki joylashtirish kerakligini qayd eting.",
+      "Mini-amaliyot: loyihangizni uch ko‘rinishda ochib, har biridan bittadan konkret tekshiruv dalilini yozing. Bu konseptual aksonometriya, haqiqiy Archicad interfeysi skrinshoti emas."
     ],
     "exercise": "Model, nazorat viewlari va tuzatilgan konfliktlarni topshiring.",
     "solution": "Model audit bajarilgan geometriya va qolgan savollarni ajratadi.",
     "block": 5,
     "recipe": "audit",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "O‘quv maqsadidagi konseptual arxitekturaviy eskiz. Chizmada ko‘rsatilgan mebel, element va sathlar normativ yoki hisoblangan konstruktiv loyiha emas; haqiqiy loyiha qarorlari mustaqil tekshiriladi.",
+    "credit": "ARCHIPRO UZ — dars mavzusiga mos yangi arxitekturaviy tushuntiruvchi eskiz",
     "source_url": null
   },
   {
     "code": "L10_M07_001",
-    "asset": "l10_m07_001.svg",
+    "asset": "sketch-l10_m07_001.jpg",
     "title": "Fasad konsepsiyasi — arxitekturaviy eskiz",
     "explanation": [
-      "Plan ochilishlari va kirish joyidan fasad konsepsiyasi ishlab chiqiladi.",
-      "Plandagi xonani deraza bilan bog‘lang → funksional ochilish.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Bir xil uy hajmi va deraza joylari saqlangan holda ikkita fasad konsepsiyasi solishtirilgan: sodda zamonaviy va an’anaviyroq aksentli.",
+      "2. Ikkala variantning funksional planini o‘zgartirmasdan kirish soyaboni, material va bezakning umumiy kompozitsiyaga ta’sirini baholang.",
+      "3. Ko‘p bezak ishlatish har doim yaxshiroq degani emas; kirishning o‘qilishi va derazalar ritmi muhim.",
+      "Mini-amaliyot: o‘z uyingizga shu tarzda ikki fasad varianti chizing va uchta farqini dalil bilan yozing."
     ],
     "exercise": "Fasad g‘oyasini plan funksiyasi bilan yozing.",
     "solution": "Konsepsiya tashqi ko‘rinishning funksional asosini tushuntiradi.",
     "block": 5,
     "recipe": "composition",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "O‘quv maqsadidagi konseptual arxitekturaviy eskiz. Chizmada ko‘rsatilgan mebel, element va sathlar normativ yoki hisoblangan konstruktiv loyiha emas; haqiqiy loyiha qarorlari mustaqil tekshiriladi.",
+    "credit": "ARCHIPRO UZ — dars mavzusiga mos yangi arxitekturaviy tushuntiruvchi eskiz",
     "source_url": null
   },
   {
     "code": "L10_M07_002",
-    "asset": "l10_m07_002.svg",
+    "asset": "sketch-l10_m07_002.jpg",
     "title": "Proporsiya va ritm — arxitekturaviy eskiz",
     "explanation": [
-      "Plan ochilishlari va kirish joyidan fasad konsepsiyasi ishlab chiqiladi.",
-      "Deraza markazlari va hajm nisbatini o‘lchang → tekshiriladigan ritm.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapda derazalari notekis ritmga ega, o‘ngda esa o‘qlar va fasad chiziqlari orqali tartibga solingan ikki ko‘rinish solishtiriladi.",
+      "2. Fasaddagi deraza markazlari, balandliklari va asosiy kirishni plandagi xonalar va ochilishlar bilan moslang.",
+      "3. Rasmda ko‘rsatilgan sathlar shartli mashq belgilari; qurilish normasi yoki aniq loyiha qiymati emas.",
+      "Mini-amaliyot: old fasad bo‘yicha 3–4 ta vertikal o‘q chizib, derazalar oralig‘i va podokon chizig‘ini tekshiring."
     ],
     "exercise": "Ochilishlar va asosiy hajmlar ritmini belgilang.",
     "solution": "Proporsiya elementlar o‘rtasidagi nisbat va hierarxiya bilan o‘qiladi.",
     "block": 5,
     "recipe": "composition",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "O‘quv maqsadidagi konseptual arxitekturaviy eskiz. Chizmada ko‘rsatilgan mebel, element va sathlar normativ yoki hisoblangan konstruktiv loyiha emas; haqiqiy loyiha qarorlari mustaqil tekshiriladi.",
+    "credit": "ARCHIPRO UZ — dars mavzusiga mos yangi arxitekturaviy tushuntiruvchi eskiz",
     "source_url": null
   },
   {
     "code": "L10_M07_003",
-    "asset": "l10_m07_003.svg",
+    "asset": "sketch-l10_m07_003.jpg",
     "title": "Ochilishlar va kirish aksenti — arxitekturaviy eskiz",
     "explanation": [
-      "Plan ochilishlari va kirish joyidan fasad konsepsiyasi ishlab chiqiladi.",
-      "Kirishni bitta aksent bilan ajrating → tushunarli kirish.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi uy planida asosiy kirish yo‘li va eshik belgilangan; o‘ngdagi old fasadda shu kirish soyabon va zinapoya orqali ko‘zga tashlanadi.",
+      "2. Kirishni faqat katta dekor bilan emas, tushunarli yondashuv yo‘li, yorug‘lik va materiallarning mosligi orqali ta’kidlang.",
+      "3. Kirish aksenti derazalarning vazifasini yoki foydali yurish yo‘lini to‘smasligi kerak.",
+      "Mini-amaliyot: o‘z rejangizda ko‘cha → yo‘lak → kirish eshigi zanjirini chizing va fasadda shu joyni belgilang."
     ],
     "exercise": "Kirish aksentini eshik va harakat yo‘li bilan tekshiring.",
     "solution": "Kirish belgisi haqiqiy kirishni tushunarli qilishi kerak.",
     "block": 5,
     "recipe": "composition",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "O‘quv maqsadidagi konseptual arxitekturaviy eskiz. Chizmada ko‘rsatilgan mebel, element va sathlar normativ yoki hisoblangan konstruktiv loyiha emas; haqiqiy loyiha qarorlari mustaqil tekshiriladi.",
+    "credit": "ARCHIPRO UZ — dars mavzusiga mos yangi arxitekturaviy tushuntiruvchi eskiz",
     "source_url": null
   },
   {
     "code": "L10_M07_004",
-    "asset": "l10_m07_004.svg",
+    "asset": "sketch-l10_m07_004.jpg",
     "title": "Material va hajm — arxitekturaviy eskiz",
     "explanation": [
-      "Plan ochilishlari va kirish joyidan fasad konsepsiyasi ishlab chiqiladi.",
-      "Materiallarni asosiy, yordamchi va aksent guruhiga bo‘ling → izchil ifoda.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Bir xil uy rejasiga ikki fasad materiallari qo‘llangan: oq suvoq va tosh; yog‘och aksentlar va silliq suvoq.",
+      "2. Material, tom qirrasi, birikma, namlik va suvni chiqarish yo‘llari birgalikda ko‘rib chiqiladi.",
+      "3. Har bir materialning xizmat muddati, parvarishi va montaj shartini haqiqiy loyiha talabidan tekshiring.",
+      "Mini-amaliyot: uyingizning kirish devori, asosiy devori va sokoliga material tanlang; nima sababdan tanlaganingizni yozing."
     ],
     "exercise": "Materiallar qo‘llanish joyi va xizmat shartini yozing.",
     "solution": "Material qarori hajm, detal va foydalanish bilan bog‘lanadi.",
     "block": 5,
     "recipe": "composition",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "O‘quv maqsadidagi konseptual arxitekturaviy eskiz. Chizmada ko‘rsatilgan mebel, element va sathlar normativ yoki hisoblangan konstruktiv loyiha emas; haqiqiy loyiha qarorlari mustaqil tekshiriladi.",
+    "credit": "ARCHIPRO UZ — dars mavzusiga mos yangi arxitekturaviy tushuntiruvchi eskiz",
     "source_url": null
   },
   {
     "code": "L10_M07_005",
-    "asset": "l10_m07_005.svg",
+    "asset": "sketch-l10_m07_005.jpg",
     "title": "Fasad professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Plan ochilishlari va kirish joyidan fasad konsepsiyasi ishlab chiqiladi.",
-      "Plan–fasad–kesimdagi ochilishlarni bir ID orqali solishtiring → mos chizmalar.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapdagi muammoli fasad va o‘ngdagi tuzatilgan variantni solishtiring; deraza balandligi, kirish soyaboni va umumiy ritmni tekshiring.",
+      "2. Har bir xatoga ko‘rinadigan dalil yozing: qaysi deraza chizig‘i noto‘g‘ri, qaysi soyabon kompozitsiyani buzadi, plan bilan ochilish mos keladimi.",
+      "3. Tuzatilgan fasad avtomatik ravishda qurilishga tayyor degani emas: kesim, konstruksiya, suv chiqarish va amaldagi talablar ham tekshiriladi.",
+      "Mini-amaliyot: fasadingiz bo‘yicha 'muammo → chizmadagi dalil → tuzatish → qayta tekshiruv' jadvalini to‘ldiring."
     ],
     "exercise": "Plan-fasad-kesimda ochilishlar mosligini audit qiling.",
     "solution": "Fasad auditi chiroyli tasvir bilan model mosligini birga tekshiradi.",
     "block": 5,
     "recipe": "composition",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "O‘quv maqsadidagi konseptual arxitekturaviy eskiz. Chizmada ko‘rsatilgan mebel, element va sathlar normativ yoki hisoblangan konstruktiv loyiha emas; haqiqiy loyiha qarorlari mustaqil tekshiriladi.",
+    "credit": "ARCHIPRO UZ — dars mavzusiga mos yangi arxitekturaviy tushuntiruvchi eskiz",
     "source_url": null
   },
   {
