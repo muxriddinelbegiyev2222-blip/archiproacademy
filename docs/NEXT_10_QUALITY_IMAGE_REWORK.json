@@ -43,7 +43,13 @@
       "current_asset": "app/courses/visual_assets/l10_m04_001.svg",
       "target_asset": "app/courses/visual_assets/sketch-l10_m04_001.jpg",
       "art_direction": "Chapda funksional pufaklar diagrammasi, o‘ngda shu makonlarning haqiqiy bir qavatli uy eskiz-planiga aylangan holati; tashqi va ichki devor, ochilish va mebel mantiqan mos.",
-      "status": "pending_image_generation_and_visual_review"
+      "status": "installed_in_main",
+      "final_asset": "app/courses/visual_assets/sketch-l10_m04_001.jpg",
+      "image_bytes": 392210,
+      "width": 1536,
+      "height": 1024,
+      "image_git_blob": "9aba8da82b07e9871b2dfbd523e69c5dee23b9be",
+      "technical_status": "JPEG blob integrity checked; GUI runtime audit pending"
     },
     {
       "code": "L10_M04_002",
@@ -51,7 +57,13 @@
       "current_asset": "app/courses/visual_assets/l10_m04_002.svg",
       "target_asset": "app/courses/visual_assets/sketch-l10_m04_002.jpg",
       "art_direction": "Yotoqxona, mehmonxona, oshxona jihozlari bilan to‘ldirilgan bir qavatli uy plani. Tor xona va mebel sig‘adigan proporsiya yonma-yon taqqoslanadi; o‘lchamlar normativ sifatida berilmasin.",
-      "status": "pending_image_generation_and_visual_review"
+      "status": "installed_in_main",
+      "final_asset": "app/courses/visual_assets/sketch-l10_m04_002.jpg",
+      "image_bytes": 393353,
+      "width": 1536,
+      "height": 1024,
+      "image_git_blob": "7f78a816bbb2229227c11318bf2845b71ac16101",
+      "technical_status": "JPEG blob integrity checked; GUI runtime audit pending"
     },
     {
       "code": "L10_M04_003",
@@ -59,7 +71,13 @@
       "current_asset": "app/courses/visual_assets/l10_m04_003.svg",
       "target_asset": "app/courses/visual_assets/sketch-l10_m04_003.jpg",
       "art_direction": "Uyga kirishdan oshxona va mehmonxonagacha davomli yo‘l, eshiklar ochilish yoylari va qisqa koridor. Noto‘g‘ri eshik-yurish konflikti va tuzatilgan reja yonma-yon.",
-      "status": "pending_image_generation_and_visual_review"
+      "status": "installed_in_main",
+      "final_asset": "app/courses/visual_assets/sketch-l10_m04_003.jpg",
+      "image_bytes": 396433,
+      "width": 1536,
+      "height": 1024,
+      "image_git_blob": "71b5231fa75e61f6065ae6f453e6adf2ee03bdd6",
+      "technical_status": "JPEG blob integrity checked; GUI runtime audit pending"
     },
     {
       "code": "L10_M04_004",
@@ -67,7 +85,13 @@
       "current_asset": "app/courses/visual_assets/l10_m04_004.svg",
       "target_asset": "app/courses/visual_assets/sketch-l10_m04_004.jpg",
       "art_direction": "Bir xil uy plani va unga bog‘langan hovli/fasad eskizi: oshxona hovli tomonga, mehmonxona yorug‘likka, deraza va eshiklar plan-fasad muvofiqligi ko‘rsatiladi.",
-      "status": "pending_image_generation_and_visual_review"
+      "status": "installed_in_main",
+      "final_asset": "app/courses/visual_assets/sketch-l10_m04_004.jpg",
+      "image_bytes": 393958,
+      "width": 1536,
+      "height": 1024,
+      "image_git_blob": "390bfd29781a223fc1246dfa7af53504ad539bb1",
+      "technical_status": "JPEG blob integrity checked; GUI runtime audit pending"
     },
     {
       "code": "L10_M04_005",
@@ -75,7 +99,13 @@
       "current_asset": "app/courses/visual_assets/l10_m04_005.svg",
       "target_asset": "app/courses/visual_assets/sketch-l10_m04_005.jpg",
       "art_direction": "Eskiz plan diagnostikasi: devor, deraza, ochiladigan eshik, mebel, yurish, uchastka kirishi va xonalar funksiyasi belgilangan batafsil bir qavatli uy; noaniq chizma xatolari va tekshirish yechimi.",
-      "status": "pending_image_generation_and_visual_review"
+      "status": "installed_in_main",
+      "final_asset": "app/courses/visual_assets/sketch-l10_m04_005.jpg",
+      "image_bytes": 392397,
+      "width": 1536,
+      "height": 1024,
+      "image_git_blob": "12985db630b0abca91302e1c4ef95a8acb8ad528",
+      "technical_status": "JPEG blob integrity checked; GUI runtime audit pending"
     },
     {
       "code": "L10_M05_001",
@@ -83,7 +113,13 @@
       "current_asset": "app/courses/visual_assets/l10_m05_001.svg",
       "target_asset": "app/courses/visual_assets/sketch-l10_m05_001.jpg",
       "art_direction": "Bir xil uy uchun oldingi va keyingi optimallashtirilgan plan: ortiqcha yo‘lak qisqaradi, xonalarning foydalanish sathi oshadi, barcha eshiklar erkin ochiladi. Haqiqiy mebel asosida tekshirish.",
-      "status": "pending_image_generation_and_visual_review"
+      "status": "installed_in_main",
+      "final_asset": "app/courses/visual_assets/sketch-l10_m05_001.jpg",
+      "image_bytes": 392769,
+      "width": 1536,
+      "height": 1024,
+      "image_git_blob": "674d7fabe948c1c8721774d085d00b1479a16861",
+      "technical_status": "JPEG blob integrity checked; GUI runtime audit pending"
     },
     {
       "code": "L10_M05_002",
@@ -91,7 +127,13 @@
       "current_asset": "app/courses/visual_assets/l10_m05_002.svg",
       "target_asset": "app/courses/visual_assets/sketch-l10_m05_002.jpg",
       "art_direction": "Uy eskiz planida mebelli xonalar konturlari: chapda ko‘p bo‘laklangan yo‘lak va yaroqsiz burchaklar, o‘ngda yaxshilangan funksional nisbatlar. Sun’iy foiz ko‘rsatmaslik.",
-      "status": "pending_image_generation_and_visual_review"
+      "status": "installed_in_main",
+      "final_asset": "app/courses/visual_assets/sketch-l10_m05_002.jpg",
+      "image_bytes": 395231,
+      "width": 1536,
+      "height": 1024,
+      "image_git_blob": "c77961cfb43d0024b0e2a1a158e51d740aae4b76",
+      "technical_status": "JPEG blob integrity checked; GUI runtime audit pending"
     },
     {
       "code": "L10_M05_003",
@@ -99,8 +141,14 @@
       "current_asset": "app/courses/visual_assets/l10_m05_003.svg",
       "target_asset": "app/courses/visual_assets/sketch-l10_m05_003.jpg",
       "art_direction": "Yotoqxona eshigi va sanuzel kirishi to‘qnashuvi, oshxona-mehmonxona oqimi konfliktlari ko‘rsatilgan real uy plani, yonida mavzuga mos hal qilingan variant.",
-      "status": "pending_image_generation_and_visual_review"
+      "status": "installed_in_main",
+      "final_asset": "app/courses/visual_assets/sketch-l10_m05_003.jpg",
+      "image_bytes": 392644,
+      "width": 1536,
+      "height": 1024,
+      "image_git_blob": "3df66db2d6f858f9135d34b255e555b1f86a9312",
+      "technical_status": "JPEG blob integrity checked; GUI runtime audit pending"
     }
   ],
-  "installed_count": 2
+  "installed_count": 10
 }
