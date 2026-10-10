@@ -19,7 +19,7 @@
     "L10_M05_003"
   ],
   "next_batch": "docs/NEXT_10_QUALITY_IMAGE_REWORK.json",
-  "note": "Eight additional topic-matched JPEG lesson sketches have been staged for main; SVG originals retained until all text coverage inventories are synchronized. Two candidate images L10_M05_004 (landscape) and L10_M05_005 (plan choice) rejected: actual lessons are structural/MEP logic and final plan audit. GUI/Windows release tests not yet verified.",
+  "note": "8 added JPEGs + 3 CSV inventories reconciled; remaining L10_M05_004 and L10_M05_005 still pending topical rework. Full GUI and Windows tests not yet confirmed; CI audit job fails before reporting steps.",
   "last_verified_main_commit": "f7904804ecdaa2616d80a71c59f1bfb2b18e1c9b",
   "next_lesson_to_replace": "L10_M05_004",
   "static_integrity_audit": {
@@ -66,7 +66,32 @@
       1024
     ],
     "runtime_visual_json_updated": true,
-    "auxiliary_csv_inventory_updated": false,
+    "auxiliary_csv_inventory_updated": true,
     "gui_verified": false
+  },
+  "inventory_reconciliation": {
+    "completed_for": [
+      "L10_M04_001",
+      "L10_M04_002",
+      "L10_M04_003",
+      "L10_M04_004",
+      "L10_M04_005",
+      "L10_M05_001",
+      "L10_M05_002",
+      "L10_M05_003"
+    ],
+    "docs_updated": [
+      "docs/REALISTIC_LESSON_COVERAGE.csv",
+      "docs/VISUAL_LESSON_COVERAGE.csv",
+      "docs/ALL_LESSON_SKETCH_COVERAGE.csv"
+    ],
+    "verified_coverage": {
+      "lessons": 680,
+      "references": 856,
+      "missing_assets": 0,
+      "jpeg_count": 334,
+      "jpeg_over_400000_bytes": 0
+    },
+    "note": "Static Git tree and three CSV inventory check; no runtime GUI audit was performed."
   }
 }
