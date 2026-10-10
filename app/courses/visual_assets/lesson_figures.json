@@ -5327,15 +5327,16 @@
     "asset": "sketch-l10_m05_001.jpg",
     "title": "Plan optimizatsiyasi tushunchasi — arxitekturaviy eskiz",
     "explanation": [
-      "A variant koridori 12 m², B variant 8 m²; Bda mehmon yo‘li yotoqxonani kesib o‘tadi.",
-      "Muammoni mezon bilan belgilang: maydon, yo‘l, privacy → maqsadli optimizatsiya.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Chapda yo‘laklari cho‘zilgan boshlang‘ich uy rejasi, o‘ngda esa o‘zaro yaqin xonalar orqali yurish yo‘li qisqartirilgan variant tasvirlangan.",
+      "2. Reja yaxshilanishini faqat maydon soni bilan baholamang: kirish, oshxona, mehmonxona va yotoqxonalarga borish yo‘li ham qulay qolishi kerak.",
+      "3. Biror xonani kattalashtirish boshqa xonaning ishlashiga, mebel yoki eshik ochilishiga zarar bermayotganini tekshiring.",
+      "Darsdagi bajarish: ikki variantdagi ortiqcha yo‘laklarni belgilang va har bir tuzatishdan keyin xonalar orasidagi yo‘llarni qayta chizing."
     ],
     "exercise": "Optimizatsiya maqsadi va o‘zgarmaydigan talablarni yozing.",
     "solution": "Plan optimizatsiyasi faqat maydonni qisqartirish emas, talablarni yaxshiroq bajarishdir.",
     "block": 5,
     "recipe": "variants",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "boundary": "O‘quv uchun yaratilgan konseptual arxitekturaviy eskiz. Tasvirdagi geometrik nisbatlar va sonlar tekshirilgan qurilish normasi yoki hisoblangan loyiha sifatida qabul qilinmaydi; aniq yechimni o‘z rejangiz va mutaxassis tekshiruvi orqali tasdiqlang.",
     "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
@@ -5344,15 +5345,16 @@
     "asset": "sketch-l10_m05_002.jpg",
     "title": "Foydali va yo'qotilgan maydon — arxitekturaviy eskiz",
     "explanation": [
-      "A variant koridori 12 m², B variant 8 m²; Bda mehmon yo‘li yotoqxonani kesib o‘tadi.",
-      "12−8=4 m² tejalishni qayd qiling, yo‘qotilgan qulaylikni yozing → maydon yagona mezon emas.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Rejadagi asosiy yashash zonalarini, xizmat xonalarini va ortiqcha yoki noqulay harakat maydonlarini rang orqali ajrating.",
+      "2. Uzoq yo‘lak, keraksiz burilish va foydalanilmaydigan burchakni belgilang. Ularni kamaytirish bilan eshik yoki mebel oldidagi kerakli ochiq joyni yo‘qotib qo‘ymang.",
+      "3. Foydali maydon — umumiy maydonning shunchaki katta raqami emas; xonalar kundalik faoliyat uchun ishlashini tasdiqlang.",
+      "Darsdagi bajarish: rejangizning ikkita nusxasida ortiqcha maydonni taqqoslab, qanday funksional qulaylik saqlanganini yozing."
     ],
     "exercise": "18 / 100 × 100 = 18% yo‘lak ulushini hisoblang.",
     "solution": "Maydon ulushi tahlil ko‘rsatkichi; qulaylik hukmi foydalanish bilan tekshiriladi.",
     "block": 5,
     "recipe": "variants",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "boundary": "O‘quv uchun yaratilgan konseptual arxitekturaviy eskiz. Tasvirdagi geometrik nisbatlar va sonlar tekshirilgan qurilish normasi yoki hisoblangan loyiha sifatida qabul qilinmaydi; aniq yechimni o‘z rejangiz va mutaxassis tekshiruvi orqali tasdiqlang.",
     "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
@@ -5361,15 +5363,16 @@
     "asset": "sketch-l10_m05_003.jpg",
     "title": "Xonalararo konfliktlarni yechish — arxitekturaviy eskiz",
     "explanation": [
-      "A variant koridori 12 m², B variant 8 m²; Bda mehmon yo‘li yotoqxonani kesib o‘tadi.",
-      "Konfliktli eshik yoki xona aloqasini o‘zgartiring → Bdagi privacy tiklanadi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Rejada turli rangdagi belgilar xonalar o‘rtasidagi ehtimoliy to‘qnashuv va noqulayliklarni ko‘rsatadi: eshik ochilishi, shovqin, shaxsiy makon va ortiqcha aylanish.",
+      "2. Muammo joyini topgach, shu nuqtaga tegishli eshik, devor yoki mebel joylashuvini o‘zgartirib, muammoni qanday hal qilganingizni alohida ko‘rsating.",
+      "3. Bir xatoni bartaraf etish boshqa xonada yangi konflikt tug‘dirmasligini tekshiring; yakuniy yechim turli xonalar uchun birgalikda ishlashi lozim.",
+      "Darsdagi bajarish: rejangizda kamida uchta konfliktni belgilab, ularning tuzatilgan variantini solishtiring."
     ],
     "exercise": "Ikki xona konfliktini sabab va oqibat bilan yozing.",
     "solution": "Konfliktni yechish boshqa xonaning vazifasini buzmasligi kerak.",
     "block": 5,
     "recipe": "entry",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
+    "boundary": "O‘quv uchun yaratilgan konseptual arxitekturaviy eskiz. Tasvirdagi geometrik nisbatlar va sonlar tekshirilgan qurilish normasi yoki hisoblangan loyiha sifatida qabul qilinmaydi; aniq yechimni o‘z rejangiz va mutaxassis tekshiruvi orqali tasdiqlang.",
     "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
     "source_url": null
   },
