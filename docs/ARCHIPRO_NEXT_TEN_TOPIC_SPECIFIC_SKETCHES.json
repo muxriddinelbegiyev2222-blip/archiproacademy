@@ -1,0 +1,104 @@
+{
+  "reference": "docs/VISUAL_CANDIDATE_REVIEW_2026_10_08.json",
+  "date": "2026-10-10",
+  "batch_size": 10,
+  "installed_count": 0,
+  "status": "planned_only_not_generated_or_uploaded",
+  "requirements": {
+    "images_per_lesson": 1,
+    "resolution": "1536x1024",
+    "max_bytes": 400000,
+    "format": "JPEG",
+    "quality": "Architectural sketch in clean ink and warm watercolors; truthful spatial logic; simple clear Uzbek annotations; realistic windows, walls, doors and furniture; no low-res collage crops",
+    "review": [
+      "Lesson content explicitly matches visual",
+      "No unsupported precise building-code dimensions",
+      "Check readable lettering and proportions",
+      "Record SHA-256 and byte size",
+      "Link visual in runtime JSON and all 3 docs CSV",
+      "Keep old SVG until review and image integrity pass"
+    ]
+  },
+  "records": [
+    {
+      "code": "L10_M05_004",
+      "title": "Konstruktiv va MEP mantiq",
+      "old_asset": "app/courses/visual_assets/l10_m05_004.svg",
+      "target_asset": "app/courses/visual_assets/sketch-l10_m05_004.jpg",
+      "art_direction": "Chindan bir qavatli uy uchun bitta katta aksonometriya va shu uyga mos plan: tashqi tayanch devorlar va ochilishlar qoramtir; suv/oqova ko‘k; elektr sariq; shamollatish qizil yo‘nalishlarda alohida belgilanadi. Yo‘llar konstruktiv devor va tayanchlarga hech qanday hisoblangan yechim sifatida uzatilmasin; ikkita konflikt nuqtasi va muhandis bilan tekshiriladigan savol alohida ajratilsin.",
+      "status": "awaiting_individual_high_resolution_illustration"
+    },
+    {
+      "code": "L10_M05_005",
+      "title": "Final plan audit",
+      "old_asset": "app/courses/visual_assets/l10_m05_005.svg",
+      "target_asset": "app/courses/visual_assets/sketch-l10_m05_005.jpg",
+      "art_direction": "Bir xil mebelli uy rejasining diagnostika nusxasi va tuzatilgan nusxasi yonma-yon. Eshik ochilish yoylari, harakat yo‘li, hovli aloqasi, konstruktsiya va MEP joyi bo‘yicha aniqlangan uch muammo → qayta tekshiruv jadvali. Tasdiqlanmagan bandlarga yashil belgi qo‘yilmasin.",
+      "status": "awaiting_individual_high_resolution_illustration"
+    },
+    {
+      "code": "L10_M06_002",
+      "title": "Stories, grid va asosiy elementlar",
+      "old_asset": "app/courses/visual_assets/l10_m06_002.svg",
+      "target_asset": "app/courses/visual_assets/sketch-l10_m06_002.jpg",
+      "art_direction": "Bir qavatli uy asosida ±0.000 sath tushunchasi va 1-qavat plani, ikki-uch konstruktiv o‘q bilan 3D aksonometrik model. O‘qlar, tashqi devor va qavat sathi bir xil geometrik obyektda mos bo‘lsin, normativ qiymatlar tasdiqlanmaguncha ishlatilmasin.",
+      "status": "awaiting_individual_high_resolution_illustration"
+    },
+    {
+      "code": "L10_M06_003",
+      "title": "Wall, slab, column va openings",
+      "old_asset": "app/courses/visual_assets/l10_m06_003.svg",
+      "target_asset": "app/courses/visual_assets/sketch-l10_m06_003.jpg",
+      "art_direction": "Xuddi shu uy bo‘yicha to‘rt qatlam: tashqi devor, yopma/plita, bitta ustun, eshik/deraza ochilishi. Plan va 3D aksoda devorning uzluksizligi, plita chegarasi va ochilishlar mantiqan mos; struktura hisoblangan deb yozilmasin.",
+      "status": "awaiting_individual_high_resolution_illustration"
+    },
+    {
+      "code": "L10_M06_004",
+      "title": "Model koordinatsiyasi",
+      "old_asset": "app/courses/visual_assets/l10_m06_004.svg",
+      "target_asset": "app/courses/visual_assets/sketch-l10_m06_004.jpg",
+      "art_direction": "Bitta uy uchun 2D plan, kesim va 3D modelni yonma-yon qo‘ying. 3 belgilangan element uch ko‘rinishda aynan bir joyda bo‘lsin; koordinatsiya xatolarining ko‘rinishlari alohida izohlangan.",
+      "status": "awaiting_individual_high_resolution_illustration"
+    },
+    {
+      "code": "L10_M06_005",
+      "title": "Archicad modeli professional audit",
+      "old_asset": "app/courses/visual_assets/l10_m06_005.svg",
+      "target_asset": "app/courses/visual_assets/sketch-l10_m06_005.jpg",
+      "art_direction": "Archicad BIM modelining kontseptual auditi: alohida plan, qavat/level ko‘rinishi va 3D model; xatolar — elementlarning kesishuvi, yo‘qolgan ochilish, noto‘g‘ri qavatga biriktirish. Real Archicad skrinshoti sifatida soxtalashtirmang.",
+      "status": "awaiting_individual_high_resolution_illustration"
+    },
+    {
+      "code": "L10_M07_001",
+      "title": "Fasad konsepsiyasi",
+      "old_asset": "app/courses/visual_assets/l10_m07_001.svg",
+      "target_asset": "app/courses/visual_assets/sketch-l10_m07_001.jpg",
+      "art_direction": "Bir xil bir qavatli o‘zbek hovli uyining ikki fasad varianti: ikkisining planiga mos bir xil oynalar, kirish va uy hajmi; farq material/soyabon va aksentda. Asosiy kirish aniq, hovli bilan tutashuv ko‘rsatilgan.",
+      "status": "awaiting_individual_high_resolution_illustration"
+    },
+    {
+      "code": "L10_M07_002",
+      "title": "Proporsiya va ritm",
+      "old_asset": "app/courses/visual_assets/l10_m07_002.svg",
+      "target_asset": "app/courses/visual_assets/sketch-l10_m07_002.jpg",
+      "art_direction": "Fasad chizmasida derazalar o‘qlar ritmi va balandlik proporsiyalari. Chapda tartibsiz, o‘ngda muntazam; reja va fasad mosligi kuzatiladi, raqamli bezaklar emas.",
+      "status": "awaiting_individual_high_resolution_illustration"
+    },
+    {
+      "code": "L10_M07_003",
+      "title": "Ochilishlar va kirish aksenti",
+      "old_asset": "app/courses/visual_assets/l10_m07_003.svg",
+      "target_asset": "app/courses/visual_assets/sketch-l10_m07_003.jpg",
+      "art_direction": "Bir qavatli uyning asosiy kirishini fasadda o‘qish: yo‘lakdan eshikkacha munosabat, deraza va soyabon aksenti. Plan eskizi va bitta fasad ko‘rinishi bir-biriga mos.",
+      "status": "awaiting_individual_high_resolution_illustration"
+    },
+    {
+      "code": "L10_M07_004",
+      "title": "Material va hajm",
+      "old_asset": "app/courses/visual_assets/l10_m07_004.svg",
+      "target_asset": "app/courses/visual_assets/sketch-l10_m07_004.jpg",
+      "art_direction": "Bir xil funksional uy uchun material va hajm konsepsiyalari: suvoq+tosh, yog‘och+silliq suvoq. Mutanosiblik, konstruktiv mantiq, mavsumiy suv oqishi va xizmat ko‘rsatish e’tiborga olinadi. Uy konturi ikkala variantda bir xil.",
+      "status": "awaiting_individual_high_resolution_illustration"
+    }
+  ]
+}
