@@ -1,0 +1,39 @@
+{
+  "batch": "ARCHIPRO L10_M08_001–003 roof illustration replacement",
+  "artifacts": [
+    {
+      "code": "L10_M08_001",
+      "path": "app/courses/visual_assets/sketch-l10_m08_001.jpg",
+      "bytes": 384319,
+      "sha256": "369c7d8a083fd3f38523f7ba1c1bfe682d5e629fbd7dbfc7aa57929f418014dc",
+      "git_blob_sha": "2abd4caff6042e5803ec0c2907d6f7ec2d544b4e",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "L10_M08_002",
+      "path": "app/courses/visual_assets/sketch-l10_m08_002.jpg",
+      "bytes": 381735,
+      "sha256": "32470accca254dede28fc9f213dae131e0b1bfe56f60dfb3d44a0fade66783f9",
+      "git_blob_sha": "aa075381f6a77dc714cda0cad8a9d1826de693ce",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "L10_M08_003",
+      "path": "app/courses/visual_assets/sketch-l10_m08_003.jpg",
+      "bytes": 384332,
+      "sha256": "b2afb3afe4454bcd28631bf6a42915b924a002eb65b0a4105fc9536f472c270e",
+      "git_blob_sha": "2b3aaec3c8f283ac05c451d99a2f748eba0bee6d",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    }
+  ],
+  "note": "Conceptual images; structural/normative adequacy not certified. Keep original SVGs for rollback."
+}

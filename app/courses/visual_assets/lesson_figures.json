@@ -5593,53 +5593,56 @@
   },
   {
     "code": "L10_M08_001",
-    "asset": "l10_m08_001.svg",
+    "asset": "sketch-l10_m08_001.jpg",
     "title": "Tom konsepsiyasi — arxitekturaviy eskiz",
     "explanation": [
-      "L-shaklli uy tomining ikki varianti: sodda hajmlar va murakkab tutashuvli yechim.",
-      "Uy hajmini alohida qismlarga ajrating → tom vazifasi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Bir xil hovlili uy hajmi uchun sodda tom va ko‘proq tutashuvli murakkab tom variantlarini solishtiring. Kirish qismi hamda yordamchi qanotlarning tomga qanday birikishini kuzating.",
+      "2. Sodda yechimda kamroq sinish va tutashuv bo‘ladi; murakkab variantda qo‘shimcha vodiy, qirra va suv chiqarish detallarini alohida rejalash talab etiladi.",
+      "3. Har ikkala variant uchun ham fasad ko‘rinishi, hovliga tushadigan suv va tomni keyinchalik ta’mirlash imkoniyatini tekshiring.",
+      "Darsdagi bajarish: o‘z uyingiz hajmini qismlarga ajrating va ikkita tom konsepsiyasini asosiy afzalligi hamda xavfi bilan chizing."
     ],
     "exercise": "Tom shaklini bino hajmi va foydalanish bilan asoslang.",
     "solution": "Tom konsepsiyasi estetik va amaliy vazifalarni birlashtiradi.",
     "block": 5,
     "recipe": "roof-plan",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "AI yordamida yaratilgan konseptual arxitektura tasviri. Tomning nishabi, kesimlari, qoplama va drenaj elementlari normativ ekspertizadan yoki konstruktiv hisobdan o‘tgan deb hisoblanmaydi; haqiqiy loyiha uchun mutaxassis va amaldagi hujjatlar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — tom mavzusiga mos individual arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L10_M08_002",
-    "asset": "l10_m08_002.svg",
+    "asset": "sketch-l10_m08_002.jpg",
     "title": "Nishab va suv yo'li — arxitekturaviy eskiz",
     "explanation": [
-      "L-shaklli uy tomining ikki varianti: sodda hajmlar va murakkab tutashuvli yechim.",
-      "Har qiyalikda suv yo‘lini chiqarish nuqtasiga chizing → to‘planish nuqtasi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Har bir tom tekisligida suv qaysi tarafga oqishini ko‘k strelkalar bilan kuzating: qiyalik → vodiy yoki karniz → nov → tashqi quvur.",
+      "2. Ichki vodiyda yomg‘ir suvi to‘planishi mumkin. Suv yo‘lini eshik, kirish ayvoni va piyoda yo‘laklardan uzoqqa olib chiqish reja bosqichidayoq ko‘rilishi kerak.",
+      "3. Tasvirdagi nishab burchagi misol tariqasida keltirilgan; haqiqiy nishab, nov sig‘imi va drenaj yo‘nalishi tom qoplamasi, iqlim, me’yor va muhandislik hisobiga qarab belgilanadi.",
+      "Darsdagi bajarish: o‘z tom rejangizda qiyaliklarni, suv yig‘iladigan nuqtalarni va xavfsiz chiqarish yo‘llarini alohida belgilang."
     ],
     "exercise": "Suvning boshlanishdan chiqishgacha yo‘lini chizing.",
     "solution": "Nishab suvni qayerga yo‘naltirishini ko‘rsatishi kerak.",
     "block": 5,
     "recipe": "roof-plan",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "AI yordamida yaratilgan konseptual arxitektura tasviri. Tomning nishabi, kesimlari, qoplama va drenaj elementlari normativ ekspertizadan yoki konstruktiv hisobdan o‘tgan deb hisoblanmaydi; haqiqiy loyiha uchun mutaxassis va amaldagi hujjatlar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — tom mavzusiga mos individual arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L10_M08_003",
-    "asset": "l10_m08_003.svg",
+    "asset": "sketch-l10_m08_003.jpg",
     "title": "Ridge, eave va tutashuvlar — arxitekturaviy eskiz",
     "explanation": [
-      "L-shaklli uy tomining ikki varianti: sodda hajmlar va murakkab tutashuvli yechim.",
-      "Ridge, eave va vodiy chiziqlarini sath bilan belgilang → tutashuv geometriyasi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "1. Qirra (ridge) — tomning yuqori tutashish chizig‘i; karniz (eave) — suv chiqariladigan pastki chet; vodiy — ikki qiya sirt orasidagi ichki suv yig‘ilish yo‘li.",
+      "2. Katta aksonometrik tasvirda qirra, vodiy, karniz va bino devoriga tutashgan joylarni alohida kuzating. Reja ko‘rinishidagi rangli chiziqlarni uch o‘lchamli ko‘rinishga bog‘lang.",
+      "3. Suv o‘tishi mumkin bo‘lgan vodiy va devor tutashuvlarida qoplama, gidroizolyatsiya va xizmat ko‘rsatish detallari loyihada maxsus tekshirilishi lozim.",
+      "Darsdagi bajarish: o‘z tom planingizdagi barcha qirra, karniz, vodiy va devor tutashuvlarini nomlab, xavfli tugunlarni belgilang."
     ],
     "exercise": "Ridge, eave va tutashuvlarni plan-kesimda bog‘lang.",
     "solution": "Tom elementlari va tugunlari bir xil geometriyani ifodalaydi.",
     "block": 5,
     "recipe": "roof-plan",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "AI yordamida yaratilgan konseptual arxitektura tasviri. Tomning nishabi, kesimlari, qoplama va drenaj elementlari normativ ekspertizadan yoki konstruktiv hisobdan o‘tgan deb hisoblanmaydi; haqiqiy loyiha uchun mutaxassis va amaldagi hujjatlar bilan tekshiring.",
+    "credit": "ARCHIPRO UZ — tom mavzusiga mos individual arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {

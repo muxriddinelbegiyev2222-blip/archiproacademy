@@ -1,8 +1,8 @@
 {
   "source_review": "docs/VISUAL_CANDIDATE_REVIEW_2026_10_08.json",
   "review_pending_initial": 156,
-  "individually_replaced_on_main": 21,
-  "still_to_replace": 135,
+  "individually_replaced_on_main": 24,
+  "still_to_replace": 132,
   "seven_corrupted_images_repaired": 7,
   "seven_media_registry_recorded": 278,
   "seven_media_registry_complete": true,
@@ -27,12 +27,15 @@
     "L10_M07_002",
     "L10_M07_003",
     "L10_M07_004",
-    "L10_M07_005"
+    "L10_M07_005",
+    "L10_M08_001",
+    "L10_M08_002",
+    "L10_M08_003"
   ],
   "next_batch": "docs/ARCHIPRO_NEXT_TEN_TOPIC_SPECIFIC_SKETCHES.json",
-  "note": "21/156 topic-specific quality reworks installed. 135 remain. Seven latest JPEGs 1536x1024 <=400000 bytes. Roof lesson L10_M08_001/002/003 images not yet correctly generated. Windows GUI regression not yet confirmed.",
+  "note": "Three lesson-specific roof JPEGs installed and referenced in all three inventory CSVs and runtime figures JSON. Static Git object hashes verified before commit; Windows GUI and full CI audit not yet confirmed.",
   "last_verified_main_commit": "f7904804ecdaa2616d80a71c59f1bfb2b18e1c9b",
-  "next_lesson_to_replace": "L10_M08_001",
+  "next_lesson_to_replace": "L10_M08_004",
   "static_integrity_audit": {
     "reviewed_course_count": 680,
     "course_coverage_unique_ids": 680,
@@ -61,15 +64,11 @@
   },
   "last_integrated_batch": {
     "codes": [
-      "L10_M06_004",
-      "L10_M06_005",
-      "L10_M07_001",
-      "L10_M07_002",
-      "L10_M07_003",
-      "L10_M07_004",
-      "L10_M07_005"
+      "L10_M08_001",
+      "L10_M08_002",
+      "L10_M08_003"
     ],
-    "count": 7,
+    "count": 3,
     "max_jpeg_bytes": 400000,
     "dimensions": [
       1536,
@@ -77,8 +76,7 @@
     ],
     "runtime_visual_json_updated": true,
     "auxiliary_csv_inventory_updated": true,
-    "gui_verified": false,
-    "notes": "Seven topic-matched individual illustrations installed in one atomic Git commit; three generated courtyard/circulation drafts for L10_M08_001/002/003 deliberately rejected as off-topic for roof lessons."
+    "gui_verified": false
   },
   "inventory_reconciliation": {
     "completed_for": [
@@ -130,5 +128,17 @@
     "L10_M05_001",
     "L10_M05_002",
     "L10_M05_003"
-  ]
+  ],
+  "roof_sketch_replacement": {
+    "codes": [
+      "L10_M08_001",
+      "L10_M08_002",
+      "L10_M08_003"
+    ],
+    "all_3_bytes_under_400000": true,
+    "topic_review": "Roof options, water drainage, ridge/eave/valley details each individually matched",
+    "images_embedded_in_main": true,
+    "hashes_verified_at_upload": true,
+    "old_svg_retained_for_safe_rollback": true
+  }
 }
