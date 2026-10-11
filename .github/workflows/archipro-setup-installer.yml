@@ -1,0 +1,121 @@
+name: ARCHIPRO UZ - Windows Setup Installer
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/archipro-setup-installer.yml"
+      - "ARCHIPRO_UZ.iss"
+  workflow_dispatch:
+
+jobs:
+  verified-installer:
+    runs-on: windows-latest
+    timeout-minutes: 45
+    permissions:
+      contents: read
+    env:
+      QT_QPA_PLATFORM: offscreen
+      PYTHONIOENCODING: utf-8
+
+    steps:
+      - name: Checkout the exact course and installer source
+        uses: actions/checkout@v4
+
+      - name: Python 3.12 x64
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          architecture: x64
+
+      - name: Install Windows packaging dependencies
+        shell: pwsh
+        run: |
+          python -m pip install -r requirements.txt pyinstaller
+          if ($LASTEXITCODE -ne 0) { throw "Python dependencies failed" }
+
+      - name: Verify course and license signatures before packaging
+        shell: pwsh
+        run: |
+          python tools/test_license_key_compatibility.py
+          if ($LASTEXITCODE -ne 0) { throw "License signature compatibility check failed" }
+          python app/tools/content_guard.py
+          if ($LASTEXITCODE -ne 0) { throw "680-lesson content guard failed" }
+
+      - name: Build customer learning application only
+        shell: pwsh
+        run: |
+          python app/tools/build_client.py --workpath build_client --distpath dist_client --specpath .
+          if ($LASTEXITCODE -ne 0) { throw "Client EXE failed" }
+          python app/tools/verify_built_exe.py "dist_client/ARCHIPRO UZ.exe"
+          if ($LASTEXITCODE -ne 0) { throw "Actual EXE curriculum validation failed" }
+
+      - name: Install Inno Setup compiler (only if missing)
+        shell: pwsh
+        run: |
+          $paths = @(
+            "$env:ProgramFiles(x86)\Inno Setup 6\ISCC.exe",
+            "$env:ProgramFiles\Inno Setup 6\ISCC.exe"
+          )
+          $found = (Get-Command ISCC.exe -ErrorAction SilentlyContinue)
+          if (-not $found -and -not ($paths | Where-Object { Test-Path $_ })) {
+            choco install innosetup --yes --no-progress --limit-output
+            if ($LASTEXITCODE -ne 0) { throw "Inno Setup install failed" }
+          }
+          $exe = $paths | Where-Object { Test-Path $_ } | Select-Object -First 1
+          if (-not $exe -and (Get-Command ISCC.exe -ErrorAction SilentlyContinue)) {
+            $exe = (Get-Command ISCC.exe).Source
+          }
+          if (-not $exe) { throw "ISCC.exe unavailable" }
+          Write-Host "Inno Setup compiler found: $exe"
+
+      - name: Compile genuine Windows installation wizard
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force "release\ARCHIPRO_UZ_CLIENT" | Out-Null
+          New-Item -ItemType Directory -Force "release\installer" | Out-Null
+          Copy-Item "dist_client\ARCHIPRO UZ.exe" "release\ARCHIPRO_UZ_CLIENT\ARCHIPRO UZ.exe" -Force
+          $version = python -c "import sys;sys.path.insert(0,'app');import version;print(version.APP_VERSION)"
+          if (-not $version -or $LASTEXITCODE -ne 0) { throw "Version lookup failed" }
+          $paths = @(
+            "$env:ProgramFiles(x86)\Inno Setup 6\ISCC.exe",
+            "$env:ProgramFiles\Inno Setup 6\ISCC.exe"
+          )
+          $compiler = $paths | Where-Object { Test-Path $_ } | Select-Object -First 1
+          if (-not $compiler) { $compiler = (Get-Command ISCC.exe -ErrorAction Stop).Source }
+          & $compiler "/DMyAppVersion=$version" "ARCHIPRO_UZ.iss"
+          if ($LASTEXITCODE -ne 0) { throw "Inno Setup compilation failed" }
+          $setup = "release\installer\ARCHIPRO UZ Setup v$version.exe"
+          if (-not (Test-Path $setup)) { throw "Expected setup installer missing: $setup" }
+          Write-Host "Installer compiled: $setup"
+
+      - name: Smoke-test installer, installed EXE, and uninstaller
+        shell: pwsh
+        run: |
+          $version = python -c "import sys;sys.path.insert(0,'app');import version;print(version.APP_VERSION)"
+          $setup = (Resolve-Path "release\installer\ARCHIPRO UZ Setup v$version.exe").Path
+          $target = Join-Path $env:RUNNER_TEMP "ARCHIPRO_Installer_Smoke"
+          if (Test-Path $target) { throw "Install target already exists" }
+          $args = @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-', "/DIR=$target")
+          $p = Start-Process -FilePath $setup -ArgumentList $args -Wait -PassThru
+          if ($p.ExitCode -ne 0) { throw "Silent install failed: $($p.ExitCode)" }
+          $installed = Join-Path $target "ARCHIPRO UZ.exe"
+          if (-not (Test-Path $installed)) { throw "Installer did not install ARCHIPRO UZ.exe" }
+          python app/tools/verify_built_exe.py $installed
+          if ($LASTEXITCODE -ne 0) { throw "Installed executable did not pass course check" }
+          $uninstaller = Join-Path $target "unins000.exe"
+          if (-not (Test-Path $uninstaller)) { throw "Windows uninstaller missing" }
+          Write-Host "[PASS] Windows setup installed working 680-lesson customer EXE and created uninstaller"
+          $u = Start-Process -FilePath $uninstaller -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART') -Wait -PassThru
+          if ($u.ExitCode -ne 0) { throw "Uninstall returned code $($u.ExitCode)" }
+          Start-Sleep -Seconds 2
+          if (Test-Path $installed) { throw "Uninstall left customer EXE installed" }
+          Write-Host "[PASS] Windows silent uninstaller removed the installed executable"
+
+      - name: Publish Windows Setup (EXE only, no ADMIN OWNER or signing key)
+        uses: actions/upload-artifact@v4
+        with:
+          name: ARCHIPRO_UZ_1_0_6_WINDOWS_SETUP_INSTALLER
+          path: release/installer/ARCHIPRO UZ Setup v*.exe
+          if-no-files-found: error
+          retention-days: 7
