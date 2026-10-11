@@ -105,6 +105,10 @@ def main() -> int:
             signer = load_signer_public()
             print("ADMIN/OWNER private key jufti fingerprint:  ", fingerprint(signer))
             print("PRIVATE KEY VA ASOSIY DASTUR:", "MOS [OK]" if signer == program else "MOS EMAS [XATO]")
+            if signer != program:
+                print("Tuzatish uchun FAQAT PUBLIC KEY (ulashish mumkin):")
+                print(base64.b64encode(signer).decode("ascii"))
+                print("Ushbu OCHIQ kalit private key emas.")
         except (ImportError, OSError, ValueError, binascii.Error) as exc:
             print("[XATO] Private keyni xavfsiz tekshirib bo'lmadi:", type(exc).__name__)
 
