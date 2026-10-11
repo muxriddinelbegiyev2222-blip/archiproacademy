@@ -614,6 +614,11 @@ class ReleaseRegression(unittest.TestCase):
             with patch.object(service, 'get_device_id', return_value='OTHER-DEVICE'):
                 self.assertFalse(service.verify_license_data(signed(None))['valid'])
 
+        for invalid in (None, [], "not-a-license", 123):
+            self.assertFalse(service.verify_license_data(invalid)['valid'])
+            with patch.object(service, 'read_license_file', return_value=invalid):
+                self.assertFalse(service.verify_license_file('unused')['valid'])
+
     def test_z_complete_curriculum_through_real_quiz_and_exam_widgets(self):
         create_user('full_flow', 'test-password', 'Full flow', 'PRO')
         user = authenticate_user('full_flow', 'test-password')
