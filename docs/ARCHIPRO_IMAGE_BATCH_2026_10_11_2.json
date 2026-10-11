@@ -1,0 +1,94 @@
+{
+  "batch_id": "ARCHIPRO_2026_10_11_BATCH_2",
+  "source_commit": "1e919f972d3e043088811d015a5045ad0050d320",
+  "integrated_count": 10,
+  "width": 1536,
+  "height": 1024,
+  "maximum_bytes": 400000,
+  "scope": "Ten topic-specific educational architectural illustrations. Technical and normative engineering review excluded.",
+  "records": [
+    {
+      "code": "L10_M10_004",
+      "title": "Sath, drenaj va tashqi koordinatsiya",
+      "path": "app/courses/visual_assets/sketch-l10_m10_004.jpg",
+      "git_blob_sha": "96383522a6791d66b958983c2181c3047f00f9e6",
+      "bytes": 288964,
+      "old_svg_preserved": "app/courses/visual_assets/l10_m10_004.svg"
+    },
+    {
+      "code": "L10_M10_005",
+      "title": "Genplan professional audit",
+      "path": "app/courses/visual_assets/sketch-l10_m10_005.jpg",
+      "git_blob_sha": "83f5d363fded1a8c3a7836e73f1f5c0afc5e98d1",
+      "bytes": 305233,
+      "old_svg_preserved": "app/courses/visual_assets/l10_m10_005.svg"
+    },
+    {
+      "code": "L10_M11_002",
+      "title": "Plan, fasad va kesimlar",
+      "path": "app/courses/visual_assets/sketch-l10_m11_002.jpg",
+      "git_blob_sha": "6a3e99b8a654d6b7843372b84bbd5fdf5d4bba43",
+      "bytes": 320986,
+      "old_svg_preserved": "app/courses/visual_assets/l10_m11_002.svg"
+    },
+    {
+      "code": "L10_M11_003",
+      "title": "Genplan va yordamchi chizmalar",
+      "path": "app/courses/visual_assets/sketch-l10_m11_003.jpg",
+      "git_blob_sha": "4f6f0f0be558255391520ba9d4a34aaccb489318",
+      "bytes": 274979,
+      "old_svg_preserved": "app/courses/visual_assets/l10_m11_003.svg"
+    },
+    {
+      "code": "L10_M11_004",
+      "title": "Layout va grafik sifat",
+      "path": "app/courses/visual_assets/sketch-l10_m11_004.jpg",
+      "git_blob_sha": "bd520188dad432cb05023543ec262cb713c275f6",
+      "bytes": 301420,
+      "old_svg_preserved": "app/courses/visual_assets/l10_m11_004.svg"
+    },
+    {
+      "code": "L11_M01_001",
+      "title": "2 qavatli uy mantig‘i",
+      "path": "app/courses/visual_assets/sketch-l11_m01_001.jpg",
+      "git_blob_sha": "882da214bf34c771614c0c7c771c81f8b7f71195",
+      "bytes": 167348,
+      "old_svg_preserved": "app/courses/visual_assets/l11_m01_001.svg"
+    },
+    {
+      "code": "L11_M01_002",
+      "title": "Qavatlar orasidagi funksiya",
+      "path": "app/courses/visual_assets/sketch-l11_m01_002.jpg",
+      "git_blob_sha": "f2a54d0f11d8d8ab77b8eb4afcc00eaa0b3f2d47",
+      "bytes": 150015,
+      "old_svg_preserved": "app/courses/visual_assets/l11_m01_002.svg"
+    },
+    {
+      "code": "L11_M01_003",
+      "title": "Vertikal yadro",
+      "path": "app/courses/visual_assets/sketch-l11_m01_003.jpg",
+      "git_blob_sha": "bb9489dbbb7622306dba838efa0c505eb9715301",
+      "bytes": 157113,
+      "old_svg_preserved": "app/courses/visual_assets/l11_m01_003.svg"
+    },
+    {
+      "code": "L11_M01_004",
+      "title": "Massing va fasad",
+      "path": "app/courses/visual_assets/sketch-l11_m01_004.jpg",
+      "git_blob_sha": "0cc8c2e34f696ab7fa2a36ae0c547618d69fd323",
+      "bytes": 143454,
+      "old_svg_preserved": "app/courses/visual_assets/l11_m01_004.svg"
+    },
+    {
+      "code": "L11_M01_005",
+      "title": "2 qavatli konsepsiya auditi",
+      "path": "app/courses/visual_assets/sketch-l11_m01_005.jpg",
+      "git_blob_sha": "b6556942783ccc1edd7e2ed53c4cd4eee68de3af",
+      "bytes": 180207,
+      "old_svg_preserved": "app/courses/visual_assets/l11_m01_005.svg"
+    }
+  ],
+  "gui_tested": false,
+  "windows_exe_tested": false,
+  "notes": "Old SVG files retained as unused legacy backups; runtime JSON and 3 course CSV inventories now point to compact JPEGs."
+}

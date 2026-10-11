@@ -5827,36 +5827,38 @@
   },
   {
     "code": "L10_M10_004",
-    "asset": "l10_m10_004.svg",
-    "title": "Sath, drenaj va tashqi koordinatsiya — arxitekturaviy eskiz",
+    "asset": "sketch-l10_m10_004.jpg",
+    "title": "Sath, drenaj va tashqi koordinatsiya — mavzuga mos arxitekturaviy eskiz",
     "explanation": [
-      "Uy, parking, ayvon, o‘yin va xo‘jalik zonasi yakuniy genplanda birlashtiriladi.",
-      "Sath va suv chiqarish yo‘lini kesim bilan solishtiring → muhandislik savoli.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Uchastkadagi bino, yo‘lak va yashil hududni bir chizmada solishtiring; yer sathi suv oqimi bilan bog‘lanishi kerak.",
+      "Suv uchun to‘planish nuqtasi, lotok va chiqish joyini sxematik belgilang; suvni uy poydevori yoki asosiy kirishga yo‘naltirmang.",
+      "Yer nishabi va suv chiqarish qiymatlari topografiya va mutaxassis hisobiga ko‘ra tasdiqlanadi.",
+      "Amaliyot: rejangizga uchta ehtimoliy suv yo‘lini chizing va noqulay kesishuvlarni qayd eting."
     ],
     "exercise": "Sath va suv yo‘nalishini kesim bilan bog‘lang.",
     "solution": "Tashqi koordinatsiya plan bilan vertikal sharoitni birga ko‘radi.",
     "block": 5,
     "recipe": "genplan",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Rasmdagi shakl va yo‘nalishlar o‘quv uchun sxematik berilgan. Aniq o‘lcham, me'yoriy muvofiqlik, konstruktiv yechim va texnik tizimlar loyiha ma'lumotlari hamda mutaxassis tekshiruvi orqali alohida tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mazkur dars uchun tayyorlangan konseptual meʼmoriy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L10_M10_005",
-    "asset": "l10_m10_005.svg",
-    "title": "Genplan professional audit — arxitekturaviy eskiz",
+    "asset": "sketch-l10_m10_005.jpg",
+    "title": "Genplan professional audit — mavzuga mos arxitekturaviy eskiz",
     "explanation": [
-      "Uy, parking, ayvon, o‘yin va xo‘jalik zonasi yakuniy genplanda birlashtiriladi.",
-      "Chegara, manba, tekshiruv va noma’lum holatni ro‘yxatlang → yakuniy genplan dalili.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Genplan auditi uy va uchastkani yaxlit tekshiradi: darvoza, piyoda yo‘li, avtomobil kirishi va xizmat hududi.",
+      "Dam olish zonasi, hovli, yashillik, yorug‘lik va maxfiylikni o‘zaro solishtiring.",
+      "Yog‘in suvi yo‘li va sathlar bo‘yicha hal qilinmagan savollarni alohida yozib qo‘ying.",
+      "Amaliyot: muammo → chizmadagi dalil → tuzatish → qayta tekshiruv jadvalini to‘ldiring."
     ],
     "exercise": "Chegara, yo‘l, sath va tasdiq savollarini audit qiling.",
     "solution": "Genplan auditi boshlang‘ich ma’lumot va loyiha qarorlari izchilligini tekshiradi.",
     "block": 5,
     "recipe": "genplan",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Rasmdagi shakl va yo‘nalishlar o‘quv uchun sxematik berilgan. Aniq o‘lcham, me'yoriy muvofiqlik, konstruktiv yechim va texnik tizimlar loyiha ma'lumotlari hamda mutaxassis tekshiruvi orqali alohida tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mazkur dars uchun tayyorlangan konseptual meʼmoriy o‘quv eskizi",
     "source_url": null
   },
   {
@@ -5878,53 +5880,56 @@
   },
   {
     "code": "L10_M11_002",
-    "asset": "l10_m11_002.svg",
-    "title": "Plan, fasad va kesimlar — arxitekturaviy eskiz",
+    "asset": "sketch-l10_m11_002.jpg",
+    "title": "Plan, fasad va kesimlar — mavzuga mos arxitekturaviy eskiz",
     "explanation": [
-      "Albomi A-01 genplan, A-02 plan, A-03 fasad, A-04 kesim va A-05 izoh/tekshiruvdan iborat o‘quv paket.",
-      "Plan, fasad va kesimni bir xil model revisionidan tayyorlang → moslik.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Reja xonalar va eshiklarni, fasad tashqi ochilishlar va kirishni, kesim esa sath va konstruktsiya aloqasini o‘qishga yordam beradi.",
+      "Rasmdagi uch ko‘rinish ko‘rgazmali namunalardir: ularning bir loyiha sifatida geometriyasi tasdiqlangan emas.",
+      "O‘z loyihangizda deraza, eshik, tom va qavat belgilarini plan–fasad–kesimda bir xil identifikator bilan solishtiring.",
+      "Amaliyot: bitta derazani uch ko‘rinishda toping va mos kelmaydigan holatni qayd eting."
     ],
     "exercise": "Plan, fasad va kesimdagi nom, sath va ochilishlarni solishtiring.",
     "solution": "Asosiy chizmalar bir xil loyiha holatini ifodalashi kerak.",
     "block": 5,
     "recipe": "album",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Rasmdagi shakl va yo‘nalishlar o‘quv uchun sxematik berilgan. Aniq o‘lcham, me'yoriy muvofiqlik, konstruktiv yechim va texnik tizimlar loyiha ma'lumotlari hamda mutaxassis tekshiruvi orqali alohida tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mazkur dars uchun tayyorlangan konseptual meʼmoriy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L10_M11_003",
-    "asset": "l10_m11_003.svg",
-    "title": "Genplan va yordamchi chizmalar — arxitekturaviy eskiz",
+    "asset": "sketch-l10_m11_003.jpg",
+    "title": "Genplan va yordamchi chizmalar — mavzuga mos arxitekturaviy eskiz",
     "explanation": [
-      "Albomi A-01 genplan, A-02 plan, A-03 fasad, A-04 kesim va A-05 izoh/tekshiruvdan iborat o‘quv paket.",
-      "Genplan va kerakli yordamchi chizmani qo‘shing → loyiha konteksti.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Asosiy genplanga uchastka chegarasi, shimol, kirishlar, uy va tashqi foydalanish zonalarini joylashtiring.",
+      "Drenaj, tashqi yo‘lak va xizmat tarmoqlari zarur bo‘lsa alohida yordamchi sxemada ko‘rsatiladi.",
+      "Chizma belgilarini to‘g‘ri izohlang va ularning o‘zaro mosligini nazorat qiling.",
+      "Amaliyot: genplandan tashqari bir dona drenaj yoki tashqi harakat sxemasini tayyorlang."
     ],
     "exercise": "Genplan va yordamchi sxemalarning zarur axborotini tekshiring.",
     "solution": "Qo‘shimcha chizma asosiy qarorni tushuntirishga xizmat qiladi.",
     "block": 5,
     "recipe": "album",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Rasmdagi shakl va yo‘nalishlar o‘quv uchun sxematik berilgan. Aniq o‘lcham, me'yoriy muvofiqlik, konstruktiv yechim va texnik tizimlar loyiha ma'lumotlari hamda mutaxassis tekshiruvi orqali alohida tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mazkur dars uchun tayyorlangan konseptual meʼmoriy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L10_M11_004",
-    "asset": "l10_m11_004.svg",
-    "title": "Layout va grafik sifat — arxitekturaviy eskiz",
+    "asset": "sketch-l10_m11_004.jpg",
+    "title": "Layout va grafik sifat — mavzuga mos arxitekturaviy eskiz",
     "explanation": [
-      "Albomi A-01 genplan, A-02 plan, A-03 fasad, A-04 kesim va A-05 izoh/tekshiruvdan iborat o‘quv paket.",
-      "Layoutda sarlavha, masshtab, drawing va o‘qilish sifatini tekshiring → tushunarli varaq.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Chizma varag‘ida eng muhim reja aniq va yirik, fasad hamda kesimlar esa tushunarli iyerarxiyada bo‘lishi kerak.",
+      "Sarlavha, chizma kodi, qayta ko‘rish belgisi va tushuntirish matni bitta izchil grafik uslubda joylashtiriladi.",
+      "Turli ko‘rinishlar masshtabi va loyiha o‘lchamlari bu ko‘rgazmali maketdan olinmaydi.",
+      "Amaliyot: sarlavha, plan, fasad, kesim va izohlar sig‘adigan o‘quv varagini tuzing."
     ],
     "exercise": "Layoutdagi matn va o‘lchamlarni chiqarish masshtabida ko‘ring.",
     "solution": "Grafik sifat haqiqiy varaqdagi o‘qilish bilan baholanadi.",
     "block": 5,
     "recipe": "album",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Rasmdagi shakl va yo‘nalishlar o‘quv uchun sxematik berilgan. Aniq o‘lcham, me'yoriy muvofiqlik, konstruktiv yechim va texnik tizimlar loyiha ma'lumotlari hamda mutaxassis tekshiruvi orqali alohida tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mazkur dars uchun tayyorlangan konseptual meʼmoriy o‘quv eskizi",
     "source_url": null
   },
   {
@@ -5946,87 +5951,92 @@
   },
   {
     "code": "L11_M01_001",
-    "asset": "l11_m01_001.svg",
-    "title": "Ikki qavatli uy — bitta vertikal tizim",
+    "asset": "sketch-l11_m01_001.jpg",
+    "title": "2 qavatli uy mantig‘i — mavzuga mos arxitekturaviy eskiz",
     "explanation": [
-      "Ikki qavat alohida plan emas, vertikal bog‘langan tizim sifatida ko‘rsatilgan.",
-      "Harakat, tayanch, wet-zone va fasad qarorlari qavatlar orasida bog‘lanadi.",
-      "Konseptual sxema aniq konstruktiv yechim bermaydi."
+      "Birinchi qavatda umumiy foydalanish, ikkinchisida nisbatan shaxsiy xonalarni joylashtirish varianti ko‘rsatilgan.",
+      "Qavatlardagi zinapoya joyi bir vertikal yadroga mos kelishi kerak.",
+      "Konseptual eskiz konstruktiv hisob yoki normativ ravishda tasdiqlangan loyiha emas.",
+      "Amaliyot: o‘z uyingiz uchun ikki qavat funksional jadvalini tuzing."
     ],
     "exercise": "Bir va ikki qavatli variantning foydalanish farqini yozing.",
     "solution": "Ikki qavatli konsepsiya maydondan tashqari vertikal harakatni ham baholaydi.",
     "block": 5,
     "recipe": "two-storey",
-    "boundary": "Konseptual o‘quv eskizi; tayyor konstruktiv hisob, universal normativ o‘lcham yoki tasdiqlangan ishchi detal emas.",
-    "credit": "ARCHIPRO UZ — mavzuga mos yangilangan arxitektura eskizi, 2026-10-07",
+    "boundary": "Rasmdagi shakl va yo‘nalishlar o‘quv uchun sxematik berilgan. Aniq o‘lcham, me'yoriy muvofiqlik, konstruktiv yechim va texnik tizimlar loyiha ma'lumotlari hamda mutaxassis tekshiruvi orqali alohida tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mazkur dars uchun tayyorlangan konseptual meʼmoriy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M01_002",
-    "asset": "l11_m01_002.svg",
-    "title": "Qavatlar bo‘yicha funksiya taqsimoti",
+    "asset": "sketch-l11_m01_002.jpg",
+    "title": "Qavatlar orasidagi funksiya — mavzuga mos arxitekturaviy eskiz",
     "explanation": [
-      "1-qavat public/service, 2-qavat private zona sifatida o‘quv misoli ko‘rsatilgan.",
-      "Taqsimot foydalanuvchi ssenariysi va briefga tayanadi.",
-      "Bu universal rejalashtirish qoidasi emas."
+      "Mehmon, oshxona, xoll va kirish kabi umumiy funksiyalar bilan oilaviy va dam olish xonalarini qavatlar bo‘yicha solishtiring.",
+      "Ikki qavat rejasida zina bitta koordinata o‘qida joylashishini tekshiring.",
+      "Nam zonalar va texnik xizmat yo‘llarini qavatlararo muvofiqlashtirish keyingi loyiha ishida aniqlashtiriladi.",
+      "Amaliyot: umumiy va shaxsiy funksiyalar xaritasini ikki qavat rejasida turli rangda belgilang."
     ],
     "exercise": "Har qavat vazifasini kunlik ssenariy bilan belgilang.",
     "solution": "Qavatlar funksiyasi foydalanuvchining harakatiga mos tanlanadi.",
     "block": 5,
     "recipe": "two-storey",
-    "boundary": "Konseptual o‘quv eskizi; tayyor konstruktiv hisob, universal normativ o‘lcham yoki tasdiqlangan ishchi detal emas.",
-    "credit": "ARCHIPRO UZ — mavzuga mos yangilangan arxitektura eskizi, 2026-10-07",
+    "boundary": "Rasmdagi shakl va yo‘nalishlar o‘quv uchun sxematik berilgan. Aniq o‘lcham, me'yoriy muvofiqlik, konstruktiv yechim va texnik tizimlar loyiha ma'lumotlari hamda mutaxassis tekshiruvi orqali alohida tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mazkur dars uchun tayyorlangan konseptual meʼmoriy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M01_003",
-    "asset": "l11_m01_003.svg",
-    "title": "Vertikal yadro: zina va service stack",
+    "asset": "sketch-l11_m01_003.jpg",
+    "title": "Vertikal yadro — mavzuga mos arxitekturaviy eskiz",
     "explanation": [
-      "Zinapoya va service shaft vertikal yadro tarkibida ko‘rsatilgan.",
-      "Yadro harakat, MEP va qavatlararo bog‘lanishni birlashtiradi.",
-      "Yadro o‘lchamlari va texnik yechim loyiha talabiga bog‘liq."
+      "Zinapoya ikkala qavat o‘rtasida uzluksiz va tushunarli vertikal harakat yo‘lini yaratadi.",
+      "Kesimda zinaning ko‘tarilish yo‘li, qavatlar o‘rtasidagi ochilish, maydoncha va tutqich ehtiyojini ko‘rib chiqing.",
+      "Rasmdagi qadam geometriyasi konseptual: xavfsizlik va o‘lchamlar amaldagi qurilish talablari asosida mutaxassis tomonidan tekshirilishi zarur.",
+      "Amaliyot: zinani reja va kesimda bitta joyda ko‘rsating va ochilish yo‘lini tekshiring."
     ],
     "exercise": "Zinapoya va xizmat yadrosini ikki planda bog‘lang.",
     "solution": "Vertikal yadro qavatlar aloqasi va koordinatsiya tayanchidir.",
     "block": 5,
     "recipe": "two-storey",
-    "boundary": "Konseptual o‘quv eskizi; tayyor konstruktiv hisob, universal normativ o‘lcham yoki tasdiqlangan ishchi detal emas.",
-    "credit": "ARCHIPRO UZ — mavzuga mos yangilangan arxitektura eskizi, 2026-10-07",
+    "boundary": "Rasmdagi shakl va yo‘nalishlar o‘quv uchun sxematik berilgan. Aniq o‘lcham, me'yoriy muvofiqlik, konstruktiv yechim va texnik tizimlar loyiha ma'lumotlari hamda mutaxassis tekshiruvi orqali alohida tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mazkur dars uchun tayyorlangan konseptual meʼmoriy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M01_004",
-    "asset": "l11_m01_004.svg",
-    "title": "Massing va fasad qavat mantiqidan kelib chiqadi",
+    "asset": "sketch-l11_m01_004.jpg",
+    "title": "Massing va fasad — mavzuga mos arxitekturaviy eskiz",
     "explanation": [
-      "Ikki qavatli hajm ichki funksional taqsimot bilan bog‘langan holda ko‘rsatilgan.",
-      "Fasad ritmi, kirish va hajm nisbatlari ichki qavat mantiqini ifodalashi kerak.",
-      "Material va detal yechimi bu konseptual eskizdan alohida."
+      "Ikki qavatli uy fasadida qavatlar balandligi va deraza ritmi yaxlit hajmga ta’sir qiladi.",
+      "Asosiy kirish, derazalar va tom silueti plan hamda qavat geometriyasiga mos bo‘lishi kerak.",
+      "Ko‘rgazmali fasad haqiqiy qurilish o‘lchamlari yoki hisoblangan konstruktiv yechim sifatida qabul qilinmaydi.",
+      "Amaliyot: ikkala qavatdagi deraza o‘qlarini fasadda solishtiring va kirish aksentini belgilang."
     ],
     "exercise": "Ikki qavat hajmini fasad va kesimda solishtiring.",
     "solution": "Massing ichki qavat tuzilishi bilan muvofiq bo‘lishi kerak.",
     "block": 5,
     "recipe": "two-storey",
-    "boundary": "Konseptual o‘quv eskizi; tayyor konstruktiv hisob, universal normativ o‘lcham yoki tasdiqlangan ishchi detal emas.",
-    "credit": "ARCHIPRO UZ — mavzuga mos yangilangan arxitektura eskizi, 2026-10-07",
+    "boundary": "Rasmdagi shakl va yo‘nalishlar o‘quv uchun sxematik berilgan. Aniq o‘lcham, me'yoriy muvofiqlik, konstruktiv yechim va texnik tizimlar loyiha ma'lumotlari hamda mutaxassis tekshiruvi orqali alohida tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mazkur dars uchun tayyorlangan konseptual meʼmoriy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M01_005",
-    "asset": "l11_m01_005.svg",
-    "title": "Ikki qavatli konsepsiya auditi",
+    "asset": "sketch-l11_m01_005.jpg",
+    "title": "2 qavatli konsepsiya auditi — mavzuga mos arxitekturaviy eskiz",
     "explanation": [
-      "Audit qavat roli, vertikal yadro, stack/tayanch va fasadni bir zanjirda tekshiradi.",
-      "Har bir qaror ikkala qavat bo‘yicha ishlashi tekshiriladi.",
-      "Konstruktiv va MEP tasdiqlari tegishli mutaxassislar bilan olinadi."
+      "1- va 2-qavat plani, zinapoya, qavat sathlari va fasad birga tekshiriladi.",
+      "Qavatlar orasida zinaning holati, deraza va eshiklar joylashuvi hamda ehtimoliy element to‘qnashuvlarini toping.",
+      "Bu yakuniy qurilish ekspertizasi emas; ochiq texnik savollar va hisoblar alohida ko‘rsatiladi.",
+      "Amaliyot: har bir nomuvofiqlik uchun muammo, dalil, tuzatish va qayta auditni yozing."
     ],
     "exercise": "Brief, ikki plan va yadro aloqasini audit qiling.",
     "solution": "Konsepsiya auditida vertikal foydalanishning ishlashi dalillanadi.",
     "block": 4,
     "recipe": "two-storey",
-    "boundary": "Konseptual o‘quv eskizi; tayyor konstruktiv hisob, universal normativ o‘lcham yoki tasdiqlangan ishchi detal emas.",
-    "credit": "ARCHIPRO UZ — mavzuga mos yangilangan arxitektura eskizi, 2026-10-07",
+    "boundary": "Rasmdagi shakl va yo‘nalishlar o‘quv uchun sxematik berilgan. Aniq o‘lcham, me'yoriy muvofiqlik, konstruktiv yechim va texnik tizimlar loyiha ma'lumotlari hamda mutaxassis tekshiruvi orqali alohida tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mazkur dars uchun tayyorlangan konseptual meʼmoriy o‘quv eskizi",
     "source_url": null
   },
   {

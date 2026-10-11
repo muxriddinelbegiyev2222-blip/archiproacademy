@@ -1,8 +1,8 @@
 {
   "source_review": "docs/VISUAL_CANDIDATE_REVIEW_2026_10_08.json",
   "review_pending_initial": 156,
-  "individually_replaced_on_main": 34,
-  "still_to_replace": 122,
+  "individually_replaced_on_main": 44,
+  "still_to_replace": 112,
   "seven_corrupted_images_repaired": 7,
   "seven_media_registry_recorded": 278,
   "seven_media_registry_complete": true,
@@ -40,12 +40,22 @@
     "L10_M09_005",
     "L10_M10_001",
     "L10_M10_002",
-    "L10_M10_003"
+    "L10_M10_003",
+    "L10_M10_004",
+    "L10_M10_005",
+    "L10_M11_002",
+    "L10_M11_003",
+    "L10_M11_004",
+    "L11_M01_001",
+    "L11_M01_002",
+    "L11_M01_003",
+    "L11_M01_004",
+    "L11_M01_005"
   ],
   "next_batch": "docs/ARCHIPRO_NEXT_TEN_TOPIC_SPECIFIC_SKETCHES.json",
-  "note": "Ten individually prepared JPEG illustrations L10_M08_004–L10_M10_003 were installed in one atomic git commit with 3 coverage CSVs and lesson_figures.json. Static file/hash audit is separate from unverified GUI/Windows CI; no SHNQ normative endorsement. Existing SVG originals retained as historical backups.",
+  "note": "44/156 lesson sketches referenced by JPEG on main; 112 require replacement. Image structural integrity and references pending post-commit verification; no GUI or Windows EXE regression claim. New additions are conceptual instructional illustrations, not normatively reviewed construction details.",
   "last_verified_main_commit": "f7904804ecdaa2616d80a71c59f1bfb2b18e1c9b",
-  "next_lesson_to_replace": "L10_M10_004",
+  "next_lesson_to_replace": "L11_M03_004",
   "static_integrity_audit": {
     "reviewed_course_count": 680,
     "course_coverage_unique_ids": 680,
@@ -74,25 +84,26 @@
   },
   "last_integrated_batch": {
     "codes": [
-      "L10_M08_004",
-      "L10_M08_005",
-      "L10_M09_001",
-      "L10_M09_002",
-      "L10_M09_003",
-      "L10_M09_004",
-      "L10_M09_005",
-      "L10_M10_001",
-      "L10_M10_002",
-      "L10_M10_003"
+      "L10_M10_004",
+      "L10_M10_005",
+      "L10_M11_002",
+      "L10_M11_003",
+      "L10_M11_004",
+      "L11_M01_001",
+      "L11_M01_002",
+      "L11_M01_003",
+      "L11_M01_004",
+      "L11_M01_005"
     ],
     "count": 10,
-    "max_jpeg_bytes": 400000,
     "dimensions": [
       1536,
       1024
     ],
+    "max_jpeg_bytes": 400000,
     "runtime_visual_json_updated": true,
     "auxiliary_csv_inventory_updated": true,
+    "static_integrity_checked_after_commit": false,
     "gui_verified": false
   },
   "inventory_reconciliation": {
