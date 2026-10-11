@@ -144,64 +144,11 @@ if errorlevel 1 (
     exit /b 1
 )
 
-python "app\tools\project_audit.py"
+python "app\tools\full_audit.py"
 
 if errorlevel 1 (
     echo.
-    echo [ERROR] PROJECT AUDIT FAILED
-    pause
-    exit /b 1
-)
-
-python "app\tools\database_audit.py"
-
-if errorlevel 1 (
-    echo.
-    echo [ERROR] DATABASE AUDIT FAILED
-    pause
-    exit /b 1
-)
-
-python "app\tools\runtime_smoke_test.py"
-
-if errorlevel 1 (
-    echo.
-    echo [ERROR] RUNTIME SMOKE TEST FAILED
-    pause
-    exit /b 1
-)
-
-python "app\tools\customer_features_smoke_test.py"
-
-if errorlevel 1 (
-    echo.
-    echo [ERROR] CUSTOMER FEATURES SMOKE TEST FAILED
-    pause
-    exit /b 1
-)
-
-python "app\tools\ui_navigation_smoke_test.py"
-
-if errorlevel 1 (
-    echo.
-    echo [ERROR] UI NAVIGATION SMOKE TEST FAILED
-    pause
-    exit /b 1
-)
-
-python "app\tools\learning_flow_smoke_test.py"
-
-if errorlevel 1 (
-    echo.
-    echo [ERROR] LEARNING FLOW SMOKE TEST FAILED
-    pause
-    exit /b 1
-)
-
-echo.
-python "app\tools\release_regression_test.py"
-if errorlevel 1 (
-    echo [ERROR] RELEASE REGRESSION TEST FAILED
+    echo [ERROR] FULL 10-CHECK AUDIT FAILED - RELEASE BUILD CANCELLED
     pause
     exit /b 1
 )
