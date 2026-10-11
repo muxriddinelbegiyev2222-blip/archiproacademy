@@ -1,0 +1,71 @@
+name: ARCHIPRO License-Fixed Windows Client
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "app/licensing/license_service.py"
+      - "tools/test_license_key_compatibility.py"
+      - ".github/workflows/archipro-licensefix-exe.yml"
+  workflow_dispatch:
+
+jobs:
+  signed-license-client:
+    runs-on: windows-latest
+    timeout-minutes: 45
+    permissions:
+      contents: read
+    env:
+      QT_QPA_PLATFORM: offscreen
+      PYTHONIOENCODING: utf-8
+      ARCHIPRO_AUDIT_MODE: "1"
+
+    steps:
+      - name: Checkout source (private signing key is NOT in repo)
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12 x64
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          architecture: x64
+
+      - name: Install release dependencies
+        shell: pwsh
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt pyinstaller
+
+      - name: Test current and legacy public key fingerprints and signature protection
+        shell: pwsh
+        run: python tools/test_license_key_compatibility.py
+
+      - name: Validate all 680 lessons and source quality
+        shell: pwsh
+        run: |
+          python tools/verify_source_integrity.py
+          python tools/verify_compact_media.py --require-complete
+          python tools/verify_course_visuals.py
+          python app/tools/content_guard.py
+          python app/tools/full_audit.py
+
+      - name: Build licensed Windows customer application
+        shell: pwsh
+        run: python app/tools/build_client.py --workpath build_client --distpath dist_client --specpath .
+
+      - name: Verify packaged 680 lesson executable
+        shell: pwsh
+        run: |
+          python app/tools/verify_built_exe.py "dist_client/ARCHIPRO UZ.exe"
+          if (!(Test-Path "dist_client/ARCHIPRO UZ.exe")) { throw "Missing customer EXE" }
+          $size=(Get-Item "dist_client/ARCHIPRO UZ.exe").Length
+          if ($size -lt 1000000) { throw "Suspiciously small customer EXE" }
+          Write-Host "Verified client EXE bytes: $size"
+
+      - name: Upload verified EXE for installation
+        uses: actions/upload-artifact@v4
+        with:
+          name: ARCHIPRO_UZ_EXE_LITSENZIYA_TUZATILGAN
+          path: dist_client/ARCHIPRO UZ.exe
+          if-no-files-found: error
+          retention-days: 7
