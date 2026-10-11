@@ -8157,12 +8157,11 @@
   {
     "code": "L14_M01_002",
     "asset": "l14_m01_002.svg",
-    "title": "Uzunlamasına zonalash — arxitekturaviy eskiz",
+    "title": "Uzun uchastkani zonalash — ko‘rgazmali namuna",
     "explanation": [
-      "1. To‘rt rangli uzun zona kirish, public, private va service funksiyalarini uchastka o‘qi bo‘ylab ketma-ket joylashtirish g‘oyasini ko‘rsatadi.",
-      "2. Uzun plan foydasiz koridorga aylanmasligi uchun circulation zonalash bilan integratsiya qilinadi.",
-      "3. Har bir zona oldingi va keyingi makon bilan mantiqiy bog‘lanishi, privacy esa ko‘chadan ichkariga qarab bosqichma-bosqich oshishi mumkin.",
-      "Darsdagi bajarish: 3 xil longitudinal zoning variant yarating."
+      "Uzun uy kirish, mehmon, oilaviy va xizmat zonalariga ketma-ket ajratilgan.",
+      "Ichki hovli yorug‘lik va ochiq makon beradi; asosiy yo‘l xususiy xonalarni kesib o‘tmaydi.",
+      "Zonalar aloqasi bilan koridor uzunligini reja va hajmiy ko‘rinishda birga tekshiring."
     ],
     "exercise": "Kirishdan private zonagacha ketma-ket funksional sxema tuzing.",
     "solution": "Uzunlamasına zonalash tor geometriyada funksiyalarni izchil va samarali joylashtirishga yordam beradi.",
@@ -8278,12 +8277,11 @@
   {
     "code": "L14_M02_004",
     "asset": "l14_m02_004.svg",
-    "title": "Fasad va perspektiva nazorati — arxitekturaviy eskiz",
+    "title": "Fasad va perspektivani tekshirish — ko‘rgazmali namuna",
     "explanation": [
-      "1. Uch qizil ko‘rish nuqtasi qiyshiq ko‘cha chizig‘idan binoning turli perspektivalarda qanday ko‘rinishini tekshirishni ko‘rsatadi.",
-      "2. Asosiy kirish va fasad kompozitsiyasi faqat plan ichida emas, real yondashuv yo‘nalishidan ham baholanadi.",
-      "3. Street line qiyshiq bo‘lsa, fasadning qaysi qismi birinchi ko‘rinishi va qaysi burchaklar dominant bo‘lishi o‘zgaradi.",
-      "Darsdagi bajarish: Site’da uch asosiy ko‘rish nuqtasini belgilab, fasad kompozitsiyasini solishtiring."
+      "Ko‘cha va kirish bo‘ylab uchta nuqta binoning turli ko‘rinishini beradi.",
+      "Asosiy kirish va fasadning o‘qilishini faqat yuqoridan reja bilan emas, yondashuv rakurslarida tekshiring.",
+      "Bir xil bino geometriyasi va ochilishlari barcha rakurslarda mos bo‘lishini solishtiring."
     ],
     "exercise": "Ko‘cha va kirishdan bino perspektivasini uch nuqtada tekshiring.",
     "solution": "Murakkab uchastkada fasad plan geometriyasi bilan birga real ko‘rish yo‘nalishlari orqali boshqariladi.",
@@ -8314,12 +8312,11 @@
   {
     "code": "L14_M03_001",
     "asset": "l14_m03_001.svg",
-    "title": "Nishabli site analysis — arxitekturaviy eskiz",
+    "title": "Nishabli uchastkani tahlil qilish — ko‘rgazmali namuna",
     "explanation": [
-      "1. Contour chiziqlari site’ning 3D relyefini, qizil va ko‘k nuqtalar high/low zonalarni ko‘rsatadi.",
-      "2. Slope direction, kirish, suv yo‘li va ko‘rinishlar birgalikda tahlil qilinadi.",
-      "3. Nishabli uchastkani tekis deb qabul qilib loyiha boshlash terrain bilan konflikt keltirishi mumkin.",
-      "Darsdagi bajarish: High/low point va asosiy slope directionni belgilang."
+      "Relyef chiziqlari va baland-past zonalar nishabning asosiy yo‘nalishini ko‘rsatadi.",
+      "Kirish va tabiiy suv yo‘li uchastka relyefi bilan birga o‘qiladi.",
+      "Mashqda haqiqiy topografik ma’lumotdan sathlarni aniqlang; eskizdagi strelkalar yo‘nalishni tushuntiradi."
     ],
     "exercise": "Contour va spot-level ma’lumotidan nishab yo‘nalishini o‘qing.",
     "solution": "Nishabli site tahlili relyefni uch o‘lchamli tizim sifatida tushunishdan boshlanadi.",
@@ -8332,12 +8329,11 @@
   {
     "code": "L14_M03_002",
     "asset": "l14_m03_002.svg",
-    "title": "Bino sathi va terrain — arxitekturaviy eskiz",
+    "title": "Bino sathi va mavjud relyef — ko‘rgazmali namuna",
     "explanation": [
-      "1. Bino qiyalik ustida ongli referens sathga joylashtirilgan; yashil chiziq konseptual 0.000 darajasini ko‘rsatadi.",
-      "2. Bino sathi qazish va to‘ldirish hajmi, kirish va tashqi level’lar bilan bog‘liq.",
-      "3. Earthwork yoki retaining hajmini topografik ma’lumotsiz taxmin qilish mumkin emas.",
-      "Darsdagi bajarish: Uch bino level strategiyasini section orqali solishtiring."
+      "Gorizontal bino sathi tabiiy yer qiyaligi bilan solishtirilgan.",
+      "Qazish, to‘ldirish va kirish bilan bog‘liq zonalar alohida ajratiladi.",
+      "Bino sathini haqiqiy topografik va geologik ma’lumot bilan tekshirib, texnik savollarni qayd qiling."
     ],
     "exercise": "Bino 0.000 sathini mavjud terrain bilan bog‘lang.",
     "solution": "Bino sathi terrain, access va cut/fill bilan birga tanlanadi.",
@@ -8350,12 +8346,11 @@
   {
     "code": "L14_M03_003",
     "asset": "l14_m03_003.svg",
-    "title": "Split-level va terracing — arxitekturaviy eskiz",
+    "title": "Pog‘onali sathlar va terassalar — ko‘rgazmali namuna",
     "explanation": [
-      "1. Uch bosqichli bino massasi qiyalikka mos ravishda sathlarning ketma-ket tushishini ko‘rsatadi.",
-      "2. Tashqi terracing ham terrain bilan ishlashning bir usuli; platformalar orasidagi circulation alohida tekshiriladi.",
-      "3. Ko‘p level avtomatik ravishda yaxshi loyiha emas; accessibility va ichki harakat murakkablashishi mumkin.",
-      "Darsdagi bajarish: Flat platform va split-level konsepsiyalarini taqqoslang."
+      "Ichki sathlar va tashqi terassalar qiyalik bo‘ylab bosqichma-bosqich joylashadi.",
+      "Sathlar orasidagi ichki va tashqi harakatni kesimda kuzating.",
+      "Bunday tanlovning kundalik foydalanish, kirish va texnik hisobga ta’sirini yozing."
     ],
     "exercise": "Nishabga mos split-level va terracing strategiyasini ko‘rsating.",
     "solution": "Split-level terrain bilan ishlashi mumkin, lekin circulation va accessibility bilan birga tekshiriladi.",
@@ -8368,12 +8363,11 @@
   {
     "code": "L14_M03_004",
     "asset": "l14_m03_004.svg",
-    "title": "Drenaj, retaining va access — arxitekturaviy eskiz",
+    "title": "Drenaj, tayanch devor va kirish — ko‘rgazmali namuna",
     "explanation": [
-      "1. Ko‘k strelkalar surface water yo‘lini, qalin vertikal element retaining zonasini, pastdagi yo‘l esa accessni ko‘rsatadi.",
-      "2. Nishabli site’da suv yo‘li bino va retaining elementlardan xavfsiz uzoqlashtirilishi kerak.",
-      "3. Retaining wall o‘lchami va armaturasi eskizdan olinmaydi; geotexnik ma’lumot va konstruktor hisobi talab qilinadi.",
-      "Darsdagi bajarish: Drainage, retaining va access konfliktlarini sectionda aniqlang."
+      "Suv yo‘li, tayanch devor zonasi va kirish bitta kesimda muvofiqlashtiriladi.",
+      "Yomg‘ir suvining bino va yer tutashuvida to‘planadigan nuqtalarini aniqlang.",
+      "Tayanch devor, drenaj va kirish yechimini mutaxassislar tekshiradigan savollar bilan bog‘lang."
     ],
     "exercise": "Suv yo‘li, retaining va kirish yo‘nalishini bir sectionda koordinatsiya qiling.",
     "solution": "Nishabli site’da drainage, retaining va access yagona terrain tizimi sifatida ko‘riladi.",
@@ -8422,12 +8416,11 @@
   {
     "code": "L14_M04_002",
     "asset": "l14_m04_002.svg",
-    "title": "Functional clusters — arxitekturaviy eskiz",
+    "title": "Funksional guruhlar — ko‘rgazmali namuna",
     "explanation": [
-      "1. Olti rangli blok guest, family, service va boshqa funksional guruhlarni alohida cluster sifatida ifodalaydi.",
-      "2. Clustering navigatsiya, privacy va kundalik masofalarni boshqarishga yordam beradi.",
-      "3. Clusterlar bir-biridan ajralgan orollar emas; kerakli adjacencylar saqlanadi.",
-      "Darsdagi bajarish: Villa programmasini 5 functional clusterga ajrating."
+      "Katta uy dasturi mehmon, oila, xizmat va hovli guruhlariga ajratilgan.",
+      "Har guruhning ichki aloqasi va qo‘shni guruhga chiqishini reja bo‘yicha kuzating.",
+      "Xususiylik va kundalik masofalarni funksional guruhlar o‘rtasidagi aloqa bilan baholang."
     ],
     "exercise": "Katta programni mantiqiy funksional bloklarga ajrating.",
     "solution": "Functional clustering katta uyda navigatsiya va privacy’ni boshqarishni osonlashtiradi.",
@@ -8440,12 +8433,11 @@
   {
     "code": "L14_M04_003",
     "asset": "l14_m04_003.svg",
-    "title": "Circulation va servis — arxitekturaviy eskiz",
+    "title": "Harakat yo‘llari va xizmat — ko‘rgazmali namuna",
     "explanation": [
-      "1. Yashil yo‘l family/guest harakatini, punktir yo‘llar service circulation’ni konseptual ko‘rsatadi.",
-      "2. Oshxona, storage, laundry va technical zonalar samarali bog‘lanadi, lekin reprezentativ zonalarni keraksiz kesib o‘tmaydi.",
-      "3. Guest, family va service movement kerakli joylarda ajraladi va kerakli joylarda nazoratli tutashadi.",
-      "Darsdagi bajarish: Uch circulation diagramini alohida chizing."
+      "Mehmon, oila va xizmat yo‘llari bitta villa rejasida ajratilgan.",
+      "Oshxona, saqlash va xizmat xonalari orasidagi aloqa asosiy mehmon makonini keraksiz kesib o‘tmasligini tekshiring.",
+      "Yo‘llarning kesishgan joylarini topib, kundalik foydalanish ssenariysi bilan baholang."
     ],
     "exercise": "Guest, family va service circulation’ni alohida tahlil qiling.",
     "solution": "Katta villada circulation funksional clusterlar va service efficiency bilan birga ishlaydi.",
@@ -8458,12 +8450,11 @@
   {
     "code": "L14_M04_004",
     "asset": "l14_m04_004.svg",
-    "title": "Massing, courtyard va landscape — arxitekturaviy eskiz",
+    "title": "Hajmlar, ichki hovli va landshaft — ko‘rgazmali namuna",
     "explanation": [
-      "1. Bir nechta hajm va markaziy courtyard katta bino massasini inson masshtabiga yaqinlashtirish g‘oyasini ko‘rsatadi.",
-      "2. Villa terrace, pool, garden va courtyard bilan yagona fazoviy tizim sifatida tashkil qilinadi.",
-      "3. Katta monolit massing ichki yorug‘lik va uzoq circulation muammosini kuchaytirishi mumkin.",
-      "Darsdagi bajarish: Uch massing strategy ishlab chiqib, courtyard va landscape aloqasini solishtiring."
+      "Bir nechta bog‘langan hajm ichki hovli va tashqi makon bilan yagona tizim hosil qiladi.",
+      "Katta bino massasini terassa, bog‘ va hovli aloqalari orqali baholang.",
+      "Ichki xonalar tashqi makonga qanday chiqishini mos reja bilan solishtiring."
     ],
     "exercise": "Katta villa massasini bir nechta hajm va tashqi makonlar bilan boshqaring.",
     "solution": "Massingni bo‘lish va landscape bilan bog‘lash katta villani inson masshtabida tashkil qilishga yordam beradi.",
@@ -8512,12 +8503,11 @@
   {
     "code": "L14_M05_002",
     "asset": "l14_m05_002.svg",
-    "title": "Birgalik va mustaqillik — arxitekturaviy eskiz",
+    "title": "Birgalik va mustaqillik — ko‘rgazmali namuna",
     "explanation": [
-      "1. Markazdagi shared living/dining ikki tomondagi private household zonalarni bog‘laydi.",
-      "2. Privacy oilani to‘liq ajratish degani emas; shared, semi-private va private darajalar muvozanat qilinadi.",
-      "3. Ba’zi householdlar uchun alohida living yoki kichik service zone kerak bo‘lishi mumkin.",
-      "Darsdagi bajarish: Shared / semi-private / private zonalash yarating."
+      "Umumiy yashash makoni ikki oilaviy xususiy guruhni bog‘laydi.",
+      "Birga foydalaniladigan va mustaqil makonlar o‘rtasidagi yo‘l hamda xususiylikni solishtiring.",
+      "Xonalar aloqasini oilaning haqiqiy yashash odatiga mos mezonlar bilan tekshiring."
     ],
     "exercise": "Shared va private makonlar orasida muvozanat yarating.",
     "solution": "Ko‘p avlodli uyda birgalik va mustaqillik fazoviy darajalar orqali boshqariladi.",
