@@ -9,13 +9,16 @@ from datetime import datetime
 TOOLS = Path(__file__).resolve().parent
 PROJECT = TOOLS.parents[1]
 CHECKS = [
-    ('PROJECT AUDIT', 'project_audit.py'),
-    ('DATABASE AUDIT', 'database_audit.py'),
-    ('RUNTIME SMOKE TEST', 'runtime_smoke_test.py'),
-    ('CUSTOMER FEATURES SMOKE TEST', 'customer_features_smoke_test.py'),
-    ('UI NAVIGATION SMOKE TEST', 'ui_navigation_smoke_test.py'),
-    ('LEARNING FLOW SMOKE TEST', 'learning_flow_smoke_test.py'),
-    ('RELEASE REGRESSION TEST', 'release_regression_test.py'),
+    ('SOURCE INTEGRITY', 'tools/verify_source_integrity.py'),
+    ('COMPACT MEDIA INTEGRITY', 'tools/verify_compact_media.py'),
+    ('LESSON IMAGE INTEGRITY', 'tools/verify_course_visuals.py'),
+    ('PROJECT AUDIT', 'app/tools/project_audit.py'),
+    ('DATABASE AUDIT', 'app/tools/database_audit.py'),
+    ('RUNTIME SMOKE TEST', 'app/tools/runtime_smoke_test.py'),
+    ('CUSTOMER FEATURES SMOKE TEST', 'app/tools/customer_features_smoke_test.py'),
+    ('UI NAVIGATION SMOKE TEST', 'app/tools/ui_navigation_smoke_test.py'),
+    ('LEARNING FLOW SMOKE TEST', 'app/tools/learning_flow_smoke_test.py'),
+    ('RELEASE REGRESSION TEST', 'app/tools/release_regression_test.py'),
 ]
 
 
@@ -24,12 +27,13 @@ def main():
     log_dir.mkdir(parents=True, exist_ok=True)
     results = []
     env = dict(os.environ, PYTHONIOENCODING='utf-8', PYTHONUNBUFFERED='1')
+    env.setdefault('QT_QPA_PLATFORM', 'offscreen')  # automated UI smoke checks
     for index, (title, filename) in enumerate(CHECKS, 1):
         print(f'\n{index}/{len(CHECKS)} - {title}', flush=True)
-        log = log_dir / filename.replace('.py', '.log')
+        log = log_dir / Path(filename).name.replace('.py', '.log')
         try:
             with log.open('w', encoding='utf-8') as output:
-                process = subprocess.run([sys.executable, str(TOOLS / filename)], cwd=PROJECT,
+                process = subprocess.run([sys.executable, str(PROJECT / filename)], cwd=PROJECT,
                                          env=env, stdout=output, stderr=subprocess.STDOUT, timeout=600)
             code = process.returncode
         except (OSError, subprocess.TimeoutExpired) as exc:
