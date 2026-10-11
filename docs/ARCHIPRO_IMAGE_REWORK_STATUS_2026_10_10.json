@@ -1,8 +1,8 @@
 {
   "source_review": "docs/VISUAL_CANDIDATE_REVIEW_2026_10_08.json",
   "review_pending_initial": 156,
-  "individually_replaced_on_main": 94,
-  "still_to_replace": 31,
+  "individually_replaced_on_main": 104,
+  "still_to_replace": 21,
   "seven_corrupted_images_repaired": 7,
   "seven_media_registry_recorded": 278,
   "seven_media_registry_complete": true,
@@ -100,12 +100,22 @@
     "L14_M01_001",
     "L14_M02_001",
     "L14_M02_002",
-    "L14_M02_003"
+    "L14_M02_003",
+    "L14_M01_002",
+    "L14_M02_004",
+    "L14_M03_001",
+    "L14_M03_002",
+    "L14_M03_003",
+    "L14_M03_004",
+    "L14_M04_002",
+    "L14_M04_003",
+    "L14_M04_004",
+    "L14_M05_002"
   ],
   "next_batch": "docs/ARCHIPRO_NEXT_TEN_TOPIC_SPECIFIC_SKETCHES.json",
   "note": "Progress counts completed JPEG replacements, pending required sketches, and separately reviewed lessons not requiring a new image. Existing valid material remains. Normative expert review and a native Windows release build are separate from this image task.",
   "last_verified_main_commit": "ff2165fa3c70803e816426fb1163dbe6666a3888",
-  "next_lesson_to_replace": "L14_M01_002",
+  "next_lesson_to_replace": "L14_M05_003",
   "static_integrity_audit": {
     "reviewed_course_count": 680,
     "course_coverage_unique_ids": 680,
@@ -133,25 +143,24 @@
     "full_runtime_qa_verified": false
   },
   "last_integrated_batch": {
-    "manifest": "docs/ARCHIPRO_RECOVERED_BATCH_3_2026_10_11.json",
     "codes": [
-      "L13_M06_004",
-      "L13_M04_004",
-      "L13_M08_002",
-      "L14_M01_003",
-      "L13_M07_002",
-      "L14_M01_004",
-      "L14_M01_001",
-      "L14_M02_001",
-      "L14_M02_002",
-      "L14_M02_003"
+      "L14_M01_002",
+      "L14_M02_004",
+      "L14_M03_001",
+      "L14_M03_002",
+      "L14_M03_003",
+      "L14_M03_004",
+      "L14_M04_002",
+      "L14_M04_003",
+      "L14_M04_004",
+      "L14_M05_002"
     ],
     "count": 10,
-    "max_jpeg_bytes": 399871,
-    "dimensions_preserved": true,
-    "runtime_visual_json_updated": true,
-    "auxiliary_csv_inventory_updated": true,
-    "source_images_visually_reviewed": true
+    "reviewed_visuals": true,
+    "uploaded_as_jpeg": true,
+    "max_jpeg_bytes": 394566,
+    "image_links_updated": true,
+    "uploaded_by": "GitHub Git data API"
   },
   "inventory_reconciliation": {
     "completed_for": [
@@ -268,7 +277,7 @@
     "commit": "ff2165fa3c70803e816426fb1163dbe6666a3888",
     "lesson_titles_updated": true,
     "uzbek_explanations_updated": true,
-    "actual_new_jpegs_uploaded": 0,
+    "actual_new_jpegs_uploaded": 10,
     "existing_svg_links_preserved": true
   },
   "latest_connector_static_verification": {
