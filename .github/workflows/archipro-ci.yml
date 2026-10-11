@@ -39,6 +39,10 @@ jobs:
           python tools/verify_compact_media.py --require-complete
           python tools/verify_course_visuals.py
 
+      - name: Lesson content guard
+        shell: pwsh
+        run: python app/tools/content_guard.py
+
       - name: Project audit
         shell: pwsh
         run: python app/tools/project_audit.py
