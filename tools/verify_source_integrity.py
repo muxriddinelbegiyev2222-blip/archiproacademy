@@ -45,7 +45,10 @@ def main() -> int:
         )
 
     ignored = {".git", ".venv", "venv", "__pycache__", "build",
-               "build_client", "dist", "dist_client", "release", "node_modules"}
+               "build_client", "build_owner", "build_admin",
+               "dist", "dist_client", "dist_owner", "dist_admin",
+               "release", "audit_logs", "node_modules", "_internal",
+               ".mypy_cache", ".pytest_cache"}
     forbidden = {"archipro_private.key", "private_key.pem", ".env"}
     for folder, subdirs, files in os.walk(ROOT):
         subdirs[:] = [name for name in subdirs if name not in ignored]
