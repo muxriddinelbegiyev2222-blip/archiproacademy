@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-11",
+  "topic": "ARCHIPRO UZ 10 lesson image replacements",
+  "format": "JPEG",
+  "resolution": [
+    1536,
+    1024
+  ],
+  "max_bytes": 400000,
+  "repo_parent_sha": "1b836adc2e2e9eccd6f6780e1da20362bfdf849a",
+  "records": [
+    {
+      "code": "L10_M08_004",
+      "title": "Tom va fasad koordinatsiyasi",
+      "new_asset": "app/courses/visual_assets/sketch-l10_m08_004.jpg",
+      "bytes": 321297,
+      "sha256": "18dfd5e2d9a4578305fb84f387022543af1159d3d2fc80805058d28d2d4226dd",
+      "git_blob_sha": "f24cb0a1ff023befc782f381aefd190cfc262841"
+    },
+    {
+      "code": "L10_M08_005",
+      "title": "Tom professional audit",
+      "new_asset": "app/courses/visual_assets/sketch-l10_m08_005.jpg",
+      "bytes": 372642,
+      "sha256": "64153c179bf4279d92930fb424f4c722ae047ef4dcefbf450082930c81369413",
+      "git_blob_sha": "c7ec0892bd6c456776cb88c1fb0a4e3c08da976e"
+    },
+    {
+      "code": "L10_M09_001",
+      "title": "Professional kesim tushunchasi",
+      "new_asset": "app/courses/visual_assets/sketch-l10_m09_001.jpg",
+      "bytes": 164311,
+      "sha256": "fe6a840f7356f541cf32a81159cc71cf06e4514e4f031c94a9eae9d9eaf3ea3f",
+      "git_blob_sha": "26e36ee846ca94865d2b59d319029e32a5b7528a"
+    },
+    {
+      "code": "L10_M09_002",
+      "title": "Sathlar va balandliklar",
+      "new_asset": "app/courses/visual_assets/sketch-l10_m09_002.jpg",
+      "bytes": 167207,
+      "sha256": "b6e8cfacd94324245312ec5f4e65c4e684cc489c33ab46699377c0a263d42ca9",
+      "git_blob_sha": "d749b2f541bfbc649e1bb086b96daf2e95441ac4"
+    },
+    {
+      "code": "L10_M09_003",
+      "title": "Konstruksiya va openinglar",
+      "new_asset": "app/courses/visual_assets/sketch-l10_m09_003.jpg",
+      "bytes": 167094,
+      "sha256": "1158beee701988ca9abbbe9184878494b9cfe1e326b8703d4d4b7f18390dfb2f",
+      "git_blob_sha": "ccd7e3676a74186b106debe7f74a42599ea44b6b"
+    },
+    {
+      "code": "L10_M09_004",
+      "title": "Kesim orqali dizayn tekshiruvi",
+      "new_asset": "app/courses/visual_assets/sketch-l10_m09_004.jpg",
+      "bytes": 181734,
+      "sha256": "3310aa6a8d6deefaffbb752ce0711ada3ac9ee98626f30883ee295bb2785b2c9",
+      "git_blob_sha": "b379f3082178c1d05dac5ce580aae03cc2b3541b"
+    },
+    {
+      "code": "L10_M09_005",
+      "title": "Kesim professional audit",
+      "new_asset": "app/courses/visual_assets/sketch-l10_m09_005.jpg",
+      "bytes": 168481,
+      "sha256": "d99e43e8188a5579034a0090a43384b1bf1a1289c0c22afc4e4210c439550fa4",
+      "git_blob_sha": "30474b9d77b4ab885fd322e5c0b04b33ee302302"
+    },
+    {
+      "code": "L10_M10_001",
+      "title": "Final genplan strategiyasi",
+      "new_asset": "app/courses/visual_assets/sketch-l10_m10_001.jpg",
+      "bytes": 364659,
+      "sha256": "0be4de2b34ba1896763eff3a1eafbd44dcabc14858574996204d9d7b0e463f00",
+      "git_blob_sha": "a616efe9412bdbce8f24a8825a20af2c67caac09"
+    },
+    {
+      "code": "L10_M10_002",
+      "title": "Piyoda va avtomobil harakati",
+      "new_asset": "app/courses/visual_assets/sketch-l10_m10_002.jpg",
+      "bytes": 347187,
+      "sha256": "1f30418075b0ab56fa3c097f08596716f358a223e9ef22ae6649ee0ab2e494b0",
+      "git_blob_sha": "6a152dca69bfbe532e82326183846d04787d43b6"
+    },
+    {
+      "code": "L10_M10_003",
+      "title": "Hovli va tashqi funksiyalar",
+      "new_asset": "app/courses/visual_assets/sketch-l10_m10_003.jpg",
+      "bytes": 359018,
+      "sha256": "d9b921683eb0e6df568aa5c719c89c83808bf82a9aee5f5d20d0962024db0552",
+      "git_blob_sha": "54b9630d8d20a0995d4fed63b6634477adf8e9b8"
+    }
+  ],
+  "install_status": "installed_via_atomic_commit",
+  "quality_limitations": "Conceptual instructional illustrations; not engineering approvals. Functional Windows UI not yet verified."
+}

@@ -5647,172 +5647,182 @@
   },
   {
     "code": "L10_M08_004",
-    "asset": "l10_m08_004.svg",
+    "asset": "sketch-l10_m08_004.jpg",
     "title": "Tom va fasad koordinatsiyasi — arxitekturaviy eskiz",
     "explanation": [
-      "L-shaklli uy tomining ikki varianti: sodda hajmlar va murakkab tutashuvli yechim.",
-      "Tom konturini fasad va kesimga solishtiring → balandlik mosligi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Bitta uydagi tom shaklini fasad silueti bilan solishtiring. Karniz va deraza balandliklari bir chizmada izchil ko‘rinishi kerak.",
+      "Kirish soyaboni va tom qirralarining tashqi ko‘rinishga ta’sirini ikki variantda tahlil qiling.",
+      "Suvni chiqarish nuqtalari piyodalar yo‘li va kirish zonasiga xalal bermasligini tekshiring.",
+      "Darsdagi bajarish: mavzuning asosiy belgilarini o‘z loyihangiz bilan solishtirib, aniqlangan farqlarni yozing."
     ],
     "exercise": "Fasad balandligi va kirish zonasini tom bilan solishtiring.",
     "solution": "Tom qarori tashqi ko‘rinish va kirishdan foydalanishga ta’sir qiladi.",
     "block": 5,
     "recipe": "roof-plan",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Mavzuni tushuntiruvchi konseptual arxitekturaviy chizma. Normativ o‘lcham, hisoblangan konstruktiv yechim yoki qurilishga tayyor hujjat emas; aniq yechim mutaxassis tekshiruvi va amaldagi talablar bilan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — dars mavzusi uchun alohida tayyorlangan o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L10_M08_005",
-    "asset": "l10_m08_005.svg",
+    "asset": "sketch-l10_m08_005.jpg",
     "title": "Tom professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "L-shaklli uy tomining ikki varianti: sodda hajmlar va murakkab tutashuvli yechim.",
-      "Ikki variantni suv, tayanch, shakl va xizmat bilan taqqoslang → asoslangan tanlov.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Tom qirrasi, vodiy, karniz va fasadga tutashuvni bir xil geometrik sxemada tekshiring.",
+      "Har tom qiyaligidan novga, undan quvurgacha uzluksiz suv yo‘lini kuzating.",
+      "Murakkab tugunlarning qoplama, suv o‘tkazmaslik va shamol ta’siriga oid savollarini mutaxassisga bering.",
+      "Darsdagi bajarish: mavzuning asosiy belgilarini o‘z loyihangiz bilan solishtirib, aniqlangan farqlarni yozing."
     ],
     "exercise": "Suv, tutashuv va xizmat savollarini audit qiling.",
     "solution": "Tom auditi ochiq muhandislik masalalarini yashirmaydi.",
     "block": 5,
     "recipe": "roof-plan",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Mavzuni tushuntiruvchi konseptual arxitekturaviy chizma. Normativ o‘lcham, hisoblangan konstruktiv yechim yoki qurilishga tayyor hujjat emas; aniq yechim mutaxassis tekshiruvi va amaldagi talablar bilan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — dars mavzusi uchun alohida tayyorlangan o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L10_M09_001",
-    "asset": "l10_m09_001.svg",
+    "asset": "sketch-l10_m09_001.jpg",
     "title": "Professional kesim tushunchasi — arxitekturaviy eskiz",
     "explanation": [
-      "Kesim kirish, zinapoya yoki balandlik o‘zgarishi orqali o‘tadi; ±0.000 va +3.000 m sathlar ko‘rsatiladi.",
-      "Kesuvchi chiziqni muhim ichki aloqadan o‘tkazing → maqsadli kesim.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Kesim binoni vertikal tekislikda ochadi: tom, pol, devor, poydevor va ochilishlar birga ko‘rinadi.",
+      "Kesim chizig‘ini shunday tanlangki, muhim xona va balandlik aloqalari ochib berilsin.",
+      "Qavat plani va 3D ko‘rinish bilan solishtirib elementning joylashuvini tekshiring.",
+      "Darsdagi bajarish: mavzuning asosiy belgilarini o‘z loyihangiz bilan solishtirib, aniqlangan farqlarni yozing."
     ],
     "exercise": "Tekshiriladigan joydan kesim o‘tkazing.",
     "solution": "Professional kesim qarorni tekshiradigan joyni ko‘rsatadi.",
     "block": 5,
     "recipe": "stories",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Mavzuni tushuntiruvchi konseptual arxitekturaviy chizma. Normativ o‘lcham, hisoblangan konstruktiv yechim yoki qurilishga tayyor hujjat emas; aniq yechim mutaxassis tekshiruvi va amaldagi talablar bilan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — dars mavzusi uchun alohida tayyorlangan o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L10_M09_002",
-    "asset": "l10_m09_002.svg",
+    "asset": "sketch-l10_m09_002.jpg",
     "title": "Sathlar va balandliklar — arxitekturaviy eskiz",
     "explanation": [
-      "Kesim kirish, zinapoya yoki balandlik o‘zgarishi orqali o‘tadi; ±0.000 va +3.000 m sathlar ko‘rsatiladi.",
-      "Pol, yopma, shift va tom sathlarini belgilang → vertikal ma’lumot.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Asosiy pol sathini yagona referens qilib oling va shift, tom hamda tashqi sathlarni unga bog‘lang.",
+      "Kesimdagi har bir balandlik belgisi plandagi va 3D modeldagi sath bilan mos kelishini tekshiring.",
+      "Chizmada berilgan konseptual belgilardan me’yoriy yoki hisoblangan balandlik sifatida foydalanmang.",
+      "Darsdagi bajarish: mavzuning asosiy belgilarini o‘z loyihangiz bilan solishtirib, aniqlangan farqlarni yozing."
     ],
     "exercise": "Pol, slab va ochilish sathlarini bir birlikda yozing.",
     "solution": "Balandlik tekshiruvi aniq tayanch sathiga bog‘lanadi.",
     "block": 5,
     "recipe": "stories",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Mavzuni tushuntiruvchi konseptual arxitekturaviy chizma. Normativ o‘lcham, hisoblangan konstruktiv yechim yoki qurilishga tayyor hujjat emas; aniq yechim mutaxassis tekshiruvi va amaldagi talablar bilan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — dars mavzusi uchun alohida tayyorlangan o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L10_M09_003",
-    "asset": "l10_m09_003.svg",
+    "asset": "sketch-l10_m09_003.jpg",
     "title": "Konstruksiya va openinglar — arxitekturaviy eskiz",
     "explanation": [
-      "Kesim kirish, zinapoya yoki balandlik o‘zgarishi orqali o‘tadi; ±0.000 va +3.000 m sathlar ko‘rsatiladi.",
-      "Tayanch va openinglarni model bilan solishtiring → konflikt.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Kesimda poydevor, devor, plita va tomning konstruktiv tutashuv joylarini ko‘rsating.",
+      "Derazaning pastki va yuqori chetini, eshik ochilishini hamda ularning vertikal joylashuvini solishtiring.",
+      "Yuk ko‘taruvchi elementni o‘zgartirishni mustaqil tasdiqlamang; konstruktor hisobini talab qiling.",
+      "Darsdagi bajarish: mavzuning asosiy belgilarini o‘z loyihangiz bilan solishtirib, aniqlangan farqlarni yozing."
     ],
     "exercise": "Balka va ochilish konfliktini o‘lcham bilan belgilang.",
     "solution": "Kesim yashirin vertikal konfliktni dalillaydi.",
     "block": 5,
     "recipe": "stories",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Mavzuni tushuntiruvchi konseptual arxitekturaviy chizma. Normativ o‘lcham, hisoblangan konstruktiv yechim yoki qurilishga tayyor hujjat emas; aniq yechim mutaxassis tekshiruvi va amaldagi talablar bilan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — dars mavzusi uchun alohida tayyorlangan o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L10_M09_004",
-    "asset": "l10_m09_004.svg",
+    "asset": "sketch-l10_m09_004.jpg",
     "title": "Kesim orqali dizayn tekshiruvi — arxitekturaviy eskiz",
     "explanation": [
-      "Kesim kirish, zinapoya yoki balandlik o‘zgarishi orqali o‘tadi; ±0.000 va +3.000 m sathlar ko‘rsatiladi.",
-      "Odam harakati, yorug‘lik va bosh usti bo‘shligini kesimda ko‘ring → dizayn tekshiruvi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Kesimda tabiiy yorug‘likning kirishi, xona hajmi va mebel joylashuvini birgalikda kuzating.",
+      "Deraza, shift va pol balandliklari xonaning foydalanish ssenariysiga mosligini tekshiring.",
+      "Xonalararo o‘tish va ko‘rinishlarga kesimdagi o‘zgarishlar qanday ta’sir qilishini yozing.",
+      "Darsdagi bajarish: mavzuning asosiy belgilarini o‘z loyihangiz bilan solishtirib, aniqlangan farqlarni yozing."
     ],
     "exercise": "Ikki yechimni foydalanish va konstruktor savoli bilan solishtiring.",
     "solution": "Kesim orqali dizayn qarori texnik oqibat bilan baholanadi.",
     "block": 5,
     "recipe": "stories",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Mavzuni tushuntiruvchi konseptual arxitekturaviy chizma. Normativ o‘lcham, hisoblangan konstruktiv yechim yoki qurilishga tayyor hujjat emas; aniq yechim mutaxassis tekshiruvi va amaldagi talablar bilan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — dars mavzusi uchun alohida tayyorlangan o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L10_M09_005",
-    "asset": "l10_m09_005.svg",
+    "asset": "sketch-l10_m09_005.jpg",
     "title": "Kesim professional audit — arxitekturaviy eskiz",
     "explanation": [
-      "Kesim kirish, zinapoya yoki balandlik o‘zgarishi orqali o‘tadi; ±0.000 va +3.000 m sathlar ko‘rsatiladi.",
-      "Har sath va ochilishni plan/fasadga bog‘lang → mos hujjatlar.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Kesim, reja va 3D modeldagi deraza, eshik, tom hamda devorlar bir joyda ekanini tekshiring.",
+      "Aniqlangan nomuvofiqlikni muammo → dalil → tuzatish → qayta tekshiruv tartibida qayd eting.",
+      "Yakuniy auditda hali tasdiqlanmagan sath yoki konstruktiv tugunga ‘tayyor’ belgisi qo‘ymang.",
+      "Darsdagi bajarish: mavzuning asosiy belgilarini o‘z loyihangiz bilan solishtirib, aniqlangan farqlarni yozing."
     ],
     "exercise": "Yangilangan kesim va bog‘liq plan-fasadni topshiring.",
     "solution": "Kesim auditida tuzatish barcha tegishli ko‘rinishlarga yetkaziladi.",
     "block": 5,
     "recipe": "stories",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Mavzuni tushuntiruvchi konseptual arxitekturaviy chizma. Normativ o‘lcham, hisoblangan konstruktiv yechim yoki qurilishga tayyor hujjat emas; aniq yechim mutaxassis tekshiruvi va amaldagi talablar bilan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — dars mavzusi uchun alohida tayyorlangan o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L10_M10_001",
-    "asset": "l10_m10_001.svg",
+    "asset": "sketch-l10_m10_001.jpg",
     "title": "Final genplan strategiyasi — arxitekturaviy eskiz",
     "explanation": [
-      "Uy, parking, ayvon, o‘yin va xo‘jalik zonasi yakuniy genplanda birlashtiriladi.",
-      "Briefdagi tashqi vazifalarni genplan elementiga bog‘lang → qamrov.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Uy, asosiy kirish, hovli, xizmat yo‘li va yashil zonalarni bitta uchastka rejasida baholang.",
+      "Binoning o‘rnini tanlashda ichki xonalar va tashqi foydalanish o‘rtasidagi aloqani tekshiring.",
+      "Genplan loyihasi tasodifiy bo‘sh maydonlarni to‘ldirish emas, funksiyalarni birgalikda tashkil qilishdir.",
+      "Darsdagi bajarish: mavzuning asosiy belgilarini o‘z loyihangiz bilan solishtirib, aniqlangan farqlarni yozing."
     ],
     "exercise": "Genplan maqsadi va tekshirilgan chegarani qayd qiling.",
     "solution": "Final genplan bino bilan uchastkani yagona foydalanish tizimiga keltiradi.",
     "block": 5,
     "recipe": "genplan",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Mavzuni tushuntiruvchi konseptual arxitekturaviy chizma. Normativ o‘lcham, hisoblangan konstruktiv yechim yoki qurilishga tayyor hujjat emas; aniq yechim mutaxassis tekshiruvi va amaldagi talablar bilan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — dars mavzusi uchun alohida tayyorlangan o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L10_M10_002",
-    "asset": "l10_m10_002.svg",
+    "asset": "sketch-l10_m10_002.jpg",
     "title": "Piyoda va avtomobil harakati — arxitekturaviy eskiz",
     "explanation": [
-      "Uy, parking, ayvon, o‘yin va xo‘jalik zonasi yakuniy genplanda birlashtiriladi.",
-      "Piyoda va avtomobil harakatini alohida chizing → konflikt tekshiruvi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Piyoda, avtomobil va xizmat yo‘llarini alohida ranglarda belgilang.",
+      "Mashina to‘xtash joyiga harakat asosiy piyoda va bolalar hududini xavfli kesib o‘tmasin.",
+      "Darvoza, asosiy kirish va texnik hududga borishni uchastka planida va 3D ko‘rinishda solishtiring.",
+      "Darsdagi bajarish: mavzuning asosiy belgilarini o‘z loyihangiz bilan solishtirib, aniqlangan farqlarni yozing."
     ],
     "exercise": "Piyoda va avtomobil yo‘llarining kesishuvini belgilang.",
     "solution": "Harakat konfliktlari foydalanish ssenariysida tekshiriladi.",
     "block": 5,
     "recipe": "genplan",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Mavzuni tushuntiruvchi konseptual arxitekturaviy chizma. Normativ o‘lcham, hisoblangan konstruktiv yechim yoki qurilishga tayyor hujjat emas; aniq yechim mutaxassis tekshiruvi va amaldagi talablar bilan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — dars mavzusi uchun alohida tayyorlangan o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L10_M10_003",
-    "asset": "l10_m10_003.svg",
+    "asset": "sketch-l10_m10_003.jpg",
     "title": "Hovli va tashqi funksiyalar — arxitekturaviy eskiz",
     "explanation": [
-      "Uy, parking, ayvon, o‘yin va xo‘jalik zonasi yakuniy genplanda birlashtiriladi.",
-      "Hovli funksiyalarini uy xonalari bilan bog‘lang → foydali tashqi aloqa.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Navis, ayvon, dam olish va hovli o‘simliklarini uy bilan birgalikda loyihalang.",
+      "Oshxona yoki mehmonxonadan ayvonga chiqish qulay bo‘lsin, mashina va xizmat yo‘llari dam olishga xalaqit bermasin.",
+      "BBQ, bolalar va xizmat zonalarining o‘zaro ta’siri, yoritilishi va maxfiyligini tekshiring.",
+      "Darsdagi bajarish: mavzuning asosiy belgilarini o‘z loyihangiz bilan solishtirib, aniqlangan farqlarni yozing."
     ],
     "exercise": "Hovli mebeli, daraxt va tashqi xizmat zonalarini joylashtiring.",
     "solution": "Tashqi funksiyalar bo‘sh joyga tasodifiy qo‘yilmaydi.",
     "block": 5,
     "recipe": "genplan",
-    "boundary": "Mavzuga mos yengil arxitekturaviy o‘quv eskizi. Geometriya va belgilar konseptual; aniq loyiha o‘lchamlari hamda texnik qarorlar dars sharti va loyiha ma’lumotidan tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "boundary": "Mavzuni tushuntiruvchi konseptual arxitekturaviy chizma. Normativ o‘lcham, hisoblangan konstruktiv yechim yoki qurilishga tayyor hujjat emas; aniq yechim mutaxassis tekshiruvi va amaldagi talablar bilan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — dars mavzusi uchun alohida tayyorlangan o‘quv eskizi",
     "source_url": null
   },
   {
