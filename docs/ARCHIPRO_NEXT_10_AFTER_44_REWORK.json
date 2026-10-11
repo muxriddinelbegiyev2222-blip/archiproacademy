@@ -1,6 +1,6 @@
 {
   "source_commit": "c1f50681fcf43cdc6780f3a9f74092bfdb01f641",
-  "status": "BRIEFS_PREPARED_NOT_UPLOADED",
+  "status": "BATCH_JPEG_CONNECTED_STATIC_AUDIT_PENDING",
   "completed_before_batch": 44,
   "remaining_before_batch": 112,
   "image_requirements": {
@@ -20,70 +20,72 @@
       "title": "Zinapoya va arxitektura",
       "brief": "Bitta ikki qavatli uyda L-shaklli zinapoya, qavatlararo bo‘shliq va zinapoya oynasi: plan, kesim va bitta aksonometriya bir xil elementlarni ko‘rsatishi kerak.",
       "target": "app/courses/visual_assets/sketch-l11_m03_004.jpg",
-      "state": "awaiting_individual_image_approval"
+      "state": "installed_jpeg_on_main_pending_windows_gui_audit"
     },
     {
       "code": "L11_M03_005",
       "title": "Zinapoya PRO audit",
       "brief": "Zinapoyaning plan/kesim/3D bir xil geometriyasi, maydoncha, bosh balandligi va to‘siq audit nuqtalari. Normativ o‘lcham sifatida son bermaslik.",
       "target": "app/courses/visual_assets/sketch-l11_m03_005.jpg",
-      "state": "awaiting_individual_image_approval"
+      "state": "installed_jpeg_on_main_pending_windows_gui_audit"
     },
     {
       "code": "L11_M04_001",
       "title": "Vertikal kommunikatsiya tushunchasi",
       "brief": "2 qavatli uy kesimida suv, oqova, elektr va shamollatish uchun ajratilgan turli rangli vertikal yo‘llar.",
       "target": "app/courses/visual_assets/sketch-l11_m04_001.jpg",
-      "state": "awaiting_individual_image_approval"
+      "state": "installed_jpeg_on_main_pending_windows_gui_audit"
     },
     {
       "code": "L11_M04_002",
       "title": "Shaft va riser",
       "brief": "Shaxta ichida ko‘rsatilgan vertikal quvurlar, ventkanal va xizmat eshigi; ikki qavat kesimida davomiylik.",
       "target": "app/courses/visual_assets/sketch-l11_m04_002.jpg",
-      "state": "awaiting_individual_image_approval"
+      "state": "installed_jpeg_on_main_pending_windows_gui_audit"
     },
     {
       "code": "L11_M04_003",
       "title": "Wet stack koordinatsiyasi",
       "brief": "Ikkinchi qavat sanuzeli va birinchi qavat servis zonasining bir-biriga mos joylashuvi, chiqindi va suv yo‘nalishi chizmasi.",
       "target": "app/courses/visual_assets/sketch-l11_m04_003.jpg",
-      "state": "awaiting_individual_image_approval"
+      "state": "installed_jpeg_on_main_pending_windows_gui_audit"
     },
     {
       "code": "L11_M04_004",
       "title": "Konstruktsiya bilan koordinatsiya",
       "brief": "MEP kanali va to‘sin to‘qnashuvi: noto‘g‘ri va muhandis tomonidan muvofiqlashtirilgan rejalashtirish konsepsiyasi; hisoblangan kesikni namoyish etmaslik.",
       "target": "app/courses/visual_assets/sketch-l11_m04_004.jpg",
-      "state": "awaiting_individual_image_approval"
+      "state": "installed_jpeg_on_main_pending_windows_gui_audit"
     },
     {
       "code": "L11_M04_005",
       "title": "Vertikal kommunikatsiya audit",
       "brief": "Ikki qavat plan/kesim/3Dda shaxta, penetratsiya, xizmat kirishi, texnik marshrutlarni muvofiqlik tekshiruvi.",
       "target": "app/courses/visual_assets/sketch-l11_m04_005.jpg",
-      "state": "awaiting_individual_image_approval"
+      "state": "installed_jpeg_on_main_pending_windows_gui_audit"
     },
     {
       "code": "L11_M05_001",
       "title": "Void tushunchasi",
       "brief": "Mehmonxona ustidagi ikki qavat baland ochiq hajm, qavat maydoni yo‘qotilishi va vizual kenglik bir kesimda.",
       "target": "app/courses/visual_assets/sketch-l11_m05_001.jpg",
-      "state": "awaiting_individual_image_approval"
+      "state": "installed_jpeg_on_main_pending_windows_gui_audit"
     },
     {
       "code": "L11_M05_002",
       "title": "Ikkinchi yorug‘lik",
       "brief": "Mehmonxonadagi baland derazalar va tepadan tushgan tabiiy yorug‘lik, kesim va bitta rangli aksonometriya.",
       "target": "app/courses/visual_assets/sketch-l11_m05_002.jpg",
-      "state": "awaiting_individual_image_approval"
+      "state": "installed_jpeg_on_main_pending_windows_gui_audit"
     },
     {
       "code": "L11_M05_003",
       "title": "Void va circulation",
       "brief": "Ikki qavatli ochiq hajm atrofida zina, yuqori galereya va yurish yo‘llari; maxfiylik va xavfsizlik zonasini ajratish.",
       "target": "app/courses/visual_assets/sketch-l11_m05_003.jpg",
-      "state": "awaiting_individual_image_approval"
+      "state": "installed_jpeg_on_main_pending_windows_gui_audit"
     }
-  ]
+  ],
+  "installed_count": 10,
+  "remaining_after_batch": 102
 }

@@ -1,0 +1,108 @@
+{
+  "base_commit": "fe7117449763aa82babc4f881ac72dc3b56fb49f",
+  "asset_count": 10,
+  "old_svg_retained": true,
+  "records": [
+    {
+      "code": "L11_M03_004",
+      "path": "app/courses/visual_assets/sketch-l11_m03_004.jpg",
+      "git_blob_sha": "cad23ebb74222654c070922293b6ccb765db9119",
+      "max_bytes_policy": 400000,
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "L11_M03_005",
+      "path": "app/courses/visual_assets/sketch-l11_m03_005.jpg",
+      "git_blob_sha": "fb21cb7155fc70565a3da4d2a0f9699aba3148ad",
+      "max_bytes_policy": 400000,
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "L11_M04_001",
+      "path": "app/courses/visual_assets/sketch-l11_m04_001.jpg",
+      "git_blob_sha": "b8c7e50502fa639de32112e4579beb35a1a51951",
+      "max_bytes_policy": 400000,
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "L11_M04_002",
+      "path": "app/courses/visual_assets/sketch-l11_m04_002.jpg",
+      "git_blob_sha": "4e415a12f92219ad99e77dbadeb81e390cee0298",
+      "max_bytes_policy": 400000,
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "L11_M04_003",
+      "path": "app/courses/visual_assets/sketch-l11_m04_003.jpg",
+      "git_blob_sha": "deea561d947c35fbc1e1bc7dff33e5197963375d",
+      "max_bytes_policy": 400000,
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "L11_M04_004",
+      "path": "app/courses/visual_assets/sketch-l11_m04_004.jpg",
+      "git_blob_sha": "135830149a5464eef3afed830a6ed7da24ec2f4e",
+      "max_bytes_policy": 400000,
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "L11_M04_005",
+      "path": "app/courses/visual_assets/sketch-l11_m04_005.jpg",
+      "git_blob_sha": "26d5a6c92a8bfc6579f5a27187132e1b9a4998c3",
+      "max_bytes_policy": 400000,
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "L11_M05_001",
+      "path": "app/courses/visual_assets/sketch-l11_m05_001.jpg",
+      "git_blob_sha": "cd7650c063f358db6f1ec495664407ee7f7491b4",
+      "max_bytes_policy": 400000,
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "L11_M05_002",
+      "path": "app/courses/visual_assets/sketch-l11_m05_002.jpg",
+      "git_blob_sha": "cd54da26f5c105b4e52552ce558ef28fb60797c8",
+      "max_bytes_policy": 400000,
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "code": "L11_M05_003",
+      "path": "app/courses/visual_assets/sketch-l11_m05_003.jpg",
+      "git_blob_sha": "fe16ec204c1a778007f6839556cb3d25968718d1",
+      "max_bytes_policy": 400000,
+      "dimensions": [
+        1536,
+        1024
+      ]
+    }
+  ],
+  "status": "images_and_mappings_committed; GUI_qa_pending"
+}

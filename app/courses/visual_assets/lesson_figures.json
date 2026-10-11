@@ -6177,172 +6177,172 @@
   },
   {
     "code": "L11_M03_004",
-    "asset": "l11_m03_004.svg",
+    "asset": "sketch-l11_m03_004.jpg",
     "title": "Zinapoya va arxitektura — ko‘rgazmali namuna",
     "explanation": [
-      "3000 mm ikki qavat farqi, 18 o‘quv ko‘tarilish; zinapoya, landing va slab opening birga tekshiriladi.",
-      "Zinapoyani kirish va tinch zona yo‘liga bog‘lang → makon aloqasi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Ikki qavatli uyning kesilgan 3D ko‘rinishida zinapoya, oraliq maydoncha, plitadagi ochilish va yuqori qavat galereyasi bir joyda ko‘rsatilgan.",
+      "Yirik zinapoya oynasi fasad va tabiiy yorug‘lik bilan bog‘liq. Plan va kesimdagi zina o‘qini solishtiring.",
+      "Mini-amaliyot: plandagi zina joyi, kesimdagi balandlik va 3Dda to‘siq bog‘lanishini birma-bir tekshiring."
     ],
     "exercise": "Zinapoya kirishini xonalar va yuqori yo‘lak bilan solishtiring.",
     "solution": "Zinapoya qulayligi arxitektura harakat zanjiriga bog‘liq.",
     "block": 5,
     "recipe": "stair",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv chizmasi. Balandlik, konstruktiv element, xavfsizlik va muhandislik o‘lchamlari loyihaga xos hisob hamda amaldagi normalar asosida mutaxassis tomonidan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga oid arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M03_005",
-    "asset": "l11_m03_005.svg",
+    "asset": "sketch-l11_m03_005.jpg",
     "title": "Zinapoya PRO audit — ko‘rgazmali namuna",
     "explanation": [
-      "3000 mm ikki qavat farqi, 18 o‘quv ko‘tarilish; zinapoya, landing va slab opening birga tekshiriladi.",
-      "Sath, geometriya, himoya va tegishli talabni bir qaydda tekshiring → loyiha uchun tasdiq zarur.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Zinapoya auditi plan, kesim va 3D koordinatsiyasidan boshlanadi. Qadam, maydoncha va yurish yo‘liga qarang.",
+      "Plitadagi ochilish, bosh bo‘shlig‘i, to‘siq va qo‘l tutqichni konstruktiv hamda xavfsizlik talablari asosida mutaxassis bilan tekshiring.",
+      "Mini-amaliyot: har bir noaniq nuqtani muammo → tekshirish → tuzatish ko‘rinishida yozing."
     ],
     "exercise": "Geometriya, bandlar va mutaxassis savollarini audit qiling.",
     "solution": "PRO audit modeldagi parametr va amaldagi talabni alohida tekshiradi.",
     "block": 4,
     "recipe": "stair",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv chizmasi. Balandlik, konstruktiv element, xavfsizlik va muhandislik o‘lchamlari loyihaga xos hisob hamda amaldagi normalar asosida mutaxassis tomonidan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga oid arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M04_001",
-    "asset": "l11_m04_001.svg",
+    "asset": "sketch-l11_m04_001.jpg",
     "title": "Vertikal kommunikatsiya tushunchasi — ko‘rgazmali namuna",
     "explanation": [
-      "Ikki sanuzel vertikal riserga ulanadi; shaft, xizmat kirishi va yopma teshigi koordinatsiya qilinadi.",
-      "Kommunikatsiya boshlanishi, vertikal yo‘li va chiqishini yozing → tizim zanjiri.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Kesilgan ikki qavatli uyda muhandislik kommunikatsiyalari uchun vertikal joy ajratilgan.",
+      "Suv, oqova, elektr va shamollatish yo‘nalishlari bir-biriga xalaqit bermasligi kerak; ranglar bu yerda faqat o‘quv belgilaridir.",
+      "Mini-amaliyot: ikki qavatdagi nam zona va texnik shaft joyini solishtiring."
     ],
     "exercise": "Vertikal tizimlarning manba va xizmat joylarini belgilang.",
     "solution": "Vertikal kommunikatsiya qavatlar orasidagi muhandislik aloqasidir.",
     "block": 5,
     "recipe": "shaft",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv chizmasi. Balandlik, konstruktiv element, xavfsizlik va muhandislik o‘lchamlari loyihaga xos hisob hamda amaldagi normalar asosida mutaxassis tomonidan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga oid arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M04_002",
-    "asset": "l11_m04_002.svg",
+    "asset": "sketch-l11_m04_002.jpg",
     "title": "Shaft va riser — ko‘rgazmali namuna",
     "explanation": [
-      "Ikki sanuzel vertikal riserga ulanadi; shaft, xizmat kirishi va yopma teshigi koordinatsiya qilinadi.",
-      "Shaft konturi va riser joyini qavatlarda solishtiring → kelishilgan vertikal yo‘l.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Shaxta ikki qavatdagi quvurlar va texnik kanallarni bitta belgilangan joydan o‘tkazishga xizmat qilishi mumkin.",
+      "Riser uzluksizligi va xizmat ko‘rsatish kirishini plan hamda kesimda tekshiring.",
+      "Plita va tayanchdagi har qanday penetratsiyani konstruktor hisobisiz kiritmang."
     ],
     "exercise": "Shaft va riser konturlarini planda ajrating.",
     "solution": "Xizmat bo‘shlig‘i va uning ichidagi tizimlar farqli ma’lumotdir.",
     "block": 5,
     "recipe": "shaft",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv chizmasi. Balandlik, konstruktiv element, xavfsizlik va muhandislik o‘lchamlari loyihaga xos hisob hamda amaldagi normalar asosida mutaxassis tomonidan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga oid arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M04_003",
-    "asset": "l11_m04_003.svg",
+    "asset": "sketch-l11_m04_003.jpg",
     "title": "Wet stack koordinatsiyasi — ko‘rgazmali namuna",
     "explanation": [
-      "Ikki sanuzel vertikal riserga ulanadi; shaft, xizmat kirishi va yopma teshigi koordinatsiya qilinadi.",
-      "Sanuzel ulanishi va xizmat kirishini belgilang → foydalaniladigan texnik aloqa.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Ikkinchi qavat nam xonasini pastdagi servis yoki sanuzel zonasi bilan muvofiqlashtirish chizmada ko‘rsatilgan.",
+      "Suv va oqova yo‘nalishi texnik shaxta hamda chiqish tomonga uzluksiz olib borilishi ko‘zda tutiladi.",
+      "Aniq quvur diametri, nishabi va sanitariya talablarini muhandis tekshiradi."
     ],
     "exercise": "Ho‘l zonalardan shaftgacha marshrutlarni ko‘rsating.",
     "solution": "Wet stack koordinatsiyasi yo‘l va xizmat kirishini birga tekshiradi.",
     "block": 5,
     "recipe": "shaft",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv chizmasi. Balandlik, konstruktiv element, xavfsizlik va muhandislik o‘lchamlari loyihaga xos hisob hamda amaldagi normalar asosida mutaxassis tomonidan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga oid arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M04_004",
-    "asset": "l11_m04_004.svg",
+    "asset": "sketch-l11_m04_004.jpg",
     "title": "Konstruktsiya bilan koordinatsiya — ko‘rgazmali namuna",
     "explanation": [
-      "Ikki sanuzel vertikal riserga ulanadi; shaft, xizmat kirishi va yopma teshigi koordinatsiya qilinadi.",
-      "Riser/shaftni rigel va slabga solishtiring → konstruktiv konflikt.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Chizmada muhandislik yo‘li va konstruktiv to‘sin orasida ehtimoliy konflikt qizil bilan ajratilgan.",
+      "Quvur yoki havo kanali tayanch element orqali ruxsatsiz o‘tmasligi kerak. Plan, kesim va 3Dni birga tekshiring.",
+      "Mini-amaliyot: to‘qnashuvni chizmada belgilang va konstruktorga savol tayyorlang."
     ],
     "exercise": "Shaft-balka konfliktini kesimda qayd qiling.",
     "solution": "Muhandislik o‘tishi konstruktiv elementni ruxsatsiz kesish bilan hal qilinmaydi.",
     "block": 5,
     "recipe": "shaft",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv chizmasi. Balandlik, konstruktiv element, xavfsizlik va muhandislik o‘lchamlari loyihaga xos hisob hamda amaldagi normalar asosida mutaxassis tomonidan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga oid arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M04_005",
-    "asset": "l11_m04_005.svg",
+    "asset": "sketch-l11_m04_005.jpg",
     "title": "Vertikal kommunikatsiya audit — ko‘rgazmali namuna",
     "explanation": [
-      "Ikki sanuzel vertikal riserga ulanadi; shaft, xizmat kirishi va yopma teshigi koordinatsiya qilinadi.",
-      "Mas’ul, talab, teshik va revisionni qayd qiling → kelishuv izi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Shaxta, riser, texnik kirish, plita penetratsiyasi va muhandislik yo‘nalishlari yakuniy ko‘rib chiqiladi.",
+      "Uch ko‘rinishni taqqoslang: plan ↔ kesim ↔ 3D. Muammoli joylarda tasdiqlash vazifasini qayd eting.",
+      "Qabul qilishdan oldin o‘tish joylari, texnik servis hamda mutaxassis koordinatsiyasini tekshiring."
     ],
     "exercise": "Konflikt joyi va tegishli mutaxassis qarorini audit qiling.",
     "solution": "Vertikal tizimlar auditi barcha qavatlar bo‘ylab uzluksiz aloqani tekshiradi.",
     "block": 4,
     "recipe": "shaft",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv chizmasi. Balandlik, konstruktiv element, xavfsizlik va muhandislik o‘lchamlari loyihaga xos hisob hamda amaldagi normalar asosida mutaxassis tomonidan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga oid arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M05_001",
-    "asset": "l11_m05_001.svg",
+    "asset": "sketch-l11_m05_001.jpg",
     "title": "Void tushunchasi — ko‘rgazmali namuna",
     "explanation": [
-      "Livingda ikki qavatli bo‘shliq bor, yuqoridagi yo‘lak bo‘shliq chetidan o‘tadi.",
-      "Voidni ishlatiladigan pol yo‘qligi sifatida ajrating → maydon hisobidagi farq.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Void yuqori qavat polida ochiq qoldirilgan hajm bo‘lib, pastki va yuqori makonning ko‘rish aloqasini yaratishi mumkin.",
+      "Aksonometriyada yuqori plitaning bir qismi ochiq; reja va kesim bir-birini tasdiqlashi kerak.",
+      "Mini-amaliyot: void tufayli yuqori qavat foydali maydoni qanday o‘zgarishini baholang."
     ],
     "exercise": "Void konturi va yo‘qolgan pol maydonini belgilang.",
     "solution": "Void hajmiy bo‘shliq yaratadi va foydalaniladigan maydonga ta’sir qiladi.",
     "block": 5,
     "recipe": "void",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv chizmasi. Balandlik, konstruktiv element, xavfsizlik va muhandislik o‘lchamlari loyihaga xos hisob hamda amaldagi normalar asosida mutaxassis tomonidan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga oid arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M05_002",
-    "asset": "l11_m05_002.svg",
+    "asset": "sketch-l11_m05_002.jpg",
     "title": "Ikkinchi yorug'lik — ko‘rgazmali namuna",
     "explanation": [
-      "Livingda ikki qavatli bo‘shliq bor, yuqoridagi yo‘lak bo‘shliq chetidan o‘tadi.",
-      "Ikki sathni kesimga qo‘ying, yorug‘lik va ko‘rish aloqasini belgilang → ikkinchi yorug‘lik.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Ikki qavat baland makon va yuqoridagi keng derazalar tabiiy yorug‘likning xona ichkarisiga kirishini ko‘rsatadi.",
+      "Kesimda yorug‘lik yo‘nalishi, galereyaning soyasi va ichki balandlik birga tekshiriladi.",
+      "Energiya samaradorligi, quyoshdan himoya va oynaning texnik ko‘rsatkichlari alohida hisoblanadi."
     ],
     "exercise": "Yorug‘lik, akustika va xizmat ssenariylarini yozing.",
     "solution": "Ikkinchi yorug‘lik faqat katta balandlik emas, muhit qaroridir.",
     "block": 5,
     "recipe": "void",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv chizmasi. Balandlik, konstruktiv element, xavfsizlik va muhandislik o‘lchamlari loyihaga xos hisob hamda amaldagi normalar asosida mutaxassis tomonidan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga oid arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M05_003",
-    "asset": "l11_m05_003.svg",
+    "asset": "sketch-l11_m05_003.jpg",
     "title": "Void va circulation — ko‘rgazmali namuna",
     "explanation": [
-      "Livingda ikki qavatli bo‘shliq bor, yuqoridagi yo‘lak bo‘shliq chetidan o‘tadi.",
-      "Yo‘lak, zinapoya va tinch xonalar aloqasini chizing → shovqin/privacy savoli.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Void atrofida yuqori galereya va zinapoya ikki qavatdagi harakatni birlashtiradi.",
+      "Piyodalar yo‘li, ochiq chekka to‘siqlari va pastki makonga ko‘rish aloqasini plan, kesim va 3Dda solishtiring.",
+      "Yuqori qavat maxfiyligi va akustika masalalarini ham tekshiring."
     ],
     "exercise": "Yuqori yo‘lakni void cheti bilan tekshiring.",
     "solution": "Circulation bo‘shliq chegarasi va foydalanuvchi yo‘lini birga ko‘radi.",
     "block": 5,
     "recipe": "void",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Konseptual o‘quv chizmasi. Balandlik, konstruktiv element, xavfsizlik va muhandislik o‘lchamlari loyihaga xos hisob hamda amaldagi normalar asosida mutaxassis tomonidan tasdiqlanadi.",
+    "credit": "ARCHIPRO UZ — mavzuga oid arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
