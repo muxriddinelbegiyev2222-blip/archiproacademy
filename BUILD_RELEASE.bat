@@ -148,7 +148,7 @@ python "app\tools\full_audit.py"
 
 if errorlevel 1 (
     echo.
-    echo [ERROR] FULL 10-CHECK AUDIT FAILED - RELEASE BUILD CANCELLED
+    echo [ERROR] FULL 11-CHECK AUDIT FAILED - RELEASE BUILD CANCELLED
     pause
     exit /b 1
 )
