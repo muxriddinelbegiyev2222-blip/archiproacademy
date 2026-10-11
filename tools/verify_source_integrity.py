@@ -1,6 +1,7 @@
 """Offline, dependency-free integrity check for every shipped Python source."""
 from __future__ import annotations
 
+import os
 import tokenize
 from pathlib import Path
 
@@ -43,11 +44,15 @@ def main() -> int:
             f"Suspiciously incomplete source inventory: {len(set(paths))} modules"
         )
 
-    for path in ROOT.rglob("*"):
-        if path.is_file() and path.name.lower() in (
-            "archipro_private.key", "private_key.pem", ".env"
-        ):
-            failures.append(f"Sensitive file present in project: {path.relative_to(ROOT)}")
+    ignored = {".git", ".venv", "venv", "__pycache__", "build",
+               "build_client", "dist", "dist_client", "release", "node_modules"}
+    forbidden = {"archipro_private.key", "private_key.pem", ".env"}
+    for folder, subdirs, files in os.walk(ROOT):
+        subdirs[:] = [name for name in subdirs if name not in ignored]
+        for filename in files:
+            if filename.lower() in forbidden:
+                path = Path(folder) / filename
+                failures.append(f"Sensitive file present in project: {path.relative_to(ROOT)}")
 
     print(f"Source integrity: checked {len(set(paths))} Python files")
     for message in failures:
