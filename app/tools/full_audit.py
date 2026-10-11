@@ -33,7 +33,10 @@ def main():
         log = log_dir / Path(filename).name.replace('.py', '.log')
         try:
             with log.open('w', encoding='utf-8') as output:
-                process = subprocess.run([sys.executable, str(PROJECT / filename)], cwd=PROJECT,
+                command = [sys.executable, str(PROJECT / filename)]
+                if filename == 'tools/verify_compact_media.py':
+                    command.append('--require-complete')
+                process = subprocess.run(command, cwd=PROJECT,
                                          env=env, stdout=output, stderr=subprocess.STDOUT, timeout=600)
             code = process.returncode
         except (OSError, subprocess.TimeoutExpired) as exc:
