@@ -1,0 +1,229 @@
+{
+  "project": "ARCHIPRO UZ",
+  "date": "2026-10-11",
+  "verified_head": "6efe4790d4c30c16d323ff3194e45987980a305f",
+  "repo": "muxriddinelbegiyev2222-blip/archiproacademy",
+  "summary": {
+    "initial_replaced": 94,
+    "added": 31,
+    "total_replaced": 125,
+    "remaining_required_replacements": 0,
+    "images_all_under_400000_bytes": true,
+    "max_new_jpeg_bytes": 394566,
+    "git_tree_entries": 1520,
+    "jpeg_total": 449,
+    "lesson_ids": 680,
+    "missing_image_refs": 0,
+    "coverage_files_consistent": true
+  },
+  "batches": [
+    {
+      "count": 10,
+      "commit": "2cb89e86829b5f3eed97a36c707c2750aed89704"
+    },
+    {
+      "count": 10,
+      "commit": "1a6596d5aeaf36f909d22d99041c9dfcf99e40be"
+    },
+    {
+      "count": 11,
+      "commit": "6efe4790d4c30c16d323ff3194e45987980a305f"
+    }
+  ],
+  "uploaded_images": [
+    {
+      "code": "L14_M01_002",
+      "path": "app/courses/visual_assets/sketch-l14_m01_002.jpg",
+      "bytes": 384209,
+      "blob_sha": "4e9177f4c5dde3722713b2dbf4584f70cd85821f"
+    },
+    {
+      "code": "L14_M02_004",
+      "path": "app/courses/visual_assets/sketch-l14_m02_004.jpg",
+      "bytes": 387975,
+      "blob_sha": "cbded113ab42935120d2479854cfa8b2b42d2b48"
+    },
+    {
+      "code": "L14_M03_001",
+      "path": "app/courses/visual_assets/sketch-l14_m03_001.jpg",
+      "bytes": 394566,
+      "blob_sha": "1f8e7b39d71b9321cfa2bb683f18707801e5a40d"
+    },
+    {
+      "code": "L14_M03_002",
+      "path": "app/courses/visual_assets/sketch-l14_m03_002.jpg",
+      "bytes": 373785,
+      "blob_sha": "1881fa8c718f4934274c5d2a9b0da2eed11ea8a6"
+    },
+    {
+      "code": "L14_M03_003",
+      "path": "app/courses/visual_assets/sketch-l14_m03_003.jpg",
+      "bytes": 393138,
+      "blob_sha": "28117c4c43912c8647932d23200b2d3af76663cb"
+    },
+    {
+      "code": "L14_M03_004",
+      "path": "app/courses/visual_assets/sketch-l14_m03_004.jpg",
+      "bytes": 379422,
+      "blob_sha": "c3c1e10f873f389d61d413f5cc96de97985d6eb4"
+    },
+    {
+      "code": "L14_M04_002",
+      "path": "app/courses/visual_assets/sketch-l14_m04_002.jpg",
+      "bytes": 390178,
+      "blob_sha": "5f35a39e57388100e43b25a3229fc358528fa090"
+    },
+    {
+      "code": "L14_M04_003",
+      "path": "app/courses/visual_assets/sketch-l14_m04_003.jpg",
+      "bytes": 387296,
+      "blob_sha": "dc8e2693133f6eec3f5471ea1744030bc43d1529"
+    },
+    {
+      "code": "L14_M04_004",
+      "path": "app/courses/visual_assets/sketch-l14_m04_004.jpg",
+      "bytes": 384514,
+      "blob_sha": "49af9176abf3f0e45bbd7ce050352967f3d78592"
+    },
+    {
+      "code": "L14_M05_002",
+      "path": "app/courses/visual_assets/sketch-l14_m05_002.jpg",
+      "bytes": 386343,
+      "blob_sha": "cfe67a196e5f42f5cba20843d1640a606719de9a"
+    },
+    {
+      "code": "L14_M05_003",
+      "path": "app/courses/visual_assets/sketch-l14_m05_003.jpg",
+      "bytes": 378369,
+      "blob_sha": "7d855e76bacc289132470ae72ff19fa151081be8"
+    },
+    {
+      "code": "L14_M05_004",
+      "path": "app/courses/visual_assets/sketch-l14_m05_004.jpg",
+      "bytes": 381878,
+      "blob_sha": "8f97da3a3a29b517f8ea625c3663d096c062ba79"
+    },
+    {
+      "code": "L14_M06_001",
+      "path": "app/courses/visual_assets/sketch-l14_m06_001.jpg",
+      "bytes": 388364,
+      "blob_sha": "d33c3db6da33d289ceaa6254a62a896dfde812a8"
+    },
+    {
+      "code": "L14_M06_002",
+      "path": "app/courses/visual_assets/sketch-l14_m06_002.jpg",
+      "bytes": 387063,
+      "blob_sha": "93f758b148463fde4f06adbe8b7b8e0cc1343c9e"
+    },
+    {
+      "code": "L14_M06_003",
+      "path": "app/courses/visual_assets/sketch-l14_m06_003.jpg",
+      "bytes": 384269,
+      "blob_sha": "0bffef2597e5226032832642146bdfa420850618"
+    },
+    {
+      "code": "L14_M06_004",
+      "path": "app/courses/visual_assets/sketch-l14_m06_004.jpg",
+      "bytes": 388386,
+      "blob_sha": "17d158bb2da902d0247d59e0bb0756fc08660653"
+    },
+    {
+      "code": "L14_M07_002",
+      "path": "app/courses/visual_assets/sketch-l14_m07_002.jpg",
+      "bytes": 373731,
+      "blob_sha": "eb524cd1ddf932c8d9449510e7d5a8c156353195"
+    },
+    {
+      "code": "L14_M07_003",
+      "path": "app/courses/visual_assets/sketch-l14_m07_003.jpg",
+      "bytes": 377037,
+      "blob_sha": "f8026d5373040f30f824806c9e84ee54f050c680"
+    },
+    {
+      "code": "L14_M08_002",
+      "path": "app/courses/visual_assets/sketch-l14_m08_002.jpg",
+      "bytes": 393693,
+      "blob_sha": "40feaedd08cc36aa4531ef7c7c77c629e23b9655"
+    },
+    {
+      "code": "L14_M08_003",
+      "path": "app/courses/visual_assets/sketch-l14_m08_003.jpg",
+      "bytes": 375004,
+      "blob_sha": "ed4bd654de43396183cc712b1986c8a0e6ff12f8"
+    },
+    {
+      "code": "L14_M08_004",
+      "path": "app/courses/visual_assets/sketch-l14_m08_004.jpg",
+      "bytes": 382424,
+      "blob_sha": "fd28973365b5bfd03920fbcb154392a2b0da19c4"
+    },
+    {
+      "code": "L15_M01_002",
+      "path": "app/courses/visual_assets/sketch-l15_m01_002.jpg",
+      "bytes": 384823,
+      "blob_sha": "1a93da545b362ca9514cba57d5a7aeaa86469ca6"
+    },
+    {
+      "code": "L15_M02_002",
+      "path": "app/courses/visual_assets/sketch-l15_m02_002.jpg",
+      "bytes": 387670,
+      "blob_sha": "b5bec7079ecf2213f0aa11de50d9904b33889753"
+    },
+    {
+      "code": "L15_M03_001",
+      "path": "app/courses/visual_assets/sketch-l15_m03_001.jpg",
+      "bytes": 387689,
+      "blob_sha": "f44f12cedabddd633c54c5476a7881f39a795b4e"
+    },
+    {
+      "code": "L15_M03_002",
+      "path": "app/courses/visual_assets/sketch-l15_m03_002.jpg",
+      "bytes": 371094,
+      "blob_sha": "80f2a4199d0d1e8e5192e9a10bbb849494d48292"
+    },
+    {
+      "code": "L15_M03_003",
+      "path": "app/courses/visual_assets/sketch-l15_m03_003.jpg",
+      "bytes": 380076,
+      "blob_sha": "727cfff32f1827edd343c0e4f52a5264806f2e5f"
+    },
+    {
+      "code": "L15_M05_001",
+      "path": "app/courses/visual_assets/sketch-l15_m05_001.jpg",
+      "bytes": 383438,
+      "blob_sha": "7eb1bedc8f52ac8a5d487e8c57ba8d9399fdcb25"
+    },
+    {
+      "code": "L15_M05_002",
+      "path": "app/courses/visual_assets/sketch-l15_m05_002.jpg",
+      "bytes": 389953,
+      "blob_sha": "c10e7be8bea88b980e7d700a56c2a0fc6d1e9a5f"
+    },
+    {
+      "code": "L15_M05_003",
+      "path": "app/courses/visual_assets/sketch-l15_m05_003.jpg",
+      "bytes": 385234,
+      "blob_sha": "fff6d3ce75e5fbfd70d9a08553c928c63984091c"
+    },
+    {
+      "code": "L15_M05_004",
+      "path": "app/courses/visual_assets/sketch-l15_m05_004.jpg",
+      "bytes": 387634,
+      "blob_sha": "3be97963a4e47a2e3425970a282d7fb75bc15a5f"
+    },
+    {
+      "code": "L15_M07_004",
+      "path": "app/courses/visual_assets/sketch-l15_m07_004.jpg",
+      "bytes": 388968,
+      "blob_sha": "00b2912aa181ccd3b2c15e5d08a4efb4d447c9e5"
+    }
+  ],
+  "ci": {
+    "latest_run": 38143799170,
+    "result": "failure",
+    "steps_reported": 0,
+    "logs_checked": false,
+    "windows_runtime_audit_confirmed": false
+  },
+  "disclaimer": "All 31 image placements and static reference checks verified; release build, Windows end-to-end audit, technical norms review not asserted."
+}

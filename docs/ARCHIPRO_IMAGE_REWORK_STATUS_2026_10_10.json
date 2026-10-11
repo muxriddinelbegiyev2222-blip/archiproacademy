@@ -135,7 +135,7 @@
   ],
   "next_batch": null,
   "note": "All 31 remaining JPEG sketch replacements committed and linked; 680 lesson visual inventory and Windows runtime auditing must still be run separately. SHNK technical validation is not claimed.",
-  "last_verified_main_commit": "1a6596d5aeaf36f909d22d99041c9dfcf99e40be",
+  "last_verified_main_commit": "6efe4790d4c30c16d323ff3194e45987980a305f",
   "next_lesson_to_replace": null,
   "static_integrity_audit": {
     "reviewed_course_count": 680,
@@ -153,14 +153,19 @@
       "realistic": 98,
       "visual": 98,
       "all_sketch": 102
-    }
+    },
+    "realistic_coverage_referenced_assets": 602,
+    "realistic_coverage_missing_referenced_assets": 0,
+    "jpeg_count": 449,
+    "jpeg_over_400000_bytes": 0,
+    "new_31_jpeg_links_missing": 0
   },
   "github_actions": {
-    "most_recent_checked_run_id": 38064846640,
-    "head_sha": "c83f3f72bc01195e84156286fcd155805af13dff",
+    "most_recent_checked_run_id": 38143799170,
+    "head_sha": "6efe4790d4c30c16d323ff3194e45987980a305f",
     "audit_job_conclusion": "failure",
     "job_steps_reported": 0,
-    "cause": "not confirmed (no audit steps or job logs available)",
+    "cause": "unknown; audit step details/logs were not available from GitHub",
     "full_runtime_qa_verified": false
   },
   "last_integrated_batch": {
@@ -205,7 +210,7 @@
       "lessons": 680,
       "references": 856,
       "missing_assets": 0,
-      "jpeg_count": 334,
+      "jpeg_count": 449,
       "jpeg_over_400000_bytes": 0
     },
     "note": "Static Git tree and three CSV inventory check; no runtime GUI audit was performed."
@@ -214,7 +219,7 @@
     "script": "tools/verify_course_visuals.py",
     "ci_file": ".github/workflows/archipro-ci.yml",
     "enabled_in_ci": true,
-    "current_state": "Added to CI but CI workflow not yet executed successfully; local full-repository test not claimed",
+    "current_state": "Static Git tree and asset references verified for 680 lessons; native Windows CI remains failed before any reported step. Release QA NOT confirmed.",
     "policies": [
       "exactly 680 IDs in three course inventories",
       "same lesson-code set across inventories",
@@ -305,8 +310,9 @@
   },
   "latest_connector_static_verification": {
     "as_of_date": "2026-10-11",
-    "git_tree_entries": 1489,
-    "jpeg_total": 418,
+    "checked_head_commit": "6efe4790d4c30c16d323ff3194e45987980a305f",
+    "git_tree_entries": 1520,
+    "jpeg_total": 449,
     "jpeg_over_400000_bytes": 0,
     "lesson_code_count": 680,
     "all_three_csv_code_sets_agree": true,
@@ -315,11 +321,11 @@
     "json_asset_missing_count": 0,
     "csv_asset_missing_count": 0,
     "replacement_links_broken_count": 0,
-    "ci_latest_run_id": 38125330377,
+    "final_31_uploaded_jpeg_count": 31,
+    "final_31_linked_count": 31,
+    "ci_latest_run_id": 38143799170,
     "ci_latest_conclusion": "failure",
     "ci_audit_steps_returned": 0,
-    "ci_log_unavailable": true,
-    "actual_full_windows_audit_not_confirmed": true,
-    "checked_head_commit": "ff2165fa3c70803e816426fb1163dbe6666a3888"
+    "actual_full_windows_audit_not_confirmed": true
   }
 }
