@@ -33,7 +33,16 @@ LICENSE_VERSION = 1
 # PUBLIC KEY
 # ============================================================
 
+# Current OWNER/ADMIN signing key: fingerprint F7AFC1C00E6D7DDE
+# This is PUBLIC information (never add archipro_private.key here).
 PUBLIC_KEY_B64 = (
+    "uDSW12Lv5UvEtOFfypdKsy4JUdV1woihiqhegs70RoE="
+)
+
+# Legacy verification key: fingerprint 2BCB7109E86D65DD
+# Keep it to verify already-issued, valid licenses from earlier releases.
+# Retiring a legacy key requires an explicit customer migration process.
+LEGACY_PUBLIC_KEY_B64 = (
     "TrPS3sdOCiD9wFd1CA4IyZQvCzBGyROPOt8S/2cjTWU="
 )
 
@@ -112,6 +121,25 @@ def _load_public_key():
             raw
         )
     )
+
+
+def _load_legacy_public_key():
+    """Previously trusted public key for already issued valid licenses."""
+    return Ed25519PublicKey.from_public_bytes(
+        base64.b64decode(LEGACY_PUBLIC_KEY_B64)
+    )
+
+
+def _verify_trusted_signature(signature: bytes, payload: dict) -> None:
+    """Accept valid current or legacy signatures; never skip verification."""
+    signed_bytes = _canonical_payload(payload)
+    for public_key in (_load_public_key(), _load_legacy_public_key()):
+        try:
+            public_key.verify(signature, signed_bytes)
+            return
+        except InvalidSignature:
+            continue
+    raise InvalidSignature("No trusted ARCHIPRO public key verified this license.")
 
 
 # ============================================================
@@ -207,22 +235,14 @@ def verify_license_data(
         }
 
     try:
-        signature = (
-            base64.b64decode(
-                signature_b64
-            )
-        )
+        if not isinstance(signature_b64, str):
+            raise ValueError("Signature must be a Base64 string.")
 
-        public_key = (
-            _load_public_key()
-        )
+        signature = base64.b64decode(signature_b64, validate=True)
+        if len(signature) != 64:
+            raise ValueError("Invalid Ed25519 signature length.")
 
-        public_key.verify(
-            signature,
-            _canonical_payload(
-                payload
-            ),
-        )
+        _verify_trusted_signature(signature, payload)
 
     except (
         InvalidSignature,
