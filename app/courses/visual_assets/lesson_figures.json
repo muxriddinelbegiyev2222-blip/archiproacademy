@@ -5388,7 +5388,7 @@
     ],
     "exercise": "Taklifni karkas va muhandislik zonalari bilan solishtiring.",
     "solution": "Plan yaxshilanishi konstruktiv va MEP muvofiqlikni saqlashi kerak.",
-    "block": 5,
+    "block": 7,
     "recipe": "stack",
     "boundary": "Mavzuga oid o‘quv uchun konseptual eskiz va diagramma. Ushbu tasvirdagi tayanchlar va kommunikatsiya yo‘nalishlari texnik hisoblangan loyiha emas; me’yoriy talablarga moslik konstruktor va muhandis bilan tekshiriladi.",
     "credit": "ARCHIPRO UZ — mavzuga mos o‘quv arxitektura rejasi va texnik diagramma",
@@ -5406,7 +5406,7 @@
     ],
     "exercise": "Oldingi-yangi plan va uch mezon bo‘yicha natijani topshiring.",
     "solution": "Final plan audit o‘zgarishning foydasi va yo‘qotishini dalillaydi.",
-    "block": 5,
+    "block": 7,
     "recipe": "audit",
     "boundary": "Mavzuga oid o‘quv uchun konseptual eskiz va diagramma. Ushbu tasvirdagi tayanchlar va kommunikatsiya yo‘nalishlari texnik hisoblangan loyiha emas; me’yoriy talablarga moslik konstruktor va muhandis bilan tekshiriladi.",
     "credit": "ARCHIPRO UZ — mavzuga mos o‘quv arxitektura rejasi va texnik diagramma",
@@ -6517,36 +6517,36 @@
   },
   {
     "code": "L11_M07_004",
-    "asset": "l11_m07_004.svg",
-    "title": "Material va hajm PRO — ko‘rgazmali namuna",
+    "asset": "sketch-l11_m07_004.jpg",
+    "title": "Material va hajm uyg‘unligi — ko‘rgazmali namuna",
     "explanation": [
-      "Ikki qavat derazalari, balkon va stair hajmi fasadga chiqariladi.",
-      "Materialning joyi va tutashuvini hajm bilan bog‘lang → chiroyli va bajariladigan ifoda.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Bir uy hajmi materiallari tartibsiz bo‘lingan va izchil joylashtirilgan ikki variantda ko‘rsatilgan.",
+      "Suvoq, tosh va yog‘ochning chegarasi bino hajmlari hamda deraza ritmiga qanday ta’sir qilishini solishtiring.",
+      "Material almashishi bilan hajmni o‘zgartirishni ajrating; tutashuvlarni ishchi chizmada tekshiring."
     ],
     "exercise": "Material tutashuvi va katta hajmlar chegarasini chizing.",
     "solution": "Material qarori real tugun va hajmga mos bo‘lishi kerak.",
     "block": 5,
     "recipe": "two-facade",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M07_005",
-    "asset": "l11_m07_005.svg",
-    "title": "2 qavatli fasad audit — ko‘rgazmali namuna",
+    "asset": "sketch-l11_m07_005.jpg",
+    "title": "Ikki qavatli fasadlar mosligi — ko‘rgazmali namuna",
     "explanation": [
-      "Ikki qavat derazalari, balkon va stair hajmi fasadga chiqariladi.",
-      "Plan, fasad va kesimni ochilish IDsi orqali tekshiring → mos hujjatlar.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Old, orqa, chap va o‘ng fasadlar bitta ikki qavatli uy uchun jamlangan.",
+      "Qavat sathlari, oynalar o‘rni va tomning umumiy chegarasini plan hamda kesim bilan solishtiring.",
+      "Ko‘rinishdagi farqni manba element, qavat va tegishli varaq bo‘yicha qayd qiling."
     ],
     "exercise": "Plan, kesim va ikki fasadni audit qiling.",
     "solution": "Ikki qavat fasad auditi vizual va model izchilligini tekshiradi.",
     "block": 4,
     "recipe": "two-facade",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
@@ -6568,70 +6568,70 @@
   },
   {
     "code": "L11_M08_002",
-    "asset": "l11_m08_002.svg",
+    "asset": "sketch-l11_m08_002.jpg",
     "title": "Qavatlar modeli — ko‘rgazmali namuna",
     "explanation": [
-      "Ikki qavat, stair, void, shaft, roof va views bitta modelda tekshiriladi.",
-      "Har qavatni manbaga mos modellang, ustma-ust tayanchlarni tekshiring → mos geometriya.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Tom, ikkinchi qavat va birinchi qavat ochib ko‘rsatilgan; yonida qavatlar ustma-ust solishtiriladi.",
+      "Qavat konturi, zinapoya joyi va vertikal tayanchlarning muvofiqligini izlang.",
+      "Ajratilgan hajmlar o‘quv tushuntirishi uchun; haqiqiy modelda ular bir xil koordinatada tekshiriladi."
     ],
     "exercise": "Har qavat elementlarini kesimda solishtiring.",
     "solution": "Qavat modelidagi nusxalar sath va tayanch bo‘yicha tekshiriladi.",
     "block": 5,
     "recipe": "stack",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M08_003",
-    "asset": "l11_m08_003.svg",
-    "title": "Stair, void va vertical systems — ko‘rgazmali namuna",
+    "asset": "sketch-l11_m08_003.jpg",
+    "title": "Zina, ochiq hajm va vertikal tizimlar — ko‘rgazmali namuna",
     "explanation": [
-      "Ikki qavat, stair, void, shaft, roof va views bitta modelda tekshiriladi.",
-      "Stair, void va vertikal tizimni kesimda birga ko‘ring → yashirin konflikt.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Bitta kesimda zinapoya, ikkinchi yorug‘lik, yopma ochilishi va muhandislik shaxtasi ajratilgan.",
+      "Zinaning ochilishi va vertikal tarmoqlarning har qavatda davom etishini solishtiring.",
+      "Shaxta, plita cheti va zina atrofidagi mumkin bo‘lgan to‘qnashuvlarni tegishli mutaxassis savoliga aylantiring."
     ],
     "exercise": "Stair, void va shaftni bir nazorat kesimida ko‘ring.",
     "solution": "Vertikal tizimlar bir-birining bo‘shlig‘i va yo‘liga xalaqit bermasligi kerak.",
     "block": 5,
     "recipe": "shaft",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M08_004",
-    "asset": "l11_m08_004.svg",
-    "title": "Roof, facade va sections — ko‘rgazmali namuna",
+    "asset": "sketch-l11_m08_004.jpg",
+    "title": "Tom, fasad va kesimlar — ko‘rgazmali namuna",
     "explanation": [
-      "Ikki qavat, stair, void, shaft, roof va views bitta modelda tekshiriladi.",
-      "Roof, facade va sectionsni ayni modeldan hosil qiling → manba izchilligi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Bir modelning tomi, tashqi fasadi va vertikal kesimi yonma-yon ko‘rsatilgan.",
+      "Tom konturi, qavatlar va ochilishlar uchala ko‘rinishda mos kelishini izlang.",
+      "Saqlangan ko‘rinishlar bir xil model holatidan hosil qilinishini tekshiring."
     ],
     "exercise": "Tom, fasad va ochilishlarni saqlangan viewlarda tekshiring.",
     "solution": "Yakuniy model ko‘rinishlari bir loyiha holatiga mos bo‘ladi.",
     "block": 5,
     "recipe": "roof-plan",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M08_005",
-    "asset": "l11_m08_005.svg",
-    "title": "To'liq BIM model audit — ko‘rgazmali namuna",
+    "asset": "sketch-l11_m08_005.jpg",
+    "title": "To‘liq BIM modelni tekshirish — ko‘rgazmali namuna",
     "explanation": [
-      "Ikki qavat, stair, void, shaft, roof va views bitta modelda tekshiriladi.",
-      "Geometriya, data, ko‘rinish va koordinatsiya bo‘yicha audit jadvali yozing → to‘liq model dalili.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Ochiq BIM modelda qavat sathi, tayanch, zina ochilishi va shaxta nazorat nuqtalari ko‘rsatilgan.",
+      "Takrorlangan element, siljigan sath yoki mos kelmagan ochilish borligini manba modelda tekshiring.",
+      "Har topilma uchun element IDsi, tegishli ko‘rinish va qayta tekshirish natijasini yozing."
     ],
     "exercise": "Model, nazorat viewlari va konflikt jurnalini topshiring.",
     "solution": "To‘liq model auditida tekshiruv dalili va qolgan masalalar ko‘rsatiladi.",
     "block": 4,
     "recipe": "audit",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
@@ -6653,70 +6653,70 @@
   },
   {
     "code": "L11_M09_002",
-    "asset": "l11_m09_002.svg",
-    "title": "Plan va o'lchamlar — ko‘rgazmali namuna",
+    "asset": "sketch-l11_m09_002.jpg",
+    "title": "Reja va o‘lchamlar — ko‘rgazmali namuna",
     "explanation": [
-      "Ishchi paket A-01/A-02 planlar, A-03 fasad, A-04 kesim va detallar bilan tayyorlanadi.",
-      "Planga bog‘langan o‘lcham va xona ma’lumotini qo‘ying → bajarishga kerakli dalil.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Umumiy o‘lcham, o‘qlar va ochilishlar rejaning uch xil o‘lcham qatlamini ifodalaydi.",
+      "Tashqi gabaritni o‘qlar orasidagi masofa va xonalarning sof o‘lchamidan ajrating.",
+      "Eskizdagi chiziqlar sonli loyiha o‘lchami o‘rnini bosmaydi; mashqdagi o‘lchamlarni manba modeldan oling."
     ],
     "exercise": "Plan o‘lchamlarini o‘q va sof o‘lchamlarga ajrating.",
     "solution": "O‘lchamlar qurilish va foydalanish axborotini chalkashtirmaydi.",
     "block": 5,
     "recipe": "dimensions",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M09_003",
-    "asset": "l11_m09_003.svg",
-    "title": "Fasad, kesim va detallar — ko‘rgazmali namuna",
+    "asset": "sketch-l11_m09_003.jpg",
+    "title": "Fasad, kesim va tugunlar — ko‘rgazmali namuna",
     "explanation": [
-      "Ishchi paket A-01/A-02 planlar, A-03 fasad, A-04 kesim va detallar bilan tayyorlanadi.",
-      "Fasad, kesim va tugunlarni kerakli masshtabda tayyorlang → tushunarli texnik aloqa.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Fasad, bino kesimi va balkon tutashuvining kattalashtirilgan ko‘rinishi bir mavzuni turli masshtabda tushuntiradi.",
+      "Balkon eshigi, plita cheti va suv chiqishi qaysi ko‘rinishda aniq o‘qilishini aniqlang.",
+      "Tugunlar konseptual ko‘rsatilgan; aniq qatlam va o‘lchamlar ishchi loyiha asosida belgilanadi."
     ],
     "exercise": "Kesim va detallarni muammo joylari bilan bog‘lang.",
     "solution": "Detal hujjatda kerakli tugunni tushuntirishi kerak.",
     "block": 5,
     "recipe": "stories",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M09_004",
-    "asset": "l11_m09_004.svg",
-    "title": "Koordinatsiya va revision — ko‘rgazmali namuna",
+    "asset": "sketch-l11_m09_004.jpg",
+    "title": "O‘zgarishlarni muvofiqlashtirish — ko‘rgazmali namuna",
     "explanation": [
-      "Ishchi paket A-01/A-02 planlar, A-03 fasad, A-04 kesim va detallar bilan tayyorlanadi.",
-      "Revision jadvaliga o‘zgarish sababi va tegishli varaqlarni yozing → boshqariladigan yangilanish.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Eski va yangilangan reja orasidagi o‘zgarish alohida belgi bilan ajratilgan.",
+      "O‘zgargan devor yoki xona konstruktsiya va muhandislik yechimiga qanday ta’sir qilishini yozing.",
+      "O‘zgarish sababi, mas’ul mutaxassis va yangilanadigan varaqlarni qaydda bog‘lang."
     ],
     "exercise": "Revisionning barcha bog‘liq varaqlarga yetganini tekshiring.",
     "solution": "Koordinatsiya yagona versiyali hujjat paketini talab qiladi.",
     "block": 5,
     "recipe": "feedback",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M09_005",
-    "asset": "l11_m09_005.svg",
-    "title": "LEVEL 11 final ishchi loyiha auditi — ko‘rgazmali namuna",
+    "asset": "sketch-l11_m09_005.jpg",
+    "title": "Ikki qavatli ishchi loyiha auditi — ko‘rgazmali namuna",
     "explanation": [
-      "Ishchi paket A-01/A-02 planlar, A-03 fasad, A-04 kesim va detallar bilan tayyorlanadi.",
-      "Arxitektura, konstruktsiya va MEP mosligini hamda eksportni tekshiring → yakuniy paket nazorati.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Bitta loyiha holati reja, fasad va kesimda izchil ko‘rsatiladi.",
+      "Ochilishlar, qavatlar va tomni uchala hujjatda o‘zaro solishtiring.",
+      "Yakuniy paketga ayni loyiha versiyasi kirganini, qolgan ochiq masalalar qayd etilganini tekshiring."
     ],
     "exercise": "Paket tarkibi, tasdiqlar va ochiq masalalarni audit qiling.",
     "solution": "Ishchi loyiha auditida tayyor va hali tasdiqlanmagan qismlar ajratiladi.",
     "block": 4,
     "recipe": "coordination",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
@@ -6789,19 +6789,19 @@
   },
   {
     "code": "L12_M01_005",
-    "asset": "l12_m01_005.svg",
-    "title": "BIM professional audit — ko‘rgazmali namuna",
+    "asset": "sketch-l12_m01_005.jpg",
+    "title": "BIM model va chizmalar izchilligi — ko‘rgazmali namuna",
     "explanation": [
-      "D01 eshigining eni modelda 900 mm; jadval va planda shu qiymat chiqishi kerak.",
-      "Enni 1000 mm ga o‘zgartirib tegishli chiqishlarni tekshiring → bir o‘zgarishning dalili.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Deraza elementi model, reja, fasad va kesimda bir xil ID bilan kuzatiladi.",
+      "Elementdagi bitta o‘zgarish qaysi ko‘rinishlarga yetib borishi kerakligini sanang.",
+      "Darsdagi eshik enini o‘zgartirish mashqini ham model–jadval–chizma bo‘yicha shu tartibda tekshiring."
     ],
     "exercise": "Model, ma’lumot va hujjat izchilligini audit qiling.",
     "solution": "BIM auditida chiroyli 3D to‘liq ma’lumot sifatiga tenglashtirilmaydi.",
     "block": 4,
     "recipe": "bim",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
@@ -6874,19 +6874,19 @@
   },
   {
     "code": "L12_M03_003",
-    "asset": "l12_m03_003.svg",
-    "title": "Door va window schedule — ko‘rgazmali namuna",
+    "asset": "sketch-l12_m03_003.jpg",
+    "title": "Eshik va deraza ro‘yxatlari — ko‘rgazmali namuna",
     "explanation": [
-      "D01=900 mm va D02=800 mm eshiklar, W01 deraza; eshik spetsifikatsiyasi ikki satr bo‘lishi kerak.",
-      "D01 va D02 satrini model bilan solishtiring → ikkita eshik.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "D01, D02 eshiklari va W01 derazasi bino ichida hamda alohida element ro‘yxatida ko‘rsatilgan.",
+      "Har element IDsi model va jadvalda bir xil bo‘lishini solishtiring; eshik va deraza ro‘yxatlarini ajrating.",
+      "Rasm elementlarni tanishga yordam beradi; eni, balandligi va sonini darsdagi jadval mashqida manba modeldan tekshiring."
     ],
     "exercise": "Door va Window jadvallarini element IDlari bilan solishtiring.",
     "solution": "Jadval turga mos maydon va identifikatsiya bilan tekshiriladi.",
     "block": 5,
     "recipe": "schedule",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
@@ -6942,19 +6942,19 @@
   },
   {
     "code": "L12_M04_004",
-    "asset": "l12_m04_004.svg",
-    "title": "Documentation views — ko‘rgazmali namuna",
+    "asset": "sketch-l12_m04_004.jpg",
+    "title": "Hujjat uchun saqlangan ko‘rinishlar — ko‘rgazmali namuna",
     "explanation": [
-      "Bir modeldan PLAN_100 va DETAIL_20 saqlangan viewlari tayyorlanadi.",
-      "Hujjat viewini layoutga bog‘lang → qayta chiqariladigan drawing.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Bir reja taqdimot ko‘rinishi va ishchi chizma ko‘rinishida berilgan.",
+      "Taqdimotdagi materiallar bilan hujjatdagi chiziq, xona nomi va o‘lcham vazifasini solishtiring.",
+      "Masshtab, qatlam va grafik sozlamalarni maqsadga mos saqlangan ko‘rinish orqali boshqaring."
     ],
     "exercise": "Albom viewini qayta ochib, masshtab va detalni tekshiring.",
     "solution": "Documentation view chiqish vazifasiga mos bo‘lishi kerak.",
     "block": 5,
     "recipe": "view",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
@@ -6976,36 +6976,36 @@
   },
   {
     "code": "L12_M05_003",
-    "asset": "l12_m05_003.svg",
-    "title": "Drawing placement — ko‘rgazmali namuna",
+    "asset": "sketch-l12_m05_003.jpg",
+    "title": "Chizmalarni sahifaga joylash — ko‘rgazmali namuna",
     "explanation": [
-      "A3 masterda A-01 plan va A-02 kesim drawinglari joylashtiriladi.",
-      "Saqlangan viewni drawing sifatida qo‘ying, source va scale ni tekshiring → modelga aloqa.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Reja, fasad va kesim sahifaga chizma chegaralari hamda shtamp joyi bilan joylashtirilgan.",
+      "Har chizmaning manbasi va masshtabi, chetlar ichida joylashishi hamda o‘qilish tartibini tekshiring.",
+      "Tasvir o‘quv sahifasini ko‘rsatadi; mashqda saqlangan ko‘rinishni Layout sahifasiga haqiqiy bog‘lang."
     ],
     "exercise": "Saqlangan view chizmasini layoutga joylashtirib, manbasini tekshiring.",
     "solution": "Drawingning source viewsi va yangilanish holati nazorat qilinadi.",
     "block": 5,
     "recipe": "documents",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L12_M05_004",
-    "asset": "l12_m05_004.svg",
-    "title": "Sheet hierarchy va readability — ko‘rgazmali namuna",
+    "asset": "sketch-l12_m05_004.jpg",
+    "title": "Sahifa tartibi va o‘qilish — ko‘rgazmali namuna",
     "explanation": [
-      "A3 masterda A-01 plan va A-02 kesim drawinglari joylashtiriladi.",
-      "Sarlavha, drawing, izoh va bo‘shliqni tartiblang → o‘qiladigan varaq.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Zich joylashtirilgan va tartibli arxitektura varaqlari yonma-yon taqqoslangan.",
+      "Bosh chizma, yordamchi ko‘rinish va matn atrofidagi bo‘shliq o‘qishga qanday yordam berishini aniqlang.",
+      "Varaqni yakuniy bosma o‘lchamda ochib, sarlavha, chizma va izohlarning ustuvorligini tekshiring."
     ],
     "exercise": "Varaq tartibi va masshtabdagi matn o‘qilishini ko‘ring.",
     "solution": "Sheet hierarchy o‘quvchiga axborotni topish va o‘qishga yordam beradi.",
     "block": 5,
     "recipe": "documents",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
@@ -7061,19 +7061,19 @@
   },
   {
     "code": "L12_M06_003",
-    "asset": "l12_m06_003.svg",
+    "asset": "sketch-l12_m06_003.jpg",
     "title": "Grafik standartlar — ko‘rgazmali namuna",
     "explanation": [
-      "Shtampda loyiha nomi, sheet ID, sheet title, sana va revision ko‘rsatiladi.",
-      "Shrift, chiziq va belgilarni kichik bosma o‘lchamda tekshiring → o‘qilish.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Kesilgan devor, mebel va fon, o‘lcham yozuvi turli chiziq og‘irligida ajratilgan.",
+      "Qalin chiziq asosiy kesimni, yengil chiziq yordamchi ma’lumotni qanday o‘qitishini solishtiring.",
+      "Bir xil bosma masshtabda matn, belgi va chiziqlar ravshanligini tekshiring."
     ],
     "exercise": "Chiziq, shrift va birlik qoidasini namuna varaqda tekshiring.",
     "solution": "Grafik standart chiqariladigan hujjatda ishlashi kerak.",
     "block": 5,
     "recipe": "stamp",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
@@ -7231,19 +7231,19 @@
   },
   {
     "code": "L12_M08_003",
-    "asset": "l12_m08_003.svg",
-    "title": "Scale, units va origin — ko‘rgazmali namuna",
+    "asset": "sketch-l12_m08_003.jpg",
+    "title": "Masshtab, birlik va koordinata — ko‘rgazmali namuna",
     "explanation": [
-      "Hamkorga o‘quv DWG beriladi; modeldagi 4000 mm test segmenti eksport va qayta ochishda tekshiriladi.",
-      "Units va originni belgilang, 4000 mm nazorat masofasini qo‘ying → koordinata dalili.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Manba reja, siljigan nusxa va moslangan nusxa birlik hamda koordinata masalasini tushuntiradi.",
+      "Modelning birliklari bilan joylashish manbasini alohida tekshiring.",
+      "Darsdagi 4000 mm nazorat masofasini eksportdan keyin qayta o‘lchang; eskizdagi o‘qlar konseptual belgilardir."
     ],
     "exercise": "Birlik, masshtab va originni 4000 mm nazorat masofasi bilan tekshiring.",
     "solution": "Birlik farqi 4 m va 4000 mm qiymatlarini noto‘g‘ri talqin qilishga olib kelishi mumkin.",
     "block": 5,
     "recipe": "dwg",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
@@ -7724,19 +7724,19 @@
   },
   {
     "code": "L13_M04_002",
-    "asset": "l13_m04_002.svg",
-    "title": "Haqiqiy alternativalar — ko‘rgazmali namuna",
+    "asset": "sketch-l13_m04_002.jpg",
+    "title": "Haqiqiy muqobil variantlar — ko‘rgazmali namuna",
     "explanation": [
-      "A variant mehmon zonasini ajratadi, B variant hovli aloqasini kuchaytiradi; bir xil brief bo‘yicha taqqoslanadi.",
-      "A/Bda xona, kirish va xizmat yechimini boshqa yo‘l bilan tuzing → rang almashtirish emas.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Old hovli, ichki hovli va ikki qanotli uchta uy bir xil uchastka uchun farqli strategiyalarni ko‘rsatadi.",
+      "Kirish, oilaviy xona, xizmat va ochiq makon aloqalari qayerda o‘zgarganini ajrating.",
+      "Variantlarni faqat rang bo‘yicha emas, foydalanish va maydon taqsimoti bilan solishtiring."
     ],
     "exercise": "A va Bning aloqa, maydon va xususiylik farqini ko‘rsating.",
     "solution": "Faqat rang o‘zgarishi haqiqiy funksional alternativa emas.",
     "block": 5,
     "recipe": "variants",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
@@ -7758,19 +7758,19 @@
   },
   {
     "code": "L13_M04_004",
-    "asset": "l13_m04_004.svg",
-    "title": "Mijozga variantlarni ko'rsatish — ko‘rgazmali namuna",
+    "asset": "sketch-l13_m04_004.jpg",
+    "title": "Mijozga variantlarni ko‘rsatish — ko‘rgazmali namuna",
     "explanation": [
-      "A variant mehmon zonasini ajratadi, B variant hovli aloqasini kuchaytiradi; bir xil brief bo‘yicha taqqoslanadi.",
-      "Har variant foydasi va yo‘qotishini sodda tilda tushuntiring → mijoz tanlovi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Uzun uchastkaga mos uchta reja va bitta hajmiy ko‘rinish variantlarni tushuntirishga xizmat qiladi.",
+      "Mehmon, oila va xizmat zonalari hamda hovli o‘rni bo‘yicha farqni ko‘rsating.",
+      "Har variantning qulayligi va yo‘qotishini bir xil mezon asosida qisqa tushuntiring."
     ],
     "exercise": "Har variantning foydasi va yo‘qotishini qisqa tushuntiring.",
     "solution": "Mijozga taqdimot trade-offni yashirmasligi kerak.",
     "block": 5,
     "recipe": "variants",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
@@ -7809,36 +7809,36 @@
   },
   {
     "code": "L13_M05_002",
-    "asset": "l13_m05_002.svg",
-    "title": "Plan va diagrammani tushuntirish — ko‘rgazmali namuna",
+    "asset": "sketch-l13_m05_002.jpg",
+    "title": "Reja va harakat yo‘llarini tushuntirish — ko‘rgazmali namuna",
     "explanation": [
-      "10 daqiqalik taqdimot: brief, site, konsepsiya, plan, fasad va ochiq savollar.",
-      "Planda uch asosiy yo‘lni ko‘rsating, xona ro‘yxatini o‘qish bilan cheklanmang → foydalanish.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Oilaviy, mehmon va xizmat yo‘llari bitta hovlili uy rejasida alohida ko‘rsatilgan.",
+      "Kirishdan xonalargacha har bir foydalanuvchi yo‘lini kuzating.",
+      "Taqdimotda yo‘l va xona aloqalarining foydasini oddiy foydalanish ssenariysi bilan tushuntiring."
     ],
     "exercise": "Plan ustida ikki foydalanuvchi yo‘lini izohlang.",
     "solution": "Diagramma murakkab qarorni aniq ssenariy bilan tushuntiradi.",
     "block": 5,
     "recipe": "presentation",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L13_M05_003",
-    "asset": "l13_m05_003.svg",
-    "title": "3D va vizual material — ko‘rgazmali namuna",
+    "asset": "sketch-l13_m05_003.jpg",
+    "title": "Uch o‘lchamli ko‘rgazmali material — ko‘rgazmali namuna",
     "explanation": [
-      "10 daqiqalik taqdimot: brief, site, konsepsiya, plan, fasad va ochiq savollar.",
-      "3Dda qarorni ko‘rsatadigan kadr tanlang → bezak emas dalil.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Ixcham uy tashqi ko‘rinish va ichki fazolar ochib ko‘rsatilgan rakursda berilgan.",
+      "Tashqi hajm bilan xonalar joylashuvi va hovliga aloqani birga tushuntiring.",
+      "3D rakursni aynan aytilayotgan qarorni ko‘rsatish uchun tanlang; rasmni aniq sonli loyiha o‘rnida ishlatmang."
     ],
     "exercise": "3D rakursni tushuntiriladigan qarorga mos tanlang.",
     "solution": "Vizual materialning vazifasi loyiha fikrini dalillashdir.",
     "block": 5,
     "recipe": "presentation",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
@@ -7928,19 +7928,19 @@
   },
   {
     "code": "L13_M06_004",
-    "asset": "l13_m06_004.svg",
-    "title": "O'zgarish ta'siri — ko‘rgazmali namuna",
+    "asset": "sketch-l13_m06_004.jpg",
+    "title": "O‘zgarish ta’siri — ko‘rgazmali namuna",
     "explanation": [
-      "Mijoz oshxonani hovliga yaqinlashtirish va fasad rangini o‘zgartirishni so‘radi.",
-      "Oshxona siljishining quvur, ochilish, mebel va yo‘lga ta’sirini tekshiring → to‘liq oqibat.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Devor siljishi reja, fasad, kesim, mebel va tarmoqlarda kuzatiladi.",
+      "Bitta o‘zgarishning xona maydoni, ochilish va xizmat yo‘liga ta’sirini ajrating.",
+      "Taklifni amalga oshirishdan oldin barcha bog‘liq chizmalar va mutaxassis savollarini yangilang."
     ],
     "exercise": "Deraza va oshxona o‘zgarishining fasad, model va budjetga ta’sirini yozing.",
     "solution": "O‘zgarish faqat bitta chizmada tekshirilmaydi.",
     "block": 5,
     "recipe": "feedback",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
@@ -7979,19 +7979,19 @@
   },
   {
     "code": "L13_M07_002",
-    "asset": "l13_m07_002.svg",
-    "title": "Brief va site bilan dalillash — ko‘rgazmali namuna",
+    "asset": "sketch-l13_m07_002.jpg",
+    "title": "Talab va uchastka bilan asoslash — ko‘rgazmali namuna",
     "explanation": [
-      "Mijoz kirishni markazga ko‘chirmoqchi, ammo bu yotoqxona privacy va koridorga ta’sir qiladi.",
-      "Brief va site bandini ko‘rsating → tanlovning manbasi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Ko‘cha shovqini, yon qo‘shnilar va oilaviy ichki hovli loyiha qaroriga bog‘langan.",
+      "Kirish, xususiy zona va sokin tashqi makon brief talabini qanday qo‘llab-quvvatlashini ajrating.",
+      "Taklifni mijoz ehtiyoji hamda uchastkaning aniq dalili bilan asoslang."
     ],
     "exercise": "Taklifni brief va site ma’lumotlari bilan solishtiring.",
     "solution": "Dalil mavjud talab va sharoitga bog‘lanadi.",
     "block": 5,
     "recipe": "brief",
     "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
@@ -8068,20 +8068,19 @@
   },
   {
     "code": "L13_M08_002",
-    "asset": "l13_m08_002.svg",
-    "title": "Simulyatsiya: brief va variantlar — arxitekturaviy eskiz",
+    "asset": "sketch-l13_m08_002.jpg",
+    "title": "Mashq: talablar va variantlar — ko‘rgazmali namuna",
     "explanation": [
-      "1. Chapdagi brief kartasi va uch xil konsept varianti bir xil talablar uchun real farqli strategiyalar tayyorlashni ko‘rsatadi.",
-      "2. Variantlar faqat fasad rangi yoki mayda detal bilan emas, plan, zoning, orientation yoki massing strategiyasi bilan farqlansin.",
-      "3. Arxitektorning shaxsiy didi briefdan ustun qo‘yilmaydi; variantlar client needs va site evidence bilan solishtiriladi.",
-      "Darsdagi bajarish: Brief + A/B/C variant comparison tayyorlang."
+      "Oila, mehmon va tinch hovli talabidan uch xil reja hamda hajmiy variant hosil qilingan.",
+      "Har variantning briefdagi qaysi talabni kuchliroq bajarishini ko‘rsating.",
+      "Ochilish, harakat va hovli aloqasi bo‘yicha afzallik hamda cheklovni qayd qiling."
     ],
     "exercise": "Tasdiqlangan briefdan uch real strategik variant yarating.",
     "solution": "Variantlar bir xil briefga turli mantiqiy yechimlarni ko‘rsatib, mezonlar bilan solishtiriladi.",
     "block": 5,
     "recipe": "variants",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy/workflow eskizi. Kartochkalar va variantlar o‘quv mantiqini ko‘rsatadi; real loyiha qarorlari client brief, site va texnik koordinatsiya bilan aniqlanadi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
@@ -8140,20 +8139,19 @@
   },
   {
     "code": "L14_M01_001",
-    "asset": "l14_m01_001.svg",
-    "title": "Tor uchastkani tahlil qilish — arxitekturaviy eskiz",
+    "asset": "sketch-l14_m01_001.jpg",
+    "title": "Tor uchastkani tahlil qilish — ko‘rgazmali namuna",
     "explanation": [
-      "1. Markazdagi tor uzun uchastka, ikki yon qo‘shni va ko‘cha tomoni site cheklovlarini bir qarashda ko‘rsatadi.",
-      "2. Tahlilda eni bilan birga uzunlik, kirish, orientatsiya, qo‘shnilar, privacy va tabiiy yorug‘lik yo‘nalishlari ham ko‘riladi.",
-      "3. Keng uy planini shunchaki siqish o‘rniga, uchastkaning o‘z geometriyasidan loyiha strategiyasi chiqariladi.",
-      "Darsdagi bajarish: Tor uchastka uchun 10 bandli site analysis tuzing."
+      "Tor uchastka ikki qo‘shni bino va ko‘cha orasida reja hamda hajmiy ko‘rinishda berilgan.",
+      "Kirish, yorug‘lik yo‘nalishi, yon to‘siqlar va orqa hududni ajrating.",
+      "Chegara va qo‘shni haqidagi haqiqiy ma’lumotni yig‘ib, loyiha cheklovlari jadvaliga kiriting."
     ],
     "exercise": "Tor uchastkaning kirish, qo‘shni, yorug‘lik va privacy cheklovlarini belgilang.",
     "solution": "Tor uchastka alohida rejalashtirish strategiyasini talab qiladi.",
     "block": 5,
     "recipe": "narrow",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy plan/site eskizi. Proporsiyalar o‘quv maqsadida; real setback, courtyard o‘lchami va normativ masofalar loyiha joyi bo‘yicha alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
@@ -8176,38 +8174,36 @@
   },
   {
     "code": "L14_M01_003",
-    "asset": "l14_m01_003.svg",
-    "title": "Yorug‘lik va ichki hovli — arxitekturaviy eskiz",
+    "asset": "sketch-l14_m01_003.jpg",
+    "title": "Yorug‘lik va ichki hovli — ko‘rgazmali namuna",
     "explanation": [
-      "1. Markazdagi ochiq courtyard chuqur plan ichiga tabiiy yorug‘lik olib kirish uchun fazoviy vosita sifatida ko‘rsatilgan.",
-      "2. Light well yoki courtyard tashqi devordan uzoq ichki zonalarni yoritishga yordam berishi mumkin.",
-      "3. Courtyard hajmi, joyi va ochiqligi eskizdan olinmaydi; site, iqlim, privacy va normativ talablar bilan tekshiriladi.",
-      "Darsdagi bajarish: Plan chuqurligi bo‘yicha natural light diagram chizing."
+      "Ochiq ichki hovli chuqur rejaning tashqi devordan uzoq xonalariga yorug‘lik olib kiradi.",
+      "Ochiq osmon, xonalar va hovli tutashuvini kesim hamda rejada solishtiring.",
+      "Yorug‘lik samarasi yo‘nalish, to‘siqlar va haqiqiy o‘lchamlarga bog‘liq; mashqda shu omillarni yozing."
     ],
     "exercise": "Ichki zonalarga yorug‘lik yetib borishi uchun courtyard yoki light-well strategiyasini ko‘rsating.",
     "solution": "Tor va chuqur planda tabiiy yorug‘lik alohida loyiha masalasi sifatida yechiladi.",
     "block": 5,
     "recipe": "narrow",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy plan/site eskizi. Proporsiyalar o‘quv maqsadida; real setback, courtyard o‘lchami va normativ masofalar loyiha joyi bo‘yicha alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L14_M01_004",
-    "asset": "l14_m01_004.svg",
-    "title": "Circulation va privacy — arxitekturaviy eskiz",
+    "asset": "sketch-l14_m01_004.jpg",
+    "title": "Harakat yo‘llari va xususiylik — ko‘rgazmali namuna",
     "explanation": [
-      "1. Yashil yo‘l asosiy family circulation’ni, punktir yo‘l esa guest movement’ni konseptual ko‘rsatadi.",
-      "2. Guest circulation private xonalarni kesib o‘tmasligi va uzun koridor mustaqil “yo‘qotilgan maydon” bo‘lib qolmasligi kerak.",
-      "3. Ko‘chadan private zona tomon spatial transition bosqichma-bosqich kuchaytiriladi.",
-      "Darsdagi bajarish: Guest va family circulation’ni alohida chizib, kesishuvlarni toping."
+      "Mehmon va oilaning yo‘llari uzun hovlili uyda alohida kuzatiladi.",
+      "Mehmon yo‘li oilaviy xonalardan o‘tib ketmasligini reja va ichki rakursda tekshiring.",
+      "Yo‘l uzunligi, kirish va hovli bilan aloqa asosida xususiylik darajasini baholang."
     ],
     "exercise": "Uzun plan ichida circulation va privacy zonalarini birga tekshiring.",
     "solution": "Tor uyda harakat yo‘li funksiyalar bilan integratsiya qilinib, privacy bosqichma-bosqich boshqariladi.",
     "block": 5,
     "recipe": "narrow",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy plan/site eskizi. Proporsiyalar o‘quv maqsadida; real setback, courtyard o‘lchami va normativ masofalar loyiha joyi bo‘yicha alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
@@ -8230,56 +8226,53 @@
   },
   {
     "code": "L14_M02_001",
-    "asset": "l14_m02_001.svg",
-    "title": "Murakkab uchastkani o‘qish — arxitekturaviy eskiz",
+    "asset": "sketch-l14_m02_001.jpg",
+    "title": "Murakkab uchastkani o‘qish — ko‘rgazmali namuna",
     "explanation": [
-      "1. Qiyshiq uchastka chegaralari turli ahamiyatdagi chiziqlar bilan ko‘rsatilgan; barcha chegara bino devoriga aylanishi shart emas.",
-      "2. Primary boundary, street edge, kirish, orientatsiya va foydalanish mumkin bo‘lgan asosiy zona alohida aniqlanadi.",
-      "3. Uchastka geometriyasini to‘liq takrorlash o‘rniga, bino uchun sodda va boshqariladigan ichki geometriya topiladi.",
-      "Darsdagi bajarish: Primary va secondary boundarylarni belgilab, bino uchun ishlaydigan markaziy zonani ajrating."
+      "Qiyshiq uchastka chegaralari bilan uning ichidagi sodda bino shakli ajratib ko‘rsatilgan.",
+      "Ko‘cha tomoni, asosiy va ikkilamchi chegaralar hamda foydali zonani aniqlang.",
+      "Uchastkaning har bir qiyshiq chetini bino devoriga takrorlash zarurligini mezonlar bilan tekshiring."
     ],
     "exercise": "Murakkab site ichida asosiy va ikkilamchi chegaralarni ajrating.",
     "solution": "Murakkab uchastka tahlili site geometriyasini loyiha qaroriga aylantirishdan boshlanadi.",
     "block": 5,
     "recipe": "odd-site",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy site/plan eskizi. Proporsiyalar konseptual; real setback, kirish va normativ cheklovlar loyiha joyi bo‘yicha alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L14_M02_002",
-    "asset": "l14_m02_002.svg",
-    "title": "Asosiy bino o‘qini tanlash — arxitekturaviy eskiz",
+    "asset": "sketch-l14_m02_002.jpg",
+    "title": "Asosiy bino o‘qini tanlash — ko‘rgazmali namuna",
     "explanation": [
-      "1. Qiyshiq chegara ichidagi to‘g‘ri to‘rtburchak bino va markaziy yashil o‘q sodda reference grid mantiqini ko‘rsatadi.",
-      "2. Asosiy o‘q structure, plan va fasadni boshqaradigan barqaror geometriya beradi.",
-      "3. Foydasiz o‘tkir burchaklar mebel, konstruksiya va qurilishni murakkablashtirishi mumkin; site qiyshiq bo‘lsa ham bino albatta qiyshiq bo‘lishi shart emas.",
-      "Darsdagi bajarish: Uch xil bino o‘qi variantini solishtirib eng sodda va foydalisini tanlang."
+      "Bir murakkab uchastkada bino uchta turli o‘qqa joylashtirilgan.",
+      "Kirish, ochiq maydon va bino geometriyasi o‘q tanloviga qarab qanday o‘zgarishini solishtiring.",
+      "Asosiy o‘qni reja, tayanchlar va ko‘cha bilan aloqa birga ishlaydigan variant sifatida asoslang."
     ],
     "exercise": "Murakkab uchastka ichida sodda va mantiqiy building axis tanlang.",
     "solution": "Aniq o‘q va grid murakkab chegara ichida loyiha geometriyasini tartibga soladi.",
     "block": 5,
     "recipe": "odd-site",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy site/plan eskizi. Proporsiyalar konseptual; real setback, kirish va normativ cheklovlar loyiha joyi bo‘yicha alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L14_M02_003",
-    "asset": "l14_m02_003.svg",
-    "title": "Qolgan zonalardan foydalanish — arxitekturaviy eskiz",
+    "asset": "sketch-l14_m02_003.jpg",
+    "title": "Qolgan zonalardan foydalanish — ko‘rgazmali namuna",
     "explanation": [
-      "1. Bino tashqarisida qolgan qiyshiq maydonlar landshaft, courtyard, service yoki buffer sifatida maqsadli ishlatilgan.",
-      "2. Har kichik residual zone uchun real funksiya yoki landshaft mantiqi bo‘lishi kerak.",
-      "3. Bino sig‘magan geometriyani tasodifiy bo‘shliq deb qoldirmasdan, site kompozitsiyasining faol qismiga aylantirish mumkin.",
-      "Darsdagi bajarish: Qolgan maydonlarni 4 funksional kategoriyaga ajrating."
+      "Bino atrofidagi qolgan maydonlar dam olish, yashil hudud, xizmat va himoya zonasiga ajratilgan.",
+      "Qiyshiq chekka maydonning har biri uchun amaliy vazifa yoki landshaft yechimini aniqlang.",
+      "Tashqi harakat yo‘li, xizmat qulayligi va xususiylikni reja bilan tekshiring."
     ],
     "exercise": "Residual zonalarni landscape, courtyard, service va buffer funksiyalariga ajrating.",
     "solution": "Qolgan maydonlar maqsadli ishlatilsa murakkab site kamchilikdan imkoniyatga aylanadi.",
     "block": 5,
     "recipe": "odd-site",
     "boundary": "Mavzuni tushuntiruvchi yengil arxitekturaviy site/plan eskizi. Proporsiyalar konseptual; real setback, kirish va normativ cheklovlar loyiha joyi bo‘yicha alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy eskiz",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {

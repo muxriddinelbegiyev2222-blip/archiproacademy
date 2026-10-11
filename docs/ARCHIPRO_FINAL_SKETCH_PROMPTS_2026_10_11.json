@@ -1,0 +1,569 @@
+[
+  {
+    "code": "L14_M01_002",
+    "title": "Uzun uchastkani zonalash",
+    "scene": "Use the first completed narrow-plot zoning image.",
+    "labels": [],
+    "explanation": [
+      "Uzun uy kirish, mehmon, oilaviy va xizmat zonalariga ketma-ket ajratilgan.",
+      "Ichki hovli yorug‘lik va ochiq makon beradi; asosiy yo‘l xususiy xonalarni kesib o‘tmaydi.",
+      "Zonalar aloqasi bilan koridor uzunligini reja va hajmiy ko‘rinishda birga tekshiring."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one landscape architectural teaching illustration for ARCHIPRO UZ, lesson L14_M01_002, lengthwise zoning of a narrow residential plot. Create ONE polished ink, pencil and watercolor architectural sketch on light cream paper, realistic material cues, sharp readable linework, same calm educational quality as a professional architecture handbook. Landscape 1536 by 1024 composition. Show a coherent elongated Uzbekistan courtyard house in a large top-down furnished plan plus one small isometric cutaway of the SAME house. Street and entry at the near short end, guest/public room near entry, family/private rooms farther along the long axis, a central open-to-sky courtyard bringing daylight, service/kitchen at the back with sensible connections. Use subtle colored zone tints and a clear continuous route that avoids crossing bedrooms, so linear zoning is understandable at one glance. Include only these short Uzbek labels, spelled accurately: 'Kirish', 'Mehmon', 'Oila', 'Xizmat', 'Ichki hovli'. Keep plan and isometric geometrically consistent. This is conceptual architecture education, not a dimensioned engineering drawing: no numeric dimensions, no claimed normative distances, no branding, no watermark, no English or Russian text, no software interface, no unrelated collage. Show doors and windows clearly, restrained arrows and uncluttered furniture.",
+    "figure_title": "Uzun uchastkani zonalash"
+  },
+  {
+    "code": "L14_M02_004",
+    "title": "Fasad va perspektivani tekshirish",
+    "scene": "One modest courtyard house on an irregular plot beside a diagonal street. Large isometric site view with three clearly located observation points along the street/entry, and three small eye-level views of the SAME unchanged house from those points. Show approach, main entrance and facade perception as angle changes. Keep roof, window positions and materials consistent across views.",
+    "labels": [
+      "Ko‘cha",
+      "Kirish",
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": [
+      "Ko‘cha va kirish bo‘ylab uchta nuqta binoning turli ko‘rinishini beradi.",
+      "Asosiy kirish va fasadning o‘qilishini faqat yuqoridan reja bilan emas, yondashuv rakurslarida tekshiring.",
+      "Bir xil bino geometriyasi va ochilishlari barcha rakurslarda mos bo‘lishini solishtiring."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L14_M02_004, Fasad va perspektivani tekshirish. Subject: One modest courtyard house on an irregular plot beside a diagonal street. Large isometric site view with three clearly located observation points along the street/entry, and three small eye-level views of the SAME unchanged house from those points. Show approach, main entrance and facade perception as angle changes. Keep roof, window positions and materials consistent across views. Text (verbatim only): \"Ko‘cha\", \"Kirish\", \"A\", \"B\", \"C\".",
+    "figure_title": "Fasad va perspektivani tekshirish"
+  },
+  {
+    "code": "L14_M03_001",
+    "title": "Nishabli uchastkani tahlil qilish",
+    "scene": "A sloping residential site on a hillside in Uzbekistan. Large clear axonometric terrain with simple contour curves, high and low areas, an entry road at the lower side and blue surface-water arrows descending naturally. A small top-down contour plan of the SAME terrain. Show topography and slope direction before designing the house. No contour elevations or numerical claims.",
+    "labels": [
+      "Baland",
+      "Past",
+      "Nishab",
+      "Suv yo‘li",
+      "Kirish"
+    ],
+    "explanation": [
+      "Relyef chiziqlari va baland-past zonalar nishabning asosiy yo‘nalishini ko‘rsatadi.",
+      "Kirish va tabiiy suv yo‘li uchastka relyefi bilan birga o‘qiladi.",
+      "Mashqda haqiqiy topografik ma’lumotdan sathlarni aniqlang; eskizdagi strelkalar yo‘nalishni tushuntiradi."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L14_M03_001, Nishabli uchastkani tahlil qilish. Subject: A sloping residential site on a hillside in Uzbekistan. Large clear axonometric terrain with simple contour curves, high and low areas, an entry road at the lower side and blue surface-water arrows descending naturally. A small top-down contour plan of the SAME terrain. Show topography and slope direction before designing the house. No contour elevations or numerical claims. Text (verbatim only): \"Baland\", \"Past\", \"Nishab\", \"Suv yo‘li\", \"Kirish\".",
+    "figure_title": "Nishabli uchastkani tahlil qilish"
+  },
+  {
+    "code": "L14_M03_002",
+    "title": "Bino sathi va mavjud relyef",
+    "scene": "One house in a clean side cutaway on sloping terrain, highlighting a chosen horizontal building floor datum against the original natural ground. Light dashed line for original ground, contrasting shaded cut and fill areas and a sensible entry connection. Large section plus small perspective of the SAME house. Conceptual cut/fill study, no construction specifications or quantities.",
+    "labels": [
+      "Bino sathi",
+      "Tabiiy yer",
+      "Qazish",
+      "To‘ldirish",
+      "Kirish"
+    ],
+    "explanation": [
+      "Gorizontal bino sathi tabiiy yer qiyaligi bilan solishtirilgan.",
+      "Qazish, to‘ldirish va kirish bilan bog‘liq zonalar alohida ajratiladi.",
+      "Bino sathini haqiqiy topografik va geologik ma’lumot bilan tekshirib, texnik savollarni qayd qiling."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L14_M03_002, Bino sathi va mavjud relyef. Subject: One house in a clean side cutaway on sloping terrain, highlighting a chosen horizontal building floor datum against the original natural ground. Light dashed line for original ground, contrasting shaded cut and fill areas and a sensible entry connection. Large section plus small perspective of the SAME house. Conceptual cut/fill study, no construction specifications or quantities. Text (verbatim only): \"Bino sathi\", \"Tabiiy yer\", \"Qazish\", \"To‘ldirish\", \"Kirish\".",
+    "figure_title": "Bino sathi va mavjud relyef"
+  },
+  {
+    "code": "L14_M03_003",
+    "title": "Pog‘onali sathlar va terassalar",
+    "scene": "A coherent small hillside house with staggered split-level floors following the slope, shown in a generous side cutaway and small axonometric. Outdoor terraced platforms step down with terrain. Clearly show interior stairs between levels and outdoor circulation between terraces; distinguish indoor levels from garden terraces. All one design, no numeric elevations or structural guarantees.",
+    "labels": [
+      "Yuqori sath",
+      "Pastki sath",
+      "Terassa",
+      "Harakat"
+    ],
+    "explanation": [
+      "Ichki sathlar va tashqi terassalar qiyalik bo‘ylab bosqichma-bosqich joylashadi.",
+      "Sathlar orasidagi ichki va tashqi harakatni kesimda kuzating.",
+      "Bunday tanlovning kundalik foydalanish, kirish va texnik hisobga ta’sirini yozing."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L14_M03_003, Pog‘onali sathlar va terassalar. Subject: A coherent small hillside house with staggered split-level floors following the slope, shown in a generous side cutaway and small axonometric. Outdoor terraced platforms step down with terrain. Clearly show interior stairs between levels and outdoor circulation between terraces; distinguish indoor levels from garden terraces. All one design, no numeric elevations or structural guarantees. Text (verbatim only): \"Yuqori sath\", \"Pastki sath\", \"Terassa\", \"Harakat\".",
+    "figure_title": "Pog‘onali sathlar va terassalar"
+  },
+  {
+    "code": "L14_M03_004",
+    "title": "Drenaj, tayanch devor va kirish",
+    "scene": "One sloping-house site section combining a house, uphill retaining wall zone, a conceptual drainage path behind/along the retaining zone and an access road at the lower side. Blue surface-water arrows travel away from the building toward a designated outlet, orange arrow marks access. Show clearly which side is retained ground and where water travels. Conceptual coordination illustration, not a buildable retaining-wall detail; no reinforcement, dimensions or performance claims.",
+    "labels": [
+      "Suv yo‘li",
+      "Tayanch devor",
+      "Kirish",
+      "Bino"
+    ],
+    "explanation": [
+      "Suv yo‘li, tayanch devor zonasi va kirish bitta kesimda muvofiqlashtiriladi.",
+      "Yomg‘ir suvining bino va yer tutashuvida to‘planadigan nuqtalarini aniqlang.",
+      "Tayanch devor, drenaj va kirish yechimini mutaxassislar tekshiradigan savollar bilan bog‘lang."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L14_M03_004, Drenaj, tayanch devor va kirish. Subject: One sloping-house site section combining a house, uphill retaining wall zone, a conceptual drainage path behind/along the retaining zone and an access road at the lower side. Blue surface-water arrows travel away from the building toward a designated outlet, orange arrow marks access. Show clearly which side is retained ground and where water travels. Conceptual coordination illustration, not a buildable retaining-wall detail; no reinforcement, dimensions or performance claims. Text (verbatim only): \"Suv yo‘li\", \"Tayanch devor\", \"Kirish\", \"Bino\".",
+    "figure_title": "Drenaj, tayanch devor va kirish"
+  },
+  {
+    "code": "L14_M04_002",
+    "title": "Funksional guruhlar",
+    "scene": "A large but readable single-storey Uzbekistan family villa floor plan with realistic furniture. Four coherent color-tinted clusters for guests/public spaces, family/private rooms, service/kitchen/storage and a central courtyard. A small cutaway of the SAME plan explains clusters spatially. Make adjacency, privacy and everyday routes evident; no decorative abstract block chart.",
+    "labels": [
+      "Mehmon",
+      "Oila",
+      "Xizmat",
+      "Hovli"
+    ],
+    "explanation": [
+      "Katta uy dasturi mehmon, oila, xizmat va hovli guruhlariga ajratilgan.",
+      "Har guruhning ichki aloqasi va qo‘shni guruhga chiqishini reja bo‘yicha kuzating.",
+      "Xususiylik va kundalik masofalarni funksional guruhlar o‘rtasidagi aloqa bilan baholang."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L14_M04_002, Funksional guruhlar. Subject: A large but readable single-storey Uzbekistan family villa floor plan with realistic furniture. Four coherent color-tinted clusters for guests/public spaces, family/private rooms, service/kitchen/storage and a central courtyard. A small cutaway of the SAME plan explains clusters spatially. Make adjacency, privacy and everyday routes evident; no decorative abstract block chart. Text (verbatim only): \"Mehmon\", \"Oila\", \"Xizmat\", \"Hovli\".",
+    "figure_title": "Funksional guruhlar"
+  },
+  {
+    "code": "L14_M04_003",
+    "title": "Harakat yo‘llari va xizmat",
+    "scene": "A furnished courtyard villa plan with three distinct continuous routes: guest from main entry to reception and terrace, family to private rooms and courtyard, service from a side entrance to kitchen/pantry/laundry. Same plan throughout with modest isometric inset. Clear color-coded arrows and a small route legend; paths do not cross bedrooms or dining furniture.",
+    "labels": [
+      "Mehmon yo‘li",
+      "Oila yo‘li",
+      "Xizmat yo‘li",
+      "Kirish"
+    ],
+    "explanation": [
+      "Mehmon, oila va xizmat yo‘llari bitta villa rejasida ajratilgan.",
+      "Oshxona, saqlash va xizmat xonalari orasidagi aloqa asosiy mehmon makonini keraksiz kesib o‘tmasligini tekshiring.",
+      "Yo‘llarning kesishgan joylarini topib, kundalik foydalanish ssenariysi bilan baholang."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L14_M04_003, Harakat yo‘llari va xizmat. Subject: A furnished courtyard villa plan with three distinct continuous routes: guest from main entry to reception and terrace, family to private rooms and courtyard, service from a side entrance to kitchen/pantry/laundry. Same plan throughout with modest isometric inset. Clear color-coded arrows and a small route legend; paths do not cross bedrooms or dining furniture. Text (verbatim only): \"Mehmon yo‘li\", \"Oila yo‘li\", \"Xizmat yo‘li\", \"Kirish\".",
+    "figure_title": "Harakat yo‘llari va xizmat"
+  },
+  {
+    "code": "L14_M04_004",
+    "title": "Hajmlar, ichki hovli va landshaft",
+    "scene": "A realistic restrained single-storey Uzbekistan villa formed by three connected wings around an open courtyard, with a shaded terrace and garden. Large open-roof axonometric and matching small site plan, subtle mass boundaries. Show how courtyard and landscaping break down the perceived large mass into human-scale outdoor spaces. No luxury marketing montage.",
+    "labels": [
+      "Bino hajmi",
+      "Ichki hovli",
+      "Terassa",
+      "Bog‘"
+    ],
+    "explanation": [
+      "Bir nechta bog‘langan hajm ichki hovli va tashqi makon bilan yagona tizim hosil qiladi.",
+      "Katta bino massasini terassa, bog‘ va hovli aloqalari orqali baholang.",
+      "Ichki xonalar tashqi makonga qanday chiqishini mos reja bilan solishtiring."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L14_M04_004, Hajmlar, ichki hovli va landshaft. Subject: A realistic restrained single-storey Uzbekistan villa formed by three connected wings around an open courtyard, with a shaded terrace and garden. Large open-roof axonometric and matching small site plan, subtle mass boundaries. Show how courtyard and landscaping break down the perceived large mass into human-scale outdoor spaces. No luxury marketing montage. Text (verbatim only): \"Bino hajmi\", \"Ichki hovli\", \"Terassa\", \"Bog‘\".",
+    "figure_title": "Hajmlar, ichki hovli va landshaft"
+  },
+  {
+    "code": "L14_M05_002",
+    "title": "Birgalik va mustaqillik",
+    "scene": "One multi-generation family house in a realistic furnished top-down plan and same-house cutaway. Two distinct private household wings flank a central shared living/dining space and courtyard. Show sensible separate room access, shared meeting spaces and graduated privacy without splitting the family completely. Subtle zone colors, quiet Uzbek residential details.",
+    "labels": [
+      "Umumiy makon",
+      "Ota-ona",
+      "Yosh oila",
+      "Xususiy xona"
+    ],
+    "explanation": [
+      "Umumiy yashash makoni ikki oilaviy xususiy guruhni bog‘laydi.",
+      "Birga foydalaniladigan va mustaqil makonlar o‘rtasidagi yo‘l hamda xususiylikni solishtiring.",
+      "Xonalar aloqasini oilaning haqiqiy yashash odatiga mos mezonlar bilan tekshiring."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L14_M05_002, Birgalik va mustaqillik. Subject: One multi-generation family house in a realistic furnished top-down plan and same-house cutaway. Two distinct private household wings flank a central shared living/dining space and courtyard. Show sensible separate room access, shared meeting spaces and graduated privacy without splitting the family completely. Subtle zone colors, quiet Uzbek residential details. Text (verbatim only): \"Umumiy makon\", \"Ota-ona\", \"Yosh oila\", \"Xususiy xona\".",
+    "figure_title": "Birgalik va mustaqillik"
+  },
+  {
+    "code": "L14_M05_003",
+    "title": "Qulay foydalanish va kelajak",
+    "scene": "The SAME flexible room shown in two clear furnished plan variants: a study/guest room now and an older-user bedroom/caregiver-friendly room later. A clear unobstructed doorway-to-bed circulation zone, wheelchair access shown only as a conceptual maneuvering study, no numerical widths or compliance claims. Small cutaway shows furniture flexibility. Emphasize adaptability and avoiding furniture obstructions.",
+    "labels": [
+      "Hozir",
+      "Kelajak",
+      "Erkin yo‘l",
+      "Moslashuv"
+    ],
+    "explanation": [
+      "Bitta xona hozirgi va kelajakdagi ikki foydalanish holatida ko‘rsatilgan.",
+      "Eshik, mebel va erkin yo‘l yangi ehtiyojga moslashishini reja bilan tekshiring.",
+      "Qulay foydalanish talabi aniq foydalanuvchi va loyiha o‘lchamlari bo‘yicha alohida baholanadi."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L14_M05_003, Qulay foydalanish va kelajak. Subject: The SAME flexible room shown in two clear furnished plan variants: a study/guest room now and an older-user bedroom/caregiver-friendly room later. A clear unobstructed doorway-to-bed circulation zone, wheelchair access shown only as a conceptual maneuvering study, no numerical widths or compliance claims. Small cutaway shows furniture flexibility. Emphasize adaptability and avoiding furniture obstructions. Text (verbatim only): \"Hozir\", \"Kelajak\", \"Erkin yo‘l\", \"Moslashuv\".",
+    "figure_title": "Qulay foydalanish va kelajak"
+  },
+  {
+    "code": "L14_M05_004",
+    "title": "Kirish, oshxona va xizmat modeli",
+    "scene": "Two realistic furnished plans for the SAME multi-generation house envelope: first with shared entrance/kitchen/service, second with more independent entrances and kitchen/service corners for two households. Clearly distinguish shared versus independent systems, coherent bathrooms and storage, show short route arrows. Two concept alternatives, not color-only changes.",
+    "labels": [
+      "Umumiy",
+      "Mustaqil",
+      "Kirish",
+      "Oshxona",
+      "Xizmat"
+    ],
+    "explanation": [
+      "Bir uy uchun umumiy va mustaqil xizmatga tayangan ikki foydalanish modeli solishtirilgan.",
+      "Kirish, oshxona va saqlash joylari oilaviy guruhlar bilan qanday bog‘langanini kuzating.",
+      "Tanlovni oilaning kundalik odati va kelajakdagi ehtiyoji bilan asoslang."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L14_M05_004, Kirish, oshxona va xizmat modeli. Subject: Two realistic furnished plans for the SAME multi-generation house envelope: first with shared entrance/kitchen/service, second with more independent entrances and kitchen/service corners for two households. Clearly distinguish shared versus independent systems, coherent bathrooms and storage, show short route arrows. Two concept alternatives, not color-only changes. Text (verbatim only): \"Umumiy\", \"Mustaqil\", \"Kirish\", \"Oshxona\", \"Xizmat\".",
+    "figure_title": "Kirish, oshxona va xizmat modeli"
+  },
+  {
+    "code": "L14_M06_001",
+    "title": "Sifatli fasad tushunchasi",
+    "scene": "One elegant restrained two-storey Uzbekistan residential facade, human-scaled canopy at entry, clear window rhythm, calm plaster main mass with a small stone/wood accent. Large eye-level sketch and small simple mass outline of the SAME house. Show hierarchy and craftsmanship rather than excessive decoration or luxury advertising.",
+    "labels": [
+      "Asosiy hajm",
+      "Kirish",
+      "Deraza ritmi",
+      "Material"
+    ],
+    "explanation": [
+      "Fasad sifati hajm, kirish, deraza ritmi va materiallarning izchil nisbatida ko‘rsatilgan.",
+      "Asosiy va yordamchi elementlarning umumiy kompozitsiyaga xizmat qilishini tekshiring.",
+      "Qimmat materialni tanlashdan oldin fasad tartibi va foydalanish bilan aloqasini baholang."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L14_M06_001, Sifatli fasad tushunchasi. Subject: One elegant restrained two-storey Uzbekistan residential facade, human-scaled canopy at entry, clear window rhythm, calm plaster main mass with a small stone/wood accent. Large eye-level sketch and small simple mass outline of the SAME house. Show hierarchy and craftsmanship rather than excessive decoration or luxury advertising. Text (verbatim only): \"Asosiy hajm\", \"Kirish\", \"Deraza ritmi\", \"Material\".",
+    "figure_title": "Sifatli fasad tushunchasi"
+  },
+  {
+    "code": "L14_M06_002",
+    "title": "Proporsiya va hajmlar",
+    "scene": "Two clay-white residential massing studies for the SAME two-storey program before material finishes: left unbalanced competing masses and inconsistent openings, right calm aligned masses, a clear main entry and measured solid/void relationship. Large perspective pair with matching small elevations. Realistic architectural model lighting with subtle pencil accents, no exact proportion ratios.",
+    "labels": [
+      "Nomutanosib",
+      "Muvozanatli",
+      "Hajm",
+      "Ochilish"
+    ],
+    "explanation": [
+      "Material qoplamasisiz ikki hajmiy variantda proporsiya va ochilishlar solishtiriladi.",
+      "Asosiy kirish, yirik hajm va bo‘shliqlar o‘rtasidagi ustuvorlikni aniqlang.",
+      "Materialdan oldin hajm va ochilishlarning reja bilan mosligini tekshiring."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L14_M06_002, Proporsiya va hajmlar. Subject: Two clay-white residential massing studies for the SAME two-storey program before material finishes: left unbalanced competing masses and inconsistent openings, right calm aligned masses, a clear main entry and measured solid/void relationship. Large perspective pair with matching small elevations. Realistic architectural model lighting with subtle pencil accents, no exact proportion ratios. Text (verbatim only): \"Nomutanosib\", \"Muvozanatli\", \"Hajm\", \"Ochilish\".",
+    "figure_title": "Proporsiya va hajmlar"
+  },
+  {
+    "code": "L14_M06_003",
+    "title": "Material va tugunlar ustuvorligi",
+    "scene": "A restrained modern Uzbekistan house facade with one main plaster material, subordinate stone base and a small wood accent. Mark three consistent critical junctions at window surround, canopy/entry and material corner; small close-up sketch insets of those SAME facade areas, no invented structural layer dimensions. Main facade is largest and materials have a clear hierarchy.",
+    "labels": [
+      "Asosiy",
+      "Yordamchi",
+      "Urg‘u",
+      "Tutashuv"
+    ],
+    "explanation": [
+      "Asosiy, yordamchi va urg‘u materiali turli kompozitsion vazifada berilgan.",
+      "Deraza atrofi, kirish va material chegarasidagi tugunlarni ajrating.",
+      "Material tutashuvining grafik ko‘rinishi bilan ishchi yechim talabini alohida tekshiring."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L14_M06_003, Material va tugunlar ustuvorligi. Subject: A restrained modern Uzbekistan house facade with one main plaster material, subordinate stone base and a small wood accent. Mark three consistent critical junctions at window surround, canopy/entry and material corner; small close-up sketch insets of those SAME facade areas, no invented structural layer dimensions. Main facade is largest and materials have a clear hierarchy. Text (verbatim only): \"Asosiy\", \"Yordamchi\", \"Urg‘u\", \"Tutashuv\".",
+    "figure_title": "Material va tugunlar ustuvorligi"
+  },
+  {
+    "code": "L14_M06_004",
+    "title": "Yorug‘lik, soya va landshaft",
+    "scene": "The SAME calm residential facade in two daylight conditions, with recessed windows and an entry canopy casting readable shadows. Show a sun-direction arrow, a garden tree and ground plane. Explain how recess, canopy, mass shifts and landscaping affect perceived facade depth; coherent identical geometry in both sketches, no numeric sun angles or energy claims.",
+    "labels": [
+      "Yorug‘lik",
+      "Soya",
+      "Soyabon",
+      "Landshaft"
+    ],
+    "explanation": [
+      "Bir fasad turli yorug‘lik holatida chuqurlik va soya bilan qabul qilinadi.",
+      "Chuqurlashtirilgan ochilish, soyabon va daraxtning fasadga ta’sirini solishtiring.",
+      "Fasadni haqiqiy yo‘nalish va tashqi to‘siqlar haqidagi ma’lumot bilan birga baholang."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L14_M06_004, Yorug‘lik, soya va landshaft. Subject: The SAME calm residential facade in two daylight conditions, with recessed windows and an entry canopy casting readable shadows. Show a sun-direction arrow, a garden tree and ground plane. Explain how recess, canopy, mass shifts and landscaping affect perceived facade depth; coherent identical geometry in both sketches, no numeric sun angles or energy claims. Text (verbatim only): \"Yorug‘lik\", \"Soya\", \"Soyabon\", \"Landshaft\".",
+    "figure_title": "Yorug‘lik, soya va landshaft"
+  },
+  {
+    "code": "L14_M07_002",
+    "title": "Reja muammolarini aniqlash",
+    "scene": "Two coherent furnished whole-house plans, before and after diagnosing excessive circulation caused by poor adjacency. Left shows a long awkward corridor and crossing public/private paths; right rearranges room adjacency and entry to shorten the route while preserving the same family program. Red route on left, green route on right, realistic architectural sketches and clear doors.",
+    "labels": [
+      "Muammo",
+      "Sabab",
+      "Tuzatilgan",
+      "Harakat"
+    ],
+    "explanation": [
+      "Ikki reja uzun va kesishgan yo‘lning sababi hamda tuzatish natijasini solishtiradi.",
+      "Simptomni xona aloqasi va kirish qarori bilan bog‘lang.",
+      "Tuzatilgan rejada yo‘l, mebel va xususiylikni qayta tekshiring."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L14_M07_002, Reja muammolarini aniqlash. Subject: Two coherent furnished whole-house plans, before and after diagnosing excessive circulation caused by poor adjacency. Left shows a long awkward corridor and crossing public/private paths; right rearranges room adjacency and entry to shorten the route while preserving the same family program. Red route on left, green route on right, realistic architectural sketches and clear doors. Text (verbatim only): \"Muammo\", \"Sabab\", \"Tuzatilgan\", \"Harakat\".",
+    "figure_title": "Reja muammolarini aniqlash"
+  },
+  {
+    "code": "L14_M07_003",
+    "title": "Fasad va hajm muammolari",
+    "scene": "Two residential facade studies for the same basic family program: left has competing mass accents, scattered window alignment and unclear entrance; right shows a clearer main mass, entry hierarchy and coherent opening rhythm. Include a tiny plan relation inset explaining entry position. No color-only makeover; visibly reorganize masses and opening relationships.",
+    "labels": [
+      "Muammo",
+      "Asosiy hajm",
+      "Kirish",
+      "Tuzatilgan"
+    ],
+    "explanation": [
+      "Fasadning tarqoq urg‘usi va tartibli hajmiy variant yonma-yon berilgan.",
+      "Ochilish ritmi, kirish va yirik hajm orasidagi bog‘lanishni aniqlang.",
+      "Fasad muammosining reja yoki kirish qaroridan keladigan sababini yozing."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L14_M07_003, Fasad va hajm muammolari. Subject: Two residential facade studies for the same basic family program: left has competing mass accents, scattered window alignment and unclear entrance; right shows a clearer main mass, entry hierarchy and coherent opening rhythm. Include a tiny plan relation inset explaining entry position. No color-only makeover; visibly reorganize masses and opening relationships. Text (verbatim only): \"Muammo\", \"Asosiy hajm\", \"Kirish\", \"Tuzatilgan\".",
+    "figure_title": "Fasad va hajm muammolari"
+  },
+  {
+    "code": "L14_M08_002",
+    "title": "Murakkab uchastka misoli",
+    "scene": "One narrow irregular sloping residential plot combining an angled boundary, a compact coherent house, a sensible access route and conceptual surface drainage. Large readable axonometric terrain and matching top-down plan. Prioritize few clear site constraints and show their interdependence; no engineering dimensions, retaining specifications or guaranteed solution.",
+    "labels": [
+      "Chegara",
+      "Nishab",
+      "Kirish",
+      "Suv yo‘li",
+      "Bino"
+    ],
+    "explanation": [
+      "Tor, qiyshiq va nishabli uchastka omillari bitta misolda birlashgan.",
+      "Chegara, bino o‘qi, kirish va suv yo‘lini yagona qaror tizimida solishtiring.",
+      "Avval eng muhim cheklovni aniqlab, boshqa qarorlarga ta’sirini yozing."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L14_M08_002, Murakkab uchastka misoli. Subject: One narrow irregular sloping residential plot combining an angled boundary, a compact coherent house, a sensible access route and conceptual surface drainage. Large readable axonometric terrain and matching top-down plan. Prioritize few clear site constraints and show their interdependence; no engineering dimensions, retaining specifications or guaranteed solution. Text (verbatim only): \"Chegara\", \"Nishab\", \"Kirish\", \"Suv yo‘li\", \"Bino\".",
+    "figure_title": "Murakkab uchastka misoli"
+  },
+  {
+    "code": "L14_M08_003",
+    "title": "Murakkab oila dasturi misoli",
+    "scene": "One readable furnished multi-generation courtyard house plan balancing private rooms, shared family space, guest reception and service. Small adjacent brief cards show three priority categories without numeric ranking. Main plan dominates, intuitive privacy and service paths. Uzbekistan residential context, no abstract block-only diagram.",
+    "labels": [
+      "Zarur",
+      "Muhim",
+      "Ixtiyoriy",
+      "Umumiy makon",
+      "Xususiy xona"
+    ],
+    "explanation": [
+      "Oilaviy talablar zarur, muhim va ixtiyoriy guruhlarga ajratilib reja bilan bog‘langan.",
+      "Umumiy va xususiy makonlarning foydalanish aloqasini tekshiring.",
+      "Ko‘p talabni avtomatik kattaroq uyga aylantirmasdan, funksional ustuvorlik bilan baholang."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L14_M08_003, Murakkab oila dasturi misoli. Subject: One readable furnished multi-generation courtyard house plan balancing private rooms, shared family space, guest reception and service. Small adjacent brief cards show three priority categories without numeric ranking. Main plan dominates, intuitive privacy and service paths. Uzbekistan residential context, no abstract block-only diagram. Text (verbatim only): \"Zarur\", \"Muhim\", \"Ixtiyoriy\", \"Umumiy makon\", \"Xususiy xona\".",
+    "figure_title": "Murakkab oila dasturi misoli"
+  },
+  {
+    "code": "L14_M08_004",
+    "title": "Dizayn va texnik ta’sir misoli",
+    "scene": "One house with a large open living room as a design proposal, shown in a substantial cutaway. Clearly relate the open spatial idea to beam/support placement, a service shaft/duct route, envelope edge and a small budget/decision note panel. Mark questions requiring coordination, do not present a dimensioned solved structural detail or claim a safe span. Three linked callouts only.",
+    "labels": [
+      "Dizayn",
+      "Konstruksiya",
+      "Muhandislik",
+      "Budjet"
+    ],
+    "explanation": [
+      "Katta ochiq makon qarori konstruktsiya, tarmoqlar va budjetga bog‘lanadi.",
+      "Dizaynning texnik ta’sirini aynan qaysi joy va elementdan tekshirish kerakligini aniqlang.",
+      "Ochiq savollarni mas’ul mutaxassis va qaror mezoni bilan qayd qiling."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L14_M08_004, Dizayn va texnik ta’sir misoli. Subject: One house with a large open living room as a design proposal, shown in a substantial cutaway. Clearly relate the open spatial idea to beam/support placement, a service shaft/duct route, envelope edge and a small budget/decision note panel. Mark questions requiring coordination, do not present a dimensioned solved structural detail or claim a safe span. Three linked callouts only. Text (verbatim only): \"Dizayn\", \"Konstruksiya\", \"Muhandislik\", \"Budjet\".",
+    "figure_title": "Dizayn va texnik ta’sir misoli"
+  },
+  {
+    "code": "L15_M01_002",
+    "title": "Uchastka, reja va ergonomika",
+    "scene": "A realistic furnished family house floor plan within its site, showing door swings, clear walking paths around dining furniture and beds, daylight direction and a quiet private zone. One small cutaway ties room use to courtyard. Focus on integrated site orientation, furniture and circulation; no dimension labels or regulatory clearance claims.",
+    "labels": [
+      "Kirish",
+      "Mebel",
+      "Erkin yo‘l",
+      "Yorug‘lik",
+      "Xususiy zona"
+    ],
+    "explanation": [
+      "Uchastka yo‘nalishi, mebel va kundalik yo‘llar bitta uy rejasida tekshiriladi.",
+      "Eshik ochilishi va mebel yo‘lni to‘sadigan nuqtalarni aniqlang.",
+      "Qulaylikni haqiqiy xonalar o‘lchami va foydalanish ssenariysi bilan baholang."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L15_M01_002, Uchastka, reja va ergonomika. Subject: A realistic furnished family house floor plan within its site, showing door swings, clear walking paths around dining furniture and beds, daylight direction and a quiet private zone. One small cutaway ties room use to courtyard. Focus on integrated site orientation, furniture and circulation; no dimension labels or regulatory clearance claims. Text (verbatim only): \"Kirish\", \"Mebel\", \"Erkin yo‘l\", \"Yorug‘lik\", \"Xususiy zona\".",
+    "figure_title": "Uchastka, reja va ergonomika"
+  },
+  {
+    "code": "L15_M02_002",
+    "title": "Modellashtirish mashqi",
+    "scene": "A small coherent architectural mini-model in an exploded cutaway: walls, floor slab and door/window openings clearly separated but aligned. Include a matching simple plan and side section of the SAME model, demonstrating agreement of plan/section/3D. Realistic plaster and concrete materials, uncluttered, no fake software screenshot or numeric dimensions.",
+    "labels": [
+      "Devor",
+      "Yopma",
+      "Ochilish",
+      "Reja",
+      "Kesim"
+    ],
+    "explanation": [
+      "Mini-modeldagi devor, yopma va ochilishlar ajratib ko‘rsatilgan.",
+      "Reja, kesim va hajmiy ko‘rinish bir xil geometriyani ifodalashini solishtiring.",
+      "Mashqda o‘lcham va qavat bog‘lanishini modelning haqiqiy qiymatlari bilan tekshiring."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L15_M02_002, Modellashtirish mashqi. Subject: A small coherent architectural mini-model in an exploded cutaway: walls, floor slab and door/window openings clearly separated but aligned. Include a matching simple plan and side section of the SAME model, demonstrating agreement of plan/section/3D. Realistic plaster and concrete materials, uncluttered, no fake software screenshot or numeric dimensions. Text (verbatim only): \"Devor\", \"Yopma\", \"Ochilish\", \"Reja\", \"Kesim\".",
+    "figure_title": "Modellashtirish mashqi"
+  },
+  {
+    "code": "L15_M03_001",
+    "title": "Reja xatolarini topish",
+    "scene": "A focused room-and-entry plan pair and small interior cutaway, using the SAME room envelope. Left sofa or cabinet obstructs a door swing and walking route, highlighted clearly in red. Right furniture is relocated to keep the doorway and route clear, green route. This is a close furniture/door diagnostic, distinct from a whole-house corridor study. No numeric clearance guarantees.",
+    "labels": [
+      "To‘siq",
+      "Eshik",
+      "Erkin yo‘l",
+      "Tuzatilgan"
+    ],
+    "explanation": [
+      "Eshik ochilishi va mebel to‘siqi xato hamda tuzatilgan ikki holatda ko‘rsatilgan.",
+      "Harakatdagi noqulaylikni aynan qaysi element yaratganini toping.",
+      "Mebel joyini tuzatgach eshik, yo‘l va foydalanish holatini qayta tekshiring."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L15_M03_001, Reja xatolarini topish. Subject: A focused room-and-entry plan pair and small interior cutaway, using the SAME room envelope. Left sofa or cabinet obstructs a door swing and walking route, highlighted clearly in red. Right furniture is relocated to keep the doorway and route clear, green route. This is a close furniture/door diagnostic, distinct from a whole-house corridor study. No numeric clearance guarantees. Text (verbatim only): \"To‘siq\", \"Eshik\", \"Erkin yo‘l\", \"Tuzatilgan\".",
+    "figure_title": "Reja xatolarini topish"
+  },
+  {
+    "code": "L15_M03_002",
+    "title": "Fasad va kesim xatolari",
+    "scene": "A coherent single window element W01 traced across a furnished plan, facade elevation and vertical section of one modest house. Mark a clearly mismatched window position in one erroneous view with orange/red dashed highlight and show the correct aligned source relation nearby. The lesson is finding inconsistent documents, not an illustration error: label the mismatched view as 'Xato' and the aligned relation as 'Mos'. No numbers.",
+    "labels": [
+      "Reja",
+      "Fasad",
+      "Kesim",
+      "W01",
+      "Xato",
+      "Mos"
+    ],
+    "explanation": [
+      "Bitta W01 oynasi reja, fasad va kesimda kuzatilib, nomuvofiq holat alohida ajratilgan.",
+      "Farqni manba element va tegishli ko‘rinish sozlamasiga bog‘lang.",
+      "Tuzatishdan keyin barcha bog‘liq ko‘rinishlarda ayni element holatini qayta solishtiring."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L15_M03_002, Fasad va kesim xatolari. Subject: A coherent single window element W01 traced across a furnished plan, facade elevation and vertical section of one modest house. Mark a clearly mismatched window position in one erroneous view with orange/red dashed highlight and show the correct aligned source relation nearby. The lesson is finding inconsistent documents, not an illustration error: label the mismatched view as 'Xato' and the aligned relation as 'Mos'. No numbers. Text (verbatim only): \"Reja\", \"Fasad\", \"Kesim\", \"W01\", \"Xato\", \"Mos\".",
+    "figure_title": "Fasad va kesim xatolari"
+  },
+  {
+    "code": "L15_M03_003",
+    "title": "Konstruktiv va tarmoq to‘qnashuvi",
+    "scene": "One large realistic educational cutaway close-up of a building floor edge and vertical service shaft. A blue service duct/pipe clashes with an orange-highlighted concrete beam zone. Use a clear dashed conflict outline; show beam and shaft labels and a small locating cutaway of the SAME building. Do NOT show cutting the beam or an automatically approved solution, no reinforcement or numeric sizing.",
+    "labels": [
+      "To‘sin",
+      "Shaxta",
+      "Tarmoq",
+      "To‘qnashuv"
+    ],
+    "explanation": [
+      "To‘sin va muhandislik shaxtasi yaqinidagi tarmoq to‘qnashuvi ko‘rsatilgan.",
+      "Konfliktni joy, element va tegishli mutaxassis savoli bilan qayd qiling.",
+      "Yechimni o‘zboshimchalik bilan tanlamasdan, muvofiqlashtirish natijasini modelda qayta tekshiring."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L15_M03_003, Konstruktiv va tarmoq to‘qnashuvi. Subject: One large realistic educational cutaway close-up of a building floor edge and vertical service shaft. A blue service duct/pipe clashes with an orange-highlighted concrete beam zone. Use a clear dashed conflict outline; show beam and shaft labels and a small locating cutaway of the SAME building. Do NOT show cutting the beam or an automatically approved solution, no reinforcement or numeric sizing. Text (verbatim only): \"To‘sin\", \"Shaxta\", \"Tarmoq\", \"To‘qnashuv\".",
+    "figure_title": "Konstruktiv va tarmoq to‘qnashuvi"
+  },
+  {
+    "code": "L15_M05_001",
+    "title": "Yakuniy loyiha konsepsiyasi",
+    "scene": "Three genuinely different conceptual site-and-massing variants for the SAME four-person courtyard-house brief and plot: front courtyard, central courtyard, two linked wings. Furnished tiny plans tied to modest axonometric volumes, one shared brief card, a clearly indicated reasoned selection area. Different spatial strategies, not only facade colors. Single coherent architectural educational board.",
+    "labels": [
+      "Talablar",
+      "Variant A",
+      "Variant B",
+      "Variant C",
+      "Tanlov"
+    ],
+    "explanation": [
+      "Bir xil talablar uchun uch xil reja va hajmiy strategiya solishtiriladi.",
+      "Hovli, kirish, xususiylik va xizmat aloqasi bo‘yicha farqni ko‘rsating.",
+      "Yakuniy yo‘nalishni aniq mezon va foydalanuvchi ehtiyoji bilan asoslang."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L15_M05_001, Yakuniy loyiha konsepsiyasi. Subject: Three genuinely different conceptual site-and-massing variants for the SAME four-person courtyard-house brief and plot: front courtyard, central courtyard, two linked wings. Furnished tiny plans tied to modest axonometric volumes, one shared brief card, a clearly indicated reasoned selection area. Different spatial strategies, not only facade colors. Single coherent architectural educational board. Text (verbatim only): \"Talablar\", \"Variant A\", \"Variant B\", \"Variant C\", \"Tanlov\".",
+    "figure_title": "Yakuniy loyiha konsepsiyasi"
+  },
+  {
+    "code": "L15_M05_002",
+    "title": "Yakuniy reja va uchastka",
+    "scene": "One coherent four-person Uzbekistan courtyard-house design shown in a dominant complete site plan and matching furnished interior plan inset. Clearly connect street entry, house entrance, family rooms, courtyard and service route. Maintain identical house footprint and openings between site and floor plan, restrained arrows, no numerical setbacks or property-legal claims.",
+    "labels": [
+      "Ko‘cha",
+      "Kirish",
+      "Uy",
+      "Hovli",
+      "Xizmat"
+    ],
+    "explanation": [
+      "Genplan bilan ichki reja bitta uy, kirish va tashqi makon tizimiga bog‘langan.",
+      "Ko‘cha–kirish–xonalar–hovli orasidagi kundalik yo‘lni kuzating.",
+      "Reja va genplan bir xil bino konturi hamda loyiha holatini ifodalashini tekshiring."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L15_M05_002, Yakuniy reja va uchastka. Subject: One coherent four-person Uzbekistan courtyard-house design shown in a dominant complete site plan and matching furnished interior plan inset. Clearly connect street entry, house entrance, family rooms, courtyard and service route. Maintain identical house footprint and openings between site and floor plan, restrained arrows, no numerical setbacks or property-legal claims. Text (verbatim only): \"Ko‘cha\", \"Kirish\", \"Uy\", \"Hovli\", \"Xizmat\".",
+    "figure_title": "Yakuniy reja va uchastka"
+  },
+  {
+    "code": "L15_M05_003",
+    "title": "Yakuniy BIM va texnik muvofiqlik",
+    "scene": "One coherent two-storey residential BIM-style architectural cutaway showing concrete/structural supports, stairs, floor openings and a vertical service shaft with restrained blue/red service paths. Three highlighted coordination check locations where architecture and services meet structure. Include a matching simple section inset, no fake UI, solved load calculations or numeric beam/pipe sizes.",
+    "labels": [
+      "Konstruksiya",
+      "Zinapoya",
+      "Shaxta",
+      "Tarmoqlar",
+      "Tekshiruv"
+    ],
+    "explanation": [
+      "Tayanchlar, zina, yopma ochilishi va vertikal tarmoqlar bitta modelda ko‘rsatilgan.",
+      "Arxitektura, konstruktsiya va muhandislik kesishgan nazorat joylarini aniqlang.",
+      "Har bir ochiq konfliktni mas’ul, dalil va qayta tekshirish holati bilan qayd qiling."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L15_M05_003, Yakuniy BIM va texnik muvofiqlik. Subject: One coherent two-storey residential BIM-style architectural cutaway showing concrete/structural supports, stairs, floor openings and a vertical service shaft with restrained blue/red service paths. Three highlighted coordination check locations where architecture and services meet structure. Include a matching simple section inset, no fake UI, solved load calculations or numeric beam/pipe sizes. Text (verbatim only): \"Konstruksiya\", \"Zinapoya\", \"Shaxta\", \"Tarmoqlar\", \"Tekshiruv\".",
+    "figure_title": "Yakuniy BIM va texnik muvofiqlik"
+  },
+  {
+    "code": "L15_M05_004",
+    "title": "Yakuniy fasad va hujjatlar",
+    "scene": "One consistent finished courtyard house shown as a main architectural axonometric plus coordinated floor plan, facade, section and one restrained sheet view around it. Use visual guide lines to trace one window and a roof edge between representations. All geometry and openings belong to the SAME house. Architectural drawings, no invented software UI or long illegible tables.",
+    "labels": [
+      "Bir model",
+      "Reja",
+      "Fasad",
+      "Kesim",
+      "Varaq"
+    ],
+    "explanation": [
+      "Bir loyiha reja, fasad, kesim va sahifadagi chizmalar bilan izchil ko‘rsatilgan.",
+      "Tom va ochilishlarning barcha ko‘rinishlarda mosligini solishtiring.",
+      "Yakuniy hujjatlarni bir xil manba model va versiya bo‘yicha qayta tekshiring."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L15_M05_004, Yakuniy fasad va hujjatlar. Subject: One consistent finished courtyard house shown as a main architectural axonometric plus coordinated floor plan, facade, section and one restrained sheet view around it. Use visual guide lines to trace one window and a roof edge between representations. All geometry and openings belong to the SAME house. Architectural drawings, no invented software UI or long illegible tables. Text (verbatim only): \"Bir model\", \"Reja\", \"Fasad\", \"Kesim\", \"Varaq\".",
+    "figure_title": "Yakuniy fasad va hujjatlar"
+  },
+  {
+    "code": "L15_M07_004",
+    "title": "Grafik va matn ustuvorligi",
+    "scene": "Two clean architecture portfolio spreads with the SAME courtyard-house project. Left has equal competing sizes of many small drawings and clutter; right has one dominant explanatory drawing, few supporting plan/section images and a short readable text block with generous white space. Make visual/text hierarchy unmistakable. Real watercolor/pencil project imagery inside the spreads, minimal exact Uzbek labels only, no gibberish body text.",
+    "labels": [
+      "Zich",
+      "Tartibli",
+      "Asosiy chizma",
+      "Izoh"
+    ],
+    "explanation": [
+      "Teng og‘irlikdagi zich sahifa va asosiy chizmasi aniq ajratilgan sahifa solishtiriladi.",
+      "Bosh xabar, yordamchi tasvir va izohning o‘qilish tartibini aniqlang.",
+      "Portfolio sahifasini yakuniy ko‘rsatish o‘lchamida ochib, bir qarashda nimasi tushunilishini tekshiring."
+    ],
+    "prompt": "Use case: scientific-educational. Asset type: one architectural teaching illustration for ARCHIPRO UZ. ONE landscape 1536x1024 raster illustration in polished realistic ink, pencil and restrained watercolor on light cream paper, crisp educational linework and plausible Uzbekistan house details. The image must explain this single lesson at one glance. Furnished plans, cutaways and small related insets may show the SAME subject. Keep doors, windows and geometry coherent. Conceptual study, not a dimensioned construction document: no numeric dimensions, normative compliance statements, software UI, watermark, unrelated collage, English or Russian prose, or long text. Only the requested short Uzbek labels in simple dark legible type. Lesson: L15_M07_004, Grafik va matn ustuvorligi. Subject: Two clean architecture portfolio spreads with the SAME courtyard-house project. Left has equal competing sizes of many small drawings and clutter; right has one dominant explanatory drawing, few supporting plan/section images and a short readable text block with generous white space. Make visual/text hierarchy unmistakable. Real watercolor/pencil project imagery inside the spreads, minimal exact Uzbek labels only, no gibberish body text. Text (verbatim only): \"Zich\", \"Tartibli\", \"Asosiy chizma\", \"Izoh\".",
+    "figure_title": "Grafik va matn ustuvorligi"
+  }
+]

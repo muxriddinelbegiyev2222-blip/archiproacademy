@@ -1,0 +1,207 @@
+{
+  "base_commit": "1cd5c3f4badeae1406a833e11eaf0f87b3d6793d",
+  "image_limit_bytes": 400000,
+  "sources_preserved_outside_repository": true,
+  "records": [
+    {
+      "code": "L11_M07_004",
+      "title": "Material va hajm PRO — ko‘rgazmali namuna",
+      "source_name": "Как материалы меняют объём дома.png",
+      "source_library_file_id": "libfile_205c7df3e62c81918275062e4adbe508",
+      "explanation": [
+        "Bir uy hajmi materiallari tartibsiz bo‘lingan va izchil joylashtirilgan ikki variantda ko‘rsatilgan.",
+        "Suvoq, tosh va yog‘ochning chegarasi bino hajmlari hamda deraza ritmiga qanday ta’sir qilishini solishtiring.",
+        "Material almashishi bilan hajmni o‘zgartirishni ajrating; tutashuvlarni ishchi chizmada tekshiring."
+      ],
+      "figure_title": "Material va hajm uyg‘unligi",
+      "asset": "sketch-l11_m07_004.jpg",
+      "previous_asset": "l11_m07_004.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 73,
+      "jpeg_bytes": 388857,
+      "jpeg_sha256": "7ab89e32abdf3ae9801608b6d0fc81dde477a2ad876fef9fe88577e4c8a7e3e8",
+      "git_blob_sha": "26bae32612d345aadaa02a14ac0d404573abff1d"
+    },
+    {
+      "code": "L11_M07_005",
+      "title": "2 qavatli fasad audit — ko‘rgazmali namuna",
+      "source_name": "Согласованность фасадов двухэтажного дома.png",
+      "source_library_file_id": "libfile_c0cdfe20a3408191bf5bb6a105ffa65f",
+      "explanation": [
+        "Old, orqa, chap va o‘ng fasadlar bitta ikki qavatli uy uchun jamlangan.",
+        "Qavat sathlari, oynalar o‘rni va tomning umumiy chegarasini plan hamda kesim bilan solishtiring.",
+        "Ko‘rinishdagi farqni manba element, qavat va tegishli varaq bo‘yicha qayd qiling."
+      ],
+      "figure_title": "Ikki qavatli fasadlar mosligi",
+      "asset": "sketch-l11_m07_005.jpg",
+      "previous_asset": "l11_m07_005.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 73,
+      "jpeg_bytes": 390084,
+      "jpeg_sha256": "c0b2e6f2e035f87a413086b69d4a9282125fcc6177fc84fccd400c03bed53d90",
+      "git_blob_sha": "961c71dc480213f492adf2017f1bc6a1914f5e23"
+    },
+    {
+      "code": "L11_M08_002",
+      "title": "Qavatlar modeli — ko‘rgazmali namuna",
+      "source_name": "Взрывная схема и совмещение этажей.png",
+      "source_library_file_id": "libfile_a4e8f7ac5d84819194c32731cbef26bb",
+      "explanation": [
+        "Tom, ikkinchi qavat va birinchi qavat ochib ko‘rsatilgan; yonida qavatlar ustma-ust solishtiriladi.",
+        "Qavat konturi, zinapoya joyi va vertikal tayanchlarning muvofiqligini izlang.",
+        "Ajratilgan hajmlar o‘quv tushuntirishi uchun; haqiqiy modelda ular bir xil koordinatada tekshiriladi."
+      ],
+      "figure_title": "Qavatlar modeli",
+      "asset": "sketch-l11_m08_002.jpg",
+      "previous_asset": "l11_m08_002.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 84,
+      "jpeg_bytes": 389006,
+      "jpeg_sha256": "65d29fa506ce5ddbd50145edc54fa9ac29a2984b34d7b010de29dfb8af29c401",
+      "git_blob_sha": "37f9a460c190eb25e8954804aa030ee537eeec3c"
+    },
+    {
+      "code": "L11_M09_002",
+      "title": "Plan va o'lchamlar — ko‘rgazmali namuna",
+      "source_name": "Иерархия размеров на плане дома.png",
+      "source_library_file_id": "libfile_ef061356764c8191a1c336a74a66b900",
+      "explanation": [
+        "Umumiy o‘lcham, o‘qlar va ochilishlar rejaning uch xil o‘lcham qatlamini ifodalaydi.",
+        "Tashqi gabaritni o‘qlar orasidagi masofa va xonalarning sof o‘lchamidan ajrating.",
+        "Eskizdagi chiziqlar sonli loyiha o‘lchami o‘rnini bosmaydi; mashqdagi o‘lchamlarni manba modeldan oling."
+      ],
+      "figure_title": "Reja va o‘lchamlar",
+      "asset": "sketch-l11_m09_002.jpg",
+      "previous_asset": "l11_m09_002.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 80,
+      "jpeg_bytes": 388719,
+      "jpeg_sha256": "7b4b9d40586a6034eb066d0f10c046e776a7c081dfd6cb4565d2d7e33969c90f",
+      "git_blob_sha": "bba4a1c879d75a13e95c93bdb00495b53dcdb518"
+    },
+    {
+      "code": "L11_M08_003",
+      "title": "Stair, void va vertical systems — ko‘rgazmali namuna",
+      "source_name": "Архитектурный разрез: лестница, второй свет, шахта.png",
+      "source_library_file_id": "libfile_67ddd649cf888191bfce414c52a828dd",
+      "explanation": [
+        "Bitta kesimda zinapoya, ikkinchi yorug‘lik, yopma ochilishi va muhandislik shaxtasi ajratilgan.",
+        "Zinaning ochilishi va vertikal tarmoqlarning har qavatda davom etishini solishtiring.",
+        "Shaxta, plita cheti va zina atrofidagi mumkin bo‘lgan to‘qnashuvlarni tegishli mutaxassis savoliga aylantiring."
+      ],
+      "figure_title": "Zina, ochiq hajm va vertikal tizimlar",
+      "asset": "sketch-l11_m08_003.jpg",
+      "previous_asset": "l11_m08_003.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 74,
+      "jpeg_bytes": 398724,
+      "jpeg_sha256": "4acfd3981a6e8edbac4893d8be42a32a3cea8fbe67867161ac025e03fb3f3f0c",
+      "git_blob_sha": "ca8f6dc551e2aaa4ff2ad5d78061cafdf233ee76"
+    },
+    {
+      "code": "L11_M09_003",
+      "title": "Fasad, kesim va detallar — ko‘rgazmali namuna",
+      "source_name": "Фасад, разрез и балконный узел.png",
+      "source_library_file_id": "libfile_301ce85bdb3c8191bea2f94e3798c75a",
+      "explanation": [
+        "Fasad, bino kesimi va balkon tutashuvining kattalashtirilgan ko‘rinishi bir mavzuni turli masshtabda tushuntiradi.",
+        "Balkon eshigi, plita cheti va suv chiqishi qaysi ko‘rinishda aniq o‘qilishini aniqlang.",
+        "Tugunlar konseptual ko‘rsatilgan; aniq qatlam va o‘lchamlar ishchi loyiha asosida belgilanadi."
+      ],
+      "figure_title": "Fasad, kesim va tugunlar",
+      "asset": "sketch-l11_m09_003.jpg",
+      "previous_asset": "l11_m09_003.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 72,
+      "jpeg_bytes": 398138,
+      "jpeg_sha256": "154c37710a770911448a919aab6d12c8f5380476452fc0b5081e57529a77b430",
+      "git_blob_sha": "d19c5285c9cf9f98ecc223715bd5c86f13acbc92"
+    },
+    {
+      "code": "L11_M08_004",
+      "title": "Roof, facade va sections — ko‘rgazmali namuna",
+      "source_name": "Единая BIM-модель: крыша, фасад и разрез.png",
+      "source_library_file_id": "libfile_9db444ad7b44819190cd69cff8de0246",
+      "explanation": [
+        "Bir modelning tomi, tashqi fasadi va vertikal kesimi yonma-yon ko‘rsatilgan.",
+        "Tom konturi, qavatlar va ochilishlar uchala ko‘rinishda mos kelishini izlang.",
+        "Saqlangan ko‘rinishlar bir xil model holatidan hosil qilinishini tekshiring."
+      ],
+      "figure_title": "Tom, fasad va kesimlar",
+      "asset": "sketch-l11_m08_004.jpg",
+      "previous_asset": "l11_m08_004.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 71,
+      "jpeg_bytes": 395425,
+      "jpeg_sha256": "364251ed6c4777f12ed1c2040ef9d71b804c230198f42cecb32007d27d28a36b",
+      "git_blob_sha": "15bbe33226a622c1e51f29741c07d57e79727912"
+    },
+    {
+      "code": "L11_M09_004",
+      "title": "Koordinatsiya va revision — ko‘rgazmali namuna",
+      "source_name": "Согласование изменений планировки дома.png",
+      "source_library_file_id": "libfile_2ff5baed76dc81919c715731bba67510",
+      "explanation": [
+        "Eski va yangilangan reja orasidagi o‘zgarish alohida belgi bilan ajratilgan.",
+        "O‘zgargan devor yoki xona konstruktsiya va muhandislik yechimiga qanday ta’sir qilishini yozing.",
+        "O‘zgarish sababi, mas’ul mutaxassis va yangilanadigan varaqlarni qaydda bog‘lang."
+      ],
+      "figure_title": "O‘zgarishlarni muvofiqlashtirish",
+      "asset": "sketch-l11_m09_004.jpg",
+      "previous_asset": "l11_m09_004.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 83,
+      "jpeg_bytes": 397852,
+      "jpeg_sha256": "eb55f79b72ebe4965ae918af9fe6edfc297a83931d8afbeb0586fbd491c9aa1e",
+      "git_blob_sha": "3be1f898e526e67d72879ea8f50d8b4ddf2189f3"
+    },
+    {
+      "code": "L11_M08_005",
+      "title": "To'liq BIM model audit — ko‘rgazmali namuna",
+      "source_name": "Аудит BIM-модели двухэтажного дома.png",
+      "source_library_file_id": "libfile_45621cf3f7a0819185cdc7f881bb874f",
+      "explanation": [
+        "Ochiq BIM modelda qavat sathi, tayanch, zina ochilishi va shaxta nazorat nuqtalari ko‘rsatilgan.",
+        "Takrorlangan element, siljigan sath yoki mos kelmagan ochilish borligini manba modelda tekshiring.",
+        "Har topilma uchun element IDsi, tegishli ko‘rinish va qayta tekshirish natijasini yozing."
+      ],
+      "figure_title": "To‘liq BIM modelni tekshirish",
+      "asset": "sketch-l11_m08_005.jpg",
+      "previous_asset": "l11_m08_005.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 73,
+      "jpeg_bytes": 397819,
+      "jpeg_sha256": "247c165a3531414d1924617071a4b16812b2587e5c3a13c04b34dcbdd2379401",
+      "git_blob_sha": "a3cc5db54cd4d9823525dab05d93c905b47a777e"
+    },
+    {
+      "code": "L11_M09_005",
+      "title": "LEVEL 11 final ishchi loyiha auditi — ko‘rgazmali namuna",
+      "source_name": "Согласованный проект двухэтажного дома.png",
+      "source_library_file_id": "libfile_c5b7c5a6ce908191be39a85347545642",
+      "explanation": [
+        "Bitta loyiha holati reja, fasad va kesimda izchil ko‘rsatiladi.",
+        "Ochilishlar, qavatlar va tomni uchala hujjatda o‘zaro solishtiring.",
+        "Yakuniy paketga ayni loyiha versiyasi kirganini, qolgan ochiq masalalar qayd etilganini tekshiring."
+      ],
+      "figure_title": "Ikki qavatli ishchi loyiha auditi",
+      "asset": "sketch-l11_m09_005.jpg",
+      "previous_asset": "l11_m09_005.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 76,
+      "jpeg_bytes": 392409,
+      "jpeg_sha256": "6a1c6438291b1be922a1f8f963955acd4a0a8e5caed40af884a7fac87b265ca6",
+      "git_blob_sha": "b99990b20c3e1be71db64639856eb89468791944"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "base_commit": "1cd5c3f4badeae1406a833e11eaf0f87b3d6793d",
+  "image_limit_bytes": 400000,
+  "sources_preserved_outside_repository": true,
+  "records": [
+    {
+      "code": "L13_M06_004",
+      "title": "O'zgarish ta'siri — ko‘rgazmali namuna",
+      "source_name": "Перенос стены в плане дворового дома.png",
+      "source_library_file_id": "libfile_cc42eb151b108191b4bc26419a44e838",
+      "explanation": [
+        "Devor siljishi reja, fasad, kesim, mebel va tarmoqlarda kuzatiladi.",
+        "Bitta o‘zgarishning xona maydoni, ochilish va xizmat yo‘liga ta’sirini ajrating.",
+        "Taklifni amalga oshirishdan oldin barcha bog‘liq chizmalar va mutaxassis savollarini yangilang."
+      ],
+      "figure_title": "O‘zgarish ta’siri",
+      "asset": "sketch-l13_m06_004.jpg",
+      "previous_asset": "l13_m06_004.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 77,
+      "jpeg_bytes": 392768,
+      "jpeg_sha256": "680a395358c8bcc16adb2012d4ec1ab547db8b29765fe49c05e1463333d1792e",
+      "git_blob_sha": "c980c8d644ba75d3ae9208b0305c44b17b9f7cc3"
+    },
+    {
+      "code": "L13_M04_004",
+      "title": "Mijozga variantlarni ko'rsatish — ko‘rgazmali namuna",
+      "source_name": "Три решения длинного узкого дома.png",
+      "source_library_file_id": "libfile_44c2b2ba71948191a79bac7d7952a313",
+      "explanation": [
+        "Uzun uchastkaga mos uchta reja va bitta hajmiy ko‘rinish variantlarni tushuntirishga xizmat qiladi.",
+        "Mehmon, oila va xizmat zonalari hamda hovli o‘rni bo‘yicha farqni ko‘rsating.",
+        "Har variantning qulayligi va yo‘qotishini bir xil mezon asosida qisqa tushuntiring."
+      ],
+      "figure_title": "Mijozga variantlarni ko‘rsatish",
+      "asset": "sketch-l13_m04_004.jpg",
+      "previous_asset": "l13_m04_004.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 81,
+      "jpeg_bytes": 399415,
+      "jpeg_sha256": "4c30705059a28d3b8c00c15e13d190f1c99abaa85193162145c8e66eb48f7fc9",
+      "git_blob_sha": "03242bee61254e9ea72ea71a83258f51a4c6dfda"
+    },
+    {
+      "code": "L13_M08_002",
+      "title": "Simulyatsiya: brief va variantlar — arxitekturaviy eskiz",
+      "source_name": "Три варианта дома с тихим двором.png",
+      "source_library_file_id": "libfile_a1f9e83a3fcc81918e19f1a9f4c40051",
+      "explanation": [
+        "Oila, mehmon va tinch hovli talabidan uch xil reja hamda hajmiy variant hosil qilingan.",
+        "Har variantning briefdagi qaysi talabni kuchliroq bajarishini ko‘rsating.",
+        "Ochilish, harakat va hovli aloqasi bo‘yicha afzallik hamda cheklovni qayd qiling."
+      ],
+      "figure_title": "Mashq: talablar va variantlar",
+      "asset": "sketch-l13_m08_002.jpg",
+      "previous_asset": "l13_m08_002.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 73,
+      "jpeg_bytes": 396982,
+      "jpeg_sha256": "237ccf62cb2a18b94c8c726386c9f907f53230bd855d70ed708adbda519c66ac",
+      "git_blob_sha": "e46d197ba573285caed84d5a795e08ed178c5e99"
+    },
+    {
+      "code": "L14_M01_003",
+      "title": "Yorug‘lik va ichki hovli — arxitekturaviy eskiz",
+      "source_name": "Свет через открытый внутренний двор.png",
+      "source_library_file_id": "libfile_a650e0fca4a48191ba17a6a87c6535a5",
+      "explanation": [
+        "Ochiq ichki hovli chuqur rejaning tashqi devordan uzoq xonalariga yorug‘lik olib kiradi.",
+        "Ochiq osmon, xonalar va hovli tutashuvini kesim hamda rejada solishtiring.",
+        "Yorug‘lik samarasi yo‘nalish, to‘siqlar va haqiqiy o‘lchamlarga bog‘liq; mashqda shu omillarni yozing."
+      ],
+      "figure_title": "Yorug‘lik va ichki hovli",
+      "asset": "sketch-l14_m01_003.jpg",
+      "previous_asset": "l14_m01_003.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 80,
+      "jpeg_bytes": 390190,
+      "jpeg_sha256": "da591173b2cf9e2688d980e771efc964e5f7fef78ff6057452fe55707e2f4901",
+      "git_blob_sha": "23b76369dc2f6a3fa18b506198dfcf48d0e0d747"
+    },
+    {
+      "code": "L13_M07_002",
+      "title": "Brief va site bilan dalillash — ko‘rgazmali namuna",
+      "source_name": "Семейный дом с тихим внутренним двором.png",
+      "source_library_file_id": "libfile_2fc624bbf0748191b2b3646b324fa958",
+      "explanation": [
+        "Ko‘cha shovqini, yon qo‘shnilar va oilaviy ichki hovli loyiha qaroriga bog‘langan.",
+        "Kirish, xususiy zona va sokin tashqi makon brief talabini qanday qo‘llab-quvvatlashini ajrating.",
+        "Taklifni mijoz ehtiyoji hamda uchastkaning aniq dalili bilan asoslang."
+      ],
+      "figure_title": "Talab va uchastka bilan asoslash",
+      "asset": "sketch-l13_m07_002.jpg",
+      "previous_asset": "l13_m07_002.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 72,
+      "jpeg_bytes": 395236,
+      "jpeg_sha256": "66c64d11ca83218d1ce635ff0ed98443f7ab6969565e7508af2abb37b27a0bfc",
+      "git_blob_sha": "2ec215d7d286c646c7f6057a9cf613435b16e438"
+    },
+    {
+      "code": "L14_M01_004",
+      "title": "Circulation va privacy — arxitekturaviy eskiz",
+      "source_name": "План дворового дома с маршрутами.png",
+      "source_library_file_id": "libfile_30d013bb9b448191872ddbc295a64a11",
+      "explanation": [
+        "Mehmon va oilaning yo‘llari uzun hovlili uyda alohida kuzatiladi.",
+        "Mehmon yo‘li oilaviy xonalardan o‘tib ketmasligini reja va ichki rakursda tekshiring.",
+        "Yo‘l uzunligi, kirish va hovli bilan aloqa asosida xususiylik darajasini baholang."
+      ],
+      "figure_title": "Harakat yo‘llari va xususiylik",
+      "asset": "sketch-l14_m01_004.jpg",
+      "previous_asset": "l14_m01_004.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 73,
+      "jpeg_bytes": 398833,
+      "jpeg_sha256": "e23f4e1f8c2cafde8f08d95f07ec339d87cb097d123ab33368184011d76cdcd8",
+      "git_blob_sha": "e0741c9f40bf2628242a286db53c5548fedbc095"
+    },
+    {
+      "code": "L14_M01_001",
+      "title": "Tor uchastkani tahlil qilish — arxitekturaviy eskiz",
+      "source_name": "Анализ узкого участка между соседними домами.png",
+      "source_library_file_id": "libfile_e1d69bbdb3bc8191b79124fbd41b7ff3",
+      "explanation": [
+        "Tor uchastka ikki qo‘shni bino va ko‘cha orasida reja hamda hajmiy ko‘rinishda berilgan.",
+        "Kirish, yorug‘lik yo‘nalishi, yon to‘siqlar va orqa hududni ajrating.",
+        "Chegara va qo‘shni haqidagi haqiqiy ma’lumotni yig‘ib, loyiha cheklovlari jadvaliga kiriting."
+      ],
+      "figure_title": "Tor uchastkani tahlil qilish",
+      "asset": "sketch-l14_m01_001.jpg",
+      "previous_asset": "l14_m01_001.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 68,
+      "jpeg_bytes": 399871,
+      "jpeg_sha256": "da3f451b98f4a603bbfe5e38511e7e8821f2df495a9a73d4073c8d00795f00fd",
+      "git_blob_sha": "7aeaac2c553f0b60944ef2558af26b10bfc341a9"
+    },
+    {
+      "code": "L14_M02_001",
+      "title": "Murakkab uchastkani o‘qish — arxitekturaviy eskiz",
+      "source_name": "Форма участка и форма здания.png",
+      "source_library_file_id": "libfile_8db209f5dab48191a2a852564ce38ed4",
+      "explanation": [
+        "Qiyshiq uchastka chegaralari bilan uning ichidagi sodda bino shakli ajratib ko‘rsatilgan.",
+        "Ko‘cha tomoni, asosiy va ikkilamchi chegaralar hamda foydali zonani aniqlang.",
+        "Uchastkaning har bir qiyshiq chetini bino devoriga takrorlash zarurligini mezonlar bilan tekshiring."
+      ],
+      "figure_title": "Murakkab uchastkani o‘qish",
+      "asset": "sketch-l14_m02_001.jpg",
+      "previous_asset": "l14_m02_001.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 78,
+      "jpeg_bytes": 395757,
+      "jpeg_sha256": "d635d779479781eb90e83644ae6b1f84ef746d0b250dc2351697fd828d45e1a4",
+      "git_blob_sha": "5ec3fc50d5ebefc107677597d199988b4544e0fa"
+    },
+    {
+      "code": "L14_M02_002",
+      "title": "Asosiy bino o‘qini tanlash — arxitekturaviy eskiz",
+      "source_name": "Три оси — один участок.png",
+      "source_library_file_id": "libfile_14d7723c7a28819181f849e7985df5c5",
+      "explanation": [
+        "Bir murakkab uchastkada bino uchta turli o‘qqa joylashtirilgan.",
+        "Kirish, ochiq maydon va bino geometriyasi o‘q tanloviga qarab qanday o‘zgarishini solishtiring.",
+        "Asosiy o‘qni reja, tayanchlar va ko‘cha bilan aloqa birga ishlaydigan variant sifatida asoslang."
+      ],
+      "figure_title": "Asosiy bino o‘qini tanlash",
+      "asset": "sketch-l14_m02_002.jpg",
+      "previous_asset": "l14_m02_002.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 72,
+      "jpeg_bytes": 398174,
+      "jpeg_sha256": "a93229a59090d32a0e3fe8da6c7455015b66b045d86011d6ef9f11ca9a8e1c28",
+      "git_blob_sha": "2be81c97f47485485b89469c67c740e49da29b0a"
+    },
+    {
+      "code": "L14_M02_003",
+      "title": "Qolgan zonalardan foydalanish — arxitekturaviy eskiz",
+      "source_name": "Четыре полезные зоны вокруг дома.png",
+      "source_library_file_id": "libfile_7598807845148191ac16eef83b0e1850",
+      "explanation": [
+        "Bino atrofidagi qolgan maydonlar dam olish, yashil hudud, xizmat va himoya zonasiga ajratilgan.",
+        "Qiyshiq chekka maydonning har biri uchun amaliy vazifa yoki landshaft yechimini aniqlang.",
+        "Tashqi harakat yo‘li, xizmat qulayligi va xususiylikni reja bilan tekshiring."
+      ],
+      "figure_title": "Qolgan zonalardan foydalanish",
+      "asset": "sketch-l14_m02_003.jpg",
+      "previous_asset": "l14_m02_003.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 73,
+      "jpeg_bytes": 390840,
+      "jpeg_sha256": "400052783f518678886f5bbc7eeda1014da9b4485d45f8d8286735ca605415f1",
+      "git_blob_sha": "5e569078996ac3f5809a4b9778cae1636c6817a5"
+    }
+  ]
+}

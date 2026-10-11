@@ -497,23 +497,23 @@ L11_M06_005,L11_M06,Balkon va terassa audit,illustrated,1,sketch-l11_m06_005.jpg
 L11_M07_001,L11_M07,Ikki qavatli fasad proporsiyasi,illustrated,1,sketch-l11_m07_001.jpg
 L11_M07_002,L11_M07,Qavatlar orasidagi vizual aloqa,illustrated,1,sketch-l11_m07_002.jpg
 L11_M07_003,L11_M07,"Balkon, void va stair aksenti",illustrated,1,sketch-l11_m07_003.jpg
-L11_M07_004,L11_M07,Material va hajm PRO,illustrated,1,l11_m07_004.svg
-L11_M07_005,L11_M07,2 qavatli fasad audit,illustrated,1,l11_m07_005.svg
+L11_M07_004,L11_M07,Material va hajm PRO,illustrated,1,sketch-l11_m07_004.jpg
+L11_M07_005,L11_M07,2 qavatli fasad audit,illustrated,1,sketch-l11_m07_005.jpg
 L11_M08_001,L11_M08,Ikki qavatli BIM struktura,illustrated,2,l11_m08_001.svg|ac28-layers.png
-L11_M08_002,L11_M08,Qavatlar modeli,illustrated,2,l11_m08_002.svg|ac28-stories.png
-L11_M08_003,L11_M08,"Stair, void va vertical systems",illustrated,2,l11_m08_003.svg|ac28-stair.png
-L11_M08_004,L11_M08,"Roof, facade va sections",illustrated,2,l11_m08_004.svg|ac28-roof.png
-L11_M08_005,L11_M08,To'liq BIM model audit,illustrated,2,l11_m08_005.svg|ac28-view.png
+L11_M08_002,L11_M08,Qavatlar modeli,illustrated,2,sketch-l11_m08_002.jpg|ac28-stories.png
+L11_M08_003,L11_M08,"Stair, void va vertical systems",illustrated,2,sketch-l11_m08_003.jpg|ac28-stair.png
+L11_M08_004,L11_M08,"Roof, facade va sections",illustrated,2,sketch-l11_m08_004.jpg|ac28-roof.png
+L11_M08_005,L11_M08,To'liq BIM model audit,illustrated,2,sketch-l11_m08_005.jpg|ac28-view.png
 L11_M09_001,L11_M09,Ishchi loyiha tushunchasi,illustrated,1,l11_m09_001.svg
-L11_M09_002,L11_M09,Plan va o'lchamlar,illustrated,1,l11_m09_002.svg
-L11_M09_003,L11_M09,"Fasad, kesim va detallar",illustrated,1,l11_m09_003.svg
-L11_M09_004,L11_M09,Koordinatsiya va revision,illustrated,1,l11_m09_004.svg
-L11_M09_005,L11_M09,LEVEL 11 final ishchi loyiha auditi,illustrated,1,l11_m09_005.svg
+L11_M09_002,L11_M09,Plan va o'lchamlar,illustrated,1,sketch-l11_m09_002.jpg
+L11_M09_003,L11_M09,"Fasad, kesim va detallar",illustrated,1,sketch-l11_m09_003.jpg
+L11_M09_004,L11_M09,Koordinatsiya va revision,illustrated,1,sketch-l11_m09_004.jpg
+L11_M09_005,L11_M09,LEVEL 11 final ishchi loyiha auditi,illustrated,1,sketch-l11_m09_005.jpg
 L12_M01_001,L12_M01,BIM nima?,illustrated,2,l12_m01_001.svg|ac28-schedule.png
 L12_M01_002,L12_M01,Model va ma'lumot,illustrated,2,l12_m01_002.svg|ac28-property.png
 L12_M01_003,L12_M01,BIM koordinatsiyasi,illustrated,2,l12_m01_003.svg|ac28-door-position.png
 L12_M01_004,L12_M01,BIM workflow,illustrated,2,l12_m01_004.svg|ac28-view.png
-L12_M01_005,L12_M01,BIM professional audit,illustrated,2,l12_m01_005.svg|ac28-schedule.png
+L12_M01_005,L12_M01,BIM professional audit,illustrated,2,sketch-l12_m01_005.jpg|ac28-schedule.png
 L12_M02_001,L12_M02,Element ma'lumoti tushunchasi,illustrated,2,l12_m02_001.svg|ac28-property.png
 L12_M02_002,L12_M02,"ID, nom va klassifikatsiya",illustrated,2,l12_m02_002.svg|ac28-classification.png
 L12_M02_003,L12_M02,Properties va parametrlar,illustrated,2,l12_m02_003.svg|ac28-property.png
@@ -521,22 +521,22 @@ L12_M02_004,L12_M02,Data consistency,illustrated,2,l12_m02_004.svg|ac28-schedule
 L12_M02_005,L12_M02,Element Information audit,illustrated,2,l12_m02_005.svg|ac28-classification.png
 L12_M03_001,L12_M03,Schedule va spetsifikatsiya,illustrated,2,l12_m03_001.svg|ac28-schedule.png
 L12_M03_002,L12_M03,Criteria va fieldlar,illustrated,2,l12_m03_002.svg|ac28-criteria.png
-L12_M03_003,L12_M03,Door va window schedule,illustrated,2,l12_m03_003.svg|ac28-fields.png
+L12_M03_003,L12_M03,Door va window schedule,illustrated,2,sketch-l12_m03_003.jpg|ac28-fields.png
 L12_M03_004,L12_M03,Quantity va data audit,illustrated,2,l12_m03_004.svg|ac28-fields.png
 L12_M03_005,L12_M03,Spetsifikatsiya professional audit,illustrated,2,l12_m03_005.svg|ac28-schedule.png
 L12_M04_001,L12_M04,View tushunchasi,illustrated,2,l12_m04_001.svg|ac28-view.png
 L12_M04_002,L12_M04,View settings mantig'i,illustrated,2,l12_m04_002.svg|ac28-view.png
 L12_M04_003,L12_M04,View naming va folders,illustrated,2,l12_m04_003.svg|ac28-view.png
-L12_M04_004,L12_M04,Documentation views,illustrated,2,l12_m04_004.svg|ac28-view.png
+L12_M04_004,L12_M04,Documentation views,illustrated,2,sketch-l12_m04_004.jpg|ac28-view.png
 L12_M04_005,L12_M04,View Map PRO audit,illustrated,2,l12_m04_005.svg|ac28-view.png
 L12_M05_001,L12_M05,Layout Book tushunchasi,illustrated,2,l12_m05_001.svg|ac28-layout.png
 L12_M05_002,L12_M05,Master Layout mantig'i,illustrated,2,l12_m05_002.svg|ac28-master.png
-L12_M05_003,L12_M05,Drawing placement,illustrated,2,l12_m05_003.svg|ac28-layout.png
-L12_M05_004,L12_M05,Sheet hierarchy va readability,illustrated,2,l12_m05_004.svg|ac28-layout.png
+L12_M05_003,L12_M05,Drawing placement,illustrated,2,sketch-l12_m05_003.jpg|ac28-layout.png
+L12_M05_004,L12_M05,Sheet hierarchy va readability,illustrated,2,sketch-l12_m05_004.jpg|ac28-layout.png
 L12_M05_005,L12_M05,Layout Book professional audit,illustrated,2,l12_m05_005.svg|ac28-layout.png
 L12_M06_001,L12_M06,Shtampning vazifasi,illustrated,2,l12_m06_001.svg|ac28-master.png
 L12_M06_002,L12_M06,Sheet identity,illustrated,2,l12_m06_002.svg|ac28-master.png
-L12_M06_003,L12_M06,Grafik standartlar,illustrated,2,l12_m06_003.svg|ac28-master.png
+L12_M06_003,L12_M06,Grafik standartlar,illustrated,2,sketch-l12_m06_003.jpg|ac28-master.png
 L12_M06_004,L12_M06,Template standard,illustrated,2,l12_m06_004.svg|ac28-master.png
 L12_M06_005,L12_M06,Shtamp va standart audit,illustrated,2,l12_m06_005.svg|ac28-master.png
 L12_M07_001,L12_M07,Publisher tushunchasi,illustrated,2,l12_m07_001.svg|ac28-publisher.png
@@ -546,7 +546,7 @@ L12_M07_004,L12_M07,PDF va boshqa deliverable nazorati,illustrated,2,l12_m07_004
 L12_M07_005,L12_M07,Publisher professional audit,illustrated,2,l12_m07_005.svg|ac28-publish-method.png
 L12_M08_001,L12_M08,DWG exchange tushunchasi,illustrated,2,l12_m08_001.svg|ac28-dwg.png
 L12_M08_002,L12_M08,Layer va mapping mantig'i,illustrated,2,l12_m08_002.svg|ac28-dwg.png
-L12_M08_003,L12_M08,"Scale, units va origin",illustrated,2,l12_m08_003.svg|ac28-dwg.png
+L12_M08_003,L12_M08,"Scale, units va origin",illustrated,2,sketch-l12_m08_003.jpg|ac28-dwg.png
 L12_M08_004,L12_M08,DWG QA va round-trip,illustrated,2,l12_m08_004.svg|ac28-dwg.png
 L12_M08_005,L12_M08,DWG professional audit,illustrated,2,l12_m08_005.svg|ac28-dwg.png
 L12_M09_001,L12_M09,IFC tushunchasi,illustrated,2,l12_m09_001.svg|ac28-ifc.png
@@ -575,38 +575,38 @@ L13_M03_003,L13_M03,Qimmat qarorlarni tanish,illustrated,1,l13_m03_003.svg
 L13_M03_004,L13_M03,Value engineering fikrlashi,illustrated,1,l13_m03_004.svg
 L13_M03_005,L13_M03,Budjet professional audit,illustrated,1,l13_m03_005.svg
 L13_M04_001,L13_M04,Variant nima uchun kerak?,illustrated,1,l13_m04_001.svg
-L13_M04_002,L13_M04,Haqiqiy alternativalar,illustrated,1,l13_m04_002.svg
+L13_M04_002,L13_M04,Haqiqiy alternativalar,illustrated,1,sketch-l13_m04_002.jpg
 L13_M04_003,L13_M04,Variantlarni mezon bilan solishtirish,illustrated,1,l13_m04_003.svg
-L13_M04_004,L13_M04,Mijozga variantlarni ko'rsatish,illustrated,1,l13_m04_004.svg
+L13_M04_004,L13_M04,Mijozga variantlarni ko'rsatish,illustrated,1,sketch-l13_m04_004.jpg
 L13_M04_005,L13_M04,Variantlar professional audit,illustrated,1,l13_m04_005.svg
 L13_M05_001,L13_M05,Taqdimot strukturasi,illustrated,1,l13_m05_001.svg
-L13_M05_002,L13_M05,Plan va diagrammani tushuntirish,illustrated,1,l13_m05_002.svg
-L13_M05_003,L13_M05,3D va vizual material,illustrated,1,l13_m05_003.svg
+L13_M05_002,L13_M05,Plan va diagrammani tushuntirish,illustrated,1,sketch-l13_m05_002.jpg
+L13_M05_003,L13_M05,3D va vizual material,illustrated,1,sketch-l13_m05_003.jpg
 L13_M05_004,L13_M05,Savol va e'tirozlar,illustrated,1,l13_m05_004.svg
 L13_M05_005,L13_M05,Loyiha taqdimoti audit,illustrated,1,l13_m05_005.svg
 L13_M06_001,L13_M06,Tuzatishlarni qabul qilish,illustrated,1,l13_m06_001.svg
 L13_M06_002,L13_M06,Feedbackni klassifikatsiya qilish,illustrated,1,l13_m06_002.svg
 L13_M06_003,L13_M06,Revision boshqaruvi,illustrated,1,l13_m06_003.svg
-L13_M06_004,L13_M06,O'zgarish ta'siri,illustrated,1,l13_m06_004.svg
+L13_M06_004,L13_M06,O'zgarish ta'siri,illustrated,1,sketch-l13_m06_004.jpg
 L13_M06_005,L13_M06,Mijoz tuzatishlari audit,illustrated,1,l13_m06_005.svg
 L13_M07_001,L13_M07,Arxitektura qarorini asoslash,illustrated,1,l13_m07_001.svg
-L13_M07_002,L13_M07,Brief va site bilan dalillash,illustrated,1,l13_m07_002.svg
+L13_M07_002,L13_M07,Brief va site bilan dalillash,illustrated,1,sketch-l13_m07_002.jpg
 L13_M07_003,L13_M07,Trade-offni tushuntirish,illustrated,1,l13_m07_003.svg
 L13_M07_004,L13_M07,Kelishmovchilikni boshqarish,illustrated,1,l13_m07_004.svg
 L13_M07_005,L13_M07,Qarorni himoya qilish audit,illustrated,1,l13_m07_005.svg
 L13_M08_001,L13_M08,Simulyatsiya: birinchi murojaat,illustrated,1,l13_m08_001.svg
-L13_M08_002,L13_M08,Simulyatsiya: brief va variantlar,illustrated,1,l13_m08_002.svg
+L13_M08_002,L13_M08,Simulyatsiya: brief va variantlar,illustrated,1,sketch-l13_m08_002.jpg
 L13_M08_003,L13_M08,Simulyatsiya: prezentatsiya,illustrated,1,l13_m08_003.svg
 L13_M08_004,L13_M08,Simulyatsiya: revision va konflikt,illustrated,1,l13_m08_004.svg
 L13_M08_005,L13_M08,LEVEL 13 real loyiha audit,illustrated,1,l13_m08_005.svg
-L14_M01_001,L14_M01,Tor uchastkani tahlil qilish,illustrated,1,l14_m01_001.svg
+L14_M01_001,L14_M01,Tor uchastkani tahlil qilish,illustrated,1,sketch-l14_m01_001.jpg
 L14_M01_002,L14_M01,Uzunlamasına zonalash,illustrated,1,l14_m01_002.svg
-L14_M01_003,L14_M01,Yorug'lik va ichki hovli,illustrated,1,l14_m01_003.svg
-L14_M01_004,L14_M01,Circulation va privacy,illustrated,1,l14_m01_004.svg
+L14_M01_003,L14_M01,Yorug'lik va ichki hovli,illustrated,1,sketch-l14_m01_003.jpg
+L14_M01_004,L14_M01,Circulation va privacy,illustrated,1,sketch-l14_m01_004.jpg
 L14_M01_005,L14_M01,Tor uchastka professional audit,illustrated,1,l14_m01_005.svg
-L14_M02_001,L14_M02,Murakkab uchastkani o'qish,illustrated,1,l14_m02_001.svg
-L14_M02_002,L14_M02,Asosiy bino o'qini tanlash,illustrated,1,l14_m02_002.svg
-L14_M02_003,L14_M02,Qolgan zonalardan foydalanish,illustrated,1,l14_m02_003.svg
+L14_M02_001,L14_M02,Murakkab uchastkani o'qish,illustrated,1,sketch-l14_m02_001.jpg
+L14_M02_002,L14_M02,Asosiy bino o'qini tanlash,illustrated,1,sketch-l14_m02_002.jpg
+L14_M02_003,L14_M02,Qolgan zonalardan foydalanish,illustrated,1,sketch-l14_m02_003.jpg
 L14_M02_004,L14_M02,Fasad va perspektiva nazorati,illustrated,1,l14_m02_004.svg
 L14_M02_005,L14_M02,Murakkab uchastka professional audit,illustrated,1,l14_m02_005.svg
 L14_M03_001,L14_M03,Nishabli site analysis,illustrated,1,l14_m03_001.svg

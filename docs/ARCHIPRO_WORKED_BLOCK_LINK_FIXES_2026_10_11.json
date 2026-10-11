@@ -1,0 +1,14 @@
+{
+  "fixes": [
+    {
+      "code": "L10_M05_004",
+      "previous_block": 5,
+      "correct_block": 7
+    },
+    {
+      "code": "L10_M05_005",
+      "previous_block": 5,
+      "correct_block": 7
+    }
+  ]
+}

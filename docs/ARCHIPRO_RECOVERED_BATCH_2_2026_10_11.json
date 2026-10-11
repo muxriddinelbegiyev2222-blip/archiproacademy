@@ -1,0 +1,207 @@
+{
+  "base_commit": "1cd5c3f4badeae1406a833e11eaf0f87b3d6793d",
+  "image_limit_bytes": 400000,
+  "sources_preserved_outside_repository": true,
+  "records": [
+    {
+      "code": "L12_M01_005",
+      "title": "BIM professional audit — ko‘rgazmali namuna",
+      "source_name": "Одно изменение — несколько видов.png",
+      "source_library_file_id": "libfile_ed8780a1738c81918bbdc30802327941",
+      "explanation": [
+        "Deraza elementi model, reja, fasad va kesimda bir xil ID bilan kuzatiladi.",
+        "Elementdagi bitta o‘zgarish qaysi ko‘rinishlarga yetib borishi kerakligini sanang.",
+        "Darsdagi eshik enini o‘zgartirish mashqini ham model–jadval–chizma bo‘yicha shu tartibda tekshiring."
+      ],
+      "figure_title": "BIM model va chizmalar izchilligi",
+      "asset": "sketch-l12_m01_005.jpg",
+      "previous_asset": "l12_m01_005.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 79,
+      "jpeg_bytes": 396735,
+      "jpeg_sha256": "461c76447d1ab1ec7ff66a8c750b6a7957b30f5d5ed7b8963a91c4ca75af258e",
+      "git_blob_sha": "9fa5a6965ef5eebe397a5cff4ba96700846d97d9"
+    },
+    {
+      "code": "L12_M03_003",
+      "title": "Door va window schedule — ko‘rgazmali namuna",
+      "source_name": "Архитектурный эскиз дверей и окон.png",
+      "source_library_file_id": "libfile_829d80601ae88191a499980e13d1ff3b",
+      "explanation": [
+        "D01, D02 eshiklari va W01 derazasi bino ichida hamda alohida element ro‘yxatida ko‘rsatilgan.",
+        "Har element IDsi model va jadvalda bir xil bo‘lishini solishtiring; eshik va deraza ro‘yxatlarini ajrating.",
+        "Rasm elementlarni tanishga yordam beradi; eni, balandligi va sonini darsdagi jadval mashqida manba modeldan tekshiring."
+      ],
+      "figure_title": "Eshik va deraza ro‘yxatlari",
+      "asset": "sketch-l12_m03_003.jpg",
+      "previous_asset": "l12_m03_003.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 82,
+      "jpeg_bytes": 394155,
+      "jpeg_sha256": "1dff99174573257b6153f83b6b794de7a83374877d8803449a78c3f3c7767bd9",
+      "git_blob_sha": "79cd246fa22cfc60c16fc36e71bb9b9c3538ce1a"
+    },
+    {
+      "code": "L12_M04_004",
+      "title": "Documentation views — ko‘rgazmali namuna",
+      "source_name": "Один план, две цели.png",
+      "source_library_file_id": "libfile_2230edeeee948191ab2b31346be9b70d",
+      "explanation": [
+        "Bir reja taqdimot ko‘rinishi va ishchi chizma ko‘rinishida berilgan.",
+        "Taqdimotdagi materiallar bilan hujjatdagi chiziq, xona nomi va o‘lcham vazifasini solishtiring.",
+        "Masshtab, qatlam va grafik sozlamalarni maqsadga mos saqlangan ko‘rinish orqali boshqaring."
+      ],
+      "figure_title": "Hujjat uchun saqlangan ko‘rinishlar",
+      "asset": "sketch-l12_m04_004.jpg",
+      "previous_asset": "l12_m04_004.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 82,
+      "jpeg_bytes": 387788,
+      "jpeg_sha256": "dbd488906de0160f9ecfaed9a5681b4c11d6df214cb681ba6e696d979ee3f466",
+      "git_blob_sha": "ca856d29d0f31cd4113357471b906d844007e916"
+    },
+    {
+      "code": "L12_M06_003",
+      "title": "Grafik standartlar — ko‘rgazmali namuna",
+      "source_name": "Иерархия линий в плане дома.png",
+      "source_library_file_id": "libfile_82158f1466188191ac9419fb524fa9c4",
+      "explanation": [
+        "Kesilgan devor, mebel va fon, o‘lcham yozuvi turli chiziq og‘irligida ajratilgan.",
+        "Qalin chiziq asosiy kesimni, yengil chiziq yordamchi ma’lumotni qanday o‘qitishini solishtiring.",
+        "Bir xil bosma masshtabda matn, belgi va chiziqlar ravshanligini tekshiring."
+      ],
+      "figure_title": "Grafik standartlar",
+      "asset": "sketch-l12_m06_003.jpg",
+      "previous_asset": "l12_m06_003.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 86,
+      "jpeg_bytes": 395304,
+      "jpeg_sha256": "a349ea129937b72eab96e92b6560be1b7872ae3023d230b2902e364714a144aa",
+      "git_blob_sha": "53b4816718f8b73d6a782b8674e1455a0030438e"
+    },
+    {
+      "code": "L12_M08_003",
+      "title": "Scale, units va origin — ko‘rgazmali namuna",
+      "source_name": "Единицы и координаты в архитектуре.png",
+      "source_library_file_id": "libfile_20f77424c2b88191bece399ff53e4e10",
+      "explanation": [
+        "Manba reja, siljigan nusxa va moslangan nusxa birlik hamda koordinata masalasini tushuntiradi.",
+        "Modelning birliklari bilan joylashish manbasini alohida tekshiring.",
+        "Darsdagi 4000 mm nazorat masofasini eksportdan keyin qayta o‘lchang; eskizdagi o‘qlar konseptual belgilardir."
+      ],
+      "figure_title": "Masshtab, birlik va koordinata",
+      "asset": "sketch-l12_m08_003.jpg",
+      "previous_asset": "l12_m08_003.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 81,
+      "jpeg_bytes": 390708,
+      "jpeg_sha256": "27b93a069d69c12c5539abdc352f1744c735d210b70d36e76fb20003887190a0",
+      "git_blob_sha": "a740e1c8b40d0ebdbb50ef6d48d5df7970d7d876"
+    },
+    {
+      "code": "L12_M05_003",
+      "title": "Drawing placement — ko‘rgazmali namuna",
+      "source_name": "Архитектурная компоновка на листе.png",
+      "source_library_file_id": "libfile_a8dfb9a0c22881918084c01c0e1ff82c",
+      "explanation": [
+        "Reja, fasad va kesim sahifaga chizma chegaralari hamda shtamp joyi bilan joylashtirilgan.",
+        "Har chizmaning manbasi va masshtabi, chetlar ichida joylashishi hamda o‘qilish tartibini tekshiring.",
+        "Tasvir o‘quv sahifasini ko‘rsatadi; mashqda saqlangan ko‘rinishni Layout sahifasiga haqiqiy bog‘lang."
+      ],
+      "figure_title": "Chizmalarni sahifaga joylash",
+      "asset": "sketch-l12_m05_003.jpg",
+      "previous_asset": "l12_m05_003.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 83,
+      "jpeg_bytes": 398976,
+      "jpeg_sha256": "ddbad8168509f0085f0a122e308b13ebc647deb746bfd2c610c3f2399992bacc",
+      "git_blob_sha": "3b88c85accf23f0f4831032b227e3a23d0a6a359"
+    },
+    {
+      "code": "L13_M04_002",
+      "title": "Haqiqiy alternativalar — ko‘rgazmali namuna",
+      "source_name": "Три варианта планировки двора.png",
+      "source_library_file_id": "libfile_0f59eba0d22c8191b84697d798a00240",
+      "explanation": [
+        "Old hovli, ichki hovli va ikki qanotli uchta uy bir xil uchastka uchun farqli strategiyalarni ko‘rsatadi.",
+        "Kirish, oilaviy xona, xizmat va ochiq makon aloqalari qayerda o‘zgarganini ajrating.",
+        "Variantlarni faqat rang bo‘yicha emas, foydalanish va maydon taqsimoti bilan solishtiring."
+      ],
+      "figure_title": "Haqiqiy muqobil variantlar",
+      "asset": "sketch-l13_m04_002.jpg",
+      "previous_asset": "l13_m04_002.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 68,
+      "jpeg_bytes": 396424,
+      "jpeg_sha256": "cbdae1ffe6f202e7fd382de31078cba4520787427f059aefd5170d7f363f0f24",
+      "git_blob_sha": "29746bc8745f8b3a4241c313a23ae6186f3b8581"
+    },
+    {
+      "code": "L13_M05_002",
+      "title": "Plan va diagrammani tushuntirish — ko‘rgazmali namuna",
+      "source_name": "Дом и маршруты во дворе.png",
+      "source_library_file_id": "libfile_afadefb487888191bd177f15a1b8e782",
+      "explanation": [
+        "Oilaviy, mehmon va xizmat yo‘llari bitta hovlili uy rejasida alohida ko‘rsatilgan.",
+        "Kirishdan xonalargacha har bir foydalanuvchi yo‘lini kuzating.",
+        "Taqdimotda yo‘l va xona aloqalarining foydasini oddiy foydalanish ssenariysi bilan tushuntiring."
+      ],
+      "figure_title": "Reja va harakat yo‘llarini tushuntirish",
+      "asset": "sketch-l13_m05_002.jpg",
+      "previous_asset": "l13_m05_002.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 75,
+      "jpeg_bytes": 392927,
+      "jpeg_sha256": "dfd24aba768b65c2e053bf03290ec277d0a8f1bef2ed882dd64159e0d78fa50f",
+      "git_blob_sha": "c690339f5eca26d94bb4defa82913d966608472d"
+    },
+    {
+      "code": "L12_M05_004",
+      "title": "Sheet hierarchy va readability — ko‘rgazmali namuna",
+      "source_name": "Чертёж и пространство.png",
+      "source_library_file_id": "libfile_7ab7cfd1e4e08191a8deeecc52f7b387",
+      "explanation": [
+        "Zich joylashtirilgan va tartibli arxitektura varaqlari yonma-yon taqqoslangan.",
+        "Bosh chizma, yordamchi ko‘rinish va matn atrofidagi bo‘shliq o‘qishga qanday yordam berishini aniqlang.",
+        "Varaqni yakuniy bosma o‘lchamda ochib, sarlavha, chizma va izohlarning ustuvorligini tekshiring."
+      ],
+      "figure_title": "Sahifa tartibi va o‘qilish",
+      "asset": "sketch-l12_m05_004.jpg",
+      "previous_asset": "l12_m05_004.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 79,
+      "jpeg_bytes": 392599,
+      "jpeg_sha256": "76003576e8f09b61c0ebff73c851ff8096b0465e2170070c076dbd3d48463320",
+      "git_blob_sha": "7bd85ac693944fc608ca6c73a10716e61776f376"
+    },
+    {
+      "code": "L13_M05_003",
+      "title": "3D va vizual material — ko‘rgazmali namuna",
+      "source_name": "Компактный дом: снаружи и внутри.png",
+      "source_library_file_id": "libfile_fcb7b038856c8191b5fc2dc261d38dd7",
+      "explanation": [
+        "Ixcham uy tashqi ko‘rinish va ichki fazolar ochib ko‘rsatilgan rakursda berilgan.",
+        "Tashqi hajm bilan xonalar joylashuvi va hovliga aloqani birga tushuntiring.",
+        "3D rakursni aynan aytilayotgan qarorni ko‘rsatish uchun tanlang; rasmni aniq sonli loyiha o‘rnida ishlatmang."
+      ],
+      "figure_title": "Uch o‘lchamli ko‘rgazmali material",
+      "asset": "sketch-l13_m05_003.jpg",
+      "previous_asset": "l13_m05_003.svg",
+      "width": 1536,
+      "height": 1024,
+      "jpeg_quality": 69,
+      "jpeg_bytes": 395844,
+      "jpeg_sha256": "105bcc725100e5521c72f6caddb8cb9dac2444f61bd427f54615a9e8e5b87e10",
+      "git_blob_sha": "8720307ec4be229085416e3243f5a555ee6eb1ed"
+    }
+  ]
+}

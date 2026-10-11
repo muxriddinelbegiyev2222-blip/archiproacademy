@@ -1,0 +1,257 @@
+{
+  "source_commit": "1cd5c3f4badeae1406a833e11eaf0f87b3d6793d",
+  "reviewed_remaining_candidates": 92,
+  "new_sketch_required": 61,
+  "new_image_optional": 31,
+  "required_codes": [
+    "L11_M07_004",
+    "L11_M07_005",
+    "L11_M08_002",
+    "L11_M09_002",
+    "L11_M08_003",
+    "L11_M09_003",
+    "L11_M08_004",
+    "L11_M09_004",
+    "L11_M08_005",
+    "L11_M09_005",
+    "L12_M01_005",
+    "L12_M03_003",
+    "L12_M04_004",
+    "L12_M06_003",
+    "L12_M08_003",
+    "L12_M05_003",
+    "L13_M04_002",
+    "L13_M05_002",
+    "L12_M05_004",
+    "L13_M05_003",
+    "L13_M06_004",
+    "L13_M04_004",
+    "L13_M08_002",
+    "L14_M01_003",
+    "L13_M07_002",
+    "L14_M01_004",
+    "L14_M01_001",
+    "L14_M02_001",
+    "L14_M02_002",
+    "L14_M02_003",
+    "L14_M01_002",
+    "L14_M02_004",
+    "L14_M03_001",
+    "L14_M03_002",
+    "L14_M03_003",
+    "L14_M03_004",
+    "L14_M04_002",
+    "L14_M04_003",
+    "L14_M04_004",
+    "L14_M05_002",
+    "L14_M05_003",
+    "L14_M05_004",
+    "L14_M06_001",
+    "L14_M06_002",
+    "L14_M06_003",
+    "L14_M06_004",
+    "L14_M07_002",
+    "L14_M07_003",
+    "L14_M08_002",
+    "L14_M08_003",
+    "L14_M08_004",
+    "L15_M01_002",
+    "L15_M02_002",
+    "L15_M03_001",
+    "L15_M03_002",
+    "L15_M03_003",
+    "L15_M05_001",
+    "L15_M05_002",
+    "L15_M05_003",
+    "L15_M05_004",
+    "L15_M07_004"
+  ],
+  "optional_records": [
+    {
+      "code": "L12_M01_003",
+      "title": "BIM koordinatsiyasi",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L12_M02_005",
+      "title": "Element Information audit",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L12_M03_004",
+      "title": "Quantity va data audit",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L12_M03_005",
+      "title": "Spetsifikatsiya professional audit",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L12_M04_005",
+      "title": "View Map PRO audit",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L12_M05_005",
+      "title": "Layout Book professional audit",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L12_M06_005",
+      "title": "Shtamp va standart audit",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L12_M07_004",
+      "title": "PDF va boshqa deliverable nazorati",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L12_M08_002",
+      "title": "Layer va mapping mantig'i",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L12_M08_004",
+      "title": "DWG QA va round-trip",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L12_M09_002",
+      "title": "Classification va IFC data",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L12_M09_004",
+      "title": "IFC QA",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L12_M10_002",
+      "title": "Views va schedules finalizatsiyasi",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L12_M10_003",
+      "title": "Layout Book finalizatsiyasi",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L12_M10_004",
+      "title": "Publisher va exchange paketi",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L13_M08_003",
+      "title": "Simulyatsiya: prezentatsiya",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L14_M01_005",
+      "title": "Tor uchastka professional audit",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L14_M02_005",
+      "title": "Murakkab uchastka professional audit",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L14_M03_005",
+      "title": "Nishabli yer professional audit",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L14_M04_005",
+      "title": "Katta villa professional audit",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L14_M05_005",
+      "title": "Ko'p avlodli uy professional audit",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L14_M06_005",
+      "title": "Premium fasad professional audit",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L14_M07_004",
+      "title": "BIM va texnik diagnostika",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L14_M07_005",
+      "title": "Design Clinic final audit",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L15_M01_001",
+      "title": "Arxitektura nazariyasi integratsiyasi",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L15_M01_004",
+      "title": "BIM va hujjatlashtirish nazariyasi",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L15_M02_001",
+      "title": "Model setup challenge",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L15_M02_003",
+      "title": "Advanced BIM challenge",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L15_M02_004",
+      "title": "Documentation challenge",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L15_M03_004",
+      "title": "BIM va documentation xatolari",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    },
+    {
+      "code": "L15_M06_002",
+      "title": "Konsept va qarorlarni asoslash",
+      "decision": "new_image_optional",
+      "reason": "Darsning asosiy natijasi audit jadvali, element ma’lumoti, saqlangan ko‘rinish sozlamasi, fayl/versiya qaydi yoki qarorlar izohi. Mavjud modul misollari va matn yetarli; yangi bezak eskizi talab qilinmaydi."
+    }
+  ]
+}

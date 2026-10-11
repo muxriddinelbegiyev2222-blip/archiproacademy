@@ -100,12 +100,22 @@ def check():
     if state_path.is_file():
         state = json.loads(state_path.read_text(encoding="utf-8"))
         completed = state.get("completed_new_codes", [])
+        optional = state.get("new_image_optional_codes", [])
         if len(set(completed)) != len(completed):
             add("Rework status has duplicate completed lesson codes")
+        if len(set(optional)) != len(optional):
+            add("Rework status has duplicate optional lesson codes")
+        if set(completed) & set(optional):
+            add("Completed and optional lesson lists overlap")
+        if not set(optional).issubset(coverage["visual"]):
+            add("Optional image review contains unknown lesson codes")
         if state.get("individually_replaced_on_main") != len(completed):
             add("Completed lesson count disagrees with the rework status")
-        if state.get("still_to_replace", 0) + len(completed) != state.get("review_pending_initial", -1):
-            add("Rework status total does not match its completed and pending counts")
+        pending = state.get("still_to_replace", 0)
+        if not isinstance(pending, int) or pending < 0:
+            add("Rework status pending count must be a non-negative integer")
+        elif pending + len(completed) + len(optional) != state.get("review_pending_initial", -1):
+            add("Rework status total does not match completed, pending and optional counts")
         by_code = {item.get("code"): item.get("asset") for item in json.loads((ASSETS / "lesson_figures.json").read_text(encoding="utf-8"))}
         for code in completed:
             expected = f"sketch-{code.lower()}.jpg"
