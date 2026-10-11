@@ -1,0 +1,42 @@
+name: ARCHIPRO License Patch - Fast Verified EXE
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/archipro-licensefix-fast-exe.yml'
+  workflow_dispatch:
+jobs:
+  client:
+    runs-on: windows-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    env:
+      QT_QPA_PLATFORM: offscreen
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          architecture: x64
+      - name: Install
+        run: python -m pip install -r requirements.txt pyinstaller
+      - name: Verify license security and course content
+        shell: pwsh
+        run: |
+          python tools/test_license_key_compatibility.py
+          if ($LASTEXITCODE -ne 0) { throw "License tests failed" }
+          python app/tools/content_guard.py
+          if ($LASTEXITCODE -ne 0) { throw "Course content guard failed" }
+      - name: Build main 680-lesson Windows EXE
+        run: python app/tools/build_client.py --workpath build_client --distpath dist_client --specpath .
+      - name: Verify real EXE contains 680 lessons
+        run: python app/tools/verify_built_exe.py "dist_client/ARCHIPRO UZ.exe"
+      - name: Upload corrected client EXE
+        uses: actions/upload-artifact@v4
+        with:
+          name: ARCHIPRO_UZ_ASOSIY_EXE_YANGI_LICENSE_KEY
+          path: dist_client/ARCHIPRO UZ.exe
+          if-no-files-found: error
+          retention-days: 7
