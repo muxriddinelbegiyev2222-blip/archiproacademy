@@ -1,8 +1,8 @@
 {
   "source_review": "docs/VISUAL_CANDIDATE_REVIEW_2026_10_08.json",
   "review_pending_initial": 156,
-  "individually_replaced_on_main": 114,
-  "still_to_replace": 11,
+  "individually_replaced_on_main": 125,
+  "still_to_replace": 0,
   "seven_corrupted_images_repaired": 7,
   "seven_media_registry_recorded": 278,
   "seven_media_registry_complete": true,
@@ -120,12 +120,23 @@
     "L14_M07_002",
     "L14_M07_003",
     "L14_M08_002",
-    "L14_M08_003"
+    "L14_M08_003",
+    "L14_M08_004",
+    "L15_M01_002",
+    "L15_M02_002",
+    "L15_M03_001",
+    "L15_M03_002",
+    "L15_M03_003",
+    "L15_M05_001",
+    "L15_M05_002",
+    "L15_M05_003",
+    "L15_M05_004",
+    "L15_M07_004"
   ],
-  "next_batch": "docs/ARCHIPRO_NEXT_TEN_TOPIC_SPECIFIC_SKETCHES.json",
-  "note": "Progress counts completed JPEG replacements, pending required sketches, and separately reviewed lessons not requiring a new image. Existing valid material remains. Normative expert review and a native Windows release build are separate from this image task.",
-  "last_verified_main_commit": "2cb89e86829b5f3eed97a36c707c2750aed89704",
-  "next_lesson_to_replace": "L14_M08_004",
+  "next_batch": null,
+  "note": "All 31 remaining JPEG sketch replacements committed and linked; 680 lesson visual inventory and Windows runtime auditing must still be run separately. SHNK technical validation is not claimed.",
+  "last_verified_main_commit": "1a6596d5aeaf36f909d22d99041c9dfcf99e40be",
+  "next_lesson_to_replace": null,
   "static_integrity_audit": {
     "reviewed_course_count": 680,
     "course_coverage_unique_ids": 680,
@@ -154,23 +165,25 @@
   },
   "last_integrated_batch": {
     "codes": [
-      "L14_M05_003",
-      "L14_M05_004",
-      "L14_M06_001",
-      "L14_M06_002",
-      "L14_M06_003",
-      "L14_M06_004",
-      "L14_M07_002",
-      "L14_M07_003",
-      "L14_M08_002",
-      "L14_M08_003"
+      "L14_M08_004",
+      "L15_M01_002",
+      "L15_M02_002",
+      "L15_M03_001",
+      "L15_M03_002",
+      "L15_M03_003",
+      "L15_M05_001",
+      "L15_M05_002",
+      "L15_M05_003",
+      "L15_M05_004",
+      "L15_M07_004"
     ],
-    "count": 10,
+    "count": 11,
     "uploaded_as_jpeg": true,
     "source_images_visually_reviewed": true,
     "image_links_updated": true,
-    "max_jpeg_bytes": 393693,
-    "uploaded_by": "GitHub Git data API"
+    "max_jpeg_bytes": 389953,
+    "uploaded_by": "GitHub Git data API",
+    "remaining_after_this_batch": 0
   },
   "inventory_reconciliation": {
     "completed_for": [
@@ -270,7 +283,7 @@
   ],
   "new_image_optional_count": 31,
   "remaining_review_source": "docs/ARCHIPRO_REMAINING_IMAGE_REVIEW_2026_10_11.json",
-  "all_remaining_image_work_complete": false,
+  "all_remaining_image_work_complete": true,
   "next_text_quality_batch": {
     "codes": [
       "L14_M01_002",
