@@ -14,26 +14,36 @@ echo.
 where python >nul 2>&1
 if errorlevel 1 (
     echo [XATO] Python topilmadi. Python 3.12 x64 kerak.
-    goto finished
+    goto failed
 )
 if not exist "tools\check_license_signature.py" (
-    echo [XATO] Dastur fayli topilmadi. GitHub ZIPni to'liq chiqaring.
-    goto finished
+    echo [XATO] tools\\check_license_signature.py mavjud emas.
+    echo Faylni GitHub'dan yuklab tools papkasiga saqlang.
+    echo Yoki ikki faylli yangi tekshiruv ZIP paketini ishlating.
+    goto failed
 )
 python -c "import cryptography" >nul 2>&1
 if errorlevel 1 (
     echo [XATO] cryptography o'rnatilmagan.
     echo Quyidagi buyruqni bajaring: python -m pip install cryptography
-    goto finished
+    goto failed
 )
 if not "%~1"=="" (
     python tools\check_license_signature.py "%~1"
 ) else (
     python tools\check_license_signature.py
 )
-:finished
+if errorlevel 1 goto failed
 echo.
-echo Imzo mosligi tekshirildi. Shu oynaning rasm yoki matnini yuboring.
+echo [OK] Diagnostika bajarildi. Ekrandagi moslik natijasini yuboring.
 echo.
 pause
 exit /b 0
+
+:failed
+echo.
+echo [XATO] Tekshiruv oxirigacha bajarilmadi. Hech qanday kalit o'zgartirilmadi.
+echo Shu oynaning rasm yoki matnini yuboring.
+echo.
+pause
+exit /b 1
