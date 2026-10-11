@@ -22,6 +22,10 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Verify source syntax and file safety
+        shell: pwsh
+        run: python tools/verify_source_integrity.py
+
       - name: Install runtime dependencies
         shell: pwsh
         run: |
@@ -72,6 +76,7 @@ jobs:
 
 
   package:
+    needs: audit
     if: github.event_name == 'workflow_dispatch'
     runs-on: windows-latest
     timeout-minutes: 15
