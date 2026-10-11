@@ -12,6 +12,7 @@ CHECKS = [
     ('SOURCE INTEGRITY', 'tools/verify_source_integrity.py'),
     ('COMPACT MEDIA INTEGRITY', 'tools/verify_compact_media.py'),
     ('LESSON IMAGE INTEGRITY', 'tools/verify_course_visuals.py'),
+    ('CONTENT GUARD', 'app/tools/content_guard.py'),
     ('PROJECT AUDIT', 'app/tools/project_audit.py'),
     ('DATABASE AUDIT', 'app/tools/database_audit.py'),
     ('RUNTIME SMOKE TEST', 'app/tools/runtime_smoke_test.py'),
