@@ -1,8 +1,8 @@
 {
   "source_review": "docs/VISUAL_CANDIDATE_REVIEW_2026_10_08.json",
   "review_pending_initial": 156,
-  "individually_replaced_on_main": 54,
-  "still_to_replace": 102,
+  "individually_replaced_on_main": 64,
+  "still_to_replace": 92,
   "seven_corrupted_images_repaired": 7,
   "seven_media_registry_recorded": 278,
   "seven_media_registry_complete": true,
@@ -60,12 +60,22 @@
     "L11_M04_005",
     "L11_M05_001",
     "L11_M05_002",
-    "L11_M05_003"
+    "L11_M05_003",
+    "L11_M05_004",
+    "L11_M05_005",
+    "L11_M06_001",
+    "L11_M06_002",
+    "L11_M06_003",
+    "L11_M06_004",
+    "L11_M06_005",
+    "L11_M07_001",
+    "L11_M07_002",
+    "L11_M07_003"
   ],
   "next_batch": "docs/ARCHIPRO_NEXT_TEN_TOPIC_SPECIFIC_SKETCHES.json",
-  "note": "54/156 topic-specific lessons now point at compact JPEGs. 10 more lesson JPEGs stored with verified Git blob SHA in one atomic commit; old SVG retained as backup. Windows/GUI and normative engineering audits remain unverified.",
-  "last_verified_main_commit": "fe7117449763aa82babc4f881ac72dc3b56fb49f",
-  "next_lesson_to_replace": "L11_M05_004",
+  "note": "64/156 lesson figures now link to JPEGs. All 10 replacements and three coverage lists updated together in a Git tree commit; originals retained as rollback. Full Windows/GUI QA and SHNQ/QMQ expert verification are outstanding.",
+  "last_verified_main_commit": "e69536bc5810b6cc5b6b66ab2ccf7f5ded2cb5b6",
+  "next_lesson_to_replace": "L11_M07_004",
   "static_integrity_audit": {
     "reviewed_course_count": 680,
     "course_coverage_unique_ids": 680,
@@ -94,16 +104,16 @@
   },
   "last_integrated_batch": {
     "codes": [
-      "L11_M03_004",
-      "L11_M03_005",
-      "L11_M04_001",
-      "L11_M04_002",
-      "L11_M04_003",
-      "L11_M04_004",
-      "L11_M04_005",
-      "L11_M05_001",
-      "L11_M05_002",
-      "L11_M05_003"
+      "L11_M05_004",
+      "L11_M05_005",
+      "L11_M06_001",
+      "L11_M06_002",
+      "L11_M06_003",
+      "L11_M06_004",
+      "L11_M06_005",
+      "L11_M07_001",
+      "L11_M07_002",
+      "L11_M07_003"
     ],
     "count": 10,
     "max_jpeg_bytes": 400000,
@@ -114,7 +124,8 @@
     "runtime_visual_json_updated": true,
     "auxiliary_csv_inventory_updated": true,
     "github_git_blob_sha_verified": true,
-    "gui_verified": false
+    "gui_verified": false,
+    "note": "10 custom educational architectural section/facade/detail diagrams; static structural validity does not constitute engineering approval."
   },
   "inventory_reconciliation": {
     "completed_for": [

@@ -6347,172 +6347,172 @@
   },
   {
     "code": "L11_M05_004",
-    "asset": "l11_m05_004.svg",
+    "asset": "sketch-l11_m05_004.jpg",
     "title": "Void, konstruktsiya va xavfsizlik — ko‘rgazmali namuna",
     "explanation": [
-      "Livingda ikki qavatli bo‘shliq bor, yuqoridagi yo‘lak bo‘shliq chetidan o‘tadi.",
-      "Yopma cheti, tayanch va himoyani tekshiruvga ajrating → konstruktiv va xavfsizlik masalasi.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Kesim: ochiq void atrofidagi plita cheti va galereya to‘sig‘i ko‘rsatilgan.",
+      "Qavat rejasida void konturi hamda unga bog‘liq ichki makonlarni izlang.",
+      "Katta ochilish konstruktorga, to‘siq va foydalanish xavfsizligi esa tegishli mutaxassisga tekshirtiriladi."
     ],
     "exercise": "Chekka himoya va konstruktiv ochilishni savollar jadvaliga kiriting.",
     "solution": "Void xavfsizlik, tayanch va xizmat masalalarini muvofiqlashtirishni talab qiladi.",
     "block": 5,
     "recipe": "void",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Ushbu rasm mavzuni tushuntiradigan konseptual eskizdir. Konstruktiv, issiqlik va namlik hisoblari, texnik o‘lchamlar va xavfsizlik talablari mutaxassis tomonidan alohida tasdiqlanishi kerak.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M05_005",
-    "asset": "l11_m05_005.svg",
+    "asset": "sketch-l11_m05_005.jpg",
     "title": "Void professional audit — ko‘rgazmali namuna",
     "explanation": [
-      "Livingda ikki qavatli bo‘shliq bor, yuqoridagi yo‘lak bo‘shliq chetidan o‘tadi.",
-      "Yo‘qotilgan pol, olingan makon sifati va texnik ta’sirni solishtiring → asoslangan tanlov.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Void kesimida qavatlararo bo‘shliq, yorug‘lik va ochiq chekka ko‘rsatilgan.",
+      "Ochiq hajmning foydasi, shovqin, ko‘rish yo‘nalishi va qavat maydoniga ta’sirini muhokama qiling.",
+      "Tekshirilmagan konstruktiv va himoya elementlarini tayyor loyiha sifatida belgilamang."
     ],
     "exercise": "Plan, kesim va foydalanish mezonlari bilan audit qiling.",
     "solution": "Void auditida estetik foyda bilan texnik oqibat ajratilmaydi.",
     "block": 4,
     "recipe": "void",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Ushbu rasm mavzuni tushuntiradigan konseptual eskizdir. Konstruktiv, issiqlik va namlik hisoblari, texnik o‘lchamlar va xavfsizlik talablari mutaxassis tomonidan alohida tasdiqlanishi kerak.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M06_001",
-    "asset": "l11_m06_001.svg",
+    "asset": "sketch-l11_m06_001.jpg",
     "title": "Balkon va terassa funksiyasi — ko‘rgazmali namuna",
     "explanation": [
-      "Yuqori qavat balkoni yotoqxonaga ulangan; pol, eshik, suv va konstruksiya tuguni ko‘riladi.",
-      "Balkon vazifasi va foydalanuvchini yozing → o‘lchamga asos.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Ikki qavatli uy fasadida balkon joyi, unga chiqish va tashqi to‘siq ko‘rsatilgan.",
+      "Balkon eshigi, mebel, qavatga bog‘lanish va foydalanish zonalarini plan bilan solishtiring.",
+      "Balkon plitasi va himoya to‘siqlari mutaxassis hisobiga muhtoj."
     ],
     "exercise": "Balkon va terassaning foydalanish vazifasini yozing.",
     "solution": "Tashqi makonning o‘lchami uning foydalanish dasturiga mos bo‘lishi kerak.",
     "block": 5,
     "recipe": "balcony",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Ushbu rasm mavzuni tushuntiradigan konseptual eskizdir. Konstruktiv, issiqlik va namlik hisoblari, texnik o‘lchamlar va xavfsizlik talablari mutaxassis tomonidan alohida tasdiqlanishi kerak.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M06_002",
-    "asset": "l11_m06_002.svg",
+    "asset": "sketch-l11_m06_002.jpg",
     "title": "Ichki-tashqi aloqa — ko‘rgazmali namuna",
     "explanation": [
-      "Yuqori qavat balkoni yotoqxonaga ulangan; pol, eshik, suv va konstruksiya tuguni ko‘riladi.",
-      "Eshik, mebel va tashqi harakatni masshtabda chizing → foydalanish.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Ichki xona va balkonga chiqish orasidagi harakat bir xil fasad-kesimda ko‘rinadi.",
+      "Eshik ochilishi va balkon yuzasidagi foydali maydonni tekshiring.",
+      "Soyabon, maxfiylik va tashqi muhit bilan vizual aloqa reja bilan birga baholanadi."
     ],
     "exercise": "Eshik, sath va mebel bilan ichki-tashqi yo‘lni chizing.",
     "solution": "Aloqa real eshik va sath sharoitida tekshiriladi.",
     "block": 5,
     "recipe": "balcony",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Ushbu rasm mavzuni tushuntiradigan konseptual eskizdir. Konstruktiv, issiqlik va namlik hisoblari, texnik o‘lchamlar va xavfsizlik talablari mutaxassis tomonidan alohida tasdiqlanishi kerak.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M06_003",
-    "asset": "l11_m06_003.svg",
+    "asset": "sketch-l11_m06_003.jpg",
     "title": "Konstruktiv va thermal bridge mantig'i — ko‘rgazmali namuna",
     "explanation": [
-      "Yuqori qavat balkoni yotoqxonaga ulangan; pol, eshik, suv va konstruksiya tuguni ko‘riladi.",
-      "Konsol/tayanch va qobiq uzilishini kesimda belgilang → konstruktiv/issiqlik savoli.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Balkon plitasi va tashqi devor orasidagi tutashuv yiriklashtirilgan o‘quv detallari bilan ko‘rsatilgan.",
+      "Konsol, issiqlik ko‘prigi va namlik ehtimoliy konfliktlarini alohida belgilang.",
+      "Qalinliklar va armatura yechimi hisoblangan konstruktiv loyiha sifatida olinmaydi."
     ],
     "exercise": "Plita-devor tugunidagi konstruktiv va issiqlik masalalarini ajrating.",
     "solution": "Balkon yechimi tayanch va thermal bridge ehtimolini birga ko‘radi.",
     "block": 5,
     "recipe": "balcony",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Ushbu rasm mavzuni tushuntiradigan konseptual eskizdir. Konstruktiv, issiqlik va namlik hisoblari, texnik o‘lchamlar va xavfsizlik talablari mutaxassis tomonidan alohida tasdiqlanishi kerak.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M06_004",
-    "asset": "l11_m06_004.svg",
+    "asset": "sketch-l11_m06_004.jpg",
     "title": "Gidroizolyatsiya va drainage — ko‘rgazmali namuna",
     "explanation": [
-      "Yuqori qavat balkoni yotoqxonaga ulangan; pol, eshik, suv va konstruksiya tuguni ko‘riladi.",
-      "Suv yo‘li va eshik tutashuvini chizing → gidroizolyatsiya detaliga savol.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Balkon plitasi, eshik-devor tutashuvi hamda suv yo‘nalishi tasvirlangan.",
+      "Yomg‘ir suvining eshik tomon qaytib to‘planmasligini reja va kesimda tekshiring.",
+      "Nishab, suv o‘tkazmaslik qatlami va chiqish joyi aniq loyiha asosida aniqlanadi."
     ],
     "exercise": "Suv chiqishi va izolyatsiya uzluksizligini kesimda belgilang.",
     "solution": "Drainage va gidroizolyatsiya bir tizim sifatida ishlashi kerak.",
     "block": 5,
     "recipe": "balcony",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Ushbu rasm mavzuni tushuntiradigan konseptual eskizdir. Konstruktiv, issiqlik va namlik hisoblari, texnik o‘lchamlar va xavfsizlik talablari mutaxassis tomonidan alohida tasdiqlanishi kerak.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M06_005",
-    "asset": "l11_m06_005.svg",
+    "asset": "sketch-l11_m06_005.jpg",
     "title": "Balkon va terassa audit — ko‘rgazmali namuna",
     "explanation": [
-      "Yuqori qavat balkoni yotoqxonaga ulangan; pol, eshik, suv va konstruksiya tuguni ko‘riladi.",
-      "Himoya, xizmat va barcha tugunlar holatini qayd qiling → tekshirilgan yoki ochiq yechim.",
-      "Chizmadagi yozuv va shartli belgilarni yuqoridagi bajarish bosqichi bilan solishtiring. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Balkon va terassa uchun o‘quv audit tasviri: foydalanish, to‘siq, namlik va konstruksiya.",
+      "Har bir xavfga chizmadan dalil toping va tuzatish variantini qayta tekshiring.",
+      "Balkonni to‘liq tayyor loyiha deb baholashdan oldin hisob va tekshiruvlar shart."
     ],
     "exercise": "Foydalanish, tugun va mutaxassis tasdiqlarini audit qiling.",
     "solution": "Balkon auditi faqat chiroyli railing ko‘rinishi bilan tugamaydi.",
     "block": 4,
     "recipe": "balcony",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Ushbu rasm mavzuni tushuntiradigan konseptual eskizdir. Konstruktiv, issiqlik va namlik hisoblari, texnik o‘lchamlar va xavfsizlik talablari mutaxassis tomonidan alohida tasdiqlanishi kerak.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M07_001",
-    "asset": "l11_m07_001.svg",
+    "asset": "sketch-l11_m07_001.jpg",
     "title": "Ikki qavatli fasad proporsiyasi — ko‘rgazmali namuna",
     "explanation": [
-      "Ikki qavat derazalari, balkon va stair hajmi fasadga chiqariladi.",
-      "Qavat balandligi va ochilishlar nisbatini o‘lchang → gorizontal/vertikal tuzilma.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Ikki qavatli uy fasadida qavatlar sathi va oynalarning umumiy ritmi aks etgan.",
+      "Pastki va yuqori derazalarning vertikal o‘qlarga muvofiqligini reja bilan solishtiring.",
+      "Sonli o‘lchamlar o‘quv qiymatlari emas; aniq proportsiya loyiha asosida olinadi."
     ],
     "exercise": "Hajm va ochilishlar nisbatini ikki fasadda belgilang.",
     "solution": "Proporsiya qavatlar va umumiy bino o‘rtasidagi munosabatni ko‘rsatadi.",
     "block": 5,
     "recipe": "two-facade",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Ushbu rasm mavzuni tushuntiradigan konseptual eskizdir. Konstruktiv, issiqlik va namlik hisoblari, texnik o‘lchamlar va xavfsizlik talablari mutaxassis tomonidan alohida tasdiqlanishi kerak.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M07_002",
-    "asset": "l11_m07_002.svg",
+    "asset": "sketch-l11_m07_002.jpg",
     "title": "Qavatlar orasidagi vizual aloqa — ko‘rgazmali namuna",
     "explanation": [
-      "Ikki qavat derazalari, balkon va stair hajmi fasadga chiqariladi.",
-      "Pastki va yuqori ritmni bir tarmoqqa solishtiring → izchil ko‘rinish.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Bitta ikki qavatli uyda yuqori va pastki derazalar hamda kirish markazi munosabati tasvirlangan.",
+      "Qavatlararo vizual aloqa, deraza ritmi va material aksentlarini solishtiring.",
+      "Tashqi fasad ichki xonalar, zina va tabiiy yorug‘lik bilan mos bo‘lsin."
     ],
     "exercise": "Gorizontal va vertikal aloqalarni plan bilan solishtiring.",
     "solution": "Fasad ritmi ichki qavat tuzilishi bilan muvofiqlashtiriladi.",
     "block": 5,
     "recipe": "two-facade",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Ushbu rasm mavzuni tushuntiradigan konseptual eskizdir. Konstruktiv, issiqlik va namlik hisoblari, texnik o‘lchamlar va xavfsizlik talablari mutaxassis tomonidan alohida tasdiqlanishi kerak.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
     "code": "L11_M07_003",
-    "asset": "l11_m07_003.svg",
+    "asset": "sketch-l11_m07_003.jpg",
     "title": "Balkon, void va stair aksenti — ko‘rgazmali namuna",
     "explanation": [
-      "Ikki qavat derazalari, balkon va stair hajmi fasadga chiqariladi.",
-      "Balkon yoki stairga bitta aksent bering → raqobat kamayadi.",
-      "Raqamli belgi ushbu darsda tekshiriladigan joyni ajratadi. Chizma sxematik; aniq natijani dars sharti va o‘lcham yozuvidan tekshiring."
+      "Fasadning balkon, zinapoya oynasi va bo‘sh hajm bilan kompozitsiyasi ko‘rsatilgan.",
+      "Balkon eshigi, qavatlararo bo‘shliq va yuqori oynalar o‘rnini chizmada solishtiring.",
+      "Ochiq balkon konstruksiyasi va void xavfsizligi mustaqil professional nazorat talab qiladi."
     ],
     "exercise": "Bitta asosiy aksentni tanlab, qolganlarini unga bo‘ysundiring.",
     "solution": "Ko‘p teng urg‘u fasad hierarxiyasini susaytirishi mumkin.",
     "block": 5,
     "recipe": "two-facade",
-    "boundary": "O‘quv sxemasi. Sonlar mashq sharti; majburiy norma yoki tayyor konstruktiv yechim emas. Loyiha talabi va qo‘llanadigan hujjat alohida tekshiriladi.",
-    "credit": "ARCHIPRO UZ — darsning mavjud ishlangan misoli bo‘yicha yaratilgan vektor chizma",
+    "boundary": "Ushbu rasm mavzuni tushuntiradigan konseptual eskizdir. Konstruktiv, issiqlik va namlik hisoblari, texnik o‘lchamlar va xavfsizlik talablari mutaxassis tomonidan alohida tasdiqlanishi kerak.",
+    "credit": "ARCHIPRO UZ — mavzuga mos arxitekturaviy o‘quv eskizi",
     "source_url": null
   },
   {
