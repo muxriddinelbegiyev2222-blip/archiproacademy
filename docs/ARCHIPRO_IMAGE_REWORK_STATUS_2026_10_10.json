@@ -104,7 +104,7 @@
   ],
   "next_batch": "docs/ARCHIPRO_NEXT_TEN_TOPIC_SPECIFIC_SKETCHES.json",
   "note": "Progress counts completed JPEG replacements, pending required sketches, and separately reviewed lessons not requiring a new image. Existing valid material remains. Normative expert review and a native Windows release build are separate from this image task.",
-  "last_verified_main_commit": "1cd5c3f4badeae1406a833e11eaf0f87b3d6793d",
+  "last_verified_main_commit": "ff2165fa3c70803e816426fb1163dbe6666a3888",
   "next_lesson_to_replace": "L14_M01_002",
   "static_integrity_audit": {
     "reviewed_course_count": 680,
@@ -251,5 +251,43 @@
   ],
   "new_image_optional_count": 31,
   "remaining_review_source": "docs/ARCHIPRO_REMAINING_IMAGE_REVIEW_2026_10_11.json",
-  "all_remaining_image_work_complete": false
+  "all_remaining_image_work_complete": false,
+  "next_text_quality_batch": {
+    "codes": [
+      "L14_M01_002",
+      "L14_M02_004",
+      "L14_M03_001",
+      "L14_M03_002",
+      "L14_M03_003",
+      "L14_M03_004",
+      "L14_M04_002",
+      "L14_M04_003",
+      "L14_M04_004",
+      "L14_M05_002"
+    ],
+    "commit": "ff2165fa3c70803e816426fb1163dbe6666a3888",
+    "lesson_titles_updated": true,
+    "uzbek_explanations_updated": true,
+    "actual_new_jpegs_uploaded": 0,
+    "existing_svg_links_preserved": true
+  },
+  "latest_connector_static_verification": {
+    "as_of_date": "2026-10-11",
+    "git_tree_entries": 1489,
+    "jpeg_total": 418,
+    "jpeg_over_400000_bytes": 0,
+    "lesson_code_count": 680,
+    "all_three_csv_code_sets_agree": true,
+    "json_figure_entries": 1027,
+    "json_unique_lesson_codes": 680,
+    "json_asset_missing_count": 0,
+    "csv_asset_missing_count": 0,
+    "replacement_links_broken_count": 0,
+    "ci_latest_run_id": 38125330377,
+    "ci_latest_conclusion": "failure",
+    "ci_audit_steps_returned": 0,
+    "ci_log_unavailable": true,
+    "actual_full_windows_audit_not_confirmed": true,
+    "checked_head_commit": "ff2165fa3c70803e816426fb1163dbe6666a3888"
+  }
 }
