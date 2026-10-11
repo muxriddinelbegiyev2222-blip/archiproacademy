@@ -151,6 +151,12 @@ def read_license_file(
 def verify_license_data(
     data: dict,
 ) -> dict:
+    if not isinstance(data, dict):
+        return {
+            "valid": False,
+            "message": "Litsenziya faylining tuzilishi noto'g'ri.",
+        }
+
     if (
         data.get("product")
         != PRODUCT_NAME
